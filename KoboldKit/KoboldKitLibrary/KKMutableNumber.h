@@ -7,11 +7,12 @@
 #import <Foundation/Foundation.h>
 
 /** Similar to NSNumber, but allows numbers to be modified (hence: mutable). It does not inherit NSNumber, the implementation
-   is lightweight and encapsulates various classes like KTBoolNumber, KTInt32Number, KTDoubleNumber and so on each containing only
-   a single property of the given data type. This is what makes NSMutableNumber numbers mutable, they're regular properties of objects
-   encapsulating integral data types.
+   is lightweight and encapsulates various classes like KKBoolNumber, KKInt32Number, KKDoubleNumber and so on each containing only
+   a single property of the given data type. 
+ 
+ This is what makes NSMutableNumber numbers mutable, they're regular properties of objects encapsulating integral data types.
 
-   Once a concrete subclass of KTMutableNumber has been created using one of the initializers, the type of that number is set and can
+   Once a concrete subclass of KKMutableNumber has been created using one of the initializers, the type of that number is set and can
    not be changed. For example, if you assign a BOOL value to a float number, the BOOL value will be cast to float. Likewise if you
    access the charValue property of a number whose type is float, the returned value will be cast from float to char before it is returned. */
 @interface KKMutableNumber : NSObject<NSCoding, NSCopying>
@@ -111,44 +112,3 @@
 
 @end
 
-@interface KTBoolNumber : KKMutableNumber
-{
-	@private
-	BOOL _number;
-}
--(id) initWithBool:(BOOL)boolNumber;
-@end
-
-@interface KTFloatNumber : KKMutableNumber
-{
-	@private
-	float _number;
-}
--(id) initWithFloat:(float)floatNumber;
-@end
-
-@interface KTDoubleNumber : KKMutableNumber
-{
-	@private
-	double _number;
-}
--(id) initWithDouble:(double)doubleNumber;
-@end
-
-// the Number is 32-Bit even on 64-Bit Mac OS
-@interface KTInt32Number : KKMutableNumber
-{
-	@private
-	int32_t _number;
-}
--(id) initWithInt32:(int32_t)int32Number;
-@end
-
-// the Number is 64-Bit even on 32-Bit iOS
-@interface KTInt64Number : KKMutableNumber
-{
-	@private
-	int64_t _number;
-}
--(id) initWithInt64:(int64_t)int64Number;
-@end

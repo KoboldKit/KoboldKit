@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKNodeBehavior.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKNodeBehavior</TokenIdentifier>
+			<Abstract type="html">Behaviors add custom logic to a node.
+Behaviors differ from actions in several ways:
+- they are useful for any logic code that is hard or impossible to implement with (custom) actions, such as event processing
+- they usually run indefinitely and can be paused by pausing the controller
+- they may have a state (ivars)
+- they may have a public interface (properties, methods)
+- they can not be reversed</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

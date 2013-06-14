@@ -12,7 +12,7 @@
 @class KKNodeBehavior;
 @class KKScene;
 
-/** Kobold Kit extensions to SKNode */
+/** Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors. */
 @interface SKNode (KoboldKit)
 
 /** @name Creating and Accessing the Controller */
@@ -52,16 +52,8 @@
 
 -(NSString*) kkDescription;
 +(NSString*) descriptionForNode:(SKNode*)node;
-
 -(instancetype) kkCopyWithZone:(NSZone*)zone;
-
-/** @name Testing for Equality */
-
-/** Ensures that the node's properties are equal. Compares controllers and behaviors too. Does not descend to its children.
- @returns YES if the receiver is considered equal to the other node. */
 -(BOOL) isEqualToNode:(SKNode*)node;
-/** Ensures that the node's properties are equal. Compares controllers and behaviors too. Descends and compares node children as well.
-  @returns YES if the receiver and its children are considered equal to the other node and the other node's children. */
 -(BOOL) isEqualToNodeTree:(SKNode*)node;
 
 @end

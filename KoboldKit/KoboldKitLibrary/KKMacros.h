@@ -9,6 +9,8 @@
 #ifndef KoboldKitDemo_KKMacros_h
 #define KoboldKitDemo_KKMacros_h
 
+#import "float.h"
+
 /** @file KKMacros.h */
 
 #if TARGET_OS_IPHONE

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSCoder+KTCoderCategory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSCoder(KTCoderCategory)</TokenIdentifier>
+			<Abstract type="html">Adds encode/decode convenience methods for common structs not supported natively (or cross-platform) by NSCoder.</Abstract>
+			<DeclaredIn>NSCoder+KTCoderCategory.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KTCoderCategory)/encodePoint:forKey:</TokenIdentifier>
+			<Abstract type="html">encode a CGPoint</Abstract>
+			<DeclaredIn>NSCoder+KTCoderCategory.h</DeclaredIn>			
+			
+			<Declaration>- (void)encodePoint:(CGPoint)point forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/encodePoint:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KTCoderCategory)/decodePointForKey:</TokenIdentifier>
+			<Abstract type="html">decode a CGPoint</Abstract>
+			<DeclaredIn>NSCoder+KTCoderCategory.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)decodePointForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/decodePointForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KTCoderCategory)/encodeCGPoint:forKey:</TokenIdentifier>
+			<Abstract type="html">encode a CGPoint on OS X</Abstract>
+			<DeclaredIn>NSCoder+KTCoderCategory.h</DeclaredIn>			
+			
+			<Declaration>- (void)encodeCGPoint:(CGPoint)point forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/encodeCGPoint:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KTCoderCategory)/decodeCGPointForKey:</TokenIdentifier>
+			<Abstract type="html">decode a CGPoint on OS X</Abstract>
+			<DeclaredIn>NSCoder+KTCoderCategory.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)decodeCGPointForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/decodeCGPointForKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

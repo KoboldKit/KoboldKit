@@ -64,4 +64,20 @@
 	XCTAssertTrue(isEqual, @"test scene and decoded scene are different, check log for details");
 }
 
+-(void) testCopyScene
+{
+	KKScene* copiedScene = [_testScene copy];
+	
+	BOOL isEqual = [_testScene isEqualToSceneTree:copiedScene];
+	if (isEqual == NO)
+	{
+		NSString* testSceneDump = [_testScene dumpSceneGraph:KKSceneGraphDumpAll];
+		NSString* copiedSceneDump = [copiedScene dumpSceneGraph:KKSceneGraphDumpAll];
+		LOG_EXPR(testSceneDump);
+		LOG_EXPR(copiedSceneDump);
+	}
+	
+	XCTAssertTrue(isEqual, @"test scene and copied scene are different, check log for details");
+}
+
 @end

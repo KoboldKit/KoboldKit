@@ -173,9 +173,10 @@
 		return NO;
 	}
 
-	if ([self.controller isEqualToController:node.controller] == NO)
+	if ((self.controller != nil || node.controller != nil) &&
+		[self.controller isEqualToController:node.controller] == NO)
 	{
-		NSLog(@"Node Controller mismatch: %@ (%@) != %@ (%@)", self, self.controller, node, node.controller);
+		NSLog(@"Node Controller mismatch: %@ != %@", self.controller, node.controller);
 		return NO;
 	}
 	
@@ -224,7 +225,8 @@
 		return NO;
 	if (self.userInteractionEnabled != node.userInteractionEnabled)
 		return NO;
-	if ((self.name && [self.name isEqualToString:node.name] == NO))
+	if (((self.name != nil || node.name != nil) &&
+		 [self.name isEqualToString:node.name] == NO))
 		return NO;
 	
 	return YES;

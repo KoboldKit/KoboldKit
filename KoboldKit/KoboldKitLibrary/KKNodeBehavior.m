@@ -89,7 +89,8 @@ static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
 	
-	if (_key && [_key isEqualToString:behavior.key] == NO)
+	if ((_key != nil || behavior.key != nil) &&
+		[_key isEqualToString:behavior.key] == NO)
 		return NO;
 	
 	if (_wantsUpdate != behavior.wantsUpdate)

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/SKNode+KoboldKit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/SKNode(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/setController:</TokenIdentifier>
+			<Abstract type="html">Returns the node's controller object.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			
+			
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/controller</TokenIdentifier>
+			<Abstract type="html">Returns the node's controller object.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			
+			
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SKNode(KoboldKit)/controller</TokenIdentifier>
+			<Abstract type="html">Returns the node's controller object.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			
+			
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/createController</TokenIdentifier>
+			<Abstract type="html">Creates node controller if one does not exist yet. Returns the new or existing instance.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (KKNodeController *)createController</Declaration>
+			
+			
+			<Anchor>//api/name/createController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/setKkScene:</TokenIdentifier>
+			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			
+			
+			<Anchor>//api/name/kkScene</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/kkScene</TokenIdentifier>
+			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			
+			
+			<Anchor>//api/name/kkScene</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SKNode(KoboldKit)/kkScene</TokenIdentifier>
+			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			
+			
+			<Anchor>//api/name/kkScene</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehavior:</TokenIdentifier>
+			<Abstract type="html">Adds a behavior to the node. The behavior will be copied.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehavior:(KKNodeBehavior *)behavior</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBehavior:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehavior:withKey:</TokenIdentifier>
+			<Abstract type="html">Adds a behavior to the node with a key. Replaces any existing behavior with the same key. The behavior will be copied.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehavior:(KKNodeBehavior *)behavior withKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique key used to identify the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBehavior:withKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehaviors:</TokenIdentifier>
+			<Abstract type="html">Adds multiple behaviors from an array. The behaviors will be copied.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehaviors:(NSArray *)behaviors</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behaviors</Name>
+					<Abstract type="html">An array containing behaviors to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBehaviors:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/behaviorForKey:</TokenIdentifier>
+			<Abstract type="html">The behavior for the key. Returns nil if no behavior with that key was found.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (KKNodeBehavior *)behaviorForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique key identifying the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The behavior for the key. Returns nil if no behavior with that key was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviorForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/hasBehaviors</TokenIdentifier>
+			<Abstract type="html">YES if the node has one or more behaviors.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasBehaviors</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the node has one or more behaviors.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasBehaviors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeBehavior:</TokenIdentifier>
+			<Abstract type="html">Removes the behavior.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeBehavior:(KKNodeBehavior *)behavior</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeBehavior:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeBehaviorForKey:</TokenIdentifier>
+			<Abstract type="html">Removes the behavior with the given key.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeBehaviorForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique key identifying the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeBehaviorForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeAllBehaviors</TokenIdentifier>
+			<Abstract type="html">Removes all behaviors from the node.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllBehaviors</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllBehaviors</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

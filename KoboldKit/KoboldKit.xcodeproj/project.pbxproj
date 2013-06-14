@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4B1C17176BC41D00D03213 /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B1C16176BC41D00D03213 /* KKView.m */; };
 		DCDD2DAC1769FD0A00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
 		DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 		DCDD2DB01769FD0A00F307CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
@@ -70,6 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC4B1C15176BC41D00D03213 /* KKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKView.h; sourceTree = "<group>"; };
+		DC4B1C16176BC41D00D03213 /* KKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKView.m; sourceTree = "<group>"; };
 		DCDD2DA81769FD0A00F307CD /* KoboldKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoboldKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -357,6 +360,8 @@
 			children = (
 				DCDD2E16176A01E400F307CD /* KKViewController.h */,
 				DCDD2E17176A01E400F307CD /* KKViewController.m */,
+				DC4B1C15176BC41D00D03213 /* KKView.h */,
+				DC4B1C16176BC41D00D03213 /* KKView.m */,
 				DCDD2E19176A045A00F307CD /* KKScene.h */,
 				DCDD2E1A176A045A00F307CD /* KKScene.m */,
 			);
@@ -536,6 +541,7 @@
 				DCDD2E4A176A40C400F307CD /* JRSwizzle.m in Sources */,
 				DCDD2E1B176A045A00F307CD /* KKScene.m in Sources */,
 				DCDD2E18176A01E400F307CD /* KKViewController.m in Sources */,
+				DC4B1C17176BC41D00D03213 /* KKView.m in Sources */,
 				DCDD2E131769FDAC00F307CD /* SKNode+KoboldKit.m in Sources */,
 				DCFDF3CC176B638300F2CAD0 /* KKNodeModel.m in Sources */,
 				DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */,
@@ -748,7 +754,7 @@
 		DCDD2E0E1769FD2E00F307CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KoboldKitDemo.app/KoboldKitDemo";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KoboldKit.app/KoboldKit";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -770,7 +776,7 @@
 		DCDD2E0F1769FD2E00F307CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KoboldKitDemo.app/KoboldKitDemo";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KoboldKit.app/KoboldKit";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

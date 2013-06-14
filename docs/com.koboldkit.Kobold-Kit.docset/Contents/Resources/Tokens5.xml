@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKNodeModel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKNodeModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setController:</TokenIdentifier>
+			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/controller</TokenIdentifier>
+			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeModel/controller</TokenIdentifier>
+			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setBool:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setBool:(BOOL)boolValue forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setBool:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/boolForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value of the given type for key. Returns NO if there's no value with this key.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)boolForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/boolForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setFloat:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setFloat:(float)floatValue forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setFloat:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/floatForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (float)floatForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/floatForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setDouble:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDouble:(double)doubleValue forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setDouble:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/doubleForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (double)doubleForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/doubleForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setInt32:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setInt32:(int32_t)int32Value forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setInt32:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/int32ForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (int32_t)int32ForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/int32ForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setUnsignedInt32:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUnsignedInt32:(uint32_t)unsignedInt32Value forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setUnsignedInt32:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/unsignedInt32ForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (uint32_t)unsignedInt32ForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedInt32ForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setInt64:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setInt64:(int64_t)int64Value forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setInt64:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/int64ForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (int64_t)int64ForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/int64ForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setUnsignedInt64:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUnsignedInt64:(uint64_t)unsignedInt64Value forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setUnsignedInt64:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/unsignedInt64ForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (uint64_t)unsignedInt64ForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedInt64ForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setObject:forKey:</TokenIdentifier>
+			<Abstract type="html">Assign or replace any object with the given key. If object is nil, the object for that key will be removed.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setObject:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/objectForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the object for key. Returns nil if there's no object associated with this key.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/objectForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/mutableNumberForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the underlying KTMutableNumber object for a specific variable key. You can then modify the
+number value without having to reassign it to the model.</Abstract>
+			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			
+			<Declaration>- (KKMutableNumber *)mutableNumberForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/mutableNumberForKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

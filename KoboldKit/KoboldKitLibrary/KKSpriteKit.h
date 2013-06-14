@@ -13,8 +13,6 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-typedef SKView KKView;
-
 typedef SKTransition KKTransition;
 typedef SKNode KKNode;
 typedef SKAction KKAction;

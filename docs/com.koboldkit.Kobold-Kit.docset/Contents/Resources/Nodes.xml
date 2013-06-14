@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Kobold Kit</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="11"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		<Node id="1">
+			<Name>KKButtonBehavior</Name>
+			<Path>Classes/KKButtonBehavior.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>KKMutableNumber</Name>
+			<Path>Classes/KKMutableNumber.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>KKNodeBehavior</Name>
+			<Path>Classes/KKNodeBehavior.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>KKNodeController</Name>
+			<Path>Classes/KKNodeController.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>KKNodeModel</Name>
+			<Path>Classes/KKNodeModel.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>KKScene</Name>
+			<Path>Classes/KKScene.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>KKViewController</Name>
+			<Path>Classes/KKViewController.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>XMLWriter</Name>
+			<Path>Classes/XMLWriter.html</Path>
+		</Node>
+		
+		<Node id="9">
+			<Name>NSCoder(KTCoderCategory)</Name>
+			<Path>Categories/NSCoder+KTCoderCategory.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>SKNode(KoboldKit)</Name>
+			<Path>Categories/SKNode+KoboldKit.html</Path>
+		</Node>
+		
+		<Node id="11">
+			<Name>XMLStreamWriter</Name>
+			<Path>Protocols/XMLStreamWriter.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

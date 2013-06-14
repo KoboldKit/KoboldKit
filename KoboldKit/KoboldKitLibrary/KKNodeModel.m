@@ -209,4 +209,6 @@
 
 #pragma mark Equality
 
+#pragma message "TODO: model isEqualTo.."
+
 @end
