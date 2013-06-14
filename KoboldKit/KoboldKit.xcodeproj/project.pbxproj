@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCDD2DAC1769FD0A00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
+		DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
+		DCDD2DB01769FD0A00F307CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
+		DCDD2DB21769FD0A00F307CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
+		DCDD2DB81769FD0A00F307CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DB61769FD0A00F307CD /* InfoPlist.strings */; };
+		DCDD2DBA1769FD0A00F307CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DB91769FD0A00F307CD /* main.m */; };
+		DCDD2DBE1769FD0A00F307CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DBD1769FD0A00F307CD /* AppDelegate.m */; };
+		DCDD2DC11769FD0A00F307CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DBF1769FD0A00F307CD /* Main_iPhone.storyboard */; };
+		DCDD2DC41769FD0A00F307CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DC21769FD0A00F307CD /* Main_iPad.storyboard */; };
+		DCDD2DC71769FD0A00F307CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DC61769FD0A00F307CD /* ViewController.m */; };
+		DCDD2DCA1769FD0A00F307CD /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DC91769FD0A00F307CD /* MyScene.m */; };
+		DCDD2DCC1769FD0A00F307CD /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DCB1769FD0A00F307CD /* Spaceship.png */; };
+		DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DCD1769FD0A00F307CD /* Images.xcassets */; };
+		DCDD2DEF1769FD2E00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
+		DCDD2DFC1769FD2E00F307CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DD41769FD0A00F307CD /* XCTest.framework */; };
+		DCDD2DFD1769FD2E00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
+		DCDD2DFE1769FD2E00F307CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
+		DCDD2E011769FD2E00F307CD /* libKoboldKitLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */; };
+		DCDD2E071769FD2E00F307CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2E051769FD2E00F307CD /* InfoPlist.strings */; };
+		DCDD2E091769FD2E00F307CD /* KoboldKitLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */; };
+		DCDD2E101769FD8500F307CD /* libKoboldKitLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */; };
+		DCDD2E131769FDAC00F307CD /* SKNode+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E121769FDAC00F307CD /* SKNode+KoboldKit.m */; };
+		DCDD2E18176A01E400F307CD /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E17176A01E400F307CD /* KKViewController.m */; };
+		DCDD2E1B176A045A00F307CD /* KKScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E1A176A045A00F307CD /* KKScene.m */; };
+		DCDD2E1E176A049F00F307CD /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E1D176A049F00F307CD /* KKNodeController.m */; };
+		DCDD2E21176A04B100F307CD /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E20176A04B100F307CD /* KKNodeBehavior.m */; };
+		DCDD2E26176A2BA700F307CD /* KKButtonBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E25176A2BA700F307CD /* KKButtonBehavior.m */; };
+		DCDD2E29176A3DFF00F307CD /* MyLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E28176A3DFF00F307CD /* MyLabelNode.m */; };
+		DCDD2E4A176A40C400F307CD /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E2E176A40C400F307CD /* JRSwizzle.m */; };
+		DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E46176A40C400F307CD /* VTPG_Common.m */; };
+		DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E49176A40C400F307CD /* XMLWriter.m */; };
+		DCDD2E59176A606900F307CD /* SKAction+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E58176A606900F307CD /* SKAction+KoboldKit.m */; };
+		DCFDF3BD176B244A00F2CAD0 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3BC176B244A00F2CAD0 /* TestScene.m */; };
+		DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
+		DCFDF3CC176B638300F2CAD0 /* KKNodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3CB176B638300F2CAD0 /* KKNodeModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCDD2DFF1769FD2E00F307CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCDD2DA01769FD0A00F307CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCDD2DED1769FD2E00F307CD;
+			remoteInfo = KoboldKitLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCDD2DEC1769FD2E00F307CD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCDD2DA81769FD0A00F307CD /* KoboldKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoboldKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		DCDD2DB51769FD0A00F307CD /* KoboldKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKit-Info.plist"; sourceTree = "<group>"; };
+		DCDD2DB71769FD0A00F307CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCDD2DB91769FD0A00F307CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCDD2DBB1769FD0A00F307CD /* KoboldKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KoboldKit-Prefix.pch"; sourceTree = "<group>"; };
+		DCDD2DBC1769FD0A00F307CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCDD2DBD1769FD0A00F307CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCDD2DC01769FD0A00F307CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DCDD2DC31769FD0A00F307CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DCDD2DC51769FD0A00F307CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DCDD2DC61769FD0A00F307CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCDD2DC81769FD0A00F307CD /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		DCDD2DC91769FD0A00F307CD /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		DCDD2DCB1769FD0A00F307CD /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		DCDD2DCD1769FD0A00F307CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCDD2DD41769FD0A00F307CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKitLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDD2DF21769FD2E00F307CD /* KoboldKitLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KoboldKitLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		DCDD2DFB1769FD2E00F307CD /* KoboldKitLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoboldKitLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDD2E041769FD2E00F307CD /* KoboldKitLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKitLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		DCDD2E061769FD2E00F307CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KoboldKitLibraryTests.m; sourceTree = "<group>"; };
+		DCDD2E111769FDAC00F307CD /* SKNode+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+KoboldKit.h"; sourceTree = "<group>"; };
+		DCDD2E121769FDAC00F307CD /* SKNode+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+KoboldKit.m"; sourceTree = "<group>"; };
+		DCDD2E141769FECA00F307CD /* KoboldKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KoboldKit.h; sourceTree = "<group>"; };
+		DCDD2E151769FF1E00F307CD /* KKSpriteKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSpriteKit.h; sourceTree = "<group>"; };
+		DCDD2E16176A01E400F307CD /* KKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKViewController.h; sourceTree = "<group>"; };
+		DCDD2E17176A01E400F307CD /* KKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKViewController.m; sourceTree = "<group>"; };
+		DCDD2E19176A045A00F307CD /* KKScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKScene.h; sourceTree = "<group>"; };
+		DCDD2E1A176A045A00F307CD /* KKScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKScene.m; sourceTree = "<group>"; };
+		DCDD2E1C176A049F00F307CD /* KKNodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeController.h; sourceTree = "<group>"; };
+		DCDD2E1D176A049F00F307CD /* KKNodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeController.m; sourceTree = "<group>"; };
+		DCDD2E1F176A04B100F307CD /* KKNodeBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeBehavior.h; sourceTree = "<group>"; };
+		DCDD2E20176A04B100F307CD /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
+		DCDD2E22176A19F700F307CD /* KKMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMacros.h; sourceTree = "<group>"; };
+		DCDD2E24176A2BA700F307CD /* KKButtonBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKButtonBehavior.h; sourceTree = "<group>"; };
+		DCDD2E25176A2BA700F307CD /* KKButtonBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKButtonBehavior.m; sourceTree = "<group>"; };
+		DCDD2E27176A3DFF00F307CD /* MyLabelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabelNode.h; sourceTree = "<group>"; };
+		DCDD2E28176A3DFF00F307CD /* MyLabelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabelNode.m; sourceTree = "<group>"; };
+		DCDD2E2D176A40C400F307CD /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		DCDD2E2E176A40C400F307CD /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		DCDD2E44176A40C400F307CD /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DCDD2E45176A40C400F307CD /* VTPG_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPG_Common.h; sourceTree = "<group>"; };
+		DCDD2E46176A40C400F307CD /* VTPG_Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPG_Common.m; sourceTree = "<group>"; };
+		DCDD2E48176A40C400F307CD /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLWriter.h; sourceTree = "<group>"; };
+		DCDD2E49176A40C400F307CD /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriter.m; sourceTree = "<group>"; };
+		DCDD2E57176A606900F307CD /* SKAction+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+KoboldKit.h"; sourceTree = "<group>"; };
+		DCDD2E58176A606900F307CD /* SKAction+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+KoboldKit.m"; sourceTree = "<group>"; };
+		DCFDF3BB176B244A00F2CAD0 /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
+		DCFDF3BC176B244A00F2CAD0 /* TestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
+		DCFDF3BF176B3FE100F2CAD0 /* CGPointExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointExtension.h; sourceTree = "<group>"; };
+		DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointExtension.m; sourceTree = "<group>"; };
+		DCFDF3CA176B638300F2CAD0 /* KKNodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeModel.h; sourceTree = "<group>"; };
+		DCFDF3CB176B638300F2CAD0 /* KKNodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCDD2DA51769FD0A00F307CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDD2E101769FD8500F307CD /* libKoboldKitLibrary.a in Frameworks */,
+				DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */,
+				DCDD2DB01769FD0A00F307CD /* UIKit.framework in Frameworks */,
+				DCDD2DB21769FD0A00F307CD /* SpriteKit.framework in Frameworks */,
+				DCDD2DAC1769FD0A00F307CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDD2DEB1769FD2E00F307CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDD2DEF1769FD2E00F307CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDD2DF81769FD2E00F307CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDD2DFC1769FD2E00F307CD /* XCTest.framework in Frameworks */,
+				DCDD2DFE1769FD2E00F307CD /* UIKit.framework in Frameworks */,
+				DCDD2DFD1769FD2E00F307CD /* Foundation.framework in Frameworks */,
+				DCDD2E011769FD2E00F307CD /* libKoboldKitLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCDD2D9F1769FD0A00F307CD = {
+			isa = PBXGroup;
+			children = (
+				DCDD2DB31769FD0A00F307CD /* KoboldKitDemo */,
+				DCDD2DF01769FD2E00F307CD /* KoboldKitLibrary */,
+				DCDD2E021769FD2E00F307CD /* KoboldKitLibraryTests */,
+				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
+				DCDD2DA91769FD0A00F307CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCDD2DA91769FD0A00F307CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2DA81769FD0A00F307CD /* KoboldKit.app */,
+				DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */,
+				DCDD2DFB1769FD2E00F307CD /* KoboldKitLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2DAB1769FD0A00F307CD /* Foundation.framework */,
+				DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */,
+				DCDD2DAF1769FD0A00F307CD /* UIKit.framework */,
+				DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */,
+				DCDD2DD41769FD0A00F307CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCDD2DB31769FD0A00F307CD /* KoboldKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2DBC1769FD0A00F307CD /* AppDelegate.h */,
+				DCDD2DBD1769FD0A00F307CD /* AppDelegate.m */,
+				DCDD2DBF1769FD0A00F307CD /* Main_iPhone.storyboard */,
+				DCDD2DC21769FD0A00F307CD /* Main_iPad.storyboard */,
+				DCDD2DC51769FD0A00F307CD /* ViewController.h */,
+				DCDD2DC61769FD0A00F307CD /* ViewController.m */,
+				DCDD2DC81769FD0A00F307CD /* MyScene.h */,
+				DCDD2DC91769FD0A00F307CD /* MyScene.m */,
+				DCDD2DCB1769FD0A00F307CD /* Spaceship.png */,
+				DCDD2DCD1769FD0A00F307CD /* Images.xcassets */,
+				DCDD2DB41769FD0A00F307CD /* Supporting Files */,
+				DCDD2E27176A3DFF00F307CD /* MyLabelNode.h */,
+				DCDD2E28176A3DFF00F307CD /* MyLabelNode.m */,
+			);
+			path = KoboldKitDemo;
+			sourceTree = "<group>";
+		};
+		DCDD2DB41769FD0A00F307CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2DB51769FD0A00F307CD /* KoboldKit-Info.plist */,
+				DCDD2DB61769FD0A00F307CD /* InfoPlist.strings */,
+				DCDD2DB91769FD0A00F307CD /* main.m */,
+				DCDD2DBB1769FD0A00F307CD /* KoboldKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCDD2DF01769FD2E00F307CD /* KoboldKitLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				DCFDF3C4176B4C1900F2CAD0 /* Headers */,
+				DCDD2E56176A604300F307CD /* Sprite Kit Categories */,
+				DCFDF3C2176B4B9A00F2CAD0 /* Sprite Kit Subclasses */,
+				DCFDF3C6176B629C00F2CAD0 /* Kobold Kit Nodes */,
+				DCDD2E23176A21CC00F307CD /* Kobold Kit Framework Classes */,
+				DCFDF3CD176B649E00F2CAD0 /* Kobold Kit Addon Classes */,
+				DCFDF3C5176B4C6000F2CAD0 /* Turnkey Behaviors */,
+				DCDD2E2B176A40C400F307CD /* External */,
+				DCDD2DF11769FD2E00F307CD /* Supporting Files */,
+			);
+			path = KoboldKitLibrary;
+			sourceTree = "<group>";
+		};
+		DCDD2DF11769FD2E00F307CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2DF21769FD2E00F307CD /* KoboldKitLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCDD2E021769FD2E00F307CD /* KoboldKitLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */,
+				DCFDF3BB176B244A00F2CAD0 /* TestScene.h */,
+				DCFDF3BC176B244A00F2CAD0 /* TestScene.m */,
+				DCDD2E031769FD2E00F307CD /* Supporting Files */,
+			);
+			path = KoboldKitLibraryTests;
+			sourceTree = "<group>";
+		};
+		DCDD2E031769FD2E00F307CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E041769FD2E00F307CD /* KoboldKitLibraryTests-Info.plist */,
+				DCDD2E051769FD2E00F307CD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCDD2E23176A21CC00F307CD /* Kobold Kit Framework Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E1C176A049F00F307CD /* KKNodeController.h */,
+				DCDD2E1D176A049F00F307CD /* KKNodeController.m */,
+				DCFDF3CA176B638300F2CAD0 /* KKNodeModel.h */,
+				DCFDF3CB176B638300F2CAD0 /* KKNodeModel.m */,
+				DCDD2E1F176A04B100F307CD /* KKNodeBehavior.h */,
+				DCDD2E20176A04B100F307CD /* KKNodeBehavior.m */,
+			);
+			name = "Kobold Kit Framework Classes";
+			sourceTree = "<group>";
+		};
+		DCDD2E2B176A40C400F307CD /* External */ = {
+			isa = PBXGroup;
+			children = (
+				DCFDF3BE176B3FE100F2CAD0 /* CGPointExtension */,
+				DCDD2E2C176A40C400F307CD /* JRSwizzle */,
+				DCDD2E2F176A40C400F307CD /* VTPG */,
+				DCDD2E47176A40C400F307CD /* XMLWriter */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		DCDD2E2C176A40C400F307CD /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E2D176A40C400F307CD /* JRSwizzle.h */,
+				DCDD2E2E176A40C400F307CD /* JRSwizzle.m */,
+			);
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		DCDD2E2F176A40C400F307CD /* VTPG */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E44176A40C400F307CD /* README */,
+				DCDD2E45176A40C400F307CD /* VTPG_Common.h */,
+				DCDD2E46176A40C400F307CD /* VTPG_Common.m */,
+			);
+			path = VTPG;
+			sourceTree = "<group>";
+		};
+		DCDD2E47176A40C400F307CD /* XMLWriter */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E48176A40C400F307CD /* XMLWriter.h */,
+				DCDD2E49176A40C400F307CD /* XMLWriter.m */,
+			);
+			path = XMLWriter;
+			sourceTree = "<group>";
+		};
+		DCDD2E56176A604300F307CD /* Sprite Kit Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E111769FDAC00F307CD /* SKNode+KoboldKit.h */,
+				DCDD2E121769FDAC00F307CD /* SKNode+KoboldKit.m */,
+				DCDD2E57176A606900F307CD /* SKAction+KoboldKit.h */,
+				DCDD2E58176A606900F307CD /* SKAction+KoboldKit.m */,
+			);
+			name = "Sprite Kit Categories";
+			sourceTree = "<group>";
+		};
+		DCFDF3BE176B3FE100F2CAD0 /* CGPointExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DCFDF3BF176B3FE100F2CAD0 /* CGPointExtension.h */,
+				DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */,
+			);
+			path = CGPointExtension;
+			sourceTree = "<group>";
+		};
+		DCFDF3C2176B4B9A00F2CAD0 /* Sprite Kit Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E16176A01E400F307CD /* KKViewController.h */,
+				DCDD2E17176A01E400F307CD /* KKViewController.m */,
+				DCDD2E19176A045A00F307CD /* KKScene.h */,
+				DCDD2E1A176A045A00F307CD /* KKScene.m */,
+			);
+			name = "Sprite Kit Subclasses";
+			sourceTree = "<group>";
+		};
+		DCFDF3C4176B4C1900F2CAD0 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E141769FECA00F307CD /* KoboldKit.h */,
+				DCDD2E151769FF1E00F307CD /* KKSpriteKit.h */,
+				DCDD2E22176A19F700F307CD /* KKMacros.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		DCFDF3C5176B4C6000F2CAD0 /* Turnkey Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD2E24176A2BA700F307CD /* KKButtonBehavior.h */,
+				DCDD2E25176A2BA700F307CD /* KKButtonBehavior.m */,
+			);
+			name = "Turnkey Behaviors";
+			sourceTree = "<group>";
+		};
+		DCFDF3C6176B629C00F2CAD0 /* Kobold Kit Nodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Kobold Kit Nodes";
+			sourceTree = "<group>";
+		};
+		DCFDF3CD176B649E00F2CAD0 /* Kobold Kit Addon Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Kobold Kit Addon Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCDD2DA71769FD0A00F307CD /* KoboldKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCDD2DE41769FD0A00F307CD /* Build configuration list for PBXNativeTarget "KoboldKit" */;
+			buildPhases = (
+				DCDD2DA41769FD0A00F307CD /* Sources */,
+				DCDD2DA51769FD0A00F307CD /* Frameworks */,
+				DCDD2DA61769FD0A00F307CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoboldKit;
+			productName = KoboldKitDemo;
+			productReference = DCDD2DA81769FD0A00F307CD /* KoboldKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCDD2E0A1769FD2E00F307CD /* Build configuration list for PBXNativeTarget "KoboldKitLibrary" */;
+			buildPhases = (
+				DCDD2DEA1769FD2E00F307CD /* Sources */,
+				DCDD2DEB1769FD2E00F307CD /* Frameworks */,
+				DCDD2DEC1769FD2E00F307CD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoboldKitLibrary;
+			productName = KoboldKitLibrary;
+			productReference = DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DCDD2DFA1769FD2E00F307CD /* KoboldKitLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCDD2E0D1769FD2E00F307CD /* Build configuration list for PBXNativeTarget "KoboldKitLibraryTests" */;
+			buildPhases = (
+				DCDD2DF71769FD2E00F307CD /* Sources */,
+				DCDD2DF81769FD2E00F307CD /* Frameworks */,
+				DCDD2DF91769FD2E00F307CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCDD2E001769FD2E00F307CD /* PBXTargetDependency */,
+			);
+			name = KoboldKitLibraryTests;
+			productName = KoboldKitLibraryTests;
+			productReference = DCDD2DFB1769FD2E00F307CD /* KoboldKitLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCDD2DA01769FD0A00F307CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Steffen Itterheim";
+				TargetAttributes = {
+					DCDD2DFA1769FD2E00F307CD = {
+						TestTargetID = DCDD2DA71769FD0A00F307CD;
+					};
+				};
+			};
+			buildConfigurationList = DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCDD2D9F1769FD0A00F307CD;
+			productRefGroup = DCDD2DA91769FD0A00F307CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCDD2DA71769FD0A00F307CD /* KoboldKit */,
+				DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */,
+				DCDD2DFA1769FD2E00F307CD /* KoboldKitLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCDD2DA61769FD0A00F307CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDD2DCC1769FD0A00F307CD /* Spaceship.png in Resources */,
+				DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */,
+				DCDD2DC41769FD0A00F307CD /* Main_iPad.storyboard in Resources */,
+				DCDD2DC11769FD0A00F307CD /* Main_iPhone.storyboard in Resources */,
+				DCDD2DB81769FD0A00F307CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDD2DF91769FD2E00F307CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDD2E071769FD2E00F307CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCDD2DA41769FD0A00F307CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDD2DCA1769FD0A00F307CD /* MyScene.m in Sources */,
+				DCDD2DC71769FD0A00F307CD /* ViewController.m in Sources */,
+				DCDD2DBE1769FD0A00F307CD /* AppDelegate.m in Sources */,
+				DCDD2E29176A3DFF00F307CD /* MyLabelNode.m in Sources */,
+				DCDD2DBA1769FD0A00F307CD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDD2DEA1769FD2E00F307CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */,
+				DCDD2E4A176A40C400F307CD /* JRSwizzle.m in Sources */,
+				DCDD2E1B176A045A00F307CD /* KKScene.m in Sources */,
+				DCDD2E18176A01E400F307CD /* KKViewController.m in Sources */,
+				DCDD2E131769FDAC00F307CD /* SKNode+KoboldKit.m in Sources */,
+				DCFDF3CC176B638300F2CAD0 /* KKNodeModel.m in Sources */,
+				DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */,
+				DCDD2E21176A04B100F307CD /* KKNodeBehavior.m in Sources */,
+				DCDD2E1E176A049F00F307CD /* KKNodeController.m in Sources */,
+				DCDD2E26176A2BA700F307CD /* KKButtonBehavior.m in Sources */,
+				DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */,
+				DCDD2E59176A606900F307CD /* SKAction+KoboldKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDD2DF71769FD2E00F307CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFDF3BD176B244A00F2CAD0 /* TestScene.m in Sources */,
+				DCDD2E091769FD2E00F307CD /* KoboldKitLibraryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCDD2E001769FD2E00F307CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */;
+			targetProxy = DCDD2DFF1769FD2E00F307CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCDD2DB61769FD0A00F307CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCDD2DB71769FD0A00F307CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCDD2DBF1769FD0A00F307CD /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCDD2DC01769FD0A00F307CD /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DCDD2DC21769FD0A00F307CD /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCDD2DC31769FD0A00F307CD /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DCDD2E051769FD2E00F307CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCDD2E061769FD2E00F307CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCDD2DE21769FD0A00F307CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCDD2DE31769FD0A00F307CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCDD2DE51769FD0A00F307CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitDemo/KoboldKit-Prefix.pch";
+				INFOPLIST_FILE = "KoboldKitDemo/KoboldKit-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = KoboldKit;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCDD2DE61769FD0A00F307CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitDemo/KoboldKit-Prefix.pch";
+				INFOPLIST_FILE = "KoboldKitDemo/KoboldKit-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = KoboldKit;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCDD2E0B1769FD2E00F307CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/KoboldKitLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DCDD2E0C1769FD2E00F307CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/KoboldKitLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DCDD2E0E1769FD2E00F307CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KoboldKitDemo.app/KoboldKitDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KoboldKitLibraryTests/KoboldKitLibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DCDD2E0F1769FD2E00F307CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KoboldKitDemo.app/KoboldKitDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
+				INFOPLIST_FILE = "KoboldKitLibraryTests/KoboldKitLibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDD2DE21769FD0A00F307CD /* Debug */,
+				DCDD2DE31769FD0A00F307CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCDD2DE41769FD0A00F307CD /* Build configuration list for PBXNativeTarget "KoboldKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDD2DE51769FD0A00F307CD /* Debug */,
+				DCDD2DE61769FD0A00F307CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCDD2E0A1769FD2E00F307CD /* Build configuration list for PBXNativeTarget "KoboldKitLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDD2E0B1769FD2E00F307CD /* Debug */,
+				DCDD2E0C1769FD2E00F307CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCDD2E0D1769FD2E00F307CD /* Build configuration list for PBXNativeTarget "KoboldKitLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDD2E0E1769FD2E00F307CD /* Debug */,
+				DCDD2E0F1769FD2E00F307CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCDD2DA01769FD0A00F307CD /* Project object */;
+}
