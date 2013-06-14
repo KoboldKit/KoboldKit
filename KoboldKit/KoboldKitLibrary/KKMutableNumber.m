@@ -1,14 +1,12 @@
 //
-// KTMutableNumber.m
-// Kobold2D-Libraries
 //
 // Created by Steffen Itterheim on 19.10.12.
 //
 //
 
-#import "KTMutableNumber.h"
+#import "KKMutableNumber.h"
 
-NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
+NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 
 #define toBool(n) ((n >= YES) ? YES : NO)
 
@@ -25,12 +23,12 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 -(id) initWithCoder:(NSCoder*)aDecoder
 {
-	return [self initWithBool:[aDecoder decodeBoolForKey:kCodingKeyForMutableNumber]];
+	return [self initWithBool:[aDecoder decodeBoolForKey:CodingKeyForMutableNumber]];
 }
 
 -(void) encodeWithCoder:(NSCoder*)aCoder
 {
-	[aCoder encodeBool:_number forKey:kCodingKeyForMutableNumber];
+	[aCoder encodeBool:_number forKey:CodingKeyForMutableNumber];
 }
 
 -(BOOL) boolValue
@@ -198,12 +196,12 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 -(id) initWithCoder:(NSCoder*)aDecoder
 {
-	return [self initWithFloat:[aDecoder decodeFloatForKey:kCodingKeyForMutableNumber]];
+	return [self initWithFloat:[aDecoder decodeFloatForKey:CodingKeyForMutableNumber]];
 }
 
 -(void) encodeWithCoder:(NSCoder*)aCoder
 {
-	[aCoder encodeFloat:_number forKey:kCodingKeyForMutableNumber];
+	[aCoder encodeFloat:_number forKey:CodingKeyForMutableNumber];
 }
 
 -(BOOL) boolValue
@@ -371,12 +369,12 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 -(id) initWithCoder:(NSCoder*)aDecoder
 {
-	return [self initWithDouble:[aDecoder decodeDoubleForKey:kCodingKeyForMutableNumber]];
+	return [self initWithDouble:[aDecoder decodeDoubleForKey:CodingKeyForMutableNumber]];
 }
 
 -(void) encodeWithCoder:(NSCoder*)aCoder
 {
-	[aCoder encodeDouble:_number forKey:kCodingKeyForMutableNumber];
+	[aCoder encodeDouble:_number forKey:CodingKeyForMutableNumber];
 }
 
 -(BOOL) boolValue
@@ -544,12 +542,12 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 -(id) initWithCoder:(NSCoder*)aDecoder
 {
-	return [self initWithInt32:[aDecoder decodeInt32ForKey:kCodingKeyForMutableNumber]];
+	return [self initWithInt32:[aDecoder decodeInt32ForKey:CodingKeyForMutableNumber]];
 }
 
 -(void) encodeWithCoder:(NSCoder*)aCoder
 {
-	[aCoder encodeInt32:_number forKey:kCodingKeyForMutableNumber];
+	[aCoder encodeInt32:_number forKey:CodingKeyForMutableNumber];
 }
 
 -(BOOL) boolValue
@@ -717,12 +715,12 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 -(id) initWithCoder:(NSCoder*)aDecoder
 {
-	return [self initWithInt64:[aDecoder decodeInt64ForKey:kCodingKeyForMutableNumber]];
+	return [self initWithInt64:[aDecoder decodeInt64ForKey:CodingKeyForMutableNumber]];
 }
 
 -(void) encodeWithCoder:(NSCoder*)aCoder
 {
-	[aCoder encodeInt64:_number forKey:kCodingKeyForMutableNumber];
+	[aCoder encodeInt64:_number forKey:CodingKeyForMutableNumber];
 }
 
 -(BOOL) boolValue
@@ -877,7 +875,7 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 @end
 
-@implementation KTMutableNumber
+@implementation KKMutableNumber
 
 @dynamic boolValue, charValue, doubleValue, floatValue, integerValue, intValue, longLongValue, longValue, shortValue;
 @dynamic unsignedCharValue, unsignedIntegerValue, unsignedIntValue, unsignedLongLongValue, unsignedLongValue, unsignedShortValue;
@@ -911,18 +909,18 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 +(id) numberWithInteger:(NSInteger)number
 {
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 	return [[KTInt32Number alloc] initWithInt32:number];
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 	return [[KTInt64Number alloc] initWithInt64:number];
 #endif
 }
 
 +(id) numberWithLong:(long)number
 {
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 	return [[KTInt32Number alloc] initWithInt32:number];
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 	return [[KTInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -949,18 +947,18 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 +(id) numberWithUnsignedInteger:(NSUInteger)number
 {
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 	return [[KTInt32Number alloc] initWithInt32:number];
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 	return [[KTInt64Number alloc] initWithInt64:number];
 #endif
 }
 
 +(id) numberWithUnsignedLong:(unsigned long)number
 {
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 	return [[KTInt32Number alloc] initWithInt32:number];
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 	return [[KTInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -1002,18 +1000,18 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 -(id) initWithInteger:(NSInteger)number
 {
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 	return [[KTInt32Number alloc] initWithInt32:number];
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 	return [[KTInt64Number alloc] initWithInt64:number];
 #endif
 }
 
 -(id) initWithLong:(long)number
 {
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 	return [[KTInt32Number alloc] initWithInt32:number];
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 	return [[KTInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -1040,18 +1038,18 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 
 -(id) initWithUnsignedInteger:(NSUInteger)number
 {
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 	return [[KTInt32Number alloc] initWithInt32:number];
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 	return [[KTInt64Number alloc] initWithInt64:number];
 #endif
 }
 
 -(id) initWithUnsignedLong:(unsigned long)number
 {
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 	return [[KTInt32Number alloc] initWithInt32:number];
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 	return [[KTInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -1066,18 +1064,29 @@ NSString* const kCodingKeyForMutableNumber = @"mutableNumber";
 	return [[KTInt32Number alloc] initWithInt32:number];
 }
 
+#pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
 // to be overridden by concrete implementation
 -(id) initWithCoder:(NSCoder*)aDecoder
 {
-	[NSException raise:@"KTMutableNumber should not be decoded" format:@"KTMutableNumber should not be decoded, it's an abstract class cluster interface"];
+	[NSException raise:NSInternalInconsistencyException format:@"KKMutableNumber should not be decoded, it's an abstract class cluster interface"];
 	return nil;
 }
 
 -(void) encodeWithCoder:(NSCoder*)aCoder
 {
-	[NSException raise:@"KTMutableNumber should not be encoded" format:@"KTMutableNumber should not be encoded, it's an abstract class cluster interface"];
+	[NSException raise:NSInternalInconsistencyException format:@"KKMutableNumber should not be encoded, it's an abstract class cluster interface"];
 }
+
+#pragma mark NSCopying
+
+-(instancetype) copyWithZone:(NSZone *)zone
+{
+	[NSException raise:NSInternalInconsistencyException format:@"KKMutableNumber should not be encoded, it's an abstract class cluster interface"];
+	return nil;
+}
+
+#pragma mark Equality
 
 @end

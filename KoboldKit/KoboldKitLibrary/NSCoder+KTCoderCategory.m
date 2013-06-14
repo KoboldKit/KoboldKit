@@ -10,7 +10,7 @@
 
 @implementation NSCoder (KTCoderCategory)
 
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 -(void) encodePoint:(CGPoint)point forKey:(NSString*)key
 {
 	[self encodeCGPoint:point forKey:key];
@@ -21,7 +21,7 @@
 	return [self decodeCGPointForKey:key];
 }
 
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 -(void) encodeCGPoint:(CGPoint)point forKey:(NSString*)key
 {
 	[self encodePoint:point forKey:key];
@@ -32,6 +32,6 @@
 	return [self decodePointForKey:key];
 }
 
-#endif /* if KK_PLATFORM_IOS */
+#endif /* if TARGET_OS_IPHONE */
 
 @end

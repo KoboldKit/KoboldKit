@@ -12,12 +12,14 @@
 extern NSString* const KKNodeControllerUserDataKey;
 
 @class KKNodeBehavior;
+@class KKNodeModel;
 
 /** KKNodeController adds game component (behavior, model) functionality to a node. */
 @interface KKNodeController : NSObject <NSCoding, NSCopying>
 {
 	@private
 	NSMutableArray* _behaviors;
+	KKNodeModel* _model;
 }
 
 /** @returns The controller's owning node. You should never change this reference yourself! */
@@ -27,7 +29,7 @@ extern NSString* const KKNodeControllerUserDataKey;
 /** @returns The list of behaviors of the node. */
 @property (atomic, readonly) NSArray* behaviors;
 /** @returns The model object associated with this controller/node. */
-@property (atomic) KKModel* model
+@property (atomic) KKNodeModel* model;
 /** If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
  also check the controller's paused state to ensure they don't process/forward events while paused.
  @returns The current paused status. */

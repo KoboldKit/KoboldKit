@@ -8,6 +8,7 @@
 
 #import "KKScene.h"
 #import "KKNodeController.h"
+#import "SKNode+KoboldKit.h"
 
 @implementation KKScene
 
@@ -200,6 +201,7 @@
 	return dump;
 }
 
+#pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
 static NSString* const ArchiveKeyForControllers = @"controller";
@@ -235,6 +237,32 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 	copy->_inputReceivers = [[NSMutableArray alloc] initWithArray:_inputReceivers copyItems:YES];
 	copy->_frameCount = _frameCount;
 	return copy;
+}
+
+#pragma mark Equality
+
+-(BOOL) isEqualToScene:(KKScene*)scene
+{
+	if ([self isEqualToSceneProperties:scene] == NO)
+		return NO;
+	
+	return [self isEqualToNode:scene];
+}
+
+-(BOOL) isEqualToSceneTree:(KKScene*)scene
+{
+	if ([self isEqualToSceneProperties:scene] == NO)
+		return NO;
+	
+	return [self isEqualToNodeTree:scene];
+}
+
+-(BOOL) isEqualToSceneProperties:(KKScene*)scene
+{
+	if (_frameCount != scene.frameCount)
+		return NO;
+	
+	return YES;
 }
 
 @end

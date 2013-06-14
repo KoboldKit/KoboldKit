@@ -42,6 +42,9 @@
 		DCFDF3BD176B244A00F2CAD0 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3BC176B244A00F2CAD0 /* TestScene.m */; };
 		DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
 		DCFDF3CC176B638300F2CAD0 /* KKNodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3CB176B638300F2CAD0 /* KKNodeModel.m */; };
+		DCFDF3DF176B65AA00F2CAD0 /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3D9176B65AA00F2CAD0 /* KKMutableNumber.m */; };
+		DCFDF3E0176B65AA00F2CAD0 /* KKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3DC176B65AA00F2CAD0 /* KKVersion.m */; };
+		DCFDF3E1176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3DE176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,13 @@
 		DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointExtension.m; sourceTree = "<group>"; };
 		DCFDF3CA176B638300F2CAD0 /* KKNodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeModel.h; sourceTree = "<group>"; };
 		DCFDF3CB176B638300F2CAD0 /* KKNodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeModel.m; sourceTree = "<group>"; };
+		DCFDF3D8176B65AA00F2CAD0 /* KKMutableNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMutableNumber.h; sourceTree = "<group>"; };
+		DCFDF3D9176B65AA00F2CAD0 /* KKMutableNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMutableNumber.m; sourceTree = "<group>"; };
+		DCFDF3DA176B65AA00F2CAD0 /* KKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTypes.h; sourceTree = "<group>"; };
+		DCFDF3DB176B65AA00F2CAD0 /* KKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKVersion.h; sourceTree = "<group>"; };
+		DCFDF3DC176B65AA00F2CAD0 /* KKVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKVersion.m; sourceTree = "<group>"; };
+		DCFDF3DD176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KTCoderCategory.h"; sourceTree = "<group>"; };
+		DCFDF3DE176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KTCoderCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,8 +244,8 @@
 				DCFDF3C2176B4B9A00F2CAD0 /* Sprite Kit Subclasses */,
 				DCFDF3C6176B629C00F2CAD0 /* Kobold Kit Nodes */,
 				DCDD2E23176A21CC00F307CD /* Kobold Kit Framework Classes */,
-				DCFDF3CD176B649E00F2CAD0 /* Kobold Kit Addon Classes */,
 				DCFDF3C5176B4C6000F2CAD0 /* Turnkey Behaviors */,
+				DCFDF3CD176B649E00F2CAD0 /* Kobold Kit Addon Classes */,
 				DCDD2E2B176A40C400F307CD /* External */,
 				DCDD2DF11769FD2E00F307CD /* Supporting Files */,
 			);
@@ -357,8 +367,11 @@
 			isa = PBXGroup;
 			children = (
 				DCDD2E141769FECA00F307CD /* KoboldKit.h */,
+				DCFDF3DB176B65AA00F2CAD0 /* KKVersion.h */,
+				DCFDF3DC176B65AA00F2CAD0 /* KKVersion.m */,
 				DCDD2E151769FF1E00F307CD /* KKSpriteKit.h */,
 				DCDD2E22176A19F700F307CD /* KKMacros.h */,
+				DCFDF3DA176B65AA00F2CAD0 /* KKTypes.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -382,6 +395,10 @@
 		DCFDF3CD176B649E00F2CAD0 /* Kobold Kit Addon Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DCFDF3D8176B65AA00F2CAD0 /* KKMutableNumber.h */,
+				DCFDF3D9176B65AA00F2CAD0 /* KKMutableNumber.m */,
+				DCFDF3DD176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.h */,
+				DCFDF3DE176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m */,
 			);
 			name = "Kobold Kit Addon Classes";
 			sourceTree = "<group>";
@@ -524,6 +541,9 @@
 				DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */,
 				DCDD2E21176A04B100F307CD /* KKNodeBehavior.m in Sources */,
 				DCDD2E1E176A049F00F307CD /* KKNodeController.m in Sources */,
+				DCFDF3E1176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m in Sources */,
+				DCFDF3E0176B65AA00F2CAD0 /* KKVersion.m in Sources */,
+				DCFDF3DF176B65AA00F2CAD0 /* KKMutableNumber.m in Sources */,
 				DCDD2E26176A2BA700F307CD /* KKButtonBehavior.m in Sources */,
 				DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */,
 				DCDD2E59176A606900F307CD /* SKAction+KoboldKit.m in Sources */,
@@ -695,6 +715,12 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -707,6 +733,12 @@
 				DSTROOT = /tmp/KoboldKitLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

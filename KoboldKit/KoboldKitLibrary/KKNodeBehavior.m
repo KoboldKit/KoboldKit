@@ -43,13 +43,7 @@
 {
 }
 
-#pragma mark Equality
-
--(BOOL) isEqualToBehavior:(KKNodeBehavior*)behavior
-{
-	return NO;
-}
-
+#pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
 static NSString* const ArchiveKeyForKey = @"key";
@@ -86,6 +80,22 @@ static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 	copy->_key = [_key copy];
 	copy->_wantsUpdate = _wantsUpdate;
 	return copy;
+}
+
+#pragma mark Equality
+
+-(BOOL) isEqualToBehavior:(KKNodeBehavior*)behavior
+{
+	if ([self isMemberOfClass:[behavior class]] == NO)
+		return NO;
+	
+	if (_key && [_key isEqualToString:behavior.key] == NO)
+		return NO;
+	
+	if (_wantsUpdate != behavior.wantsUpdate)
+		return NO;
+	
+	return YES;
 }
 
 @end

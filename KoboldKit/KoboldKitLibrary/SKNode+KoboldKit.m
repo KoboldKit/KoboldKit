@@ -127,6 +127,9 @@
 	return [NSString stringWithFormat:@"%@ controller:%@ behaviors:%@", [node kkDescription], node.controller, node.controller.behaviors];
 }
 
+#pragma mark !! Update methods below whenever class layout changes !!
+#pragma mark NSCoding
+
 #pragma mark NSCopying
 
 -(instancetype) kkCopyWithZone:(NSZone*)zone
@@ -172,9 +175,11 @@
 
 	if ([self.controller isEqualToController:node.controller] == NO)
 	{
-		NSLog(@"Node Controller/Behavior mismatch: %@ (%@) != %@ (%@)", self, self.controller, node, node.controller);
+		NSLog(@"Node Controller mismatch: %@ (%@) != %@ (%@)", self, self.controller, node, node.controller);
 		return NO;
 	}
+	
+#pragma message "TODO: compare userData in isEqual"
 
 	if (recursive)
 	{

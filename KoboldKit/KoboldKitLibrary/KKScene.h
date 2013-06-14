@@ -40,6 +40,13 @@ typedef enum
  @param receiver An object that was previously registered as input receiver. */
 -(void) unregisterInputReceiver:(id)receiver;
 
+/** */
+-(BOOL) isEqualToScene:(KKScene*)scene;
+-(BOOL) isEqualToSceneTree:(KKScene*)scene;
+-(BOOL) isEqualToSceneProperties:(KKScene*)scene;
+
+/**
+ @returns */
 -(NSString*) dumpSceneGraph:(KKSceneGraphDumpOptions)options;
 
 @end

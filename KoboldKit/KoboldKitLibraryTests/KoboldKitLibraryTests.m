@@ -52,7 +52,7 @@
 	NSData* sceneArchive = [NSKeyedArchiver archivedDataWithRootObject:_testScene];
 	KKScene* decodedScene = [NSKeyedUnarchiver unarchiveObjectWithData:sceneArchive];
 
-	BOOL isEqual = [_testScene isEqualToNodeTree:decodedScene];
+	BOOL isEqual = [_testScene isEqualToSceneTree:decodedScene];
 	if (isEqual == NO)
 	{
 		NSString* testSceneDump = [_testScene dumpSceneGraph:KKSceneGraphDumpAll];

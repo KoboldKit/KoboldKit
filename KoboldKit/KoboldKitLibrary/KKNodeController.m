@@ -9,6 +9,7 @@
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
 #import "KKScene.h"
+#import "KKNodeModel.h"
 #import "KKNodeBehavior.h"
 
 NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
@@ -36,6 +37,23 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 {
 	[self removeAllBehaviors];
 	[_node.kkScene unregisterController:self];
+}
+
+#pragma mark Properties
+
+@dynamic model;
+-(KKNodeModel*) model
+{
+	return _model;
+}
+
+-(void) setModel:(KKNodeModel *)model
+{
+	@synchronized(self)
+	{
+		_model = model;
+		_model.controller = self;
+	}
 }
 
 #pragma mark Behaviors
@@ -135,13 +153,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	}
 }
 
-#pragma mark Equality
-
--(BOOL) isEqualToController:(KKNodeController*)controller
-{
-	return NO;
-}
-
+#pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
 static NSString* const ArchiveKeyForNode = @"node";
@@ -184,6 +196,40 @@ static NSString* const ArchiveKeyForPaused = @"paused";
 	copy->_behaviors = [[NSMutableArray alloc] initWithArray:_behaviors copyItems:YES];
 	copy->_paused = _paused;
 	return copy;
+}
+
+#pragma mark Equality
+
+-(BOOL) isEqualToController:(KKNodeController*)controller
+{
+	if ([self isEqualToControllerProperties:controller] == NO)
+		return NO;
+
+	NSUInteger behaviorsCount = controller.behaviors.count;
+	if (controller.behaviors.count != behaviorsCount)
+		return NO;
+	
+	for (NSUInteger i = 0; i < behaviorsCount; i++)
+	{
+		KKNodeBehavior* selfBehavior = [self.behaviors objectAtIndex:i];
+		KKNodeBehavior* controllerBehavior = [controller.behaviors objectAtIndex:i];
+		
+		if ([selfBehavior isEqualToBehavior:controllerBehavior] == NO)
+			return NO;
+	}
+	
+#pragma message "TODO: compare model in isEqual"
+#pragma message "TODO: compare userData in isEqual"
+	
+	return YES;
+}
+
+-(BOOL) isEqualToControllerProperties:(KKNodeController*)controller
+{
+	if (self.paused != controller.paused)
+		return NO;
+	
+	return YES;
 }
 
 @end

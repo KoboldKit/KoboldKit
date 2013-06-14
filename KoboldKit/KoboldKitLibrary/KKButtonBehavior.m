@@ -102,6 +102,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 #elif TARGET_OS_MAC
 #endif
 
+#pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
 static NSString* const ArchiveKeyForExecuteBlock = @"executeBlock";
@@ -115,9 +116,9 @@ static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
 	self = [super initWithCoder:decoder];
 	if (self)
 	{
-		_selectedScale = [decoder decodeDoubleForKey:ArchiveKeyForFocusScale];
 		_originalXScale = [decoder decodeDoubleForKey:ArchiveKeyForOriginalXScale];
 		_originalYScale = [decoder decodeDoubleForKey:ArchiveKeyForOriginalYScale];
+		_selectedScale = [decoder decodeDoubleForKey:ArchiveKeyForFocusScale];
 		_isSelected = [decoder decodeBoolForKey:ArchiveKeyForHasFocus];
 	}
 	return self;
@@ -126,9 +127,9 @@ static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
 -(void) encodeWithCoder:(NSCoder*)encoder
 {
 	[super encodeWithCoder:encoder];
-	[encoder encodeDouble:_selectedScale forKey:ArchiveKeyForFocusScale];
 	[encoder encodeDouble:_originalXScale forKey:ArchiveKeyForOriginalXScale];
 	[encoder encodeDouble:_originalYScale forKey:ArchiveKeyForOriginalYScale];
+	[encoder encodeDouble:_selectedScale forKey:ArchiveKeyForFocusScale];
 	[encoder encodeBool:_isSelected forKey:ArchiveKeyForHasFocus];
 }
 
@@ -136,8 +137,26 @@ static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
 
 -(id) copyWithZone:(NSZone*)zone
 {
-	KKNodeBehavior* copy = [[[self class] allocWithZone:zone] init];
-	//copy->_node = _node;
+	KKButtonBehavior* copy = [[[self class] allocWithZone:zone] init];
+	copy->_originalXScale = _originalXScale;
+	copy->_originalYScale = _originalYScale;
+	copy->_selectedScale = _selectedScale;
+	copy->_isSelected = _isSelected;
 	return copy;
 }
+
+#pragma mark Equality
+
+-(BOOL) isEqualToBehavior:(KKButtonBehavior*)behavior
+{
+	if ([super isEqualToBehavior:behavior] == NO)
+		return NO;
+	
+	// custom equality checks
+	return (_originalXScale == behavior->_originalXScale &&
+			_originalYScale == behavior->_originalYScale &&
+			_selectedScale == behavior.selectedScale &&
+			_isSelected == behavior.isSelected);
+}
+
 @end

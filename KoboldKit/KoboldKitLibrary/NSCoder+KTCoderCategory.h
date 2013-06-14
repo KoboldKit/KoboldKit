@@ -11,16 +11,16 @@
 /** Adds encode/decode convenience methods for common structs not supported natively (or cross-platform) by NSCoder. */
 @interface NSCoder (KTCoderCategory)
 
-#if KK_PLATFORM_IOS
+#if TARGET_OS_IPHONE
 /** encode a CGPoint */
 -(void) encodePoint:(CGPoint)point forKey:(NSString*)key;
 /** decode a CGPoint */
 -(CGPoint) decodePointForKey:(NSString*)key;
-#elif KK_PLATFORM_MAC
+#elif TARGET_OS_MAC
 /** encode a CGPoint on OS X */
 -(void) encodeCGPoint:(CGPoint)point forKey:(NSString*)key;
 /** decode a CGPoint on OS X */
 -(CGPoint) decodeCGPointForKey:(NSString*)key;
-#endif /* if KK_PLATFORM_IOS */
+#endif /* if TARGET_OS_IPHONE */
 
 @end

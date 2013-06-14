@@ -1,6 +1,4 @@
 //
-// KTMutableNumber.h
-// Kobold2D-Libraries
 //
 // Created by Steffen Itterheim on 19.10.12.
 //
@@ -15,9 +13,8 @@
 
    Once a concrete subclass of KTMutableNumber has been created using one of the initializers, the type of that number is set and can
    not be changed. For example, if you assign a BOOL value to a float number, the BOOL value will be cast to float. Likewise if you
-   access the charValue property of a number whose type is float, the returned value will be cast from float to char before it is returned.
- */
-@interface KTMutableNumber : NSObject<NSCoding>
+   access the charValue property of a number whose type is float, the returned value will be cast from float to char before it is returned. */
+@interface KKMutableNumber : NSObject<NSCoding, NSCopying>
 
 /** create a mutable number of type BOOL */
 +(id) numberWithBool:(BOOL)number;
@@ -114,7 +111,7 @@
 
 @end
 
-@interface KTBoolNumber : KTMutableNumber
+@interface KTBoolNumber : KKMutableNumber
 {
 	@private
 	BOOL _number;
@@ -122,7 +119,7 @@
 -(id) initWithBool:(BOOL)boolNumber;
 @end
 
-@interface KTFloatNumber : KTMutableNumber
+@interface KTFloatNumber : KKMutableNumber
 {
 	@private
 	float _number;
@@ -130,7 +127,7 @@
 -(id) initWithFloat:(float)floatNumber;
 @end
 
-@interface KTDoubleNumber : KTMutableNumber
+@interface KTDoubleNumber : KKMutableNumber
 {
 	@private
 	double _number;
@@ -139,7 +136,7 @@
 @end
 
 // the Number is 32-Bit even on 64-Bit Mac OS
-@interface KTInt32Number : KTMutableNumber
+@interface KTInt32Number : KKMutableNumber
 {
 	@private
 	int32_t _number;
@@ -148,7 +145,7 @@
 @end
 
 // the Number is 64-Bit even on 32-Bit iOS
-@interface KTInt64Number : KTMutableNumber
+@interface KTInt64Number : KKMutableNumber
 {
 	@private
 	int64_t _number;

@@ -1,14 +1,12 @@
 //
-// KTVersion.m
-// Kobold2D-Libraries
 //
 // Created by Steffen Itterheim on 19.10.12.
 //
 //
 
-#import "KTVersion.h"
+#import "KKVersion.h"
 
-NSString* koboldTouchVersion()
+NSString* kkVersionString()
 {
-	return @"KoboldTouch™ v6.2.3";
+	return @"Kobold Kit™ (1 << 7) alpha 01 beta (null) candidate:NO closed:YES";
 }
