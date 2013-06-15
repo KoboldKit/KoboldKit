@@ -6,12 +6,9 @@ Kobold Kit is a game engine built on Sprite Kit. It adds additional features, fl
 Status
 ======
 
-Work in progress. Not even alpha yet.
+Work in progress. Needs testing.
 
-Currently working on NSCoding, NSCopying and equality tests. 
-Goal is to ensure an entire scene and its components can be copied or encoded and the equality test then confirms success or finds any errors right away. Any user should be able to use this test, to encourage more users to adopt NSCoding/NSCopying.
-
-Next up will be Tilemap support, ported from Kobold Touch.
+Task Tracker: https://www.pivotaltracker.com/s/projects/849925
 
 Overview
 ========
@@ -47,4 +44,4 @@ KKScene purpose:
 
 This is just a rough description. More details as things move forward.
 
-PS: documentation will use appledoc, check this: http://cl.ly/image/3d3f2P0w2C1y
+PS: documentation use appledoc (html & docset), check this preview: http://cl.ly/image/3d3f2P0w2C1y

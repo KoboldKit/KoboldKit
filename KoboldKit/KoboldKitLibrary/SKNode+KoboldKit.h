@@ -15,6 +15,9 @@
 /** Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors. */
 @interface SKNode (KoboldKit)
 
+/** (not documented) */
+-(void) centerOnNode:(SKNode*)node
+
 /** @name Creating and Accessing the Controller */
 /** Returns the node's controller object. */
 @property (atomic) KKNodeController* controller;
