@@ -19,8 +19,7 @@
 	self = [super initWithSize:size];
 	if (self)
 	{
-		self.physicsWorld.contactDelegate = self;
-		//self.anchorPoint = CGPointMake(0.5f, 0.5f);
+		[self initDefaults];
 	}
 	return self;
 }
@@ -30,9 +29,18 @@
 	self = [super init];
 	if (self)
 	{
-		self.physicsWorld.contactDelegate = self;
+		[self initDefaults];
 	}
 	return self;
+}
+
+-(void) initDefaults
+{
+	//self.anchorPoint = CGPointMake(0.5f, 0.5f);
+	self.physicsWorld.contactDelegate = self;
+	_inputReceivers = [NSMutableArray array];
+	_inputReceiversToAdd = [NSMutableArray array];
+	_inputReceiversToRemove = [NSMutableArray array];
 }
 
 -(void) dealloc
@@ -90,28 +98,32 @@
 {
 	
 }
+*/
 
 -(void) didSimulatePhysics
 {
-	
+	[self addAndRemoveInputReceivers];
 }
-*/
 
 #pragma mark Input
 
+-(void) addAndRemoveInputReceivers
+{
+	[_inputReceivers addObjectsFromArray:_inputReceiversToAdd];
+	[_inputReceiversToAdd removeAllObjects];
+
+	[_inputReceivers removeObjectsInArray:_inputReceiversToRemove];
+	[_inputReceiversToRemove removeAllObjects];
+}
+
 -(void) registerInputReceiver:(id)receiver
 {
-	if (_inputReceivers == nil)
-	{
-		_inputReceivers = [NSMutableArray arrayWithCapacity:1];
-	}
-	
-	[_inputReceivers addObject:receiver];
+	[_inputReceiversToAdd addObject:receiver];
 }
 
 -(void) unregisterInputReceiver:(id)receiver
 {
-	[_inputReceivers removeObject:receiver];
+	[_inputReceiversToRemove addObject:receiver];
 }
 
 #pragma mark Touches

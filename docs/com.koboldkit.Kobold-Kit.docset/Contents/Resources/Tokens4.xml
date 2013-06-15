@@ -190,5 +190,115 @@ also check the controller's paused state to ensure they don't process/forward ev
 			<Anchor>//api/name/controllerWithBehaviors:</Anchor>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/initWithBehaviors:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBehaviors:(NSArray *)behaviors</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBehaviors:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehavior:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehavior:(KKNodeBehavior *)behavior</Declaration>
+			
+			
+			<Anchor>//api/name/addBehavior:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehavior:withKey:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehavior:(KKNodeBehavior *)behavior withKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/addBehavior:withKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehaviors:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehaviors:(NSArray *)behaviors</Declaration>
+			
+			
+			<Anchor>//api/name/addBehaviors:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorForKey:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (KKNodeBehavior *)behaviorForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/behaviorForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/hasBehaviors</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasBehaviors</Declaration>
+			
+			
+			<Anchor>//api/name/hasBehaviors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehavior:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeBehavior:(KKNodeBehavior *)behavior</Declaration>
+			
+			
+			<Anchor>//api/name/removeBehavior:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehaviorForKey:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeBehaviorForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/removeBehaviorForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeAllBehaviors</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllBehaviors</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllBehaviors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/update:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
+			
+			
+			<Anchor>//api/name/update:</Anchor>
+		</Token>
+		
 	</File>
 </Tokens>

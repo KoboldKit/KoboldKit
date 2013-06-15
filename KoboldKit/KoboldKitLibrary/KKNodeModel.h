@@ -11,6 +11,8 @@
 @class KKNodeController;
 @class KKMutableNumber;
 
+/** Model object allows you to story integral data types by key (name) as mutable numbers.
+ Useful to store automatically NSCoding/NSCopying conformant values to any node without having to subclass it. */
 @interface KKNodeModel : NSObject <NSCoding, NSCopying>
 {
 	@private

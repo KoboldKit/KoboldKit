@@ -111,9 +111,9 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 {
 	[_behaviors removeObject:behavior];
 
-	[behavior internal_leaveController];
 	[behavior didLeaveController];
 }
+
 
 -(void) removeBehaviorForKey:(NSString*)key
 {

@@ -18,6 +18,7 @@
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
 						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
 						
 					</Subnodes>
 				</Node>
@@ -27,8 +28,8 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="9"/>
 						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
 						
 					</Subnodes>
 				</Node>
@@ -38,7 +39,8 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
 						
 					</Subnodes>
 				</Node>
@@ -72,24 +74,32 @@
 			<Path>Classes/KKScene.html</Path>
 		</Node>
 		<Node id="7">
+			<Name>KKView</Name>
+			<Path>Classes/KKView.html</Path>
+		</Node>
+		<Node id="8">
 			<Name>KKViewController</Name>
 			<Path>Classes/KKViewController.html</Path>
 		</Node>
-		<Node id="8">
+		<Node id="9">
 			<Name>XMLWriter</Name>
 			<Path>Classes/XMLWriter.html</Path>
 		</Node>
 		
-		<Node id="9">
+		<Node id="10">
 			<Name>NSCoder(KTCoderCategory)</Name>
 			<Path>Categories/NSCoder+KTCoderCategory.html</Path>
 		</Node>
-		<Node id="10">
+		<Node id="11">
 			<Name>SKNode(KoboldKit)</Name>
 			<Path>Categories/SKNode+KoboldKit.html</Path>
 		</Node>
 		
-		<Node id="11">
+		<Node id="12">
+			<Name>NSXMLStreamWriter</Name>
+			<Path>Protocols/NSXMLStreamWriter.html</Path>
+		</Node>
+		<Node id="13">
 			<Name>XMLStreamWriter</Name>
 			<Path>Protocols/XMLStreamWriter.html</Path>
 		</Node>

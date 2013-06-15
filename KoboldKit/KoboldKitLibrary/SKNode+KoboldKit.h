@@ -50,6 +50,7 @@
 /** Removes all behaviors from the node. */
 -(void) removeAllBehaviors;
 
+// internal use only
 -(NSString*) kkDescription;
 +(NSString*) descriptionForNode:(SKNode*)node;
 -(instancetype) kkCopyWithZone:(NSZone*)zone;

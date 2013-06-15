@@ -53,6 +53,10 @@
 	
 	<option value="//api/name/beginSelect">&nbsp;&nbsp;&nbsp;&nbsp;- beginSelect</option>
 	
+	<option value="//api/name/didJoinController">&nbsp;&nbsp;&nbsp;&nbsp;- didJoinController</option>
+	
+	<option value="//api/name/didLeaveController">&nbsp;&nbsp;&nbsp;&nbsp;- didLeaveController</option>
+	
 	<option value="//api/name/endSelect">&nbsp;&nbsp;&nbsp;&nbsp;- endSelect</option>
 	
 	<option value="//api/name/execute">&nbsp;&nbsp;&nbsp;&nbsp;- execute</option>
@@ -98,6 +102,10 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginSelect">beginSelect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didJoinController">didJoinController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLeaveController">didLeaveController</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSelect">endSelect</a></span></li>
 	
@@ -240,6 +248,28 @@ in your implementation.</p></span>
 </li>
 						</ul>
 						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
@@ -314,11 +344,6 @@ in your implementation.</p></span>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</p>
-	</div>
-	
 	
 	
 	
@@ -364,12 +389,6 @@ for example in a tutorial. You can also override the method in a subclass to per
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Will make the node enter the selected state. This is normally used internally, but you may want to use this to highlight buttons,
-for example in a tutorial. You can also override the method in a subclass to perform your own selection style, perhaps changing texture or color.</p>
-	</div>
-	
 	
 	
 	
@@ -379,6 +398,74 @@ for example in a tutorial. You can also override the method in a subclass to per
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didJoinController" title="didJoinController"></a>
+	<h3 class="subsubtitle method-title">didJoinController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didJoinController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didLeaveController" title="didLeaveController"></a>
+	<h3 class="subsubtitle method-title">didLeaveController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didLeaveController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
 	</div>				
 	
 	
@@ -404,12 +491,6 @@ You can override the method in a subclass to perform your own deselection style.
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Will make the node exit the selected state. This is normally used internally, but may be helpful for tutorials (see <a href="#//api/name/beginSelect">beginSelect</a>).
-You can override the method in a subclass to perform your own deselection style.</p>
-	</div>
 	
 	
 	
@@ -447,13 +528,6 @@ in your implementation.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
-You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call <code>[super execute]</code>
-in your implementation.</p>
-	</div>
-	
 	
 	
 	
@@ -481,7 +555,7 @@ in your implementation.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-14)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-15)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

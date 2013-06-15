@@ -16,6 +16,11 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 @implementation KKButtonBehavior
 
+-(void) dealloc
+{
+	NSLog(@"dealloc: %@", self);
+}
+
 -(void) didJoinController
 {
 	_selectedScale = 1.1f;
@@ -61,7 +66,6 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 {
 	for (UITouch* touch in touches)
 	{
-		LOG_EXPR([touch locationInNode:self.node]);
 		if ([self.node containsPoint:[touch locationInNode:self.node.scene]])
 		{
 			[self beginSelect];

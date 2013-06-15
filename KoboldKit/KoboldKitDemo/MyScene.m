@@ -26,7 +26,7 @@
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         [self addChild:myLabel];
 		
-		[myLabel addBehavior:[KKButtonBehavior new] withKey:@"labelbutton"];
+		[myLabel addBehavior:[KKButtonBehavior new] withKey:@"labelbutton1"];
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(labelButtonDidExecute:) name:KKButtonDidExecute object:myLabel];
 		
 		KKLabelNode* otherLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
@@ -35,7 +35,7 @@
         otherLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 100);
         [self addChild:otherLabel];
 		
-		[otherLabel addBehavior:[KKButtonBehavior new] withKey:@"labelbutton"];
+		[otherLabel addBehavior:[KKButtonBehavior new] withKey:@"labelbutton2"];
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(otherLabelButtonDidExecute:) name:KKButtonDidExecute object:otherLabel];
 
 		NSLog(@"userdata: %@", self.userData);
@@ -52,7 +52,7 @@
 -(void) labelButtonDidExecute:(NSNotification*) note
 {
 	LOG_EXPR(note);
-	[note.object removeBehaviorForKey:@"labelbutton"];
+	[note.object removeBehaviorForKey:@"labelbutton1"];
 }
 
 -(void) otherLabelButtonDidExecute:(NSNotification*) note

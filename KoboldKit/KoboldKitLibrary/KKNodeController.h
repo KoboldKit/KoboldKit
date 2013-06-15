@@ -37,19 +37,30 @@ extern NSString* const KKNodeControllerUserDataKey;
 
 /** Creates a controller with a list of behaviors. */
 +(id) controllerWithBehaviors:(NSArray*)behaviors;
+/** (not documented) */
 -(id) initWithBehaviors:(NSArray*)behaviors;
 
+/** (not documented) */
 -(void) addBehavior:(KKNodeBehavior*)behavior;
+/** (not documented) */
 -(void) addBehavior:(KKNodeBehavior*)behavior withKey:(NSString*)key;
+/** (not documented) */
 -(void) addBehaviors:(NSArray*)behaviors;
+/** (not documented) */
 -(KKNodeBehavior*) behaviorForKey:(NSString*)key;
+/** (not documented) */
 -(BOOL) hasBehaviors;
+/** (not documented) */
 -(void) removeBehavior:(KKNodeBehavior*)behavior;
+/** (not documented) */
 -(void) removeBehaviorForKey:(NSString*)key;
+/** (not documented) */
 -(void) removeAllBehaviors;
 
+/** (not documented) */
 -(void) update:(NSTimeInterval)currentTime;
 
+// internal use
 -(BOOL) isEqualToController:(KKNodeController*)controller;
 
 @end

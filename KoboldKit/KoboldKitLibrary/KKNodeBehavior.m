@@ -22,13 +22,6 @@
 	_key = [key copy];
 }
 
--(void) internal_leaveController
-{
-	_controller = nil;
-	_node = nil;
-	_key = nil;
-}
-
 -(void) didJoinController
 {	
 }

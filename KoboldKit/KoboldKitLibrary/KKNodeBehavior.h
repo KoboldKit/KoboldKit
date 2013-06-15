@@ -22,19 +22,26 @@
  */
 @interface KKNodeBehavior : NSObject <NSCoding, NSCopying>
 
+/** (not documented) */
 @property (atomic, readonly) NSString* key;
+/** (not documented) */
 @property (atomic, weak) KKNodeController* controller;
+/** (not documented) */
 @property (atomic, weak) KKNode* node;
+/** (not documented) */
 @property (atomic) BOOL wantsUpdate;
 
--(void) internal_joinController:(KKNodeController*)controller withKey:(NSString*)key;
--(void) internal_leaveController;
-
+/** (not documented) */
 -(void) didJoinController;
+/** (not documented) */
 -(void) didLeaveController;
 
+/** (not documented) */
 -(void) update:(NSTimeInterval)currentTime;
 
+
+// internal use
 -(BOOL) isEqualToBehavior:(KKNodeBehavior*)behavior;
+-(void) internal_joinController:(KKNodeController*)controller withKey:(NSString*)key;
 
 @end

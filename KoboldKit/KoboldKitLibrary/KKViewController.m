@@ -8,6 +8,7 @@
 
 #import "KKViewController.h"
 #import "SKNode+KoboldKit.h"
+#import "KKView.h"
 #import "JRSwizzle.h"
 
 @interface KKViewController ()
@@ -23,9 +24,14 @@
 	[self swizzleMethods];
 	
     // Configure the view.
-    SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+	KKView* kkView = (KKView*)self.view;
+	NSAssert1([kkView isKindOfClass:[KKView class]],
+			  @"KKViewController: view must be of class KKView, but its class is: %@. You may need to change this in your code or in Interface Builder (Identity Inspector -> Custom Class).",
+			  NSStringFromClass([kkView class]));
+	
+	kkView.showsFPS = YES;
+	kkView.showsDrawCount = YES;
+	kkView.showsNodeCount = YES;
 }
 
 -(void) checkSwizzleError:(NSError*)error

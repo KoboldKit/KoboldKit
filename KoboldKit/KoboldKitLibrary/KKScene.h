@@ -23,6 +23,8 @@ typedef enum
 	@private
 	NSMutableArray* _controllers;
 	NSMutableArray* _inputReceivers;
+	NSMutableArray* _inputReceiversToAdd;
+	NSMutableArray* _inputReceiversToRemove;
 }
 
 /** @returns The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
@@ -40,13 +42,14 @@ typedef enum
  @param receiver An object that was previously registered as input receiver. */
 -(void) unregisterInputReceiver:(id)receiver;
 
-/** */
+// internal use
 -(BOOL) isEqualToScene:(KKScene*)scene;
 -(BOOL) isEqualToSceneTree:(KKScene*)scene;
 -(BOOL) isEqualToSceneProperties:(KKScene*)scene;
 
-/**
- @returns */
+/** Dumps the scene graph to a string.
+ @param options Determines what will be included in the dump.
+ @returns A string containing the textual dump of the scene graph. */
 -(NSString*) dumpSceneGraph:(KKSceneGraphDumpOptions)options;
 
 @end

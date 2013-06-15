@@ -27,6 +27,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -90,6 +92,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -181,6 +185,15 @@
 </tr>
 						</tbody></table></div>
 					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Model object allows you to story integral data types by key (name) as mutable numbers.
+Useful to store automatically NSCoding/NSCopying conformant values to any node without having to subclass it.</p>
+					</div>
 					
 					
 					
@@ -404,11 +417,6 @@ number value without having to reassign it to the model.</p></span>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the value of the given type for key. Returns NO if there&rsquo;s no value with this key.</p>
-	</div>
-	
 	
 	
 	
@@ -442,11 +450,6 @@ number value without having to reassign it to the model.</p></span>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the value of the given type for key. Returns 0 if there&rsquo;s no value with this key.</p>
-	</div>
 	
 	
 	
@@ -482,11 +485,6 @@ number value without having to reassign it to the model.</p></span>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the value of the given type for key. Returns 0 if there&rsquo;s no value with this key.</p>
-	</div>
-	
 	
 	
 	
@@ -521,11 +519,6 @@ number value without having to reassign it to the model.</p></span>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the value (32-Bit) of the given type for key. Returns 0 if there&rsquo;s no value with this key.</p>
-	</div>
-	
 	
 	
 	
@@ -559,11 +552,6 @@ number value without having to reassign it to the model.</p></span>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the value (64-Bit) of the given type for key. Returns 0 if there&rsquo;s no value with this key.</p>
-	</div>
 	
 	
 	
@@ -600,12 +588,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the underlying KTMutableNumber object for a specific variable key. You can then modify the
-number value without having to reassign it to the model.</p>
-	</div>
-	
 	
 	
 	
@@ -639,11 +621,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the object for key. Returns nil if there&rsquo;s no object associated with this key.</p>
-	</div>
 	
 	
 	
@@ -679,11 +656,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p>
-	</div>
-	
 	
 	
 	
@@ -717,11 +689,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p>
-	</div>
 	
 	
 	
@@ -757,11 +724,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p>
-	</div>
-	
 	
 	
 	
@@ -795,11 +757,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p>
-	</div>
 	
 	
 	
@@ -835,11 +792,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p>
-	</div>
-	
 	
 	
 	
@@ -873,11 +825,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Assign or replace any object with the given key. If object is nil, the object for that key will be removed.</p>
-	</div>
 	
 	
 	
@@ -913,11 +860,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p>
-	</div>
-	
 	
 	
 	
@@ -951,11 +893,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p>
-	</div>
 	
 	
 	
@@ -991,11 +928,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the value (32-Bit) of the given type for key. Returns 0 if there&rsquo;s no value with this key.</p>
-	</div>
-	
 	
 	
 	
@@ -1030,11 +962,6 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the value (64-Bit) of the given type for key. Returns 0 if there&rsquo;s no value with this key.</p>
-	</div>
-	
 	
 	
 	
@@ -1062,7 +989,7 @@ number value without having to reassign it to the model.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-14)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-15)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

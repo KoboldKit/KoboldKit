@@ -26,66 +26,87 @@
 
 #import <Foundation/Foundation.h>
 
-// xml stream writer
+/** xml stream writer protocol */
 @protocol XMLStreamWriter
 
+/** .. */
 -(void) writeStartDocument;
+/** .. */
 -(void) writeStartDocumentWithVersion:(NSString*)version;
+/** .. */
 -(void) writeStartDocumentWithEncoding:(NSString*)encoding version:(NSString*)version;
 
+/** .. */
 -(void) writeStartElement:(NSString*)localName;
 
+/** .. */
 -(void) writeEndElement;  // automatic end element (mirrors previous start element at the same level)
+/** .. */
 -(void) writeEndElement:(NSString*)localName;
 
+/** .. */
 -(void) writeEmptyElement:(NSString*)localName;
 
+/** .. */
 -(void) writeEndDocument; // write any remaining end elements
 
+/** .. */
 -(void) writeAttribute:(NSString*)localName value:(NSString*)value;
 
+/** .. */
 -(void) writeCharacters:(NSString*)text;
+/** .. */
 -(void) writeComment:(NSString*)comment;
+/** .. */
 -(void) writeProcessingInstruction:(NSString*)target data:(NSString*)data;
+/** .. */
 -(void) writeCData:(NSString*)cdata;
 
-// return the written xml string buffer
+/** @returns the written xml string buffer */
 -(NSMutableString*) toString;
-// return the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default)
+/** @returns the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default) */
 -(NSData*) toData;
 
-// flush the buffers, if any
+/** flush the buffers, if any */
 -(void) flush;
-// close the writer and buffers, if any
+/** close the writer and buffers, if any */
 -(void) close;
 
 @end
 
-// xml stream writer with namespace support
+/** xml stream writer with namespace support */
 @protocol NSXMLStreamWriter<XMLStreamWriter>
 
+/** .. */
 -(void) writeStartElementWithNamespace:(NSString*)namespaceURI localName:(NSString*)localName;
+/** .. */
 -(void) writeEndElementWithNamespace:(NSString*)namespaceURI localName:(NSString*)localName;
+/** .. */
 -(void) writeEmptyElementWithNamespace:(NSString*)namespaceURI localName:(NSString*)localName;
 
+/** .. */
 -(void) writeAttributeWithNamespace:(NSString*)namespaceURI localName:(NSString*)localName value:(NSString*)value;
 
-// set a namespace and prefix
+/** set a namespace and prefix */
 -(void) setPrefix:(NSString*)prefix namespaceURI:(NSString*)namespaceURI;
-// write (and set) a namespace and prefix
+/** write (and set) a namespace and prefix */
 -(void) writeNamespace:(NSString*)prefix namespaceURI:(NSString*)namespaceURI;
 
-// set the default namespace (empty prefix)
+/** set the default namespace (empty prefix) */
 -(void) setDefaultNamespace:(NSString*)namespaceURI;
-// write (and set) the default namespace
+/** write (and set) the default namespace */
 -(void) writeDefaultNamespace:(NSString*)namespaceURI;
 
+/** .. */
 -(NSString*) getPrefix:(NSString*)namespaceURI;
+/** .. */
 -(NSString*) getNamespaceURI:(NSString*)prefix;
 
 @end
 
-@interface XMLWriter : NSObject<NSXMLStreamWriter>{
+/** XMLWriter writes XML files. Mainly used for iOS since there is no built-in XML writer API for iOS. */
+@interface XMLWriter : NSObject<NSXMLStreamWriter>
+{
 	// the current output buffer
 	NSMutableString* writer;
 
@@ -123,24 +144,28 @@
 	BOOL automaticEmptyElements;
 }
 
+/** .. */
 @property (nonatomic, retain, readwrite) NSString* indentation;
+/** .. */
 @property (nonatomic, retain, readwrite) NSString* lineBreak;
+/** .. */
 @property (nonatomic, assign, readwrite) BOOL automaticEmptyElements;
+/** .. */
 @property (nonatomic, readonly) int level;
 
-// helpful for formatting, special needs
-// write linebreak, if any
+/** helpful for formatting, special needs
+ write linebreak, if any */
 -(void) writeLinebreak;
-// write indentation, if any
+/** write indentation, if any */
 -(void) writeIndentation;
-// write end of start element, so that the start tag is complete
+/** write end of start element, so that the start tag is complete */
 -(void) writeCloseStartElement;
 
-// write any outstanding namespace declaration attributes in a start element
+/** write any outstanding namespace declaration attributes in a start element */
 -(void) writeNamespaceAttributes;
-// write escaped text to the stream
+/** write escaped text to the stream */
 -(void) writeEscape:(NSString*)value;
-// wrote unescaped text to the stream
+/** wrote unescaped text to the stream */
 -(void) write:(NSString*)value;
 
 @end

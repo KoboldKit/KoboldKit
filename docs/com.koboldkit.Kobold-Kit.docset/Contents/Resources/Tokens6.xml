@@ -86,12 +86,17 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKScene/dumpSceneGraph:</TokenIdentifier>
-			<Abstract type="html">@returns</Abstract>
+			<Abstract type="html">Dumps the scene graph to a string.</Abstract>
 			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
 			<Declaration>- (NSString *)dumpSceneGraph:(KKSceneGraphDumpOptions)options</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Determines what will be included in the dump.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string containing the textual dump of the scene graph.</Abstract></ReturnValue>
 			<Anchor>//api/name/dumpSceneGraph:</Anchor>
 		</Token>
 		
