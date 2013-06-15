@@ -13,6 +13,12 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	NSLog(@"touching...");
+	[self disregardInputEvents];
+}
+
+-(void) observe
+{
+	[self observeInputEvents];
 }
 
 @end

@@ -49,11 +49,27 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/addInputEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- addInputEventsObserver:</option>
+	
+	<option value="//api/name/addSceneEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- addSceneEventsObserver:</option>
+	
+	<option value="//api/name/didEvaluateActions">&nbsp;&nbsp;&nbsp;&nbsp;- didEvaluateActions</option>
+	
+	<option value="//api/name/didMoveToView:">&nbsp;&nbsp;&nbsp;&nbsp;- didMoveToView:</option>
+	
+	<option value="//api/name/didSimulatePhysics">&nbsp;&nbsp;&nbsp;&nbsp;- didSimulatePhysics</option>
+	
+	<option value="//api/name/didUpdateBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- didUpdateBehaviors</option>
+	
 	<option value="//api/name/dumpSceneGraph:">&nbsp;&nbsp;&nbsp;&nbsp;- dumpSceneGraph:</option>
 	
-	<option value="//api/name/registerInputReceiver:">&nbsp;&nbsp;&nbsp;&nbsp;- registerInputReceiver:</option>
+	<option value="//api/name/removeInputEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeInputEventsObserver:</option>
 	
-	<option value="//api/name/unregisterInputReceiver:">&nbsp;&nbsp;&nbsp;&nbsp;- unregisterInputReceiver:</option>
+	<option value="//api/name/removeSceneEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSceneEventsObserver:</option>
+	
+	<option value="//api/name/update:">&nbsp;&nbsp;&nbsp;&nbsp;- update:</option>
+	
+	<option value="//api/name/willMoveFromView:">&nbsp;&nbsp;&nbsp;&nbsp;- willMoveFromView:</option>
 	
 	
 	
@@ -89,11 +105,27 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addInputEventsObserver:">addInputEventsObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSceneEventsObserver:">addSceneEventsObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didEvaluateActions">didEvaluateActions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didMoveToView:">didMoveToView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSimulatePhysics">didSimulatePhysics</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didUpdateBehaviors">didUpdateBehaviors</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dumpSceneGraph:">dumpSceneGraph:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerInputReceiver:">registerInputReceiver:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeInputEventsObserver:">removeInputEventsObserver:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unregisterInputReceiver:">unregisterInputReceiver:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSceneEventsObserver:">removeSceneEventsObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/update:">update:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willMoveFromView:">willMoveFromView:</a></span></li>
 	
 </ul></li>
 
@@ -122,7 +154,7 @@
 	<td class="specification-value">SKScene</td>
 </tr><tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">SKPhysicsContactDelegate</td>
+	<td class="specification-value"><a href="../Protocols/KKSceneEventDelegate.html">KKSceneEventDelegate</a><br />SKPhysicsContactDelegate</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">KKScene.h<br />KKScene.m</td>
@@ -149,7 +181,7 @@ dispatches events (input, physics).</p>
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -162,7 +194,21 @@ For example this allows you to perform certain actions n frames from now, instea
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/registerInputReceiver:">&ndash;&nbsp;registerInputReceiver:</a></code>
+		<code><a href="#//api/name/addSceneEventsObserver:">&ndash;&nbsp;addSceneEventsObserver:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeSceneEventsObserver:">&ndash;&nbsp;removeSceneEventsObserver:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addInputEventsObserver:">&ndash;&nbsp;addInputEventsObserver:</a></code>
 		<span class="tooltip"><p>Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
 Note: this is a preliminary, inefficient system. It will eventually be replaced.</p></span>
 	</span>
@@ -170,7 +216,7 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/unregisterInputReceiver:">&ndash;&nbsp;unregisterInputReceiver:</a></code>
+		<code><a href="#//api/name/removeInputEventsObserver:">&ndash;&nbsp;removeInputEventsObserver:</a></code>
 		<span class="tooltip"><p>Unregisters a class as generic input receiver.</p></span>
 	</span>
 	
@@ -179,6 +225,56 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	<span class="tooltip">
 		<code><a href="#//api/name/dumpSceneGraph:">&ndash;&nbsp;dumpSceneGraph:</a></code>
 		<span class="tooltip"><p>Dumps the scene graph to a string.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/update:">&ndash;&nbsp;update:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didUpdateBehaviors">&ndash;&nbsp;didUpdateBehaviors</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didEvaluateActions">&ndash;&nbsp;didEvaluateActions</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willMoveFromView:">&ndash;&nbsp;willMoveFromView:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didMoveToView:">&ndash;&nbsp;didMoveToView:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	
 	
@@ -247,6 +343,221 @@ For example this allows you to perform certain actions n frames from now, instea
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/addInputEventsObserver:" title="addInputEventsObserver:"></a>
+	<h3 class="subsubtitle method-title">addInputEventsObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
+Note: this is a preliminary, inefficient system. It will eventually be replaced.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addInputEventsObserver:(id)<em>observer</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>receiver</em></dt>
+			<dd><p>Any object that implements touch, mouse, or other input events.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKScene.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addSceneEventsObserver:" title="addSceneEventsObserver:"></a>
+	<h3 class="subsubtitle method-title">addSceneEventsObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addSceneEventsObserver:(id)<em>observer</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKScene.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didEvaluateActions" title="didEvaluateActions"></a>
+	<h3 class="subsubtitle method-title">didEvaluateActions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didEvaluateActions</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKSceneEventDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didMoveToView:" title="didMoveToView:"></a>
+	<h3 class="subsubtitle method-title">didMoveToView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didMoveToView:(SKView *)<em>view</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKSceneEventDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSimulatePhysics" title="didSimulatePhysics"></a>
+	<h3 class="subsubtitle method-title">didSimulatePhysics</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didSimulatePhysics</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKSceneEventDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didUpdateBehaviors" title="didUpdateBehaviors"></a>
+	<h3 class="subsubtitle method-title">didUpdateBehaviors</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didUpdateBehaviors</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKSceneEventDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/dumpSceneGraph:" title="dumpSceneGraph:"></a>
 	<h3 class="subsubtitle method-title">dumpSceneGraph:</h3>
 	
@@ -296,53 +607,8 @@ For example this allows you to perform certain actions n frames from now, instea
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/registerInputReceiver:" title="registerInputReceiver:"></a>
-	<h3 class="subsubtitle method-title">registerInputReceiver:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
-Note: this is a preliminary, inefficient system. It will eventually be replaced.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)registerInputReceiver:(id)<em>receiver</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>receiver</em></dt>
-			<dd><p>Any object that implements touch, mouse, or other input events.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKScene.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/unregisterInputReceiver:" title="unregisterInputReceiver:"></a>
-	<h3 class="subsubtitle method-title">unregisterInputReceiver:</h3>
+	<a name="//api/name/removeInputEventsObserver:" title="removeInputEventsObserver:"></a>
+	<h3 class="subsubtitle method-title">removeInputEventsObserver:</h3>
 	
 	
 	
@@ -351,7 +617,7 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)unregisterInputReceiver:(id)<em>receiver</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)removeInputEventsObserver:(id)<em>observer</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -379,6 +645,108 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">KKScene.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeSceneEventsObserver:" title="removeSceneEventsObserver:"></a>
+	<h3 class="subsubtitle method-title">removeSceneEventsObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeSceneEventsObserver:(id)<em>observer</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKScene.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/update:" title="update:"></a>
+	<h3 class="subsubtitle method-title">update:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)update:(NSTimeInterval)<em>currentTime</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKSceneEventDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willMoveFromView:" title="willMoveFromView:"></a>
+	<h3 class="subsubtitle method-title">willMoveFromView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)willMoveFromView:(SKView *)<em>view</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKSceneEventDelegate.h</code><br />
 	</div>				
 	
 	

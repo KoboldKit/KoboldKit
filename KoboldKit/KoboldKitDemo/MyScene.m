@@ -10,6 +10,8 @@
 #import "KoboldKit.h"
 #import "MyLabelNode.h"
 
+#import <objc/runtime.h>
+
 @implementation MyScene
 
 -(id)initWithSize:(CGSize)size
@@ -40,8 +42,33 @@
 
 		NSLog(@"userdata: %@", self.userData);
 		NSLog(@"search nodes: %@", [self childNodeWithName:@"//*"]);
+		
+		
+		LOG_EXPR(class_getInstanceSize([SKTexture class]));
+		LOG_EXPR(class_getInstanceSize([SKTextureAtlas class]));
+		
+		KTTilemap* tilemap = [KTTilemap tilemapWithTMXFile:@"crawl-tilemap.tmx"];
+		LOG_EXPR(tilemap);
+
+		for (KTTilemapLayer* layer in tilemap.layers)
+		{
+			LOG_EXPR((id)layer);
+		}
+
+		for (KTTilemapTileset* tileset in tilemap.tilesets)
+		{
+			LOG_EXPR((id)tileset);
+			LOG_EXPR((id)tileset.texture);
+		}
     }
     return self;
+}
+
+-(void) didMoveToView:(SKView *)view
+{
+	[super didMoveToView:view];
+	
+	[myLabel observe];
 }
 
 -(void) dealloc

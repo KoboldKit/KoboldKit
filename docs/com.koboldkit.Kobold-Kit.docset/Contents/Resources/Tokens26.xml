@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KoboldKit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KoboldKit</TokenIdentifier>
+			<Abstract type="html">This class contains global helper functions.</Abstract>
+			<DeclaredIn>KoboldKit.h</DeclaredIn>
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/pathForBundleFile:</TokenIdentifier>
+			<Abstract type="html">The absolute path to the file or nil if the file could not be found.</Abstract>
+			<DeclaredIn>KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)pathForBundleFile:(NSString *)file</Declaration>
+			
+			<ReturnValue><Abstract type="html">The absolute path to the file or nil if the file could not be found.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForBundleFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/pathForAppSupportFile:</TokenIdentifier>
+			<Abstract type="html">The absolute path to the file.</Abstract>
+			<DeclaredIn>KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)pathForAppSupportFile:(NSString *)file</Declaration>
+			
+			<ReturnValue><Abstract type="html">The absolute path to the file.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForAppSupportFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/pathForDocumentsFile:</TokenIdentifier>
+			<Abstract type="html">The absolute path to the file.</Abstract>
+			<DeclaredIn>KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)pathForDocumentsFile:(NSString *)file</Declaration>
+			
+			<ReturnValue><Abstract type="html">The absolute path to the file.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForDocumentsFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/pathForLibraryFile:</TokenIdentifier>
+			<Abstract type="html">The absolute path to the file.</Abstract>
+			<DeclaredIn>KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)pathForLibraryFile:(NSString *)file</Declaration>
+			
+			<ReturnValue><Abstract type="html">The absolute path to the file.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForLibraryFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/searchPathsForFile:</TokenIdentifier>
+			<Abstract type="html">Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
+to the file where it was first found.</Abstract>
+			<DeclaredIn>KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)searchPathsForFile:(NSString *)file</Declaration>
+			
+			<ReturnValue><Abstract type="html">The absolute path to the file, or nil if the file could not be found.</Abstract></ReturnValue>
+			<Anchor>//api/name/searchPathsForFile:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

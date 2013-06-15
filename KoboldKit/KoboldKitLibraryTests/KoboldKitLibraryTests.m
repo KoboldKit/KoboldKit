@@ -80,4 +80,27 @@
 	XCTAssertTrue(isEqual, @"test scene and copied scene are different, check log for details");
 }
 
+-(void) testTilemap
+{
+	KTTilemap* tilemap = [KTTilemap tilemapWithTMXFile:@"crawl-tilemap.tmx"];
+	XCTAssertNotNil(tilemap, @"tilemap is nil");
+	XCTAssertEquals(tilemap.orientation, KTTilemapOrientationOrthogonal, @"tilemap orientation mismatch");
+	XCTAssertNotNil([tilemap.layers lastObject], @"tilemap has no layers");
+	XCTAssertNotNil([tilemap.tilesets lastObject], @"tilemap has no tilesets");
+	
+	for (KTTilemapLayer* layer in tilemap.layers)
+	{
+		if (layer.isTileLayer)
+		{
+			XCTAssertNotNil(layer.tiles, @"tile layer has no tiles");
+		}
+	}
+	
+	for (KTTilemapTileset* tileset in tilemap.tilesets)
+	{
+		XCTAssertNotNil(tileset.texture, @"tileset texture is nil / could not be loaded");
+		XCTAssertEquals(tileset.tileTextures.count - 1, tileset.lastGid - tileset.firstGid, @"tileset texture count mismatch");
+	}
+}
+
 @end

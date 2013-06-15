@@ -1,0 +1,541 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>KTTilemapTileProperties Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KTTilemapTileProperties Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/propertiesForGid:">&nbsp;&nbsp;&nbsp;&nbsp;- propertiesForGid:</option>
+	
+	<option value="//api/name/propertiesForGid:createNonExistingProperties:">&nbsp;&nbsp;&nbsp;&nbsp;- propertiesForGid:createNonExistingProperties:</option>
+	
+	<option value="//api/name/propertiesForGid:setNumber:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- propertiesForGid:setNumber:forKey:</option>
+	
+	<option value="//api/name/propertiesForGid:setString:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- propertiesForGid:setString:forKey:</option>
+	
+	<option value="//api/name/propertiesForGid:setValue:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- propertiesForGid:setValue:forKey:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertiesForGid:">propertiesForGid:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertiesForGid:createNonExistingProperties:">propertiesForGid:createNonExistingProperties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertiesForGid:setNumber:forKey:">propertiesForGid:setNumber:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertiesForGid:setString:forKey:">propertiesForGid:setString:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertiesForGid:setValue:forKey:">propertiesForGid:setValue:forKey:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="KTTilemapTileProperties Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KTTilemapTileProperties Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">KTTilemapTileProperties.h<br />KTTilemapTileProperties.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Wrapper for tile <a href="#//api/name/properties">properties</a>, it stores one <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> object per tile that has <a href="#//api/name/properties">properties</a>. You can get/set <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> for a given tile gid
+   by using the <a href="#//api/name/propertiesForGid:">propertiesForGid:</a> methods. If a gid has no <a href="#//api/name/properties">properties</a> nil will be returned. In cases where you want to create the <a href="#//api/name/properties">properties</a> of a gid
+   use the createNonExistingProperties flag so that a new <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> object is created and associated with the gid if the gid has no <a href="#//api/name/properties">properties</a> yet.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
+		<span class="tooltip"><p>Dictionary of tile properties with gid as key (NSNumber) and values are <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> objects storing that tile&rsquo;s properties.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertiesForGid:setNumber:forKey:">&ndash;&nbsp;propertiesForGid:setNumber:forKey:</a></code>
+		<span class="tooltip"><p>Sets the number for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertiesForGid:setString:forKey:">&ndash;&nbsp;propertiesForGid:setString:forKey:</a></code>
+		<span class="tooltip"><p>Sets the string for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertiesForGid:setValue:forKey:">&ndash;&nbsp;propertiesForGid:setValue:forKey:</a></code>
+		<span class="tooltip"><p>(<a href="../Classes/KTTMXReader.html">KTTMXReader</a> only) Sets a string or number (if string is convertible to number) for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>.
+   Creates an instance of <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertiesForGid:">&ndash;&nbsp;propertiesForGid:</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/properties">properties</a> for a tile gid. Returns nil if the gid has no <a href="#//api/name/properties">properties</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertiesForGid:createNonExistingProperties:">&ndash;&nbsp;propertiesForGid:createNonExistingProperties:</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/properties">properties</a> for a tile gid. If createNonExistingProperties is YES and if the gid has no <a href="#//api/name/properties">properties</a>, will create a new
+   <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> object, set it as the tile gid&rsquo;s <a href="#//api/name/properties">properties</a> object, and return it. If createNonExistingProperties is NO behaves
+   identical to <a href="#//api/name/propertiesForGid:">propertiesForGid:</a> by returning nil for non-existing tile <a href="#//api/name/properties">properties</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/properties" title="properties"></a>
+	<h3 class="subsubtitle method-title">properties</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dictionary of tile properties with gid as key (NSNumber) and values are <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> objects storing that tile&rsquo;s properties.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDictionary *properties</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KTTilemapTileProperties.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/propertiesForGid:" title="propertiesForGid:"></a>
+	<h3 class="subsubtitle method-title">propertiesForGid:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/properties">properties</a> for a tile gid. Returns nil if the gid has no <a href="#//api/name/properties">properties</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (KTTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KTTilemapTileProperties.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertiesForGid:createNonExistingProperties:" title="propertiesForGid:createNonExistingProperties:"></a>
+	<h3 class="subsubtitle method-title">propertiesForGid:createNonExistingProperties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/properties">properties</a> for a tile gid. If createNonExistingProperties is YES and if the gid has no <a href="#//api/name/properties">properties</a>, will create a new
+   <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> object, set it as the tile gid&rsquo;s <a href="#//api/name/properties">properties</a> object, and return it. If createNonExistingProperties is NO behaves
+   identical to <a href="#//api/name/propertiesForGid:">propertiesForGid:</a> by returning nil for non-existing tile <a href="#//api/name/properties">properties</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (KTTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> createNonExistingProperties:(BOOL)<em>createNonExistingProperties</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KTTilemapTileProperties.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertiesForGid:setNumber:forKey:" title="propertiesForGid:setNumber:forKey:"></a>
+	<h3 class="subsubtitle method-title">propertiesForGid:setNumber:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the number for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (KTTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setNumber:(KKMutableNumber *)<em>number</em> forKey:(NSString *)<em>key</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KTTilemapTileProperties.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertiesForGid:setString:forKey:" title="propertiesForGid:setString:forKey:"></a>
+	<h3 class="subsubtitle method-title">propertiesForGid:setString:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the string for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (KTTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setString:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KTTilemapTileProperties.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertiesForGid:setValue:forKey:" title="propertiesForGid:setValue:forKey:"></a>
+	<h3 class="subsubtitle method-title">propertiesForGid:setValue:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(<a href="../Classes/KTTMXReader.html">KTTMXReader</a> only) Sets a string or number (if string is convertible to number) for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>.
+   Creates an instance of <a href="../Classes/KTTilemapProperties.html">KTTilemapProperties</a> if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (KTTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setValue:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KTTilemapTileProperties.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-15)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

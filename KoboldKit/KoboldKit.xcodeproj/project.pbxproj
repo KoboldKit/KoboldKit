@@ -7,7 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC2F43BE176CB1F7005846A7 /* crawl-tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B2176CB1F7005846A7 /* crawl-tilemap.tmx */; };
+		DC2F43BF176CB1F7005846A7 /* crawl-tiles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B3176CB1F7005846A7 /* crawl-tiles-hd.plist */; };
+		DC2F43C0176CB1F7005846A7 /* crawl-tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B4176CB1F7005846A7 /* crawl-tiles-hd.png */; };
+		DC2F43C1176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B5176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz */; };
+		DC2F43C3176CB1F7005846A7 /* crawl-tiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B7176CB1F7005846A7 /* crawl-tiles.plist */; };
+		DC2F43C4176CB1F7005846A7 /* crawl-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B8176CB1F7005846A7 /* crawl-tiles.png */; };
+		DC2F43C5176CB1F7005846A7 /* crawl-tiles.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B9176CB1F7005846A7 /* crawl-tiles.pvr.ccz */; };
+		DC2F43C7176CB1F7005846A7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43BB176CB1F7005846A7 /* LICENSE.txt */; };
+		DC2F43C8176CB1F7005846A7 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43BC176CB1F7005846A7 /* README.txt */; };
+		DC2F43C9176CB293005846A7 /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B0176CB1F7005846A7 /* ATTRIBUTIONS */; };
+		DC2F43D6176CC13B005846A7 /* crawl-tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CB176CC13B005846A7 /* crawl-tilemap.tmx */; };
+		DC2F43D7176CC13B005846A7 /* crawl-tiles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CC176CC13B005846A7 /* crawl-tiles-hd.plist */; };
+		DC2F43D8176CC13B005846A7 /* crawl-tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CD176CC13B005846A7 /* crawl-tiles-hd.png */; };
+		DC2F43D9176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CE176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz */; };
+		DC2F43DA176CC13B005846A7 /* crawl-tiles-hd.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CF176CC13B005846A7 /* crawl-tiles-hd.tps */; };
+		DC2F43DB176CC13B005846A7 /* crawl-tiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D0176CC13B005846A7 /* crawl-tiles.plist */; };
+		DC2F43DC176CC13B005846A7 /* crawl-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D1176CC13B005846A7 /* crawl-tiles.png */; };
+		DC2F43DD176CC13B005846A7 /* crawl-tiles.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D2176CC13B005846A7 /* crawl-tiles.pvr.ccz */; };
+		DC2F43DE176CC13B005846A7 /* crawl-tiles.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */; };
+		DC2F43DF176CC13B005846A7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D4176CC13B005846A7 /* LICENSE.txt */; };
+		DC2F43E0176CC13B005846A7 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D5176CC13B005846A7 /* README.txt */; };
+		DC2F43E3176CC8B8005846A7 /* NSObject+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43E2176CC8B8005846A7 /* NSObject+KoboldKit.m */; };
 		DC4B1C17176BC41D00D03213 /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B1C16176BC41D00D03213 /* KKView.m */; };
+		DC4DE90A176C9E2B003E4087 /* KTTilemap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F1176C9E2B003E4087 /* KTTilemap.m */; };
+		DC4DE90B176C9E2B003E4087 /* KTTilemapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F3176C9E2B003E4087 /* KTTilemapLayer.m */; };
+		DC4DE90D176C9E2B003E4087 /* KTTilemapLayerTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F7176C9E2B003E4087 /* KTTilemapLayerTiles.m */; };
+		DC4DE910176C9E2B003E4087 /* KTTilemapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8FD176C9E2B003E4087 /* KTTilemapObject.m */; };
+		DC4DE911176C9E2B003E4087 /* KTTilemapProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8FF176C9E2B003E4087 /* KTTilemapProperties.m */; };
+		DC4DE912176C9E2B003E4087 /* KTTilemapTileProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE901176C9E2B003E4087 /* KTTilemapTileProperties.m */; };
+		DC4DE913176C9E2B003E4087 /* KTTilemapTileset.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE903176C9E2B003E4087 /* KTTilemapTileset.m */; };
+		DC4DE915176C9E2B003E4087 /* KTTMXReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE907176C9E2B003E4087 /* KTTMXReader.m */; };
+		DC4DE916176C9E2B003E4087 /* KTTMXWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE909176C9E2B003E4087 /* KTTMXWriter.m */; };
+		DC4DE91C176CA0AC003E4087 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE918176CA0AC003E4087 /* base64.c */; };
+		DC4DE91D176CA0AC003E4087 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE91B176CA0AC003E4087 /* ZipUtils.m */; };
+		DC4DE925176CA25F003E4087 /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE920176CA25F003E4087 /* KKMutableNumber.m */; };
+		DC4DE926176CA25F003E4087 /* KTIvarSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE922176CA25F003E4087 /* KTIvarSetter.m */; };
+		DC4DE927176CA25F003E4087 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
+		DC4DE92A176CA503003E4087 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
+		DC4DE92C176CA52F003E4087 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
+		DC4DE92E176CAB1B003E4087 /* KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE92D176CAB1B003E4087 /* KoboldKit.m */; };
 		DCDD2DAC1769FD0A00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
 		DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 		DCDD2DB01769FD0A00F307CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
@@ -21,7 +60,6 @@
 		DCDD2DCA1769FD0A00F307CD /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DC91769FD0A00F307CD /* MyScene.m */; };
 		DCDD2DCC1769FD0A00F307CD /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DCB1769FD0A00F307CD /* Spaceship.png */; };
 		DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DCD1769FD0A00F307CD /* Images.xcassets */; };
-		DCDD2DEF1769FD2E00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
 		DCDD2DFC1769FD2E00F307CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DD41769FD0A00F307CD /* XCTest.framework */; };
 		DCDD2DFD1769FD2E00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
 		DCDD2DFE1769FD2E00F307CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
@@ -43,9 +81,7 @@
 		DCFDF3BD176B244A00F2CAD0 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3BC176B244A00F2CAD0 /* TestScene.m */; };
 		DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
 		DCFDF3CC176B638300F2CAD0 /* KKNodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3CB176B638300F2CAD0 /* KKNodeModel.m */; };
-		DCFDF3DF176B65AA00F2CAD0 /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3D9176B65AA00F2CAD0 /* KKMutableNumber.m */; };
 		DCFDF3E0176B65AA00F2CAD0 /* KKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3DC176B65AA00F2CAD0 /* KKVersion.m */; };
-		DCFDF3E1176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3DE176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +107,62 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC2F43B0176CB1F7005846A7 /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
+		DC2F43B2176CB1F7005846A7 /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
+		DC2F43B3176CB1F7005846A7 /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
+		DC2F43B4176CB1F7005846A7 /* crawl-tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles-hd.png"; sourceTree = "<group>"; };
+		DC2F43B5176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles-hd.pvr.ccz"; sourceTree = "<group>"; };
+		DC2F43B7176CB1F7005846A7 /* crawl-tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles.plist"; sourceTree = "<group>"; };
+		DC2F43B8176CB1F7005846A7 /* crawl-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles.png"; sourceTree = "<group>"; };
+		DC2F43B9176CB1F7005846A7 /* crawl-tiles.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles.pvr.ccz"; sourceTree = "<group>"; };
+		DC2F43BB176CB1F7005846A7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		DC2F43BC176CB1F7005846A7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		DC2F43CB176CC13B005846A7 /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
+		DC2F43CC176CC13B005846A7 /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
+		DC2F43CD176CC13B005846A7 /* crawl-tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles-hd.png"; sourceTree = "<group>"; };
+		DC2F43CE176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles-hd.pvr.ccz"; sourceTree = "<group>"; };
+		DC2F43CF176CC13B005846A7 /* crawl-tiles-hd.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles-hd.tps"; sourceTree = "<group>"; };
+		DC2F43D0176CC13B005846A7 /* crawl-tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles.plist"; sourceTree = "<group>"; };
+		DC2F43D1176CC13B005846A7 /* crawl-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles.png"; sourceTree = "<group>"; };
+		DC2F43D2176CC13B005846A7 /* crawl-tiles.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles.pvr.ccz"; sourceTree = "<group>"; };
+		DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles.tps"; sourceTree = "<group>"; };
+		DC2F43D4176CC13B005846A7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		DC2F43D5176CC13B005846A7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		DC2F43E1176CC8B8005846A7 /* NSObject+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KoboldKit.h"; sourceTree = "<group>"; };
+		DC2F43E2176CC8B8005846A7 /* NSObject+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KoboldKit.m"; sourceTree = "<group>"; };
+		DC2F43E5176CD910005846A7 /* KKSceneEventDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSceneEventDelegate.h; sourceTree = "<group>"; };
 		DC4B1C15176BC41D00D03213 /* KKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKView.h; sourceTree = "<group>"; };
 		DC4B1C16176BC41D00D03213 /* KKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKView.m; sourceTree = "<group>"; };
+		DC4DE8F0176C9E2B003E4087 /* KTTilemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTilemap.h; sourceTree = "<group>"; };
+		DC4DE8F1176C9E2B003E4087 /* KTTilemap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTilemap.m; sourceTree = "<group>"; };
+		DC4DE8F2176C9E2B003E4087 /* KTTilemapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTilemapLayer.h; sourceTree = "<group>"; };
+		DC4DE8F3176C9E2B003E4087 /* KTTilemapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTilemapLayer.m; sourceTree = "<group>"; };
+		DC4DE8F6176C9E2B003E4087 /* KTTilemapLayerTiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTilemapLayerTiles.h; sourceTree = "<group>"; };
+		DC4DE8F7176C9E2B003E4087 /* KTTilemapLayerTiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTilemapLayerTiles.m; sourceTree = "<group>"; };
+		DC4DE8FC176C9E2B003E4087 /* KTTilemapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTilemapObject.h; sourceTree = "<group>"; };
+		DC4DE8FD176C9E2B003E4087 /* KTTilemapObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTilemapObject.m; sourceTree = "<group>"; };
+		DC4DE8FE176C9E2B003E4087 /* KTTilemapProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTilemapProperties.h; sourceTree = "<group>"; };
+		DC4DE8FF176C9E2B003E4087 /* KTTilemapProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTilemapProperties.m; sourceTree = "<group>"; };
+		DC4DE900176C9E2B003E4087 /* KTTilemapTileProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTilemapTileProperties.h; sourceTree = "<group>"; };
+		DC4DE901176C9E2B003E4087 /* KTTilemapTileProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTilemapTileProperties.m; sourceTree = "<group>"; };
+		DC4DE902176C9E2B003E4087 /* KTTilemapTileset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTilemapTileset.h; sourceTree = "<group>"; };
+		DC4DE903176C9E2B003E4087 /* KTTilemapTileset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTilemapTileset.m; sourceTree = "<group>"; };
+		DC4DE906176C9E2B003E4087 /* KTTMXReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTMXReader.h; sourceTree = "<group>"; };
+		DC4DE907176C9E2B003E4087 /* KTTMXReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTMXReader.m; sourceTree = "<group>"; };
+		DC4DE908176C9E2B003E4087 /* KTTMXWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTMXWriter.h; sourceTree = "<group>"; };
+		DC4DE909176C9E2B003E4087 /* KTTMXWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTMXWriter.m; sourceTree = "<group>"; };
+		DC4DE918176CA0AC003E4087 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		DC4DE919176CA0AC003E4087 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		DC4DE91A176CA0AC003E4087 /* ZipUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipUtils.h; sourceTree = "<group>"; };
+		DC4DE91B176CA0AC003E4087 /* ZipUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipUtils.m; sourceTree = "<group>"; };
+		DC4DE91F176CA25F003E4087 /* KKMutableNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMutableNumber.h; sourceTree = "<group>"; };
+		DC4DE920176CA25F003E4087 /* KKMutableNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMutableNumber.m; sourceTree = "<group>"; };
+		DC4DE921176CA25F003E4087 /* KTIvarSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTIvarSetter.h; sourceTree = "<group>"; };
+		DC4DE922176CA25F003E4087 /* KTIvarSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTIvarSetter.m; sourceTree = "<group>"; };
+		DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KoboldKit.h"; sourceTree = "<group>"; };
+		DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KoboldKit.m"; sourceTree = "<group>"; };
+		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DC4DE92D176CAB1B003E4087 /* KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoboldKit.m; sourceTree = "<group>"; };
 		DCDD2DA81769FD0A00F307CD /* KoboldKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoboldKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,13 +221,9 @@
 		DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointExtension.m; sourceTree = "<group>"; };
 		DCFDF3CA176B638300F2CAD0 /* KKNodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeModel.h; sourceTree = "<group>"; };
 		DCFDF3CB176B638300F2CAD0 /* KKNodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeModel.m; sourceTree = "<group>"; };
-		DCFDF3D8176B65AA00F2CAD0 /* KKMutableNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMutableNumber.h; sourceTree = "<group>"; };
-		DCFDF3D9176B65AA00F2CAD0 /* KKMutableNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMutableNumber.m; sourceTree = "<group>"; };
 		DCFDF3DA176B65AA00F2CAD0 /* KKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTypes.h; sourceTree = "<group>"; };
 		DCFDF3DB176B65AA00F2CAD0 /* KKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKVersion.h; sourceTree = "<group>"; };
 		DCFDF3DC176B65AA00F2CAD0 /* KKVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKVersion.m; sourceTree = "<group>"; };
-		DCFDF3DD176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KTCoderCategory.h"; sourceTree = "<group>"; };
-		DCFDF3DE176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KTCoderCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4DE92C176CA52F003E4087 /* libz.dylib in Frameworks */,
 				DCDD2E101769FD8500F307CD /* libKoboldKitLibrary.a in Frameworks */,
 				DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */,
 				DCDD2DB01769FD0A00F307CD /* UIKit.framework in Frameworks */,
@@ -157,7 +244,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDD2DEF1769FD2E00F307CD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +251,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4DE92A176CA503003E4087 /* libz.dylib in Frameworks */,
 				DCDD2DFC1769FD2E00F307CD /* XCTest.framework in Frameworks */,
 				DCDD2DFE1769FD2E00F307CD /* UIKit.framework in Frameworks */,
 				DCDD2DFD1769FD2E00F307CD /* Foundation.framework in Frameworks */,
@@ -175,6 +262,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC2F43AF176CB1F7005846A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC2F43B0176CB1F7005846A7 /* ATTRIBUTIONS */,
+				DC2F43B1176CB1F7005846A7 /* crawl-tiles Oct-5-2010 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC2F43B1176CB1F7005846A7 /* crawl-tiles Oct-5-2010 */ = {
+			isa = PBXGroup;
+			children = (
+				DC2F43B2176CB1F7005846A7 /* crawl-tilemap.tmx */,
+				DC2F43B3176CB1F7005846A7 /* crawl-tiles-hd.plist */,
+				DC2F43B4176CB1F7005846A7 /* crawl-tiles-hd.png */,
+				DC2F43B5176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz */,
+				DC2F43B7176CB1F7005846A7 /* crawl-tiles.plist */,
+				DC2F43B8176CB1F7005846A7 /* crawl-tiles.png */,
+				DC2F43B9176CB1F7005846A7 /* crawl-tiles.pvr.ccz */,
+				DC2F43BB176CB1F7005846A7 /* LICENSE.txt */,
+				DC2F43BC176CB1F7005846A7 /* README.txt */,
+			);
+			path = "crawl-tiles Oct-5-2010";
+			sourceTree = "<group>";
+		};
+		DC2F43CA176CC13B005846A7 /* crawl-tiles Oct-5-2010 */ = {
+			isa = PBXGroup;
+			children = (
+				DC2F43CB176CC13B005846A7 /* crawl-tilemap.tmx */,
+				DC2F43CC176CC13B005846A7 /* crawl-tiles-hd.plist */,
+				DC2F43CD176CC13B005846A7 /* crawl-tiles-hd.png */,
+				DC2F43CE176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz */,
+				DC2F43CF176CC13B005846A7 /* crawl-tiles-hd.tps */,
+				DC2F43D0176CC13B005846A7 /* crawl-tiles.plist */,
+				DC2F43D1176CC13B005846A7 /* crawl-tiles.png */,
+				DC2F43D2176CC13B005846A7 /* crawl-tiles.pvr.ccz */,
+				DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */,
+				DC2F43D4176CC13B005846A7 /* LICENSE.txt */,
+				DC2F43D5176CC13B005846A7 /* README.txt */,
+			);
+			path = "crawl-tiles Oct-5-2010";
+			sourceTree = "<group>";
+		};
+		DC4DE8EF176C9E2B003E4087 /* Tilemap Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC4DE8F0176C9E2B003E4087 /* KTTilemap.h */,
+				DC4DE8F1176C9E2B003E4087 /* KTTilemap.m */,
+				DC4DE8F2176C9E2B003E4087 /* KTTilemapLayer.h */,
+				DC4DE8F3176C9E2B003E4087 /* KTTilemapLayer.m */,
+				DC4DE8F6176C9E2B003E4087 /* KTTilemapLayerTiles.h */,
+				DC4DE8F7176C9E2B003E4087 /* KTTilemapLayerTiles.m */,
+				DC4DE8FC176C9E2B003E4087 /* KTTilemapObject.h */,
+				DC4DE8FD176C9E2B003E4087 /* KTTilemapObject.m */,
+				DC4DE8FE176C9E2B003E4087 /* KTTilemapProperties.h */,
+				DC4DE8FF176C9E2B003E4087 /* KTTilemapProperties.m */,
+				DC4DE900176C9E2B003E4087 /* KTTilemapTileProperties.h */,
+				DC4DE901176C9E2B003E4087 /* KTTilemapTileProperties.m */,
+				DC4DE902176C9E2B003E4087 /* KTTilemapTileset.h */,
+				DC4DE903176C9E2B003E4087 /* KTTilemapTileset.m */,
+				DC4DE906176C9E2B003E4087 /* KTTMXReader.h */,
+				DC4DE907176C9E2B003E4087 /* KTTMXReader.m */,
+				DC4DE908176C9E2B003E4087 /* KTTMXWriter.h */,
+				DC4DE909176C9E2B003E4087 /* KTTMXWriter.m */,
+			);
+			path = "Tilemap Model";
+			sourceTree = "<group>";
+		};
+		DC4DE917176CA0AC003E4087 /* Zip & Encode */ = {
+			isa = PBXGroup;
+			children = (
+				DC4DE919176CA0AC003E4087 /* base64.h */,
+				DC4DE918176CA0AC003E4087 /* base64.c */,
+				DC4DE91A176CA0AC003E4087 /* ZipUtils.h */,
+				DC4DE91B176CA0AC003E4087 /* ZipUtils.m */,
+			);
+			path = "Zip & Encode";
+			sourceTree = "<group>";
+		};
+		DC4DE91E176CA25F003E4087 /* Addons */ = {
+			isa = PBXGroup;
+			children = (
+				DC4DE91F176CA25F003E4087 /* KKMutableNumber.h */,
+				DC4DE920176CA25F003E4087 /* KKMutableNumber.m */,
+				DC4DE921176CA25F003E4087 /* KTIvarSetter.h */,
+				DC4DE922176CA25F003E4087 /* KTIvarSetter.m */,
+				DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */,
+				DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */,
+				DC2F43E1176CC8B8005846A7 /* NSObject+KoboldKit.h */,
+				DC2F43E2176CC8B8005846A7 /* NSObject+KoboldKit.m */,
+			);
+			path = Addons;
+			sourceTree = "<group>";
+		};
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +380,7 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC4DE928176CA4EB003E4087 /* libz.dylib */,
 				DCDD2DAB1769FD0A00F307CD /* Foundation.framework */,
 				DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */,
 				DCDD2DAF1769FD0A00F307CD /* UIKit.framework */,
@@ -211,6 +393,7 @@
 		DCDD2DB31769FD0A00F307CD /* KoboldKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DC2F43AF176CB1F7005846A7 /* Resources */,
 				DCDD2DBC1769FD0A00F307CD /* AppDelegate.h */,
 				DCDD2DBD1769FD0A00F307CD /* AppDelegate.m */,
 				DCDD2DBF1769FD0A00F307CD /* Main_iPhone.storyboard */,
@@ -243,12 +426,13 @@
 			isa = PBXGroup;
 			children = (
 				DCFDF3C4176B4C1900F2CAD0 /* Headers */,
+				DC4DE91E176CA25F003E4087 /* Addons */,
 				DCDD2E56176A604300F307CD /* Sprite Kit Categories */,
 				DCFDF3C2176B4B9A00F2CAD0 /* Sprite Kit Subclasses */,
 				DCFDF3C6176B629C00F2CAD0 /* Kobold Kit Nodes */,
 				DCDD2E23176A21CC00F307CD /* Kobold Kit Framework Classes */,
 				DCFDF3C5176B4C6000F2CAD0 /* Turnkey Behaviors */,
-				DCFDF3CD176B649E00F2CAD0 /* Kobold Kit Addon Classes */,
+				DC4DE8EF176C9E2B003E4087 /* Tilemap Model */,
 				DCDD2E2B176A40C400F307CD /* External */,
 				DCDD2DF11769FD2E00F307CD /* Supporting Files */,
 			);
@@ -266,6 +450,7 @@
 		DCDD2E021769FD2E00F307CD /* KoboldKitLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
+				DC2F43CA176CC13B005846A7 /* crawl-tiles Oct-5-2010 */,
 				DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */,
 				DCFDF3BB176B244A00F2CAD0 /* TestScene.h */,
 				DCFDF3BC176B244A00F2CAD0 /* TestScene.m */,
@@ -303,6 +488,7 @@
 				DCDD2E2C176A40C400F307CD /* JRSwizzle */,
 				DCDD2E2F176A40C400F307CD /* VTPG */,
 				DCDD2E47176A40C400F307CD /* XMLWriter */,
+				DC4DE917176CA0AC003E4087 /* Zip & Encode */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -362,6 +548,7 @@
 				DCDD2E17176A01E400F307CD /* KKViewController.m */,
 				DC4B1C15176BC41D00D03213 /* KKView.h */,
 				DC4B1C16176BC41D00D03213 /* KKView.m */,
+				DC2F43E5176CD910005846A7 /* KKSceneEventDelegate.h */,
 				DCDD2E19176A045A00F307CD /* KKScene.h */,
 				DCDD2E1A176A045A00F307CD /* KKScene.m */,
 			);
@@ -372,6 +559,7 @@
 			isa = PBXGroup;
 			children = (
 				DCDD2E141769FECA00F307CD /* KoboldKit.h */,
+				DC4DE92D176CAB1B003E4087 /* KoboldKit.m */,
 				DCFDF3DB176B65AA00F2CAD0 /* KKVersion.h */,
 				DCFDF3DC176B65AA00F2CAD0 /* KKVersion.m */,
 				DCDD2E151769FF1E00F307CD /* KKSpriteKit.h */,
@@ -395,17 +583,6 @@
 			children = (
 			);
 			name = "Kobold Kit Nodes";
-			sourceTree = "<group>";
-		};
-		DCFDF3CD176B649E00F2CAD0 /* Kobold Kit Addon Classes */ = {
-			isa = PBXGroup;
-			children = (
-				DCFDF3D8176B65AA00F2CAD0 /* KKMutableNumber.h */,
-				DCFDF3D9176B65AA00F2CAD0 /* KKMutableNumber.m */,
-				DCFDF3DD176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.h */,
-				DCFDF3DE176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m */,
-			);
-			name = "Kobold Kit Addon Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,10 +679,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2F43C8176CB1F7005846A7 /* README.txt in Resources */,
 				DCDD2DCC1769FD0A00F307CD /* Spaceship.png in Resources */,
+				DC2F43BE176CB1F7005846A7 /* crawl-tilemap.tmx in Resources */,
 				DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */,
+				DC2F43C0176CB1F7005846A7 /* crawl-tiles-hd.png in Resources */,
+				DC2F43C4176CB1F7005846A7 /* crawl-tiles.png in Resources */,
 				DCDD2DC41769FD0A00F307CD /* Main_iPad.storyboard in Resources */,
 				DCDD2DC11769FD0A00F307CD /* Main_iPhone.storyboard in Resources */,
+				DC2F43BF176CB1F7005846A7 /* crawl-tiles-hd.plist in Resources */,
+				DC2F43C5176CB1F7005846A7 /* crawl-tiles.pvr.ccz in Resources */,
+				DC2F43C7176CB1F7005846A7 /* LICENSE.txt in Resources */,
+				DC2F43C1176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */,
+				DC2F43C9176CB293005846A7 /* ATTRIBUTIONS in Resources */,
+				DC2F43C3176CB1F7005846A7 /* crawl-tiles.plist in Resources */,
 				DCDD2DB81769FD0A00F307CD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,7 +701,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2F43DF176CC13B005846A7 /* LICENSE.txt in Resources */,
+				DC2F43D7176CC13B005846A7 /* crawl-tiles-hd.plist in Resources */,
+				DC2F43DD176CC13B005846A7 /* crawl-tiles.pvr.ccz in Resources */,
+				DC2F43DC176CC13B005846A7 /* crawl-tiles.png in Resources */,
+				DC2F43DB176CC13B005846A7 /* crawl-tiles.plist in Resources */,
+				DC2F43D8176CC13B005846A7 /* crawl-tiles-hd.png in Resources */,
+				DC2F43D6176CC13B005846A7 /* crawl-tilemap.tmx in Resources */,
+				DC2F43D9176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */,
 				DCDD2E071769FD2E00F307CD /* InfoPlist.strings in Resources */,
+				DC2F43DA176CC13B005846A7 /* crawl-tiles-hd.tps in Resources */,
+				DC2F43E0176CC13B005846A7 /* README.txt in Resources */,
+				DC2F43DE176CC13B005846A7 /* crawl-tiles.tps in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,22 +735,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4DE911176C9E2B003E4087 /* KTTilemapProperties.m in Sources */,
 				DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */,
 				DCDD2E4A176A40C400F307CD /* JRSwizzle.m in Sources */,
+				DC4DE926176CA25F003E4087 /* KTIvarSetter.m in Sources */,
 				DCDD2E1B176A045A00F307CD /* KKScene.m in Sources */,
 				DCDD2E18176A01E400F307CD /* KKViewController.m in Sources */,
 				DC4B1C17176BC41D00D03213 /* KKView.m in Sources */,
 				DCDD2E131769FDAC00F307CD /* SKNode+KoboldKit.m in Sources */,
+				DC4DE915176C9E2B003E4087 /* KTTMXReader.m in Sources */,
+				DC4DE913176C9E2B003E4087 /* KTTilemapTileset.m in Sources */,
+				DC4DE910176C9E2B003E4087 /* KTTilemapObject.m in Sources */,
+				DC4DE91C176CA0AC003E4087 /* base64.c in Sources */,
 				DCFDF3CC176B638300F2CAD0 /* KKNodeModel.m in Sources */,
 				DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */,
 				DCDD2E21176A04B100F307CD /* KKNodeBehavior.m in Sources */,
+				DC4DE90D176C9E2B003E4087 /* KTTilemapLayerTiles.m in Sources */,
 				DCDD2E1E176A049F00F307CD /* KKNodeController.m in Sources */,
-				DCFDF3E1176B65AA00F2CAD0 /* NSCoder+KTCoderCategory.m in Sources */,
+				DC4DE916176C9E2B003E4087 /* KTTMXWriter.m in Sources */,
+				DC4DE927176CA25F003E4087 /* NSCoder+KoboldKit.m in Sources */,
 				DCFDF3E0176B65AA00F2CAD0 /* KKVersion.m in Sources */,
-				DCFDF3DF176B65AA00F2CAD0 /* KKMutableNumber.m in Sources */,
+				DC4DE90A176C9E2B003E4087 /* KTTilemap.m in Sources */,
+				DC4DE92E176CAB1B003E4087 /* KoboldKit.m in Sources */,
 				DCDD2E26176A2BA700F307CD /* KKButtonBehavior.m in Sources */,
 				DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */,
+				DC4DE925176CA25F003E4087 /* KKMutableNumber.m in Sources */,
+				DC4DE91D176CA0AC003E4087 /* ZipUtils.m in Sources */,
 				DCDD2E59176A606900F307CD /* SKAction+KoboldKit.m in Sources */,
+				DC2F43E3176CC8B8005846A7 /* NSObject+KoboldKit.m in Sources */,
+				DC4DE912176C9E2B003E4087 /* KTTilemapTileProperties.m in Sources */,
+				DC4DE90B176C9E2B003E4087 /* KTTilemapLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

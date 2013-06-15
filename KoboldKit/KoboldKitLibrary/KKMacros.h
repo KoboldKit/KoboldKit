@@ -27,4 +27,8 @@ typedef NSResponder KKResponder;
 
 #define CGFloatEqualToFloat(__x, __y) (fabs(__x - __y) <= (fabs(__x) > fabs(__y) ? fabs(__y) : fabs(__x)) * EPSILON_VALUE)
 
+#define KTMethodUnavailable(reason) __attribute__((unavailable(reason)))
+
+#define KTMustOverrideMethod()      [NSException raise : NSInternalInconsistencyException format : @"%s must be overridden in subclass/category or you called [super %s]", __PRETTY_FUNCTION__, __PRETTY_FUNCTION__]
+
 #endif

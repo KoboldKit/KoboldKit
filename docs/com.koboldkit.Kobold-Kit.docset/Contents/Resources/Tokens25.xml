@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KTTilemapTileset.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KTTilemapTileset</TokenIdentifier>
+			<Abstract type="html">TMX Tileset contains all the tileset data, most importantly the tileset image file and tile properties.
+   Also holds a reference to the tileset texture after it has been loaded. Accessing the texture property will load the texture. </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setTilemap:</TokenIdentifier>
+			<Abstract type="html">Reference to the owning KTTilemap object. Mainly for internal use.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) KTTilemap *tilemap</Declaration>
+			
+			
+			<Anchor>//api/name/tilemap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/tilemap</TokenIdentifier>
+			<Abstract type="html">Reference to the owning KTTilemap object. Mainly for internal use.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) KTTilemap *tilemap</Declaration>
+			
+			
+			<Anchor>//api/name/tilemap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/tilemap</TokenIdentifier>
+			<Abstract type="html">Reference to the owning KTTilemap object. Mainly for internal use.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) KTTilemap *tilemap</Declaration>
+			
+			
+			<Anchor>//api/name/tilemap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the tileset. TILED-EDITABLE</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/name</TokenIdentifier>
+			<Abstract type="html">The name of the tileset. TILED-EDITABLE</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/name</TokenIdentifier>
+			<Abstract type="html">The name of the tileset. TILED-EDITABLE</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setImageFile:</TokenIdentifier>
+			<Abstract type="html">The image file without the path. Assumes the image file is in bundle's root folder.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *imageFile</Declaration>
+			
+			
+			<Anchor>//api/name/imageFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/imageFile</TokenIdentifier>
+			<Abstract type="html">The image file without the path. Assumes the image file is in bundle's root folder.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *imageFile</Declaration>
+			
+			
+			<Anchor>//api/name/imageFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/imageFile</TokenIdentifier>
+			<Abstract type="html">The image file without the path. Assumes the image file is in bundle's root folder.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *imageFile</Declaration>
+			
+			
+			<Anchor>//api/name/imageFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setAlternateTileset:</TokenIdentifier>
+			<Abstract type="html">Points to the alternate tileset, used to draw tiles of this tileset from a different texture. Set by calling replaceTileset:withTileset: on KTTilemap.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapTileset *alternateTileset</Declaration>
+			
+			
+			<Anchor>//api/name/alternateTileset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/alternateTileset</TokenIdentifier>
+			<Abstract type="html">Points to the alternate tileset, used to draw tiles of this tileset from a different texture. Set by calling replaceTileset:withTileset: on KTTilemap.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapTileset *alternateTileset</Declaration>
+			
+			
+			<Anchor>//api/name/alternateTileset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/alternateTileset</TokenIdentifier>
+			<Abstract type="html">Points to the alternate tileset, used to draw tiles of this tileset from a different texture. Set by calling replaceTileset:withTileset: on KTTilemap.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapTileset *alternateTileset</Declaration>
+			
+			
+			<Anchor>//api/name/alternateTileset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setFirstGid:</TokenIdentifier>
+			<Abstract type="html">The first GID in this tileset. It's the top-left tile in the tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) gid_t firstGid</Declaration>
+			
+			
+			<Anchor>//api/name/firstGid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/firstGid</TokenIdentifier>
+			<Abstract type="html">The first GID in this tileset. It's the top-left tile in the tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) gid_t firstGid</Declaration>
+			
+			
+			<Anchor>//api/name/firstGid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/firstGid</TokenIdentifier>
+			<Abstract type="html">The first GID in this tileset. It's the top-left tile in the tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) gid_t firstGid</Declaration>
+			
+			
+			<Anchor>//api/name/firstGid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setLastGid:</TokenIdentifier>
+			<Abstract type="html">The last GID in this tileset. It's the bottom-most, right-most tile in the tileset.
+   Caution: lastGid is only valid after the tileset texture has been loaded. It will be 0 before that. </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) gid_t lastGid</Declaration>
+			
+			
+			<Anchor>//api/name/lastGid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/lastGid</TokenIdentifier>
+			<Abstract type="html">The last GID in this tileset. It's the bottom-most, right-most tile in the tileset.
+   Caution: lastGid is only valid after the tileset texture has been loaded. It will be 0 before that. </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) gid_t lastGid</Declaration>
+			
+			
+			<Anchor>//api/name/lastGid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/lastGid</TokenIdentifier>
+			<Abstract type="html">The last GID in this tileset. It's the bottom-most, right-most tile in the tileset.
+   Caution: lastGid is only valid after the tileset texture has been loaded. It will be 0 before that. </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) gid_t lastGid</Declaration>
+			
+			
+			<Anchor>//api/name/lastGid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setTilesPerRow:</TokenIdentifier>
+			<Abstract type="html">How many tiles per row are in this tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) unsigned int tilesPerRow</Declaration>
+			
+			
+			<Anchor>//api/name/tilesPerRow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/tilesPerRow</TokenIdentifier>
+			<Abstract type="html">How many tiles per row are in this tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) unsigned int tilesPerRow</Declaration>
+			
+			
+			<Anchor>//api/name/tilesPerRow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/tilesPerRow</TokenIdentifier>
+			<Abstract type="html">How many tiles per row are in this tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) unsigned int tilesPerRow</Declaration>
+			
+			
+			<Anchor>//api/name/tilesPerRow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setTilesPerColumn:</TokenIdentifier>
+			<Abstract type="html">How many tiles per column are in this tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) unsigned int tilesPerColumn</Declaration>
+			
+			
+			<Anchor>//api/name/tilesPerColumn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/tilesPerColumn</TokenIdentifier>
+			<Abstract type="html">How many tiles per column are in this tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) unsigned int tilesPerColumn</Declaration>
+			
+			
+			<Anchor>//api/name/tilesPerColumn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/tilesPerColumn</TokenIdentifier>
+			<Abstract type="html">How many tiles per column are in this tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) unsigned int tilesPerColumn</Declaration>
+			
+			
+			<Anchor>//api/name/tilesPerColumn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setSpacing:</TokenIdentifier>
+			<Abstract type="html">How much space (in points) is between individual tiles. If there's a spacing of 2, there will be a spacing of 2 points
+   (4 pixels for -hd tileset images) between two adjacent tiles. Spacing is the same for both horizontal and vertical. </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/spacing</TokenIdentifier>
+			<Abstract type="html">How much space (in points) is between individual tiles. If there's a spacing of 2, there will be a spacing of 2 points
+   (4 pixels for -hd tileset images) between two adjacent tiles. Spacing is the same for both horizontal and vertical. </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/spacing</TokenIdentifier>
+			<Abstract type="html">How much space (in points) is between individual tiles. If there's a spacing of 2, there will be a spacing of 2 points
+   (4 pixels for -hd tileset images) between two adjacent tiles. Spacing is the same for both horizontal and vertical. </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setMargin:</TokenIdentifier>
+			<Abstract type="html">The margin defines how much spacing (in points) there is from the texture border to the first tile. Margin is the same for both horizontal and vertical.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/margin</TokenIdentifier>
+			<Abstract type="html">The margin defines how much spacing (in points) there is from the texture border to the first tile. Margin is the same for both horizontal and vertical.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/margin</TokenIdentifier>
+			<Abstract type="html">The margin defines how much spacing (in points) there is from the texture border to the first tile. Margin is the same for both horizontal and vertical.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setDrawOffset:</TokenIdentifier>
+			<Abstract type="html">Drawing offset determines placement of tiles relative to the tile's origin. Can be used if tileset should not align with the grid but offset by a certain
+   distance from the grid. TILED-EDITABLE </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint drawOffset</Declaration>
+			
+			
+			<Anchor>//api/name/drawOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/drawOffset</TokenIdentifier>
+			<Abstract type="html">Drawing offset determines placement of tiles relative to the tile's origin. Can be used if tileset should not align with the grid but offset by a certain
+   distance from the grid. TILED-EDITABLE </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint drawOffset</Declaration>
+			
+			
+			<Anchor>//api/name/drawOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/drawOffset</TokenIdentifier>
+			<Abstract type="html">Drawing offset determines placement of tiles relative to the tile's origin. Can be used if tileset should not align with the grid but offset by a certain
+   distance from the grid. TILED-EDITABLE </Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint drawOffset</Declaration>
+			
+			
+			<Anchor>//api/name/drawOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setTileSize:</TokenIdentifier>
+			<Abstract type="html">The size of tiles (in points).</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/tileSize</TokenIdentifier>
+			<Abstract type="html">The size of tiles (in points).</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/tileSize</TokenIdentifier>
+			<Abstract type="html">The size of tiles (in points).</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setTexture:</TokenIdentifier>
+			<Abstract type="html">The texture used by this tileset. If this property is accessed while it's still nil, it will load the texture.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SKTexture *texture</Declaration>
+			
+			
+			<Anchor>//api/name/texture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/texture</TokenIdentifier>
+			<Abstract type="html">The texture used by this tileset. If this property is accessed while it's still nil, it will load the texture.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SKTexture *texture</Declaration>
+			
+			
+			<Anchor>//api/name/texture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/texture</TokenIdentifier>
+			<Abstract type="html">The texture used by this tileset. If this property is accessed while it's still nil, it will load the texture.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SKTexture *texture</Declaration>
+			
+			
+			<Anchor>//api/name/texture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setTileTextures:</TokenIdentifier>
+			<Abstract type="html">The textures for each tile in the tileset. The index of a texture for a specific gid is obtained by subtracting firstGid from gid: textureIndes = gid - firstGid</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *tileTextures</Declaration>
+			
+			
+			<Anchor>//api/name/tileTextures</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/tileTextures</TokenIdentifier>
+			<Abstract type="html">The textures for each tile in the tileset. The index of a texture for a specific gid is obtained by subtracting firstGid from gid: textureIndes = gid - firstGid</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *tileTextures</Declaration>
+			
+			
+			<Anchor>//api/name/tileTextures</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/tileTextures</TokenIdentifier>
+			<Abstract type="html">The textures for each tile in the tileset. The index of a texture for a specific gid is obtained by subtracting firstGid from gid: textureIndes = gid - firstGid</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *tileTextures</Declaration>
+			
+			
+			<Anchor>//api/name/tileTextures</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setProperties:</TokenIdentifier>
+			<Abstract type="html">The tileset's properties. Properties for individual tiles are in tileProperties.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/properties</TokenIdentifier>
+			<Abstract type="html">The tileset's properties. Properties for individual tiles are in tileProperties.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/properties</TokenIdentifier>
+			<Abstract type="html">The tileset's properties. Properties for individual tiles are in tileProperties.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/setTileProperties:</TokenIdentifier>
+			<Abstract type="html">Contains each tile's properties. Properties for the tileset itself are in properties.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapTileProperties *tileProperties</Declaration>
+			
+			
+			<Anchor>//api/name/tileProperties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/tileProperties</TokenIdentifier>
+			<Abstract type="html">Contains each tile's properties. Properties for the tileset itself are in properties.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapTileProperties *tileProperties</Declaration>
+			
+			
+			<Anchor>//api/name/tileProperties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileset/tileProperties</TokenIdentifier>
+			<Abstract type="html">Contains each tile's properties. Properties for the tileset itself are in properties.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTTilemapTileProperties *tileProperties</Declaration>
+			
+			
+			<Anchor>//api/name/tileProperties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileset/textureForGid:</TokenIdentifier>
+			<Abstract type="html">The texture for a specific GID, or nil if the gid is not in this tileset.</Abstract>
+			<DeclaredIn>KTTilemapTileset.h</DeclaredIn>			
+			
+			<Declaration>- (SKTexture *)textureForGid:(gid_t)gid</Declaration>
+			
+			<ReturnValue><Abstract type="html">The texture for a specific GID, or nil if the gid is not in this tileset.</Abstract></ReturnValue>
+			<Anchor>//api/name/textureForGid:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

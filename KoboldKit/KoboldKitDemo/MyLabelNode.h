@@ -10,4 +10,6 @@
 
 @interface MyLabelNode : SKLabelNode
 
+-(void) observe;
+
 @end

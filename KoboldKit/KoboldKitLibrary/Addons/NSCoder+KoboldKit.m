@@ -1,14 +1,12 @@
 //
-// NSCoder+KTCoderCategory.m
-// Kobold2D-Libraries
 //
 // Created by Steffen Itterheim on 11.10.12.
 //
 //
 
-#import "NSCoder+KTCoderCategory.h"
+#import "NSCoder+KoboldKit.h"
 
-@implementation NSCoder (KTCoderCategory)
+@implementation NSCoder (KoboldKit)
 
 #if TARGET_OS_IPHONE
 -(void) encodePoint:(CGPoint)point forKey:(NSString*)key

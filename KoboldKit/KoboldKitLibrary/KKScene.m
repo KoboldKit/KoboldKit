@@ -38,43 +38,47 @@
 {
 	//self.anchorPoint = CGPointMake(0.5f, 0.5f);
 	self.physicsWorld.contactDelegate = self;
-	_inputReceivers = [NSMutableArray array];
-	_inputReceiversToAdd = [NSMutableArray array];
-	_inputReceiversToRemove = [NSMutableArray array];
+	
+	const NSUInteger kInitialCapacity = 8;
+	_controllers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_inputObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_sceneUpdateObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_sceneDidUpdateBehaviorsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_sceneDidEvaluateActionsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_sceneDidSimulatePhysicsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_sceneWillMoveFromViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_sceneDidMoveToViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 }
 
 -(void) dealloc
 {
 	NSLog(@"dealloc: %@", self);
-}
-
-#pragma mark View
-
--(void) didMoveToView:(SKView *)view
-{
-}
-
--(void) willMoveFromView:(SKView *)view
-{
+	
+	// make sure no node is still hooked into the notification center
+	NSNotificationCenter* notificationCenter = [NSNotificationCenter defaultCenter];
+	[self enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop)
+	{
+		[notificationCenter removeObserver:node];
+	}];
 }
 
 #pragma mark Controllers
 
 -(void) registerController:(KKNodeController*)controller
 {
-	if (_controllers == nil)
-	{
-		_controllers = [NSMutableArray arrayWithObject:controller];
-	}
-	else
-	{
-		[_controllers addObject:controller];
-	}
+	dispatch_async(dispatch_get_main_queue(), ^{
+		if ([_controllers indexOfObject:controller] == NSNotFound)
+		{
+			[_controllers addObject:controller];
+		}
+	});
 }
 
 -(void) unregisterController:(KKNodeController*)controller
 {
-	[_controllers removeObject:controller];
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[_controllers removeObject:controller];
+	});
 }
 
 #pragma mark Update
@@ -82,6 +86,11 @@
 -(void) update:(NSTimeInterval)currentTime
 {
 	++_frameCount;
+	
+	for (id observer in _sceneUpdateObservers)
+	{
+		[observer update:currentTime];
+	}
 	
 	// update controllers
 	for (KKNodeController* controller in _controllers)
@@ -91,39 +100,119 @@
 			[controller update:currentTime];
 		}
 	}
+
+	[self didUpdateBehaviors];
 }
 
-/*
+-(void) didUpdateBehaviors
+{
+	for (id observer in _sceneDidUpdateBehaviorsObservers)
+	{
+		[observer didUpdateBehaviors];
+	}
+}
+
 -(void) didEvaluateActions
 {
-	
+	for (id observer in _sceneDidEvaluateActionsObservers)
+	{
+		[observer didEvaluateActions];
+	}
 }
-*/
 
 -(void) didSimulatePhysics
 {
-	[self addAndRemoveInputReceivers];
+	for (id observer in _sceneDidSimulatePhysicsObservers)
+	{
+		[observer didSimulatePhysics];
+	}
+}
+
+-(void) willMoveFromView:(SKView *)view
+{
+	for (id observer in _sceneWillMoveFromViewObservers)
+	{
+		[observer willMoveFromView:view];
+	}
+}
+
+-(void) didMoveToView:(SKView *)view
+{
+	for (id observer in _sceneDidMoveToViewObservers)
+	{
+		[observer didMoveToView:view];
+	}
+}
+
+-(void) addSceneEventsObserver:(id)observer
+{
+	// prevent users from registering the scene, because it will always call these methods if implemented
+	if (observer != self)
+	{
+		dispatch_async(dispatch_get_main_queue(), ^{
+			if ([observer respondsToSelector:@selector(update:)] &&
+				[_sceneUpdateObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_sceneUpdateObservers addObject:observer];
+			}
+			if ([observer respondsToSelector:@selector(didUpdateBehaviors)] &&
+				[_sceneDidUpdateBehaviorsObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_sceneDidUpdateBehaviorsObservers addObject:observer];
+			}
+			if ([observer respondsToSelector:@selector(didEvaluateActions)] &&
+				[_sceneDidEvaluateActionsObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_sceneDidEvaluateActionsObservers addObject:observer];
+			}
+			if ([observer respondsToSelector:@selector(didSimulatePhysics)] &&
+				[_sceneDidSimulatePhysicsObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_sceneDidSimulatePhysicsObservers addObject:observer];
+			}
+			if ([observer respondsToSelector:@selector(willMoveFromView:)] &&
+				[_sceneWillMoveFromViewObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_sceneWillMoveFromViewObservers addObject:observer];
+			}
+			if ([observer respondsToSelector:@selector(didMoveToView:)] &&
+				[_sceneDidMoveToViewObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_sceneDidMoveToViewObservers addObject:observer];
+			}
+		});
+	}
+}
+
+-(void) removeSceneEventsObserver:(id)observer
+{
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[_sceneUpdateObservers removeObject:observer];
+		[_sceneDidUpdateBehaviorsObservers removeObject:observer];
+		[_sceneDidEvaluateActionsObservers removeObject:observer];
+		[_sceneDidSimulatePhysicsObservers removeObject:observer];
+		[_sceneWillMoveFromViewObservers removeObject:observer];
+		[_sceneDidMoveToViewObservers removeObject:observer];
+    });
 }
 
 #pragma mark Input
 
--(void) addAndRemoveInputReceivers
+-(void) addInputEventsObserver:(id)observer
 {
-	[_inputReceivers addObjectsFromArray:_inputReceiversToAdd];
-	[_inputReceiversToAdd removeAllObjects];
-
-	[_inputReceivers removeObjectsInArray:_inputReceiversToRemove];
-	[_inputReceiversToRemove removeAllObjects];
+	dispatch_async(dispatch_get_main_queue(), ^{
+		if ([_inputObservers indexOfObject:observer] == NSNotFound)
+		{
+			[_inputObservers addObject:observer];
+		}
+    });
 }
 
--(void) registerInputReceiver:(id)receiver
+-(void) removeInputEventsObserver:(id)observer
 {
-	[_inputReceiversToAdd addObject:receiver];
-}
-
--(void) unregisterInputReceiver:(id)receiver
-{
-	[_inputReceiversToRemove addObject:receiver];
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[_inputObservers removeObject:observer];
+    });
 }
 
 #pragma mark Touches
@@ -131,44 +220,44 @@
 #if TARGET_OS_IPHONE
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	for (id receiver in _inputReceivers)
+	for (id observer in _inputObservers)
 	{
-		if ([receiver respondsToSelector:@selector(touchesBegan:withEvent:)])
+		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
 		{
-			[receiver touchesBegan:touches withEvent:event];
+			[observer touchesBegan:touches withEvent:event];
 		}
 	}
 }
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	for (id receiver in _inputReceivers)
+	for (id observer in _inputObservers)
 	{
-		if ([receiver respondsToSelector:@selector(touchesBegan:withEvent:)])
+		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
 		{
-			[receiver touchesMoved:touches withEvent:event];
+			[observer touchesMoved:touches withEvent:event];
 		}
 	}
 }
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	for (id receiver in _inputReceivers)
+	for (id observer in _inputObservers)
 	{
-		if ([receiver respondsToSelector:@selector(touchesBegan:withEvent:)])
+		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
 		{
-			[receiver touchesEnded:touches withEvent:event];
+			[observer touchesEnded:touches withEvent:event];
 		}
 	}
 }
 
 -(void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	for (id receiver in _inputReceivers)
+	for (id observer in _inputObservers)
 	{
-		if ([receiver respondsToSelector:@selector(touchesBegan:withEvent:)])
+		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
 		{
-			[receiver touchesCancelled:touches withEvent:event];
+			[observer touchesCancelled:touches withEvent:event];
 		}
 	}
 }
@@ -216,8 +305,14 @@
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
-static NSString* const ArchiveKeyForControllers = @"controller";
-static NSString* const ArchiveKeyForInputReceivers = @"inputReceivers";
+static NSString* const ArchiveKeyForControllers = @"controllers";
+static NSString* const ArchiveKeyForInputObservers = @"inputObservers";
+static NSString* const ArchiveKeyForSceneUpdateObservers = @"sceneUpdateObservers";
+static NSString* const ArchiveKeyForSceneDidUpdateBehaviorsObservers = @"sceneDidUpdateBehaviorsObservers";
+static NSString* const ArchiveKeyForSceneDidEvaluateActionsObservers = @"sceneDidEvaluateActionsObservers";
+static NSString* const ArchiveKeyForSceneDidSimulatePhysicsObservers = @"sceneDidSimulatePhysicsObservers";
+static NSString* const ArchiveKeyForSceneWillMoveFromViewObservers = @"sceneWillMoveFromViewObservers";
+static NSString* const ArchiveKeyForSceneDidMoveToViewObservers = @"sceneDidMoveToViewObservers";
 static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 
 -(id) initWithCoder:(NSCoder*)decoder
@@ -226,7 +321,13 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 	if (self)
 	{
 		_controllers = [decoder decodeObjectForKey:ArchiveKeyForControllers];
-		_inputReceivers = [decoder decodeObjectForKey:ArchiveKeyForInputReceivers];
+		_inputObservers = [decoder decodeObjectForKey:ArchiveKeyForInputObservers];
+		_sceneUpdateObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneUpdateObservers];
+		_sceneDidUpdateBehaviorsObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneDidUpdateBehaviorsObservers];
+		_sceneDidEvaluateActionsObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneDidEvaluateActionsObservers];
+		_sceneDidSimulatePhysicsObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneDidSimulatePhysicsObservers];
+		_sceneWillMoveFromViewObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneWillMoveFromViewObservers];
+		_sceneDidMoveToViewObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneDidMoveToViewObservers];
 		_frameCount = [decoder decodeIntegerForKey:ArchiveKeyForFrameCount];
 	}
 	return self;
@@ -236,7 +337,13 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 {
 	[super encodeWithCoder:encoder];
 	[encoder encodeObject:_controllers forKey:ArchiveKeyForControllers];
-	[encoder encodeObject:_inputReceivers forKey:ArchiveKeyForInputReceivers];
+	[encoder encodeObject:_inputObservers forKey:ArchiveKeyForInputObservers];
+	[encoder encodeObject:_sceneUpdateObservers forKey:ArchiveKeyForSceneUpdateObservers];
+	[encoder encodeObject:_sceneDidUpdateBehaviorsObservers forKey:ArchiveKeyForSceneDidUpdateBehaviorsObservers];
+	[encoder encodeObject:_sceneDidEvaluateActionsObservers forKey:ArchiveKeyForSceneDidEvaluateActionsObservers];
+	[encoder encodeObject:_sceneDidSimulatePhysicsObservers forKey:ArchiveKeyForSceneDidSimulatePhysicsObservers];
+	[encoder encodeObject:_sceneWillMoveFromViewObservers forKey:ArchiveKeyForSceneWillMoveFromViewObservers];
+	[encoder encodeObject:_sceneDidMoveToViewObservers forKey:ArchiveKeyForSceneDidMoveToViewObservers];
 	[encoder encodeInteger:_frameCount forKey:ArchiveKeyForFrameCount];
 }
 
@@ -245,10 +352,18 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 -(id) copyWithZone:(NSZone*)zone
 {
 	KKScene* copy = [super copyWithZone:zone];
+#pragma message "FIXME: this array copy is wrong, will make separate copies of observers!"
 	copy->_controllers = [[NSMutableArray alloc] initWithArray:_controllers copyItems:YES];
-	copy->_inputReceivers = [[NSMutableArray alloc] initWithArray:_inputReceivers copyItems:YES];
+	copy->_inputObservers = [[NSMutableArray alloc] initWithArray:_inputObservers copyItems:YES];
+	copy->_sceneUpdateObservers = [[NSMutableArray alloc] initWithArray:_sceneUpdateObservers copyItems:YES];
+	// TODO ...
 	copy->_frameCount = _frameCount;
 	return copy;
+}
+
+-(void) duplicateObserver:(id)observer withCopy:(id)copy
+{
+	// called by observing classes on copy to replace their observers
 }
 
 #pragma mark Equality

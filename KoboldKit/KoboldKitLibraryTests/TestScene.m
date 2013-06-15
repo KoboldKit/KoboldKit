@@ -31,4 +31,9 @@
     return self;
 }
 
+-(void) update:(NSTimeInterval)currentTime
+{
+	NSLog(@"update");
+}
+
 @end

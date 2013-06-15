@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="48" height="34" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="crawl-tiles" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <image source="crawl-tiles.png" trans="ff3366" width="512" height="512"/>
+ </tileset>
+ <layer name="floor" width="48" height="34">
+  <data encoding="base64" compression="zlib">
+   eJylmEFv00AQhUeIv9MLQvRG66puAqEtR3riQpP8gJb0RhJfkThV4udiS/uUzy+zbiUOT3EcZ/a9mbezu76IiKbHRcHHHh96nFbwAc/WMJu492RYGu577ArW5buwTO4pdlO4C1Mc/LcvPT4nWFT01TSI07rw1/cVsC6f5E/uM+AlfsKnCdR0zBId4if+K4O0UZM8M8R7U8kr+VwnHK8rcB01LdSwB1Yx9tY6gfLfxDF353fT47LHrd1ry/3LkofL5LlMi+uhn3bQwLrcx7H/5Z2Muzj/L26TugleE3lnaRroe6GJY6+/hjvz/NzjDuiSZ6bqQQ2aF5zTUxo+xsE7Ne7icTeBrsDvM4bitBUt0iAfkSc1eP6V+68lzlmSb/H5+QpkWmp1bDGua+gqUB9aW/6dv+e9K/yWkfeGDs8QWS1a1IRz4yypwT4Oc7eL8TwW/2Yi/8z7Ng6+ZE9Y4VprzKqMneloY9y3ODb578uY24T7gNM4zF/nr/j0jq+HqoPXQ88pZ8yBa5i9wF/56KBFOI3X+0feZq6V76V9sgZ6Tt7ivFCOOPYw7mPhT18ypkD+t4jB2tb465OcfZ30fYvzr/lH/DVfaz2U/KWB/Fvjf2cx5Bt6n9faN+p5nweqcY2/Yu9jvMfz/HsfXSQ1oH9dA3NOHZwf/P++xH+b8B80/S4aFFv8l4gn/r5/kI8Wcewh6mAufM6ubRz1Ic1l9gfyv0H+H5GPfRzXfFn4cw9a81FNg+9nnTfXA65pjKt1/wbjr8Bf+rP1V/x1BtDaQh+dYyz1PGroYjy3WHM9s49j37fG/Qq5H/6/AbK9c5b/xvi7j6Rhl2hQr/A1mHlnDHE/K9ybOPjmN3K9j+N5q7qT+4C/cbwfyjRk8zrbB2W90s9FNf7qEzzLUIf2P7MYn33lEfK/jvx8+9K+1PcM9AvXmxp/+TDzz7rEbIDWxuFeWnte37dLQ2vwdfaLxWPfWUDD0Pc3+G9t7j7FwesNxlBteWZkjXy/SE9rXnL9q3Enf2lgLqlffB1tMoaPM4+xv1zDovC+Kp8/yvWV5YMxH1BTr6fqcGV1ELYFrLlz59lPPWxXPqWBuZt6t8I6fivcHxDfNWhuKQcaf45raZlP5L0z7qqZNEydybN4zzHu6ZsYe8l9eY5aNIVrU+qr7752yy/k3sXYc12MfVR7/0Pu5Kz3C5kO9qSBfwveroP8/cy1SThTh2pQO9d6LMbT+81Bw9Y0zMB/bho4V2flt3nCn+NpHJ4/BeZPXj2PQ935+xa8dzE+Q3Fu8Sy2QDxB/e19j3c9Toy/5ghzxT2+780I8dlV7un6PsbvmIdx7sq43P9O9YVfBQP/PwXuHc9TDdQg7n4eYx7kG+oYxnws/Ln2/3oB38H/JOHPPbefe7XPZy67GL9T0W8802zxf3qK/Kf6wnWF//eigT2CZxJ6yDmK185A7brelufVw5X7TYznp67nyX35/x8XXTwT
+  </data>
+ </layer>
+ <objectgroup name="objects" width="48" height="34">
+  <object x="384" y="256">
+   <polygon points="0,0 0,256 192,416 384,416 544,224 480,64 288,0"/>
+  </object>
+  <object x="192" y="1088">
+   <polygon points="0,0 96,-160 192,-192 352,-128 416,0"/>
+  </object>
+  <object x="992" y="1088">
+   <polygon points="0,0 96,-96 -32,-256 -160,-128 -672,0 -160,0"/>
+  </object>
+  <object x="1536" y="736">
+   <polygon points="0,0 -160,32 -320,-128 -320,-736 0,-736"/>
+  </object>
+  <object x="992" y="0">
+   <polygon points="0,0 224,192 224,0"/>
+  </object>
+  <object x="1280" y="960" width="256" height="96"/>
+  <object x="352" y="640" width="32" height="128"/>
+  <object x="96" y="256" width="96" height="192"/>
+  <object x="96" y="96" width="32" height="32"/>
+  <object x="128" y="640" width="32" height="32"/>
+  <object x="672" y="768" width="32" height="32"/>
+  <object x="1024" y="480" width="32" height="32"/>
+  <object x="1440" y="832" width="32" height="32"/>
+  <object x="576" y="32" width="160" height="96"/>
+  <object x="1120" y="320" width="32" height="192"/>
+  <object x="960" y="640" width="128" height="64"/>
+  <object x="64" y="1056"/>
+ </objectgroup>
+</map>

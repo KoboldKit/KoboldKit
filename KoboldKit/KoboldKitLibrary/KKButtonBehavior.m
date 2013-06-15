@@ -24,12 +24,12 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 -(void) didJoinController
 {
 	_selectedScale = 1.1f;
-	[self.node.kkScene registerInputReceiver:self];
+	[self.node.kkScene addInputEventsObserver:self];
 }
 
 -(void) didLeaveController
 {
-	[self.node.kkScene unregisterInputReceiver:self];
+	[self.node.kkScene removeInputEventsObserver:self];
 }
 
 -(void) beginSelect

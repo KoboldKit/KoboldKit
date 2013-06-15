@@ -180,12 +180,14 @@ static NSString* const XSI_NAMESPACE_URI_PREFIX = @"xsi";
 	{
 		// raise exception
 		([NSException exceptionWithName:@"XMLWriterException" reason:@"Namespace cannot be NULL" userInfo:NULL]);
+		return;
 	}
 
 	if (!prefix)
 	{
 		// raise exception
 		([NSException exceptionWithName:@"XMLWriterException" reason:@"Prefix cannot be NULL" userInfo:NULL]);
+		return;
 	}
 
 	if ([namespaceURIPrefixMap objectForKey:namespaceURI])

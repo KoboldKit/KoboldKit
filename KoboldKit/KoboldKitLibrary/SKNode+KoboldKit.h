@@ -16,7 +16,7 @@
 @interface SKNode (KoboldKit)
 
 /** (not documented) */
--(void) centerOnNode:(SKNode*)node
+-(void) centerOnNode:(SKNode*)node;
 
 /** @name Creating and Accessing the Controller */
 /** Returns the node's controller object. */
@@ -52,6 +52,33 @@
 -(void) removeBehaviorForKey:(NSString*)key;
 /** Removes all behaviors from the node. */
 -(void) removeAllBehaviors;
+
+/** @name Scheduling Selectors */
+
+/** (not documented) */
+-(void) performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay;
+/** (not documented) */
+-(void) performSelectorInBackground:(SEL)aSelector;
+
+/** @name Subscribe to input events */
+
+/** (not documented) */
+-(void) observeInputEvents;
+/** (not documented) */
+-(void) disregardInputEvents;
+
+
+/** (not documented) */
+-(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector;
+/** (not documented) */
+-(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector object:(id)notificationSender;
+/** (not documented) */
+-(void) disregardNotification:(NSString*)notificationName;
+/** (not documented) */
+-(void) disregardNotification:(NSString*)notificationName object:(id)notificationSender;
+/** (not documented) */
+-(void) disregardAllNotifications;
+
 
 // internal use only
 -(NSString*) kkDescription;

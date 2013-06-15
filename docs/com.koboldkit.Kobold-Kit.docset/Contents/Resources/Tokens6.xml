@@ -1,103 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKScene.html">
+	<File path="Classes/KKNodeBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKScene</TokenIdentifier>
-			<Abstract type="html">KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
-dispatches events (input, physics).</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKNodeBehavior</TokenIdentifier>
+			<Abstract type="html">Behaviors add custom logic to a node.
+Behaviors differ from actions in several ways:
+- they are useful for any logic code that is hard or impossible to implement with (custom) actions, such as event processing
+- they usually run indefinitely and can be paused by pausing the controller
+- they may have a state (ivars)
+- they may have a public interface (properties, methods)
+- they can not be reversed</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="6"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/setFrameCount:</TokenIdentifier>
-			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setKey:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			<Declaration>@property (atomic, readonly) NSString *key</Declaration>
 			
-			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
-			<Anchor>//api/name/frameCount</Anchor>
+			
+			<Anchor>//api/name/key</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/frameCount</TokenIdentifier>
-			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/key</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			<Declaration>@property (atomic, readonly) NSString *key</Declaration>
 			
-			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
-			<Anchor>//api/name/frameCount</Anchor>
+			
+			<Anchor>//api/name/key</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKScene/frameCount</TokenIdentifier>
-			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/key</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			<Declaration>@property (atomic, readonly) NSString *key</Declaration>
 			
-			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
-			<Anchor>//api/name/frameCount</Anchor>
+			
+			<Anchor>//api/name/key</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/registerInputReceiver:</TokenIdentifier>
-			<Abstract type="html">Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
-Note: this is a preliminary, inefficient system. It will eventually be replaced.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setController:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)registerInputReceiver:(id)receiver</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>receiver</Name>
-					<Abstract type="html">Any object that implements touch, mouse, or other input events.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<Anchor>//api/name/registerInputReceiver:</Anchor>
+			
+			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/unregisterInputReceiver:</TokenIdentifier>
-			<Abstract type="html">Unregisters a class as generic input receiver.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/controller</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)unregisterInputReceiver:(id)receiver</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>receiver</Name>
-					<Abstract type="html">An object that was previously registered as input receiver.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<Anchor>//api/name/unregisterInputReceiver:</Anchor>
+			
+			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/dumpSceneGraph:</TokenIdentifier>
-			<Abstract type="html">Dumps the scene graph to a string.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/controller</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)dumpSceneGraph:(KKSceneGraphDumpOptions)options</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>options</Name>
-					<Abstract type="html">Determines what will be included in the dump.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A string containing the textual dump of the scene graph.</Abstract></ReturnValue>
-			<Anchor>//api/name/dumpSceneGraph:</Anchor>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setNode:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/node</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/node</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setWantsUpdate:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL wantsUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/wantsUpdate</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL wantsUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/wantsUpdate</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL wantsUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)didJoinController</Declaration>
+			
+			
+			<Anchor>//api/name/didJoinController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didLeaveController</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)didLeaveController</Declaration>
+			
+			
+			<Anchor>//api/name/didLeaveController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/update:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
+			
+			
+			<Anchor>//api/name/update:</Anchor>
 		</Token>
 		
 	</File>

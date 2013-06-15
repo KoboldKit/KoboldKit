@@ -1,124 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/NSXMLStreamWriter.html">
+	<File path="Classes/KTIvarInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/NSXMLStreamWriter</TokenIdentifier>
-			<Abstract type="html">xml stream writer with namespace support</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KTIvarInfo</TokenIdentifier>
+			<Abstract type="html">INTERNAL USE! Class that represents an ivar in order to set and get an ivar's value.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>
 			
 			<NodeRef refid="12"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeStartElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/setIvar:</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeStartElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>@property (nonatomic) Ivar ivar</Declaration>
 			
 			
-			<Anchor>//api/name/writeStartElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/ivar</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEndElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/ivar</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEndElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>@property (nonatomic) Ivar ivar</Declaration>
 			
 			
-			<Anchor>//api/name/writeEndElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/ivar</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEmptyElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KTIvarInfo/ivar</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEmptyElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>@property (nonatomic) Ivar ivar</Declaration>
 			
 			
-			<Anchor>//api/name/writeEmptyElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/ivar</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeAttributeWithNamespace:localName:value:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeAttributeWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName value:(NSString *)value</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/writeAttributeWithNamespace:localName:value:</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setPrefix:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">set a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/name</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (void)setPrefix:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/setPrefix:namespaceURI:</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeNamespace:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">write (and set) a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KTIvarInfo/name</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeNamespace:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/writeNamespace:namespaceURI:</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">set the default namespace (empty prefix)</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/setEncoding:</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (void)setDefaultNamespace:(NSString *)namespaceURI</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
 			
 			
-			<Anchor>//api/name/setDefaultNamespace:</Anchor>
+			<Anchor>//api/name/encoding</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">write (and set) the default namespace</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/encoding</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeDefaultNamespace:(NSString *)namespaceURI</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
 			
 			
-			<Anchor>//api/name/writeDefaultNamespace:</Anchor>
+			<Anchor>//api/name/encoding</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getPrefix:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KTIvarInfo/encoding</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)getPrefix:(NSString *)namespaceURI</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
 			
 			
-			<Anchor>//api/name/getPrefix:</Anchor>
+			<Anchor>//api/name/encoding</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getNamespaceURI:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/setType:</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)getNamespaceURI:(NSString *)prefix</Declaration>
+			<Declaration>@property (nonatomic, readonly) KTIvarType type</Declaration>
 			
 			
-			<Anchor>//api/name/getNamespaceURI:</Anchor>
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/type</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTIvarType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KTIvarInfo/type</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KTIvarType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KTIvarInfo/setIvarInTarget:value:</TokenIdentifier>
+			<Abstract type="html">Set the ivar in the given target to the value.</Abstract>
+			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setIvarInTarget:(id)target value:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/setIvarInTarget:value:</Anchor>
 		</Token>
 		
 	</File>

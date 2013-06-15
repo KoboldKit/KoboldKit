@@ -55,7 +55,7 @@
 /** Returns the object for key. Returns nil if there's no object associated with this key. */
 -(id) objectForKey:(NSString*)key;
 
-/** Returns the underlying KTMutableNumber object for a specific variable key. You can then modify the
+/** Returns the underlying KKMutableNumber object for a specific variable key. You can then modify the
  number value without having to reassign it to the model. */
 -(KKMutableNumber*) mutableNumberForKey:(NSString*)key;
 

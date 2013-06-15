@@ -18,7 +18,7 @@
 @dynamic kkScene;
 -(KKScene*) kkScene
 {
-	NSAssert1([self.scene isKindOfClass:[KKScene class]], @"scene (%@) is not a KKScene object", self.scene);
+	NSAssert1(self.scene == nil || [self.scene isKindOfClass:[KKScene class]], @"scene (%@) is not a KKScene object", self.scene);
 	return (KKScene*)self.scene;
 }
 
@@ -104,6 +104,55 @@
 -(void) removeAllBehaviors
 {
 	[[self createController] removeAllBehaviors];
+}
+
+#pragma mark Perform Selector
+
+-(void) performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay
+{
+	[self performSelector:aSelector withObject:self afterDelay:delay];
+}
+
+-(void) performSelectorInBackground:(SEL)aSelector
+{
+	[self performSelectorInBackground:aSelector withObject:self];
+}
+
+#pragma mark Notifications
+
+-(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector
+{
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:notificationSelector name:notificationName object:nil];
+}
+-(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector object:(id)notificationSender
+{
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:notificationSelector name:notificationName object:notificationSender];
+}
+-(void) disregardNotification:(NSString*)notificationName
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:notificationName object:nil];
+}
+-(void) disregardNotification:(NSString*)notificationName object:(id)notificationSender
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:notificationName object:notificationSender];
+}
+-(void) disregardAllNotifications
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark Update
+
+#pragma mark Input Events
+
+-(void) observeInputEvents
+{
+	[self.kkScene addInputEventsObserver:self];
+}
+
+-(void) disregardInputEvents
+{
+	[self.kkScene removeInputEventsObserver:self];
 }
 
 #pragma mark Position

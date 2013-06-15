@@ -6,5 +6,7 @@
 
 #ifdef __OBJC__
 	#import <Foundation/Foundation.h>
+	#import <objc/runtime.h>
+	#import <objc/message.h>
 	#import "VTPG_Common.h"
 #endif

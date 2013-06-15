@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>NSCoder(KTCoderCategory) Category Reference</title>
+		<title>KKFloatNumber Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">NSCoder(KTCoderCategory) Category Reference</h1>
+				<h1 class="hideInXcode">KKFloatNumber Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -26,8 +26,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -44,13 +42,7 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/decodeCGPointForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- decodeCGPointForKey:</option>
-	
-	<option value="//api/name/decodePointForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- decodePointForKey:</option>
-	
-	<option value="//api/name/encodeCGPoint:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- encodeCGPoint:forKey:</option>
-	
-	<option value="//api/name/encodePoint:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- encodePoint:forKey:</option>
+	<option value="//api/name/initWithFloat:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFloat:</option>
 	
 	
 	
@@ -61,8 +53,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -80,13 +70,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/decodeCGPointForKey:">decodeCGPointForKey:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/decodePointForKey:">decodePointForKey:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encodeCGPoint:forKey:">encodeCGPoint:forKey:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encodePoint:forKey:">encodePoint:forKey:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFloat:">initWithFloat:</a></span></li>
 	
 </ul></li>
 
@@ -95,7 +79,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="NSCoder(KTCoderCategory) Category Reference" name="top"></a>
+				<a title="KKFloatNumber Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -104,26 +88,21 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">NSCoder(KTCoderCategory) Category Reference</h1>
+						<h1 class="title title-header">KKFloatNumber Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> : NSObject</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSCoder+KTCoderCategory.h<br />NSCoder+KTCoderCategory.m</td>
+	<td class="specification-value">KKMutableNumber.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Adds encode/decode convenience methods for common structs not supported natively (or cross-platform) by NSCoder.</p>
-					</div>
 					
 					
 					
@@ -140,29 +119,8 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/encodePoint:forKey:">&ndash;&nbsp;encodePoint:forKey:</a></code>
-		<span class="tooltip"><p>encode a CGPoint</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/decodePointForKey:">&ndash;&nbsp;decodePointForKey:</a></code>
-		<span class="tooltip"><p>decode a CGPoint</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/encodeCGPoint:forKey:">&ndash;&nbsp;encodeCGPoint:forKey:</a></code>
-		<span class="tooltip"><p>encode a CGPoint on OS X</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/decodeCGPointForKey:">&ndash;&nbsp;decodeCGPointForKey:</a></code>
-		<span class="tooltip"><p>decode a CGPoint on OS X</p></span>
+		<code><a href="#//api/name/initWithFloat:">&ndash;&nbsp;initWithFloat:</a></code>
+		<span class="tooltip"><p>create a mutable number of type float</p></span>
 	</span>
 	
 	
@@ -184,17 +142,17 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/decodeCGPointForKey:" title="decodeCGPointForKey:"></a>
-	<h3 class="subsubtitle method-title">decodeCGPointForKey:</h3>
+	<a name="//api/name/initWithFloat:" title="initWithFloat:"></a>
+	<h3 class="subsubtitle method-title">initWithFloat:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>decode a CGPoint on OS X</p>
+		<p>create a mutable number of type float</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (CGPoint)decodeCGPointForKey:(NSString *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithFloat:(float)<em>floatNumber</em></code></div>
 	
 	
 	
@@ -211,109 +169,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSCoder+KTCoderCategory.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/decodePointForKey:" title="decodePointForKey:"></a>
-	<h3 class="subsubtitle method-title">decodePointForKey:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>decode a CGPoint</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (CGPoint)decodePointForKey:(NSString *)<em>key</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSCoder+KTCoderCategory.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/encodeCGPoint:forKey:" title="encodeCGPoint:forKey:"></a>
-	<h3 class="subsubtitle method-title">encodeCGPoint:forKey:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>encode a CGPoint on OS X</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)encodeCGPoint:(CGPoint)<em>point</em> forKey:(NSString *)<em>key</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSCoder+KTCoderCategory.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/encodePoint:forKey:" title="encodePoint:forKey:"></a>
-	<h3 class="subsubtitle method-title">encodePoint:forKey:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>encode a CGPoint</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)encodePoint:(CGPoint)<em>point</em> forKey:(NSString *)<em>key</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSCoder+KTCoderCategory.h</code><br />
+		<code class="declared-in-ref">KKMutableNumber.h</code><br />
 	</div>				
 	
 	

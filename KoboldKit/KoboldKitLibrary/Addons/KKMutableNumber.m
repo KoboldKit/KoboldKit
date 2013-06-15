@@ -10,48 +10,6 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 
 #define toBool(n) ((n >= YES) ? YES : NO)
 
-@interface KKBoolNumber : KKMutableNumber
-{
-@private
-	BOOL _number;
-}
--(id) initWithBool:(BOOL)boolNumber;
-@end
-
-@interface KKFloatNumber : KKMutableNumber
-{
-@private
-	float _number;
-}
--(id) initWithFloat:(float)floatNumber;
-@end
-
-@interface KKDoubleNumber : KKMutableNumber
-{
-@private
-	double _number;
-}
--(id) initWithDouble:(double)doubleNumber;
-@end
-
-// the Number is 32-Bit even on 64-Bit Mac OS
-@interface KKInt32Number : KKMutableNumber
-{
-@private
-	int32_t _number;
-}
--(id) initWithInt32:(int32_t)int32Number;
-@end
-
-// the Number is 64-Bit even on 32-Bit iOS
-@interface KKInt64Number : KKMutableNumber
-{
-@private
-	int64_t _number;
-}
--(id) initWithInt64:(int64_t)int64Number;
-@end
-
 
 @implementation KKBoolNumber
 -(id) initWithBool:(BOOL)boolNumber

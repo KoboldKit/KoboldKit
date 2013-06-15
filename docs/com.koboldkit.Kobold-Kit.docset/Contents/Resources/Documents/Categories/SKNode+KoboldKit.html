@@ -40,6 +40,8 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/controller">&nbsp;&nbsp;&nbsp;&nbsp;controller</option>
+	
 	<option value="//api/name/kkScene">&nbsp;&nbsp;&nbsp;&nbsp;kkScene</option>
 	
 	
@@ -61,7 +63,25 @@
 	
 	<option value="//api/name/createController">&nbsp;&nbsp;&nbsp;&nbsp;- createController</option>
 	
+	<option value="//api/name/disregardAllNotifications">&nbsp;&nbsp;&nbsp;&nbsp;- disregardAllNotifications</option>
+	
+	<option value="//api/name/disregardInputEvents">&nbsp;&nbsp;&nbsp;&nbsp;- disregardInputEvents</option>
+	
+	<option value="//api/name/disregardNotification:">&nbsp;&nbsp;&nbsp;&nbsp;- disregardNotification:</option>
+	
+	<option value="//api/name/disregardNotification:object:">&nbsp;&nbsp;&nbsp;&nbsp;- disregardNotification:object:</option>
+	
 	<option value="//api/name/hasBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- hasBehaviors</option>
+	
+	<option value="//api/name/observeInputEvents">&nbsp;&nbsp;&nbsp;&nbsp;- observeInputEvents</option>
+	
+	<option value="//api/name/observeNotification:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- observeNotification:selector:</option>
+	
+	<option value="//api/name/observeNotification:selector:object:">&nbsp;&nbsp;&nbsp;&nbsp;- observeNotification:selector:object:</option>
+	
+	<option value="//api/name/performSelector:afterDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:afterDelay:</option>
+	
+	<option value="//api/name/performSelectorInBackground:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelectorInBackground:</option>
 	
 	<option value="//api/name/removeAllBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllBehaviors</option>
 	
@@ -85,9 +105,15 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating and Accessing the Controller">Creating and Accessing the Controller</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the KKScene">Accessing the KKScene</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Behaviors">Working with Behaviors</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scheduling Selectors">Scheduling Selectors</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to input events">Subscribe to input events</a></span></li>
 	
 </ul></li>
 
@@ -96,6 +122,8 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controller">controller</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/kkScene">kkScene</a></span></li>
 	
@@ -119,7 +147,25 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createController">createController</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardAllNotifications">disregardAllNotifications</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardInputEvents">disregardInputEvents</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardNotification:">disregardNotification:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardNotification:object:">disregardNotification:object:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasBehaviors">hasBehaviors</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeInputEvents">observeInputEvents</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeNotification:selector:">observeNotification:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeNotification:selector:object:">observeNotification:selector:object:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:afterDelay:">performSelector:afterDelay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelectorInBackground:">performSelectorInBackground:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllBehaviors">removeAllBehaviors</a></span></li>
 	
@@ -161,7 +207,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors.</p>
+						<p>Kobold Kit extensions to SKNode. Adds access to <a href="#//api/name/controller">controller</a>, model and behaviors.</p>
 					</div>
 					
 					
@@ -183,6 +229,21 @@
 		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating and Accessing the Controller" name="task_Creating and Accessing the Controller"></a>
+						<h3 class="subsubtitle task-title">Creating and Accessing the Controller</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controller">&nbsp;&nbsp;controller</a></code>
+		<span class="tooltip"><p>Returns the node&rsquo;s controller object.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
@@ -273,6 +334,85 @@
 </li>
 						</ul>
 						
+						
+						<a title="Scheduling Selectors" name="task_Scheduling Selectors"></a>
+						<h3 class="subsubtitle task-title">Scheduling Selectors</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSelector:afterDelay:">&ndash;&nbsp;performSelector:afterDelay:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSelectorInBackground:">&ndash;&nbsp;performSelectorInBackground:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Subscribe to input events" name="task_Subscribe to input events"></a>
+						<h3 class="subsubtitle task-title">Subscribe to input events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/observeInputEvents">&ndash;&nbsp;observeInputEvents</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disregardInputEvents">&ndash;&nbsp;disregardInputEvents</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/observeNotification:selector:">&ndash;&nbsp;observeNotification:selector:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/observeNotification:selector:object:">&ndash;&nbsp;observeNotification:selector:object:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disregardNotification:">&ndash;&nbsp;disregardNotification:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disregardNotification:object:">&ndash;&nbsp;disregardNotification:object:</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disregardAllNotifications">&ndash;&nbsp;disregardAllNotifications</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
@@ -282,6 +422,40 @@
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/controller" title="controller"></a>
+	<h3 class="subsubtitle method-title">controller</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the node&rsquo;s controller object.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) KKNodeController *controller</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/kkScene" title="kkScene"></a>
@@ -582,6 +756,142 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/disregardAllNotifications" title="disregardAllNotifications"></a>
+	<h3 class="subsubtitle method-title">disregardAllNotifications</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)disregardAllNotifications</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disregardInputEvents" title="disregardInputEvents"></a>
+	<h3 class="subsubtitle method-title">disregardInputEvents</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)disregardInputEvents</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disregardNotification:" title="disregardNotification:"></a>
+	<h3 class="subsubtitle method-title">disregardNotification:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disregardNotification:object:" title="disregardNotification:object:"></a>
+	<h3 class="subsubtitle method-title">disregardNotification:object:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em> object:(id)<em>notificationSender</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/hasBehaviors" title="hasBehaviors"></a>
 	<h3 class="subsubtitle method-title">hasBehaviors</h3>
 	
@@ -601,6 +911,176 @@
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
 		<p>YES if the node has one or more behaviors.</p>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/observeInputEvents" title="observeInputEvents"></a>
+	<h3 class="subsubtitle method-title">observeInputEvents</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)observeInputEvents</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/observeNotification:selector:" title="observeNotification:selector:"></a>
+	<h3 class="subsubtitle method-title">observeNotification:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/observeNotification:selector:object:" title="observeNotification:selector:object:"></a>
+	<h3 class="subsubtitle method-title">observeNotification:selector:object:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em> object:(id)<em>notificationSender</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelector:afterDelay:" title="performSelector:afterDelay:"></a>
+	<h3 class="subsubtitle method-title">performSelector:afterDelay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)performSelector:(SEL)<em>aSelector</em> afterDelay:(NSTimeInterval)<em>delay</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSelectorInBackground:" title="performSelectorInBackground:"></a>
+	<h3 class="subsubtitle method-title">performSelectorInBackground:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)performSelectorInBackground:(SEL)<em>aSelector</em></code></div>
+	
+	
+	
 	
 	
 	
