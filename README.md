@@ -4,14 +4,38 @@ KoboldKit
 Kobold Kit is a game engine built on Sprite Kit. It adds additional features, flexibility and convenience.
 
 Status
-======
+------
 
 Work in progress. Needs testing.
 
+Current/Next Tasks:
+- port TMX Reader/Writer from KT
+- port Tilemap renderer from KT
+
+Recently completed:
+- NSCoding/NSCopying compliance
+- Controller, Model and Behaviors added (framework)
+- push/pop scenes
+
 Task Tracker: https://www.pivotaltracker.com/s/projects/849925
 
+How to Help
+------
+
+Feedback is most important and very welcome!
+
+Try it out, ask questions about things that aren't obvious, make suggestions, report bugs. Focus on aspects in the "recently completed" list.
+
+Let's keep it simple: use the issue tracker for bug reports, suggestions AND questions:
+https://github.com/LearnCocos2D/KoboldKit/issues
+
+No need to report the following:
+- missing/spotty documentation (will get another pass before release)
+- anything related to the "current/next tasks" list (it's work in progress)
+- Mac support (waiting for a 10.0 prerelease build with fewer potentially catastrophic issues like the login deadlock)
+
 Overview
-========
+------
 
 Nodes are extended via KKNodeController. The controller provides KKNodeModel and KKNodeBehavior classes for nodes.
 
