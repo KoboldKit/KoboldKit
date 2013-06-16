@@ -9,10 +9,11 @@ Status
 Work in progress. Needs testing.
 
 Current/Next Tasks:
-- port TMX Reader/Writer from KT
 - port Tilemap renderer from KT
 
+
 Recently completed:
+- port TMX Reader/Writer from KT
 - NSCoding/NSCopying compliance
 - Controller, Model and Behaviors added (framework)
 - push/pop scenes
