@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="32" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="_iPadScaleFactor" value="2"/>
+  <property name="_scaleTilesetSpacingAndMargin" value="YES"/>
+ </properties>
+ <tileset firstgid="1" name="forest" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <image source="forest.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="50" name="other" tilewidth="32" tileheight="32">
+  <image source="other.png" width="256" height="256"/>
+ </tileset>
+ <layer name="bg layer" width="32" height="15" opacity="0.67">
+  <properties>
+   <property name="_endlessScrollingHorizontal" value="YES"/>
+   <property name="_endlessScrollingVertical" value="YES"/>
+   <property name="_parallaxFactor" value="{0.35,0.35}"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJwzYWBgMAVikwGibYDYdgDpgfL3qP9H/T/q/1H/j/ofjB0GMBwODKT/AfK4ang=
+  </data>
+ </layer>
+ <layer name="eye layer" width="32" height="15" opacity="0.43">
+  <properties>
+   <property name="_endlessScrollingHorizontal" value="YES"/>
+   <property name="_endlessScrollingVertical" value="YES"/>
+   <property name="_parallaxFactor" value="{0.5,0.5}"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMjIDYmAh1pKolVq8VEFsTaQYxaqlhDyWAXvYQCyiJM2qYR0544LODHuFLrh3Ehg214wQGiHX3YEujgxFQI44oMQNXHJFiJi3imVpmUisPkGsOtfyBzxwA5UoL7Q==
+  </data>
+ </layer>
+ <layer name="grass layer" width="32" height="15" opacity="0.69">
+  <properties>
+   <property name="_endlessScrollingHorizontal" value="YES"/>
+   <property name="_endlessScrollingVertical" value="YES"/>
+   <property name="_parallaxFactor" value="{0.75,0.75}"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt0bsVgCAQBdGtbVEQlY/9N8OcYw9s8oIbTDxuZgkHTvjmvvHgRQvojIILNaA7Bia+gN79W//1X//1X///XipeiRE=
+  </data>
+ </layer>
+ <layer name="main layer" width="32" height="15">
+  <properties>
+   <property name="_endlessScrollingHorizontal" value="YES"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztVO0KwjAMrN9zrV9DdKDv/5xepGGhpM1aEf94cHTrktyxpHXujznowSN4APc/0A/gCTyDXvlO/sgbeWzxt2i39gb5I2/kUfNnYfmhfglbcAd2cd1kYjoRp8VYaPmHtb2SGuRZ+lxV5BJoZmp7VdJYV+aGSm1Lw5qhUq48P3LV9rSe9UYuP+dqDODDTWec1yd4B29xJV4U/av4PsZaMp/feS+tQb3QZmGI9Vh/zOjz+Wf6ZN8nsXPnLkS/0oOm/03Iu7f1fsvhBR+VBpA=
+  </data>
+ </layer>
+ <layer name="flare layer" width="32" height="15" opacity="0.8">
+  <properties>
+   <property name="_endlessScrollingHorizontal" value="YES"/>
+   <property name="_endlessScrollingVertical" value="YES"/>
+   <property name="_parallaxFactor" value="{1.5,1.5}"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJy9UjESACAI6lW11f9/VUubFZDKnYuniEopHOqKBuQUIDx9xQByDOeJx2MvSxvKe9vrB1G8WfDyG8Jp5b38hnCyv3rVR9yOmZXpPXRW5k0sIDoZjRH7MH9Tf6zqVvo8van07Z4JiBIQdQ==
+  </data>
+ </layer>
+</map>

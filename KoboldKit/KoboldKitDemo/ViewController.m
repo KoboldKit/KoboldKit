@@ -11,13 +11,16 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+-(void) viewWillAppear:(BOOL)animated
 {
     [super viewDidLoad];
 
+	LOG_EXPR(self.view.bounds.size);
+	
     // Create and configure the scene.
-    KKScene * scene = [MyScene sceneWithSize:self.kkView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+	CGSize boundsSize = self.view.bounds.size;
+    KKScene * scene = [MyScene sceneWithSize:CGSizeMake(boundsSize.height, boundsSize.width)];
+	scene.scaleMode = SKSceneScaleModeResizeFill;
     
     // Present the scene.
     [self.kkView presentScene:scene];

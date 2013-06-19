@@ -21,6 +21,7 @@
 // subclasses
 #import "KKViewController.h"
 #import "KKView.h"
+#import "KKNode.h"
 #import "KKScene.h"
 
 // framework
@@ -31,16 +32,21 @@
 // behaviors
 #import "KKButtonBehavior.h"
 
-// tilemap
-#import "KTTilemap.h"
-#import "KTTilemapLayer.h"
-#import "KTTilemapLayerTiles.h"
-#import "KTTilemapObject.h"
-#import "KTTilemapProperties.h"
-#import "KTTilemapTileProperties.h"
-#import "KTTilemapTileset.h"
-#import "KTTMXReader.h"
-#import "KTTMXWriter.h"
+// tilemap model
+#import "KKTilemap.h"
+#import "KKTilemapLayer.h"
+#import "KKTilemapLayerTiles.h"
+#import "KKTilemapObject.h"
+#import "KKTilemapProperties.h"
+#import "KKTilemapTileProperties.h"
+#import "KKTilemapTileset.h"
+#import "KKTMXReader.h"
+#import "KKTMXWriter.h"
+
+// tilemap nodes
+#import "KKTilemapNode.h"
+#import "KKTilemapTileLayerNode.h"
+#import "KKTilemapObjectLayerNode.h"
 
 // addons
 #import "KKMutableNumber.h"

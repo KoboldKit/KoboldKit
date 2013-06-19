@@ -11,6 +11,7 @@
 
 extern NSString* const KKNodeControllerUserDataKey;
 
+@class KKNode;
 @class KKNodeBehavior;
 @class KKNodeModel;
 
@@ -20,10 +21,11 @@ extern NSString* const KKNodeControllerUserDataKey;
 	@private
 	NSMutableArray* _behaviors;
 	KKNodeModel* _model;
+	BOOL _hasBehaviorWantingUpdate;
 }
 
 /** @returns The controller's owning node. You should never change this reference yourself! */
-@property (atomic, weak) KKNode* node;
+@property (atomic, weak) SKNode* node;
 /** @returns The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself! */
 @property (atomic, strong) NSMutableDictionary* userData;
 /** @returns The list of behaviors of the node. */
@@ -59,6 +61,10 @@ extern NSString* const KKNodeControllerUserDataKey;
 
 /** (not documented) */
 -(void) update:(NSTimeInterval)currentTime;
+/** (not documented) */
+-(void) didEvaluateActions;
+/** (not documented) */
+-(void) didSimulatePhysics;
 
 // internal use
 -(BOOL) isEqualToController:(KKNodeController*)controller;

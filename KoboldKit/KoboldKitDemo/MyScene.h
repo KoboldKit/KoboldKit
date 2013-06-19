@@ -14,6 +14,7 @@
 @interface MyScene : KKScene
 {
 	MyLabelNode *myLabel;
+	KKSpriteNode* s1;
 }
 
 @end

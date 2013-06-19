@@ -25,4 +25,6 @@
 -(void) willMoveFromView:(SKView*)view;
 /** (not documented) */
 -(void) didMoveToView:(SKView*)view;
+/** (not documented) */
+-(void) didChangeSize:(CGSize)oldSize;
 @end

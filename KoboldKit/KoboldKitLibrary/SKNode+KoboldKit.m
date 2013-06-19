@@ -10,6 +10,7 @@
 #import "KKNodeController.h"
 #import "KKNodeBehavior.h"
 #import "KKScene.h"
+#import "KKNode.h"
 
 @implementation SKNode (KoboldKit)
 
@@ -141,7 +142,17 @@
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-#pragma mark Update
+#pragma mark Scene Events
+
+-(void) observeSceneEvents
+{
+	[self.kkScene addSceneEventsObserver:self];
+}
+
+-(void) disregardSceneEvents
+{
+	[self.kkScene removeSceneEventsObserver:self];
+}
 
 #pragma mark Input Events
 
@@ -155,6 +166,18 @@
 	[self.kkScene removeInputEventsObserver:self];
 }
 
+#pragma mark Node Tree
+
+-(void) didMoveToParent
+{
+	// to be overridden by subclasses
+}
+
+-(void) willMoveFromParent
+{
+	// to be overridden by subclasses
+}
+
 #pragma mark Position
 
 -(void) centerOnNode:(SKNode*)node
@@ -162,18 +185,6 @@
     CGPoint cameraPositionInScene = [node.scene convertPoint:node.position fromNode:node.parent];
     node.parent.position = CGPointMake(node.parent.position.x - cameraPositionInScene.x,
                                        node.parent.position.y - cameraPositionInScene.y);
-}
-
-#pragma mark Description
-
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
-
-+(NSString*) descriptionForNode:(SKNode*)node
-{
-	return [NSString stringWithFormat:@"%@ controller:%@ behaviors:%@", [node kkDescription], node.controller, node.controller.behaviors];
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!
@@ -286,51 +297,19 @@
 
 #pragma mark SK*Node Categories
 
+@implementation SKScene (KoboldKit)
+@end
 @implementation SKCropNode (KoboldKit)
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
 @end
 @implementation SKEffectNode (KoboldKit)
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
 @end
 @implementation SKEmitterNode (KoboldKit)
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
 @end
 @implementation SKLabelNode (KoboldKit)
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
-@end
-@implementation SKScene (KoboldKit)
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
 @end
 @implementation SKShapeNode (KoboldKit)
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
 @end
 @implementation SKSpriteNode (KoboldKit)
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
 @end
 @implementation SKVideoNode (KoboldKit)
--(NSString*) kkDescription
-{
-	return [SKNode descriptionForNode:self];
-}
 @end

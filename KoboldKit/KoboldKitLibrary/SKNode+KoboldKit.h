@@ -15,8 +15,17 @@
 /** Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors. */
 @interface SKNode (KoboldKit)
 
+/** @name Changing the Node's Position */
+
 /** (not documented) */
 -(void) centerOnNode:(SKNode*)node;
+
+/** @name Observing Node's Child Status */
+
+/** Called after addChild / insertChild. The self.scene and self.parent properties are valid in this method. */
+-(void) didMoveToParent;
+/** Called after removeFromParent and other remove child methods. The self.scene and self.parent properties are still valid. */
+-(void) willMoveFromParent;
 
 /** @name Creating and Accessing the Controller */
 /** Returns the node's controller object. */
@@ -67,6 +76,14 @@
 /** (not documented) */
 -(void) disregardInputEvents;
 
+/** @name Subscribe to scene events */
+
+/** (not documented) */
+-(void) observeSceneEvents;
+/** (not documented) */
+-(void) disregardSceneEvents;
+
+/** @name Subscribe to notifications */
 
 /** (not documented) */
 -(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector;
@@ -81,36 +98,25 @@
 
 
 // internal use only
--(NSString*) kkDescription;
-+(NSString*) descriptionForNode:(SKNode*)node;
--(instancetype) kkCopyWithZone:(NSZone*)zone;
 -(BOOL) isEqualToNode:(SKNode*)node;
 -(BOOL) isEqualToNodeTree:(SKNode*)node;
 
 @end
 
 
+@interface SKScene (KoboldKit)
+@end
 @interface SKCropNode (KoboldKit)
--(NSString*) kkDescription;
 @end
 @interface SKEffectNode (KoboldKit)
--(NSString*) kkDescription;
 @end
 @interface SKEmitterNode (KoboldKit)
--(NSString*) kkDescription;
 @end
 @interface SKLabelNode (KoboldKit)
--(NSString*) kkDescription;
-@end
-@interface SKScene (KoboldKit)
--(NSString*) kkDescription;
 @end
 @interface SKShapeNode (KoboldKit)
--(NSString*) kkDescription;
 @end
 @interface SKSpriteNode (KoboldKit)
--(NSString*) kkDescription;
 @end
 @interface SKVideoNode (KoboldKit)
--(NSString*) kkDescription;
 @end

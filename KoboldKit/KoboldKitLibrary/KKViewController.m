@@ -39,31 +39,16 @@
 	NSAssert1(error == nil, @"Method swizzling error: %@", error);
 }
 
--(void) swizzleDescriptionForNodeClass:(Class)nodeClass
-{
-	NSError* error;
-	[nodeClass jr_swizzleMethod:@selector(description) withMethod:@selector(kkDescription) error:&error];
-	[self checkSwizzleError:error];
-}
-
 -(void) swizzleMethods
 {
+	/*
 	// swizzle some methods to hook into Sprite Kit
 	NSError* error;
 	
-	[self swizzleDescriptionForNodeClass:[SKNode class]];
-	[self swizzleDescriptionForNodeClass:[SKScene class]];
-	[self swizzleDescriptionForNodeClass:[SKCropNode class]];
-	[self swizzleDescriptionForNodeClass:[SKEffectNode class]];
-	[self swizzleDescriptionForNodeClass:[SKEmitterNode class]];
-	[self swizzleDescriptionForNodeClass:[SKLabelNode class]];
-	[self swizzleDescriptionForNodeClass:[SKShapeNode class]];
-	[self swizzleDescriptionForNodeClass:[SKSpriteNode class]];
-	[self swizzleDescriptionForNodeClass:[SKVideoNode class]];
-
 	[SKNode jr_swizzleMethod:@selector(copyWithZone:)
 				  withMethod:@selector(kkCopyWithZone:) error:&error];
 	[self checkSwizzleError:error];
+	*/
 }
 
 - (void)didReceiveMemoryWarning

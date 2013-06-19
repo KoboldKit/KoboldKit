@@ -7,6 +7,7 @@
 //
 
 #import "KKScene.h"
+#import "KKNode.h"
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
 
@@ -48,6 +49,8 @@
 	_sceneDidSimulatePhysicsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneWillMoveFromViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidMoveToViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	
+	NSLog(@"scene init");
 }
 
 -(void) dealloc
@@ -87,11 +90,6 @@
 {
 	++_frameCount;
 	
-	for (id observer in _sceneUpdateObservers)
-	{
-		[observer update:currentTime];
-	}
-	
 	// update controllers
 	for (KKNodeController* controller in _controllers)
 	{
@@ -101,19 +99,23 @@
 		}
 	}
 
-	[self didUpdateBehaviors];
-}
-
--(void) didUpdateBehaviors
-{
-	for (id observer in _sceneDidUpdateBehaviorsObservers)
+	for (id observer in _sceneUpdateObservers)
 	{
-		[observer didUpdateBehaviors];
+		[observer update:currentTime];
 	}
 }
 
 -(void) didEvaluateActions
 {
+	// update controllers
+	for (KKNodeController* controller in _controllers)
+	{
+		if (controller.paused == NO)
+		{
+			[controller didEvaluateActions];
+		}
+	}
+
 	for (id observer in _sceneDidEvaluateActionsObservers)
 	{
 		[observer didEvaluateActions];
@@ -122,6 +124,15 @@
 
 -(void) didSimulatePhysics
 {
+	// update controllers
+	for (KKNodeController* controller in _controllers)
+	{
+		if (controller.paused == NO)
+		{
+			[controller didSimulatePhysics];
+		}
+	}
+
 	for (id observer in _sceneDidSimulatePhysicsObservers)
 	{
 		[observer didSimulatePhysics];
@@ -130,6 +141,8 @@
 
 -(void) willMoveFromView:(SKView *)view
 {
+	NSLog(@"willMoveFromView");
+
 	for (id observer in _sceneWillMoveFromViewObservers)
 	{
 		[observer willMoveFromView:view];
@@ -138,10 +151,18 @@
 
 -(void) didMoveToView:(SKView *)view
 {
+	NSLog(@"didMoveToView");
+
 	for (id observer in _sceneDidMoveToViewObservers)
 	{
 		[observer didMoveToView:view];
 	}
+}
+
+-(void) didChangeSize:(CGSize)oldSize
+{
+	NSLog(@"didChangeSize");
+	LOG_EXPR(self.size);
 }
 
 -(void) addSceneEventsObserver:(id)observer
@@ -300,6 +321,40 @@
 	}];
 	
 	return dump;
+}
+
+#pragma mark Add/Remove Child Override
+-(void) addChild:(SKNode*)node
+{
+	[super addChild:node];
+	[node didMoveToParent];
+}
+-(void) insertChild:(SKNode*)node atIndex:(NSInteger)index
+{
+	[super insertChild:node atIndex:index];
+	[node didMoveToParent];
+}
+-(void) removeFromParent
+{
+	[self willMoveFromParent];
+	[super removeFromParent];
+}
+-(void) removeAllChildren
+{
+	[KKNode sendChildrenWillMoveFromParentWithNode:self];
+	[super removeAllChildren];
+}
+-(void) removeChildrenInArray:(NSArray*)array
+{
+	[KKNode sendChildrenWillMoveFromParentWithNode:self];
+	[super removeChildrenInArray:array];
+}
+
+#pragma mark Description
+
+-(NSString*) description
+{
+	return [NSString stringWithFormat:@"%@ controller:%@ behaviors:%@", [super description], self.controller, self.controller.behaviors];
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

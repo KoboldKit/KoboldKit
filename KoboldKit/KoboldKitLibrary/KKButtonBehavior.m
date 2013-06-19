@@ -38,7 +38,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 	if (_selectedScale < 1.0 || _selectedScale > 1.0)
 	{
-		KKNode* node = self.node;
+		SKNode* node = self.node;
 		_originalXScale = node.xScale;
 		_originalYScale = node.yScale;
 		[node runAction:[SKAction scaleXBy:_selectedScale y:_selectedScale duration:0.05f] withKey:ScaleActionKey];
@@ -51,7 +51,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	
 	if (_selectedScale < 1.0 || _selectedScale > 1.0)
 	{
-		KKNode* node = self.node;
+		SKNode* node = self.node;
 		[node runAction:[SKAction scaleXTo:_originalXScale y:_originalYScale duration:0.05f] withKey:ScaleActionKey];
 	}
 }
@@ -141,7 +141,7 @@ static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
 
 -(id) copyWithZone:(NSZone*)zone
 {
-	KKButtonBehavior* copy = [[[self class] allocWithZone:zone] init];
+	KKButtonBehavior* copy = [[super copyWithZone:zone] init];
 	copy->_originalXScale = _originalXScale;
 	copy->_originalYScale = _originalYScale;
 	copy->_selectedScale = _selectedScale;

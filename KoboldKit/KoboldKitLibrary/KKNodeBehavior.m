@@ -13,6 +13,21 @@
 
 #pragma mark Init / Dealloc
 
++(id) behavior
+{
+	return [[self alloc] init];
+}
+
+-(id) init
+{
+	self = [super init];
+	if (self)
+	{
+		_enabled = YES;
+	}
+	return self;
+}
+
 #pragma mark Join / Leave
 
 -(void) internal_joinController:(KKNodeController*)controller withKey:(NSString*)key
@@ -33,6 +48,14 @@
 #pragma mark Update
 
 -(void) update:(NSTimeInterval)currentTime
+{
+}
+
+-(void) didEvaluateActions
+{
+}
+
+-(void) didSimulatePhysics
 {
 }
 

@@ -14,7 +14,6 @@
 #import <SpriteKit/SpriteKit.h>
 
 typedef SKTransition KKTransition;
-typedef SKNode KKNode;
 typedef SKAction KKAction;
 
 typedef SKTexture KKTexture;

@@ -75,6 +75,8 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	}
 	
 	[behavior didJoinController];
+	
+	_hasBehaviorWantingUpdate = (_hasBehaviorWantingUpdate || behavior.wantsUpdate);
 }
 
 -(void) addBehavior:(KKNodeBehavior*)behavior
@@ -144,15 +146,45 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(void) update:(NSTimeInterval)currentTime
 {
-	for (KKNodeBehavior* behavior in _behaviors)
+	if (_hasBehaviorWantingUpdate)
 	{
-		if (behavior.wantsUpdate)
+		for (KKNodeBehavior* behavior in _behaviors)
 		{
-			[behavior update:currentTime];
+			if (behavior.wantsUpdate)
+			{
+				[behavior update:currentTime];
+			}
 		}
 	}
 }
 
+-(void) didEvaluateActions
+{
+	if (_hasBehaviorWantingUpdate)
+	{
+		for (KKNodeBehavior* behavior in _behaviors)
+		{
+			if (behavior.wantsUpdate)
+			{
+				[behavior didEvaluateActions];
+			}
+		}
+	}
+}
+
+-(void) didSimulatePhysics
+{
+	if (_hasBehaviorWantingUpdate)
+	{
+		for (KKNodeBehavior* behavior in _behaviors)
+		{
+			if (behavior.wantsUpdate)
+			{
+				[behavior didSimulatePhysics];
+			}
+		}
+	}
+}
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 

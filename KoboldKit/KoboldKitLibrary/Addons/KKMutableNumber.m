@@ -913,7 +913,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
 #elif TARGET_OS_MAC
-	return [[KTInt64Number alloc] initWithInt64:number];
+	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
 
@@ -922,7 +922,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
 #elif TARGET_OS_MAC
-	return [[KTInt64Number alloc] initWithInt64:number];
+	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
 
@@ -951,7 +951,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
 #elif TARGET_OS_MAC
-	return [[KTInt64Number alloc] initWithInt64:number];
+	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
 
@@ -960,7 +960,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
 #elif TARGET_OS_MAC
-	return [[KTInt64Number alloc] initWithInt64:number];
+	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
 
@@ -1004,7 +1004,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
 #elif TARGET_OS_MAC
-	return [[KTInt64Number alloc] initWithInt64:number];
+	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
 
@@ -1013,7 +1013,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
 #elif TARGET_OS_MAC
-	return [[KTInt64Number alloc] initWithInt64:number];
+	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
 
@@ -1042,7 +1042,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
 #elif TARGET_OS_MAC
-	return [[KTInt64Number alloc] initWithInt64:number];
+	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
 
@@ -1051,7 +1051,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
 #elif TARGET_OS_MAC
-	return [[KTInt64Number alloc] initWithInt64:number];
+	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
 
@@ -1063,6 +1063,33 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 -(id) initWithUnsignedShort:(unsigned short)number
 {
 	return [[KKInt32Number alloc] initWithInt32:number];
+}
+
+-(NSString*) description
+{
+	NSMutableString* str = [NSMutableString stringWithCapacity:64];
+	Class myClass = [self class];
+	if (myClass == [KKBoolNumber class])
+	{
+		[str appendFormat:@"%@ (BOOL) <KKMutableNumber>", self.boolValue ? @"YES" : @"NO"];
+	}
+	else if (myClass == [KKFloatNumber class])
+	{
+		[str appendFormat:@"%f (float) <KKMutableNumber>", self.floatValue];
+	}
+	else if (myClass == [KKDoubleNumber class])
+	{
+		[str appendFormat:@"%f (double) <KKMutableNumber>", self.doubleValue];
+	}
+	else if (myClass == [KKInt32Number class])
+	{
+		[str appendFormat:@"%li (int32_t) <KKMutableNumber>", self.longValue];
+	}
+	else if (myClass == [KKInt64Number class])
+	{
+		[str appendFormat:@"%lli (int64_t) <KKMutableNumber>", self.longLongValue];
+	}
+	return str;
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

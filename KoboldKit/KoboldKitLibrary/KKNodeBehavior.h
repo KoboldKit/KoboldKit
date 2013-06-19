@@ -10,6 +10,7 @@
 #import "KKSpriteKit.h"
 #import "KKMacros.h"
 
+@class KKNode;
 @class KKNodeController;
 
 /** Behaviors add custom logic to a node.
@@ -21,15 +22,26 @@
  - they can not be reversed
  */
 @interface KKNodeBehavior : NSObject <NSCoding, NSCopying>
+{
+	@protected
+	BOOL _wantsUpdate;
+	
+	@private
+}
 
 /** (not documented) */
 @property (atomic, readonly) NSString* key;
 /** (not documented) */
 @property (atomic, weak) KKNodeController* controller;
 /** (not documented) */
-@property (atomic, weak) KKNode* node;
+@property (atomic, weak) SKNode* node;
+/** (not documented) set by subclasses */
+@property (atomic, readonly) BOOL wantsUpdate;
 /** (not documented) */
-@property (atomic) BOOL wantsUpdate;
+@property (atomic) BOOL enabled;
+
+/** (not documented) */
++(id) behavior;
 
 /** (not documented) */
 -(void) didJoinController;
@@ -38,6 +50,10 @@
 
 /** (not documented) */
 -(void) update:(NSTimeInterval)currentTime;
+/** (not documented) */
+-(void) didEvaluateActions;
+/** (not documented) */
+-(void) didSimulatePhysics;
 
 
 // internal use
