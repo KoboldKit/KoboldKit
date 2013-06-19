@@ -3,7 +3,16 @@ KoboldKit
 
 Kobold Kit is a game engine built on Sprite Kit. It adds additional features, flexibility and convenience.
 
-Visit the website: http://koboldkit.com
+Links
+-----
+
+Website: http://koboldkit.com
+
+Track Progress: https://www.pivotaltracker.com/s/projects/849925
+
+Report Issues: https://github.com/LearnCocos2D/KoboldKit/issues
+
+Community Suggestions: http://koboldkit.uservoice.com (Please refrain from referencing Sprite Kit, even indirectly)
 
 
 Status
@@ -12,16 +21,18 @@ Status
 Work in progress. Needs testing.
 
 Current/Next Tasks:
-- port Tilemap renderer from KT
-
+- tilemap scrolling API
+- tilemap debug drawing
+- tilemap object layer & spawn delegate
+- world camera node (if useful)
+- change scene launch to viewWillLayoutSubviews
 
 Recently completed:
+- port Tilemap renderer from KT
 - port TMX Reader/Writer from KT
 - NSCoding/NSCopying compliance
 - Controller, Model and Behaviors added (framework)
 - push/pop scenes
-
-Task Tracker: https://www.pivotaltracker.com/s/projects/849925
 
 How to Help
 ------
