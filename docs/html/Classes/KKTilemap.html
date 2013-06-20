@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KTTilemap Class Reference</title>
+		<title>KKTilemap Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KTTilemap Class Reference</h1>
+				<h1 class="hideInXcode">KKTilemap Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -54,6 +54,8 @@
 	
 	<option value="//api/name/mapSize">&nbsp;&nbsp;&nbsp;&nbsp;mapSize</option>
 	
+	<option value="//api/name/modified">&nbsp;&nbsp;&nbsp;&nbsp;modified</option>
+	
 	<option value="//api/name/orientation">&nbsp;&nbsp;&nbsp;&nbsp;orientation</option>
 	
 	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
@@ -67,9 +69,9 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/tilemapWithOrientation:mapSize:gridSize:">&nbsp;&nbsp;&nbsp;&nbsp;+ tilemapWithOrientation:mapSize:gridSize:</option>
+	<option value="//api/name/tilemapWithContentsOfFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ tilemapWithContentsOfFile:</option>
 	
-	<option value="//api/name/tilemapWithTMXFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ tilemapWithTMXFile:</option>
+	<option value="//api/name/tilemapWithOrientation:mapSize:gridSize:">&nbsp;&nbsp;&nbsp;&nbsp;+ tilemapWithOrientation:mapSize:gridSize:</option>
 	
 	
 	
@@ -82,7 +84,7 @@
 	
 	<option value="//api/name/applyIpadScaleFactor">&nbsp;&nbsp;&nbsp;&nbsp;- applyIpadScaleFactor</option>
 	
-	<option value="//api/name/layerByName:">&nbsp;&nbsp;&nbsp;&nbsp;- layerByName:</option>
+	<option value="//api/name/layerNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- layerNamed:</option>
 	
 	<option value="//api/name/replaceTileset:withTileset:">&nbsp;&nbsp;&nbsp;&nbsp;- replaceTileset:withTileset:</option>
 	
@@ -90,9 +92,9 @@
 	
 	<option value="//api/name/tilesetForGid:">&nbsp;&nbsp;&nbsp;&nbsp;- tilesetForGid:</option>
 	
-	<option value="//api/name/tilesetForName:">&nbsp;&nbsp;&nbsp;&nbsp;- tilesetForName:</option>
+	<option value="//api/name/tilesetNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- tilesetNamed:</option>
 	
-	<option value="//api/name/writeToTMXFile:">&nbsp;&nbsp;&nbsp;&nbsp;- writeToTMXFile:</option>
+	<option value="//api/name/writeToFile:">&nbsp;&nbsp;&nbsp;&nbsp;- writeToFile:</option>
 	
 	
 	
@@ -132,6 +134,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapSize">mapSize</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modified">modified</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orientation">orientation</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
@@ -146,9 +150,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemapWithOrientation:mapSize:gridSize:">tilemapWithOrientation:mapSize:gridSize:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemapWithContentsOfFile:">tilemapWithContentsOfFile:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemapWithTMXFile:">tilemapWithTMXFile:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemapWithOrientation:mapSize:gridSize:">tilemapWithOrientation:mapSize:gridSize:</a></span></li>
 	
 </ul></li>
 
@@ -162,7 +166,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyIpadScaleFactor">applyIpadScaleFactor</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layerByName:">layerByName:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layerNamed:">layerNamed:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceTileset:withTileset:">replaceTileset:withTileset:</a></span></li>
 	
@@ -170,9 +174,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilesetForGid:">tilesetForGid:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilesetForName:">tilesetForName:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilesetNamed:">tilesetNamed:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeToTMXFile:">writeToTMXFile:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeToFile:">writeToFile:</a></span></li>
 	
 </ul></li>
 
@@ -181,7 +185,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KTTilemap Class Reference" name="top"></a>
+				<a title="KKTilemap Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -190,7 +194,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KTTilemap Class Reference</h1>
+						<h1 class="title title-header">KKTilemap Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -201,7 +205,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KTTilemap.h<br />KTTilemap.m</td>
+	<td class="specification-value">KKTilemap.h<br />KKTilemap.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -261,14 +265,14 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilesets">&nbsp;&nbsp;tilesets</a></code>
-		<span class="tooltip"><p>List of tilesets (<a href="../Classes/KTTilemapTileset.html">KTTilemapTileset</a>) used by this map.</p></span>
+		<span class="tooltip"><p>List of tilesets (<a href="../Classes/KKTilemapTileset.html">KKTilemapTileset</a>) used by this map.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/layers">&nbsp;&nbsp;layers</a></code>
-		<span class="tooltip"><p>List of layers (<a href="../Classes/KTTilemapLayer.html">KTTilemapLayer</a>) used by this map, in the draw order respectively the reverse order they appear
+		<span class="tooltip"><p>List of layers (<a href="../Classes/KKTilemapLayer.html">KKTilemapLayer</a>) used by this map, in the draw order respectively the reverse order they appear
    in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -322,8 +326,8 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/tilemapWithTMXFile:">+&nbsp;tilemapWithTMXFile:</a></code>
-		<span class="tooltip"><p>Parse and create a KTTilemap from a TMX file.</p></span>
+		<code><a href="#//api/name/tilemapWithContentsOfFile:">+&nbsp;tilemapWithContentsOfFile:</a></code>
+		<span class="tooltip"><p>Parse and create a KKTilemap from a file. The file must be in TMX format.</p></span>
 	</span>
 	
 	
@@ -336,8 +340,8 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/writeToTMXFile:">&ndash;&nbsp;writeToTMXFile:</a></code>
-		<span class="tooltip"><p>Writes the tilemap in TMX (XML) format to the given file.</p></span>
+		<code><a href="#//api/name/writeToFile:">&ndash;&nbsp;writeToFile:</a></code>
+		<span class="tooltip"><p>Writes the tilemap to a file path. The resulting file will be in TMX format.</p></span>
 	</span>
 	
 	
@@ -358,7 +362,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/tilesetForName:">&ndash;&nbsp;tilesetForName:</a></code>
+		<code><a href="#//api/name/tilesetNamed:">&ndash;&nbsp;tilesetNamed:</a></code>
 		<span class="tooltip"><p>Returns the tileset with the given name. Returns nil if there&rsquo;s no tileset with this name.</p></span>
 	</span>
 	
@@ -387,10 +391,18 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/layerByName:">&ndash;&nbsp;layerByName:</a></code>
+		<code><a href="#//api/name/layerNamed:">&ndash;&nbsp;layerNamed:</a></code>
 		<span class="tooltip"><p>Returns the first layer with the given name, or nil if there&rsquo;s no layer with that name. Layer names are case-sensitive!</p></span>
 	</span>
 	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/modified">&nbsp;&nbsp;modified</a></code>
+		<span class="tooltip"><p>Is set whenever the tilemap changes (tile gid change or <a href="#//api/name/tilesets">tilesets</a> swapped). State is not reset automatically.
+Used to determine whether the tilemap needs redrawing.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -438,7 +450,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -473,7 +485,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -508,7 +520,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -559,7 +571,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -595,7 +607,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -608,7 +620,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>List of layers (<a href="../Classes/KTTilemapLayer.html">KTTilemapLayer</a>) used by this map, in the draw order respectively the reverse order they appear
+		<p>List of layers (<a href="../Classes/KKTilemapLayer.html">KKTilemapLayer</a>) used by this map, in the draw order respectively the reverse order they appear
    in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 	</div>		
 	
@@ -630,7 +642,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -664,7 +676,42 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/modified" title="modified"></a>
+	<h3 class="subsubtitle method-title">modified</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is set whenever the tilemap changes (tile gid change or <a href="#//api/name/tilesets">tilesets</a> swapped). State is not reset automatically.
+Used to determine whether the tilemap needs redrawing.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL modified</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -681,7 +728,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) KTTilemapOrientation orientation</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) KKTilemapOrientation orientation</code></div>
 	
 	
 	
@@ -698,7 +745,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -715,7 +762,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KTTilemapProperties *properties</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KKTilemapProperties *properties</code></div>
 	
 	
 	
@@ -732,7 +779,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -774,7 +821,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -787,7 +834,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>List of tilesets (<a href="../Classes/KTTilemapTileset.html">KTTilemapTileset</a>) used by this map.</p>
+		<p>List of tilesets (<a href="../Classes/KKTilemapTileset.html">KKTilemapTileset</a>) used by this map.</p>
 	</div>		
 	
 	
@@ -808,7 +855,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -823,6 +870,40 @@
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/tilemapWithContentsOfFile:" title="tilemapWithContentsOfFile:"></a>
+	<h3 class="subsubtitle method-title">tilemapWithContentsOfFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse and create a KKTilemap from a file. The file must be in TMX format.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithContentsOfFile:(NSString *)<em>tmxFile</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/tilemapWithOrientation:mapSize:gridSize:" title="tilemapWithOrientation:mapSize:gridSize:"></a>
 	<h3 class="subsubtitle method-title">tilemapWithOrientation:mapSize:gridSize:</h3>
 	
@@ -833,7 +914,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithOrientation:(KTTilemapOrientation)<em>orientation</em> mapSize:(CGSize)<em>mapSize</em> gridSize:(CGSize)<em>gridSize</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithOrientation:(KKTilemapOrientation)<em>orientation</em> mapSize:(CGSize)<em>mapSize</em> gridSize:(CGSize)<em>gridSize</em></code></div>
 	
 	
 	
@@ -850,41 +931,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/tilemapWithTMXFile:" title="tilemapWithTMXFile:"></a>
-	<h3 class="subsubtitle method-title">tilemapWithTMXFile:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Parse and create a KTTilemap from a TMX file.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithTMXFile:(NSString *)<em>tmxFile</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -909,7 +956,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)addLayer:(KTTilemapLayer *)<em>layer</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)addLayer:(KKTilemapLayer *)<em>layer</em></code></div>
 	
 	
 	
@@ -926,7 +973,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -943,7 +990,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)addTileset:(KTTilemapTileset *)<em>tileset</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)addTileset:(KKTilemapTileset *)<em>tileset</em></code></div>
 	
 	
 	
@@ -960,7 +1007,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -995,15 +1042,15 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/layerByName:" title="layerByName:"></a>
-	<h3 class="subsubtitle method-title">layerByName:</h3>
+	<a name="//api/name/layerNamed:" title="layerNamed:"></a>
+	<h3 class="subsubtitle method-title">layerNamed:</h3>
 	
 	
 	
@@ -1012,7 +1059,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (KTTilemapLayer *)layerByName:(NSString *)<em>name</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (KKTilemapLayer *)layerNamed:(NSString *)<em>name</em></code></div>
 	
 	
 	
@@ -1029,7 +1076,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -1047,7 +1094,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)replaceTileset:(KTTilemapTileset *)<em>originalTileset</em> withTileset:(KTTilemapTileset *)<em>otherTileset</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)replaceTileset:(KKTilemapTileset *)<em>originalTileset</em> withTileset:(KKTilemapTileset *)<em>otherTileset</em></code></div>
 	
 	
 	
@@ -1070,7 +1117,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -1087,7 +1134,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)restoreTileset:(KTTilemapTileset *)<em>originalTileset</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)restoreTileset:(KKTilemapTileset *)<em>originalTileset</em></code></div>
 	
 	
 	
@@ -1104,7 +1151,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -1122,7 +1169,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (KTTilemapTileset *)tilesetForGid:(gid_t)<em>gid</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (KKTilemapTileset *)tilesetForGid:(gid_t)<em>gid</em></code></div>
 	
 	
 	
@@ -1139,15 +1186,15 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/tilesetForName:" title="tilesetForName:"></a>
-	<h3 class="subsubtitle method-title">tilesetForName:</h3>
+	<a name="//api/name/tilesetNamed:" title="tilesetNamed:"></a>
+	<h3 class="subsubtitle method-title">tilesetNamed:</h3>
 	
 	
 	
@@ -1156,7 +1203,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (KTTilemapTileset *)tilesetForName:(NSString *)<em>name</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (KKTilemapTileset *)tilesetNamed:(NSString *)<em>name</em></code></div>
 	
 	
 	
@@ -1173,24 +1220,24 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/writeToTMXFile:" title="writeToTMXFile:"></a>
-	<h3 class="subsubtitle method-title">writeToTMXFile:</h3>
+	<a name="//api/name/writeToFile:" title="writeToFile:"></a>
+	<h3 class="subsubtitle method-title">writeToFile:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes the tilemap in TMX (XML) format to the given file.</p>
+		<p>Writes the tilemap to a file path. The resulting file will be in TMX format.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)writeToTMXFile:(NSString *)<em>path</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)writeToFile:(NSString *)<em>path</em></code></div>
 	
 	
 	
@@ -1207,7 +1254,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KTTilemap.h</code><br />
+		<code class="declared-in-ref">KKTilemap.h</code><br />
 	</div>				
 	
 	
@@ -1226,7 +1273,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-15)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-20)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

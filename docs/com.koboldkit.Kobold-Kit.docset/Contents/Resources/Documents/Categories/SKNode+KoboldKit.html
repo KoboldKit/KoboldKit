@@ -63,6 +63,8 @@
 	
 	<option value="//api/name/createController">&nbsp;&nbsp;&nbsp;&nbsp;- createController</option>
 	
+	<option value="//api/name/didMoveToParent">&nbsp;&nbsp;&nbsp;&nbsp;- didMoveToParent</option>
+	
 	<option value="//api/name/disregardAllNotifications">&nbsp;&nbsp;&nbsp;&nbsp;- disregardAllNotifications</option>
 	
 	<option value="//api/name/disregardInputEvents">&nbsp;&nbsp;&nbsp;&nbsp;- disregardInputEvents</option>
@@ -71,6 +73,8 @@
 	
 	<option value="//api/name/disregardNotification:object:">&nbsp;&nbsp;&nbsp;&nbsp;- disregardNotification:object:</option>
 	
+	<option value="//api/name/disregardSceneEvents">&nbsp;&nbsp;&nbsp;&nbsp;- disregardSceneEvents</option>
+	
 	<option value="//api/name/hasBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- hasBehaviors</option>
 	
 	<option value="//api/name/observeInputEvents">&nbsp;&nbsp;&nbsp;&nbsp;- observeInputEvents</option>
@@ -78,6 +82,8 @@
 	<option value="//api/name/observeNotification:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- observeNotification:selector:</option>
 	
 	<option value="//api/name/observeNotification:selector:object:">&nbsp;&nbsp;&nbsp;&nbsp;- observeNotification:selector:object:</option>
+	
+	<option value="//api/name/observeSceneEvents">&nbsp;&nbsp;&nbsp;&nbsp;- observeSceneEvents</option>
 	
 	<option value="//api/name/performSelector:afterDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:afterDelay:</option>
 	
@@ -88,6 +94,8 @@
 	<option value="//api/name/removeBehavior:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehavior:</option>
 	
 	<option value="//api/name/removeBehaviorForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehaviorForKey:</option>
+	
+	<option value="//api/name/willMoveFromParent">&nbsp;&nbsp;&nbsp;&nbsp;- willMoveFromParent</option>
 	
 	
 	
@@ -105,6 +113,10 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Changing the Node&apos;s Position">Changing the Node&apos;s Position</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Observing Node&apos;s Child Status">Observing Node&apos;s Child Status</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating and Accessing the Controller">Creating and Accessing the Controller</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the KKScene">Accessing the KKScene</a></span></li>
@@ -114,6 +126,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scheduling Selectors">Scheduling Selectors</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to input events">Subscribe to input events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to scene events">Subscribe to scene events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to notifications">Subscribe to notifications</a></span></li>
 	
 </ul></li>
 
@@ -147,6 +163,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createController">createController</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didMoveToParent">didMoveToParent</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardAllNotifications">disregardAllNotifications</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardInputEvents">disregardInputEvents</a></span></li>
@@ -155,6 +173,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardNotification:object:">disregardNotification:object:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardSceneEvents">disregardSceneEvents</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasBehaviors">hasBehaviors</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeInputEvents">observeInputEvents</a></span></li>
@@ -162,6 +182,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeNotification:selector:">observeNotification:selector:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeNotification:selector:object:">observeNotification:selector:object:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeSceneEvents">observeSceneEvents</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:afterDelay:">performSelector:afterDelay:</a></span></li>
 	
@@ -172,6 +194,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehavior:">removeBehavior:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehaviorForKey:">removeBehaviorForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willMoveFromParent">willMoveFromParent</a></span></li>
 	
 </ul></li>
 
@@ -219,14 +243,36 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						<a title="Changing the Node&apos;s Position" name="task_Changing the Node&apos;s Position"></a>
+						<h3 class="subsubtitle task-title">Changing the Node&apos;s Position</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/centerOnNode:">&ndash;&nbsp;centerOnNode:</a></code>
 		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Observing Node&apos;s Child Status" name="task_Observing Node&apos;s Child Status"></a>
+						<h3 class="subsubtitle task-title">Observing Node&apos;s Child Status</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didMoveToParent">&ndash;&nbsp;didMoveToParent</a></code>
+		<span class="tooltip"><p>Called after addChild / insertChild. The self.scene and self.parent properties are valid in this method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willMoveFromParent">&ndash;&nbsp;willMoveFromParent</a></code>
+		<span class="tooltip"><p>Called after removeFromParent and other remove child methods. The self.scene and self.parent properties are still valid.</p></span>
 	</span>
 	
 	
@@ -375,7 +421,37 @@
 	</span>
 	
 	
+</li>
+						</ul>
+						
+						
+						<a title="Subscribe to scene events" name="task_Subscribe to scene events"></a>
+						<h3 class="subsubtitle task-title">Subscribe to scene events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/observeSceneEvents">&ndash;&nbsp;observeSceneEvents</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
 </li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disregardSceneEvents">&ndash;&nbsp;disregardSceneEvents</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Subscribe to notifications" name="task_Subscribe to notifications"></a>
+						<h3 class="subsubtitle task-title">Subscribe to notifications</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeNotification:selector:">&ndash;&nbsp;observeNotification:selector:</a></code>
 		<span class="tooltip"><p>(not documented)</p></span>
@@ -756,6 +832,40 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/didMoveToParent" title="didMoveToParent"></a>
+	<h3 class="subsubtitle method-title">didMoveToParent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called after addChild / insertChild. The self.scene and self.parent properties are valid in this method.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didMoveToParent</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/disregardAllNotifications" title="disregardAllNotifications"></a>
 	<h3 class="subsubtitle method-title">disregardAllNotifications</h3>
 	
@@ -869,6 +979,40 @@
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em> object:(id)<em>notificationSender</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disregardSceneEvents" title="disregardSceneEvents"></a>
+	<h3 class="subsubtitle method-title">disregardSceneEvents</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)disregardSceneEvents</code></div>
 	
 	
 	
@@ -1010,6 +1154,40 @@
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em> object:(id)<em>notificationSender</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/observeSceneEvents" title="observeSceneEvents"></a>
+	<h3 class="subsubtitle method-title">observeSceneEvents</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)observeSceneEvents</code></div>
 	
 	
 	
@@ -1222,6 +1400,40 @@
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/willMoveFromParent" title="willMoveFromParent"></a>
+	<h3 class="subsubtitle method-title">willMoveFromParent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called after removeFromParent and other remove child methods. The self.scene and self.parent properties are still valid.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)willMoveFromParent</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -1235,7 +1447,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-15)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-20)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

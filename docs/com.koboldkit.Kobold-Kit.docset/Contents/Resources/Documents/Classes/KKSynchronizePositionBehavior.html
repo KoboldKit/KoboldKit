@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KKViewController Class Reference</title>
+		<title>KKSynchronizePositionBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KKViewController Class Reference</h1>
+				<h1 class="hideInXcode">KKSynchronizePositionBehavior Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -40,11 +40,20 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/kkView">&nbsp;&nbsp;&nbsp;&nbsp;kkView</option>
+	<option value="//api/name/otherNode">&nbsp;&nbsp;&nbsp;&nbsp;otherNode</option>
+	
+	<option value="//api/name/positionMultiplier">&nbsp;&nbsp;&nbsp;&nbsp;positionMultiplier</option>
+	
+	<option value="//api/name/positionOffset">&nbsp;&nbsp;&nbsp;&nbsp;positionOffset</option>
 	
 	
 	
 	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/didSimulatePhysics">&nbsp;&nbsp;&nbsp;&nbsp;- didSimulatePhysics</option>
 	
 	
 	
@@ -70,7 +79,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/kkView">kkView</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/otherNode">otherNode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/positionMultiplier">positionMultiplier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/positionOffset">positionOffset</a></span></li>
 	
 </ul></li>
 
@@ -78,12 +91,18 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSimulatePhysics">didSimulatePhysics</a></span></li>
+	
+</ul></li>
+
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KKViewController Class Reference" name="top"></a>
+				<a title="KKSynchronizePositionBehavior Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -92,7 +111,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KKViewController Class Reference</h1>
+						<h1 class="title title-header">KKSynchronizePositionBehavior Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -100,10 +119,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">UIViewController</td>
+	<td class="specification-value"><a href="../Classes/KKNodeBehavior.html">KKNodeBehavior</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKViewController.h<br />KKViewController.m</td>
+	<td class="specification-value">KKSynchronizePositionBehavior.h<br />KKSynchronizePositionBehavior.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -113,7 +132,8 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>View controller for a Kobold Kit view. Creates the <a href="../Classes/KKView.html">KKView</a> and performs other setup tasks.</p>
+						<p>Updates the owning node&rsquo;s position from another node&rsquo;s position, applying optional offset and/or multiplier.
+The multiplier can be used to achieve a parallaxing effect.</p>
 					</div>
 					
 					
@@ -126,15 +146,44 @@
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/kkView">&nbsp;&nbsp;kkView</a></code>
-		<span class="tooltip"><p>The view controller&rsquo;s view cast to <a href="../Classes/KKView.html">KKView</a>. Use this property to use the <a href="../Classes/KKView.html">KKView</a> methods and properties.</p></span>
+		<code><a href="#//api/name/otherNode">&nbsp;&nbsp;otherNode</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/positionMultiplier">&nbsp;&nbsp;positionMultiplier</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/positionOffset">&nbsp;&nbsp;positionOffset</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
 	
 </li>
 						</ul>
@@ -150,25 +199,20 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/kkView" title="kkView"></a>
-	<h3 class="subsubtitle method-title">kkView</h3>
+	<a name="//api/name/otherNode" title="otherNode"></a>
+	<h3 class="subsubtitle method-title">otherNode</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The view controller&rsquo;s view cast to <a href="../Classes/KKView.html">KKView</a>. Use this property to use the <a href="../Classes/KKView.html">KKView</a> methods and properties.</p>
+		<p>(not documented)</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKView *kkView</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) SKNode *otherNode</code></div>
 	
 	
 	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The view controller&rsquo;s view cast to <a href="../Classes/KKView.html">KKView</a>. Use this property to use the <a href="../Classes/KKView.html">KKView</a> methods and properties.</p>
-	</div>
 	
 	
 	
@@ -182,7 +226,75 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKViewController.h</code><br />
+		<code class="declared-in-ref">KKSynchronizePositionBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/positionMultiplier" title="positionMultiplier"></a>
+	<h3 class="subsubtitle method-title">positionMultiplier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint positionMultiplier</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKSynchronizePositionBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/positionOffset" title="positionOffset"></a>
+	<h3 class="subsubtitle method-title">positionOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint positionOffset</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKSynchronizePositionBehavior.h</code><br />
 	</div>				
 	
 	
@@ -193,6 +305,46 @@
 					
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/didSimulatePhysics" title="didSimulatePhysics"></a>
+	<h3 class="subsubtitle method-title">didSimulatePhysics</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didSimulatePhysics</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>

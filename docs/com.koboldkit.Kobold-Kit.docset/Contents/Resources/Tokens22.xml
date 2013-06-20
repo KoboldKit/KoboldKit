@@ -1,47 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KTTilemapRectangleObject.html">
+	<File path="Classes/KKTilemapTileLayerNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KTTilemapRectangleObject</TokenIdentifier>
-			<Abstract type="html">A rectangle object, usually referred to as simply "object" in Tiled.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileLayerNode</TokenIdentifier>
+			<Abstract type="html">Tile layer node renders a TMX tile layer.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>
 			
 			<NodeRef refid="22"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapRectangleObject/setRect:</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileLayerNode/updateLayer</TokenIdentifier>
+			<Abstract type="html">Updates the layer's tile sprites based on position, scale and view size.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
-			
-			
-			<Anchor>//api/name/rect</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapRectangleObject/rect</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
+			<Declaration>- (void)updateLayer</Declaration>
 			
 			
-			<Anchor>//api/name/rect</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapRectangleObject/rect</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
-			
-			
-			<Anchor>//api/name/rect</Anchor>
+			<Anchor>//api/name/updateLayer</Anchor>
 		</Token>
 		
 	</File>

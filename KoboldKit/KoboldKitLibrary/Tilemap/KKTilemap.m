@@ -123,6 +123,7 @@
 
 -(void) applyIpadScaleFactor
 {
+	/*
 #if TARGET_OS_IPHONE
 	if (([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) && _iPadScaleFactorApplied == NO)
 	{
@@ -162,6 +163,7 @@
 		}
 	}
 #endif
+	*/
 }
 
 #pragma mark Apply Tiled Properties

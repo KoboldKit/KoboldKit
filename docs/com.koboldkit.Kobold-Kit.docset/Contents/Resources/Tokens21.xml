@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KTTilemapProperties.html">
+	<File path="Classes/KKTilemapProperties.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KTTilemapProperties</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapProperties</TokenIdentifier>
 			<Abstract type="html">KTTilemapProperties is a thin wrapper around NSMutableDictionary. It only allows NSString as keys and either KKMutableNumber or NSString as values (objects).
    Values can only be added and replaced but not removed. For weakly typed runtime variables use KTModel variables instead.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
 			
 			<NodeRef refid="21"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/setProperties:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setProperties:</TokenIdentifier>
 			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
 			
@@ -24,9 +24,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/properties</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/properties</TokenIdentifier>
 			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
 			
@@ -35,9 +35,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapProperties/properties</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/properties</TokenIdentifier>
 			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
 			
@@ -46,9 +46,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/setCount:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setCount:</TokenIdentifier>
 			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
 			
@@ -57,9 +57,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/count</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/count</TokenIdentifier>
 			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
 			
@@ -68,9 +68,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapProperties/count</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/count</TokenIdentifier>
 			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
 			
@@ -79,9 +79,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/setNumber:forKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setNumber:forKey:</TokenIdentifier>
 			<Abstract type="html">Sets the number for the given key. If a value for the given key already exists the number will take its place.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>- (void)setNumber:(KKMutableNumber *)number forKey:(NSString *)key</Declaration>
 			
@@ -90,9 +90,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/setString:forKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setString:forKey:</TokenIdentifier>
 			<Abstract type="html">Sets the string for the given key. If a value for the given key already exists the string will take its place.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>- (void)setString:(NSString *)string forKey:(NSString *)key</Declaration>
 			
@@ -101,10 +101,10 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/setValue:forKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setValue:forKey:</TokenIdentifier>
 			<Abstract type="html">(KTTMXReader only) This method first determines if the string can be converted to KKMutableNumber and if so, will set the KKMutableNumber.
    Otherwise it will set the string. </Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>- (void)setValue:(NSString *)string forKey:(NSString *)key</Declaration>
 			
@@ -113,10 +113,10 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/numberFromString:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberFromString:</TokenIdentifier>
 			<Abstract type="html">Returns a KKMutableNumber from a string if the string is convertable to a number. Otherwise returns nil.
    Note: floating point numbers must use . (dot) as floating point separator. </Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>- (KKMutableNumber *)numberFromString:(NSString *)string</Declaration>
 			
@@ -125,9 +125,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/numberForKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberForKey:</TokenIdentifier>
 			<Abstract type="html">Returns the KKMutableNumber for the key. If there's no number for that key returns nil.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>- (KKMutableNumber *)numberForKey:(NSString *)key</Declaration>
 			
@@ -136,9 +136,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapProperties/stringForKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/stringForKey:</TokenIdentifier>
 			<Abstract type="html">Returns the NSString for the key. If there's no string for that key returns nil.</Abstract>
-			<DeclaredIn>KTTilemapProperties.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>- (NSString *)stringForKey:(NSString *)key</Declaration>
 			

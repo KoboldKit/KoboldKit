@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KTIvarSetter.html">
+	<File path="Classes/KKTMXReader.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KTIvarSetter</TokenIdentifier>
-			<Abstract type="html">Utility class that allows to set an object's ivars from a NSDictionary. The dictionary must have strings as keys (the ivar names)
-   and KKMutableNumber or NSString types as values. </Abstract>
-			<DeclaredIn>KTIvarSetter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTMXReader</TokenIdentifier>
+			<Abstract type="html">Internal use only. Temporary object that parses a TMX file and creates the KTTilemap hierarchy containing KTTilemapTileset,
+   KTTilemapLayer, KTTilemapLayerTiles and KTTilemapObject. Used by KTTilemap which has its own parseTMX method. Not meant to be subclassed
+   or modified. </Abstract>
+			<DeclaredIn>KKTMXReader.h</DeclaredIn>
 			
 			<NodeRef refid="13"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTIvarSetter/initWithClass:</TokenIdentifier>
-			<Abstract type="html">Initialize ivar setter with a class.</Abstract>
-			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithClass:(Class)class</Declaration>
-			
-			
-			<Anchor>//api/name/initWithClass:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTIvarSetter/setIvarsFromDictionary:target:</TokenIdentifier>
-			<Abstract type="html">Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
-   and either NSString or KKMutableNumber as values. The target's class must match the class the KTIvarSetter object was initialized with. </Abstract>
-			<DeclaredIn>KTIvarSetter.h</DeclaredIn>			
-			
-			<Declaration>- (void)setIvarsFromDictionary:(NSDictionary *)ivarsDictionary target:(id)target</Declaration>
-			
-			
-			<Anchor>//api/name/setIvarsFromDictionary:target:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

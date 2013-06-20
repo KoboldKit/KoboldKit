@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KTTilemapPolyObject.html">
+	<File path="Classes/KKTilemapPolyObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KTTilemapPolyObject</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapPolyObject</TokenIdentifier>
 			<Abstract type="html">A polygon or polyline object. A polygon is assumed to have its last point connect with the first, the polyline does not.
    Though it's up to you how you interpret that. If you need to differentiate between the two, refer to the KTTilemapObject base class' objectType
    property. </Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
 			<NodeRef refid="20"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapPolyObject/setPoints:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setPoints:</TokenIdentifier>
 			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object's position.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CGPoint *points</Declaration>
 			
@@ -25,9 +25,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapPolyObject/points</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/points</TokenIdentifier>
 			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object's position.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CGPoint *points</Declaration>
 			
@@ -36,9 +36,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapPolyObject/points</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/points</TokenIdentifier>
 			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object's position.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CGPoint *points</Declaration>
 			
@@ -47,9 +47,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapPolyObject/setNumberOfPoints:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setNumberOfPoints:</TokenIdentifier>
 			<Abstract type="html">The number of points stored in the points array.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int numberOfPoints</Declaration>
 			
@@ -58,9 +58,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapPolyObject/numberOfPoints</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/numberOfPoints</TokenIdentifier>
 			<Abstract type="html">The number of points stored in the points array.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int numberOfPoints</Declaration>
 			
@@ -69,9 +69,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapPolyObject/numberOfPoints</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/numberOfPoints</TokenIdentifier>
 			<Abstract type="html">The number of points stored in the points array.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) unsigned int numberOfPoints</Declaration>
 			
@@ -80,10 +80,10 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapPolyObject/setBoundingBox:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setBoundingBox:</TokenIdentifier>
 			<Abstract type="html">The polygon's bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
    polygons because if the target object does not intersect with a polygon's bounding box, it will definitely not intersect with the polygon. </Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CGRect boundingBox</Declaration>
 			
@@ -92,10 +92,10 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapPolyObject/boundingBox</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/boundingBox</TokenIdentifier>
 			<Abstract type="html">The polygon's bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
    polygons because if the target object does not intersect with a polygon's bounding box, it will definitely not intersect with the polygon. </Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CGRect boundingBox</Declaration>
 			
@@ -104,10 +104,10 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapPolyObject/boundingBox</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/boundingBox</TokenIdentifier>
 			<Abstract type="html">The polygon's bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
    polygons because if the target object does not intersect with a polygon's bounding box, it will definitely not intersect with the polygon. </Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) CGRect boundingBox</Declaration>
 			
@@ -116,9 +116,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapPolyObject/updateBoundingBox</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/updateBoundingBox</TokenIdentifier>
 			<Abstract type="html">In cases where you manually create or change polygon points you should run updateBoundingBox to update the boundingBox property.</Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>- (void)updateBoundingBox</Declaration>
 			
@@ -127,10 +127,10 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapPolyObject/makePointsFromString:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/makePointsFromString:</TokenIdentifier>
 			<Abstract type="html">(TMX Parser Only) Creates the points array from a CGPoint encoded string where string representation of CGPoint are separated by a space character.
    For example: @"0,0 -80,80 -80,160 0,200 80,200" </Abstract>
-			<DeclaredIn>KTTilemapObject.h</DeclaredIn>			
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
 			<Declaration>- (void)makePointsFromString:(NSString *)string</Declaration>
 			

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KTTMXReader.html">
+	<File path="Classes/KKTMXWriter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KTTMXReader</TokenIdentifier>
-			<Abstract type="html">Internal use only. Temporary object that parses a TMX file and creates the KTTilemap hierarchy containing KTTilemapTileset,
-   KTTilemapLayer, KTTilemapLayerTiles and KTTilemapObject. Used by KTTilemap which has its own parseTMX method. Not meant to be subclassed
-   or modified. </Abstract>
-			<DeclaredIn>KTTMXReader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTMXWriter</TokenIdentifier>
+			<Abstract type="html">Internal use only. Writes a KTTilemap object to a file in TMX format. The resulting TMX can be opened in Tiled Map Editor
+   or other tools/engines that support the TMX format. </Abstract>
+			<DeclaredIn>KKTMXWriter.h</DeclaredIn>
 			
 			<NodeRef refid="14"/>
 		</Token>
