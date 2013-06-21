@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapObjectLayerNode.html">
+	<File path="Classes/KKTilemapNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObjectLayerNode</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapNode</TokenIdentifier>
+			<Abstract type="html">A tilemap node renders a TMX tilemap. It has KKTilemapTileLayerNode and KKTilempaObjectLayerNode as children
+which perform each layer's rendering.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
 			
 			<NodeRef refid="23"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapObjectLayerNode/objectLayerWithLayer:tilemap:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setTilemap:</TokenIdentifier>
+			<Abstract type="html">Returns the tilemap model object containing the tilemap's data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>+ (id)objectLayerWithLayer:(KKTilemapLayer *)layer tilemap:(KKTilemap *)tilemap</Declaration>
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
 			
 			
-			<Anchor>//api/name/objectLayerWithLayer:tilemap:</Anchor>
+			<Anchor>//api/name/tilemap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/tilemap</TokenIdentifier>
+			<Abstract type="html">Returns the tilemap model object containing the tilemap's data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
+			
+			
+			<Anchor>//api/name/tilemap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/tilemap</TokenIdentifier>
+			<Abstract type="html">Returns the tilemap model object containing the tilemap's data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
+			
+			
+			<Anchor>//api/name/tilemap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setMainTileLayerNode:</TokenIdentifier>
+			<Abstract type="html">Returns the "main" tile layer node. The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
+			
+			
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/mainTileLayerNode</TokenIdentifier>
+			<Abstract type="html">Returns the "main" tile layer node. The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
+			
+			
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/mainTileLayerNode</TokenIdentifier>
+			<Abstract type="html">Returns the "main" tile layer node. The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
+			
+			
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapNode/tilemapWithContentsOfFile:</TokenIdentifier>
+			<Abstract type="html">Creates a tilemap node from a TMX file.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tilemapWithContentsOfFile:(NSString *)tmxFile</Declaration>
+			
+			
+			<Anchor>//api/name/tilemapWithContentsOfFile:</Anchor>
 		</Token>
 		
 	</File>

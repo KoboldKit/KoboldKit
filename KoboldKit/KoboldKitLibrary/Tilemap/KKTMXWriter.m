@@ -206,8 +206,8 @@ NSString* stringFromUnsignedInt(unsigned int u)
 	[_xmlWriter writeAttribute:@"name" value:layer.name];
 	[_xmlWriter writeAttribute:@"width" value:intStringFromFloat(layer.tilemap.mapSize.width)];
 	[_xmlWriter writeAttribute:@"height" value:intStringFromFloat(layer.tilemap.mapSize.height)];
-	[_xmlWriter writeAttribute:@"opacity" value:stringFromFloat(layer.opacity)];
-	[_xmlWriter writeAttribute:@"visible" value:stringFromInt(layer.visible)];
+	[_xmlWriter writeAttribute:@"opacity" value:stringFromFloat(layer.alpha)];
+	[_xmlWriter writeAttribute:@"visible" value:stringFromInt(!layer.hidden)];
 
 	[self writeProperties:layer.properties];
 

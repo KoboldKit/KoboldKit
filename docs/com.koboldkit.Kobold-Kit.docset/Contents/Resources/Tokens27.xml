@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapTileProperties.html">
+	<File path="Classes/KKTilemapProperties.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileProperties</TokenIdentifier>
-			<Abstract type="html">Wrapper for tile properties, it stores one KTTilemapProperties object per tile that has properties. You can get/set KTTilemapProperties for a given tile gid
-   by using the propertiesForGid: methods. If a gid has no properties nil will be returned. In cases where you want to create the properties of a gid
-   use the createNonExistingProperties flag so that a new KTTilemapProperties object is created and associated with the gid if the gid has no properties yet. </Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapProperties</TokenIdentifier>
+			<Abstract type="html">KTTilemapProperties is a thin wrapper around NSMutableDictionary. It only allows NSString as keys and either KKMutableNumber or NSString as values (objects).
+   Values can only be added and replaced but not removed. For weakly typed runtime variables use KTModel variables instead.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
 			
 			<NodeRef refid="27"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/setProperties:</TokenIdentifier>
-			<Abstract type="html">Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setProperties:</TokenIdentifier>
+			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
 			
@@ -25,9 +24,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/properties</TokenIdentifier>
-			<Abstract type="html">Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/properties</TokenIdentifier>
+			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
 			
@@ -36,9 +35,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapTileProperties/properties</TokenIdentifier>
-			<Abstract type="html">Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/properties</TokenIdentifier>
+			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
 			
@@ -47,61 +46,104 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:setNumber:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the number for the key on the tile gid's properties. Creates an instance of KTTilemapProperties if the gid has no properties yet. Returns that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setCount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of property items.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid setNumber:(KKMutableNumber *)number forKey:(NSString *)key</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
 			
 			
-			<Anchor>//api/name/propertiesForGid:setNumber:forKey:</Anchor>
+			<Anchor>//api/name/count</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:setString:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the string for the key on the tile gid's properties. Creates an instance of KTTilemapProperties if the gid has no properties yet. Returns that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/count</TokenIdentifier>
+			<Abstract type="html">Returns the number of property items.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid setString:(NSString *)string forKey:(NSString *)key</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
 			
 			
-			<Anchor>//api/name/propertiesForGid:setString:forKey:</Anchor>
+			<Anchor>//api/name/count</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:setValue:forKey:</TokenIdentifier>
-			<Abstract type="html">(KTTMXReader only) Sets a string or number (if string is convertible to number) for the key on the tile gid's properties.
-   Creates an instance of KTTilemapProperties if the gid has no properties yet. Returns that tile's properties. </Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/count</TokenIdentifier>
+			<Abstract type="html">Returns the number of property items.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid setValue:(NSString *)string forKey:(NSString *)key</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
 			
 			
-			<Anchor>//api/name/propertiesForGid:setValue:forKey:</Anchor>
+			<Anchor>//api/name/count</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:</TokenIdentifier>
-			<Abstract type="html">Returns the properties for a tile gid. Returns nil if the gid has no properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setNumber:forKey:</TokenIdentifier>
+			<Abstract type="html">Sets the number for the given key. If a value for the given key already exists the number will take its place.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid</Declaration>
+			<Declaration>- (void)setNumber:(KKMutableNumber *)number forKey:(NSString *)key</Declaration>
 			
 			
-			<Anchor>//api/name/propertiesForGid:</Anchor>
+			<Anchor>//api/name/setNumber:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:createNonExistingProperties:</TokenIdentifier>
-			<Abstract type="html">Returns the properties for a tile gid. If createNonExistingProperties is YES and if the gid has no properties, will create a new
-   KTTilemapProperties object, set it as the tile gid's properties object, and return it. If createNonExistingProperties is NO behaves
-   identical to propertiesForGid: by returning nil for non-existing tile properties. </Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setString:forKey:</TokenIdentifier>
+			<Abstract type="html">Sets the string for the given key. If a value for the given key already exists the string will take its place.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid createNonExistingProperties:(BOOL)createNonExistingProperties</Declaration>
+			<Declaration>- (void)setString:(NSString *)string forKey:(NSString *)key</Declaration>
 			
 			
-			<Anchor>//api/name/propertiesForGid:createNonExistingProperties:</Anchor>
+			<Anchor>//api/name/setString:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setValue:forKey:</TokenIdentifier>
+			<Abstract type="html">(KTTMXReader only) This method first determines if the string can be converted to KKMutableNumber and if so, will set the KKMutableNumber.
+   Otherwise it will set the string. </Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			
+			<Declaration>- (void)setValue:(NSString *)string forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setValue:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberFromString:</TokenIdentifier>
+			<Abstract type="html">Returns a KKMutableNumber from a string if the string is convertable to a number. Otherwise returns nil.
+   Note: floating point numbers must use . (dot) as floating point separator. </Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			
+			<Declaration>- (KKMutableNumber *)numberFromString:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/numberFromString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the KKMutableNumber for the key. If there's no number for that key returns nil.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			
+			<Declaration>- (KKMutableNumber *)numberForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/numberForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/stringForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the NSString for the key. If there's no string for that key returns nil.</Abstract>
+			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/stringForKey:</Anchor>
 		</Token>
 		
 	</File>

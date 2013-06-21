@@ -1,273 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKNodeBehavior.html">
+	<File path="Classes/KKIvarSetter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKNodeBehavior</TokenIdentifier>
-			<Abstract type="html">Behaviors add custom logic to a node.
-Behaviors differ from actions in several ways:
-- they are useful for any logic code that is hard or impossible to implement with (custom) actions, such as event processing
-- they usually run indefinitely and can be paused by pausing the controller
-- they may have a state (ivars)
-- they may have a public interface (properties, methods)
-- they can not be reversed</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKIvarSetter</TokenIdentifier>
+			<Abstract type="html">Utility class that allows to set an object's ivars from a NSDictionary. The dictionary must have strings as keys (the ivar names)
+   and KKMutableNumber or NSString types as values. </Abstract>
+			<DeclaredIn>KKIvarSetter.h</DeclaredIn>
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setName:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarSetter/initWithClass:</TokenIdentifier>
+			<Abstract type="html">Initialize ivar setter with a class.</Abstract>
+			<DeclaredIn>KKIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			<Declaration>- (id)initWithClass:(Class)class</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/initWithClass:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/name</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarSetter/setIvarsFromDictionary:target:</TokenIdentifier>
+			<Abstract type="html">Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
+   and either NSString or KKMutableNumber as values. The target's class must match the class the KKIvarSetter object was initialized with. </Abstract>
+			<DeclaredIn>KKIvarSetter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			<Declaration>- (void)setIvarsFromDictionary:(NSDictionary *)ivarsDictionary target:(id)target</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/name</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setController:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
-			
-			
-			<Anchor>//api/name/controller</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/controller</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
-			
-			
-			<Anchor>//api/name/controller</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/controller</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
-			
-			
-			<Anchor>//api/name/controller</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setNode:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/node</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/node</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setWantsUpdate:</TokenIdentifier>
-			<Abstract type="html">(not documented) set by subclasses</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
-			
-			
-			<Anchor>//api/name/wantsUpdate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/wantsUpdate</TokenIdentifier>
-			<Abstract type="html">(not documented) set by subclasses</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
-			
-			
-			<Anchor>//api/name/wantsUpdate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/wantsUpdate</TokenIdentifier>
-			<Abstract type="html">(not documented) set by subclasses</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
-			
-			
-			<Anchor>//api/name/wantsUpdate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setEnabled:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL enabled</Declaration>
-			
-			
-			<Anchor>//api/name/enabled</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/enabled</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL enabled</Declaration>
-			
-			
-			<Anchor>//api/name/enabled</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/enabled</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL enabled</Declaration>
-			
-			
-			<Anchor>//api/name/enabled</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/removeFromNode</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeFromNode</Declaration>
-			
-			
-			<Anchor>//api/name/removeFromNode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>- (void)didJoinController</Declaration>
-			
-			
-			<Anchor>//api/name/didJoinController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>- (void)didLeaveController</Declaration>
-			
-			
-			<Anchor>//api/name/didLeaveController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/update:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
-			
-			
-			<Anchor>//api/name/update:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didEvaluateActions</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>- (void)didEvaluateActions</Declaration>
-			
-			
-			<Anchor>//api/name/didEvaluateActions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>- (void)didSimulatePhysics</Declaration>
-			
-			
-			<Anchor>//api/name/didSimulatePhysics</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/postNotificationName:</TokenIdentifier>
-			<Abstract type="html">(not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>- (void)postNotificationName:(NSString *)name</Declaration>
-			
-			
-			<Anchor>//api/name/postNotificationName:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/postNotificationName:userInfo:</TokenIdentifier>
-			<Abstract type="html">(not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys.</Abstract>
-			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
-			
-			<Declaration>- (void)postNotificationName:(NSString *)name userInfo:(NSDictionary *)userInfo</Declaration>
-			
-			
-			<Anchor>//api/name/postNotificationName:userInfo:</Anchor>
+			<Anchor>//api/name/setIvarsFromDictionary:target:</Anchor>
 		</Token>
 		
 	</File>

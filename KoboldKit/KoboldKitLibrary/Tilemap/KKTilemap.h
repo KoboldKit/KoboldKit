@@ -34,32 +34,40 @@ typedef enum : unsigned char
 	BOOL _iPadScaleFactorApplied;
 }
 
-/** The size of the map, in tiles. */
+/** @name Map Properties */
+
+/** @returns The size of the map, in tiles. */
 @property (nonatomic) CGSize mapSize;
-/** The size of the "grid", meaning: the height & width of the tiles (in points). Can only be set in Tiled when a new tilemap is created. In the
-   New Map dialog the gridSize is called "Tile Size". */
+/** The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".
+ @returns The size of the grid (tiles) in points. */
 @property (nonatomic) CGSize gridSize;
 /** This is the tileSize of the tileset with the largest tile size. Will be the same as gridSize for tilemaps whose tilesets all use the same tile size.
    But if you use tilesets of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
-   tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures. */
+   tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures.
+ @returns The largest tile size found in the tilesets used by this tilemap. */
 @property (nonatomic) CGSize largestTileSize;
-/** The map's global properties. Editable in Tiled from the menu: Map -> Map Properties. */
+/** The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.
+ @returns The dictionary of properties.
+ */
 @property (nonatomic, readonly) KKTilemapProperties* properties;
 
-/** List of tilesets (KKTilemapTileset) used by this map. */
-@property (nonatomic, readonly) NSArray* tilesets;
-/** List of layers (KKTilemapLayer) used by this map, in the draw order respectively the reverse order they appear
-   in Tiled's Layers list (bottom-most = first, top-most = last). */
-@property (nonatomic, readonly) NSArray* layers;
-/** The orientiation (type) of tilemap. */
+/** The orientiation (type) of tilemap.
+ @returns The map's KKTilemapOrientation. */
 @property (nonatomic) KKTilemapOrientation orientation;
 /** The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.
 
-   TILED-EDITABLE */
+   TILED-EDITABLE
+ @returns The background color as string. Currently not used by the renderer. */
 @property (nonatomic, copy) NSString* backgroundColor;
 /** The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
-   Mainly needed for bounds checks. */
+   Mainly needed for bounds checks, don't change this value.
+ @returns The highest-numbered (theoretical) gid considering all tilesets. */
 @property (nonatomic) gid_t highestGid;
+
+#pragma message "Tilemap iPad scale factor still needed with Sprite Kit?"
+
+/** @name Scaling */
+
 /** By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.
 
    Caution: Some combination of values and scale factor may cause inaccuracies, and possibly visual glitches. For example a scale factor of 1.5 and a odd-numbered tile size of 25x25 would
@@ -71,57 +79,95 @@ typedef enum : unsigned char
    - The -ipad and -ipadhd tileset image's width & height must be scaled accordingly. For example by factor of 2.0f for a scaleFactor of 2.0f.
    - Tileset images' spacing and margin properties must also be scaled accordingly *if* scaleTilesetSpacingAndMargin is set to YES. See its description for when to use it.
 
-   TILED-EDITABLE */
+   TILED-EDITABLE
+ 
+ @returns The iPad scale factor. */
 @property (nonatomic) float iPadScaleFactor;
 /** If set to YES, will also scale each tileset's spacing & margin properties. This can be used if you simply upscale an iPhone tileset with an image program,
    which will also increase any existing spacing & margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
    atlas files regardless of the contained image's scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
    neither spacing between tiles nor margin between outermost tiles and texture border.
 
-   TILED-EDITABLE */
+   TILED-EDITABLE
+ @returns Whether to also scale up spacing and margin if iPadScaleFactor is > 1.0. */
 @property (nonatomic) BOOL scaleTilesetSpacingAndMargin;
 
 /** Applies the iPadScaleFactor property. You only need to call this if you're creating a tilemap from scratch at runtime, after your map was completely
    set up. And only if you actually use iPadScaleFactor other than the default. */
 -(void) applyIpadScaleFactor;
 
-/** Parse and create a KKTilemap from a file. The file must be in TMX format. */
+/** @name Creating a Tilemap */
+
+/** Parse and create a KKTilemap from a file. The file must be in TMX format.
+ @param: tmxFile The name of a TMX file in the bundle, or an absolute path to a TMX file in a non-bundle directory. 
+ @returns A new instance of KTTilemap initialized with the contents of the TMX file. */
 +(id) tilemapWithContentsOfFile:(NSString*)tmxFile;
 
-/** Creates an empty tilemap. Use this if you want to create your tilemap world entirely in code. */
+/** Creates an empty tilemap. Use this if you want to create your tilemap world entirely in code.
+ @param orientation The orientation (type) of tilemap.
+ @param mapSize The size of the tilemap, in tiles.
+ @param gridSize The grid size (tile size) of the tilemap.
+ @returns A new, empty instance of KTTilemap. */
 +(id) tilemapWithOrientation:(KKTilemapOrientation)orientation mapSize:(CGSize)mapSize gridSize:(CGSize)gridSize;
 
-/** Writes the tilemap to a file path. The resulting file will be in TMX format. */
+/** @name Writing a Tilemap */
+
+/** Writes the tilemap to a file path. The resulting file will be in TMX format.
+ @param path An absolute path to a file in a writable directory (ie AppData or Documents). */
 -(void) writeToFile:(NSString*)path;
 
-/** Adds a tileset to the list of tilesets. */
+/** @name Working with tilesets */
+
+/** List of tilesets (KKTilemapTileset) used by this map.
+ @returns An array of KTTilemapTileset objects. */
+@property (nonatomic, readonly) NSArray* tilesets;
+
+/** Adds a tileset to the list of tilesets. Only needed when creating or changing a tilemap at runtime.
+ @param tileset The tileset to add to the tilemap. */
 -(void) addTileset:(KKTilemapTileset*)tileset;
 
 /** Returns the tileset for a specific gid. Mainly to access that tile's properties. Will return nil for invalid gids (gid that points to a non-existing tileset,
-   or if gid is 0). */
+   or if gid is 0).
+ @param gid The GID of a tile.
+ @returns The tileset the gid is part of, or nil if the GID is out of bounds. */
 -(KKTilemapTileset*) tilesetForGid:(gid_t)gid;
 
-/** Returns the tileset with the given name. Returns nil if there's no tileset with this name. */
+/** @param name The name of a tileset as displayed in Tiled.
+ @returns the tileset with the given name. Returns nil if there's no tileset with this name. */
 -(KKTilemapTileset*) tilesetNamed:(NSString*)name;
 
 /** Replaces a tileset with another (actually: it creates an alias) so that tiles drawn with the originalTileset will now be drawn using the otherTileset.
    This can be used to change the atmosphere of the tilemap, perhaps by changing from summer to winter, from "before attack" to "after attack", and so on.
 
-   Caution: both tilesets need to be compatible (ie same tile size) and the otherTileset should have the same number of tiles in the same place as the originalTileset
-   to prevent rendering issues (ie empty tiles, wrong tiles, crashes at the worst). */
+   @warning: Both tilesets need to be compatible (ie same tile size) and the otherTileset should have the same number of tiles in the same place as the originalTileset
+   to prevent rendering issues (ie empty tiles, wrong tiles, crashes at the worst).
+ 
+ @param originalTileset The tileset you want to replace.
+ @param otherTileset The tileset you want to replace it with.
+ */
 -(void) replaceTileset:(KKTilemapTileset*)originalTileset withTileset:(KKTilemapTileset*)otherTileset;
 
-/** If tileset was replaced with replaceTileset: method, will restore it so that tiles will be drawn from this tileset again. */
+/** If tileset was replaced with replaceTileset: method, will restore it so that tiles will be drawn from this tileset again.
+ @param originalTileset The tileset to restore. */
 -(void) restoreTileset:(KKTilemapTileset*)originalTileset;
 
-/** Adds a tileset to the list of tilesets. */
+/** @name Working with Layers */
+
+/** List of layers (KKTilemapLayer) used by this map, in the draw order respectively the reverse order they appear
+ in Tiled's Layers list (bottom-most = first, top-most = last).
+ @returns An array of KTTilemapLayer objects. */
+@property (nonatomic, readonly) NSArray* layers;
+
+/** Adds a layer to the list of layers.
+ @param layer The layer to add. */
 -(void) addLayer:(KKTilemapLayer*)layer;
 
-/** Returns the first layer with the given name, or nil if there's no layer with that name. Layer names are case-sensitive! */
+/** @param name The name identifying a layer, as edited in Tiled.
+ @returns The first layer with the given name, or nil if there's no layer with that name. Layer names are case-sensitive! */
 -(KKTilemapLayer*) layerNamed:(NSString*)name;
 
-/** Is set whenever the tilemap changes (tile gid change or tilesets swapped). State is not reset automatically.
- Used to determine whether the tilemap needs redrawing. */
+// Is set whenever the tilemap changes in a way that requires an immediate redraw in the current frame (tile gid change or tilesets swapped).
+// The modified state is reset automatically by the renderer. You don't normally need to modify it yourself.
 @property (nonatomic) BOOL modified;
 
 @end

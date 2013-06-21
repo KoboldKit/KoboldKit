@@ -40,11 +40,15 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/alpha">&nbsp;&nbsp;&nbsp;&nbsp;alpha</option>
+	
 	<option value="//api/name/endlessScrolling">&nbsp;&nbsp;&nbsp;&nbsp;endlessScrolling</option>
 	
 	<option value="//api/name/endlessScrollingHorizontal">&nbsp;&nbsp;&nbsp;&nbsp;endlessScrollingHorizontal</option>
 	
 	<option value="//api/name/endlessScrollingVertical">&nbsp;&nbsp;&nbsp;&nbsp;endlessScrollingVertical</option>
+	
+	<option value="//api/name/hidden">&nbsp;&nbsp;&nbsp;&nbsp;hidden</option>
 	
 	<option value="//api/name/isObjectLayer">&nbsp;&nbsp;&nbsp;&nbsp;isObjectLayer</option>
 	
@@ -54,21 +58,15 @@
 	
 	<option value="//api/name/objects">&nbsp;&nbsp;&nbsp;&nbsp;objects</option>
 	
-	<option value="//api/name/opacity">&nbsp;&nbsp;&nbsp;&nbsp;opacity</option>
-	
 	<option value="//api/name/parallaxFactor">&nbsp;&nbsp;&nbsp;&nbsp;parallaxFactor</option>
 	
 	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
 	
 	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
 	
-	<option value="//api/name/tileCount">&nbsp;&nbsp;&nbsp;&nbsp;tileCount</option>
-	
 	<option value="//api/name/tilemap">&nbsp;&nbsp;&nbsp;&nbsp;tilemap</option>
 	
 	<option value="//api/name/tiles">&nbsp;&nbsp;&nbsp;&nbsp;tiles</option>
-	
-	<option value="//api/name/visible">&nbsp;&nbsp;&nbsp;&nbsp;visible</option>
 	
 	
 	
@@ -111,6 +109,14 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Common Layer Properties">Common Layer Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Tile Layer Properties">Tile Layer Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Tile Layer GIDs">Working with Tile Layer GIDs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Layer Objects">Working with Layer Objects</a></span></li>
+	
 </ul></li>
 
 
@@ -119,11 +125,15 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alpha">alpha</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endlessScrolling">endlessScrolling</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hidden">hidden</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isObjectLayer">isObjectLayer</a></span></li>
 	
@@ -133,21 +143,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objects">objects</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/opacity">opacity</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parallaxFactor">parallaxFactor</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileCount">tileCount</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemap">tilemap</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tiles">tiles</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/visible">visible</a></span></li>
 	
 </ul></li>
 
@@ -224,8 +228,8 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						
+						<a title="Common Layer Properties" name="task_Common Layer Properties"></a>
+						<h3 class="subsubtitle task-title">Common Layer Properties</h3>
 
 						<ul class="task-list">
 							<li>
@@ -251,45 +255,6 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/objects">&nbsp;&nbsp;objects</a></code>
-		<span class="tooltip"><p>(Object Layers Only) A list of &ldquo;objects&rdquo; on this layer. These &ldquo;objects&rdquo; are Tiled&rsquo;s rectangles, polylines and polygons. They can be used to position
-   <a href="#//api/name/tilemap">tilemap</a> objects not editable in Tiled by (normally) using the first point of such an &ldquo;object&rdquo; as the origin for the actual game object.
-   Always nil for tile layers.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/tiles">&nbsp;&nbsp;tiles</a></code>
-		<span class="tooltip"><p>(Tile Layers Only) Reference to the KTTilemapLayerTiles object which contains the memory buffer for the tile GIDs of this tile layer. Always nil
-   for object layers.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
-		<span class="tooltip"><p>(Tile Layers Only) The layer&rsquo;s size (in <a href="#//api/name/tiles">tiles</a>). The layer size is usually identical to the mapSize property of KTTilemap.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/tileCount">&nbsp;&nbsp;tileCount</a></code>
-		<span class="tooltip"><p>(Tile Layers Only) How many <a href="#//api/name/tiles">tiles</a> there are in this layer. Simply the product of <a href="#//api/name/size">size</a>.width * <a href="#//api/name/size">size</a>.height. Merely an optimization artifact.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/opacity">&nbsp;&nbsp;opacity</a></code>
-		<span class="tooltip"><p>How opaque the layer is. Uses cocos2d&rsquo;s &ldquo;opacity&rdquo; values which go from 0 (fully transparent) to 255 (fully opaque).
-   The opacity of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 255. TILED-EDITABLE</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/isObjectLayer">&nbsp;&nbsp;isObjectLayer</a></code>
 		<span class="tooltip"><p>Is set if this layer is an Object Layer. If NO it is a Tile Layer.</p></span>
 	</span>
@@ -304,9 +269,32 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/visible">&nbsp;&nbsp;visible</a></code>
+		<code><a href="#//api/name/hidden">&nbsp;&nbsp;hidden</a></code>
 		<span class="tooltip"><p>Whether the <a href="#//api/name/tiles">tiles</a> on this layer are visible or not. If a tile layer is hidden, it will still create the <a href="#//api/name/tiles">tiles</a> and therefore
-   use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible. Default: NO. TILED-EDITABLE</p></span>
+use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible. Default: NO. TILED-EDITABLE</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Tile Layer Properties" name="task_Tile Layer Properties"></a>
+						<h3 class="subsubtitle task-title">Tile Layer Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
+		<span class="tooltip"><p>(Tile Layers Only) The layer&rsquo;s size (in <a href="#//api/name/tiles">tiles</a>). The layer size is usually identical to the mapSize property of KTTilemap.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alpha">&nbsp;&nbsp;alpha</a></code>
+		<span class="tooltip"><p>How opaque the layer is. Value ranges from 0 (fully transparent) to 1 (fully opaque).
+   The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -314,8 +302,8 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/endlessScrolling">&nbsp;&nbsp;endlessScrolling</a></code>
 		<span class="tooltip"><p>If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
-   <a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a>. Returns YES only if both <a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a> are YES.
-   Default: NO. TILED-EDITABLE</p></span>
+<a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a>. Returns YES only if both <a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a> are YES.
+Default: NO. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -338,6 +326,22 @@
 		<code><a href="#//api/name/parallaxFactor">&nbsp;&nbsp;parallaxFactor</a></code>
 		<span class="tooltip"><p>Determines how fast this layer moves in both directions when scrolling the <a href="#//api/name/tilemap">tilemap</a>. Value between -1.0f and 1.0f, usually you only use the range from 0.0f to 1.0f.
    Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Tile Layer GIDs" name="task_Working with Tile Layer GIDs"></a>
+						<h3 class="subsubtitle task-title">Working with Tile Layer GIDs</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tiles">&nbsp;&nbsp;tiles</a></code>
+		<span class="tooltip"><p>(Tile Layers Only) Reference to the KTTilemapLayerTiles object which contains the memory buffer for the tile GIDs of this tile layer. Always nil
+for object layers.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -379,6 +383,23 @@
 	</span>
 	
 	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Layer Objects" name="task_Working with Layer Objects"></a>
+						<h3 class="subsubtitle task-title">Working with Layer Objects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objects">&nbsp;&nbsp;objects</a></code>
+		<span class="tooltip"><p>(Object Layers Only) A list of &ldquo;objects&rdquo; on this layer. These &ldquo;objects&rdquo; are Tiled&rsquo;s rectangles, polylines and polygons. They can be used to position
+<a href="#//api/name/tilemap">tilemap</a> objects not editable in Tiled by (normally) using the first point of such an &ldquo;object&rdquo; as the origin for the actual game object.
+Always nil for tile layers.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addObject:">&ndash;&nbsp;addObject:</a></code>
@@ -396,14 +417,14 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objectAtIndex:">&ndash;&nbsp;objectAtIndex:</a></code>
-		<span class="tooltip"><p>Returns the object at the given index. Returns nil if object does not exist or the index is out of bounds (contrary to NSArray which would raise an exception).</p></span>
+		<span class="tooltip"><p>The object at the given index.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objectByName:">&ndash;&nbsp;objectByName:</a></code>
-		<span class="tooltip"><p>Returns the first object with the given <a href="#//api/name/name">name</a>, or nil if there&rsquo;s no object with this <a href="#//api/name/name">name</a> on this layer. Object names are case-sensitive!</p></span>
+		<span class="tooltip"><p>The <a href="#//api/name/name">name</a> identifying an object.</p></span>
 	</span>
 	
 	
@@ -421,6 +442,46 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/alpha" title="alpha"></a>
+	<h3 class="subsubtitle method-title">alpha</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>How opaque the layer is. Value ranges from 0 (fully transparent) to 1 (fully opaque).
+   The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) unsigned char alpha</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The alpha (opacity) of the layer.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapLayer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/endlessScrolling" title="endlessScrolling"></a>
 	<h3 class="subsubtitle method-title">endlessScrolling</h3>
 	
@@ -428,8 +489,8 @@
 	
 	<div class="method-subsection brief-description">
 		<p>If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
-   <a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a>. Returns YES only if both <a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a> are YES.
-   Default: NO. TILED-EDITABLE</p>
+<a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a>. Returns YES only if both <a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a> are YES.
+Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
 	
@@ -437,6 +498,11 @@
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the map wraps around and repeats in all directions.</p>
+	</div>
 	
 	
 	
@@ -472,6 +538,11 @@
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the map wraps around and repeats along the horizontal axis.</p>
+	</div>
+	
 	
 	
 	
@@ -505,6 +576,51 @@
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the map wraps around and repeats along the vertical axis.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapLayer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hidden" title="hidden"></a>
+	<h3 class="subsubtitle method-title">hidden</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the <a href="#//api/name/tiles">tiles</a> on this layer are visible or not. If a tile layer is hidden, it will still create the <a href="#//api/name/tiles">tiles</a> and therefore
+use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible. Default: NO. TILED-EDITABLE</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL hidden</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the layer is hidden (not visible).</p>
+	</div>
 	
 	
 	
@@ -540,6 +656,11 @@
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if this is an object layer.</p>
+	</div>
+	
 	
 	
 	
@@ -573,6 +694,11 @@
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if this is a tile layer.</p>
+	</div>
 	
 	
 	
@@ -608,6 +734,11 @@
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The name of the layer.</p>
+	</div>
+	
 	
 	
 	
@@ -634,8 +765,8 @@
 	
 	<div class="method-subsection brief-description">
 		<p>(Object Layers Only) A list of &ldquo;objects&rdquo; on this layer. These &ldquo;objects&rdquo; are Tiled&rsquo;s rectangles, polylines and polygons. They can be used to position
-   <a href="#//api/name/tilemap">tilemap</a> objects not editable in Tiled by (normally) using the first point of such an &ldquo;object&rdquo; as the origin for the actual game object.
-   Always nil for tile layers.</p>
+<a href="#//api/name/tilemap">tilemap</a> objects not editable in Tiled by (normally) using the first point of such an &ldquo;object&rdquo; as the origin for the actual game object.
+Always nil for tile layers.</p>
 	</div>		
 	
 	
@@ -644,40 +775,10 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapLayer.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/opacity" title="opacity"></a>
-	<h3 class="subsubtitle method-title">opacity</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>How opaque the layer is. Uses cocos2d&rsquo;s &ldquo;opacity&rdquo; values which go from 0 (fully transparent) to 255 (fully opaque).
-   The opacity of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 255. TILED-EDITABLE</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) unsigned char opacity</code></div>
-	
-	
-	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of an object layer&rsquo;s KTTilemapObject objects.</p>
+	</div>
 	
 	
 	
@@ -713,6 +814,11 @@
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The layer&rsquo;s parallaxFactor.</p>
+	</div>
 	
 	
 	
@@ -758,6 +864,11 @@
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The layer&rsquo;s properties.</p>
+	</div>
+	
 	
 	
 	
@@ -792,39 +903,10 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapLayer.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/tileCount" title="tileCount"></a>
-	<h3 class="subsubtitle method-title">tileCount</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(Tile Layers Only) How many <a href="#//api/name/tiles">tiles</a> there are in this layer. Simply the product of <a href="#//api/name/size">size</a>.width * <a href="#//api/name/size">size</a>.height. Merely an optimization artifact.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) unsigned int tileCount</code></div>
-	
-	
-	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The size of the tile layer, in <a href="#//api/name/tiles">tiles</a>.</p>
+	</div>
 	
 	
 	
@@ -860,6 +942,11 @@
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The tilemap the layer is part of.</p>
+	</div>
+	
 	
 	
 	
@@ -886,7 +973,7 @@
 	
 	<div class="method-subsection brief-description">
 		<p>(Tile Layers Only) Reference to the KTTilemapLayerTiles object which contains the memory buffer for the tile GIDs of this tile layer. Always nil
-   for object layers.</p>
+for object layers.</p>
 	</div>		
 	
 	
@@ -895,40 +982,10 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapLayer.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/visible" title="visible"></a>
-	<h3 class="subsubtitle method-title">visible</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Whether the <a href="#//api/name/tiles">tiles</a> on this layer are visible or not. If a tile layer is hidden, it will still create the <a href="#//api/name/tiles">tiles</a> and therefore
-   use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible. Default: NO. TILED-EDITABLE</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visible</code></div>
-	
-	
-	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A tile layer&rsquo;s tiles.</p>
+	</div>
 	
 	
 	
@@ -972,6 +1029,16 @@
 	<div class="method-subsection method-declaration"><code>- (void)addObject:(KKTilemapObject *)<em>object</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>The <a href="#//api/name/tilemap">tilemap</a> object to add to the layer.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -1006,6 +1073,16 @@
 	<div class="method-subsection method-declaration"><code>- (void)clearTileAt:(CGPoint)<em>tileCoord</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tileCoord</em></dt>
+			<dd><p>The tile coordinate of the tile to clear (remove).</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -1033,14 +1110,29 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the object at the given index. Returns nil if object does not exist or the index is out of bounds (contrary to NSArray which would raise an exception).</p>
+		<p>The object at the given index.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapObject *)objectAtIndex:(NSUInteger)<em>index</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The object at the given index.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The object at the given index. Returns nil if object does not exist or the index is out of bounds (contrary to NSArray which would raise an exception).</p>
+	</div>
 	
 	
 	
@@ -1067,14 +1159,29 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the first object with the given <a href="#//api/name/name">name</a>, or nil if there&rsquo;s no object with this <a href="#//api/name/name">name</a> on this layer. Object names are case-sensitive!</p>
+		<p>The <a href="#//api/name/name">name</a> identifying an object.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapObject *)objectByName:(NSString *)<em>name</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The <a href="#//api/name/name">name</a> identifying an object.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the first object with the given <a href="#//api/name/name">name</a>, or nil if there&rsquo;s no object with this <a href="#//api/name/name">name</a> on this layer. Object names are case-sensitive!</p>
+	</div>
 	
 	
 	
@@ -1107,6 +1214,16 @@
 	
 	<div class="method-subsection method-declaration"><code>- (void)removeObject:(KKTilemapObject *)<em>object</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>The <a href="#//api/name/tilemap">tilemap</a> object to remove from the layer.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1142,6 +1259,21 @@
 	<div class="method-subsection method-declaration"><code>- (void)setTileGid:(gid_t)<em>gid</em> tileCoord:(CGPoint)<em>tileCoord</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gid</em></dt>
+			<dd><p>The tile GID to set. Must be a valid GID. GID flags will be ignored.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tileCoord</em></dt>
+			<dd><p>The tile coordinate of the tile to set the gid at.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -1175,6 +1307,21 @@
 	
 	<div class="method-subsection method-declaration"><code>- (void)setTileGidWithFlags:(gid_t)<em>gidWithFlags</em> tileCoord:(CGPoint)<em>tileCoord</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gidWithFlags</em></dt>
+			<dd><p>The tile GID including flags to set. Must be a valid GID.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tileCoord</em></dt>
+			<dd><p>The tile coordinate of the tile to set the gid at.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1211,7 +1358,22 @@
 	<div class="method-subsection method-declaration"><code>- (gid_t)tileGidAt:(CGPoint)<em>tileCoord</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tileCoord</em></dt>
+			<dd><p>Coordinate in <a href="#//api/name/tiles">tiles</a>.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The tile GID (without flags) at the given tile coordinate, or 0 for illegal coordinates.</p>
+	</div>
 	
 	
 	
@@ -1247,7 +1409,22 @@
 	<div class="method-subsection method-declaration"><code>- (gid_t)tileGidWithFlagsAt:(CGPoint)<em>tileCoord</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tileCoord</em></dt>
+			<dd><p>Coordinate in <a href="#//api/name/tiles">tiles</a>.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The tile GID (with flags) at the given tile coordinate, or 0 for illegal coordinates.</p>
+	</div>
 	
 	
 	
@@ -1280,7 +1457,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-21)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-22)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

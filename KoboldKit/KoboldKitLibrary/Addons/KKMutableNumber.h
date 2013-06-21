@@ -172,7 +172,9 @@
 
 @end
 
-
+/** Used internally. Part of the KKMutableNumber class cluster.
+ 
+ @warning Use KKMutableNumber instead! */
 @interface KKBoolNumber : KKMutableNumber
 {
 @private
@@ -181,6 +183,9 @@
 -(id) initWithBool:(BOOL)boolNumber;
 @end
 
+/** Used internally. Part of the KKMutableNumber class cluster.
+ 
+ @warning Use KKMutableNumber instead! */
 @interface KKFloatNumber : KKMutableNumber
 {
 @private
@@ -189,6 +194,9 @@
 -(id) initWithFloat:(float)floatNumber;
 @end
 
+/** Used internally. Part of the KKMutableNumber class cluster.
+ 
+ @warning Use KKMutableNumber instead! */
 @interface KKDoubleNumber : KKMutableNumber
 {
 @private
@@ -197,7 +205,9 @@
 -(id) initWithDouble:(double)doubleNumber;
 @end
 
-// the Number is 32-Bit even on 64-Bit Mac OS
+/** Used internally. Part of the KKMutableNumber class cluster.
+ 
+ @warning Use KKMutableNumber instead! */
 @interface KKInt32Number : KKMutableNumber
 {
 @private
@@ -206,7 +216,9 @@
 -(id) initWithInt32:(int32_t)int32Number;
 @end
 
-// the Number is 64-Bit even on 32-Bit iOS
+/** Used internally. Part of the KKMutableNumber class cluster.
+ 
+ @warning Use KKMutableNumber instead! */
 @interface KKInt64Number : KKMutableNumber
 {
 @private

@@ -1,366 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/SKNode+KoboldKit.html">
+	<File path="Classes/XMLWriter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/SKNode(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/XMLWriter</TokenIdentifier>
+			<Abstract type="html">XMLWriter writes XML files. Mainly used for iOS since there is no built-in XML writer API for iOS.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
 			<NodeRef refid="36"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/centerOnNode:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setIndentation:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)centerOnNode:(SKNode *)node</Declaration>
+			<Declaration>@property (nonatomic, retain, readwrite) NSString *indentation</Declaration>
 			
 			
-			<Anchor>//api/name/centerOnNode:</Anchor>
+			<Anchor>//api/name/indentation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/didMoveToParent</TokenIdentifier>
-			<Abstract type="html">Called after addChild / insertChild. The self.scene and self.parent properties are valid in this method.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/indentation</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)didMoveToParent</Declaration>
+			<Declaration>@property (nonatomic, retain, readwrite) NSString *indentation</Declaration>
 			
 			
-			<Anchor>//api/name/didMoveToParent</Anchor>
+			<Anchor>//api/name/indentation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/willMoveFromParent</TokenIdentifier>
-			<Abstract type="html">Called after removeFromParent and other remove child methods. The self.scene and self.parent properties are still valid.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/XMLWriter/indentation</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)willMoveFromParent</Declaration>
+			<Declaration>@property (nonatomic, retain, readwrite) NSString *indentation</Declaration>
 			
 			
-			<Anchor>//api/name/willMoveFromParent</Anchor>
+			<Anchor>//api/name/indentation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/setController:</TokenIdentifier>
-			<Abstract type="html">Returns the node's controller object.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setLineBreak:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			<Declaration>@property (nonatomic, retain, readwrite) NSString *lineBreak</Declaration>
 			
 			
-			<Anchor>//api/name/controller</Anchor>
+			<Anchor>//api/name/lineBreak</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/controller</TokenIdentifier>
-			<Abstract type="html">Returns the node's controller object.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/lineBreak</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			<Declaration>@property (nonatomic, retain, readwrite) NSString *lineBreak</Declaration>
 			
 			
-			<Anchor>//api/name/controller</Anchor>
+			<Anchor>//api/name/lineBreak</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/SKNode(KoboldKit)/controller</TokenIdentifier>
-			<Abstract type="html">Returns the node's controller object.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/XMLWriter/lineBreak</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			<Declaration>@property (nonatomic, retain, readwrite) NSString *lineBreak</Declaration>
 			
 			
-			<Anchor>//api/name/controller</Anchor>
+			<Anchor>//api/name/lineBreak</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/createController</TokenIdentifier>
-			<Abstract type="html">Creates node controller if one does not exist yet. Returns the new or existing instance.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setAutomaticEmptyElements:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (KKNodeController *)createController</Declaration>
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL automaticEmptyElements</Declaration>
 			
 			
-			<Anchor>//api/name/createController</Anchor>
+			<Anchor>//api/name/automaticEmptyElements</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/setKkScene:</TokenIdentifier>
-			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/automaticEmptyElements</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL automaticEmptyElements</Declaration>
 			
 			
-			<Anchor>//api/name/kkScene</Anchor>
+			<Anchor>//api/name/automaticEmptyElements</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/kkScene</TokenIdentifier>
-			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/XMLWriter/automaticEmptyElements</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL automaticEmptyElements</Declaration>
 			
 			
-			<Anchor>//api/name/kkScene</Anchor>
+			<Anchor>//api/name/automaticEmptyElements</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/SKNode(KoboldKit)/kkScene</TokenIdentifier>
-			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setLevel:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			<Declaration>@property (nonatomic, readonly) int level</Declaration>
 			
 			
-			<Anchor>//api/name/kkScene</Anchor>
+			<Anchor>//api/name/level</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehavior:</TokenIdentifier>
-			<Abstract type="html">Adds a behavior to the node. The behavior will be copied.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/level</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)addBehavior:(KKNodeBehavior *)behavior</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behavior</Name>
-					<Abstract type="html">The behavior to add.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) int level</Declaration>
 			
-			<Anchor>//api/name/addBehavior:</Anchor>
+			
+			<Anchor>//api/name/level</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehavior:withKey:</TokenIdentifier>
-			<Abstract type="html">Adds a behavior to the node with a key. Replaces any existing behavior with the same key. The behavior will be copied.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/XMLWriter/level</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)addBehavior:(KKNodeBehavior *)behavior withKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behavior</Name>
-					<Abstract type="html">The behavior to add.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique key used to identify the behavior.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) int level</Declaration>
 			
-			<Anchor>//api/name/addBehavior:withKey:</Anchor>
+			
+			<Anchor>//api/name/level</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehaviors:</TokenIdentifier>
-			<Abstract type="html">Adds multiple behaviors from an array. The behaviors will be copied.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeLinebreak</TokenIdentifier>
+			<Abstract type="html">helpful for formatting, special needs
+write linebreak, if any</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)addBehaviors:(NSArray *)behaviors</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behaviors</Name>
-					<Abstract type="html">An array containing behaviors to add.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)writeLinebreak</Declaration>
 			
-			<Anchor>//api/name/addBehaviors:</Anchor>
+			
+			<Anchor>//api/name/writeLinebreak</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/behaviorForKey:</TokenIdentifier>
-			<Abstract type="html">The behavior for the key. Returns nil if no behavior with that key was found.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeIndentation</TokenIdentifier>
+			<Abstract type="html">write indentation, if any</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (KKNodeBehavior *)behaviorForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique key identifying the behavior.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The behavior for the key. Returns nil if no behavior with that key was found.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviorForKey:</Anchor>
+			<Declaration>- (void)writeIndentation</Declaration>
+			
+			
+			<Anchor>//api/name/writeIndentation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/hasBehaviors</TokenIdentifier>
-			<Abstract type="html">YES if the node has one or more behaviors.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeCloseStartElement</TokenIdentifier>
+			<Abstract type="html">write end of start element, so that the start tag is complete</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)hasBehaviors</Declaration>
+			<Declaration>- (void)writeCloseStartElement</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the node has one or more behaviors.</Abstract></ReturnValue>
-			<Anchor>//api/name/hasBehaviors</Anchor>
+			
+			<Anchor>//api/name/writeCloseStartElement</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeBehavior:</TokenIdentifier>
-			<Abstract type="html">Removes the behavior.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeNamespaceAttributes</TokenIdentifier>
+			<Abstract type="html">write any outstanding namespace declaration attributes in a start element</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)removeBehavior:(KKNodeBehavior *)behavior</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behavior</Name>
-					<Abstract type="html">The behavior to remove.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)writeNamespaceAttributes</Declaration>
 			
-			<Anchor>//api/name/removeBehavior:</Anchor>
+			
+			<Anchor>//api/name/writeNamespaceAttributes</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeBehaviorForKey:</TokenIdentifier>
-			<Abstract type="html">Removes the behavior with the given key.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeEscape:</TokenIdentifier>
+			<Abstract type="html">write escaped text to the stream</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)removeBehaviorForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique key identifying the behavior.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)writeEscape:(NSString *)value</Declaration>
 			
-			<Anchor>//api/name/removeBehaviorForKey:</Anchor>
+			
+			<Anchor>//api/name/writeEscape:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeAllBehaviors</TokenIdentifier>
-			<Abstract type="html">Removes all behaviors from the node.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/write:</TokenIdentifier>
+			<Abstract type="html">wrote unescaped text to the stream</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>			
 			
-			<Declaration>- (void)removeAllBehaviors</Declaration>
+			<Declaration>- (void)write:(NSString *)value</Declaration>
 			
 			
-			<Anchor>//api/name/removeAllBehaviors</Anchor>
+			<Anchor>//api/name/write:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/performSelector:afterDelay:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setPrefix:namespaceURI:</TokenIdentifier>
+			<Abstract type="html">set a namespace and prefix</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay</Declaration>
+			<Declaration>- (void)setPrefix:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
 			
 			
-			<Anchor>//api/name/performSelector:afterDelay:</Anchor>
+			<Anchor>//api/name/setPrefix:namespaceURI:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/performSelectorInBackground:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/getPrefix:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)performSelectorInBackground:(SEL)aSelector</Declaration>
+			<Declaration>- (NSString *)getPrefix:(NSString *)namespaceURI</Declaration>
 			
 			
-			<Anchor>//api/name/performSelectorInBackground:</Anchor>
+			<Anchor>//api/name/getPrefix:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/observeInputEvents</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeStartElementWithNamespace:localName:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)observeInputEvents</Declaration>
+			<Declaration>- (void)writeStartElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
 			
 			
-			<Anchor>//api/name/observeInputEvents</Anchor>
+			<Anchor>//api/name/writeStartElementWithNamespace:localName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardInputEvents</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeEndElementWithNamespace:localName:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)disregardInputEvents</Declaration>
+			<Declaration>- (void)writeEndElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
 			
 			
-			<Anchor>//api/name/disregardInputEvents</Anchor>
+			<Anchor>//api/name/writeEndElementWithNamespace:localName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/observeSceneEvents</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeEmptyElementWithNamespace:localName:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)observeSceneEvents</Declaration>
+			<Declaration>- (void)writeEmptyElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
 			
 			
-			<Anchor>//api/name/observeSceneEvents</Anchor>
+			<Anchor>//api/name/writeEmptyElementWithNamespace:localName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardSceneEvents</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeAttributeWithNamespace:localName:value:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)disregardSceneEvents</Declaration>
+			<Declaration>- (void)writeAttributeWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName value:(NSString *)value</Declaration>
 			
 			
-			<Anchor>//api/name/disregardSceneEvents</Anchor>
+			<Anchor>//api/name/writeAttributeWithNamespace:localName:value:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/observeNotification:selector:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setDefaultNamespace:</TokenIdentifier>
+			<Abstract type="html">set the default namespace (empty prefix)</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector</Declaration>
+			<Declaration>- (void)setDefaultNamespace:(NSString *)namespaceURI</Declaration>
 			
 			
-			<Anchor>//api/name/observeNotification:selector:</Anchor>
+			<Anchor>//api/name/setDefaultNamespace:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/observeNotification:selector:object:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeNamespace:namespaceURI:</TokenIdentifier>
+			<Abstract type="html">write (and set) a namespace and prefix</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector object:(id)notificationSender</Declaration>
+			<Declaration>- (void)writeNamespace:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
 			
 			
-			<Anchor>//api/name/observeNotification:selector:object:</Anchor>
+			<Anchor>//api/name/writeNamespace:namespaceURI:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardNotification:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeDefaultNamespace:</TokenIdentifier>
+			<Abstract type="html">write (and set) the default namespace</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)disregardNotification:(NSString *)notificationName</Declaration>
+			<Declaration>- (void)writeDefaultNamespace:(NSString *)namespaceURI</Declaration>
 			
 			
-			<Anchor>//api/name/disregardNotification:</Anchor>
+			<Anchor>//api/name/writeDefaultNamespace:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardNotification:object:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/getNamespaceURI:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)disregardNotification:(NSString *)notificationName object:(id)notificationSender</Declaration>
-			
-			
-			<Anchor>//api/name/disregardNotification:object:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardAllNotifications</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (void)disregardAllNotifications</Declaration>
+			<Declaration>- (NSString *)getNamespaceURI:(NSString *)prefix</Declaration>
 			
 			
-			<Anchor>//api/name/disregardAllNotifications</Anchor>
+			<Anchor>//api/name/getNamespaceURI:</Anchor>
 		</Token>
 		
 	</File>

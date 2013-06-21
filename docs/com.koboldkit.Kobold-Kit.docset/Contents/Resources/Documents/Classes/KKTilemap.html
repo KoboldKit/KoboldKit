@@ -54,8 +54,6 @@
 	
 	<option value="//api/name/mapSize">&nbsp;&nbsp;&nbsp;&nbsp;mapSize</option>
 	
-	<option value="//api/name/modified">&nbsp;&nbsp;&nbsp;&nbsp;modified</option>
-	
 	<option value="//api/name/orientation">&nbsp;&nbsp;&nbsp;&nbsp;orientation</option>
 	
 	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
@@ -112,6 +110,18 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Map Properties">Map Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scaling">Scaling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a Tilemap">Creating a Tilemap</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Writing a Tilemap">Writing a Tilemap</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with tilesets">Working with tilesets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Layers">Working with Layers</a></span></li>
+	
 </ul></li>
 
 
@@ -133,8 +143,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layers">layers</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapSize">mapSize</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modified">modified</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orientation">orientation</a></span></li>
 	
@@ -227,8 +235,8 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						
+						<a title="Map Properties" name="task_Map Properties"></a>
+						<h3 class="subsubtitle task-title">Map Properties</h3>
 
 						<ul class="task-list">
 							<li>
@@ -241,8 +249,7 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gridSize">&nbsp;&nbsp;gridSize</a></code>
-		<span class="tooltip"><p>The size of the &ldquo;grid&rdquo;, meaning: the height &amp; width of the tiles (in points). Can only be set in Tiled when a new tilemap is created. In the
-   New Map dialog the gridSize is called &ldquo;Tile Size&rdquo;.</p></span>
+		<span class="tooltip"><p>The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as &ldquo;Tile Size&rdquo;.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -264,21 +271,6 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/tilesets">&nbsp;&nbsp;tilesets</a></code>
-		<span class="tooltip"><p>List of tilesets (<a href="../Classes/KKTilemapTileset.html">KKTilemapTileset</a>) used by this map.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/layers">&nbsp;&nbsp;layers</a></code>
-		<span class="tooltip"><p>List of layers (<a href="../Classes/KKTilemapLayer.html">KKTilemapLayer</a>) used by this map, in the draw order respectively the reverse order they appear
-   in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/orientation">&nbsp;&nbsp;orientation</a></code>
 		<span class="tooltip"><p>The orientiation (type) of tilemap.</p></span>
 	</span>
@@ -295,11 +287,19 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/highestGid">&nbsp;&nbsp;highestGid</a></code>
 		<span class="tooltip"><p>The highest valid gid from all <a href="#//api/name/tilesets">tilesets</a>. Updated when <a href="#//api/name/tilesets">tilesets</a> load their textures. Equal to the lastGid property of the &ldquo;last&rdquo; tileset.
-   Mainly needed for bounds checks.</p></span>
+   Mainly needed for bounds checks, don&rsquo;t change this value.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Scaling" name="task_Scaling"></a>
+						<h3 class="subsubtitle task-title">Scaling</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/iPadScaleFactor">&nbsp;&nbsp;iPadScaleFactor</a></code>
 		<span class="tooltip"><p>By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</p></span>
@@ -324,10 +324,19 @@
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Creating a Tilemap" name="task_Creating a Tilemap"></a>
+						<h3 class="subsubtitle task-title">Creating a Tilemap</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemapWithContentsOfFile:">+&nbsp;tilemapWithContentsOfFile:</a></code>
-		<span class="tooltip"><p>Parse and create a KKTilemap from a file. The file must be in TMX format.</p></span>
+		<span class="tooltip"><p>Parse and create a KKTilemap from a file. The file must be in TMX format.
+@param: tmxFile The name of a TMX file in the bundle, or an absolute path to a TMX file in a non-bundle directory.</p></span>
 	</span>
 	
 	
@@ -338,17 +347,40 @@
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Writing a Tilemap" name="task_Writing a Tilemap"></a>
+						<h3 class="subsubtitle task-title">Writing a Tilemap</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeToFile:">&ndash;&nbsp;writeToFile:</a></code>
 		<span class="tooltip"><p>Writes the tilemap to a file path. The resulting file will be in TMX format.</p></span>
 	</span>
 	
 	
+</li>
+						</ul>
+						
+						
+						<a title="Working with tilesets" name="task_Working with tilesets"></a>
+						<h3 class="subsubtitle task-title">Working with tilesets</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tilesets">&nbsp;&nbsp;tilesets</a></code>
+		<span class="tooltip"><p>List of tilesets (<a href="../Classes/KKTilemapTileset.html">KKTilemapTileset</a>) used by this map.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addTileset:">&ndash;&nbsp;addTileset:</a></code>
-		<span class="tooltip"><p>Adds a tileset to the list of <a href="#//api/name/tilesets">tilesets</a>.</p></span>
+		<span class="tooltip"><p>Adds a tileset to the list of <a href="#//api/name/tilesets">tilesets</a>. Only needed when creating or changing a tilemap at runtime.</p></span>
 	</span>
 	
 	
@@ -363,7 +395,7 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilesetNamed:">&ndash;&nbsp;tilesetNamed:</a></code>
-		<span class="tooltip"><p>Returns the tileset with the given name. Returns nil if there&rsquo;s no tileset with this name.</p></span>
+		<span class="tooltip"><p>The name of a tileset as displayed in Tiled.</p></span>
 	</span>
 	
 	
@@ -382,27 +414,35 @@
 	</span>
 	
 	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Layers" name="task_Working with Layers"></a>
+						<h3 class="subsubtitle task-title">Working with Layers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/layers">&nbsp;&nbsp;layers</a></code>
+		<span class="tooltip"><p>List of layers (<a href="../Classes/KKTilemapLayer.html">KKTilemapLayer</a>) used by this map, in the draw order respectively the reverse order they appear
+in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addLayer:">&ndash;&nbsp;addLayer:</a></code>
-		<span class="tooltip"><p>Adds a tileset to the list of <a href="#//api/name/tilesets">tilesets</a>.</p></span>
+		<span class="tooltip"><p>Adds a layer to the list of <a href="#//api/name/layers">layers</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/layerNamed:">&ndash;&nbsp;layerNamed:</a></code>
-		<span class="tooltip"><p>Returns the first layer with the given name, or nil if there&rsquo;s no layer with that name. Layer names are case-sensitive!</p></span>
+		<span class="tooltip"><p>The name identifying a layer, as edited in Tiled.</p></span>
 	</span>
 	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/modified">&nbsp;&nbsp;modified</a></code>
-		<span class="tooltip"><p>Is set whenever the tilemap changes (tile gid change or <a href="#//api/name/tilesets">tilesets</a> swapped). State is not reset automatically.
-Used to determine whether the tilemap needs redrawing.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -432,6 +472,11 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The background color as string. Currently not used by the renderer.</p>
+	</div>
 	
 	
 	
@@ -463,8 +508,7 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The size of the &ldquo;grid&rdquo;, meaning: the height &amp; width of the tiles (in points). Can only be set in Tiled when a new tilemap is created. In the
-   New Map dialog the gridSize is called &ldquo;Tile Size&rdquo;.</p>
+		<p>The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as &ldquo;Tile Size&rdquo;.</p>
 	</div>		
 	
 	
@@ -472,6 +516,11 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The size of the grid (tiles) in points.</p>
+	</div>
 	
 	
 	
@@ -499,7 +548,7 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	<div class="method-subsection brief-description">
 		<p>The highest valid gid from all <a href="#//api/name/tilesets">tilesets</a>. Updated when <a href="#//api/name/tilesets">tilesets</a> load their textures. Equal to the lastGid property of the &ldquo;last&rdquo; tileset.
-   Mainly needed for bounds checks.</p>
+   Mainly needed for bounds checks, don&rsquo;t change this value.</p>
 	</div>		
 	
 	
@@ -507,6 +556,11 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The highest-numbered (theoretical) gid considering all <a href="#//api/name/tilesets">tilesets</a>.</p>
+	</div>
 	
 	
 	
@@ -541,6 +595,11 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The iPad scale factor.</p>
+	</div>
 	
 	
 	
@@ -595,6 +654,11 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The largest tile size found in the <a href="#//api/name/tilesets">tilesets</a> used by this tilemap.</p>
+	</div>
+	
 	
 	
 	
@@ -621,7 +685,7 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	<div class="method-subsection brief-description">
 		<p>List of layers (<a href="../Classes/KKTilemapLayer.html">KKTilemapLayer</a>) used by this map, in the draw order respectively the reverse order they appear
-   in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
+in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 	</div>		
 	
 	
@@ -629,6 +693,11 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of KTTilemapLayer objects.</p>
+	</div>
 	
 	
 	
@@ -664,40 +733,10 @@ Used to determine whether the tilemap needs redrawing.</p></span>
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemap.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/modified" title="modified"></a>
-	<h3 class="subsubtitle method-title">modified</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Is set whenever the tilemap changes (tile gid change or <a href="#//api/name/tilesets">tilesets</a> swapped). State is not reset automatically.
-Used to determine whether the tilemap needs redrawing.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL modified</code></div>
-	
-	
-	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The size of the map, in tiles.</p>
+	</div>
 	
 	
 	
@@ -733,6 +772,11 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The map&rsquo;s KKTilemapOrientation.</p>
+	</div>
+	
 	
 	
 	
@@ -766,6 +810,11 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The dictionary of properties.</p>
+	</div>
 	
 	
 	
@@ -803,6 +852,11 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether to also scale up spacing and margin if <a href="#//api/name/iPadScaleFactor">iPadScaleFactor</a> is > 1.0.</p>
+	</div>
 	
 	
 	
@@ -843,6 +897,11 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of KTTilemapTileset objects.</p>
+	</div>
+	
 	
 	
 	
@@ -876,7 +935,8 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Parse and create a KKTilemap from a file. The file must be in TMX format.</p>
+		<p>Parse and create a KKTilemap from a file. The file must be in TMX format.
+@param: tmxFile The name of a TMX file in the bundle, or an absolute path to a TMX file in a non-bundle directory.</p>
 	</div>		
 	
 	
@@ -884,6 +944,11 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new instance of KTTilemap initialized with the contents of the TMX file.</p>
+	</div>
 	
 	
 	
@@ -917,7 +982,32 @@ Used to determine whether the tilemap needs redrawing.</p>
 	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithOrientation:(KKTilemapOrientation)<em>orientation</em> mapSize:(CGSize)<em>mapSize</em> gridSize:(CGSize)<em>gridSize</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>orientation</em></dt>
+			<dd><p>The <a href="#//api/name/orientation">orientation</a> (type) of tilemap.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mapSize</em></dt>
+			<dd><p>The size of the tilemap, in tiles.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gridSize</em></dt>
+			<dd><p>The grid size (tile size) of the tilemap.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new, empty instance of KTTilemap.</p>
+	</div>
 	
 	
 	
@@ -952,12 +1042,22 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Adds a tileset to the list of <a href="#//api/name/tilesets">tilesets</a>.</p>
+		<p>Adds a layer to the list of <a href="#//api/name/layers">layers</a>.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)addLayer:(KKTilemapLayer *)<em>layer</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layer</em></dt>
+			<dd><p>The layer to add.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -986,12 +1086,22 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Adds a tileset to the list of <a href="#//api/name/tilesets">tilesets</a>.</p>
+		<p>Adds a tileset to the list of <a href="#//api/name/tilesets">tilesets</a>. Only needed when creating or changing a tilemap at runtime.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)addTileset:(KKTilemapTileset *)<em>tileset</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tileset</em></dt>
+			<dd><p>The tileset to add to the tilemap.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1055,14 +1165,29 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the first layer with the given name, or nil if there&rsquo;s no layer with that name. Layer names are case-sensitive!</p>
+		<p>The name identifying a layer, as edited in Tiled.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapLayer *)layerNamed:(NSString *)<em>name</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name identifying a layer, as edited in Tiled.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The first layer with the given name, or nil if there&rsquo;s no layer with that name. Layer names are case-sensitive!</p>
+	</div>
 	
 	
 	
@@ -1097,6 +1222,21 @@ Used to determine whether the tilemap needs redrawing.</p>
 	<div class="method-subsection method-declaration"><code>- (void)replaceTileset:(KKTilemapTileset *)<em>originalTileset</em> withTileset:(KKTilemapTileset *)<em>otherTileset</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>originalTileset</em></dt>
+			<dd><p>The tileset you want to replace.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>otherTileset</em></dt>
+			<dd><p>The tileset you want to replace it with.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -1105,7 +1245,7 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>   Caution: both <a href="#//api/name/tilesets">tilesets</a> need to be compatible (ie same tile size) and the otherTileset should have the same number of tiles in the same place as the originalTileset
+		<p>   @warning: Both <a href="#//api/name/tilesets">tilesets</a> need to be compatible (ie same tile size) and the otherTileset should have the same number of tiles in the same place as the originalTileset
    to prevent rendering issues (ie empty tiles, wrong tiles, crashes at the worst).</p>
 	</div>
 	
@@ -1136,6 +1276,16 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	<div class="method-subsection method-declaration"><code>- (void)restoreTileset:(KKTilemapTileset *)<em>originalTileset</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>originalTileset</em></dt>
+			<dd><p>The tileset to restore.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1172,7 +1322,22 @@ Used to determine whether the tilemap needs redrawing.</p>
 	<div class="method-subsection method-declaration"><code>- (KKTilemapTileset *)tilesetForGid:(gid_t)<em>gid</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gid</em></dt>
+			<dd><p>The GID of a tile.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The tileset the gid is part of, or nil if the GID is out of bounds.</p>
+	</div>
 	
 	
 	
@@ -1199,14 +1364,29 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the tileset with the given name. Returns nil if there&rsquo;s no tileset with this name.</p>
+		<p>The name of a tileset as displayed in Tiled.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapTileset *)tilesetNamed:(NSString *)<em>name</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of a tileset as displayed in Tiled.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the tileset with the given name. Returns nil if there&rsquo;s no tileset with this name.</p>
+	</div>
 	
 	
 	
@@ -1239,6 +1419,16 @@ Used to determine whether the tilemap needs redrawing.</p>
 	
 	<div class="method-subsection method-declaration"><code>- (void)writeToFile:(NSString *)<em>path</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An absolute path to a file in a writable directory (ie AppData or Documents).</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1273,7 +1463,7 @@ Used to determine whether the tilemap needs redrawing.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-21)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-22)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

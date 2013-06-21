@@ -200,13 +200,8 @@
 	layer.tilemap = _tilemap;
 	layer.isTileLayer = YES;
 	layer.name = [attributes objectForKey:@"name"];
-	layer.visible = ![[attributes objectForKey:@"visible"] isEqualToString:@"0"];
-	layer.opacity = 255;
-	NSString* opacity = [attributes objectForKey:@"opacity"];
-	if (opacity)
-	{
-		layer.opacity = (unsigned char)(255.0f* [opacity floatValue] + 0.5f);
-	}
+	layer.hidden = [[attributes objectForKey:@"visible"] isEqualToString:@"0"];
+	layer.alpha = [[attributes objectForKey:@"opacity"] floatValue];
 
 	CGSize layerSize;
 	layerSize.width = [[attributes objectForKey:@"width"] intValue];
@@ -225,19 +220,19 @@
 	layer.tilemap = _tilemap;
 	layer.isObjectLayer = YES;
 	layer.name = [attributes objectForKey:@"name"];
-	layer.opacity = 255;
+	layer.alpha = 255;
 	NSString* opacity = [attributes objectForKey:@"opacity"];
 	if (opacity)
 	{
-		layer.opacity = (unsigned char)(255.0f* [opacity floatValue]);
+		layer.alpha = (unsigned char)(255.0f* [opacity floatValue]);
 	}
 
 	// Tiled quirk: object layers only write visible="0" to TMX when not visible, otherwise visible is simply omitted from TMX file
-	layer.visible = YES;
+	layer.hidden = NO;
 	NSString* visible = [attributes objectForKey:@"visible"];
 	if (visible)
 	{
-		layer.visible = ![visible isEqualToString:@"0"];
+		layer.hidden = [visible isEqualToString:@"0"];
 	}
 
 	[_tilemap addLayer:layer];

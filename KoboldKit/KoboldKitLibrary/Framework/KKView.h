@@ -91,12 +91,14 @@
 
 /** Searches for the first scene with the given name in the scene stack and presents it.
  
- If there is no scene by this name on the scene stack, then this method has no effect. */
+ If there is no scene by this name on the scene stack, then this method has no effect.
+ @param name The name of a scene on the stack to be presented. */
 -(void) popToSceneNamed:(NSString*)name;
 
 /** Searches for the first scene with the given name in the scene stack and presents it.
  
  If there is no scene by this name on the scene stack, then this method has no effect.
+ @param name The name of a scene on the stack to be presented.
  @param transition A transition used to animate between the two scenes. */
 -(void) popToSceneNamed:(NSString*)name transition:(KKTransition*)transition;
 

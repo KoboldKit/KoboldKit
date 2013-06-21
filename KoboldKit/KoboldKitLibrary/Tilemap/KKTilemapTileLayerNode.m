@@ -90,7 +90,7 @@
 
 -(void) updateLayer
 {
-	self.hidden = !_layer.visible;
+	self.hidden = _layer.hidden;
 	
 	if (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified)
 	{

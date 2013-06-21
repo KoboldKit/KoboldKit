@@ -23,8 +23,8 @@
 	if (self)
 	{
 		_parallaxFactor = CGPointMake(1.0f, 1.0f);
-		_visible = YES;
-		_opacity = 255;
+		_hidden = NO;
+		_alpha = 1.0f;
 	}
 
 	return self;
@@ -33,7 +33,7 @@
 -(NSString*) description
 {
 	return [NSString stringWithFormat:@"%@ (name: '%@', size: %.0f,%.0f, opacity: %i, visible: %i, isObjectLayer: %i, objects: %u, tiles: %@, properties: %u)",
-			[super description], _name, _size.width, _size.height, _opacity, _visible, _isObjectLayer, (unsigned int)_objects.count, _tiles, (unsigned int)_properties.count];
+			[super description], _name, _size.width, _size.height, _alpha, _hidden, _isObjectLayer, (unsigned int)_objects.count, _tiles, (unsigned int)_properties.count];
 }
 
 #pragma mark Gid Setters/Getters
