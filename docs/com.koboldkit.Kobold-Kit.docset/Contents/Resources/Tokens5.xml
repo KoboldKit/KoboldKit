@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKFloatNumber.html">
+	<File path="Classes/KKDoubleNumber.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKFloatNumber</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/KKDoubleNumber</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
@@ -12,14 +12,19 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKFloatNumber/initWithFloat:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type float</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/KKDoubleNumber/initWithDouble:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type double</Abstract>
 			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithFloat:(float)floatNumber</Declaration>
+			<Declaration>- (id)initWithDouble:(double)doubleNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/initWithFloat:</Anchor>
+			<Anchor>//api/name/initWithDouble:</Anchor>
 		</Token>
 		
 	</File>

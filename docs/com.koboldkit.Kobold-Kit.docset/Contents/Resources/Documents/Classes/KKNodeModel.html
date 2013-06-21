@@ -99,6 +99,18 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Bool Variables">Bool Variables</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Float Variables">Float Variables</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Double Variables">Double Variables</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Integer Variables">Integer Variables</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Arbitrary Object Variables">Arbitrary Object Variables</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting a Mutable Number">Getting a Mutable Number</a></span></li>
+	
 </ul></li>
 
 
@@ -205,7 +217,7 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -215,7 +227,15 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Bool Variables" name="task_Bool Variables"></a>
+						<h3 class="subsubtitle task-title">Bool Variables</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setBool:forKey:">&ndash;&nbsp;setBool:forKey:</a></code>
 		<span class="tooltip"><p>Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p></span>
@@ -229,7 +249,15 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Float Variables" name="task_Float Variables"></a>
+						<h3 class="subsubtitle task-title">Float Variables</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setFloat:forKey:">&ndash;&nbsp;setFloat:forKey:</a></code>
 		<span class="tooltip"><p>Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p></span>
@@ -243,7 +271,15 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Double Variables" name="task_Double Variables"></a>
+						<h3 class="subsubtitle task-title">Double Variables</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setDouble:forKey:">&ndash;&nbsp;setDouble:forKey:</a></code>
 		<span class="tooltip"><p>Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p></span>
@@ -257,7 +293,15 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Integer Variables" name="task_Integer Variables"></a>
+						<h3 class="subsubtitle task-title">Integer Variables</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setInt32:forKey:">&ndash;&nbsp;setInt32:forKey:</a></code>
 		<span class="tooltip"><p>Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</p></span>
@@ -313,7 +357,15 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Arbitrary Object Variables" name="task_Arbitrary Object Variables"></a>
+						<h3 class="subsubtitle task-title">Arbitrary Object Variables</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setObject:forKey:">&ndash;&nbsp;setObject:forKey:</a></code>
 		<span class="tooltip"><p>Assign or replace any object with the given key. If object is nil, the object for that key will be removed.</p></span>
@@ -323,15 +375,22 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objectForKey:">&ndash;&nbsp;objectForKey:</a></code>
-		<span class="tooltip"><p>Returns the object for key. Returns nil if there&rsquo;s no object associated with this key.</p></span>
+		<span class="tooltip"><p>The object for key or nil if there&rsquo;s no object associated with this key.</p></span>
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Getting a Mutable Number" name="task_Getting a Mutable Number"></a>
+						<h3 class="subsubtitle task-title">Getting a Mutable Number</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/mutableNumberForKey:">&ndash;&nbsp;mutableNumberForKey:</a></code>
-		<span class="tooltip"><p>Returns the underlying <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> object for a specific variable key. You can then modify the
-number value without having to reassign it to the model.</p></span>
+		<span class="tooltip"><p>Accessing the <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> object directly allows you to change the value without having to reassign it using a setter method.</p></span>
 	</span>
 	
 	
@@ -411,7 +470,22 @@ number value without having to reassign it to the model.</p></span>
 	<div class="method-subsection method-declaration"><code>- (BOOL)boolForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string identifying the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The BOOL value for the key, or NO if there&rsquo;s no variable with that key.</p>
+	</div>
 	
 	
 	
@@ -445,7 +519,22 @@ number value without having to reassign it to the model.</p></span>
 	<div class="method-subsection method-declaration"><code>- (double)doubleForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string identifying the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The double value for the key, or 0.0 if there&rsquo;s no variable with that key.</p>
+	</div>
 	
 	
 	
@@ -479,7 +568,22 @@ number value without having to reassign it to the model.</p></span>
 	<div class="method-subsection method-declaration"><code>- (float)floatForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string identifying the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The float value for the key, or 0.0f if there&rsquo;s no variable with that key.</p>
+	</div>
 	
 	
 	
@@ -513,7 +617,22 @@ number value without having to reassign it to the model.</p></span>
 	<div class="method-subsection method-declaration"><code>- (int32_t)int32ForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string identifying the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The int32_t value for the key, or 0 if there&rsquo;s no variable with that key.</p>
+	</div>
 	
 	
 	
@@ -547,7 +666,22 @@ number value without having to reassign it to the model.</p></span>
 	<div class="method-subsection method-declaration"><code>- (int64_t)int64ForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string identifying the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The int64_t value for the key, or 0 if there&rsquo;s no variable with that key.</p>
+	</div>
 	
 	
 	
@@ -574,15 +708,29 @@ number value without having to reassign it to the model.</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the underlying <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> object for a specific variable key. You can then modify the
-number value without having to reassign it to the model.</p>
+		<p>Accessing the <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> object directly allows you to change the value without having to reassign it using a setter method.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKMutableNumber *)mutableNumberForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>A</em></dt>
+			<dd><p>unique string identifying the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The underlying <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> object for a specific variable.</p><p>A mutable number object or nil if no variable with the given key was found.</p>
+	</div>
 	
 	
 	
@@ -609,7 +757,7 @@ number value without having to reassign it to the model.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the object for key. Returns nil if there&rsquo;s no object associated with this key.</p>
+		<p>The object for key or nil if there&rsquo;s no object associated with this key.</p>
 	</div>		
 	
 	
@@ -617,6 +765,11 @@ number value without having to reassign it to the model.</p>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The object for key or nil if there&rsquo;s no object associated with this key.</p>
+	</div>
 	
 	
 	
@@ -649,6 +802,21 @@ number value without having to reassign it to the model.</p>
 	
 	<div class="method-subsection method-declaration"><code>- (void)setBool:(BOOL)<em>boolValue</em> forKey:(NSString *)<em>key</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>boolValue</em></dt>
+			<dd><p>A boolean.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string to identify the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -684,6 +852,21 @@ number value without having to reassign it to the model.</p>
 	<div class="method-subsection method-declaration"><code>- (void)setDouble:(double)<em>doubleValue</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>doubleValue</em></dt>
+			<dd><p>A double.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string to identify the variable.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -717,6 +900,21 @@ number value without having to reassign it to the model.</p>
 	
 	<div class="method-subsection method-declaration"><code>- (void)setFloat:(float)<em>floatValue</em> forKey:(NSString *)<em>key</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>floatValue</em></dt>
+			<dd><p>A float.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string to identify the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -752,6 +950,21 @@ number value without having to reassign it to the model.</p>
 	<div class="method-subsection method-declaration"><code>- (void)setInt32:(int32_t)<em>int32Value</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>int32Value</em></dt>
+			<dd><p>A 32-bit integer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string to identify the variable.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -785,6 +998,21 @@ number value without having to reassign it to the model.</p>
 	
 	<div class="method-subsection method-declaration"><code>- (void)setInt64:(int64_t)<em>int64Value</em> forKey:(NSString *)<em>key</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>int64Value</em></dt>
+			<dd><p>A 64-bit integer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string to identify the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -820,6 +1048,21 @@ number value without having to reassign it to the model.</p>
 	<div class="method-subsection method-declaration"><code>- (void)setObject:(id)<em>object</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>The object to store in the dictionary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string to identify the object.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -853,6 +1096,21 @@ number value without having to reassign it to the model.</p>
 	
 	<div class="method-subsection method-declaration"><code>- (void)setUnsignedInt32:(uint32_t)<em>unsignedInt32Value</em> forKey:(NSString *)<em>key</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>unsignedInt32Value</em></dt>
+			<dd><p>An unsigned 32-bit integer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string to identify the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -888,6 +1146,21 @@ number value without having to reassign it to the model.</p>
 	<div class="method-subsection method-declaration"><code>- (void)setUnsignedInt64:(uint64_t)<em>unsignedInt64Value</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>unsignedInt64Value</em></dt>
+			<dd><p>An unsigned 64-bit integer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string to identify the variable.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -922,7 +1195,22 @@ number value without having to reassign it to the model.</p>
 	<div class="method-subsection method-declaration"><code>- (uint32_t)unsignedInt32ForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string identifying the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The uint32_t value for the key, or 0 if there&rsquo;s no variable with that key.</p>
+	</div>
 	
 	
 	
@@ -956,7 +1244,22 @@ number value without having to reassign it to the model.</p>
 	<div class="method-subsection method-declaration"><code>- (uint64_t)unsignedInt64ForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A unique string identifying the variable.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The uint64_t value for the key, or 0 if there&rsquo;s no variable with that key.</p>
+	</div>
 	
 	
 	

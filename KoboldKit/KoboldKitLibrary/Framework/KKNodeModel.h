@@ -22,41 +22,104 @@
 /** @returns The model's controller object. You should never change this reference yourself! */
 @property (nonatomic, weak) KKNodeController* controller;
 
-/** Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. */
+/** @name Bool Variables */
+
+/** Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.
+ @param boolValue A boolean.
+ @param key A unique string to identify the variable.
+*/
 -(void) setBool:(BOOL)boolValue forKey:(NSString*)key;
-/** Returns the value of the given type for key. Returns NO if there's no value with this key. */
+/** Returns the value of the given type for key. Returns NO if there's no value with this key. 
+ @param key A unique string identifying the variable.
+ @returns The BOOL value for the key, or NO if there's no variable with that key.
+ */
 -(BOOL) boolForKey:(NSString*)key;
-/** Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. */
+
+/** @name Float Variables */
+
+/** Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.
+ @param floatValue A float.
+ @param key A unique string to identify the variable.
+*/
 -(void) setFloat:(float)floatValue forKey:(NSString*)key;
-/** Returns the value of the given type for key. Returns 0 if there's no value with this key. */
+/** Returns the value of the given type for key. Returns 0 if there's no value with this key. 
+ @param key A unique string identifying the variable.
+ @returns The float value for the key, or 0.0f if there's no variable with that key.
+*/
 -(float) floatForKey:(NSString*)key;
-/** Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. */
+
+/** @name Double Variables */
+
+/** Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. 
+ @param doubleValue A double.
+ @param key A unique string to identify the variable.
+*/
 -(void) setDouble:(double)doubleValue forKey:(NSString*)key;
-/** Returns the value of the given type for key. Returns 0 if there's no value with this key. */
+/** Returns the value of the given type for key. Returns 0 if there's no value with this key. 
+ @param key A unique string identifying the variable.
+ @returns The double value for the key, or 0.0 if there's no variable with that key.
+*/
 -(double) doubleForKey:(NSString*)key;
-/** Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. */
+
+/** @name Integer Variables */
+
+/** Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. 
+ @param int32Value A 32-bit integer.
+ @param key A unique string to identify the variable.
+*/
 -(void) setInt32:(int32_t)int32Value forKey:(NSString*)key;
-/** Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key. */
+/** Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.
+ @param key A unique string identifying the variable.
+ @returns The int32_t value for the key, or 0 if there's no variable with that key.
+*/
 -(int32_t) int32ForKey:(NSString*)key;
-/** Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. */
+/** Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. 
+ @param unsignedInt32Value An unsigned 32-bit integer.
+ @param key A unique string to identify the variable.
+*/
 -(void) setUnsignedInt32:(uint32_t)unsignedInt32Value forKey:(NSString*)key;
-/** Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key. */
+/** Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.
+ @param key A unique string identifying the variable.
+ @returns The uint32_t value for the key, or 0 if there's no variable with that key.
+*/
 -(uint32_t) unsignedInt32ForKey:(NSString*)key;
-/** Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. */
+/** Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. 
+ @param int64Value A 64-bit integer.
+ @param key A unique string to identify the variable.
+*/
 -(void) setInt64:(int64_t)int64Value forKey:(NSString*)key;
-/** Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key. */
+/** Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key. 
+ @param key A unique string identifying the variable.
+ @returns The int64_t value for the key, or 0 if there's no variable with that key.
+*/
 -(int64_t) int64ForKey:(NSString*)key;
-/** Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. */
+/** Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set. 
+ @param unsignedInt64Value An unsigned 64-bit integer.
+ @param key A unique string to identify the variable.
+*/
 -(void) setUnsignedInt64:(uint64_t)unsignedInt64Value forKey:(NSString*)key;
-/** Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key. */
+/** Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key. 
+ @param key A unique string identifying the variable.
+ @returns The uint64_t value for the key, or 0 if there's no variable with that key.
+*/
 -(uint64_t) unsignedInt64ForKey:(NSString*)key;
-/** Assign or replace any object with the given key. If object is nil, the object for that key will be removed. */
+
+/** @name Arbitrary Object Variables */
+
+/** Assign or replace any object with the given key. If object is nil, the object for that key will be removed. 
+ @param object The object to store in the dictionary.
+ @param key A unique string to identify the object.
+*/
 -(void) setObject:(id)object forKey:(NSString*)key;
-/** Returns the object for key. Returns nil if there's no object associated with this key. */
+/** @returns The object for key or nil if there's no object associated with this key. */
 -(id) objectForKey:(NSString*)key;
 
-/** Returns the underlying KKMutableNumber object for a specific variable key. You can then modify the
- number value without having to reassign it to the model. */
+/** @name Getting a Mutable Number */
+
+/** Accessing the KKMutableNumber object directly allows you to change the value without having to reassign it using a setter method.
+ @returns The underlying KKMutableNumber object for a specific variable.
+ @param A unique string identifying the variable.
+ @returns A mutable number object or nil if no variable with the given key was found. */
 -(KKMutableNumber*) mutableNumberForKey:(NSString*)key;
 
 @end

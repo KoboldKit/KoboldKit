@@ -28,6 +28,7 @@ Current/Next Tasks:
 - change scene launch to viewWillLayoutSubviews
 
 Recently completed:
+- virtual joypad
 - port Tilemap renderer from KT
 - port TMX Reader/Writer from KT
 - NSCoding/NSCopying compliance

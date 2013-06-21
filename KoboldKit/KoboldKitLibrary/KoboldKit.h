@@ -64,21 +64,33 @@
 /** This class contains global helper functions. */
 @interface KoboldKit : NSObject
 
-/** @returns The absolute path to the file or nil if the file could not be found. */
+/** @name Prepend Common Paths to Filename */
+
+/** @returns The absolute path to the file or nil if the file could not be found.
+ @param file A filename.
+ */
 +(NSString*) pathForBundleFile:(NSString*)file;
 
-/** @returns The absolute path to the file. */
+/** @returns The absolute path to the file.
+ @param file A filename.
+*/
 +(NSString*) pathForAppSupportFile:(NSString*)file;
 
-/** @returns The absolute path to the file. */
+/** @returns The absolute path to the file.
+ @param file A filename.
+*/
 +(NSString*) pathForDocumentsFile:(NSString*)file;
 
-/** @returns The absolute path to the file. */
+/** @returns The absolute path to the file. 
+ @param file A filename.
+*/
 +(NSString*) pathForLibraryFile:(NSString*)file;
 
 /** Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
  to the file where it was first found.
- @returns The absolute path to the file, or nil if the file could not be found. */
+ @returns The absolute path to the file, or nil if the file could not be found.
+ @param file A filename.
+*/
 +(NSString*) searchPathsForFile:(NSString*)file;
 
 @end

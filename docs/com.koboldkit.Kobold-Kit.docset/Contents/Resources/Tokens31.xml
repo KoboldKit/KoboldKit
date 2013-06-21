@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KTTilemapTileObject.html">
+	<File path="Classes/KTTilemapRectangleObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KTTilemapTileObject</TokenIdentifier>
-			<Abstract type="html">A tile object.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/cl/KTTilemapRectangleObject</TokenIdentifier>
+			<Abstract type="html">A rectangle object, usually referred to as simply "object" in Tiled.</Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
 			<NodeRef refid="31"/>
@@ -12,36 +12,36 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileObject/setGid:</TokenIdentifier>
-			<Abstract type="html">The GID of the tile object.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapRectangleObject/setRect:</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) gid_t gid</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
 			
 			
-			<Anchor>//api/name/gid</Anchor>
+			<Anchor>//api/name/rect</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapTileObject/gid</TokenIdentifier>
-			<Abstract type="html">The GID of the tile object.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapRectangleObject/rect</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) gid_t gid</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
 			
 			
-			<Anchor>//api/name/gid</Anchor>
+			<Anchor>//api/name/rect</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapTileObject/gid</TokenIdentifier>
-			<Abstract type="html">The GID of the tile object.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapRectangleObject/rect</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) gid_t gid</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
 			
 			
-			<Anchor>//api/name/gid</Anchor>
+			<Anchor>//api/name/rect</Anchor>
 		</Token>
 		
 	</File>

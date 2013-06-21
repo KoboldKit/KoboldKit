@@ -1,27 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTMXReader.html">
+	<File path="Classes/KKSynchronizePositionBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTMXReader</TokenIdentifier>
-			<Abstract type="html">Internal use only. Temporary object that parses a TMX file and creates the KTTilemap hierarchy containing KTTilemapTileset,
-   KTTilemapLayer, KTTilemapLayerTiles and KTTilemapObject. Used by KTTilemap which has its own parseTMX method. Not meant to be subclassed
-   or modified. </Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKSynchronizePositionBehavior</TokenIdentifier>
+			<Abstract type="html">Updates the owning node's position from another node's position, applying optional offset and/or multiplier.
+The multiplier can be used to achieve a parallaxing effect.</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="14"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTMXReader/loadTMXFile:tilemap:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKSynchronizePositionBehavior/setOtherNode:</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>			
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)loadTMXFile:(NSString *)tmxFile tilemap:(KKTilemap *)tilemap</Declaration>
+			<Declaration>@property (nonatomic, weak) SKNode *otherNode</Declaration>
 			
 			
-			<Anchor>//api/name/loadTMXFile:tilemap:</Anchor>
+			<Anchor>//api/name/otherNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKSynchronizePositionBehavior/otherNode</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) SKNode *otherNode</Declaration>
+			
+			
+			<Anchor>//api/name/otherNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKSynchronizePositionBehavior/otherNode</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) SKNode *otherNode</Declaration>
+			
+			
+			<Anchor>//api/name/otherNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKSynchronizePositionBehavior/setPositionMultiplier:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKSynchronizePositionBehavior/positionMultiplier</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKSynchronizePositionBehavior/positionMultiplier</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKSynchronizePositionBehavior/setPositionOffset:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKSynchronizePositionBehavior/positionOffset</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKSynchronizePositionBehavior/positionOffset</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKSynchronizePositionBehavior/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSynchronizePositionBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didSimulatePhysics</Declaration>
+			
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
 		</Token>
 		
 	</File>

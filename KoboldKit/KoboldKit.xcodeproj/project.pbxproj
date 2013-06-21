@@ -267,6 +267,8 @@
 		DC9CFD461774CBE1004C981A /* KKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTypes.h; sourceTree = "<group>"; };
 		DC9CFD471774CBE1004C981A /* KKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKVersion.h; sourceTree = "<group>"; };
 		DC9CFD481774CBE1004C981A /* KKVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKVersion.m; sourceTree = "<group>"; };
+		DC9CFD4B1774CC97004C981A /* Introduction-to-KoboldKit-template.appledoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Introduction-to-KoboldKit-template.appledoc"; sourceTree = "<group>"; };
+		DC9CFD4C1774CDA9004C981A /* index.appledoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.appledoc; sourceTree = "<group>"; };
 		DCDD2DA81769FD0A00F307CD /* KoboldKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoboldKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -552,6 +554,15 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		DC9CFD4A1774CC6B004C981A /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CFD4B1774CC97004C981A /* Introduction-to-KoboldKit-template.appledoc */,
+				DC9CFD4C1774CDA9004C981A /* index.appledoc */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
@@ -629,6 +640,7 @@
 				DC4DE8EF176C9E2B003E4087 /* Tilemap Nodes */,
 				DC4DE91E176CA25F003E4087 /* Addons */,
 				DCDD2E2B176A40C400F307CD /* External */,
+				DC9CFD4A1774CC6B004C981A /* Documentation */,
 			);
 			path = KoboldKitLibrary;
 			sourceTree = "<group>";
