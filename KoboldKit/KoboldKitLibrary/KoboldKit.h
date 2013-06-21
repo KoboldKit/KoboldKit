@@ -17,7 +17,6 @@
 
 // categories
 #import "SKNode+KoboldKit.h"
-#import "SKAction+KoboldKit.h"
 
 // subclasses
 #import "KKViewController.h"

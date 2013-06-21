@@ -16,7 +16,7 @@ extern NSString* const KKControlPadDidChangeDirection;
 /** Emulates a digital control pad (d-pad), updates its node with textures based on the direction.
  Sends a KKControlPadDidChangeDirection notification every time direction changes.
  
- Caution: only works on SKSpriteNode classes! */
+ @warning *Caution:* Only works on SKSpriteNode classes! */
 @interface KKControlPadBehavior : KKNodeBehavior
 {
 	@private
