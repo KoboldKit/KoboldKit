@@ -11,6 +11,7 @@
 @class KKTilemap;
 @class KKTilemapLayer;
 
+/** (not documented) */
 @interface KKTilemapObjectLayerNode : KKTilemapLayerNode
 {
 @protected
@@ -20,6 +21,7 @@
 @private
 }
 
+/** (not documented) */
 +(id) objectLayerWithLayer:(KKTilemapLayer*)layer tilemap:(KKTilemap*)tilemap;
 
 @end

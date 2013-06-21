@@ -63,7 +63,7 @@
 	return self;
 }
 
--(void) parseTMXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap
+-(void) loadTMXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap
 {
 	_tilemap = tilemap;
 	_tmxFile = tmxFile;
@@ -154,7 +154,7 @@
 		// Tileset file will be relative to the map file. So we need to convert it to an absolute path
 		NSString* dir = [_tmxFile stringByDeletingLastPathComponent];
 		externalTilesetFilename = [dir stringByAppendingPathComponent:externalTilesetFilename];
-		[self parseTMXFile:externalTilesetFilename tilemap:_tilemap];
+		[self loadTMXFile:externalTilesetFilename tilemap:_tilemap];
 	}
 	else
 	{

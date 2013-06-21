@@ -8,6 +8,7 @@
 
 #import "KKNodeBehavior.h"
 #import "KKNodeController.h"
+#import "SKNode+KoboldKit.h"
 
 @implementation KKNodeBehavior
 
@@ -45,6 +46,11 @@
 {
 }
 
+-(void) removeFromNode
+{
+	[self.node removeBehavior:self];
+}
+
 #pragma mark Update
 
 -(void) update:(NSTimeInterval)currentTime
@@ -57,6 +63,30 @@
 
 -(void) didSimulatePhysics
 {
+}
+
+#pragma mark Notifications
+
+-(void) postNotificationName:(NSString*)name userInfo:(NSDictionary*)userInfo
+{
+	if (userInfo)
+	{
+		userInfo = [NSMutableDictionary dictionaryWithDictionary:userInfo];
+		[userInfo setValue:self forKey:@"behavior"];
+	}
+	else
+	{
+		userInfo = @{@"behavior": self};
+	}
+	
+	[[NSNotificationCenter defaultCenter] postNotificationName:name
+														object:self.node
+													  userInfo:userInfo];
+}
+
+-(void) postNotificationName:(NSString *)name
+{
+	[self postNotificationName:name userInfo:nil];
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

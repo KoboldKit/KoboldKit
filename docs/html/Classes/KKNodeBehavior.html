@@ -44,18 +44,13 @@
 	
 	<option value="//api/name/enabled">&nbsp;&nbsp;&nbsp;&nbsp;enabled</option>
 	
-	<option value="//api/name/key">&nbsp;&nbsp;&nbsp;&nbsp;key</option>
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
 	
 	<option value="//api/name/node">&nbsp;&nbsp;&nbsp;&nbsp;node</option>
 	
 	<option value="//api/name/wantsUpdate">&nbsp;&nbsp;&nbsp;&nbsp;wantsUpdate</option>
 	
 	
-	
-	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/behavior">&nbsp;&nbsp;&nbsp;&nbsp;+ behavior</option>
 	
 	
 	
@@ -69,6 +64,12 @@
 	<option value="//api/name/didLeaveController">&nbsp;&nbsp;&nbsp;&nbsp;- didLeaveController</option>
 	
 	<option value="//api/name/didSimulatePhysics">&nbsp;&nbsp;&nbsp;&nbsp;- didSimulatePhysics</option>
+	
+	<option value="//api/name/postNotificationName:">&nbsp;&nbsp;&nbsp;&nbsp;- postNotificationName:</option>
+	
+	<option value="//api/name/postNotificationName:userInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- postNotificationName:userInfo:</option>
+	
+	<option value="//api/name/removeFromNode">&nbsp;&nbsp;&nbsp;&nbsp;- removeFromNode</option>
 	
 	<option value="//api/name/update:">&nbsp;&nbsp;&nbsp;&nbsp;- update:</option>
 	
@@ -100,7 +101,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enabled">enabled</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/key">key</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/node">node</a></span></li>
 	
@@ -109,12 +110,6 @@
 </ul></li>
 
 
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/behavior">behavior</a></span></li>
-	
-</ul></li>
 
 
 
@@ -127,6 +122,12 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLeaveController">didLeaveController</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSimulatePhysics">didSimulatePhysics</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postNotificationName:">postNotificationName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postNotificationName:userInfo:">postNotificationName:userInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFromNode">removeFromNode</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/update:">update:</a></span></li>
 	
@@ -194,7 +195,7 @@ Behaviors differ from actions in several ways:
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/key">&nbsp;&nbsp;key</a></code>
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
 		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -229,7 +230,7 @@ Behaviors differ from actions in several ways:
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/behavior">+&nbsp;behavior</a></code>
+		<code><a href="#//api/name/removeFromNode">&ndash;&nbsp;removeFromNode</a></code>
 		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	
@@ -266,6 +267,20 @@ Behaviors differ from actions in several ways:
 	<span class="tooltip">
 		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
 		<span class="tooltip"><p>(not documented)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postNotificationName:">&ndash;&nbsp;postNotificationName:</a></code>
+		<span class="tooltip"><p>(not documented) posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postNotificationName:userInfo:">&ndash;&nbsp;postNotificationName:userInfo:</a></code>
+		<span class="tooltip"><p>(not documented) posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object, and custom userInfo keys.</p></span>
 	</span>
 	
 	
@@ -351,8 +366,8 @@ Behaviors differ from actions in several ways:
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/key" title="key"></a>
-	<h3 class="subsubtitle method-title">key</h3>
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
 	
 	
 	
@@ -361,7 +376,7 @@ Behaviors differ from actions in several ways:
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSString *key</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *name</code></div>
 	
 	
 	
@@ -455,46 +470,6 @@ Behaviors differ from actions in several ways:
 					</div>
 					
 					
-					
-					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/behavior" title="behavior"></a>
-	<h3 class="subsubtitle method-title">behavior</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (id)behavior</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
 					
 					
 					
@@ -639,6 +614,108 @@ Behaviors differ from actions in several ways:
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/postNotificationName:" title="postNotificationName:"></a>
+	<h3 class="subsubtitle method-title">postNotificationName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented) posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)postNotificationName:(NSString *)<em>name</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postNotificationName:userInfo:" title="postNotificationName:userInfo:"></a>
+	<h3 class="subsubtitle method-title">postNotificationName:userInfo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented) posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object, and custom userInfo keys.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)postNotificationName:(NSString *)<em>name</em> userInfo:(NSDictionary *)<em>userInfo</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFromNode" title="removeFromNode"></a>
+	<h3 class="subsubtitle method-title">removeFromNode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeFromNode</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/update:" title="update:"></a>
 	<h3 class="subsubtitle method-title">update:</h3>
 	
@@ -685,7 +762,7 @@ Behaviors differ from actions in several ways:
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-20)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

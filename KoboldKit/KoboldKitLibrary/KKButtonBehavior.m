@@ -25,6 +25,15 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 {
 	_selectedScale = 1.1f;
 	[self.node.kkScene addInputEventsObserver:self];
+
+	if (_selectedTexture)
+	{
+		SKSpriteNode* sprite = (SKSpriteNode*)self.node;
+		if ([sprite isKindOfClass:[SKSpriteNode class]])
+		{
+			_originalTexture = sprite.texture;
+		}
+	}
 }
 
 -(void) didLeaveController
@@ -43,6 +52,12 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 		_originalYScale = node.yScale;
 		[node runAction:[SKAction scaleXBy:_selectedScale y:_selectedScale duration:0.05f] withKey:ScaleActionKey];
 	}
+	
+	if (_selectedTexture)
+	{
+		SKSpriteNode* sprite = (SKSpriteNode*)self.node;
+		sprite.texture = _selectedTexture;
+	}
 }
 
 -(void) endSelect
@@ -54,50 +69,71 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 		SKNode* node = self.node;
 		[node runAction:[SKAction scaleXTo:_originalXScale y:_originalYScale duration:0.05f] withKey:ScaleActionKey];
 	}
+
+	if (_originalTexture)
+	{
+		SKSpriteNode* sprite = (SKSpriteNode*)self.node;
+		sprite.texture = _originalTexture;
+	}
 }
 
 -(void) execute
 {
-	[[NSNotificationCenter defaultCenter] postNotificationName:KKButtonDidExecute object:self.node userInfo:@{@"behavior" : self}];
+	[self postNotificationName:KKButtonDidExecute];
+}
+
+-(void) setEnabled:(BOOL)enabled
+{
+	[super setEnabled:enabled];
+	if (enabled == NO)
+	{
+		[self endSelect];
+	}
 }
 
 #if TARGET_OS_IPHONE
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	for (UITouch* touch in touches)
+	if (self.enabled)
 	{
-		if ([self.node containsPoint:[touch locationInNode:self.node.scene]])
+		for (UITouch* touch in touches)
 		{
-			[self beginSelect];
+			if ([self.node containsPoint:[touch locationInNode:self.node.scene]])
+			{
+				[self beginSelect];
+			}
 		}
 	}
 }
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	BOOL lostFocus = YES;
-	for (UITouch* touch in touches)
+	if (self.enabled)
 	{
-		if ([self.node containsPoint:[touch locationInNode:self.node.scene]])
+		BOOL lostFocus = YES;
+		for (UITouch* touch in touches)
 		{
-			lostFocus = NO;
-			break;
+			if ([self.node containsPoint:[touch locationInNode:self.node.scene]])
+			{
+				lostFocus = NO;
+				break;
+			}
 		}
-	}
-	
-	if (lostFocus && _isSelected)
-	{
-		[self endSelect];
-	}
-	if (lostFocus == NO && _isSelected == NO)
-	{
-		[self beginSelect];
+		
+		if (lostFocus && _isSelected)
+		{
+			[self endSelect];
+		}
+		if (lostFocus == NO && _isSelected == NO)
+		{
+			[self beginSelect];
+		}
 	}
 }
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	if (_isSelected)
+	if (_isSelected && self.enabled)
 	{
 		[self endSelect];
 		[self execute];
@@ -112,8 +148,10 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 static NSString* const ArchiveKeyForExecuteBlock = @"executeBlock";
 static NSString* const ArchiveKeyForFocusScale = @"focusScale";
 static NSString* const ArchiveKeyForHasFocus = @"hasFocus";
-static NSString* const ArchiveKeyForOriginalXScale = @"_originalXScale";
-static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
+static NSString* const ArchiveKeyForOriginalXScale = @"originalXScale";
+static NSString* const ArchiveKeyForOriginalYScale = @"originalYScale";
+static NSString* const ArchiveKeyForOriginalTexture = @"originalTexture";
+static NSString* const ArchiveKeyForSelectedTexture = @"selectedTexture";
 
 -(id) initWithCoder:(NSCoder*)decoder
 {
@@ -124,6 +162,8 @@ static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
 		_originalYScale = [decoder decodeDoubleForKey:ArchiveKeyForOriginalYScale];
 		_selectedScale = [decoder decodeDoubleForKey:ArchiveKeyForFocusScale];
 		_isSelected = [decoder decodeBoolForKey:ArchiveKeyForHasFocus];
+		_originalTexture = [decoder decodeObjectForKey:ArchiveKeyForOriginalTexture];
+		_selectedTexture = [decoder decodeObjectForKey:ArchiveKeyForSelectedTexture];
 	}
 	return self;
 }
@@ -135,6 +175,8 @@ static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
 	[encoder encodeDouble:_originalYScale forKey:ArchiveKeyForOriginalYScale];
 	[encoder encodeDouble:_selectedScale forKey:ArchiveKeyForFocusScale];
 	[encoder encodeBool:_isSelected forKey:ArchiveKeyForHasFocus];
+	[encoder encodeObject:_originalTexture forKey:ArchiveKeyForOriginalTexture];
+	[encoder encodeObject:_selectedTexture forKey:ArchiveKeyForSelectedTexture];
 }
 
 #pragma mark NSCopying
@@ -146,6 +188,8 @@ static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
 	copy->_originalYScale = _originalYScale;
 	copy->_selectedScale = _selectedScale;
 	copy->_isSelected = _isSelected;
+	copy->_originalTexture = _originalTexture;
+	copy->_selectedTexture = _selectedTexture;
 	return copy;
 }
 
@@ -159,8 +203,10 @@ static NSString* const ArchiveKeyForOriginalYScale = @"_originalYScale";
 	// custom equality checks
 	return (_originalXScale == behavior->_originalXScale &&
 			_originalYScale == behavior->_originalYScale &&
-			_selectedScale == behavior.selectedScale &&
-			_isSelected == behavior.isSelected);
+			_selectedScale == behavior->_selectedScale &&
+			_isSelected == behavior->_isSelected &&
+			_originalTexture == behavior->_originalTexture &&
+			_selectedTexture == behavior->_selectedTexture);
 }
 
 @end

@@ -219,7 +219,7 @@
 		NSString* path = [self pathForTMXFile:tmxFile];
 		NSAssert1(path, @"TMX file '%@' not found!", tmxFile);
 		
-		[reader parseTMXFile:path tilemap:self];
+		[reader loadTMXFile:path tilemap:self];
 		reader = nil;
 	}
 

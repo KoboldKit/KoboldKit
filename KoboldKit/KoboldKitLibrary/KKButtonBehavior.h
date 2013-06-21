@@ -30,19 +30,19 @@ extern NSString* const KKButtonDidExecute;
  
  The observer is usually `self` but can be any other object implementing the selector.
  The selector can have any name.
- The object parameter should be the node with the KKButtonBehavior. You can also send `nil` as object, this will make
- the selector receive KKButtonDidExecute notifications from all nodes with a KKButtonBehavior.
+ The object parameter should be the node containing the KKButtonBehavior instance, or nil. If you use `nil` as object,
+ the selector receives all KKButtonDidExecute notifications from all KKButtonBehaviors.
  
  The selector implementation takes one argument of type NSNotification:
  
 	-(void) buttonDidExecute:(NSNotification*)note
 	{
-		// notification.object is the sending node:
-		SKNode* sender = note.object;
+		// object is the sending node:
+		SKNode* node = note.object;
  
-		// behavior is obtainable via userInfo dictionary:
-		KKButtonBehavior* behavior = [note.userInfo objectForKey:@"behavior"];
-	} 
+		// get the behavior
+		KKButtonBehavior* buttonBehavior = [node behaviorForKey:@"theKey"];
+	}
  
  Note: an NSNotification is sent because using blocks or target/selector would prevent the class from being NSCopying/NSCoding compliant.
  Blocks and target/selector can not be copied or archived. */
@@ -51,10 +51,13 @@ extern NSString* const KKButtonDidExecute;
 	@private
 	CGFloat _originalXScale;
 	CGFloat _originalYScale;
+	__weak SKTexture* _originalTexture;
 }
 
 /** @name Selection Properties */
 
+/** Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes. */
+@property (atomic) SKTexture* selectedTexture;
 /** Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.
  @returns The current focus scale. */
 @property (atomic) CGFloat selectedScale;

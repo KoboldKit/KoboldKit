@@ -19,6 +19,7 @@
 	__weak KKTilemap* _tilemap;
 }
 
+/** (not documented) */
 -(void) writeTMXFile:(NSString*)file tilemap:(KKTilemap*)tilemap;
 
 @end

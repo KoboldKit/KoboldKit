@@ -21,25 +21,7 @@
         /* Setup your scene here */
 		
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
-        
-        myLabel = [MyLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
-        [self addChild:myLabel];
-		
-		[myLabel addBehavior:[KKButtonBehavior new] withKey:@"labelbutton1"];
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(labelButtonDidExecute:) name:KKButtonDidExecute object:myLabel];
-		
-		KKLabelNode* otherLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
-        otherLabel.text = @"Buttong!";
-        otherLabel.fontSize = 30;
-        otherLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 100);
-        [self addChild:otherLabel];
-		
-		[otherLabel addBehavior:[KKButtonBehavior new] withKey:@"labelbutton2"];
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(otherLabelButtonDidExecute:) name:KKButtonDidExecute object:otherLabel];
-		
+
 		//KKTilemapNode* tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
 		KKTilemapNode* tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"forest-parallax.tmx"];
 		[self addChild:tilemapNode];
@@ -50,7 +32,30 @@
 		//[tilemapNode.mainTileLayerNode runAction:[SKAction scaleTo:2.0f duration:20]];
 		tilemapNode.mainTileLayerNode.position = CGPointMake(0, -110);
 		[tilemapNode.mainTileLayerNode runAction:[SKAction moveByX:-10500 y:0 duration:120]];
+
 		
+        myLabel = [MyLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        myLabel.text = @"Hello, World!";
+        myLabel.fontSize = 30;
+        myLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        [self addChild:myLabel];
+		
+		[myLabel addBehavior:[KKButtonBehavior new] withKey:@"labelbutton1"];
+		[self observeNotification:KKButtonDidExecute
+						 selector:@selector(labelButtonDidExecute:)
+						   object:myLabel];
+		
+		KKLabelNode* otherLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
+        otherLabel.text = @"Buttong!";
+        otherLabel.fontSize = 30;
+        otherLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 100);
+        [self addChild:otherLabel];
+		
+		[otherLabel addBehavior:[KKButtonBehavior new] withKey:@"labelbutton2"];
+		[self observeNotification:KKButtonDidExecute
+						 selector:@selector(otherLabelButtonDidExecute:)
+						   object:otherLabel];
+	
 		/*
 		KKSpriteNode* sprite = [KKSpriteNode spriteNodeWithColor:[UIColor redColor] size:CGSizeMake(20, 15)];
 		//KKSpriteNode* sprite = [KKSpriteNode spriteNodeWithImageNamed:@"crawl-tiles.png"];
@@ -93,6 +98,9 @@
 			[n3 addChild:[SKNode node]];
 		}
 		 */
+		
+	
+		[self createVirtualJoypad];
     }
     return self;
 }
@@ -112,14 +120,15 @@
 -(void) labelButtonDidExecute:(NSNotification*) note
 {
 	LOG_EXPR(note);
-	[note.object removeBehaviorForKey:@"labelbutton1"];
+	SKNode* node = note.object;
+	[node removeBehaviorForKey:@"labelbutton1"];
 }
 
 -(void) otherLabelButtonDidExecute:(NSNotification*) note
 {
 	LOG_EXPR(note);
-	KKNodeBehavior* behavior = [note.userInfo objectForKey:@"behavior"];
-	[(KKNode*)note.object removeBehavior:behavior];
+	SKNode* node = note.object;
+	[node removeBehaviorForKey:@"labelbutton2"];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -141,6 +150,113 @@
         [sprite runAction:[KKAction repeatActionForever:action]];
 		 */
     }
+}
+
+-(void) createVirtualJoypad
+{
+	SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
+	
+	KKSpriteNode* dpadNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_DPad_Background.png"]];
+	dpadNode.position = CGPointMake(60, 60);
+	[dpadNode setScale:0.8];
+	[self addChild:dpadNode];
+	
+	NSArray* dpadTextures = [NSArray arrayWithObjects:
+							 [atlas textureNamed:@"Button_DPad_Right_Pressed.png"],
+							 [atlas textureNamed:@"Button_DPad_UpRight_Pressed.png"],
+							 [atlas textureNamed:@"Button_DPad_Up_Pressed.png"],
+							 [atlas textureNamed:@"Button_DPad_UpLeft_Pressed.png"],
+							 [atlas textureNamed:@"Button_DPad_Left_Pressed.png"],
+							 [atlas textureNamed:@"Button_DPad_DownLeft_Pressed.png"],
+							 [atlas textureNamed:@"Button_DPad_Down_Pressed.png"],
+							 [atlas textureNamed:@"Button_DPad_DownRight_Pressed.png"],
+							 nil];
+	KKControlPadBehavior* dpad = [KKControlPadBehavior controlPadBehaviorWithTextures:dpadTextures];
+	[dpadNode addBehavior:dpad withKey:@"dpad"];
+	
+	[self observeNotification:KKControlPadDidChangeDirection
+					 selector:@selector(controlPadDidChangeDirection:)
+					   object:dpadNode];
+
+	CGSize sceneSize = self.size;
+
+	{
+		KKSpriteNode* attackButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_Attack_NotPressed.png"]];
+		attackButtonNode.position = CGPointMake(sceneSize.width - 32, 30);
+		[attackButtonNode setScale:0.9];
+		[self addChild:attackButtonNode];
+		
+		KKButtonBehavior* button = [KKButtonBehavior new];
+		button.name = @"attack";
+		button.selectedTexture = [atlas textureNamed:@"Button_Attack_Pressed.png"];
+		[attackButtonNode addBehavior:button];
+
+		[self observeNotification:KKButtonDidExecute
+						 selector:@selector(attackButtonPressed:)
+						   object:attackButtonNode];
+	}
+	{
+		KKSpriteNode* jetpackButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_Jetpack_NotPressed.png"]];
+		jetpackButtonNode.position = CGPointMake(sceneSize.width - 32, 90);
+		[jetpackButtonNode setScale:0.9];
+		[self addChild:jetpackButtonNode];
+		
+		KKButtonBehavior* button = [KKButtonBehavior new];
+		button.name = @"jetpack";
+		button.selectedTexture = [atlas textureNamed:@"Button_Jetpack_Pressed.png"];
+		[jetpackButtonNode addBehavior:button];
+
+		[self observeNotification:KKButtonDidExecute
+						 selector:@selector(jetpackButtonPressed:)
+						   object:jetpackButtonNode];
+	}
+}
+
+-(void) controlPadDidChangeDirection:(NSNotification*)note
+{
+	KKControlPadBehavior* controlPad = [note.userInfo objectForKey:@"behavior"];
+	switch (controlPad.direction)
+	{
+		case KKArcadeJoystickRight:
+			NSLog(@"right");
+			break;
+		case KKArcadeJoystickUpRight:
+			NSLog(@"up right");
+			break;
+		case KKArcadeJoystickUp:
+			NSLog(@"up");
+			break;
+		case KKArcadeJoystickUpLeft:
+			NSLog(@"up left");
+			break;
+		case KKArcadeJoystickLeft:
+			NSLog(@"left");
+			break;
+		case KKArcadeJoystickDownLeft:
+			NSLog(@"down left");
+			break;
+		case KKArcadeJoystickDown:
+			NSLog(@"down");
+			break;
+		case KKArcadeJoystickDownRight:
+			NSLog(@"down right");
+			break;
+
+		case KKArcadeJoystickNone:
+		default:
+			NSLog(@"center");
+			break;
+	}
+}
+
+-(void) attackButtonPressed:(NSNotification*)note
+{
+	NSLog(@"attack!");
+}
+
+-(void) jetpackButtonPressed:(NSNotification*)note
+{
+	NSLog(@"fly! fly!");
 }
 
 -(void)update:(NSTimeInterval)currentTime

@@ -82,7 +82,8 @@ typedef enum
 	BOOL _parsingData;
 }
 
--(void) parseTMXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap;
+/** (not documented) */
+-(void) loadTMXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap;
 
 @end
 

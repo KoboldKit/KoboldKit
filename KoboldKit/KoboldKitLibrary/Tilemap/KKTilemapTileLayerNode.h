@@ -24,8 +24,10 @@
 	CGPoint _previousPosition;
 }
 
+/** (not documented) */
 @property (atomic, readonly, weak) KKTilemapLayer* layer;
 
+/** (not documented) */
 +(id) tileLayerWithLayer:(KKTilemapLayer*)layer;
 
 /** Updates the layer's tile sprites based on position, scale and view size. */

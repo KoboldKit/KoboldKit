@@ -13,6 +13,39 @@ Scaling is optional and can be modified/disabled with the selectedScale property
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setSelectedTexture:</TokenIdentifier>
+			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			
+			
+			<Anchor>//api/name/selectedTexture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/selectedTexture</TokenIdentifier>
+			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			
+			
+			<Anchor>//api/name/selectedTexture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/selectedTexture</TokenIdentifier>
+			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			
+			
+			<Anchor>//api/name/selectedTexture</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setSelectedScale:</TokenIdentifier>
 			<Abstract type="html">Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</Abstract>
 			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
@@ -135,6 +168,17 @@ in your implementation.</Abstract>
 			
 			
 			<Anchor>//api/name/didLeaveController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setEnabled:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)setEnabled:(BOOL)enabled</Declaration>
+			
+			
+			<Anchor>//api/name/setEnabled:</Anchor>
 		</Token>
 		
 	</File>

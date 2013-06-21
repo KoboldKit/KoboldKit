@@ -9,6 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import "KKNode.h"
 
+/** (not documented) may be removed */
 @interface KKTilemapLayerNode : KKNode
 
 

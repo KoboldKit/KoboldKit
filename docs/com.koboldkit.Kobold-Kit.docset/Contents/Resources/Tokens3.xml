@@ -1,25 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKDoubleNumber.html">
+	<File path="Classes/KKControlPadBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKDoubleNumber</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKControlPadBehavior</TokenIdentifier>
+			<Abstract type="html">Emulates a digital control pad (d-pad), updates its node with textures based on the direction.
+Sends a KKControlPadDidChangeDirection notification every time direction changes.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="3"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKDoubleNumber/initWithDouble:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type double</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setDeadZone:</TokenIdentifier>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 8 points.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithDouble:(double)doubleNumber</Declaration>
+			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
 			
 			
-			<Anchor>//api/name/initWithDouble:</Anchor>
+			<Anchor>//api/name/deadZone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/deadZone</TokenIdentifier>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 8 points.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
+			
+			
+			<Anchor>//api/name/deadZone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/deadZone</TokenIdentifier>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 8 points.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
+			
+			
+			<Anchor>//api/name/deadZone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setDirection:</TokenIdentifier>
+			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKArcadeInputState direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/direction</TokenIdentifier>
+			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKArcadeInputState direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/direction</TokenIdentifier>
+			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKArcadeInputState direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKControlPadBehavior/controlPadBehaviorWithTextures:</TokenIdentifier>
+			<Abstract type="html">Initializes a control pad behavior with either 4 or 8 d-pad directional textures. Start with the texture for "right button pressed"
+and continue adding textures in counter-clockwise order (ie "upper right button pressed", "up button pressed", and so on).
+The "idle" state is the texture the sprite has been initialized with.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)controlPadBehaviorWithTextures:(NSArray *)textures</Declaration>
+			
+			
+			<Anchor>//api/name/controlPadBehaviorWithTextures:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKControlPadBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didJoinController</Declaration>
+			
+			
+			<Anchor>//api/name/didJoinController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/didLeaveController</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKControlPadBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didLeaveController</Declaration>
+			
+			
+			<Anchor>//api/name/didLeaveController</Anchor>
 		</Token>
 		
 	</File>

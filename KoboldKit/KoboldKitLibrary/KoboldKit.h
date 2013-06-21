@@ -13,6 +13,7 @@
 #import "KKSpriteKit.h"
 #import "KKMacros.h"
 #import "KKTypes.h"
+#import "KKArcadeInputState.h"
 
 // categories
 #import "SKNode+KoboldKit.h"
@@ -31,6 +32,8 @@
 
 // behaviors
 #import "KKButtonBehavior.h"
+#import "KKSynchronizePositionBehavior.h"
+#import "KKControlPadBehavior.h"
 
 // tilemap model
 #import "KKTilemap.h"

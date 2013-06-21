@@ -29,8 +29,10 @@
 	@private
 }
 
+@property (atomic, copy, readonly) NSString* key;
+
 /** (not documented) */
-@property (atomic, readonly) NSString* key;
+@property (atomic, copy) NSString* name;
 /** (not documented) */
 @property (atomic, weak) KKNodeController* controller;
 /** (not documented) */
@@ -41,7 +43,7 @@
 @property (atomic) BOOL enabled;
 
 /** (not documented) */
-+(id) behavior;
+-(void) removeFromNode;
 
 /** (not documented) */
 -(void) didJoinController;
@@ -54,6 +56,12 @@
 -(void) didEvaluateActions;
 /** (not documented) */
 -(void) didSimulatePhysics;
+
+
+/** (not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object. */
+-(void) postNotificationName:(NSString*)name;
+/** (not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys. */
+-(void) postNotificationName:(NSString*)name userInfo:(NSDictionary*)userInfo;
 
 
 // internal use

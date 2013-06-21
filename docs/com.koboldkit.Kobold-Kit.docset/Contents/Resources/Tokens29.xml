@@ -1,70 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KoboldKit.html">
+	<File path="Classes/KKViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KoboldKit</TokenIdentifier>
-			<Abstract type="html">This class contains global helper functions.</Abstract>
-			<DeclaredIn>KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKViewController</TokenIdentifier>
+			<Abstract type="html">View controller for a Kobold Kit view. Creates the KKView and performs other setup tasks.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
 			<NodeRef refid="29"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/pathForBundleFile:</TokenIdentifier>
-			<Abstract type="html">The absolute path to the file or nil if the file could not be found.</Abstract>
-			<DeclaredIn>KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/setKkView:</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)pathForBundleFile:(NSString *)file</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			<ReturnValue><Abstract type="html">The absolute path to the file or nil if the file could not be found.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForBundleFile:</Anchor>
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/pathForAppSupportFile:</TokenIdentifier>
-			<Abstract type="html">The absolute path to the file.</Abstract>
-			<DeclaredIn>KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)pathForAppSupportFile:(NSString *)file</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			<ReturnValue><Abstract type="html">The absolute path to the file.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForAppSupportFile:</Anchor>
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/pathForDocumentsFile:</TokenIdentifier>
-			<Abstract type="html">The absolute path to the file.</Abstract>
-			<DeclaredIn>KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)pathForDocumentsFile:(NSString *)file</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			<ReturnValue><Abstract type="html">The absolute path to the file.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForDocumentsFile:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/pathForLibraryFile:</TokenIdentifier>
-			<Abstract type="html">The absolute path to the file.</Abstract>
-			<DeclaredIn>KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)pathForLibraryFile:(NSString *)file</Declaration>
-			
-			<ReturnValue><Abstract type="html">The absolute path to the file.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForLibraryFile:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KoboldKit/searchPathsForFile:</TokenIdentifier>
-			<Abstract type="html">Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
-to the file where it was first found.</Abstract>
-			<DeclaredIn>KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)searchPathsForFile:(NSString *)file</Declaration>
-			
-			<ReturnValue><Abstract type="html">The absolute path to the file, or nil if the file could not be found.</Abstract></ReturnValue>
-			<Anchor>//api/name/searchPathsForFile:</Anchor>
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 	</File>
