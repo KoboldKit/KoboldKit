@@ -1,36 +1,36 @@
 //
-//  KKSynchronizePositionBehavior.m
+//  KKFollowsTargetBehavior
 //  KoboldKit
 //
 //  Created by Steffen Itterheim on 19.06.13.
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKSynchronizePositionBehavior.h"
+#import "KKFollowsTargetBehavior.h"
 
-@implementation KKSynchronizePositionBehavior
+@implementation KKFollowsTargetBehavior
 
-+(id) synchronizePositionWithNode:(SKNode*)otherNode
++(id) followsTarget:(SKNode*)target
 {
-	return [[self alloc] initWithNode:otherNode offset:CGPointZero multiplier:CGPointMake(1.0, 1.0)];
+	return [[self alloc] initWithTarget:target offset:CGPointZero multiplier:CGPointMake(1.0, 1.0)];
 }
 
-+(id) synchronizePositionWithNode:(SKNode*)otherNode offset:(CGPoint)positionOffset
++(id) followsTarget:(SKNode*)target offset:(CGPoint)positionOffset
 {
-	return [[self alloc] initWithNode:otherNode offset:positionOffset multiplier:CGPointMake(1.0, 1.0)];
+	return [[self alloc] initWithTarget:target offset:positionOffset multiplier:CGPointMake(1.0, 1.0)];
 }
 
-+(id) synchronizePositionWithNode:(SKNode*)otherNode offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier
++(id) followsTarget:(SKNode*)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier
 {
-	return [[self alloc] initWithNode:otherNode offset:positionOffset multiplier:positionMultiplier];
+	return [[self alloc] initWithTarget:target offset:positionOffset multiplier:positionMultiplier];
 }
 
--(id) initWithNode:(SKNode*)otherNode offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier
+-(id) initWithTarget:(SKNode*)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier
 {
 	self = [super init];
 	if (self)
 	{
-		_otherNode = otherNode;
+		_target = target;
 		_positionOffset = positionOffset;
 		_positionMultiplier = positionMultiplier;
 		
@@ -41,9 +41,9 @@
 
 -(void) didSimulatePhysics
 {
-	if (self.enabled && _otherNode)
+	if (self.enabled && _target)
 	{
-		CGPoint pos = _otherNode.position;
+		CGPoint pos = _target.position;
 		pos = CGPointMake(pos.x * _positionMultiplier.x + _positionOffset.x,
 						  pos.y * _positionMultiplier.y + _positionOffset.y);
 		self.node.position = pos;
@@ -62,7 +62,7 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 	self = [super init];
 	if (self)
 	{
-		_otherNode = [decoder decodeObjectForKey:ArchiveKeyForOtherNode];
+		_target = [decoder decodeObjectForKey:ArchiveKeyForOtherNode];
 		_positionOffset = [decoder decodeCGPointForKey:ArchiveKeyForPositionOffset];
 		_positionMultiplier = [decoder decodeCGPointForKey:ArchiveKeyForPositionMultiplier];
 	}
@@ -71,7 +71,7 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 
 -(void) encodeWithCoder:(NSCoder*)encoder
 {
-	[encoder encodeObject:_otherNode forKey:ArchiveKeyForOtherNode];
+	[encoder encodeObject:_target forKey:ArchiveKeyForOtherNode];
 	[encoder encodeCGPoint:_positionOffset forKey:ArchiveKeyForPositionOffset];
 	[encoder encodeCGPoint:_positionMultiplier forKey:ArchiveKeyForPositionMultiplier];
 }
@@ -80,8 +80,8 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 
 -(id) copyWithZone:(NSZone*)zone
 {
-	KKSynchronizePositionBehavior* copy = [[super copyWithZone:zone] init];
-	copy->_otherNode = _otherNode;
+	KKFollowsTargetBehavior* copy = [[super copyWithZone:zone] init];
+	copy->_target = _target;
 	copy->_positionOffset = _positionOffset;
 	copy->_positionMultiplier = _positionMultiplier;
 	return copy;
@@ -94,8 +94,8 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
 	
-	KKSynchronizePositionBehavior* synchPosBehavior = (KKSynchronizePositionBehavior*)behavior;
-	return (synchPosBehavior.otherNode == _otherNode &&
+	KKFollowsTargetBehavior* synchPosBehavior = (KKFollowsTargetBehavior*)behavior;
+	return (synchPosBehavior.target == _target &&
 			CGPointEqualToPoint(synchPosBehavior.positionOffset, _positionOffset) &&
 			CGPointEqualToPoint(synchPosBehavior.positionMultiplier, _positionMultiplier));
 }

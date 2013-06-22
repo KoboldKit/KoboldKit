@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KKSynchronizePositionBehavior Class Reference</title>
+		<title>KKCameraFollowsBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KKSynchronizePositionBehavior Class Reference</h1>
+				<h1 class="hideInXcode">KKCameraFollowsBehavior Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -26,8 +26,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -38,20 +36,15 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/otherNode">&nbsp;&nbsp;&nbsp;&nbsp;otherNode</option>
-	
-	<option value="//api/name/positionMultiplier">&nbsp;&nbsp;&nbsp;&nbsp;positionMultiplier</option>
-	
-	<option value="//api/name/positionOffset">&nbsp;&nbsp;&nbsp;&nbsp;positionOffset</option>
-	
-	
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/didJoinController">&nbsp;&nbsp;&nbsp;&nbsp;- didJoinController</option>
+	
+	<option value="//api/name/didLeaveController">&nbsp;&nbsp;&nbsp;&nbsp;- didLeaveController</option>
 	
 	<option value="//api/name/didSimulatePhysics">&nbsp;&nbsp;&nbsp;&nbsp;- didSimulatePhysics</option>
 	
@@ -64,8 +57,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -77,21 +68,15 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/otherNode">otherNode</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/positionMultiplier">positionMultiplier</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/positionOffset">positionOffset</a></span></li>
-	
-</ul></li>
-
 
 
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didJoinController">didJoinController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLeaveController">didLeaveController</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSimulatePhysics">didSimulatePhysics</a></span></li>
 	
@@ -102,7 +87,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KKSynchronizePositionBehavior Class Reference" name="top"></a>
+				<a title="KKCameraFollowsBehavior Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -111,7 +96,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KKSynchronizePositionBehavior Class Reference</h1>
+						<h1 class="title title-header">KKCameraFollowsBehavior Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -122,19 +107,10 @@
 	<td class="specification-value"><a href="../Classes/KKNodeBehavior.html">KKNodeBehavior</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKSynchronizePositionBehavior.h<br />KKSynchronizePositionBehavior.m</td>
+	<td class="specification-value">KKCameraFollowsBehavior.h<br />KKCameraFollowsBehavior.m</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Updates the owning node&rsquo;s position from another node&rsquo;s position, applying optional offset and/or multiplier.
-The multiplier can be used to achieve a parallaxing effect.</p>
-					</div>
 					
 					
 					
@@ -146,39 +122,24 @@ The multiplier can be used to achieve a parallaxing effect.</p>
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/otherNode">&nbsp;&nbsp;otherNode</a></code>
+		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
 		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/positionMultiplier">&nbsp;&nbsp;positionMultiplier</a></code>
+		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
 		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/positionOffset">&nbsp;&nbsp;positionOffset</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
 		<span class="tooltip"><p>(not documented)</p></span>
@@ -194,114 +155,6 @@ The multiplier can be used to achieve a parallaxing effect.</p>
 					
 					
 					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/otherNode" title="otherNode"></a>
-	<h3 class="subsubtitle method-title">otherNode</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) SKNode *otherNode</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKSynchronizePositionBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/positionMultiplier" title="positionMultiplier"></a>
-	<h3 class="subsubtitle method-title">positionMultiplier</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint positionMultiplier</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKSynchronizePositionBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/positionOffset" title="positionOffset"></a>
-	<h3 class="subsubtitle method-title">positionOffset</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint positionOffset</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKSynchronizePositionBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
 					
 					
 					
@@ -309,6 +162,74 @@ The multiplier can be used to achieve a parallaxing effect.</p>
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/didJoinController" title="didJoinController"></a>
+	<h3 class="subsubtitle method-title">didJoinController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didJoinController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didLeaveController" title="didLeaveController"></a>
+	<h3 class="subsubtitle method-title">didLeaveController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didLeaveController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/didSimulatePhysics" title="didSimulatePhysics"></a>

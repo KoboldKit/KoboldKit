@@ -11,6 +11,7 @@
 #import "KKNodeBehavior.h"
 #import "KKScene.h"
 #import "KKNode.h"
+#import "CGPointExtension.h"
 
 @implementation SKNode (KoboldKit)
 
@@ -63,6 +64,28 @@
 		[self setController:controller];
 	}
 	return controller;
+}
+
+-(void) pauseOrResumeControllersInNodeTree:(SKNode*)rootNode pause:(BOOL)pause
+{
+	[rootNode enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop)
+	{
+		 KKNodeController* controller = node.controller;
+		 if (controller)
+		 {
+			 controller.paused = pause;
+		 }
+	}];
+}
+
+-(void) pauseControllersInNodeTree:(SKNode*)rootNode
+{
+	[self pauseOrResumeControllersInNodeTree:rootNode pause:YES];
+}
+
+-(void) resumeControllersInNodeTree:(SKNode*)rootNode
+{
+	[self pauseOrResumeControllersInNodeTree:rootNode pause:NO];
 }
 
 #pragma mark Behaviors

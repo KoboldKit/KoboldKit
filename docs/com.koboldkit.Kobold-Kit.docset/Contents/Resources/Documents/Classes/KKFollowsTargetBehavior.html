@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KKTilemapNode Class Reference</title>
+		<title>KKFollowsTargetBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KKTilemapNode Class Reference</h1>
+				<h1 class="hideInXcode">KKFollowsTargetBehavior Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -40,25 +40,20 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/mainTileLayerNode">&nbsp;&nbsp;&nbsp;&nbsp;mainTileLayerNode</option>
+	<option value="//api/name/positionMultiplier">&nbsp;&nbsp;&nbsp;&nbsp;positionMultiplier</option>
 	
-	<option value="//api/name/tilemap">&nbsp;&nbsp;&nbsp;&nbsp;tilemap</option>
+	<option value="//api/name/positionOffset">&nbsp;&nbsp;&nbsp;&nbsp;positionOffset</option>
+	
+	<option value="//api/name/target">&nbsp;&nbsp;&nbsp;&nbsp;target</option>
 	
 	
-	
-	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/tilemapWithContentsOfFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ tilemapWithContentsOfFile:</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/objectLayerNodeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- objectLayerNodeWithName:</option>
-	
-	<option value="//api/name/tileLayerNodeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- tileLayerNodeWithName:</option>
+	<option value="//api/name/didSimulatePhysics">&nbsp;&nbsp;&nbsp;&nbsp;- didSimulatePhysics</option>
 	
 	
 	
@@ -84,27 +79,21 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mainTileLayerNode">mainTileLayerNode</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/positionMultiplier">positionMultiplier</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemap">tilemap</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/positionOffset">positionOffset</a></span></li>
 	
-</ul></li>
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemapWithContentsOfFile:">tilemapWithContentsOfFile:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/target">target</a></span></li>
 	
 </ul></li>
+
+
 
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLayerNodeWithName:">objectLayerNodeWithName:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileLayerNodeWithName:">tileLayerNodeWithName:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSimulatePhysics">didSimulatePhysics</a></span></li>
 	
 </ul></li>
 
@@ -113,7 +102,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KKTilemapNode Class Reference" name="top"></a>
+				<a title="KKFollowsTargetBehavior Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -122,7 +111,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KKTilemapNode Class Reference</h1>
+						<h1 class="title title-header">KKFollowsTargetBehavior Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -130,10 +119,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">KKNode : SKNode</td>
+	<td class="specification-value"><a href="../Classes/KKNodeBehavior.html">KKNodeBehavior</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemapNode.h<br />KKTilemapNode.m</td>
+	<td class="specification-value">KKFollowsTargetBehavior.h<br />KKFollowsTargetBehavior.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -143,8 +132,8 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A <a href="#//api/name/tilemap">tilemap</a> node renders a TMX <a href="#//api/name/tilemap">tilemap</a>. It has <a href="../Classes/KKTilemapTileLayerNode.html">KKTilemapTileLayerNode</a> and KKTilempaObjectLayerNode as children
-which perform each layer&rsquo;s rendering.</p>
+						<p>Updates the owning node&rsquo;s position from another node&rsquo;s position, applying optional offset and/or multiplier.
+The multiplier can be used to achieve a parallaxing effect.</p>
 					</div>
 					
 					
@@ -157,41 +146,42 @@ which perform each layer&rsquo;s rendering.</p>
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/tilemap">&nbsp;&nbsp;tilemap</a></code>
-		<span class="tooltip"><p>the tilemap model object containing the tilemap&rsquo;s data.</p></span>
+		<code><a href="#//api/name/target">&nbsp;&nbsp;target</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/mainTileLayerNode">&nbsp;&nbsp;mainTileLayerNode</a></code>
-		<span class="tooltip"><p>The main layer in a parallaxing <a href="#//api/name/tilemap">tilemap</a> is the layer with a parallax ratio of 1.0f. Otherwise it&rsquo;s the first tile layer.</p></span>
+		<code><a href="#//api/name/positionMultiplier">&nbsp;&nbsp;positionMultiplier</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/tilemapWithContentsOfFile:">+&nbsp;tilemapWithContentsOfFile:</a></code>
-		<span class="tooltip"><p>Creates a <a href="#//api/name/tilemap">tilemap</a> node from a TMX file.</p></span>
+		<code><a href="#//api/name/positionOffset">&nbsp;&nbsp;positionOffset</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
+	<span class="task-item-suffix">property</span>
 	
-	
-</li><li>
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/tileLayerNodeWithName:">&ndash;&nbsp;tileLayerNodeWithName:</a></code>
-		<span class="tooltip"><p>The name identifying a tile layer.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/objectLayerNodeWithName:">&ndash;&nbsp;objectLayerNodeWithName:</a></code>
-		<span class="tooltip"><p>The name identifying an object layer.</p></span>
+		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	
 	
@@ -209,25 +199,20 @@ which perform each layer&rsquo;s rendering.</p>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/mainTileLayerNode" title="mainTileLayerNode"></a>
-	<h3 class="subsubtitle method-title">mainTileLayerNode</h3>
+	<a name="//api/name/positionMultiplier" title="positionMultiplier"></a>
+	<h3 class="subsubtitle method-title">positionMultiplier</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The main layer in a parallaxing <a href="#//api/name/tilemap">tilemap</a> is the layer with a parallax ratio of 1.0f. Otherwise it&rsquo;s the first tile layer.</p>
+		<p>(not documented)</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint positionMultiplier</code></div>
 	
 	
 	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the &ldquo;main&rdquo; tile layer node.</p>
-	</div>
 	
 	
 	
@@ -241,32 +226,27 @@ which perform each layer&rsquo;s rendering.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+		<code class="declared-in-ref">KKFollowsTargetBehavior.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/tilemap" title="tilemap"></a>
-	<h3 class="subsubtitle method-title">tilemap</h3>
+	<a name="//api/name/positionOffset" title="positionOffset"></a>
+	<h3 class="subsubtitle method-title">positionOffset</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>the tilemap model object containing the tilemap&rsquo;s data.</p>
+		<p>(not documented)</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (atomic) KKTilemap *tilemap</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint positionOffset</code></div>
 	
 	
 	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the tilemap model object containing the tilemap&rsquo;s data.</p>
-	</div>
 	
 	
 	
@@ -280,7 +260,41 @@ which perform each layer&rsquo;s rendering.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+		<code class="declared-in-ref">KKFollowsTargetBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/target" title="target"></a>
+	<h3 class="subsubtitle method-title">target</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) SKNode *target</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKFollowsTargetBehavior.h</code><br />
 	</div>				
 	
 	
@@ -289,61 +303,6 @@ which perform each layer&rsquo;s rendering.</p>
 					</div>
 					
 					
-					
-					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/tilemapWithContentsOfFile:" title="tilemapWithContentsOfFile:"></a>
-	<h3 class="subsubtitle method-title">tilemapWithContentsOfFile:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Creates a <a href="#//api/name/tilemap">tilemap</a> node from a TMX file.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithContentsOfFile:(NSString *)<em>tmxFile</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>tmxFile</em></dt>
-			<dd><p>The filename of a TMX file in the bundle or an absolute path to a TMX file.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The new instance.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapNode.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
 					
 					
 					
@@ -352,35 +311,20 @@ which perform each layer&rsquo;s rendering.</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/objectLayerNodeWithName:" title="objectLayerNodeWithName:"></a>
-	<h3 class="subsubtitle method-title">objectLayerNodeWithName:</h3>
+	<a name="//api/name/didSimulatePhysics" title="didSimulatePhysics"></a>
+	<h3 class="subsubtitle method-title">didSimulatePhysics</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The name identifying an object layer.</p>
+		<p>(not documented)</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (KKTilemapObjectLayerNode *)objectLayerNodeWithName:(NSString *)<em>name</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>name</em></dt>
-			<dd><p>The name identifying an object layer.</p></dd>
-		</dl>
-		
-	</div>
+	<div class="method-subsection method-declaration"><code>- (void)didSimulatePhysics</code></div>
 	
 	
 	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The object layer node with the name, or nil if there&rsquo;s no object layer with that name.</p>
-	</div>
 	
 	
 	
@@ -394,56 +338,7 @@ which perform each layer&rsquo;s rendering.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapNode.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/tileLayerNodeWithName:" title="tileLayerNodeWithName:"></a>
-	<h3 class="subsubtitle method-title">tileLayerNodeWithName:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The name identifying a tile layer.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (KKTilemapTileLayerNode *)tileLayerNodeWithName:(NSString *)<em>name</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>name</em></dt>
-			<dd><p>The name identifying a tile layer.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The tile layer node with the name, or nil if there&rsquo;s no tile layer with that name.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
 	</div>				
 	
 	

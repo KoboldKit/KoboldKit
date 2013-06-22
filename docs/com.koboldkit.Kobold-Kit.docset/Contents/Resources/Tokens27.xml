@@ -1,149 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapProperties.html">
+	<File path="Classes/KKTilemapPolyObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapProperties</TokenIdentifier>
-			<Abstract type="html">KTTilemapProperties is a thin wrapper around NSMutableDictionary. It only allows NSString as keys and either KKMutableNumber or NSString as values (objects).
-   Values can only be added and replaced but not removed. For weakly typed runtime variables use KTModel variables instead.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapPolyObject</TokenIdentifier>
+			<Abstract type="html">A polygon or polyline object. A polygon is assumed to have its last point connect with the first, the polyline does not.
+   Though it's up to you how you interpret that. If you need to differentiate between the two, refer to the KTTilemapObject base class' objectType
+   property. </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
 			<NodeRef refid="27"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setProperties:</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setPoints:</TokenIdentifier>
+			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object's position.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGPoint *points</Declaration>
 			
 			
-			<Anchor>//api/name/properties</Anchor>
+			<Anchor>//api/name/points</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/properties</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/points</TokenIdentifier>
+			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object's position.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGPoint *points</Declaration>
 			
 			
-			<Anchor>//api/name/properties</Anchor>
+			<Anchor>//api/name/points</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/properties</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/points</TokenIdentifier>
+			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object's position.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *properties</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGPoint *points</Declaration>
 			
 			
-			<Anchor>//api/name/properties</Anchor>
+			<Anchor>//api/name/points</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setCount:</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setNumberOfPoints:</TokenIdentifier>
+			<Abstract type="html">The number of points stored in the points array.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (nonatomic, readonly) unsigned int numberOfPoints</Declaration>
 			
 			
-			<Anchor>//api/name/count</Anchor>
+			<Anchor>//api/name/numberOfPoints</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/count</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/numberOfPoints</TokenIdentifier>
+			<Abstract type="html">The number of points stored in the points array.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (nonatomic, readonly) unsigned int numberOfPoints</Declaration>
 			
 			
-			<Anchor>//api/name/count</Anchor>
+			<Anchor>//api/name/numberOfPoints</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/count</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/numberOfPoints</TokenIdentifier>
+			<Abstract type="html">The number of points stored in the points array.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (nonatomic, readonly) unsigned int numberOfPoints</Declaration>
 			
 			
-			<Anchor>//api/name/count</Anchor>
+			<Anchor>//api/name/numberOfPoints</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setNumber:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the number for the given key. If a value for the given key already exists the number will take its place.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setBoundingBox:</TokenIdentifier>
+			<Abstract type="html">The polygon's bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
+   polygons because if the target object does not intersect with a polygon's bounding box, it will definitely not intersect with the polygon. </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>- (void)setNumber:(KKMutableNumber *)number forKey:(NSString *)key</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGRect boundingBox</Declaration>
 			
 			
-			<Anchor>//api/name/setNumber:forKey:</Anchor>
+			<Anchor>//api/name/boundingBox</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setString:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the string for the given key. If a value for the given key already exists the string will take its place.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/boundingBox</TokenIdentifier>
+			<Abstract type="html">The polygon's bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
+   polygons because if the target object does not intersect with a polygon's bounding box, it will definitely not intersect with the polygon. </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>- (void)setString:(NSString *)string forKey:(NSString *)key</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGRect boundingBox</Declaration>
 			
 			
-			<Anchor>//api/name/setString:forKey:</Anchor>
+			<Anchor>//api/name/boundingBox</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setValue:forKey:</TokenIdentifier>
-			<Abstract type="html">(KTTMXReader only) This method first determines if the string can be converted to KKMutableNumber and if so, will set the KKMutableNumber.
-   Otherwise it will set the string. </Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/boundingBox</TokenIdentifier>
+			<Abstract type="html">The polygon's bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
+   polygons because if the target object does not intersect with a polygon's bounding box, it will definitely not intersect with the polygon. </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>- (void)setValue:(NSString *)string forKey:(NSString *)key</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGRect boundingBox</Declaration>
 			
 			
-			<Anchor>//api/name/setValue:forKey:</Anchor>
+			<Anchor>//api/name/boundingBox</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberFromString:</TokenIdentifier>
-			<Abstract type="html">Returns a KKMutableNumber from a string if the string is convertable to a number. Otherwise returns nil.
-   Note: floating point numbers must use . (dot) as floating point separator. </Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/updateBoundingBox</TokenIdentifier>
+			<Abstract type="html">In cases where you manually create or change polygon points you should run updateBoundingBox to update the boundingBox property.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>- (KKMutableNumber *)numberFromString:(NSString *)string</Declaration>
+			<Declaration>- (void)updateBoundingBox</Declaration>
 			
 			
-			<Anchor>//api/name/numberFromString:</Anchor>
+			<Anchor>//api/name/updateBoundingBox</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the KKMutableNumber for the key. If there's no number for that key returns nil.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/makePointsFromString:</TokenIdentifier>
+			<Abstract type="html">(TMX Parser Only) Creates the points array from a CGPoint encoded string where string representation of CGPoint are separated by a space character.
+   For example: @"0,0 -80,80 -80,160 0,200 80,200" </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>- (KKMutableNumber *)numberForKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/numberForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/stringForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the NSString for the key. If there's no string for that key returns nil.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)stringForKey:(NSString *)key</Declaration>
+			<Declaration>- (void)makePointsFromString:(NSString *)string</Declaration>
 			
 			
-			<Anchor>//api/name/stringForKey:</Anchor>
+			<Anchor>//api/name/makePointsFromString:</Anchor>
 		</Token>
 		
 	</File>

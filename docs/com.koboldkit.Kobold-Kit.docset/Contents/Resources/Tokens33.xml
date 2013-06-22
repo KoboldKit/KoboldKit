@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KTTilemapRectangleObject.html">
+	<File path="Classes/KKViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KTTilemapRectangleObject</TokenIdentifier>
-			<Abstract type="html">A rectangle object, usually referred to as simply "object" in Tiled.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKViewController</TokenIdentifier>
+			<Abstract type="html">View controller for a Kobold Kit view. Creates the KKView and performs other setup tasks.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
 			<NodeRef refid="33"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapRectangleObject/setRect:</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/setKkView:</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			
-			<Anchor>//api/name/rect</Anchor>
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KTTilemapRectangleObject/rect</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			
-			<Anchor>//api/name/rect</Anchor>
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KTTilemapRectangleObject/rect</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGRect rect</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			
-			<Anchor>//api/name/rect</Anchor>
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 	</File>

@@ -37,7 +37,6 @@
 
 -(void) initDefaults
 {
-	//self.anchorPoint = CGPointMake(0.5f, 0.5f);
 	self.physicsWorld.contactDelegate = self;
 	
 	const NSUInteger kInitialCapacity = 8;
@@ -49,6 +48,8 @@
 	_sceneDidSimulatePhysicsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneWillMoveFromViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidMoveToViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	
+	_mainLoopStage = KKMainLoopStageDidSimulatePhysics;
 	
 	NSLog(@"scene init");
 }
@@ -88,6 +89,9 @@
 
 -(void) update:(NSTimeInterval)currentTime
 {
+	NSAssert(_mainLoopStage == KKMainLoopStageDidSimulatePhysics, @"Main Loop Error: it seems you implemented didSimulatePhysics but did not call [super didSimulatePhysics]");
+	_mainLoopStage = KKMainLoopStageDidUpdate;
+	
 	++_frameCount;
 	
 	// update controllers
@@ -107,6 +111,9 @@
 
 -(void) didEvaluateActions
 {
+	NSAssert(_mainLoopStage == KKMainLoopStageDidUpdate, @"Main Loop Error: it seems you implemented update: but did not call [super update:currentTime]");
+	_mainLoopStage = KKMainLoopStageDidEvaluateActions;
+
 	// update controllers
 	for (KKNodeController* controller in _controllers)
 	{
@@ -124,6 +131,9 @@
 
 -(void) didSimulatePhysics
 {
+	NSAssert(_mainLoopStage == KKMainLoopStageDidEvaluateActions, @"Main Loop Error: it seems you implemented didEvaluateActions: but did not call [super didEvaluateActions]");
+	_mainLoopStage = KKMainLoopStageDidSimulatePhysics;
+
 	// update controllers
 	for (KKNodeController* controller in _controllers)
 	{

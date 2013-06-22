@@ -12,7 +12,7 @@
 #import "KKTilemap.h"
 #import "KKTilemapLayer.h"
 #import "SKNode+KoboldKit.h"
-#import "KKSynchronizePositionBehavior.h"
+#import "KKFollowsTargetBehavior.h"
 
 @implementation KKTilemapNode
 
@@ -41,6 +41,8 @@
 	{
 		[self observeSceneEvents];
 		
+		//self.position = self.scene.frame.origin;
+		
 		for (KKTilemapLayer* layer in _tilemap.layers)
 		{
 			if (layer.isTileLayer)
@@ -57,16 +59,25 @@
 		}
 
 		// parallaxing behavior
-		KKSynchronizePositionBehavior* parallaxBehavior = [KKSynchronizePositionBehavior synchronizePositionWithNode:self.mainTileLayerNode];
+		KKFollowsTargetBehavior* parallaxBehavior = [KKFollowsTargetBehavior followsTarget:self.mainTileLayerNode];
 		for (KKTilemapTileLayerNode* tileLayerNode in _tileLayers)
 		{
 			if (tileLayerNode != _mainTileLayerNode)
 			{
 				parallaxBehavior.positionMultiplier = tileLayerNode.layer.parallaxFactor;
-				[tileLayerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKSynchronizePositionBehavior class])];
+				[tileLayerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKFollowsTargetBehavior class])];
 			}
 		}
 	}
+}
+
+#pragma mark Position
+
+-(void) setPosition:(CGPoint)position
+{
+	[super setPosition:position];
+	
+	_mainTileLayerNode.position = ccpMult(position, 1);
 }
 
 #pragma mark Update
@@ -120,6 +131,22 @@
 	}
 	
 	return _mainTileLayerNode;
+}
+
+#pragma mark Layers
+
+-(KKTilemapTileLayerNode*) tileLayerNodeWithName:(NSString*)name
+{
+	KKTilemapTileLayerNode* node = (KKTilemapTileLayerNode*)[self childNodeWithName:name];
+	NSAssert2([node isKindOfClass:[KKTilemapTileLayerNode class]], @"node with name %@ is not a KKTilemapTileLayerNode, it is: %@", name, node);
+	return node;
+}
+
+-(KKTilemapObjectLayerNode*) objectLayerNodeWithName:(NSString*)name
+{
+	KKTilemapObjectLayerNode* node = (KKTilemapObjectLayerNode*)[self childNodeWithName:name];
+	NSAssert2([node isKindOfClass:[KKTilemapObjectLayerNode class]], @"node with name %@ is not a KKTilemapObjectLayerNode, it is: %@", name, node);
+	return node;
 }
 
 

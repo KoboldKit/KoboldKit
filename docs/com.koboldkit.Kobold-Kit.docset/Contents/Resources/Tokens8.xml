@@ -1,15 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKInt64Number.html">
+	<File path="Classes/KKFollowsTargetBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKInt64Number</TokenIdentifier>
-			<Abstract type="html">Used internally. Part of the KKMutableNumber class cluster.</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKFollowsTargetBehavior</TokenIdentifier>
+			<Abstract type="html">Updates the owning node's position from another node's position, applying optional offset and/or multiplier.
+The multiplier can be used to achieve a parallaxing effect.</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="8"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowsTargetBehavior/setTarget:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) SKNode *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowsTargetBehavior/target</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) SKNode *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowsTargetBehavior/target</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) SKNode *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowsTargetBehavior/setPositionMultiplier:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowsTargetBehavior/positionMultiplier</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowsTargetBehavior/positionMultiplier</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowsTargetBehavior/setPositionOffset:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowsTargetBehavior/positionOffset</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowsTargetBehavior/positionOffset</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowsTargetBehavior/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKFollowsTargetBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didSimulatePhysics</Declaration>
+			
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

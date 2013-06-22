@@ -11,6 +11,7 @@
 
 @class KKTilemap;
 @class KKTilemapTileLayerNode;
+@class KKTilemapObjectLayerNode;
 
 /** A tilemap node renders a TMX tilemap. It has KKTilemapTileLayerNode and KKTilempaObjectLayerNode as children
  which perform each layer's rendering. */
@@ -21,13 +22,24 @@
 	NSMutableArray* _tileLayers;
 }
 
-/** Returns the tilemap model object containing the tilemap's data. */
+/** @returns the tilemap model object containing the tilemap's data.*/
 @property (atomic) KKTilemap* tilemap;
 
-/** Returns the "main" tile layer node. The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. */
+/** The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it's the first tile layer.
+ @returns the "main" tile layer node.  */
 @property (nonatomic, readonly) KKTilemapTileLayerNode* mainTileLayerNode;
 
-/** Creates a tilemap node from a TMX file. */
+/** Creates a tilemap node from a TMX file.
+ @param tmxFile The filename of a TMX file in the bundle or an absolute path to a TMX file. 
+ @returns The new instance. */
 +(id) tilemapWithContentsOfFile:(NSString*)tmxFile;
+
+/** @param name The name identifying a tile layer.
+ @returns The tile layer node with the name, or nil if there's no tile layer with that name. */
+-(KKTilemapTileLayerNode*) tileLayerNodeWithName:(NSString*)name;
+
+/** @param name The name identifying an object layer.
+ @returns The object layer node with the name, or nil if there's no object layer with that name. */
+-(KKTilemapObjectLayerNode*) objectLayerNodeWithName:(NSString*)name;
 
 @end

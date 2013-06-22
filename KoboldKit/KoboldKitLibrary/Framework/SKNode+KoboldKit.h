@@ -27,11 +27,19 @@
 /** Called after removeFromParent and other remove child methods. The self.scene and self.parent properties are still valid. */
 -(void) willMoveFromParent;
 
-/** @name Creating and Accessing the Controller */
+/** @name Working with Controllers */
 /** Returns the node's controller object. */
 @property (atomic) KKNodeController* controller;
 /** Creates node controller if one does not exist yet. Returns the new or existing instance. */
 -(KKNodeController*) createController;
+
+/** Pauses all controllers of the nodes beginning with rootNode.
+ @param rootNode The node whose node tree will be paused. */
+-(void) pauseControllersInNodeTree:(SKNode*)rootNode;
+/** Resumes all controllers of the nodes beginning with rootNode.
+ @param rootNode The node whose node tree will be resumed. */
+-(void) resumeControllersInNodeTree:(SKNode*)rootNode;
+
 
 /** @name Accessing the KKScene */
 /** Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties. */

@@ -15,6 +15,8 @@
 {
 	MyLabelNode *myLabel;
 	KKSpriteNode* s1;
+	SKNode* _testCamera;
+	CGPoint _currentControlPadDirection;
 }
 
 @end

@@ -17,6 +17,14 @@ typedef enum
 	KKSceneGraphDumpAll = 0,
 } KKSceneGraphDumpOptions;
 
+typedef enum
+{
+	KKMainLoopStageInit = 0,
+	KKMainLoopStageDidUpdate,
+	KKMainLoopStageDidEvaluateActions,
+	KKMainLoopStageDidSimulatePhysics,
+} KKMainLoopStage;
+
 /** KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
  dispatches events (input, physics).*/
 @interface KKScene : SKScene <SKPhysicsContactDelegate, KKSceneEventDelegate>
@@ -30,6 +38,9 @@ typedef enum
 	NSMutableArray* _sceneDidSimulatePhysicsObservers;
 	NSMutableArray* _sceneWillMoveFromViewObservers;
 	NSMutableArray* _sceneDidMoveToViewObservers;
+	
+	// used to detect missing super calls
+	KKMainLoopStage _mainLoopStage;
 }
 
 /** @returns The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.

@@ -54,6 +54,13 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/objectLayerNodeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- objectLayerNodeWithName:</option>
+	
+	<option value="//api/name/tileLayerNodeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- tileLayerNodeWithName:</option>
+	
+	
 	
 </select>
 				</li>
@@ -92,6 +99,14 @@
 </ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLayerNodeWithName:">objectLayerNodeWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileLayerNodeWithName:">tileLayerNodeWithName:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -148,14 +163,14 @@ which perform each layer&rsquo;s rendering.</p>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemap">&nbsp;&nbsp;tilemap</a></code>
-		<span class="tooltip"><p>Returns the tilemap model object containing the tilemap&rsquo;s data.</p></span>
+		<span class="tooltip"><p>the tilemap model object containing the tilemap&rsquo;s data.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/mainTileLayerNode">&nbsp;&nbsp;mainTileLayerNode</a></code>
-		<span class="tooltip"><p>Returns the &ldquo;main&rdquo; tile layer node. The main layer in a parallaxing <a href="#//api/name/tilemap">tilemap</a> is the layer with a parallax ratio of 1.0f.</p></span>
+		<span class="tooltip"><p>The main layer in a parallaxing <a href="#//api/name/tilemap">tilemap</a> is the layer with a parallax ratio of 1.0f. Otherwise it&rsquo;s the first tile layer.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -163,6 +178,20 @@ which perform each layer&rsquo;s rendering.</p>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemapWithContentsOfFile:">+&nbsp;tilemapWithContentsOfFile:</a></code>
 		<span class="tooltip"><p>Creates a <a href="#//api/name/tilemap">tilemap</a> node from a TMX file.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tileLayerNodeWithName:">&ndash;&nbsp;tileLayerNodeWithName:</a></code>
+		<span class="tooltip"><p>The name identifying a tile layer.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectLayerNodeWithName:">&ndash;&nbsp;objectLayerNodeWithName:</a></code>
+		<span class="tooltip"><p>The name identifying an object layer.</p></span>
 	</span>
 	
 	
@@ -186,7 +215,7 @@ which perform each layer&rsquo;s rendering.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the &ldquo;main&rdquo; tile layer node. The main layer in a parallaxing <a href="#//api/name/tilemap">tilemap</a> is the layer with a parallax ratio of 1.0f.</p>
+		<p>The main layer in a parallaxing <a href="#//api/name/tilemap">tilemap</a> is the layer with a parallax ratio of 1.0f. Otherwise it&rsquo;s the first tile layer.</p>
 	</div>		
 	
 	
@@ -194,6 +223,11 @@ which perform each layer&rsquo;s rendering.</p>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the &ldquo;main&rdquo; tile layer node.</p>
+	</div>
 	
 	
 	
@@ -220,7 +254,7 @@ which perform each layer&rsquo;s rendering.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the tilemap model object containing the tilemap&rsquo;s data.</p>
+		<p>the tilemap model object containing the tilemap&rsquo;s data.</p>
 	</div>		
 	
 	
@@ -228,6 +262,11 @@ which perform each layer&rsquo;s rendering.</p>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the tilemap model object containing the tilemap&rsquo;s data.</p>
+	</div>
 	
 	
 	
@@ -269,7 +308,22 @@ which perform each layer&rsquo;s rendering.</p>
 	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithContentsOfFile:(NSString *)<em>tmxFile</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tmxFile</em></dt>
+			<dd><p>The filename of a TMX file in the bundle or an absolute path to a TMX file.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The new instance.</p>
+	</div>
 	
 	
 	
@@ -292,6 +346,110 @@ which perform each layer&rsquo;s rendering.</p>
 					</div>
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/objectLayerNodeWithName:" title="objectLayerNodeWithName:"></a>
+	<h3 class="subsubtitle method-title">objectLayerNodeWithName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name identifying an object layer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (KKTilemapObjectLayerNode *)objectLayerNodeWithName:(NSString *)<em>name</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name identifying an object layer.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The object layer node with the name, or nil if there&rsquo;s no object layer with that name.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tileLayerNodeWithName:" title="tileLayerNodeWithName:"></a>
+	<h3 class="subsubtitle method-title">tileLayerNodeWithName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name identifying a tile layer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (KKTilemapTileLayerNode *)tileLayerNodeWithName:(NSString *)<em>name</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name identifying a tile layer.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The tile layer node with the name, or nil if there&rsquo;s no tile layer with that name.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>

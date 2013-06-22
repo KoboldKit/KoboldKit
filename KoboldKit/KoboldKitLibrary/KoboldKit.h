@@ -31,8 +31,9 @@
 
 // behaviors
 #import "KKButtonBehavior.h"
-#import "KKSynchronizePositionBehavior.h"
+#import "KKFollowsTargetBehavior.h"
 #import "KKControlPadBehavior.h"
+#import "KKCameraFollowsBehavior.h"
 
 // tilemap model
 #import "KKTilemap.h"

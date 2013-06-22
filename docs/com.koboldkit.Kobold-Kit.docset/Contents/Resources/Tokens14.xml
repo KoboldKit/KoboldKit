@@ -1,339 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKNodeModel.html">
+	<File path="Classes/KKNodeBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKNodeModel</TokenIdentifier>
-			<Abstract type="html">Model object allows you to story integral data types by key (name) as mutable numbers.
-Useful to store automatically NSCoding/NSCopying conformant values to any node without having to subclass it.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKNodeBehavior</TokenIdentifier>
+			<Abstract type="html">Behaviors add custom logic to a node.
+Behaviors differ from actions in several ways:
+- they are useful for any logic code that is hard or impossible to implement with (custom) actions, such as event processing
+- they usually run indefinitely and can be paused by pausing the controller
+- they may have a state (ivars)
+- they may have a public interface (properties, methods)
+- they can not be reversed</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="14"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setController:</TokenIdentifier>
-			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setName:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, weak) KKNodeController *controller</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/name</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/name</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setController:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			
 			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/controller</TokenIdentifier>
-			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/controller</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, weak) KKNodeController *controller</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			
 			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeModel/controller</TokenIdentifier>
-			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/controller</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, weak) KKNodeController *controller</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			
 			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setBool:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setNode:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setBool:(BOOL)boolValue forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>boolValue</Name>
-					<Abstract type="html">A boolean.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			<Anchor>//api/name/setBool:forKey:</Anchor>
+			
+			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/boolForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value of the given type for key. Returns NO if there's no value with this key.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/node</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)boolForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The BOOL value for the key, or NO if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/boolForKey:</Anchor>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setFloat:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/node</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setFloat:(float)floatValue forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>floatValue</Name>
-					<Abstract type="html">A float.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			<Anchor>//api/name/setFloat:forKey:</Anchor>
+			
+			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/floatForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setWantsUpdate:</TokenIdentifier>
+			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (float)floatForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The float value for the key, or 0.0f if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/floatForKey:</Anchor>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setDouble:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/wantsUpdate</TokenIdentifier>
+			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setDouble:(double)doubleValue forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>doubleValue</Name>
-					<Abstract type="html">A double.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			<Anchor>//api/name/setDouble:forKey:</Anchor>
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/doubleForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/wantsUpdate</TokenIdentifier>
+			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (double)doubleForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The double value for the key, or 0.0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/doubleForKey:</Anchor>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setInt32:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setEnabled:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setInt32:(int32_t)int32Value forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>int32Value</Name>
-					<Abstract type="html">A 32-bit integer.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
-			<Anchor>//api/name/setInt32:forKey:</Anchor>
+			
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/int32ForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/enabled</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (int32_t)int32ForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The int32_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/int32ForKey:</Anchor>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setUnsignedInt32:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/enabled</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setUnsignedInt32:(uint32_t)unsignedInt32Value forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>unsignedInt32Value</Name>
-					<Abstract type="html">An unsigned 32-bit integer.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
-			<Anchor>//api/name/setUnsignedInt32:forKey:</Anchor>
+			
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/unsignedInt32ForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/removeFromNode</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (uint32_t)unsignedInt32ForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The uint32_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/unsignedInt32ForKey:</Anchor>
+			<Declaration>- (void)removeFromNode</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromNode</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setInt64:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setInt64:(int64_t)int64Value forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>int64Value</Name>
-					<Abstract type="html">A 64-bit integer.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)didJoinController</Declaration>
 			
-			<Anchor>//api/name/setInt64:forKey:</Anchor>
+			
+			<Anchor>//api/name/didJoinController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/int64ForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didLeaveController</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (int64_t)int64ForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The int64_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/int64ForKey:</Anchor>
+			<Declaration>- (void)didLeaveController</Declaration>
+			
+			
+			<Anchor>//api/name/didLeaveController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setUnsignedInt64:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/update:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setUnsignedInt64:(uint64_t)unsignedInt64Value forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>unsignedInt64Value</Name>
-					<Abstract type="html">An unsigned 64-bit integer.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
 			
-			<Anchor>//api/name/setUnsignedInt64:forKey:</Anchor>
+			
+			<Anchor>//api/name/update:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/unsignedInt64ForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didEvaluateActions</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (uint64_t)unsignedInt64ForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The uint64_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/unsignedInt64ForKey:</Anchor>
+			<Declaration>- (void)didEvaluateActions</Declaration>
+			
+			
+			<Anchor>//api/name/didEvaluateActions</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/setObject:forKey:</TokenIdentifier>
-			<Abstract type="html">Assign or replace any object with the given key. If object is nil, the object for that key will be removed.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">The object to store in the dictionary.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the object.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)didSimulatePhysics</Declaration>
 			
-			<Anchor>//api/name/setObject:forKey:</Anchor>
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/objectForKey:</TokenIdentifier>
-			<Abstract type="html">The object for key or nil if there's no object associated with this key.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/postNotificationName:</TokenIdentifier>
+			<Abstract type="html">(not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
+			<Declaration>- (void)postNotificationName:(NSString *)name</Declaration>
 			
-			<ReturnValue><Abstract type="html">The object for key or nil if there's no object associated with this key.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectForKey:</Anchor>
+			
+			<Anchor>//api/name/postNotificationName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeModel/mutableNumberForKey:</TokenIdentifier>
-			<Abstract type="html">Accessing the KKMutableNumber object directly allows you to change the value without having to reassign it using a setter method.</Abstract>
-			<DeclaredIn>KKNodeModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/postNotificationName:userInfo:</TokenIdentifier>
+			<Abstract type="html">(not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys.</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (KKMutableNumber *)mutableNumberForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>A</Name>
-					<Abstract type="html">unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The underlying KKMutableNumber object for a specific variable.A mutable number object or nil if no variable with the given key was found.</Abstract></ReturnValue>
-			<Anchor>//api/name/mutableNumberForKey:</Anchor>
+			<Declaration>- (void)postNotificationName:(NSString *)name userInfo:(NSDictionary *)userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/postNotificationName:userInfo:</Anchor>
 		</Token>
 		
 	</File>

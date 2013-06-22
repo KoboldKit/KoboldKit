@@ -83,7 +83,7 @@
 			[_visibleTiles addObject:tileSprite];
 			
 			// FIXME: for whatever reasons tile sprites won't draw in batch nodes when not added immediately
-			//[self addChild:tileSprite];
+			[self addChild:tileSprite];
 		}
 	}
 }
@@ -98,7 +98,8 @@
 		CGSize mapSize = _tilemap.mapSize;
 		CGSize gridSize = _tilemap.gridSize;
 		
-		CGPoint positionInPoints = ccpMult(self.position, -1.0f);
+		CGPoint tilemapOffset = ccpSub(self.scene.frame.origin, self.parent.position);
+		CGPoint positionInPoints = ccpMult(ccpSub(self.position, tilemapOffset), -1.0f);
 		// fast-forward position by one tile width/height in negative direction
 		// reason: 1 and -1 would use the same tile due to the division in tileOffset calculation (tilesize 40: position 39 and -39 would both index tile 0)
 		if (positionInPoints.x < 0.0f)

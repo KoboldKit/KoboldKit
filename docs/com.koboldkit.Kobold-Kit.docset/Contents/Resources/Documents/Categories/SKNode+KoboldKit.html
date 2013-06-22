@@ -85,6 +85,8 @@
 	
 	<option value="//api/name/observeSceneEvents">&nbsp;&nbsp;&nbsp;&nbsp;- observeSceneEvents</option>
 	
+	<option value="//api/name/pauseControllersInNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- pauseControllersInNodeTree:</option>
+	
 	<option value="//api/name/performSelector:afterDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:afterDelay:</option>
 	
 	<option value="//api/name/performSelectorInBackground:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelectorInBackground:</option>
@@ -94,6 +96,8 @@
 	<option value="//api/name/removeBehavior:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehavior:</option>
 	
 	<option value="//api/name/removeBehaviorForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehaviorForKey:</option>
+	
+	<option value="//api/name/resumeControllersInNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- resumeControllersInNodeTree:</option>
 	
 	<option value="//api/name/willMoveFromParent">&nbsp;&nbsp;&nbsp;&nbsp;- willMoveFromParent</option>
 	
@@ -117,7 +121,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Observing Node&apos;s Child Status">Observing Node&apos;s Child Status</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating and Accessing the Controller">Creating and Accessing the Controller</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Controllers">Working with Controllers</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the KKScene">Accessing the KKScene</a></span></li>
 	
@@ -185,6 +189,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeSceneEvents">observeSceneEvents</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pauseControllersInNodeTree:">pauseControllersInNodeTree:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:afterDelay:">performSelector:afterDelay:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelectorInBackground:">performSelectorInBackground:</a></span></li>
@@ -194,6 +200,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehavior:">removeBehavior:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehaviorForKey:">removeBehaviorForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeControllersInNodeTree:">resumeControllersInNodeTree:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willMoveFromParent">willMoveFromParent</a></span></li>
 	
@@ -280,8 +288,8 @@
 						</ul>
 						
 						
-						<a title="Creating and Accessing the Controller" name="task_Creating and Accessing the Controller"></a>
-						<h3 class="subsubtitle task-title">Creating and Accessing the Controller</h3>
+						<a title="Working with Controllers" name="task_Working with Controllers"></a>
+						<h3 class="subsubtitle task-title">Working with Controllers</h3>
 
 						<ul class="task-list">
 							<li>
@@ -295,6 +303,20 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/createController">&ndash;&nbsp;createController</a></code>
 		<span class="tooltip"><p>Creates node <a href="#//api/name/controller">controller</a> if one does not exist yet. Returns the new or existing instance.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pauseControllersInNodeTree:">&ndash;&nbsp;pauseControllersInNodeTree:</a></code>
+		<span class="tooltip"><p>Pauses all controllers of the nodes beginning with rootNode.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resumeControllersInNodeTree:">&ndash;&nbsp;resumeControllersInNodeTree:</a></code>
+		<span class="tooltip"><p>Resumes all controllers of the nodes beginning with rootNode.</p></span>
 	</span>
 	
 	
@@ -1211,6 +1233,50 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/pauseControllersInNodeTree:" title="pauseControllersInNodeTree:"></a>
+	<h3 class="subsubtitle method-title">pauseControllersInNodeTree:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pauses all controllers of the nodes beginning with rootNode.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)pauseControllersInNodeTree:(SKNode *)<em>rootNode</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rootNode</em></dt>
+			<dd><p>The node whose node tree will be paused.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/performSelector:afterDelay:" title="performSelector:afterDelay:"></a>
 	<h3 class="subsubtitle method-title">performSelector:afterDelay:</h3>
 	
@@ -1376,6 +1442,50 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>key</em></dt>
 			<dd><p>The unique key identifying the behavior.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resumeControllersInNodeTree:" title="resumeControllersInNodeTree:"></a>
+	<h3 class="subsubtitle method-title">resumeControllersInNodeTree:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resumes all controllers of the nodes beginning with rootNode.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)resumeControllersInNodeTree:(SKNode *)<em>rootNode</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rootNode</em></dt>
+			<dd><p>The node whose node tree will be resumed.</p></dd>
 		</dl>
 		
 	</div>

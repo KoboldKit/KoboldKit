@@ -1,5 +1,5 @@
 //
-//  KKSynchronizePositionBehavior.h
+//  KKFollowsTargetBehavior
 //  KoboldKit
 //
 //  Created by Steffen Itterheim on 19.06.13.
@@ -11,17 +11,17 @@
 
 /** Updates the owning node's position from another node's position, applying optional offset and/or multiplier.
  The multiplier can be used to achieve a parallaxing effect. */
-@interface KKSynchronizePositionBehavior : KKNodeBehavior
+@interface KKFollowsTargetBehavior : KKNodeBehavior
 
 /** (not documented) */
-@property (nonatomic, weak) SKNode* otherNode;
+@property (nonatomic, weak) SKNode* target;
 /** (not documented) */
 @property (nonatomic) CGPoint positionMultiplier;
 /** (not documented) */
 @property (nonatomic) CGPoint positionOffset;
 
-+(id) synchronizePositionWithNode:(SKNode*)otherNode;
-+(id) synchronizePositionWithNode:(SKNode*)otherNode offset:(CGPoint)positionOffset;
-+(id) synchronizePositionWithNode:(SKNode*)otherNode offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier;
++(id) followsTarget:(SKNode*)target;
++(id) followsTarget:(SKNode*)target offset:(CGPoint)positionOffset;
++(id) followsTarget:(SKNode*)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier;
 
 @end
