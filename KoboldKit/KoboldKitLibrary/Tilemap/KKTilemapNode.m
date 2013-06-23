@@ -12,7 +12,7 @@
 #import "KKTilemap.h"
 #import "KKTilemapLayer.h"
 #import "SKNode+KoboldKit.h"
-#import "KKFollowsTargetBehavior.h"
+#import "KKFollowTargetBehavior.h"
 
 @implementation KKTilemapNode
 
@@ -59,13 +59,13 @@
 		}
 
 		// parallaxing behavior
-		KKFollowsTargetBehavior* parallaxBehavior = [KKFollowsTargetBehavior followsTarget:self.mainTileLayerNode];
+		KKFollowTargetBehavior* parallaxBehavior = [KKFollowTargetBehavior followTarget:self.mainTileLayerNode];
 		for (KKTilemapTileLayerNode* tileLayerNode in _tileLayers)
 		{
 			if (tileLayerNode != _mainTileLayerNode)
 			{
 				parallaxBehavior.positionMultiplier = tileLayerNode.layer.parallaxFactor;
-				[tileLayerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKFollowsTargetBehavior class])];
+				[tileLayerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKFollowTargetBehavior class])];
 			}
 		}
 	}
@@ -149,17 +149,24 @@
 	return node;
 }
 
+#pragma mark Bounds
 
-/*
-- (void)centerWorldOnPosition:(CGPoint)position {
-    [self.world setPosition:CGPointMake(-(position.x) + CGRectGetMidX(self.frame),
-                                        -(position.y) + CGRectGetMidY(self.frame))];
-    
-    self.worldMovedForUpdate = YES;
+@dynamic bounds;
+-(CGRect) bounds
+{
+	CGRect bounds = CGRectMake(INFINITY, INFINITY, INFINITY, INFINITY);
+	KKTilemapLayer* mainLayer = _mainTileLayerNode.layer;
+	if (mainLayer.endlessScrollingHorizontal == NO)
+	{
+		bounds.origin.x = 0.0;
+		bounds.size.width = _tilemap.size.width * _tilemap.gridSize.width;
+	}
+	if (mainLayer.endlessScrollingVertical == NO)
+	{
+		bounds.origin.y = 0.0;
+		bounds.size.height = _tilemap.size.width * _tilemap.gridSize.width;
+	}
+	return bounds;
 }
 
-- (void)centerWorldOnCharacter:(APACharacter *)character {
-    [self centerWorldOnPosition:character.position];
-}
-*/
 @end

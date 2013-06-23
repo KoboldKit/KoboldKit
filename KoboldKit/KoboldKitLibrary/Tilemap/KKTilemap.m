@@ -76,7 +76,7 @@
 	{
 		[self setDefaults];
 		_orientation = orientation;
-		_mapSize = mapSize;
+		_size = mapSize;
 		_gridSize = gridSize;
 	}
 
@@ -85,8 +85,8 @@
 
 -(NSString*) description
 {
-	return [NSString stringWithFormat:@"%@ (orientation: %i, mapSize: %.0f,%.0f, gridSize: %.0f,%.0f, properties: %u, tileSets: %u, layers: %u)",
-			[super description], _orientation, _mapSize.width, _mapSize.height, _gridSize.width, _gridSize.height,
+	return [NSString stringWithFormat:@"%@ (orientation: %i, size: %.0f,%.0f, gridSize: %.0f,%.0f, properties: %u, tileSets: %u, layers: %u)",
+			[super description], _orientation, _size.width, _size.height, _gridSize.width, _gridSize.height,
 			(unsigned int)_properties.count, (unsigned int)_tilesets.count, (unsigned int)_layers.count];
 }
 

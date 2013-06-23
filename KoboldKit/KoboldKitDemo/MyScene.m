@@ -25,16 +25,29 @@
 		self.anchorPoint = CGPointMake(0.5f, 0.5f);
 		self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
 
-		//KKTilemapNode* tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
-		KKTilemapNode* tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"forest-parallax.tmx"];
-		[self addChild:tilemapNode];
-		tilemapNode.name = @"tilemap";
+		_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
+		//KKTilemapNode* tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"forest-parallax.tmx"];
+		[self addChild:_tilemapNode];
+		_tilemapNode.name = @"tilemap";
 
 		_testCamera = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:CGSizeMake(20, 20)];
 		_testCamera.position = CGPointMake(70, 90);
-		[tilemapNode addChild:_testCamera];
+		[_tilemapNode addChild:_testCamera];
 		
-		[_testCamera addBehavior:[KKCameraFollowsBehavior new] withKey:@"camera"];
+		[_testCamera addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
+		[_testCamera addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
+		
+		LOG_EXPR(_tilemapNode.bounds);
+		CGRect bounds = _tilemapNode.bounds;
+		bounds.origin = [self convertPoint:bounds.origin fromNode:_tilemapNode];
+		LOG_EXPR(bounds);
+		
+		bounds.origin.x = -(bounds.size.width + 0);
+		bounds.origin.y = -(bounds.size.height + 0);
+		bounds.size.width = bounds.size.width - 120;
+		bounds.size.height = bounds.size.height - 80;
+		LOG_EXPR(bounds);
+		[_tilemapNode addBehavior:[KKStayInBoundsBehavior stayInBounds:bounds]];
 		
 		[self createVirtualJoypad];
     }
@@ -43,9 +56,8 @@
 
 -(void) didMoveToView:(SKView *)view
 {
+	// always call superr in "event" methods of KKScene subclasses
 	[super didMoveToView:view];
-	LOG_EXPR(view.bounds.size);
-	[myLabel observe];
 }
 
 -(void) dealloc
@@ -156,7 +168,7 @@
 {
 	KKControlPadBehavior* controlPad = [note.userInfo objectForKey:@"behavior"];
 	
-	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), 2);
+	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), 3);
 
 	switch (controlPad.direction)
 	{
@@ -204,20 +216,18 @@
 
 -(void)update:(NSTimeInterval)currentTime
 {
-	// calling super will update controllers and behaviors, also advanced frame counter
+	// always call superr in "event" methods of KKScene subclasses
 	[super update:currentTime];
 	
-
 	_testCamera.position = ccpAdd(_testCamera.position, _currentControlPadDirection);
 }
 
-/*
 -(void) didSimulatePhysics
 {
+	// always call superr in "event" methods of KKScene subclasses
 	[super didSimulatePhysics];
-
-	[self centerOnNode:_testCamera];
+	
+	//LOG_EXPR(_tilemapNode.position);
 }
-*/
 
 @end

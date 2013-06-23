@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KKIvarInfo Class Reference</title>
+		<title>KKCameraFollowBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KKIvarInfo Class Reference</h1>
+				<h1 class="hideInXcode">KKCameraFollowBehavior Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -38,24 +38,17 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/encoding">&nbsp;&nbsp;&nbsp;&nbsp;encoding</option>
-	
-	<option value="//api/name/ivar">&nbsp;&nbsp;&nbsp;&nbsp;ivar</option>
-	
-	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
-	
-	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
-	
-	
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/setIvarInTarget:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setIvarInTarget:value:</option>
+	<option value="//api/name/didJoinController">&nbsp;&nbsp;&nbsp;&nbsp;- didJoinController</option>
+	
+	<option value="//api/name/didLeaveController">&nbsp;&nbsp;&nbsp;&nbsp;- didLeaveController</option>
+	
+	<option value="//api/name/didSimulatePhysics">&nbsp;&nbsp;&nbsp;&nbsp;- didSimulatePhysics</option>
 	
 	
 	
@@ -79,25 +72,17 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encoding">encoding</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ivar">ivar</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
-	
-</ul></li>
-
 
 
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setIvarInTarget:value:">setIvarInTarget:value:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didJoinController">didJoinController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLeaveController">didLeaveController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSimulatePhysics">didSimulatePhysics</a></span></li>
 	
 </ul></li>
 
@@ -106,7 +91,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KKIvarInfo Class Reference" name="top"></a>
+				<a title="KKCameraFollowBehavior Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -115,7 +100,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KKIvarInfo Class Reference</h1>
+						<h1 class="title title-header">KKCameraFollowBehavior Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -123,10 +108,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<td class="specification-value"><a href="../Classes/KKNodeBehavior.html">KKNodeBehavior</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKIvarSetter.h<br />KKIvarSetter.m</td>
+	<td class="specification-value">KKCameraFollowBehavior.h<br />KKCameraFollowBehavior.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -136,7 +121,8 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>INTERNAL USE! Class that represents an <a href="#//api/name/ivar">ivar</a> in order to set and get an ivar&rsquo;s value.</p>
+						<p>Makes the &ldquo;camera&rdquo; follow this node. The node&rsquo;s parent should be the scrolling world, the scene&rsquo;s anchorPoint should be
+at 0.5,0.5 if you want to center on the node.</p>
 					</div>
 					
 					
@@ -154,36 +140,22 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/ivar">&nbsp;&nbsp;ivar</a></code>
-		<span class="tooltip"><p>The Objective-C Ivar object.</p></span>
+		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-		<span class="tooltip"><p>The name of the <a href="#//api/name/ivar">ivar</a>.</p></span>
+		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/encoding">&nbsp;&nbsp;encoding</a></code>
-		<span class="tooltip"><p>The @encoding of the <a href="#//api/name/ivar">ivar</a>. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
-		<span class="tooltip"><p>The type of the <a href="#//api/name/ivar">ivar</a> which is deducted from the <a href="#//api/name/encoding">encoding</a>.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setIvarInTarget:value:">&ndash;&nbsp;setIvarInTarget:value:</a></code>
-		<span class="tooltip"><p>Set the <a href="#//api/name/ivar">ivar</a> in the given target to the value.</p></span>
+		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
+		<span class="tooltip"><p>(not documented)</p></span>
 	</span>
 	
 	
@@ -196,148 +168,6 @@
 					
 					
 					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/encoding" title="encoding"></a>
-	<h3 class="subsubtitle method-title">encoding</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The @encoding of the <a href="#//api/name/ivar">ivar</a>. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *encoding</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKIvarSetter.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/ivar" title="ivar"></a>
-	<h3 class="subsubtitle method-title">ivar</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The Objective-C Ivar object.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) Ivar ivar</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKIvarSetter.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/name" title="name"></a>
-	<h3 class="subsubtitle method-title">name</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The name of the <a href="#//api/name/ivar">ivar</a>.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *name</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKIvarSetter.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/type" title="type"></a>
-	<h3 class="subsubtitle method-title">type</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The type of the <a href="#//api/name/ivar">ivar</a> which is deducted from the <a href="#//api/name/encoding">encoding</a>.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KKIvarType type</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKIvarSetter.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
 					
 					
 					
@@ -347,17 +177,17 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/setIvarInTarget:value:" title="setIvarInTarget:value:"></a>
-	<h3 class="subsubtitle method-title">setIvarInTarget:value:</h3>
+	<a name="//api/name/didJoinController" title="didJoinController"></a>
+	<h3 class="subsubtitle method-title">didJoinController</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Set the <a href="#//api/name/ivar">ivar</a> in the given target to the value.</p>
+		<p>(not documented)</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)setIvarInTarget:(id)<em>target</em> value:(id)<em>value</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)didJoinController</code></div>
 	
 	
 	
@@ -374,7 +204,75 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKIvarSetter.h</code><br />
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didLeaveController" title="didLeaveController"></a>
+	<h3 class="subsubtitle method-title">didLeaveController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didLeaveController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSimulatePhysics" title="didSimulatePhysics"></a>
+	<h3 class="subsubtitle method-title">didSimulatePhysics</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(not documented)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didSimulatePhysics</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKNodeBehavior.h</code><br />
 	</div>				
 	
 	

@@ -133,7 +133,7 @@
 	CGSize mapSize;
 	mapSize.width = [[attributes objectForKey:@"width"] intValue];
 	mapSize.height = [[attributes objectForKey:@"height"] intValue];
-	_tilemap.mapSize = mapSize;
+	_tilemap.size = mapSize;
 
 	CGSize gridSize;
 	gridSize.width = [[attributes objectForKey:@"tilewidth"] intValue];
@@ -273,7 +273,7 @@
 	position.x = [[attributes objectForKey:@"x"] intValue];
 	position.y = [[attributes objectForKey:@"y"] intValue];
 	// Correct y position. (Tiled uses Y origin on top extending downward, cocos2d has Y origin at bottom extending upward)
-	position.y = (_tilemap.mapSize.height * _tilemap.gridSize.height) - position.y;
+	position.y = (_tilemap.size.height * _tilemap.gridSize.height) - position.y;
 	if (object.objectType == KKTilemapObjectTypeRectangle)
 	{
 		// rectangles have their origin point at the upper left corner, but we need it to be in the lower left corner
@@ -391,7 +391,7 @@
 	{
 		// deflate the buffer if it is in compressed format
 		unsigned char* deflatedTileGidBuffer;
-		CGSize mapSize = _tilemap.mapSize;
+		CGSize mapSize = _tilemap.size;
 		unsigned int expectedSize = mapSize.width * mapSize.height * sizeof(gid_t);
 		unsigned int deflatedTileGidBufferSize = ccInflateMemoryWithHint(tileGidBuffer, tileGidBufferSize, &deflatedTileGidBuffer, expectedSize);
 		NSAssert2(deflatedTileGidBufferSize == expectedSize, @"TMX data decode: hint mismatch! (got: %i, expected: %i)", deflatedTileGidBufferSize, expectedSize);

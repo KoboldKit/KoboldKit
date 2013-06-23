@@ -13,10 +13,9 @@
 
 @interface MyScene : KKScene
 {
-	MyLabelNode *myLabel;
-	KKSpriteNode* s1;
 	SKNode* _testCamera;
 	CGPoint _currentControlPadDirection;
+	KKTilemapNode* _tilemapNode;
 }
 
 @end

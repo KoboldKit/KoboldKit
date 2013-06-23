@@ -46,6 +46,7 @@
 						<NodeRef refid="35"/>
 						<NodeRef refid="36"/>
 						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
 						
 					</Subnodes>
 				</Node>
@@ -55,8 +56,8 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="38"/>
 						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
 						
 					</Subnodes>
 				</Node>
@@ -66,9 +67,9 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="40"/>
 						<NodeRef refid="41"/>
 						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
 						
 					</Subnodes>
 				</Node>
@@ -86,8 +87,8 @@
 			<Path>Classes/KKButtonBehavior.html</Path>
 		</Node>
 		<Node id="4">
-			<Name>KKCameraFollowsBehavior</Name>
-			<Path>Classes/KKCameraFollowsBehavior.html</Path>
+			<Name>KKCameraFollowBehavior</Name>
+			<Path>Classes/KKCameraFollowBehavior.html</Path>
 		</Node>
 		<Node id="5">
 			<Name>KKControlPadBehavior</Name>
@@ -102,8 +103,8 @@
 			<Path>Classes/KKFloatNumber.html</Path>
 		</Node>
 		<Node id="8">
-			<Name>KKFollowsTargetBehavior</Name>
-			<Path>Classes/KKFollowsTargetBehavior.html</Path>
+			<Name>KKFollowTargetBehavior</Name>
+			<Path>Classes/KKFollowTargetBehavior.html</Path>
 		</Node>
 		<Node id="9">
 			<Name>KKInt32Number</Name>
@@ -142,104 +143,108 @@
 			<Path>Classes/KKScene.html</Path>
 		</Node>
 		<Node id="18">
+			<Name>KKStayInBoundsBehavior</Name>
+			<Path>Classes/KKStayInBoundsBehavior.html</Path>
+		</Node>
+		<Node id="19">
 			<Name>KKTMXReader</Name>
 			<Path>Classes/KKTMXReader.html</Path>
 		</Node>
-		<Node id="19">
+		<Node id="20">
 			<Name>KKTMXWriter</Name>
 			<Path>Classes/KKTMXWriter.html</Path>
 		</Node>
-		<Node id="20">
+		<Node id="21">
 			<Name>KKTilemap</Name>
 			<Path>Classes/KKTilemap.html</Path>
 		</Node>
-		<Node id="21">
+		<Node id="22">
 			<Name>KKTilemapLayer</Name>
 			<Path>Classes/KKTilemapLayer.html</Path>
 		</Node>
-		<Node id="22">
+		<Node id="23">
 			<Name>KKTilemapLayerNode</Name>
 			<Path>Classes/KKTilemapLayerNode.html</Path>
 		</Node>
-		<Node id="23">
+		<Node id="24">
 			<Name>KKTilemapLayerTiles</Name>
 			<Path>Classes/KKTilemapLayerTiles.html</Path>
 		</Node>
-		<Node id="24">
+		<Node id="25">
 			<Name>KKTilemapNode</Name>
 			<Path>Classes/KKTilemapNode.html</Path>
 		</Node>
-		<Node id="25">
+		<Node id="26">
 			<Name>KKTilemapObject</Name>
 			<Path>Classes/KKTilemapObject.html</Path>
 		</Node>
-		<Node id="26">
+		<Node id="27">
 			<Name>KKTilemapObjectLayerNode</Name>
 			<Path>Classes/KKTilemapObjectLayerNode.html</Path>
 		</Node>
-		<Node id="27">
+		<Node id="28">
 			<Name>KKTilemapPolyObject</Name>
 			<Path>Classes/KKTilemapPolyObject.html</Path>
 		</Node>
-		<Node id="28">
+		<Node id="29">
 			<Name>KKTilemapProperties</Name>
 			<Path>Classes/KKTilemapProperties.html</Path>
 		</Node>
-		<Node id="29">
+		<Node id="30">
 			<Name>KKTilemapTileLayerNode</Name>
 			<Path>Classes/KKTilemapTileLayerNode.html</Path>
 		</Node>
-		<Node id="30">
+		<Node id="31">
 			<Name>KKTilemapTileProperties</Name>
 			<Path>Classes/KKTilemapTileProperties.html</Path>
 		</Node>
-		<Node id="31">
+		<Node id="32">
 			<Name>KKTilemapTileset</Name>
 			<Path>Classes/KKTilemapTileset.html</Path>
 		</Node>
-		<Node id="32">
+		<Node id="33">
 			<Name>KKView</Name>
 			<Path>Classes/KKView.html</Path>
 		</Node>
-		<Node id="33">
+		<Node id="34">
 			<Name>KKViewController</Name>
 			<Path>Classes/KKViewController.html</Path>
 		</Node>
-		<Node id="34">
+		<Node id="35">
 			<Name>KTTilemapRectangleObject</Name>
 			<Path>Classes/KTTilemapRectangleObject.html</Path>
 		</Node>
-		<Node id="35">
+		<Node id="36">
 			<Name>KTTilemapTileObject</Name>
 			<Path>Classes/KTTilemapTileObject.html</Path>
 		</Node>
-		<Node id="36">
+		<Node id="37">
 			<Name>KoboldKit</Name>
 			<Path>Classes/KoboldKit.html</Path>
 		</Node>
-		<Node id="37">
+		<Node id="38">
 			<Name>XMLWriter</Name>
 			<Path>Classes/XMLWriter.html</Path>
 		</Node>
 		
-		<Node id="38">
+		<Node id="39">
 			<Name>NSCoder(KoboldKit)</Name>
 			<Path>Categories/NSCoder+KoboldKit.html</Path>
 		</Node>
-		<Node id="39">
+		<Node id="40">
 			<Name>SKNode(KoboldKit)</Name>
 			<Path>Categories/SKNode+KoboldKit.html</Path>
 		</Node>
 		
-		<Node id="40">
+		<Node id="41">
 			<Name>KKSceneEventDelegate</Name>
 			<Path>Protocols/KKSceneEventDelegate.html</Path>
 		</Node>
-		<Node id="41">
+		<Node id="42">
 			<Name>NSXMLStreamWriter</Name>
 			<Path>Protocols/NSXMLStreamWriter.html</Path>
 		</Node>
-		<Node id="42">
+		<Node id="43">
 			<Name>XMLStreamWriter</Name>
 			<Path>Protocols/XMLStreamWriter.html</Path>
 		</Node>

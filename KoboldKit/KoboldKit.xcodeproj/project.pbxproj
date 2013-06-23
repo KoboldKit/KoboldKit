@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC1E506F1775ED500063CEDC /* KKCameraFollowsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1E506E1775ED500063CEDC /* KKCameraFollowsBehavior.m */; };
+		DC1E506F1775ED500063CEDC /* KKCameraFollowBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */; };
 		DC2F43BE176CB1F7005846A7 /* crawl-tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B2176CB1F7005846A7 /* crawl-tilemap.tmx */; };
 		DC2F43BF176CB1F7005846A7 /* crawl-tiles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B3176CB1F7005846A7 /* crawl-tiles-hd.plist */; };
 		DC2F43C0176CB1F7005846A7 /* crawl-tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B4176CB1F7005846A7 /* crawl-tiles-hd.png */; };
@@ -80,6 +80,7 @@
 		DC4DE927176CA25F003E4087 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
 		DC4DE92A176CA503003E4087 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
 		DC4DE92C176CA52F003E4087 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
+		DC8CD4AA17760E0D0005AB51 /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */; };
 		DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC9CFCFE17749872004C981A /* Jetpack.atlas */; };
 		DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
 		DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
@@ -92,7 +93,7 @@
 		DC9CFD3D1774CB47004C981A /* KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD3A1774CB47004C981A /* KoboldKit.m */; };
 		DC9CFD3F1774CB97004C981A /* KKButtonBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD2E1774CAE2004C981A /* KKButtonBehavior.m */; };
 		DC9CFD401774CB97004C981A /* KKControlPadBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD301774CAE2004C981A /* KKControlPadBehavior.m */; };
-		DC9CFD411774CB97004C981A /* KKFollowsTargetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD321774CAE2004C981A /* KKFollowsTargetBehavior.m */; };
+		DC9CFD411774CB97004C981A /* KKFollowTargetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */; };
 		DC9CFD491774CBE1004C981A /* KKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD481774CBE1004C981A /* KKVersion.m */; };
 		DCDD2DAC1769FD0A00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
 		DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
@@ -145,8 +146,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC1E506D1775ED500063CEDC /* KKCameraFollowsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCameraFollowsBehavior.h; sourceTree = "<group>"; };
-		DC1E506E1775ED500063CEDC /* KKCameraFollowsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCameraFollowsBehavior.m; sourceTree = "<group>"; };
+		DC1E506D1775ED500063CEDC /* KKCameraFollowBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCameraFollowBehavior.h; sourceTree = "<group>"; };
+		DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCameraFollowBehavior.m; sourceTree = "<group>"; };
 		DC2F43B0176CB1F7005846A7 /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
 		DC2F43B2176CB1F7005846A7 /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
 		DC2F43B3176CB1F7005846A7 /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
@@ -237,6 +238,8 @@
 		DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KoboldKit.h"; sourceTree = "<group>"; };
 		DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KoboldKit.m"; sourceTree = "<group>"; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
+		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC9CFCFE17749872004C981A /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
 		DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeBehavior.h; sourceTree = "<group>"; };
 		DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
@@ -259,8 +262,8 @@
 		DC9CFD2E1774CAE2004C981A /* KKButtonBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKButtonBehavior.m; sourceTree = "<group>"; };
 		DC9CFD2F1774CAE2004C981A /* KKControlPadBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKControlPadBehavior.h; sourceTree = "<group>"; };
 		DC9CFD301774CAE2004C981A /* KKControlPadBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKControlPadBehavior.m; sourceTree = "<group>"; };
-		DC9CFD311774CAE2004C981A /* KKFollowsTargetBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFollowsTargetBehavior.h; sourceTree = "<group>"; };
-		DC9CFD321774CAE2004C981A /* KKFollowsTargetBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFollowsTargetBehavior.m; sourceTree = "<group>"; };
+		DC9CFD311774CAE2004C981A /* KKFollowTargetBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFollowTargetBehavior.h; sourceTree = "<group>"; };
+		DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFollowTargetBehavior.m; sourceTree = "<group>"; };
 		DC9CFD391774CB47004C981A /* KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoboldKit.h; sourceTree = "<group>"; };
 		DC9CFD3A1774CB47004C981A /* KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoboldKit.m; sourceTree = "<group>"; };
 		DC9CFD3B1774CB47004C981A /* KoboldKitLibrary-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KoboldKitLibrary-Prefix.pch"; path = "../KoboldKitLibrary-Prefix.pch"; sourceTree = "<group>"; };
@@ -537,10 +540,12 @@
 				DC9CFD2E1774CAE2004C981A /* KKButtonBehavior.m */,
 				DC9CFD2F1774CAE2004C981A /* KKControlPadBehavior.h */,
 				DC9CFD301774CAE2004C981A /* KKControlPadBehavior.m */,
-				DC9CFD311774CAE2004C981A /* KKFollowsTargetBehavior.h */,
-				DC9CFD321774CAE2004C981A /* KKFollowsTargetBehavior.m */,
-				DC1E506D1775ED500063CEDC /* KKCameraFollowsBehavior.h */,
-				DC1E506E1775ED500063CEDC /* KKCameraFollowsBehavior.m */,
+				DC9CFD311774CAE2004C981A /* KKFollowTargetBehavior.h */,
+				DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */,
+				DC1E506D1775ED500063CEDC /* KKCameraFollowBehavior.h */,
+				DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */,
+				DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */,
+				DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -903,6 +908,7 @@
 			files = (
 				DC4DE911176C9E2B003E4087 /* KKTilemapProperties.m in Sources */,
 				DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */,
+				DC8CD4AA17760E0D0005AB51 /* KKStayInBoundsBehavior.m in Sources */,
 				DC9CFD491774CBE1004C981A /* KKVersion.m in Sources */,
 				DC9CFD401774CB97004C981A /* KKControlPadBehavior.m in Sources */,
 				DC9CFD1D1774CA84004C981A /* KKScene.m in Sources */,
@@ -910,7 +916,7 @@
 				DC4DE926176CA25F003E4087 /* KKIvarSetter.m in Sources */,
 				DC2F43EA17708FEC005846A7 /* KKTilemapNode.m in Sources */,
 				DC9CFD1F1774CA84004C981A /* KKViewController.m in Sources */,
-				DC9CFD411774CB97004C981A /* KKFollowsTargetBehavior.m in Sources */,
+				DC9CFD411774CB97004C981A /* KKFollowTargetBehavior.m in Sources */,
 				DC4DE915176C9E2B003E4087 /* KKTMXReader.m in Sources */,
 				DC4DE913176C9E2B003E4087 /* KKTilemapTileset.m in Sources */,
 				DC9CFD3D1774CB47004C981A /* KoboldKit.m in Sources */,
@@ -919,7 +925,7 @@
 				DC4DE91C176CA0AC003E4087 /* base64.c in Sources */,
 				DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */,
 				DC9CFD121774CA5B004C981A /* SKNode+KoboldKit.m in Sources */,
-				DC1E506F1775ED500063CEDC /* KKCameraFollowsBehavior.m in Sources */,
+				DC1E506F1775ED500063CEDC /* KKCameraFollowBehavior.m in Sources */,
 				DC4DE90D176C9E2B003E4087 /* KKTilemapLayerTiles.m in Sources */,
 				DC9CFD3F1774CB97004C981A /* KKButtonBehavior.m in Sources */,
 				DC4DE916176C9E2B003E4087 /* KKTMXWriter.m in Sources */,

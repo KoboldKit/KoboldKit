@@ -1,25 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapObjectLayerNode.html">
+	<File path="Classes/KKTilemapObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObjectLayerNode</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObject</TokenIdentifier>
+			<Abstract type="html">TMX "Object" - either a rectangle, open polygon (polyline) or closed polygon. Common object base class. Use the concrete
+   subclasses KTTilemapPolyObject, KTTilemapRectangleObject or KTTilemapTileObject if you need access to each object type's specific properties.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
 			<NodeRef refid="26"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapObjectLayerNode/objectLayerWithLayer:tilemap:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setName:</TokenIdentifier>
+			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>+ (id)objectLayerWithLayer:(KKTilemapLayer *)layer tilemap:(KKTilemap *)tilemap</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/objectLayerWithLayer:tilemap:</Anchor>
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/name</TokenIdentifier>
+			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/name</TokenIdentifier>
+			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setUserType:</TokenIdentifier>
+			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
+   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *userType</Declaration>
+			
+			
+			<Anchor>//api/name/userType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/userType</TokenIdentifier>
+			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
+   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *userType</Declaration>
+			
+			
+			<Anchor>//api/name/userType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/userType</TokenIdentifier>
+			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
+   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *userType</Declaration>
+			
+			
+			<Anchor>//api/name/userType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setProperties:</TokenIdentifier>
+			<Abstract type="html">The object's properties.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/properties</TokenIdentifier>
+			<Abstract type="html">The object's properties.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/properties</TokenIdentifier>
+			<Abstract type="html">The object's properties.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) KKTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setPosition:</TokenIdentifier>
+			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/position</TokenIdentifier>
+			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/position</TokenIdentifier>
+			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setSize:</TokenIdentifier>
+			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/size</TokenIdentifier>
+			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/size</TokenIdentifier>
+			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setObjectType:</TokenIdentifier>
+			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
+   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) KKTilemapObjectType objectType</Declaration>
+			
+			
+			<Anchor>//api/name/objectType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/objectType</TokenIdentifier>
+			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
+   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) KKTilemapObjectType objectType</Declaration>
+			
+			
+			<Anchor>//api/name/objectType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/objectType</TokenIdentifier>
+			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
+   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) KKTilemapObjectType objectType</Declaration>
+			
+			
+			<Anchor>//api/name/objectType</Anchor>
 		</Token>
 		
 	</File>

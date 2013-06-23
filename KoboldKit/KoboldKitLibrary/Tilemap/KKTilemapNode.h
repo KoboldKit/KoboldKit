@@ -25,6 +25,10 @@
 /** @returns the tilemap model object containing the tilemap's data.*/
 @property (atomic) KKTilemap* tilemap;
 
+/** @returns The tilemap's bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+ (horizontal or vertical). */
+@property (atomic, readonly) CGRect bounds;
+
 /** The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it's the first tile layer.
  @returns the "main" tile layer node.  */
 @property (nonatomic, readonly) KKTilemapTileLayerNode* mainTileLayerNode;

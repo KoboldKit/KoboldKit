@@ -52,13 +52,13 @@
 	
 	<option value="//api/name/layers">&nbsp;&nbsp;&nbsp;&nbsp;layers</option>
 	
-	<option value="//api/name/mapSize">&nbsp;&nbsp;&nbsp;&nbsp;mapSize</option>
-	
 	<option value="//api/name/orientation">&nbsp;&nbsp;&nbsp;&nbsp;orientation</option>
 	
 	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
 	
 	<option value="//api/name/scaleTilesetSpacingAndMargin">&nbsp;&nbsp;&nbsp;&nbsp;scaleTilesetSpacingAndMargin</option>
+	
+	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
 	
 	<option value="//api/name/tilesets">&nbsp;&nbsp;&nbsp;&nbsp;tilesets</option>
 	
@@ -142,13 +142,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layers">layers</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapSize">mapSize</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orientation">orientation</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scaleTilesetSpacingAndMargin">scaleTilesetSpacingAndMargin</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilesets">tilesets</a></span></li>
 	
@@ -241,7 +241,7 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/mapSize">&nbsp;&nbsp;mapSize</a></code>
+		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
 		<span class="tooltip"><p>The size of the map, in tiles.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -249,14 +249,14 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gridSize">&nbsp;&nbsp;gridSize</a></code>
-		<span class="tooltip"><p>The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as &ldquo;Tile Size&rdquo;.</p></span>
+		<span class="tooltip"><p>The <a href="#//api/name/size">size</a> of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as &ldquo;Tile Size&rdquo;.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/largestTileSize">&nbsp;&nbsp;largestTileSize</a></code>
-		<span class="tooltip"><p>This is the tileSize of the tileset with the largest tile size. Will be the same as <a href="#//api/name/gridSize">gridSize</a> for tilemaps whose <a href="#//api/name/tilesets">tilesets</a> all use the same tile size.
+		<span class="tooltip"><p>This is the tileSize of the tileset with the largest tile <a href="#//api/name/size">size</a>. Will be the same as <a href="#//api/name/gridSize">gridSize</a> for tilemaps whose <a href="#//api/name/tilesets">tilesets</a> all use the same tile <a href="#//api/name/size">size</a>.
    But if you use <a href="#//api/name/tilesets">tilesets</a> of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
    tiles of all sizes properly appear on the screen and do not &ldquo;pop in/out&rdquo; near the screen borders. Valid only after <a href="#//api/name/tilesets">tilesets</a> have loaded their textures.</p></span>
 	</span>
@@ -508,7 +508,7 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as &ldquo;Tile Size&rdquo;.</p>
+		<p>The <a href="#//api/name/size">size</a> of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as &ldquo;Tile Size&rdquo;.</p>
 	</div>		
 	
 	
@@ -519,7 +519,7 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The size of the grid (tiles) in points.</p>
+		<p>The <a href="#//api/name/size">size</a> of the grid (tiles) in points.</p>
 	</div>
 	
 	
@@ -607,8 +607,8 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>   Caution: Some combination of values and scale factor may cause inaccuracies, and possibly visual glitches. For example a scale factor of 1.5 and a odd-numbered tile size of 25x25 would
-   make the upscaled tilesize 37.5x37.5 - but tile sizes should remain integer values this will affect tile positions and subsequently may introduce issues (this has not been tested, and
+		<p>   Caution: Some combination of values and scale factor may cause inaccuracies, and possibly visual glitches. For example a scale factor of 1.5 and a odd-numbered tile <a href="#//api/name/size">size</a> of 25x25 would
+   make the upscaled tile<a href="#//api/name/size">size</a> 37.5x37.5 - but tile sizes should remain integer values this will affect tile positions and subsequently may introduce issues (this has not been tested, and
    is not recommended - tile sizes really should remain integer values).</p>
 
 <p>   Notes on what this does and what is required to make it work:</p>
@@ -643,7 +643,7 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This is the tileSize of the tileset with the largest tile size. Will be the same as <a href="#//api/name/gridSize">gridSize</a> for tilemaps whose <a href="#//api/name/tilesets">tilesets</a> all use the same tile size.
+		<p>This is the tileSize of the tileset with the largest tile <a href="#//api/name/size">size</a>. Will be the same as <a href="#//api/name/gridSize">gridSize</a> for tilemaps whose <a href="#//api/name/tilesets">tilesets</a> all use the same tile <a href="#//api/name/size">size</a>.
    But if you use <a href="#//api/name/tilesets">tilesets</a> of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
    tiles of all sizes properly appear on the screen and do not &ldquo;pop in/out&rdquo; near the screen borders. Valid only after <a href="#//api/name/tilesets">tilesets</a> have loaded their textures.</p>
 	</div>		
@@ -656,7 +656,7 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The largest tile size found in the <a href="#//api/name/tilesets">tilesets</a> used by this tilemap.</p>
+		<p>The largest tile <a href="#//api/name/size">size</a> found in the <a href="#//api/name/tilesets">tilesets</a> used by this tilemap.</p>
 	</div>
 	
 	
@@ -697,45 +697,6 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
 		<p>An array of KTTilemapLayer objects.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemap.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/mapSize" title="mapSize"></a>
-	<h3 class="subsubtitle method-title">mapSize</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The size of the map, in tiles.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGSize mapSize</code></div>
-	
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The size of the map, in tiles.</p>
 	</div>
 	
 	
@@ -882,6 +843,45 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="subsubtitle method-title">size</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The size of the map, in tiles.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGSize size</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The size of the map, in tiles.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/tilesets" title="tilesets"></a>
 	<h3 class="subsubtitle method-title">tilesets</h3>
 	
@@ -992,12 +992,12 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>mapSize</em></dt>
-			<dd><p>The size of the tilemap, in tiles.</p></dd>
+			<dd><p>The <a href="#//api/name/size">size</a> of the tilemap, in tiles.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>gridSize</em></dt>
-			<dd><p>The grid size (tile size) of the tilemap.</p></dd>
+			<dd><p>The grid <a href="#//api/name/size">size</a> (tile <a href="#//api/name/size">size</a>) of the tilemap.</p></dd>
 		</dl>
 		
 	</div>
@@ -1245,7 +1245,7 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>   @warning: Both <a href="#//api/name/tilesets">tilesets</a> need to be compatible (ie same tile size) and the otherTileset should have the same number of tiles in the same place as the originalTileset
+		<p>   @warning: Both <a href="#//api/name/tilesets">tilesets</a> need to be compatible (ie same tile <a href="#//api/name/size">size</a>) and the otherTileset should have the same number of tiles in the same place as the originalTileset
    to prevent rendering issues (ie empty tiles, wrong tiles, crashes at the worst).</p>
 	</div>
 	
@@ -1463,7 +1463,7 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-22)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-23)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

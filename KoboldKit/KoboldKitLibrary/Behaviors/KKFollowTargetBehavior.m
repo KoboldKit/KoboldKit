@@ -6,21 +6,21 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKFollowsTargetBehavior.h"
+#import "KKFollowTargetBehavior.h"
 
-@implementation KKFollowsTargetBehavior
+@implementation KKFollowTargetBehavior
 
-+(id) followsTarget:(SKNode*)target
++(id) followTarget:(SKNode*)target
 {
 	return [[self alloc] initWithTarget:target offset:CGPointZero multiplier:CGPointMake(1.0, 1.0)];
 }
 
-+(id) followsTarget:(SKNode*)target offset:(CGPoint)positionOffset
++(id) followTarget:(SKNode*)target offset:(CGPoint)positionOffset
 {
 	return [[self alloc] initWithTarget:target offset:positionOffset multiplier:CGPointMake(1.0, 1.0)];
 }
 
-+(id) followsTarget:(SKNode*)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier
++(id) followTarget:(SKNode*)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier
 {
 	return [[self alloc] initWithTarget:target offset:positionOffset multiplier:positionMultiplier];
 }
@@ -80,7 +80,7 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 
 -(id) copyWithZone:(NSZone*)zone
 {
-	KKFollowsTargetBehavior* copy = [[super copyWithZone:zone] init];
+	KKFollowTargetBehavior* copy = [[super copyWithZone:zone] init];
 	copy->_target = _target;
 	copy->_positionOffset = _positionOffset;
 	copy->_positionMultiplier = _positionMultiplier;
@@ -94,7 +94,7 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
 	
-	KKFollowsTargetBehavior* synchPosBehavior = (KKFollowsTargetBehavior*)behavior;
+	KKFollowTargetBehavior* synchPosBehavior = (KKFollowTargetBehavior*)behavior;
 	return (synchPosBehavior.target == _target &&
 			CGPointEqualToPoint(synchPosBehavior.positionOffset, _positionOffset) &&
 			CGPointEqualToPoint(synchPosBehavior.positionMultiplier, _positionMultiplier));

@@ -11,7 +11,7 @@
 
 /** Updates the owning node's position from another node's position, applying optional offset and/or multiplier.
  The multiplier can be used to achieve a parallaxing effect. */
-@interface KKFollowsTargetBehavior : KKNodeBehavior
+@interface KKFollowTargetBehavior : KKNodeBehavior
 
 /** (not documented) */
 @property (nonatomic, weak) SKNode* target;
@@ -20,8 +20,11 @@
 /** (not documented) */
 @property (nonatomic) CGPoint positionOffset;
 
-+(id) followsTarget:(SKNode*)target;
-+(id) followsTarget:(SKNode*)target offset:(CGPoint)positionOffset;
-+(id) followsTarget:(SKNode*)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier;
+/** (not documented) */
++(id) followTarget:(SKNode*)target;
+/** (not documented) */
++(id) followTarget:(SKNode*)target offset:(CGPoint)positionOffset;
+/** (not documented) */
++(id) followTarget:(SKNode*)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier;
 
 @end

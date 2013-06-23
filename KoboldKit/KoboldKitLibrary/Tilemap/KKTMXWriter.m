@@ -139,8 +139,8 @@ NSString* stringFromUnsignedInt(unsigned int u)
 			break;
 	} /* switch */
 
-	[_xmlWriter writeAttribute:@"width" value:intStringFromFloat(tilemap.mapSize.width)];
-	[_xmlWriter writeAttribute:@"height" value:intStringFromFloat(tilemap.mapSize.height)];
+	[_xmlWriter writeAttribute:@"width" value:intStringFromFloat(tilemap.size.width)];
+	[_xmlWriter writeAttribute:@"height" value:intStringFromFloat(tilemap.size.height)];
 	[_xmlWriter writeAttribute:@"tilewidth" value:intStringFromFloat(tilemap.gridSize.width)];
 	[_xmlWriter writeAttribute:@"tileheight" value:intStringFromFloat(tilemap.gridSize.height)];
 	[_xmlWriter writeAttribute:@"backgroundcolor" value:tilemap.backgroundColor];
@@ -204,8 +204,8 @@ NSString* stringFromUnsignedInt(unsigned int u)
 	}
 
 	[_xmlWriter writeAttribute:@"name" value:layer.name];
-	[_xmlWriter writeAttribute:@"width" value:intStringFromFloat(layer.tilemap.mapSize.width)];
-	[_xmlWriter writeAttribute:@"height" value:intStringFromFloat(layer.tilemap.mapSize.height)];
+	[_xmlWriter writeAttribute:@"width" value:intStringFromFloat(layer.tilemap.size.width)];
+	[_xmlWriter writeAttribute:@"height" value:intStringFromFloat(layer.tilemap.size.height)];
 	[_xmlWriter writeAttribute:@"opacity" value:stringFromFloat(layer.alpha)];
 	[_xmlWriter writeAttribute:@"visible" value:stringFromInt(!layer.hidden)];
 
@@ -273,7 +273,7 @@ NSString* stringFromUnsignedInt(unsigned int u)
 	[_xmlWriter writeAttribute:@"name" value:object.name];
 	[_xmlWriter writeAttribute:@"type" value:object.userType];
 	[_xmlWriter writeAttribute:@"x" value:intStringFromFloat(object.position.x)];
-	float yPos = (_tilemap.mapSize.height * _tilemap.gridSize.height) - object.position.y;
+	float yPos = (_tilemap.size.height * _tilemap.gridSize.height) - object.position.y;
 	if (object.objectType == KKTilemapObjectTypeRectangle)
 	{
 		yPos -= object.size.height;

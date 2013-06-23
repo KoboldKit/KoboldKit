@@ -37,7 +37,7 @@ typedef enum : unsigned char
 /** @name Map Properties */
 
 /** @returns The size of the map, in tiles. */
-@property (nonatomic) CGSize mapSize;
+@property (nonatomic) CGSize size;
 /** The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".
  @returns The size of the grid (tiles) in points. */
 @property (nonatomic) CGSize gridSize;

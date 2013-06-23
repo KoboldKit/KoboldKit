@@ -38,7 +38,7 @@
 	
 	CGSize sceneSize = self.scene.size;
 	CGSize gridSize = _tilemap.gridSize;
-	CGSize mapSize = _tilemap.mapSize;
+	CGSize mapSize = _tilemap.size;
 	
 	_visibleTilesOnScreen = CGSizeMake(sceneSize.width / gridSize.width + 1, sceneSize.height / gridSize.height + 1);
 	_viewBoundary = CGSizeMake(-(mapSize.width * gridSize.width - (_visibleTilesOnScreen.width - 1) * gridSize.width),
@@ -49,8 +49,8 @@
 		[self createTilesetBatchNodes];
 	}
 	
-	// make sure previous position does not match current to force first-time draw
-	_previousPosition = CGPointMake(INT64_MAX, INT64_MIN);
+	// force initial draw
+	_tilemap.modified = YES;
 }
 
 -(void) createTilesetBatchNodes
@@ -81,9 +81,6 @@
 			tileSprite.hidden = YES;
 			tileSprite.anchorPoint = CGPointZero;
 			[_visibleTiles addObject:tileSprite];
-			
-			// FIXME: for whatever reasons tile sprites won't draw in batch nodes when not added immediately
-			[self addChild:tileSprite];
 		}
 	}
 }
@@ -95,7 +92,7 @@
 	if (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified)
 	{
 		// create initial tiles to fill screen
-		CGSize mapSize = _tilemap.mapSize;
+		CGSize mapSize = _tilemap.size;
 		CGSize gridSize = _tilemap.gridSize;
 		
 		CGPoint tilemapOffset = ccpSub(self.scene.frame.origin, self.parent.position);
@@ -121,10 +118,6 @@
 		KKTilemapTileset* previousTileset = nil;
 		NSUInteger countBatchNodeReparenting = 0;
 		
-#pragma message "Re-implement endless scrolling (wrap-around)"
-		//BOOL endlessScrollingHorizontal = _tileLayer.endlessScrollingHorizontal;
-		//BOOL endlessScrollingVertical = _tileLayer.endlessScrollingVertical;
-		
 		for (int viewTilePosY = 0; viewTilePosY < _visibleTilesOnScreen.height; viewTilePosY++)
 		{
 			for (int viewTilePosX = 0; viewTilePosX < _visibleTilesOnScreen.width; viewTilePosX++)
@@ -137,35 +130,9 @@
 				
 				// get the proper git coordinate, wrap around as needed
 				CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x, (mapSize.height - 1 - viewTilePosY) - offsetInTiles.y);
-				
-				/*
-				if (endlessScrollingHorizontal)
-				{
-					// fix coordinates for endless scrolling as coords need to be wrapped to be in bounds of the map
-					gidCoordInLayer.x = (int)gidCoordInLayer.x % (int)mapSize.width;
-					
-					// ensure positive coordinates
-					if (gidCoordInLayer.x < 0.0f)
-					{
-						gidCoordInLayer.x += mapSize.width;
-					}
-				}
-				
-				if (endlessScrollingVertical)
-				{
-					// fix coordinates for endless scrolling as coords need to be wrapped to be in bounds of the map
-					gidCoordInLayer.y = (int)gidCoordInLayer.y % (int)mapSize.height;
-					
-					// ensure positive coordinates
-					if (gidCoordInLayer.y < 0.0f)
-					{
-						gidCoordInLayer.y += mapSize.height;
-					}
-				}
-				 */
-				
-				// no tile at this coordinate?
 				gid_t gid = [_layer tileGidWithFlagsAt:gidCoordInLayer];
+
+				// no tile at this coordinate? If so, skip drawing this tile.
 				if ((gid & KKTilemapTileFlipMask) == 0)
 				{
 					tileSprite.hidden = YES;

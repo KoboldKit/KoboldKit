@@ -264,7 +264,7 @@
 {
 	for (id observer in _inputObservers)
 	{
-		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
+		if ([observer respondsToSelector:@selector(touchesMoved:withEvent:)])
 		{
 			[observer touchesMoved:touches withEvent:event];
 		}
@@ -275,7 +275,7 @@
 {
 	for (id observer in _inputObservers)
 	{
-		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
+		if ([observer respondsToSelector:@selector(touchesEnded:withEvent:)])
 		{
 			[observer touchesEnded:touches withEvent:event];
 		}
@@ -286,7 +286,7 @@
 {
 	for (id observer in _inputObservers)
 	{
-		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
+		if ([observer respondsToSelector:@selector(touchesCancelled:withEvent:)])
 		{
 			[observer touchesCancelled:touches withEvent:event];
 		}
