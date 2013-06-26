@@ -21,7 +21,7 @@
 }
 
 /** Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile's properties. */
-@property (nonatomic, readonly) NSDictionary* properties;
+@property (atomic, readonly) NSDictionary* properties;
 
 /** Sets the number for the key on the tile gid's properties. Creates an instance of KTTilemapProperties if the gid has no properties yet. Returns that tile's properties. */
 -(KKTilemapProperties*) propertiesForGid:(gid_t)gid setNumber:(KKMutableNumber*)number forKey:(NSString*)key;

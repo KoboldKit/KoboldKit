@@ -13,6 +13,8 @@
 @class KKTilemapLayerTiles;
 @class KKTilemapProperties;
 @class KKTilemapObject;
+@class KKTilemapLayerContourTracer;
+@class KKIntegerArray;
 
 /** TMX Layer data. Can be either a tile or object layer. Depending on which it is not all properties are used, this is noted in the property descriptions. */
 @interface KKTilemapLayer : NSObject
@@ -21,51 +23,52 @@
 	KKTilemapProperties* _properties;
 	KKTilemapLayerTiles* _tiles;
 	NSMutableArray* _objects;
+	KKTilemapLayerContourTracer* _contour;
 }
 
 /** @name Common Layer Properties */
 
 /** The name of the layer. TILED-EDITABLE
  @returns The name of the layer. */
-@property (nonatomic, copy) NSString* name;
+@property (atomic, copy) NSString* name;
 /** @returns The layer's properties. */
-@property (nonatomic, readonly) KKTilemapProperties* properties;
+@property (atomic, readonly) KKTilemapProperties* properties;
 /** Reference to the tilemap to allow KTTileLayerViewController and KTObjectLayerViewController quick access to the KTTilemap object. 
  @returns The tilemap the layer is part of. */
-@property (nonatomic, weak) KKTilemap* tilemap;
+@property (atomic, weak) KKTilemap* tilemap;
 /** Is set if this layer is an Object Layer. If NO it is a Tile Layer.
  @returns YES if this is an object layer. */
-@property (nonatomic) BOOL isObjectLayer;
+@property (atomic) BOOL isObjectLayer;
 /** Is set if this layer is a Tile Layer. If NO it is a Object Layer.
  @returns YES if this is a tile layer. */
-@property (nonatomic) BOOL isTileLayer;
+@property (atomic) BOOL isTileLayer;
 /** Whether the tiles on this layer are visible or not. If a tile layer is hidden, it will still create the tiles and therefore
  use the same memory as if the tiles were visible. Default: NO. TILED-EDITABLE
  @returns YES if the layer is hidden (not visible). */
-@property (nonatomic) BOOL hidden;
+@property (atomic) BOOL hidden;
 
 /** @name Tile Layer Properties */
 
 /** (Tile Layers Only) The layer's size (in tiles). The layer size is usually identical to the mapSize property of KTTilemap.
  @returns The size of the tile layer, in tiles. */
-@property (nonatomic) CGSize size;
-@property (nonatomic) unsigned int tileCount;
+@property (atomic) CGSize size;
+@property (atomic) unsigned int tileCount;
 /** How opaque the layer is. Value ranges from 0 (fully transparent) to 1 (fully opaque).
    The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE
  @returns The alpha (opacity) of the layer. */
-@property (nonatomic) unsigned char alpha;
+@property (atomic) unsigned char alpha;
 
 /** If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
  endlessScrollingHorizontal and endlessScrollingVertical. Returns YES only if both endlessScrollingHorizontal and endlessScrollingVertical are YES.
  Default: NO. TILED-EDITABLE
  @returns YES if the map wraps around and repeats in all directions. */
-@property (nonatomic) BOOL endlessScrolling;
+@property (atomic) BOOL endlessScrolling;
 /** If YES, this layer will scroll endlessly along the X axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE
  @returns YES if the map wraps around and repeats along the horizontal axis. */
-@property (nonatomic) BOOL endlessScrollingHorizontal;
+@property (atomic) BOOL endlessScrollingHorizontal;
 /** If YES, this layer will scroll endlessly along the Y axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE
  @returns YES if the map wraps around and repeats along the vertical axis. */
-@property (nonatomic) BOOL endlessScrollingVertical;
+@property (atomic) BOOL endlessScrollingVertical;
 
 /** Determines how fast this layer moves in both directions when scrolling the tilemap. Value between -1.0f and 1.0f, usually you only use the range from 0.0f to 1.0f.
    Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).
@@ -84,7 +87,7 @@
 /** (Tile Layers Only) Reference to the KTTilemapLayerTiles object which contains the memory buffer for the tile GIDs of this tile layer. Always nil
  for object layers.
  @returns A tile layer's tiles. */
-@property (nonatomic, readonly) KKTilemapLayerTiles* tiles;
+@property (atomic, readonly) KKTilemapLayerTiles* tiles;
 
 /** Returns the tile GID at a specific tile coordinate, without the flip flags normally encoded in the GID. Returns 0 if there is no tile set at this coordinate
    (empty tile) or if the tile coordinate is outside the boundaries of the layer.
@@ -109,13 +112,20 @@
  @param tileCoord The tile coordinate of the tile to clear (remove). */
 -(void) clearTileAt:(CGPoint)tileCoord;
 
+/** @name Generating Tile Layer Contours */
+
+/** Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.
+ @param blockingGids A list of GID numbers which are considered blocking.
+ @returns An array containing KKPointArray, each defines a single contour's line segments. */
+-(NSArray*) generateContourWithBlockingGids:(KKIntegerArray*)blockingGids;
+
 /** @name Working with Layer Objects */
 
 /** (Object Layers Only) A list of "objects" on this layer. These "objects" are Tiled's rectangles, polylines and polygons. They can be used to position
  tilemap objects not editable in Tiled by (normally) using the first point of such an "object" as the origin for the actual game object.
  Always nil for tile layers.
  @returns An array of an object layer's KTTilemapObject objects. */
-@property (nonatomic, readonly) NSArray* objects;
+@property (atomic, readonly) NSArray* objects;
 
 /** Adds a tilemap object if the layer is an object layer. Ignored if the layer is a tile layer.
  @param object The tilemap object to add to the layer. */

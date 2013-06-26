@@ -145,13 +145,13 @@
 }
 
 /** .. */
-@property (nonatomic, retain, readwrite) NSString* indentation;
+@property (atomic, retain, readwrite) NSString* indentation;
 /** .. */
-@property (nonatomic, retain, readwrite) NSString* lineBreak;
+@property (atomic, retain, readwrite) NSString* lineBreak;
 /** .. */
-@property (nonatomic, assign, readwrite) BOOL automaticEmptyElements;
+@property (atomic, assign, readwrite) BOOL automaticEmptyElements;
 /** .. */
-@property (nonatomic, readonly) int level;
+@property (atomic, readonly) int level;
 
 /** helpful for formatting, special needs
  write linebreak, if any */

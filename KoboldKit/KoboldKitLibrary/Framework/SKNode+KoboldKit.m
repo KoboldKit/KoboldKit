@@ -320,8 +320,6 @@
 
 #pragma mark SK*Node Categories
 
-@implementation SKScene (KoboldKit)
-@end
 @implementation SKCropNode (KoboldKit)
 @end
 @implementation SKEffectNode (KoboldKit)

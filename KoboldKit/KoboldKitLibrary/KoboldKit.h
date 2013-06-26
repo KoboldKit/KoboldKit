@@ -17,12 +17,15 @@
 
 // categories
 #import "SKNode+KoboldKit.h"
+#import "SKScene+KoboldKit.h"
 
 // subclasses
 #import "KKViewController.h"
 #import "KKView.h"
 #import "KKNode.h"
 #import "KKScene.h"
+#import "KKPhysicsBody.h"
+#import "KKViewAnchorNode.h"
 
 // framework
 #import "KKNodeController.h"
@@ -39,6 +42,7 @@
 // tilemap model
 #import "KKTilemap.h"
 #import "KKTilemapLayer.h"
+#import "KKTilemapLayerContourTracer.h"
 #import "KKTilemapLayerTiles.h"
 #import "KKTilemapObject.h"
 #import "KKTilemapProperties.h"
@@ -54,6 +58,8 @@
 
 // addons
 #import "KKMutableNumber.h"
+#import "KKIntegerArray.h"
+#import "KKPointArray.h"
 #import "NSCoder+KoboldKit.h"
 #import "NSObject+KoboldKit.h"
 

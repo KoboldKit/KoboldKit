@@ -28,7 +28,6 @@ typedef SKShapeNode KKShapeNode;
 typedef SKSpriteNode KKSpriteNode;
 typedef SKVideoNode KKVideoNode;
 
-typedef SKPhysicsBody KKPhysicsBody;
 typedef SKPhysicsContact KKPhysicsContact;
 typedef SKPhysicsJoint KKPhysicsJoint;
 typedef SKPhysicsJointFixed KKPhysicsJointFixed;

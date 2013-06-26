@@ -21,11 +21,11 @@
 @interface KKTilemapLayerTiles : NSObject
 
 /** Returns the memory buffer containing a layer's tile GIDs. */
-@property (nonatomic, readonly) gid_t* gid;
+@property (atomic, readonly) gid_t* gid;
 /** Returns the size (in bytes) of the GID memory buffer. Equal to (mapSize.width * mapSize.height * sizeof(gid_t)). */
-@property (nonatomic, readonly) unsigned int gidSize;
+@property (atomic, readonly) unsigned int gidSize;
 /** Returns the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height). */
-@property (nonatomic, readonly) unsigned int gidCount;
+@property (atomic, readonly) unsigned int gidCount;
 
 /** Takes an already allocated GID buffer with the given bufferSize (in bytes) and takes ownership for it.
    Which means: you should not free() the tiles buffer, it will be freed by KTTilemapLayerTiles when it deallocates.

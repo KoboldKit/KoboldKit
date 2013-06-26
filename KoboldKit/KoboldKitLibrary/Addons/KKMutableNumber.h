@@ -140,35 +140,35 @@
 -(id) initWithUnsignedShort:(unsigned short)number;
 
 /** Get or set the number's value as/from type BOOL. */
-@property (nonatomic) BOOL boolValue;
+@property (atomic) BOOL boolValue;
 /** get or set the number's value as/from type char */
-@property (nonatomic) char charValue;
+@property (atomic) char charValue;
 /** get or set the number's value as/from type double */
-@property (nonatomic) double doubleValue;
+@property (atomic) double doubleValue;
 /** get or set the number's value as/from type float */
-@property (nonatomic) float floatValue;
+@property (atomic) float floatValue;
 /** get or set the number's value as/from type int */
-@property (nonatomic) int intValue;
+@property (atomic) int intValue;
 /** get or set the number's value as/from type NSInteger */
-@property (nonatomic) NSInteger integerValue;
+@property (atomic) NSInteger integerValue;
 /** get or set the number's value as/from type long long */
-@property (nonatomic) long long longLongValue;
+@property (atomic) long long longLongValue;
 /** get or set the number's value as/from type long */
-@property (nonatomic) long longValue;
+@property (atomic) long longValue;
 /** get or set the number's value as/from type short */
-@property (nonatomic) short shortValue;
+@property (atomic) short shortValue;
 /** get or set the number's value as/from type unsigned char */
-@property (nonatomic) unsigned char unsignedCharValue;
+@property (atomic) unsigned char unsignedCharValue;
 /** get or set the number's value as/from type NSUInteger */
-@property (nonatomic) NSUInteger unsignedIntegerValue;
+@property (atomic) NSUInteger unsignedIntegerValue;
 /** get or set the number's value as/from type unsigned int */
-@property (nonatomic) unsigned int unsignedIntValue;
+@property (atomic) unsigned int unsignedIntValue;
 /** get or set the number's value as/from type unsigned long long */
-@property (nonatomic) unsigned long long unsignedLongLongValue;
+@property (atomic) unsigned long long unsignedLongLongValue;
 /** get or set the number's value as/from type unsigned long */
-@property (nonatomic) unsigned long unsignedLongValue;
+@property (atomic) unsigned long unsignedLongValue;
 /** get or set the number's value as/from type unsigned short */
-@property (nonatomic) unsigned short unsignedShortValue;
+@property (atomic) unsigned short unsignedShortValue;
 
 @end
 

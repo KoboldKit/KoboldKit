@@ -37,32 +37,32 @@ typedef enum : unsigned char
 /** @name Map Properties */
 
 /** @returns The size of the map, in tiles. */
-@property (nonatomic) CGSize size;
+@property (atomic) CGSize size;
 /** The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".
  @returns The size of the grid (tiles) in points. */
-@property (nonatomic) CGSize gridSize;
+@property (atomic) CGSize gridSize;
 /** This is the tileSize of the tileset with the largest tile size. Will be the same as gridSize for tilemaps whose tilesets all use the same tile size.
    But if you use tilesets of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
    tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures.
  @returns The largest tile size found in the tilesets used by this tilemap. */
-@property (nonatomic) CGSize largestTileSize;
+@property (atomic) CGSize largestTileSize;
 /** The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.
  @returns The dictionary of properties.
  */
-@property (nonatomic, readonly) KKTilemapProperties* properties;
+@property (atomic, readonly) KKTilemapProperties* properties;
 
 /** The orientiation (type) of tilemap.
  @returns The map's KKTilemapOrientation. */
-@property (nonatomic) KKTilemapOrientation orientation;
+@property (atomic) KKTilemapOrientation orientation;
 /** The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.
 
    TILED-EDITABLE
  @returns The background color as string. Currently not used by the renderer. */
-@property (nonatomic, copy) NSString* backgroundColor;
+@property (atomic, copy) NSString* backgroundColor;
 /** The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
    Mainly needed for bounds checks, don't change this value.
  @returns The highest-numbered (theoretical) gid considering all tilesets. */
-@property (nonatomic) gid_t highestGid;
+@property (atomic) gid_t highestGid;
 
 #pragma message "Tilemap iPad scale factor still needed with Sprite Kit?"
 
@@ -82,7 +82,7 @@ typedef enum : unsigned char
    TILED-EDITABLE
  
  @returns The iPad scale factor. */
-@property (nonatomic) float iPadScaleFactor;
+@property (atomic) float iPadScaleFactor;
 /** If set to YES, will also scale each tileset's spacing & margin properties. This can be used if you simply upscale an iPhone tileset with an image program,
    which will also increase any existing spacing & margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
    atlas files regardless of the contained image's scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
@@ -90,7 +90,7 @@ typedef enum : unsigned char
 
    TILED-EDITABLE
  @returns Whether to also scale up spacing and margin if iPadScaleFactor is > 1.0. */
-@property (nonatomic) BOOL scaleTilesetSpacingAndMargin;
+@property (atomic) BOOL scaleTilesetSpacingAndMargin;
 
 /** Applies the iPadScaleFactor property. You only need to call this if you're creating a tilemap from scratch at runtime, after your map was completely
    set up. And only if you actually use iPadScaleFactor other than the default. */
@@ -120,7 +120,7 @@ typedef enum : unsigned char
 
 /** List of tilesets (KKTilemapTileset) used by this map.
  @returns An array of KTTilemapTileset objects. */
-@property (nonatomic, readonly) NSArray* tilesets;
+@property (atomic, readonly) NSArray* tilesets;
 
 /** Adds a tileset to the list of tilesets. Only needed when creating or changing a tilemap at runtime.
  @param tileset The tileset to add to the tilemap. */
@@ -156,7 +156,7 @@ typedef enum : unsigned char
 /** List of layers (KKTilemapLayer) used by this map, in the draw order respectively the reverse order they appear
  in Tiled's Layers list (bottom-most = first, top-most = last).
  @returns An array of KTTilemapLayer objects. */
-@property (nonatomic, readonly) NSArray* layers;
+@property (atomic, readonly) NSArray* layers;
 
 /** Adds a layer to the list of layers.
  @param layer The layer to add. */
@@ -168,7 +168,7 @@ typedef enum : unsigned char
 
 // Is set whenever the tilemap changes in a way that requires an immediate redraw in the current frame (tile gid change or tilesets swapped).
 // The modified state is reset automatically by the renderer. You don't normally need to modify it yourself.
-@property (nonatomic) BOOL modified;
+@property (atomic) BOOL modified;
 
 @end
 

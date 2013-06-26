@@ -20,7 +20,7 @@
 }
 
 /** @returns The model's controller object. You should never change this reference yourself! */
-@property (nonatomic, weak) KKNodeController* controller;
+@property (atomic, weak) KKNodeController* controller;
 
 /** @name Bool Variables */
 

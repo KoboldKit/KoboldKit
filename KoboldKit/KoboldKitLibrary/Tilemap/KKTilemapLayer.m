@@ -14,6 +14,8 @@
 #import "KKTilemapLayerTiles.h"
 #import "KKTilemapProperties.h"
 #import "KKTilemapObject.h"
+#import "KKTilemapLayerContourTracer.h"
+#import "KKPointArray.h"
 
 @implementation KKTilemapLayer
 
@@ -144,6 +146,19 @@
 	}
 
 	return _tiles;
+}
+
+#pragma mark Contour
+
+-(NSArray*) generateContourWithBlockingGids:(KKIntegerArray*)blockingGids
+{
+	if (self.isObjectLayer)
+	{
+		return nil;
+	}
+	
+	KKTilemapLayerContourTracer* contour = [KKTilemapLayerContourTracer contourMapFromTileLayer:self blockingGids:blockingGids];
+	return contour.contourSegments;
 }
 
 #pragma mark Objects

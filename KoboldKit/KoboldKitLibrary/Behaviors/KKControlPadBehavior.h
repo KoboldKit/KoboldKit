@@ -29,7 +29,7 @@ extern NSString* const KKControlPadDidChangeDirection;
 @property (atomic) CGFloat deadZone;
 
 /** The D-Pad direction, in KTArcadeInputState directions (using player 1 states). */
-@property (nonatomic, readonly) KKArcadeInputState direction;
+@property (atomic, readonly) KKArcadeInputState direction;
 
 /** Initializes a control pad behavior with either 4 or 8 d-pad directional textures. Start with the texture for "right button pressed"
  and continue adding textures in counter-clockwise order (ie "upper right button pressed", "up button pressed", and so on).

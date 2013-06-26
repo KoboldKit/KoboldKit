@@ -10,6 +10,7 @@
 #import "KKNode.h"
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
+#import "KKViewAnchorNode.h"
 
 @implementation KKScene
 
@@ -358,6 +359,19 @@
 {
 	[KKNode sendChildrenWillMoveFromParentWithNode:self];
 	[super removeChildrenInArray:array];
+}
+
+#pragma mark AnchorPoint
+
+-(void) setAnchorPoint:(CGPoint)anchorPoint
+{
+	[super setAnchorPoint:anchorPoint];
+	
+	// update all view origin nodes
+	[self enumerateChildNodesWithName:@"//KKViewOriginNode" usingBlock:^(SKNode *node, BOOL *stop) {
+		KKViewAnchorNode* originNode = (KKViewAnchorNode*)node;
+		[originNode updatePositionFromSceneFrame];
+	}];
 }
 
 #pragma mark Description

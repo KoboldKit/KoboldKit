@@ -13,7 +13,7 @@
 
 @interface MyScene : KKScene
 {
-	SKNode* _testCamera;
+	SKNode* _playerCharacter;
 	CGPoint _currentControlPadDirection;
 	KKTilemapNode* _tilemapNode;
 }

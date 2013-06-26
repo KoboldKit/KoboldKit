@@ -39,19 +39,19 @@ typedef enum : unsigned char
 }
 
 /** Name of the object.  TILED-EDITABLE */
-@property (nonatomic, copy) NSString* name;
+@property (atomic, copy) NSString* name;
 /** The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
    Object Types added in the Tiled Preferences dialog. You can also import & export Object Types from there. TILED-EDITABLE */
-@property (nonatomic, copy) NSString* userType;
+@property (atomic, copy) NSString* userType;
 /** The object's properties. */
-@property (nonatomic, readonly) KKTilemapProperties* properties;
+@property (atomic, readonly) KKTilemapProperties* properties;
 /** The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline. */
-@property (nonatomic) CGPoint position;
+@property (atomic) CGPoint position;
 /** The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline. */
-@property (nonatomic) CGSize size;
+@property (atomic) CGSize size;
 /** The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
    having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! */
-@property (nonatomic) KKTilemapObjectType objectType;
+@property (atomic) KKTilemapObjectType objectType;
 
 // TMX Parser needs these
 -(KTTilemapRectangleObject*) rectangleObjectFromPolyObject:(KKTilemapPolyObject*)polyObject;
@@ -63,12 +63,12 @@ typedef enum : unsigned char
    property. */
 @interface KKTilemapPolyObject : KKTilemapObject
 /** Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object's position. */
-@property (nonatomic, readonly) CGPoint* points;
+@property (atomic, readonly) CGPoint* points;
 /** The number of points stored in the points array. */
-@property (nonatomic, readonly) unsigned int numberOfPoints;
+@property (atomic, readonly) unsigned int numberOfPoints;
 /** The polygon's bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
    polygons because if the target object does not intersect with a polygon's bounding box, it will definitely not intersect with the polygon. */
-@property (nonatomic, readonly) CGRect boundingBox;
+@property (atomic, readonly) CGRect boundingBox;
 /** In cases where you manually create or change polygon points you should run updateBoundingBox to update the boundingBox property. */
 -(void) updateBoundingBox;
 /** (TMX Parser Only) Creates the points array from a CGPoint encoded string where string representation of CGPoint are separated by a space character.
@@ -79,13 +79,13 @@ typedef enum : unsigned char
 /** A rectangle object, usually referred to as simply "object" in Tiled. */
 @interface KTTilemapRectangleObject : KKTilemapObject
 /** The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size. */
-@property (nonatomic, readonly) CGRect rect;
+@property (atomic, readonly) CGRect rect;
 @end
 
 /** A tile object. */
 @interface KTTilemapTileObject : KKTilemapObject
 /** The GID of the tile object. */
-@property (nonatomic) gid_t gid;
+@property (atomic) gid_t gid;
 
 // TODO: property that returns tile's position in tile coordinate
 @end

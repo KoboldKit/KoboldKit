@@ -25,10 +25,10 @@
 }
 
 /** The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects. */
-@property (nonatomic, readonly) NSDictionary* properties;
+@property (atomic, readonly) NSDictionary* properties;
 
 /** Returns the number of property items. */
-@property (nonatomic, readonly) NSUInteger count;
+@property (atomic, readonly) NSUInteger count;
 
 /** Sets the number for the given key. If a value for the given key already exists the number will take its place.
 

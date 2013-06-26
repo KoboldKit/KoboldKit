@@ -31,7 +31,7 @@
 
 /** The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it's the first tile layer.
  @returns the "main" tile layer node.  */
-@property (nonatomic, readonly) KKTilemapTileLayerNode* mainTileLayerNode;
+@property (atomic, readonly) KKTilemapTileLayerNode* mainTileLayerNode;
 
 /** Creates a tilemap node from a TMX file.
  @param tmxFile The filename of a TMX file in the bundle or an absolute path to a TMX file. 

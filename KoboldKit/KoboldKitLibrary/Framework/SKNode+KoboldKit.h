@@ -112,8 +112,6 @@
 @end
 
 
-@interface SKScene (KoboldKit)
-@end
 @interface SKCropNode (KoboldKit)
 @end
 @interface SKEffectNode (KoboldKit)

@@ -24,18 +24,51 @@
         /* Setup your scene here */
 		self.anchorPoint = CGPointMake(0.5f, 0.5f);
 		self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+		self.physicsWorld.gravity = CGPointMake(0, -1);
 
-		_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
-		//KKTilemapNode* tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"forest-parallax.tmx"];
+		//_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
+		_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"forest-parallax.tmx"];
 		[self addChild:_tilemapNode];
 		_tilemapNode.name = @"tilemap";
-
-		_testCamera = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:CGSizeMake(20, 20)];
-		_testCamera.position = CGPointMake(70, 90);
-		[_tilemapNode addChild:_testCamera];
 		
-		[_testCamera addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
-		[_testCamera addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
+		KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
+		for (NSUInteger i = 5; i <= 28; i++)
+		{
+			[blockingGids addInteger:i];
+		}
+		NSArray* contours = [_tilemapNode.mainTileLayerNode.layer generateContourWithBlockingGids:blockingGids];
+		LOG_EXPR(contours);
+
+		KKViewAnchorNode* worldContourNode = [KKViewAnchorNode node];
+		[self addChild:worldContourNode];
+		for (id contour in contours)
+		{
+			CGPathRef path = (__bridge CGPathRef)contour;
+			SKPhysicsBody* body = [SKPhysicsBody bodyWithEdgeChainFromPath:path];
+			SKNode* bodyNode = [SKNode node];
+			bodyNode.physicsBody = body;
+			bodyNode.position = self.scene.frame.origin;
+			[worldContourNode addChild:bodyNode];
+			NSLog(@"body: %p", body);
+			LOG_EXPR(body);
+		}
+		
+		LOG_EXPR(@"enumerate");
+		
+		LOG_EXPR(self.physicsWorld);
+		
+		[self enumerateBodiesUsingBlock:^(SKPhysicsBody *body, BOOL *stop) {
+			NSLog(@"body: %p", body);
+		}];
+		
+		CGSize playerSize = CGSizeMake(20, 20);
+		_playerCharacter = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
+		_playerCharacter.position = CGPointMake(70, 161);
+		_playerCharacter.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:playerSize];
+		[_tilemapNode addChild:_playerCharacter];
+		
+		[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
+		//[_playerCharacter addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
 		
 		LOG_EXPR(_tilemapNode.bounds);
 		CGRect bounds = _tilemapNode.bounds;
@@ -47,7 +80,7 @@
 		bounds.size.width = bounds.size.width - 120;
 		bounds.size.height = bounds.size.height - 80;
 		LOG_EXPR(bounds);
-		[_tilemapNode addBehavior:[KKStayInBoundsBehavior stayInBounds:bounds]];
+		//[_tilemapNode addBehavior:[KKStayInBoundsBehavior stayInBounds:bounds]];
 		
 		[self createVirtualJoypad];
     }
@@ -102,8 +135,7 @@
 
 -(void) createVirtualJoypad
 {
-	SKNode* joypadNode = [SKNode node];
-	joypadNode.position = self.scene.frame.origin;
+	KKViewAnchorNode* joypadNode = [KKViewAnchorNode node];
 	[self addChild:joypadNode];
 	
 	SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
@@ -168,7 +200,7 @@
 {
 	KKControlPadBehavior* controlPad = [note.userInfo objectForKey:@"behavior"];
 	
-	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), 3);
+	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), 10);
 
 	switch (controlPad.direction)
 	{
@@ -219,7 +251,8 @@
 	// always call superr in "event" methods of KKScene subclasses
 	[super update:currentTime];
 	
-	_testCamera.position = ccpAdd(_testCamera.position, _currentControlPadDirection);
+	//_playerCharacter.position = ccpAdd(_playerCharacter.position, _currentControlPadDirection);
+	[_playerCharacter.physicsBody applyForce:_currentControlPadDirection];
 }
 
 -(void) didSimulatePhysics

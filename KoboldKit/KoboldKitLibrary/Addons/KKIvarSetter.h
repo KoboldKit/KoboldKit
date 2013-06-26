@@ -26,13 +26,13 @@ typedef enum
 /** INTERNAL USE! Class that represents an ivar in order to set and get an ivar's value. */
 @interface KKIvarInfo : NSObject
 /** The Objective-C Ivar object. */
-@property (nonatomic) Ivar ivar;
+@property (atomic) Ivar ivar;
 /** The name of the ivar. */
-@property (nonatomic, copy) NSString* name;
+@property (atomic, copy) NSString* name;
 /** The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures. */
 @property (nonatomic, copy) NSString* encoding;
 /** The type of the ivar which is deducted from the encoding. */
-@property (nonatomic, readonly) KKIvarType type;
+@property (atomic, readonly) KKIvarType type;
 /** Set the ivar in the given target to the value. */
 -(void) setIvarInTarget:(id)target value:(id)value;
 @end

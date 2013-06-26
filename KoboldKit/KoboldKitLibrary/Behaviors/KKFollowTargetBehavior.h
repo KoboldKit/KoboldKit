@@ -14,11 +14,11 @@
 @interface KKFollowTargetBehavior : KKNodeBehavior
 
 /** (not documented) */
-@property (nonatomic, weak) SKNode* target;
+@property (atomic, weak) SKNode* target;
 /** (not documented) */
-@property (nonatomic) CGPoint positionMultiplier;
+@property (atomic) CGPoint positionMultiplier;
 /** (not documented) */
-@property (nonatomic) CGPoint positionOffset;
+@property (atomic) CGPoint positionOffset;
 
 /** (not documented) */
 +(id) followTarget:(SKNode*)target;
