@@ -99,8 +99,8 @@
 		DCB087D4177B1647004182E4 /* KKIntegerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D1177B1647004182E4 /* KKIntegerArray.m */; };
 		DCB087D5177B1647004182E4 /* KKPointArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D3177B1647004182E4 /* KKPointArray.m */; };
 		DCB087DC177B3783004182E4 /* SKScene+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087DB177B3783004182E4 /* SKScene+KoboldKit.m */; };
-		DCB087E2177B3A68004182E4 /* KKPhysicsBody.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087E1177B3A68004182E4 /* KKPhysicsBody.m */; };
-		DCB087E5177B439B004182E4 /* KKViewAnchorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087E4177B439B004182E4 /* KKViewAnchorNode.m */; };
+		DCB087E5177B439B004182E4 /* KKViewOriginNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087E4177B439B004182E4 /* KKViewOriginNode.m */; };
+		DCB087EB177BAC2F004182E4 /* KKPhysicsDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */; };
 		DCDD2DAC1769FD0A00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
 		DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 		DCDD2DB01769FD0A00F307CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
@@ -289,10 +289,10 @@
 		DCB087D3177B1647004182E4 /* KKPointArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPointArray.m; sourceTree = "<group>"; };
 		DCB087DA177B3783004182E4 /* SKScene+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKScene+KoboldKit.h"; sourceTree = "<group>"; };
 		DCB087DB177B3783004182E4 /* SKScene+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKScene+KoboldKit.m"; sourceTree = "<group>"; };
-		DCB087E0177B3A68004182E4 /* KKPhysicsBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPhysicsBody.h; sourceTree = "<group>"; };
-		DCB087E1177B3A68004182E4 /* KKPhysicsBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPhysicsBody.m; sourceTree = "<group>"; };
-		DCB087E3177B439B004182E4 /* KKViewAnchorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKViewAnchorNode.h; sourceTree = "<group>"; };
-		DCB087E4177B439B004182E4 /* KKViewAnchorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKViewAnchorNode.m; sourceTree = "<group>"; };
+		DCB087E3177B439B004182E4 /* KKViewOriginNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKViewOriginNode.h; sourceTree = "<group>"; };
+		DCB087E4177B439B004182E4 /* KKViewOriginNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKViewOriginNode.m; sourceTree = "<group>"; };
+		DCB087E9177BAC2F004182E4 /* KKPhysicsDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPhysicsDebugNode.h; sourceTree = "<group>"; };
+		DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPhysicsDebugNode.m; sourceTree = "<group>"; };
 		DCDD2DA81769FD0A00F307CD /* KoboldKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoboldKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -536,26 +536,18 @@
 		DC9CFD061774CA5B004C981A /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */,
+				DCB087EC177BAC3F004182E4 /* Sprite Kit Subclasses */,
 				DCB087D6177B2F57004182E4 /* Sprite Kit Categories */,
+				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
 				DC9CFD1A1774CA84004C981A /* KKViewController.h */,
 				DC9CFD1B1774CA84004C981A /* KKViewController.m */,
-				DC9CFD181774CA84004C981A /* KKView.h */,
-				DC9CFD191774CA84004C981A /* KKView.m */,
-				DC9CFD131774CA84004C981A /* KKNode.h */,
-				DC9CFD141774CA84004C981A /* KKNode.m */,
-				DC9CFD151774CA84004C981A /* KKScene.h */,
-				DC9CFD161774CA84004C981A /* KKScene.m */,
-				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
 				DC9CFD091774CA5B004C981A /* KKNodeController.h */,
 				DC9CFD0A1774CA5B004C981A /* KKNodeController.m */,
 				DC9CFD0B1774CA5B004C981A /* KKNodeModel.h */,
 				DC9CFD0C1774CA5B004C981A /* KKNodeModel.m */,
 				DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */,
 				DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */,
-				DCB087E0177B3A68004182E4 /* KKPhysicsBody.h */,
-				DCB087E1177B3A68004182E4 /* KKPhysicsBody.m */,
-				DCB087E3177B439B004182E4 /* KKViewAnchorNode.h */,
-				DCB087E4177B439B004182E4 /* KKViewAnchorNode.m */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -609,6 +601,30 @@
 				DCB087DB177B3783004182E4 /* SKScene+KoboldKit.m */,
 			);
 			name = "Sprite Kit Categories";
+			sourceTree = "<group>";
+		};
+		DCB087EC177BAC3F004182E4 /* Sprite Kit Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CFD181774CA84004C981A /* KKView.h */,
+				DC9CFD191774CA84004C981A /* KKView.m */,
+				DC9CFD151774CA84004C981A /* KKScene.h */,
+				DC9CFD161774CA84004C981A /* KKScene.m */,
+				DC9CFD131774CA84004C981A /* KKNode.h */,
+				DC9CFD141774CA84004C981A /* KKNode.m */,
+			);
+			name = "Sprite Kit Subclasses";
+			sourceTree = "<group>";
+		};
+		DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				DCB087E3177B439B004182E4 /* KKViewOriginNode.h */,
+				DCB087E4177B439B004182E4 /* KKViewOriginNode.m */,
+				DCB087E9177BAC2F004182E4 /* KKPhysicsDebugNode.h */,
+				DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */,
+			);
+			name = "Kobold Kit Nodes";
 			sourceTree = "<group>";
 		};
 		DCDD2D9F1769FD0A00F307CD = {
@@ -944,7 +960,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB087E5177B439B004182E4 /* KKViewAnchorNode.m in Sources */,
+				DCB087E5177B439B004182E4 /* KKViewOriginNode.m in Sources */,
 				DC4DE911176C9E2B003E4087 /* KKTilemapProperties.m in Sources */,
 				DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */,
 				DC8CD4AA17760E0D0005AB51 /* KKStayInBoundsBehavior.m in Sources */,
@@ -973,7 +989,6 @@
 				DC4DE916176C9E2B003E4087 /* KKTMXWriter.m in Sources */,
 				DC9CFD111774CA5B004C981A /* KKNodeModel.m in Sources */,
 				DC4DE927176CA25F003E4087 /* NSCoder+KoboldKit.m in Sources */,
-				DCB087E2177B3A68004182E4 /* KKPhysicsBody.m in Sources */,
 				DC2F43ED177090A8005846A7 /* KKTilemapLayerNode.m in Sources */,
 				DC4DE90A176C9E2B003E4087 /* KKTilemap.m in Sources */,
 				DC2F43F0177090F8005846A7 /* KKTilemapTileLayerNode.m in Sources */,
@@ -988,6 +1003,7 @@
 				DC4DE90B176C9E2B003E4087 /* KKTilemapLayer.m in Sources */,
 				DCB087DC177B3783004182E4 /* SKScene+KoboldKit.m in Sources */,
 				DC9CFD1E1774CA84004C981A /* KKView.m in Sources */,
+				DCB087EB177BAC2F004182E4 /* KKPhysicsDebugNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

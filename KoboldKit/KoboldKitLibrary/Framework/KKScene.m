@@ -10,7 +10,7 @@
 #import "KKNode.h"
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
-#import "KKViewAnchorNode.h"
+#import "KKViewOriginNode.h"
 
 @implementation KKScene
 
@@ -369,7 +369,7 @@
 	
 	// update all view origin nodes
 	[self enumerateChildNodesWithName:@"//KKViewOriginNode" usingBlock:^(SKNode *node, BOOL *stop) {
-		KKViewAnchorNode* originNode = (KKViewAnchorNode*)node;
+		KKViewOriginNode* originNode = (KKViewOriginNode*)node;
 		[originNode updatePositionFromSceneFrame];
 	}];
 }

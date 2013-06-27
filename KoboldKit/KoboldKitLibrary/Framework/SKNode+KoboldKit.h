@@ -105,6 +105,11 @@
 -(void) disregardAllNotifications;
 
 
+/** nd */
+-(SKPhysicsBody*) physicsBodyWithEdgeChainFromPath:(CGPathRef)path;
+/** nd */
+-(SKPhysicsBody*) physicsBodyWithRectangleOfSize:(CGSize)size;
+
 // internal use only
 -(BOOL) isEqualToNode:(SKNode*)node;
 -(BOOL) isEqualToNodeTree:(SKNode*)node;

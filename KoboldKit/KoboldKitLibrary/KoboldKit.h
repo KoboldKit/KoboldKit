@@ -24,8 +24,8 @@
 #import "KKView.h"
 #import "KKNode.h"
 #import "KKScene.h"
-#import "KKPhysicsBody.h"
-#import "KKViewAnchorNode.h"
+#import "KKViewOriginNode.h"
+#import "KKPhysicsDebugNode.h"
 
 // framework
 #import "KKNodeController.h"

@@ -39,18 +39,17 @@
 		NSArray* contours = [_tilemapNode.mainTileLayerNode.layer generateContourWithBlockingGids:blockingGids];
 		LOG_EXPR(contours);
 
-		KKViewAnchorNode* worldContourNode = [KKViewAnchorNode node];
-		[self addChild:worldContourNode];
+		SKNode* worldContourNode = [SKNode node];
+		worldContourNode.position = CGPointMake(self.anchorPoint.x * self.size.width, self.anchorPoint.y * self.size.height);
+		[_tilemapNode.mainTileLayerNode addChild:worldContourNode];
+		
 		for (id contour in contours)
 		{
 			CGPathRef path = (__bridge CGPathRef)contour;
-			SKPhysicsBody* body = [SKPhysicsBody bodyWithEdgeChainFromPath:path];
 			SKNode* bodyNode = [SKNode node];
-			bodyNode.physicsBody = body;
+			[bodyNode physicsBodyWithEdgeChainFromPath:path];
 			bodyNode.position = self.scene.frame.origin;
 			[worldContourNode addChild:bodyNode];
-			NSLog(@"body: %p", body);
-			LOG_EXPR(body);
 		}
 		
 		LOG_EXPR(@"enumerate");
@@ -64,7 +63,7 @@
 		CGSize playerSize = CGSizeMake(20, 20);
 		_playerCharacter = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
 		_playerCharacter.position = CGPointMake(70, 161);
-		_playerCharacter.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:playerSize];
+		[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
 		[_tilemapNode addChild:_playerCharacter];
 		
 		[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
@@ -135,7 +134,7 @@
 
 -(void) createVirtualJoypad
 {
-	KKViewAnchorNode* joypadNode = [KKViewAnchorNode node];
+	KKViewOriginNode* joypadNode = [KKViewOriginNode node];
 	[self addChild:joypadNode];
 	
 	SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
@@ -253,6 +252,8 @@
 	
 	//_playerCharacter.position = ccpAdd(_playerCharacter.position, _currentControlPadDirection);
 	[_playerCharacter.physicsBody applyForce:_currentControlPadDirection];
+	
+	NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
 }
 
 -(void) didSimulatePhysics

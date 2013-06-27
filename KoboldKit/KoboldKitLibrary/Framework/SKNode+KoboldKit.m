@@ -210,6 +210,42 @@
                                        node.parent.position.y - cameraPositionInScene.y);
 }
 
+#pragma mark Physics
+
+-(SKPhysicsBody*) physicsBodyWithEdgeChainFromPath:(CGPathRef)path
+{
+	SKPhysicsBody* physicsBody = [SKPhysicsBody bodyWithEdgeChainFromPath:path];
+	self.physicsBody = physicsBody;
+
+#if DEBUG
+	SKShapeNode* shape = [SKShapeNode node];
+	shape.path = path;
+	shape.antialiased = NO;
+	shape.lineWidth = 2.0;
+	shape.fillColor = [SKColor colorWithRed:200 green:0 blue:80 alpha:0.2];
+	[self addChild:shape];
+#endif
+	
+	return physicsBody;
+}
+
+-(SKPhysicsBody*) physicsBodyWithRectangleOfSize:(CGSize)size
+{
+	SKPhysicsBody* physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:size];
+	self.physicsBody = physicsBody;
+	
+#if DEBUG
+	SKShapeNode* shape = [SKShapeNode node];
+	shape.path = CGPathCreateWithRect(CGRectMake(-size.width / 2.0, -size.height / 2.0, size.width, size.height), nil);
+	shape.antialiased = NO;
+	shape.lineWidth = 2.0;
+	shape.fillColor = [SKColor colorWithRed:200 green:0 blue:80 alpha:0.2];
+	[self addChild:shape];
+#endif
+	
+	return physicsBody;
+}
+
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
