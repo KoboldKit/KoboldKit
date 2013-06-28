@@ -20,12 +20,10 @@ Work in progress. Needs testing. The demo project is a bit messy, I understand t
 it will become a starter kit template for a tilemap physics platfomer game showcasing the cool KK features.
 
 Current/Next Tasks:
-- tilemap collision countour tracing for physics
-- tilemap object layer & spawn delegate
-- tilemap debug drawing
-- change scene launch to viewWillLayoutSubviews
+- more demo game features (controls, items, etc)
 
 Recently completed:
+- tilemap collision countour tracing for physics
 - world camera node (now a behavior)
 - tilemap scrolling API
 - virtual joypad
