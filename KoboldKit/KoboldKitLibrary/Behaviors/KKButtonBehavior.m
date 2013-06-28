@@ -24,7 +24,11 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 -(void) didJoinController
 {
 	_selectedScale = 1.1f;
-	[self.node.kkScene addInputEventsObserver:self];
+
+	SKNode* node = self.node;
+	[node.kkScene addInputEventsObserver:self];
+	_originalXScale = node.xScale;
+	_originalYScale = node.yScale;
 
 	if (_selectedTexture)
 	{
@@ -48,8 +52,8 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	if (_selectedScale < 1.0 || _selectedScale > 1.0)
 	{
 		SKNode* node = self.node;
-		_originalXScale = node.xScale;
-		_originalYScale = node.yScale;
+		node.xScale = _originalXScale;
+		node.yScale = _originalYScale;
 		[node runAction:[SKAction scaleXBy:_selectedScale y:_selectedScale duration:0.05f] withKey:ScaleActionKey];
 	}
 	

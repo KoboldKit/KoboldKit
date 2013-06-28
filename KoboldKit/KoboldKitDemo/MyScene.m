@@ -44,12 +44,13 @@
 			SKNode* bodyNode = [SKNode node];
 			CGPathRef path = (__bridge CGPathRef)contour;
 			[bodyNode physicsBodyWithEdgeLoopFromPath:path];
+			//[bodyNode physicsBodyWithEdgeChainFromPath:path];
 			[_tilemapNode.mainTileLayerNode addChild:bodyNode];
 		}
-		
+
 		CGSize playerSize = CGSizeMake(25, 25);
 		_playerCharacter = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
-		_playerCharacter.position = CGPointMake(70, 161);
+		_playerCharacter.position = CGPointMake(170, 161);
 		[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
 		[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
 		
