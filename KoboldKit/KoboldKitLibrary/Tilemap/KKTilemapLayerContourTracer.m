@@ -37,7 +37,7 @@ static NSInteger neighborOffsets[8];
 		_layerSize = _layer.size;
 		
 		_blockingGids = blockingGids;
-		_contours = [NSMutableArray arrayWithCapacity:10];
+		_contourTiles = [NSMutableArray arrayWithCapacity:10];
 		_contourSegments = [NSMutableArray arrayWithCapacity:10];
 		[self traceContours];
 		
@@ -108,9 +108,9 @@ static NSInteger neighborOffsets[8];
 		NSUInteger backtrackStartTile = backtrackTile;
 		
 		// create tile index array and add the first contour tile to it
-		KKIntegerArray* contourTiles = [KKIntegerArray integerArrayWithCapacity:8];
-		[_contours addObject:contourTiles];
-		[contourTiles addInteger:contourStartTile];
+		KKIntegerArray* contourTileGids = [KKIntegerArray integerArrayWithCapacity:8];
+		[_contourTiles addObject:contourTileGids];
+		[contourTileGids addInteger:contourStartTile];
 		
 		// create segments array
 		KKPointArray* contourSegment = [KKPointArray pointArrayWithCapacity:8];
@@ -132,7 +132,7 @@ static NSInteger neighborOffsets[8];
 				_blockMap[neighborTile] = contourBlockID;
 				
 				boundaryTile = neighborTile;
-				[contourTiles addInteger:boundaryTile];
+				[contourTileGids addInteger:boundaryTile];
 				//NSLog(@"\tNew BOUNDARY at: %@", [self coordStringFromIndex:boundaryTile]);
 				//NSLog(@"\tBacktracking to: %@", [self coordStringFromIndex:backtrackTile]);
 				
@@ -253,7 +253,7 @@ static NSInteger neighborOffsets[8];
 {
 	// some contours may be traced more than once, find and remove repeating patterns
 	NSUInteger sequenceLength = 0;
-	NSUInteger compareCount = 0;
+	NSUInteger equalPointsCount = 0;
 	CGPoint firstPoint = segments.points[0];
 	for (NSUInteger i = 1; i < segments.count; i++)
 	{
@@ -265,17 +265,17 @@ static NSInteger neighborOffsets[8];
 			if (CGPointEqualToPoint(point, comparePoint))
 			{
 				// the pattern is repeating so far
-				compareCount++;
+				equalPointsCount++;
 			}
 			else
 			{
 				// false alarm, sometimes the first point may be visited again without repeat
 				sequenceLength = 0;
-				compareCount = 0;
+				equalPointsCount = 0;
 			}
 			
 			// did we match an entire repeating sequence once?
-			if (sequenceLength > 0 && compareCount == sequenceLength)
+			if (sequenceLength > 0 && equalPointsCount == sequenceLength)
 			{
 				// remove all the repeating points
 				[segments removePointsStartingAtIndex:sequenceLength];
@@ -329,6 +329,37 @@ static NSInteger neighborOffsets[8];
 		// add the first point again to close the segment chain
 		[segments addPoint:firstPoint];
 	}
+}
+
+-(void) convertSegmentsToPath
+{
+#pragma message "FIXME: create CGPathRef within algorithm"
+	
+	NSMutableArray* pathSegments = [NSMutableArray arrayWithCapacity:_contourSegments.count];
+	for (KKPointArray* contour in _contourSegments)
+	{
+		CGMutablePathRef path = CGPathCreateMutable();
+		LOG_EXPR(path);
+		
+		for (NSUInteger i = 0; i < contour.count; i++)
+		{
+			CGPoint p = contour.points[i];
+			LOG_EXPR(p);
+			
+			if (i == 0)
+			{
+				CGPathMoveToPoint(path, nil, p.x, p.y);
+			}
+			else
+			{
+				CGPathAddLineToPoint(path, nil, p.x, p.y);
+			}
+		}
+		
+		[pathSegments addObject:(__bridge_transfer id)path];
+	}
+	
+	_contourSegments = pathSegments;
 }
 
 -(BOOL) isPointOnSameLine:(CGPoint)point segmentStart:(CGPoint)segmentStart segmentEnd:(CGPoint)segmentEnd
@@ -481,34 +512,6 @@ static NSInteger neighborOffsets[8];
 	return CGPointMake((NSInteger)(index % width) - 1, (NSInteger)(index / width) - 1);
 }
 
--(void) convertSegmentsToPath
-{
-#pragma message "FIXME: create CGPathRef within algorithm"
-	
-	NSMutableArray* pathSegments = [NSMutableArray arrayWithCapacity:_contourSegments.count];
-	for (KKPointArray* contour in _contourSegments)
-	{
-		CGMutablePathRef path = CGPathCreateMutable();
-		for (NSUInteger i = 0; i < contour.count; i++)
-		{
-			CGPoint p = contour.points[i];
-			
-			if (i == 0)
-			{
-				CGPathMoveToPoint(path, nil, p.x, p.y);
-			}
-			else
-			{
-				CGPathAddLineToPoint(path, nil, p.x, p.y);
-			}
-		}
-
-		[pathSegments addObject:(__bridge_transfer id)path];
-	}
-	
-	_contourSegments = pathSegments;
-}
-
 
 #pragma mark DEBUG Helper
 
@@ -588,7 +591,7 @@ static NSInteger neighborOffsets[8];
 	if (_blockMap[index])
 	{
 		char contourChar = 'A';
-		for (KKIntegerArray* contourIndices in _contours)
+		for (KKIntegerArray* contourIndices in _contourTiles)
 		{
 			for (NSUInteger contourIndex = 0; contourIndex < contourIndices.count; contourIndex++)
 			{

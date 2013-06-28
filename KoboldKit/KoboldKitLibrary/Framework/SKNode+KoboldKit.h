@@ -106,6 +106,8 @@
 
 
 /** nd */
+-(SKPhysicsBody*) physicsBodyWithEdgeLoopFromPath:(CGPathRef)path;
+/** nd */
 -(SKPhysicsBody*) physicsBodyWithEdgeChainFromPath:(CGPathRef)path;
 /** nd */
 -(SKPhysicsBody*) physicsBodyWithRectangleOfSize:(CGSize)size;

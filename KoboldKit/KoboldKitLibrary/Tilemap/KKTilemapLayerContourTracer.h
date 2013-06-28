@@ -35,7 +35,7 @@ typedef enum
 	CGSize _layerSize;
 
 	KKIntegerArray* _blockingGids;
-	NSMutableArray* _contours;
+	NSMutableArray* _contourTiles;
 	NSMutableArray* _contourSegments;
 	NSUInteger _blockMapCount;
 	CGSize _blockMapSize;

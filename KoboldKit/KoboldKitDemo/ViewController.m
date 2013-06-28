@@ -20,7 +20,6 @@
     // Create and configure the scene.
 	CGSize boundsSize = self.view.bounds.size;
     KKScene * scene = [MyScene sceneWithSize:CGSizeMake(boundsSize.height, boundsSize.width)];
-	scene.scaleMode = SKSceneScaleModeResizeFill;
     
     // Present the scene.
     [self.kkView presentScene:scene];

@@ -73,4 +73,9 @@ typedef NSResponder KKResponder;
 #define KKRANDOM_MINUS1_1()              ((random() / (float)0x3fffffff) - 1.0f)
 #define KKRANDOM_0_1()                   ((random() / (float)0x7fffffff))
 
+
+#ifdef DEBUG
+#define KK_PHYSICS_DEBUG_DRAW 1
+#endif
+
 #endif

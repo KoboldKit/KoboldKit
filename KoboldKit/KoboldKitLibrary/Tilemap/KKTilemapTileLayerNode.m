@@ -62,7 +62,7 @@
 	for (KKTilemapTileset* tileset in _tilemap.tilesets)
 	{
 		KKNode* batchNode = [KKNode node];
-		batchNode.zPosition = -1;
+		batchNode.zPosition = 1;
 		[_batchNodes setObject:batchNode forKey:tileset.imageFile];
 		
 		// load and setup textures

@@ -39,32 +39,19 @@
 		NSArray* contours = [_tilemapNode.mainTileLayerNode.layer generateContourWithBlockingGids:blockingGids];
 		LOG_EXPR(contours);
 
-		SKNode* worldContourNode = [SKNode node];
-		worldContourNode.position = CGPointMake(self.anchorPoint.x * self.size.width, self.anchorPoint.y * self.size.height);
-		[_tilemapNode.mainTileLayerNode addChild:worldContourNode];
-		
 		for (id contour in contours)
 		{
-			CGPathRef path = (__bridge CGPathRef)contour;
 			SKNode* bodyNode = [SKNode node];
-			[bodyNode physicsBodyWithEdgeChainFromPath:path];
-			bodyNode.position = self.scene.frame.origin;
-			[worldContourNode addChild:bodyNode];
+			CGPathRef path = (__bridge CGPathRef)contour;
+			[bodyNode physicsBodyWithEdgeLoopFromPath:path];
+			[_tilemapNode.mainTileLayerNode addChild:bodyNode];
 		}
 		
-		LOG_EXPR(@"enumerate");
-		
-		LOG_EXPR(self.physicsWorld);
-		
-		[self enumerateBodiesUsingBlock:^(SKPhysicsBody *body, BOOL *stop) {
-			NSLog(@"body: %p", body);
-		}];
-		
-		CGSize playerSize = CGSizeMake(20, 20);
+		CGSize playerSize = CGSizeMake(25, 25);
 		_playerCharacter = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
 		_playerCharacter.position = CGPointMake(70, 161);
 		[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
-		[_tilemapNode addChild:_playerCharacter];
+		[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
 		
 		[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
 		//[_playerCharacter addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
@@ -80,6 +67,20 @@
 		bounds.size.height = bounds.size.height - 80;
 		LOG_EXPR(bounds);
 		//[_tilemapNode addBehavior:[KKStayInBoundsBehavior stayInBounds:bounds]];
+
+
+		[_tilemapNode enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop) {
+			LOG_EXPR(node);
+		}];
+		
+		/*
+		SKShapeNode* shape = [SKShapeNode node];
+		shape.path = CGPathCreateWithRect(CGRectMake(64, 64, 128, 64), nil);
+		shape.fillColor = [SKColor colorWithRed:0 green:0 blue:1 alpha:0.4];
+		KKViewOriginNode* vo = [KKViewOriginNode node];
+		[self addChild:vo];
+		[vo addChild:shape];
+		*/
 		
 		[self createVirtualJoypad];
     }
@@ -113,23 +114,8 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	// in scene subclasses must call super to allow dispatch of touch events to other nodes
 	[super touchesBegan:touches withEvent:event];
-	
-    for (UITouch *touch in touches)
-	{
-		//[(KKButtonBehavior*)[myLabel behaviorForKey:@"button"] touchesBegan:touches withEvent:event];
-		
-		/*
-        CGPoint location = [touch locationInNode:self];
-        
-        KKSpriteNode *sprite = [KKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        sprite.position = location;
-        [self addChild:sprite];
-        
-        KKAction *action = [KKAction rotateByAngle:M_PI duration:1];
-        [sprite runAction:[KKAction repeatActionForever:action]];
-		 */
-    }
 }
 
 -(void) createVirtualJoypad
@@ -253,7 +239,7 @@
 	//_playerCharacter.position = ccpAdd(_playerCharacter.position, _currentControlPadDirection);
 	[_playerCharacter.physicsBody applyForce:_currentControlPadDirection];
 	
-	NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
+	//NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
 }
 
 -(void) didSimulatePhysics
