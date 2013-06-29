@@ -269,12 +269,14 @@ NSString* stringFromUnsignedInt(unsigned int u)
 
 -(void) writeObject:(KKTilemapObject*)object
 {
+#pragma message "TODO: TMX write ellipse objects"
+	
 	[_xmlWriter writeStartElement:@"object"];
 	[_xmlWriter writeAttribute:@"name" value:object.name];
 	[_xmlWriter writeAttribute:@"type" value:object.userType];
 	[_xmlWriter writeAttribute:@"x" value:intStringFromFloat(object.position.x)];
 	float yPos = (_tilemap.size.height * _tilemap.gridSize.height) - object.position.y;
-	if (object.objectType == KKTilemapObjectTypeRectangle)
+	if (object.type == KKTilemapObjectTypeRectangle)
 	{
 		yPos -= object.size.height;
 	}
@@ -292,9 +294,9 @@ NSString* stringFromUnsignedInt(unsigned int u)
 	[self writeProperties:object.properties];
 
 	// write specific subclasses
-	if (object.objectType == KKTilemapObjectTypePolygon || object.objectType == KKTilemapObjectTypePolyLine)
+	if (object.type == KKTilemapObjectTypePolygon || object.type == KKTilemapObjectTypePolyLine)
 	{
-		[_xmlWriter writeStartElement:(object.objectType == KKTilemapObjectTypePolygon ? @"polygon" : @"polyline")];
+		[_xmlWriter writeStartElement:(object.type == KKTilemapObjectTypePolygon ? @"polygon" : @"polyline")];
 		[self writePolyObjectPoints:(KKTilemapPolyObject*)object];
 		[_xmlWriter writeEndElement];
 	}

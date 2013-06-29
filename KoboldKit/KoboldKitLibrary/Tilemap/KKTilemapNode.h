@@ -12,6 +12,7 @@
 @class KKTilemap;
 @class KKTilemapTileLayerNode;
 @class KKTilemapObjectLayerNode;
+@class KKIntegerArray;
 
 /** A tilemap node renders a TMX tilemap. It has KKTilemapTileLayerNode and KKTilempaObjectLayerNode as children
  which perform each layer's rendering. */
@@ -45,5 +46,18 @@
 /** @param name The name identifying an object layer.
  @returns The object layer node with the name, or nil if there's no object layer with that name. */
 -(KKTilemapObjectLayerNode*) objectLayerNodeWithName:(NSString*)name;
+
+/** Creates physics blocking shapes from the main tile layer's blocking tiles.
+ @param blockingGids A list of GIDs of tiles that should be considered blocking. 
+ @returns The node containing child nodes for each physics body created. */
+-(SKNode*) createPhysicsCollisionsWithBlockingGids:(KKIntegerArray*)blockingGids;
+
+/** Creates physics blocking shapes from an object layer's objects.
+ @param layerName The name of an object layer whose objects should be converted to physics collisions.
+ @returns The node containing child nodes for each physics body created. */
+-(SKNode*) createPhysicsCollisionsWithObjectLayerNamed:(NSString*)layerName;
+
+/** Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds. */
+-(void) enableMapBoundaryScrolling;
 
 @end

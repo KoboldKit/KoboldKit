@@ -42,13 +42,13 @@
 	
 	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
 	
-	<option value="//api/name/objectType">&nbsp;&nbsp;&nbsp;&nbsp;objectType</option>
-	
 	<option value="//api/name/position">&nbsp;&nbsp;&nbsp;&nbsp;position</option>
 	
 	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
 	
 	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
 	
 	<option value="//api/name/userType">&nbsp;&nbsp;&nbsp;&nbsp;userType</option>
 	
@@ -82,13 +82,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectType">objectType</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/position">position</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userType">userType</a></span></li>
 	
@@ -134,9 +134,9 @@
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>TMX &ldquo;Object&rdquo; - either a rectangle, open polygon (polyline) or closed polygon. Common object base class. Use the concrete
-   subclasses KTTilemapPolyObject, <a href="../Classes/KTTilemapRectangleObject.html">KTTilemapRectangleObject</a> or <a href="../Classes/KTTilemapTileObject.html">KTTilemapTileObject</a> if you need access to each object type&rsquo;s specific <a href="#//api/name/properties">properties</a>.</p>
+   subclasses KTTilemapPolyObject, KTTilemapRectangleObject or KTTilemapTileObject if you need access to each object type&rsquo;s specific <a href="#//api/name/properties">properties</a>.</p>
 
-<p>   Note: use the <a href="#//api/name/objectType">objectType</a> property (KTTilemapObjectType enum) to determine what class the object is. You can safely omit isKindOfClass and
+<p>   Note: use the objectType property (KTTilemapObjectType enum) to determine what class the object is. You can safely omit isKindOfClass and
    cast to the appropriate subclass.</p>
 					</div>
 					
@@ -163,7 +163,7 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/userType">&nbsp;&nbsp;userType</a></code>
-		<span class="tooltip"><p>The type of object assigned by the user. The type is editable in Tiled from an object&rsquo;s <a href="#//api/name/properties">properties</a> dialog. The Types list in Tiled is prefilled with the
+		<span class="tooltip"><p>The <a href="#//api/name/type">type</a> of object assigned by the user. The <a href="#//api/name/type">type</a> is editable in Tiled from an object&rsquo;s <a href="#//api/name/properties">properties</a> dialog. The Types list in Tiled is prefilled with the
    Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -191,7 +191,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/objectType">&nbsp;&nbsp;objectType</a></code>
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
 		<span class="tooltip"><p>The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
    having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY!</p></span>
 	</span>
@@ -221,42 +221,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *name</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapObject.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/objectType" title="objectType"></a>
-	<h3 class="subsubtitle method-title">objectType</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
-   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY!</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) KKTilemapObjectType objectType</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *name</code></div>
 	
 	
 	
@@ -290,7 +255,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint position</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGPoint position</code></div>
 	
 	
 	
@@ -324,7 +289,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KKTilemapProperties *properties</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapProperties *properties</code></div>
 	
 	
 	
@@ -358,7 +323,42 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGSize size</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGSize size</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
+   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY!</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) KKTilemapObjectType type</code></div>
 	
 	
 	
@@ -388,12 +388,12 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The type of object assigned by the user. The type is editable in Tiled from an object&rsquo;s <a href="#//api/name/properties">properties</a> dialog. The Types list in Tiled is prefilled with the
+		<p>The <a href="#//api/name/type">type</a> of object assigned by the user. The <a href="#//api/name/type">type</a> is editable in Tiled from an object&rsquo;s <a href="#//api/name/properties">properties</a> dialog. The Types list in Tiled is prefilled with the
    Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *userType</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *userType</code></div>
 	
 	
 	
@@ -433,7 +433,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-23)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

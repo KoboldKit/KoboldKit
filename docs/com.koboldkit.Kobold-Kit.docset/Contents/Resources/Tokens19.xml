@@ -1,27 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTMXReader.html">
+	<File path="Classes/KKScene.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTMXReader</TokenIdentifier>
-			<Abstract type="html">Internal use only. Temporary object that parses a TMX file and creates the KTTilemap hierarchy containing KTTilemapTileset,
-   KTTilemapLayer, KTTilemapLayerTiles and KTTilemapObject. Used by KTTilemap which has its own parseTMX method. Not meant to be subclassed
-   or modified. </Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKScene</TokenIdentifier>
+			<Abstract type="html">KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
+dispatches events (input, physics).</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
 			
 			<NodeRef refid="19"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTMXReader/loadTMXFile:tilemap:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/setFrameCount:</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/frameCount</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKScene/frameCount</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addSceneEventsObserver:</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>			
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>- (void)loadTMXFile:(NSString *)tmxFile tilemap:(KKTilemap *)tilemap</Declaration>
+			<Declaration>- (void)addSceneEventsObserver:(id)observer</Declaration>
 			
 			
-			<Anchor>//api/name/loadTMXFile:tilemap:</Anchor>
+			<Anchor>//api/name/addSceneEventsObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeSceneEventsObserver:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeSceneEventsObserver:(id)observer</Declaration>
+			
+			
+			<Anchor>//api/name/removeSceneEventsObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addInputEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
+Note: this is a preliminary, inefficient system. It will eventually be replaced.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
+			
+			<Declaration>- (void)addInputEventsObserver:(id)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">Any object that implements touch, mouse, or other input events.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addInputEventsObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeInputEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Unregisters a class as generic input receiver.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeInputEventsObserver:(id)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">An object that was previously registered as input receiver.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeInputEventsObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/dumpSceneGraph:</TokenIdentifier>
+			<Abstract type="html">Dumps the scene graph to a string.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)dumpSceneGraph:(KKSceneGraphDumpOptions)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Determines what will be included in the dump.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string containing the textual dump of the scene graph.</Abstract></ReturnValue>
+			<Anchor>//api/name/dumpSceneGraph:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/update:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
+			
+			
+			<Anchor>//api/name/update:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didEvaluateActions</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)didEvaluateActions</Declaration>
+			
+			
+			<Anchor>//api/name/didEvaluateActions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)didSimulatePhysics</Declaration>
+			
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/willMoveFromView:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)willMoveFromView:(SKView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/willMoveFromView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didMoveToView:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)didMoveToView:(SKView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/didMoveToView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didChangeSize:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)didChangeSize:(CGSize)oldSize</Declaration>
+			
+			
+			<Anchor>//api/name/didChangeSize:</Anchor>
 		</Token>
 		
 	</File>

@@ -50,7 +50,7 @@ Sends a KKControlPadDidChangeDirection notification every time direction changes
 			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
 			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) KKArcadeInputState direction</Declaration>
+			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
 			
 			
 			<Anchor>//api/name/direction</Anchor>
@@ -61,7 +61,7 @@ Sends a KKControlPadDidChangeDirection notification every time direction changes
 			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
 			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) KKArcadeInputState direction</Declaration>
+			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
 			
 			
 			<Anchor>//api/name/direction</Anchor>
@@ -72,7 +72,7 @@ Sends a KKControlPadDidChangeDirection notification every time direction changes
 			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
 			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) KKArcadeInputState direction</Declaration>
+			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
 			
 			
 			<Anchor>//api/name/direction</Anchor>

@@ -16,7 +16,7 @@
  <tileset firstgid="50" name="other" tilewidth="32" tileheight="32">
   <image source="other.png" width="256" height="256"/>
  </tileset>
- <layer name="bg layer" width="32" height="15" opacity="0.67">
+ <layer name="bg layer" width="32" height="15" opacity="0.76">
   <properties>
    <property name="_endlessScrollingHorizontal" value="YES"/>
    <property name="_endlessScrollingVertical" value="YES"/>
@@ -51,7 +51,7 @@
    <property name="_endlessScrollingHorizontal" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztlOsKwjAMhTed7lKnTsQN5vs/pyfSQCjpZe0PEXbgo7ekOYylVbUrRQO4ghH0P6h/ATdwB0Y5J3/kjTzm+KvzrX1F/sgbedT8xXQorB/SGbSgs+PJE9OJOC0mptJvuLUGeZY+jxtycxWq0RTkpipUI/YPxfyxZK+PYh7q/0GJ0+Ypb4js9TeYwcuOxKTkPMX5AlYnn9e8p92h6WHv4/qLJ5f7nzHOvnFiU98I917f+/ev+gBV8wV7
+   eJztVGsLwjAMrG9dnXsgOtD//zu9SAMhZm3YBvviwdGsed3GkhD+8KACb2ANXlbofwUbsAWj4Sd9pI00TtG3ny7tC9JH2kijpa+E7cz+ORzBE3hO52EkJuf3YO439GAjbNIste4KuUvoy/Uo1S/p8yDXo/QPed9fznot7Nz8V0acZXt2iJz1N/gEH+kkdkbOXfgH8KXy+ZnvdA3Wr/dHn+px/2GkP88/M6r7qGL1jpD5OrYNv7XlvltrJy+BD/6nBh0=
   </data>
  </layer>
  <layer name="flare layer" width="32" height="15" opacity="0.8">
@@ -61,7 +61,57 @@
    <property name="_parallaxFactor" value="{1.5,1.5}"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJy9UjESACAI6lW11f9/VUubFZDKnYuniEopHOqKBuQUIDx9xQByDOeJx2MvSxvKe9vrB1G8WfDyG8Jp5b38hnCyv3rVR9yOmZXpPXRW5k0sIDoZjRH7MH9Tf6zqVvo8van07Z4JiBIQdQ==
+   eJzNlUsKwCAMRD1V3dn730o3gojR+VjogJtAXkZH25Q4PW1loKbwEE5p6wVqqLexd+Y4+9p5Q7m7fc1ivDJcVCfmjbN0WKq/Vd25b5EiJpvVn3Jgz47ln1jorGjOF+9kJWQOk9vNjLtGj0ouiCf1u6j8N9y76fb1ngrfDBbb
   </data>
  </layer>
+ <objectgroup name="extra-collision" width="32" height="15">
+  <object x="448" y="320">
+   <polygon points="0,0 64,96 0,96"/>
+  </object>
+  <object x="32" y="384">
+   <polygon points="32,0 128,-64 128,0"/>
+  </object>
+  <object x="640" y="320">
+   <polygon points="0,0 224,-64 224,0"/>
+  </object>
+  <object x="864" y="256">
+   <polygon points="0,0 96,64 0,64"/>
+  </object>
+  <object x="480" y="128" width="64" height="32">
+   <ellipse/>
+  </object>
+  <object x="64" y="128">
+   <polyline points="0,0 32,0 96,64"/>
+  </object>
+  <object x="768" y="64" width="64" height="64"/>
+  <object x="320" y="64">
+   <polyline points="0,0 -128,32"/>
+  </object>
+  <object x="768" y="64">
+   <polyline points="0,0 -64,32"/>
+  </object>
+  <object x="832" y="128">
+   <polyline points="0,0 64,32"/>
+  </object>
+  <object x="768" y="128">
+   <polyline points="0,0 -32,64"/>
+  </object>
+  <object x="576" y="320">
+   <polygon points="0,0 -64,96 0,96"/>
+  </object>
+  <object x="160" y="320">
+   <polygon points="0,0 224,-96 256,-96 288,0"/>
+  </object>
+  <object gid="8" x="288" y="192"/>
+  <object gid="8" x="320" y="160"/>
+  <object x="0" y="96" width="32" height="256">
+   <ellipse/>
+  </object>
+  <object x="576" y="64" width="128" height="128">
+   <ellipse/>
+  </object>
+  <object x="320" y="32" width="128" height="64">
+   <ellipse/>
+  </object>
+ </objectgroup>
 </map>

@@ -36,21 +36,45 @@
 {
 	SKNode* node = self.node;
 	CGPoint pos = node.position;
+
+	SKPhysicsBody* body = node.physicsBody;
+	CGPoint velocity = body.velocity;
 	
 	// keep camera within defined borders
 	if (_bounds.origin.x != INFINITY && _bounds.size.width != INFINITY)
 	{
-		pos.x = MIN(pos.x, _bounds.origin.x + _bounds.size.width);
-		pos.x = MAX(pos.x, _bounds.origin.x);
+		float maxWidth = _bounds.origin.x + _bounds.size.width - 1;
+		if (pos.x > maxWidth)
+		{
+			pos.x = maxWidth;
+			velocity.x = 0;
+		}
+		
+		if (pos.x < _bounds.origin.x)
+		{
+			pos.x = _bounds.origin.x;
+			velocity.x = 0;
+		}
 	}
 	
 	if (_bounds.origin.y != INFINITY && _bounds.size.height != INFINITY)
 	{
-		pos.y = MIN(pos.y, _bounds.origin.y + _bounds.size.height);
-		pos.y = MAX(pos.y, _bounds.origin.y);
+		float maxHeight = _bounds.origin.y + _bounds.size.height - 1;
+		if (pos.y > maxHeight)
+		{
+			pos.y = maxHeight;
+			velocity.y = 0;
+		}
+		
+		if (pos.y < _bounds.origin.y)
+		{
+			pos.y = _bounds.origin.y;
+			velocity.y = 0;
+		}
 	}
 	
 	node.position = pos;
+	body.velocity = velocity;
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

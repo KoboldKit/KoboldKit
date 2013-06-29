@@ -82,25 +82,25 @@ static NSInteger neighborOffsets[8];
 	{
 		// find first non-blocking tile, then find first blocking tile after that
 		NSUInteger boundaryTile = currentTile;
-		NSLog(@"Initial boundary at : %@", [self coordStringFromIndex:boundaryTile]);
+		//NSLog(@"Initial boundary at : %@", [self coordStringFromIndex:boundaryTile]);
 		
 		// first backtrack tile is the one to the left
 		NSUInteger backtrackTile = [self firstFree4WayNeighborForTile:boundaryTile];
 		if (backtrackTile == 0)
 		{
 			// start again
-			NSLog(@"\tSelected boundary has no surrounding free tiles, skipping.");
+			//NSLog(@"\tSelected boundary has no surrounding free tiles, skipping.");
 			currentTile = [self nextTileStartingAt:[self nextTileStartingAt:currentTile blocking:NO] blocking:YES];
 			continue;
 		}
-		NSLog(@"Initial backtrack at: %@", [self coordStringFromIndex:backtrackTile]);
+		//NSLog(@"Initial backtrack at: %@", [self coordStringFromIndex:backtrackTile]);
 		
 		// get the first Moore neighbor tile
 		KKNeighborIndices initialBacktrackNeighborIndex = [self neighborIndexForBoundary:boundaryTile backtrack:backtrackTile];
 		KKNeighborIndices neighborIndex = initialBacktrackNeighborIndex + 1;
 		NSUInteger neighborTestCount = 1;
 		NSUInteger neighborTile = boundaryTile + neighborOffsets[neighborIndex];
-		NSLog(@"Initial neighbor at: %@ %@", [self coordStringFromIndex:neighborTile], [self nameForNeighborIndex:neighborIndex]);
+		//NSLog(@"Initial neighbor at: %@ %@", [self coordStringFromIndex:neighborTile], [self nameForNeighborIndex:neighborIndex]);
 		
 		// remember the start tile and the tile it was entered from (backtrack) for the termination condition
 		NSUInteger startTileVisitCount = 0;
@@ -116,8 +116,8 @@ static NSInteger neighborOffsets[8];
 		KKPointArray* contourSegment = [KKPointArray pointArrayWithCapacity:8];
 		[_contourSegments addObject:contourSegment];
 		
-		[self dumpBlockMap];
-		NSLog(@"BEGIN LOOP .......");
+		//[self dumpBlockMap];
+		//NSLog(@"BEGIN LOOP .......");
 		
 		while (YES)
 		{
@@ -151,7 +151,7 @@ static NSInteger neighborOffsets[8];
 				// did we loop around a single blocking tile once?
 				if (neighborTestCount == 7)
 				{
-					NSLog(@"Found single block tile at %@", [self coordStringFromIndex:boundaryTile]);
+					//NSLog(@"Found single block tile at %@", [self coordStringFromIndex:boundaryTile]);
 					break;
 				}
 				
@@ -167,7 +167,7 @@ static NSInteger neighborOffsets[8];
 				startTileVisitCount++;
 				if (startTileVisitCount > 2 || backtrackTile == backtrackStartTile)
 				{
-					NSLog(@"Returned to starting boundary, quitting!");
+					//NSLog(@"Returned to starting boundary, quitting!");
 					//NSLog(@"\ttart tile at: %@", [self coordStringFromIndex:contourStartTile]);
 					//NSLog(@"\tbacktrack at: %@", [self coordStringFromIndex:backtrackStartTile]);
 					break;
@@ -180,15 +180,17 @@ static NSInteger neighborOffsets[8];
 		[self closeContour:contourSegment];
 
 		// dump the newly added contour and remaining blocking tiles
-		[self dumpBlockMap];
+		//[self dumpBlockMap];
 
 		// find the next free tile and trace that
 		currentTile = [self nextTileStartingAt:[self nextTileStartingAt:currentTile blocking:NO] blocking:YES];
 		contourBlockID++;
 	}
 
+	[self dumpBlockMap];
+
 	[self convertSegmentsToPath];
-	NSLog(@"Exiting, all tiles processed.");
+	//NSLog(@"Exiting, all tiles processed.");
 }
 
 -(void) addPointsToSegments:(KKPointArray*)segments boundary:(NSUInteger)boundaryTile fromNeighborIndex:(KKNeighborIndices)fromNeighbor toNeighborIndex:(KKNeighborIndices)toNeighbor
@@ -339,12 +341,10 @@ static NSInteger neighborOffsets[8];
 	for (KKPointArray* contour in _contourSegments)
 	{
 		CGMutablePathRef path = CGPathCreateMutable();
-		LOG_EXPR(path);
 		
 		for (NSUInteger i = 0; i < contour.count; i++)
 		{
 			CGPoint p = contour.points[i];
-			LOG_EXPR(p);
 			
 			if (i == 0)
 			{

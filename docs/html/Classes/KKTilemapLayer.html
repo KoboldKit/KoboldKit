@@ -83,6 +83,10 @@
 	
 	<option value="//api/name/objectByName:">&nbsp;&nbsp;&nbsp;&nbsp;- objectByName:</option>
 	
+	<option value="//api/name/pathsFromObjects">&nbsp;&nbsp;&nbsp;&nbsp;- pathsFromObjects</option>
+	
+	<option value="//api/name/pathsWithBlockingGids:">&nbsp;&nbsp;&nbsp;&nbsp;- pathsWithBlockingGids:</option>
+	
 	<option value="//api/name/removeObject:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObject:</option>
 	
 	<option value="//api/name/setTileGid:tileCoord:">&nbsp;&nbsp;&nbsp;&nbsp;- setTileGid:tileCoord:</option>
@@ -114,6 +118,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Tile Layer Properties">Tile Layer Properties</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Tile Layer GIDs">Working with Tile Layer GIDs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Generating Layer Blocking">Generating Layer Blocking</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Layer Objects">Working with Layer Objects</a></span></li>
 	
@@ -168,6 +174,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectAtIndex:">objectAtIndex:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectByName:">objectByName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathsFromObjects">pathsFromObjects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathsWithBlockingGids:">pathsWithBlockingGids:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObject:">removeObject:</a></span></li>
 	
@@ -387,6 +397,28 @@ for object layers.</p></span>
 						</ul>
 						
 						
+						<a title="Generating Layer Blocking" name="task_Generating Layer Blocking"></a>
+						<h3 class="subsubtitle task-title">Generating Layer Blocking</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathsWithBlockingGids:">&ndash;&nbsp;pathsWithBlockingGids:</a></code>
+		<span class="tooltip"><p>(Tile Layers only) Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathsFromObjects">&ndash;&nbsp;pathsFromObjects</a></code>
+		<span class="tooltip"><p>(Object Layers only) Creates and returns a CGPath for every polygon, polyline, rectangle and ellipse object on the layer.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
 						<a title="Working with Layer Objects" name="task_Working with Layer Objects"></a>
 						<h3 class="subsubtitle task-title">Working with Layer Objects</h3>
 
@@ -453,7 +485,7 @@ Always nil for tile layers.</p></span>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) unsigned char alpha</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) float alpha</code></div>
 	
 	
 	
@@ -494,7 +526,7 @@ Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL endlessScrolling</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL endlessScrolling</code></div>
 	
 	
 	
@@ -533,7 +565,7 @@ Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL endlessScrollingHorizontal</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL endlessScrollingHorizontal</code></div>
 	
 	
 	
@@ -572,7 +604,7 @@ Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL endlessScrollingVertical</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL endlessScrollingVertical</code></div>
 	
 	
 	
@@ -612,7 +644,7 @@ use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL hidden</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL hidden</code></div>
 	
 	
 	
@@ -651,7 +683,7 @@ use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isObjectLayer</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL isObjectLayer</code></div>
 	
 	
 	
@@ -690,7 +722,7 @@ use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isTileLayer</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL isTileLayer</code></div>
 	
 	
 	
@@ -729,7 +761,7 @@ use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *name</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *name</code></div>
 	
 	
 	
@@ -770,7 +802,7 @@ Always nil for tile layers.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *objects</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSArray *objects</code></div>
 	
 	
 	
@@ -859,7 +891,7 @@ Always nil for tile layers.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KKTilemapProperties *properties</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapProperties *properties</code></div>
 	
 	
 	
@@ -898,7 +930,7 @@ Always nil for tile layers.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGSize size</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGSize size</code></div>
 	
 	
 	
@@ -937,7 +969,7 @@ Always nil for tile layers.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) KKTilemap *tilemap</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, weak) KKTilemap *tilemap</code></div>
 	
 	
 	
@@ -977,7 +1009,7 @@ for object layers.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KKTilemapLayerTiles *tiles</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapLayerTiles *tiles</code></div>
 	
 	
 	
@@ -1181,6 +1213,89 @@ for object layers.</p>
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
 		<p>the first object with the given <a href="#//api/name/name">name</a>, or nil if there&rsquo;s no object with this <a href="#//api/name/name">name</a> on this layer. Object names are case-sensitive!</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapLayer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pathsFromObjects" title="pathsFromObjects"></a>
+	<h3 class="subsubtitle method-title">pathsFromObjects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(Object Layers only) Creates and returns a CGPath for every polygon, polyline, rectangle and ellipse object on the layer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)pathsFromObjects</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapLayer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pathsWithBlockingGids:" title="pathsWithBlockingGids:"></a>
+	<h3 class="subsubtitle method-title">pathsWithBlockingGids:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(Tile Layers only) Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)pathsWithBlockingGids:(KKIntegerArray *)<em>blockingGids</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>blockingGids</em></dt>
+			<dd><p>A list of GID numbers which are considered blocking.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array containing <a href="../Classes/KKPointArray.html">KKPointArray</a>, each defines a single contour&rsquo;s line segments.</p>
 	</div>
 	
 	
@@ -1457,7 +1572,7 @@ for object layers.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-23)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

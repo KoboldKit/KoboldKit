@@ -17,7 +17,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, weak) SKNode *target</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *target</Declaration>
 			
 			
 			<Anchor>//api/name/target</Anchor>
@@ -28,7 +28,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, weak) SKNode *target</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *target</Declaration>
 			
 			
 			<Anchor>//api/name/target</Anchor>
@@ -39,7 +39,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, weak) SKNode *target</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *target</Declaration>
 			
 			
 			<Anchor>//api/name/target</Anchor>
@@ -50,7 +50,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			<Declaration>@property (atomic) CGPoint positionMultiplier</Declaration>
 			
 			
 			<Anchor>//api/name/positionMultiplier</Anchor>
@@ -61,7 +61,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			<Declaration>@property (atomic) CGPoint positionMultiplier</Declaration>
 			
 			
 			<Anchor>//api/name/positionMultiplier</Anchor>
@@ -72,7 +72,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint positionMultiplier</Declaration>
+			<Declaration>@property (atomic) CGPoint positionMultiplier</Declaration>
 			
 			
 			<Anchor>//api/name/positionMultiplier</Anchor>
@@ -83,7 +83,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			<Declaration>@property (atomic) CGPoint positionOffset</Declaration>
 			
 			
 			<Anchor>//api/name/positionOffset</Anchor>
@@ -94,7 +94,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			<Declaration>@property (atomic) CGPoint positionOffset</Declaration>
 			
 			
 			<Anchor>//api/name/positionOffset</Anchor>
@@ -105,7 +105,7 @@ The multiplier can be used to achieve a parallaxing effect.</Abstract>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint positionOffset</Declaration>
+			<Declaration>@property (atomic) CGPoint positionOffset</Declaration>
 			
 			
 			<Anchor>//api/name/positionOffset</Anchor>

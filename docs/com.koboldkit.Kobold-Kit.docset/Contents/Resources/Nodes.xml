@@ -47,6 +47,10 @@
 						<NodeRef refid="36"/>
 						<NodeRef refid="37"/>
 						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
 						
 					</Subnodes>
 				</Node>
@@ -56,8 +60,8 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="39"/>
-						<NodeRef refid="40"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
 						
 					</Subnodes>
 				</Node>
@@ -67,9 +71,9 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="41"/>
-						<NodeRef refid="42"/>
-						<NodeRef refid="43"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
 						
 					</Subnodes>
 				</Node>
@@ -115,136 +119,152 @@
 			<Path>Classes/KKInt64Number.html</Path>
 		</Node>
 		<Node id="11">
+			<Name>KKIntegerArray</Name>
+			<Path>Classes/KKIntegerArray.html</Path>
+		</Node>
+		<Node id="12">
 			<Name>KKIvarInfo</Name>
 			<Path>Classes/KKIvarInfo.html</Path>
 		</Node>
-		<Node id="12">
+		<Node id="13">
 			<Name>KKIvarSetter</Name>
 			<Path>Classes/KKIvarSetter.html</Path>
 		</Node>
-		<Node id="13">
+		<Node id="14">
 			<Name>KKMutableNumber</Name>
 			<Path>Classes/KKMutableNumber.html</Path>
 		</Node>
-		<Node id="14">
+		<Node id="15">
 			<Name>KKNodeBehavior</Name>
 			<Path>Classes/KKNodeBehavior.html</Path>
 		</Node>
-		<Node id="15">
+		<Node id="16">
 			<Name>KKNodeController</Name>
 			<Path>Classes/KKNodeController.html</Path>
 		</Node>
-		<Node id="16">
+		<Node id="17">
 			<Name>KKNodeModel</Name>
 			<Path>Classes/KKNodeModel.html</Path>
 		</Node>
-		<Node id="17">
+		<Node id="18">
+			<Name>KKPointArray</Name>
+			<Path>Classes/KKPointArray.html</Path>
+		</Node>
+		<Node id="19">
 			<Name>KKScene</Name>
 			<Path>Classes/KKScene.html</Path>
 		</Node>
-		<Node id="18">
+		<Node id="20">
 			<Name>KKStayInBoundsBehavior</Name>
 			<Path>Classes/KKStayInBoundsBehavior.html</Path>
 		</Node>
-		<Node id="19">
+		<Node id="21">
 			<Name>KKTMXReader</Name>
 			<Path>Classes/KKTMXReader.html</Path>
 		</Node>
-		<Node id="20">
+		<Node id="22">
 			<Name>KKTMXWriter</Name>
 			<Path>Classes/KKTMXWriter.html</Path>
 		</Node>
-		<Node id="21">
+		<Node id="23">
 			<Name>KKTilemap</Name>
 			<Path>Classes/KKTilemap.html</Path>
 		</Node>
-		<Node id="22">
+		<Node id="24">
 			<Name>KKTilemapLayer</Name>
 			<Path>Classes/KKTilemapLayer.html</Path>
 		</Node>
-		<Node id="23">
+		<Node id="25">
+			<Name>KKTilemapLayerContourTracer</Name>
+			<Path>Classes/KKTilemapLayerContourTracer.html</Path>
+		</Node>
+		<Node id="26">
 			<Name>KKTilemapLayerNode</Name>
 			<Path>Classes/KKTilemapLayerNode.html</Path>
 		</Node>
-		<Node id="24">
+		<Node id="27">
 			<Name>KKTilemapLayerTiles</Name>
 			<Path>Classes/KKTilemapLayerTiles.html</Path>
 		</Node>
-		<Node id="25">
+		<Node id="28">
 			<Name>KKTilemapNode</Name>
 			<Path>Classes/KKTilemapNode.html</Path>
 		</Node>
-		<Node id="26">
+		<Node id="29">
 			<Name>KKTilemapObject</Name>
 			<Path>Classes/KKTilemapObject.html</Path>
 		</Node>
-		<Node id="27">
+		<Node id="30">
 			<Name>KKTilemapObjectLayerNode</Name>
 			<Path>Classes/KKTilemapObjectLayerNode.html</Path>
 		</Node>
-		<Node id="28">
+		<Node id="31">
 			<Name>KKTilemapPolyObject</Name>
 			<Path>Classes/KKTilemapPolyObject.html</Path>
 		</Node>
-		<Node id="29">
+		<Node id="32">
 			<Name>KKTilemapProperties</Name>
 			<Path>Classes/KKTilemapProperties.html</Path>
 		</Node>
-		<Node id="30">
+		<Node id="33">
+			<Name>KKTilemapRectangleObject</Name>
+			<Path>Classes/KKTilemapRectangleObject.html</Path>
+		</Node>
+		<Node id="34">
 			<Name>KKTilemapTileLayerNode</Name>
 			<Path>Classes/KKTilemapTileLayerNode.html</Path>
 		</Node>
-		<Node id="31">
+		<Node id="35">
+			<Name>KKTilemapTileObject</Name>
+			<Path>Classes/KKTilemapTileObject.html</Path>
+		</Node>
+		<Node id="36">
 			<Name>KKTilemapTileProperties</Name>
 			<Path>Classes/KKTilemapTileProperties.html</Path>
 		</Node>
-		<Node id="32">
+		<Node id="37">
 			<Name>KKTilemapTileset</Name>
 			<Path>Classes/KKTilemapTileset.html</Path>
 		</Node>
-		<Node id="33">
+		<Node id="38">
 			<Name>KKView</Name>
 			<Path>Classes/KKView.html</Path>
 		</Node>
-		<Node id="34">
+		<Node id="39">
 			<Name>KKViewController</Name>
 			<Path>Classes/KKViewController.html</Path>
 		</Node>
-		<Node id="35">
-			<Name>KTTilemapRectangleObject</Name>
-			<Path>Classes/KTTilemapRectangleObject.html</Path>
+		<Node id="40">
+			<Name>KKViewOriginNode</Name>
+			<Path>Classes/KKViewOriginNode.html</Path>
 		</Node>
-		<Node id="36">
-			<Name>KTTilemapTileObject</Name>
-			<Path>Classes/KTTilemapTileObject.html</Path>
-		</Node>
-		<Node id="37">
+		<Node id="41">
 			<Name>KoboldKit</Name>
 			<Path>Classes/KoboldKit.html</Path>
 		</Node>
-		<Node id="38">
+		<Node id="42">
 			<Name>XMLWriter</Name>
 			<Path>Classes/XMLWriter.html</Path>
 		</Node>
 		
-		<Node id="39">
+		<Node id="43">
 			<Name>NSCoder(KoboldKit)</Name>
 			<Path>Categories/NSCoder+KoboldKit.html</Path>
 		</Node>
-		<Node id="40">
+		<Node id="44">
 			<Name>SKNode(KoboldKit)</Name>
 			<Path>Categories/SKNode+KoboldKit.html</Path>
 		</Node>
 		
-		<Node id="41">
+		<Node id="45">
 			<Name>KKSceneEventDelegate</Name>
 			<Path>Protocols/KKSceneEventDelegate.html</Path>
 		</Node>
-		<Node id="42">
+		<Node id="46">
 			<Name>NSXMLStreamWriter</Name>
 			<Path>Protocols/NSXMLStreamWriter.html</Path>
 		</Node>
-		<Node id="43">
+		<Node id="47">
 			<Name>XMLStreamWriter</Name>
 			<Path>Protocols/XMLStreamWriter.html</Path>
 		</Node>

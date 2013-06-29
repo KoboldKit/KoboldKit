@@ -58,6 +58,12 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/createPhysicsCollisionsWithBlockingGids:">&nbsp;&nbsp;&nbsp;&nbsp;- createPhysicsCollisionsWithBlockingGids:</option>
+	
+	<option value="//api/name/createPhysicsCollisionsWithObjectLayerNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- createPhysicsCollisionsWithObjectLayerNamed:</option>
+	
+	<option value="//api/name/enableMapBoundaryScrolling">&nbsp;&nbsp;&nbsp;&nbsp;- enableMapBoundaryScrolling</option>
+	
 	<option value="//api/name/objectLayerNodeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- objectLayerNodeWithName:</option>
 	
 	<option value="//api/name/tileLayerNodeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- tileLayerNodeWithName:</option>
@@ -105,6 +111,12 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPhysicsCollisionsWithBlockingGids:">createPhysicsCollisionsWithBlockingGids:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPhysicsCollisionsWithObjectLayerNamed:">createPhysicsCollisionsWithObjectLayerNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableMapBoundaryScrolling">enableMapBoundaryScrolling</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLayerNodeWithName:">objectLayerNodeWithName:</a></span></li>
 	
@@ -207,6 +219,27 @@ which perform each layer&rsquo;s rendering.</p>
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createPhysicsCollisionsWithBlockingGids:">&ndash;&nbsp;createPhysicsCollisionsWithBlockingGids:</a></code>
+		<span class="tooltip"><p>Creates physics blocking shapes from the main tile layer&rsquo;s blocking tiles.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createPhysicsCollisionsWithObjectLayerNamed:">&ndash;&nbsp;createPhysicsCollisionsWithObjectLayerNamed:</a></code>
+		<span class="tooltip"><p>Creates physics blocking shapes from an object layer&rsquo;s objects.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableMapBoundaryScrolling">&ndash;&nbsp;enableMapBoundaryScrolling</a></code>
+		<span class="tooltip"><p>Enables boundary scrolling. This prevents the map&rsquo;s main tile layer from ever scrolling outside its <a href="#//api/name/bounds">bounds</a>.</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -272,7 +305,7 @@ which perform each layer&rsquo;s rendering.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</code></div>
 	
 	
 	
@@ -405,6 +438,138 @@ which perform each layer&rsquo;s rendering.</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/createPhysicsCollisionsWithBlockingGids:" title="createPhysicsCollisionsWithBlockingGids:"></a>
+	<h3 class="subsubtitle method-title">createPhysicsCollisionsWithBlockingGids:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates physics blocking shapes from the main tile layer&rsquo;s blocking tiles.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsCollisionsWithBlockingGids:(KKIntegerArray *)<em>blockingGids</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>blockingGids</em></dt>
+			<dd><p>A list of GIDs of tiles that should be considered blocking.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The node containing child nodes for each physics body created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createPhysicsCollisionsWithObjectLayerNamed:" title="createPhysicsCollisionsWithObjectLayerNamed:"></a>
+	<h3 class="subsubtitle method-title">createPhysicsCollisionsWithObjectLayerNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates physics blocking shapes from an object layer&rsquo;s objects.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsCollisionsWithObjectLayerNamed:(NSString *)<em>layerName</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layerName</em></dt>
+			<dd><p>The name of an object layer whose objects should be converted to physics collisions.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The node containing child nodes for each physics body created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableMapBoundaryScrolling" title="enableMapBoundaryScrolling"></a>
+	<h3 class="subsubtitle method-title">enableMapBoundaryScrolling</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables boundary scrolling. This prevents the map&rsquo;s main tile layer from ever scrolling outside its <a href="#//api/name/bounds">bounds</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)enableMapBoundaryScrolling</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/objectLayerNodeWithName:" title="objectLayerNodeWithName:"></a>
 	<h3 class="subsubtitle method-title">objectLayerNodeWithName:</h3>
 	
@@ -515,7 +680,7 @@ which perform each layer&rsquo;s rendering.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-23)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-06-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

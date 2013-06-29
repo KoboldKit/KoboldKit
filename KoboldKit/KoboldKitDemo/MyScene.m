@@ -18,12 +18,9 @@
 {
     if (self = [super initWithSize:size])
 	{
-		LOG_EXPR(self.frame);
-		LOG_EXPR(self.size);
-		
         /* Setup your scene here */
+		self.backgroundColor = [SKColor colorWithRed:0.66 green:0.55 blue:1.0 alpha:1.0];
 		self.anchorPoint = CGPointMake(0.5f, 0.5f);
-		self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
 		self.physicsWorld.gravity = CGPointMake(0, -1);
 
 		//_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
@@ -36,53 +33,33 @@
 		{
 			[blockingGids addInteger:i];
 		}
-		NSArray* contours = [_tilemapNode.mainTileLayerNode.layer generateContourWithBlockingGids:blockingGids];
-		LOG_EXPR(contours);
-
-		for (id contour in contours)
-		{
-			SKNode* bodyNode = [SKNode node];
-			CGPathRef path = (__bridge CGPathRef)contour;
-			[bodyNode physicsBodyWithEdgeLoopFromPath:path];
-			//[bodyNode physicsBodyWithEdgeChainFromPath:path];
-			[_tilemapNode.mainTileLayerNode addChild:bodyNode];
-		}
-
+		[_tilemapNode createPhysicsCollisionsWithBlockingGids:blockingGids];
+		[_tilemapNode createPhysicsCollisionsWithObjectLayerNamed:@"extra-collision"];
+		
 		CGSize playerSize = CGSizeMake(25, 25);
 		_playerCharacter = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
 		_playerCharacter.position = CGPointMake(170, 161);
 		[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
 		[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
+
+		// test
+		_tilemapNode.mainTileLayerNode.layer.endlessScrollingHorizontal = NO;
 		
+		// uncomment to prevent player from leaving the area
+		[_playerCharacter addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
 		[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
-		//[_playerCharacter addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
 		
-		LOG_EXPR(_tilemapNode.bounds);
-		CGRect bounds = _tilemapNode.bounds;
-		bounds.origin = [self convertPoint:bounds.origin fromNode:_tilemapNode];
-		LOG_EXPR(bounds);
-		
-		bounds.origin.x = -(bounds.size.width + 0);
-		bounds.origin.y = -(bounds.size.height + 0);
-		bounds.size.width = bounds.size.width - 120;
-		bounds.size.height = bounds.size.height - 80;
-		LOG_EXPR(bounds);
-		//[_tilemapNode addBehavior:[KKStayInBoundsBehavior stayInBounds:bounds]];
-
-
-		[_tilemapNode enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop) {
-			LOG_EXPR(node);
-		}];
+		[_tilemapNode enableMapBoundaryScrolling];
 		
 		/*
-		SKShapeNode* shape = [SKShapeNode node];
-		shape.path = CGPathCreateWithRect(CGRectMake(64, 64, 128, 64), nil);
-		shape.fillColor = [SKColor colorWithRed:0 green:0 blue:1 alpha:0.4];
-		KKViewOriginNode* vo = [KKViewOriginNode node];
-		[self addChild:vo];
-		[vo addChild:shape];
+		CGRect bounds = _tilemapNode.bounds;
+		LOG_EXPR(bounds);
+		bounds.origin = CGPointMake(-bounds.size.width + self.frame.origin.x + self.frame.size.width, -bounds.size.height + self.frame.origin.y + self.frame.size.height);
+		bounds.size = CGSizeMake(bounds.size.width - self.frame.size.width + 1, bounds.size.height - self.frame.size.height + 1);
+		LOG_EXPR(bounds);
+		[_tilemapNode.mainTileLayerNode addBehavior:[KKStayInBoundsBehavior stayInBounds:bounds]];
 		*/
-		
+
 		[self createVirtualJoypad];
     }
     return self;
@@ -90,8 +67,19 @@
 
 -(void) didMoveToView:(SKView *)view
 {
-	// always call superr in "event" methods of KKScene subclasses
+	// always call super in "event" methods of KKScene subclasses
 	[super didMoveToView:view];
+
+	self.view.showsDrawCount = NO;
+	self.view.showsFPS = NO;
+	self.view.showsNodeCount = NO;
+	
+	[self performSelector:@selector(showView:) withObject:nil afterDelay:0.2];
+}
+
+-(void) showView:(id)sender
+{
+	self.view.hidden = NO;
 }
 
 -(void) dealloc
@@ -241,6 +229,7 @@
 	[_playerCharacter.physicsBody applyForce:_currentControlPadDirection];
 	
 	//NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
+	//NSLog(@"pos: {%.0f, %.0f}", _tilemapNode.mainTileLayerNode.position.x, _tilemapNode.mainTileLayerNode.position.y);
 }
 
 -(void) didSimulatePhysics

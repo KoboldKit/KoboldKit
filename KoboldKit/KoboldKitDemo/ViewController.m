@@ -11,15 +11,25 @@
 
 @implementation ViewController
 
--(void) viewWillAppear:(BOOL)animated
+-(void) viewDidLoad
 {
-    [super viewDidLoad];
+	[super viewDidLoad];
+	
+	self.view.hidden = YES;
+}
+
+-(void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 
 	LOG_EXPR(self.view.bounds.size);
 	
     // Create and configure the scene.
+	/*
 	CGSize boundsSize = self.view.bounds.size;
-    KKScene * scene = [MyScene sceneWithSize:CGSizeMake(boundsSize.height, boundsSize.width)];
+    KKScene* scene = [MyScene sceneWithSize:CGSizeMake(boundsSize.height, boundsSize.width)];
+	*/
+    KKScene* scene = [MyScene sceneWithSize:self.view.bounds.size];
     
     // Present the scene.
     [self.kkView presentScene:scene];

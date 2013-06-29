@@ -56,7 +56,7 @@
 /** How opaque the layer is. Value ranges from 0 (fully transparent) to 1 (fully opaque).
    The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE
  @returns The alpha (opacity) of the layer. */
-@property (atomic) unsigned char alpha;
+@property (atomic) float alpha;
 
 /** If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
  endlessScrollingHorizontal and endlessScrollingVertical. Returns YES only if both endlessScrollingHorizontal and endlessScrollingVertical are YES.
@@ -112,12 +112,15 @@
  @param tileCoord The tile coordinate of the tile to clear (remove). */
 -(void) clearTileAt:(CGPoint)tileCoord;
 
-/** @name Generating Tile Layer Contours */
+/** @name Generating Layer Blocking */
 
-/** Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.
+/** (Tile Layers only) Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.
  @param blockingGids A list of GID numbers which are considered blocking.
  @returns An array containing KKPointArray, each defines a single contour's line segments. */
--(NSArray*) generateContourWithBlockingGids:(KKIntegerArray*)blockingGids;
+-(NSArray*) pathsWithBlockingGids:(KKIntegerArray*)blockingGids;
+
+/** (Object Layers only) Creates and returns a CGPath for every polygon, polyline, rectangle and ellipse object on the layer. */
+-(NSArray*) pathsFromObjects;
 
 /** @name Working with Layer Objects */
 

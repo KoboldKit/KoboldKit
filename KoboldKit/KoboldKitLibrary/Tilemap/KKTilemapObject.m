@@ -15,7 +15,7 @@
 -(NSString*) description
 {
 	return [NSString stringWithFormat:@"%@ (name: '%@', userType: '%@', position: %.0f,%.0f, objectType: %i, properties: %u)",
-			[super description], _name, _userType, _position.x, _position.y, _objectType, (unsigned int)_properties.count];
+			[super description], _name, _userType, _position.x, _position.y, _type, (unsigned int)_properties.count];
 }
 
 -(KKTilemapProperties*) properties
@@ -28,9 +28,9 @@
 	return _properties;
 }
 
--(KTTilemapRectangleObject*) rectangleObjectFromPolyObject:(KKTilemapPolyObject*)polyObject
+-(KKTilemapRectangleObject*) rectangleObjectFromPolyObject:(KKTilemapPolyObject*)polyObject
 {
-	KTTilemapRectangleObject* rectObject = [[KTTilemapRectangleObject alloc] init];
+	KKTilemapRectangleObject* rectObject = [[KKTilemapRectangleObject alloc] init];
 	rectObject.name = polyObject.name;
 	rectObject.userType = polyObject.userType;
 	rectObject.position = polyObject.position;
@@ -53,7 +53,7 @@
 	self = [super init];
 	if (self)
 	{
-		self.objectType = KKTilemapObjectTypePolyLine;
+		self.type = KKTilemapObjectTypePolyLine;
 		_points = nil;
 	}
 
@@ -107,14 +107,14 @@
 
 @end
 
-@implementation KTTilemapRectangleObject
+@implementation KKTilemapRectangleObject
 
 -(id) init
 {
 	self = [super init];
 	if (self)
 	{
-		self.objectType = KKTilemapObjectTypeRectangle;
+		self.type = KKTilemapObjectTypeRectangle;
 	}
 
 	return self;
@@ -128,14 +128,14 @@
 
 @end
 
-@implementation KTTilemapTileObject
+@implementation KKTilemapTileObject
 
 -(id) init
 {
 	self = [super init];
 	if (self)
 	{
-		self.objectType = KKTilemapObjectTypeTile;
+		self.type = KKTilemapObjectTypeTile;
 	}
 
 	return self;

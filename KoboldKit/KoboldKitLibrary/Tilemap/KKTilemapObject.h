@@ -10,7 +10,7 @@
 
 @class KKTilemapProperties;
 @class KKTilemapPolyObject;
-@class KTTilemapRectangleObject;
+@class KKTilemapRectangleObject;
 
 /** @file KTTilemapObject.h */
 
@@ -21,6 +21,7 @@ typedef enum : unsigned char
 	KKTilemapObjectTypeRectangle, /**< Object is a rectangle. It has no points, just position and size. */
 	KKTilemapObjectTypePolygon,   /**< Object is a closed polygon made up of points. It has no size and position is its first point. */
 	KKTilemapObjectTypePolyLine,  /**< Object is a polyline made up of points. It has no size and position is its first point. */
+	KKTilemapObjectTypeEllipse,   /**< Object is an ellipse assumed to be touching the sides of the rectangle. */
 	KKTilemapObjectTypeTile,      /**< Object is a tile. It has no points, but gid is set. */
 } KKTilemapObjectType;
 
@@ -51,10 +52,10 @@ typedef enum : unsigned char
 @property (atomic) CGSize size;
 /** The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
    having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! */
-@property (atomic) KKTilemapObjectType objectType;
+@property (atomic) KKTilemapObjectType type;
 
 // TMX Parser needs these
--(KTTilemapRectangleObject*) rectangleObjectFromPolyObject:(KKTilemapPolyObject*)polyObject;
+-(KKTilemapRectangleObject*) rectangleObjectFromPolyObject:(KKTilemapPolyObject*)polyObject;
 -(void) internal_setProperties:(KKTilemapProperties*)properties;
 @end
 
@@ -77,13 +78,15 @@ typedef enum : unsigned char
 @end
 
 /** A rectangle object, usually referred to as simply "object" in Tiled. */
-@interface KTTilemapRectangleObject : KKTilemapObject
+@interface KKTilemapRectangleObject : KKTilemapObject
 /** The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size. */
-@property (atomic, readonly) CGRect rect;
+@property (atomic) CGRect rect;
+/** YES if the rectangle defines the outer area of an ellipse. */
+@property (atomic) BOOL ellipse;
 @end
 
 /** A tile object. */
-@interface KTTilemapTileObject : KKTilemapObject
+@interface KKTilemapTileObject : KKTilemapObject
 /** The GID of the tile object. */
 @property (atomic) gid_t gid;
 

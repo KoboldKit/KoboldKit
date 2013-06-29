@@ -34,7 +34,7 @@
 
 -(NSString*) description
 {
-	return [NSString stringWithFormat:@"%@ (name: '%@', size: %.0f,%.0f, opacity: %i, visible: %i, isObjectLayer: %i, objects: %u, tiles: %@, properties: %u)",
+	return [NSString stringWithFormat:@"%@ (name: '%@', size: %.0f,%.0f, opacity: %f, visible: %i, isObjectLayer: %i, objects: %u, tiles: %@, properties: %u)",
 			[super description], _name, _size.width, _size.height, _alpha, _hidden, _isObjectLayer, (unsigned int)_objects.count, _tiles, (unsigned int)_properties.count];
 }
 
@@ -148,9 +148,9 @@
 	return _tiles;
 }
 
-#pragma mark Contour
+#pragma mark Collisions
 
--(NSArray*) generateContourWithBlockingGids:(KKIntegerArray*)blockingGids
+-(NSArray*) pathsWithBlockingGids:(KKIntegerArray*)blockingGids
 {
 	if (self.isObjectLayer)
 	{
@@ -159,6 +159,71 @@
 	
 	KKTilemapLayerContourTracer* contour = [KKTilemapLayerContourTracer contourMapFromTileLayer:self blockingGids:blockingGids];
 	return contour.contourSegments;
+}
+
+-(NSArray*) pathsFromObjects
+{
+	if (_objects.count == 0)
+	{
+		return nil;
+	}
+	
+	NSMutableArray* paths = [NSMutableArray arrayWithCapacity:_objects.count];
+	for (KKTilemapObject* object in _objects)
+	{
+		CGPathRef path = [self pathFromObject:object];
+		[paths addObject:(__bridge_transfer id)path];
+	}
+	return paths;
+}
+
+-(CGPathRef) pathFromObject:(KKTilemapObject*)object
+{
+	CGPathRef path = nil;
+	CGRect rect = {object.position, object.size};
+	
+	switch (object.type)
+	{
+		case KKTilemapObjectTypeTile:
+		case KKTilemapObjectTypeRectangle:
+			path = CGPathCreateWithRect(rect, nil);
+			break;
+		case KKTilemapObjectTypeEllipse:
+			path = CGPathCreateWithEllipseInRect(rect, nil);
+			break;
+		case KKTilemapObjectTypePolyLine:
+		case KKTilemapObjectTypePolygon:
+		{
+			KKTilemapPolyObject* polyObject = (KKTilemapPolyObject*)object;
+			NSUInteger numPoints = polyObject.numberOfPoints;
+			CGPoint* points = polyObject.points;
+			
+			CGMutablePathRef poly = CGPathCreateMutable();
+			CGPathMoveToPoint(poly, nil, points[0].x, points[0].y);
+			for (NSUInteger i = 1; i < numPoints; i++)
+			{
+				CGPoint p = points[i];
+				CGPathAddLineToPoint(poly, nil, p.x, p.y);
+			}
+			
+			if (object.type == KKTilemapObjectTypePolygon)
+			{
+				// close the polygon
+				CGPathAddLineToPoint(poly, nil, points[0].x, points[0].y);
+			}
+			
+			CGAffineTransform transform = CGAffineTransformMakeTranslation(rect.origin.x, rect.origin.y);
+			path = CGPathCreateCopyByTransformingPath(poly, &transform);
+			CGPathRelease(poly);
+			break;
+		}
+			
+		default:
+			[NSException raise:NSInternalInconsistencyException format:@"unhandled tilemap object.type %u", object.type];
+			break;
+	}
+	
+	return path;
 }
 
 #pragma mark Objects

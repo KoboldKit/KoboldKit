@@ -201,7 +201,9 @@
 	layer.isTileLayer = YES;
 	layer.name = [attributes objectForKey:@"name"];
 	layer.hidden = [[attributes objectForKey:@"visible"] isEqualToString:@"0"];
-	layer.alpha = [[attributes objectForKey:@"opacity"] floatValue];
+	
+	KKMutableNumber* opacity = [attributes objectForKey:@"opacity"];
+	layer.alpha = opacity ? [opacity floatValue] : 1.0;
 
 	CGSize layerSize;
 	layerSize.width = [[attributes objectForKey:@"width"] intValue];
@@ -248,21 +250,21 @@
 	// determine type of object first
 	if ([attributes objectForKey:@"gid"])
 	{
-		KTTilemapTileObject* tileObject = [[KTTilemapTileObject alloc] init];
+		KKTilemapTileObject* tileObject = [[KKTilemapTileObject alloc] init];
 		tileObject.gid = (gid_t)[[attributes objectForKey:@"gid"] intValue];
 		tileObject.size = _tilemap.gridSize;
 		object = tileObject;
 	}
 	else if ([attributes objectForKey:@"width"] || [attributes objectForKey:@"height"])
 	{
-		KTTilemapRectangleObject* rectObject = [[KTTilemapRectangleObject alloc] init];
+		KKTilemapRectangleObject* rectObject = [[KKTilemapRectangleObject alloc] init];
 		rectObject.size = CGSizeMake([[attributes objectForKey:@"width"] intValue], [[attributes objectForKey:@"height"] intValue]);
 		object = rectObject;
 	}
 	else
 	{
 		KKTilemapPolyObject* polyObject = [[KKTilemapPolyObject alloc] init];
-		polyObject.objectType = KKTilemapObjectTypeUnset; // it could be a zero-sized rectangle object
+		polyObject.type = KKTilemapObjectTypeUnset; // it could be a zero-sized rectangle object
 		object = polyObject;
 	}
 
@@ -274,7 +276,7 @@
 	position.y = [[attributes objectForKey:@"y"] intValue];
 	// Correct y position. (Tiled uses Y origin on top extending downward, cocos2d has Y origin at bottom extending upward)
 	position.y = (_tilemap.size.height * _tilemap.gridSize.height) - position.y;
-	if (object.objectType == KKTilemapObjectTypeRectangle)
+	if (object.type == KKTilemapObjectTypeRectangle)
 	{
 		// rectangles have their origin point at the upper left corner, but we need it to be in the lower left corner
 		position.y -= object.size.height;
@@ -288,21 +290,27 @@
 
 -(void) parsePolygonWithAttributes:(NSDictionary*)attributes
 {
-	[(KKTilemapPolyObject*)_parsingObject makePointsFromString :[attributes objectForKey:@"points"]];
-	_parsingObject.objectType = KKTilemapObjectTypePolygon;
+	[(KKTilemapPolyObject*)_parsingObject makePointsFromString:[attributes objectForKey:@"points"]];
+	_parsingObject.type = KKTilemapObjectTypePolygon;
 }
 
 -(void) parsePolyLineWithAttributes:(NSDictionary*)attributes
 {
-	[(KKTilemapPolyObject*)_parsingObject makePointsFromString :[attributes objectForKey:@"points"]];
-	_parsingObject.objectType = KKTilemapObjectTypePolyLine;
+	[(KKTilemapPolyObject*)_parsingObject makePointsFromString:[attributes objectForKey:@"points"]];
+	_parsingObject.type = KKTilemapObjectTypePolyLine;
+}
+
+-(void) parseEllipseWithAttributes:(NSDictionary*)attributes
+{
+	_parsingObject.type = KKTilemapObjectTypeEllipse;
+	((KKTilemapRectangleObject*)_parsingObject).ellipse = YES;
 }
 
 -(void) addParsingObjectToLayer
 {
 	// Add the object to the object Layer
 	NSAssert2(_parsingLayer.isObjectLayer, @"ERROR adding object %@: parsing layer (%@) is not an object layer", _parsingObject, _parsingLayer);
-	if (_parsingObject.objectType == KKTilemapObjectTypeUnset)
+	if (_parsingObject.type == KKTilemapObjectTypeUnset)
 	{
 		// we have a zero-sized rectangle object, replace parsing object
 		_parsingObject = [_parsingObject rectangleObjectFromPolyObject:(KKTilemapPolyObject*)_parsingObject];
@@ -433,6 +441,10 @@
 	else if ([elementName isEqualToString:@"polyline"])
 	{
 		[self parsePolyLineWithAttributes:attributes];
+	}
+	else if ([elementName isEqualToString:@"ellipse"])
+	{
+		[self parseEllipseWithAttributes:attributes];
 	}
 	else if ([elementName isEqualToString:@"property"])
 	{
