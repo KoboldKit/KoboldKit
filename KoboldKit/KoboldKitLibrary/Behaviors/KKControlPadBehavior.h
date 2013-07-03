@@ -22,14 +22,17 @@ extern NSString* const KKControlPadDidChangeDirection;
 	@private
 	__weak UITouch* _trackedTouch;
 	NSArray* _textures;
-	BOOL _allowDiagonalDirections;
+	int _directionsCount;
 }
 
-/** Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 8 points. */
+/** Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points. */
 @property (atomic) CGFloat deadZone;
 
 /** The D-Pad direction, in KTArcadeInputState directions (using player 1 states). */
 @property (atomic, readonly) KKArcadeInputState direction;
+
+/** For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout. */
+@property (atomic) BOOL vertical;
 
 /** Initializes a control pad behavior with either 4 or 8 d-pad directional textures. Start with the texture for "right button pressed"
  and continue adding textures in counter-clockwise order (ie "upper right button pressed", "up button pressed", and so on).

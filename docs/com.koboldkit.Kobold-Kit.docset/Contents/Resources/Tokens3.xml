@@ -112,6 +112,39 @@ Scaling is optional and can be modified/disabled with the selectedScale property
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setExecutesWhenPressed:</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
+			<Anchor>//api/name/executesWhenPressed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/executesWhenPressed</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
+			<Anchor>//api/name/executesWhenPressed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/executesWhenPressed</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
+			<Anchor>//api/name/executesWhenPressed</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/beginSelect</TokenIdentifier>
 			<Abstract type="html">Will make the node enter the selected state. This is normally used internally, but you may want to use this to highlight buttons,
 for example in a tutorial. You can also override the method in a subclass to perform your own selection style, perhaps changing texture or color.</Abstract>

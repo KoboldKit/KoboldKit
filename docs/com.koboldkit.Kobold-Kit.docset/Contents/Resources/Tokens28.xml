@@ -198,14 +198,14 @@ which perform each layer's rendering.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/enableMapBoundaryScrolling</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/restrictScrollingToMapBoundary</TokenIdentifier>
 			<Abstract type="html">Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds.</Abstract>
 			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>- (void)enableMapBoundaryScrolling</Declaration>
+			<Declaration>- (void)restrictScrollingToMapBoundary</Declaration>
 			
 			
-			<Anchor>//api/name/enableMapBoundaryScrolling</Anchor>
+			<Anchor>//api/name/restrictScrollingToMapBoundary</Anchor>
 		</Token>
 		
 	</File>

@@ -25,10 +25,10 @@ NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirectio
 	self = [super init];
 	if (self)
 	{
-		NSAssert1(textures.count == 4 || textures.count == 8, @"KKControlPadBehavior requires either 4 or 8 textures (4 or 8 directions). Got these textures: %@", textures);
+		NSAssert1(textures.count == 2 || textures.count == 4 || textures.count == 8, @"KKControlPadBehavior requires either 2, 4 or 8 textures (2, 4 or 8 directions). Got these textures: %@", textures);
 		_textures = textures;
-		_allowDiagonalDirections = _textures.count == 8;
-		_deadZone = 8.0;
+		_directionsCount = _textures.count;
+		_deadZone = 10.0;
 	}
 	return self;
 }
@@ -54,56 +54,89 @@ NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirectio
 
 -(void) updateDirectionFromLocation:(CGPoint)location
 {
+	KKArcadeInputState newDirection = KKArcadeJoystickNone;
 	KKSpriteNode* sprite = (KKSpriteNode*)self.node;
 	CGPoint locationInNodeSpace = [sprite convertPoint:location fromNode:sprite.parent];
-	
-	CGFloat distanceSquared = ccpDot(locationInNodeSpace, locationInNodeSpace);
-	KKArcadeInputState newDirection = KKArcadeJoystickNone;
-	
-	// check against deadzone
-	if (distanceSquared > (_deadZone * _deadZone))
+
+	if (_directionsCount == 2)
 	{
-		// calculate the positive angle from center
-		CGFloat angle = atan2f(locationInNodeSpace.y, locationInNodeSpace.x);
-		if (angle < 0)
+		CGSize size = sprite.size;
+		CGSize halfSize = CGSizeMake(size.width / 2, size.height / 2);
+		if (_vertical)
 		{
-			const CGFloat M_PI_2x = M_PI * 2.0;
-			angle += M_PI_2x;
-		}
-		
-		// get the direction index (0-8) by subdividing the angles into 4 or 8 chunks
-		const CGFloat fourDirRadians = M_PI / 2.0;
-		const CGFloat eightDirRadians = M_PI / 4.0;
-		CGFloat dpadUnitAngle = _allowDiagonalDirections ? eightDirRadians : fourDirRadians;
-		
-		NSUInteger directionIndex = roundf(angle / dpadUnitAngle) * (_allowDiagonalDirections ? 1.0f : 2.0f);
-		switch (directionIndex)
-		{
-			case 0:
-			case 8:
-				newDirection = KKArcadeJoystickRight;
-				break;
-			case 1:
-				newDirection = KKArcadeJoystickUpRight;
-				break;
-			case 2:
+			CGRect up = CGRectMake(-halfSize.width, _deadZone, size.width, halfSize.height - _deadZone);
+			CGRect down = CGRectMake(-halfSize.width, -halfSize.height, size.width, halfSize.height - _deadZone);
+			if (CGRectContainsPoint(up, locationInNodeSpace))
+			{
 				newDirection = KKArcadeJoystickUp;
-				break;
-			case 3:
-				newDirection = KKArcadeJoystickUpLeft;
-				break;
-			case 4:
-				newDirection = KKArcadeJoystickLeft;
-				break;
-			case 5:
-				newDirection = KKArcadeJoystickDownLeft;
-				break;
-			case 6:
+			}
+			else if (CGRectContainsPoint(down, locationInNodeSpace))
+			{
 				newDirection = KKArcadeJoystickDown;
-				break;
-			case 7:
-				newDirection = KKArcadeJoystickDownRight;
-				break;
+			}
+		}
+		else
+		{
+			CGRect right = CGRectMake(_deadZone, -halfSize.height, halfSize.width - _deadZone, size.height);
+			CGRect left = CGRectMake(-halfSize.width, -halfSize.height, halfSize.width - _deadZone, size.height);
+			if (CGRectContainsPoint(right, locationInNodeSpace))
+			{
+				newDirection = KKArcadeJoystickRight;
+			}
+			else if (CGRectContainsPoint(left, locationInNodeSpace))
+			{
+				newDirection = KKArcadeJoystickLeft;
+			}
+		}
+	}
+	else
+	{
+		// check against deadzone
+		CGFloat distanceFromCenterSquared = ccpDot(locationInNodeSpace, locationInNodeSpace);
+		if (distanceFromCenterSquared > (_deadZone * _deadZone))
+		{
+			// calculate the positive angle from center
+			CGFloat angle = atan2f(locationInNodeSpace.y, locationInNodeSpace.x);
+			if (angle < 0)
+			{
+				const CGFloat M_PI_2x = M_PI * 2.0;
+				angle += M_PI_2x;
+			}
+			
+			// get the direction index (0-8) by subdividing the angles into 4 or 8 chunks
+			const CGFloat fourDirRadians = M_PI / 2.0;
+			const CGFloat eightDirRadians = M_PI / 4.0;
+			CGFloat dpadUnitAngle = (_directionsCount == 8) ? eightDirRadians : fourDirRadians;
+			
+			NSUInteger directionIndex = roundf(angle / dpadUnitAngle) * (_directionsCount == 8 ? 1.0f : 2.0f);
+			switch (directionIndex)
+			{
+				case 0:
+				case 8:
+					newDirection = KKArcadeJoystickRight;
+					break;
+				case 1:
+					newDirection = KKArcadeJoystickUpRight;
+					break;
+				case 2:
+					newDirection = KKArcadeJoystickUp;
+					break;
+				case 3:
+					newDirection = KKArcadeJoystickUpLeft;
+					break;
+				case 4:
+					newDirection = KKArcadeJoystickLeft;
+					break;
+				case 5:
+					newDirection = KKArcadeJoystickDownLeft;
+					break;
+				case 6:
+					newDirection = KKArcadeJoystickDown;
+					break;
+				case 7:
+					newDirection = KKArcadeJoystickDownRight;
+					break;
+			}
 		}
 	}
 	
@@ -111,7 +144,7 @@ NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirectio
 	{
 		_direction = newDirection;
 		[self updateDirectionTexture];
-		[self postNotificationName:KKControlPadDidChangeDirection userInfo:@{@"kk": self}];
+		[self postNotificationName:KKControlPadDidChangeDirection];
 	}
 }
 
@@ -129,7 +162,7 @@ NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirectio
 {
 	SKTexture* newTexture;
 	
-	if (_allowDiagonalDirections)
+	if (_directionsCount == 8)
 	{
 		switch (_direction)
 		{
@@ -163,7 +196,7 @@ NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirectio
 				break;
 		}
 	}
-	else
+	else if (_directionsCount == 4)
 	{
 		switch (_direction)
 		{
@@ -178,6 +211,24 @@ NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirectio
 				break;
 			case KKArcadeJoystickDown:
 				newTexture = [_textures objectAtIndex:4];
+				break;
+				
+			default:
+				newTexture = [_textures firstObject];
+				break;
+		}
+	}
+	else
+	{
+		switch (_direction)
+		{
+			case KKArcadeJoystickRight:
+			case KKArcadeJoystickUp:
+				newTexture = [_textures objectAtIndex:0];
+				break;
+			case KKArcadeJoystickLeft:
+			case KKArcadeJoystickDown:
+				newTexture = [_textures objectAtIndex:1];
 				break;
 				
 			default:
@@ -290,7 +341,7 @@ static NSString* const ArchiveKeyForInUse = @"_originalYScale";
 {
 	KKControlPadBehavior* copy = [[super copyWithZone:zone] init];
 	copy->_textures = [_textures copy];
-	copy->_allowDiagonalDirections = _allowDiagonalDirections;
+	copy->_directionsCount = _directionsCount;
 	copy->_deadZone = _deadZone;
 	copy->_direction = _direction;
 	return copy;

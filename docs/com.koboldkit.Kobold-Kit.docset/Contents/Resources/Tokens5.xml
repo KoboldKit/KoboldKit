@@ -14,7 +14,7 @@ Sends a KKControlPadDidChangeDirection notification every time direction changes
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setDeadZone:</TokenIdentifier>
-			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 8 points.</Abstract>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
 			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
@@ -25,7 +25,7 @@ Sends a KKControlPadDidChangeDirection notification every time direction changes
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/deadZone</TokenIdentifier>
-			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 8 points.</Abstract>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
 			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
@@ -36,7 +36,7 @@ Sends a KKControlPadDidChangeDirection notification every time direction changes
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/deadZone</TokenIdentifier>
-			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 8 points.</Abstract>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
 			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
@@ -76,6 +76,39 @@ Sends a KKControlPadDidChangeDirection notification every time direction changes
 			
 			
 			<Anchor>//api/name/direction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setVertical:</TokenIdentifier>
+			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/vertical</TokenIdentifier>
+			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/vertical</TokenIdentifier>
+			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
 		</Token>
 		
 		<Token>

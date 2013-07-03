@@ -102,7 +102,6 @@
 		DCDD2E071769FD2E00F307CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2E051769FD2E00F307CD /* InfoPlist.strings */; };
 		DCDD2E091769FD2E00F307CD /* KoboldKitLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */; };
 		DCDD2E101769FD8500F307CD /* libKoboldKitLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */; };
-		DCDD2E29176A3DFF00F307CD /* MyLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E28176A3DFF00F307CD /* MyLabelNode.m */; };
 		DCDD2E4A176A40C400F307CD /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E2E176A40C400F307CD /* JRSwizzle.m */; };
 		DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E46176A40C400F307CD /* VTPG_Common.m */; };
 		DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E49176A40C400F307CD /* XMLWriter.m */; };
@@ -280,8 +279,6 @@
 		DCDD2E041769FD2E00F307CD /* KoboldKitLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKitLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		DCDD2E061769FD2E00F307CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KoboldKitLibraryTests.m; sourceTree = "<group>"; };
-		DCDD2E27176A3DFF00F307CD /* MyLabelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabelNode.h; sourceTree = "<group>"; };
-		DCDD2E28176A3DFF00F307CD /* MyLabelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabelNode.m; sourceTree = "<group>"; };
 		DCDD2E2D176A40C400F307CD /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		DCDD2E2E176A40C400F307CD /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		DCDD2E44176A40C400F307CD /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -619,8 +616,6 @@
 				DCDD2DCB1769FD0A00F307CD /* Spaceship.png */,
 				DCDD2DCD1769FD0A00F307CD /* Images.xcassets */,
 				DCDD2DB41769FD0A00F307CD /* Supporting Files */,
-				DCDD2E27176A3DFF00F307CD /* MyLabelNode.h */,
-				DCDD2E28176A3DFF00F307CD /* MyLabelNode.m */,
 			);
 			path = KoboldKitDemo;
 			sourceTree = "<group>";
@@ -875,7 +870,6 @@
 				DCDD2DCA1769FD0A00F307CD /* MyScene.m in Sources */,
 				DCDD2DC71769FD0A00F307CD /* ViewController.m in Sources */,
 				DCDD2DBE1769FD0A00F307CD /* AppDelegate.m in Sources */,
-				DCDD2E29176A3DFF00F307CD /* MyLabelNode.m in Sources */,
 				DCDD2DBA1769FD0A00F307CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

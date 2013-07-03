@@ -8,7 +8,6 @@
 
 #import "MyScene.h"
 #import "KoboldKit.h"
-#import "MyLabelNode.h"
 
 #import <objc/runtime.h>
 
@@ -41,18 +40,32 @@
 
 		[self setupPlayerCharacter];
 		
-		/*
-		CGRect bounds = _tilemapNode.bounds;
-		LOG_EXPR(bounds);
-		bounds.origin = CGPointMake(-bounds.size.width + self.frame.origin.x + self.frame.size.width, -bounds.size.height + self.frame.origin.y + self.frame.size.height);
-		bounds.size = CGSizeMake(bounds.size.width - self.frame.size.width + 1, bounds.size.height - self.frame.size.height + 1);
-		LOG_EXPR(bounds);
-		[_tilemapNode.mainTileLayerNode addBehavior:[KKStayInBoundsBehavior stayInBounds:bounds]];
-		*/
-
-		[self createVirtualJoypad];
+		[self createSimpleControls];
+		//[self createVirtualJoypad];
     }
     return self;
+}
+
+-(void) dealloc
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+-(void) didMoveToView:(SKView *)view
+{
+	// always call super in "event" methods of KKScene subclasses
+	[super didMoveToView:view];
+	
+	self.view.showsDrawCount = NO;
+	self.view.showsFPS = NO;
+	self.view.showsNodeCount = NO;
+	
+	[self performSelector:@selector(showView:) withObject:nil afterDelay:0.2];
+}
+
+-(void) showView:(id)sender
+{
+	self.view.hidden = NO;
 }
 
 -(void) setupPlayerCharacter
@@ -154,48 +167,6 @@
 	[_tilemapNode createPhysicsCollisionsWithObjectLayerNamed:@"extra-collision"];
 }
 
--(void) didMoveToView:(SKView *)view
-{
-	// always call super in "event" methods of KKScene subclasses
-	[super didMoveToView:view];
-
-	self.view.showsDrawCount = NO;
-	self.view.showsFPS = NO;
-	self.view.showsNodeCount = NO;
-	
-	[self performSelector:@selector(showView:) withObject:nil afterDelay:0.2];
-}
-
--(void) showView:(id)sender
-{
-	self.view.hidden = NO;
-}
-
--(void) dealloc
-{
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
--(void) labelButtonDidExecute:(NSNotification*) note
-{
-	LOG_EXPR(note);
-	SKNode* node = note.object;
-	[node removeBehaviorForKey:@"labelbutton1"];
-}
-
--(void) otherLabelButtonDidExecute:(NSNotification*) note
-{
-	LOG_EXPR(note);
-	SKNode* node = note.object;
-	[node removeBehaviorForKey:@"labelbutton2"];
-}
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	// in scene subclasses must call super to allow dispatch of touch events to other nodes
-	[super touchesBegan:touches withEvent:event];
-}
-
 -(void) createVirtualJoypad
 {
 	KKViewOriginNode* joypadNode = [KKViewOriginNode node];
@@ -256,8 +227,49 @@
 		[jetpackButtonNode addBehavior:button];
 
 		[self observeNotification:KKButtonDidExecute
-						 selector:@selector(jetpackButtonPressed:)
+						 selector:@selector(jumpButtonPressed:)
 						   object:jetpackButtonNode];
+	}
+}
+
+-(void) createSimpleControls
+{
+	KKViewOriginNode* joypadNode = [KKViewOriginNode node];
+	[self addChild:joypadNode];
+	
+	SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
+
+	KKSpriteNode* dpadNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_directions_right"]];
+	dpadNode.position = CGPointMake(dpadNode.size.width / 2 + 10, dpadNode.size.height / 2 + 10);
+	[joypadNode addChild:dpadNode];
+	
+	NSArray* dpadTextures = [NSArray arrayWithObjects:
+							 [atlas textureNamed:@"button_directions_right"],
+							 [atlas textureNamed:@"button_directions_left"],
+							 nil];
+	KKControlPadBehavior* dpad = [KKControlPadBehavior controlPadBehaviorWithTextures:dpadTextures];
+	[dpadNode addBehavior:dpad withKey:@"simple dpad"];
+	
+	[self observeNotification:KKControlPadDidChangeDirection
+					 selector:@selector(controlPadDidChangeDirection:)
+					   object:dpadNode];
+
+
+	CGSize sceneSize = self.size;
+	{
+		KKSpriteNode* jumpButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_jump_notpressed"]];
+		jumpButtonNode.position = CGPointMake(sceneSize.width - (jumpButtonNode.size.width / 2 + 10), jumpButtonNode.size.height / 2 + 10);
+		[joypadNode addChild:jumpButtonNode];
+		
+		KKButtonBehavior* button = [KKButtonBehavior new];
+		button.name = @"jump";
+		button.selectedTexture = [atlas textureNamed:@"button_jump_pressed"];
+		button.executesWhenPressed = YES;
+		[jumpButtonNode addBehavior:button];
+		
+		[self observeNotification:KKButtonDidExecute
+						 selector:@selector(jumpButtonPressed:)
+						   object:jumpButtonNode];
 	}
 }
 
@@ -306,7 +318,7 @@
 	NSLog(@"attack!");
 }
 
--(void) jetpackButtonPressed:(NSNotification*)note
+-(void) jumpButtonPressed:(NSNotification*)note
 {
 	CGPoint velocity = _playerCharacter.physicsBody.velocity;
 	if (velocity.y <= 0)
