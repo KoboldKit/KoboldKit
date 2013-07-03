@@ -13,9 +13,10 @@
 
 @interface MyScene : KKScene
 {
-	SKNode* _playerCharacter;
-	CGPoint _currentControlPadDirection;
+	KKSpriteNode* _playerCharacter;
 	KKTilemapNode* _tilemapNode;
+
+	CGPoint _currentControlPadDirection;
 	
 	CGFloat _jumpForce;
 	CGFloat _dpadForce;

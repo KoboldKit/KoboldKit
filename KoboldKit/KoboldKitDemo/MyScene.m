@@ -76,14 +76,24 @@
 	CGSize playerSize = playerObject.size;
 	CGPoint playerPosition = CGPointMake(playerObject.position.x + playerSize.width / 2,
 										 playerObject.position.y + playerSize.height / 2);
+
+	KKTilemapProperties* playerProperties = playerObject.properties;
+	NSString* defaultImage = [playerProperties stringForKey:@"defaultImage"];
+	if (defaultImage.length > 0)
+	{
+		_playerCharacter = [KKSpriteNode spriteNodeWithImageNamed:defaultImage];
+		playerSize = _playerCharacter.size;
+	}
+	else
+	{
+		_playerCharacter = [KKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
+	}
 	
-	_playerCharacter = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
 	_playerCharacter.position = playerPosition;
 	[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
 	[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
 	
 
-	KKTilemapProperties* playerProperties = playerObject.properties;
 	_playerCharacter.physicsBody.allowsRotation = [playerProperties numberForKey:@"allowsRotation"].boolValue;
 	_playerCharacter.physicsBody.angularDamping = [playerProperties numberForKey:@"angularDamping"].floatValue;
 	_playerCharacter.physicsBody.linearDamping = [playerProperties numberForKey:@"linearDamping"].floatValue;
