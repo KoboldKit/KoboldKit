@@ -9,6 +9,9 @@
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
  <tileset firstgid="1" name="forest" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <properties>
+   <property name="blockingTiles" value="5-8,9-26,27,28"/>
+  </properties>
   <image source="forest.png" width="256" height="256"/>
   <tile id="4">
    <properties>

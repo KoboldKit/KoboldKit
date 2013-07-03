@@ -32,13 +32,7 @@
 		LOG_EXPR(self.physicsWorld.gravity);
 		LOG_EXPR(self.physicsWorld.speed);
 
-		KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
-		for (NSUInteger i = 5; i <= 28; i++)
-		{
-			[blockingGids addInteger:i];
-		}
-		[_tilemapNode createPhysicsCollisionsWithBlockingGids:blockingGids];
-		[_tilemapNode createPhysicsCollisionsWithObjectLayerNamed:@"extra-collision"];
+		[self setupTilemapBlocking];
 
 		if ([_tilemapNode.tilemap.properties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
 		{
@@ -123,6 +117,42 @@
 	[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
 }
 
+-(void) setupTilemapBlocking
+{
+	KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
+	for (KKTilemapTileset* tileset in _tilemapNode.tilemap.tilesets)
+	{
+		NSString* blockingTiles = [tileset.properties stringForKey:@"blockingTiles"];
+		if (blockingTiles.length)
+		{
+			NSArray* components = [blockingTiles componentsSeparatedByString:@","];
+			for (NSString* range in components)
+			{
+				NSUInteger gidStart = 0, gidEnd = 0;
+				NSArray* fromTo = [range componentsSeparatedByString:@"-"];
+				if (fromTo.count == 1)
+				{
+					gidStart = [[fromTo firstObject] intValue];
+					gidEnd = gidStart;
+				}
+				else
+				{
+					gidStart = [[fromTo firstObject] intValue];
+					gidEnd = [[fromTo lastObject] intValue];
+				}
+
+				for (NSUInteger i = gidStart; i <= gidEnd; i++)
+				{
+					[blockingGids addInteger:i + tileset.firstGid - 1];
+				}
+			}
+		}
+	}
+
+	LOG_EXPR(blockingGids);
+	[_tilemapNode createPhysicsCollisionsWithBlockingGids:blockingGids];
+	[_tilemapNode createPhysicsCollisionsWithObjectLayerNamed:@"extra-collision"];
+}
 
 -(void) didMoveToView:(SKView *)view
 {
