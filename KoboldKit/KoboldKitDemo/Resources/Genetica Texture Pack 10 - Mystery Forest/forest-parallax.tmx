@@ -4,6 +4,9 @@
  <properties>
   <property name="_iPadScaleFactor" value="2"/>
   <property name="_scaleTilesetSpacingAndMargin" value="YES"/>
+  <property name="physicsGravityY" value="-2.0"/>
+  <property name="physicsSpeed" value="1.0"/>
+  <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
  <tileset firstgid="1" name="forest" tilewidth="32" tileheight="32" spacing="2" margin="2">
   <image source="forest.png" width="256" height="256"/>
@@ -54,6 +57,21 @@
    eJztVGsLwjAMrG9dnXsgOtD//zu9SAMhZm3YBvviwdGsed3GkhD+8KACb2ANXlbofwUbsAWj4Sd9pI00TtG3ny7tC9JH2kijpa+E7cz+ORzBE3hO52EkJuf3YO439GAjbNIste4KuUvoy/Uo1S/p8yDXo/QPed9fznot7Nz8V0acZXt2iJz1N/gEH+kkdkbOXfgH8KXy+ZnvdA3Wr/dHn+px/2GkP88/M6r7qGL1jpD5OrYNv7XlvltrJy+BD/6nBh0=
   </data>
  </layer>
+ <objectgroup name="game objects" width="32" height="15">
+  <object name="player" type="1" x="192" y="0" width="32" height="64">
+   <properties>
+    <property name="allowsRotation" value="NO"/>
+    <property name="angularDamping" value="0"/>
+    <property name="dpadForce" value="165.0"/>
+    <property name="friction" value="0.6"/>
+    <property name="jumpForce" value="80.0"/>
+    <property name="linearDamping" value="0"/>
+    <property name="mass" value="0.4"/>
+    <property name="restitution" value="0.1"/>
+    <property name="stayInBounds" value="YES"/>
+   </properties>
+  </object>
+ </objectgroup>
  <layer name="flare layer" width="32" height="15" opacity="0.8">
   <properties>
    <property name="_endlessScrollingHorizontal" value="YES"/>
@@ -110,7 +128,7 @@
   <object x="576" y="64" width="128" height="128">
    <ellipse/>
   </object>
-  <object x="320" y="32" width="128" height="64">
+  <object x="320" y="32" width="128" height="64" rotation="7">
    <ellipse/>
   </object>
  </objectgroup>

@@ -62,6 +62,12 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 		SKSpriteNode* sprite = (SKSpriteNode*)self.node;
 		sprite.texture = _selectedTexture;
 	}
+	
+	if (_executesWhenPressed)
+	{
+		[self execute];
+		[self performSelector:@selector(endSelect) withObject:nil afterDelay:0.01];
+	}
 }
 
 -(void) endSelect
@@ -156,6 +162,7 @@ static NSString* const ArchiveKeyForOriginalXScale = @"originalXScale";
 static NSString* const ArchiveKeyForOriginalYScale = @"originalYScale";
 static NSString* const ArchiveKeyForOriginalTexture = @"originalTexture";
 static NSString* const ArchiveKeyForSelectedTexture = @"selectedTexture";
+static NSString* const ArchiveKeyForExecutesWhenPressed = @"executesWhenPressed";
 
 -(id) initWithCoder:(NSCoder*)decoder
 {
@@ -168,6 +175,7 @@ static NSString* const ArchiveKeyForSelectedTexture = @"selectedTexture";
 		_isSelected = [decoder decodeBoolForKey:ArchiveKeyForHasFocus];
 		_originalTexture = [decoder decodeObjectForKey:ArchiveKeyForOriginalTexture];
 		_selectedTexture = [decoder decodeObjectForKey:ArchiveKeyForSelectedTexture];
+		_executesWhenPressed = [decoder decodeBoolForKey:ArchiveKeyForExecutesWhenPressed];
 	}
 	return self;
 }
@@ -181,6 +189,7 @@ static NSString* const ArchiveKeyForSelectedTexture = @"selectedTexture";
 	[encoder encodeBool:_isSelected forKey:ArchiveKeyForHasFocus];
 	[encoder encodeObject:_originalTexture forKey:ArchiveKeyForOriginalTexture];
 	[encoder encodeObject:_selectedTexture forKey:ArchiveKeyForSelectedTexture];
+	[encoder encodeBool:_executesWhenPressed forKey:ArchiveKeyForExecutesWhenPressed];
 }
 
 #pragma mark NSCopying
@@ -194,6 +203,7 @@ static NSString* const ArchiveKeyForSelectedTexture = @"selectedTexture";
 	copy->_isSelected = _isSelected;
 	copy->_originalTexture = _originalTexture;
 	copy->_selectedTexture = _selectedTexture;
+	copy->_executesWhenPressed = _executesWhenPressed;
 	return copy;
 }
 
@@ -210,7 +220,8 @@ static NSString* const ArchiveKeyForSelectedTexture = @"selectedTexture";
 			_selectedScale == behavior->_selectedScale &&
 			_isSelected == behavior->_isSelected &&
 			_originalTexture == behavior->_originalTexture &&
-			_selectedTexture == behavior->_selectedTexture);
+			_selectedTexture == behavior->_selectedTexture &&
+			_executesWhenPressed == behavior->_executesWhenPressed);
 }
 
 @end

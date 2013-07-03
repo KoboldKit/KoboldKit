@@ -58,6 +58,6 @@
 -(SKNode*) createPhysicsCollisionsWithObjectLayerNamed:(NSString*)layerName;
 
 /** Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds. */
--(void) enableMapBoundaryScrolling;
+-(void) restrictScrollingToMapBoundary;
 
 @end

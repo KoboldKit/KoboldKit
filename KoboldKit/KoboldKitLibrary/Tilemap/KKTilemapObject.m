@@ -14,7 +14,7 @@
 
 -(NSString*) description
 {
-	return [NSString stringWithFormat:@"%@ (name: '%@', userType: '%@', position: %.0f,%.0f, objectType: %i, properties: %u)",
+	return [NSString stringWithFormat:@"%@ (name: '%@', userType: '%@', position: %.0f,%.0f, type: %i, properties: %u)",
 			[super description], _name, _userType, _position.x, _position.y, _type, (unsigned int)_properties.count];
 }
 

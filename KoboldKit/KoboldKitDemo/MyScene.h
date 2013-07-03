@@ -16,6 +16,9 @@
 	SKNode* _playerCharacter;
 	CGPoint _currentControlPadDirection;
 	KKTilemapNode* _tilemapNode;
+	
+	CGFloat _jumpForce;
+	CGFloat _dpadForce;
 }
 
 @end

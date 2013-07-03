@@ -47,8 +47,7 @@ typedef enum : unsigned char
  @returns The largest tile size found in the tilesets used by this tilemap. */
 @property (atomic) CGSize largestTileSize;
 /** The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.
- @returns The dictionary of properties.
- */
+ @returns The dictionary of properties. */
 @property (atomic, readonly) KKTilemapProperties* properties;
 
 /** The orientiation (type) of tilemap.

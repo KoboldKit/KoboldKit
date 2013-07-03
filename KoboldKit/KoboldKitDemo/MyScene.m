@@ -21,13 +21,17 @@
         /* Setup your scene here */
 		self.backgroundColor = [SKColor colorWithRed:0.66 green:0.55 blue:1.0 alpha:1.0];
 		self.anchorPoint = CGPointMake(0.5f, 0.5f);
-		self.physicsWorld.gravity = CGPointMake(0, -1);
 
 		//_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
 		_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"forest-parallax.tmx"];
 		[self addChild:_tilemapNode];
-		_tilemapNode.name = @"tilemap";
-		
+
+		// apply gravity from Tiled
+		self.physicsWorld.gravity = CGPointMake(0, [_tilemapNode.tilemap.properties numberForKey:@"physicsGravityY"].floatValue);
+		self.physicsWorld.speed = [_tilemapNode.tilemap.properties numberForKey:@"physicsSpeed"].floatValue;
+		LOG_EXPR(self.physicsWorld.gravity);
+		LOG_EXPR(self.physicsWorld.speed);
+
 		KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
 		for (NSUInteger i = 5; i <= 28; i++)
 		{
@@ -35,21 +39,13 @@
 		}
 		[_tilemapNode createPhysicsCollisionsWithBlockingGids:blockingGids];
 		[_tilemapNode createPhysicsCollisionsWithObjectLayerNamed:@"extra-collision"];
-		
-		CGSize playerSize = CGSizeMake(25, 25);
-		_playerCharacter = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
-		_playerCharacter.position = CGPointMake(170, 161);
-		[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
-		[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
 
-		// test
-		_tilemapNode.mainTileLayerNode.layer.endlessScrollingHorizontal = NO;
-		
-		// uncomment to prevent player from leaving the area
-		[_playerCharacter addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
-		[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
-		
-		[_tilemapNode enableMapBoundaryScrolling];
+		if ([_tilemapNode.tilemap.properties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
+		{
+			[_tilemapNode restrictScrollingToMapBoundary];
+		}
+
+		[self setupPlayerCharacter];
 		
 		/*
 		CGRect bounds = _tilemapNode.bounds;
@@ -64,6 +60,59 @@
     }
     return self;
 }
+
+-(void) setupPlayerCharacter
+{
+	KKTilemapObject* playerObject;
+	for (KKTilemapObject* object in [_tilemapNode.tilemap layerNamed:@"game objects"].objects)
+	{
+		if ([object.name isEqualToString:@"player"])
+		{
+			playerObject = object;
+			break;
+		}
+	}
+
+	CGSize playerSize = playerObject.size;
+	CGPoint playerPosition = CGPointMake(playerObject.position.x + playerSize.width / 2,
+										 playerObject.position.y + playerSize.height / 2);
+	
+	_playerCharacter = [SKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
+	_playerCharacter.position = playerPosition;
+	[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
+	[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
+	
+
+	KKTilemapProperties* playerProperties = playerObject.properties;
+	_playerCharacter.physicsBody.allowsRotation = [playerProperties numberForKey:@"allowsRotation"].boolValue;
+	_playerCharacter.physicsBody.angularDamping = [playerProperties numberForKey:@"angularDamping"].floatValue;
+	_playerCharacter.physicsBody.linearDamping = [playerProperties numberForKey:@"linearDamping"].floatValue;
+	_playerCharacter.physicsBody.friction = [playerProperties numberForKey:@"friction"].floatValue;
+	_playerCharacter.physicsBody.mass = [playerProperties numberForKey:@"mass"].floatValue;
+	_playerCharacter.physicsBody.restitution = [playerProperties numberForKey:@"restitution"].floatValue;
+	_jumpForce = [playerProperties numberForKey:@"jumpForce"].floatValue;
+	_dpadForce = [playerProperties numberForKey:@"dpadForce"].floatValue;
+	LOG_EXPR(_playerCharacter.physicsBody.allowsRotation);
+	LOG_EXPR(_playerCharacter.physicsBody.angularDamping);
+	LOG_EXPR(_playerCharacter.physicsBody.linearDamping);
+	LOG_EXPR(_playerCharacter.physicsBody.friction);
+	LOG_EXPR(_playerCharacter.physicsBody.mass);
+	LOG_EXPR(_playerCharacter.physicsBody.density);
+	LOG_EXPR(_playerCharacter.physicsBody.restitution);
+	LOG_EXPR(_playerCharacter.physicsBody.area);
+	LOG_EXPR(_jumpForce);
+	LOG_EXPR(_dpadForce);
+
+	
+	// prevent player from leaving the area
+	if ([playerProperties numberForKey:@"stayInBounds"].boolValue)
+	{
+		[_playerCharacter addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
+	}
+	
+	[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
+}
+
 
 -(void) didMoveToView:(SKView *)view
 {
@@ -147,6 +196,7 @@
 		KKButtonBehavior* button = [KKButtonBehavior new];
 		button.name = @"attack";
 		button.selectedTexture = [atlas textureNamed:@"Button_Attack_Pressed.png"];
+		button.executesWhenPressed = YES;
 		[attackButtonNode addBehavior:button];
 
 		[self observeNotification:KKButtonDidExecute
@@ -162,6 +212,7 @@
 		KKButtonBehavior* button = [KKButtonBehavior new];
 		button.name = @"jetpack";
 		button.selectedTexture = [atlas textureNamed:@"Button_Jetpack_Pressed.png"];
+		button.executesWhenPressed = YES;
 		[jetpackButtonNode addBehavior:button];
 
 		[self observeNotification:KKButtonDidExecute
@@ -174,7 +225,7 @@
 {
 	KKControlPadBehavior* controlPad = [note.userInfo objectForKey:@"behavior"];
 	
-	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), 10);
+	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _dpadForce);
 
 	switch (controlPad.direction)
 	{
@@ -217,7 +268,13 @@
 
 -(void) jetpackButtonPressed:(NSNotification*)note
 {
-	NSLog(@"fly! fly!");
+	CGPoint velocity = _playerCharacter.physicsBody.velocity;
+	if (velocity.y <= 0)
+	{
+		velocity.y = 0;
+		_playerCharacter.physicsBody.velocity = velocity;
+		[_playerCharacter.physicsBody applyImpulse:CGPointMake(0, _jumpForce)];
+	}
 }
 
 -(void)update:(NSTimeInterval)currentTime

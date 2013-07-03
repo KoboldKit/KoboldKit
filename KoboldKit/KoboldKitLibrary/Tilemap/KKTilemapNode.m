@@ -73,7 +73,7 @@
 	}
 }
 
--(void) enableMapBoundaryScrolling
+-(void) restrictScrollingToMapBoundary
 {
 	// camera boundary scrolling
 	KKTilemapLayer* mainTileLayer = _mainTileLayerNode.layer;

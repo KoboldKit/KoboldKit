@@ -63,6 +63,10 @@ extern NSString* const KKButtonDidExecute;
 @property (atomic) CGFloat selectedScale;
 /** @returns YES if the button is currently selected. */
 @property (atomic, readonly) BOOL isSelected;
+/** If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.
+ @returns YES if the button will execute when pressed. NO if the button will execute when released. */
+@property (atomic) BOOL executesWhenPressed;
+
 
 /** @name Select & Execute Methods */
 
