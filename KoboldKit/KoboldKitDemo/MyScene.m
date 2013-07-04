@@ -120,13 +120,20 @@
 	LOG_EXPR(_jumpForce);
 	LOG_EXPR(_dpadForce);
 
+	// limit maximum speed of the player
+	if ([playerProperties numberForKey:@"velocityLimit"])
+	{
+		CGFloat limit = [playerProperties numberForKey:@"velocityLimit"].doubleValue;
+		[_playerCharacter addBehavior:[KKLimitVelocityBehavior limitVelocity:limit]];
+	}
 	
 	// prevent player from leaving the area
 	if ([playerProperties numberForKey:@"stayInBounds"].boolValue)
 	{
 		[_playerCharacter addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
 	}
-	
+
+	// make the camera follow the player
 	[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
 }
 

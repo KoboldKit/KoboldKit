@@ -38,6 +38,7 @@
 #import "KKControlPadBehavior.h"
 #import "KKCameraFollowBehavior.h"
 #import "KKStayInBoundsBehavior.h"
+#import "KKLimitVelocityBehavior.h"
 
 // tilemap model
 #import "KKTilemap.h"

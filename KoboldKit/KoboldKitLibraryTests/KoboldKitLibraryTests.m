@@ -84,7 +84,7 @@
 {
 	KKTilemap* tilemap = [KKTilemap tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
 	XCTAssertNotNil(tilemap, @"tilemap is nil");
-	XCTAssertEquals(tilemap.orientation, KTTilemapOrientationOrthogonal, @"tilemap orientation mismatch");
+	XCTAssertEquals(tilemap.orientation, KKTilemapOrientationOrthogonal, @"tilemap orientation mismatch");
 	XCTAssertNotNil([tilemap.layers lastObject], @"tilemap has no layers");
 	XCTAssertNotNil([tilemap.tilesets lastObject], @"tilemap has no tilesets");
 	

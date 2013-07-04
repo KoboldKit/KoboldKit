@@ -21,13 +21,14 @@
 	if (self)
 	{
 		_bounds = bounds;
-		_wantsUpdate = YES;
 	}
 	return self;
 }
 
 -(void) didJoinController
 {
+	_wantsUpdate = YES;
+
 	// update once immediately
 	[self didSimulatePhysics];
 }

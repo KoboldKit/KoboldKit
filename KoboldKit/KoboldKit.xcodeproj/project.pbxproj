@@ -45,6 +45,7 @@
 		DC2F44241771E9A5005846A7 /* forest-parallax.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC2F440E1771E9A5005846A7 /* forest-parallax.tmx */; };
 		DC2F44261771E9A5005846A7 /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F44101771E9A5005846A7 /* forest.png */; };
 		DC2F44301771E9A5005846A7 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F441A1771E9A5005846A7 /* other.png */; };
+		DC41B8AA1785A7C00018D6C5 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
 		DC4DE90A176C9E2B003E4087 /* KKTilemap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */; };
 		DC4DE90B176C9E2B003E4087 /* KKTilemapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F3176C9E2B003E4087 /* KKTilemapLayer.m */; };
 		DC4DE90D176C9E2B003E4087 /* KKTilemapLayerTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F7176C9E2B003E4087 /* KKTilemapLayerTiles.m */; };
@@ -176,6 +177,8 @@
 		DC2F440E1771E9A5005846A7 /* forest-parallax.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "forest-parallax.tmx"; sourceTree = "<group>"; };
 		DC2F44101771E9A5005846A7 /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
 		DC2F441A1771E9A5005846A7 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
+		DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
+		DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
 		DC4DE8F0176C9E2B003E4087 /* KKTilemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemap.h; sourceTree = "<group>"; };
 		DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemap.m; sourceTree = "<group>"; };
 		DC4DE8F2176C9E2B003E4087 /* KKTilemapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapLayer.h; sourceTree = "<group>"; };
@@ -505,6 +508,8 @@
 				DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */,
 				DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */,
 				DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */,
+				DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */,
+				DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -893,6 +898,7 @@
 				DC4DE915176C9E2B003E4087 /* KKTMXReader.m in Sources */,
 				DC4DE913176C9E2B003E4087 /* KKTilemapTileset.m in Sources */,
 				DC9CFD3D1774CB47004C981A /* KoboldKit.m in Sources */,
+				DC41B8AA1785A7C00018D6C5 /* KKLimitVelocityBehavior.m in Sources */,
 				DC4DE910176C9E2B003E4087 /* KKTilemapObject.m in Sources */,
 				DCB087D5177B1647004182E4 /* KKPointArray.m in Sources */,
 				DCB087D4177B1647004182E4 /* KKIntegerArray.m in Sources */,
