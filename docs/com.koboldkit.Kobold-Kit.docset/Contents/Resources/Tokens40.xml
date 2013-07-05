@@ -45,6 +45,39 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setModel:</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/model</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/model</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:</TokenIdentifier>
 			<Abstract type="html">Presents a scene.</Abstract>
 			<DeclaredIn>KKView.h</DeclaredIn>			

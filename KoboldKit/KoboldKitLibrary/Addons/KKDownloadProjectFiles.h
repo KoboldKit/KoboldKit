@@ -8,17 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
+/** nd */
 typedef void (^KKDownloadProjectFilesCompletionBlock)(NSDictionary* contents);
+
+/** nd */
+extern NSString* const KKDownloadProjectFilesURL;
+/** nd */
+extern NSString* const KKDownloadProjectFilesAppSupportFolder;
+
+@class KKModel;
 
 /** nd */
 @interface KKDownloadProjectFiles : NSObject
 {
-	NSURL* _url;
-	NSString* _appSupportFolder;
+	NSString* _appSupportDir;
 	KKDownloadProjectFilesCompletionBlock _completionBlock;
 }
 
-+(id) downloadProjectFilesWithURL:(NSURL*)url appSupportFolder:(NSString*)appSupportFolder completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock;
--(id) initWithURL:(NSURL*)url appSupportFolder:(NSString*)appSupportFolder completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock;
+/** (nd) */
++(id) downloadProjectFilesWithModel:(KKModel*)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock;
+/** (nd) */
+-(id) initWithModel:(KKModel*)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock;
 
 @end

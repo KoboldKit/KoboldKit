@@ -90,9 +90,13 @@
 
 -(void) reloadButtonPressed:(NSNotification*)notification
 {
-	GameScene* newScene = [GameScene sceneWithSize:self.size];
-	newScene.tmxFile = _tmxFile;
-	[self.view presentScene:newScene];
+	// Transfers all changed resource files from the remote server to the specified folder in the app support directory
+	[KKDownloadProjectFiles downloadProjectFilesWithModel:self.kkView.model
+										completionBlock:^(NSDictionary *contents) {
+											GameScene* newScene = [GameScene sceneWithSize:self.size];
+											newScene.tmxFile = _tmxFile;
+											[self.view presentScene:newScene];
+										}];
 }
 
 -(void) setupPlayerCharacter

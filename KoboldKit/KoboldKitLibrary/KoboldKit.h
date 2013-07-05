@@ -29,7 +29,7 @@
 
 // framework
 #import "KKNodeController.h"
-#import "KKNodeModel.h"
+#import "KKModel.h"
 #import "KKNodeBehavior.h"
 
 // behaviors

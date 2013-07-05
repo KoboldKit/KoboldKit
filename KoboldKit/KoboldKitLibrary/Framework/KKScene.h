@@ -10,6 +10,7 @@
 #import "KKSceneEventDelegate.h"
 
 @class KKNodeController;
+@class KKView;
 
 /** Scene Graph dump options. */
 typedef enum
@@ -46,6 +47,9 @@ typedef enum
 /** @returns The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
  For example this allows you to perform certain actions n frames from now, instead of n seconds. */
 @property (atomic) NSUInteger frameCount;
+
+/** @returns The view cast to a KKView object. */
+@property (atomic, readonly) KKView* kkView;
 
 /** (not documented) */
 -(void) addSceneEventsObserver:(id)observer;

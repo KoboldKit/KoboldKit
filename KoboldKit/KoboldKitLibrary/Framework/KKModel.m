@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKNodeModel.h"
+#import "KKModel.h"
 #import "KKMutableNumber.h"
 
-@implementation KKNodeModel
+@implementation KKModel
 
 #pragma mark Key/Value Model
 -(void) setValue:(id)value forKey:(NSString*)key
@@ -169,6 +169,11 @@
 
 -(void) setObject:(id)object forKey:(NSString*)key
 {
+	if (_keyedValues == nil)
+	{
+		_keyedValues = [NSMutableDictionary dictionary];
+	}
+
 	if (object == nil)
 	{
 		[_keyedValues removeObjectForKey:key];

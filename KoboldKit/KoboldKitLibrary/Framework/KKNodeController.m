@@ -9,7 +9,7 @@
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
 #import "KKScene.h"
-#import "KKNodeModel.h"
+#import "KKModel.h"
 #import "KKNodeBehavior.h"
 
 NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
@@ -42,12 +42,12 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 #pragma mark Properties
 
 @dynamic model;
--(KKNodeModel*) model
+-(KKModel*) model
 {
 	return _model;
 }
 
--(void) setModel:(KKNodeModel *)model
+-(void) setModel:(KKModel *)model
 {
 	@synchronized(self)
 	{

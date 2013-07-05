@@ -8,6 +8,7 @@
 
 #import "KKScene.h"
 #import "KKNode.h"
+#import "KKView.h"
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
 #import "KKViewOriginNode.h"
@@ -58,6 +59,13 @@
 -(void) dealloc
 {
 	NSLog(@"dealloc: %@", self);
+}
+
+@dynamic kkView;
+-(KKView*) kkView
+{
+	NSAssert1([self.view isKindOfClass:[KKView class]], @"Scene's view (%@) is not a KKView class", self.view);
+	return (KKView*)self.view;
 }
 
 #pragma mark Controllers

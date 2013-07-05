@@ -1,991 +1,339 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKMutableNumber.html">
+	<File path="Classes/KKModel.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKMutableNumber</TokenIdentifier>
-			<Abstract type="html">Similar to NSNumber, but allows numbers to be modified (hence: mutable). It does not inherit NSNumber, the implementation
-   is lightweight and encapsulates various classes like KKBoolNumber, KKInt32Number, KKDoubleNumber and so on each containing only
-   a single property of the given data type. </Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKModel</TokenIdentifier>
+			<Abstract type="html">Model object allows you to story integral data types by key (name) as mutable numbers.
+Useful to store automatically NSCoding/NSCopying conformant values to any node without having to subclass it.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>
 			
 			<NodeRef refid="16"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithBool:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type BOOL</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setController:</TokenIdentifier>
+			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithBool:(BOOL)number</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/controller</TokenIdentifier>
+			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKModel/controller</TokenIdentifier>
+			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setBool:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setBool:(BOOL)boolValue forKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>boolValue</Name>
+					<Abstract type="html">A boolean.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string to identify the variable.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/numberWithBool:</Anchor>
+			<Anchor>//api/name/setBool:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithChar:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/boolForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value of the given type for key. Returns NO if there's no value with this key.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithChar:(char)number</Declaration>
+			<Declaration>- (BOOL)boolForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">A unique string identifying the variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The BOOL value for the key, or NO if there's no variable with that key.</Abstract></ReturnValue>
+			<Anchor>//api/name/boolForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setFloat:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setFloat:(float)floatValue forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>floatValue</Name>
+					<Abstract type="html">A float.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string to identify the variable.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/numberWithChar:</Anchor>
+			<Anchor>//api/name/setFloat:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithDouble:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type double</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/floatForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithDouble:(double)number</Declaration>
+			<Declaration>- (float)floatForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">A unique string identifying the variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The float value for the key, or 0.0f if there's no variable with that key.</Abstract></ReturnValue>
+			<Anchor>//api/name/floatForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setDouble:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDouble:(double)doubleValue forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>doubleValue</Name>
+					<Abstract type="html">A double.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string to identify the variable.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/numberWithDouble:</Anchor>
+			<Anchor>//api/name/setDouble:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithFloat:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type float</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/doubleForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithFloat:(float)number</Declaration>
+			<Declaration>- (double)doubleForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">A unique string identifying the variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The double value for the key, or 0.0 if there's no variable with that key.</Abstract></ReturnValue>
+			<Anchor>//api/name/doubleForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setInt32:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setInt32:(int32_t)int32Value forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>int32Value</Name>
+					<Abstract type="html">A 32-bit integer.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string to identify the variable.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/numberWithFloat:</Anchor>
+			<Anchor>//api/name/setInt32:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithInt:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/int32ForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithInt:(int)number</Declaration>
+			<Declaration>- (int32_t)int32ForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">A unique string identifying the variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The int32_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
+			<Anchor>//api/name/int32ForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setUnsignedInt32:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUnsignedInt32:(uint32_t)unsignedInt32Value forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>unsignedInt32Value</Name>
+					<Abstract type="html">An unsigned 32-bit integer.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string to identify the variable.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/numberWithInt:</Anchor>
+			<Anchor>//api/name/setUnsignedInt32:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithInteger:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type NSInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/unsignedInt32ForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithInteger:(NSInteger)number</Declaration>
+			<Declaration>- (uint32_t)unsignedInt32ForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">A unique string identifying the variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The uint32_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
+			<Anchor>//api/name/unsignedInt32ForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setInt64:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setInt64:(int64_t)int64Value forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>int64Value</Name>
+					<Abstract type="html">A 64-bit integer.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string to identify the variable.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/numberWithInteger:</Anchor>
+			<Anchor>//api/name/setInt64:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithLong:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/int64ForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithLong:(long)number</Declaration>
+			<Declaration>- (int64_t)int64ForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">A unique string identifying the variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The int64_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
+			<Anchor>//api/name/int64ForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setUnsignedInt64:forKey:</TokenIdentifier>
+			<Abstract type="html">Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUnsignedInt64:(uint64_t)unsignedInt64Value forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>unsignedInt64Value</Name>
+					<Abstract type="html">An unsigned 64-bit integer.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string to identify the variable.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/numberWithLong:</Anchor>
+			<Anchor>//api/name/setUnsignedInt64:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithLongLong:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type long long (64 bit integer)</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/unsignedInt64ForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithLongLong:(long long)number</Declaration>
+			<Declaration>- (uint64_t)unsignedInt64ForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">A unique string identifying the variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The uint64_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
+			<Anchor>//api/name/unsignedInt64ForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setObject:forKey:</TokenIdentifier>
+			<Abstract type="html">Assign or replace any object with the given key. If object is nil, the object for that key will be removed.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to store in the dictionary.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique string to identify the object.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/numberWithLongLong:</Anchor>
+			<Anchor>//api/name/setObject:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithShort:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/objectForKey:</TokenIdentifier>
+			<Abstract type="html">The object for key or nil if there's no object associated with this key.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
 			
-			<Declaration>+ (id)numberWithShort:(short)number</Declaration>
+			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object for key or nil if there's no object associated with this key.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/mutableNumberForKey:</TokenIdentifier>
+			<Abstract type="html">Accessing the KKMutableNumber object directly allows you to change the value without having to reassign it using a setter method.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (KKMutableNumber *)mutableNumberForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>A</Name>
+					<Abstract type="html">unique string identifying the variable.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/numberWithShort:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedChar:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>+ (id)numberWithUnsignedChar:(unsigned char)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/numberWithUnsignedChar:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedInt:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>+ (id)numberWithUnsignedInt:(unsigned int)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/numberWithUnsignedInt:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedInteger:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type NSUInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>+ (id)numberWithUnsignedInteger:(NSUInteger)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/numberWithUnsignedInteger:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedLong:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>+ (id)numberWithUnsignedLong:(unsigned long)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/numberWithUnsignedLong:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedLongLong:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned long long (64 bit integer)</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>+ (id)numberWithUnsignedLongLong:(unsigned long long)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/numberWithUnsignedLongLong:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedShort:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>+ (id)numberWithUnsignedShort:(unsigned short)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/numberWithUnsignedShort:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithBool:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type BOOL</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithBool:(BOOL)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithBool:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithChar:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithChar:(char)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithChar:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithDouble:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type double</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithDouble:(double)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithDouble:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithFloat:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type float</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithFloat:(float)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithFloat:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithInt:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithInt:(int)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithInt:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithInteger:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type NSInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithInteger:(NSInteger)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithInteger:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithLong:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithLong:(long)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithLong:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithLongLong:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type long long (64 bit integer)</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithLongLong:(long long)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithLongLong:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithShort:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithShort:(short)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithShort:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedChar:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithUnsignedChar:(unsigned char)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithUnsignedChar:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedInt:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithUnsignedInt:(unsigned int)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithUnsignedInt:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedInteger:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type NSUInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithUnsignedInteger:(NSUInteger)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithUnsignedInteger:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedLong:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithUnsignedLong:(unsigned long)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithUnsignedLong:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedLongLong:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned long long (64 bit integer)</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithUnsignedLongLong:(unsigned long long)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithUnsignedLongLong:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedShort:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type unsigned short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithUnsignedShort:(unsigned short)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithUnsignedShort:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setBoolValue:</TokenIdentifier>
-			<Abstract type="html">Get or set the number's value as/from type BOOL.</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL boolValue</Declaration>
-			
-			
-			<Anchor>//api/name/boolValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/boolValue</TokenIdentifier>
-			<Abstract type="html">Get or set the number's value as/from type BOOL.</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL boolValue</Declaration>
-			
-			
-			<Anchor>//api/name/boolValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/boolValue</TokenIdentifier>
-			<Abstract type="html">Get or set the number's value as/from type BOOL.</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL boolValue</Declaration>
-			
-			
-			<Anchor>//api/name/boolValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setCharValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) char charValue</Declaration>
-			
-			
-			<Anchor>//api/name/charValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/charValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) char charValue</Declaration>
-			
-			
-			<Anchor>//api/name/charValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/charValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) char charValue</Declaration>
-			
-			
-			<Anchor>//api/name/charValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setDoubleValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type double</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) double doubleValue</Declaration>
-			
-			
-			<Anchor>//api/name/doubleValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/doubleValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type double</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) double doubleValue</Declaration>
-			
-			
-			<Anchor>//api/name/doubleValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/doubleValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type double</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) double doubleValue</Declaration>
-			
-			
-			<Anchor>//api/name/doubleValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setFloatValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type float</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) float floatValue</Declaration>
-			
-			
-			<Anchor>//api/name/floatValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/floatValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type float</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) float floatValue</Declaration>
-			
-			
-			<Anchor>//api/name/floatValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/floatValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type float</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) float floatValue</Declaration>
-			
-			
-			<Anchor>//api/name/floatValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setIntValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) int intValue</Declaration>
-			
-			
-			<Anchor>//api/name/intValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/intValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) int intValue</Declaration>
-			
-			
-			<Anchor>//api/name/intValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/intValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) int intValue</Declaration>
-			
-			
-			<Anchor>//api/name/intValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setIntegerValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type NSInteger</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) NSInteger integerValue</Declaration>
-			
-			
-			<Anchor>//api/name/integerValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/integerValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type NSInteger</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) NSInteger integerValue</Declaration>
-			
-			
-			<Anchor>//api/name/integerValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/integerValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type NSInteger</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) NSInteger integerValue</Declaration>
-			
-			
-			<Anchor>//api/name/integerValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setLongLongValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type long long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) long long longLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/longLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/longLongValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type long long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) long long longLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/longLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/longLongValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type long long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) long long longLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/longLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setLongValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) long longValue</Declaration>
-			
-			
-			<Anchor>//api/name/longValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/longValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) long longValue</Declaration>
-			
-			
-			<Anchor>//api/name/longValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/longValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) long longValue</Declaration>
-			
-			
-			<Anchor>//api/name/longValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setShortValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) short shortValue</Declaration>
-			
-			
-			<Anchor>//api/name/shortValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/shortValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) short shortValue</Declaration>
-			
-			
-			<Anchor>//api/name/shortValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/shortValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) short shortValue</Declaration>
-			
-			
-			<Anchor>//api/name/shortValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedCharValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedCharValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedCharValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedCharValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedCharValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned char</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedCharValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedIntegerValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type NSUInteger</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) NSUInteger unsignedIntegerValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedIntegerValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedIntegerValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type NSUInteger</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) NSUInteger unsignedIntegerValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedIntegerValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedIntegerValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type NSUInteger</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) NSUInteger unsignedIntegerValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedIntegerValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedIntValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedIntValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedIntValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedIntValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedIntValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned int</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedIntValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedLongLongValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned long long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedLongLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedLongLongValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned long long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedLongLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedLongLongValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned long long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedLongLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedLongValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedLongValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedLongValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned long</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedLongValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedShortValue:</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedShortValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedShortValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedShortValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedShortValue</TokenIdentifier>
-			<Abstract type="html">get or set the number's value as/from type unsigned short</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
-			
-			
-			<Anchor>//api/name/unsignedShortValue</Anchor>
+			<ReturnValue><Abstract type="html">The underlying KKMutableNumber object for a specific variable.A mutable number object or nil if no variable with the given key was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/mutableNumberForKey:</Anchor>
 		</Token>
 		
 	</File>

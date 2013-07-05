@@ -11,5 +11,27 @@
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKDownloadProjectFiles/downloadProjectFilesWithModel:completionBlock:</TokenIdentifier>
+			<Abstract type="html">(nd)</Abstract>
+			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>			
+			
+			<Declaration>+ (id)downloadProjectFilesWithModel:(KKModel *)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/downloadProjectFilesWithModel:completionBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKDownloadProjectFiles/initWithModel:completionBlock:</TokenIdentifier>
+			<Abstract type="html">(nd)</Abstract>
+			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithModel:(KKModel *)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/initWithModel:completionBlock:</Anchor>
+		</Token>
+		
 	</File>
 </Tokens>

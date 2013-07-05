@@ -40,6 +40,8 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/model">&nbsp;&nbsp;&nbsp;&nbsp;model</option>
+	
 	<option value="//api/name/sceneStack">&nbsp;&nbsp;&nbsp;&nbsp;sceneStack</option>
 	
 	
@@ -98,6 +100,8 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/model">model</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sceneStack">sceneStack</a></span></li>
 	
@@ -190,6 +194,13 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/sceneStack">&nbsp;&nbsp;sceneStack</a></code>
 		<span class="tooltip"><p>The scenes currently suspended in the background.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/model">&nbsp;&nbsp;model</a></code>
+		<span class="tooltip"><p>Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -289,6 +300,45 @@
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/model" title="model"></a>
+	<h3 class="subsubtitle method-title">model</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKModel *model</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The view&rsquo;s model object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKView.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/sceneStack" title="sceneStack"></a>

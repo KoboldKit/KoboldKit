@@ -9,24 +9,31 @@
 #import "KKDownloadProjectFiles.h"
 #import <netinet/in.h>
 #import "Reachability.h"
+#import "KKModel.h"
+
+NSString* const KKDownloadProjectFilesURL = @"KKDownloadProjectFiles:URL";
+NSString* const KKDownloadProjectFilesAppSupportFolder = @"KKDownloadProjectFiles:AppSupportFolder";
 
 @implementation KKDownloadProjectFiles
 
-+(id) downloadProjectFilesWithURL:(NSURL*)url appSupportFolder:(NSString*)appSupportFolder completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock
++(id) downloadProjectFilesWithModel:(KKModel*)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock
 {
-	return [[self alloc] initWithURL:url appSupportFolder:appSupportFolder completionBlock:completionBlock];
+	return [[self alloc] initWithModel:model completionBlock:completionBlock];
 }
 
--(id) initWithURL:(NSURL*)url appSupportFolder:(NSString*)appSupportFolder completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock
+-(id) initWithModel:(KKModel*)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock
 {
 	self = [super init];
 	if (self)
 	{
-		_url = url;
-		_appSupportFolder = [appSupportFolder copy];
 		_completionBlock = [completionBlock copy];
 		
-		NSDictionary* remoteFiles = [self directoryContentsOfURL:url];
+		_appSupportDir = [NSString stringWithFormat:@"%@/%@",
+						  [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) lastObject],
+						  [model objectForKey:KKDownloadProjectFilesAppSupportFolder]];
+		[[NSFileManager defaultManager] createDirectoryAtPath:_appSupportDir withIntermediateDirectories:YES attributes:nil error:nil];
+		
+		NSDictionary* remoteFiles = [self directoryContentsOfURL:[model objectForKey:KKDownloadProjectFilesURL]];
 		[self performSelectorInBackground:@selector(downloadRemoteFiles:) withObject:remoteFiles];
 	}
 	return self;
@@ -35,8 +42,6 @@
 -(void) downloadRemoteFiles:(NSDictionary*)remoteFiles
 {
 	// simply copy all files to app support dir
-	NSString* appSupportDir = [self appSupportDirectory];
-	
 	if (remoteFiles)
 	{
 		dispatch_group_t dispatchGroup = dispatch_group_create();
@@ -52,7 +57,7 @@
 				{
 					dispatch_group_async(dispatchGroup, dispatchQueue, ^{
 						NSData* data = [NSData dataWithContentsOfURL:fileURL];
-						NSString* saveFile = [appSupportDir stringByAppendingPathComponent:file];
+						NSString* saveFile = [_appSupportDir stringByAppendingPathComponent:file];
 						if ([data writeToFile:saveFile atomically:YES] == NO)
 						{
 							NSLog(@"FILE SAVE FAILED!");
@@ -76,10 +81,9 @@
 -(BOOL) remoteFileIsNewer:(NSURL*)remoteFileURL
 {
 	NSError* error;
-	NSString* appSupportDir = [self appSupportDirectory];
 	
 	// get the file attributes to retrieve the local file's modified date
-	NSString* localFile = [NSString stringWithFormat:@"%@/%@", appSupportDir, [remoteFileURL lastPathComponent]];
+	NSString* localFile = [NSString stringWithFormat:@"%@/%@", _appSupportDir, [remoteFileURL lastPathComponent]];
 	NSDictionary* fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:localFile error:&error];
 	if (error)
 	{
@@ -116,15 +120,6 @@
 	NSDate* localFileDate = [fileAttributes fileModificationDate];
 	BOOL isNewer = ([localFileDate laterDate:serverFileDate] == serverFileDate);
 	return isNewer;
-}
-
--(NSString*) appSupportDirectory
-{
-	NSString* appSupportDir = [NSString stringWithFormat:@"%@/%@",
-							   [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) lastObject],
-							   _appSupportFolder];
-	[[NSFileManager defaultManager] createDirectoryAtPath:appSupportDir withIntermediateDirectories:YES attributes:nil error:nil];
-	return appSupportDir;
 }
 
 -(BOOL) isReachable:(NSURL*)url

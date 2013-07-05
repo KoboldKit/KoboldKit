@@ -9,6 +9,7 @@
 #import "KKSpriteKit.h"
 
 @class KKScene;
+@class KKModel;
 
 /** Kobold Kit apps use KKView as their view. It provides additional features like the ability to push & pop scenes. */
 @interface KKView : SKView
@@ -25,6 +26,10 @@
  If sceneStack.count returns 1 then there are currently no scenes in the background.
  @returns An array with 1 or more scenes currently suspended. The presented scene is always the lastObject. */
 @property (atomic, readonly) NSArray* sceneStack;
+
+/** Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).
+ ®returns The view's model object. */
+@property (atomic, readonly) KKModel* model;
 
 /** Presents a scene. 
  

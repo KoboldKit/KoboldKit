@@ -8,6 +8,7 @@
 
 #import "KKView.h"
 #import "KKScene.h"
+#import "KKModel.h"
 
 #define ASSERT_SCENE_STACK_INTEGRITY() NSAssert2([_sceneStack lastObject] == self.scene, @"scene stack out of synch! Presented scene: %@ - topmost scene on stack: %@", self.scene, [_sceneStack lastObject])
 
@@ -46,6 +47,7 @@
 -(void) initDefaults
 {
 	_sceneStack = [NSMutableArray array];
+	_model = [[KKModel alloc] init];
 }
 
 #pragma mark Present Scene

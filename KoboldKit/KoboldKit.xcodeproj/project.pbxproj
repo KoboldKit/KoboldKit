@@ -71,7 +71,7 @@
 		DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC9CFCFE17749872004C981A /* Jetpack.atlas */; };
 		DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
 		DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
-		DC9CFD111774CA5B004C981A /* KKNodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0C1774CA5B004C981A /* KKNodeModel.m */; };
+		DC9CFD111774CA5B004C981A /* KKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0C1774CA5B004C981A /* KKModel.m */; };
 		DC9CFD121774CA5B004C981A /* SKNode+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0E1774CA5B004C981A /* SKNode+KoboldKit.m */; };
 		DC9CFD1C1774CA84004C981A /* KKNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD141774CA84004C981A /* KKNode.m */; };
 		DC9CFD1D1774CA84004C981A /* KKScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD161774CA84004C981A /* KKScene.m */; };
@@ -236,8 +236,8 @@
 		DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
 		DC9CFD091774CA5B004C981A /* KKNodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeController.h; sourceTree = "<group>"; };
 		DC9CFD0A1774CA5B004C981A /* KKNodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeController.m; sourceTree = "<group>"; };
-		DC9CFD0B1774CA5B004C981A /* KKNodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeModel.h; sourceTree = "<group>"; };
-		DC9CFD0C1774CA5B004C981A /* KKNodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeModel.m; sourceTree = "<group>"; };
+		DC9CFD0B1774CA5B004C981A /* KKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKModel.h; sourceTree = "<group>"; };
+		DC9CFD0C1774CA5B004C981A /* KKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKModel.m; sourceTree = "<group>"; };
 		DC9CFD0D1774CA5B004C981A /* SKNode+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+KoboldKit.h"; sourceTree = "<group>"; };
 		DC9CFD0E1774CA5B004C981A /* SKNode+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+KoboldKit.m"; sourceTree = "<group>"; };
 		DC9CFD131774CA84004C981A /* KKNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNode.h; sourceTree = "<group>"; };
@@ -520,10 +520,10 @@
 				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
 				DC9CFD1A1774CA84004C981A /* KKViewController.h */,
 				DC9CFD1B1774CA84004C981A /* KKViewController.m */,
+				DC9CFD0B1774CA5B004C981A /* KKModel.h */,
+				DC9CFD0C1774CA5B004C981A /* KKModel.m */,
 				DC9CFD091774CA5B004C981A /* KKNodeController.h */,
 				DC9CFD0A1774CA5B004C981A /* KKNodeController.m */,
-				DC9CFD0B1774CA5B004C981A /* KKNodeModel.h */,
-				DC9CFD0C1774CA5B004C981A /* KKNodeModel.m */,
 				DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */,
 				DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */,
 			);
@@ -949,7 +949,7 @@
 				DCB087CF177B1625004182E4 /* KKTilemapLayerContourTracer.m in Sources */,
 				DC9CFD3F1774CB97004C981A /* KKButtonBehavior.m in Sources */,
 				DC4DE916176C9E2B003E4087 /* KKTMXWriter.m in Sources */,
-				DC9CFD111774CA5B004C981A /* KKNodeModel.m in Sources */,
+				DC9CFD111774CA5B004C981A /* KKModel.m in Sources */,
 				DC4DE927176CA25F003E4087 /* NSCoder+KoboldKit.m in Sources */,
 				DC2F43ED177090A8005846A7 /* KKTilemapLayerNode.m in Sources */,
 				DC4DE90A176C9E2B003E4087 /* KKTilemap.m in Sources */,
