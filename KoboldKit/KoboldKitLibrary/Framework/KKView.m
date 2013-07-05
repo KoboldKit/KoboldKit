@@ -9,6 +9,9 @@
 #import "KKView.h"
 #import "KKScene.h"
 #import "KKModel.h"
+#import "KKLua.h"
+#import "NSDictionary+KoboldKit.h"
+#import "NSFileManager+KoboldKit.h"
 
 #define ASSERT_SCENE_STACK_INTEGRITY() NSAssert2([_sceneStack lastObject] == self.scene, @"scene stack out of synch! Presented scene: %@ - topmost scene on stack: %@", self.scene, [_sceneStack lastObject])
 
@@ -48,6 +51,29 @@
 {
 	_sceneStack = [NSMutableArray array];
 	_model = [[KKModel alloc] init];
+
+	[KKLua setup];
+	[self reloadConfig];
+}
+
+-(void) reloadConfig
+{
+	[self loadConfig:@"config.lua"];
+	[self loadConfig:@"devconfig.lua"];
+}
+
+-(void) loadConfig:(NSString*)configFile
+{
+	NSString* path = [NSFileManager pathForFile:configFile];
+	if (path)
+	{
+		NSDictionary* config = [NSDictionary dictionaryWithContentsOfLuaScript:path];
+		if (config)
+		{
+			NSString* key = [[configFile lastPathComponent] stringByDeletingPathExtension];
+			[_model setObject:config forKey:key];
+		}
+	}
 }
 
 #pragma mark Present Scene

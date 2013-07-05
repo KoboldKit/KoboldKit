@@ -12,7 +12,6 @@
 #import "KKModel.h"
 
 NSString* const KKDownloadProjectFilesURL = @"KKDownloadProjectFiles:URL";
-NSString* const KKDownloadProjectFilesAppSupportFolder = @"KKDownloadProjectFiles:AppSupportFolder";
 
 @implementation KKDownloadProjectFiles
 
@@ -27,11 +26,6 @@ NSString* const KKDownloadProjectFilesAppSupportFolder = @"KKDownloadProjectFile
 	if (self)
 	{
 		_completionBlock = [completionBlock copy];
-		
-		_appSupportDir = [NSString stringWithFormat:@"%@/%@",
-						  [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) lastObject],
-						  [model objectForKey:KKDownloadProjectFilesAppSupportFolder]];
-		[[NSFileManager defaultManager] createDirectoryAtPath:_appSupportDir withIntermediateDirectories:YES attributes:nil error:nil];
 		
 		NSDictionary* remoteFiles = [self directoryContentsOfURL:[model objectForKey:KKDownloadProjectFilesURL]];
 		[self performSelectorInBackground:@selector(downloadRemoteFiles:) withObject:remoteFiles];
@@ -57,14 +51,12 @@ NSString* const KKDownloadProjectFilesAppSupportFolder = @"KKDownloadProjectFile
 				{
 					dispatch_group_async(dispatchGroup, dispatchQueue, ^{
 						NSData* data = [NSData dataWithContentsOfURL:fileURL];
-						NSString* saveFile = [_appSupportDir stringByAppendingPathComponent:file];
-						if ([data writeToFile:saveFile atomically:YES] == NO)
+						if ([data writeToFile:file atomically:YES] == NO)
 						{
-							NSLog(@"FILE SAVE FAILED!");
-							LOG_EXPR(saveFile);
+							NSLog(@"FILE SAVE FAILED: %@", file);
 						}
 						
-						NSLog(@"File downloaded: %@", [saveFile lastPathComponent]);
+						NSLog(@"File downloaded: %@", [file lastPathComponent]);
 					});
 				}
 			}
@@ -83,7 +75,7 @@ NSString* const KKDownloadProjectFilesAppSupportFolder = @"KKDownloadProjectFile
 	NSError* error;
 	
 	// get the file attributes to retrieve the local file's modified date
-	NSString* localFile = [NSString stringWithFormat:@"%@/%@", _appSupportDir, [remoteFileURL lastPathComponent]];
+	NSString* localFile = [remoteFileURL lastPathComponent];
 	NSDictionary* fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:localFile error:&error];
 	if (error)
 	{

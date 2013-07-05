@@ -11,8 +11,6 @@
 
 @implementation MenuScene
 
-static NSString* kAppSupportFolder = @"KoboldKitDemo";
-
 -(void) didMoveToView:(SKView *)view
 {
 	[self addPleaseWaitLabel];
@@ -21,7 +19,9 @@ static NSString* kAppSupportFolder = @"KoboldKitDemo";
 	// Note: devices must be connected via Wifi to the same subnet as your dev machine,
 	// and if the dev machine is running a firewall the port must be open.
 	[self.kkView.model setObject:[NSURL URLWithString:@"http://10.0.0.8:32111"] forKey:KKDownloadProjectFilesURL];
-	[self.kkView.model setObject:kAppSupportFolder forKey:KKDownloadProjectFilesAppSupportFolder];
+	
+	NSString* url = [self.kkView.model valueForKeyPath:@"devconfig.developmentWebServerURL"];
+	LOG_EXPR(url);
 	
 	// Transfers all changed resource files from the remote server to the specified folder in the app support directory
 	[KKDownloadProjectFiles downloadProjectFilesWithModel:self.kkView.model
@@ -67,7 +67,7 @@ static NSString* kAppSupportFolder = @"KoboldKitDemo";
 			}
 		}
 
-		//[tmxFiles sort]
+		[tmxFiles sortUsingSelector:@selector(caseInsensitiveCompare:)];
 		
 		CGFloat height = 0;
 		for (NSString* tmxFile in tmxFiles)
@@ -93,7 +93,7 @@ static NSString* kAppSupportFolder = @"KoboldKitDemo";
 -(void) tmxButtonPressed:(NSNotification*)notification
 {
 	GameScene* gameScene = [GameScene sceneWithSize:self.size];
-	gameScene.tmxFile = [NSString stringWithFormat:@"%@/%@", kAppSupportFolder, ((KKLabelNode*)notification.object).text];
+	gameScene.tmxFile = ((KKLabelNode*)notification.object).text;
 	[self.view presentScene:gameScene transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]];
 }
 

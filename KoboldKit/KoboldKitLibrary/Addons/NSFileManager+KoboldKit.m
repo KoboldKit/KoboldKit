@@ -8,6 +8,8 @@
 
 #import "NSFileManager+KoboldKit.h"
 
+static NSString* CFBundleName = nil;
+
 @implementation NSFileManager (KoboldKit)
 
 +(NSString*) pathForBundleFile:(NSString*)file

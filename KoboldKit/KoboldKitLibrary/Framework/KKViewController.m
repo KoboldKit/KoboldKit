@@ -17,7 +17,7 @@
 
 @implementation KKViewController
 
-- (void)viewDidLoad
+-(void) viewDidLoad
 {
     [super viewDidLoad];
 	

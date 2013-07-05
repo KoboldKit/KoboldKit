@@ -29,7 +29,6 @@
 		DC2F43DE176CC13B005846A7 /* crawl-tiles.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */; };
 		DC2F43DF176CC13B005846A7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D4176CC13B005846A7 /* LICENSE.txt */; };
 		DC2F43E0176CC13B005846A7 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D5176CC13B005846A7 /* README.txt */; };
-		DC2F43E3176CC8B8005846A7 /* NSObject+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43E2176CC8B8005846A7 /* NSObject+KoboldKit.m */; };
 		DC2F43EA17708FEC005846A7 /* KKTilemapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43E917708FEC005846A7 /* KKTilemapNode.m */; };
 		DC2F43ED177090A8005846A7 /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EC177090A8005846A7 /* KKTilemapLayerNode.m */; };
 		DC2F43F0177090F8005846A7 /* KKTilemapTileLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */; };
@@ -68,6 +67,42 @@
 		DC95BA781786DF8600E31DA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
 		DC95BA7E1786DFB800E31DA6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC95BA7C1786DFB800E31DA6 /* Reachability.m */; };
 		DC96A7F91786E75400CE0827 /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */; };
+		DC96A846178760F400CE0827 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A809178760F400CE0827 /* lapi.c */; };
+		DC96A847178760F400CE0827 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80B178760F400CE0827 /* lauxlib.c */; };
+		DC96A848178760F400CE0827 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80D178760F400CE0827 /* lbaselib.c */; };
+		DC96A849178760F400CE0827 /* lbitlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80E178760F400CE0827 /* lbitlib.c */; };
+		DC96A84A178760F400CE0827 /* lcode.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80F178760F400CE0827 /* lcode.c */; };
+		DC96A84B178760F400CE0827 /* lcorolib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A811178760F400CE0827 /* lcorolib.c */; };
+		DC96A84C178760F400CE0827 /* lctype.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A812178760F400CE0827 /* lctype.c */; };
+		DC96A84D178760F400CE0827 /* ldblib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A814178760F400CE0827 /* ldblib.c */; };
+		DC96A84E178760F400CE0827 /* ldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A815178760F400CE0827 /* ldebug.c */; };
+		DC96A84F178760F400CE0827 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A817178760F400CE0827 /* ldo.c */; };
+		DC96A850178760F400CE0827 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A819178760F400CE0827 /* ldump.c */; };
+		DC96A851178760F400CE0827 /* lfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81A178760F400CE0827 /* lfunc.c */; };
+		DC96A852178760F400CE0827 /* lgc.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81C178760F400CE0827 /* lgc.c */; };
+		DC96A853178760F400CE0827 /* linit.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81E178760F400CE0827 /* linit.c */; };
+		DC96A854178760F400CE0827 /* liolib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81F178760F400CE0827 /* liolib.c */; };
+		DC96A855178760F400CE0827 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A820178760F400CE0827 /* llex.c */; };
+		DC96A856178760F400CE0827 /* lmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A823178760F400CE0827 /* lmathlib.c */; };
+		DC96A857178760F400CE0827 /* lmem.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A824178760F400CE0827 /* lmem.c */; };
+		DC96A858178760F400CE0827 /* loadlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A826178760F400CE0827 /* loadlib.c */; };
+		DC96A859178760F400CE0827 /* lobject.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A827178760F400CE0827 /* lobject.c */; };
+		DC96A85A178760F400CE0827 /* lopcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A829178760F400CE0827 /* lopcodes.c */; };
+		DC96A85B178760F400CE0827 /* loslib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82B178760F400CE0827 /* loslib.c */; };
+		DC96A85C178760F400CE0827 /* lparser.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82C178760F400CE0827 /* lparser.c */; };
+		DC96A85D178760F400CE0827 /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82E178760F400CE0827 /* lstate.c */; };
+		DC96A85E178760F400CE0827 /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A830178760F400CE0827 /* lstring.c */; };
+		DC96A85F178760F400CE0827 /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A832178760F400CE0827 /* lstrlib.c */; };
+		DC96A860178760F400CE0827 /* ltable.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A833178760F400CE0827 /* ltable.c */; };
+		DC96A861178760F400CE0827 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A835178760F400CE0827 /* ltablib.c */; };
+		DC96A862178760F400CE0827 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A836178760F400CE0827 /* ltm.c */; };
+		DC96A865178760F400CE0827 /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A83E178760F400CE0827 /* lundump.c */; };
+		DC96A866178760F400CE0827 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A840178760F400CE0827 /* lvm.c */; };
+		DC96A867178760F400CE0827 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A842178760F400CE0827 /* lzio.c */; };
+		DC96A86B17876A2C00CE0827 /* KKLua.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86A17876A2C00CE0827 /* KKLua.m */; };
+		DC96A86E17876F6100CE0827 /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */; };
+		DC96A8781787717200CE0827 /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC96A8761787717200CE0827 /* devconfig.lua.sample */; };
+		DC96A8791787717200CE0827 /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC96A8771787717200CE0827 /* config.lua */; };
 		DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC9CFCFE17749872004C981A /* Jetpack.atlas */; };
 		DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
 		DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
@@ -166,8 +201,6 @@
 		DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles.tps"; sourceTree = "<group>"; };
 		DC2F43D4176CC13B005846A7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		DC2F43D5176CC13B005846A7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		DC2F43E1176CC8B8005846A7 /* NSObject+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KoboldKit.h"; sourceTree = "<group>"; };
-		DC2F43E2176CC8B8005846A7 /* NSObject+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KoboldKit.m"; sourceTree = "<group>"; };
 		DC2F43E817708FEC005846A7 /* KKTilemapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTilemapNode.h; path = KoboldKitLibrary/Tilemap/KKTilemapNode.h; sourceTree = SOURCE_ROOT; };
 		DC2F43E917708FEC005846A7 /* KKTilemapNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTilemapNode.m; path = KoboldKitLibrary/Tilemap/KKTilemapNode.m; sourceTree = SOURCE_ROOT; };
 		DC2F43EB177090A8005846A7 /* KKTilemapLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTilemapLayerNode.h; path = KoboldKitLibrary/Tilemap/KKTilemapLayerNode.h; sourceTree = SOURCE_ROOT; };
@@ -231,6 +264,68 @@
 		DC95BA7D1786DFB800E31DA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		DC96A7F71786E75400CE0827 /* KKDownloadProjectFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDownloadProjectFiles.h; sourceTree = "<group>"; };
 		DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDownloadProjectFiles.m; sourceTree = "<group>"; };
+		DC96A809178760F400CE0827 /* lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lapi.c; sourceTree = "<group>"; };
+		DC96A80A178760F400CE0827 /* lapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lapi.h; sourceTree = "<group>"; };
+		DC96A80B178760F400CE0827 /* lauxlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lauxlib.c; sourceTree = "<group>"; };
+		DC96A80C178760F400CE0827 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
+		DC96A80D178760F400CE0827 /* lbaselib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lbaselib.c; sourceTree = "<group>"; };
+		DC96A80E178760F400CE0827 /* lbitlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lbitlib.c; sourceTree = "<group>"; };
+		DC96A80F178760F400CE0827 /* lcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lcode.c; sourceTree = "<group>"; };
+		DC96A810178760F400CE0827 /* lcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcode.h; sourceTree = "<group>"; };
+		DC96A811178760F400CE0827 /* lcorolib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lcorolib.c; sourceTree = "<group>"; };
+		DC96A812178760F400CE0827 /* lctype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lctype.c; sourceTree = "<group>"; };
+		DC96A813178760F400CE0827 /* lctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lctype.h; sourceTree = "<group>"; };
+		DC96A814178760F400CE0827 /* ldblib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldblib.c; sourceTree = "<group>"; };
+		DC96A815178760F400CE0827 /* ldebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldebug.c; sourceTree = "<group>"; };
+		DC96A816178760F400CE0827 /* ldebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldebug.h; sourceTree = "<group>"; };
+		DC96A817178760F400CE0827 /* ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldo.c; sourceTree = "<group>"; };
+		DC96A818178760F400CE0827 /* ldo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldo.h; sourceTree = "<group>"; };
+		DC96A819178760F400CE0827 /* ldump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldump.c; sourceTree = "<group>"; };
+		DC96A81A178760F400CE0827 /* lfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lfunc.c; sourceTree = "<group>"; };
+		DC96A81B178760F400CE0827 /* lfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfunc.h; sourceTree = "<group>"; };
+		DC96A81C178760F400CE0827 /* lgc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lgc.c; sourceTree = "<group>"; };
+		DC96A81D178760F400CE0827 /* lgc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lgc.h; sourceTree = "<group>"; };
+		DC96A81E178760F400CE0827 /* linit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linit.c; sourceTree = "<group>"; };
+		DC96A81F178760F400CE0827 /* liolib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = liolib.c; sourceTree = "<group>"; };
+		DC96A820178760F400CE0827 /* llex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = llex.c; sourceTree = "<group>"; };
+		DC96A821178760F400CE0827 /* llex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llex.h; sourceTree = "<group>"; };
+		DC96A822178760F400CE0827 /* llimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llimits.h; sourceTree = "<group>"; };
+		DC96A823178760F400CE0827 /* lmathlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lmathlib.c; sourceTree = "<group>"; };
+		DC96A824178760F400CE0827 /* lmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lmem.c; sourceTree = "<group>"; };
+		DC96A825178760F400CE0827 /* lmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lmem.h; sourceTree = "<group>"; };
+		DC96A826178760F400CE0827 /* loadlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loadlib.c; sourceTree = "<group>"; };
+		DC96A827178760F400CE0827 /* lobject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lobject.c; sourceTree = "<group>"; };
+		DC96A828178760F400CE0827 /* lobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lobject.h; sourceTree = "<group>"; };
+		DC96A829178760F400CE0827 /* lopcodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lopcodes.c; sourceTree = "<group>"; };
+		DC96A82A178760F400CE0827 /* lopcodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lopcodes.h; sourceTree = "<group>"; };
+		DC96A82B178760F400CE0827 /* loslib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loslib.c; sourceTree = "<group>"; };
+		DC96A82C178760F400CE0827 /* lparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lparser.c; sourceTree = "<group>"; };
+		DC96A82D178760F400CE0827 /* lparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lparser.h; sourceTree = "<group>"; };
+		DC96A82E178760F400CE0827 /* lstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lstate.c; sourceTree = "<group>"; };
+		DC96A82F178760F400CE0827 /* lstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lstate.h; sourceTree = "<group>"; };
+		DC96A830178760F400CE0827 /* lstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lstring.c; sourceTree = "<group>"; };
+		DC96A831178760F400CE0827 /* lstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lstring.h; sourceTree = "<group>"; };
+		DC96A832178760F400CE0827 /* lstrlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lstrlib.c; sourceTree = "<group>"; };
+		DC96A833178760F400CE0827 /* ltable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ltable.c; sourceTree = "<group>"; };
+		DC96A834178760F400CE0827 /* ltable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltable.h; sourceTree = "<group>"; };
+		DC96A835178760F400CE0827 /* ltablib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ltablib.c; sourceTree = "<group>"; };
+		DC96A836178760F400CE0827 /* ltm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ltm.c; sourceTree = "<group>"; };
+		DC96A837178760F400CE0827 /* ltm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltm.h; sourceTree = "<group>"; };
+		DC96A839178760F400CE0827 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
+		DC96A83C178760F400CE0827 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		DC96A83D178760F400CE0827 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
+		DC96A83E178760F400CE0827 /* lundump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lundump.c; sourceTree = "<group>"; };
+		DC96A83F178760F400CE0827 /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
+		DC96A840178760F400CE0827 /* lvm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lvm.c; sourceTree = "<group>"; };
+		DC96A841178760F400CE0827 /* lvm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lvm.h; sourceTree = "<group>"; };
+		DC96A842178760F400CE0827 /* lzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lzio.c; sourceTree = "<group>"; };
+		DC96A843178760F400CE0827 /* lzio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzio.h; sourceTree = "<group>"; };
+		DC96A86917876A2C00CE0827 /* KKLua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLua.h; sourceTree = "<group>"; };
+		DC96A86A17876A2C00CE0827 /* KKLua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLua.m; sourceTree = "<group>"; };
+		DC96A86C17876F6100CE0827 /* NSDictionary+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KoboldKit.h"; sourceTree = "<group>"; };
+		DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KoboldKit.m"; sourceTree = "<group>"; };
+		DC96A8761787717200CE0827 /* devconfig.lua.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = devconfig.lua.sample; sourceTree = "<group>"; };
+		DC96A8771787717200CE0827 /* config.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = config.lua; sourceTree = "<group>"; };
 		DC9CFCFE17749872004C981A /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
 		DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeBehavior.h; sourceTree = "<group>"; };
 		DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
@@ -354,6 +449,7 @@
 		DC2F43AF176CB1F7005846A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC96A8751787717200CE0827 /* Config */,
 				DC9CFCFE17749872004C981A /* Jetpack.atlas */,
 				DC2F44071771E9A5005846A7 /* Genetica Texture Pack 10 - Mystery Forest */,
 				DC2F43F41770E56E005846A7 /* Default-568h@2x.png */,
@@ -479,6 +575,9 @@
 		DC4DE91E176CA25F003E4087 /* Addons */ = {
 			isa = PBXGroup;
 			children = (
+				DC96A86F17876F9300CE0827 /* NS* Categories */,
+				DC96A86917876A2C00CE0827 /* KKLua.h */,
+				DC96A86A17876A2C00CE0827 /* KKLua.m */,
 				DCB087D0177B1647004182E4 /* KKIntegerArray.h */,
 				DCB087D1177B1647004182E4 /* KKIntegerArray.m */,
 				DCB087D2177B1647004182E4 /* KKPointArray.h */,
@@ -487,12 +586,6 @@
 				DC4DE920176CA25F003E4087 /* KKMutableNumber.m */,
 				DC4DE921176CA25F003E4087 /* KKIvarSetter.h */,
 				DC4DE922176CA25F003E4087 /* KKIvarSetter.m */,
-				DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */,
-				DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */,
-				DC2F43E1176CC8B8005846A7 /* NSObject+KoboldKit.h */,
-				DC2F43E2176CC8B8005846A7 /* NSObject+KoboldKit.m */,
-				DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */,
-				DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */,
 				DC96A7F71786E75400CE0827 /* KKDownloadProjectFiles.h */,
 				DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */,
 			);
@@ -510,15 +603,105 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		DC96A7FB178760F400CE0827 /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				DC96A808178760F400CE0827 /* src */,
+			);
+			path = lua;
+			sourceTree = "<group>";
+		};
+		DC96A808178760F400CE0827 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DC96A809178760F400CE0827 /* lapi.c */,
+				DC96A80A178760F400CE0827 /* lapi.h */,
+				DC96A80B178760F400CE0827 /* lauxlib.c */,
+				DC96A80C178760F400CE0827 /* lauxlib.h */,
+				DC96A80D178760F400CE0827 /* lbaselib.c */,
+				DC96A80E178760F400CE0827 /* lbitlib.c */,
+				DC96A80F178760F400CE0827 /* lcode.c */,
+				DC96A810178760F400CE0827 /* lcode.h */,
+				DC96A811178760F400CE0827 /* lcorolib.c */,
+				DC96A812178760F400CE0827 /* lctype.c */,
+				DC96A813178760F400CE0827 /* lctype.h */,
+				DC96A814178760F400CE0827 /* ldblib.c */,
+				DC96A815178760F400CE0827 /* ldebug.c */,
+				DC96A816178760F400CE0827 /* ldebug.h */,
+				DC96A817178760F400CE0827 /* ldo.c */,
+				DC96A818178760F400CE0827 /* ldo.h */,
+				DC96A819178760F400CE0827 /* ldump.c */,
+				DC96A81A178760F400CE0827 /* lfunc.c */,
+				DC96A81B178760F400CE0827 /* lfunc.h */,
+				DC96A81C178760F400CE0827 /* lgc.c */,
+				DC96A81D178760F400CE0827 /* lgc.h */,
+				DC96A81E178760F400CE0827 /* linit.c */,
+				DC96A81F178760F400CE0827 /* liolib.c */,
+				DC96A820178760F400CE0827 /* llex.c */,
+				DC96A821178760F400CE0827 /* llex.h */,
+				DC96A822178760F400CE0827 /* llimits.h */,
+				DC96A823178760F400CE0827 /* lmathlib.c */,
+				DC96A824178760F400CE0827 /* lmem.c */,
+				DC96A825178760F400CE0827 /* lmem.h */,
+				DC96A826178760F400CE0827 /* loadlib.c */,
+				DC96A827178760F400CE0827 /* lobject.c */,
+				DC96A828178760F400CE0827 /* lobject.h */,
+				DC96A829178760F400CE0827 /* lopcodes.c */,
+				DC96A82A178760F400CE0827 /* lopcodes.h */,
+				DC96A82B178760F400CE0827 /* loslib.c */,
+				DC96A82C178760F400CE0827 /* lparser.c */,
+				DC96A82D178760F400CE0827 /* lparser.h */,
+				DC96A82E178760F400CE0827 /* lstate.c */,
+				DC96A82F178760F400CE0827 /* lstate.h */,
+				DC96A830178760F400CE0827 /* lstring.c */,
+				DC96A831178760F400CE0827 /* lstring.h */,
+				DC96A832178760F400CE0827 /* lstrlib.c */,
+				DC96A833178760F400CE0827 /* ltable.c */,
+				DC96A834178760F400CE0827 /* ltable.h */,
+				DC96A835178760F400CE0827 /* ltablib.c */,
+				DC96A836178760F400CE0827 /* ltm.c */,
+				DC96A837178760F400CE0827 /* ltm.h */,
+				DC96A839178760F400CE0827 /* lua.h */,
+				DC96A83C178760F400CE0827 /* luaconf.h */,
+				DC96A83D178760F400CE0827 /* lualib.h */,
+				DC96A83E178760F400CE0827 /* lundump.c */,
+				DC96A83F178760F400CE0827 /* lundump.h */,
+				DC96A840178760F400CE0827 /* lvm.c */,
+				DC96A841178760F400CE0827 /* lvm.h */,
+				DC96A842178760F400CE0827 /* lzio.c */,
+				DC96A843178760F400CE0827 /* lzio.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DC96A86F17876F9300CE0827 /* NS* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */,
+				DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */,
+				DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */,
+				DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */,
+				DC96A86C17876F6100CE0827 /* NSDictionary+KoboldKit.h */,
+				DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */,
+			);
+			name = "NS* Categories";
+			sourceTree = "<group>";
+		};
+		DC96A8751787717200CE0827 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DC96A8771787717200CE0827 /* config.lua */,
+				DC96A8761787717200CE0827 /* devconfig.lua.sample */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		DC9CFD061774CA5B004C981A /* Framework */ = {
 			isa = PBXGroup;
 			children = (
 				DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */,
-				DCB087EC177BAC3F004182E4 /* Sprite Kit Subclasses */,
 				DCB087D6177B2F57004182E4 /* Sprite Kit Categories */,
-				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
-				DC9CFD1A1774CA84004C981A /* KKViewController.h */,
-				DC9CFD1B1774CA84004C981A /* KKViewController.m */,
+				DCB087EC177BAC3F004182E4 /* View Scene Node */,
 				DC9CFD0B1774CA5B004C981A /* KKModel.h */,
 				DC9CFD0C1774CA5B004C981A /* KKModel.m */,
 				DC9CFD091774CA5B004C981A /* KKNodeController.h */,
@@ -582,17 +765,20 @@
 			name = "Sprite Kit Categories";
 			sourceTree = "<group>";
 		};
-		DCB087EC177BAC3F004182E4 /* Sprite Kit Subclasses */ = {
+		DCB087EC177BAC3F004182E4 /* View Scene Node */ = {
 			isa = PBXGroup;
 			children = (
+				DC9CFD1A1774CA84004C981A /* KKViewController.h */,
+				DC9CFD1B1774CA84004C981A /* KKViewController.m */,
 				DC9CFD181774CA84004C981A /* KKView.h */,
 				DC9CFD191774CA84004C981A /* KKView.m */,
+				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
 				DC9CFD151774CA84004C981A /* KKScene.h */,
 				DC9CFD161774CA84004C981A /* KKScene.m */,
 				DC9CFD131774CA84004C981A /* KKNode.h */,
 				DC9CFD141774CA84004C981A /* KKNode.m */,
 			);
-			name = "Sprite Kit Subclasses";
+			name = "View Scene Node";
 			sourceTree = "<group>";
 		};
 		DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */ = {
@@ -711,6 +897,7 @@
 		DCDD2E2B176A40C400F307CD /* External */ = {
 			isa = PBXGroup;
 			children = (
+				DC96A7FB178760F400CE0827 /* lua */,
 				DC95BA791786DFB800E31DA6 /* Reachability */,
 				DCFDF3BE176B3FE100F2CAD0 /* CGPointExtension */,
 				DCDD2E2C176A40C400F307CD /* JRSwizzle */,
@@ -860,6 +1047,7 @@
 				DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */,
 				DC2F44031770E56E005846A7 /* Icon@2x.png in Resources */,
 				DC2F43C0176CB1F7005846A7 /* crawl-tiles-hd.png in Resources */,
+				DC96A8791787717200CE0827 /* config.lua in Resources */,
 				DC2F44011770E56E005846A7 /* Icon-Small@2x.png in Resources */,
 				DC2F43C4176CB1F7005846A7 /* crawl-tiles.png in Resources */,
 				DC2F44021770E56E005846A7 /* Icon.png in Resources */,
@@ -875,6 +1063,7 @@
 				DC2F43C7176CB1F7005846A7 /* LICENSE.txt in Resources */,
 				DC2F43C1176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */,
 				DC2F43C9176CB293005846A7 /* ATTRIBUTIONS in Resources */,
+				DC96A8781787717200CE0827 /* devconfig.lua.sample in Resources */,
 				DC2F43FC1770E56E005846A7 /* Default-568h@2x.png in Resources */,
 				DC2F43C3176CB1F7005846A7 /* crawl-tiles.plist in Resources */,
 				DC2F44301771E9A5005846A7 /* other.png in Resources */,
@@ -920,20 +1109,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC96A851178760F400CE0827 /* lfunc.c in Sources */,
+				DC96A85C178760F400CE0827 /* lparser.c in Sources */,
+				DC96A856178760F400CE0827 /* lmathlib.c in Sources */,
 				DCB087E5177B439B004182E4 /* KKViewOriginNode.m in Sources */,
+				DC96A867178760F400CE0827 /* lzio.c in Sources */,
 				DC4DE911176C9E2B003E4087 /* KKTilemapProperties.m in Sources */,
+				DC96A85B178760F400CE0827 /* loslib.c in Sources */,
 				DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */,
+				DC96A859178760F400CE0827 /* lobject.c in Sources */,
 				DC8CD4AA17760E0D0005AB51 /* KKStayInBoundsBehavior.m in Sources */,
 				DC9CFD491774CBE1004C981A /* KKVersion.m in Sources */,
 				DC9CFD401774CB97004C981A /* KKControlPadBehavior.m in Sources */,
 				DC9CFD1D1774CA84004C981A /* KKScene.m in Sources */,
+				DC96A848178760F400CE0827 /* lbaselib.c in Sources */,
+				DC96A85D178760F400CE0827 /* lstate.c in Sources */,
 				DCDD2E4A176A40C400F307CD /* JRSwizzle.m in Sources */,
+				DC96A85A178760F400CE0827 /* lopcodes.c in Sources */,
+				DC96A84C178760F400CE0827 /* lctype.c in Sources */,
+				DC96A855178760F400CE0827 /* llex.c in Sources */,
+				DC96A858178760F400CE0827 /* loadlib.c in Sources */,
+				DC96A846178760F400CE0827 /* lapi.c in Sources */,
 				DC4DE926176CA25F003E4087 /* KKIvarSetter.m in Sources */,
+				DC96A862178760F400CE0827 /* ltm.c in Sources */,
 				DC2F43EA17708FEC005846A7 /* KKTilemapNode.m in Sources */,
 				DC9CFD1F1774CA84004C981A /* KKViewController.m in Sources */,
 				DC9CFD411774CB97004C981A /* KKFollowTargetBehavior.m in Sources */,
 				DC4DE915176C9E2B003E4087 /* KKTMXReader.m in Sources */,
 				DC4DE913176C9E2B003E4087 /* KKTilemapTileset.m in Sources */,
+				DC96A852178760F400CE0827 /* lgc.c in Sources */,
 				DC41B8AA1785A7C00018D6C5 /* KKLimitVelocityBehavior.m in Sources */,
 				DC4DE910176C9E2B003E4087 /* KKTilemapObject.m in Sources */,
 				DCB087D5177B1647004182E4 /* KKPointArray.m in Sources */,
@@ -941,30 +1145,48 @@
 				DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */,
 				DC4DE91C176CA0AC003E4087 /* base64.c in Sources */,
 				DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */,
+				DC96A847178760F400CE0827 /* lauxlib.c in Sources */,
+				DC96A84A178760F400CE0827 /* lcode.c in Sources */,
+				DC96A84F178760F400CE0827 /* ldo.c in Sources */,
 				DC9CFD121774CA5B004C981A /* SKNode+KoboldKit.m in Sources */,
 				DC1E506F1775ED500063CEDC /* KKCameraFollowBehavior.m in Sources */,
 				DC4DE90D176C9E2B003E4087 /* KKTilemapLayerTiles.m in Sources */,
+				DC96A849178760F400CE0827 /* lbitlib.c in Sources */,
 				DC96A7F91786E75400CE0827 /* KKDownloadProjectFiles.m in Sources */,
 				DCB087CF177B1625004182E4 /* KKTilemapLayerContourTracer.m in Sources */,
+				DC96A861178760F400CE0827 /* ltablib.c in Sources */,
 				DC9CFD3F1774CB97004C981A /* KKButtonBehavior.m in Sources */,
+				DC96A84D178760F400CE0827 /* ldblib.c in Sources */,
 				DC4DE916176C9E2B003E4087 /* KKTMXWriter.m in Sources */,
 				DC9CFD111774CA5B004C981A /* KKModel.m in Sources */,
+				DC96A850178760F400CE0827 /* ldump.c in Sources */,
 				DC4DE927176CA25F003E4087 /* NSCoder+KoboldKit.m in Sources */,
+				DC96A85F178760F400CE0827 /* lstrlib.c in Sources */,
 				DC2F43ED177090A8005846A7 /* KKTilemapLayerNode.m in Sources */,
 				DC4DE90A176C9E2B003E4087 /* KKTilemap.m in Sources */,
 				DC2F43F0177090F8005846A7 /* KKTilemapTileLayerNode.m in Sources */,
+				DC96A854178760F400CE0827 /* liolib.c in Sources */,
 				DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */,
 				DC2F43F317709109005846A7 /* KKTilemapObjectLayerNode.m in Sources */,
+				DC96A86E17876F6100CE0827 /* NSDictionary+KoboldKit.m in Sources */,
 				DC9CFD1C1774CA84004C981A /* KKNode.m in Sources */,
 				DC4DE925176CA25F003E4087 /* KKMutableNumber.m in Sources */,
+				DC96A865178760F400CE0827 /* lundump.c in Sources */,
 				DC4DE91D176CA0AC003E4087 /* ZipUtils.m in Sources */,
-				DC2F43E3176CC8B8005846A7 /* NSObject+KoboldKit.m in Sources */,
+				DC96A84E178760F400CE0827 /* ldebug.c in Sources */,
+				DC96A866178760F400CE0827 /* lvm.c in Sources */,
 				DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */,
 				DC41B8B01785DD5E0018D6C5 /* NSFileManager+KoboldKit.m in Sources */,
 				DC95BA7E1786DFB800E31DA6 /* Reachability.m in Sources */,
+				DC96A857178760F400CE0827 /* lmem.c in Sources */,
+				DC96A860178760F400CE0827 /* ltable.c in Sources */,
 				DC4DE912176C9E2B003E4087 /* KKTilemapTileProperties.m in Sources */,
+				DC96A853178760F400CE0827 /* linit.c in Sources */,
 				DC4DE90B176C9E2B003E4087 /* KKTilemapLayer.m in Sources */,
+				DC96A86B17876A2C00CE0827 /* KKLua.m in Sources */,
 				DCB087DC177B3783004182E4 /* SKScene+KoboldKit.m in Sources */,
+				DC96A85E178760F400CE0827 /* lstring.c in Sources */,
+				DC96A84B178760F400CE0827 /* lcorolib.c in Sources */,
 				DC9CFD1E1774CA84004C981A /* KKView.m in Sources */,
 				DCB087EB177BAC2F004182E4 /* KKPhysicsDebugNode.m in Sources */,
 			);

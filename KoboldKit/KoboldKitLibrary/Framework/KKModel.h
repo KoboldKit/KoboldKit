@@ -114,6 +114,12 @@
 /** @returns The object for key or nil if there's no object associated with this key. */
 -(id) objectForKey:(NSString*)key;
 
+/** KVC / KVO */
+
+/** @param keyPath The KVC path to a value.
+ @returns The value for the path, or nil. */
+-(id) valueForKeyPath:(NSString*)keyPath;
+
 /** @name Getting a Mutable Number */
 
 /** Accessing the KKMutableNumber object directly allows you to change the value without having to reassign it using a setter method.

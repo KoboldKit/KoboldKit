@@ -15,7 +15,7 @@
 #import "KKTypes.h"
 #import "KKArcadeInputState.h"
 
-// categories
+// Sprite Kit categories
 #import "SKNode+KoboldKit.h"
 #import "SKScene+KoboldKit.h"
 
@@ -61,10 +61,13 @@
 #import "KKMutableNumber.h"
 #import "KKIntegerArray.h"
 #import "KKPointArray.h"
-#import "NSCoder+KoboldKit.h"
-#import "NSObject+KoboldKit.h"
-#import "NSFileManager+KoboldKit.h"
 #import "KKDownloadProjectFiles.h"
+#import "KKLua.h"
+
+// NS* categories
+#import "NSCoder+KoboldKit.h"
+#import "NSFileManager+KoboldKit.h"
+#import "NSDictionary+KoboldKit.h"
 
 // external
 #import "Reachability.h"

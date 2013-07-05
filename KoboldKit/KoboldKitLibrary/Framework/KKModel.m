@@ -189,6 +189,13 @@
 	return [_keyedValues objectForKey:key];
 }
 
+#pragma mark KVC / KVO
+
+-(id) valueForKeyPath:(NSString*)keyPath
+{
+	return [_keyedValues valueForKeyPath:keyPath];
+}
+
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 

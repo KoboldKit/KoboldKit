@@ -107,4 +107,7 @@
  @param transition A transition used to animate between the two scenes. */
 -(void) popToSceneNamed:(NSString*)name transition:(KKTransition*)transition;
 
+/** Reloads the config files, replacing the existing "config" and "devconfig" entries in the model. */
+-(void) reloadConfig;
+
 @end

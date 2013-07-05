@@ -13,15 +13,12 @@ typedef void (^KKDownloadProjectFilesCompletionBlock)(NSDictionary* contents);
 
 /** nd */
 extern NSString* const KKDownloadProjectFilesURL;
-/** nd */
-extern NSString* const KKDownloadProjectFilesAppSupportFolder;
 
 @class KKModel;
 
 /** nd */
 @interface KKDownloadProjectFiles : NSObject
 {
-	NSString* _appSupportDir;
 	KKDownloadProjectFilesCompletionBlock _completionBlock;
 }
 

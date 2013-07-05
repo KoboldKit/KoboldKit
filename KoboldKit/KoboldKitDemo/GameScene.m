@@ -78,6 +78,7 @@
 	[self addChild:hudNode];
 	
 	KKLabelNode* reloadLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
+	reloadLabel.name = @"reload label";
 	reloadLabel.text = @"reload";
 	reloadLabel.fontSize = 20;
 	//reloadLabel.position = CGPointMake(self.size.width - 30, self.size.height - reloadLabel.fontSize);
@@ -91,9 +92,26 @@
 
 -(void) reloadButtonPressed:(NSNotification*)notification
 {
+	[self enumerateChildNodesWithName:@"//reload label" usingBlock:^(SKNode *node, BOOL *stop) {
+		[node removeFromParent];
+	}];
+	
+	_curtainSprite = [KKSpriteNode spriteNodeWithColor:[SKColor greenColor] size:self.size];
+	_curtainSprite.zPosition = -1000;
+	[self addChild:_curtainSprite];
+	
+	SKLabelNode* loadingLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+	loadingLabel.text = @"Loading...";
+	loadingLabel.fontSize = loadingLabel.fontSize * 2;
+	loadingLabel.color = [SKColor purpleColor];
+	loadingLabel.colorBlendFactor = 0.5;
+	[_curtainSprite addChild:loadingLabel];
+
 	// Transfers all changed resource files from the remote server to the specified folder in the app support directory
 	[KKDownloadProjectFiles downloadProjectFilesWithModel:self.kkView.model
 										completionBlock:^(NSDictionary *contents) {
+											[self.kkView reloadConfig];
+											
 											GameScene* newScene = [GameScene sceneWithSize:self.size];
 											newScene.tmxFile = _tmxFile;
 											[self.view presentScene:newScene];
