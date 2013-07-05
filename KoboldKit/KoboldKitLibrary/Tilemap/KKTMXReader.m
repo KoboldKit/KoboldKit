@@ -142,9 +142,7 @@
 	_tilemap.gridSize = gridSize;
 
 	_tilemap.backgroundColor = [attributes objectForKey:@"backgroundcolor"];
-
-	_parsingElement = KKTilemapParsingElementMap;
-} /* parseMapWithAttributes */
+}
 
 -(void) parseTilesetWithAttributes:(NSDictionary*)attributes
 {
@@ -171,9 +169,8 @@
 		tileset.tileSize = tileSize;
 		[_tilemap addTileset:tileset];
 		_parsingTileset = tileset;
-		_parsingElement = KKTilemapParsingElementTileset;
 	}
-} /* parseTilesetWithAttributes */
+}
 
 -(void) parseTilesetTileOffsetWithAttributes:(NSDictionary*)attributes
 {
@@ -192,7 +189,6 @@
 -(void) parseTilesetTileWithAttributes:(NSDictionary*)attributes
 {
 	_parsingTileGid = _parsingTileset.firstGid + (gid_t)[[attributes objectForKey:@"id"] intValue];
-	_parsingElement = KKTilemapParsingElementTile;
 }
 
 -(void) parseLayerWithAttributes:(NSDictionary*)attributes
@@ -215,7 +211,15 @@
 
 	_parsingLayer = layer;
 	_parsingElement = KKTilemapParsingElementLayer;
-} /* parseLayerWithAttributes */
+}
+
+-(void) parseImageLayerWithAttributes:(NSDictionary*)attributes
+{
+}
+
+-(void) parseImageLayerImageWithAttributes:(NSDictionary*)attributes
+{
+}
 
 -(void) parseObjectGroupWithAttributes:(NSDictionary*)attributes
 {
@@ -433,12 +437,13 @@
 
 	[_dataString setString:@""];
 	_parsingData = NO;
-} /* loadTileLayerTiles */
+}
 
--(void)    parser:(NSXMLParser*)parser didStartElement:(NSString*)elementName
-	 namespaceURI:(NSString*)namespaceURI
-	qualifiedName:(NSString*)qualifiedName
-	   attributes:(NSDictionary*)attributes
+-(void)  parser:(NSXMLParser*)parser
+didStartElement:(NSString*)elementName
+   namespaceURI:(NSString*)namespaceURI
+  qualifiedName:(NSString*)qualifiedName
+	 attributes:(NSDictionary*)attributes
 {
 	// sorted by expected number of appearances in an average TMX file
 	if ([elementName isEqualToString:@"object"])
@@ -464,14 +469,27 @@
 	else if ([elementName isEqualToString:@"tileset"])
 	{
 		[self parseTilesetWithAttributes:attributes];
+		_parsingElement = KKTilemapParsingElementTileset;
 	}
 	else if ([elementName isEqualToString:@"image"])
 	{
-		[self parseTilesetImageWithAttributes:attributes];
+		switch (_parsingElement)
+		{
+			case KKTilemapParsingElementTileset:
+				[self parseTilesetImageWithAttributes:attributes];
+				break;
+			case KKTilemapParsingElementImageLayer:
+				[self parseImageLayerImageWithAttributes:attributes];
+				break;
+			default:
+				[NSException raise:NSInternalInconsistencyException format:@"unhandled _parsingElement: %u", _parsingElement];
+				break;
+		}
 	}
 	else if ([elementName isEqualToString:@"tile"])
 	{
 		[self parseTilesetTileWithAttributes:attributes];
+		_parsingElement = KKTilemapParsingElementTile;
 	}
 	else if ([elementName isEqualToString:@"layer"])
 	{
@@ -485,6 +503,11 @@
 	{
 		[self parseObjectGroupWithAttributes:attributes];
 	}
+	else if ([elementName isEqualToString:@"imagelayer"])
+	{
+		[self parseImageLayerWithAttributes:attributes];
+		_parsingElement = KKTilemapParsingElementImageLayer;
+	}
 	else if ([elementName isEqualToString:@"tileoffset"])
 	{
 		[self parseTilesetTileOffsetWithAttributes:attributes];
@@ -492,20 +515,25 @@
 	else if ([elementName isEqualToString:@"map"])
 	{
 		[self parseMapWithAttributes:attributes];
+		_parsingElement = KKTilemapParsingElementMap;
 	}
-} /* parser */
+}
 
--(void)    parser:(NSXMLParser*)parser didEndElement:(NSString*)elementName
-	 namespaceURI:(NSString*)namespaceURI
-	qualifiedName:(NSString*)qualifiedName
+-(void) parser:(NSXMLParser*)parser didEndElement:(NSString*)elementName
+  namespaceURI:(NSString*)namespaceURI
+ qualifiedName:(NSString*)qualifiedName
 {
 	if ([elementName isEqualToString:@"data"] && (_dataFormat & KKTilemapDataFormatBase64))
 	{
 		[self loadTileLayerTiles];
 	}
-	else if ([elementName isEqualToString:@"map"] || [elementName isEqualToString:@"layer"] ||
-			 [elementName isEqualToString:@"objectgroup"] || [elementName isEqualToString:@"object"] ||
-			 [elementName isEqualToString:@"tile"] || [elementName isEqualToString:@"tileset"])
+	else if ([elementName isEqualToString:@"object"] ||
+			 [elementName isEqualToString:@"tile"] ||
+			 [elementName isEqualToString:@"objectgroup"] ||
+			 [elementName isEqualToString:@"layer"] ||
+			 [elementName isEqualToString:@"tileset"] ||
+			 [elementName isEqualToString:@"imagelayer"] ||
+			 [elementName isEqualToString:@"map"])
 	{
 		if (_parsingElement == KKTilemapParsingElementObject)
 		{
@@ -514,7 +542,7 @@
 
 		_parsingElement = KKTilemapParsingElementNone;
 	}
-} /* parser */
+}
 
 -(void) parser:(NSXMLParser*)parser foundCharacters:(NSString*)string
 {

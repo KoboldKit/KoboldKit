@@ -52,6 +52,7 @@ typedef enum
 	KKTilemapParsingElementObject,
 	KKTilemapParsingElementTile,
 	KKTilemapParsingElementTileset,
+	KKTilemapParsingElementImageLayer,
 } KKTilemapParsingElement;
 
 typedef enum

@@ -20,7 +20,7 @@ static NSString* kAppSupportFolder = @"KoboldKitDemo";
 	// Enter IP address and port of the webserver running on your local developer machine.
 	// Note: devices must be connected via Wifi to the same subnet as your dev machine,
 	// and if the dev machine is running a firewall the port must be open.
-	[self.kkView.model setObject:[NSURL URLWithString:@"http://10.0.0.8:31013"] forKey:KKDownloadProjectFilesURL];
+	[self.kkView.model setObject:[NSURL URLWithString:@"http://10.0.0.13:32111"] forKey:KKDownloadProjectFilesURL];
 	[self.kkView.model setObject:kAppSupportFolder forKey:KKDownloadProjectFilesAppSupportFolder];
 	
 	// Transfers all changed resource files from the remote server to the specified folder in the app support directory
@@ -51,10 +51,10 @@ static NSString* kAppSupportFolder = @"KoboldKitDemo";
 
 	if (projectFiles)
 	{
-		CGFloat height = 0;
 		_tmxLoadMenu = [SKNode node];
 		[self addChild:_tmxLoadMenu];
 		
+		NSMutableArray* tmxFiles = [NSMutableArray arrayWithCapacity:4];
 		for (NSURL* key in projectFiles)
 		{
 			NSArray* files = [projectFiles objectForKey:key];
@@ -62,19 +62,27 @@ static NSString* kAppSupportFolder = @"KoboldKitDemo";
 			{
 				if ([[file lowercaseString] hasSuffix:@".tmx"])
 				{
-					KKLabelNode* tmxLabel = [KKLabelNode labelNodeWithFontNamed:@"Courier"];
-					tmxLabel.fontSize = 28;
-					tmxLabel.text = file;
-					tmxLabel.position = CGPointMake(0, height);
-					[_tmxLoadMenu addChild:tmxLabel];
-					
-					KKButtonBehavior* button = [KKButtonBehavior behavior];
-					[tmxLabel addBehavior:button];
-					[self observeNotification:KKButtonDidExecuteNotification selector:@selector(tmxButtonPressed:) object:tmxLabel];
-					
-					height -= tmxLabel.fontSize + 12;
+					[tmxFiles addObject:file];
 				}
 			}
+		}
+
+		//[tmxFiles sort]
+		
+		CGFloat height = 0;
+		for (NSString* tmxFile in tmxFiles)
+		{
+			KKLabelNode* tmxLabel = [KKLabelNode labelNodeWithFontNamed:@"Courier"];
+			tmxLabel.fontSize = 28;
+			tmxLabel.text = tmxFile;
+			tmxLabel.position = CGPointMake(0, height);
+			[_tmxLoadMenu addChild:tmxLabel];
+			
+			KKButtonBehavior* button = [KKButtonBehavior behavior];
+			[tmxLabel addBehavior:button];
+			[self observeNotification:KKButtonDidExecuteNotification selector:@selector(tmxButtonPressed:) object:tmxLabel];
+			
+			height -= tmxLabel.fontSize + 12;
 		}
 		
 		_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height + -height);
