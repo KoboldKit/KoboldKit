@@ -12,4 +12,17 @@
 
 -(void) enumerateBodiesUsingBlock:(void (^)(SKPhysicsBody *body, BOOL *stop))block;
 
+/** @name Subscribe to notifications */
+
+/** (not documented) */
+-(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector;
+/** (not documented) */
+-(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector object:(id)notificationSender;
+/** (not documented) */
+-(void) disregardNotification:(NSString*)notificationName;
+/** (not documented) */
+-(void) disregardNotification:(NSString*)notificationName object:(id)notificationSender;
+/** (not documented) */
+-(void) disregardAllNotifications;
+
 @end

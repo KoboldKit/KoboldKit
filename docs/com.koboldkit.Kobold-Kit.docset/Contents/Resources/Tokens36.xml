@@ -1,107 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapTileProperties.html">
+	<File path="Classes/KKTilemapTileLayerNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileProperties</TokenIdentifier>
-			<Abstract type="html">Wrapper for tile properties, it stores one KTTilemapProperties object per tile that has properties. You can get/set KTTilemapProperties for a given tile gid
-   by using the propertiesForGid: methods. If a gid has no properties nil will be returned. In cases where you want to create the properties of a gid
-   use the createNonExistingProperties flag so that a new KTTilemapProperties object is created and associated with the gid if the gid has no properties yet. </Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileLayerNode</TokenIdentifier>
+			<Abstract type="html">Tile layer node renders a TMX tile layer.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>
 			
 			<NodeRef refid="36"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/setProperties:</TokenIdentifier>
-			<Abstract type="html">Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileLayerNode/setLayer:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
 			
 			
-			<Anchor>//api/name/properties</Anchor>
+			<Anchor>//api/name/layer</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/properties</TokenIdentifier>
-			<Abstract type="html">Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileLayerNode/layer</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
 			
 			
-			<Anchor>//api/name/properties</Anchor>
+			<Anchor>//api/name/layer</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapTileProperties/properties</TokenIdentifier>
-			<Abstract type="html">Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapTileLayerNode/layer</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
 			
 			
-			<Anchor>//api/name/properties</Anchor>
+			<Anchor>//api/name/layer</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:setNumber:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the number for the key on the tile gid's properties. Creates an instance of KTTilemapProperties if the gid has no properties yet. Returns that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapTileLayerNode/tileLayerWithLayer:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid setNumber:(KKMutableNumber *)number forKey:(NSString *)key</Declaration>
+			<Declaration>+ (id)tileLayerWithLayer:(KKTilemapLayer *)layer</Declaration>
 			
 			
-			<Anchor>//api/name/propertiesForGid:setNumber:forKey:</Anchor>
+			<Anchor>//api/name/tileLayerWithLayer:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:setString:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the string for the key on the tile gid's properties. Creates an instance of KTTilemapProperties if the gid has no properties yet. Returns that tile's properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileLayerNode/updateLayer</TokenIdentifier>
+			<Abstract type="html">Updates the layer's tile sprites based on position, scale and view size.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid setString:(NSString *)string forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/propertiesForGid:setString:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:setValue:forKey:</TokenIdentifier>
-			<Abstract type="html">(KTTMXReader only) Sets a string or number (if string is convertible to number) for the key on the tile gid's properties.
-   Creates an instance of KTTilemapProperties if the gid has no properties yet. Returns that tile's properties. </Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
-			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid setValue:(NSString *)string forKey:(NSString *)key</Declaration>
+			<Declaration>- (void)updateLayer</Declaration>
 			
 			
-			<Anchor>//api/name/propertiesForGid:setValue:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:</TokenIdentifier>
-			<Abstract type="html">Returns the properties for a tile gid. Returns nil if the gid has no properties.</Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
-			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid</Declaration>
-			
-			
-			<Anchor>//api/name/propertiesForGid:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileProperties/propertiesForGid:createNonExistingProperties:</TokenIdentifier>
-			<Abstract type="html">Returns the properties for a tile gid. If createNonExistingProperties is YES and if the gid has no properties, will create a new
-   KTTilemapProperties object, set it as the tile gid's properties object, and return it. If createNonExistingProperties is NO behaves
-   identical to propertiesForGid: by returning nil for non-existing tile properties. </Abstract>
-			<DeclaredIn>KKTilemapTileProperties.h</DeclaredIn>			
-			
-			<Declaration>- (KKTilemapProperties *)propertiesForGid:(gid_t)gid createNonExistingProperties:(BOOL)createNonExistingProperties</Declaration>
-			
-			
-			<Anchor>//api/name/propertiesForGid:createNonExistingProperties:</Anchor>
+			<Anchor>//api/name/updateLayer</Anchor>
 		</Token>
 		
 	</File>

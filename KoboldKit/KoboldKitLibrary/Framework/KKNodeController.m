@@ -134,7 +134,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(void) removeAllBehaviors
 {
-	for (KKNodeBehavior* behavior in _behaviors)
+	for (KKNodeBehavior* behavior in [_behaviors reverseObjectEnumerator])
 	{
 		[self removeBehavior:behavior];
 	}

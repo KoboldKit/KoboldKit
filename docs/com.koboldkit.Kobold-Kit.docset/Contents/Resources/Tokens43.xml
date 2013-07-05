@@ -1,59 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSCoder+KoboldKit.html">
+	<File path="Classes/Reachability.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSCoder(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">Adds encode/decode convenience methods for common structs not supported natively (or cross-platform) by NSCoder.</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/Reachability</TokenIdentifier>
+			<Abstract type="html">Does ARC support support GCD objects?
+It does if the minimum deployment target is iOS 6+ or Mac OS X 8+</Abstract>
+			<DeclaredIn>Reachability.h</DeclaredIn>
 			
 			<NodeRef refid="43"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/encodePoint:forKey:</TokenIdentifier>
-			<Abstract type="html">encode a CGPoint</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (void)encodePoint:(CGPoint)point forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/encodePoint:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/decodePointForKey:</TokenIdentifier>
-			<Abstract type="html">decode a CGPoint</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (CGPoint)decodePointForKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/decodePointForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/encodeCGPoint:forKey:</TokenIdentifier>
-			<Abstract type="html">encode a CGPoint on OS X</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (void)encodeCGPoint:(CGPoint)point forKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/encodeCGPoint:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/decodeCGPointForKey:</TokenIdentifier>
-			<Abstract type="html">decode a CGPoint on OS X</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (CGPoint)decodeCGPointForKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/decodeCGPointForKey:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

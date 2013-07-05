@@ -46,6 +46,8 @@ typedef enum : unsigned char
 @property (atomic, copy) NSString* userType;
 /** The object's properties. */
 @property (atomic, readonly) KKTilemapProperties* properties;
+/** The rotation of the object (in Euler coordinates, radians). */
+@property (atomic) CGFloat rotation;
 /** The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline. */
 @property (atomic) CGPoint position;
 /** The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline. */

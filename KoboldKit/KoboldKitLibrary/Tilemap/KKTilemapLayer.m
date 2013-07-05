@@ -180,7 +180,7 @@
 -(CGPathRef) pathFromObject:(KKTilemapObject*)object
 {
 	CGPathRef path = nil;
-	CGRect rect = {object.position, object.size};
+	CGRect rect = {CGPointZero, object.size};
 	
 	switch (object.type)
 	{

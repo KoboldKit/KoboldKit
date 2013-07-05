@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KoboldKit Class Reference</title>
+		<title>NSFileManager(KoboldKit) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KoboldKit Class Reference</h1>
+				<h1 class="hideInXcode">NSFileManager(KoboldKit) Category Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -26,8 +26,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -48,9 +46,11 @@
 	
 	<option value="//api/name/pathForDocumentsFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForDocumentsFile:</option>
 	
-	<option value="//api/name/pathForLibraryFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForLibraryFile:</option>
+	<option value="//api/name/pathForFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForFile:</option>
 	
-	<option value="//api/name/searchPathsForFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ searchPathsForFile:</option>
+	<option value="//api/name/pathForFile:inDirectory:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForFile:inDirectory:</option>
+	
+	<option value="//api/name/pathForLibraryFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForLibraryFile:</option>
 	
 	
 	
@@ -63,14 +63,12 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Prepend Common Paths to Filename">Prepend Common Paths to Filename</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Locating Files and Paths">Locating Files and Paths</a></span></li>
 	
 </ul></li>
 
@@ -88,9 +86,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForDocumentsFile:">pathForDocumentsFile:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForLibraryFile:">pathForLibraryFile:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForFile:">pathForFile:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchPathsForFile:">searchPathsForFile:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForFile:inDirectory:">pathForFile:inDirectory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForLibraryFile:">pathForLibraryFile:</a></span></li>
 	
 </ul></li>
 
@@ -101,7 +101,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KoboldKit Class Reference" name="top"></a>
+				<a title="NSFileManager(KoboldKit) Category Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -110,29 +110,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KoboldKit Class Reference</h1>
+						<h1 class="title title-header">NSFileManager(KoboldKit) Category Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
-</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KoboldKit.h<br />KoboldKit.m</td>
+	<td class="specification-value">NSFileManager+KoboldKit.h<br />NSFileManager+KoboldKit.m</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>This class contains global helper functions.</p>
-					</div>
 					
 					
 					
@@ -143,9 +132,9 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Prepend Common Paths to Filename" name="task_Prepend Common Paths to Filename"></a>
+						<a title="Locating Files and Paths" name="task_Locating Files and Paths"></a>
 						
-<h3 class="subsubtitle task-title">Prepend Common Paths to Filename</h3>
+<h3 class="subsubtitle task-title">Locating Files and Paths</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
@@ -177,7 +166,14 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/searchPathsForFile:">+&nbsp;searchPathsForFile:</a></code>
+		<code><a href="#//api/name/pathForFile:inDirectory:">+&nbsp;pathForFile:inDirectory:</a></code>
+		<span class="tooltip"><p>Searches for the file in the given NSSearchPathDirectory and returns the absolute path to the file if it was found.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathForFile:">+&nbsp;pathForFile:</a></code>
 		<span class="tooltip"><p>Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
 to the file where it was first found.</p></span>
 	</span>
@@ -226,7 +222,7 @@ to the file where it was first found.</p></span>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The absolute path to the file.</p>
+		<p>The absolute path to the file.</p><p>The path to the file or nil if the file couldn&rsquo;t be found in the app support directory.</p>
 	</div>
 	
 	
@@ -241,7 +237,7 @@ to the file where it was first found.</p></span>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KoboldKit.h</code><br />
+		<code class="declared-in-ref">NSFileManager+KoboldKit.h</code><br />
 	</div>				
 	
 	
@@ -275,7 +271,7 @@ to the file where it was first found.</p></span>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The absolute path to the file or nil if the file could not be found.</p>
+		<p>The absolute path to the file or nil if the file could not be found.</p><p>The path to the file or nil if the file couldn&rsquo;t be found in the bundle.</p>
 	</div>
 	
 	
@@ -290,7 +286,7 @@ to the file where it was first found.</p></span>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KoboldKit.h</code><br />
+		<code class="declared-in-ref">NSFileManager+KoboldKit.h</code><br />
 	</div>				
 	
 	
@@ -324,7 +320,7 @@ to the file where it was first found.</p></span>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The absolute path to the file.</p>
+		<p>The absolute path to the file.</p><p>The path to the file or nil if the file couldn&rsquo;t be found in the user&rsquo;s documents directory.</p>
 	</div>
 	
 	
@@ -339,7 +335,106 @@ to the file where it was first found.</p></span>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KoboldKit.h</code><br />
+		<code class="declared-in-ref">NSFileManager+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pathForFile:" title="pathForFile:"></a>
+	<h3 class="subsubtitle method-title">pathForFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
+to the file where it was first found.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSString *)pathForFile:(NSString *)<em>file</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>file</em></dt>
+			<dd><p>A filename.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The absolute path to the file, or nil if the file could not be found in any of the searched directories.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSFileManager+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pathForFile:inDirectory:" title="pathForFile:inDirectory:"></a>
+	<h3 class="subsubtitle method-title">pathForFile:inDirectory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Searches for the file in the given NSSearchPathDirectory and returns the absolute path to the file if it was found.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSString *)pathForFile:(NSString *)<em>file</em> inDirectory:(NSSearchPathDirectory)<em>directory</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>file</em></dt>
+			<dd><p>A filename.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The absolute path to the file, or nil if the file could not be found.</p><p>The path to the file or nil if the file couldn&rsquo;t be found in the directory.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSFileManager+KoboldKit.h</code><br />
 	</div>				
 	
 	
@@ -373,7 +468,7 @@ to the file where it was first found.</p></span>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The absolute path to the file.</p>
+		<p>The absolute path to the file.</p><p>The path to the file or nil if the file couldn&rsquo;t be found in the user&rsquo;s library directory.</p>
 	</div>
 	
 	
@@ -388,57 +483,7 @@ to the file where it was first found.</p></span>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KoboldKit.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/searchPathsForFile:" title="searchPathsForFile:"></a>
-	<h3 class="subsubtitle method-title">searchPathsForFile:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
-to the file where it was first found.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (NSString *)searchPathsForFile:(NSString *)<em>file</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>file</em></dt>
-			<dd><p>A filename.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The absolute path to the file, or nil if the file could not be found.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KoboldKit.h</code><br />
+		<code class="declared-in-ref">NSFileManager+KoboldKit.h</code><br />
 	</div>				
 	
 	
@@ -459,7 +504,7 @@ to the file where it was first found.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-03)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-05)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

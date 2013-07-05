@@ -202,10 +202,9 @@
 
 -(NSString*) pathForTMXFile:(NSString*)tmxFile
 {
-	// default to assuming the file is in the bundle if it's not an absolute path
 	if ([tmxFile isAbsolutePath] == NO)
 	{
-		return [KoboldKit pathForBundleFile:tmxFile];
+		return [NSFileManager pathForFile:tmxFile];
 	}
 	
 	return tmxFile;

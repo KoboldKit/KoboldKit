@@ -6,42 +6,25 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "MyScene.h"
+#import "GameScene.h"
 #import "KoboldKit.h"
 
 #import <objc/runtime.h>
 
-@implementation MyScene
+@implementation GameScene
 
 -(id)initWithSize:(CGSize)size
 {
     if (self = [super initWithSize:size])
 	{
         /* Setup your scene here */
-		self.backgroundColor = [SKColor colorWithRed:0.66 green:0.55 blue:1.0 alpha:1.0];
+		self.backgroundColor = [SKColor colorWithRed:0.1 green:0.5 blue:0.3 alpha:1.0];
 		self.anchorPoint = CGPointMake(0.5f, 0.5f);
-
-		//_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"crawl-tilemap.tmx"];
-		_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:@"forest-parallax.tmx"];
-		[self addChild:_tilemapNode];
-
-		// apply gravity from Tiled
-		self.physicsWorld.gravity = CGPointMake(0, [_tilemapNode.tilemap.properties numberForKey:@"physicsGravityY"].floatValue);
-		self.physicsWorld.speed = [_tilemapNode.tilemap.properties numberForKey:@"physicsSpeed"].floatValue;
-		LOG_EXPR(self.physicsWorld.gravity);
-		LOG_EXPR(self.physicsWorld.speed);
-
-		[self setupTilemapBlocking];
-
-		if ([_tilemapNode.tilemap.properties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
-		{
-			[_tilemapNode restrictScrollingToMapBoundary];
-		}
-
-		[self setupPlayerCharacter];
-		
-		[self createSimpleControls];
-		//[self createVirtualJoypad];
+	
+		// hide any ugliness caused by setting up the screen in the first couple frames behind a "curtain" sprite
+		_curtainSprite = [KKSpriteNode spriteNodeWithColor:[SKColor grayColor] size:self.size];
+		_curtainSprite.zPosition = -1000;
+		[self addChild:_curtainSprite];
     }
     return self;
 }
@@ -59,13 +42,57 @@
 	self.view.showsDrawCount = NO;
 	self.view.showsFPS = NO;
 	self.view.showsNodeCount = NO;
+
+	_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:_tmxFile];
+	[self addChild:_tilemapNode];
 	
-	[self performSelector:@selector(showView:) withObject:nil afterDelay:0.2];
+	// apply gravity from Tiled
+	self.physicsWorld.gravity = CGPointMake(0, [_tilemapNode.tilemap.properties numberForKey:@"physicsGravityY"].floatValue);
+	self.physicsWorld.speed = [_tilemapNode.tilemap.properties numberForKey:@"physicsSpeed"].floatValue;
+	LOG_EXPR(self.physicsWorld.gravity);
+	LOG_EXPR(self.physicsWorld.speed);
+	
+	[self setupTilemapBlocking];
+	
+	if ([_tilemapNode.tilemap.properties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
+	{
+		[_tilemapNode restrictScrollingToMapBoundary];
+	}
+	
+	[self setupPlayerCharacter];
+	
+	[self createSimpleControls];
+	//[self createVirtualJoypad];
+
+	[self addReloadButton];
+	
+	// remove the curtain
+	[_curtainSprite runAction:[SKAction sequence:@[[SKAction fadeAlphaTo:0 duration:0.5], [SKAction removeFromParent]]]];
+	_curtainSprite = nil;
 }
 
--(void) showView:(id)sender
+-(void) addReloadButton
 {
-	self.view.hidden = NO;
+#if DEBUG
+	KKViewOriginNode* hudNode = [KKViewOriginNode node];
+	[self addChild:hudNode];
+	
+	KKLabelNode* reloadLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
+	reloadLabel.text = @"reload";
+	reloadLabel.fontSize = 20;
+	reloadLabel.position = CGPointMake(self.size.width - 30, self.size.height - reloadLabel.fontSize);
+	[hudNode addChild:reloadLabel];
+	
+	[reloadLabel addBehavior:[KKButtonBehavior behavior]];
+	[self observeNotification:KKButtonDidExecuteNotification selector:@selector(reloadButtonPressed:) object:reloadLabel];
+#endif
+}
+
+-(void) reloadButtonPressed:(NSNotification*)notification
+{
+	GameScene* newScene = [GameScene sceneWithSize:self.size];
+	newScene.tmxFile = _tmxFile;
+	[self.view presentScene:newScene];
 }
 
 -(void) setupPlayerCharacter
@@ -199,7 +226,7 @@
 	KKControlPadBehavior* dpad = [KKControlPadBehavior controlPadBehaviorWithTextures:dpadTextures];
 	[dpadNode addBehavior:dpad withKey:@"dpad"];
 	
-	[self observeNotification:KKControlPadDidChangeDirection
+	[self observeNotification:KKControlPadDidChangeDirectionNotification
 					 selector:@selector(controlPadDidChangeDirection:)
 					   object:dpadNode];
 
@@ -217,7 +244,7 @@
 		button.executesWhenPressed = YES;
 		[attackButtonNode addBehavior:button];
 
-		[self observeNotification:KKButtonDidExecute
+		[self observeNotification:KKButtonDidExecuteNotification
 						 selector:@selector(attackButtonPressed:)
 						   object:attackButtonNode];
 	}
@@ -233,7 +260,7 @@
 		button.executesWhenPressed = YES;
 		[jetpackButtonNode addBehavior:button];
 
-		[self observeNotification:KKButtonDidExecute
+		[self observeNotification:KKButtonDidExecuteNotification
 						 selector:@selector(jumpButtonPressed:)
 						   object:jetpackButtonNode];
 	}
@@ -257,7 +284,7 @@
 	KKControlPadBehavior* dpad = [KKControlPadBehavior controlPadBehaviorWithTextures:dpadTextures];
 	[dpadNode addBehavior:dpad withKey:@"simple dpad"];
 	
-	[self observeNotification:KKControlPadDidChangeDirection
+	[self observeNotification:KKControlPadDidChangeDirectionNotification
 					 selector:@selector(controlPadDidChangeDirection:)
 					   object:dpadNode];
 
@@ -274,7 +301,7 @@
 		button.executesWhenPressed = YES;
 		[jumpButtonNode addBehavior:button];
 		
-		[self observeNotification:KKButtonDidExecute
+		[self observeNotification:KKButtonDidExecuteNotification
 						 selector:@selector(jumpButtonPressed:)
 						   object:jumpButtonNode];
 	}

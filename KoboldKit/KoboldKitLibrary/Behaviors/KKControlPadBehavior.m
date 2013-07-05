@@ -11,7 +11,7 @@
 #import "KKScene.h"
 #import "CGPointExtension.h"
 
-NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirection:notification";
+NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidChangeDirection:notification";
 
 @implementation KKControlPadBehavior
 
@@ -144,7 +144,7 @@ NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirectio
 	{
 		_direction = newDirection;
 		[self updateDirectionTexture];
-		[self postNotificationName:KKControlPadDidChangeDirection];
+		[self postNotificationName:KKControlPadDidChangeDirectionNotification];
 	}
 }
 
@@ -154,7 +154,7 @@ NSString* const KKControlPadDidChangeDirection = @"KKControlPadDidChangeDirectio
 	{
 		_direction = KKArcadeJoystickNone;
 		[self updateDirectionTexture];
-		[self postNotificationName:KKControlPadDidChangeDirection];
+		[self postNotificationName:KKControlPadDidChangeDirectionNotification];
 	}
 }
 

@@ -11,7 +11,7 @@
 #import "KKScene.h"
 #import "SKNode+KoboldKit.h"
 
-NSString* const KKButtonDidExecute = @"KKButtonBehavior:execute";
+NSString* const KKButtonDidExecuteNotification = @"KKButtonBehavior:execute";
 static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 @implementation KKButtonBehavior
@@ -89,7 +89,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) execute
 {
-	[self postNotificationName:KKButtonDidExecute];
+	[self postNotificationName:KKButtonDidExecuteNotification];
 }
 
 -(void) setEnabled:(BOOL)enabled

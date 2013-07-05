@@ -11,7 +11,7 @@
 @class KKButtonBehavior;
 
 /** Notification name, sent by KKButtonBehavior when button should execute its action. */
-extern NSString* const KKButtonDidExecute;
+extern NSString* const KKButtonDidExecuteNotification;
 
 /** KKButtonBehavior turns any node into a button. Touch/Click on the node while be detected, the node is scaled while selected.
  Scaling is optional and can be modified/disabled with the selectedScale property.

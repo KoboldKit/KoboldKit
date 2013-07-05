@@ -42,6 +42,9 @@
 /** (not documented) */
 @property (atomic) BOOL enabled;
 
+/** nd */
++(id) behavior;
+
 /** (not documented) */
 -(void) removeFromNode;
 

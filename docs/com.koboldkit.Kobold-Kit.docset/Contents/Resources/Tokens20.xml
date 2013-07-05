@@ -1,88 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKStayInBoundsBehavior.html">
+	<File path="Classes/KKPointArray.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKStayInBoundsBehavior</TokenIdentifier>
-			<Abstract type="html">Prevents a node's position from passing over the bounds rectangle.
-(TODO: Optionally sends notifications when node comes in to contact with the bounds and when contact ends.)</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKPointArray</TokenIdentifier>
+			<Abstract type="html">A simple and efficient array of CGPoint structs.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
 			<NodeRef refid="20"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/setBounds:</TokenIdentifier>
-			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/setCount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGRect bounds</Declaration>
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
 			
-			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
-			<Anchor>//api/name/bounds</Anchor>
+			
+			<Anchor>//api/name/count</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/bounds</TokenIdentifier>
-			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/count</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGRect bounds</Declaration>
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
 			
-			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
-			<Anchor>//api/name/bounds</Anchor>
+			
+			<Anchor>//api/name/count</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKStayInBoundsBehavior/bounds</TokenIdentifier>
-			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKPointArray/count</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGRect bounds</Declaration>
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
 			
-			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
-			<Anchor>//api/name/bounds</Anchor>
+			
+			<Anchor>//api/name/count</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKStayInBoundsBehavior/stayInBounds:</TokenIdentifier>
-			<Abstract type="html">If either x/width or y/height are set to INFINITY then that axis will not check for bounds. Thus if the node
-should be able to move endlessly in horizontal direction but not outside the screen at the top or bottom,
-set bounds.size.width or bounds.origin.x to INFINITY.</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/setPoints:</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
-			<Declaration>+ (id)stayInBounds:(CGRect)bounds</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>bounds</Name>
-					<Abstract type="html">The boundary rectangle.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">An instance of the class.</Abstract></ReturnValue>
-			<Anchor>//api/name/stayInBounds:</Anchor>
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/points</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
-			<Declaration>- (void)didJoinController</Declaration>
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
 			
 			
-			<Anchor>//api/name/didJoinController</Anchor>
+			<Anchor>//api/name/points</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKPointArray/points</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
-			<Declaration>- (void)didSimulatePhysics</Declaration>
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
 			
 			
-			<Anchor>//api/name/didSimulatePhysics</Anchor>
+			<Anchor>//api/name/points</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKPointArray/pointArrayWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Creates a points array, reserving capacity amount of memory for points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>+ (id)pointArrayWithCapacity:(NSUInteger)capacity</Declaration>
+			
+			
+			<Anchor>//api/name/pointArrayWithCapacity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKPointArray/pointArrayWithPoints:count:</TokenIdentifier>
+			<Abstract type="html">Creates a points array by copying count points from the points buffer (array). You can delete (free) your points buffer after calling this method.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>+ (id)pointArrayWithPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
+			
+			
+			<Anchor>//api/name/pointArrayWithPoints:count:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/addPoints:count:</TokenIdentifier>
+			<Abstract type="html">Adds the given number of points from an existing CGPoint array or memory buffer.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
+			
+			
+			<Anchor>//api/name/addPoints:count:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/addPoint:</TokenIdentifier>
+			<Abstract type="html">Adds a single point to the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPoint:(CGPoint)point</Declaration>
+			
+			
+			<Anchor>//api/name/addPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removeAllPoints</TokenIdentifier>
+			<Abstract type="html">Removes all points from the array. You can then start re-adding points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllPoints</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllPoints</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/pointAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the point at the given index. If the index is out of bounds an exception is raised.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)pointAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/pointAtIndex:</Anchor>
 		</Token>
 		
 	</File>

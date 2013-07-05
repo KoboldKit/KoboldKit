@@ -58,13 +58,6 @@
 -(void) dealloc
 {
 	NSLog(@"dealloc: %@", self);
-	
-	// make sure no node is still hooked into the notification center
-	NSNotificationCenter* notificationCenter = [NSNotificationCenter defaultCenter];
-	[self enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop)
-	{
-		[notificationCenter removeObserver:node];
-	}];
 }
 
 #pragma mark Controllers
@@ -158,6 +151,13 @@
 	{
 		[observer willMoveFromView:view];
 	}
+
+	// make sure no node is still hooked into the notification center
+	NSNotificationCenter* notificationCenter = [NSNotificationCenter defaultCenter];
+	[self enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop)
+	 {
+		 [notificationCenter removeObserver:node];
+	 }];
 }
 
 -(void) didMoveToView:(SKView *)view

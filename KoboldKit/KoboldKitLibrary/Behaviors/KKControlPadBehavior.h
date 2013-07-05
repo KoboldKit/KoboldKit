@@ -11,7 +11,7 @@
 #import "KKArcadeInputState.h"
 
 /** Notification name, sent by KKControlPadBehavior when button should execute its action. */
-extern NSString* const KKControlPadDidChangeDirection;
+extern NSString* const KKControlPadDidChangeDirectionNotification;
 
 /** Emulates a digital control pad (d-pad), updates its node with textures based on the direction.
  Sends a KKControlPadDidChangeDirection notification every time direction changes.

@@ -1,127 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapLayerTiles.html">
+	<File path="Classes/KKTilemapLayerContourTracer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerTiles</TokenIdentifier>
-			<Abstract type="html">TMX Tiles of a tile layer. This is just a list of GIDs pointing to a specific tile in the tileset.
-   The GIDs have the KTTilemapTileFlip flags encoded, so it is recommended to use the tileAt method from KTTilemapLayer
-   instead of accessing the GIDs directly.</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerContourTracer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>
 			
 			<NodeRef refid="27"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setGid:</TokenIdentifier>
-			<Abstract type="html">Returns the memory buffer containing a layer's tile GIDs.</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerContourTracer/setContourSegments:</TokenIdentifier>
+			<Abstract type="html">Contains KTPointArray of points definining a single contour's line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
 			
 			
-			<Anchor>//api/name/gid</Anchor>
+			<Anchor>//api/name/contourSegments</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/gid</TokenIdentifier>
-			<Abstract type="html">Returns the memory buffer containing a layer's tile GIDs.</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerContourTracer/contourSegments</TokenIdentifier>
+			<Abstract type="html">Contains KTPointArray of points definining a single contour's line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
 			
 			
-			<Anchor>//api/name/gid</Anchor>
+			<Anchor>//api/name/contourSegments</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/gid</TokenIdentifier>
-			<Abstract type="html">Returns the memory buffer containing a layer's tile GIDs.</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerContourTracer/contourSegments</TokenIdentifier>
+			<Abstract type="html">Contains KTPointArray of points definining a single contour's line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
-			
-			
-			<Anchor>//api/name/gid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setGidSize:</TokenIdentifier>
-			<Abstract type="html">Returns the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) unsigned int gidSize</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
 			
 			
-			<Anchor>//api/name/gidSize</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/gidSize</TokenIdentifier>
-			<Abstract type="html">Returns the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) unsigned int gidSize</Declaration>
-			
-			
-			<Anchor>//api/name/gidSize</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/gidSize</TokenIdentifier>
-			<Abstract type="html">Returns the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) unsigned int gidSize</Declaration>
-			
-			
-			<Anchor>//api/name/gidSize</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setGidCount:</TokenIdentifier>
-			<Abstract type="html">Returns the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) unsigned int gidCount</Declaration>
-			
-			
-			<Anchor>//api/name/gidCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/gidCount</TokenIdentifier>
-			<Abstract type="html">Returns the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) unsigned int gidCount</Declaration>
-			
-			
-			<Anchor>//api/name/gidCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/gidCount</TokenIdentifier>
-			<Abstract type="html">Returns the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) unsigned int gidCount</Declaration>
-			
-			
-			<Anchor>//api/name/gidCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/takeOwnershipOfGidBuffer:bufferSize:</TokenIdentifier>
-			<Abstract type="html">Takes an already allocated GID buffer with the given bufferSize (in bytes) and takes ownership for it.
-   Which means: you should not free() the tiles buffer, it will be freed by KTTilemapLayerTiles when it deallocates.</Abstract>
-			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
-			
-			<Declaration>- (void)takeOwnershipOfGidBuffer:(gid_t *)tiles bufferSize:(unsigned int)bufferSize</Declaration>
-			
-			
-			<Anchor>//api/name/takeOwnershipOfGidBuffer:bufferSize:</Anchor>
+			<Anchor>//api/name/contourSegments</Anchor>
 		</Token>
 		
 	</File>

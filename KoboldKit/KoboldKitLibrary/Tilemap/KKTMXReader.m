@@ -42,6 +42,7 @@
 #import "KKTilemapObject.h"
 #import "KKTilemapLayer.h"
 #import "KKMutableNumber.h"
+#import "KKMacros.h"
 
 #import "base64.h"
 #import "ZipUtils.h"
@@ -270,6 +271,13 @@
 
 	object.name = [attributes objectForKey:@"name"];
 	object.userType = [attributes objectForKey:@"type"];
+	
+	NSString* rotation = [attributes objectForKey:@"rotation"];
+	if (rotation)
+	{
+		NSNumber* number = [_numberFormatter numberFromString:rotation];
+		object.rotation = KK_DEG2RAD(180.0 + number.doubleValue * -1.0);
+	}
 
 	CGPoint position;
 	position.x = [[attributes objectForKey:@"x"] intValue];
@@ -302,8 +310,11 @@
 
 -(void) parseEllipseWithAttributes:(NSDictionary*)attributes
 {
-	_parsingObject.type = KKTilemapObjectTypeEllipse;
 	((KKTilemapRectangleObject*)_parsingObject).ellipse = YES;
+	_parsingObject.type = KKTilemapObjectTypeEllipse;
+
+#pragma message "FIXME: ellipse position/anchor is not correct"
+	//_parsingObject.position = CGPointMake(_parsingObject.position.x + _tilemap.gridSize.width, _parsingObject.position.y + _parsingObject.size.height);
 }
 
 -(void) addParsingObjectToLayer

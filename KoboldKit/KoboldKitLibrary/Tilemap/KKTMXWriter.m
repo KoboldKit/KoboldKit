@@ -16,6 +16,7 @@
 #import "KKTilemapObject.h"
 #import "KKTilemapLayer.h"
 #import "KKMutableNumber.h"
+#import "KKMacros.h"
 
 #import <zlib.h>
 #import "XMLWriter.h"
@@ -283,6 +284,11 @@ NSString* stringFromUnsignedInt(unsigned int u)
 
 	[_xmlWriter writeAttribute:@"y" value:intStringFromFloat(yPos)];
 
+	if (object.rotation != 0.0)
+	{
+		[_xmlWriter writeAttribute:@"rotation" value:stringFromFloat(KK_RAD2DEG(object.rotation) * -1.0 + 180.0)];
+	}
+	
 	if (CGSizeEqualToSize(object.size, CGSizeZero) == NO)
 	{
 		[_xmlWriter writeAttribute:@"width" value:intStringFromFloat(object.size.width)];

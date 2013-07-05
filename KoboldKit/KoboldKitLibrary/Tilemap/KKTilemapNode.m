@@ -11,6 +11,7 @@
 #import "KKTilemapObjectLayerNode.h"
 #import "KKTilemap.h"
 #import "KKTilemapLayer.h"
+#import "KKTilemapObject.h"
 #import "SKNode+KoboldKit.h"
 #import "KKFollowTargetBehavior.h"
 #import "KKStayInBoundsBehavior.h"
@@ -213,17 +214,25 @@
 -(SKNode*) createPhysicsCollisionsWithObjectLayerNamed:(NSString*)layerName
 {
 	SKNode* containerNode;
-	NSArray* objectPaths = [[_tilemap layerNamed:layerName] pathsFromObjects];
+	KKTilemapLayer* objectLayer = [_tilemap layerNamed:layerName];
+	NSArray* objectPaths = [objectLayer pathsFromObjects];
+	
 	if (objectPaths.count)
 	{
 		containerNode = [SKNode node];
 		containerNode.name = [NSString stringWithFormat:@"%@:PhysicsBlockingContainerNode", layerName];
 		[_mainTileLayerNode addChild:containerNode];
 		
-		for (id objectPath in objectPaths)
+		NSUInteger i = 0;
+		for (KKTilemapObject* object in objectLayer.objects)
 		{
-			SKNode* objectNode = [SKNode node];
+			id objectPath = [objectPaths objectAtIndex:i++];
 			CGPathRef path = (__bridge CGPathRef)objectPath;
+			
+			SKNode* objectNode = [SKNode node];
+			objectNode.position = object.position;
+			objectNode.zRotation = object.rotation;
+			
 			if (CGPathIsRect(path, nil))
 			{
 				[objectNode physicsBodyWithEdgeLoopFromPath:path];

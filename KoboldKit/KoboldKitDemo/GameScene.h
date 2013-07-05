@@ -11,8 +11,9 @@
 
 @class MyLabelNode;
 
-@interface MyScene : KKScene
+@interface GameScene : KKScene
 {
+	KKSpriteNode* _curtainSprite;
 	KKSpriteNode* _playerCharacter;
 	KKTilemapNode* _tilemapNode;
 
@@ -21,5 +22,7 @@
 	CGFloat _jumpForce;
 	CGFloat _dpadForce;
 }
+
+@property (atomic, copy) NSString* tmxFile;
 
 @end

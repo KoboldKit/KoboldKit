@@ -57,20 +57,20 @@
    <property name="_endlessScrollingHorizontal" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztVGsLwjAMrG9dnXsgOtD//zu9SAMhZm3YBvviwdGsed3GkhD+8KACb2ANXlbofwUbsAWj4Sd9pI00TtG3ny7tC9JH2kijpa+E7cz+ORzBE3hO52EkJuf3YO439GAjbNIste4KuUvoy/Uo1S/p8yDXo/QPed9fznot7Nz8V0acZXt2iJz1N/gEH+kkdkbOXfgH8KXy+ZnvdA3Wr/dHn+px/2GkP88/M6r7qGL1jpD5OrYNv7XlvltrJy+BD/6nBh0=
+   eJztlOsKwjAMhetdV+cuiA70/Z/TRBoIMUvCNvGPBw7t2rT5Npak9NcQiKnAF3ANPn0XR9UZ3IBbcFb2kQ/ZkHEK33Y62lvIh2zIqPF5Ws/Mb2kPPoCPZdyNxFj7Ec39hhGt2ByZOevGObsEn5XDu9/ji8jK4f1D0ffntV6zuVX/lRKnzSM9hNf6E3wH38qI7pQzV7aP/ewhztMzrck7iF/2j77cR/mHkfxU/+Qs1rOIlT2Cn5exbfq8m/e7X/XkJfQCmlYGNQ==
   </data>
  </layer>
  <objectgroup name="game objects" width="32" height="15">
-  <object name="player" type="1" x="576" y="256" width="32" height="64">
+  <object name="player" type="1" x="896" y="96" width="32" height="54">
    <properties>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
     <property name="defaultImage" value=""/>
     <property name="dpadForce" value="195.0"/>
-    <property name="friction" value="2.5"/>
+    <property name="friction" value="0.5"/>
     <property name="jumpForce" value="80.0"/>
     <property name="linearDamping" value="0"/>
-    <property name="mass" value="0.44"/>
+    <property name="mass" value="0.33"/>
     <property name="restitution" value="0.04"/>
     <property name="stayInBounds" value="YES"/>
     <property name="velocityLimit" value="250.0"/>
@@ -104,11 +104,11 @@
    <ellipse/>
   </object>
   <object x="64" y="128">
-   <polyline points="0,0 32,0 96,64"/>
+   <polyline points="0,32 64,32 96,64"/>
   </object>
   <object x="768" y="64" width="64" height="64"/>
   <object x="320" y="64">
-   <polyline points="0,0 -128,32"/>
+   <polyline points="0,0 -64,32"/>
   </object>
   <object x="768" y="64">
    <polyline points="0,0 -64,32"/>
@@ -127,14 +127,15 @@
   </object>
   <object gid="8" x="288" y="192"/>
   <object gid="8" x="320" y="160"/>
-  <object x="0" y="32" width="32" height="192" rotation="-35.7651">
+  <object name="EEEELLLLIIIIIPPPPPSSSSEEEEE!!!!!" x="32" y="96" width="32" height="192">
    <ellipse/>
   </object>
   <object x="576" y="64" width="128" height="128">
    <ellipse/>
   </object>
-  <object x="320" y="32" width="128" height="64" rotation="7">
+  <object x="320" y="32" width="128" height="64">
    <ellipse/>
   </object>
+  <object name="TTTTIIIILLLLEEEE" gid="2" x="32" y="64"/>
  </objectgroup>
 </map>

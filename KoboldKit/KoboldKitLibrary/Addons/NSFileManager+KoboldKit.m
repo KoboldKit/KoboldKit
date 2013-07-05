@@ -1,12 +1,14 @@
 //
+//  NSFileManager+KoboldKit.m
+//  KoboldKit
 //
-// Created by Steffen Itterheim on 15.06.13.
-//
+//  Created by Steffen Itterheim on 04.07.13.
+//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KoboldKit.h"
+#import "NSFileManager+KoboldKit.h"
 
-@implementation KoboldKit
+@implementation NSFileManager (KoboldKit)
 
 +(NSString*) pathForBundleFile:(NSString*)file
 {
@@ -17,17 +19,17 @@
 
 +(NSString*) pathForAppSupportFile:(NSString*)file
 {
-	return [KoboldKit pathForFile:file inDirectory:NSApplicationSupportDirectory];
+	return [NSFileManager pathForFile:file inDirectory:NSApplicationSupportDirectory];
 }
 
 +(NSString*) pathForDocumentsFile:(NSString*)file
 {
-	return [KoboldKit pathForFile:file inDirectory:NSDocumentDirectory];
+	return [NSFileManager pathForFile:file inDirectory:NSDocumentDirectory];
 }
 
 +(NSString*) pathForLibraryFile:(NSString*)file
 {
-	return [KoboldKit pathForFile:file inDirectory:NSLibraryDirectory];
+	return [NSFileManager pathForFile:file inDirectory:NSLibraryDirectory];
 }
 
 +(NSString*) pathForFile:(NSString*)file inDirectory:(NSSearchPathDirectory)directory
@@ -36,17 +38,17 @@
 	return [path stringByAppendingPathComponent:file];
 }
 
-+(NSString*) searchPathsForFile:(NSString*)file
++(NSString*) pathForFile:(NSString*)file
 {
 	NSFileManager* fileManager = [NSFileManager defaultManager];
-
-	NSString* path = [KoboldKit pathForAppSupportFile:file];
+	
+	NSString* path = [NSFileManager pathForAppSupportFile:file];
 	if ([fileManager fileExistsAtPath:path] == NO)
 	{
-		path = [KoboldKit pathForDocumentsFile:file];
+		path = [NSFileManager pathForDocumentsFile:file];
 		if ([fileManager fileExistsAtPath:path] == NO)
 		{
-			path = [KoboldKit pathForBundleFile:file];
+			path = [NSFileManager pathForBundleFile:file];
 		}
 	}
 	return path;

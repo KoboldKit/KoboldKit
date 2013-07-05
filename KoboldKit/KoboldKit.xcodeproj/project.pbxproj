@@ -46,6 +46,8 @@
 		DC2F44261771E9A5005846A7 /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F44101771E9A5005846A7 /* forest.png */; };
 		DC2F44301771E9A5005846A7 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F441A1771E9A5005846A7 /* other.png */; };
 		DC41B8AA1785A7C00018D6C5 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
+		DC41B8AD1785CA830018D6C5 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AC1785CA830018D6C5 /* MenuScene.m */; };
+		DC41B8B01785DD5E0018D6C5 /* NSFileManager+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */; };
 		DC4DE90A176C9E2B003E4087 /* KKTilemap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */; };
 		DC4DE90B176C9E2B003E4087 /* KKTilemapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F3176C9E2B003E4087 /* KKTilemapLayer.m */; };
 		DC4DE90D176C9E2B003E4087 /* KKTilemapLayerTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F7176C9E2B003E4087 /* KKTilemapLayerTiles.m */; };
@@ -63,6 +65,9 @@
 		DC4DE92A176CA503003E4087 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
 		DC4DE92C176CA52F003E4087 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
 		DC8CD4AA17760E0D0005AB51 /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */; };
+		DC95BA781786DF8600E31DA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
+		DC95BA7E1786DFB800E31DA6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC95BA7C1786DFB800E31DA6 /* Reachability.m */; };
+		DC96A7F91786E75400CE0827 /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */; };
 		DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC9CFCFE17749872004C981A /* Jetpack.atlas */; };
 		DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
 		DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
@@ -72,7 +77,6 @@
 		DC9CFD1D1774CA84004C981A /* KKScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD161774CA84004C981A /* KKScene.m */; };
 		DC9CFD1E1774CA84004C981A /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD191774CA84004C981A /* KKView.m */; };
 		DC9CFD1F1774CA84004C981A /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD1B1774CA84004C981A /* KKViewController.m */; };
-		DC9CFD3D1774CB47004C981A /* KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD3A1774CB47004C981A /* KoboldKit.m */; };
 		DC9CFD3F1774CB97004C981A /* KKButtonBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD2E1774CAE2004C981A /* KKButtonBehavior.m */; };
 		DC9CFD401774CB97004C981A /* KKControlPadBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD301774CAE2004C981A /* KKControlPadBehavior.m */; };
 		DC9CFD411774CB97004C981A /* KKFollowTargetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */; };
@@ -93,8 +97,7 @@
 		DCDD2DC11769FD0A00F307CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DBF1769FD0A00F307CD /* Main_iPhone.storyboard */; };
 		DCDD2DC41769FD0A00F307CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DC21769FD0A00F307CD /* Main_iPad.storyboard */; };
 		DCDD2DC71769FD0A00F307CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DC61769FD0A00F307CD /* ViewController.m */; };
-		DCDD2DCA1769FD0A00F307CD /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DC91769FD0A00F307CD /* MyScene.m */; };
-		DCDD2DCC1769FD0A00F307CD /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DCB1769FD0A00F307CD /* Spaceship.png */; };
+		DCDD2DCA1769FD0A00F307CD /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DC91769FD0A00F307CD /* GameScene.m */; };
 		DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DCD1769FD0A00F307CD /* Images.xcassets */; };
 		DCDD2DFC1769FD2E00F307CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DD41769FD0A00F307CD /* XCTest.framework */; };
 		DCDD2DFD1769FD2E00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
@@ -111,6 +114,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DC41B8B11785F0F20018D6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCDD2DA01769FD0A00F307CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCDD2DED1769FD2E00F307CD;
+			remoteInfo = KoboldKitLibrary;
+		};
 		DCDD2DFF1769FD2E00F307CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DCDD2DA01769FD0A00F307CD /* Project object */;
@@ -179,6 +189,10 @@
 		DC2F441A1771E9A5005846A7 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
 		DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
 		DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
+		DC41B8AB1785CA830018D6C5 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		DC41B8AC1785CA830018D6C5 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
+		DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+KoboldKit.h"; sourceTree = "<group>"; };
+		DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+KoboldKit.m"; sourceTree = "<group>"; };
 		DC4DE8F0176C9E2B003E4087 /* KKTilemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemap.h; sourceTree = "<group>"; };
 		DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemap.m; sourceTree = "<group>"; };
 		DC4DE8F2176C9E2B003E4087 /* KKTilemapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapLayer.h; sourceTree = "<group>"; };
@@ -210,6 +224,13 @@
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
+		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DC95BA7A1786DFB800E31DA6 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
+		DC95BA7B1786DFB800E31DA6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DC95BA7C1786DFB800E31DA6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DC95BA7D1786DFB800E31DA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		DC96A7F71786E75400CE0827 /* KKDownloadProjectFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDownloadProjectFiles.h; sourceTree = "<group>"; };
+		DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDownloadProjectFiles.m; sourceTree = "<group>"; };
 		DC9CFCFE17749872004C981A /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
 		DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeBehavior.h; sourceTree = "<group>"; };
 		DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
@@ -235,7 +256,6 @@
 		DC9CFD311774CAE2004C981A /* KKFollowTargetBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KKFollowTargetBehavior.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFollowTargetBehavior.m; sourceTree = "<group>"; };
 		DC9CFD391774CB47004C981A /* KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoboldKit.h; sourceTree = "<group>"; };
-		DC9CFD3A1774CB47004C981A /* KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KoboldKit.m; sourceTree = "<group>"; };
 		DC9CFD3B1774CB47004C981A /* KoboldKitLibrary-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KoboldKitLibrary-Prefix.pch"; path = "../KoboldKitLibrary-Prefix.pch"; sourceTree = "<group>"; };
 		DC9CFD431774CBE1004C981A /* KKArcadeInputState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKArcadeInputState.h; sourceTree = "<group>"; };
 		DC9CFD441774CBE1004C981A /* KKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMacros.h; sourceTree = "<group>"; };
@@ -272,9 +292,8 @@
 		DCDD2DC31769FD0A00F307CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		DCDD2DC51769FD0A00F307CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DCDD2DC61769FD0A00F307CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DCDD2DC81769FD0A00F307CD /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		DCDD2DC91769FD0A00F307CD /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		DCDD2DCB1769FD0A00F307CD /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		DCDD2DC81769FD0A00F307CD /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		DCDD2DC91769FD0A00F307CD /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		DCDD2DCD1769FD0A00F307CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCDD2DD41769FD0A00F307CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKitLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -300,6 +319,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC95BA781786DF8600E31DA6 /* SystemConfiguration.framework in Frameworks */,
 				DC4DE92C176CA52F003E4087 /* libz.dylib in Frameworks */,
 				DCDD2E101769FD8500F307CD /* libKoboldKitLibrary.a in Frameworks */,
 				DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */,
@@ -472,8 +492,23 @@
 				DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */,
 				DC2F43E1176CC8B8005846A7 /* NSObject+KoboldKit.h */,
 				DC2F43E2176CC8B8005846A7 /* NSObject+KoboldKit.m */,
+				DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */,
+				DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */,
+				DC96A7F71786E75400CE0827 /* KKDownloadProjectFiles.h */,
+				DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */,
 			);
 			path = Addons;
+			sourceTree = "<group>";
+		};
+		DC95BA791786DFB800E31DA6 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				DC95BA7A1786DFB800E31DA6 /* LICENCE.txt */,
+				DC95BA7B1786DFB800E31DA6 /* Reachability.h */,
+				DC95BA7C1786DFB800E31DA6 /* Reachability.m */,
+				DC95BA7D1786DFB800E31DA6 /* README.md */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		DC9CFD061774CA5B004C981A /* Framework */ = {
@@ -596,6 +631,7 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */,
 				DC4DE928176CA4EB003E4087 /* libz.dylib */,
 				DCDD2DAB1769FD0A00F307CD /* Foundation.framework */,
 				DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */,
@@ -616,9 +652,10 @@
 				DCDD2DC21769FD0A00F307CD /* Main_iPad.storyboard */,
 				DCDD2DC51769FD0A00F307CD /* ViewController.h */,
 				DCDD2DC61769FD0A00F307CD /* ViewController.m */,
-				DCDD2DC81769FD0A00F307CD /* MyScene.h */,
-				DCDD2DC91769FD0A00F307CD /* MyScene.m */,
-				DCDD2DCB1769FD0A00F307CD /* Spaceship.png */,
+				DC41B8AB1785CA830018D6C5 /* MenuScene.h */,
+				DC41B8AC1785CA830018D6C5 /* MenuScene.m */,
+				DCDD2DC81769FD0A00F307CD /* GameScene.h */,
+				DCDD2DC91769FD0A00F307CD /* GameScene.m */,
 				DCDD2DCD1769FD0A00F307CD /* Images.xcassets */,
 				DCDD2DB41769FD0A00F307CD /* Supporting Files */,
 			);
@@ -640,7 +677,6 @@
 			isa = PBXGroup;
 			children = (
 				DC9CFD391774CB47004C981A /* KoboldKit.h */,
-				DC9CFD3A1774CB47004C981A /* KoboldKit.m */,
 				DC9CFD421774CBE1004C981A /* Headers */,
 				DC9CFD061774CA5B004C981A /* Framework */,
 				DC9CFD2C1774CAE2004C981A /* Behaviors */,
@@ -676,6 +712,7 @@
 		DCDD2E2B176A40C400F307CD /* External */ = {
 			isa = PBXGroup;
 			children = (
+				DC95BA791786DFB800E31DA6 /* Reachability */,
 				DCFDF3BE176B3FE100F2CAD0 /* CGPointExtension */,
 				DCDD2E2C176A40C400F307CD /* JRSwizzle */,
 				DCDD2E2F176A40C400F307CD /* VTPG */,
@@ -736,6 +773,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DC41B8B21785F0F20018D6C5 /* PBXTargetDependency */,
 			);
 			name = KoboldKit;
 			productName = KoboldKitDemo;
@@ -818,7 +856,6 @@
 			files = (
 				DC2F43FF1770E56E005846A7 /* Icon-Small-50.png in Resources */,
 				DC2F43C8176CB1F7005846A7 /* README.txt in Resources */,
-				DCDD2DCC1769FD0A00F307CD /* Spaceship.png in Resources */,
 				DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */,
 				DC2F43BE176CB1F7005846A7 /* crawl-tilemap.tmx in Resources */,
 				DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */,
@@ -872,7 +909,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDD2DCA1769FD0A00F307CD /* MyScene.m in Sources */,
+				DCDD2DCA1769FD0A00F307CD /* GameScene.m in Sources */,
+				DC41B8AD1785CA830018D6C5 /* MenuScene.m in Sources */,
 				DCDD2DC71769FD0A00F307CD /* ViewController.m in Sources */,
 				DCDD2DBE1769FD0A00F307CD /* AppDelegate.m in Sources */,
 				DCDD2DBA1769FD0A00F307CD /* main.m in Sources */,
@@ -897,7 +935,6 @@
 				DC9CFD411774CB97004C981A /* KKFollowTargetBehavior.m in Sources */,
 				DC4DE915176C9E2B003E4087 /* KKTMXReader.m in Sources */,
 				DC4DE913176C9E2B003E4087 /* KKTilemapTileset.m in Sources */,
-				DC9CFD3D1774CB47004C981A /* KoboldKit.m in Sources */,
 				DC41B8AA1785A7C00018D6C5 /* KKLimitVelocityBehavior.m in Sources */,
 				DC4DE910176C9E2B003E4087 /* KKTilemapObject.m in Sources */,
 				DCB087D5177B1647004182E4 /* KKPointArray.m in Sources */,
@@ -908,6 +945,7 @@
 				DC9CFD121774CA5B004C981A /* SKNode+KoboldKit.m in Sources */,
 				DC1E506F1775ED500063CEDC /* KKCameraFollowBehavior.m in Sources */,
 				DC4DE90D176C9E2B003E4087 /* KKTilemapLayerTiles.m in Sources */,
+				DC96A7F91786E75400CE0827 /* KKDownloadProjectFiles.m in Sources */,
 				DCB087CF177B1625004182E4 /* KKTilemapLayerContourTracer.m in Sources */,
 				DC9CFD3F1774CB97004C981A /* KKButtonBehavior.m in Sources */,
 				DC4DE916176C9E2B003E4087 /* KKTMXWriter.m in Sources */,
@@ -923,6 +961,8 @@
 				DC4DE91D176CA0AC003E4087 /* ZipUtils.m in Sources */,
 				DC2F43E3176CC8B8005846A7 /* NSObject+KoboldKit.m in Sources */,
 				DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */,
+				DC41B8B01785DD5E0018D6C5 /* NSFileManager+KoboldKit.m in Sources */,
+				DC95BA7E1786DFB800E31DA6 /* Reachability.m in Sources */,
 				DC4DE912176C9E2B003E4087 /* KKTilemapTileProperties.m in Sources */,
 				DC4DE90B176C9E2B003E4087 /* KKTilemapLayer.m in Sources */,
 				DCB087DC177B3783004182E4 /* SKScene+KoboldKit.m in Sources */,
@@ -943,6 +983,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DC41B8B21785F0F20018D6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */;
+			targetProxy = DC41B8B11785F0F20018D6C5 /* PBXContainerItemProxy */;
+		};
 		DCDD2E001769FD2E00F307CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */;
