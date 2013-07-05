@@ -224,11 +224,11 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 		{
 			case KKArcadeJoystickRight:
 			case KKArcadeJoystickUp:
-				newTexture = [_textures objectAtIndex:0];
+				newTexture = [_textures objectAtIndex:1];
 				break;
 			case KKArcadeJoystickLeft:
 			case KKArcadeJoystickDown:
-				newTexture = [_textures objectAtIndex:1];
+				newTexture = [_textures objectAtIndex:2];
 				break;
 				
 			default:
