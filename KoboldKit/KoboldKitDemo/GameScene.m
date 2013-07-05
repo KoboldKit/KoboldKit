@@ -80,7 +80,8 @@
 	KKLabelNode* reloadLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
 	reloadLabel.text = @"reload";
 	reloadLabel.fontSize = 20;
-	reloadLabel.position = CGPointMake(self.size.width - 30, self.size.height - reloadLabel.fontSize);
+	//reloadLabel.position = CGPointMake(self.size.width - 30, self.size.height - reloadLabel.fontSize);
+	reloadLabel.position = CGPointMake(self.size.width / 2, self.size.height - reloadLabel.fontSize * 1.5);
 	[hudNode addChild:reloadLabel];
 	
 	[reloadLabel addBehavior:[KKButtonBehavior behavior]];
