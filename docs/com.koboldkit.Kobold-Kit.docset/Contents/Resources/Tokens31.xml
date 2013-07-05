@@ -1,252 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapObject.html">
+	<File path="Classes/KKTilemapNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObject</TokenIdentifier>
-			<Abstract type="html">TMX "Object" - either a rectangle, open polygon (polyline) or closed polygon. Common object base class. Use the concrete
-   subclasses KTTilemapPolyObject, KTTilemapRectangleObject or KTTilemapTileObject if you need access to each object type's specific properties.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapNode</TokenIdentifier>
+			<Abstract type="html">A tilemap node renders a TMX tilemap. It has KKTilemapTileLayerNode and KKTilempaObjectLayerNode as children
+which perform each layer's rendering.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
 			
 			<NodeRef refid="31"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setName:</TokenIdentifier>
-			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setTilemap:</TokenIdentifier>
+			<Abstract type="html">the tilemap model object containing the tilemap's data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
 			
-			
-			<Anchor>//api/name/name</Anchor>
+			<ReturnValue><Abstract type="html">the tilemap model object containing the tilemap's data.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemap</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/name</TokenIdentifier>
-			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/tilemap</TokenIdentifier>
+			<Abstract type="html">the tilemap model object containing the tilemap's data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
 			
-			
-			<Anchor>//api/name/name</Anchor>
+			<ReturnValue><Abstract type="html">the tilemap model object containing the tilemap's data.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemap</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/name</TokenIdentifier>
-			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/tilemap</TokenIdentifier>
+			<Abstract type="html">the tilemap model object containing the tilemap's data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
 			
-			
-			<Anchor>//api/name/name</Anchor>
+			<ReturnValue><Abstract type="html">the tilemap model object containing the tilemap's data.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemap</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setUserType:</TokenIdentifier>
-			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
-   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setBounds:</TokenIdentifier>
+			<Abstract type="html">The tilemap's bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *userType</Declaration>
+			<Declaration>@property (atomic, readonly) CGRect bounds</Declaration>
 			
-			
-			<Anchor>//api/name/userType</Anchor>
+			<ReturnValue><Abstract type="html">The tilemap's bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/userType</TokenIdentifier>
-			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
-   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/bounds</TokenIdentifier>
+			<Abstract type="html">The tilemap's bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *userType</Declaration>
+			<Declaration>@property (atomic, readonly) CGRect bounds</Declaration>
 			
-			
-			<Anchor>//api/name/userType</Anchor>
+			<ReturnValue><Abstract type="html">The tilemap's bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/userType</TokenIdentifier>
-			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
-   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/bounds</TokenIdentifier>
+			<Abstract type="html">The tilemap's bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *userType</Declaration>
+			<Declaration>@property (atomic, readonly) CGRect bounds</Declaration>
 			
-			
-			<Anchor>//api/name/userType</Anchor>
+			<ReturnValue><Abstract type="html">The tilemap's bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setProperties:</TokenIdentifier>
-			<Abstract type="html">The object's properties.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setMainTileLayerNode:</TokenIdentifier>
+			<Abstract type="html">The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it's the first tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
+			<Declaration>@property (atomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">the "main" tile layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/properties</TokenIdentifier>
-			<Abstract type="html">The object's properties.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/mainTileLayerNode</TokenIdentifier>
+			<Abstract type="html">The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it's the first tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
+			<Declaration>@property (atomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">the "main" tile layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/properties</TokenIdentifier>
-			<Abstract type="html">The object's properties.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/mainTileLayerNode</TokenIdentifier>
+			<Abstract type="html">The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it's the first tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
+			<Declaration>@property (atomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">the "main" tile layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setRotation:</TokenIdentifier>
-			<Abstract type="html">The rotation of the object (in Euler coordinates, radians).</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapNode/tilemapWithContentsOfFile:</TokenIdentifier>
+			<Abstract type="html">Creates a tilemap node from a TMX file.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat rotation</Declaration>
-			
-			
-			<Anchor>//api/name/rotation</Anchor>
+			<Declaration>+ (id)tilemapWithContentsOfFile:(NSString *)tmxFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxFile</Name>
+					<Abstract type="html">The filename of a TMX file in the bundle or an absolute path to a TMX file.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapWithContentsOfFile:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/rotation</TokenIdentifier>
-			<Abstract type="html">The rotation of the object (in Euler coordinates, radians).</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/tileLayerNodeWithName:</TokenIdentifier>
+			<Abstract type="html">The name identifying a tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat rotation</Declaration>
-			
-			
-			<Anchor>//api/name/rotation</Anchor>
+			<Declaration>- (KKTilemapTileLayerNode *)tileLayerNodeWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name identifying a tile layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The tile layer node with the name, or nil if there's no tile layer with that name.</Abstract></ReturnValue>
+			<Anchor>//api/name/tileLayerNodeWithName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/rotation</TokenIdentifier>
-			<Abstract type="html">The rotation of the object (in Euler coordinates, radians).</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/objectLayerNodeWithName:</TokenIdentifier>
+			<Abstract type="html">The name identifying an object layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat rotation</Declaration>
-			
-			
-			<Anchor>//api/name/rotation</Anchor>
+			<Declaration>- (KKTilemapObjectLayerNode *)objectLayerNodeWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name identifying an object layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The object layer node with the name, or nil if there's no object layer with that name.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLayerNodeWithName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setPosition:</TokenIdentifier>
-			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/createPhysicsCollisionsWithBlockingGids:</TokenIdentifier>
+			<Abstract type="html">Creates physics blocking shapes from the main tile layer's blocking tiles.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGPoint position</Declaration>
-			
-			
-			<Anchor>//api/name/position</Anchor>
+			<Declaration>- (SKNode *)createPhysicsCollisionsWithBlockingGids:(KKIntegerArray *)blockingGids</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blockingGids</Name>
+					<Abstract type="html">A list of GIDs of tiles that should be considered blocking.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
+			<Anchor>//api/name/createPhysicsCollisionsWithBlockingGids:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/position</TokenIdentifier>
-			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/createPhysicsCollisionsWithObjectLayerNamed:</TokenIdentifier>
+			<Abstract type="html">Creates physics blocking shapes from an object layer's objects.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGPoint position</Declaration>
-			
-			
-			<Anchor>//api/name/position</Anchor>
+			<Declaration>- (SKNode *)createPhysicsCollisionsWithObjectLayerNamed:(NSString *)layerName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layerName</Name>
+					<Abstract type="html">The name of an object layer whose objects should be converted to physics collisions.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
+			<Anchor>//api/name/createPhysicsCollisionsWithObjectLayerNamed:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/position</TokenIdentifier>
-			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/restrictScrollingToMapBoundary</TokenIdentifier>
+			<Abstract type="html">Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGPoint position</Declaration>
-			
-			
-			<Anchor>//api/name/position</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setSize:</TokenIdentifier>
-			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) CGSize size</Declaration>
+			<Declaration>- (void)restrictScrollingToMapBoundary</Declaration>
 			
 			
-			<Anchor>//api/name/size</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/size</TokenIdentifier>
-			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) CGSize size</Declaration>
-			
-			
-			<Anchor>//api/name/size</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/size</TokenIdentifier>
-			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) CGSize size</Declaration>
-			
-			
-			<Anchor>//api/name/size</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setType:</TokenIdentifier>
-			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
-   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKTilemapObjectType type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/type</TokenIdentifier>
-			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
-   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKTilemapObjectType type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/type</TokenIdentifier>
-			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
-   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKTilemapObjectType type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/restrictScrollingToMapBoundary</Anchor>
 		</Token>
 		
 	</File>

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KKTilemapPolyObject Class Reference</title>
+		<title>KKLua Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KKTilemapPolyObject Class Reference</h1>
+				<h1 class="hideInXcode">KKLua Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -38,24 +38,21 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/boundingBox">&nbsp;&nbsp;&nbsp;&nbsp;boundingBox</option>
-	
-	<option value="//api/name/numberOfPoints">&nbsp;&nbsp;&nbsp;&nbsp;numberOfPoints</option>
-	
-	<option value="//api/name/points">&nbsp;&nbsp;&nbsp;&nbsp;points</option>
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/doFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ doFile:</option>
+	
+	<option value="//api/name/doString:">&nbsp;&nbsp;&nbsp;&nbsp;+ doString:</option>
+	
+	<option value="//api/name/logLuaError">&nbsp;&nbsp;&nbsp;&nbsp;+ logLuaError</option>
+	
+	<option value="//api/name/logLuaErrorWithMessage:">&nbsp;&nbsp;&nbsp;&nbsp;+ logLuaErrorWithMessage:</option>
+	
+	<option value="//api/name/luaState">&nbsp;&nbsp;&nbsp;&nbsp;+ luaState</option>
 	
 	
-	
-	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/makePointsFromString:">&nbsp;&nbsp;&nbsp;&nbsp;- makePointsFromString:</option>
-	
-	<option value="//api/name/updateBoundingBox">&nbsp;&nbsp;&nbsp;&nbsp;- updateBoundingBox</option>
 	
 	
 	
@@ -79,34 +76,30 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundingBox">boundingBox</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doFile:">doFile:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfPoints">numberOfPoints</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doString:">doString:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/points">points</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logLuaError">logLuaError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logLuaErrorWithMessage:">logLuaErrorWithMessage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/luaState">luaState</a></span></li>
 	
 </ul></li>
 
 
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/makePointsFromString:">makePointsFromString:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateBoundingBox">updateBoundingBox</a></span></li>
-	
-</ul></li>
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KKTilemapPolyObject Class Reference" name="top"></a>
+				<a title="KKLua Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -115,7 +108,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KKTilemapPolyObject Class Reference</h1>
+						<h1 class="title title-header">KKLua Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -123,10 +116,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/KKTilemapObject.html">KKTilemapObject</a> : NSObject</td>
+	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemapObject.h<br />KKTilemapObject.m</td>
+	<td class="specification-value">KKLua.h<br />KKLua.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -136,9 +129,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A polygon or polyline object. A polygon is assumed to have its last point connect with the first, the polyline does not.
-   Though it&rsquo;s up to you how you interpret that. If you need to differentiate between the two, refer to the KTTilemapObject base class' objectType
-   property.</p>
+						<p>Static class containing various Lua related helper methods.</p>
 					</div>
 					
 					
@@ -156,38 +147,42 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/points">&nbsp;&nbsp;points</a></code>
-		<span class="tooltip"><p>Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object&rsquo;s position.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/numberOfPoints">&nbsp;&nbsp;numberOfPoints</a></code>
-		<span class="tooltip"><p>The number of <a href="#//api/name/points">points</a> stored in the <a href="#//api/name/points">points</a> array.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/boundingBox">&nbsp;&nbsp;boundingBox</a></code>
-		<span class="tooltip"><p>The polygon&rsquo;s bounding box. All <a href="#//api/name/points">points</a> of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
-   polygons because if the target object does not intersect with a polygon&rsquo;s bounding box, it will definitely not intersect with the polygon.</p></span>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/updateBoundingBox">&ndash;&nbsp;updateBoundingBox</a></code>
-		<span class="tooltip"><p>In cases where you manually create or change polygon <a href="#//api/name/points">points</a> you should run updateBoundingBox to update the <a href="#//api/name/boundingBox">boundingBox</a> property.</p></span>
+		<code><a href="#//api/name/luaState">+&nbsp;luaState</a></code>
+		<span class="tooltip"><p>The lua state.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/makePointsFromString:">&ndash;&nbsp;makePointsFromString:</a></code>
-		<span class="tooltip"><p>(TMX Parser Only) Creates the <a href="#//api/name/points">points</a> array from a CGPoint encoded string where string representation of CGPoint are separated by a space character.
-   For example: @&ldquo;0,0 -80,80 -80,160 0,200 80,200&rdquo;</p></span>
+		<code><a href="#//api/name/doFile:">+&nbsp;doFile:</a></code>
+		<span class="tooltip"><p>Runs the Lua script file. File is a filename with or without path to the file, and with extension.
+   Returns YES if the execution was successful and NO if it failed. Note that this is different from Lua,
+   where a return value of 0 indicates success and 1 or higher indicates an error. But YES == success
+   is more natural for Objective-C programmers.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doString:">+&nbsp;doString:</a></code>
+		<span class="tooltip"><p>Runs the Lua code passed in as string.
+   Returns YES if the execution was successful and NO if it failed. Note that this is different from Lua,
+   where a return value of 0 indicates success and 1 or higher indicates an error. But YES == success
+   is more natural for Objective-C programmers.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logLuaError">+&nbsp;logLuaError</a></code>
+		<span class="tooltip"><p>Logs the most recent Lua error by getting the error message string from the stack index -1 and displaying it.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logLuaErrorWithMessage:">+&nbsp;logLuaErrorWithMessage:</a></code>
+		<span class="tooltip"><p>Logs a Lua error with a custom message.</p></span>
 	</span>
 	
 	
@@ -200,23 +195,27 @@
 					
 					
 					
+					
+					
 					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/boundingBox" title="boundingBox"></a>
-	<h3 class="subsubtitle method-title">boundingBox</h3>
+	<a name="//api/name/doFile:" title="doFile:"></a>
+	<h3 class="subsubtitle method-title">doFile:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The polygon&rsquo;s bounding box. All <a href="#//api/name/points">points</a> of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
-   polygons because if the target object does not intersect with a polygon&rsquo;s bounding box, it will definitely not intersect with the polygon.</p>
+		<p>Runs the Lua script file. File is a filename with or without path to the file, and with extension.
+   Returns YES if the execution was successful and NO if it failed. Note that this is different from Lua,
+   where a return value of 0 indicates success and 1 or higher indicates an error. But YES == success
+   is more natural for Objective-C programmers.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) CGRect boundingBox</code></div>
+	<div class="method-subsection method-declaration"><code>+ (BOOL)doFile:(NSString *)<em>aFile</em></code></div>
 	
 	
 	
@@ -233,24 +232,27 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapObject.h</code><br />
+		<code class="declared-in-ref">KKLua.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/numberOfPoints" title="numberOfPoints"></a>
-	<h3 class="subsubtitle method-title">numberOfPoints</h3>
+	<a name="//api/name/doString:" title="doString:"></a>
+	<h3 class="subsubtitle method-title">doString:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The number of <a href="#//api/name/points">points</a> stored in the <a href="#//api/name/points">points</a> array.</p>
+		<p>Runs the Lua code passed in as string.
+   Returns YES if the execution was successful and NO if it failed. Note that this is different from Lua,
+   where a return value of 0 indicates success and 1 or higher indicates an error. But YES == success
+   is more natural for Objective-C programmers.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) unsigned int numberOfPoints</code></div>
+	<div class="method-subsection method-declaration"><code>+ (BOOL)doString:(NSString *)<em>aString</em></code></div>
 	
 	
 	
@@ -267,24 +269,24 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapObject.h</code><br />
+		<code class="declared-in-ref">KKLua.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/points" title="points"></a>
-	<h3 class="subsubtitle method-title">points</h3>
+	<a name="//api/name/logLuaError" title="logLuaError"></a>
+	<h3 class="subsubtitle method-title">logLuaError</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object&rsquo;s position.</p>
+		<p>Logs the most recent Lua error by getting the error message string from the stack index -1 and displaying it.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) CGPoint *points</code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)logLuaError</code></div>
 	
 	
 	
@@ -301,7 +303,80 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapObject.h</code><br />
+		<code class="declared-in-ref">KKLua.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logLuaErrorWithMessage:" title="logLuaErrorWithMessage:"></a>
+	<h3 class="subsubtitle method-title">logLuaErrorWithMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs a Lua error with a custom message.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (void)logLuaErrorWithMessage:(NSString *)<em>aMessage</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKLua.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/luaState" title="luaState"></a>
+	<h3 class="subsubtitle method-title">luaState</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The lua state.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (lua_State *)luaState</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The lua state.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKLua.h</code><br />
 	</div>				
 	
 	
@@ -310,83 +385,6 @@
 					</div>
 					
 					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/makePointsFromString:" title="makePointsFromString:"></a>
-	<h3 class="subsubtitle method-title">makePointsFromString:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(TMX Parser Only) Creates the <a href="#//api/name/points">points</a> array from a CGPoint encoded string where string representation of CGPoint are separated by a space character.
-   For example: @&ldquo;0,0 -80,80 -80,160 0,200 80,200&rdquo;</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)makePointsFromString:(NSString *)<em>string</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapObject.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/updateBoundingBox" title="updateBoundingBox"></a>
-	<h3 class="subsubtitle method-title">updateBoundingBox</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>In cases where you manually create or change polygon <a href="#//api/name/points">points</a> you should run updateBoundingBox to update the <a href="#//api/name/boundingBox">boundingBox</a> property.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)updateBoundingBox</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapObject.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
 					
 					
 				</div>

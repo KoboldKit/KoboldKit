@@ -11,9 +11,6 @@
 /** nd */
 typedef void (^KKDownloadProjectFilesCompletionBlock)(NSDictionary* contents);
 
-/** nd */
-extern NSString* const KKDownloadProjectFilesURL;
-
 @class KKModel;
 
 /** nd */
@@ -23,8 +20,8 @@ extern NSString* const KKDownloadProjectFilesURL;
 }
 
 /** (nd) */
-+(id) downloadProjectFilesWithModel:(KKModel*)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock;
++(id) downloadProjectFilesWithURL:(NSURL*)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock;
 /** (nd) */
--(id) initWithModel:(KKModel*)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock;
+-(id) initWithURL:(NSURL*)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock;
 
 @end

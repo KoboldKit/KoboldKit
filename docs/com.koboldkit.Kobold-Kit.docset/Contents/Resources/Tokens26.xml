@@ -1,680 +1,577 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapLayer.html">
+	<File path="Classes/KKTilemap.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayer</TokenIdentifier>
-			<Abstract type="html">TMX Layer data. Can be either a tile or object layer. Depending on which it is not all properties are used, this is noted in the property descriptions.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemap</TokenIdentifier>
+			<Abstract type="html">Represents a TMX Tilemap "map", ie global properties. The tilemap is usually created from a TMX file via the parseTMXFile method.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>
 			
 			<NodeRef refid="26"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setName:</TokenIdentifier>
-			<Abstract type="html">The name of the layer. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
-			
-			<ReturnValue><Abstract type="html">The name of the layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/name</TokenIdentifier>
-			<Abstract type="html">The name of the layer. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
-			
-			<ReturnValue><Abstract type="html">The name of the layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/name</TokenIdentifier>
-			<Abstract type="html">The name of the layer. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
-			
-			<ReturnValue><Abstract type="html">The name of the layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setProperties:</TokenIdentifier>
-			<Abstract type="html">The layer's properties.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
-			
-			<ReturnValue><Abstract type="html">The layer's properties.</Abstract></ReturnValue>
-			<Anchor>//api/name/properties</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/properties</TokenIdentifier>
-			<Abstract type="html">The layer's properties.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
-			
-			<ReturnValue><Abstract type="html">The layer's properties.</Abstract></ReturnValue>
-			<Anchor>//api/name/properties</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/properties</TokenIdentifier>
-			<Abstract type="html">The layer's properties.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
-			
-			<ReturnValue><Abstract type="html">The layer's properties.</Abstract></ReturnValue>
-			<Anchor>//api/name/properties</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setTilemap:</TokenIdentifier>
-			<Abstract type="html">Reference to the tilemap to allow KTTileLayerViewController and KTObjectLayerViewController quick access to the KTTilemap object.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) KKTilemap *tilemap</Declaration>
-			
-			<ReturnValue><Abstract type="html">The tilemap the layer is part of.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilemap</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/tilemap</TokenIdentifier>
-			<Abstract type="html">Reference to the tilemap to allow KTTileLayerViewController and KTObjectLayerViewController quick access to the KTTilemap object.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) KKTilemap *tilemap</Declaration>
-			
-			<ReturnValue><Abstract type="html">The tilemap the layer is part of.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilemap</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/tilemap</TokenIdentifier>
-			<Abstract type="html">Reference to the tilemap to allow KTTileLayerViewController and KTObjectLayerViewController quick access to the KTTilemap object.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) KKTilemap *tilemap</Declaration>
-			
-			<ReturnValue><Abstract type="html">The tilemap the layer is part of.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilemap</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setIsObjectLayer:</TokenIdentifier>
-			<Abstract type="html">Is set if this layer is an Object Layer. If NO it is a Tile Layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL isObjectLayer</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if this is an object layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/isObjectLayer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/isObjectLayer</TokenIdentifier>
-			<Abstract type="html">Is set if this layer is an Object Layer. If NO it is a Tile Layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL isObjectLayer</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if this is an object layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/isObjectLayer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/isObjectLayer</TokenIdentifier>
-			<Abstract type="html">Is set if this layer is an Object Layer. If NO it is a Tile Layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL isObjectLayer</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if this is an object layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/isObjectLayer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setIsTileLayer:</TokenIdentifier>
-			<Abstract type="html">Is set if this layer is a Tile Layer. If NO it is a Object Layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL isTileLayer</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if this is a tile layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/isTileLayer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/isTileLayer</TokenIdentifier>
-			<Abstract type="html">Is set if this layer is a Tile Layer. If NO it is a Object Layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL isTileLayer</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if this is a tile layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/isTileLayer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/isTileLayer</TokenIdentifier>
-			<Abstract type="html">Is set if this layer is a Tile Layer. If NO it is a Object Layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL isTileLayer</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if this is a tile layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/isTileLayer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setHidden:</TokenIdentifier>
-			<Abstract type="html">Whether the tiles on this layer are visible or not. If a tile layer is hidden, it will still create the tiles and therefore
-use the same memory as if the tiles were visible. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL hidden</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if the layer is hidden (not visible).</Abstract></ReturnValue>
-			<Anchor>//api/name/hidden</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/hidden</TokenIdentifier>
-			<Abstract type="html">Whether the tiles on this layer are visible or not. If a tile layer is hidden, it will still create the tiles and therefore
-use the same memory as if the tiles were visible. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL hidden</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if the layer is hidden (not visible).</Abstract></ReturnValue>
-			<Anchor>//api/name/hidden</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/hidden</TokenIdentifier>
-			<Abstract type="html">Whether the tiles on this layer are visible or not. If a tile layer is hidden, it will still create the tiles and therefore
-use the same memory as if the tiles were visible. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL hidden</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if the layer is hidden (not visible).</Abstract></ReturnValue>
-			<Anchor>//api/name/hidden</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setSize:</TokenIdentifier>
-			<Abstract type="html">(Tile Layers Only) The layer's size (in tiles. The layer size is usually identical to the mapSize property of KTTilemap.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setSize:</TokenIdentifier>
+			<Abstract type="html">The size of the map, in tiles.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) CGSize size</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the tile layer, in tiles.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The size of the map, in tiles.</Abstract></ReturnValue>
 			<Anchor>//api/name/size</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/size</TokenIdentifier>
-			<Abstract type="html">(Tile Layers Only) The layer's size (in tiles. The layer size is usually identical to the mapSize property of KTTilemap.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/size</TokenIdentifier>
+			<Abstract type="html">The size of the map, in tiles.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) CGSize size</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the tile layer, in tiles.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The size of the map, in tiles.</Abstract></ReturnValue>
 			<Anchor>//api/name/size</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/size</TokenIdentifier>
-			<Abstract type="html">(Tile Layers Only) The layer's size (in tiles. The layer size is usually identical to the mapSize property of KTTilemap.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/size</TokenIdentifier>
+			<Abstract type="html">The size of the map, in tiles.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) CGSize size</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the tile layer, in tiles.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The size of the map, in tiles.</Abstract></ReturnValue>
 			<Anchor>//api/name/size</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setAlpha:</TokenIdentifier>
-			<Abstract type="html">How opaque the layer is. Value ranges from 0 (fully transparent) to 1 (fully opaque).
-   The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setGridSize:</TokenIdentifier>
+			<Abstract type="html">The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) float alpha</Declaration>
+			<Declaration>@property (atomic) CGSize gridSize</Declaration>
 			
-			<ReturnValue><Abstract type="html">The alpha (opacity) of the layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/alpha</Anchor>
+			<ReturnValue><Abstract type="html">The size of the grid (tiles) in points.</Abstract></ReturnValue>
+			<Anchor>//api/name/gridSize</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/alpha</TokenIdentifier>
-			<Abstract type="html">How opaque the layer is. Value ranges from 0 (fully transparent) to 1 (fully opaque).
-   The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/gridSize</TokenIdentifier>
+			<Abstract type="html">The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) float alpha</Declaration>
+			<Declaration>@property (atomic) CGSize gridSize</Declaration>
 			
-			<ReturnValue><Abstract type="html">The alpha (opacity) of the layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/alpha</Anchor>
+			<ReturnValue><Abstract type="html">The size of the grid (tiles) in points.</Abstract></ReturnValue>
+			<Anchor>//api/name/gridSize</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/alpha</TokenIdentifier>
-			<Abstract type="html">How opaque the layer is. Value ranges from 0 (fully transparent) to 1 (fully opaque).
-   The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/gridSize</TokenIdentifier>
+			<Abstract type="html">The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) float alpha</Declaration>
+			<Declaration>@property (atomic) CGSize gridSize</Declaration>
 			
-			<ReturnValue><Abstract type="html">The alpha (opacity) of the layer.</Abstract></ReturnValue>
-			<Anchor>//api/name/alpha</Anchor>
+			<ReturnValue><Abstract type="html">The size of the grid (tiles) in points.</Abstract></ReturnValue>
+			<Anchor>//api/name/gridSize</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setEndlessScrolling:</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
-endlessScrollingHorizontal and endlessScrollingVertical. Returns YES only if both endlessScrollingHorizontal and endlessScrollingVertical are YES.
-Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setLargestTileSize:</TokenIdentifier>
+			<Abstract type="html">This is the tileSize of the tileset with the largest tile size. Will be the same as gridSize for tilemaps whose tilesets all use the same tile size.
+   But if you use tilesets of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
+   tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrolling</Declaration>
+			<Declaration>@property (atomic) CGSize largestTileSize</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats in all directions.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrolling</Anchor>
+			<ReturnValue><Abstract type="html">The largest tile size found in the tilesets used by this tilemap.</Abstract></ReturnValue>
+			<Anchor>//api/name/largestTileSize</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/endlessScrolling</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
-endlessScrollingHorizontal and endlessScrollingVertical. Returns YES only if both endlessScrollingHorizontal and endlessScrollingVertical are YES.
-Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/largestTileSize</TokenIdentifier>
+			<Abstract type="html">This is the tileSize of the tileset with the largest tile size. Will be the same as gridSize for tilemaps whose tilesets all use the same tile size.
+   But if you use tilesets of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
+   tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrolling</Declaration>
+			<Declaration>@property (atomic) CGSize largestTileSize</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats in all directions.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrolling</Anchor>
+			<ReturnValue><Abstract type="html">The largest tile size found in the tilesets used by this tilemap.</Abstract></ReturnValue>
+			<Anchor>//api/name/largestTileSize</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/endlessScrolling</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
-endlessScrollingHorizontal and endlessScrollingVertical. Returns YES only if both endlessScrollingHorizontal and endlessScrollingVertical are YES.
-Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/largestTileSize</TokenIdentifier>
+			<Abstract type="html">This is the tileSize of the tileset with the largest tile size. Will be the same as gridSize for tilemaps whose tilesets all use the same tile size.
+   But if you use tilesets of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
+   tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrolling</Declaration>
+			<Declaration>@property (atomic) CGSize largestTileSize</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats in all directions.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrolling</Anchor>
+			<ReturnValue><Abstract type="html">The largest tile size found in the tilesets used by this tilemap.</Abstract></ReturnValue>
+			<Anchor>//api/name/largestTileSize</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setEndlessScrollingHorizontal:</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly along the X axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setProperties:</TokenIdentifier>
+			<Abstract type="html">The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrollingHorizontal</Declaration>
+			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats along the horizontal axis.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrollingHorizontal</Anchor>
+			<ReturnValue><Abstract type="html">The dictionary of properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/properties</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/endlessScrollingHorizontal</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly along the X axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/properties</TokenIdentifier>
+			<Abstract type="html">The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrollingHorizontal</Declaration>
+			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats along the horizontal axis.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrollingHorizontal</Anchor>
+			<ReturnValue><Abstract type="html">The dictionary of properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/properties</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/endlessScrollingHorizontal</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly along the X axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/properties</TokenIdentifier>
+			<Abstract type="html">The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrollingHorizontal</Declaration>
+			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats along the horizontal axis.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrollingHorizontal</Anchor>
+			<ReturnValue><Abstract type="html">The dictionary of properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/properties</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setEndlessScrollingVertical:</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly along the Y axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setOrientation:</TokenIdentifier>
+			<Abstract type="html">The orientiation (type) of tilemap.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrollingVertical</Declaration>
+			<Declaration>@property (atomic) KKTilemapOrientation orientation</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats along the vertical axis.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrollingVertical</Anchor>
+			<ReturnValue><Abstract type="html">The map's KKTilemapOrientation.</Abstract></ReturnValue>
+			<Anchor>//api/name/orientation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/endlessScrollingVertical</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly along the Y axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/orientation</TokenIdentifier>
+			<Abstract type="html">The orientiation (type) of tilemap.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrollingVertical</Declaration>
+			<Declaration>@property (atomic) KKTilemapOrientation orientation</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats along the vertical axis.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrollingVertical</Anchor>
+			<ReturnValue><Abstract type="html">The map's KKTilemapOrientation.</Abstract></ReturnValue>
+			<Anchor>//api/name/orientation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/endlessScrollingVertical</TokenIdentifier>
-			<Abstract type="html">If YES, this layer will scroll endlessly along the Y axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/orientation</TokenIdentifier>
+			<Abstract type="html">The orientiation (type) of tilemap.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL endlessScrollingVertical</Declaration>
+			<Declaration>@property (atomic) KKTilemapOrientation orientation</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the map wraps around and repeats along the vertical axis.</Abstract></ReturnValue>
-			<Anchor>//api/name/endlessScrollingVertical</Anchor>
+			<ReturnValue><Abstract type="html">The map's KKTilemapOrientation.</Abstract></ReturnValue>
+			<Anchor>//api/name/orientation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setParallaxFactor:</TokenIdentifier>
-			<Abstract type="html">Determines how fast this layer moves in both directions when scrolling the tilemap. Value between -1.0f and 1.0f, usually you only use the range from 0.0f to 1.0f.
-   Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setBackgroundColor:</TokenIdentifier>
+			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint parallaxFactor</Declaration>
+			<Declaration>@property (atomic, copy) NSString *backgroundColor</Declaration>
 			
-			<ReturnValue><Abstract type="html">The layer's parallaxFactor.</Abstract></ReturnValue>
-			<Anchor>//api/name/parallaxFactor</Anchor>
+			<ReturnValue><Abstract type="html">The background color as string. Currently not used by the renderer.</Abstract></ReturnValue>
+			<Anchor>//api/name/backgroundColor</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/parallaxFactor</TokenIdentifier>
-			<Abstract type="html">Determines how fast this layer moves in both directions when scrolling the tilemap. Value between -1.0f and 1.0f, usually you only use the range from 0.0f to 1.0f.
-   Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/backgroundColor</TokenIdentifier>
+			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint parallaxFactor</Declaration>
+			<Declaration>@property (atomic, copy) NSString *backgroundColor</Declaration>
 			
-			<ReturnValue><Abstract type="html">The layer's parallaxFactor.</Abstract></ReturnValue>
-			<Anchor>//api/name/parallaxFactor</Anchor>
+			<ReturnValue><Abstract type="html">The background color as string. Currently not used by the renderer.</Abstract></ReturnValue>
+			<Anchor>//api/name/backgroundColor</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/parallaxFactor</TokenIdentifier>
-			<Abstract type="html">Determines how fast this layer moves in both directions when scrolling the tilemap. Value between -1.0f and 1.0f, usually you only use the range from 0.0f to 1.0f.
-   Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/backgroundColor</TokenIdentifier>
+			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) CGPoint parallaxFactor</Declaration>
+			<Declaration>@property (atomic, copy) NSString *backgroundColor</Declaration>
 			
-			<ReturnValue><Abstract type="html">The layer's parallaxFactor.</Abstract></ReturnValue>
-			<Anchor>//api/name/parallaxFactor</Anchor>
+			<ReturnValue><Abstract type="html">The background color as string. Currently not used by the renderer.</Abstract></ReturnValue>
+			<Anchor>//api/name/backgroundColor</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setTiles:</TokenIdentifier>
-			<Abstract type="html">(Tile Layers Only) Reference to the KTTilemapLayerTiles object which contains the memory buffer for the tile GIDs of this tile layer. Always nil
-for object layers.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setHighestGid:</TokenIdentifier>
+			<Abstract type="html">The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
+   Mainly needed for bounds checks, don't change this value.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKTilemapLayerTiles *tiles</Declaration>
+			<Declaration>@property (atomic) gid_t highestGid</Declaration>
 			
-			<ReturnValue><Abstract type="html">A tile layer's tiles.</Abstract></ReturnValue>
-			<Anchor>//api/name/tiles</Anchor>
+			<ReturnValue><Abstract type="html">The highest-numbered (theoretical) gid considering all tilesets.</Abstract></ReturnValue>
+			<Anchor>//api/name/highestGid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/tiles</TokenIdentifier>
-			<Abstract type="html">(Tile Layers Only) Reference to the KTTilemapLayerTiles object which contains the memory buffer for the tile GIDs of this tile layer. Always nil
-for object layers.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/highestGid</TokenIdentifier>
+			<Abstract type="html">The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
+   Mainly needed for bounds checks, don't change this value.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKTilemapLayerTiles *tiles</Declaration>
+			<Declaration>@property (atomic) gid_t highestGid</Declaration>
 			
-			<ReturnValue><Abstract type="html">A tile layer's tiles.</Abstract></ReturnValue>
-			<Anchor>//api/name/tiles</Anchor>
+			<ReturnValue><Abstract type="html">The highest-numbered (theoretical) gid considering all tilesets.</Abstract></ReturnValue>
+			<Anchor>//api/name/highestGid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/tiles</TokenIdentifier>
-			<Abstract type="html">(Tile Layers Only) Reference to the KTTilemapLayerTiles object which contains the memory buffer for the tile GIDs of this tile layer. Always nil
-for object layers.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/highestGid</TokenIdentifier>
+			<Abstract type="html">The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
+   Mainly needed for bounds checks, don't change this value.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKTilemapLayerTiles *tiles</Declaration>
+			<Declaration>@property (atomic) gid_t highestGid</Declaration>
 			
-			<ReturnValue><Abstract type="html">A tile layer's tiles.</Abstract></ReturnValue>
-			<Anchor>//api/name/tiles</Anchor>
+			<ReturnValue><Abstract type="html">The highest-numbered (theoretical) gid considering all tilesets.</Abstract></ReturnValue>
+			<Anchor>//api/name/highestGid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/tileGidAt:</TokenIdentifier>
-			<Abstract type="html">Returns the tile GID at a specific tile coordinate, without the flip flags normally encoded in the GID. Returns 0 if there is no tile set at this coordinate
-   (empty tile) or if the tile coordinate is outside the boundaries of the layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setIPadScaleFactor:</TokenIdentifier>
+			<Abstract type="html">By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>- (gid_t)tileGidAt:(CGPoint)tileCoord</Declaration>
+			<Declaration>@property (atomic) float iPadScaleFactor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The iPad scale factor.</Abstract></ReturnValue>
+			<Anchor>//api/name/iPadScaleFactor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/iPadScaleFactor</TokenIdentifier>
+			<Abstract type="html">By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) float iPadScaleFactor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The iPad scale factor.</Abstract></ReturnValue>
+			<Anchor>//api/name/iPadScaleFactor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/iPadScaleFactor</TokenIdentifier>
+			<Abstract type="html">By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) float iPadScaleFactor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The iPad scale factor.</Abstract></ReturnValue>
+			<Anchor>//api/name/iPadScaleFactor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setScaleTilesetSpacingAndMargin:</TokenIdentifier>
+			<Abstract type="html">If set to YES, will also scale each tileset's spacing &amp; margin properties. This can be used if you simply upscale an iPhone tileset with an image program,
+   which will also increase any existing spacing &amp; margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
+   atlas files regardless of the contained image's scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
+   neither spacing between tiles nor margin between outermost tiles and texture border.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL scaleTilesetSpacingAndMargin</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether to also scale up spacing and margin if iPadScaleFactor is > 1.0.</Abstract></ReturnValue>
+			<Anchor>//api/name/scaleTilesetSpacingAndMargin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/scaleTilesetSpacingAndMargin</TokenIdentifier>
+			<Abstract type="html">If set to YES, will also scale each tileset's spacing &amp; margin properties. This can be used if you simply upscale an iPhone tileset with an image program,
+   which will also increase any existing spacing &amp; margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
+   atlas files regardless of the contained image's scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
+   neither spacing between tiles nor margin between outermost tiles and texture border.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL scaleTilesetSpacingAndMargin</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether to also scale up spacing and margin if iPadScaleFactor is > 1.0.</Abstract></ReturnValue>
+			<Anchor>//api/name/scaleTilesetSpacingAndMargin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/scaleTilesetSpacingAndMargin</TokenIdentifier>
+			<Abstract type="html">If set to YES, will also scale each tileset's spacing &amp; margin properties. This can be used if you simply upscale an iPhone tileset with an image program,
+   which will also increase any existing spacing &amp; margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
+   atlas files regardless of the contained image's scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
+   neither spacing between tiles nor margin between outermost tiles and texture border.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL scaleTilesetSpacingAndMargin</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether to also scale up spacing and margin if iPadScaleFactor is > 1.0.</Abstract></ReturnValue>
+			<Anchor>//api/name/scaleTilesetSpacingAndMargin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/applyIpadScaleFactor</TokenIdentifier>
+			<Abstract type="html">Applies the iPadScaleFactor property. You only need to call this if you're creating a tilemap from scratch at runtime, after your map was completely
+   set up. And only if you actually use iPadScaleFactor other than the default. </Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>- (void)applyIpadScaleFactor</Declaration>
+			
+			
+			<Anchor>//api/name/applyIpadScaleFactor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemap/tilemapWithContentsOfFile:</TokenIdentifier>
+			<Abstract type="html">Parse and create a KKTilemap from a file. The file must be in TMX format.
+@param: tmxFile The name of a TMX file in the bundle, or an absolute path to a TMX file in a non-bundle directory.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tilemapWithContentsOfFile:(NSString *)tmxFile</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new instance of KTTilemap initialized with the contents of the TMX file.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapWithContentsOfFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemap/tilemapWithOrientation:mapSize:gridSize:</TokenIdentifier>
+			<Abstract type="html">Creates an empty tilemap. Use this if you want to create your tilemap world entirely in code.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tilemapWithOrientation:(KKTilemapOrientation)orientation mapSize:(CGSize)mapSize gridSize:(CGSize)gridSize</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tileCoord</Name>
-					<Abstract type="html">Coordinate in tiles.</Abstract>
+					<Name>orientation</Name>
+					<Abstract type="html">The orientation (type) of tilemap.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapSize</Name>
+					<Abstract type="html">The size of the tilemap, in tiles.</Abstract>
+				</Parameter><Parameter>
+					<Name>gridSize</Name>
+					<Abstract type="html">The grid size (tile size of the tilemap.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The tile GID (without flags) at the given tile coordinate, or 0 for illegal coordinates.</Abstract></ReturnValue>
-			<Anchor>//api/name/tileGidAt:</Anchor>
+			<ReturnValue><Abstract type="html">A new, empty instance of KTTilemap.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapWithOrientation:mapSize:gridSize:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/tileGidWithFlagsAt:</TokenIdentifier>
-			<Abstract type="html">Like tileAt but returns the GID including the KTTilemapTileFlags. To get just the GID from the returned value use tileAt or mask out
-   the flip flags: gid = (gidWithFlags &amp; KTTilemapTileFlipMask) - you don't normally need the flip flags unless they have some meaning in your game,
-   for example if certain tile GIDs can only be operated from one side (ie a button tile that the player must approach from the correct side to operate it).</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/writeToFile:</TokenIdentifier>
+			<Abstract type="html">Writes the tilemap to a file path. The resulting file will be in TMX format.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>- (gid_t)tileGidWithFlagsAt:(CGPoint)tileCoord</Declaration>
+			<Declaration>- (void)writeToFile:(NSString *)path</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tileCoord</Name>
-					<Abstract type="html">Coordinate in tiles.</Abstract>
+					<Name>path</Name>
+					<Abstract type="html">An absolute path to a file in a writable directory (ie AppData or Documents).</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The tile GID (with flags) at the given tile coordinate, or 0 for illegal coordinates.</Abstract></ReturnValue>
-			<Anchor>//api/name/tileGidWithFlagsAt:</Anchor>
+			
+			<Anchor>//api/name/writeToFile:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setTileGid:tileCoord:</TokenIdentifier>
-			<Abstract type="html">Sets a tile gid at the given tile coordinate, leaves the tile's flags (flipping etc) untouched. A tile gid of 0 will "clear" the tile (empty tile).</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setTilesets:</TokenIdentifier>
+			<Abstract type="html">List of tilesets (KKTilemapTileset used by this map.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>- (void)setTileGid:(gid_t)gid tileCoord:(CGPoint)tileCoord</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *tilesets</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of KTTilemapTileset objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilesets</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/tilesets</TokenIdentifier>
+			<Abstract type="html">List of tilesets (KKTilemapTileset used by this map.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSArray *tilesets</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of KTTilemapTileset objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilesets</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/tilesets</TokenIdentifier>
+			<Abstract type="html">List of tilesets (KKTilemapTileset used by this map.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSArray *tilesets</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of KTTilemapTileset objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilesets</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/addTileset:</TokenIdentifier>
+			<Abstract type="html">Adds a tileset to the list of tilesets. Only needed when creating or changing a tilemap at runtime.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTileset:(KKTilemapTileset *)tileset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileset</Name>
+					<Abstract type="html">The tileset to add to the tilemap.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTileset:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/tilesetForGid:</TokenIdentifier>
+			<Abstract type="html">Returns the tileset for a specific gid. Mainly to access that tile's properties. Will return nil for invalid gids (gid that points to a non-existing tileset,
+   or if gid is 0).</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>- (KKTilemapTileset *)tilesetForGid:(gid_t)gid</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>gid</Name>
-					<Abstract type="html">The tile GID to set. Must be a valid GID. GID flags will be ignored.</Abstract>
-				</Parameter><Parameter>
-					<Name>tileCoord</Name>
-					<Abstract type="html">The tile coordinate of the tile to set the gid at.</Abstract>
+					<Abstract type="html">The GID of a tile.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setTileGid:tileCoord:</Anchor>
+			<ReturnValue><Abstract type="html">The tileset the gid is part of, or nil if the GID is out of bounds.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilesetForGid:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setTileGidWithFlags:tileCoord:</TokenIdentifier>
-			<Abstract type="html">Sets a tile gid at the given tile coordinate, including tile flags. Tile flags must already be OR'ed into the gid. A tile gid of 0 will "clear" the tile (empty tile).</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/tilesetNamed:</TokenIdentifier>
+			<Abstract type="html">The name of a tileset as displayed in Tiled.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>- (void)setTileGidWithFlags:(gid_t)gidWithFlags tileCoord:(CGPoint)tileCoord</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>gidWithFlags</Name>
-					<Abstract type="html">The tile GID including flags to set. Must be a valid GID.</Abstract>
-				</Parameter><Parameter>
-					<Name>tileCoord</Name>
-					<Abstract type="html">The tile coordinate of the tile to set the gid at.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setTileGidWithFlags:tileCoord:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/clearTileAt:</TokenIdentifier>
-			<Abstract type="html">Clears a tile at the given tile coordinate (sets gid to 0, clears all flags). Same as calling setTileGidWithFlags:0.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>- (void)clearTileAt:(CGPoint)tileCoord</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tileCoord</Name>
-					<Abstract type="html">The tile coordinate of the tile to clear (remove).</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/clearTileAt:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/pathsWithBlockingGids:</TokenIdentifier>
-			<Abstract type="html">(Tile Layers only) Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>- (NSArray *)pathsWithBlockingGids:(KKIntegerArray *)blockingGids</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>blockingGids</Name>
-					<Abstract type="html">A list of GID numbers which are considered blocking.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">An array containing KKPointArray, each defines a single contour's line segments.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathsWithBlockingGids:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/pathsFromObjects</TokenIdentifier>
-			<Abstract type="html">(Object Layers only) Creates and returns a CGPath for every polygon, polyline, rectangle and ellipse object on the layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>- (NSArray *)pathsFromObjects</Declaration>
-			
-			
-			<Anchor>//api/name/pathsFromObjects</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setObjects:</TokenIdentifier>
-			<Abstract type="html">(Object Layers Only) A list of "objects" on this layer. These "objects" are Tiled's rectangles, polylines and polygons. They can be used to position
-tilemap objects not editable in Tiled by (normally) using the first point of such an "object" as the origin for the actual game object.
-Always nil for tile layers.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *objects</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of an object layer's KTTilemapObject objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/objects</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/objects</TokenIdentifier>
-			<Abstract type="html">(Object Layers Only) A list of "objects" on this layer. These "objects" are Tiled's rectangles, polylines and polygons. They can be used to position
-tilemap objects not editable in Tiled by (normally) using the first point of such an "object" as the origin for the actual game object.
-Always nil for tile layers.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *objects</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of an object layer's KTTilemapObject objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/objects</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/objects</TokenIdentifier>
-			<Abstract type="html">(Object Layers Only) A list of "objects" on this layer. These "objects" are Tiled's rectangles, polylines and polygons. They can be used to position
-tilemap objects not editable in Tiled by (normally) using the first point of such an "object" as the origin for the actual game object.
-Always nil for tile layers.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *objects</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of an object layer's KTTilemapObject objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/objects</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/addObject:</TokenIdentifier>
-			<Abstract type="html">Adds a tilemap object if the layer is an object layer. Ignored if the layer is a tile layer.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>- (void)addObject:(KKTilemapObject *)object</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">The tilemap object to add to the layer.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addObject:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/removeObject:</TokenIdentifier>
-			<Abstract type="html">Removes a tilemap object if the layer is an object layer. Ignored if the layer is a tile layer, or layer does not contain object.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeObject:(KKTilemapObject *)object</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">The tilemap object to remove from the layer.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeObject:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/objectAtIndex:</TokenIdentifier>
-			<Abstract type="html">The object at the given index.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>- (KKTilemapObject *)objectAtIndex:(NSUInteger)index</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">The object at the given index.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The object at the given index. Returns nil if object does not exist or the index is out of bounds (contrary to NSArray which would raise an exception).</Abstract></ReturnValue>
-			<Anchor>//api/name/objectAtIndex:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/objectByName:</TokenIdentifier>
-			<Abstract type="html">The name identifying an object.</Abstract>
-			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
-			
-			<Declaration>- (KKTilemapObject *)objectByName:(NSString *)name</Declaration>
+			<Declaration>- (KKTilemapTileset *)tilesetNamed:(NSString *)name</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>name</Name>
-					<Abstract type="html">The name identifying an object.</Abstract>
+					<Abstract type="html">The name of a tileset as displayed in Tiled.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">the first object with the given name, or nil if there's no object with this name on this layer. Object names are case-sensitive!</Abstract></ReturnValue>
-			<Anchor>//api/name/objectByName:</Anchor>
+			<ReturnValue><Abstract type="html">the tileset with the given name. Returns nil if there's no tileset with this name.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilesetNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/replaceTileset:withTileset:</TokenIdentifier>
+			<Abstract type="html">Replaces a tileset with another (actually: it creates an alias) so that tiles drawn with the originalTileset will now be drawn using the otherTileset.
+   This can be used to change the atmosphere of the tilemap, perhaps by changing from summer to winter, from "before attack" to "after attack", and so on.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>- (void)replaceTileset:(KKTilemapTileset *)originalTileset withTileset:(KKTilemapTileset *)otherTileset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>originalTileset</Name>
+					<Abstract type="html">The tileset you want to replace.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherTileset</Name>
+					<Abstract type="html">The tileset you want to replace it with.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/replaceTileset:withTileset:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/restoreTileset:</TokenIdentifier>
+			<Abstract type="html">If tileset was replaced with replaceTileset: method, will restore it so that tiles will be drawn from this tileset again.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>- (void)restoreTileset:(KKTilemapTileset *)originalTileset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>originalTileset</Name>
+					<Abstract type="html">The tileset to restore.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/restoreTileset:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setLayers:</TokenIdentifier>
+			<Abstract type="html">List of layers (KKTilemapLayer used by this map, in the draw order respectively the reverse order they appear
+in Tiled's Layers list (bottom-most = first, top-most = last).</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSArray *layers</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of KTTilemapLayer objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/layers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/layers</TokenIdentifier>
+			<Abstract type="html">List of layers (KKTilemapLayer used by this map, in the draw order respectively the reverse order they appear
+in Tiled's Layers list (bottom-most = first, top-most = last).</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSArray *layers</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of KTTilemapLayer objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/layers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/layers</TokenIdentifier>
+			<Abstract type="html">List of layers (KKTilemapLayer used by this map, in the draw order respectively the reverse order they appear
+in Tiled's Layers list (bottom-most = first, top-most = last).</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSArray *layers</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of KTTilemapLayer objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/layers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/addLayer:</TokenIdentifier>
+			<Abstract type="html">Adds a layer to the list of layers.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>- (void)addLayer:(KKTilemapLayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">The layer to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addLayer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/layerNamed:</TokenIdentifier>
+			<Abstract type="html">The name identifying a layer, as edited in Tiled.</Abstract>
+			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			
+			<Declaration>- (KKTilemapLayer *)layerNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name identifying a layer, as edited in Tiled.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The first layer with the given name, or nil if there's no layer with that name. Layer names are case-sensitive!</Abstract></ReturnValue>
+			<Anchor>//api/name/layerNamed:</Anchor>
 		</Token>
 		
 	</File>

@@ -10,24 +10,23 @@
 #import <netinet/in.h>
 #import "Reachability.h"
 #import "KKModel.h"
-
-NSString* const KKDownloadProjectFilesURL = @"KKDownloadProjectFiles:URL";
+#import "NSFileManager+KoboldKit.h"
 
 @implementation KKDownloadProjectFiles
 
-+(id) downloadProjectFilesWithModel:(KKModel*)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock
++(id) downloadProjectFilesWithURL:(NSURL*)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock
 {
-	return [[self alloc] initWithModel:model completionBlock:completionBlock];
+	return [[self alloc] initWithURL:url completionBlock:completionBlock];
 }
 
--(id) initWithModel:(KKModel*)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock
+-(id) initWithURL:(NSURL*)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock
 {
 	self = [super init];
 	if (self)
 	{
 		_completionBlock = [completionBlock copy];
 		
-		NSDictionary* remoteFiles = [self directoryContentsOfURL:[model objectForKey:KKDownloadProjectFilesURL]];
+		NSDictionary* remoteFiles = [self directoryContentsOfURL:url];
 		[self performSelectorInBackground:@selector(downloadRemoteFiles:) withObject:remoteFiles];
 	}
 	return self;
@@ -46,17 +45,18 @@ NSString* const KKDownloadProjectFilesURL = @"KKDownloadProjectFiles:URL";
 			NSArray* files = [remoteFiles objectForKey:key];
 			for (NSString* file in files)
 			{
-				NSURL* fileURL = [key URLByAppendingPathComponent:file];
-				if ([self remoteFileIsNewer:fileURL])
+				NSURL* remoteFileURL = [key URLByAppendingPathComponent:file];
+				if ([self remoteFileIsNewer:remoteFileURL])
 				{
 					dispatch_group_async(dispatchGroup, dispatchQueue, ^{
-						NSData* data = [NSData dataWithContentsOfURL:fileURL];
-						if ([data writeToFile:file atomically:YES] == NO)
+						NSData* data = [NSData dataWithContentsOfURL:remoteFileURL];
+						NSString* saveFile = [NSFileManager pathForAppSupportFile:file];
+						if ([data writeToFile:saveFile atomically:YES] == NO)
 						{
-							NSLog(@"FILE SAVE FAILED: %@", file);
+							NSLog(@"FILE SAVE FAILED: %@", saveFile);
 						}
 						
-						NSLog(@"File downloaded: %@", [file lastPathComponent]);
+						NSLog(@"File downloaded: %@", file);
 					});
 				}
 			}
@@ -75,7 +75,7 @@ NSString* const KKDownloadProjectFilesURL = @"KKDownloadProjectFiles:URL";
 	NSError* error;
 	
 	// get the file attributes to retrieve the local file's modified date
-	NSString* localFile = [remoteFileURL lastPathComponent];
+	NSString* localFile = [NSFileManager pathForAppSupportFile:[remoteFileURL lastPathComponent]];
 	NSDictionary* fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:localFile error:&error];
 	if (error)
 	{

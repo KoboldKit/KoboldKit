@@ -1,298 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKNodeController.html">
+	<File path="Classes/KKNodeBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKNodeController</TokenIdentifier>
-			<Abstract type="html">KKNodeController adds game component (behavior, model functionality to a node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKNodeBehavior</TokenIdentifier>
+			<Abstract type="html">Behaviors add custom logic to a node.
+Behaviors differ from actions in several ways:
+- they are useful for any logic code that is hard or impossible to implement with (custom) actions, such as event processing
+- they usually run indefinitely and can be paused by pausing the controller
+- they may have a state (ivars)
+- they may have a public interface (properties, methods)
+- they can not be reversed</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="19"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setNode:</TokenIdentifier>
-			<Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setName:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/name</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/name</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setController:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/controller</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/controller</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setNode:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			<ReturnValue><Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract></ReturnValue>
+			
 			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/node</TokenIdentifier>
-			<Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/node</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			<ReturnValue><Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract></ReturnValue>
+			
 			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/node</TokenIdentifier>
-			<Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/node</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			<ReturnValue><Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract></ReturnValue>
+			
 			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setUserData:</TokenIdentifier>
-			<Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setWantsUpdate:</TokenIdentifier>
+			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			<ReturnValue><Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/userData</Anchor>
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/userData</TokenIdentifier>
-			<Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/wantsUpdate</TokenIdentifier>
+			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			<ReturnValue><Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/userData</Anchor>
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/userData</TokenIdentifier>
-			<Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/wantsUpdate</TokenIdentifier>
+			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			<ReturnValue><Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/userData</Anchor>
+			
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setBehaviors:</TokenIdentifier>
-			<Abstract type="html">The list of behaviors of the node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
-			
-			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviors</TokenIdentifier>
-			<Abstract type="html">The list of behaviors of the node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
-			
-			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/behaviors</TokenIdentifier>
-			<Abstract type="html">The list of behaviors of the node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
-			
-			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setModel:</TokenIdentifier>
-			<Abstract type="html">The model object associated with this controller/node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/model</TokenIdentifier>
-			<Abstract type="html">The model object associated with this controller/node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/model</TokenIdentifier>
-			<Abstract type="html">The model object associated with this controller/node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setPaused:</TokenIdentifier>
-			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
-also check the controller's paused state to ensure they don't process/forward events while paused.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL paused</Declaration>
-			
-			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/paused</TokenIdentifier>
-			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
-also check the controller's paused state to ensure they don't process/forward events while paused.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL paused</Declaration>
-			
-			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/paused</TokenIdentifier>
-			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
-also check the controller's paused state to ensure they don't process/forward events while paused.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL paused</Declaration>
-			
-			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKNodeController/controllerWithBehaviors:</TokenIdentifier>
-			<Abstract type="html">Creates a controller with a list of behaviors.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>+ (id)controllerWithBehaviors:(NSArray *)behaviors</Declaration>
-			
-			
-			<Anchor>//api/name/controllerWithBehaviors:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/initWithBehaviors:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setEnabled:</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithBehaviors:(NSArray *)behaviors</Declaration>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
 			
-			<Anchor>//api/name/initWithBehaviors:</Anchor>
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehavior:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/enabled</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)addBehavior:(KKNodeBehavior *)behavior</Declaration>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
 			
-			<Anchor>//api/name/addBehavior:</Anchor>
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehavior:withKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/enabled</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)addBehavior:(KKNodeBehavior *)behavior withKey:(NSString *)key</Declaration>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
 			
-			<Anchor>//api/name/addBehavior:withKey:</Anchor>
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehaviors:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKNodeBehavior/behavior</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)addBehaviors:(NSArray *)behaviors</Declaration>
+			<Declaration>+ (id)behavior</Declaration>
 			
 			
-			<Anchor>//api/name/addBehaviors:</Anchor>
+			<Anchor>//api/name/behavior</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorForKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/removeFromNode</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (KKNodeBehavior *)behaviorForKey:(NSString *)key</Declaration>
+			<Declaration>- (void)removeFromNode</Declaration>
 			
 			
-			<Anchor>//api/name/behaviorForKey:</Anchor>
+			<Anchor>//api/name/removeFromNode</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/hasBehaviors</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didJoinController</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)hasBehaviors</Declaration>
+			<Declaration>- (void)didJoinController</Declaration>
 			
 			
-			<Anchor>//api/name/hasBehaviors</Anchor>
+			<Anchor>//api/name/didJoinController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehavior:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didLeaveController</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)removeBehavior:(KKNodeBehavior *)behavior</Declaration>
+			<Declaration>- (void)didLeaveController</Declaration>
 			
 			
-			<Anchor>//api/name/removeBehavior:</Anchor>
+			<Anchor>//api/name/didLeaveController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehaviorForKey:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/update:</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeBehaviorForKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/removeBehaviorForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeAllBehaviors</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeAllBehaviors</Declaration>
-			
-			
-			<Anchor>//api/name/removeAllBehaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/update:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
 			
@@ -301,9 +238,9 @@ also check the controller's paused state to ensure they don't process/forward ev
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/didEvaluateActions</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didEvaluateActions</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)didEvaluateActions</Declaration>
 			
@@ -312,14 +249,36 @@ also check the controller's paused state to ensure they don't process/forward ev
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/didSimulatePhysics</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didSimulatePhysics</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)didSimulatePhysics</Declaration>
 			
 			
 			<Anchor>//api/name/didSimulatePhysics</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/postNotificationName:</TokenIdentifier>
+			<Abstract type="html">(not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)postNotificationName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/postNotificationName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/postNotificationName:userInfo:</TokenIdentifier>
+			<Abstract type="html">(not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys.</Abstract>
+			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)postNotificationName:(NSString *)name userInfo:(NSDictionary *)userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/postNotificationName:userInfo:</Anchor>
 		</Token>
 		
 	</File>

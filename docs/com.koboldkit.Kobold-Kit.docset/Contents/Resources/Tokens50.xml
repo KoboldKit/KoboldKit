@@ -1,124 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/NSXMLStreamWriter.html">
+	<File path="Categories/SKScene+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/NSXMLStreamWriter</TokenIdentifier>
-			<Abstract type="html">xml stream writer with namespace support</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/SKScene(KoboldKit)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
 			
 			<NodeRef refid="50"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeStartElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/observeNotification:selector:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeStartElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector</Declaration>
 			
 			
-			<Anchor>//api/name/writeStartElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/observeNotification:selector:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEndElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/observeNotification:selector:object:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEndElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector object:(id)notificationSender</Declaration>
 			
 			
-			<Anchor>//api/name/writeEndElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/observeNotification:selector:object:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEmptyElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardNotification:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEmptyElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>- (void)disregardNotification:(NSString *)notificationName</Declaration>
 			
 			
-			<Anchor>//api/name/writeEmptyElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/disregardNotification:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeAttributeWithNamespace:localName:value:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardNotification:object:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeAttributeWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName value:(NSString *)value</Declaration>
+			<Declaration>- (void)disregardNotification:(NSString *)notificationName object:(id)notificationSender</Declaration>
 			
 			
-			<Anchor>//api/name/writeAttributeWithNamespace:localName:value:</Anchor>
+			<Anchor>//api/name/disregardNotification:object:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setPrefix:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">set a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardAllNotifications</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)setPrefix:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
-			
-			
-			<Anchor>//api/name/setPrefix:namespaceURI:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeNamespace:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">write (and set) a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeNamespace:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Declaration>- (void)disregardAllNotifications</Declaration>
 			
 			
-			<Anchor>//api/name/writeNamespace:namespaceURI:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">set the default namespace (empty prefix)</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)setDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			
-			
-			<Anchor>//api/name/setDefaultNamespace:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">write (and set) the default namespace</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			
-			
-			<Anchor>//api/name/writeDefaultNamespace:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getPrefix:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)getPrefix:(NSString *)namespaceURI</Declaration>
-			
-			
-			<Anchor>//api/name/getPrefix:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getNamespaceURI:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)getNamespaceURI:(NSString *)prefix</Declaration>
-			
-			
-			<Anchor>//api/name/getNamespaceURI:</Anchor>
+			<Anchor>//api/name/disregardAllNotifications</Anchor>
 		</Token>
 		
 	</File>

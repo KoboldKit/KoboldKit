@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KKViewController Class Reference</title>
+		<title>NSDictionary(KoboldKit) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KKViewController Class Reference</h1>
+				<h1 class="hideInXcode">NSDictionary(KoboldKit) Category Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -38,11 +38,11 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/kkView">&nbsp;&nbsp;&nbsp;&nbsp;kkView</option>
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/dictionaryWithContentsOfLuaScript:">&nbsp;&nbsp;&nbsp;&nbsp;+ dictionaryWithContentsOfLuaScript:</option>
 	
 	
 	
@@ -68,13 +68,13 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/kkView">kkView</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dictionaryWithContentsOfLuaScript:">dictionaryWithContentsOfLuaScript:</a></span></li>
 	
 </ul></li>
-
-
 
 
 
@@ -83,7 +83,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KKViewController Class Reference" name="top"></a>
+				<a title="NSDictionary(KoboldKit) Category Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -92,18 +92,15 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KKViewController Class Reference</h1>
+						<h1 class="title title-header">NSDictionary(KoboldKit) Category Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">UIViewController</td>
-</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKViewController.h<br />KKViewController.m</td>
+	<td class="specification-value">NSDictionary+KoboldKit.h<br />NSDictionary+KoboldKit.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -113,7 +110,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>View controller for a Kobold Kit view. Creates the <a href="../Classes/KKView.html">KKView</a> and performs other setup tasks.</p>
+						<p>nd</p>
 					</div>
 					
 					
@@ -131,10 +128,11 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/kkView">&nbsp;&nbsp;kkView</a></code>
-		<span class="tooltip"><p>The view controller&rsquo;s view cast to <a href="../Classes/KKView.html">KKView</a>. Use this property to use the <a href="../Classes/KKView.html">KKView</a> methods and properties.</p></span>
+		<code><a href="#//api/name/dictionaryWithContentsOfLuaScript:">+&nbsp;dictionaryWithContentsOfLuaScript:</a></code>
+		<span class="tooltip"><p>Runs the given Lua script file and transforms the returned Lua table into a KVC coded NSDictionary.
+Navigate the table with valueForKeyPath:</p></span>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li>
 						</ul>
@@ -145,29 +143,42 @@
 					
 					
 					
+					
+					
 					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/kkView" title="kkView"></a>
-	<h3 class="subsubtitle method-title">kkView</h3>
+	<a name="//api/name/dictionaryWithContentsOfLuaScript:" title="dictionaryWithContentsOfLuaScript:"></a>
+	<h3 class="subsubtitle method-title">dictionaryWithContentsOfLuaScript:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The view controller&rsquo;s view cast to <a href="../Classes/KKView.html">KKView</a>. Use this property to use the <a href="../Classes/KKView.html">KKView</a> methods and properties.</p>
+		<p>Runs the given Lua script file and transforms the returned Lua table into a KVC coded NSDictionary.
+Navigate the table with valueForKeyPath:</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKView *kkView</code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)dictionaryWithContentsOfLuaScript:(NSString *)<em>scriptFile</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scriptFile</em></dt>
+			<dd><p>The name of a Lua script file.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The view controller&rsquo;s view cast to <a href="../Classes/KKView.html">KKView</a>. Use this property to use the <a href="../Classes/KKView.html">KKView</a> methods and properties.</p>
+		<p>The Lua table as a dictionary, or nil if there are any errors.</p>
 	</div>
 	
 	
@@ -182,15 +193,13 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKViewController.h</code><br />
+		<code class="declared-in-ref">NSDictionary+KoboldKit.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
-					
-					
 					
 					
 					

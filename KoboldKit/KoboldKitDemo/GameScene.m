@@ -80,8 +80,6 @@
 	KKLabelNode* reloadLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
 	reloadLabel.name = @"reload label";
 	reloadLabel.text = @"reload";
-	reloadLabel.fontSize = 20;
-	//reloadLabel.position = CGPointMake(self.size.width - 30, self.size.height - reloadLabel.fontSize);
 	reloadLabel.position = CGPointMake(self.size.width / 2, self.size.height - reloadLabel.fontSize * 1.5);
 	[hudNode addChild:reloadLabel];
 	
@@ -108,7 +106,8 @@
 	[_curtainSprite addChild:loadingLabel];
 
 	// Transfers all changed resource files from the remote server to the specified folder in the app support directory
-	[KKDownloadProjectFiles downloadProjectFilesWithModel:self.kkView.model
+	NSString* url = [self.kkView.model valueForKeyPath:@"devconfig.developmentWebServerURL"];
+	[KKDownloadProjectFiles downloadProjectFilesWithURL:[NSURL URLWithString:url]
 										completionBlock:^(NSDictionary *contents) {
 											[self.kkView reloadConfig];
 											

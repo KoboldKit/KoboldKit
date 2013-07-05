@@ -12,25 +12,25 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKDownloadProjectFiles/downloadProjectFilesWithModel:completionBlock:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/KKDownloadProjectFiles/downloadProjectFilesWithURL:completionBlock:</TokenIdentifier>
 			<Abstract type="html">(nd)</Abstract>
 			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>			
 			
-			<Declaration>+ (id)downloadProjectFilesWithModel:(KKModel *)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
+			<Declaration>+ (id)downloadProjectFilesWithURL:(NSURL *)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
 			
 			
-			<Anchor>//api/name/downloadProjectFilesWithModel:completionBlock:</Anchor>
+			<Anchor>//api/name/downloadProjectFilesWithURL:completionBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKDownloadProjectFiles/initWithModel:completionBlock:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKDownloadProjectFiles/initWithURL:completionBlock:</TokenIdentifier>
 			<Abstract type="html">(nd)</Abstract>
 			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithModel:(KKModel *)model completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
+			<Declaration>- (id)initWithURL:(NSURL *)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
 			
 			
-			<Anchor>//api/name/initWithModel:completionBlock:</Anchor>
+			<Anchor>//api/name/initWithURL:completionBlock:</Anchor>
 		</Token>
 		
 	</File>

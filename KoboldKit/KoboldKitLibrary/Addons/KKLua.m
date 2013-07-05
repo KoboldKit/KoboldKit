@@ -170,12 +170,6 @@ void lua_printStackAt(lua_State* L, int i)
 {
 	NSAssert1(aFile != nil, @"%@: file is nil", NSStringFromSelector(_cmd));
 
-	NSString* path = [aFile lastPathComponent];
-	NSString* dir = [aFile stringByDeletingLastPathComponent];
-	aFile = [[NSBundle mainBundle] pathForResource:path
-											ofType:nil
-									   inDirectory:dir];
-
 	BOOL success = NO;
 	if (aFile && [[NSFileManager defaultManager] fileExistsAtPath:aFile])
 	{
@@ -190,28 +184,6 @@ void lua_printStackAt(lua_State* L, int i)
 	}
 
 	return success;
-} /* doFile */
-
-+(BOOL) doFile:(NSString*)aFile prefixCode:(NSString*)aPrefix suffixCode:(NSString*)aSuffix
-{
-	NSAssert1(aFile != nil, @"%@: file is nil", NSStringFromSelector(_cmd));
-
-	aFile = [[NSBundle mainBundle] pathForResource:[aFile lastPathComponent]
-											ofType:nil
-									   inDirectory:[aFile stringByDeletingLastPathComponent]];
-
-	if (aPrefix == nil)
-	{
-		aPrefix = @"";
-	}
-
-	if (aSuffix == nil)
-	{
-		aSuffix = @"";
-	}
-
-	NSString* script = [NSString stringWithFormat:@"%@;%@\n%@", aPrefix, [NSString stringWithContentsOfFile:aFile encoding:NSUTF8StringEncoding error:nil], aSuffix];
-	return [KKLua doString:script];
 } /* doFile */
 
 +(BOOL) doString:(NSString*)aString

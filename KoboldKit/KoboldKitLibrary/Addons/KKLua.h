@@ -44,9 +44,6 @@ void lua_printStackAt(lua_State* L, int i);
    is more natural for Objective-C programmers.*/
 +(BOOL) doFile:(NSString*)aFile;
 
-/** Like doFile but allows to add some Lua code dynamically either before or after the contents of the file, or both. */
-+(BOOL) doFile:(NSString*)aFile prefixCode:(NSString*)aPrefix suffixCode:(NSString*)aSuffix;
-
 /** Runs the Lua code passed in as string.
    Returns YES if the execution was successful and NO if it failed. Note that this is different from Lua,
    where a return value of 0 indicates success and 1 or higher indicates an error. But YES == success

@@ -15,16 +15,12 @@
 {
 	[self addPleaseWaitLabel];
 	
-	// Enter IP address and port of the webserver running on your local developer machine.
-	// Note: devices must be connected via Wifi to the same subnet as your dev machine,
-	// and if the dev machine is running a firewall the port must be open.
-	[self.kkView.model setObject:[NSURL URLWithString:@"http://10.0.0.8:32111"] forKey:KKDownloadProjectFilesURL];
-	
+	// Transfers all changed resource files from the remote server to the app support directory.
+	// Enter IP address and port of the webserver running on your local developer machine in devconfig.lua.
+	// Note: devices must be connected via Wifi to the same subnet as your dev machine, and if the dev machine is running a firewall
+	// or behind a router you may need to open ports or setup port forwarding.
 	NSString* url = [self.kkView.model valueForKeyPath:@"devconfig.developmentWebServerURL"];
-	LOG_EXPR(url);
-	
-	// Transfers all changed resource files from the remote server to the specified folder in the app support directory
-	[KKDownloadProjectFiles downloadProjectFilesWithModel:self.kkView.model
+	[KKDownloadProjectFiles downloadProjectFilesWithURL:[NSURL URLWithString:url]
 										  completionBlock:^(NSDictionary *contents) {
 											[self didDownloadProjectFiles:contents];
 										}];

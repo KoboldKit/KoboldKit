@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapLayerNode.html">
+	<File path="Classes/KKTilemapLayerContourTracer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerNode</TokenIdentifier>
-			<Abstract type="html">(not documented) may be removed</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerContourTracer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>
 			
 			<NodeRef refid="28"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerContourTracer/setContourSegments:</TokenIdentifier>
+			<Abstract type="html">Contains KTPointArray of points definining a single contour's line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
+			
+			
+			<Anchor>//api/name/contourSegments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerContourTracer/contourSegments</TokenIdentifier>
+			<Abstract type="html">Contains KTPointArray of points definining a single contour's line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
+			
+			
+			<Anchor>//api/name/contourSegments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerContourTracer/contourSegments</TokenIdentifier>
+			<Abstract type="html">Contains KTPointArray of points definining a single contour's line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
+			
+			
+			<Anchor>//api/name/contourSegments</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

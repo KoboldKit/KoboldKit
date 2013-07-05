@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Reachability.html">
+	<File path="Classes/KKViewOriginNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Reachability</TokenIdentifier>
-			<Abstract type="html">Does ARC support support GCD objects?
-It does if the minimum deployment target is iOS 6+ or Mac OS X 8+</Abstract>
-			<DeclaredIn>Reachability.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKViewOriginNode</TokenIdentifier>
+			<Abstract type="html">Children of this node will always have their origin at the lower left corner of the view,
+regardless of the scene's anchorPoint. This class is mainly used to keep HUD elements
+in a scrolling world fixed on the screen with the origin (0,0) fixed to the lower left corner.</Abstract>
+			<DeclaredIn>KKViewOriginNode.h</DeclaredIn>
 			
 			<NodeRef refid="43"/>
 		</Token>
