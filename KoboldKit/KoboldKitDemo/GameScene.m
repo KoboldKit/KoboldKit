@@ -274,10 +274,10 @@
 {
 	KKViewOriginNode* joypadNode = [KKViewOriginNode node];
 	[self addChild:joypadNode];
-	
+
 	SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
 
-	KKSpriteNode* dpadNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_directions_right"]];
+	KKSpriteNode* dpadNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_directions_left"]];
 	dpadNode.position = CGPointMake(dpadNode.size.width / 2 + 10, dpadNode.size.height / 2 + 10);
 	[joypadNode addChild:dpadNode];
 	
