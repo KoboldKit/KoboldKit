@@ -7,6 +7,7 @@
 //
 
 #import "KKTypes.h"
+#import <SpriteKit/SpriteKit.h>
 
 /** @file KKTilemap.h */
 
@@ -56,8 +57,8 @@ typedef enum : unsigned char
 /** The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.
 
    TILED-EDITABLE
- @returns The background color as string. Currently not used by the renderer. */
-@property (atomic, copy) NSString* backgroundColor;
+ @returns The background color. */
+@property (atomic) SKColor* backgroundColor;
 /** The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
    Mainly needed for bounds checks, don't change this value.
  @returns The highest-numbered (theoretical) gid considering all tilesets. */

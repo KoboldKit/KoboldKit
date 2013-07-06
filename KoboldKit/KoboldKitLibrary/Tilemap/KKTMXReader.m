@@ -47,6 +47,8 @@
 #import "base64.h"
 #import "ZipUtils.h"
 
+#import "KKSpriteKit.h"
+
 @implementation KKTMXReader
 
 -(id) init
@@ -141,7 +143,21 @@
 	gridSize.height = [[attributes objectForKey:@"tileheight"] intValue];
 	_tilemap.gridSize = gridSize;
 
-	_tilemap.backgroundColor = [attributes objectForKey:@"backgroundcolor"];
+	NSString* bgColor = [attributes objectForKey:@"backgroundcolor"];
+	if (bgColor)
+	{
+		NSScanner* scanner = [NSScanner scannerWithString:[bgColor substringFromIndex:1]];
+		unsigned int hex;
+		if ([scanner scanHexInt:&hex])
+		{
+			int r = (hex >> 16) & 0xFF;
+			int g = (hex >>  8) & 0xFF;
+			int b = (hex      ) & 0xFF;
+
+			_tilemap.backgroundColor = [SKColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1.0];
+			LOG_EXPR(_tilemap.backgroundColor);
+		}
+	}
 }
 
 -(void) parseTilesetWithAttributes:(NSDictionary*)attributes

@@ -42,6 +42,9 @@
 	_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:_tmxFile];
 	[self addChild:_tilemapNode];
 	
+	// test write TMX
+	[_tilemapNode.tilemap writeToFile:[NSFileManager pathForDocumentsFile:@"testWrite.tmx"]];
+	
 	// apply global settings from Tiled
 	KKTilemapProperties* mapProperties = _tilemapNode.tilemap.properties;
 	self.physicsWorld.gravity = CGPointMake(0, [mapProperties numberForKey:@"physicsGravityY"].floatValue);

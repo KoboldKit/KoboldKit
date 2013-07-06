@@ -144,7 +144,13 @@ NSString* stringFromUnsignedInt(unsigned int u)
 	[_xmlWriter writeAttribute:@"height" value:intStringFromFloat(tilemap.size.height)];
 	[_xmlWriter writeAttribute:@"tilewidth" value:intStringFromFloat(tilemap.gridSize.width)];
 	[_xmlWriter writeAttribute:@"tileheight" value:intStringFromFloat(tilemap.gridSize.height)];
-	[_xmlWriter writeAttribute:@"backgroundcolor" value:tilemap.backgroundColor];
+	
+	const CGFloat* components = CGColorGetComponents(tilemap.backgroundColor.CGColor);
+	NSString* colorString = [NSString stringWithFormat:@"#%02x%02x%02x",
+							 (int)(0xFF * components[0]),
+							 (int)(0xFF * components[1]),
+							 (int)(0xFF * components[2])];
+	[_xmlWriter writeAttribute:@"backgroundcolor" value:colorString];
 
 	[self writeProperties:tilemap.properties];
 

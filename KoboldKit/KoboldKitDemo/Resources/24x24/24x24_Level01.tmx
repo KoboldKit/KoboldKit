@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="40" height="27" tilewidth="24" tileheight="24">
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="40" height="27" tilewidth="24" tileheight="24" backgroundcolor="#827ede">
  <properties>
   <property name="_iPadScaleFactor" value="2"/>
   <property name="_scaleTilesetSpacingAndMargin" value="YES"/>
@@ -13,14 +14,17 @@
   </properties>
   <image source="Tileset_Geometry_24x24.png" width="256" height="256"/>
  </tileset>
- <layer name="bg layer" width="40" height="27">
+ <layer name="bg layer" width="40" height="27" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwwEJAAAMBKHL8v1DLsdAwVVTVVVVffwAt7WPcQ==
   </data>
  </layer>
  <layer name="main layer" width="40" height="27">
+  <properties>
+   <property name="_mainTileLayer" value="YES"/>
+  </properties>
   <data encoding="base64" compression="zlib">
-   eJztlssKgCAQRaeCNhG1SahNte//vy9dBBKODgrOFHPg7hQO1yeAoighGm6BBAO3QATX3cwtEUFCd66jFomE7iR0FEP9cHabw8sZGLPYGC99HbVsdL3LUL8y3ufF8OqQwN4XPx2bHY0J/u2/An5HP/f4hsytwUgYw3l2v+B3JcLpl9qfUv6jOdyJaQTj
+   eJxjYBgFo2AUjALqAsaBdgABwD3QDmCAhBETDiwwgO6CgcEQRvjAqPtwA3kgVkDCiljUiAKxGBJmo4/TyAaj8U0ZGHUfZQA9vwwVgKuOgWHmgXMaUYCfYXi7X5IBdxkNK8elsOijF+AlQs1A5t2h4D4dAngg3UcofQ6W9ig5AACWWwSt
   </data>
  </layer>
  <objectgroup name="game objects" width="40" height="27">

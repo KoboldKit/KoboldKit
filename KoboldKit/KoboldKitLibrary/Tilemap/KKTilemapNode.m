@@ -43,6 +43,8 @@
 	{
 		[self observeSceneEvents];
 		
+		self.scene.backgroundColor = _tilemap.backgroundColor;
+		
 		for (KKTilemapLayer* layer in _tilemap.layers)
 		{
 			if (layer.isTileLayer)
