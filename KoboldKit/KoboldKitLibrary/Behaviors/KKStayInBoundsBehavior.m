@@ -28,6 +28,7 @@
 -(void) didJoinController
 {
 	_wantsUpdate = YES;
+	_nodeIsSprite = [self.node isKindOfClass:[SKSpriteNode class]];
 
 	// update once immediately
 	[self didSimulatePhysics];
@@ -36,24 +37,33 @@
 -(void) didSimulatePhysics
 {
 	SKNode* node = self.node;
-	CGPoint pos = node.position;
+	CGPoint nodePos = node.position;
+	CGSize nodeSize = CGSizeZero;
+	CGPoint anchorPoint = CGPointZero;
 
+	if (_nodeIsSprite)
+	{
+		SKSpriteNode* sprite = (SKSpriteNode*)node;
+		nodeSize = sprite.size;
+		anchorPoint = sprite.anchorPoint;
+	}
+	
 	SKPhysicsBody* body = node.physicsBody;
 	CGPoint velocity = body.velocity;
 	
-	// keep camera within defined borders
+	// keep node within defined borders
 	if (_bounds.origin.x != INFINITY && _bounds.size.width != INFINITY)
 	{
 		float maxWidth = _bounds.origin.x + _bounds.size.width - 1;
-		if (pos.x > maxWidth)
+		if ((nodePos.x + nodeSize.width * (1.0 - anchorPoint.x)) > maxWidth)
 		{
-			pos.x = maxWidth;
+			nodePos.x = maxWidth - nodeSize.width * (1.0 - anchorPoint.x);
 			velocity.x = 0;
 		}
 		
-		if (pos.x < _bounds.origin.x)
+		if ((nodePos.x - nodeSize.width * anchorPoint.x) < _bounds.origin.x)
 		{
-			pos.x = _bounds.origin.x;
+			nodePos.x = _bounds.origin.x + nodeSize.width * anchorPoint.x;
 			velocity.x = 0;
 		}
 	}
@@ -61,20 +71,20 @@
 	if (_bounds.origin.y != INFINITY && _bounds.size.height != INFINITY)
 	{
 		float maxHeight = _bounds.origin.y + _bounds.size.height - 1;
-		if (pos.y > maxHeight)
+		if ((nodePos.y + nodeSize.height * (1.0 - anchorPoint.y)) > maxHeight)
 		{
-			pos.y = maxHeight;
+			nodePos.y = maxHeight - nodeSize.height * (1.0 - anchorPoint.y);
 			velocity.y = 0;
 		}
 		
-		if (pos.y < _bounds.origin.y)
+		if ((nodePos.y - nodeSize.height * anchorPoint.y) < _bounds.origin.y)
 		{
-			pos.y = _bounds.origin.y;
+			nodePos.y = _bounds.origin.y + nodeSize.height * anchorPoint.y;
 			velocity.y = 0;
 		}
 	}
 	
-	node.position = pos;
+	node.position = nodePos;
 	body.velocity = velocity;
 }
 
@@ -114,6 +124,7 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 {
 	KKStayInBoundsBehavior* copy = [[super copyWithZone:zone] init];
 	copy->_bounds = _bounds;
+	copy->_nodeIsSprite = _nodeIsSprite;
 	return copy;
 }
 
