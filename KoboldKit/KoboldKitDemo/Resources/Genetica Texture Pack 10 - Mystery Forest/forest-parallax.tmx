@@ -57,11 +57,11 @@
    <property name="_endlessScrollingHorizontal" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztVNkKwkAMXG/tWnsgWtD//04T2UCIaRLaii8ODHvkmi1NUvpjCPhUwAuwBp6+K0fFGdgAW2BW7KgPtaHGKfq206W9gfpQG2rU9HlYz6xvYQ88AI9l3Y34WPYI5n7DCFaGbePELqHPquHl9/RFYNXw/qHo+3mv12xv9X+l+Gn7yAzhvf4E3oG3siI7JebK7DjPHiKeznQnc5B+OT/6ko/qDyP1qf+JWdxn4StnBI+Xvm36zM3n3a9m8hJ4AXD+Bio=
+   eJztVNkKwkAMXG/telQRK+j/f6cT2YUQ0yS0FV8cGLabc1qapPTHPRDTgEfwAO6+K0fFHjyBLZgVP+kjbaRxiL7lcGlvkD7SRho1fR7mI/tbWIMbcFvOVU+M5Y9g7DeMYGb4Fk7uFPqsHl59T18EVg/vH4q+f9+sN4pNy6mn9hzZIXzWn+C52K9gx+4c1UekffZg+R27y5pSv9wfl1Lvxmpr/ev8V2ZhzyJW7gieL2Pb9Fmb77tf7eQp8ALlawXo
   </data>
  </layer>
  <objectgroup name="game objects" width="32" height="15">
-  <object name="player" type="Player" x="288" y="224" width="32" height="54">
+  <object name="player" type="Player" x="352" y="224" width="32" height="54">
    <properties>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
@@ -121,9 +121,6 @@
   </object>
   <object x="576" y="320">
    <polygon points="0,64 -64,96 0,96"/>
-  </object>
-  <object x="160" y="320">
-   <polygon points="0,0 128,-32 192,-32 288,0"/>
   </object>
   <object gid="8" x="352" y="160"/>
   <object name="EEEELLLLIIIIIPPPPPSSSSEEEEE!!!!!" x="32" y="96" width="32" height="192">

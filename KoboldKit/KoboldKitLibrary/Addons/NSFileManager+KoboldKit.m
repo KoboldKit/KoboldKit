@@ -19,19 +19,21 @@ static NSString* CFBundleName = nil;
 	return [[NSBundle mainBundle] pathForResource:filename ofType:extension];
 }
 
+/*
 +(NSString*) pathForAppSupportFile:(NSString*)file
 {
 	return [NSFileManager pathForFile:file inDirectory:NSApplicationSupportDirectory];
 }
 
-+(NSString*) pathForDocumentsFile:(NSString*)file
-{
-	return [NSFileManager pathForFile:file inDirectory:NSDocumentDirectory];
-}
-
 +(NSString*) pathForLibraryFile:(NSString*)file
 {
 	return [NSFileManager pathForFile:file inDirectory:NSLibraryDirectory];
+}
+ */
+
++(NSString*) pathForDocumentsFile:(NSString*)file
+{
+	return [NSFileManager pathForFile:file inDirectory:NSDocumentDirectory];
 }
 
 +(NSString*) pathForFile:(NSString*)file inDirectory:(NSSearchPathDirectory)directory
@@ -43,9 +45,10 @@ static NSString* CFBundleName = nil;
 +(NSString*) pathForFile:(NSString*)file
 {
 	NSFileManager* fileManager = [NSFileManager defaultManager];
+	NSString* path = nil;
 	
-	NSString* path = [NSFileManager pathForAppSupportFile:file];
-	if ([fileManager fileExistsAtPath:path] == NO)
+	//path = [NSFileManager pathForAppSupportFile:file];
+	//if ([fileManager fileExistsAtPath:path] == NO)
 	{
 		path = [NSFileManager pathForDocumentsFile:file];
 		if ([fileManager fileExistsAtPath:path] == NO)

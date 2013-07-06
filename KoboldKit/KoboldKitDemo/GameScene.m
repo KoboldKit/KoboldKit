@@ -59,6 +59,9 @@
 		[_tilemapNode restrictScrollingToMapBoundary];
 	}
 	
+	_physicsContactDebugNode = [KKPhysicsDebugNode node];
+	[_tilemapNode.mainTileLayerNode addChild:_physicsContactDebugNode];
+	
 	[self setupPlayerCharacter];
 	
 	[self createSimpleControls];
@@ -147,6 +150,7 @@
 	
 	_playerCharacter.position = playerPosition;
 	[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
+	_playerCharacter.physicsBody.contactTestBitMask = 0xFFFFFFFF;
 	[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
 	
 
@@ -383,6 +387,27 @@
 		_playerCharacter.physicsBody.velocity = velocity;
 		[_playerCharacter.physicsBody applyImpulse:CGPointMake(0, _jumpForce)];
 	}
+}
+
+-(void) didBeginContact:(SKPhysicsContact *)contact
+{
+	[super didBeginContact:contact];
+	NSLog(@"did Begin Contact: %@", contact);
+	/*
+	LOG_EXPR(contact.bodyA);
+	LOG_EXPR(contact.bodyB);
+	LOG_EXPR(contact.contactPoint);
+	 */
+	
+	[_physicsContactDebugNode addContact:contact];
+}
+
+-(void) didEndContact:(SKPhysicsContact *)contact
+{
+	[super didEndContact:contact];
+	NSLog(@"did END Contact: %@", contact);
+
+	[_physicsContactDebugNode removeContact:contact];
 }
 
 -(void)update:(NSTimeInterval)currentTime

@@ -50,10 +50,12 @@
 				{
 					dispatch_group_async(dispatchGroup, dispatchQueue, ^{
 						NSData* data = [NSData dataWithContentsOfURL:remoteFileURL];
-						NSString* saveFile = [NSFileManager pathForAppSupportFile:file];
-						if ([data writeToFile:saveFile atomically:YES] == NO)
+						NSString* saveFile = [NSFileManager pathForDocumentsFile:file];
+						NSError* error;
+						
+						if ([data writeToFile:saveFile options:0 error:&error] == NO)
 						{
-							NSLog(@"FILE SAVE FAILED: %@", saveFile);
+							NSLog(@"FILE SAVE FAILED: %@ - Reason: %@", file, error.localizedDescription);
 						}
 						
 						NSLog(@"File downloaded: %@", file);
@@ -75,7 +77,7 @@
 	NSError* error;
 	
 	// get the file attributes to retrieve the local file's modified date
-	NSString* localFile = [NSFileManager pathForAppSupportFile:[remoteFileURL lastPathComponent]];
+	NSString* localFile = [NSFileManager pathForDocumentsFile:[remoteFileURL lastPathComponent]];
 	NSDictionary* fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:localFile error:&error];
 	if (error)
 	{

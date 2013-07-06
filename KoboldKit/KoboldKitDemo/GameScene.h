@@ -17,6 +17,8 @@
 	KKSpriteNode* _playerCharacter;
 	KKTilemapNode* _tilemapNode;
 
+	KKPhysicsDebugNode* _physicsContactDebugNode;
+	
 	CGPoint _currentControlPadDirection;
 	
 	CGFloat _jumpForce;

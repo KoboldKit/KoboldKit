@@ -11,6 +11,7 @@
 
 @class KKNodeController;
 @class KKView;
+@class KKPhysicsDebugNode;
 
 /** Scene Graph dump options. */
 typedef enum

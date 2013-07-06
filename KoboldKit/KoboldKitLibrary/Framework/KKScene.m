@@ -12,6 +12,7 @@
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
 #import "KKViewOriginNode.h"
+#import "KKPhysicsDebugNode.h"
 
 @implementation KKScene
 
@@ -320,12 +321,67 @@
 		[(SKNode<SKPhysicsContactDelegate>*)nodeB didBeginContact:contact];
 	}
 	*/
+	
+	/*
+	if (_showsPhysicsContacts)
+	{
+		[_physicsDebugNode addContact:contact];
+	}
+	 */
 }
 
 -(void) didEndContact:(SKPhysicsContact *)contact
 {
-	
+	/*
+	if (_showsPhysicsContacts)
+	{
+		[_physicsDebugNode removeContact:contact];
+	}
+	 */
 }
+
+/*
+-(void) addPhysicsDebugNode
+{
+	if (_physicsDebugNode == nil)
+	{
+		KKViewOriginNode* originNode = [KKViewOriginNode node];
+		originNode.zPosition = 9999;
+		[self addChild:originNode];
+		
+		_physicsDebugNode = [KKPhysicsDebugNode node];
+		_physicsDebugNode.zPosition = 9999;
+		[self addChild:_physicsDebugNode];
+		
+#pragma message "SK empty node render bug workaround"
+		[_physicsDebugNode addChild:[SKNode node]];
+	}
+}
+
+@dynamic showsPhysicsContacts;
+
+-(BOOL) showsPhysicsContacts
+{
+	return _showsPhysicsContacts;
+}
+
+-(void) setShowsPhysicsContacts:(BOOL)showsPhysicsContacts
+{
+	if (_showsPhysicsContacts != showsPhysicsContacts)
+	{
+		_showsPhysicsContacts = showsPhysicsContacts;
+		
+		if (_showsPhysicsContacts)
+		{
+			[self addPhysicsDebugNode];
+		}
+		else
+		{
+			[_physicsDebugNode removeAllContacts];
+		}
+	}
+}
+*/
 
 #pragma mark Debugging
 

@@ -9,5 +9,14 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface KKPhysicsDebugNode : SKNode
+{
+	@private
+	NSMutableArray* _contacts;
+	SKNode* _contactNode;
+}
+
+-(void) addContact:(SKPhysicsContact*)contact;
+-(void) removeContact:(SKPhysicsContact*)contact;
+-(void) removeAllContacts;
 
 @end

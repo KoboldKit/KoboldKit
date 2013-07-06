@@ -19,18 +19,18 @@
 
 /** @returns The absolute path to the file.
  @param file A filename.
- @returns The path to the file or nil if the file couldn't be found in the app support directory. */
-+(NSString*) pathForAppSupportFile:(NSString*)file;
-
-/** @returns The absolute path to the file.
- @param file A filename.
  @returns The path to the file or nil if the file couldn't be found in the user's documents directory. */
 +(NSString*) pathForDocumentsFile:(NSString*)file;
 
 /** @returns The absolute path to the file.
  @param file A filename.
+ @returns The path to the file or nil if the file couldn't be found in the app support directory. */
+//+(NSString*) pathForAppSupportFile:(NSString*)file;
+
+/** @returns The absolute path to the file.
+ @param file A filename.
  @returns The path to the file or nil if the file couldn't be found in the user's library directory. */
-+(NSString*) pathForLibraryFile:(NSString*)file;
+//+(NSString*) pathForLibraryFile:(NSString*)file;
 
 /** Searches for the file in the given NSSearchPathDirectory and returns the absolute path to the file if it was found.
  @returns The absolute path to the file, or nil if the file could not be found.
@@ -38,7 +38,7 @@
  @returns The path to the file or nil if the file couldn't be found in the directory. */
 +(NSString*) pathForFile:(NSString*)file inDirectory:(NSSearchPathDirectory)directory;
 
-/** Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
+/** Searches for the file in the documents directory first, before trying the bundle and returns the absolute path
  to the file where it was first found.
  @param file A filename.
  @returns The absolute path to the file, or nil if the file could not be found in any of the searched directories. */
