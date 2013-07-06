@@ -141,30 +141,44 @@
 	const CGPoint notParallaxing = CGPointMake(1.0, 1.0);
 	Class tileLayerNodeClass = [KKTilemapTileLayerNode class];
 	KKTilemapTileLayerNode* backgroundTileLayerNode;
+	KKTilemapTileLayerNode* mainTileLayerNodeAccordingToParallax;
 	KKTilemapTileLayerNode* mainTileLayerNode;
 	
-	for (KKTilemapTileLayerNode* tileLayer in self.children)
+	for (KKTilemapTileLayerNode* tileLayerNode in self.children)
 	{
-		if ([tileLayer isKindOfClass:tileLayerNodeClass])
+		if ([tileLayerNode isKindOfClass:tileLayerNodeClass])
 		{
-			// the main layer is the first tile layer with parallax factor 1.0/1.0 (not parallaxing)
-			if (CGPointEqualToPoint(tileLayer.layer.parallaxFactor, notParallaxing))
+			if (tileLayerNode.layer.mainTileLayer)
 			{
-				mainTileLayerNode = tileLayer;
+				mainTileLayerNode = tileLayerNode;
 				break;
+			}
+			else if (mainTileLayerNodeAccordingToParallax == nil &&
+					 CGPointEqualToPoint(tileLayerNode.layer.parallaxFactor, notParallaxing))
+			{
+				// the main layer is the first tile layer with parallax factor 1.0/1.0 (not parallaxing)
+				mainTileLayerNodeAccordingToParallax = tileLayerNode;
 			}
 			
 			if (backgroundTileLayerNode == nil)
 			{
-				backgroundTileLayerNode = tileLayer;
+				backgroundTileLayerNode = tileLayerNode;
 			}
 		}
 	}
 	
 	if (mainTileLayerNode == nil)
 	{
-		NSLog(@"WARNING: KTTilemapNode could not determine 'main' layer, using 'background' (first, bottom-most) layer");
-		mainTileLayerNode = backgroundTileLayerNode;
+		if (mainTileLayerNodeAccordingToParallax)
+		{
+			mainTileLayerNode = mainTileLayerNodeAccordingToParallax;
+		}
+		else
+		{
+			mainTileLayerNode = backgroundTileLayerNode;
+		}
+
+		NSLog(@"WARNING: KKTilemapNode could not determine 'main' layer, using this layer: %@", mainTileLayerNode.layer);
 	}
 	
 	NSLog(@"Main Tile Layer: %@", mainTileLayerNode.layer.name);

@@ -54,7 +54,6 @@
 			if (speed > (_velocityLimit * _velocityLimit))
 			{
 				CGPoint cappedVelocity = ccpMult(ccpNormalize(velocity), _velocityLimit);
-				LOG_EXPR(cappedVelocity);
 				physicsBody.velocity = cappedVelocity;
 			}
 		}
@@ -64,7 +63,6 @@
 			CGFloat angularVelocity = physicsBody.angularVelocity;
 			angularVelocity = MAX(angularVelocity, -_angularVelocityLimit);
 			angularVelocity = MIN(angularVelocity, _angularVelocityLimit);
-			LOG_EXPR(angularVelocity);
 			physicsBody.angularVelocity = angularVelocity;
 		}
 	}

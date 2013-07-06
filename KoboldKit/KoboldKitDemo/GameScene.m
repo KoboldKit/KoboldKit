@@ -145,6 +145,7 @@
 		_playerCharacter = [KKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
 	}
 	
+	_playerCharacter.name = @"player";
 	_playerCharacter.position = playerPosition;
 	[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
 	_playerCharacter.physicsBody.contactTestBitMask = 0xFFFFFFFF;
@@ -336,6 +337,7 @@
 	
 	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _dpadForce);
 
+	/*
 	switch (controlPad.direction)
 	{
 		case KKArcadeJoystickRight:
@@ -368,6 +370,7 @@
 			NSLog(@"center");
 			break;
 	}
+	 */
 }
 
 -(void) attackButtonPressed:(NSNotification*)note
@@ -386,15 +389,78 @@
 	}
 }
 
-/*
 -(void) didBeginContact:(SKPhysicsContact *)contact
 {
 	[super didBeginContact:contact];
-	NSLog(@"did Begin Contact: %@", contact);
-	
-	[_physicsContactDebugNode addContact:contact];
+
+	SKPhysicsBody* playerPhysicsBody = _playerCharacter.physicsBody;
+	if (contact.bodyA == playerPhysicsBody || contact.bodyB == playerPhysicsBody)
+	{
+		//playerPhysicsBody.velocity = CGPointZero;
+
+		SKPhysicsWorld* physicsWorld = self.physicsWorld;
+		CGPoint playerPosition = _playerCharacter.position;
+		CGSize playerSize = _playerCharacter.size;
+		CGPoint playerAnchorPoint = _playerCharacter.anchorPoint;
+		CGPoint rayStart, rayEnd;
+
+		rayStart = CGPointMake(-(playerSize.width * playerAnchorPoint.x),
+							   playerSize.height * (1.0 - playerAnchorPoint.y) + 10);
+		rayEnd = CGPointMake(playerSize.width * (1.0 - playerAnchorPoint.x),
+							 rayStart.y);
+
+		[self enumerateChildNodesWithName:@"test" usingBlock:^(SKNode *node, BOOL *stop) {
+			[node removeFromParent];
+		}];
+		[_playerCharacter enumerateChildNodesWithName:@"test" usingBlock:^(SKNode *node, BOOL *stop) {
+			[node removeFromParent];
+		}];
+
+		{
+			SKSpriteNode* test = [SKSpriteNode spriteNodeWithColor:[SKColor magentaColor] size:CGSizeMake(5, 5)];
+			test.name = @"test";
+			test.position = rayStart;
+			test.zPosition = -9999;
+			[_playerCharacter addChild:test];
+			
+			SKSpriteNode* test2 = [SKSpriteNode spriteNodeWithColor:[SKColor magentaColor] size:CGSizeMake(5, 5)];
+			test2.name = @"test";
+			test2.position = rayEnd;
+			test2.zPosition = -9999;
+			[_playerCharacter addChild:test2];
+		}
+		
+		rayStart = [_playerCharacter.parent convertPoint:rayStart toNode:_playerCharacter];
+		rayEnd = [_playerCharacter.parent convertPoint:rayEnd toNode:_playerCharacter];
+		rayStart = ccpMult(rayStart, -1.0);
+		rayEnd = ccpMult(rayEnd, -1.0);
+		//LOG_EXPR(rayStart);
+
+		{
+			SKSpriteNode* test = [SKSpriteNode spriteNodeWithColor:[SKColor yellowColor] size:CGSizeMake(5, 5)];
+			test.name = @"test";
+			test.position = rayStart;
+			test.zPosition = -9999;
+			[self addChild:test];
+			
+			SKSpriteNode* test2 = [SKSpriteNode spriteNodeWithColor:[SKColor yellowColor] size:CGSizeMake(5, 5)];
+			test2.name = @"test";
+			test2.position = rayEnd;
+			test2.zPosition = -9999;
+			[self addChild:test2];
+		}
+		
+		SKPhysicsBody* bodyAbove = [physicsWorld bodyAlongRayStart:rayStart end:rayEnd];
+		//SKPhysicsBody* bodyAbove = [physicsWorld bodyInRect:_playerCharacter.frame];
+		if (bodyAbove)
+		{
+			LOG_EXPR(bodyAbove);
+			NSAssert(bodyAbove != playerPhysicsBody, @"!");
+		}
+	}
 }
 
+/*
 -(void) didEndContact:(SKPhysicsContact *)contact
 {
 	[super didEndContact:contact];

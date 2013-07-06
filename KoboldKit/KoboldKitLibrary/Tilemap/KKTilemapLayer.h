@@ -69,6 +69,10 @@
 /** If YES, this layer will scroll endlessly along the Y axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE
  @returns YES if the map wraps around and repeats along the vertical axis. */
 @property (atomic) BOOL endlessScrollingVertical;
+/** If YES, this layer represents the "main" tile layer which is where (most of) the gameplay happens, it plays a special role in the tilemap renderer. 
+ Only one tile layer should have this flag set. If no tile layer has this flag set, the main tile layer is determined by having a parallax factor {1,1}. Default: NO. TILED-EDITABLE
+ @returns YES if the layer is set to be the main tile layer. */
+@property (atomic) BOOL mainTileLayer;
 
 /** Determines how fast this layer moves in both directions when scrolling the tilemap. Value between -1.0f and 1.0f, usually you only use the range from 0.0f to 1.0f.
    Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).

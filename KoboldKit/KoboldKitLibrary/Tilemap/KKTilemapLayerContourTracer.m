@@ -484,15 +484,9 @@ static NSInteger neighborOffsets[8];
 			continue;
 		}
 		
-		if ((blocking == NO && _blockMap[i] == 0) || (blocking && _blockMap[i] == 1))
+		if ((blocking == NO && _blockMap[i] == 0) ||
+			(blocking == YES && _blockMap[i] > 0))
 		{
-			/*
-			if (blocking)
-				NSLog(@"Found untracted BLOCK tile at: %@", [self coordStringFromIndex:i]);
-			else
-				NSLog(@"Found   FREE    tile    at   : %@", [self coordStringFromIndex:i]);
-			 */
-			
 			return i;
 		}
 	}

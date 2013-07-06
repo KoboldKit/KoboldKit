@@ -85,6 +85,7 @@ void lua_printStackAt(lua_State* L, int i)
 	if (luaState == nil)
 	{
 		lua_setup();
+		[self doString:@"YES = true; NO = false;"];
 	}
 }
 

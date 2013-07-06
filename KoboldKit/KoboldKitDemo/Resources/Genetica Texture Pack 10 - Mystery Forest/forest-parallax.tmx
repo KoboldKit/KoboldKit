@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
-<map version="1.0" orientation="orthogonal" width="32" height="15" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="32" height="16" tilewidth="32" tileheight="32">
  <properties>
   <property name="_iPadScaleFactor" value="2"/>
   <property name="_scaleTilesetSpacingAndMargin" value="YES"/>
@@ -22,50 +22,50 @@
  <tileset firstgid="50" name="other" tilewidth="32" tileheight="32">
   <image source="other.png" width="256" height="256"/>
  </tileset>
- <layer name="bg layer" width="32" height="15" opacity="0.76">
+ <layer name="bg layer" width="32" height="16" opacity="0.76">
   <properties>
    <property name="_endlessScrollingHorizontal" value="YES"/>
    <property name="_endlessScrollingVertical" value="YES"/>
    <property name="_parallaxFactor" value="{0.35,0.35}"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJwzYWBgMAVikwGibYDYdgDpgfL3qP9H/T/q/1H/j/ofjB0GMBwODKT/AfK4ang=
+   eJyzZWBgsEXCNnSmTYDYdABpW4bB4390t8AwLf1Pb/8Otvgf9f+o/0f9P7L9D8QOAxgOBwbS/wAG03I/
   </data>
  </layer>
- <layer name="eye layer" width="32" height="15" opacity="0.43">
+ <layer name="eye layer" width="32" height="16" opacity="0.43">
   <properties>
    <property name="_endlessScrollingHorizontal" value="YES"/>
    <property name="_endlessScrollingVertical" value="YES"/>
    <property name="_parallaxFactor" value="{0.5,0.5}"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJxjYCAMjIDYmAh1pKolVq8VEFsTaQYxaqlhDyWAXvYQCyiJM2qYR0544LODHuFLrh3Ehg214wQGiHX3YEujgxFQI44oMQNXHJFiJi3imVpmUisPkGsOtfyBzxwA5UoL7Q==
+   eJxjYBj8wAiIjWmglli9VkBsTaQZxKilhj2UAHrZQyygJM6oYR454YHPDnqEL7l2EBs21I4TGCDW3YMtjQ5GQI04osQMXHFEipm0iGdqmUmtPECuOdTyBz5zAOXKC+0=
   </data>
  </layer>
- <layer name="grass layer" width="32" height="15" opacity="0.69">
+ <layer name="grass layer" width="32" height="16" opacity="0.69">
   <properties>
    <property name="_endlessScrollingHorizontal" value="YES"/>
    <property name="_endlessScrollingVertical" value="YES"/>
    <property name="_parallaxFactor" value="{0.75,0.75}"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt0bsVgCAQBdGtbVEQlY/9N8OcYw9s8oIbTDxuZgkHTvjmvvHgRQvojIILNaA7Bia+gN79W//1X//1X///XipeiRE=
+   eJzt0bkBgCAQBdGtTRRE5bD/Zpgqdgl+8IKJp5vZwMSP7twHEk5cAf3gxYcW0BkFN2pAe//Wf/3Xf/3X/z3+L0ahkwE=
   </data>
  </layer>
- <layer name="main layer" width="32" height="15">
+ <layer name="main layer" width="32" height="16">
   <properties>
    <property name="_endlessScrollingHorizontal" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztVNkKwkAMXG/telQRK+j/f6cT2YUQ0yS0FV8cGLabc1qapPTHPRDTgEfwAO6+K0fFHjyBLZgVP+kjbaRxiL7lcGlvkD7SRho1fR7mI/tbWIMbcFvOVU+M5Y9g7DeMYGb4Fk7uFPqsHl59T18EVg/vH4q+f9+sN4pNy6mn9hzZIXzWn+C52K9gx+4c1UekffZg+R27y5pSv9wfl1Lvxmpr/ev8V2ZhzyJW7gieL2Pb9Fmb77tf7eQp8ALlawXo
+   eJztVNkOgjAQrFDPClSjYKL//51ukzbZrN3DA31xkgmw5/Cw49wfv8bFULMD9sAOuJ1XjhsrsT1wAEZgqOSTvqQtaXxFn1f2W/TFrLGmT0Pz5n4JK+AauMnPJVMj5S37PRN/FtL/LYR8q8z9hL5W2K/N1/RZ4IX9DRPHvRbgW+8JufunPR3zbvEQfOs34BlxAh4qPaecS0x+dkX9E/ouMTqj6Kf+cczzRjS7tr/cf2Eg8UBqqUfgflob3eNs7Hff8OS5cAc/igcD
   </data>
  </layer>
- <objectgroup name="game objects" width="32" height="15">
-  <object name="player" type="Player" x="224" y="256" width="32" height="54">
+ <objectgroup name="game objects" width="32" height="16">
+  <object name="player" type="Player" x="256" y="288" width="22" height="48">
    <properties>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
-    <property name="defaultImage" value="Button_Jetpack_Pressed.png"/>
+    <property name="defaultImage" value=""/>
     <property name="dpadForce" value="195.0"/>
     <property name="friction" value="0.5"/>
     <property name="jumpForce" value="80.0"/>
@@ -77,64 +77,64 @@
    </properties>
   </object>
  </objectgroup>
- <layer name="flare layer" width="32" height="15" opacity="0.8">
+ <layer name="flare layer" width="32" height="16" opacity="0.8">
   <properties>
    <property name="_endlessScrollingHorizontal" value="YES"/>
    <property name="_endlessScrollingVertical" value="YES"/>
    <property name="_parallaxFactor" value="{1.5,1.5}"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzNlUsKwCAMRD1V3dn730o3gojR+VjogJtAXkZH25Q4PW1loKbwEE5p6wVqqLexd+Y4+9p5Q7m7fc1ivDJcVCfmjbN0WKq/Vd25b5EiJpvVn3Jgz47ln1jorGjOF+9kJWQOk9vNjLtGj0ouiCf1u6j8N9y76fb1ngrfDBbb
+   eJxjYBhawAyIzYkQI8c8YsyxA2J7IsSIdRuyXnRzKPEXPrcRay4+f6EDUtxKirnEAkJmUiMsKTGLXPdhE6ckveECuMwkNa4GUzyQGnakmk/ILGLtwmUPLfIJNkCMPaTEGzXjGAaQ3UhOvBDjJnLLRXLqDUrTJqX6YHoA34wW2w==
   </data>
  </layer>
- <objectgroup name="extra-collision" width="32" height="15">
-  <object x="448" y="320">
+ <objectgroup name="extra-collision" width="32" height="16">
+  <object x="448" y="352">
    <polygon points="0,64 64,96 0,96"/>
   </object>
-  <object x="32" y="384">
+  <object x="32" y="416">
    <polygon points="32,0 128,-64 128,0"/>
   </object>
-  <object x="640" y="320">
+  <object x="640" y="352">
    <polygon points="0,0 224,-32 224,0"/>
   </object>
-  <object x="864" y="256">
+  <object x="864" y="288">
    <polygon points="0,32 96,64 0,64"/>
   </object>
-  <object x="480" y="128" width="64" height="32">
+  <object x="480" y="160" width="64" height="32">
    <ellipse/>
   </object>
-  <object x="64" y="128">
+  <object x="64" y="160">
    <polyline points="0,32 64,32 96,64"/>
   </object>
-  <object x="768" y="64" width="64" height="64"/>
-  <object x="320" y="64">
+  <object x="768" y="96" width="64" height="64"/>
+  <object x="320" y="96">
    <polyline points="0,0 -64,32"/>
   </object>
-  <object x="768" y="64">
+  <object x="768" y="96">
    <polyline points="0,0 -64,32"/>
   </object>
-  <object x="832" y="128">
+  <object x="832" y="160">
    <polyline points="0,0 64,32"/>
   </object>
-  <object x="768" y="128">
+  <object x="768" y="160">
    <polyline points="0,0 -32,32"/>
   </object>
-  <object x="576" y="320">
+  <object x="576" y="352">
    <polygon points="0,64 -64,96 0,96"/>
   </object>
-  <object gid="8" x="352" y="160"/>
-  <object name="EEEELLLLIIIIIPPPPPSSSSEEEEE!!!!!" x="32" y="96" width="32" height="192">
+  <object gid="8" x="512" y="384"/>
+  <object name="EEEELLLLIIIIIPPPPPSSSSEEEEE!!!!!" x="32" y="128" width="32" height="192">
    <ellipse/>
   </object>
-  <object x="576" y="64" width="128" height="128">
+  <object x="576" y="96" width="128" height="128">
    <ellipse/>
   </object>
-  <object x="320" y="32" width="128" height="64">
+  <object x="800" y="416" width="128" height="64">
    <ellipse/>
   </object>
-  <object name="TTTTIIIILLLLEEEE" gid="2" x="32" y="64"/>
+  <object name="TTTTIIIILLLLEEEE" gid="2" x="32" y="96"/>
  </objectgroup>
- <imagelayer name="Image Layer 1" width="32" height="15" opacity="0.51">
+ <imagelayer name="Image Layer 1" width="32" height="16" visible="0" opacity="0.51">
   <image source="../Default.png"/>
  </imagelayer>
 </map>
