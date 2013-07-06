@@ -23,6 +23,9 @@
 	
 	CGFloat _jumpForce;
 	CGFloat _dpadForce;
+	
+	CGPoint rayStart;
+	CGPoint rayEnd;
 }
 
 @property (atomic, copy) NSString* tmxFile;

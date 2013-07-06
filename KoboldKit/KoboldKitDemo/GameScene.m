@@ -389,76 +389,93 @@
 	}
 }
 
--(void) didBeginContact:(SKPhysicsContact *)contact
+-(void) testCollision:(SKPhysicsContact *)contact
 {
-	[super didBeginContact:contact];
-
 	SKPhysicsBody* playerPhysicsBody = _playerCharacter.physicsBody;
 	if (contact.bodyA == playerPhysicsBody || contact.bodyB == playerPhysicsBody)
 	{
 		//playerPhysicsBody.velocity = CGPointZero;
-
+		
 		SKPhysicsWorld* physicsWorld = self.physicsWorld;
 		CGPoint playerPosition = _playerCharacter.position;
 		CGSize playerSize = _playerCharacter.size;
 		CGPoint playerAnchorPoint = _playerCharacter.anchorPoint;
-		CGPoint rayStart, rayEnd;
-
-		rayStart = CGPointMake(-(playerSize.width * playerAnchorPoint.x),
-							   playerSize.height * (1.0 - playerAnchorPoint.y) + 10);
-		rayEnd = CGPointMake(playerSize.width * (1.0 - playerAnchorPoint.x),
+		//CGPoint rayStart, rayEnd;
+		
+		/*
+		 rayStart = CGPointMake(playerPosition.x - playerSize.width * playerAnchorPoint.x,
+		 playerPosition.y + 8 + playerSize.height * (1.0 - playerAnchorPoint.y));
+		 */
+		rayStart = CGPointMake(playerPosition.x - playerSize.width * playerAnchorPoint.x,
+							   playerPosition.y - (8 + playerSize.height * playerAnchorPoint.y));
+		rayEnd = CGPointMake(playerPosition.x + playerSize.width * (1.0 - playerAnchorPoint.x),
 							 rayStart.y);
-
+		
+		//NSLog(@"ray: %@ to %@", NSStringFromCGPoint(rayStart), NSStringFromCGPoint(rayEnd));
+		
 		[self enumerateChildNodesWithName:@"test" usingBlock:^(SKNode *node, BOOL *stop) {
 			[node removeFromParent];
 		}];
 		[_playerCharacter enumerateChildNodesWithName:@"test" usingBlock:^(SKNode *node, BOOL *stop) {
 			[node removeFromParent];
 		}];
-
+		
 		{
 			SKSpriteNode* test = [SKSpriteNode spriteNodeWithColor:[SKColor magentaColor] size:CGSizeMake(5, 5)];
 			test.name = @"test";
-			test.position = rayStart;
+			test.position = [_playerCharacter convertPoint:rayStart fromNode:_playerCharacter.parent];
 			test.zPosition = -9999;
 			[_playerCharacter addChild:test];
 			
 			SKSpriteNode* test2 = [SKSpriteNode spriteNodeWithColor:[SKColor magentaColor] size:CGSizeMake(5, 5)];
 			test2.name = @"test";
-			test2.position = rayEnd;
+			test2.position = [_playerCharacter convertPoint:rayEnd fromNode:_playerCharacter.parent];
 			test2.zPosition = -9999;
 			[_playerCharacter addChild:test2];
 		}
 		
-		rayStart = [_playerCharacter.parent convertPoint:rayStart toNode:_playerCharacter];
-		rayEnd = [_playerCharacter.parent convertPoint:rayEnd toNode:_playerCharacter];
-		rayStart = ccpMult(rayStart, -1.0);
-		rayEnd = ccpMult(rayEnd, -1.0);
+		/*
+		 rayStart = [self convertPoint:rayStart fromNode:_playerCharacter.parent];
+		 rayEnd = [self convertPoint:rayEnd fromNode:_playerCharacter.parent];
+		 rayStart = ccpMult(rayStart, -1.0);
+		 rayEnd = ccpMult(rayEnd, -1.0);
+		 */
 		//LOG_EXPR(rayStart);
-
+		
 		{
-			SKSpriteNode* test = [SKSpriteNode spriteNodeWithColor:[SKColor yellowColor] size:CGSizeMake(5, 5)];
-			test.name = @"test";
-			test.position = rayStart;
-			test.zPosition = -9999;
-			[self addChild:test];
-			
-			SKSpriteNode* test2 = [SKSpriteNode spriteNodeWithColor:[SKColor yellowColor] size:CGSizeMake(5, 5)];
-			test2.name = @"test";
-			test2.position = rayEnd;
-			test2.zPosition = -9999;
-			[self addChild:test2];
+			/*
+			 SKSpriteNode* test = [SKSpriteNode spriteNodeWithColor:[SKColor yellowColor] size:CGSizeMake(5, 5)];
+			 test.name = @"test";
+			 test.position = rayStart;
+			 test.zPosition = -9999;
+			 [self addChild:test];
+			 
+			 SKSpriteNode* test2 = [SKSpriteNode spriteNodeWithColor:[SKColor yellowColor] size:CGSizeMake(5, 5)];
+			 test2.name = @"test";
+			 test2.position = rayEnd;
+			 test2.zPosition = -9999;
+			 [self addChild:test2];
+			 */
 		}
 		
 		SKPhysicsBody* bodyAbove = [physicsWorld bodyAlongRayStart:rayStart end:rayEnd];
 		//SKPhysicsBody* bodyAbove = [physicsWorld bodyInRect:_playerCharacter.frame];
 		if (bodyAbove)
 		{
-			LOG_EXPR(bodyAbove);
-			NSAssert(bodyAbove != playerPhysicsBody, @"!");
+			//LOG_EXPR(bodyAbove);
+			//NSAssert(bodyAbove != playerPhysicsBody, @"!");
 		}
 	}
 }
+
+/*
+-(void) didBeginContact:(SKPhysicsContact *)contact
+{
+	[super didBeginContact:contact];
+
+	//[self testCollision:contact];
+}
+ */
 
 /*
 -(void) didEndContact:(SKPhysicsContact *)contact
@@ -480,6 +497,20 @@
 	
 	//NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
 	//NSLog(@"pos: {%.0f, %.0f}", _tilemapNode.mainTileLayerNode.position.x, _tilemapNode.mainTileLayerNode.position.y);
+
+	/*
+	if (CGPointEqualToPoint(rayStart, rayEnd) == NO)
+	{
+		//SKPhysicsBody* body = [self.physicsWorld bodyAlongRayStart:rayStart end:rayEnd];
+		SKPhysicsBody* body = [self.physicsWorld bodyAlongRayStart:CGPointMake(288, 188) end:CGPointMake(310, 220)];
+		if (body)
+		{
+			LOG_EXPR(body);
+		}
+	}
+	*/
+	
+	//LOG_EXPR(_playerCharacter.position);
 }
 
 -(void) didSimulatePhysics

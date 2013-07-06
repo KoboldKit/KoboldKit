@@ -85,6 +85,15 @@
 	}
 }
 
+-(void) setPosition:(CGPoint)position
+{
+	// prevent flicker, particularly when tilesets have no spacing between tiles
+	// allows pixel-precision positioning on Retina devices, hence "times 2 plus 0.5, divided by 2"
+	position.x = ((int)(position.x * 2.0 + 0.5)) / 2;
+	position.y = ((int)(position.y * 2.0 + 0.5)) / 2;
+	[super setPosition:position];
+}
+
 -(void) updateLayer
 {
 	self.hidden = _layer.hidden;
