@@ -61,11 +61,11 @@
   </data>
  </layer>
  <objectgroup name="game objects" width="32" height="15">
-  <object name="player" type="Player" x="64" y="288" width="32" height="54">
+  <object name="player" type="Player" x="224" y="256" width="32" height="54">
    <properties>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
-    <property name="defaultImage" value=""/>
+    <property name="defaultImage" value="Button_Jetpack_Pressed.png"/>
     <property name="dpadForce" value="195.0"/>
     <property name="friction" value="0.5"/>
     <property name="jumpForce" value="80.0"/>

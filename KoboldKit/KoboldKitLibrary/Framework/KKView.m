@@ -15,6 +15,8 @@
 
 #define ASSERT_SCENE_STACK_INTEGRITY() NSAssert2([_sceneStack lastObject] == self.scene, @"scene stack out of synch! Presented scene: %@ - topmost scene on stack: %@", self.scene, [_sceneStack lastObject])
 
+static BOOL _showsPhysicsShapes = NO;
+
 @implementation KKView
 
 -(id) initWithFrame:(CGRect)frame
@@ -60,6 +62,11 @@
 {
 	[self loadConfig:@"config.lua"];
 	[self loadConfig:@"devconfig.lua"];
+	
+	self.showsDrawCount = [_model boolForKeyPath:@"devconfig.showsDrawCount"];
+	self.showsFPS = [_model boolForKeyPath:@"devconfig.showsFPS"];
+	self.showsNodeCount = [_model boolForKeyPath:@"devconfig.showsNodeCount"];
+	self.showsPhysicsShapes = [_model boolForKeyPath:@"devconfig.showsPhysicsShapes"];
 }
 
 -(void) loadConfig:(NSString*)configFile
@@ -186,6 +193,22 @@
 			}
 		}
 	}
+}
+
+#pragma Physics Debug
+
+@dynamic showsPhysicsShapes;
++(BOOL) showsPhysicsShapes
+{
+	return _showsPhysicsShapes;
+}
+-(BOOL) showsPhysicsShapes
+{
+	return _showsPhysicsShapes;
+}
+-(void) setShowsPhysicsShapes:(BOOL)showsPhysicsShapes
+{
+	_showsPhysicsShapes = showsPhysicsShapes;
 }
 
 @end

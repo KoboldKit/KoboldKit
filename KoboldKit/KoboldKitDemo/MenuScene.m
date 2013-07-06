@@ -22,7 +22,8 @@
 	NSString* url = [self.kkView.model valueForKeyPath:@"devconfig.developmentWebServerURL"];
 	[KKDownloadProjectFiles downloadProjectFilesWithURL:[NSURL URLWithString:url]
 										  completionBlock:^(NSDictionary *contents) {
-											[self didDownloadProjectFiles:contents];
+											  [self didDownloadProjectFiles:contents];
+											  [self.kkView reloadConfig];
 										}];
 }
 

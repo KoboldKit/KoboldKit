@@ -13,6 +13,7 @@
 #import "KKNode.h"
 #import "CGPointExtension.h"
 #import "KKMacros.h"
+#import "KKView.h"
 
 @implementation SKNode (KoboldKit)
 
@@ -215,20 +216,23 @@
 
 -(void) addPhysicsBodyDrawNodeWithPath:(CGPathRef)path
 {
-	SKShapeNode* shape = [SKShapeNode node];
-	shape.path = path;
-	shape.antialiased = NO;
-	if (self.physicsBody.dynamic)
+	if ([KKView showsPhysicsShapes])
 	{
-		shape.lineWidth = 1.0;
-		shape.fillColor = [SKColor colorWithRed:1 green:0 blue:0.2 alpha:0.2];
+		SKShapeNode* shape = [SKShapeNode node];
+		shape.path = path;
+		shape.antialiased = NO;
+		if (self.physicsBody.dynamic)
+		{
+			shape.lineWidth = 1.0;
+			shape.fillColor = [SKColor colorWithRed:1 green:0 blue:0.2 alpha:0.2];
+		}
+		else
+		{
+			shape.lineWidth = 2.0;
+			shape.glowWidth = 4.0;
+		}
+		[self addChild:shape];
 	}
-	else
-	{
-		shape.lineWidth = 2.0;
-		shape.glowWidth = 4.0;
-	}
-	[self addChild:shape];
 }
 
 -(SKPhysicsBody*) physicsBodyWithEdgeLoopFromPath:(CGPathRef)path
@@ -236,11 +240,7 @@
 	SKPhysicsBody* physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromPath:path];
 	physicsBody.dynamic = NO;
 	self.physicsBody = physicsBody;
-	
-#if KK_PHYSICS_DEBUG_DRAW
 	[self addPhysicsBodyDrawNodeWithPath:path];
-#endif
-	
 	return physicsBody;
 }
 
@@ -249,11 +249,7 @@
 	SKPhysicsBody* physicsBody = [SKPhysicsBody bodyWithEdgeChainFromPath:path];
 	physicsBody.dynamic = NO;
 	self.physicsBody = physicsBody;
-
-#if KK_PHYSICS_DEBUG_DRAW
 	[self addPhysicsBodyDrawNodeWithPath:path];
-#endif
-	
 	return physicsBody;
 }
 
@@ -261,11 +257,7 @@
 {
 	SKPhysicsBody* physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:size];
 	self.physicsBody = physicsBody;
-	
-#if KK_PHYSICS_DEBUG_DRAW
 	[self addPhysicsBodyDrawNodeWithPath:CGPathCreateWithRect(CGRectMake(-(size.width * 0.5), -(size.height * 0.5), size.width, size.height), nil)];
-#endif
-	
 	return physicsBody;
 }
 

@@ -39,16 +39,13 @@
 	// always call super in "event" methods of KKScene subclasses
 	[super didMoveToView:view];
 	
-	self.view.showsDrawCount = NO;
-	self.view.showsFPS = NO;
-	self.view.showsNodeCount = NO;
-
 	_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:_tmxFile];
 	[self addChild:_tilemapNode];
 	
-	// apply gravity from Tiled
-	self.physicsWorld.gravity = CGPointMake(0, [_tilemapNode.tilemap.properties numberForKey:@"physicsGravityY"].floatValue);
-	self.physicsWorld.speed = [_tilemapNode.tilemap.properties numberForKey:@"physicsSpeed"].floatValue;
+	// apply global settings from Tiled
+	KKTilemapProperties* mapProperties = _tilemapNode.tilemap.properties;
+	self.physicsWorld.gravity = CGPointMake(0, [mapProperties numberForKey:@"physicsGravityY"].floatValue);
+	self.physicsWorld.speed = [mapProperties numberForKey:@"physicsSpeed"].floatValue;
 	LOG_EXPR(self.physicsWorld.gravity);
 	LOG_EXPR(self.physicsWorld.speed);
 	
@@ -389,15 +386,11 @@
 	}
 }
 
+/*
 -(void) didBeginContact:(SKPhysicsContact *)contact
 {
 	[super didBeginContact:contact];
 	NSLog(@"did Begin Contact: %@", contact);
-	/*
-	LOG_EXPR(contact.bodyA);
-	LOG_EXPR(contact.bodyB);
-	LOG_EXPR(contact.contactPoint);
-	 */
 	
 	[_physicsContactDebugNode addContact:contact];
 }
@@ -409,6 +402,7 @@
 
 	[_physicsContactDebugNode removeContact:contact];
 }
+*/
 
 -(void)update:(NSTimeInterval)currentTime
 {

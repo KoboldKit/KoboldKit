@@ -196,6 +196,52 @@
 	return [_keyedValues valueForKeyPath:keyPath];
 }
 
+-(BOOL) boolForKeyPath:(NSString*)keyPath
+{
+	id value = [_keyedValues valueForKeyPath:keyPath];
+	if ([value isKindOfClass:[KKMutableNumber class]] || [value isKindOfClass:[NSNumber class]])
+	{
+		return [(NSNumber*)value boolValue];
+	}
+	return NO;
+}
+-(float) floatForKeyPath:(NSString*)keyPath
+{
+	id value = [_keyedValues valueForKeyPath:keyPath];
+	if ([value isKindOfClass:[KKMutableNumber class]] || [value isKindOfClass:[NSNumber class]])
+	{
+		return [(NSNumber*)value floatValue];
+	}
+	return NO;
+}
+-(double) doubleForKeyPath:(NSString*)keyPath
+{
+	id value = [_keyedValues valueForKeyPath:keyPath];
+	if ([value isKindOfClass:[KKMutableNumber class]] || [value isKindOfClass:[NSNumber class]])
+	{
+		return [(NSNumber*)value doubleValue];
+	}
+	return NO;
+}
+-(int32_t) intForKeyPath:(NSString*)keyPath
+{
+	id value = [_keyedValues valueForKeyPath:keyPath];
+	if ([value isKindOfClass:[KKMutableNumber class]] || [value isKindOfClass:[NSNumber class]])
+	{
+		return [(NSNumber*)value intValue];
+	}
+	return NO;
+}
+-(uint32_t) unsignedIntForKeyPath:(NSString*)keyPath
+{
+	id value = [_keyedValues valueForKeyPath:keyPath];
+	if ([value isKindOfClass:[KKMutableNumber class]] || [value isKindOfClass:[NSNumber class]])
+	{
+		return [(NSNumber*)value unsignedIntValue];
+	}
+	return NO;
+}
+
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 

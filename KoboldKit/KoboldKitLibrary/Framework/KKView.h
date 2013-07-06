@@ -31,6 +31,12 @@
  ®returns The view's model object. */
 @property (atomic, readonly) KKModel* model;
 
+/** nd */
+@property (atomic) BOOL showsPhysicsShapes;
+
+/** nd */
++(BOOL) showsPhysicsShapes;
+
 /** Presents a scene. 
  
  Replaces the topmost scene on the scene stack.
