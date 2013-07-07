@@ -53,21 +53,16 @@
 	LOG_EXPR(self.physicsWorld.speed);
 	
 	[self setupTilemapBlocking];
+	[self setupPlayerCharacter];
+	[self createSimpleControls];
+	//[self createVirtualJoypad];
+	[self addReloadButton];
 	
 	if ([mapProperties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
 	{
 		[_tilemapNode restrictScrollingToMapBoundary];
 	}
-	
-	//_physicsContactDebugNode = [KKPhysicsDebugNode node];
-	//[_tilemapNode.mainTileLayerNode addChild:_physicsContactDebugNode];
-	
-	[self setupPlayerCharacter];
-	
-	[self createSimpleControls];
-	//[self createVirtualJoypad];
 
-	[self addReloadButton];
 	
 	// remove the curtain
 	[_curtainSprite runAction:[SKAction sequence:@[[SKAction fadeAlphaTo:0 duration:0.5], [SKAction removeFromParent]]]];
