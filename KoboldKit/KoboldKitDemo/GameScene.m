@@ -164,7 +164,7 @@
 	
 	CGSize bboxSize = playerSize;
 	bboxSize.width -= 8;
-	bboxSize.height -= 6;
+	bboxSize.height -= 8;
 	[_playerCharacter physicsBodyWithRectangleOfSize:bboxSize];
 	_playerCharacter.physicsBody.contactTestBitMask = 0xFFFFFFFF;
 	_playerCharacter.name = @"player";
