@@ -42,9 +42,12 @@
 	_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:_tmxFile];
 	[self addChild:_tilemapNode];
 	
+	[_tilemapNode createPhysicsCollisions];
+	[_tilemapNode createPhysicsCollisionsWithObjectLayerNamed:@"extra-collision"];
+
 	// test write TMX
 	[_tilemapNode.tilemap writeToFile:[NSFileManager pathForDocumentsFile:@"testWrite.tmx"]];
-	
+
 	// apply global settings from Tiled
 	KKTilemapProperties* mapProperties = _tilemapNode.tilemap.properties;
 	self.physicsWorld.gravity = CGPointMake(0, [mapProperties numberForKey:@"physicsGravityY"].floatValue);
@@ -52,18 +55,17 @@
 	LOG_EXPR(self.physicsWorld.gravity);
 	LOG_EXPR(self.physicsWorld.speed);
 	
-	[self setupTilemapBlocking];
 	[self setupPlayerCharacter];
 	[self createSimpleControls];
 	//[self createVirtualJoypad];
 	[self addReloadButton];
 	
+	// this must be performed after the player setup, because the player is moving the camera
 	if ([mapProperties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
 	{
 		[_tilemapNode restrictScrollingToMapBoundary];
 	}
 
-	
 	// remove the curtain
 	[_curtainSprite runAction:[SKAction sequence:@[[SKAction fadeAlphaTo:0 duration:0.5], [SKAction removeFromParent]]]];
 	_curtainSprite = nil;
@@ -146,7 +148,7 @@
 	}
 	
 	CGSize bboxSize = playerSize;
-	bboxSize.width -= 6;
+	bboxSize.width -= 8;
 	bboxSize.height -= 6;
 	[_playerCharacter physicsBodyWithRectangleOfSize:bboxSize];
 	_playerCharacter.physicsBody.contactTestBitMask = 0xFFFFFFFF;
@@ -189,12 +191,6 @@
 
 	// make the camera follow the player
 	[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
-}
-
--(void) setupTilemapBlocking
-{
-	[_tilemapNode createPhysicsCollisions];
-	[_tilemapNode createPhysicsCollisionsWithObjectLayerNamed:@"extra-collision"];
 }
 
 -(void) createVirtualJoypad
