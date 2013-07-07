@@ -7,9 +7,7 @@
 //
 
 #import "GameScene.h"
-#import "KoboldKit.h"
-
-#import <objc/runtime.h>
+#import "MenuScene.h"
 
 @implementation GameScene
 
@@ -58,7 +56,7 @@
 	[self setupPlayerCharacter];
 	[self createSimpleControls];
 	//[self createVirtualJoypad];
-	[self addReloadButton];
+	[self addDevelopmentButtons];
 	
 	// this must be performed after the player setup, because the player is moving the camera
 	if ([mapProperties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
@@ -71,7 +69,7 @@
 	_curtainSprite = nil;
 }
 
--(void) addReloadButton
+-(void) addDevelopmentButtons
 {
 #if DEBUG
 	KKViewOriginNode* hudNode = [KKViewOriginNode node];
@@ -87,6 +85,17 @@
 	
 	[reloadLabel addBehavior:[KKButtonBehavior behavior]];
 	[self observeNotification:KKButtonDidExecuteNotification selector:@selector(reloadButtonPressed:) object:reloadLabel];
+
+	KKLabelNode* menuLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
+	menuLabel.name = @"reload label";
+	menuLabel.text = @"menu";
+	menuLabel.color = [SKColor blueColor];
+	menuLabel.colorBlendFactor = 0.4;
+	menuLabel.position = CGPointMake(self.size.width / 4, self.size.height - reloadLabel.fontSize * 1.5);
+	[hudNode addChild:menuLabel];
+	
+	[menuLabel addBehavior:[KKButtonBehavior behavior]];
+	[self observeNotification:KKButtonDidExecuteNotification selector:@selector(menuButtonPressed:) object:menuLabel];
 #endif
 }
 
@@ -117,6 +126,12 @@
 											newScene.tmxFile = _tmxFile;
 											[self.view presentScene:newScene];
 										}];
+}
+
+-(void) menuButtonPressed:(NSNotification*)notification
+{
+	MenuScene* newScene = [MenuScene sceneWithSize:self.size];
+	[self.view presentScene:newScene];
 }
 
 -(void) setupPlayerCharacter
