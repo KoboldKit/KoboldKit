@@ -84,6 +84,17 @@
 		}
 	}
 	
+	/*
+	if (CGPointEqualToPoint(nodePos, node.position) == NO)
+	{
+		NSLog(@"Capped node.position to: %@", NSStringFromCGPoint(nodePos));
+	}
+	else
+	{
+		LOG_EXPR(node.position);
+	}
+	*/
+	
 	node.position = nodePos;
 	body.velocity = velocity;
 }

@@ -82,24 +82,25 @@
 	KKTilemapLayer* mainTileLayer = _mainTileLayerNode.layer;
 	if (mainTileLayer.endlessScrollingHorizontal == NO || mainTileLayer.endlessScrollingVertical == NO)
 	{
-		CGRect bounds = self.bounds;
+		CGRect cameraBounds = self.bounds;
 		CGRect sceneFrame = self.scene.frame;
 		
 		if (mainTileLayer.endlessScrollingHorizontal == NO)
 		{
-			bounds.origin.x = -bounds.size.width + sceneFrame.origin.x + sceneFrame.size.width;
-			bounds.size.width = bounds.size.width - sceneFrame.size.width + 1;
+			cameraBounds.origin.x = -cameraBounds.size.width + sceneFrame.origin.x + sceneFrame.size.width;
+			cameraBounds.size.width = cameraBounds.size.width - sceneFrame.size.width + 1;
 		}
 		if (mainTileLayer.endlessScrollingVertical == NO)
 		{
-			bounds.origin.y = -bounds.size.height + sceneFrame.origin.y + sceneFrame.size.height;
-			bounds.size.height = bounds.size.height - sceneFrame.size.height + 1;
+			cameraBounds.origin.y = -cameraBounds.size.height + sceneFrame.origin.y + sceneFrame.size.height;
+			cameraBounds.size.height = cameraBounds.size.height - sceneFrame.size.height + 1;
 		}
 
+		NSLog(@"Tilemap scrolling bounds: %@", NSStringFromCGRect(cameraBounds));
 		NSString* const kMapBoundaryBehaviorKey = @"KKTilemapNode:MapBoundaryScrolling";
 		if ([_mainTileLayerNode behaviorForKey:kMapBoundaryBehaviorKey] == nil)
 		{
-			[_mainTileLayerNode addBehavior:[KKStayInBoundsBehavior stayInBounds:bounds] withKey:kMapBoundaryBehaviorKey];
+			[_mainTileLayerNode addBehavior:[KKStayInBoundsBehavior stayInBounds:cameraBounds] withKey:kMapBoundaryBehaviorKey];
 		}
 	}
 }

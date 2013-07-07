@@ -230,6 +230,7 @@
 		{
 			shape.lineWidth = 2.0;
 			shape.glowWidth = 4.0;
+			shape.strokeColor = [SKColor magentaColor];
 		}
 		[self addChild:shape];
 	}

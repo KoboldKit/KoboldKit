@@ -54,7 +54,7 @@
 	
 	[self setupTilemapBlocking];
 	
-	if ([_tilemapNode.tilemap.properties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
+	if ([mapProperties numberForKey:@"restrictScrollingToMapBoundary"].boolValue)
 	{
 		[_tilemapNode restrictScrollingToMapBoundary];
 	}

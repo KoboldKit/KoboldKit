@@ -38,6 +38,9 @@ typedef enum
 	NSMutableArray* _contourTiles;
 	NSMutableArray* _contourSegments;
 	NSUInteger _blockMapCount;
+	NSUInteger _currentStartTile;
+	NSUInteger _currentNeighborTile;
+	NSUInteger _currentBacktrackTile;
 	CGSize _blockMapSize;
 	uint16_t* _blockMap;
 	BOOL _mapBorderBlocking;

@@ -14,6 +14,7 @@
 #import "KKTilemapLayer.h"
 
 const uint16_t kBlockMapBorder = 0xffff;
+const uint16_t kBlockMapUntracedBlocking = 0xfffe;
 static NSInteger neighborOffsets[8];
 
 
@@ -54,7 +55,7 @@ static NSInteger neighborOffsets[8];
 -(void) traceContours
 {
 	[self createBlockMap];
-	[self dumpBlockMap];
+	//[self dumpBlockMap];
 	
 	// offset indices (relative to a certain tile) in clockwise order, beginning with the tile to the left
 	neighborOffsets[0] = -1;
@@ -70,7 +71,7 @@ static NSInteger neighborOffsets[8];
 	
 	// unique ID for each contour for the blocking map (1 is regular, untraced blocking, 0 is free tile)
 	NSUInteger contourBlockID = 2;
-	NSUInteger currentTile = [self nextTileStartingAt:[self nextTileStartingAt:0 blocking:NO] blocking:YES];
+	NSUInteger currentTile = _currentStartTile = [self nextTileStartingAt:[self nextTileStartingAt:0 blocking:NO] blocking:YES];
 	
 	// TODO:
 	// find a surrounding free block from blocking tile, if none found search for next block tile
@@ -85,12 +86,12 @@ static NSInteger neighborOffsets[8];
 		//NSLog(@"Initial boundary at : %@", [self coordStringFromIndex:boundaryTile]);
 		
 		// first backtrack tile is the one to the left
-		NSUInteger backtrackTile = [self firstFree4WayNeighborForTile:boundaryTile];
+		NSUInteger backtrackTile = _currentBacktrackTile = [self firstFree4WayNeighborForTile:boundaryTile];
 		if (backtrackTile == 0)
 		{
 			// start again
 			//NSLog(@"\tSelected boundary has no surrounding free tiles, skipping.");
-			currentTile = [self nextTileStartingAt:[self nextTileStartingAt:currentTile blocking:NO] blocking:YES];
+			currentTile = _currentStartTile = [self nextTileStartingAt:[self nextTileStartingAt:currentTile blocking:NO] blocking:YES];
 			continue;
 		}
 		//NSLog(@"Initial backtrack at: %@", [self coordStringFromIndex:backtrackTile]);
@@ -99,7 +100,7 @@ static NSInteger neighborOffsets[8];
 		KKNeighborIndices initialBacktrackNeighborIndex = [self neighborIndexForBoundary:boundaryTile backtrack:backtrackTile];
 		KKNeighborIndices neighborIndex = initialBacktrackNeighborIndex + 1;
 		NSUInteger neighborTestCount = 1;
-		NSUInteger neighborTile = boundaryTile + neighborOffsets[neighborIndex];
+		NSUInteger neighborTile = _currentNeighborTile = boundaryTile + neighborOffsets[neighborIndex];
 		//NSLog(@"Initial neighbor at: %@ %@", [self coordStringFromIndex:neighborTile], [self nameForNeighborIndex:neighborIndex]);
 		
 		// remember the start tile and the tile it was entered from (backtrack) for the termination condition
@@ -116,12 +117,13 @@ static NSInteger neighborOffsets[8];
 		KKPointArray* contourSegment = [KKPointArray pointArrayWithCapacity:8];
 		[_contourSegments addObject:contourSegment];
 		
-		//[self dumpBlockMap];
 		//NSLog(@"BEGIN LOOP .......");
 		
 		while (YES)
 		{
+			//[self dumpBlockMap];
 			//NSLog(@"neighbor: %@ [%@] - BLOCKING: %@", [self coordStringFromIndex:neighborTile], [self nameForNeighborIndex:neighborIndex], _blockMap[neighborTile] ? @"YES" : @"NO");
+			//[NSThread sleepForTimeInterval:0.04];
 			
 			// is the current neighbor tile blocking?
 			if (_blockMap[neighborTile])
@@ -140,7 +142,7 @@ static NSInteger neighborOffsets[8];
 				initialBacktrackNeighborIndex = [self neighborIndexForBoundary:boundaryTile backtrack:backtrackTile];
 				neighborIndex = (initialBacktrackNeighborIndex + 1) % 8;
 				neighborTestCount = 0;
-				neighborTile = boundaryTile + neighborOffsets[neighborIndex];
+				neighborTile = _currentNeighborTile = boundaryTile + neighborOffsets[neighborIndex];
 				//NSLog(@"\tNew neighbor at : %@ %@", [self coordStringFromIndex:neighborTile], [self nameForNeighborIndex:neighborIndex]);
 				
 				// uncomment this and set a breakpoint to see the map tracing contours tile after tile
@@ -156,16 +158,16 @@ static NSInteger neighborOffsets[8];
 				}
 				
 				// (advance the current pixel c to the next clockwise pixel in M(p) and update backtrack)
-				backtrackTile = neighborTile;
+				backtrackTile = _currentBacktrackTile = neighborTile;
 				neighborIndex = (neighborIndex + 1) % 8;
-				neighborTile = boundaryTile + neighborOffsets[neighborIndex];
+				neighborTile = _currentNeighborTile = boundaryTile + neighborOffsets[neighborIndex];
 				neighborTestCount++;
 			}
 			
 			if (neighborTile == contourStartTile)
 			{
 				startTileVisitCount++;
-				if (startTileVisitCount > 2 || backtrackTile == backtrackStartTile)
+				if (startTileVisitCount == 2 || backtrackTile == backtrackStartTile)
 				{
 					//NSLog(@"Returned to starting boundary, quitting!");
 					//NSLog(@"\ttart tile at: %@", [self coordStringFromIndex:contourStartTile]);
@@ -183,10 +185,13 @@ static NSInteger neighborOffsets[8];
 		//[self dumpBlockMap];
 
 		// find the next free tile and trace that
-		currentTile = [self nextTileStartingAt:[self nextTileStartingAt:currentTile blocking:NO] blocking:YES];
+		currentTile = _currentStartTile = [self nextTileStartingAt:[self nextTileStartingAt:currentTile blocking:NO] blocking:YES];
 		contourBlockID++;
 	}
 
+	_currentStartTile = -1;
+	_currentNeighborTile = -1;
+	_currentBacktrackTile = -1;
 	[self dumpBlockMap];
 
 	[self convertSegmentsToPath];
@@ -430,7 +435,10 @@ static NSInteger neighborOffsets[8];
 			{
 				// test the tile at the given (tilemap) coord and see if it's blocking or not
 				uint32_t myGID = [_layer tileGidAt:CGPointMake(x - 1, y - 1)];
-				_blockMap[y * width + x] = [self isBlockingGid:myGID];
+				if ([self isBlockingGid:myGID])
+				{
+					_blockMap[y * width + x] = kBlockMapUntracedBlocking;
+				}
 			}
 		}
 	}
@@ -485,8 +493,9 @@ static NSInteger neighborOffsets[8];
 		}
 		
 		if ((blocking == NO && _blockMap[i] == 0) ||
-			(blocking == YES && _blockMap[i] > 0))
+			(blocking == YES && _blockMap[i] == kBlockMapUntracedBlocking))
 		{
+			//NSLog(@"next %@ tile: %@", blocking ? @"BLOCK" : @"FREE", [self coordStringFromIndex:i]);
 			return i;
 		}
 	}
@@ -563,7 +572,7 @@ static NSInteger neighborOffsets[8];
 -(void) dumpBlockMap
 {
 	NSMutableString* str = [NSMutableString stringWithCapacity:_blockMapCount];
-	[str appendString:@"\n\nBlockMap:\n"];
+	[str appendString:@"BlockMap:\n\n"];
 	for (NSUInteger i = 0; i < _blockMapCount; i++)
 	{
 		if (i > 0 && i % ((NSUInteger)_blockMapSize.width) == 0)
@@ -582,7 +591,19 @@ static NSInteger neighborOffsets[8];
 {
 	NSString* blockChar = nil;
 	
-	if (_blockMap[index])
+	if (index == _currentStartTile)
+	{
+		blockChar = @"#";
+	}
+	else if (index == _currentNeighborTile)
+	{
+		blockChar = @"n";
+	}
+	else if (index == _currentBacktrackTile)
+	{
+		blockChar = @"b";
+	}
+	else if (_blockMap[index])
 	{
 		char contourChar = 'A';
 		for (KKIntegerArray* contourIndices in _contourTiles)
@@ -591,7 +612,7 @@ static NSInteger neighborOffsets[8];
 			{
 				if (contourIndices.integers[contourIndex] == index)
 				{
-					blockChar = [NSString stringWithFormat:@"%c", contourChar];
+					blockChar = [NSString stringWithFormat:@"%c", contourChar]; // uppercase letters
 					break;
 				}
 			}
@@ -607,17 +628,17 @@ static NSInteger neighborOffsets[8];
 		{
 			if ([self isOutOfBoundsTile:index])
 			{
-				blockChar = [NSString stringWithFormat:@"%c", 120];
+				blockChar = @"x";
 			}
-			else
+			else if (_blockMap[index] == kBlockMapUntracedBlocking)
 			{
-				blockChar = [NSString stringWithFormat:@"%c", 43];
+				blockChar = @"+";
 			}
 		}
 	}
 	else
 	{
-		blockChar = [NSString stringWithFormat:@"%c", 46];
+		blockChar = @".";
 	}
 	
 	return blockChar;
