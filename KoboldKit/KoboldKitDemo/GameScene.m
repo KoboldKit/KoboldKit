@@ -78,6 +78,8 @@
 	KKLabelNode* reloadLabel = [KKLabelNode labelNodeWithFontNamed:@"Arial"];
 	reloadLabel.name = @"reload label";
 	reloadLabel.text = @"reload";
+	reloadLabel.color = [SKColor blueColor];
+	reloadLabel.colorBlendFactor = 0.6;
 	reloadLabel.position = CGPointMake(self.size.width / 2, self.size.height - reloadLabel.fontSize * 1.5);
 	[hudNode addChild:reloadLabel];
 	
