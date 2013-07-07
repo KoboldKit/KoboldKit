@@ -167,7 +167,7 @@ static NSInteger neighborOffsets[8];
 			if (neighborTile == contourStartTile)
 			{
 				startTileVisitCount++;
-				if (startTileVisitCount == 2 || backtrackTile == backtrackStartTile)
+				if (startTileVisitCount > 2 || backtrackTile == backtrackStartTile)
 				{
 					//NSLog(@"Returned to starting boundary, quitting!");
 					//NSLog(@"\ttart tile at: %@", [self coordStringFromIndex:contourStartTile]);

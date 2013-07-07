@@ -59,8 +59,8 @@
 		[_tilemapNode restrictScrollingToMapBoundary];
 	}
 	
-	_physicsContactDebugNode = [KKPhysicsDebugNode node];
-	[_tilemapNode.mainTileLayerNode addChild:_physicsContactDebugNode];
+	//_physicsContactDebugNode = [KKPhysicsDebugNode node];
+	//[_tilemapNode.mainTileLayerNode addChild:_physicsContactDebugNode];
 	
 	[self setupPlayerCharacter];
 	
@@ -148,10 +148,13 @@
 		_playerCharacter = [KKSpriteNode spriteNodeWithColor:[UIColor redColor] size:playerSize];
 	}
 	
+	CGSize bboxSize = playerSize;
+	bboxSize.width -= 6;
+	bboxSize.height -= 6;
+	[_playerCharacter physicsBodyWithRectangleOfSize:bboxSize];
+	_playerCharacter.physicsBody.contactTestBitMask = 0xFFFFFFFF;
 	_playerCharacter.name = @"player";
 	_playerCharacter.position = playerPosition;
-	[_playerCharacter physicsBodyWithRectangleOfSize:playerSize];
-	_playerCharacter.physicsBody.contactTestBitMask = 0xFFFFFFFF;
 	[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
 	
 

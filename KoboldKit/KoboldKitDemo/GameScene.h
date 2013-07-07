@@ -17,7 +17,7 @@
 	KKSpriteNode* _playerCharacter;
 	KKTilemapNode* _tilemapNode;
 
-	KKPhysicsDebugNode* _physicsContactDebugNode;
+	//KKPhysicsDebugNode* _physicsContactDebugNode;
 	
 	CGPoint _currentControlPadDirection;
 	
