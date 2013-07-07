@@ -20,6 +20,11 @@ static NSInteger neighborOffsets[8];
 
 @implementation KKTilemapLayerContourTracer
 
++(id) contourMapFromTileLayer:(KKTilemapLayer*)layer
+{
+	return [[self alloc] initFromTileLayer:layer blockingGids:nil];
+}
+
 +(id) contourMapFromTileLayer:(KKTilemapLayer*)layer blockingGids:(KKIntegerArray*)blockingGids
 {
 	return [[self alloc] initFromTileLayer:layer blockingGids:blockingGids];
@@ -374,18 +379,23 @@ static NSInteger neighborOffsets[8];
 
 -(BOOL) isBlockingGid:(gid_t)gid
 {
-	NSUInteger numBlockingGids = _blockingGids.count;
-	NSUInteger* blockingGids = _blockingGids.integers;
-	
-	for (NSUInteger i = 0; i < numBlockingGids; i++)
+	if (_blockingGids)
 	{
-		if (blockingGids[i] == gid)
+		NSUInteger numBlockingGids = _blockingGids.count;
+		NSUInteger* blockingGids = _blockingGids.integers;
+		
+		for (NSUInteger i = 0; i < numBlockingGids; i++)
 		{
-			return YES;
+			if (blockingGids[i] == gid)
+			{
+				return YES;
+			}
 		}
+		
+		return NO;
 	}
 	
-	return NO;
+	return (gid != 0);
 }
 
 // returns the neighbor index between these two tiles

@@ -150,7 +150,18 @@
 
 #pragma mark Collisions
 
--(NSArray*) pathsWithBlockingGids:(KKIntegerArray*)blockingGids
+-(NSArray*) contourPathsFromLayer:(KKTilemapLayer*)layer
+{
+	if (self.isObjectLayer)
+	{
+		return nil;
+	}
+	
+	KKTilemapLayerContourTracer* contour = [KKTilemapLayerContourTracer contourMapFromTileLayer:self];
+	return contour.contourSegments;
+}
+
+-(NSArray*) contourPathsWithBlockingGids:(KKIntegerArray*)blockingGids
 {
 	if (self.isObjectLayer)
 	{

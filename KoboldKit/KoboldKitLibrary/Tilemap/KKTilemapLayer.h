@@ -121,7 +121,13 @@
 /** (Tile Layers only) Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.
  @param blockingGids A list of GID numbers which are considered blocking.
  @returns An array containing KKPointArray, each defines a single contour's line segments. */
--(NSArray*) pathsWithBlockingGids:(KKIntegerArray*)blockingGids;
+-(NSArray*) contourPathsWithBlockingGids:(KKIntegerArray*)blockingGids;
+
+/** (Tile Layers only) Generates collision segments from the tile layer, considering all non-empty tiles on this layer as blocking. 
+ Generating the collisions is expensive and should be performed once during load.
+ @param layer The layer from which to derive the collisions.
+ @returns An array containing KKPointArray, each defines a single contour's line segments. */
+-(NSArray*) contourPathsFromLayer:(KKTilemapLayer*)layer;
 
 /** (Object Layers only) Creates and returns a CGPath for every polygon, polyline, rectangle and ellipse object on the layer. */
 -(NSArray*) pathsFromObjects;

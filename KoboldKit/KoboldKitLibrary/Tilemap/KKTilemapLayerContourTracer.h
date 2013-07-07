@@ -49,6 +49,7 @@ typedef enum
 /** Contains KTPointArray of points definining a single contour's line segments. */
 @property (atomic, readonly) NSArray* contourSegments;
 
++(id) contourMapFromTileLayer:(KKTilemapLayer*)layer;
 +(id) contourMapFromTileLayer:(KKTilemapLayer*)layer blockingGids:(KKIntegerArray*)blockingGids;
 
 @end

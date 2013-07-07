@@ -237,6 +237,7 @@
 
 -(SKNode*) createPhysicsCollisions
 {
+	/*
 	KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
 	KKIntegerArray* nonBlockingGids = [KKIntegerArray integerArrayWithCapacity:32];
 	for (KKTilemapTileset* tileset in _tilemap.tilesets)
@@ -306,8 +307,11 @@
 	
 	LOG_EXPR(finalBlockingGids);
 	
-	SKNode* containerNode;
 	NSArray* contours = [_mainTileLayerNode.layer pathsWithBlockingGids:finalBlockingGids];
+	 */
+
+	SKNode* containerNode;
+	NSArray* contours = [_mainTileLayerNode.layer contourPathsFromLayer:_mainTileLayerNode.layer];
 	if (contours.count)
 	{
 		containerNode = [SKNode node];
