@@ -108,6 +108,8 @@
 		DC96A8801788C35A00CE0827 /* Tileset_Geometry_24x24.png in Resources */ = {isa = PBXBuildFile; fileRef = DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */; };
 		DC96A883178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A881178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx */; };
 		DC96A884178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A882178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx */; };
+		DC96A888178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A886178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx */; };
+		DC96A889178A141B00CE0827 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC96A887178A141B00CE0827 /* Tileset_Geometry_32x32.png */; };
 		DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC9CFCFE17749872004C981A /* Jetpack.atlas */; };
 		DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
 		DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
@@ -336,6 +338,8 @@
 		DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_24x24.png; sourceTree = "<group>"; };
 		DC96A881178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest24.tmx; sourceTree = "<group>"; };
 		DC96A882178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest48.tmx; sourceTree = "<group>"; };
+		DC96A886178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 32x32_PlayerSizeTest32.tmx; sourceTree = "<group>"; };
+		DC96A887178A141B00CE0827 /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
 		DC9CFCFE17749872004C981A /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
 		DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeBehavior.h; sourceTree = "<group>"; };
 		DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
@@ -460,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				DC96A87C1788C35A00CE0827 /* 24x24 */,
+				DC96A885178A141B00CE0827 /* 32x32 */,
 				DC96A8751787717200CE0827 /* Config */,
 				DC9CFCFE17749872004C981A /* Jetpack.atlas */,
 				DC2F44071771E9A5005846A7 /* Genetica Texture Pack 10 - Mystery Forest */,
@@ -717,6 +722,15 @@
 				DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */,
 			);
 			path = 24x24;
+			sourceTree = "<group>";
+		};
+		DC96A885178A141B00CE0827 /* 32x32 */ = {
+			isa = PBXGroup;
+			children = (
+				DC96A886178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx */,
+				DC96A887178A141B00CE0827 /* Tileset_Geometry_32x32.png */,
+			);
+			path = 32x32;
 			sourceTree = "<group>";
 		};
 		DC9CFD061774CA5B004C981A /* Framework */ = {
@@ -1068,6 +1082,7 @@
 				DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */,
 				DC2F43BE176CB1F7005846A7 /* crawl-tilemap.tmx in Resources */,
 				DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */,
+				DC96A888178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx in Resources */,
 				DC2F44031770E56E005846A7 /* Icon@2x.png in Resources */,
 				DC2F43C0176CB1F7005846A7 /* crawl-tiles-hd.png in Resources */,
 				DC96A8791787717200CE0827 /* config.lua in Resources */,
@@ -1079,6 +1094,7 @@
 				DC2F43FD1770E56E005846A7 /* Default.png in Resources */,
 				DC96A8801788C35A00CE0827 /* Tileset_Geometry_24x24.png in Resources */,
 				DC2F44261771E9A5005846A7 /* forest.png in Resources */,
+				DC96A889178A141B00CE0827 /* Tileset_Geometry_32x32.png in Resources */,
 				DCDD2DC11769FD0A00F307CD /* Main_iPhone.storyboard in Resources */,
 				DC2F43BF176CB1F7005846A7 /* crawl-tiles-hd.plist in Resources */,
 				DC96A883178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx in Resources */,
