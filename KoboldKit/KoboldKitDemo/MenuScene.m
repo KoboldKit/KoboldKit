@@ -46,7 +46,24 @@
 	[_pleaseWait runAction:[SKAction sequence:@[[SKAction moveToY:-_pleaseWait.fontSize duration:0.3], [SKAction removeFromParent]]]];
 	_pleaseWait = nil;
 
-	if (projectFiles)
+	if (projectFiles == nil)
+	{
+		// fallback to loading all TMX files already present
+		NSMutableArray* files = [NSMutableArray arrayWithCapacity:8];
+		NSDirectoryEnumerator* documentsEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:[NSFileManager pathToDocumentsDirectory]];
+		NSString* file;
+		while (file = [documentsEnumerator nextObject])
+		{
+			if ([[[file lowercaseString] pathExtension] isEqualToString:@"tmx"])
+			{
+				[files addObject:file];
+			}
+		}
+		
+		projectFiles = [NSDictionary dictionaryWithObject:files forKey:[NSURL URLWithString:@"http://0.0.0.0"]];
+	}
+	
+	if (projectFiles.count > 0)
 	{
 		_tmxLoadMenu = [SKNode node];
 		[self addChild:_tmxLoadMenu];
@@ -70,7 +87,7 @@
 		for (NSString* tmxFile in tmxFiles)
 		{
 			KKLabelNode* tmxLabel = [KKLabelNode labelNodeWithFontNamed:@"Courier"];
-			tmxLabel.fontSize = 28;
+			tmxLabel.fontSize = 24;
 			tmxLabel.text = tmxFile;
 			tmxLabel.position = CGPointMake(0, height);
 			[_tmxLoadMenu addChild:tmxLabel];
@@ -79,11 +96,11 @@
 			[tmxLabel addBehavior:button];
 			[self observeNotification:KKButtonDidExecuteNotification selector:@selector(tmxButtonPressed:) object:tmxLabel];
 			
-			height -= tmxLabel.fontSize + 12;
+			height -= tmxLabel.fontSize + 4;
 		}
 		
 		_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height + -height);
-		[_tmxLoadMenu runAction:[SKAction moveToY:self.size.height - 80 duration:0.3]];
+		[_tmxLoadMenu runAction:[SKAction moveToY:self.size.height - 50 duration:0.3]];
 	}
 }
 

@@ -44,4 +44,7 @@
  @returns The absolute path to the file, or nil if the file could not be found in any of the searched directories. */
 +(NSString*) pathForFile:(NSString*)file;
 
+/** @returns The full path to the documents directory. */
++(NSString*) pathToDocumentsDirectory;
+
 @end

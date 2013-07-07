@@ -42,6 +42,11 @@ static NSString* CFBundleName = nil;
 	return [path stringByAppendingPathComponent:file];
 }
 
++(NSString*) pathToDocumentsDirectory
+{
+	return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
 +(NSString*) pathForFile:(NSString*)file
 {
 	NSFileManager* fileManager = [NSFileManager defaultManager];

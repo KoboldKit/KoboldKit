@@ -106,6 +106,8 @@
 		DC96A87B17877D0A00CE0827 /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC96A87A17877D0A00CE0827 /* devconfig.lua */; };
 		DC96A87F1788C35A00CE0827 /* 24x24_Level01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A87D1788C35A00CE0827 /* 24x24_Level01.tmx */; };
 		DC96A8801788C35A00CE0827 /* Tileset_Geometry_24x24.png in Resources */ = {isa = PBXBuildFile; fileRef = DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */; };
+		DC96A883178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A881178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx */; };
+		DC96A884178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A882178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx */; };
 		DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC9CFCFE17749872004C981A /* Jetpack.atlas */; };
 		DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
 		DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
@@ -332,6 +334,8 @@
 		DC96A87A17877D0A00CE0827 /* devconfig.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = devconfig.lua; sourceTree = "<group>"; };
 		DC96A87D1788C35A00CE0827 /* 24x24_Level01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_Level01.tmx; sourceTree = "<group>"; };
 		DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_24x24.png; sourceTree = "<group>"; };
+		DC96A881178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest24.tmx; sourceTree = "<group>"; };
+		DC96A882178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest48.tmx; sourceTree = "<group>"; };
 		DC9CFCFE17749872004C981A /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
 		DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeBehavior.h; sourceTree = "<group>"; };
 		DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
@@ -707,6 +711,8 @@
 		DC96A87C1788C35A00CE0827 /* 24x24 */ = {
 			isa = PBXGroup;
 			children = (
+				DC96A881178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx */,
+				DC96A882178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx */,
 				DC96A87D1788C35A00CE0827 /* 24x24_Level01.tmx */,
 				DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */,
 			);
@@ -1075,6 +1081,7 @@
 				DC2F44261771E9A5005846A7 /* forest.png in Resources */,
 				DCDD2DC11769FD0A00F307CD /* Main_iPhone.storyboard in Resources */,
 				DC2F43BF176CB1F7005846A7 /* crawl-tiles-hd.plist in Resources */,
+				DC96A883178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx in Resources */,
 				DC2F43C5176CB1F7005846A7 /* crawl-tiles.pvr.ccz in Resources */,
 				DC96A87F1788C35A00CE0827 /* 24x24_Level01.tmx in Resources */,
 				DC2F44241771E9A5005846A7 /* forest-parallax.tmx in Resources */,
@@ -1085,6 +1092,7 @@
 				DC96A8781787717200CE0827 /* devconfig.lua.sample in Resources */,
 				DC96A87B17877D0A00CE0827 /* devconfig.lua in Resources */,
 				DC2F43FC1770E56E005846A7 /* Default-568h@2x.png in Resources */,
+				DC96A884178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx in Resources */,
 				DC2F43C3176CB1F7005846A7 /* crawl-tiles.plist in Resources */,
 				DC2F44301771E9A5005846A7 /* other.png in Resources */,
 				DCDD2DB81769FD0A00F307CD /* InfoPlist.strings in Resources */,
