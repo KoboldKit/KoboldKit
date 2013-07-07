@@ -12,9 +12,13 @@
 #import "KKTilemap.h"
 #import "KKTilemapLayer.h"
 #import "KKTilemapObject.h"
+#import "KKTilemapTileset.h"
+#import "KKTilemapProperties.h"
 #import "SKNode+KoboldKit.h"
 #import "KKFollowTargetBehavior.h"
 #import "KKStayInBoundsBehavior.h"
+#import "KKIntegerArray.h"
+#import "KKMutableNumber.h"
 
 @implementation KKTilemapNode
 
@@ -207,10 +211,103 @@
 
 #pragma mark Collision
 
--(SKNode*) createPhysicsCollisionsWithBlockingGids:(KKIntegerArray*)blockingGids
+-(void) addGidStringComponents:(NSArray*)components toGidArray:(KKIntegerArray*)gidArray gidOffset:(gid_t)gidOffset
 {
+	for (NSString* range in components)
+	{
+		NSUInteger gidStart = 0, gidEnd = 0;
+		NSArray* fromTo = [range componentsSeparatedByString:@"-"];
+		if (fromTo.count == 1)
+		{
+			gidStart = [[fromTo firstObject] intValue];
+			gidEnd = gidStart;
+		}
+		else
+		{
+			gidStart = [[fromTo firstObject] intValue];
+			gidEnd = [[fromTo lastObject] intValue];
+		}
+		
+		for (NSUInteger i = gidStart; i <= gidEnd; i++)
+		{
+			[gidArray addInteger:i + gidOffset - 1];
+		}
+	}
+}
+
+-(SKNode*) createPhysicsCollisions
+{
+	KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
+	KKIntegerArray* nonBlockingGids = [KKIntegerArray integerArrayWithCapacity:32];
+	for (KKTilemapTileset* tileset in _tilemap.tilesets)
+	{
+		id blocking = [tileset.properties.properties objectForKey:@"blockingTiles"];
+		if ([blocking isKindOfClass:[KKMutableNumber class]])
+		{
+			[blockingGids addInteger:[blocking intValue]];
+		}
+		else if ([blocking isKindOfClass:[NSString class]])
+		{
+			NSString* blockingTiles = (NSString*)blocking;
+			if (blockingTiles == nil || [[blockingTiles lowercaseString] isEqualToString:@"all"])
+			{
+				// assume all tiles are blocking
+				for (gid_t gid = tileset.firstGid; gid <= tileset.lastGid; gid++)
+				{
+					[blockingGids addInteger:gid];
+				}
+			}
+			else if (blockingTiles.length > 0)
+			{
+				NSArray* components = [blockingTiles componentsSeparatedByString:@","];
+				[self addGidStringComponents:components toGidArray:blockingGids gidOffset:tileset.firstGid];
+			}
+		}
+
+		id nonBlocking = [tileset.properties.properties objectForKey:@"nonBlockingTiles"];
+		if ([nonBlocking isKindOfClass:[KKMutableNumber class]])
+		{
+			[nonBlockingGids addInteger:[nonBlocking intValue]];
+		}
+		else if ([blocking isKindOfClass:[NSString class]])
+		{
+			NSString* nonBlockingTiles = (NSString*)nonBlocking;
+			NSAssert([[nonBlockingTiles lowercaseString] isEqualToString:@"all"] == NO, @"the keyword 'all' is not allowed for nonBlockingTiles property");
+			if (nonBlockingTiles && nonBlockingTiles.length > 0)
+			{
+				NSArray* components = [nonBlockingTiles componentsSeparatedByString:@","];
+				[self addGidStringComponents:components toGidArray:nonBlockingGids gidOffset:tileset.firstGid];
+			}
+		}
+	}
+	
+	// remove all gids explicitly marked as nonBlocking from blocking array
+	KKIntegerArray* finalBlockingGids = [KKIntegerArray integerArrayWithCapacity:blockingGids.count];
+	for (NSUInteger i = 0; i < blockingGids.count; i++)
+	{
+		BOOL gidIsBlocking = YES;
+		gid_t blockingGid = blockingGids.integers[i];
+		
+		for (NSUInteger j = 0; j < nonBlockingGids.count; j++)
+		{
+			gid_t nonBlockingGid = nonBlockingGids.integers[j];
+			if (blockingGid == nonBlockingGid)
+			{
+				gidIsBlocking = NO;
+				break;
+			}
+		}
+		
+		if (gidIsBlocking)
+		{
+			[finalBlockingGids addInteger:blockingGid];
+		}
+	}
+	
+	LOG_EXPR(finalBlockingGids);
+	
 	SKNode* containerNode;
-	NSArray* contours = [_mainTileLayerNode.layer pathsWithBlockingGids:blockingGids];
+	NSArray* contours = [_mainTileLayerNode.layer pathsWithBlockingGids:finalBlockingGids];
 	if (contours.count)
 	{
 		containerNode = [SKNode node];
