@@ -92,12 +92,12 @@
 		if (mainTileLayer.endlessScrollingHorizontal == NO)
 		{
 			cameraBounds.origin.x = -cameraBounds.size.width + sceneFrame.origin.x + sceneFrame.size.width;
-			cameraBounds.size.width = cameraBounds.size.width - sceneFrame.size.width + 1;
+			cameraBounds.size.width = cameraBounds.size.width - sceneFrame.size.width;
 		}
 		if (mainTileLayer.endlessScrollingVertical == NO)
 		{
 			cameraBounds.origin.y = -cameraBounds.size.height + sceneFrame.origin.y + sceneFrame.size.height;
-			cameraBounds.size.height = cameraBounds.size.height - sceneFrame.size.height + 1;
+			cameraBounds.size.height = cameraBounds.size.height - sceneFrame.size.height;
 		}
 
 		NSLog(@"Tilemap scrolling bounds: %@", NSStringFromCGRect(cameraBounds));
