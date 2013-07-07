@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="40" height="27" tilewidth="24" tileheight="24" backgroundcolor="#ffffff">
  <properties>
   <property name="_iPadScaleFactor" value="2"/>
@@ -10,21 +9,16 @@
  </properties>
  <tileset firstgid="1" name="Tileset_Geometry_24x24" tilewidth="24" tileheight="24" spacing="1">
   <properties>
-   <property name="blockingTiles" value="1-6,11-16,21-26,31-33,35-36"/>
+   <property name="blockingTiles" value="1-6,11-16,21-26,31-33,35-36,41-43"/>
   </properties>
   <image source="Tileset_Geometry_24x24.png" width="256" height="256"/>
  </tileset>
- <layer name="bg layer" width="40" height="27">
-  <data encoding="base64" compression="zlib">
-   eJzt0MEJACAMxdDM0v2H9CSIoHjziyk82mNoASVJkvQpAhp2bX1ut6z+Nu8EHNwpEpte6pOkUQN6/43Z
-  </data>
- </layer>
  <layer name="main layer" width="40" height="27">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjALqAsaBdgABwD3QDmCAhBETDiwwgO6CgcEQRvjAqPtwA3kgVkDCiljUiAKxGBJmo4/TyAaj8U0ZGHUfZQA9vwwVgKuOgWHmgXMaUYCfYXi7X5IBdxkNK8elsOijF+AlQs1A5t2h4D4dAngg3UcofQ6W9ig5AACWWwSt
+   eJztlk8LgzAMxTM3vLg/XhTdZdtxbt//86mgUEK7ljRp7PDBAw+m/PpIogAyOgmdy6WrNoBHO1+cNPnOFuN52Fp+mCeW72A8D4s/Eedx81WR9ViYpwuomTMqHK5Z6Wh5cWf0S5J8AzKlD3PL7zH5afhlqWkmt4ZLMTqefSeZZ8i8+uTiw/3HsQ8pStWPb6DdNeW8UITnJRe5vjGrj3poQbrBf/P34N7R6x6/W+pS6RLwjubs5sD39ViTz9efEv+jqTQCcv4JaA==
   </data>
  </layer>
  <objectgroup name="game objects" width="40" height="27">
