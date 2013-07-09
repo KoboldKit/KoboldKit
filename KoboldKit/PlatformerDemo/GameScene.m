@@ -317,16 +317,7 @@
 -(void) controlPadDidChangeDirection:(NSNotification*)note
 {
 	KKControlPadBehavior* controlPad = [note.userInfo objectForKey:@"behavior"];
-
-	if (controlPad.direction == KKArcadeJoystickNone)
-	{
-		_currentControlPadDirection = CGPointZero;
-		_playerCharacter.physicsBody.velocity = CGPointMake(0, _playerCharacter.physicsBody.velocity.y);
-	}
-	else
-	{
-		_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _dpadForce);
-	}
+	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _dpadForce);
 }
 
 -(void) attackButtonPressed:(NSNotification*)note

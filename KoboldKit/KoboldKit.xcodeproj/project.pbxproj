@@ -127,10 +127,6 @@
 		DC484CA3178C43400067DAA4 /* KKTilemapTileProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE901176C9E2B003E4087 /* KKTilemapTileProperties.m */; };
 		DC484CA4178C43400067DAA4 /* KKTMXReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE907176C9E2B003E4087 /* KKTMXReader.m */; };
 		DC484CA5178C43400067DAA4 /* KKTMXWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE909176C9E2B003E4087 /* KKTMXWriter.m */; };
-		DC484CA6178C43400067DAA4 /* KKTilemapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43E917708FEC005846A7 /* KKTilemapNode.m */; };
-		DC484CA7178C43400067DAA4 /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EC177090A8005846A7 /* KKTilemapLayerNode.m */; };
-		DC484CA8178C43400067DAA4 /* KKTilemapTileLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */; };
-		DC484CA9178C43400067DAA4 /* KKTilemapObjectLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43F217709109005846A7 /* KKTilemapObjectLayerNode.m */; };
 		DC484CAA178C43400067DAA4 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
 		DC484CAB178C43400067DAA4 /* NSFileManager+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */; };
 		DC484CAC178C43400067DAA4 /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */; };
@@ -188,6 +184,18 @@
 		DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
 		DC484CE1178C43BE0067DAA4 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
 		DC484CE4178C465E0067DAA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484CE3178C465E0067DAA4 /* libz.dylib */; };
+		DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */; };
+		DCB76E5E178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
+		DCB76E5F178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
+		DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E57178CB19C0047B4EC /* KKTilemapNode.h */; };
+		DCB76E61178CB19C0047B4EC /* KKTilemapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E58178CB19C0047B4EC /* KKTilemapNode.m */; };
+		DCB76E62178CB19C0047B4EC /* KKTilemapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E58178CB19C0047B4EC /* KKTilemapNode.m */; };
+		DCB76E63178CB19C0047B4EC /* KKTilemapObjectLayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E59178CB19C0047B4EC /* KKTilemapObjectLayerNode.h */; };
+		DCB76E64178CB19C0047B4EC /* KKTilemapObjectLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E5A178CB19C0047B4EC /* KKTilemapObjectLayerNode.m */; };
+		DCB76E65178CB19C0047B4EC /* KKTilemapObjectLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E5A178CB19C0047B4EC /* KKTilemapObjectLayerNode.m */; };
+		DCB76E66178CB19C0047B4EC /* KKTilemapTileLayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E5B178CB19C0047B4EC /* KKTilemapTileLayerNode.h */; };
+		DCB76E67178CB19C0047B4EC /* KKTilemapTileLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E5C178CB19C0047B4EC /* KKTilemapTileLayerNode.m */; };
+		DCB76E68178CB19C0047B4EC /* KKTilemapTileLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E5C178CB19C0047B4EC /* KKTilemapTileLayerNode.m */; };
 		DCCC619D178C5626009EC802 /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C43178C40BB0067DAA4 /* KoboldKit.framework */; };
 		DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9CFD391774CB47004C981A /* KoboldKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCD11E37178C522300FBC406 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
@@ -224,10 +232,6 @@
 		DCD7A252178C7449004A0467 /* KKTilemapTileProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE901176C9E2B003E4087 /* KKTilemapTileProperties.m */; };
 		DCD7A253178C7449004A0467 /* KKTMXReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE907176C9E2B003E4087 /* KKTMXReader.m */; };
 		DCD7A254178C7449004A0467 /* KKTMXWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE909176C9E2B003E4087 /* KKTMXWriter.m */; };
-		DCD7A255178C7449004A0467 /* KKTilemapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43E917708FEC005846A7 /* KKTilemapNode.m */; };
-		DCD7A256178C7449004A0467 /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EC177090A8005846A7 /* KKTilemapLayerNode.m */; };
-		DCD7A257178C7449004A0467 /* KKTilemapTileLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */; };
-		DCD7A258178C7449004A0467 /* KKTilemapObjectLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43F217709109005846A7 /* KKTilemapObjectLayerNode.m */; };
 		DCD7A259178C7449004A0467 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
 		DCD7A25A178C7449004A0467 /* NSFileManager+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */; };
 		DCD7A25B178C7449004A0467 /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */; };
@@ -388,14 +392,6 @@
 		DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles.tps"; sourceTree = "<group>"; };
 		DC2F43D4176CC13B005846A7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		DC2F43D5176CC13B005846A7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		DC2F43E817708FEC005846A7 /* KKTilemapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTilemapNode.h; path = KoboldKitLibrary/Tilemap/KKTilemapNode.h; sourceTree = SOURCE_ROOT; };
-		DC2F43E917708FEC005846A7 /* KKTilemapNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTilemapNode.m; path = KoboldKitLibrary/Tilemap/KKTilemapNode.m; sourceTree = SOURCE_ROOT; };
-		DC2F43EB177090A8005846A7 /* KKTilemapLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTilemapLayerNode.h; path = KoboldKitLibrary/Tilemap/KKTilemapLayerNode.h; sourceTree = SOURCE_ROOT; };
-		DC2F43EC177090A8005846A7 /* KKTilemapLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTilemapLayerNode.m; path = KoboldKitLibrary/Tilemap/KKTilemapLayerNode.m; sourceTree = SOURCE_ROOT; };
-		DC2F43EE177090F8005846A7 /* KKTilemapTileLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTilemapTileLayerNode.h; path = KoboldKitLibrary/Tilemap/KKTilemapTileLayerNode.h; sourceTree = SOURCE_ROOT; };
-		DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTilemapTileLayerNode.m; path = KoboldKitLibrary/Tilemap/KKTilemapTileLayerNode.m; sourceTree = SOURCE_ROOT; };
-		DC2F43F117709109005846A7 /* KKTilemapObjectLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTilemapObjectLayerNode.h; path = KoboldKitLibrary/Tilemap/KKTilemapObjectLayerNode.h; sourceTree = SOURCE_ROOT; };
-		DC2F43F217709109005846A7 /* KKTilemapObjectLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTilemapObjectLayerNode.m; path = KoboldKitLibrary/Tilemap/KKTilemapObjectLayerNode.m; sourceTree = SOURCE_ROOT; };
 		DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
 		DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
 		DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+KoboldKit.h"; sourceTree = "<group>"; };
@@ -410,7 +406,7 @@
 		DC484C1B178C40800067DAA4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DC484C43178C40BB0067DAA4 /* KoboldKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KoboldKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC484C6B178C418C0067DAA4 /* libKoboldKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC484CE2178C44750067DAA4 /* KoboldKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KoboldKit-Prefix.pch"; path = "KoboldKitLibrary/KoboldKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		DC484CE2178C44750067DAA4 /* KoboldKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KoboldKit-Prefix.pch"; path = "KoboldKitFramework/KoboldKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		DC484CE3178C465E0067DAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DC4DE8F0176C9E2B003E4087 /* KKTilemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemap.h; sourceTree = "<group>"; };
 		DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemap.m; sourceTree = "<group>"; };
@@ -552,6 +548,14 @@
 		DCB087E4177B439B004182E4 /* KKViewOriginNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKViewOriginNode.m; sourceTree = "<group>"; };
 		DCB087E9177BAC2F004182E4 /* KKPhysicsDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPhysicsDebugNode.h; sourceTree = "<group>"; };
 		DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPhysicsDebugNode.m; sourceTree = "<group>"; };
+		DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapLayerNode.h; sourceTree = "<group>"; };
+		DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemapLayerNode.m; sourceTree = "<group>"; };
+		DCB76E57178CB19C0047B4EC /* KKTilemapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapNode.h; sourceTree = "<group>"; };
+		DCB76E58178CB19C0047B4EC /* KKTilemapNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemapNode.m; sourceTree = "<group>"; };
+		DCB76E59178CB19C0047B4EC /* KKTilemapObjectLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapObjectLayerNode.h; sourceTree = "<group>"; };
+		DCB76E5A178CB19C0047B4EC /* KKTilemapObjectLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemapObjectLayerNode.m; sourceTree = "<group>"; };
+		DCB76E5B178CB19C0047B4EC /* KKTilemapTileLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapTileLayerNode.h; sourceTree = "<group>"; };
+		DCB76E5C178CB19C0047B4EC /* KKTilemapTileLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemapTileLayerNode.m; sourceTree = "<group>"; };
 		DCCC619C178C560B009EC802 /* PlatformerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlatformerDemo-Prefix.pch"; sourceTree = "<group>"; };
 		DCD11E36178C522300FBC406 /* PlatformerDemo-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlatformerDemo-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD11E3D178C522300FBC406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -788,16 +792,16 @@
 		DC4DE8EF176C9E2B003E4087 /* Tilemap */ = {
 			isa = PBXGroup;
 			children = (
+				DCB76E57178CB19C0047B4EC /* KKTilemapNode.h */,
+				DCB76E58178CB19C0047B4EC /* KKTilemapNode.m */,
+				DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */,
+				DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */,
+				DCB76E59178CB19C0047B4EC /* KKTilemapObjectLayerNode.h */,
+				DCB76E5A178CB19C0047B4EC /* KKTilemapObjectLayerNode.m */,
+				DCB76E5B178CB19C0047B4EC /* KKTilemapTileLayerNode.h */,
+				DCB76E5C178CB19C0047B4EC /* KKTilemapTileLayerNode.m */,
 				DC2F43E617708EDC005846A7 /* Tilemap Model */,
 				DC2F43E717708EED005846A7 /* TMX Reader/Writer */,
-				DC2F43E817708FEC005846A7 /* KKTilemapNode.h */,
-				DC2F43E917708FEC005846A7 /* KKTilemapNode.m */,
-				DC2F43EB177090A8005846A7 /* KKTilemapLayerNode.h */,
-				DC2F43EC177090A8005846A7 /* KKTilemapLayerNode.m */,
-				DC2F43EE177090F8005846A7 /* KKTilemapTileLayerNode.h */,
-				DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */,
-				DC2F43F117709109005846A7 /* KKTilemapObjectLayerNode.h */,
-				DC2F43F217709109005846A7 /* KKTilemapObjectLayerNode.m */,
 			);
 			path = Tilemap;
 			sourceTree = "<group>";
@@ -1072,8 +1076,8 @@
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
-				DCDD2DF01769FD2E00F307CD /* KoboldKitLibrary */,
-				DCDD2E021769FD2E00F307CD /* KoboldKitLibraryTests */,
+				DCDD2DF01769FD2E00F307CD /* KoboldKitFramework */,
+				DCDD2E021769FD2E00F307CD /* KoboldKitFrameworkTests */,
 				DCD11E39178C522300FBC406 /* PlatformerDemo */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
 				DCDD2DA91769FD0A00F307CD /* Products */,
@@ -1110,7 +1114,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DCDD2DF01769FD2E00F307CD /* KoboldKitLibrary */ = {
+		DCDD2DF01769FD2E00F307CD /* KoboldKitFramework */ = {
 			isa = PBXGroup;
 			children = (
 				DC9CFD391774CB47004C981A /* KoboldKit.h */,
@@ -1123,10 +1127,10 @@
 				DCDD2E2B176A40C400F307CD /* External */,
 				DC9CFD4A1774CC6B004C981A /* Documentation */,
 			);
-			path = KoboldKitLibrary;
+			path = KoboldKitFramework;
 			sourceTree = "<group>";
 		};
-		DCDD2E021769FD2E00F307CD /* KoboldKitLibraryTests */ = {
+		DCDD2E021769FD2E00F307CD /* KoboldKitFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
 				DC2F43CA176CC13B005846A7 /* crawl-tiles Oct-5-2010 */,
@@ -1135,7 +1139,7 @@
 				DCFDF3BC176B244A00F2CAD0 /* TestScene.m */,
 				DCDD2E031769FD2E00F307CD /* Supporting Files */,
 			);
-			path = KoboldKitLibraryTests;
+			path = KoboldKitFrameworkTests;
 			sourceTree = "<group>";
 		};
 		DCDD2E031769FD2E00F307CD /* Supporting Files */ = {
@@ -1204,7 +1208,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB76E66178CB19C0047B4EC /* KKTilemapTileLayerNode.h in Headers */,
+				DCB76E63178CB19C0047B4EC /* KKTilemapObjectLayerNode.h in Headers */,
+				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
+				DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1438,6 +1446,7 @@
 			files = (
 				DC484CD9178C43BE0067DAA4 /* KKViewOriginNode.m in Sources */,
 				DC484CDA178C43BE0067DAA4 /* KKPhysicsDebugNode.m in Sources */,
+				DCB76E62178CB19C0047B4EC /* KKTilemapNode.m in Sources */,
 				DC484CDB178C43BE0067DAA4 /* KKButtonBehavior.m in Sources */,
 				DC484CDC178C43BE0067DAA4 /* KKControlPadBehavior.m in Sources */,
 				DC484CDD178C43BE0067DAA4 /* KKFollowTargetBehavior.m in Sources */,
@@ -1459,6 +1468,7 @@
 				DC484CC3178C43690067DAA4 /* lfunc.c in Sources */,
 				DC484CC4178C43690067DAA4 /* lgc.c in Sources */,
 				DC484CC5178C43690067DAA4 /* linit.c in Sources */,
+				DCB76E5F178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */,
 				DC484CC6178C43690067DAA4 /* liolib.c in Sources */,
 				DC484CC7178C43690067DAA4 /* llex.c in Sources */,
 				DC484CC8178C43690067DAA4 /* lmathlib.c in Sources */,
@@ -1484,6 +1494,7 @@
 				DC484C94178C43400067DAA4 /* SKNode+KoboldKit.m in Sources */,
 				DC484C95178C43400067DAA4 /* SKScene+KoboldKit.m in Sources */,
 				DC484C96178C43400067DAA4 /* KKView.m in Sources */,
+				DCB76E68178CB19C0047B4EC /* KKTilemapTileLayerNode.m in Sources */,
 				DC484C97178C43400067DAA4 /* KKScene.m in Sources */,
 				DC484C98178C43400067DAA4 /* KKNode.m in Sources */,
 				DC484C99178C43400067DAA4 /* KKModel.m in Sources */,
@@ -1499,12 +1510,9 @@
 				DC484CA3178C43400067DAA4 /* KKTilemapTileProperties.m in Sources */,
 				DC484CA4178C43400067DAA4 /* KKTMXReader.m in Sources */,
 				DC484CA5178C43400067DAA4 /* KKTMXWriter.m in Sources */,
-				DC484CA6178C43400067DAA4 /* KKTilemapNode.m in Sources */,
-				DC484CA7178C43400067DAA4 /* KKTilemapLayerNode.m in Sources */,
-				DC484CA8178C43400067DAA4 /* KKTilemapTileLayerNode.m in Sources */,
-				DC484CA9178C43400067DAA4 /* KKTilemapObjectLayerNode.m in Sources */,
 				DC484CAA178C43400067DAA4 /* NSCoder+KoboldKit.m in Sources */,
 				DC484CAB178C43400067DAA4 /* NSFileManager+KoboldKit.m in Sources */,
+				DCB76E65178CB19C0047B4EC /* KKTilemapObjectLayerNode.m in Sources */,
 				DC484CAC178C43400067DAA4 /* NSDictionary+KoboldKit.m in Sources */,
 				DC484CAD178C43400067DAA4 /* KKLua.m in Sources */,
 				DC484CAE178C43400067DAA4 /* KKIntegerArray.m in Sources */,
@@ -1527,6 +1535,7 @@
 			files = (
 				DCD7A268178C7453004A0467 /* lapi.c in Sources */,
 				DCD7A269178C7453004A0467 /* lauxlib.c in Sources */,
+				DCB76E61178CB19C0047B4EC /* KKTilemapNode.m in Sources */,
 				DCD7A26A178C7453004A0467 /* lbaselib.c in Sources */,
 				DCD7A26B178C7453004A0467 /* lbitlib.c in Sources */,
 				DCD7A26C178C7453004A0467 /* lcode.c in Sources */,
@@ -1548,6 +1557,7 @@
 				DCD7A27C178C7453004A0467 /* lopcodes.c in Sources */,
 				DCD7A27D178C7453004A0467 /* loslib.c in Sources */,
 				DCD7A27E178C7453004A0467 /* lparser.c in Sources */,
+				DCB76E5E178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */,
 				DCD7A27F178C7453004A0467 /* lstate.c in Sources */,
 				DCD7A280178C7453004A0467 /* lstring.c in Sources */,
 				DCD7A281178C7453004A0467 /* lstrlib.c in Sources */,
@@ -1573,6 +1583,7 @@
 				DCD7A244178C7449004A0467 /* KKNodeBehavior.m in Sources */,
 				DCD7A245178C7449004A0467 /* KKButtonBehavior.m in Sources */,
 				DCD7A246178C7449004A0467 /* KKControlPadBehavior.m in Sources */,
+				DCB76E67178CB19C0047B4EC /* KKTilemapTileLayerNode.m in Sources */,
 				DCD7A247178C7449004A0467 /* KKFollowTargetBehavior.m in Sources */,
 				DCD7A248178C7449004A0467 /* KKCameraFollowBehavior.m in Sources */,
 				DCD7A249178C7449004A0467 /* KKStayInBoundsBehavior.m in Sources */,
@@ -1587,13 +1598,10 @@
 				DCD7A252178C7449004A0467 /* KKTilemapTileProperties.m in Sources */,
 				DCD7A253178C7449004A0467 /* KKTMXReader.m in Sources */,
 				DCD7A254178C7449004A0467 /* KKTMXWriter.m in Sources */,
-				DCD7A255178C7449004A0467 /* KKTilemapNode.m in Sources */,
-				DCD7A256178C7449004A0467 /* KKTilemapLayerNode.m in Sources */,
-				DCD7A257178C7449004A0467 /* KKTilemapTileLayerNode.m in Sources */,
-				DCD7A258178C7449004A0467 /* KKTilemapObjectLayerNode.m in Sources */,
 				DCD7A259178C7449004A0467 /* NSCoder+KoboldKit.m in Sources */,
 				DCD7A25A178C7449004A0467 /* NSFileManager+KoboldKit.m in Sources */,
 				DCD7A25B178C7449004A0467 /* NSDictionary+KoboldKit.m in Sources */,
+				DCB76E64178CB19C0047B4EC /* KKTilemapObjectLayerNode.m in Sources */,
 				DCD7A25C178C7449004A0467 /* KKLua.m in Sources */,
 				DCD7A25D178C7449004A0467 /* KKIntegerArray.m in Sources */,
 				DCD7A25E178C7449004A0467 /* KKPointArray.m in Sources */,
@@ -1706,7 +1714,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "KoboldKitFramework/KoboldKit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1733,7 +1741,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "KoboldKitFramework/KoboldKit-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = KoboldKit;
@@ -1751,7 +1759,7 @@
 				);
 				DSTROOT = /tmp/KoboldKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "KoboldKitFramework/KoboldKit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1774,7 +1782,7 @@
 				);
 				DSTROOT = /tmp/KoboldKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "KoboldKitFramework/KoboldKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = KoboldKit;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
