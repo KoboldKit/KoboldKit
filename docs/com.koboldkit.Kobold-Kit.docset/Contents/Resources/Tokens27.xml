@@ -387,6 +387,42 @@ Default: NO. TILED-EDITABLE</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setMainTileLayer:</TokenIdentifier>
+			<Abstract type="html">If YES, this layer represents the "main" tile layer which is where (most of) the gameplay happens, it plays a special role in the tilemap renderer.
+Only one tile layer should have this flag set. If no tile layer has this flag set, the main tile layer is determined by having a parallax factor {1,1}. Default: NO. TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL mainTileLayer</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the layer is set to be the main tile layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/mainTileLayer</TokenIdentifier>
+			<Abstract type="html">If YES, this layer represents the "main" tile layer which is where (most of) the gameplay happens, it plays a special role in the tilemap renderer.
+Only one tile layer should have this flag set. If no tile layer has this flag set, the main tile layer is determined by having a parallax factor {1,1}. Default: NO. TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL mainTileLayer</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the layer is set to be the main tile layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayer/mainTileLayer</TokenIdentifier>
+			<Abstract type="html">If YES, this layer represents the "main" tile layer which is where (most of) the gameplay happens, it plays a special role in the tilemap renderer.
+Only one tile layer should have this flag set. If no tile layer has this flag set, the main tile layer is determined by having a parallax factor {1,1}. Default: NO. TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL mainTileLayer</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the layer is set to be the main tile layer.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayer</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/setParallaxFactor:</TokenIdentifier>
 			<Abstract type="html">Determines how fast this layer moves in both directions when scrolling the tilemap. Value between -1.0f and 1.0f, usually you only use the range from 0.0f to 1.0f.
    Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).</Abstract>
@@ -548,11 +584,11 @@ for object layers.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/pathsWithBlockingGids:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/contourPathsWithBlockingGids:</TokenIdentifier>
 			<Abstract type="html">(Tile Layers only) Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.</Abstract>
 			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)pathsWithBlockingGids:(KKIntegerArray *)blockingGids</Declaration>
+			<Declaration>- (NSArray *)contourPathsWithBlockingGids:(KKIntegerArray *)blockingGids</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>blockingGids</Name>
@@ -560,7 +596,24 @@ for object layers.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">An array containing KKPointArray, each defines a single contour's line segments.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathsWithBlockingGids:</Anchor>
+			<Anchor>//api/name/contourPathsWithBlockingGids:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/contourPathsFromLayer:</TokenIdentifier>
+			<Abstract type="html">(Tile Layers only) Generates collision segments from the tile layer, considering all non-empty tiles on this layer as blocking.
+Generating the collisions is expensive and should be performed once during load.</Abstract>
+			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)contourPathsFromLayer:(KKTilemapLayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">The layer from which to derive the collisions.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array containing KKPointArray, each defines a single contour's line segments.</Abstract></ReturnValue>
+			<Anchor>//api/name/contourPathsFromLayer:</Anchor>
 		</Token>
 		
 		<Token>

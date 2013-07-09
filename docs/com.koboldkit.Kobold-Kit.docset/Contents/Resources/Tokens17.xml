@@ -337,6 +337,86 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/boolForKeyPath:</TokenIdentifier>
+			<Abstract type="html">The KVC path to a value.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)boolForKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The KVC path to a value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/boolForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/floatForKeyPath:</TokenIdentifier>
+			<Abstract type="html">The KVC path to a value.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (float)floatForKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The KVC path to a value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/floatForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/doubleForKeyPath:</TokenIdentifier>
+			<Abstract type="html">The KVC path to a value.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (double)doubleForKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The KVC path to a value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/doubleForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/intForKeyPath:</TokenIdentifier>
+			<Abstract type="html">The KVC path to a value.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (int32_t)intForKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The KVC path to a value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/intForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKModel/unsignedIntForKeyPath:</TokenIdentifier>
+			<Abstract type="html">The KVC path to a value.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>- (uint32_t)unsignedIntForKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The KVC path to a value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/unsignedIntForKeyPath:</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKModel/mutableNumberForKey:</TokenIdentifier>
 			<Abstract type="html">Accessing the KKMutableNumber object directly allows you to change the value without having to reassign it using a setter method.</Abstract>
 			<DeclaredIn>KKModel.h</DeclaredIn>			

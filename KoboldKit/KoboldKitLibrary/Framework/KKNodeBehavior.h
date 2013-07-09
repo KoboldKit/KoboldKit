@@ -6,9 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "KKSpriteKit.h"
-#import "KKMacros.h"
+#import "KKCompatibility.h"
 
 @class KKNode;
 @class KKNodeController;

@@ -28,22 +28,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathForAppSupportFile:</TokenIdentifier>
-			<Abstract type="html">The absolute path to the file.</Abstract>
-			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)pathForAppSupportFile:(NSString *)file</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>file</Name>
-					<Abstract type="html">A filename.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The absolute path to the file.The path to the file or nil if the file couldn't be found in the app support directory.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForAppSupportFile:</Anchor>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathForDocumentsFile:</TokenIdentifier>
 			<Abstract type="html">The absolute path to the file.</Abstract>
 			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
@@ -57,22 +41,6 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">The absolute path to the file.The path to the file or nil if the file couldn't be found in the user's documents directory.</Abstract></ReturnValue>
 			<Anchor>//api/name/pathForDocumentsFile:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathForLibraryFile:</TokenIdentifier>
-			<Abstract type="html">The absolute path to the file.</Abstract>
-			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)pathForLibraryFile:(NSString *)file</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>file</Name>
-					<Abstract type="html">A filename.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The absolute path to the file.The path to the file or nil if the file couldn't be found in the user's library directory.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForLibraryFile:</Anchor>
 		</Token>
 		
 		<Token>
@@ -93,7 +61,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathForFile:</TokenIdentifier>
-			<Abstract type="html">Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
+			<Abstract type="html">Searches for the file in the documents directory first, before trying the bundle and returns the absolute path
 to the file where it was first found.</Abstract>
 			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
 			
@@ -106,6 +74,17 @@ to the file where it was first found.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The absolute path to the file, or nil if the file could not be found in any of the searched directories.</Abstract></ReturnValue>
 			<Anchor>//api/name/pathForFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathToDocumentsDirectory</TokenIdentifier>
+			<Abstract type="html">The full path to the documents directory.</Abstract>
+			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)pathToDocumentsDirectory</Declaration>
+			
+			<ReturnValue><Abstract type="html">The full path to the documents directory.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathToDocumentsDirectory</Anchor>
 		</Token>
 		
 	</File>

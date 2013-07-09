@@ -537,7 +537,7 @@ static NSInteger neighborOffsets[8];
 -(NSString*) coordStringFromIndex:(NSUInteger)index
 {
 	CGPoint coord = [self coord:index];
-	return [NSString stringWithFormat:@"[%u]=(%.0f,%.0f)", index, coord.x, coord.y];
+	return [NSString stringWithFormat:@"[%lu]=(%.0f,%.0f)", (unsigned long)index, coord.x, coord.y];
 }
 
 -(NSString*) nameForNeighborIndex:(KKNeighborIndices)index

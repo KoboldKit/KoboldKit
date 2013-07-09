@@ -7,173 +7,311 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC1E506F1775ED500063CEDC /* KKCameraFollowBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */; };
-		DC2F43BE176CB1F7005846A7 /* crawl-tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B2176CB1F7005846A7 /* crawl-tilemap.tmx */; };
-		DC2F43BF176CB1F7005846A7 /* crawl-tiles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B3176CB1F7005846A7 /* crawl-tiles-hd.plist */; };
-		DC2F43C0176CB1F7005846A7 /* crawl-tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B4176CB1F7005846A7 /* crawl-tiles-hd.png */; };
-		DC2F43C1176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B5176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz */; };
-		DC2F43C3176CB1F7005846A7 /* crawl-tiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B7176CB1F7005846A7 /* crawl-tiles.plist */; };
-		DC2F43C4176CB1F7005846A7 /* crawl-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B8176CB1F7005846A7 /* crawl-tiles.png */; };
-		DC2F43C5176CB1F7005846A7 /* crawl-tiles.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B9176CB1F7005846A7 /* crawl-tiles.pvr.ccz */; };
-		DC2F43C7176CB1F7005846A7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43BB176CB1F7005846A7 /* LICENSE.txt */; };
-		DC2F43C8176CB1F7005846A7 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43BC176CB1F7005846A7 /* README.txt */; };
-		DC2F43C9176CB293005846A7 /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43B0176CB1F7005846A7 /* ATTRIBUTIONS */; };
-		DC2F43D6176CC13B005846A7 /* crawl-tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CB176CC13B005846A7 /* crawl-tilemap.tmx */; };
-		DC2F43D7176CC13B005846A7 /* crawl-tiles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CC176CC13B005846A7 /* crawl-tiles-hd.plist */; };
-		DC2F43D8176CC13B005846A7 /* crawl-tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CD176CC13B005846A7 /* crawl-tiles-hd.png */; };
-		DC2F43D9176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CE176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz */; };
-		DC2F43DA176CC13B005846A7 /* crawl-tiles-hd.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43CF176CC13B005846A7 /* crawl-tiles-hd.tps */; };
-		DC2F43DB176CC13B005846A7 /* crawl-tiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D0176CC13B005846A7 /* crawl-tiles.plist */; };
-		DC2F43DC176CC13B005846A7 /* crawl-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D1176CC13B005846A7 /* crawl-tiles.png */; };
-		DC2F43DD176CC13B005846A7 /* crawl-tiles.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D2176CC13B005846A7 /* crawl-tiles.pvr.ccz */; };
-		DC2F43DE176CC13B005846A7 /* crawl-tiles.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */; };
-		DC2F43DF176CC13B005846A7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D4176CC13B005846A7 /* LICENSE.txt */; };
-		DC2F43E0176CC13B005846A7 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43D5176CC13B005846A7 /* README.txt */; };
-		DC2F43EA17708FEC005846A7 /* KKTilemapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43E917708FEC005846A7 /* KKTilemapNode.m */; };
-		DC2F43ED177090A8005846A7 /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EC177090A8005846A7 /* KKTilemapLayerNode.m */; };
-		DC2F43F0177090F8005846A7 /* KKTilemapTileLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */; };
-		DC2F43F317709109005846A7 /* KKTilemapObjectLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43F217709109005846A7 /* KKTilemapObjectLayerNode.m */; };
-		DC2F43FC1770E56E005846A7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43F41770E56E005846A7 /* Default-568h@2x.png */; };
-		DC2F43FD1770E56E005846A7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43F51770E56E005846A7 /* Default.png */; };
-		DC2F43FE1770E56E005846A7 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43F61770E56E005846A7 /* Icon-72.png */; };
-		DC2F43FF1770E56E005846A7 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43F71770E56E005846A7 /* Icon-Small-50.png */; };
-		DC2F44001770E56E005846A7 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43F81770E56E005846A7 /* Icon-Small.png */; };
-		DC2F44011770E56E005846A7 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43F91770E56E005846A7 /* Icon-Small@2x.png */; };
-		DC2F44021770E56E005846A7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43FA1770E56E005846A7 /* Icon.png */; };
-		DC2F44031770E56E005846A7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F43FB1770E56E005846A7 /* Icon@2x.png */; };
-		DC2F44241771E9A5005846A7 /* forest-parallax.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC2F440E1771E9A5005846A7 /* forest-parallax.tmx */; };
-		DC2F44261771E9A5005846A7 /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F44101771E9A5005846A7 /* forest.png */; };
-		DC2F44301771E9A5005846A7 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2F441A1771E9A5005846A7 /* other.png */; };
-		DC41B8AA1785A7C00018D6C5 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
-		DC41B8AD1785CA830018D6C5 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AC1785CA830018D6C5 /* MenuScene.m */; };
-		DC41B8B01785DD5E0018D6C5 /* NSFileManager+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */; };
-		DC4DE90A176C9E2B003E4087 /* KKTilemap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */; };
-		DC4DE90B176C9E2B003E4087 /* KKTilemapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F3176C9E2B003E4087 /* KKTilemapLayer.m */; };
-		DC4DE90D176C9E2B003E4087 /* KKTilemapLayerTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F7176C9E2B003E4087 /* KKTilemapLayerTiles.m */; };
-		DC4DE910176C9E2B003E4087 /* KKTilemapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8FD176C9E2B003E4087 /* KKTilemapObject.m */; };
-		DC4DE911176C9E2B003E4087 /* KKTilemapProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8FF176C9E2B003E4087 /* KKTilemapProperties.m */; };
-		DC4DE912176C9E2B003E4087 /* KKTilemapTileProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE901176C9E2B003E4087 /* KKTilemapTileProperties.m */; };
-		DC4DE913176C9E2B003E4087 /* KKTilemapTileset.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE903176C9E2B003E4087 /* KKTilemapTileset.m */; };
-		DC4DE915176C9E2B003E4087 /* KKTMXReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE907176C9E2B003E4087 /* KKTMXReader.m */; };
-		DC4DE916176C9E2B003E4087 /* KKTMXWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE909176C9E2B003E4087 /* KKTMXWriter.m */; };
-		DC4DE91C176CA0AC003E4087 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE918176CA0AC003E4087 /* base64.c */; };
-		DC4DE91D176CA0AC003E4087 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE91B176CA0AC003E4087 /* ZipUtils.m */; };
-		DC4DE925176CA25F003E4087 /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE920176CA25F003E4087 /* KKMutableNumber.m */; };
-		DC4DE926176CA25F003E4087 /* KKIvarSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE922176CA25F003E4087 /* KKIvarSetter.m */; };
-		DC4DE927176CA25F003E4087 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
-		DC4DE92A176CA503003E4087 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
-		DC4DE92C176CA52F003E4087 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
-		DC8CD4AA17760E0D0005AB51 /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */; };
-		DC95BA781786DF8600E31DA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
-		DC95BA7E1786DFB800E31DA6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC95BA7C1786DFB800E31DA6 /* Reachability.m */; };
-		DC96A7F91786E75400CE0827 /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */; };
-		DC96A846178760F400CE0827 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A809178760F400CE0827 /* lapi.c */; };
-		DC96A847178760F400CE0827 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80B178760F400CE0827 /* lauxlib.c */; };
-		DC96A848178760F400CE0827 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80D178760F400CE0827 /* lbaselib.c */; };
-		DC96A849178760F400CE0827 /* lbitlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80E178760F400CE0827 /* lbitlib.c */; };
-		DC96A84A178760F400CE0827 /* lcode.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80F178760F400CE0827 /* lcode.c */; };
-		DC96A84B178760F400CE0827 /* lcorolib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A811178760F400CE0827 /* lcorolib.c */; };
-		DC96A84C178760F400CE0827 /* lctype.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A812178760F400CE0827 /* lctype.c */; };
-		DC96A84D178760F400CE0827 /* ldblib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A814178760F400CE0827 /* ldblib.c */; };
-		DC96A84E178760F400CE0827 /* ldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A815178760F400CE0827 /* ldebug.c */; };
-		DC96A84F178760F400CE0827 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A817178760F400CE0827 /* ldo.c */; };
-		DC96A850178760F400CE0827 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A819178760F400CE0827 /* ldump.c */; };
-		DC96A851178760F400CE0827 /* lfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81A178760F400CE0827 /* lfunc.c */; };
-		DC96A852178760F400CE0827 /* lgc.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81C178760F400CE0827 /* lgc.c */; };
-		DC96A853178760F400CE0827 /* linit.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81E178760F400CE0827 /* linit.c */; };
-		DC96A854178760F400CE0827 /* liolib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81F178760F400CE0827 /* liolib.c */; };
-		DC96A855178760F400CE0827 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A820178760F400CE0827 /* llex.c */; };
-		DC96A856178760F400CE0827 /* lmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A823178760F400CE0827 /* lmathlib.c */; };
-		DC96A857178760F400CE0827 /* lmem.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A824178760F400CE0827 /* lmem.c */; };
-		DC96A858178760F400CE0827 /* loadlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A826178760F400CE0827 /* loadlib.c */; };
-		DC96A859178760F400CE0827 /* lobject.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A827178760F400CE0827 /* lobject.c */; };
-		DC96A85A178760F400CE0827 /* lopcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A829178760F400CE0827 /* lopcodes.c */; };
-		DC96A85B178760F400CE0827 /* loslib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82B178760F400CE0827 /* loslib.c */; };
-		DC96A85C178760F400CE0827 /* lparser.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82C178760F400CE0827 /* lparser.c */; };
-		DC96A85D178760F400CE0827 /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82E178760F400CE0827 /* lstate.c */; };
-		DC96A85E178760F400CE0827 /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A830178760F400CE0827 /* lstring.c */; };
-		DC96A85F178760F400CE0827 /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A832178760F400CE0827 /* lstrlib.c */; };
-		DC96A860178760F400CE0827 /* ltable.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A833178760F400CE0827 /* ltable.c */; };
-		DC96A861178760F400CE0827 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A835178760F400CE0827 /* ltablib.c */; };
-		DC96A862178760F400CE0827 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A836178760F400CE0827 /* ltm.c */; };
-		DC96A865178760F400CE0827 /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A83E178760F400CE0827 /* lundump.c */; };
-		DC96A866178760F400CE0827 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A840178760F400CE0827 /* lvm.c */; };
-		DC96A867178760F400CE0827 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A842178760F400CE0827 /* lzio.c */; };
-		DC96A86B17876A2C00CE0827 /* KKLua.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86A17876A2C00CE0827 /* KKLua.m */; };
-		DC96A86E17876F6100CE0827 /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */; };
-		DC96A8781787717200CE0827 /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC96A8761787717200CE0827 /* devconfig.lua.sample */; };
-		DC96A8791787717200CE0827 /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC96A8771787717200CE0827 /* config.lua */; };
-		DC96A87B17877D0A00CE0827 /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC96A87A17877D0A00CE0827 /* devconfig.lua */; };
-		DC96A87F1788C35A00CE0827 /* 24x24_Level01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A87D1788C35A00CE0827 /* 24x24_Level01.tmx */; };
-		DC96A8801788C35A00CE0827 /* Tileset_Geometry_24x24.png in Resources */ = {isa = PBXBuildFile; fileRef = DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */; };
-		DC96A883178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A881178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx */; };
-		DC96A884178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A882178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx */; };
-		DC96A888178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC96A886178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx */; };
-		DC96A889178A141B00CE0827 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC96A887178A141B00CE0827 /* Tileset_Geometry_32x32.png */; };
-		DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC9CFCFE17749872004C981A /* Jetpack.atlas */; };
-		DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
-		DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
-		DC9CFD111774CA5B004C981A /* KKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0C1774CA5B004C981A /* KKModel.m */; };
-		DC9CFD121774CA5B004C981A /* SKNode+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0E1774CA5B004C981A /* SKNode+KoboldKit.m */; };
-		DC9CFD1C1774CA84004C981A /* KKNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD141774CA84004C981A /* KKNode.m */; };
-		DC9CFD1D1774CA84004C981A /* KKScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD161774CA84004C981A /* KKScene.m */; };
-		DC9CFD1E1774CA84004C981A /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD191774CA84004C981A /* KKView.m */; };
-		DC9CFD1F1774CA84004C981A /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD1B1774CA84004C981A /* KKViewController.m */; };
-		DC9CFD3F1774CB97004C981A /* KKButtonBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD2E1774CAE2004C981A /* KKButtonBehavior.m */; };
-		DC9CFD401774CB97004C981A /* KKControlPadBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD301774CAE2004C981A /* KKControlPadBehavior.m */; };
-		DC9CFD411774CB97004C981A /* KKFollowTargetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */; };
-		DC9CFD491774CBE1004C981A /* KKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD481774CBE1004C981A /* KKVersion.m */; };
-		DCB087CF177B1625004182E4 /* KKTilemapLayerContourTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087CE177B1625004182E4 /* KKTilemapLayerContourTracer.m */; };
-		DCB087D4177B1647004182E4 /* KKIntegerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D1177B1647004182E4 /* KKIntegerArray.m */; };
-		DCB087D5177B1647004182E4 /* KKPointArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D3177B1647004182E4 /* KKPointArray.m */; };
-		DCB087DC177B3783004182E4 /* SKScene+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087DB177B3783004182E4 /* SKScene+KoboldKit.m */; };
-		DCB087E5177B439B004182E4 /* KKViewOriginNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087E4177B439B004182E4 /* KKViewOriginNode.m */; };
-		DCB087EB177BAC2F004182E4 /* KKPhysicsDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */; };
-		DCDD2DAC1769FD0A00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
-		DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
-		DCDD2DB01769FD0A00F307CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
-		DCDD2DB21769FD0A00F307CD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
-		DCDD2DB81769FD0A00F307CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DB61769FD0A00F307CD /* InfoPlist.strings */; };
-		DCDD2DBA1769FD0A00F307CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DB91769FD0A00F307CD /* main.m */; };
-		DCDD2DBE1769FD0A00F307CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DBD1769FD0A00F307CD /* AppDelegate.m */; };
-		DCDD2DC11769FD0A00F307CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DBF1769FD0A00F307CD /* Main_iPhone.storyboard */; };
-		DCDD2DC41769FD0A00F307CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DC21769FD0A00F307CD /* Main_iPad.storyboard */; };
-		DCDD2DC71769FD0A00F307CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DC61769FD0A00F307CD /* ViewController.m */; };
-		DCDD2DCA1769FD0A00F307CD /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2DC91769FD0A00F307CD /* GameScene.m */; };
-		DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2DCD1769FD0A00F307CD /* Images.xcassets */; };
-		DCDD2DFC1769FD2E00F307CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DD41769FD0A00F307CD /* XCTest.framework */; };
-		DCDD2DFD1769FD2E00F307CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
-		DCDD2DFE1769FD2E00F307CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
-		DCDD2E011769FD2E00F307CD /* libKoboldKitLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */; };
-		DCDD2E071769FD2E00F307CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDD2E051769FD2E00F307CD /* InfoPlist.strings */; };
-		DCDD2E091769FD2E00F307CD /* KoboldKitLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */; };
-		DCDD2E101769FD8500F307CD /* libKoboldKitLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */; };
-		DCDD2E4A176A40C400F307CD /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E2E176A40C400F307CD /* JRSwizzle.m */; };
-		DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E46176A40C400F307CD /* VTPG_Common.m */; };
-		DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E49176A40C400F307CD /* XMLWriter.m */; };
-		DCFDF3BD176B244A00F2CAD0 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3BC176B244A00F2CAD0 /* TestScene.m */; };
-		DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
+		DC042A81178C59FA009FDBF8 /* libKoboldKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C6B178C418C0067DAA4 /* libKoboldKit.a */; };
+		DC042A83178C5A06009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */; };
+		DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
+		DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC09DB8D178C84C6000E0B61 /* MainMenu.xib */; };
+		DC18B0C6178C7BC400641A6D /* 24x24_Level01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B096178C7BC400641A6D /* 24x24_Level01.tmx */; };
+		DC18B0C7178C7BC400641A6D /* 24x24_Level01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B096178C7BC400641A6D /* 24x24_Level01.tmx */; };
+		DC18B0C8178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B097178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx */; };
+		DC18B0C9178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B097178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx */; };
+		DC18B0CA178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B098178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx */; };
+		DC18B0CB178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B098178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx */; };
+		DC18B0CC178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B099178C7BC400641A6D /* Tileset_Geometry_24x24.png */; };
+		DC18B0CD178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B099178C7BC400641A6D /* Tileset_Geometry_24x24.png */; };
+		DC18B0CE178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */; };
+		DC18B0CF178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */; };
+		DC18B0D0178C7BC400641A6D /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09C178C7BC400641A6D /* Tileset_Geometry_32x32.png */; };
+		DC18B0D1178C7BC400641A6D /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09C178C7BC400641A6D /* Tileset_Geometry_32x32.png */; };
+		DC18B0D2178C7BC400641A6D /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */; };
+		DC18B0D3178C7BC400641A6D /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */; };
+		DC18B0D4178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
+		DC18B0D5178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
+		DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
+		DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
+		DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */; };
+		DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */; };
+		DC18B0DA178C7BC400641A6D /* crawl-tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A3178C7BC400641A6D /* crawl-tilemap.tmx */; };
+		DC18B0DB178C7BC400641A6D /* crawl-tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A3178C7BC400641A6D /* crawl-tilemap.tmx */; };
+		DC18B0DC178C7BC400641A6D /* crawl-tiles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A4178C7BC400641A6D /* crawl-tiles-hd.plist */; };
+		DC18B0DD178C7BC400641A6D /* crawl-tiles-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A4178C7BC400641A6D /* crawl-tiles-hd.plist */; };
+		DC18B0DE178C7BC400641A6D /* crawl-tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A5178C7BC400641A6D /* crawl-tiles-hd.png */; };
+		DC18B0DF178C7BC400641A6D /* crawl-tiles-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A5178C7BC400641A6D /* crawl-tiles-hd.png */; };
+		DC18B0E0178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A6178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz */; };
+		DC18B0E1178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A6178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz */; };
+		DC18B0E2178C7BC400641A6D /* crawl-tiles-hd.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A7178C7BC400641A6D /* crawl-tiles-hd.tps */; };
+		DC18B0E3178C7BC400641A6D /* crawl-tiles-hd.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A7178C7BC400641A6D /* crawl-tiles-hd.tps */; };
+		DC18B0E4178C7BC400641A6D /* crawl-tiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A8178C7BC400641A6D /* crawl-tiles.plist */; };
+		DC18B0E5178C7BC400641A6D /* crawl-tiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A8178C7BC400641A6D /* crawl-tiles.plist */; };
+		DC18B0E6178C7BC400641A6D /* crawl-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A9178C7BC400641A6D /* crawl-tiles.png */; };
+		DC18B0E7178C7BC400641A6D /* crawl-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A9178C7BC400641A6D /* crawl-tiles.png */; };
+		DC18B0E8178C7BC400641A6D /* crawl-tiles.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AA178C7BC400641A6D /* crawl-tiles.pvr.ccz */; };
+		DC18B0E9178C7BC400641A6D /* crawl-tiles.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AA178C7BC400641A6D /* crawl-tiles.pvr.ccz */; };
+		DC18B0EA178C7BC400641A6D /* crawl-tiles.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AB178C7BC400641A6D /* crawl-tiles.tps */; };
+		DC18B0EB178C7BC400641A6D /* crawl-tiles.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AB178C7BC400641A6D /* crawl-tiles.tps */; };
+		DC18B0EC178C7BC400641A6D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AC178C7BC400641A6D /* LICENSE.txt */; };
+		DC18B0ED178C7BC400641A6D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AC178C7BC400641A6D /* LICENSE.txt */; };
+		DC18B0EE178C7BC400641A6D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AD178C7BC400641A6D /* README.txt */; };
+		DC18B0EF178C7BC400641A6D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AD178C7BC400641A6D /* README.txt */; };
+		DC18B0F0178C7BC400641A6D /* forest-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AF178C7BC400641A6D /* forest-hd.plist */; };
+		DC18B0F1178C7BC400641A6D /* forest-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0AF178C7BC400641A6D /* forest-hd.plist */; };
+		DC18B0F2178C7BC400641A6D /* forest-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B0178C7BC400641A6D /* forest-hd.png */; };
+		DC18B0F3178C7BC400641A6D /* forest-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B0178C7BC400641A6D /* forest-hd.png */; };
+		DC18B0F4178C7BC400641A6D /* forest-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B1178C7BC400641A6D /* forest-hd.pvr.ccz */; };
+		DC18B0F5178C7BC400641A6D /* forest-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B1178C7BC400641A6D /* forest-hd.pvr.ccz */; };
+		DC18B0F6178C7BC400641A6D /* forest-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B2178C7BC400641A6D /* forest-ipadhd.plist */; };
+		DC18B0F7178C7BC400641A6D /* forest-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B2178C7BC400641A6D /* forest-ipadhd.plist */; };
+		DC18B0F8178C7BC400641A6D /* forest-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B3178C7BC400641A6D /* forest-ipadhd.png */; };
+		DC18B0F9178C7BC400641A6D /* forest-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B3178C7BC400641A6D /* forest-ipadhd.png */; };
+		DC18B0FA178C7BC400641A6D /* forest-ipadhd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B4178C7BC400641A6D /* forest-ipadhd.pvr.ccz */; };
+		DC18B0FB178C7BC400641A6D /* forest-ipadhd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B4178C7BC400641A6D /* forest-ipadhd.pvr.ccz */; };
+		DC18B0FC178C7BC400641A6D /* forest-parallax.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B5178C7BC400641A6D /* forest-parallax.tmx */; };
+		DC18B0FD178C7BC400641A6D /* forest-parallax.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B5178C7BC400641A6D /* forest-parallax.tmx */; };
+		DC18B0FE178C7BC400641A6D /* forest.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B6178C7BC400641A6D /* forest.plist */; };
+		DC18B0FF178C7BC400641A6D /* forest.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B6178C7BC400641A6D /* forest.plist */; };
+		DC18B100178C7BC400641A6D /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B7178C7BC400641A6D /* forest.png */; };
+		DC18B101178C7BC400641A6D /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B7178C7BC400641A6D /* forest.png */; };
+		DC18B102178C7BC400641A6D /* forest.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B8178C7BC400641A6D /* forest.pvr.ccz */; };
+		DC18B103178C7BC400641A6D /* forest.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B8178C7BC400641A6D /* forest.pvr.ccz */; };
+		DC18B104178C7BC400641A6D /* forest.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B9178C7BC400641A6D /* forest.tps */; };
+		DC18B105178C7BC400641A6D /* forest.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0B9178C7BC400641A6D /* forest.tps */; };
+		DC18B106178C7BC400641A6D /* other-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BA178C7BC400641A6D /* other-hd.plist */; };
+		DC18B107178C7BC400641A6D /* other-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BA178C7BC400641A6D /* other-hd.plist */; };
+		DC18B108178C7BC400641A6D /* other-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BB178C7BC400641A6D /* other-hd.png */; };
+		DC18B109178C7BC400641A6D /* other-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BB178C7BC400641A6D /* other-hd.png */; };
+		DC18B10A178C7BC400641A6D /* other-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BC178C7BC400641A6D /* other-hd.pvr.ccz */; };
+		DC18B10B178C7BC400641A6D /* other-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BC178C7BC400641A6D /* other-hd.pvr.ccz */; };
+		DC18B10C178C7BC400641A6D /* other-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BD178C7BC400641A6D /* other-ipadhd.plist */; };
+		DC18B10D178C7BC400641A6D /* other-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BD178C7BC400641A6D /* other-ipadhd.plist */; };
+		DC18B10E178C7BC400641A6D /* other-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BE178C7BC400641A6D /* other-ipadhd.png */; };
+		DC18B10F178C7BC400641A6D /* other-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BE178C7BC400641A6D /* other-ipadhd.png */; };
+		DC18B110178C7BC400641A6D /* other-ipadhd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BF178C7BC400641A6D /* other-ipadhd.pvr.ccz */; };
+		DC18B111178C7BC400641A6D /* other-ipadhd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0BF178C7BC400641A6D /* other-ipadhd.pvr.ccz */; };
+		DC18B112178C7BC400641A6D /* other.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C0178C7BC400641A6D /* other.plist */; };
+		DC18B113178C7BC400641A6D /* other.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C0178C7BC400641A6D /* other.plist */; };
+		DC18B114178C7BC400641A6D /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C1178C7BC400641A6D /* other.png */; };
+		DC18B115178C7BC400641A6D /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C1178C7BC400641A6D /* other.png */; };
+		DC18B116178C7BC400641A6D /* other.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C2178C7BC400641A6D /* other.pvr.ccz */; };
+		DC18B117178C7BC400641A6D /* other.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C2178C7BC400641A6D /* other.pvr.ccz */; };
+		DC18B118178C7BC400641A6D /* other.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C3178C7BC400641A6D /* other.tps */; };
+		DC18B119178C7BC400641A6D /* other.tps in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C3178C7BC400641A6D /* other.tps */; };
+		DC18B11A178C7BC400641A6D /* READ ME.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C4178C7BC400641A6D /* READ ME.txt */; };
+		DC18B11B178C7BC400641A6D /* READ ME.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C4178C7BC400641A6D /* READ ME.txt */; };
+		DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C5178C7BC400641A6D /* Jetpack.atlas */; };
+		DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C5178C7BC400641A6D /* Jetpack.atlas */; };
+		DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */; };
+		DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC18B126178C7E9300641A6D /* Images-Mac.xcassets */; };
+		DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */; };
+		DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */; };
+		DC484C44178C40BB0067DAA4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
+		DC484C8F178C42ED0067DAA4 /* KKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD481774CBE1004C981A /* KKVersion.m */; };
+		DC484C90178C42EF0067DAA4 /* KKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD481774CBE1004C981A /* KKVersion.m */; };
+		DC484C91178C43400067DAA4 /* KKMacApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DC484C0C178C36DB0067DAA4 /* KKMacApplication.m */; };
+		DC484C92178C43400067DAA4 /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC484BC0178C34930067DAA4 /* KKAppDelegate.m */; };
+		DC484C93178C43400067DAA4 /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD1B1774CA84004C981A /* KKViewController.m */; };
+		DC484C94178C43400067DAA4 /* SKNode+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0E1774CA5B004C981A /* SKNode+KoboldKit.m */; };
+		DC484C95178C43400067DAA4 /* SKScene+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087DB177B3783004182E4 /* SKScene+KoboldKit.m */; };
+		DC484C96178C43400067DAA4 /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD191774CA84004C981A /* KKView.m */; };
+		DC484C97178C43400067DAA4 /* KKScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD161774CA84004C981A /* KKScene.m */; };
+		DC484C98178C43400067DAA4 /* KKNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD141774CA84004C981A /* KKNode.m */; };
+		DC484C99178C43400067DAA4 /* KKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0C1774CA5B004C981A /* KKModel.m */; };
+		DC484C9A178C43400067DAA4 /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
+		DC484C9B178C43400067DAA4 /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
+		DC484C9C178C43400067DAA4 /* KKTilemap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */; };
+		DC484C9D178C43400067DAA4 /* KKTilemapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F3176C9E2B003E4087 /* KKTilemapLayer.m */; };
+		DC484C9E178C43400067DAA4 /* KKTilemapLayerContourTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087CE177B1625004182E4 /* KKTilemapLayerContourTracer.m */; };
+		DC484C9F178C43400067DAA4 /* KKTilemapTileset.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE903176C9E2B003E4087 /* KKTilemapTileset.m */; };
+		DC484CA0178C43400067DAA4 /* KKTilemapLayerTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F7176C9E2B003E4087 /* KKTilemapLayerTiles.m */; };
+		DC484CA1178C43400067DAA4 /* KKTilemapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8FD176C9E2B003E4087 /* KKTilemapObject.m */; };
+		DC484CA2178C43400067DAA4 /* KKTilemapProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8FF176C9E2B003E4087 /* KKTilemapProperties.m */; };
+		DC484CA3178C43400067DAA4 /* KKTilemapTileProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE901176C9E2B003E4087 /* KKTilemapTileProperties.m */; };
+		DC484CA4178C43400067DAA4 /* KKTMXReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE907176C9E2B003E4087 /* KKTMXReader.m */; };
+		DC484CA5178C43400067DAA4 /* KKTMXWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE909176C9E2B003E4087 /* KKTMXWriter.m */; };
+		DC484CA6178C43400067DAA4 /* KKTilemapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43E917708FEC005846A7 /* KKTilemapNode.m */; };
+		DC484CA7178C43400067DAA4 /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EC177090A8005846A7 /* KKTilemapLayerNode.m */; };
+		DC484CA8178C43400067DAA4 /* KKTilemapTileLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */; };
+		DC484CA9178C43400067DAA4 /* KKTilemapObjectLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43F217709109005846A7 /* KKTilemapObjectLayerNode.m */; };
+		DC484CAA178C43400067DAA4 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
+		DC484CAB178C43400067DAA4 /* NSFileManager+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */; };
+		DC484CAC178C43400067DAA4 /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */; };
+		DC484CAD178C43400067DAA4 /* KKLua.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86A17876A2C00CE0827 /* KKLua.m */; };
+		DC484CAE178C43400067DAA4 /* KKIntegerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D1177B1647004182E4 /* KKIntegerArray.m */; };
+		DC484CAF178C43400067DAA4 /* KKPointArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D3177B1647004182E4 /* KKPointArray.m */; };
+		DC484CB0178C43400067DAA4 /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE920176CA25F003E4087 /* KKMutableNumber.m */; };
+		DC484CB1178C43400067DAA4 /* KKIvarSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE922176CA25F003E4087 /* KKIvarSetter.m */; };
+		DC484CB2178C43400067DAA4 /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */; };
+		DC484CB3178C43400067DAA4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC95BA7C1786DFB800E31DA6 /* Reachability.m */; };
+		DC484CB4178C43400067DAA4 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E2E176A40C400F307CD /* JRSwizzle.m */; };
+		DC484CB5178C43400067DAA4 /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E46176A40C400F307CD /* VTPG_Common.m */; };
+		DC484CB6178C43400067DAA4 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E49176A40C400F307CD /* XMLWriter.m */; };
+		DC484CB7178C43400067DAA4 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE91B176CA0AC003E4087 /* ZipUtils.m */; };
+		DC484CB8178C43690067DAA4 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A809178760F400CE0827 /* lapi.c */; };
+		DC484CB9178C43690067DAA4 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80B178760F400CE0827 /* lauxlib.c */; };
+		DC484CBA178C43690067DAA4 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80D178760F400CE0827 /* lbaselib.c */; };
+		DC484CBB178C43690067DAA4 /* lbitlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80E178760F400CE0827 /* lbitlib.c */; };
+		DC484CBC178C43690067DAA4 /* lcode.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80F178760F400CE0827 /* lcode.c */; };
+		DC484CBD178C43690067DAA4 /* lcorolib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A811178760F400CE0827 /* lcorolib.c */; };
+		DC484CBE178C43690067DAA4 /* lctype.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A812178760F400CE0827 /* lctype.c */; };
+		DC484CBF178C43690067DAA4 /* ldblib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A814178760F400CE0827 /* ldblib.c */; };
+		DC484CC0178C43690067DAA4 /* ldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A815178760F400CE0827 /* ldebug.c */; };
+		DC484CC1178C43690067DAA4 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A817178760F400CE0827 /* ldo.c */; };
+		DC484CC2178C43690067DAA4 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A819178760F400CE0827 /* ldump.c */; };
+		DC484CC3178C43690067DAA4 /* lfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81A178760F400CE0827 /* lfunc.c */; };
+		DC484CC4178C43690067DAA4 /* lgc.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81C178760F400CE0827 /* lgc.c */; };
+		DC484CC5178C43690067DAA4 /* linit.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81E178760F400CE0827 /* linit.c */; };
+		DC484CC6178C43690067DAA4 /* liolib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81F178760F400CE0827 /* liolib.c */; };
+		DC484CC7178C43690067DAA4 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A820178760F400CE0827 /* llex.c */; };
+		DC484CC8178C43690067DAA4 /* lmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A823178760F400CE0827 /* lmathlib.c */; };
+		DC484CC9178C43690067DAA4 /* lmem.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A824178760F400CE0827 /* lmem.c */; };
+		DC484CCA178C43690067DAA4 /* loadlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A826178760F400CE0827 /* loadlib.c */; };
+		DC484CCB178C43690067DAA4 /* lobject.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A827178760F400CE0827 /* lobject.c */; };
+		DC484CCC178C43690067DAA4 /* lopcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A829178760F400CE0827 /* lopcodes.c */; };
+		DC484CCD178C43690067DAA4 /* loslib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82B178760F400CE0827 /* loslib.c */; };
+		DC484CCE178C43690067DAA4 /* lparser.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82C178760F400CE0827 /* lparser.c */; };
+		DC484CCF178C43690067DAA4 /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82E178760F400CE0827 /* lstate.c */; };
+		DC484CD0178C43690067DAA4 /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A830178760F400CE0827 /* lstring.c */; };
+		DC484CD1178C43690067DAA4 /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A832178760F400CE0827 /* lstrlib.c */; };
+		DC484CD2178C43690067DAA4 /* ltable.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A833178760F400CE0827 /* ltable.c */; };
+		DC484CD3178C43690067DAA4 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A835178760F400CE0827 /* ltablib.c */; };
+		DC484CD4178C43690067DAA4 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A836178760F400CE0827 /* ltm.c */; };
+		DC484CD5178C43690067DAA4 /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A83E178760F400CE0827 /* lundump.c */; };
+		DC484CD6178C43690067DAA4 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A840178760F400CE0827 /* lvm.c */; };
+		DC484CD7178C43690067DAA4 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A842178760F400CE0827 /* lzio.c */; };
+		DC484CD8178C43690067DAA4 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE918176CA0AC003E4087 /* base64.c */; };
+		DC484CD9178C43BE0067DAA4 /* KKViewOriginNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087E4177B439B004182E4 /* KKViewOriginNode.m */; };
+		DC484CDA178C43BE0067DAA4 /* KKPhysicsDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */; };
+		DC484CDB178C43BE0067DAA4 /* KKButtonBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD2E1774CAE2004C981A /* KKButtonBehavior.m */; };
+		DC484CDC178C43BE0067DAA4 /* KKControlPadBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD301774CAE2004C981A /* KKControlPadBehavior.m */; };
+		DC484CDD178C43BE0067DAA4 /* KKFollowTargetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */; };
+		DC484CDE178C43BE0067DAA4 /* KKCameraFollowBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */; };
+		DC484CDF178C43BE0067DAA4 /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */; };
+		DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
+		DC484CE1178C43BE0067DAA4 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
+		DC484CE4178C465E0067DAA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484CE3178C465E0067DAA4 /* libz.dylib */; };
+		DCCC619D178C5626009EC802 /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C43178C40BB0067DAA4 /* KoboldKit.framework */; };
+		DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9CFD391774CB47004C981A /* KoboldKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCD11E37178C522300FBC406 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
+		DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
+		DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD11E3C178C522300FBC406 /* InfoPlist.strings */; };
+		DCD11E40178C522300FBC406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD11E3F178C522300FBC406 /* main.m */; };
+		DCD11E44178C522300FBC406 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DCD11E42178C522300FBC406 /* Credits.rtf */; };
+		DCD7A238178C7449004A0467 /* KKMacApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DC484C0C178C36DB0067DAA4 /* KKMacApplication.m */; };
+		DCD7A239178C7449004A0467 /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC484BC0178C34930067DAA4 /* KKAppDelegate.m */; };
+		DCD7A23A178C7449004A0467 /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD1B1774CA84004C981A /* KKViewController.m */; };
+		DCD7A23B178C7449004A0467 /* KKViewOriginNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087E4177B439B004182E4 /* KKViewOriginNode.m */; };
+		DCD7A23C178C7449004A0467 /* KKPhysicsDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */; };
+		DCD7A23D178C7449004A0467 /* SKNode+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0E1774CA5B004C981A /* SKNode+KoboldKit.m */; };
+		DCD7A23E178C7449004A0467 /* SKScene+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087DB177B3783004182E4 /* SKScene+KoboldKit.m */; };
+		DCD7A23F178C7449004A0467 /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD191774CA84004C981A /* KKView.m */; };
+		DCD7A240178C7449004A0467 /* KKScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD161774CA84004C981A /* KKScene.m */; };
+		DCD7A241178C7449004A0467 /* KKNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD141774CA84004C981A /* KKNode.m */; };
+		DCD7A242178C7449004A0467 /* KKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0C1774CA5B004C981A /* KKModel.m */; };
+		DCD7A243178C7449004A0467 /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
+		DCD7A244178C7449004A0467 /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
+		DCD7A245178C7449004A0467 /* KKButtonBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD2E1774CAE2004C981A /* KKButtonBehavior.m */; };
+		DCD7A246178C7449004A0467 /* KKControlPadBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD301774CAE2004C981A /* KKControlPadBehavior.m */; };
+		DCD7A247178C7449004A0467 /* KKFollowTargetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */; };
+		DCD7A248178C7449004A0467 /* KKCameraFollowBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */; };
+		DCD7A249178C7449004A0467 /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */; };
+		DCD7A24A178C7449004A0467 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
+		DCD7A24B178C7449004A0467 /* KKTilemap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */; };
+		DCD7A24C178C7449004A0467 /* KKTilemapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F3176C9E2B003E4087 /* KKTilemapLayer.m */; };
+		DCD7A24D178C7449004A0467 /* KKTilemapLayerContourTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087CE177B1625004182E4 /* KKTilemapLayerContourTracer.m */; };
+		DCD7A24E178C7449004A0467 /* KKTilemapTileset.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE903176C9E2B003E4087 /* KKTilemapTileset.m */; };
+		DCD7A24F178C7449004A0467 /* KKTilemapLayerTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F7176C9E2B003E4087 /* KKTilemapLayerTiles.m */; };
+		DCD7A250178C7449004A0467 /* KKTilemapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8FD176C9E2B003E4087 /* KKTilemapObject.m */; };
+		DCD7A251178C7449004A0467 /* KKTilemapProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8FF176C9E2B003E4087 /* KKTilemapProperties.m */; };
+		DCD7A252178C7449004A0467 /* KKTilemapTileProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE901176C9E2B003E4087 /* KKTilemapTileProperties.m */; };
+		DCD7A253178C7449004A0467 /* KKTMXReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE907176C9E2B003E4087 /* KKTMXReader.m */; };
+		DCD7A254178C7449004A0467 /* KKTMXWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE909176C9E2B003E4087 /* KKTMXWriter.m */; };
+		DCD7A255178C7449004A0467 /* KKTilemapNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43E917708FEC005846A7 /* KKTilemapNode.m */; };
+		DCD7A256178C7449004A0467 /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EC177090A8005846A7 /* KKTilemapLayerNode.m */; };
+		DCD7A257178C7449004A0467 /* KKTilemapTileLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */; };
+		DCD7A258178C7449004A0467 /* KKTilemapObjectLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2F43F217709109005846A7 /* KKTilemapObjectLayerNode.m */; };
+		DCD7A259178C7449004A0467 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
+		DCD7A25A178C7449004A0467 /* NSFileManager+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */; };
+		DCD7A25B178C7449004A0467 /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */; };
+		DCD7A25C178C7449004A0467 /* KKLua.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86A17876A2C00CE0827 /* KKLua.m */; };
+		DCD7A25D178C7449004A0467 /* KKIntegerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D1177B1647004182E4 /* KKIntegerArray.m */; };
+		DCD7A25E178C7449004A0467 /* KKPointArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D3177B1647004182E4 /* KKPointArray.m */; };
+		DCD7A25F178C7449004A0467 /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE920176CA25F003E4087 /* KKMutableNumber.m */; };
+		DCD7A260178C7449004A0467 /* KKIvarSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE922176CA25F003E4087 /* KKIvarSetter.m */; };
+		DCD7A261178C7449004A0467 /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */; };
+		DCD7A262178C7449004A0467 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC95BA7C1786DFB800E31DA6 /* Reachability.m */; };
+		DCD7A263178C7449004A0467 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
+		DCD7A264178C7449004A0467 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E2E176A40C400F307CD /* JRSwizzle.m */; };
+		DCD7A265178C7449004A0467 /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E46176A40C400F307CD /* VTPG_Common.m */; };
+		DCD7A266178C7449004A0467 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E49176A40C400F307CD /* XMLWriter.m */; };
+		DCD7A267178C7449004A0467 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE91B176CA0AC003E4087 /* ZipUtils.m */; };
+		DCD7A268178C7453004A0467 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A809178760F400CE0827 /* lapi.c */; };
+		DCD7A269178C7453004A0467 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80B178760F400CE0827 /* lauxlib.c */; };
+		DCD7A26A178C7453004A0467 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80D178760F400CE0827 /* lbaselib.c */; };
+		DCD7A26B178C7453004A0467 /* lbitlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80E178760F400CE0827 /* lbitlib.c */; };
+		DCD7A26C178C7453004A0467 /* lcode.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A80F178760F400CE0827 /* lcode.c */; };
+		DCD7A26D178C7453004A0467 /* lcorolib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A811178760F400CE0827 /* lcorolib.c */; };
+		DCD7A26E178C7453004A0467 /* lctype.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A812178760F400CE0827 /* lctype.c */; };
+		DCD7A26F178C7453004A0467 /* ldblib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A814178760F400CE0827 /* ldblib.c */; };
+		DCD7A270178C7453004A0467 /* ldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A815178760F400CE0827 /* ldebug.c */; };
+		DCD7A271178C7453004A0467 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A817178760F400CE0827 /* ldo.c */; };
+		DCD7A272178C7453004A0467 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A819178760F400CE0827 /* ldump.c */; };
+		DCD7A273178C7453004A0467 /* lfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81A178760F400CE0827 /* lfunc.c */; };
+		DCD7A274178C7453004A0467 /* lgc.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81C178760F400CE0827 /* lgc.c */; };
+		DCD7A275178C7453004A0467 /* linit.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81E178760F400CE0827 /* linit.c */; };
+		DCD7A276178C7453004A0467 /* liolib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A81F178760F400CE0827 /* liolib.c */; };
+		DCD7A277178C7453004A0467 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A820178760F400CE0827 /* llex.c */; };
+		DCD7A278178C7453004A0467 /* lmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A823178760F400CE0827 /* lmathlib.c */; };
+		DCD7A279178C7453004A0467 /* lmem.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A824178760F400CE0827 /* lmem.c */; };
+		DCD7A27A178C7453004A0467 /* loadlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A826178760F400CE0827 /* loadlib.c */; };
+		DCD7A27B178C7453004A0467 /* lobject.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A827178760F400CE0827 /* lobject.c */; };
+		DCD7A27C178C7453004A0467 /* lopcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A829178760F400CE0827 /* lopcodes.c */; };
+		DCD7A27D178C7453004A0467 /* loslib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82B178760F400CE0827 /* loslib.c */; };
+		DCD7A27E178C7453004A0467 /* lparser.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82C178760F400CE0827 /* lparser.c */; };
+		DCD7A27F178C7453004A0467 /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A82E178760F400CE0827 /* lstate.c */; };
+		DCD7A280178C7453004A0467 /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A830178760F400CE0827 /* lstring.c */; };
+		DCD7A281178C7453004A0467 /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A832178760F400CE0827 /* lstrlib.c */; };
+		DCD7A282178C7453004A0467 /* ltable.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A833178760F400CE0827 /* ltable.c */; };
+		DCD7A283178C7453004A0467 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A835178760F400CE0827 /* ltablib.c */; };
+		DCD7A284178C7453004A0467 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A836178760F400CE0827 /* ltm.c */; };
+		DCD7A285178C7453004A0467 /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A83E178760F400CE0827 /* lundump.c */; };
+		DCD7A286178C7453004A0467 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A840178760F400CE0827 /* lvm.c */; };
+		DCD7A287178C7453004A0467 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = DC96A842178760F400CE0827 /* lzio.c */; };
+		DCD7A288178C7453004A0467 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE918176CA0AC003E4087 /* base64.c */; };
+		DCD7A289178C7526004A0467 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC43178C573500BBAFB0 /* AppDelegate.m */; };
+		DCD7A28A178C7526004A0467 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC45178C573500BBAFB0 /* GameScene.m */; };
+		DCD7A28B178C7526004A0467 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC47178C573500BBAFB0 /* MenuScene.m */; };
+		DCD7A28C178C7526004A0467 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC49178C573500BBAFB0 /* ViewController.m */; };
+		DCD7A28D178C7526004A0467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD11E3F178C522300FBC406 /* main.m */; };
+		DCD7A290178C753D004A0467 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
+		DCD7A292178C7545004A0467 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD7A291178C7545004A0467 /* libz.dylib */; };
+		DCD7EC4A178C573500BBAFB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC43178C573500BBAFB0 /* AppDelegate.m */; };
+		DCD7EC4B178C573500BBAFB0 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC45178C573500BBAFB0 /* GameScene.m */; };
+		DCD7EC4C178C573500BBAFB0 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC47178C573500BBAFB0 /* MenuScene.m */; };
+		DCD7EC4D178C573500BBAFB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC49178C573500BBAFB0 /* ViewController.m */; };
+		DCD7EC53178C57FC00BBAFB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
+		DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
+		DCD7EC55178C57FC00BBAFB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
+		DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DC41B8B11785F0F20018D6C5 /* PBXContainerItemProxy */ = {
+		DC496BF4178C6DAC00CCA840 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DCDD2DA01769FD0A00F307CD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DCDD2DED1769FD2E00F307CD;
-			remoteInfo = KoboldKitLibrary;
+			remoteGlobalIDString = DC484C6A178C418C0067DAA4;
+			remoteInfo = libKoboldKit.a;
 		};
-		DCDD2DFF1769FD2E00F307CD /* PBXContainerItemProxy */ = {
+		DCD7A28E178C7536004A0467 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DCDD2DA01769FD0A00F307CD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DCDD2DED1769FD2E00F307CD;
-			remoteInfo = KoboldKitLibrary;
+			remoteGlobalIDString = DC484C42178C40BB0067DAA4;
+			remoteInfo = KoboldKit.framework;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DCDD2DEC1769FD2E00F307CD /* CopyFiles */ = {
+		DC484C69178C418C0067DAA4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -185,18 +323,60 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		DC09DB8D178C84C6000E0B61 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		DC18B096178C7BC400641A6D /* 24x24_Level01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_Level01.tmx; sourceTree = "<group>"; };
+		DC18B097178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest24.tmx; sourceTree = "<group>"; };
+		DC18B098178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest48.tmx; sourceTree = "<group>"; };
+		DC18B099178C7BC400641A6D /* Tileset_Geometry_24x24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_24x24.png; sourceTree = "<group>"; };
+		DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 32x32_PlayerSizeTest32.tmx; sourceTree = "<group>"; };
+		DC18B09C178C7BC400641A6D /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
+		DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
+		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = config.lua; sourceTree = "<group>"; };
+		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = devconfig.lua; sourceTree = "<group>"; };
+		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = devconfig.lua.sample; sourceTree = "<group>"; };
+		DC18B0A3178C7BC400641A6D /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
+		DC18B0A4178C7BC400641A6D /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
+		DC18B0A5178C7BC400641A6D /* crawl-tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles-hd.png"; sourceTree = "<group>"; };
+		DC18B0A6178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles-hd.pvr.ccz"; sourceTree = "<group>"; };
+		DC18B0A7178C7BC400641A6D /* crawl-tiles-hd.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles-hd.tps"; sourceTree = "<group>"; };
+		DC18B0A8178C7BC400641A6D /* crawl-tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles.plist"; sourceTree = "<group>"; };
+		DC18B0A9178C7BC400641A6D /* crawl-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles.png"; sourceTree = "<group>"; };
+		DC18B0AA178C7BC400641A6D /* crawl-tiles.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles.pvr.ccz"; sourceTree = "<group>"; };
+		DC18B0AB178C7BC400641A6D /* crawl-tiles.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles.tps"; sourceTree = "<group>"; };
+		DC18B0AC178C7BC400641A6D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		DC18B0AD178C7BC400641A6D /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		DC18B0AF178C7BC400641A6D /* forest-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "forest-hd.plist"; sourceTree = "<group>"; };
+		DC18B0B0178C7BC400641A6D /* forest-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forest-hd.png"; sourceTree = "<group>"; };
+		DC18B0B1178C7BC400641A6D /* forest-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "forest-hd.pvr.ccz"; sourceTree = "<group>"; };
+		DC18B0B2178C7BC400641A6D /* forest-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "forest-ipadhd.plist"; sourceTree = "<group>"; };
+		DC18B0B3178C7BC400641A6D /* forest-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forest-ipadhd.png"; sourceTree = "<group>"; };
+		DC18B0B4178C7BC400641A6D /* forest-ipadhd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "forest-ipadhd.pvr.ccz"; sourceTree = "<group>"; };
+		DC18B0B5178C7BC400641A6D /* forest-parallax.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "forest-parallax.tmx"; sourceTree = "<group>"; };
+		DC18B0B6178C7BC400641A6D /* forest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = forest.plist; sourceTree = "<group>"; };
+		DC18B0B7178C7BC400641A6D /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
+		DC18B0B8178C7BC400641A6D /* forest.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = forest.pvr.ccz; sourceTree = "<group>"; };
+		DC18B0B9178C7BC400641A6D /* forest.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = forest.tps; sourceTree = "<group>"; };
+		DC18B0BA178C7BC400641A6D /* other-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "other-hd.plist"; sourceTree = "<group>"; };
+		DC18B0BB178C7BC400641A6D /* other-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "other-hd.png"; sourceTree = "<group>"; };
+		DC18B0BC178C7BC400641A6D /* other-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "other-hd.pvr.ccz"; sourceTree = "<group>"; };
+		DC18B0BD178C7BC400641A6D /* other-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "other-ipadhd.plist"; sourceTree = "<group>"; };
+		DC18B0BE178C7BC400641A6D /* other-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "other-ipadhd.png"; sourceTree = "<group>"; };
+		DC18B0BF178C7BC400641A6D /* other-ipadhd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "other-ipadhd.pvr.ccz"; sourceTree = "<group>"; };
+		DC18B0C0178C7BC400641A6D /* other.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = other.plist; sourceTree = "<group>"; };
+		DC18B0C1178C7BC400641A6D /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
+		DC18B0C2178C7BC400641A6D /* other.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = other.pvr.ccz; sourceTree = "<group>"; };
+		DC18B0C3178C7BC400641A6D /* other.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = other.tps; sourceTree = "<group>"; };
+		DC18B0C4178C7BC400641A6D /* READ ME.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "READ ME.txt"; sourceTree = "<group>"; };
+		DC18B0C5178C7BC400641A6D /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
+		DC18B11E178C7E3B00641A6D /* PlatformerDemo-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlatformerDemo-iOS-Info.plist"; sourceTree = "<group>"; };
+		DC18B11F178C7E3B00641A6D /* PlatformerDemo-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlatformerDemo-Mac-Info.plist"; sourceTree = "<group>"; };
+		DC18B121178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DC18B123178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-iOS.xcassets"; sourceTree = "<group>"; };
+		DC18B126178C7E9300641A6D /* Images-Mac.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-Mac.xcassets"; sourceTree = "<group>"; };
 		DC1E506D1775ED500063CEDC /* KKCameraFollowBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCameraFollowBehavior.h; sourceTree = "<group>"; };
 		DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCameraFollowBehavior.m; sourceTree = "<group>"; };
-		DC2F43B0176CB1F7005846A7 /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
-		DC2F43B2176CB1F7005846A7 /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
-		DC2F43B3176CB1F7005846A7 /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
-		DC2F43B4176CB1F7005846A7 /* crawl-tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles-hd.png"; sourceTree = "<group>"; };
-		DC2F43B5176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles-hd.pvr.ccz"; sourceTree = "<group>"; };
-		DC2F43B7176CB1F7005846A7 /* crawl-tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles.plist"; sourceTree = "<group>"; };
-		DC2F43B8176CB1F7005846A7 /* crawl-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles.png"; sourceTree = "<group>"; };
-		DC2F43B9176CB1F7005846A7 /* crawl-tiles.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles.pvr.ccz"; sourceTree = "<group>"; };
-		DC2F43BB176CB1F7005846A7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		DC2F43BC176CB1F7005846A7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		DC2F43CB176CC13B005846A7 /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
 		DC2F43CC176CC13B005846A7 /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
 		DC2F43CD176CC13B005846A7 /* crawl-tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles-hd.png"; sourceTree = "<group>"; };
@@ -216,23 +396,22 @@
 		DC2F43EF177090F8005846A7 /* KKTilemapTileLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTilemapTileLayerNode.m; path = KoboldKitLibrary/Tilemap/KKTilemapTileLayerNode.m; sourceTree = SOURCE_ROOT; };
 		DC2F43F117709109005846A7 /* KKTilemapObjectLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKTilemapObjectLayerNode.h; path = KoboldKitLibrary/Tilemap/KKTilemapObjectLayerNode.h; sourceTree = SOURCE_ROOT; };
 		DC2F43F217709109005846A7 /* KKTilemapObjectLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKTilemapObjectLayerNode.m; path = KoboldKitLibrary/Tilemap/KKTilemapObjectLayerNode.m; sourceTree = SOURCE_ROOT; };
-		DC2F43F41770E56E005846A7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DC2F43F51770E56E005846A7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DC2F43F61770E56E005846A7 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		DC2F43F71770E56E005846A7 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		DC2F43F81770E56E005846A7 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		DC2F43F91770E56E005846A7 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		DC2F43FA1770E56E005846A7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		DC2F43FB1770E56E005846A7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		DC2F440E1771E9A5005846A7 /* forest-parallax.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "forest-parallax.tmx"; sourceTree = "<group>"; };
-		DC2F44101771E9A5005846A7 /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
-		DC2F441A1771E9A5005846A7 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
 		DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
 		DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
-		DC41B8AB1785CA830018D6C5 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
-		DC41B8AC1785CA830018D6C5 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
 		DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+KoboldKit.h"; sourceTree = "<group>"; };
 		DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+KoboldKit.m"; sourceTree = "<group>"; };
+		DC484BBF178C34930067DAA4 /* KKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
+		DC484BC0178C34930067DAA4 /* KKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
+		DC484C0B178C36DB0067DAA4 /* KKMacApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMacApplication.h; sourceTree = "<group>"; };
+		DC484C0C178C36DB0067DAA4 /* KKMacApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMacApplication.m; sourceTree = "<group>"; };
+		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DC484C1B178C40800067DAA4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DC484C43178C40BB0067DAA4 /* KoboldKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KoboldKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC484C6B178C418C0067DAA4 /* libKoboldKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC484CE2178C44750067DAA4 /* KoboldKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KoboldKit-Prefix.pch"; path = "KoboldKitLibrary/KoboldKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		DC484CE3178C465E0067DAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DC4DE8F0176C9E2B003E4087 /* KKTilemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemap.h; sourceTree = "<group>"; };
 		DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemap.m; sourceTree = "<group>"; };
 		DC4DE8F2176C9E2B003E4087 /* KKTilemapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapLayer.h; sourceTree = "<group>"; };
@@ -265,10 +444,8 @@
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DC95BA7A1786DFB800E31DA6 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		DC95BA7B1786DFB800E31DA6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DC95BA7C1786DFB800E31DA6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		DC95BA7D1786DFB800E31DA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		DC96A7F71786E75400CE0827 /* KKDownloadProjectFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDownloadProjectFiles.h; sourceTree = "<group>"; };
 		DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDownloadProjectFiles.m; sourceTree = "<group>"; };
 		DC96A809178760F400CE0827 /* lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lapi.c; sourceTree = "<group>"; };
@@ -331,16 +508,6 @@
 		DC96A86A17876A2C00CE0827 /* KKLua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLua.m; sourceTree = "<group>"; };
 		DC96A86C17876F6100CE0827 /* NSDictionary+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KoboldKit.h"; sourceTree = "<group>"; };
 		DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KoboldKit.m"; sourceTree = "<group>"; };
-		DC96A8761787717200CE0827 /* devconfig.lua.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = devconfig.lua.sample; sourceTree = "<group>"; };
-		DC96A8771787717200CE0827 /* config.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = config.lua; sourceTree = "<group>"; };
-		DC96A87A17877D0A00CE0827 /* devconfig.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = devconfig.lua; sourceTree = "<group>"; };
-		DC96A87D1788C35A00CE0827 /* 24x24_Level01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_Level01.tmx; sourceTree = "<group>"; };
-		DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_24x24.png; sourceTree = "<group>"; };
-		DC96A881178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest24.tmx; sourceTree = "<group>"; };
-		DC96A882178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest48.tmx; sourceTree = "<group>"; };
-		DC96A886178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 32x32_PlayerSizeTest32.tmx; sourceTree = "<group>"; };
-		DC96A887178A141B00CE0827 /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
-		DC9CFCFE17749872004C981A /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
 		DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeBehavior.h; sourceTree = "<group>"; };
 		DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
 		DC9CFD091774CA5B004C981A /* KKNodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeController.h; sourceTree = "<group>"; };
@@ -365,15 +532,14 @@
 		DC9CFD311774CAE2004C981A /* KKFollowTargetBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KKFollowTargetBehavior.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFollowTargetBehavior.m; sourceTree = "<group>"; };
 		DC9CFD391774CB47004C981A /* KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoboldKit.h; sourceTree = "<group>"; };
-		DC9CFD3B1774CB47004C981A /* KoboldKitLibrary-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KoboldKitLibrary-Prefix.pch"; path = "../KoboldKitLibrary-Prefix.pch"; sourceTree = "<group>"; };
 		DC9CFD431774CBE1004C981A /* KKArcadeInputState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKArcadeInputState.h; sourceTree = "<group>"; };
 		DC9CFD441774CBE1004C981A /* KKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMacros.h; sourceTree = "<group>"; };
-		DC9CFD451774CBE1004C981A /* KKSpriteKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSpriteKit.h; sourceTree = "<group>"; };
 		DC9CFD461774CBE1004C981A /* KKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTypes.h; sourceTree = "<group>"; };
 		DC9CFD471774CBE1004C981A /* KKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKVersion.h; sourceTree = "<group>"; };
 		DC9CFD481774CBE1004C981A /* KKVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKVersion.m; sourceTree = "<group>"; };
 		DC9CFD4B1774CC97004C981A /* Introduction-to-KoboldKit-template.appledoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Introduction-to-KoboldKit-template.appledoc"; sourceTree = "<group>"; };
 		DC9CFD4C1774CDA9004C981A /* index.appledoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.appledoc; sourceTree = "<group>"; };
+		DCA1F0DC178C334000459A31 /* KKCompatibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCompatibility.h; sourceTree = "<group>"; };
 		DCB087CD177B1625004182E4 /* KKTilemapLayerContourTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapLayerContourTracer.h; sourceTree = "<group>"; };
 		DCB087CE177B1625004182E4 /* KKTilemapLayerContourTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemapLayerContourTracer.m; sourceTree = "<group>"; };
 		DCB087D0177B1647004182E4 /* KKIntegerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KKIntegerArray.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -386,33 +552,31 @@
 		DCB087E4177B439B004182E4 /* KKViewOriginNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKViewOriginNode.m; sourceTree = "<group>"; };
 		DCB087E9177BAC2F004182E4 /* KKPhysicsDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPhysicsDebugNode.h; sourceTree = "<group>"; };
 		DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPhysicsDebugNode.m; sourceTree = "<group>"; };
-		DCDD2DA81769FD0A00F307CD /* KoboldKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoboldKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCC619C178C560B009EC802 /* PlatformerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlatformerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DCD11E36178C522300FBC406 /* PlatformerDemo-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlatformerDemo-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD11E3D178C522300FBC406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCD11E3F178C522300FBC406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCD11E43178C522300FBC406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DCD7A291178C7545004A0467 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		DCD7EC42178C573500BBAFB0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCD7EC43178C573500BBAFB0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCD7EC44178C573500BBAFB0 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		DCD7EC45178C573500BBAFB0 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		DCD7EC46178C573500BBAFB0 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		DCD7EC47178C573500BBAFB0 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
+		DCD7EC48178C573500BBAFB0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DCD7EC49178C573500BBAFB0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCD7EC52178C57FC00BBAFB0 /* PlatformerDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlatformerDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		DCDD2DB51769FD0A00F307CD /* KoboldKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKit-Info.plist"; sourceTree = "<group>"; };
-		DCDD2DB71769FD0A00F307CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DCDD2DB91769FD0A00F307CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DCDD2DBB1769FD0A00F307CD /* KoboldKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KoboldKit-Prefix.pch"; sourceTree = "<group>"; };
-		DCDD2DBC1769FD0A00F307CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		DCDD2DBD1769FD0A00F307CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DCDD2DC01769FD0A00F307CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		DCDD2DC31769FD0A00F307CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		DCDD2DC51769FD0A00F307CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DCDD2DC61769FD0A00F307CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DCDD2DC81769FD0A00F307CD /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		DCDD2DC91769FD0A00F307CD /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		DCDD2DCD1769FD0A00F307CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCDD2DD41769FD0A00F307CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKitLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCDD2DFB1769FD2E00F307CD /* KoboldKitLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoboldKitLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD2E041769FD2E00F307CD /* KoboldKitLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKitLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		DCDD2E061769FD2E00F307CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KoboldKitLibraryTests.m; sourceTree = "<group>"; };
 		DCDD2E2D176A40C400F307CD /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		DCDD2E2E176A40C400F307CD /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
-		DCDD2E44176A40C400F307CD /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		DCDD2E45176A40C400F307CD /* VTPG_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPG_Common.h; sourceTree = "<group>"; };
 		DCDD2E46176A40C400F307CD /* VTPG_Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPG_Common.m; sourceTree = "<group>"; };
 		DCDD2E48176A40C400F307CD /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLWriter.h; sourceTree = "<group>"; };
@@ -424,78 +588,126 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DCDD2DA51769FD0A00F307CD /* Frameworks */ = {
+		DC484C3F178C40BB0067DAA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC95BA781786DF8600E31DA6 /* SystemConfiguration.framework in Frameworks */,
-				DC4DE92C176CA52F003E4087 /* libz.dylib in Frameworks */,
-				DCDD2E101769FD8500F307CD /* libKoboldKitLibrary.a in Frameworks */,
-				DCDD2DAE1769FD0A00F307CD /* CoreGraphics.framework in Frameworks */,
-				DCDD2DB01769FD0A00F307CD /* UIKit.framework in Frameworks */,
-				DCDD2DB21769FD0A00F307CD /* SpriteKit.framework in Frameworks */,
-				DCDD2DAC1769FD0A00F307CD /* Foundation.framework in Frameworks */,
+				DC484CE4178C465E0067DAA4 /* libz.dylib in Frameworks */,
+				DC484C44178C40BB0067DAA4 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCDD2DEB1769FD2E00F307CD /* Frameworks */ = {
+		DC484C68178C418C0067DAA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCDD2DF81769FD2E00F307CD /* Frameworks */ = {
+		DCD11E33178C522300FBC406 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4DE92A176CA503003E4087 /* libz.dylib in Frameworks */,
-				DCDD2DFC1769FD2E00F307CD /* XCTest.framework in Frameworks */,
-				DCDD2DFE1769FD2E00F307CD /* UIKit.framework in Frameworks */,
-				DCDD2DFD1769FD2E00F307CD /* Foundation.framework in Frameworks */,
-				DCDD2E011769FD2E00F307CD /* libKoboldKitLibrary.a in Frameworks */,
+				DCD7A290178C753D004A0467 /* libz.dylib in Frameworks */,
+				DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */,
+				DCCC619D178C5626009EC802 /* KoboldKit.framework in Frameworks */,
+				DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */,
+				DCD11E37178C522300FBC406 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD7EC4F178C57FC00BBAFB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD7A292178C7545004A0467 /* libz.dylib in Frameworks */,
+				DC042A83178C5A06009FDBF8 /* SystemConfiguration.framework in Frameworks */,
+				DC042A81178C59FA009FDBF8 /* libKoboldKit.a in Frameworks */,
+				DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */,
+				DCD7EC55178C57FC00BBAFB0 /* UIKit.framework in Frameworks */,
+				DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */,
+				DCD7EC53178C57FC00BBAFB0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC2F43AF176CB1F7005846A7 /* Resources */ = {
+		DC18B095178C7BC400641A6D /* 24x24 */ = {
 			isa = PBXGroup;
 			children = (
-				DC96A87C1788C35A00CE0827 /* 24x24 */,
-				DC96A885178A141B00CE0827 /* 32x32 */,
-				DC96A8751787717200CE0827 /* Config */,
-				DC9CFCFE17749872004C981A /* Jetpack.atlas */,
-				DC2F44071771E9A5005846A7 /* Genetica Texture Pack 10 - Mystery Forest */,
-				DC2F43F41770E56E005846A7 /* Default-568h@2x.png */,
-				DC2F43F51770E56E005846A7 /* Default.png */,
-				DC2F43F61770E56E005846A7 /* Icon-72.png */,
-				DC2F43F71770E56E005846A7 /* Icon-Small-50.png */,
-				DC2F43F81770E56E005846A7 /* Icon-Small.png */,
-				DC2F43F91770E56E005846A7 /* Icon-Small@2x.png */,
-				DC2F43FA1770E56E005846A7 /* Icon.png */,
-				DC2F43FB1770E56E005846A7 /* Icon@2x.png */,
-				DC2F43B0176CB1F7005846A7 /* ATTRIBUTIONS */,
-				DC2F43B1176CB1F7005846A7 /* crawl-tiles Oct-5-2010 */,
+				DC18B096178C7BC400641A6D /* 24x24_Level01.tmx */,
+				DC18B097178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx */,
+				DC18B098178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx */,
+				DC18B099178C7BC400641A6D /* Tileset_Geometry_24x24.png */,
 			);
-			path = Resources;
+			path = 24x24;
 			sourceTree = "<group>";
 		};
-		DC2F43B1176CB1F7005846A7 /* crawl-tiles Oct-5-2010 */ = {
+		DC18B09A178C7BC400641A6D /* 32x32 */ = {
 			isa = PBXGroup;
 			children = (
-				DC2F43B2176CB1F7005846A7 /* crawl-tilemap.tmx */,
-				DC2F43B3176CB1F7005846A7 /* crawl-tiles-hd.plist */,
-				DC2F43B4176CB1F7005846A7 /* crawl-tiles-hd.png */,
-				DC2F43B5176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz */,
-				DC2F43B7176CB1F7005846A7 /* crawl-tiles.plist */,
-				DC2F43B8176CB1F7005846A7 /* crawl-tiles.png */,
-				DC2F43B9176CB1F7005846A7 /* crawl-tiles.pvr.ccz */,
-				DC2F43BB176CB1F7005846A7 /* LICENSE.txt */,
-				DC2F43BC176CB1F7005846A7 /* README.txt */,
+				DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */,
+				DC18B09C178C7BC400641A6D /* Tileset_Geometry_32x32.png */,
+			);
+			path = 32x32;
+			sourceTree = "<group>";
+		};
+		DC18B09E178C7BC400641A6D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DC18B09F178C7BC400641A6D /* config.lua */,
+				DC18B0A0178C7BC400641A6D /* devconfig.lua */,
+				DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DC18B0A2178C7BC400641A6D /* crawl-tiles Oct-5-2010 */ = {
+			isa = PBXGroup;
+			children = (
+				DC18B0A3178C7BC400641A6D /* crawl-tilemap.tmx */,
+				DC18B0A4178C7BC400641A6D /* crawl-tiles-hd.plist */,
+				DC18B0A5178C7BC400641A6D /* crawl-tiles-hd.png */,
+				DC18B0A6178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz */,
+				DC18B0A7178C7BC400641A6D /* crawl-tiles-hd.tps */,
+				DC18B0A8178C7BC400641A6D /* crawl-tiles.plist */,
+				DC18B0A9178C7BC400641A6D /* crawl-tiles.png */,
+				DC18B0AA178C7BC400641A6D /* crawl-tiles.pvr.ccz */,
+				DC18B0AB178C7BC400641A6D /* crawl-tiles.tps */,
+				DC18B0AC178C7BC400641A6D /* LICENSE.txt */,
+				DC18B0AD178C7BC400641A6D /* README.txt */,
 			);
 			path = "crawl-tiles Oct-5-2010";
+			sourceTree = "<group>";
+		};
+		DC18B0AE178C7BC400641A6D /* Genetica Texture Pack 10 - Mystery Forest */ = {
+			isa = PBXGroup;
+			children = (
+				DC18B0AF178C7BC400641A6D /* forest-hd.plist */,
+				DC18B0B0178C7BC400641A6D /* forest-hd.png */,
+				DC18B0B1178C7BC400641A6D /* forest-hd.pvr.ccz */,
+				DC18B0B2178C7BC400641A6D /* forest-ipadhd.plist */,
+				DC18B0B3178C7BC400641A6D /* forest-ipadhd.png */,
+				DC18B0B4178C7BC400641A6D /* forest-ipadhd.pvr.ccz */,
+				DC18B0B5178C7BC400641A6D /* forest-parallax.tmx */,
+				DC18B0B6178C7BC400641A6D /* forest.plist */,
+				DC18B0B7178C7BC400641A6D /* forest.png */,
+				DC18B0B8178C7BC400641A6D /* forest.pvr.ccz */,
+				DC18B0B9178C7BC400641A6D /* forest.tps */,
+				DC18B0BA178C7BC400641A6D /* other-hd.plist */,
+				DC18B0BB178C7BC400641A6D /* other-hd.png */,
+				DC18B0BC178C7BC400641A6D /* other-hd.pvr.ccz */,
+				DC18B0BD178C7BC400641A6D /* other-ipadhd.plist */,
+				DC18B0BE178C7BC400641A6D /* other-ipadhd.png */,
+				DC18B0BF178C7BC400641A6D /* other-ipadhd.pvr.ccz */,
+				DC18B0C0178C7BC400641A6D /* other.plist */,
+				DC18B0C1178C7BC400641A6D /* other.png */,
+				DC18B0C2178C7BC400641A6D /* other.pvr.ccz */,
+				DC18B0C3178C7BC400641A6D /* other.tps */,
+				DC18B0C4178C7BC400641A6D /* READ ME.txt */,
+			);
+			path = "Genetica Texture Pack 10 - Mystery Forest";
 			sourceTree = "<group>";
 		};
 		DC2F43CA176CC13B005846A7 /* crawl-tiles Oct-5-2010 */ = {
@@ -550,14 +762,27 @@
 			name = "TMX Reader/Writer";
 			sourceTree = "<group>";
 		};
-		DC2F44071771E9A5005846A7 /* Genetica Texture Pack 10 - Mystery Forest */ = {
+		DC484BBE178C34720067DAA4 /* AppDelegate & Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DC2F440E1771E9A5005846A7 /* forest-parallax.tmx */,
-				DC2F44101771E9A5005846A7 /* forest.png */,
-				DC2F441A1771E9A5005846A7 /* other.png */,
+				DC484BBF178C34930067DAA4 /* KKAppDelegate.h */,
+				DC484BC0178C34930067DAA4 /* KKAppDelegate.m */,
+				DC9CFD1A1774CA84004C981A /* KKViewController.h */,
+				DC9CFD1B1774CA84004C981A /* KKViewController.m */,
+				DC484C0B178C36DB0067DAA4 /* KKMacApplication.h */,
+				DC484C0C178C36DB0067DAA4 /* KKMacApplication.m */,
 			);
-			path = "Genetica Texture Pack 10 - Mystery Forest";
+			name = "AppDelegate & Controller";
+			sourceTree = "<group>";
+		};
+		DC484C18178C40800067DAA4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC484C19178C40800067DAA4 /* Foundation.framework */,
+				DC484C1A178C40800067DAA4 /* CoreData.framework */,
+				DC484C1B178C40800067DAA4 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		DC4DE8EF176C9E2B003E4087 /* Tilemap */ = {
@@ -611,10 +836,8 @@
 		DC95BA791786DFB800E31DA6 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				DC95BA7A1786DFB800E31DA6 /* LICENCE.txt */,
 				DC95BA7B1786DFB800E31DA6 /* Reachability.h */,
 				DC95BA7C1786DFB800E31DA6 /* Reachability.m */,
-				DC95BA7D1786DFB800E31DA6 /* README.md */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -703,39 +926,10 @@
 			name = "NS* Categories";
 			sourceTree = "<group>";
 		};
-		DC96A8751787717200CE0827 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				DC96A8771787717200CE0827 /* config.lua */,
-				DC96A87A17877D0A00CE0827 /* devconfig.lua */,
-				DC96A8761787717200CE0827 /* devconfig.lua.sample */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		DC96A87C1788C35A00CE0827 /* 24x24 */ = {
-			isa = PBXGroup;
-			children = (
-				DC96A881178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx */,
-				DC96A882178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx */,
-				DC96A87D1788C35A00CE0827 /* 24x24_Level01.tmx */,
-				DC96A87E1788C35A00CE0827 /* Tileset_Geometry_24x24.png */,
-			);
-			path = 24x24;
-			sourceTree = "<group>";
-		};
-		DC96A885178A141B00CE0827 /* 32x32 */ = {
-			isa = PBXGroup;
-			children = (
-				DC96A886178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx */,
-				DC96A887178A141B00CE0827 /* Tileset_Geometry_32x32.png */,
-			);
-			path = 32x32;
-			sourceTree = "<group>";
-		};
 		DC9CFD061774CA5B004C981A /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				DC484BBE178C34720067DAA4 /* AppDelegate & Controller */,
 				DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */,
 				DCB087D6177B2F57004182E4 /* Sprite Kit Categories */,
 				DCB087EC177BAC3F004182E4 /* View Scene Node */,
@@ -771,13 +965,12 @@
 		DC9CFD421774CBE1004C981A /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				DC9CFD3B1774CB47004C981A /* KoboldKitLibrary-Prefix.pch */,
-				DC9CFD431774CBE1004C981A /* KKArcadeInputState.h */,
+				DCA1F0DC178C334000459A31 /* KKCompatibility.h */,
 				DC9CFD441774CBE1004C981A /* KKMacros.h */,
-				DC9CFD451774CBE1004C981A /* KKSpriteKit.h */,
 				DC9CFD461774CBE1004C981A /* KKTypes.h */,
 				DC9CFD471774CBE1004C981A /* KKVersion.h */,
 				DC9CFD481774CBE1004C981A /* KKVersion.m */,
+				DC9CFD431774CBE1004C981A /* KKArcadeInputState.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -805,8 +998,6 @@
 		DCB087EC177BAC3F004182E4 /* View Scene Node */ = {
 			isa = PBXGroup;
 			children = (
-				DC9CFD1A1774CA84004C981A /* KKViewController.h */,
-				DC9CFD1B1774CA84004C981A /* KKViewController.m */,
 				DC9CFD181774CA84004C981A /* KKView.h */,
 				DC9CFD191774CA84004C981A /* KKView.m */,
 				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
@@ -829,12 +1020,61 @@
 			name = "Kobold Kit Nodes";
 			sourceTree = "<group>";
 		};
+		DCCC6198178C5574009EC802 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC18B095178C7BC400641A6D /* 24x24 */,
+				DC18B09A178C7BC400641A6D /* 32x32 */,
+				DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */,
+				DC18B09E178C7BC400641A6D /* Config */,
+				DC18B0A2178C7BC400641A6D /* crawl-tiles Oct-5-2010 */,
+				DC18B0AE178C7BC400641A6D /* Genetica Texture Pack 10 - Mystery Forest */,
+				DC18B0C5178C7BC400641A6D /* Jetpack.atlas */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCD11E39178C522300FBC406 /* PlatformerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DCD7EC42178C573500BBAFB0 /* AppDelegate.h */,
+				DCD7EC43178C573500BBAFB0 /* AppDelegate.m */,
+				DCD7EC48178C573500BBAFB0 /* ViewController.h */,
+				DCD7EC49178C573500BBAFB0 /* ViewController.m */,
+				DCD7EC46178C573500BBAFB0 /* MenuScene.h */,
+				DCD7EC47178C573500BBAFB0 /* MenuScene.m */,
+				DCD7EC44178C573500BBAFB0 /* GameScene.h */,
+				DCD7EC45178C573500BBAFB0 /* GameScene.m */,
+				DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */,
+				DC18B126178C7E9300641A6D /* Images-Mac.xcassets */,
+				DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */,
+				DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */,
+				DC09DB8D178C84C6000E0B61 /* MainMenu.xib */,
+				DC18B11E178C7E3B00641A6D /* PlatformerDemo-iOS-Info.plist */,
+				DC18B11F178C7E3B00641A6D /* PlatformerDemo-Mac-Info.plist */,
+				DCCC6198178C5574009EC802 /* Resources */,
+				DCD11E3A178C522300FBC406 /* Supporting Files */,
+			);
+			path = PlatformerDemo;
+			sourceTree = "<group>";
+		};
+		DCD11E3A178C522300FBC406 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD11E3F178C522300FBC406 /* main.m */,
+				DCCC619C178C560B009EC802 /* PlatformerDemo-Prefix.pch */,
+				DCD11E3C178C522300FBC406 /* InfoPlist.strings */,
+				DCD11E42178C522300FBC406 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
-				DCDD2DB31769FD0A00F307CD /* KoboldKitDemo */,
 				DCDD2DF01769FD2E00F307CD /* KoboldKitLibrary */,
 				DCDD2E021769FD2E00F307CD /* KoboldKitLibraryTests */,
+				DCD11E39178C522300FBC406 /* PlatformerDemo */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
 				DCDD2DA91769FD0A00F307CD /* Products */,
 			);
@@ -843,9 +1083,10 @@
 		DCDD2DA91769FD0A00F307CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCDD2DA81769FD0A00F307CD /* KoboldKit.app */,
-				DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */,
-				DCDD2DFB1769FD2E00F307CD /* KoboldKitLibraryTests.xctest */,
+				DC484C43178C40BB0067DAA4 /* KoboldKit.framework */,
+				DC484C6B178C418C0067DAA4 /* libKoboldKit.a */,
+				DCD11E36178C522300FBC406 /* PlatformerDemo-Mac.app */,
+				DCD7EC52178C57FC00BBAFB0 /* PlatformerDemo-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -853,6 +1094,9 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCD7A291178C7545004A0467 /* libz.dylib */,
+				DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */,
+				DC484CE3178C465E0067DAA4 /* libz.dylib */,
 				DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */,
 				DC4DE928176CA4EB003E4087 /* libz.dylib */,
 				DCDD2DAB1769FD0A00F307CD /* Foundation.framework */,
@@ -860,45 +1104,17 @@
 				DCDD2DAF1769FD0A00F307CD /* UIKit.framework */,
 				DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */,
 				DCDD2DD41769FD0A00F307CD /* XCTest.framework */,
+				DC484C16178C40800067DAA4 /* Cocoa.framework */,
+				DC484C18178C40800067DAA4 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DCDD2DB31769FD0A00F307CD /* KoboldKitDemo */ = {
-			isa = PBXGroup;
-			children = (
-				DC2F43AF176CB1F7005846A7 /* Resources */,
-				DCDD2DBC1769FD0A00F307CD /* AppDelegate.h */,
-				DCDD2DBD1769FD0A00F307CD /* AppDelegate.m */,
-				DCDD2DBF1769FD0A00F307CD /* Main_iPhone.storyboard */,
-				DCDD2DC21769FD0A00F307CD /* Main_iPad.storyboard */,
-				DCDD2DC51769FD0A00F307CD /* ViewController.h */,
-				DCDD2DC61769FD0A00F307CD /* ViewController.m */,
-				DC41B8AB1785CA830018D6C5 /* MenuScene.h */,
-				DC41B8AC1785CA830018D6C5 /* MenuScene.m */,
-				DCDD2DC81769FD0A00F307CD /* GameScene.h */,
-				DCDD2DC91769FD0A00F307CD /* GameScene.m */,
-				DCDD2DCD1769FD0A00F307CD /* Images.xcassets */,
-				DCDD2DB41769FD0A00F307CD /* Supporting Files */,
-			);
-			path = KoboldKitDemo;
-			sourceTree = "<group>";
-		};
-		DCDD2DB41769FD0A00F307CD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DCDD2DB51769FD0A00F307CD /* KoboldKit-Info.plist */,
-				DCDD2DB61769FD0A00F307CD /* InfoPlist.strings */,
-				DCDD2DB91769FD0A00F307CD /* main.m */,
-				DCDD2DBB1769FD0A00F307CD /* KoboldKit-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DCDD2DF01769FD2E00F307CD /* KoboldKitLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				DC9CFD391774CB47004C981A /* KoboldKit.h */,
+				DC484CE2178C44750067DAA4 /* KoboldKit-Prefix.pch */,
 				DC9CFD421774CBE1004C981A /* Headers */,
 				DC9CFD061774CA5B004C981A /* Framework */,
 				DC9CFD2C1774CAE2004C981A /* Behaviors */,
@@ -957,7 +1173,6 @@
 		DCDD2E2F176A40C400F307CD /* VTPG */ = {
 			isa = PBXGroup;
 			children = (
-				DCDD2E44176A40C400F307CD /* README */,
 				DCDD2E45176A40C400F307CD /* VTPG_Common.h */,
 				DCDD2E46176A40C400F307CD /* VTPG_Common.m */,
 			);
@@ -984,59 +1199,88 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		DCDD2DA71769FD0A00F307CD /* KoboldKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DCDD2DE41769FD0A00F307CD /* Build configuration list for PBXNativeTarget "KoboldKit" */;
-			buildPhases = (
-				DCDD2DA41769FD0A00F307CD /* Sources */,
-				DCDD2DA51769FD0A00F307CD /* Frameworks */,
-				DCDD2DA61769FD0A00F307CD /* Resources */,
+/* Begin PBXHeadersBuildPhase section */
+		DC484C40178C40BB0067DAA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-				DC41B8B21785F0F20018D6C5 /* PBXTargetDependency */,
-			);
-			name = KoboldKit;
-			productName = KoboldKitDemo;
-			productReference = DCDD2DA81769FD0A00F307CD /* KoboldKit.app */;
-			productType = "com.apple.product-type.application";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */ = {
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DC484C42178C40BB0067DAA4 /* KoboldKit.framework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCDD2E0A1769FD2E00F307CD /* Build configuration list for PBXNativeTarget "KoboldKitLibrary" */;
+			buildConfigurationList = DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "KoboldKit.framework" */;
 			buildPhases = (
-				DCDD2DEA1769FD2E00F307CD /* Sources */,
-				DCDD2DEB1769FD2E00F307CD /* Frameworks */,
-				DCDD2DEC1769FD2E00F307CD /* CopyFiles */,
+				DC484C3E178C40BB0067DAA4 /* Sources */,
+				DC484C3F178C40BB0067DAA4 /* Frameworks */,
+				DC484C40178C40BB0067DAA4 /* Headers */,
+				DC484C41178C40BB0067DAA4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KoboldKitLibrary;
-			productName = KoboldKitLibrary;
-			productReference = DCDD2DEE1769FD2E00F307CD /* libKoboldKitLibrary.a */;
+			name = KoboldKit.framework;
+			productName = KoboldKit;
+			productReference = DC484C43178C40BB0067DAA4 /* KoboldKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC484C6A178C418C0067DAA4 /* libKoboldKit.a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libKoboldKit.a" */;
+			buildPhases = (
+				DC484C67178C418C0067DAA4 /* Sources */,
+				DC484C68178C418C0067DAA4 /* Frameworks */,
+				DC484C69178C418C0067DAA4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libKoboldKit.a;
+			productName = KoboldKit;
+			productReference = DC484C6B178C418C0067DAA4 /* libKoboldKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		DCDD2DFA1769FD2E00F307CD /* KoboldKitLibraryTests */ = {
+		DCD11E35178C522300FBC406 /* PlatformerDemo-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCDD2E0D1769FD2E00F307CD /* Build configuration list for PBXNativeTarget "KoboldKitLibraryTests" */;
+			buildConfigurationList = DCD11E62178C522400FBC406 /* Build configuration list for PBXNativeTarget "PlatformerDemo-Mac" */;
 			buildPhases = (
-				DCDD2DF71769FD2E00F307CD /* Sources */,
-				DCDD2DF81769FD2E00F307CD /* Frameworks */,
-				DCDD2DF91769FD2E00F307CD /* Resources */,
+				DCD11E32178C522300FBC406 /* Sources */,
+				DCD11E33178C522300FBC406 /* Frameworks */,
+				DCD11E34178C522300FBC406 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DCDD2E001769FD2E00F307CD /* PBXTargetDependency */,
+				DCD7A28F178C7536004A0467 /* PBXTargetDependency */,
 			);
-			name = KoboldKitLibraryTests;
-			productName = KoboldKitLibraryTests;
-			productReference = DCDD2DFB1769FD2E00F307CD /* KoboldKitLibraryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "PlatformerDemo-Mac";
+			productName = "PlatformerDemo-Mac";
+			productReference = DCD11E36178C522300FBC406 /* PlatformerDemo-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCD7EC51178C57FC00BBAFB0 /* PlatformerDemo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "PlatformerDemo-iOS" */;
+			buildPhases = (
+				DCD7EC4E178C57FC00BBAFB0 /* Sources */,
+				DCD7EC4F178C57FC00BBAFB0 /* Frameworks */,
+				DCD7EC50178C57FC00BBAFB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC496BF5178C6DAC00CCA840 /* PBXTargetDependency */,
+			);
+			name = "PlatformerDemo-iOS";
+			productName = "PlatformerDemo-iOS";
+			productReference = DCD7EC52178C57FC00BBAFB0 /* PlatformerDemo-iOS.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -1046,11 +1290,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Steffen Itterheim";
-				TargetAttributes = {
-					DCDD2DFA1769FD2E00F307CD = {
-						TestTargetID = DCDD2DA71769FD0A00F307CD;
-					};
-				};
 			};
 			buildConfigurationList = DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1065,224 +1304,382 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCDD2DA71769FD0A00F307CD /* KoboldKit */,
-				DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */,
-				DCDD2DFA1769FD2E00F307CD /* KoboldKitLibraryTests */,
+				DCD7EC51178C57FC00BBAFB0 /* PlatformerDemo-iOS */,
+				DCD11E35178C522300FBC406 /* PlatformerDemo-Mac */,
+				DC484C6A178C418C0067DAA4 /* libKoboldKit.a */,
+				DC484C42178C40BB0067DAA4 /* KoboldKit.framework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DCDD2DA61769FD0A00F307CD /* Resources */ = {
+		DC484C41178C40BB0067DAA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2F43FF1770E56E005846A7 /* Icon-Small-50.png in Resources */,
-				DC2F43C8176CB1F7005846A7 /* README.txt in Resources */,
-				DC9CFCFF17749872004C981A /* Jetpack.atlas in Resources */,
-				DC2F43BE176CB1F7005846A7 /* crawl-tilemap.tmx in Resources */,
-				DCDD2DCE1769FD0A00F307CD /* Images.xcassets in Resources */,
-				DC96A888178A141B00CE0827 /* 32x32_PlayerSizeTest32.tmx in Resources */,
-				DC2F44031770E56E005846A7 /* Icon@2x.png in Resources */,
-				DC2F43C0176CB1F7005846A7 /* crawl-tiles-hd.png in Resources */,
-				DC96A8791787717200CE0827 /* config.lua in Resources */,
-				DC2F44011770E56E005846A7 /* Icon-Small@2x.png in Resources */,
-				DC2F43C4176CB1F7005846A7 /* crawl-tiles.png in Resources */,
-				DC2F44021770E56E005846A7 /* Icon.png in Resources */,
-				DCDD2DC41769FD0A00F307CD /* Main_iPad.storyboard in Resources */,
-				DC2F44001770E56E005846A7 /* Icon-Small.png in Resources */,
-				DC2F43FD1770E56E005846A7 /* Default.png in Resources */,
-				DC96A8801788C35A00CE0827 /* Tileset_Geometry_24x24.png in Resources */,
-				DC2F44261771E9A5005846A7 /* forest.png in Resources */,
-				DC96A889178A141B00CE0827 /* Tileset_Geometry_32x32.png in Resources */,
-				DCDD2DC11769FD0A00F307CD /* Main_iPhone.storyboard in Resources */,
-				DC2F43BF176CB1F7005846A7 /* crawl-tiles-hd.plist in Resources */,
-				DC96A883178A0FF800CE0827 /* 24x24_PlayerSizeTest24.tmx in Resources */,
-				DC2F43C5176CB1F7005846A7 /* crawl-tiles.pvr.ccz in Resources */,
-				DC96A87F1788C35A00CE0827 /* 24x24_Level01.tmx in Resources */,
-				DC2F44241771E9A5005846A7 /* forest-parallax.tmx in Resources */,
-				DC2F43FE1770E56E005846A7 /* Icon-72.png in Resources */,
-				DC2F43C7176CB1F7005846A7 /* LICENSE.txt in Resources */,
-				DC2F43C1176CB1F7005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */,
-				DC2F43C9176CB293005846A7 /* ATTRIBUTIONS in Resources */,
-				DC96A8781787717200CE0827 /* devconfig.lua.sample in Resources */,
-				DC96A87B17877D0A00CE0827 /* devconfig.lua in Resources */,
-				DC2F43FC1770E56E005846A7 /* Default-568h@2x.png in Resources */,
-				DC96A884178A0FF800CE0827 /* 24x24_PlayerSizeTest48.tmx in Resources */,
-				DC2F43C3176CB1F7005846A7 /* crawl-tiles.plist in Resources */,
-				DC2F44301771E9A5005846A7 /* other.png in Resources */,
-				DCDD2DB81769FD0A00F307CD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCDD2DF91769FD2E00F307CD /* Resources */ = {
+		DCD11E34178C522300FBC406 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2F43DF176CC13B005846A7 /* LICENSE.txt in Resources */,
-				DC2F43D7176CC13B005846A7 /* crawl-tiles-hd.plist in Resources */,
-				DC2F43DD176CC13B005846A7 /* crawl-tiles.pvr.ccz in Resources */,
-				DC2F43DC176CC13B005846A7 /* crawl-tiles.png in Resources */,
-				DC2F43DB176CC13B005846A7 /* crawl-tiles.plist in Resources */,
-				DC2F43D8176CC13B005846A7 /* crawl-tiles-hd.png in Resources */,
-				DC2F43D6176CC13B005846A7 /* crawl-tilemap.tmx in Resources */,
-				DC2F43D9176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz in Resources */,
-				DCDD2E071769FD2E00F307CD /* InfoPlist.strings in Resources */,
-				DC2F43DA176CC13B005846A7 /* crawl-tiles-hd.tps in Resources */,
-				DC2F43E0176CC13B005846A7 /* README.txt in Resources */,
-				DC2F43DE176CC13B005846A7 /* crawl-tiles.tps in Resources */,
+				DC18B10F178C7BC400641A6D /* other-ipadhd.png in Resources */,
+				DC18B0F9178C7BC400641A6D /* forest-ipadhd.png in Resources */,
+				DC18B0F7178C7BC400641A6D /* forest-ipadhd.plist in Resources */,
+				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
+				DC18B0E3178C7BC400641A6D /* crawl-tiles-hd.tps in Resources */,
+				DC18B0DB178C7BC400641A6D /* crawl-tilemap.tmx in Resources */,
+				DC18B107178C7BC400641A6D /* other-hd.plist in Resources */,
+				DC18B0DF178C7BC400641A6D /* crawl-tiles-hd.png in Resources */,
+				DC18B0FB178C7BC400641A6D /* forest-ipadhd.pvr.ccz in Resources */,
+				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
+				DC18B115178C7BC400641A6D /* other.png in Resources */,
+				DC18B101178C7BC400641A6D /* forest.png in Resources */,
+				DC18B0D3178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
+				DC18B0E9178C7BC400641A6D /* crawl-tiles.pvr.ccz in Resources */,
+				DC18B103178C7BC400641A6D /* forest.pvr.ccz in Resources */,
+				DC18B10D178C7BC400641A6D /* other-ipadhd.plist in Resources */,
+				DC18B0F1178C7BC400641A6D /* forest-hd.plist in Resources */,
+				DC18B0E7178C7BC400641A6D /* crawl-tiles.png in Resources */,
+				DC18B0E5178C7BC400641A6D /* crawl-tiles.plist in Resources */,
+				DCD11E44178C522300FBC406 /* Credits.rtf in Resources */,
+				DC18B10B178C7BC400641A6D /* other-hd.pvr.ccz in Resources */,
+				DC18B11B178C7BC400641A6D /* READ ME.txt in Resources */,
+				DC18B0E1178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz in Resources */,
+				DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */,
+				DC18B0FD178C7BC400641A6D /* forest-parallax.tmx in Resources */,
+				DC18B0F5178C7BC400641A6D /* forest-hd.pvr.ccz in Resources */,
+				DC18B0ED178C7BC400641A6D /* LICENSE.txt in Resources */,
+				DC18B0EB178C7BC400641A6D /* crawl-tiles.tps in Resources */,
+				DC18B0EF178C7BC400641A6D /* README.txt in Resources */,
+				DC18B109178C7BC400641A6D /* other-hd.png in Resources */,
+				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
+				DC18B111178C7BC400641A6D /* other-ipadhd.pvr.ccz in Resources */,
+				DC18B117178C7BC400641A6D /* other.pvr.ccz in Resources */,
+				DC18B0C7178C7BC400641A6D /* 24x24_Level01.tmx in Resources */,
+				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
+				DC18B0F3178C7BC400641A6D /* forest-hd.png in Resources */,
+				DC18B119178C7BC400641A6D /* other.tps in Resources */,
+				DC18B105178C7BC400641A6D /* forest.tps in Resources */,
+				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
+				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
+				DC18B0C9178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */,
+				DC18B0CD178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */,
+				DC18B113178C7BC400641A6D /* other.plist in Resources */,
+				DC18B0FF178C7BC400641A6D /* forest.plist in Resources */,
+				DC18B0D1178C7BC400641A6D /* Tileset_Geometry_32x32.png in Resources */,
+				DC18B0CB178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx in Resources */,
+				DC18B0DD178C7BC400641A6D /* crawl-tiles-hd.plist in Resources */,
+				DC18B0CF178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD7EC50178C57FC00BBAFB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC18B10E178C7BC400641A6D /* other-ipadhd.png in Resources */,
+				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
+				DC18B0F8178C7BC400641A6D /* forest-ipadhd.png in Resources */,
+				DC18B0F6178C7BC400641A6D /* forest-ipadhd.plist in Resources */,
+				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
+				DC18B0E2178C7BC400641A6D /* crawl-tiles-hd.tps in Resources */,
+				DC18B0DA178C7BC400641A6D /* crawl-tilemap.tmx in Resources */,
+				DC18B106178C7BC400641A6D /* other-hd.plist in Resources */,
+				DC18B0DE178C7BC400641A6D /* crawl-tiles-hd.png in Resources */,
+				DC18B0FA178C7BC400641A6D /* forest-ipadhd.pvr.ccz in Resources */,
+				DC18B114178C7BC400641A6D /* other.png in Resources */,
+				DC18B100178C7BC400641A6D /* forest.png in Resources */,
+				DC18B0D2178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
+				DC18B0E8178C7BC400641A6D /* crawl-tiles.pvr.ccz in Resources */,
+				DC18B102178C7BC400641A6D /* forest.pvr.ccz in Resources */,
+				DC18B10C178C7BC400641A6D /* other-ipadhd.plist in Resources */,
+				DC18B0F0178C7BC400641A6D /* forest-hd.plist in Resources */,
+				DC18B0E6178C7BC400641A6D /* crawl-tiles.png in Resources */,
+				DC18B0E4178C7BC400641A6D /* crawl-tiles.plist in Resources */,
+				DC18B10A178C7BC400641A6D /* other-hd.pvr.ccz in Resources */,
+				DC18B11A178C7BC400641A6D /* READ ME.txt in Resources */,
+				DC18B0E0178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz in Resources */,
+				DC18B0FC178C7BC400641A6D /* forest-parallax.tmx in Resources */,
+				DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */,
+				DC18B0F4178C7BC400641A6D /* forest-hd.pvr.ccz in Resources */,
+				DC18B0EC178C7BC400641A6D /* LICENSE.txt in Resources */,
+				DC18B0EA178C7BC400641A6D /* crawl-tiles.tps in Resources */,
+				DC18B0EE178C7BC400641A6D /* README.txt in Resources */,
+				DC18B108178C7BC400641A6D /* other-hd.png in Resources */,
+				DC18B0D4178C7BC400641A6D /* config.lua in Resources */,
+				DC18B110178C7BC400641A6D /* other-ipadhd.pvr.ccz in Resources */,
+				DC18B116178C7BC400641A6D /* other.pvr.ccz in Resources */,
+				DC18B0C6178C7BC400641A6D /* 24x24_Level01.tmx in Resources */,
+				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
+				DC18B0F2178C7BC400641A6D /* forest-hd.png in Resources */,
+				DC18B118178C7BC400641A6D /* other.tps in Resources */,
+				DC18B104178C7BC400641A6D /* forest.tps in Resources */,
+				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
+				DC18B0C8178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */,
+				DC18B0CC178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */,
+				DC18B112178C7BC400641A6D /* other.plist in Resources */,
+				DC18B0FE178C7BC400641A6D /* forest.plist in Resources */,
+				DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */,
+				DC18B0D0178C7BC400641A6D /* Tileset_Geometry_32x32.png in Resources */,
+				DC18B0CA178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx in Resources */,
+				DC18B0DC178C7BC400641A6D /* crawl-tiles-hd.plist in Resources */,
+				DC18B0CE178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DCDD2DA41769FD0A00F307CD /* Sources */ = {
+		DC484C3E178C40BB0067DAA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDD2DCA1769FD0A00F307CD /* GameScene.m in Sources */,
-				DC41B8AD1785CA830018D6C5 /* MenuScene.m in Sources */,
-				DCDD2DC71769FD0A00F307CD /* ViewController.m in Sources */,
-				DCDD2DBE1769FD0A00F307CD /* AppDelegate.m in Sources */,
-				DCDD2DBA1769FD0A00F307CD /* main.m in Sources */,
+				DC484CD9178C43BE0067DAA4 /* KKViewOriginNode.m in Sources */,
+				DC484CDA178C43BE0067DAA4 /* KKPhysicsDebugNode.m in Sources */,
+				DC484CDB178C43BE0067DAA4 /* KKButtonBehavior.m in Sources */,
+				DC484CDC178C43BE0067DAA4 /* KKControlPadBehavior.m in Sources */,
+				DC484CDD178C43BE0067DAA4 /* KKFollowTargetBehavior.m in Sources */,
+				DC484CDE178C43BE0067DAA4 /* KKCameraFollowBehavior.m in Sources */,
+				DC484CDF178C43BE0067DAA4 /* KKStayInBoundsBehavior.m in Sources */,
+				DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */,
+				DC484CE1178C43BE0067DAA4 /* CGPointExtension.m in Sources */,
+				DC484CB8178C43690067DAA4 /* lapi.c in Sources */,
+				DC484CB9178C43690067DAA4 /* lauxlib.c in Sources */,
+				DC484CBA178C43690067DAA4 /* lbaselib.c in Sources */,
+				DC484CBB178C43690067DAA4 /* lbitlib.c in Sources */,
+				DC484CBC178C43690067DAA4 /* lcode.c in Sources */,
+				DC484CBD178C43690067DAA4 /* lcorolib.c in Sources */,
+				DC484CBE178C43690067DAA4 /* lctype.c in Sources */,
+				DC484CBF178C43690067DAA4 /* ldblib.c in Sources */,
+				DC484CC0178C43690067DAA4 /* ldebug.c in Sources */,
+				DC484CC1178C43690067DAA4 /* ldo.c in Sources */,
+				DC484CC2178C43690067DAA4 /* ldump.c in Sources */,
+				DC484CC3178C43690067DAA4 /* lfunc.c in Sources */,
+				DC484CC4178C43690067DAA4 /* lgc.c in Sources */,
+				DC484CC5178C43690067DAA4 /* linit.c in Sources */,
+				DC484CC6178C43690067DAA4 /* liolib.c in Sources */,
+				DC484CC7178C43690067DAA4 /* llex.c in Sources */,
+				DC484CC8178C43690067DAA4 /* lmathlib.c in Sources */,
+				DC484CC9178C43690067DAA4 /* lmem.c in Sources */,
+				DC484CCA178C43690067DAA4 /* loadlib.c in Sources */,
+				DC484CCB178C43690067DAA4 /* lobject.c in Sources */,
+				DC484CCC178C43690067DAA4 /* lopcodes.c in Sources */,
+				DC484CCD178C43690067DAA4 /* loslib.c in Sources */,
+				DC484CCE178C43690067DAA4 /* lparser.c in Sources */,
+				DC484CCF178C43690067DAA4 /* lstate.c in Sources */,
+				DC484CD0178C43690067DAA4 /* lstring.c in Sources */,
+				DC484CD1178C43690067DAA4 /* lstrlib.c in Sources */,
+				DC484CD2178C43690067DAA4 /* ltable.c in Sources */,
+				DC484CD3178C43690067DAA4 /* ltablib.c in Sources */,
+				DC484CD4178C43690067DAA4 /* ltm.c in Sources */,
+				DC484CD5178C43690067DAA4 /* lundump.c in Sources */,
+				DC484CD6178C43690067DAA4 /* lvm.c in Sources */,
+				DC484CD7178C43690067DAA4 /* lzio.c in Sources */,
+				DC484CD8178C43690067DAA4 /* base64.c in Sources */,
+				DC484C91178C43400067DAA4 /* KKMacApplication.m in Sources */,
+				DC484C92178C43400067DAA4 /* KKAppDelegate.m in Sources */,
+				DC484C93178C43400067DAA4 /* KKViewController.m in Sources */,
+				DC484C94178C43400067DAA4 /* SKNode+KoboldKit.m in Sources */,
+				DC484C95178C43400067DAA4 /* SKScene+KoboldKit.m in Sources */,
+				DC484C96178C43400067DAA4 /* KKView.m in Sources */,
+				DC484C97178C43400067DAA4 /* KKScene.m in Sources */,
+				DC484C98178C43400067DAA4 /* KKNode.m in Sources */,
+				DC484C99178C43400067DAA4 /* KKModel.m in Sources */,
+				DC484C9A178C43400067DAA4 /* KKNodeController.m in Sources */,
+				DC484C9B178C43400067DAA4 /* KKNodeBehavior.m in Sources */,
+				DC484C9C178C43400067DAA4 /* KKTilemap.m in Sources */,
+				DC484C9D178C43400067DAA4 /* KKTilemapLayer.m in Sources */,
+				DC484C9E178C43400067DAA4 /* KKTilemapLayerContourTracer.m in Sources */,
+				DC484C9F178C43400067DAA4 /* KKTilemapTileset.m in Sources */,
+				DC484CA0178C43400067DAA4 /* KKTilemapLayerTiles.m in Sources */,
+				DC484CA1178C43400067DAA4 /* KKTilemapObject.m in Sources */,
+				DC484CA2178C43400067DAA4 /* KKTilemapProperties.m in Sources */,
+				DC484CA3178C43400067DAA4 /* KKTilemapTileProperties.m in Sources */,
+				DC484CA4178C43400067DAA4 /* KKTMXReader.m in Sources */,
+				DC484CA5178C43400067DAA4 /* KKTMXWriter.m in Sources */,
+				DC484CA6178C43400067DAA4 /* KKTilemapNode.m in Sources */,
+				DC484CA7178C43400067DAA4 /* KKTilemapLayerNode.m in Sources */,
+				DC484CA8178C43400067DAA4 /* KKTilemapTileLayerNode.m in Sources */,
+				DC484CA9178C43400067DAA4 /* KKTilemapObjectLayerNode.m in Sources */,
+				DC484CAA178C43400067DAA4 /* NSCoder+KoboldKit.m in Sources */,
+				DC484CAB178C43400067DAA4 /* NSFileManager+KoboldKit.m in Sources */,
+				DC484CAC178C43400067DAA4 /* NSDictionary+KoboldKit.m in Sources */,
+				DC484CAD178C43400067DAA4 /* KKLua.m in Sources */,
+				DC484CAE178C43400067DAA4 /* KKIntegerArray.m in Sources */,
+				DC484CAF178C43400067DAA4 /* KKPointArray.m in Sources */,
+				DC484CB0178C43400067DAA4 /* KKMutableNumber.m in Sources */,
+				DC484CB1178C43400067DAA4 /* KKIvarSetter.m in Sources */,
+				DC484CB2178C43400067DAA4 /* KKDownloadProjectFiles.m in Sources */,
+				DC484CB3178C43400067DAA4 /* Reachability.m in Sources */,
+				DC484CB4178C43400067DAA4 /* JRSwizzle.m in Sources */,
+				DC484CB5178C43400067DAA4 /* VTPG_Common.m in Sources */,
+				DC484CB6178C43400067DAA4 /* XMLWriter.m in Sources */,
+				DC484CB7178C43400067DAA4 /* ZipUtils.m in Sources */,
+				DC484C8F178C42ED0067DAA4 /* KKVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCDD2DEA1769FD2E00F307CD /* Sources */ = {
+		DC484C67178C418C0067DAA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC96A851178760F400CE0827 /* lfunc.c in Sources */,
-				DC96A85C178760F400CE0827 /* lparser.c in Sources */,
-				DC96A856178760F400CE0827 /* lmathlib.c in Sources */,
-				DCB087E5177B439B004182E4 /* KKViewOriginNode.m in Sources */,
-				DC96A867178760F400CE0827 /* lzio.c in Sources */,
-				DC4DE911176C9E2B003E4087 /* KKTilemapProperties.m in Sources */,
-				DC96A85B178760F400CE0827 /* loslib.c in Sources */,
-				DCDD2E55176A40C400F307CD /* XMLWriter.m in Sources */,
-				DC96A859178760F400CE0827 /* lobject.c in Sources */,
-				DC8CD4AA17760E0D0005AB51 /* KKStayInBoundsBehavior.m in Sources */,
-				DC9CFD491774CBE1004C981A /* KKVersion.m in Sources */,
-				DC9CFD401774CB97004C981A /* KKControlPadBehavior.m in Sources */,
-				DC9CFD1D1774CA84004C981A /* KKScene.m in Sources */,
-				DC96A848178760F400CE0827 /* lbaselib.c in Sources */,
-				DC96A85D178760F400CE0827 /* lstate.c in Sources */,
-				DCDD2E4A176A40C400F307CD /* JRSwizzle.m in Sources */,
-				DC96A85A178760F400CE0827 /* lopcodes.c in Sources */,
-				DC96A84C178760F400CE0827 /* lctype.c in Sources */,
-				DC96A855178760F400CE0827 /* llex.c in Sources */,
-				DC96A858178760F400CE0827 /* loadlib.c in Sources */,
-				DC96A846178760F400CE0827 /* lapi.c in Sources */,
-				DC4DE926176CA25F003E4087 /* KKIvarSetter.m in Sources */,
-				DC96A862178760F400CE0827 /* ltm.c in Sources */,
-				DC2F43EA17708FEC005846A7 /* KKTilemapNode.m in Sources */,
-				DC9CFD1F1774CA84004C981A /* KKViewController.m in Sources */,
-				DC9CFD411774CB97004C981A /* KKFollowTargetBehavior.m in Sources */,
-				DC4DE915176C9E2B003E4087 /* KKTMXReader.m in Sources */,
-				DC4DE913176C9E2B003E4087 /* KKTilemapTileset.m in Sources */,
-				DC96A852178760F400CE0827 /* lgc.c in Sources */,
-				DC41B8AA1785A7C00018D6C5 /* KKLimitVelocityBehavior.m in Sources */,
-				DC4DE910176C9E2B003E4087 /* KKTilemapObject.m in Sources */,
-				DCB087D5177B1647004182E4 /* KKPointArray.m in Sources */,
-				DCB087D4177B1647004182E4 /* KKIntegerArray.m in Sources */,
-				DC9CFD0F1774CA5B004C981A /* KKNodeBehavior.m in Sources */,
-				DC4DE91C176CA0AC003E4087 /* base64.c in Sources */,
-				DCDD2E54176A40C400F307CD /* VTPG_Common.m in Sources */,
-				DC96A847178760F400CE0827 /* lauxlib.c in Sources */,
-				DC96A84A178760F400CE0827 /* lcode.c in Sources */,
-				DC96A84F178760F400CE0827 /* ldo.c in Sources */,
-				DC9CFD121774CA5B004C981A /* SKNode+KoboldKit.m in Sources */,
-				DC1E506F1775ED500063CEDC /* KKCameraFollowBehavior.m in Sources */,
-				DC4DE90D176C9E2B003E4087 /* KKTilemapLayerTiles.m in Sources */,
-				DC96A849178760F400CE0827 /* lbitlib.c in Sources */,
-				DC96A7F91786E75400CE0827 /* KKDownloadProjectFiles.m in Sources */,
-				DCB087CF177B1625004182E4 /* KKTilemapLayerContourTracer.m in Sources */,
-				DC96A861178760F400CE0827 /* ltablib.c in Sources */,
-				DC9CFD3F1774CB97004C981A /* KKButtonBehavior.m in Sources */,
-				DC96A84D178760F400CE0827 /* ldblib.c in Sources */,
-				DC4DE916176C9E2B003E4087 /* KKTMXWriter.m in Sources */,
-				DC9CFD111774CA5B004C981A /* KKModel.m in Sources */,
-				DC96A850178760F400CE0827 /* ldump.c in Sources */,
-				DC4DE927176CA25F003E4087 /* NSCoder+KoboldKit.m in Sources */,
-				DC96A85F178760F400CE0827 /* lstrlib.c in Sources */,
-				DC2F43ED177090A8005846A7 /* KKTilemapLayerNode.m in Sources */,
-				DC4DE90A176C9E2B003E4087 /* KKTilemap.m in Sources */,
-				DC2F43F0177090F8005846A7 /* KKTilemapTileLayerNode.m in Sources */,
-				DC96A854178760F400CE0827 /* liolib.c in Sources */,
-				DCFDF3C1176B3FE100F2CAD0 /* CGPointExtension.m in Sources */,
-				DC2F43F317709109005846A7 /* KKTilemapObjectLayerNode.m in Sources */,
-				DC96A86E17876F6100CE0827 /* NSDictionary+KoboldKit.m in Sources */,
-				DC9CFD1C1774CA84004C981A /* KKNode.m in Sources */,
-				DC4DE925176CA25F003E4087 /* KKMutableNumber.m in Sources */,
-				DC96A865178760F400CE0827 /* lundump.c in Sources */,
-				DC4DE91D176CA0AC003E4087 /* ZipUtils.m in Sources */,
-				DC96A84E178760F400CE0827 /* ldebug.c in Sources */,
-				DC96A866178760F400CE0827 /* lvm.c in Sources */,
-				DC9CFD101774CA5B004C981A /* KKNodeController.m in Sources */,
-				DC41B8B01785DD5E0018D6C5 /* NSFileManager+KoboldKit.m in Sources */,
-				DC95BA7E1786DFB800E31DA6 /* Reachability.m in Sources */,
-				DC96A857178760F400CE0827 /* lmem.c in Sources */,
-				DC96A860178760F400CE0827 /* ltable.c in Sources */,
-				DC4DE912176C9E2B003E4087 /* KKTilemapTileProperties.m in Sources */,
-				DC96A853178760F400CE0827 /* linit.c in Sources */,
-				DC4DE90B176C9E2B003E4087 /* KKTilemapLayer.m in Sources */,
-				DC96A86B17876A2C00CE0827 /* KKLua.m in Sources */,
-				DCB087DC177B3783004182E4 /* SKScene+KoboldKit.m in Sources */,
-				DC96A85E178760F400CE0827 /* lstring.c in Sources */,
-				DC96A84B178760F400CE0827 /* lcorolib.c in Sources */,
-				DC9CFD1E1774CA84004C981A /* KKView.m in Sources */,
-				DCB087EB177BAC2F004182E4 /* KKPhysicsDebugNode.m in Sources */,
+				DCD7A268178C7453004A0467 /* lapi.c in Sources */,
+				DCD7A269178C7453004A0467 /* lauxlib.c in Sources */,
+				DCD7A26A178C7453004A0467 /* lbaselib.c in Sources */,
+				DCD7A26B178C7453004A0467 /* lbitlib.c in Sources */,
+				DCD7A26C178C7453004A0467 /* lcode.c in Sources */,
+				DCD7A26D178C7453004A0467 /* lcorolib.c in Sources */,
+				DCD7A26E178C7453004A0467 /* lctype.c in Sources */,
+				DCD7A26F178C7453004A0467 /* ldblib.c in Sources */,
+				DCD7A270178C7453004A0467 /* ldebug.c in Sources */,
+				DCD7A271178C7453004A0467 /* ldo.c in Sources */,
+				DCD7A272178C7453004A0467 /* ldump.c in Sources */,
+				DCD7A273178C7453004A0467 /* lfunc.c in Sources */,
+				DCD7A274178C7453004A0467 /* lgc.c in Sources */,
+				DCD7A275178C7453004A0467 /* linit.c in Sources */,
+				DCD7A276178C7453004A0467 /* liolib.c in Sources */,
+				DCD7A277178C7453004A0467 /* llex.c in Sources */,
+				DCD7A278178C7453004A0467 /* lmathlib.c in Sources */,
+				DCD7A279178C7453004A0467 /* lmem.c in Sources */,
+				DCD7A27A178C7453004A0467 /* loadlib.c in Sources */,
+				DCD7A27B178C7453004A0467 /* lobject.c in Sources */,
+				DCD7A27C178C7453004A0467 /* lopcodes.c in Sources */,
+				DCD7A27D178C7453004A0467 /* loslib.c in Sources */,
+				DCD7A27E178C7453004A0467 /* lparser.c in Sources */,
+				DCD7A27F178C7453004A0467 /* lstate.c in Sources */,
+				DCD7A280178C7453004A0467 /* lstring.c in Sources */,
+				DCD7A281178C7453004A0467 /* lstrlib.c in Sources */,
+				DCD7A282178C7453004A0467 /* ltable.c in Sources */,
+				DCD7A283178C7453004A0467 /* ltablib.c in Sources */,
+				DCD7A284178C7453004A0467 /* ltm.c in Sources */,
+				DCD7A285178C7453004A0467 /* lundump.c in Sources */,
+				DCD7A286178C7453004A0467 /* lvm.c in Sources */,
+				DCD7A287178C7453004A0467 /* lzio.c in Sources */,
+				DCD7A288178C7453004A0467 /* base64.c in Sources */,
+				DCD7A238178C7449004A0467 /* KKMacApplication.m in Sources */,
+				DCD7A239178C7449004A0467 /* KKAppDelegate.m in Sources */,
+				DCD7A23A178C7449004A0467 /* KKViewController.m in Sources */,
+				DCD7A23B178C7449004A0467 /* KKViewOriginNode.m in Sources */,
+				DCD7A23C178C7449004A0467 /* KKPhysicsDebugNode.m in Sources */,
+				DCD7A23D178C7449004A0467 /* SKNode+KoboldKit.m in Sources */,
+				DCD7A23E178C7449004A0467 /* SKScene+KoboldKit.m in Sources */,
+				DCD7A23F178C7449004A0467 /* KKView.m in Sources */,
+				DCD7A240178C7449004A0467 /* KKScene.m in Sources */,
+				DCD7A241178C7449004A0467 /* KKNode.m in Sources */,
+				DCD7A242178C7449004A0467 /* KKModel.m in Sources */,
+				DCD7A243178C7449004A0467 /* KKNodeController.m in Sources */,
+				DCD7A244178C7449004A0467 /* KKNodeBehavior.m in Sources */,
+				DCD7A245178C7449004A0467 /* KKButtonBehavior.m in Sources */,
+				DCD7A246178C7449004A0467 /* KKControlPadBehavior.m in Sources */,
+				DCD7A247178C7449004A0467 /* KKFollowTargetBehavior.m in Sources */,
+				DCD7A248178C7449004A0467 /* KKCameraFollowBehavior.m in Sources */,
+				DCD7A249178C7449004A0467 /* KKStayInBoundsBehavior.m in Sources */,
+				DCD7A24A178C7449004A0467 /* KKLimitVelocityBehavior.m in Sources */,
+				DCD7A24B178C7449004A0467 /* KKTilemap.m in Sources */,
+				DCD7A24C178C7449004A0467 /* KKTilemapLayer.m in Sources */,
+				DCD7A24D178C7449004A0467 /* KKTilemapLayerContourTracer.m in Sources */,
+				DCD7A24E178C7449004A0467 /* KKTilemapTileset.m in Sources */,
+				DCD7A24F178C7449004A0467 /* KKTilemapLayerTiles.m in Sources */,
+				DCD7A250178C7449004A0467 /* KKTilemapObject.m in Sources */,
+				DCD7A251178C7449004A0467 /* KKTilemapProperties.m in Sources */,
+				DCD7A252178C7449004A0467 /* KKTilemapTileProperties.m in Sources */,
+				DCD7A253178C7449004A0467 /* KKTMXReader.m in Sources */,
+				DCD7A254178C7449004A0467 /* KKTMXWriter.m in Sources */,
+				DCD7A255178C7449004A0467 /* KKTilemapNode.m in Sources */,
+				DCD7A256178C7449004A0467 /* KKTilemapLayerNode.m in Sources */,
+				DCD7A257178C7449004A0467 /* KKTilemapTileLayerNode.m in Sources */,
+				DCD7A258178C7449004A0467 /* KKTilemapObjectLayerNode.m in Sources */,
+				DCD7A259178C7449004A0467 /* NSCoder+KoboldKit.m in Sources */,
+				DCD7A25A178C7449004A0467 /* NSFileManager+KoboldKit.m in Sources */,
+				DCD7A25B178C7449004A0467 /* NSDictionary+KoboldKit.m in Sources */,
+				DCD7A25C178C7449004A0467 /* KKLua.m in Sources */,
+				DCD7A25D178C7449004A0467 /* KKIntegerArray.m in Sources */,
+				DCD7A25E178C7449004A0467 /* KKPointArray.m in Sources */,
+				DCD7A25F178C7449004A0467 /* KKMutableNumber.m in Sources */,
+				DCD7A260178C7449004A0467 /* KKIvarSetter.m in Sources */,
+				DCD7A261178C7449004A0467 /* KKDownloadProjectFiles.m in Sources */,
+				DCD7A262178C7449004A0467 /* Reachability.m in Sources */,
+				DCD7A263178C7449004A0467 /* CGPointExtension.m in Sources */,
+				DCD7A264178C7449004A0467 /* JRSwizzle.m in Sources */,
+				DCD7A265178C7449004A0467 /* VTPG_Common.m in Sources */,
+				DCD7A266178C7449004A0467 /* XMLWriter.m in Sources */,
+				DCD7A267178C7449004A0467 /* ZipUtils.m in Sources */,
+				DC484C90178C42EF0067DAA4 /* KKVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCDD2DF71769FD2E00F307CD /* Sources */ = {
+		DCD11E32178C522300FBC406 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCFDF3BD176B244A00F2CAD0 /* TestScene.m in Sources */,
-				DCDD2E091769FD2E00F307CD /* KoboldKitLibraryTests.m in Sources */,
+				DCD7EC4A178C573500BBAFB0 /* AppDelegate.m in Sources */,
+				DCD7EC4C178C573500BBAFB0 /* MenuScene.m in Sources */,
+				DCD7EC4B178C573500BBAFB0 /* GameScene.m in Sources */,
+				DCD11E40178C522300FBC406 /* main.m in Sources */,
+				DCD7EC4D178C573500BBAFB0 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD7EC4E178C57FC00BBAFB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD7A289178C7526004A0467 /* AppDelegate.m in Sources */,
+				DCD7A28A178C7526004A0467 /* GameScene.m in Sources */,
+				DCD7A28B178C7526004A0467 /* MenuScene.m in Sources */,
+				DCD7A28C178C7526004A0467 /* ViewController.m in Sources */,
+				DCD7A28D178C7526004A0467 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC41B8B21785F0F20018D6C5 /* PBXTargetDependency */ = {
+		DC496BF5178C6DAC00CCA840 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */;
-			targetProxy = DC41B8B11785F0F20018D6C5 /* PBXContainerItemProxy */;
+			target = DC484C6A178C418C0067DAA4 /* libKoboldKit.a */;
+			targetProxy = DC496BF4178C6DAC00CCA840 /* PBXContainerItemProxy */;
 		};
-		DCDD2E001769FD2E00F307CD /* PBXTargetDependency */ = {
+		DCD7A28F178C7536004A0467 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DCDD2DED1769FD2E00F307CD /* KoboldKitLibrary */;
-			targetProxy = DCDD2DFF1769FD2E00F307CD /* PBXContainerItemProxy */;
+			target = DC484C42178C40BB0067DAA4 /* KoboldKit.framework */;
+			targetProxy = DCD7A28E178C7536004A0467 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DCDD2DB61769FD0A00F307CD /* InfoPlist.strings */ = {
+		DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DCDD2DB71769FD0A00F307CD /* en */,
+				DC18B121178C7E7C00641A6D /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		DCDD2DBF1769FD0A00F307CD /* Main_iPhone.storyboard */ = {
+		DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DCDD2DC01769FD0A00F307CD /* Base */,
+				DC18B123178C7E7C00641A6D /* Base */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		DCDD2DC21769FD0A00F307CD /* Main_iPad.storyboard */ = {
+		DCD11E3C178C522300FBC406 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DCDD2DC31769FD0A00F307CD /* Base */,
+				DCD11E3D178C522300FBC406 /* en */,
 			);
-			name = Main_iPad.storyboard;
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCD11E42178C522300FBC406 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD11E43178C522300FBC406 /* en */,
+			);
+			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		DCDD2E051769FD2E00F307CD /* InfoPlist.strings */ = {
@@ -1296,6 +1693,182 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC484C62178C40BB0067DAA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = KoboldKit;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		DC484C63178C40BB0067DAA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKit-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = KoboldKit;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		DC484C88178C418D0067DAA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				DSTROOT = /tmp/KoboldKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = KoboldKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		DC484C89178C418D0067DAA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				DSTROOT = /tmp/KoboldKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = KoboldKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		DCD11E63178C522400FBC406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Mac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlatformerDemo/PlatformerDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "PlatformerDemo/PlatformerDemo-Mac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCD11E64178C522400FBC406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Mac";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlatformerDemo/PlatformerDemo-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "PlatformerDemo/PlatformerDemo-Mac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCD7EC86178C57FD00BBAFB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlatformerDemo/PlatformerDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PlatformerDemo/PlatformerDemo-iOS-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCD7EC87178C57FD00BBAFB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlatformerDemo/PlatformerDemo-Prefix.pch";
+				INFOPLIST_FILE = "PlatformerDemo/PlatformerDemo-iOS-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		DCDD2DE21769FD0A00F307CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1329,8 +1902,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -1360,157 +1934,57 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DCDD2DE51769FD0A00F307CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitDemo/KoboldKit-Prefix.pch";
-				INFOPLIST_FILE = "KoboldKitDemo/KoboldKit-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = KoboldKit;
-				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		DCDD2DE61769FD0A00F307CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitDemo/KoboldKit-Prefix.pch";
-				INFOPLIST_FILE = "KoboldKitDemo/KoboldKit-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = KoboldKit;
-				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		DCDD2E0B1769FD2E00F307CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/KoboldKitLibrary.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DCDD2E0C1769FD2E00F307CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/KoboldKitLibrary.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DCDD2E0E1769FD2E00F307CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KoboldKit.app/KoboldKit";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "KoboldKitLibraryTests/KoboldKitLibraryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		DCDD2E0F1769FD2E00F307CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KoboldKit.app/KoboldKit";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitLibrary/KoboldKitLibrary-Prefix.pch";
-				INFOPLIST_FILE = "KoboldKitLibraryTests/KoboldKitLibraryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "KoboldKit.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC484C62178C40BB0067DAA4 /* Debug */,
+				DC484C63178C40BB0067DAA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libKoboldKit.a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC484C88178C418D0067DAA4 /* Debug */,
+				DC484C89178C418D0067DAA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD11E62178C522400FBC406 /* Build configuration list for PBXNativeTarget "PlatformerDemo-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD11E63178C522400FBC406 /* Debug */,
+				DCD11E64178C522400FBC406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "PlatformerDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD7EC86178C57FD00BBAFB0 /* Debug */,
+				DCD7EC87178C57FD00BBAFB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCDD2DE21769FD0A00F307CD /* Debug */,
 				DCDD2DE31769FD0A00F307CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DCDD2DE41769FD0A00F307CD /* Build configuration list for PBXNativeTarget "KoboldKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCDD2DE51769FD0A00F307CD /* Debug */,
-				DCDD2DE61769FD0A00F307CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DCDD2E0A1769FD2E00F307CD /* Build configuration list for PBXNativeTarget "KoboldKitLibrary" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCDD2E0B1769FD2E00F307CD /* Debug */,
-				DCDD2E0C1769FD2E00F307CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DCDD2E0D1769FD2E00F307CD /* Build configuration list for PBXNativeTarget "KoboldKitLibraryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCDD2E0E1769FD2E00F307CD /* Debug */,
-				DCDD2E0F1769FD2E00F307CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

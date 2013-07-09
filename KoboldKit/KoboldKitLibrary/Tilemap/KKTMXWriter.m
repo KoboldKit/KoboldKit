@@ -17,10 +17,10 @@
 #import "KKTilemapLayer.h"
 #import "KKMutableNumber.h"
 #import "KKMacros.h"
+#import "KKCompatibility.h"
 
 #import <zlib.h>
 #import "XMLWriter.h"
-#import "KKSpriteKit.h"
 
 // Base 64 encoding example from http://stackoverflow.com/a/6782480/201863
 

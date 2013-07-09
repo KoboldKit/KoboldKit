@@ -9,8 +9,8 @@
 // GLOBAL HEADER IMPORTS
 
 // headers
+#import "KKCompatibility.h"
 #import "KKVersion.h"
-#import "KKSpriteKit.h"
 #import "KKMacros.h"
 #import "KKTypes.h"
 #import "KKArcadeInputState.h"
@@ -20,6 +20,7 @@
 #import "SKScene+KoboldKit.h"
 
 // subclasses
+#import "KKAppDelegate.h"
 #import "KKViewController.h"
 #import "KKView.h"
 #import "KKNode.h"

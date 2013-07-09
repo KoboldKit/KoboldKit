@@ -11,15 +11,36 @@
 #import "KKView.h"
 #import "JRSwizzle.h"
 
-@interface KKViewController ()
-
-@end
-
 @implementation KKViewController
+
+-(void) checkSwizzleError:(NSError*)error
+{
+	NSAssert1(error == nil, @"Method swizzling error: %@", error);
+}
+
+-(void) swizzleMethods
+{
+	/*
+	 // swizzle some methods to hook into Sprite Kit
+	 NSError* error;
+	 
+	 [SKNode jr_swizzleMethod:@selector(copyWithZone:)
+	 withMethod:@selector(kkCopyWithZone:) error:&error];
+	 [self checkSwizzleError:error];
+	 */
+}
+
+@dynamic kkView;
+-(KKView*) kkView
+{
+	return (KKView*)self.view;
+}
 
 -(void) viewDidLoad
 {
+#if TARGET_OS_IPHONE
     [super viewDidLoad];
+#endif
 	
 	[self swizzleMethods];
 	
@@ -34,33 +55,43 @@
 	kkView.showsNodeCount = YES;
 }
 
--(void) checkSwizzleError:(NSError*)error
+-(void) viewDidAppear:(BOOL)animated
 {
-	NSAssert1(error == nil, @"Method swizzling error: %@", error);
-}
-
--(void) swizzleMethods
-{
-	/*
-	// swizzle some methods to hook into Sprite Kit
-	NSError* error;
+#if TARGET_OS_IPHONE
+    [super viewDidAppear:animated];
+#endif
 	
-	[SKNode jr_swizzleMethod:@selector(copyWithZone:)
-				  withMethod:@selector(kkCopyWithZone:) error:&error];
-	[self checkSwizzleError:error];
-	*/
+	[self presentFirstScene];
 }
 
-- (void)didReceiveMemoryWarning
+-(void) presentFirstScene
+{
+	LOG_EXPR(self.view.bounds.size);
+}
+
+#if TARGET_OS_IPHONE
+-(BOOL) shouldAutorotate
+{
+    return YES;
+}
+
+-(NSUInteger) supportedInterfaceOrientations
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+	{
+        return UIInterfaceOrientationMaskLandscape;
+    }
+	else
+	{
+        return UIInterfaceOrientationMaskAll;
+    }
+}
+
+-(void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Release any cached data, images, etc that aren't in use.
 }
-
-@dynamic kkView;
--(KKView*) kkView
-{
-	return (KKView*)self.view;
-}
+#endif
 
 @end

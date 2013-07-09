@@ -27,7 +27,7 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 	{
 		NSAssert1(textures.count == 2 || textures.count == 4 || textures.count == 8, @"KKControlPadBehavior requires either 2, 4 or 8 textures (2, 4 or 8 directions). Got these textures: %@", textures);
 		_textures = textures;
-		_directionsCount = _textures.count;
+		_directionsCount = (int)_textures.count;
 		_deadZone = 10.0;
 	}
 	return self;
@@ -297,7 +297,7 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 		}
 	}
 }
-#elif TARGET_OS_MAC
+#else
 #endif
 
 #pragma mark !! Update methods below whenever class layout changes !!

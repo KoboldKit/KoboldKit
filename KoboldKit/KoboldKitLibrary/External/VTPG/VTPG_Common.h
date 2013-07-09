@@ -10,12 +10,7 @@
 
 /** @file VTPG_Common.h */
 
-#import <Availability.h>
-
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#endif
+#import "KKCompatibility.h"
 
 // based off of http://www.dribin.org/dave/blog/archives/2008/09/22/convert_to_nsstring/
 static NSString* VTPG_DDToStringFromTypeAndValue(const char* typeCode, void* value);

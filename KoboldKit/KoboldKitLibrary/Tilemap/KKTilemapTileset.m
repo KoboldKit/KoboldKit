@@ -6,12 +6,11 @@
 //
 //
 
-
+#import "KKCompatibility.h"
 #import "KKTilemapTileset.h"
 #import "KKTilemap.h"
 #import "KKTilemapProperties.h"
 #import "KKTilemapTileProperties.h"
-#import "KKSpriteKit.h"
 #import "NSFileManager+KoboldKit.h"
 
 @implementation KKTilemapTileset

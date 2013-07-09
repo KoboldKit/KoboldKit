@@ -9,6 +9,7 @@
 @implementation NSCoder (KoboldKit)
 
 #if TARGET_OS_IPHONE
+
 -(void) encodePoint:(CGPoint)point forKey:(NSString*)key
 {
 	[self encodeCGPoint:point forKey:key];
@@ -19,7 +20,8 @@
 	return [self decodeCGPointForKey:key];
 }
 
-#elif TARGET_OS_MAC
+#else
+
 -(void) encodeCGPoint:(CGPoint)point forKey:(NSString*)key
 {
 	[self encodePoint:point forKey:key];

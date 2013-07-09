@@ -12,6 +12,8 @@
 
 @implementation ViewController
 
+#if TARGET_OS_IPHONE
+
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -45,5 +47,9 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
+
+#else // Mac OS X
+
+#endif
 
 @end

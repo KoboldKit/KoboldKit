@@ -1,18 +1,39 @@
 //
-//  KKSpriteKit.h
-//  KoboldKitDemo
+//  KKCompatibility.h
+//  KoboldKit
 //
-//  Created by Steffen Itterheim on 13.06.13.
+//  Created by Steffen Itterheim on 09.07.13.
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#ifndef KoboldKitDemo_KKSpriteKit_h
-#define KoboldKitDemo_KKSpriteKit_h
+#ifndef KoboldKit_KKCompatibility_h
+#define KoboldKit_KKCompatibility_h
 
+#import <Availability.h>
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#else
+#import <Cocoa/Cocoa.h>
+#endif
+
+/** typedefs for platform compatibility */
+#if TARGET_OS_IPHONE
+typedef UIResponder KKResponder;
+typedef UITouch KKTouch;
+typedef UIWindow KKWindow;
+#else
+typedef NSResponder KKResponder;
+typedef NSTouch KKTouch;
+typedef NSWindow KKWindow;
+
+#define NSStringFromCGRect NSStringFromRect
+#endif
+
+
+/** typedefs for SK forward compatibility */
 typedef SKTransition KKTransition;
 typedef SKAction KKAction;
 

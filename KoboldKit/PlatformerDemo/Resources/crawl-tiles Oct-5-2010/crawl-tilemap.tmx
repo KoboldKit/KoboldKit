@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="48" height="34" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="crawl-tiles" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <image source="crawl-tiles.png" trans="ff3366" width="512" height="512"/>
+ </tileset>
+ <layer name="floor" width="48" height="34">
+  <data encoding="base64" compression="zlib">
+   eJylmE1S21AQhIdUDsARcoZUKuzAohAmMT9ZxjsWwfYBQmCHbG3ZUpVljpKj5CiRwnT503ieoCqLLtmyPK+7Z+b96NjMqg7HjsMOHzscFPARz5YwHbl3H7AIuOmwdqz8u7BI7il25dyFMQ7xt/MOnxPMCvpKGsRp5fz1fQms/Er+5D4FXuInfBpBScc00SF+4r8MkDZqUs308d4UfCWfi4TjRQFRR0kLNWyApQ1ra5VA/le2yz3yu+xw0uEq3Kv9/on7cJI8l2mJelhPa2hgXm5st/5VOxl3cf5fXCV5E2JOVDuLoIF1L1S2W+uv4U6fnzrMgTZ5Ziwf1KC+YE+PaTi0be2UuIvHfAStI95nDMWpC1qkQXVEntQQ/Zf3XzzOUeK3+Px4BTItpTzWGDdqaAvQPLQK/kf+0ffW+S0snxtaPENkuaiRE/bGUZKDjW17t7VhH4t/NeI/fW9sW5ecE5b4rDVm6WNnOmobzlscm/w3PmaTcO9xYNv+jfwVn7UT10PlIeZDz8kzehA1TF/gLz9aaBEO7PX1o9qm1/J7Ea7MgZ5TbbEv5BHH7se9df6sS8YUyP8KMZjbEn9dyTmuk3HfEvmX6kf81a+lOZT8pYH868B/HmKoblj7/Kx9o56PfaAcl/gr9saGe7zof5xHZ0kOWL9RAz2nDvYH/7/x+G8T/r2mR9eg2OK/QDzxj/sH1dHMdmuIOuhF7NlVGEfzkHqZ8wP5X8L/W/ixsd2cL5w/96ClOippiPvZyJvrAdc0xtW6f4nxl+Av/dn6K/46A2htYR1NMJbmPGpobdhbzLme2dhu3deB+ym87/9/B2R758z/KvCPdSQN60SD5oq4BtN3xhD3I+de2bZuHuH1xnb7Vnkn9x4/bXc/lGnI+jrbB2VzZTwXlfhrnuBZhjq0/5na8OyrGiH/C8vPty/tS+OegfXC9abEX3WY1c/KY1ZAHcbhXlp73rhvl4Y6IK6z5yEe550ZNPTz/h3+W+rde9vWeoUxlFueGZmjuF9kTasvuf6VuJO/NNBL6hffiDoZI45zZsP6ihpmzvvUr9/882nwgzG/I6cxn8rDaciD0DjmHrPDpMPvDo1/v97DWJrD1n6VBno39m6Fefzq3L8jftSg3pIHGv8Mn6XF+f5yXPc69lxDG7grZ9IwdibP8vhkwzn9zoa1FOtyglxUzr/y/Or7/vMYv+U5oTG6uH9Yc60N66j0/ofcyVnvFzIdnJN6/jV4Rx3g33tv7vsvv1rk3CY5KJ1rCXHUf/V+s9fQBA1T8D8LGtirU/9tP3hO3D/78Y7rHc/R9E+1OkHe+XsD3msbnqHYWzyLzRBP0Pz2ocN7599xnPQ8OzSRP98lZXszQnzWhXv6fGPDd8z9OHPnz/3v2Lzw4BjzP/pUAjWIezyP0QfVDXX03G+dP9f+hxcg//eer/9y0Pdrf09jZvsmnn3pZWvDdyr6jWeaBv9nTZH/2LxwEfiXQO46B8rTyFG81gHUrs+NP685XN7f2bA/9fksua/6/wtLjzn8
+  </data>
+ </layer>
+ <objectgroup name="objects" width="48" height="34">
+  <object x="384" y="256">
+   <polygon points="0,0 0,256 192,416 384,416 544,224 480,64 288,0"/>
+  </object>
+  <object x="192" y="1088">
+   <polygon points="0,0 96,-160 192,-192 352,-128 416,0"/>
+  </object>
+  <object x="992" y="1088">
+   <polygon points="0,0 96,-96 -32,-256 -160,-128 -672,0 -160,0"/>
+  </object>
+  <object x="1536" y="736">
+   <polygon points="0,0 -160,32 -320,-128 -320,-736 0,-736"/>
+  </object>
+  <object x="992" y="0">
+   <polygon points="0,0 224,192 224,0"/>
+  </object>
+  <object x="1280" y="960" width="256" height="96"/>
+  <object x="352" y="640" width="32" height="128"/>
+  <object x="96" y="256" width="96" height="192"/>
+  <object x="96" y="96" width="32" height="32"/>
+  <object x="128" y="640" width="32" height="32"/>
+  <object x="672" y="768" width="32" height="32"/>
+  <object x="1024" y="480" width="32" height="32"/>
+  <object x="1440" y="832" width="32" height="32"/>
+  <object x="576" y="32" width="160" height="96"/>
+  <object x="1120" y="320" width="32" height="192"/>
+  <object x="960" y="640" width="128" height="64"/>
+  <object x="64" y="1056"/>
+ </objectgroup>
+</map>

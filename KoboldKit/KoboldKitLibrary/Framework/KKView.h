@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKSpriteKit.h"
+#import "KKCompatibility.h"
 
 @class KKScene;
 @class KKModel;

@@ -1,10 +1,6 @@
 
 #import "KKLua.h"
-
-#if TARGET_OS_IPHONE
-#import <UIKit/UIKit.h>
-#endif
-
+#import "KKCompatibility.h"
 
 static lua_State* luaState;
 
@@ -120,7 +116,7 @@ void lua_printStackAt(lua_State* L, int i)
 						                  cancelButtonTitle:@"$#@&%!"
 										  otherButtonTitles:nil];
 	[alert show];
-#elif TARGET_OS_MAC
+#else
 	NSAlert* alert = [NSAlert alertWithMessageText:@"Lua Error"
 									 defaultButton:@"$#@&%!"
 								   alternateButton:nil

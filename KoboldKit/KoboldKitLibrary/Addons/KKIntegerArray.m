@@ -102,7 +102,7 @@ static const NSUInteger kDefaultNumberOfIntegersToAllocate = 4;
 		[str appendFormat:@"%lu", (unsigned long)_integers[i]];
 	}
 
-	[str appendFormat:@"} (%u total)", _count];
+	[str appendFormat:@"} (%lu total)", (unsigned long)_count];
 	return str;
 }
 

@@ -22,7 +22,7 @@ typedef UIWindow        KTCocoaWindow;
 typedef UIResponder		KKResponder;
 typedef UIApplication   KTApplication;
 
-#elif TARGET_OS_MAC
+#else
 typedef NSEvent         KTEvent;
 typedef NSTouch         KTTouch;
 typedef NSView          KTCocoaView;
@@ -36,7 +36,7 @@ static inline CGPoint pointFromString(NSString* pointString)
 {
 #if TARGET_OS_IPHONE
 	return CGPointFromString(pointString);
-#elif TARGET_OS_MAC
+#else
 	return NSPointFromString(pointString);
 #endif
 }
@@ -46,7 +46,7 @@ static inline CGSize sizeFromString(NSString* pointString)
 {
 #if TARGET_OS_IPHONE
 	return CGSizeFromString(pointString);
-#elif TARGET_OS_MAC
+#else
 	return NSSizeFromString(pointString);
 #endif
 }
@@ -56,7 +56,7 @@ static inline CGRect rectFromString(NSString* pointString)
 {
 #if TARGET_OS_IPHONE
 	return CGRectFromString(pointString);
-#elif TARGET_OS_MAC
+#else
 	return NSRectFromString(pointString);
 #endif
 }

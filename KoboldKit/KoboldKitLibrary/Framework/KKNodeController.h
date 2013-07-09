@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "KKSpriteKit.h"
+#import "KKCompatibility.h"
 
 extern NSString* const KKNodeControllerUserDataKey;
 

@@ -6,10 +6,8 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "KoboldKit.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : KKAppDelegate
 
 @end

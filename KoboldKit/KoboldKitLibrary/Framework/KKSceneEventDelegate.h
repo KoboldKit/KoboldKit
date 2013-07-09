@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "KKSpriteKit.h"
+#import "KKCompatibility.h"
 
 /** Informal protocol defining the "update" methods an object can implement and receive when subscribed
  to updates in the scene. */

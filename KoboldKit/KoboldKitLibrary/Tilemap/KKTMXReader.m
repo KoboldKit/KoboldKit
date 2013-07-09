@@ -47,7 +47,7 @@
 #import "base64.h"
 #import "ZipUtils.h"
 
-#import "KKSpriteKit.h"
+#import "KKCompatibility.h"
 
 @implementation KKTMXReader
 

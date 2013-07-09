@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
+#import "KKCompatibility.h"
 #import "NSDictionary+KoboldKit.h"
 #import "KKLua.h"
 
@@ -45,9 +46,9 @@ typedef enum
 		{
 			float x = [self floatFromTable:theLuaState atIndex:1];
 			float y = [self floatFromTable:theLuaState atIndex:2];
-#ifdef TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
 			[aDictionary setObject:[NSValue valueWithCGPoint:CGPointMake(x, y)] forKey:aKey];
-#elif TARGET_OS_MAC
+#else
 			[aDictionary setObject:[NSValue valueWithPoint:NSMakePoint(x, y)] forKey:aKey];
 #endif
 			break;
@@ -57,9 +58,9 @@ typedef enum
 		{
 			float width = [self floatFromTable:theLuaState atIndex:1];
 			float height = [self floatFromTable:theLuaState atIndex:2];
-#ifdef TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
 			[aDictionary setObject:[NSValue valueWithCGSize:CGSizeMake(width, height)] forKey:aKey];
-#elif TARGET_OS_MAC
+#else
 			[aDictionary setObject:[NSValue valueWithSize:NSMakeSize(width, height)] forKey:aKey];
 #endif
 			break;
@@ -71,9 +72,9 @@ typedef enum
 			float y = [self floatFromTable:theLuaState atIndex:2];
 			float width = [self floatFromTable:theLuaState atIndex:3];
 			float height = [self floatFromTable:theLuaState atIndex:4];
-#ifdef TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
 			[aDictionary setObject:[NSValue valueWithCGRect:CGRectMake(x, y, width, height)] forKey:aKey];
-#elif TARGET_OS_MAC
+#else
 			[aDictionary setObject:[NSValue valueWithRect:NSMakeRect(x, y, width, height)] forKey:aKey];
 #endif
 			break;

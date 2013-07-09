@@ -39,13 +39,6 @@
 
 /** @file KKMacros.h */
 
-/** typedefs for platform compatibility */
-#if TARGET_OS_IPHONE
-typedef UIResponder KKResponder;
-#elif TARGET_OS_MAC
-typedef NSResponder KKResponder;
-#endif
-
 /** Epsilon and Float equality */
 #if CGFLOAT_IS_DOUBLE
 #define EPSILON_VALUE DBL_EPSILON

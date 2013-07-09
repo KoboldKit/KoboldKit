@@ -187,9 +187,9 @@
 			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
 			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *backgroundColor</Declaration>
+			<Declaration>@property (atomic) SKColor *backgroundColor</Declaration>
 			
-			<ReturnValue><Abstract type="html">The background color as string. Currently not used by the renderer.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The background color.</Abstract></ReturnValue>
 			<Anchor>//api/name/backgroundColor</Anchor>
 		</Token>
 		
@@ -198,9 +198,9 @@
 			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
 			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *backgroundColor</Declaration>
+			<Declaration>@property (atomic) SKColor *backgroundColor</Declaration>
 			
-			<ReturnValue><Abstract type="html">The background color as string. Currently not used by the renderer.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The background color.</Abstract></ReturnValue>
 			<Anchor>//api/name/backgroundColor</Anchor>
 		</Token>
 		
@@ -209,9 +209,9 @@
 			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
 			<DeclaredIn>KKTilemap.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *backgroundColor</Declaration>
+			<Declaration>@property (atomic) SKColor *backgroundColor</Declaration>
 			
-			<ReturnValue><Abstract type="html">The background color as string. Currently not used by the renderer.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The background color.</Abstract></ReturnValue>
 			<Anchor>//api/name/backgroundColor</Anchor>
 		</Token>
 		

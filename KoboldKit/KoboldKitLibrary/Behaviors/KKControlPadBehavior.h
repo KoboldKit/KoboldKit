@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "KKNodeBehavior.h"
 #import "KKArcadeInputState.h"
 
@@ -20,7 +19,11 @@ extern NSString* const KKControlPadDidChangeDirectionNotification;
 @interface KKControlPadBehavior : KKNodeBehavior
 {
 	@private
+	
+#if TARGET_OS_IPHONE
 	__weak UITouch* _trackedTouch;
+#endif
+	
 	NSArray* _textures;
 	int _directionsCount;
 }

@@ -14,7 +14,7 @@
 -(void) encodePoint:(CGPoint)point forKey:(NSString*)key;
 /** decode a CGPoint */
 -(CGPoint) decodePointForKey:(NSString*)key;
-#elif TARGET_OS_MAC
+#else
 /** encode a CGPoint on OS X */
 -(void) encodeCGPoint:(CGPoint)point forKey:(NSString*)key;
 /** decode a CGPoint on OS X */

@@ -40,8 +40,6 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/pathForAppSupportFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForAppSupportFile:</option>
-	
 	<option value="//api/name/pathForBundleFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForBundleFile:</option>
 	
 	<option value="//api/name/pathForDocumentsFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForDocumentsFile:</option>
@@ -50,7 +48,7 @@
 	
 	<option value="//api/name/pathForFile:inDirectory:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForFile:inDirectory:</option>
 	
-	<option value="//api/name/pathForLibraryFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ pathForLibraryFile:</option>
+	<option value="//api/name/pathToDocumentsDirectory">&nbsp;&nbsp;&nbsp;&nbsp;+ pathToDocumentsDirectory</option>
 	
 	
 	
@@ -80,8 +78,6 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForAppSupportFile:">pathForAppSupportFile:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForBundleFile:">pathForBundleFile:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForDocumentsFile:">pathForDocumentsFile:</a></span></li>
@@ -90,7 +86,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForFile:inDirectory:">pathForFile:inDirectory:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathForLibraryFile:">pathForLibraryFile:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathToDocumentsDirectory">pathToDocumentsDirectory</a></span></li>
 	
 </ul></li>
 
@@ -145,21 +141,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/pathForAppSupportFile:">+&nbsp;pathForAppSupportFile:</a></code>
-		<span class="tooltip"><p>The absolute path to the file.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/pathForDocumentsFile:">+&nbsp;pathForDocumentsFile:</a></code>
-		<span class="tooltip"><p>The absolute path to the file.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/pathForLibraryFile:">+&nbsp;pathForLibraryFile:</a></code>
 		<span class="tooltip"><p>The absolute path to the file.</p></span>
 	</span>
 	
@@ -174,8 +156,15 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/pathForFile:">+&nbsp;pathForFile:</a></code>
-		<span class="tooltip"><p>Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
+		<span class="tooltip"><p>Searches for the file in the documents directory first, before trying the bundle and returns the absolute path
 to the file where it was first found.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathToDocumentsDirectory">+&nbsp;pathToDocumentsDirectory</a></code>
+		<span class="tooltip"><p>The full path to the documents directory.</p></span>
 	</span>
 	
 	
@@ -193,55 +182,6 @@ to the file where it was first found.</p></span>
 					<div class="section section-methods">
 						<a title="Class Methods" name="class_methods"></a>
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/pathForAppSupportFile:" title="pathForAppSupportFile:"></a>
-	<h3 class="subsubtitle method-title">pathForAppSupportFile:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The absolute path to the file.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (NSString *)pathForAppSupportFile:(NSString *)<em>file</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>file</em></dt>
-			<dd><p>A filename.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The absolute path to the file.</p><p>The path to the file or nil if the file couldn&rsquo;t be found in the app support directory.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSFileManager+KoboldKit.h</code><br />
-	</div>				
-	
-	
-</div>
 						
 						<div class="section-method">
 	<a name="//api/name/pathForBundleFile:" title="pathForBundleFile:"></a>
@@ -348,7 +288,7 @@ to the file where it was first found.</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Searches for the file in the app support, documents and bundle directories (in this order) and returns the absolute path
+		<p>Searches for the file in the documents directory first, before trying the bundle and returns the absolute path
 to the file where it was first found.</p>
 	</div>		
 	
@@ -441,34 +381,24 @@ to the file where it was first found.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/pathForLibraryFile:" title="pathForLibraryFile:"></a>
-	<h3 class="subsubtitle method-title">pathForLibraryFile:</h3>
+	<a name="//api/name/pathToDocumentsDirectory" title="pathToDocumentsDirectory"></a>
+	<h3 class="subsubtitle method-title">pathToDocumentsDirectory</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The absolute path to the file.</p>
+		<p>The full path to the documents directory.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>+ (NSString *)pathForLibraryFile:(NSString *)<em>file</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSString *)pathToDocumentsDirectory</code></div>
 	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>file</em></dt>
-			<dd><p>A filename.</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The absolute path to the file.</p><p>The path to the file or nil if the file couldn&rsquo;t be found in the user&rsquo;s library directory.</p>
+		<p>The full path to the documents directory.</p>
 	</div>
 	
 	
@@ -504,7 +434,7 @@ to the file where it was first found.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-06)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

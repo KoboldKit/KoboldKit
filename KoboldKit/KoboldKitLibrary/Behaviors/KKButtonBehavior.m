@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
+#import "KKCompatibility.h"
 #import "KKButtonBehavior.h"
 #import "KKMacros.h"
 #import "KKScene.h"
@@ -149,7 +150,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 		[self execute];
 	}
 }
-#elif TARGET_OS_MAC
+#else
 #endif
 
 #pragma mark !! Update methods below whenever class layout changes !!

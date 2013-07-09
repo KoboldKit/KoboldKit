@@ -166,19 +166,14 @@ which perform each layer's rendering.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/createPhysicsCollisionsWithBlockingGids:</TokenIdentifier>
-			<Abstract type="html">Creates physics blocking shapes from the main tile layer's blocking tiles.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/createPhysicsCollisions</TokenIdentifier>
+			<Abstract type="html">Creates physics blocking shapes from the main tile layer's blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.</Abstract>
 			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>- (SKNode *)createPhysicsCollisionsWithBlockingGids:(KKIntegerArray *)blockingGids</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>blockingGids</Name>
-					<Abstract type="html">A list of GIDs of tiles that should be considered blocking.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (SKNode *)createPhysicsCollisions</Declaration>
+			
 			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
-			<Anchor>//api/name/createPhysicsCollisionsWithBlockingGids:</Anchor>
+			<Anchor>//api/name/createPhysicsCollisions</Anchor>
 		</Token>
 		
 		<Token>

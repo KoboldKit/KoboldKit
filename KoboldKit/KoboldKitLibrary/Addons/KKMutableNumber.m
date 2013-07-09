@@ -912,7 +912,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 {
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
-#elif TARGET_OS_MAC
+#else
 	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -921,7 +921,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 {
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
-#elif TARGET_OS_MAC
+#else
 	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -950,7 +950,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 {
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
-#elif TARGET_OS_MAC
+#else
 	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -959,7 +959,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 {
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
-#elif TARGET_OS_MAC
+#else
 	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -1003,7 +1003,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 {
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
-#elif TARGET_OS_MAC
+#else
 	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -1012,7 +1012,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 {
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
-#elif TARGET_OS_MAC
+#else
 	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -1041,7 +1041,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 {
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
-#elif TARGET_OS_MAC
+#else
 	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
@@ -1050,7 +1050,7 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 {
 #if TARGET_OS_IPHONE
 	return [[KKInt32Number alloc] initWithInt32:number];
-#elif TARGET_OS_MAC
+#else
 	return [[KKInt64Number alloc] initWithInt64:number];
 #endif
 }
