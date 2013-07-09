@@ -317,43 +317,16 @@
 -(void) controlPadDidChangeDirection:(NSNotification*)note
 {
 	KKControlPadBehavior* controlPad = [note.userInfo objectForKey:@"behavior"];
-	
-	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _dpadForce);
 
-	/*
-	switch (controlPad.direction)
+	if (controlPad.direction == KKArcadeJoystickNone)
 	{
-		case KKArcadeJoystickRight:
-			NSLog(@"right");
-			break;
-		case KKArcadeJoystickUpRight:
-			NSLog(@"up right");
-			break;
-		case KKArcadeJoystickUp:
-			NSLog(@"up");
-			break;
-		case KKArcadeJoystickUpLeft:
-			NSLog(@"up left");
-			break;
-		case KKArcadeJoystickLeft:
-			NSLog(@"left");
-			break;
-		case KKArcadeJoystickDownLeft:
-			NSLog(@"down left");
-			break;
-		case KKArcadeJoystickDown:
-			NSLog(@"down");
-			break;
-		case KKArcadeJoystickDownRight:
-			NSLog(@"down right");
-			break;
-
-		case KKArcadeJoystickNone:
-		default:
-			NSLog(@"center");
-			break;
+		_currentControlPadDirection = CGPointZero;
+		_playerCharacter.physicsBody.velocity = CGPointMake(0, _playerCharacter.physicsBody.velocity.y);
 	}
-	 */
+	else
+	{
+		_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _dpadForce);
+	}
 }
 
 -(void) attackButtonPressed:(NSNotification*)note
