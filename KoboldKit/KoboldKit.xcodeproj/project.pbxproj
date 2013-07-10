@@ -11,14 +11,6 @@
 		DC042A83178C5A06009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */; };
 		DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
 		DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC09DB8D178C84C6000E0B61 /* MainMenu.xib */; };
-		DC18B0C6178C7BC400641A6D /* 24x24_Level01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B096178C7BC400641A6D /* 24x24_Level01.tmx */; };
-		DC18B0C7178C7BC400641A6D /* 24x24_Level01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B096178C7BC400641A6D /* 24x24_Level01.tmx */; };
-		DC18B0C8178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B097178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx */; };
-		DC18B0C9178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B097178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx */; };
-		DC18B0CA178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B098178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx */; };
-		DC18B0CB178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B098178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx */; };
-		DC18B0CC178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B099178C7BC400641A6D /* Tileset_Geometry_24x24.png */; };
-		DC18B0CD178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B099178C7BC400641A6D /* Tileset_Geometry_24x24.png */; };
 		DC18B0CE178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */; };
 		DC18B0CF178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */; };
 		DC18B0D0178C7BC400641A6D /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09C178C7BC400641A6D /* Tileset_Geometry_32x32.png */; };
@@ -190,6 +182,16 @@
 		DC63B439178DEE8A00B36C59 /* 24x24_TestLevel.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B434178DEE8A00B36C59 /* 24x24_TestLevel.tmx */; };
 		DC63B43A178DEE8A00B36C59 /* 32x32_TestLevel.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B435178DEE8A00B36C59 /* 32x32_TestLevel.tmx */; };
 		DC63B43B178DEE8A00B36C59 /* 32x32_TestLevel.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B435178DEE8A00B36C59 /* 32x32_TestLevel.tmx */; };
+		DC63B442178DEED400B36C59 /* 32x32_PlayerSizeTest32.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B43D178DEED400B36C59 /* 32x32_PlayerSizeTest32.tmx */; };
+		DC63B443178DEED400B36C59 /* 32x32_PlayerSizeTest32.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B43D178DEED400B36C59 /* 32x32_PlayerSizeTest32.tmx */; };
+		DC63B444178DEED400B36C59 /* PlayerValueTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B43E178DEED400B36C59 /* PlayerValueTest.tmx */; };
+		DC63B445178DEED400B36C59 /* PlayerValueTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B43E178DEED400B36C59 /* PlayerValueTest.tmx */; };
+		DC63B446178DEED400B36C59 /* TestArena.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B43F178DEED400B36C59 /* TestArena.tmx */; };
+		DC63B447178DEED400B36C59 /* TestArena.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B43F178DEED400B36C59 /* TestArena.tmx */; };
+		DC63B448178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */; };
+		DC63B449178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */; };
+		DC63B44A178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */; };
+		DC63B44B178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */; };
 		DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */; };
 		DCB76E5E178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
 		DCB76E5F178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
@@ -337,10 +339,6 @@
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DC09DB8D178C84C6000E0B61 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		DC18B096178C7BC400641A6D /* 24x24_Level01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_Level01.tmx; sourceTree = "<group>"; };
-		DC18B097178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest24.tmx; sourceTree = "<group>"; };
-		DC18B098178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_PlayerSizeTest48.tmx; sourceTree = "<group>"; };
-		DC18B099178C7BC400641A6D /* Tileset_Geometry_24x24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_24x24.png; sourceTree = "<group>"; };
 		DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 32x32_PlayerSizeTest32.tmx; sourceTree = "<group>"; };
 		DC18B09C178C7BC400641A6D /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
 		DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
@@ -448,6 +446,11 @@
 		DC63B432178DEE8A00B36C59 /* PlayerValueTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlayerValueTest.tmx; sourceTree = "<group>"; };
 		DC63B434178DEE8A00B36C59 /* 24x24_TestLevel.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_TestLevel.tmx; sourceTree = "<group>"; };
 		DC63B435178DEE8A00B36C59 /* 32x32_TestLevel.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 32x32_TestLevel.tmx; sourceTree = "<group>"; };
+		DC63B43D178DEED400B36C59 /* 32x32_PlayerSizeTest32.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 32x32_PlayerSizeTest32.tmx; sourceTree = "<group>"; };
+		DC63B43E178DEED400B36C59 /* PlayerValueTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlayerValueTest.tmx; sourceTree = "<group>"; };
+		DC63B43F178DEED400B36C59 /* TestArena.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestArena.tmx; sourceTree = "<group>"; };
+		DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
+		DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -650,20 +653,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC18B095178C7BC400641A6D /* 24x24 */ = {
-			isa = PBXGroup;
-			children = (
-				DC18B096178C7BC400641A6D /* 24x24_Level01.tmx */,
-				DC18B097178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx */,
-				DC18B098178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx */,
-				DC18B099178C7BC400641A6D /* Tileset_Geometry_24x24.png */,
-			);
-			path = 24x24;
-			sourceTree = "<group>";
-		};
 		DC18B09A178C7BC400641A6D /* 32x32 */ = {
 			isa = PBXGroup;
 			children = (
+				DC63B43D178DEED400B36C59 /* 32x32_PlayerSizeTest32.tmx */,
+				DC63B43E178DEED400B36C59 /* PlayerValueTest.tmx */,
+				DC63B43F178DEED400B36C59 /* TestArena.tmx */,
+				DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */,
+				DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */,
 				DC63B432178DEE8A00B36C59 /* PlayerValueTest.tmx */,
 				DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */,
 				DC18B09C178C7BC400641A6D /* Tileset_Geometry_32x32.png */,
@@ -1052,7 +1049,6 @@
 			children = (
 				DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */,
 				DC63B433178DEE8A00B36C59 /* SteffensTestLevel */,
-				DC18B095178C7BC400641A6D /* 24x24 */,
 				DC18B09A178C7BC400641A6D /* 32x32 */,
 				DC18B09E178C7BC400641A6D /* Config */,
 				DC18B0A2178C7BC400641A6D /* crawl-tiles Oct-5-2010 */,
@@ -1359,7 +1355,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC18B10F178C7BC400641A6D /* other-ipadhd.png in Resources */,
+				DC63B447178DEED400B36C59 /* TestArena.tmx in Resources */,
 				DC18B0F9178C7BC400641A6D /* forest-ipadhd.png in Resources */,
+				DC63B44B178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */,
 				DC18B0F7178C7BC400641A6D /* forest-ipadhd.plist in Resources */,
 				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
 				DC18B0E3178C7BC400641A6D /* crawl-tiles-hd.tps in Resources */,
@@ -1369,6 +1367,7 @@
 				DC18B0DF178C7BC400641A6D /* crawl-tiles-hd.png in Resources */,
 				DC18B0FB178C7BC400641A6D /* forest-ipadhd.pvr.ccz in Resources */,
 				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
+				DC63B445178DEED400B36C59 /* PlayerValueTest.tmx in Resources */,
 				DC18B115178C7BC400641A6D /* other.png in Resources */,
 				DC18B101178C7BC400641A6D /* forest.png in Resources */,
 				DC18B0D3178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
@@ -1377,11 +1376,13 @@
 				DC18B103178C7BC400641A6D /* forest.pvr.ccz in Resources */,
 				DC18B10D178C7BC400641A6D /* other-ipadhd.plist in Resources */,
 				DC18B0F1178C7BC400641A6D /* forest-hd.plist in Resources */,
+				DC63B443178DEED400B36C59 /* 32x32_PlayerSizeTest32.tmx in Resources */,
 				DC18B0E7178C7BC400641A6D /* crawl-tiles.png in Resources */,
 				DC18B0E5178C7BC400641A6D /* crawl-tiles.plist in Resources */,
 				DCD11E44178C522300FBC406 /* Credits.rtf in Resources */,
 				DC18B10B178C7BC400641A6D /* other-hd.pvr.ccz in Resources */,
 				DC18B11B178C7BC400641A6D /* READ ME.txt in Resources */,
+				DC63B449178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B0E1178C7BC400641A6D /* crawl-tiles-hd.pvr.ccz in Resources */,
 				DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */,
 				DC18B0FD178C7BC400641A6D /* forest-parallax.tmx in Resources */,
@@ -1393,7 +1394,6 @@
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
 				DC18B111178C7BC400641A6D /* other-ipadhd.pvr.ccz in Resources */,
 				DC18B117178C7BC400641A6D /* other.pvr.ccz in Resources */,
-				DC18B0C7178C7BC400641A6D /* 24x24_Level01.tmx in Resources */,
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0F3178C7BC400641A6D /* forest-hd.png in Resources */,
 				DC18B119178C7BC400641A6D /* other.tps in Resources */,
@@ -1401,12 +1401,9 @@
 				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
 				DC63B43B178DEE8A00B36C59 /* 32x32_TestLevel.tmx in Resources */,
-				DC18B0C9178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */,
-				DC18B0CD178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */,
 				DC18B113178C7BC400641A6D /* other.plist in Resources */,
 				DC18B0FF178C7BC400641A6D /* forest.plist in Resources */,
 				DC18B0D1178C7BC400641A6D /* Tileset_Geometry_32x32.png in Resources */,
-				DC18B0CB178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx in Resources */,
 				DC18B0DD178C7BC400641A6D /* crawl-tiles-hd.plist in Resources */,
 				DC18B0CF178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx in Resources */,
 			);
@@ -1418,10 +1415,13 @@
 			files = (
 				DC18B10E178C7BC400641A6D /* other-ipadhd.png in Resources */,
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
+				DC63B44A178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */,
 				DC18B0F8178C7BC400641A6D /* forest-ipadhd.png in Resources */,
 				DC18B0F6178C7BC400641A6D /* forest-ipadhd.plist in Resources */,
 				DC63B436178DEE8A00B36C59 /* PlayerValueTest.tmx in Resources */,
+				DC63B442178DEED400B36C59 /* 32x32_PlayerSizeTest32.tmx in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
+				DC63B448178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B0E2178C7BC400641A6D /* crawl-tiles-hd.tps in Resources */,
 				DC18B0DA178C7BC400641A6D /* crawl-tilemap.tmx in Resources */,
 				DC18B106178C7BC400641A6D /* other-hd.plist in Resources */,
@@ -1443,6 +1443,7 @@
 				DC18B0FC178C7BC400641A6D /* forest-parallax.tmx in Resources */,
 				DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */,
 				DC18B0F4178C7BC400641A6D /* forest-hd.pvr.ccz in Resources */,
+				DC63B444178DEED400B36C59 /* PlayerValueTest.tmx in Resources */,
 				DC18B0EC178C7BC400641A6D /* LICENSE.txt in Resources */,
 				DC18B0EA178C7BC400641A6D /* crawl-tiles.tps in Resources */,
 				DC18B0EE178C7BC400641A6D /* README.txt in Resources */,
@@ -1450,21 +1451,18 @@
 				DC18B0D4178C7BC400641A6D /* config.lua in Resources */,
 				DC18B110178C7BC400641A6D /* other-ipadhd.pvr.ccz in Resources */,
 				DC18B116178C7BC400641A6D /* other.pvr.ccz in Resources */,
-				DC18B0C6178C7BC400641A6D /* 24x24_Level01.tmx in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC63B438178DEE8A00B36C59 /* 24x24_TestLevel.tmx in Resources */,
 				DC18B0F2178C7BC400641A6D /* forest-hd.png in Resources */,
 				DC18B118178C7BC400641A6D /* other.tps in Resources */,
 				DC18B104178C7BC400641A6D /* forest.tps in Resources */,
 				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
-				DC18B0C8178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */,
-				DC18B0CC178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */,
 				DC18B112178C7BC400641A6D /* other.plist in Resources */,
 				DC18B0FE178C7BC400641A6D /* forest.plist in Resources */,
 				DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */,
 				DC18B0D0178C7BC400641A6D /* Tileset_Geometry_32x32.png in Resources */,
-				DC18B0CA178C7BC400641A6D /* 24x24_PlayerSizeTest48.tmx in Resources */,
 				DC18B0DC178C7BC400641A6D /* crawl-tiles-hd.plist in Resources */,
+				DC63B446178DEED400B36C59 /* TestArena.tmx in Resources */,
 				DC18B0CE178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
