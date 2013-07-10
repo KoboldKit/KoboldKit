@@ -116,7 +116,21 @@
 		_jumping = YES;
 		velocity.y = _jumpSpeedInitial;
 		self.physicsBody.velocity = velocity;
+		
+		KKButtonBehavior* button = [note.userInfo objectForKey:@"behavior"];
+		[self performSelector:@selector(jumpButtonEndSelect:) withObject:button afterDelay:_jumpButtonActiveTime];
 	}
+}
+
+-(void) jumpButtonReleased:(NSNotification *)note
+{
+	NSLog(@"released");
+}
+
+-(void) jumpButtonEndSelect:(id)object
+{
+	KKButtonBehavior* button = object;
+	[button endSelect];
 }
 
 -(void) update:(NSTimeInterval)currentTime

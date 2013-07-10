@@ -12,6 +12,8 @@
 
 /** Notification name, sent by KKButtonBehavior when button should execute its action. */
 extern NSString* const KKButtonDidExecuteNotification;
+/** Notification name, sent by KKButtonBehavior when continuous button stops executing its action. */
+extern NSString* const KKButtonDidEndExecuteNotification;
 
 /** KKButtonBehavior turns any node into a button. Touch/Click on the node while be detected, the node is scaled while selected.
  Scaling is optional and can be modified/disabled with the selectedScale property.
@@ -52,6 +54,7 @@ extern NSString* const KKButtonDidExecuteNotification;
 	CGFloat _originalXScale;
 	CGFloat _originalYScale;
 	__weak SKTexture* _originalTexture;
+	BOOL _continuous;
 }
 
 /** @name Selection Properties */
@@ -62,10 +65,14 @@ extern NSString* const KKButtonDidExecuteNotification;
  @returns The current focus scale. */
 @property (atomic) CGFloat selectedScale;
 /** @returns YES if the button is currently selected. */
-@property (atomic, readonly) BOOL isSelected;
+@property (atomic, readonly) BOOL selected;
 /** If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.
  @returns YES if the button will execute when pressed. NO if the button will execute when released. */
 @property (atomic) BOOL executesWhenPressed;
+/** If enabled, the button will send the execute notification continuously as long as it is pressed. It will also send the "released" notification
+ when it is no longer pressed.
+ @returns YES if the button will execute continously while pressed. */
+@property (atomic) BOOL continuous;
 
 
 /** @name Select & Execute Methods */

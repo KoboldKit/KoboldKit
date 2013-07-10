@@ -13,6 +13,7 @@
 #import "SKNode+KoboldKit.h"
 
 NSString* const KKButtonDidExecuteNotification = @"KKButtonBehavior:execute";
+NSString* const KKButtonDidEndExecuteNotification = @"KKButtonBehavior:endExecute";
 static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 @implementation KKButtonBehavior
@@ -48,7 +49,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) beginSelect
 {
-	_isSelected = YES;
+	_selected = YES;
 
 	if (_selectedScale < 1.0 || _selectedScale > 1.0)
 	{
@@ -64,7 +65,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 		sprite.texture = _selectedTexture;
 	}
 	
-	if (_executesWhenPressed)
+	if (_executesWhenPressed && _continuous == NO)
 	{
 		[self execute];
 		[self performSelector:@selector(endSelect) withObject:nil afterDelay:0.01];
@@ -73,7 +74,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) endSelect
 {
-	_isSelected = NO;
+	_selected = NO;
 	
 	if (_selectedScale < 1.0 || _selectedScale > 1.0)
 	{
@@ -93,6 +94,12 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	[self postNotificationName:KKButtonDidExecuteNotification];
 }
 
+-(void) endExecute
+{
+	[self endSelect];
+	[self postNotificationName:KKButtonDidEndExecuteNotification];
+}
+
 -(void) setEnabled:(BOOL)enabled
 {
 	[super setEnabled:enabled];
@@ -104,11 +111,11 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) inputDidMoveLoseFocus:(BOOL)lostFocus
 {
-	if (lostFocus && _isSelected)
+	if (lostFocus && _selected)
 	{
-		[self endSelect];
+		_continuous ? [self endExecute] : [self endSelect];
 	}
-	if (lostFocus == NO && _isSelected == NO)
+	if (lostFocus == NO && _selected == NO)
 	{
 		[self beginSelect];
 	}
@@ -116,10 +123,11 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) inputDidEnd
 {
-	if (_isSelected && self.enabled)
+	if (_selected && self.enabled)
 	{
 		[self endSelect];
-		[self execute];
+		
+		_continuous ? [self endExecute] : [self execute];
 	}
 }
 
@@ -141,7 +149,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	if (self.enabled)
+	if (_selected && self.enabled)
 	{
 		BOOL lostFocus = YES;
 		for (UITouch* touch in touches)
@@ -195,6 +203,25 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 #endif
 
+@dynamic continuous;
+-(void) setContinuous:(BOOL)continuous
+{
+	if (_continuous != continuous)
+	{
+		_continuous = continuous;
+		_wantsUpdate = _continuous;
+	}
+}
+
+-(void) update:(NSTimeInterval)currentTime
+{
+	if (_selected)
+	{
+		[self execute];
+	}
+}
+
+
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
@@ -206,6 +233,7 @@ static NSString* const ArchiveKeyForOriginalYScale = @"originalYScale";
 static NSString* const ArchiveKeyForOriginalTexture = @"originalTexture";
 static NSString* const ArchiveKeyForSelectedTexture = @"selectedTexture";
 static NSString* const ArchiveKeyForExecutesWhenPressed = @"executesWhenPressed";
+static NSString* const ArchiveKeyForContinuous = @"continous";
 
 -(id) initWithCoder:(NSCoder*)decoder
 {
@@ -215,10 +243,11 @@ static NSString* const ArchiveKeyForExecutesWhenPressed = @"executesWhenPressed"
 		_originalXScale = [decoder decodeDoubleForKey:ArchiveKeyForOriginalXScale];
 		_originalYScale = [decoder decodeDoubleForKey:ArchiveKeyForOriginalYScale];
 		_selectedScale = [decoder decodeDoubleForKey:ArchiveKeyForFocusScale];
-		_isSelected = [decoder decodeBoolForKey:ArchiveKeyForHasFocus];
+		_selected = [decoder decodeBoolForKey:ArchiveKeyForHasFocus];
 		_originalTexture = [decoder decodeObjectForKey:ArchiveKeyForOriginalTexture];
 		_selectedTexture = [decoder decodeObjectForKey:ArchiveKeyForSelectedTexture];
 		_executesWhenPressed = [decoder decodeBoolForKey:ArchiveKeyForExecutesWhenPressed];
+		_continuous = [decoder decodeBoolForKey:ArchiveKeyForContinuous];
 	}
 	return self;
 }
@@ -229,10 +258,11 @@ static NSString* const ArchiveKeyForExecutesWhenPressed = @"executesWhenPressed"
 	[encoder encodeDouble:_originalXScale forKey:ArchiveKeyForOriginalXScale];
 	[encoder encodeDouble:_originalYScale forKey:ArchiveKeyForOriginalYScale];
 	[encoder encodeDouble:_selectedScale forKey:ArchiveKeyForFocusScale];
-	[encoder encodeBool:_isSelected forKey:ArchiveKeyForHasFocus];
+	[encoder encodeBool:_selected forKey:ArchiveKeyForHasFocus];
 	[encoder encodeObject:_originalTexture forKey:ArchiveKeyForOriginalTexture];
 	[encoder encodeObject:_selectedTexture forKey:ArchiveKeyForSelectedTexture];
 	[encoder encodeBool:_executesWhenPressed forKey:ArchiveKeyForExecutesWhenPressed];
+	[encoder encodeBool:_continuous forKey:ArchiveKeyForContinuous];
 }
 
 #pragma mark NSCopying
@@ -243,10 +273,11 @@ static NSString* const ArchiveKeyForExecutesWhenPressed = @"executesWhenPressed"
 	copy->_originalXScale = _originalXScale;
 	copy->_originalYScale = _originalYScale;
 	copy->_selectedScale = _selectedScale;
-	copy->_isSelected = _isSelected;
+	copy->_selected = _selected;
 	copy->_originalTexture = _originalTexture;
 	copy->_selectedTexture = _selectedTexture;
 	copy->_executesWhenPressed = _executesWhenPressed;
+	copy->_continuous = _continuous;
 	return copy;
 }
 
@@ -261,7 +292,7 @@ static NSString* const ArchiveKeyForExecutesWhenPressed = @"executesWhenPressed"
 	return (_originalXScale == behavior->_originalXScale &&
 			_originalYScale == behavior->_originalYScale &&
 			_selectedScale == behavior->_selectedScale &&
-			_isSelected == behavior->_isSelected &&
+			_selected == behavior->_selected &&
 			_originalTexture == behavior->_originalTexture &&
 			_selectedTexture == behavior->_selectedTexture &&
 			_executesWhenPressed == behavior->_executesWhenPressed);

@@ -207,6 +207,9 @@
 	[_playerCharacter observeNotification:KKButtonDidExecuteNotification
 								 selector:@selector(jumpButtonPressed:)
 								   object:jumpButtonNode];
+	[_playerCharacter observeNotification:KKButtonDidEndExecuteNotification
+								 selector:@selector(jumpButtonReleased:)
+								   object:jumpButtonNode];
 	[_playerCharacter observeNotification:KKButtonDidExecuteNotification
 								 selector:@selector(attackButtonPressed:)
 								   object:attackButtonNode];
@@ -240,6 +243,7 @@
 	button.name = @"jump";
 	button.selectedTexture = [atlas textureNamed:@"button_jump_pressed"];
 	button.executesWhenPressed = YES;
+	button.continuous = YES;
 	[jumpButtonNode addBehavior:button];
 	
 	// make player observe joypad

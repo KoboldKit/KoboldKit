@@ -13,7 +13,9 @@
 @private
 	SKSpriteNode* _playerSprite;
 
+	// these values are Tiled-editable via properties of the same name
 	CGPoint _currentControlPadDirection;
+	NSTimeInterval _jumpButtonActiveTime;
 	CGFloat _jumpSpeedInitial;
 	CGFloat _jumpSpeedDeceleration;
 	CGFloat _fallSpeedAcceleration;
@@ -31,5 +33,6 @@
 -(void) controlPadDidChangeDirection:(NSNotification*)note;
 -(void) attackButtonPressed:(NSNotification*)note;
 -(void) jumpButtonPressed:(NSNotification*)note;
+-(void) jumpButtonReleased:(NSNotification*)note;
 
 @end
