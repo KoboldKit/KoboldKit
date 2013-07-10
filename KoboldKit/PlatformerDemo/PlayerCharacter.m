@@ -133,7 +133,7 @@
 		[self endJump];
 
 		CGPoint velocity = self.physicsBody.velocity;
-		velocity.y = 0.0;
+		velocity.y = _jumpAbortVelocity;
 		self.physicsBody.velocity = velocity;
 	}
 }

@@ -17,7 +17,7 @@
 	CGPoint _currentControlPadDirection;
 	CGFloat _jumpSpeedInitial;
 	CGFloat _jumpSpeedDeceleration;
-	CGFloat _jumpAbortVelocityMultiplier;
+	CGFloat _jumpAbortVelocity;
 	CGFloat _fallSpeedAcceleration;
 	CGFloat _fallSpeedLimit;
 	CGFloat _runSpeedAcceleration;
