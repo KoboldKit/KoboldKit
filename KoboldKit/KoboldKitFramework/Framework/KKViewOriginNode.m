@@ -8,11 +8,14 @@
 
 #import "KKViewOriginNode.h"
 #import "KKScene.h"
+#import "SKNode+KoboldKit.h"
 
 @implementation KKViewOriginNode
 
 -(void) didMoveToParent
 {
+	[super didMoveToParent];
+	
 	NSAssert([self.parent isKindOfClass:[KKScene class]], @"KKViewAnchorNode must be a direct child of a KKScene instance");
 	[self updatePositionFromSceneFrame];
 }

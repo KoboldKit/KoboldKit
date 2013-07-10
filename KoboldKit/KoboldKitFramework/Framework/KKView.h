@@ -33,9 +33,17 @@
 
 /** nd */
 @property (atomic) BOOL showsPhysicsShapes;
+/** nd */
+@property (atomic) BOOL showsNodeFrames;
+/** nd */
+@property (atomic) BOOL showsNodeAnchorPoints;
 
 /** nd */
 +(BOOL) showsPhysicsShapes;
+/** nd */
++(BOOL) showsNodeFrames;
+/** nd */
++(BOOL) showsNodeAnchorPoints;
 
 /** Presents a scene. 
  

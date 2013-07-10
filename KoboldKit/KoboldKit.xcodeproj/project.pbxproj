@@ -334,9 +334,9 @@
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DC09DB8D178C84C6000E0B61 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
-		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = config.lua; sourceTree = "<group>"; };
-		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = devconfig.lua; sourceTree = "<group>"; };
-		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = devconfig.lua.sample; sourceTree = "<group>"; };
+		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
+		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
+		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua.sample; sourceTree = "<group>"; };
 		DC18B0A3178C7BC400641A6D /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
 		DC18B0A4178C7BC400641A6D /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
 		DC18B0A5178C7BC400641A6D /* crawl-tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles-hd.png"; sourceTree = "<group>"; };

@@ -196,6 +196,36 @@
 -(void) didMoveToParent
 {
 	// to be overridden by subclasses
+
+	if ([KKView showsNodeFrames])
+	{
+		SKShapeNode* shape = [SKShapeNode node];
+		shape.path = CGPathCreateWithRect(self.frame, nil);
+		shape.antialiased = NO;
+		shape.lineWidth = 1.0;
+		shape.strokeColor = [SKColor orangeColor];
+		[self addChild:shape];
+	}
+	if ([KKView showsNodeAnchorPoints])
+	{
+		SKShapeNode* shape = [SKShapeNode node];
+		CGRect center = CGRectMake(self.position.x - 1, self.position.y - 1, 2, 2);
+		shape.path = CGPathCreateWithRect(center, nil);
+		/*
+		CGMutablePathRef path = CGPathCreateMutable();
+		CGPathMoveToPoint(path, nil, self.position.x, self.position.y);
+		CGPathAddLineToPoint(path, nil, self.position.x, self.position.y+1);
+		shape.path = path;
+		 */
+		shape.antialiased = NO;
+		shape.lineWidth = 1.0;
+		[self addChild:shape];
+		
+		id sequence = [SKAction sequence:@[[SKAction runBlock:^{
+			shape.strokeColor = [SKColor colorWithRed:KKRANDOM_0_1() green:KKRANDOM_0_1() blue:KKRANDOM_0_1() alpha:1.0];
+		}], [SKAction waitForDuration:0.2]]];
+		[shape runAction:[SKAction repeatActionForever:sequence]];
+	}
 }
 
 -(void) willMoveFromParent

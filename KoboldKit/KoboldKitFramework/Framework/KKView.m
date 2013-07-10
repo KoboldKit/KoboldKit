@@ -16,6 +16,8 @@
 #define ASSERT_SCENE_STACK_INTEGRITY() NSAssert2([_sceneStack lastObject] == self.scene, @"scene stack out of synch! Presented scene: %@ - topmost scene on stack: %@", self.scene, [_sceneStack lastObject])
 
 static BOOL _showsPhysicsShapes = NO;
+static BOOL _showsNodeFrames = NO;
+static BOOL _showsNodeAnchorPoints = NO;
 
 @implementation KKView
 
@@ -67,6 +69,8 @@ static BOOL _showsPhysicsShapes = NO;
 	self.showsFPS = [_model boolForKeyPath:@"devconfig.showsFPS"];
 	self.showsNodeCount = [_model boolForKeyPath:@"devconfig.showsNodeCount"];
 	self.showsPhysicsShapes = [_model boolForKeyPath:@"devconfig.showsPhysicsShapes"];
+	self.showsNodeFrames = [_model boolForKeyPath:@"devconfig.showsNodeFrames"];
+	self.showsNodeAnchorPoints = [_model boolForKeyPath:@"devconfig.showsNodeAnchorPoints"];
 }
 
 -(void) loadConfig:(NSString*)configFile
@@ -195,7 +199,7 @@ static BOOL _showsPhysicsShapes = NO;
 	}
 }
 
-#pragma Physics Debug
+#pragma Debug
 
 @dynamic showsPhysicsShapes;
 +(BOOL) showsPhysicsShapes
@@ -209,6 +213,34 @@ static BOOL _showsPhysicsShapes = NO;
 -(void) setShowsPhysicsShapes:(BOOL)showsPhysicsShapes
 {
 	_showsPhysicsShapes = showsPhysicsShapes;
+}
+
+@dynamic showsNodeFrames;
++(BOOL) showsNodeFrames
+{
+	return _showsNodeFrames;
+}
+-(BOOL) showsNodeFrames
+{
+	return _showsNodeFrames;
+}
+-(void) setShowsNodeFrames:(BOOL)showsNodeFrames
+{
+	_showsNodeFrames = showsNodeFrames;
+}
+
+@dynamic showsNodeAnchorPoints;
++(BOOL) showsNodeAnchorPoints
+{
+	return _showsNodeAnchorPoints;
+}
+-(BOOL) showsNodeAnchorPoints
+{
+	return _showsNodeAnchorPoints;
+}
+-(void) setShowsNodeAnchorPoints:(BOOL)showsNodeAnchorPoints
+{
+	_showsNodeAnchorPoints = showsNodeAnchorPoints;
 }
 
 @end

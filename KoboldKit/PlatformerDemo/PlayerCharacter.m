@@ -12,12 +12,10 @@
 
 -(void) setupWithPlayerObject:(KKTilemapObject*)playerObject movementBounds:(CGRect)movementBounds
 {
-	CGSize playerSize = playerObject.size;
-	CGPoint playerPosition = CGPointMake(playerObject.position.x + playerSize.width / 2,
-										 playerObject.position.y + playerSize.height / 2);
-	
 	KKTilemapProperties* playerProperties = playerObject.properties;
 	NSString* defaultImage = [playerProperties stringForKey:@"defaultImage"];
+	CGSize playerSize = playerObject.size;
+	
 	if (defaultImage.length > 0)
 	{
 		_playerSprite = [SKSpriteNode spriteNodeWithImageNamed:defaultImage];
@@ -28,23 +26,22 @@
 		_playerSprite = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:playerSize];
 	}
 	[self addChild:_playerSprite];
-	
+
 	CGSize bboxSize = playerSize;
-	bboxSize.width -= 8;
-	bboxSize.height -= 8;
-	
 	NSString* bboxString = [playerProperties stringForKey:@"boundingBox"];
 	if (bboxString.length)
 	{
 		bboxSize = CGSizeFromString(bboxString);
 	}
+	LOG_EXPR(playerSize);
 	LOG_EXPR(bboxSize);
 	
 	[self physicsBodyWithRectangleOfSize:bboxSize];
 	self.physicsBody.contactTestBitMask = 0xFFFFFFFF;
 	self.physicsBody.affectedByGravity = NO;
 	self.name = @"player";
-	self.position = playerPosition;
+	self.position = CGPointMake(playerObject.position.x + playerSize.width / 2,
+								playerObject.position.y + playerSize.height / 2);
 	
 	self.physicsBody.allowsRotation = [playerProperties numberForKey:@"allowsRotation"].boolValue;
 	self.physicsBody.angularDamping = [playerProperties numberForKey:@"angularDamping"].floatValue;
@@ -213,6 +210,14 @@
 	
 	//NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
 	//NSLog(@"pos: {%.0f, %.0f}", _tilemapNode.mainTileLayerNode.position.x, _tilemapNode.mainTileLayerNode.position.y);
+	
+	/*
+	NSLog(@"----------------------------");
+	LOG_EXPR(_playerSprite.position);
+	LOG_EXPR(_playerSprite.parent.position);
+	LOG_EXPR(_playerSprite.parent.parent.position);
+	LOG_EXPR(_playerSprite.parent.parent.parent.position);
+	 */
 }
 
 -(void) didBeginContact:(SKPhysicsContact*)contact
