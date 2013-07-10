@@ -253,6 +253,9 @@
 	[_playerCharacter observeNotification:KKButtonDidExecuteNotification
 								 selector:@selector(jumpButtonPressed:)
 								   object:jumpButtonNode];
+	[_playerCharacter observeNotification:KKButtonDidEndExecuteNotification
+								 selector:@selector(jumpButtonReleased:)
+								   object:jumpButtonNode];
 }
 
 -(void) testCollision:(SKPhysicsContact *)contact

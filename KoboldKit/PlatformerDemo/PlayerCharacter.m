@@ -124,13 +124,23 @@
 
 -(void) jumpButtonReleased:(NSNotification *)note
 {
-	NSLog(@"released");
+	if (_jumping)
+	{
+		_jumping = NO;
+
+		CGPoint velocity = self.physicsBody.velocity;
+		velocity.y = 0.0;
+		self.physicsBody.velocity = velocity;
+	}
 }
 
 -(void) jumpButtonEndSelect:(id)object
 {
-	KKButtonBehavior* button = object;
-	[button endSelect];
+	if (_jumping)
+	{
+		KKButtonBehavior* button = object;
+		[button endSelect];
+	}
 }
 
 -(void) update:(NSTimeInterval)currentTime
