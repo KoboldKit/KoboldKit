@@ -182,7 +182,11 @@
 	}
 	else if (velocity.x != 0.0)
 	{
-		if (velocity.x > 0.0)
+		if (_runSpeedDeceleration == 0)
+		{
+			velocity.x = 0.0;
+		}
+		else if (velocity.x > 0.0)
 		{
 			velocity.x -= _runSpeedDeceleration;
 			if (velocity.x < 0.0)
