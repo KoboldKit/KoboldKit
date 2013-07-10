@@ -32,6 +32,14 @@
 	CGSize bboxSize = playerSize;
 	bboxSize.width -= 8;
 	bboxSize.height -= 8;
+	
+	NSString* bboxString = [playerProperties stringForKey:@"boundingBox"];
+	if (bboxString.length)
+	{
+		bboxSize = CGSizeFromString(bboxString);
+	}
+	LOG_EXPR(bboxSize);
+	
 	[self physicsBodyWithRectangleOfSize:bboxSize];
 	self.physicsBody.contactTestBitMask = 0xFFFFFFFF;
 	self.physicsBody.affectedByGravity = NO;
@@ -217,6 +225,7 @@
 	SKPhysicsBody* myBody = self.physicsBody;
 	if (contact.bodyA == myBody || contact.bodyB == myBody)
 	{
+		// prevent jitter on floor
 		CGPoint velocity = myBody.velocity;
 		velocity.y = 0;
 		myBody.velocity = velocity;
