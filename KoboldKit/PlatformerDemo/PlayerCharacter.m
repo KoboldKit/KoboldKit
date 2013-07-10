@@ -118,8 +118,7 @@
 -(void) jumpButtonPressed:(NSNotification*)note
 {
 	CGPoint velocity = self.physicsBody.velocity;
-	LOG_EXPR(velocity);
-	if (_jumping == NO)
+	if (_jumping == NO && CGFloatEqualToFloat(velocity.y, 0.0))
 	{
 		_jumping = YES;
 		velocity.y = _jumpSpeedInitial;
@@ -127,17 +126,12 @@
 		
 		_jumpButton = [note.userInfo objectForKey:@"behavior"];
 	}
-	else
-	{
-		NSLog(@"<<< NO JUMP!! >>>   Still in jumping mode, sorry.");
-	}
 }
 
 -(void) jumpButtonReleased:(NSNotification *)note
 {
 	if (_jumping)
 	{
-		NSLog(@"jump button released");
 		[self endJump];
 
 		CGPoint velocity = self.physicsBody.velocity;
@@ -151,7 +145,6 @@
 
 -(void) endJump
 {
-	NSLog(@"end jump");
 	_jumping = NO;
 	
 	[_jumpButton endSelect];
@@ -227,9 +220,11 @@
 	SKPhysicsBody* myBody = self.physicsBody;
 	if (contact.bodyA == myBody || contact.bodyB == myBody)
 	{
+		// FIXME: this should actually check for collision with floor
+		
 		// prevent jitter on floor
 		CGPoint velocity = myBody.velocity;
-		velocity.y = 0;
+		velocity.y = 0.0;
 		myBody.velocity = velocity;
 	}
 }

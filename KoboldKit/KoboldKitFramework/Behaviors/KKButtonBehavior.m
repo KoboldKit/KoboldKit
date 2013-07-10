@@ -171,8 +171,14 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	}
 }
 
+-(void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[self touchesEnded:touches withEvent:event];
+}
+
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	_theBeganTouch = nil;
 	[self inputDidEnd];
 }
 #else // OS X
