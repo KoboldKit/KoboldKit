@@ -10,6 +10,8 @@
 #import "KKMutableNumber.h"
 #import "KKTypes.h"
 
+#import <objc/runtime.h>
+
 @implementation KKIvarInfo
 
 static Class kStringClass;
@@ -158,7 +160,7 @@ static Class kMutableNumberClass;
 
 			default:
 				[NSException raise:@"can't set ivar"
-				            format:@"failed to set ivar %@ to string value %@ in target %@ - reason: ivar's type isn't handled in the switch", self, value, target];
+				            format:@"failed to set ivar %@ to string value %@ in target %@ - reason: ivar's type isn't handled in the switch. Possibly a float number with comma as decimal separator?", self, value, target];
 		} /* switch */
 	}
 }         /* setIvarInTarget */

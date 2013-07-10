@@ -295,6 +295,8 @@
 		DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 		DCD7EC55178C57FC00BBAFB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
 		DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
+		DCDB338C178D808400C13739 /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
+		DCDB338D178D808400C13739 /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -571,6 +573,8 @@
 		DCD7EC48178C573500BBAFB0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DCD7EC49178C573500BBAFB0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DCD7EC52178C57FC00BBAFB0 /* PlatformerDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlatformerDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDB338A178D808400C13739 /* PlayerCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCharacter.h; sourceTree = "<group>"; };
+		DCDB338B178D808400C13739 /* PlayerCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCharacter.m; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1049,6 +1053,8 @@
 				DCD7EC47178C573500BBAFB0 /* MenuScene.m */,
 				DCD7EC44178C573500BBAFB0 /* GameScene.h */,
 				DCD7EC45178C573500BBAFB0 /* GameScene.m */,
+				DCDB338A178D808400C13739 /* PlayerCharacter.h */,
+				DCDB338B178D808400C13739 /* PlayerCharacter.m */,
 				DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */,
 				DC18B126178C7E9300641A6D /* Images-Mac.xcassets */,
 				DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */,
@@ -1624,6 +1630,7 @@
 			files = (
 				DCD7EC4A178C573500BBAFB0 /* AppDelegate.m in Sources */,
 				DCD7EC4C178C573500BBAFB0 /* MenuScene.m in Sources */,
+				DCDB338D178D808400C13739 /* PlayerCharacter.m in Sources */,
 				DCD7EC4B178C573500BBAFB0 /* GameScene.m in Sources */,
 				DCD11E40178C522300FBC406 /* main.m in Sources */,
 				DCD7EC4D178C573500BBAFB0 /* ViewController.m in Sources */,
@@ -1636,6 +1643,7 @@
 			files = (
 				DCD7A289178C7526004A0467 /* AppDelegate.m in Sources */,
 				DCD7A28A178C7526004A0467 /* GameScene.m in Sources */,
+				DCDB338C178D808400C13739 /* PlayerCharacter.m in Sources */,
 				DCD7A28B178C7526004A0467 /* MenuScene.m in Sources */,
 				DCD7A28C178C7526004A0467 /* ViewController.m in Sources */,
 				DCD7A28D178C7526004A0467 /* main.m in Sources */,

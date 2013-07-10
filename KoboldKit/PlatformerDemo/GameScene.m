@@ -8,6 +8,7 @@
 
 #import "GameScene.h"
 #import "MenuScene.h"
+#import "PlayerCharacter.h"
 
 @implementation GameScene
 
@@ -52,7 +53,7 @@
 	self.physicsWorld.speed = [mapProperties numberForKey:@"physicsSpeed"].floatValue;
 	LOG_EXPR(self.physicsWorld.gravity);
 	LOG_EXPR(self.physicsWorld.speed);
-	
+
 	[self setupPlayerCharacter];
 	[self createSimpleControls];
 	//[self createVirtualJoypad];
@@ -136,76 +137,12 @@
 
 -(void) setupPlayerCharacter
 {
-	KKTilemapObject* playerObject;
-	for (KKTilemapObject* object in [_tilemapNode.tilemap layerNamed:@"game objects"].objects)
-	{
-		if ([object.name isEqualToString:@"player"])
-		{
-			playerObject = object;
-			break;
-		}
-	}
-
-	CGSize playerSize = playerObject.size;
-	CGPoint playerPosition = CGPointMake(playerObject.position.x + playerSize.width / 2,
-										 playerObject.position.y + playerSize.height / 2);
-
-	KKTilemapProperties* playerProperties = playerObject.properties;
-	NSString* defaultImage = [playerProperties stringForKey:@"defaultImage"];
-	if (defaultImage.length > 0)
-	{
-		_playerCharacter = [KKSpriteNode spriteNodeWithImageNamed:defaultImage];
-		playerSize = _playerCharacter.size;
-	}
-	else
-	{
-		_playerCharacter = [KKSpriteNode spriteNodeWithColor:[SKColor redColor] size:playerSize];
-	}
+	KKTilemapObject* playerObject = [[_tilemapNode.tilemap layerNamed:@"game objects"] objectNamed:@"player"];
+	NSAssert(playerObject, @"No object named 'player' on tilemap!");
 	
-	CGSize bboxSize = playerSize;
-	bboxSize.width -= 8;
-	bboxSize.height -= 8;
-	[_playerCharacter physicsBodyWithRectangleOfSize:bboxSize];
-	_playerCharacter.physicsBody.contactTestBitMask = 0xFFFFFFFF;
-	_playerCharacter.name = @"player";
-	_playerCharacter.position = playerPosition;
+	_playerCharacter = [PlayerCharacter node];
 	[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
-	
-
-	_playerCharacter.physicsBody.allowsRotation = [playerProperties numberForKey:@"allowsRotation"].boolValue;
-	_playerCharacter.physicsBody.angularDamping = [playerProperties numberForKey:@"angularDamping"].floatValue;
-	_playerCharacter.physicsBody.linearDamping = [playerProperties numberForKey:@"linearDamping"].floatValue;
-	_playerCharacter.physicsBody.friction = [playerProperties numberForKey:@"friction"].floatValue;
-	_playerCharacter.physicsBody.mass = [playerProperties numberForKey:@"mass"].floatValue;
-	_playerCharacter.physicsBody.restitution = [playerProperties numberForKey:@"restitution"].floatValue;
-	_jumpForce = [playerProperties numberForKey:@"jumpForce"].floatValue;
-	_dpadForce = [playerProperties numberForKey:@"dpadForce"].floatValue;
-	LOG_EXPR(_playerCharacter.physicsBody.allowsRotation);
-	LOG_EXPR(_playerCharacter.physicsBody.angularDamping);
-	LOG_EXPR(_playerCharacter.physicsBody.linearDamping);
-	LOG_EXPR(_playerCharacter.physicsBody.friction);
-	LOG_EXPR(_playerCharacter.physicsBody.mass);
-	LOG_EXPR(_playerCharacter.physicsBody.density);
-	LOG_EXPR(_playerCharacter.physicsBody.restitution);
-	LOG_EXPR(_playerCharacter.physicsBody.area);
-	LOG_EXPR(_jumpForce);
-	LOG_EXPR(_dpadForce);
-
-	// limit maximum speed of the player
-	if ([playerProperties numberForKey:@"velocityLimit"])
-	{
-		CGFloat limit = [playerProperties numberForKey:@"velocityLimit"].doubleValue;
-		[_playerCharacter addBehavior:[KKLimitVelocityBehavior limitVelocity:limit]];
-	}
-	
-	// prevent player from leaving the area
-	if ([playerProperties numberForKey:@"stayInBounds"].boolValue)
-	{
-		[_playerCharacter addBehavior:[KKStayInBoundsBehavior stayInBounds:_tilemapNode.bounds]];
-	}
-
-	// make the camera follow the player
-	[_playerCharacter addBehavior:[KKCameraFollowBehavior new] withKey:@"camera"];
+	[_playerCharacter setupWithPlayerObject:playerObject movementBounds:_tilemapNode.bounds];
 }
 
 -(void) createVirtualJoypad
@@ -232,13 +169,8 @@
 							 nil];
 	KKControlPadBehavior* dpad = [KKControlPadBehavior controlPadBehaviorWithTextures:dpadTextures];
 	[dpadNode addBehavior:dpad withKey:@"dpad"];
-	
-	[self observeNotification:KKControlPadDidChangeDirectionNotification
-					 selector:@selector(controlPadDidChangeDirection:)
-					   object:dpadNode];
 
 	CGSize sceneSize = self.size;
-
 	{
 		KKSpriteNode* attackButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_Attack_NotPressed.png"]];
 		attackButtonNode.position = CGPointMake(sceneSize.width - 32, 30);
@@ -250,10 +182,6 @@
 		button.selectedTexture = [atlas textureNamed:@"Button_Attack_Pressed.png"];
 		button.executesWhenPressed = YES;
 		[attackButtonNode addBehavior:button];
-
-		[self observeNotification:KKButtonDidExecuteNotification
-						 selector:@selector(attackButtonPressed:)
-						   object:attackButtonNode];
 	}
 	{
 		KKSpriteNode* jetpackButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_Jetpack_NotPressed.png"]];
@@ -266,10 +194,6 @@
 		button.selectedTexture = [atlas textureNamed:@"Button_Jetpack_Pressed.png"];
 		button.executesWhenPressed = YES;
 		[jetpackButtonNode addBehavior:button];
-
-		[self observeNotification:KKButtonDidExecuteNotification
-						 selector:@selector(jumpButtonPressed:)
-						   object:jetpackButtonNode];
 	}
 }
 
@@ -290,10 +214,6 @@
 							 nil];
 	KKControlPadBehavior* dpad = [KKControlPadBehavior controlPadBehaviorWithTextures:dpadTextures];
 	[dpadNode addBehavior:dpad withKey:@"simple dpad"];
-	
-	[self observeNotification:KKControlPadDidChangeDirectionNotification
-					 selector:@selector(controlPadDidChangeDirection:)
-					   object:dpadNode];
 
 
 	CGSize sceneSize = self.size;
@@ -307,32 +227,6 @@
 		button.selectedTexture = [atlas textureNamed:@"button_jump_pressed"];
 		button.executesWhenPressed = YES;
 		[jumpButtonNode addBehavior:button];
-		
-		[self observeNotification:KKButtonDidExecuteNotification
-						 selector:@selector(jumpButtonPressed:)
-						   object:jumpButtonNode];
-	}
-}
-
--(void) controlPadDidChangeDirection:(NSNotification*)note
-{
-	KKControlPadBehavior* controlPad = [note.userInfo objectForKey:@"behavior"];
-	_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _dpadForce);
-}
-
--(void) attackButtonPressed:(NSNotification*)note
-{
-	NSLog(@"attack!");
-}
-
--(void) jumpButtonPressed:(NSNotification*)note
-{
-	CGPoint velocity = _playerCharacter.physicsBody.velocity;
-	if (velocity.y <= 0)
-	{
-		velocity.y = 0;
-		_playerCharacter.physicsBody.velocity = velocity;
-		[_playerCharacter.physicsBody applyImpulse:CGPointMake(0, _jumpForce)];
 	}
 }
 
@@ -345,8 +239,8 @@
 		
 		SKPhysicsWorld* physicsWorld = self.physicsWorld;
 		CGPoint playerPosition = _playerCharacter.position;
-		CGSize playerSize = _playerCharacter.size;
-		CGPoint playerAnchorPoint = _playerCharacter.anchorPoint;
+		CGSize playerSize = [_playerCharacter calculateAccumulatedFrame].size;
+		CGPoint playerAnchorPoint = CGPointMake(0.5, 0.5);
 		//CGPoint rayStart, rayEnd;
 		
 		/*
@@ -433,39 +327,5 @@
 	[_physicsContactDebugNode removeContact:contact];
 }
 */
-
--(void)update:(NSTimeInterval)currentTime
-{
-	// always call superr in "event" methods of KKScene subclasses
-	[super update:currentTime];
-	
-	//_playerCharacter.position = ccpAdd(_playerCharacter.position, _currentControlPadDirection);
-	[_playerCharacter.physicsBody applyForce:_currentControlPadDirection];
-	
-	//NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
-	//NSLog(@"pos: {%.0f, %.0f}", _tilemapNode.mainTileLayerNode.position.x, _tilemapNode.mainTileLayerNode.position.y);
-
-	/*
-	if (CGPointEqualToPoint(rayStart, rayEnd) == NO)
-	{
-		//SKPhysicsBody* body = [self.physicsWorld bodyAlongRayStart:rayStart end:rayEnd];
-		SKPhysicsBody* body = [self.physicsWorld bodyAlongRayStart:CGPointMake(288, 188) end:CGPointMake(310, 220)];
-		if (body)
-		{
-			LOG_EXPR(body);
-		}
-	}
-	*/
-	
-	//LOG_EXPR(_playerCharacter.position);
-}
-
--(void) didSimulatePhysics
-{
-	// always call superr in "event" methods of KKScene subclasses
-	[super didSimulatePhysics];
-	
-	//LOG_EXPR(_tilemapNode.position);
-}
 
 @end

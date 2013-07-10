@@ -151,7 +151,7 @@
 -(KKTilemapObject*) objectAtIndex:(NSUInteger)index;
 /** @param name The name identifying an object.
  @returns the first object with the given name, or nil if there's no object with this name on this layer. Object names are case-sensitive! */
--(KKTilemapObject*) objectByName:(NSString*)name;
+-(KKTilemapObject*) objectNamed:(NSString*)name;
 
 @end
 

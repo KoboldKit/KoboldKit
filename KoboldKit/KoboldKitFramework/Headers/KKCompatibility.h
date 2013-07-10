@@ -12,6 +12,7 @@
 #import <Availability.h>
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
+#import <objc/runtime.h>
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>

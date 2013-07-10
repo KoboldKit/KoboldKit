@@ -8,20 +8,15 @@
 
 #import <KoboldKit/KoboldKit.h>
 
-@class MyLabelNode;
+@class PlayerCharacter;
 
 @interface GameScene : KKScene
 {
 	KKSpriteNode* _curtainSprite;
-	KKSpriteNode* _playerCharacter;
+	PlayerCharacter* _playerCharacter;
 	KKTilemapNode* _tilemapNode;
 
 	//KKPhysicsDebugNode* _physicsContactDebugNode;
-	
-	CGPoint _currentControlPadDirection;
-	
-	CGFloat _jumpForce;
-	CGFloat _dpadForce;
 	
 	CGPoint rayStart;
 	CGPoint rayEnd;

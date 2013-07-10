@@ -270,7 +270,7 @@
 	return nil;
 }
 
--(KKTilemapObject*) objectByName:(NSString*)name
+-(KKTilemapObject*) objectNamed:(NSString*)name
 {
 	for (KKTilemapObject* object in _objects)
 	{

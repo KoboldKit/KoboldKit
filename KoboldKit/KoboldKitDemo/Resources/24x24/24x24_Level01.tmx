@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="40" height="27" tilewidth="24" tileheight="24" backgroundcolor="#efb9bd">
  <properties>
   <property name="_iPadScaleFactor" value="2"/>
   <property name="_scaleTilesetSpacingAndMargin" value="YES"/>
-  <property name="physicsGravityY" value="-2.0"/>
+  <property name="physicsGravityY" value="-2"/>
   <property name="physicsSpeed" value="1.0"/>
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
@@ -22,19 +23,23 @@
   </data>
  </layer>
  <objectgroup name="game objects" width="40" height="27">
-  <object name="player" type="Player" x="762" y="105" width="24" height="48">
+  <object name="player" type="Player" x="240" y="264" width="24" height="48">
    <properties>
+    <property name="_dpadForce" value="10"/>
+    <property name="_fallSpeedAcceleration" value="10"/>
+    <property name="_fallSpeedLimit" value="400"/>
+    <property name="_jumpSpeedDeceleration" value="5"/>
+    <property name="_jumpSpeedInitial" value="100"/>
+    <property name="_runSpeedDeceleration" value="10"/>
+    <property name="_runSpeedLimit" value="300"/>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
     <property name="defaultImage" value="Dummy_Player_24.png"/>
-    <property name="dpadForce" value="195.0"/>
-    <property name="friction" value="0.5"/>
-    <property name="jumpForce" value="80.0"/>
+    <property name="friction" value="0"/>
     <property name="linearDamping" value="0"/>
     <property name="mass" value="0.33"/>
     <property name="restitution" value="0.04"/>
     <property name="stayInBounds" value="YES"/>
-    <property name="velocityLimit" value="250.0"/>
    </properties>
   </object>
  </objectgroup>

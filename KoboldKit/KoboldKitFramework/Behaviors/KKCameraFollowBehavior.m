@@ -27,10 +27,13 @@
 {
 	SKNode* node = self.node;
 	SKNode* parent = node.parent;
-	CGPoint cameraPositionInScene = [node.scene convertPoint:node.position fromNode:parent];
-	CGPoint pos = CGPointMake(parent.position.x - cameraPositionInScene.x,
-							  parent.position.y - cameraPositionInScene.y);
-	parent.position = pos;
+	if (parent)
+	{
+		CGPoint cameraPositionInScene = [node.scene convertPoint:node.position fromNode:parent];
+		CGPoint pos = CGPointMake(parent.position.x - cameraPositionInScene.x,
+								  parent.position.y - cameraPositionInScene.y);
+		parent.position = pos;
+	}
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!
