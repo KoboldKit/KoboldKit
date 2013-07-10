@@ -28,4 +28,8 @@
 
 -(void) setupWithPlayerObject:(KKTilemapObject*)playerObject movementBounds:(CGRect)movementBounds;
 
+-(void) controlPadDidChangeDirection:(NSNotification*)note;
+-(void) attackButtonPressed:(NSNotification*)note;
+-(void) jumpButtonPressed:(NSNotification*)note;
+
 @end

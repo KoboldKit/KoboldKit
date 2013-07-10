@@ -171,30 +171,40 @@
 	[dpadNode addBehavior:dpad withKey:@"dpad"];
 
 	CGSize sceneSize = self.size;
+	KKSpriteNode* attackButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_Attack_NotPressed.png"]];
+	attackButtonNode.position = CGPointMake(sceneSize.width - 32, 30);
+	[attackButtonNode setScale:0.9];
+	[joypadNode addChild:attackButtonNode];
 	{
-		KKSpriteNode* attackButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_Attack_NotPressed.png"]];
-		attackButtonNode.position = CGPointMake(sceneSize.width - 32, 30);
-		[attackButtonNode setScale:0.9];
-		[joypadNode addChild:attackButtonNode];
-		
 		KKButtonBehavior* button = [KKButtonBehavior new];
 		button.name = @"attack";
 		button.selectedTexture = [atlas textureNamed:@"Button_Attack_Pressed.png"];
 		button.executesWhenPressed = YES;
 		[attackButtonNode addBehavior:button];
 	}
+
+	KKSpriteNode* jumpButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_Jetpack_NotPressed.png"]];
+	jumpButtonNode.position = CGPointMake(sceneSize.width - 32, 90);
+	[jumpButtonNode setScale:0.9];
+	[joypadNode addChild:jumpButtonNode];
 	{
-		KKSpriteNode* jetpackButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Button_Jetpack_NotPressed.png"]];
-		jetpackButtonNode.position = CGPointMake(sceneSize.width - 32, 90);
-		[jetpackButtonNode setScale:0.9];
-		[joypadNode addChild:jetpackButtonNode];
-		
 		KKButtonBehavior* button = [KKButtonBehavior new];
 		button.name = @"jetpack";
 		button.selectedTexture = [atlas textureNamed:@"Button_Jetpack_Pressed.png"];
 		button.executesWhenPressed = YES;
-		[jetpackButtonNode addBehavior:button];
+		[jumpButtonNode addBehavior:button];
 	}
+
+	// make player observe joypad
+	[_playerCharacter observeNotification:KKControlPadDidChangeDirectionNotification
+								 selector:@selector(controlPadDidChangeDirection:)
+								   object:dpadNode];
+	[_playerCharacter observeNotification:KKButtonDidExecuteNotification
+								 selector:@selector(jumpButtonPressed:)
+								   object:jumpButtonNode];
+	[_playerCharacter observeNotification:KKButtonDidExecuteNotification
+								 selector:@selector(attackButtonPressed:)
+								   object:attackButtonNode];
 }
 
 -(void) createSimpleControls
@@ -217,17 +227,23 @@
 
 
 	CGSize sceneSize = self.size;
-	{
-		KKSpriteNode* jumpButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_jump_notpressed"]];
-		jumpButtonNode.position = CGPointMake(sceneSize.width - (jumpButtonNode.size.width / 2 + 10), jumpButtonNode.size.height / 2 + 10);
-		[joypadNode addChild:jumpButtonNode];
-		
-		KKButtonBehavior* button = [KKButtonBehavior new];
-		button.name = @"jump";
-		button.selectedTexture = [atlas textureNamed:@"button_jump_pressed"];
-		button.executesWhenPressed = YES;
-		[jumpButtonNode addBehavior:button];
-	}
+	KKSpriteNode* jumpButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_jump_notpressed"]];
+	jumpButtonNode.position = CGPointMake(sceneSize.width - (jumpButtonNode.size.width / 2 + 10), jumpButtonNode.size.height / 2 + 10);
+	[joypadNode addChild:jumpButtonNode];
+	
+	KKButtonBehavior* button = [KKButtonBehavior new];
+	button.name = @"jump";
+	button.selectedTexture = [atlas textureNamed:@"button_jump_pressed"];
+	button.executesWhenPressed = YES;
+	[jumpButtonNode addBehavior:button];
+	
+	// make player observe joypad
+	[_playerCharacter observeNotification:KKControlPadDidChangeDirectionNotification
+								 selector:@selector(controlPadDidChangeDirection:)
+								   object:dpadNode];
+	[_playerCharacter observeNotification:KKButtonDidExecuteNotification
+								 selector:@selector(jumpButtonPressed:)
+								   object:jumpButtonNode];
 }
 
 -(void) testCollision:(SKPhysicsContact *)contact

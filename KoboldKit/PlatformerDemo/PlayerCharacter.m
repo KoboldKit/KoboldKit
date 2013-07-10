@@ -79,14 +79,6 @@
 	[self addBehavior:[KKCameraFollowBehavior behavior] withKey:@"camera"];
 
 
-	// observe joypad
-	[self observeNotification:KKControlPadDidChangeDirectionNotification
-					 selector:@selector(controlPadDidChangeDirection:)];
-	[self observeNotification:KKButtonDidExecuteNotification
-					 selector:@selector(jumpButtonPressed:)];
-	[self observeNotification:KKButtonDidExecuteNotification
-					 selector:@selector(attackButtonPressed:)];
-	
 	// receive updates
 	[self observeSceneEvents];
 }
@@ -131,10 +123,6 @@
 		if (_jumping)
 		{
 			velocity.y -= _jumpSpeedDeceleration;
-			if (velocity.y <= 0.0)
-			{
-				_jumping = NO;
-			}
 		}
 		else
 		{
@@ -144,6 +132,7 @@
 	}
 	else
 	{
+		_jumping = NO;
 		velocity.y -= _fallSpeedAcceleration;
 	}
 	velocity.y = MAX(velocity.y, -_fallSpeedLimit);
