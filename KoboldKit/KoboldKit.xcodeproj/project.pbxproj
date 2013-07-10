@@ -184,6 +184,12 @@
 		DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
 		DC484CE1178C43BE0067DAA4 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
 		DC484CE4178C465E0067DAA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484CE3178C465E0067DAA4 /* libz.dylib */; };
+		DC63B436178DEE8A00B36C59 /* PlayerValueTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B432178DEE8A00B36C59 /* PlayerValueTest.tmx */; };
+		DC63B437178DEE8A00B36C59 /* PlayerValueTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B432178DEE8A00B36C59 /* PlayerValueTest.tmx */; };
+		DC63B438178DEE8A00B36C59 /* 24x24_TestLevel.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B434178DEE8A00B36C59 /* 24x24_TestLevel.tmx */; };
+		DC63B439178DEE8A00B36C59 /* 24x24_TestLevel.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B434178DEE8A00B36C59 /* 24x24_TestLevel.tmx */; };
+		DC63B43A178DEE8A00B36C59 /* 32x32_TestLevel.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B435178DEE8A00B36C59 /* 32x32_TestLevel.tmx */; };
+		DC63B43B178DEE8A00B36C59 /* 32x32_TestLevel.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC63B435178DEE8A00B36C59 /* 32x32_TestLevel.tmx */; };
 		DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */; };
 		DCB76E5E178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
 		DCB76E5F178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
@@ -439,6 +445,9 @@
 		DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KoboldKit.h"; sourceTree = "<group>"; };
 		DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KoboldKit.m"; sourceTree = "<group>"; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DC63B432178DEE8A00B36C59 /* PlayerValueTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PlayerValueTest.tmx; sourceTree = "<group>"; };
+		DC63B434178DEE8A00B36C59 /* 24x24_TestLevel.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 24x24_TestLevel.tmx; sourceTree = "<group>"; };
+		DC63B435178DEE8A00B36C59 /* 32x32_TestLevel.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 32x32_TestLevel.tmx; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -655,6 +664,7 @@
 		DC18B09A178C7BC400641A6D /* 32x32 */ = {
 			isa = PBXGroup;
 			children = (
+				DC63B432178DEE8A00B36C59 /* PlayerValueTest.tmx */,
 				DC18B09B178C7BC400641A6D /* 32x32_PlayerSizeTest32.tmx */,
 				DC18B09C178C7BC400641A6D /* Tileset_Geometry_32x32.png */,
 			);
@@ -839,6 +849,15 @@
 				DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */,
 			);
 			path = Addons;
+			sourceTree = "<group>";
+		};
+		DC63B433178DEE8A00B36C59 /* SteffensTestLevel */ = {
+			isa = PBXGroup;
+			children = (
+				DC63B434178DEE8A00B36C59 /* 24x24_TestLevel.tmx */,
+				DC63B435178DEE8A00B36C59 /* 32x32_TestLevel.tmx */,
+			);
+			path = SteffensTestLevel;
 			sourceTree = "<group>";
 		};
 		DC95BA791786DFB800E31DA6 /* Reachability */ = {
@@ -1032,6 +1051,7 @@
 			isa = PBXGroup;
 			children = (
 				DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */,
+				DC63B433178DEE8A00B36C59 /* SteffensTestLevel */,
 				DC18B095178C7BC400641A6D /* 24x24 */,
 				DC18B09A178C7BC400641A6D /* 32x32 */,
 				DC18B09E178C7BC400641A6D /* Config */,
@@ -1343,6 +1363,7 @@
 				DC18B0F7178C7BC400641A6D /* forest-ipadhd.plist in Resources */,
 				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
 				DC18B0E3178C7BC400641A6D /* crawl-tiles-hd.tps in Resources */,
+				DC63B437178DEE8A00B36C59 /* PlayerValueTest.tmx in Resources */,
 				DC18B0DB178C7BC400641A6D /* crawl-tilemap.tmx in Resources */,
 				DC18B107178C7BC400641A6D /* other-hd.plist in Resources */,
 				DC18B0DF178C7BC400641A6D /* crawl-tiles-hd.png in Resources */,
@@ -1352,6 +1373,7 @@
 				DC18B101178C7BC400641A6D /* forest.png in Resources */,
 				DC18B0D3178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
 				DC18B0E9178C7BC400641A6D /* crawl-tiles.pvr.ccz in Resources */,
+				DC63B439178DEE8A00B36C59 /* 24x24_TestLevel.tmx in Resources */,
 				DC18B103178C7BC400641A6D /* forest.pvr.ccz in Resources */,
 				DC18B10D178C7BC400641A6D /* other-ipadhd.plist in Resources */,
 				DC18B0F1178C7BC400641A6D /* forest-hd.plist in Resources */,
@@ -1378,6 +1400,7 @@
 				DC18B105178C7BC400641A6D /* forest.tps in Resources */,
 				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
+				DC63B43B178DEE8A00B36C59 /* 32x32_TestLevel.tmx in Resources */,
 				DC18B0C9178C7BC400641A6D /* 24x24_PlayerSizeTest24.tmx in Resources */,
 				DC18B0CD178C7BC400641A6D /* Tileset_Geometry_24x24.png in Resources */,
 				DC18B113178C7BC400641A6D /* other.plist in Resources */,
@@ -1397,6 +1420,7 @@
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
 				DC18B0F8178C7BC400641A6D /* forest-ipadhd.png in Resources */,
 				DC18B0F6178C7BC400641A6D /* forest-ipadhd.plist in Resources */,
+				DC63B436178DEE8A00B36C59 /* PlayerValueTest.tmx in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
 				DC18B0E2178C7BC400641A6D /* crawl-tiles-hd.tps in Resources */,
 				DC18B0DA178C7BC400641A6D /* crawl-tilemap.tmx in Resources */,
@@ -1405,6 +1429,7 @@
 				DC18B0FA178C7BC400641A6D /* forest-ipadhd.pvr.ccz in Resources */,
 				DC18B114178C7BC400641A6D /* other.png in Resources */,
 				DC18B100178C7BC400641A6D /* forest.png in Resources */,
+				DC63B43A178DEE8A00B36C59 /* 32x32_TestLevel.tmx in Resources */,
 				DC18B0D2178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
 				DC18B0E8178C7BC400641A6D /* crawl-tiles.pvr.ccz in Resources */,
 				DC18B102178C7BC400641A6D /* forest.pvr.ccz in Resources */,
@@ -1427,6 +1452,7 @@
 				DC18B116178C7BC400641A6D /* other.pvr.ccz in Resources */,
 				DC18B0C6178C7BC400641A6D /* 24x24_Level01.tmx in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
+				DC63B438178DEE8A00B36C59 /* 24x24_TestLevel.tmx in Resources */,
 				DC18B0F2178C7BC400641A6D /* forest-hd.png in Resources */,
 				DC18B118178C7BC400641A6D /* other.tps in Resources */,
 				DC18B104178C7BC400641A6D /* forest.tps in Resources */,

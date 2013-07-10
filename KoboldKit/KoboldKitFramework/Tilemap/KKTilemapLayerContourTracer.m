@@ -97,6 +97,11 @@ static NSInteger neighborOffsets[8];
 			// start again
 			//NSLog(@"\tSelected boundary has no surrounding free tiles, skipping.");
 			currentTile = _currentStartTile = [self nextTileStartingAt:[self nextTileStartingAt:currentTile blocking:NO] blocking:YES];
+			if (currentTile < boundaryTile)
+			{
+				// never go back
+				break;
+			}
 			continue;
 		}
 		//NSLog(@"Initial backtrack at: %@", [self coordStringFromIndex:backtrackTile]);
@@ -126,9 +131,11 @@ static NSInteger neighborOffsets[8];
 		
 		while (YES)
 		{
-			//[self dumpBlockMap];
-			//NSLog(@"neighbor: %@ [%@] - BLOCKING: %@", [self coordStringFromIndex:neighborTile], [self nameForNeighborIndex:neighborIndex], _blockMap[neighborTile] ? @"YES" : @"NO");
-			//[NSThread sleepForTimeInterval:0.04];
+			/*
+			[self dumpBlockMap];
+			NSLog(@"neighbor: %@ [%@] - BLOCKING: %@", [self coordStringFromIndex:neighborTile], [self nameForNeighborIndex:neighborIndex], _blockMap[neighborTile] ? @"YES" : @"NO");
+			[NSThread sleepForTimeInterval:0.04];
+			 */
 			
 			// is the current neighbor tile blocking?
 			if (_blockMap[neighborTile])
