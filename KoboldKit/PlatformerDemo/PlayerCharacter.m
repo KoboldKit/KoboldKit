@@ -60,7 +60,7 @@
 	LOG_EXPR(_jumpSpeedDeceleration);
 	LOG_EXPR(_fallSpeedAcceleration);
 	LOG_EXPR(_fallSpeedLimit);
-	LOG_EXPR(_dpadForce);
+	LOG_EXPR(_runSpeedAcceleration);
 	
 	// limit maximum speed of the player
 	if ([playerProperties numberForKey:@"velocityLimit"])
@@ -102,7 +102,7 @@
 	else
 	{
 		_running = YES;
-		_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _dpadForce);
+		_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _runSpeedAcceleration);
 	}
 }
 

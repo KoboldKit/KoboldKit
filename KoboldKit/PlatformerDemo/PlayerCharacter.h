@@ -18,9 +18,9 @@
 	CGFloat _jumpSpeedDeceleration;
 	CGFloat _fallSpeedAcceleration;
 	CGFloat _fallSpeedLimit;
-	CGFloat _runSpeedLimit;
+	CGFloat _runSpeedAcceleration;
 	CGFloat _runSpeedDeceleration;
-	CGFloat _dpadForce;
+	CGFloat _runSpeedLimit;
 	
 	BOOL _running;
 	BOOL _jumping;
