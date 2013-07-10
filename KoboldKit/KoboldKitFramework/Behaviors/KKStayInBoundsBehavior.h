@@ -13,7 +13,7 @@
 @interface KKStayInBoundsBehavior : KKNodeBehavior
 {
 	@private
-	BOOL _nodeIsSprite;
+	BOOL _isSpriteNode;
 }
 
 /** @returns Bounds rect in scene coordinates. */

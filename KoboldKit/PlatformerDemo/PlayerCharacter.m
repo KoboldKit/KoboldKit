@@ -137,6 +137,7 @@
 {
 	if (_jumping)
 	{
+		NSLog(@"jump button released");
 		[self endJump];
 
 		CGPoint velocity = self.physicsBody.velocity;
@@ -150,6 +151,7 @@
 
 -(void) endJump
 {
+	NSLog(@"end jump");
 	_jumping = NO;
 	
 	[_jumpButton endSelect];

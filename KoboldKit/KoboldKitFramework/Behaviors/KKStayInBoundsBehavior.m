@@ -28,7 +28,7 @@
 -(void) didJoinController
 {
 	_wantsUpdate = YES;
-	_nodeIsSprite = [self.node isKindOfClass:[SKSpriteNode class]];
+	_isSpriteNode = [self.node isKindOfClass:[SKSpriteNode class]];
 
 	// update once immediately
 	[self didSimulatePhysics];
@@ -38,10 +38,10 @@
 {
 	SKNode* node = self.node;
 	CGPoint nodePos = node.position;
-	CGSize nodeSize = CGSizeZero;
-	CGPoint anchorPoint = CGPointZero;
+	CGSize nodeSize = node.frame.size;
+	CGPoint anchorPoint = CGPointMake(0.5, 0.5);
 
-	if (_nodeIsSprite)
+	if (_isSpriteNode)
 	{
 		SKSpriteNode* sprite = (SKSpriteNode*)node;
 		nodeSize = sprite.size;
@@ -135,7 +135,7 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 {
 	KKStayInBoundsBehavior* copy = [[super copyWithZone:zone] init];
 	copy->_bounds = _bounds;
-	copy->_nodeIsSprite = _nodeIsSprite;
+	copy->_isSpriteNode = _isSpriteNode;
 	return copy;
 }
 

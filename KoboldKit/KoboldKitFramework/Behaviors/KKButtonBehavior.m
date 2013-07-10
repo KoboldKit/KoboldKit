@@ -140,6 +140,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 		{
 			if ([self.node containsPoint:[touch locationInNode:self.node.parent]])
 			{
+				_theBeganTouch = touch;
 				[self beginSelect];
 				break;
 			}
@@ -151,17 +152,22 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 {
 	if (_selected && self.enabled)
 	{
-		BOOL lostFocus = YES;
+		BOOL didLoseFocus = NO;
 		for (UITouch* touch in touches)
 		{
-			if ([self.node containsPoint:[touch locationInNode:self.node.parent]])
+			if (touch == _theBeganTouch && [self.node containsPoint:[touch locationInNode:self.node.parent]] == NO)
 			{
-				lostFocus = NO;
+				NSLog(@"lost ofucs");
+				didLoseFocus = YES;
+				[self inputDidMoveLoseFocus:YES];
 				break;
 			}
 		}
-
-		[self inputDidMoveLoseFocus:lostFocus];
+		
+		if (didLoseFocus == NO)
+		{
+			[self inputDidMoveLoseFocus:NO];
+		}
 	}
 }
 

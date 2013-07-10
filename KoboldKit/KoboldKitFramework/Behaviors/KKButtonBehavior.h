@@ -54,6 +54,9 @@ extern NSString* const KKButtonDidEndExecuteNotification;
 	CGFloat _originalXScale;
 	CGFloat _originalYScale;
 	__weak SKTexture* _originalTexture;
+	
+	KKTouch* _theBeganTouch;
+	
 	BOOL _continuous;
 }
 
