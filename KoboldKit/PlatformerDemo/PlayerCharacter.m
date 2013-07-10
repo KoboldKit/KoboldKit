@@ -111,14 +111,18 @@
 -(void) jumpButtonPressed:(NSNotification*)note
 {
 	CGPoint velocity = self.physicsBody.velocity;
+	LOG_EXPR(velocity);
 	if (_jumping == NO)
 	{
 		_jumping = YES;
 		velocity.y = _jumpSpeedInitial;
 		self.physicsBody.velocity = velocity;
 		
-		KKButtonBehavior* button = [note.userInfo objectForKey:@"behavior"];
-		[self performSelector:@selector(jumpButtonEndSelect:) withObject:button afterDelay:_jumpButtonActiveTime];
+		_jumpButton = [note.userInfo objectForKey:@"behavior"];
+	}
+	else
+	{
+		NSLog(@"<<< NO JUMP!! >>>   Still in jumping mode, sorry.");
 	}
 }
 
@@ -126,7 +130,7 @@
 {
 	if (_jumping)
 	{
-		_jumping = NO;
+		[self endJump];
 
 		CGPoint velocity = self.physicsBody.velocity;
 		velocity.y = 0.0;
@@ -134,13 +138,12 @@
 	}
 }
 
--(void) jumpButtonEndSelect:(id)object
+-(void) endJump
 {
-	if (_jumping)
-	{
-		KKButtonBehavior* button = object;
-		[button endSelect];
-	}
+	_jumping = NO;
+	
+	[_jumpButton endSelect];
+	_jumpButton = nil;
 }
 
 -(void) update:(NSTimeInterval)currentTime
@@ -154,7 +157,7 @@
 		}
 		else
 		{
-			_jumping = NO;
+			[self endJump];
 		}
 	}
 	else

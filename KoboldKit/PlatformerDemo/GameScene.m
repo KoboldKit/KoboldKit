@@ -243,7 +243,6 @@
 	button.name = @"jump";
 	button.selectedTexture = [atlas textureNamed:@"button_jump_pressed"];
 	button.executesWhenPressed = YES;
-	button.continuous = YES;
 	[jumpButtonNode addBehavior:button];
 	
 	// make player observe joypad

@@ -68,7 +68,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	if (_executesWhenPressed && _continuous == NO)
 	{
 		[self execute];
-		[self performSelector:@selector(endSelect) withObject:nil afterDelay:0.01];
+		//[self performSelector:@selector(endSelect) withObject:nil afterDelay:0.01];
 	}
 }
 
@@ -113,7 +113,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 {
 	if (lostFocus && _selected)
 	{
-		_continuous ? [self endExecute] : [self endSelect];
+		(_continuous || _executesWhenPressed) ? [self endExecute] : [self endSelect];
 	}
 	if (lostFocus == NO && _selected == NO)
 	{
@@ -127,7 +127,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	{
 		[self endSelect];
 		
-		_continuous ? [self endExecute] : [self execute];
+		(_continuous || _executesWhenPressed) ? [self endExecute] : [self execute];
 	}
 }
 

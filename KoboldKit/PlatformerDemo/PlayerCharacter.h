@@ -15,15 +15,17 @@
 
 	// these values are Tiled-editable via properties of the same name
 	CGPoint _currentControlPadDirection;
-	NSTimeInterval _jumpButtonActiveTime;
 	CGFloat _jumpSpeedInitial;
 	CGFloat _jumpSpeedDeceleration;
+	CGFloat _jumpAbortVelocityMultiplier;
 	CGFloat _fallSpeedAcceleration;
 	CGFloat _fallSpeedLimit;
 	CGFloat _runSpeedAcceleration;
 	CGFloat _runSpeedDeceleration;
 	CGFloat _runSpeedLimit;
-	
+
+	__weak KKButtonBehavior* _jumpButton;
+
 	BOOL _running;
 	BOOL _jumping;
 }
