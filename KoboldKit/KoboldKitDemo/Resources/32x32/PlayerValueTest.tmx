@@ -3,6 +3,8 @@
  <properties>
   <property name="_iPadScaleFactor" value="2"/>
   <property name="_scaleTilesetSpacingAndMargin" value="YES"/>
+  <property name="physicsGravityY" value="-9.81"/>
+  <property name="physicsSpeed" value="1.0"/>
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
  <tileset firstgid="1" name="Tileset_Geometry_32x32" tilewidth="32" tileheight="32" spacing="1">
@@ -22,15 +24,20 @@
  <objectgroup name="game objects" width="30" height="20">
   <object name="player" type="Player" x="254" y="16" width="32" height="64">
    <properties>
-    <property name="_fallSpeedAcceleration" value="100"/>
-    <property name="_fallSpeedLimit" value="100"/>
-    <property name="_jumpSpeedDeceleration" value="1"/>
-    <property name="_jumpSpeedInitial" value="1"/>
-    <property name="_runSpeedAcceleration" value="0"/>
-    <property name="_runSpeedDeceleration" value="0"/>
-    <property name="_runSpeedLimit" value="50"/>
+    <property name="_fallSpeedAcceleration" value="250"/>
+    <property name="_fallSpeedLimit" value="250"/>
+    <property name="_jumpSpeedDeceleration" value="20"/>
+    <property name="_jumpSpeedInitial" value="250"/>
+    <property name="_runSpeedAcceleration" value="1000"/>
+    <property name="_runSpeedDeceleration" value="1000"/>
+    <property name="_runSpeedLimit" value="250"/>
     <property name="allowsRotation" value="NO"/>
+    <property name="angularDamping" value="0"/>
     <property name="defaultImage" value="Dummy_Player_32.png"/>
+    <property name="friction" value="0"/>
+    <property name="linearDamping" value="0"/>
+    <property name="mass" value="0.33"/>
+    <property name="restitution" value="0.04"/>
    </properties>
   </object>
  </objectgroup>
