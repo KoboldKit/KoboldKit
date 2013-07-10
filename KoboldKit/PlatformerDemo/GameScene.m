@@ -50,7 +50,12 @@
 	// apply global settings from Tiled
 	KKTilemapProperties* mapProperties = _tilemapNode.tilemap.properties;
 	self.physicsWorld.gravity = CGPointMake(0, [mapProperties numberForKey:@"physicsGravityY"].floatValue);
-	self.physicsWorld.speed = [mapProperties numberForKey:@"physicsSpeed"].floatValue;
+	self.physicsWorld.speed = [mapProperties numberForKey:@"physicsSimulationSpeed"].floatValue;
+	if (self.physicsWorld.speed == 0.0)
+	{
+		// compatibility fallback
+		self.physicsWorld.speed = [mapProperties numberForKey:@"physicsSpeed"].floatValue;
+	}
 	LOG_EXPR(self.physicsWorld.gravity);
 	LOG_EXPR(self.physicsWorld.speed);
 
