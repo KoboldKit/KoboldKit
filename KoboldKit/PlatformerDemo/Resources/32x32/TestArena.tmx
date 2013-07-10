@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="120" height="80" tilewidth="16" tileheight="16" backgroundcolor="#cecece">
+<map version="1.0" orientation="orthogonal" width="120" height="80" tilewidth="16" tileheight="16" backgroundcolor="#ffffff">
  <properties>
   <property name="_iPadScaleFactor" value="2"/>
   <property name="_scaleTilesetSpacingAndMargin" value="YES"/>
@@ -10,12 +10,17 @@
  <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1">
   <image source="Tileset_Geometry_16x16.png" width="256" height="256"/>
  </tileset>
+ <layer name="background" width="120" height="80">
+  <data encoding="base64" compression="zlib">
+   eJzt08ERhCAUREGiIAPzT1GDUBiZPvzq447FvjnGuJ6bXO5c8Du7v5Hf/4d2b2hVv9Qv9dtrwgbql/qlfttM2ED9Ur/Ub5sJG6hf6pf6bTNhA/VL/VK/bSZsoH6pX+q3zYQN1C/1S/22mbCB+qV+qd82EzZQv9Qv9dtmwgbql/qlfttM2ED9Ur/Ub5sJG6hf6pf6bTNhA/VL/VK/bSZsoH6pX+q3zYQN1C/1S/22mbCB+qV+qd82EzZQv9Qv9dtmwgbql/qlfttM2MDv3/jt++Nm522dNz79vO35540z7gYxtURP
+  </data>
+ </layer>
  <layer name="main layer" width="120" height="80">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1bEJgEAMBdBTFxAXEBfQCXQR3X8Oz/6Kswgqvge/C+RDiqQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALxFG5iuYn8T3OHviTLnTBVzY84S2IMYw43ZPqwFUa77HoXshbjv96yp/kdsD3X8gxMYQgXk
+   eJzt2dFNwzAUBdAACwALAAvABLABLAD7z0EisCiodtJaxvXrOdL9t33rFyWdJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+HHVewE09TzpOLKbObe9F0Ez+o0t9fvWeyE04f7Gpt/YUr+v3zGnY3F/Y4vW78Wcyw05l3f+v/N59Dl9PX3t6XHOfSEP/76yPqLd39RvpD3ViHYW+v0tN59PfU7nnrMvk353jXoW6Z7mMuKeWhj1LPS7zXIWy3+Ep/g+UXrXSXNYv2WlM9pN7jfQsve1O6rfdcee31rvW7uvuaPHruucUttvLsv3hS3fEO7mPDVch7TJIfOxZg5Lv34/9uR9T/Q7Xg55/tU8Z6WcTx4JMqw=
   </data>
  </layer>
  <objectgroup name="game objects" width="120" height="80">
@@ -30,7 +35,7 @@
     <property name="_runSpeedLimit" value="200"/>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
-    <property name="defaultImage" value="Dummy_Player_32.png"/>
+    <property name="defaultImage" value="Dummy_Player.png"/>
     <property name="friction" value="0"/>
     <property name="linearDamping" value="0"/>
     <property name="mass" value="0.33"/>
