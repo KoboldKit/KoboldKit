@@ -9,20 +9,25 @@ Links
 Website: http://koboldkit.com
 
 Track Progress: https://www.pivotaltracker.com/s/projects/849925
+
 Report Issues: https://github.com/LearnCocos2D/KoboldKit/issues
+
 Discuss: http://koboldkit.uservoice.com (PLEASE refrain from referencing Sprite Kit classes, features, etc, even indirectly until the NDA is lifted)
 
 
 Status
 ------
 
-Work in progress. Needs testing. The demo project is a bit messy, I understand that. In the process of cleaning it up,
-it will become a starter kit template for a tilemap physics platfomer game showcasing the cool KK features.
+Work in progress. Needs testing. The demo project will become a starter kit template for a tilemap platfomer game showcasing cool Kobold Kit features.
 
 Current/Next Tasks:
 - more demo game features (controls, items, etc)
 
 Recently completed:
+- configuration files & Lua
+- refactored project to framework
+- Mac OS X version
+- development server file transfer
 - tilemap collision countour tracing for physics
 - world camera node (now a behavior)
 - tilemap scrolling API
