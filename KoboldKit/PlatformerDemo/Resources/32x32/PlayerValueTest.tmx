@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="32" tileheight="32" backgroundcolor="#ffffff">
  <properties>
   <property name="_iPadScaleFactor" value="2"/>
@@ -14,24 +13,29 @@
   </properties>
   <image source="Tileset_Geometry_32x32.png" width="256" height="256"/>
  </tileset>
+ <layer name="bg layer" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJwTZWBg4ANiUTrTA2Gn6ADZOerfUf+O+nfUv6P+Jd5udDwQdtLLLdTAtDBzMNo51DAAuGYnRQ==
+  </data>
+ </layer>
  <layer name="main layer" width="30" height="20">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMAoGHjChYeYBcocsFreMumfouQeGBwoAABb3ALU=
+   eJxjYBgFo2AUjIJRMAoGHjChYWY62cuJhmWxuIUW7kG3FxcmxT2MONQiY2LtxYW5sNjLQQVzyQkHOTrYSy4GAP3ZBAI=
   </data>
  </layer>
  <objectgroup name="game objects" width="30" height="20">
-  <object name="player" type="Player" x="254" y="16" width="32" height="64">
+  <object name="player" type="Player" x="508" y="477" width="32" height="32">
    <properties>
     <property name="_fallSpeedAcceleration" value="250"/>
     <property name="_fallSpeedLimit" value="250"/>
     <property name="_jumpSpeedDeceleration" value="20"/>
     <property name="_jumpSpeedInitial" value="500"/>
-    <property name="_runSpeedAcceleration" value="1000"/>
-    <property name="_runSpeedDeceleration" value="1000"/>
-    <property name="_runSpeedLimit" value="250"/>
+    <property name="_runSpeedAcceleration" value="100"/>
+    <property name="_runSpeedDeceleration" value="100"/>
+    <property name="_runSpeedLimit" value="200"/>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
     <property name="defaultImage" value="Dummy_Player_32.png"/>
