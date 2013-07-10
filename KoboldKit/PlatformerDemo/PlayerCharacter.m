@@ -78,7 +78,6 @@
 	// make the camera follow the player
 	[self addBehavior:[KKCameraFollowBehavior behavior] withKey:@"camera"];
 
-
 	// receive updates
 	[self observeSceneEvents];
 }
@@ -133,7 +132,10 @@
 		[self endJump];
 
 		CGPoint velocity = self.physicsBody.velocity;
-		velocity.y = _jumpAbortVelocity;
+		if (velocity.y > _jumpAbortVelocity)
+		{
+			velocity.y = _jumpAbortVelocity;
+		}
 		self.physicsBody.velocity = velocity;
 	}
 }
@@ -208,6 +210,17 @@
 	
 	//NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
 	//NSLog(@"pos: {%.0f, %.0f}", _tilemapNode.mainTileLayerNode.position.x, _tilemapNode.mainTileLayerNode.position.y);
+}
+
+-(void) didBeginContact:(SKPhysicsContact*)contact
+{
+	SKPhysicsBody* myBody = self.physicsBody;
+	if (contact.bodyA == myBody || contact.bodyB == myBody)
+	{
+		CGPoint velocity = myBody.velocity;
+		velocity.y = 0;
+		myBody.velocity = velocity;
+	}
 }
 
 @end

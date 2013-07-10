@@ -40,6 +40,8 @@ typedef enum
 	NSMutableArray* _sceneDidSimulatePhysicsObservers;
 	NSMutableArray* _sceneWillMoveFromViewObservers;
 	NSMutableArray* _sceneDidMoveToViewObservers;
+	NSMutableArray* _sceneDidBeginContactObservers;
+	NSMutableArray* _sceneDidEndContactObservers;
 	
 	// used to detect missing super calls
 	KKMainLoopStage _mainLoopStage;

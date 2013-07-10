@@ -42,7 +42,7 @@
 {
 	self.physicsWorld.contactDelegate = self;
 	
-	const NSUInteger kInitialCapacity = 8;
+	const NSUInteger kInitialCapacity = 4;
 	_controllers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_inputObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneUpdateObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
@@ -51,6 +51,8 @@
 	_sceneDidSimulatePhysicsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneWillMoveFromViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidMoveToViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_sceneDidBeginContactObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_sceneDidEndContactObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	
 	_mainLoopStage = KKMainLoopStageDidSimulatePhysics;
 	
@@ -221,6 +223,16 @@
 			{
 				[_sceneDidMoveToViewObservers addObject:observer];
 			}
+			if ([observer respondsToSelector:@selector(didBeginContact:)] &&
+				[_sceneDidBeginContactObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_sceneDidBeginContactObservers addObject:observer];
+			}
+			if ([observer respondsToSelector:@selector(didEndContact:)] &&
+				[_sceneDidEndContactObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_sceneDidEndContactObservers addObject:observer];
+			}
 		});
 	}
 }
@@ -234,6 +246,8 @@
 		[_sceneDidSimulatePhysicsObservers removeObject:observer];
 		[_sceneWillMoveFromViewObservers removeObject:observer];
 		[_sceneDidMoveToViewObservers removeObject:observer];
+		[_sceneDidBeginContactObservers removeObject:observer];
+		[_sceneDidEndContactObservers removeObject:observer];
     });
 }
 
@@ -355,80 +369,19 @@
 
 -(void) didBeginContact:(SKPhysicsContact *)contact
 {
-	/*
-	SKNode* nodeA = contact.bodyA.node;
-	SKNode* nodeB = contact.bodyB.node;
-	
-	if ([nodeA respondsToSelector:@selector(didBeginContact:)])
+	for (id observer in _sceneDidBeginContactObservers)
 	{
-		[(SKNode<SKPhysicsContactDelegate>*)nodeA didBeginContact:contact];
+		[observer didBeginContact:contact];
 	}
-	if ([nodeB respondsToSelector:@selector(didBeginContact:)])
-	{
-		[(SKNode<SKPhysicsContactDelegate>*)nodeB didBeginContact:contact];
-	}
-	*/
-	
-	/*
-	if (_showsPhysicsContacts)
-	{
-		[_physicsDebugNode addContact:contact];
-	}
-	 */
 }
 
 -(void) didEndContact:(SKPhysicsContact *)contact
 {
-	/*
-	if (_showsPhysicsContacts)
+	for (id observer in _sceneDidEndContactObservers)
 	{
-		[_physicsDebugNode removeContact:contact];
-	}
-	 */
-}
-
-/*
--(void) addPhysicsDebugNode
-{
-	if (_physicsDebugNode == nil)
-	{
-		KKViewOriginNode* originNode = [KKViewOriginNode node];
-		originNode.zPosition = 9999;
-		[self addChild:originNode];
-		
-		_physicsDebugNode = [KKPhysicsDebugNode node];
-		_physicsDebugNode.zPosition = 9999;
-		[self addChild:_physicsDebugNode];
-		
-#pragma message "SK empty node render bug workaround"
-		[_physicsDebugNode addChild:[SKNode node]];
+		[observer didEndContact:contact];
 	}
 }
-
-@dynamic showsPhysicsContacts;
-
--(BOOL) showsPhysicsContacts
-{
-	return _showsPhysicsContacts;
-}
-
--(void) setShowsPhysicsContacts:(BOOL)showsPhysicsContacts
-{
-	if (_showsPhysicsContacts != showsPhysicsContacts)
-	{
-		_showsPhysicsContacts = showsPhysicsContacts;
-		
-		if (_showsPhysicsContacts)
-		{
-			[self addPhysicsDebugNode];
-		}
-		else
-		{
-			[_physicsDebugNode removeAllContacts];
-		}
-	}
-}
-*/
 
 #pragma mark Debugging
 
