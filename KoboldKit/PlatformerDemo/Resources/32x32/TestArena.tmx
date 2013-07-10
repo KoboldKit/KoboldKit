@@ -24,15 +24,17 @@
   </data>
  </layer>
  <objectgroup name="game objects" width="120" height="80">
-  <object name="player" type="Player" x="303" y="1163" width="32" height="32">
+  <object name="player" type="Player" x="305" y="1160" width="32" height="32">
    <properties>
-    <property name="_fallSpeedAcceleration" value="250"/>
-    <property name="_fallSpeedLimit" value="250"/>
-    <property name="_jumpSpeedDeceleration" value="20"/>
-    <property name="_jumpSpeedInitial" value="500"/>
-    <property name="_runSpeedAcceleration" value="100"/>
-    <property name="_runSpeedDeceleration" value="100"/>
-    <property name="_runSpeedLimit" value="200"/>
+    <property name="_fallSpeedAcceleration" value="200"/>
+    <property name="_fallSpeedLimit" value="200"/>
+    <property name="_jumpAbortVelocity" value="200"/>
+    <property name="_jumpButtonActiveTime" value="0.5"/>
+    <property name="_jumpSpeedDeceleration" value="10"/>
+    <property name="_jumpSpeedInitial" value="240"/>
+    <property name="_runSpeedAcceleration" value="1000"/>
+    <property name="_runSpeedDeceleration" value="1000"/>
+    <property name="_runSpeedLimit" value="180"/>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
     <property name="defaultImage" value="Dummy_Player.png"/>
