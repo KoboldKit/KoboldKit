@@ -94,7 +94,12 @@
 	else
 	{
 		_running = YES;
-		_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), _runSpeedAcceleration);
+		CGFloat speed = _runSpeedAcceleration;
+		if (speed == 0.0 || speed > _runSpeedLimit)
+		{
+			speed = _runSpeedLimit;
+		}
+		_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), speed);
 	}
 }
 
@@ -106,35 +111,40 @@
 -(void) jumpButtonPressed:(NSNotification*)note
 {
 	CGPoint velocity = self.physicsBody.velocity;
-	if (velocity.y <= 0)
+	if (_jumping == NO)
 	{
 		_jumping = YES;
-		velocity.y = 0;
+		velocity.y = _jumpSpeedInitial;
 		self.physicsBody.velocity = velocity;
-		[self.physicsBody applyImpulse:CGPointMake(0, _jumpSpeedInitial)];
 	}
 }
 
 -(void) update:(NSTimeInterval)currentTime
 {
 	CGPoint velocity = self.physicsBody.velocity;
-	if (velocity.y > 0.0)
+	if (_jumping)
 	{
-		if (_jumping)
+		if (velocity.y > 0.0)
 		{
 			velocity.y -= _jumpSpeedDeceleration;
 		}
 		else
 		{
-			// prevent physics body bouncing upon hitting ground
-			velocity.y = 0.0;
+			_jumping = NO;
 		}
 	}
 	else
 	{
-		_jumping = NO;
-		velocity.y -= _fallSpeedAcceleration;
+		if (_fallSpeedAcceleration == 0.0 || _fallSpeedAcceleration >= _fallSpeedLimit)
+		{
+			velocity.y = -_fallSpeedLimit;
+		}
+		else
+		{
+			velocity.y -= _fallSpeedAcceleration;
+		}
 	}
+	
 	velocity.y = MAX(velocity.y, -_fallSpeedLimit);
 
 	if (_running)
