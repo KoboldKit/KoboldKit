@@ -102,6 +102,27 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	}
 }
 
+-(void) inputDidMoveLoseFocus:(BOOL)lostFocus
+{
+	if (lostFocus && _isSelected)
+	{
+		[self endSelect];
+	}
+	if (lostFocus == NO && _isSelected == NO)
+	{
+		[self beginSelect];
+	}
+}
+
+-(void) inputDidEnd
+{
+	if (_isSelected && self.enabled)
+	{
+		[self endSelect];
+		[self execute];
+	}
+}
+
 #if TARGET_OS_IPHONE
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -112,6 +133,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 			if ([self.node containsPoint:[touch locationInNode:self.node.parent]])
 			{
 				[self beginSelect];
+				break;
 			}
 		}
 	}
@@ -130,27 +152,47 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 				break;
 			}
 		}
-		
-		if (lostFocus && _isSelected)
-		{
-			[self endSelect];
-		}
-		if (lostFocus == NO && _isSelected == NO)
+
+		[self inputDidMoveLoseFocus:lostFocus];
+	}
+}
+
+-(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[self inputDidEnd];
+}
+#else // OS X
+
+-(void) mouseDown:(NSEvent*)event
+{
+	if (self.enabled)
+	{
+		if ([self.node containsPoint:[event locationInNode:self.node.parent]])
 		{
 			[self beginSelect];
 		}
 	}
 }
 
--(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+-(void) mouseDragged:(NSEvent*)event
 {
-	if (_isSelected && self.enabled)
+	if (self.enabled)
 	{
-		[self endSelect];
-		[self execute];
+		BOOL lostFocus = YES;
+		if ([self.node containsPoint:[event locationInNode:self.node.parent]])
+		{
+			lostFocus = NO;
+		}
+		
+		[self inputDidMoveLoseFocus:lostFocus];
 	}
 }
-#else
+
+-(void) mouseUp:(NSEvent*)event
+{
+	[self inputDidEnd];
+}
+
 #endif
 
 #pragma mark !! Update methods below whenever class layout changes !!

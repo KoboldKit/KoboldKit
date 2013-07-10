@@ -302,6 +302,53 @@
 		}
 	}
 }
+
+#else // OS X
+
+-(void) mouseDown:(NSEvent*)theEvent
+{
+	for (id observer in _inputObservers)
+	{
+		if ([observer respondsToSelector:@selector(mouseDown:)])
+		{
+			[observer mouseDown:theEvent];
+		}
+	}
+}
+
+-(void) mouseDragged:(NSEvent*)theEvent
+{
+	for (id observer in _inputObservers)
+	{
+		if ([observer respondsToSelector:@selector(mouseDragged:)])
+		{
+			[observer mouseDragged:theEvent];
+		}
+	}
+}
+
+-(void) mouseMoved:(NSEvent*)theEvent
+{
+	for (id observer in _inputObservers)
+	{
+		if ([observer respondsToSelector:@selector(mouseMoved:)])
+		{
+			[observer mouseMoved:theEvent];
+		}
+	}
+}
+
+-(void) mouseUp:(NSEvent*)theEvent
+{
+	for (id observer in _inputObservers)
+	{
+		if ([observer respondsToSelector:@selector(mouseUp:)])
+		{
+			[observer mouseUp:theEvent];
+		}
+	}
+}
+
 #endif
 
 #pragma mark Physics Contact
