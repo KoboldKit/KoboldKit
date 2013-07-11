@@ -32,7 +32,6 @@ typedef enum : unsigned char
 	NSMutableArray* _tilesets;
 	NSMutableArray* _layers;
 	KKTilemapProperties* _properties;
-	BOOL _iPadScaleFactorApplied;
 }
 
 /** @name Map Properties */

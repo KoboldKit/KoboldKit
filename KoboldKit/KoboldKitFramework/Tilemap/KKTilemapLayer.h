@@ -23,7 +23,6 @@
 	KKTilemapProperties* _properties;
 	KKTilemapLayerTiles* _tiles;
 	NSMutableArray* _objects;
-	KKTilemapLayerContourTracer* _contour;
 }
 
 /** @name Common Layer Properties */

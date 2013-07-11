@@ -200,7 +200,9 @@
 	if ([KKView showsNodeFrames])
 	{
 		SKShapeNode* shape = [SKShapeNode node];
-		shape.path = CGPathCreateWithRect(self.frame, nil);
+		CGPathRef path = CGPathCreateWithRect(self.frame, nil);
+		shape.path = path;
+		CGPathRelease(path);
 		shape.antialiased = NO;
 		shape.lineWidth = 1.0;
 		shape.strokeColor = [SKColor orangeColor];
@@ -209,8 +211,10 @@
 	if ([KKView showsNodeAnchorPoints])
 	{
 		SKShapeNode* shape = [SKShapeNode node];
-		CGRect center = CGRectMake(self.position.x - 1, self.position.y - 1, 2, 2);
-		shape.path = CGPathCreateWithRect(center, nil);
+		CGRect center = CGRectMake(-1, -1, 2, 2);
+		CGPathRef path = CGPathCreateWithRect(center, nil);
+		shape.path = path;
+		CGPathRelease(path);
 		/*
 		CGMutablePathRef path = CGPathCreateMutable();
 		CGPathMoveToPoint(path, nil, self.position.x, self.position.y);
@@ -288,7 +292,9 @@
 {
 	SKPhysicsBody* physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:size];
 	self.physicsBody = physicsBody;
-	[self addPhysicsBodyDrawNodeWithPath:CGPathCreateWithRect(CGRectMake(-(size.width * 0.5), -(size.height * 0.5), size.width, size.height), nil)];
+	CGPathRef path = CGPathCreateWithRect(CGRectMake(-(size.width * 0.5), -(size.height * 0.5), size.width, size.height), nil);
+	[self addPhysicsBodyDrawNodeWithPath:path];
+	CGPathRelease(path);
 	return physicsBody;
 }
 

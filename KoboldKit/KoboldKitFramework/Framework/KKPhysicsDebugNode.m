@@ -75,6 +75,8 @@
 		
 		SKShapeNode* shapeNode = [SKShapeNode node];
 		shapeNode.path = path;
+		CGPathRelease(path);
+
 		shapeNode.lineWidth = 1.0;
 		shapeNode.antialiased = NO;
 		shapeNode.strokeColor = [SKColor greenColor];

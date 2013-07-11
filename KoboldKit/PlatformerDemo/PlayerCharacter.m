@@ -18,7 +18,18 @@
 	
 	if (defaultImage.length > 0)
 	{
-		_playerSprite = [SKSpriteNode spriteNodeWithImageNamed:defaultImage];
+		SKTexture* texture = [SKTexture textureWithImageNamed:defaultImage];
+		if (texture)
+		{
+			_playerSprite = [SKSpriteNode spriteNodeWithImageNamed:defaultImage];
+		}
+		else
+		{
+			SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
+			texture = [atlas textureNamed:defaultImage];
+			_playerSprite = [SKSpriteNode spriteNodeWithTexture:texture];
+		}
+
 		playerSize = _playerSprite.size;
 	}
 	else

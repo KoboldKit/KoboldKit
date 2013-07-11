@@ -440,23 +440,25 @@ static int g_read (lua_State *L, FILE *f, int first) {
       else {
         const char *p = lua_tostring(L, n);
         luaL_argcheck(L, p && p[0] == '*', n, "invalid option");
-        switch (p[1]) {
-          case 'n':  /* number */
-            success = read_number(L, f);
-            break;
-          case 'l':  /* line */
-            success = read_line(L, f, 1);
-            break;
-          case 'L':  /* line with end-of-line */
-            success = read_line(L, f, 0);
-            break;
-          case 'a':  /* file */
-            read_all(L, f);  /* read entire file */
-            success = 1; /* always success */
-            break;
-          default:
-            return luaL_argerror(L, n, "invalid format");
-        }
+		  if (p) {
+			  switch (p[1]) {
+				  case 'n':  /* number */
+					  success = read_number(L, f);
+					  break;
+				  case 'l':  /* line */
+					  success = read_line(L, f, 1);
+					  break;
+				  case 'L':  /* line with end-of-line */
+					  success = read_line(L, f, 0);
+					  break;
+				  case 'a':  /* file */
+					  read_all(L, f);  /* read entire file */
+					  success = 1; /* always success */
+					  break;
+				  default:
+					  return luaL_argerror(L, n, "invalid format");
+			  }
+		  }
       }
     }
   }

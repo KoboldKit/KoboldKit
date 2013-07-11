@@ -182,13 +182,12 @@
 	NSMutableArray* paths = [NSMutableArray arrayWithCapacity:_objects.count];
 	for (KKTilemapObject* object in _objects)
 	{
-		CGPathRef path = [self pathFromObject:object];
-		[paths addObject:(__bridge_transfer id)path];
+		[paths addObject:[self createPathFromObject:object]];
 	}
 	return paths;
 }
 
--(CGPathRef) pathFromObject:(KKTilemapObject*)object
+-(id) createPathFromObject:(KKTilemapObject*)object
 {
 	CGPathRef path = nil;
 	CGRect rect = {CGPointZero, object.size};
@@ -234,7 +233,7 @@
 			break;
 	}
 	
-	return path;
+	return (__bridge_transfer id)path;
 }
 
 #pragma mark Objects

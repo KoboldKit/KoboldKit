@@ -263,10 +263,11 @@
 -(void) update:(NSTimeInterval)currentTime
 {
 	[super update:currentTime];
-	
-	NSLog(@"UPDATE");
+
+	SKSpriteNode* playerSprite = [self childNodeWithName:@"playersprite"];
+	LOG_EXPR(playerSprite.position);
 }
- */
+*/
 
 // REMOVE
 -(void) testCollision:(SKPhysicsContact *)contact
