@@ -59,4 +59,8 @@
 /** Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds. */
 -(void) restrictScrollingToMapBoundary;
 
+/** Enables parallax scrolling which makes other layers follow the main tile layer's position with parallax offset.
+ Call this *after* setting up any camera follow object. */
+-(void) enableParallaxScrolling;
+
 @end

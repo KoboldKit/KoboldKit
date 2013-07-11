@@ -41,7 +41,7 @@
 
 -(void) didSimulatePhysics
 {
-	if (self.enabled && _target)
+	if (_target && self.enabled)
 	{
 		CGPoint pos = _target.position;
 		pos = CGPointMake(pos.x * _positionMultiplier.x + _positionOffset.x,

@@ -67,16 +67,19 @@
 		}
 		
 		_mainTileLayerNode = [self findMainTileLayerNode];
+	}
+}
 
-		// parallaxing behavior
-		KKFollowTargetBehavior* parallaxBehavior = [KKFollowTargetBehavior followTarget:_mainTileLayerNode];
-		for (KKTilemapTileLayerNode* tileLayerNode in _tileLayers)
+-(void) enableParallaxScrolling
+{
+	// parallaxing behavior
+	KKFollowTargetBehavior* parallaxBehavior = [KKFollowTargetBehavior followTarget:_mainTileLayerNode];
+	for (KKTilemapTileLayerNode* tileLayerNode in _tileLayers)
+	{
+		if (tileLayerNode != _mainTileLayerNode)
 		{
-			if (tileLayerNode != _mainTileLayerNode)
-			{
-				parallaxBehavior.positionMultiplier = tileLayerNode.layer.parallaxFactor;
-				[tileLayerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKFollowTargetBehavior class])];
-			}
+			parallaxBehavior.positionMultiplier = tileLayerNode.layer.parallaxFactor;
+			[tileLayerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKFollowTargetBehavior class])];
 		}
 	}
 }

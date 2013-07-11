@@ -60,6 +60,7 @@
 	LOG_EXPR(self.physicsWorld.speed);
 
 	[self setupPlayerCharacter];
+	
 	[self createSimpleControls];
 	//[self createVirtualJoypad];
 	[self addDevelopmentButtons];
@@ -69,6 +70,7 @@
 	{
 		[_tilemapNode restrictScrollingToMapBoundary];
 	}
+	[_tilemapNode enableParallaxScrolling];
 
 	// remove the curtain
 	[_curtainSprite runAction:[SKAction sequence:@[[SKAction fadeAlphaTo:0 duration:0.5], [SKAction removeFromParent]]]];
@@ -257,6 +259,16 @@
 								   object:jumpButtonNode];
 }
 
+/*
+-(void) update:(NSTimeInterval)currentTime
+{
+	[super update:currentTime];
+	
+	NSLog(@"UPDATE");
+}
+ */
+
+// REMOVE
 -(void) testCollision:(SKPhysicsContact *)contact
 {
 	SKPhysicsBody* playerPhysicsBody = _playerCharacter.physicsBody;
@@ -335,24 +347,5 @@
 		}
 	}
 }
-
-/*
--(void) didBeginContact:(SKPhysicsContact *)contact
-{
-	[super didBeginContact:contact];
-
-	//[self testCollision:contact];
-}
- */
-
-/*
--(void) didEndContact:(SKPhysicsContact *)contact
-{
-	[super didEndContact:contact];
-	NSLog(@"did END Contact: %@", contact);
-
-	[_physicsContactDebugNode removeContact:contact];
-}
-*/
 
 @end

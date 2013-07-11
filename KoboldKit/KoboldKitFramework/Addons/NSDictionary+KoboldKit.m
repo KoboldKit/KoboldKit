@@ -102,7 +102,7 @@ typedef enum
 	
 	if (lua_istable(L, anIndex))
 	{
-		dict = [NSMutableDictionary dictionaryWithCapacity:10];
+		dict = [NSMutableDictionary dictionaryWithCapacity:4];
 		
 		lua_pushnil(L); // first key
 		while (lua_next(L, -2) != 0)
@@ -123,8 +123,8 @@ typedef enum
 				break;
 			}
 			
-			int luaTypeOfValue = lua_type(L, -1);
-			switch (luaTypeOfValue)
+			int luaValueType = lua_type(L, -1);
+			switch (luaValueType)
 			{
 				case LUA_TNUMBER:
 					[dict setObject:[NSNumber numberWithFloat:(float)lua_tonumber(L, -1)] forKey:key];
@@ -145,7 +145,7 @@ typedef enum
 				}
 					
 				default:
-					NSLog(@"Unknown value type %i in table ignored.", luaTypeOfValue);
+					NSLog(@"Unknown value type %i in table ignored.", luaValueType);
 					break;
 			} /* switch */
 			

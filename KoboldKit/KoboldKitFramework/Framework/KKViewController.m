@@ -50,9 +50,11 @@
 			  @"KKViewController: view must be of class KKView, but its class is: %@. You may need to change this in your code or in Interface Builder (Identity Inspector -> Custom Class).",
 			  NSStringFromClass([kkView class]));
 	
+#if DEBUG
 	kkView.showsFPS = YES;
 	kkView.showsDrawCount = YES;
 	kkView.showsNodeCount = YES;
+#endif
 }
 
 -(void) viewDidAppear:(BOOL)animated
