@@ -108,7 +108,7 @@
 		for (NSString* tmxFile in tmxFiles)
 		{
 			KKLabelNode* tmxLabel = [KKLabelNode labelNodeWithFontNamed:@"Courier"];
-			tmxLabel.fontSize = 20;
+			tmxLabel.fontSize = 28;
 			tmxLabel.text = tmxFile;
 			tmxLabel.position = CGPointMake(0, height);
 			[_tmxLoadMenu addChild:tmxLabel];

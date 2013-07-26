@@ -126,7 +126,7 @@
 -(void) jumpButtonPressed:(NSNotification*)note
 {
 	CGPoint velocity = self.physicsBody.velocity;
-	if (_jumping == NO && CGFloatEqualToFloat(velocity.y, 0.0))
+	if (_jumping == NO && velocity.y > -0.001 && velocity.y < 0.001)
 	{
 		_jumping = YES;
 		velocity.y = _jumpSpeedInitial;
@@ -239,9 +239,11 @@
 		// FIXME: this should actually check for collision with floor
 		
 		// prevent jitter on floor
+		/*
 		CGPoint velocity = myBody.velocity;
 		velocity.y = 0.0;
 		myBody.velocity = velocity;
+		 */
 	}
 }
 
