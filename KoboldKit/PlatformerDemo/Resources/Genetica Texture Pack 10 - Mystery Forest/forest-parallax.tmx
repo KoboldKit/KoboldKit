@@ -57,23 +57,28 @@
    <property name="_endlessScrollingHorizontal" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztVO0OgjAMnDA/JziNgom+/3PaJVu41HWrJOgfL7kAXXs9IK0xf/wad0XOgdgTO+J+WTtmyMSOxBPRE13mPPgL3oLHOf5spb/Gn48ec/5qaAT9Eaj1x7Ehbom7eF0LOaVzhNTfCvFPUXq/VeG8rejO8ce/f1voX9Ov+dPAFvo3QhxrNcBZ7xml+ec1nXCv2SE460/iDRj+wzlTczXTfwr77AH1IzynGNdI/vn+uES9AbRz/dP8JzoWdyyX7wis57nevGvjvvvGTl4KL3bAB40=
+   eJztVNkKwkAMXO9j7YlaQf//O01kF0LMJqGt9MWBodvmmpZmQvhjaTwcOWdgDayAp9/KEXEBNsAWGIU46kNtqHGMvu14aR+gPtSGGiV9FtYT52vYAw/AY7ruCjla3IOp39CDlRLbGLVz6NNmWP0tfR5oM6x/yPv+dNdrdi7tP6+pCmePh9BdfwFvhAOwE2quKYZEP3uS+oHc52e8R9bP/aNP/e6ktzQ/739mZM8jy+UeQet5bhu+e1O/W8qT58AbaqYGJg==
   </data>
  </layer>
- <objectgroup name="game objects" width="32" height="16">
-  <object name="player" type="Player" x="288" y="224" width="22" height="48">
+ <objectgroup draworder="topdown" name="game objects" width="32" height="16">
+  <object name="player" type="Player" x="416" y="32" width="22" height="48">
    <properties>
+    <property name="_fallSpeedAcceleration" value="100"/>
+    <property name="_fallSpeedLimit" value="250"/>
+    <property name="_jumpAbortVelocity" value="150"/>
+    <property name="_jumpSpeedDeceleration" value="20"/>
+    <property name="_jumpSpeedInitial" value="500"/>
+    <property name="_runSpeedAcceleration" value="0"/>
+    <property name="_runSpeedDeceleration" value="0"/>
+    <property name="_runSpeedLimit" value="200"/>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
+    <property name="boundingBox" value="{10, 10}"/>
     <property name="defaultImage" value=""/>
-    <property name="dpadForce" value="195.0"/>
-    <property name="friction" value="0.5"/>
-    <property name="jumpForce" value="80.0"/>
+    <property name="friction" value="0"/>
     <property name="linearDamping" value="0"/>
     <property name="mass" value="0.33"/>
     <property name="restitution" value="0.04"/>
-    <property name="stayInBounds" value="YES"/>
-    <property name="velocityLimit" value="250.0"/>
    </properties>
   </object>
  </objectgroup>
@@ -87,7 +92,7 @@
    eJxjYBhawAyIzYkQI8c8YsyxA2J7IsSIdRuyXnRzKPEXPrcRay4+f6EDUtxKirnEAkJmUiMsKTGLXPdhE6ckveECuMwkNa4GUzyQGnakmk/ILGLtwmUPLfIJNkCMPaTEGzXjGAaQ3UhOvBDjJnLLRXLqDUrTJqX6YHoA34wW2w==
   </data>
  </layer>
- <objectgroup name="extra-collision" width="32" height="16">
+ <objectgroup draworder="topdown" name="extra-collision" width="32" height="16">
   <object x="448" y="352">
    <polygon points="0,64 64,96 0,96"/>
   </object>
@@ -134,7 +139,4 @@
   </object>
   <object name="TTTTIIIILLLLEEEE" gid="2" x="32" y="96"/>
  </objectgroup>
- <imagelayer name="Image Layer 1" width="32" height="16" visible="0" opacity="0.51">
-  <image source="../Default.png"/>
- </imagelayer>
 </map>
