@@ -48,22 +48,36 @@
 
 	if (projectFiles == nil)
 	{
+		NSMutableArray* files = [NSMutableArray arrayWithCapacity:8];
+		NSString* path;
+
 		// fallback to loading all TMX files already present
 #if TARGET_OS_IPHONE
-		NSString* path = [NSFileManager pathToDocumentsDirectory];
-#else
-		 // avoid scanning the user's documents directory on Mac
-		NSString* path = [[NSBundle mainBundle] bundlePath];
-#endif
-
+		// only scan the user's documents directory on iOS
+		path = [NSFileManager pathToDocumentsDirectory];
 		NSDirectoryEnumerator* documentsEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:path];
-		NSMutableArray* files = [NSMutableArray arrayWithCapacity:8];
 		NSString* file;
 		while (file = [documentsEnumerator nextObject])
 		{
 			if ([[[file lowercaseString] pathExtension] isEqualToString:@"tmx"])
 			{
 				[files addObject:[file lastPathComponent]];
+			}
+		}
+#endif
+
+		// no TMX files in documents? Get the bundled TMX files instead.
+		if (files.count == 0)
+		{
+			path = [[NSBundle mainBundle] bundlePath];
+			NSDirectoryEnumerator* documentsEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:path];
+			NSString* file;
+			while (file = [documentsEnumerator nextObject])
+			{
+				if ([[[file lowercaseString] pathExtension] isEqualToString:@"tmx"])
+				{
+					[files addObject:[file lastPathComponent]];
+				}
 			}
 		}
 		
