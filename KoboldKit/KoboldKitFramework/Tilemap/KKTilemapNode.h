@@ -41,20 +41,30 @@
 
 /** @param name The name identifying a tile layer.
  @returns The tile layer node with the name, or nil if there's no tile layer with that name. */
--(KKTilemapTileLayerNode*) tileLayerNodeWithName:(NSString*)name;
+-(KKTilemapTileLayerNode*) tileLayerNodeNamed:(NSString*)name;
 
 /** @param name The name identifying an object layer.
  @returns The object layer node with the name, or nil if there's no object layer with that name. */
--(KKTilemapObjectLayerNode*) objectLayerNodeWithName:(NSString*)name;
+-(KKTilemapObjectLayerNode*) objectLayerNodeNamed:(NSString*)name;
 
 /** Creates physics blocking shapes from the main tile layer's blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.
  @returns The node containing child nodes for each physics body created. */
--(SKNode*) createPhysicsCollisions;
+-(SKNode*) createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode*)tileLayerNode;
 
 /** Creates physics blocking shapes from an object layer's objects.
  @param layerName The name of an object layer whose objects should be converted to physics collisions.
  @returns The node containing child nodes for each physics body created. */
--(SKNode*) createPhysicsCollisionsWithObjectLayerNamed:(NSString*)layerName;
+-(SKNode*) createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode;
+
+/** Spawns the objects of an object layer and adds them as child nodes to the mainTileLayerNode.
+ The object's classes and properties are defined in objects.lua. 
+ @param layer An object layer. */
+-(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode;
+/** Spawns the objects of an object layer and adds them as child nodes to the target tile layer.
+ The object's classes and properties are defined in objects.lua.
+ @param layer An object layer.
+ @param targetLayer The tile layer to which the spawned objects will be added as child nodes. */
+-(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode targetLayerNode:(KKTilemapTileLayerNode*)targetTileLayerNode;
 
 /** Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds. */
 -(void) restrictScrollingToMapBoundary;

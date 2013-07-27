@@ -192,7 +192,7 @@
 	CGPathRef path = nil;
 	CGRect rect = {CGPointZero, object.size};
 	
-	switch (object.type)
+	switch (object.objectType)
 	{
 		case KKTilemapObjectTypeTile:
 		case KKTilemapObjectTypeRectangle:
@@ -216,7 +216,7 @@
 				CGPathAddLineToPoint(poly, nil, p.x, p.y);
 			}
 			
-			if (object.type == KKTilemapObjectTypePolygon)
+			if (object.objectType == KKTilemapObjectTypePolygon)
 			{
 				// close the polygon
 				CGPathAddLineToPoint(poly, nil, points[0].x, points[0].y);
@@ -229,7 +229,7 @@
 		}
 			
 		default:
-			[NSException raise:NSInternalInconsistencyException format:@"unhandled tilemap object.type %u", object.type];
+			[NSException raise:NSInternalInconsistencyException format:@"unhandled tilemap object.type %u", object.objectType];
 			break;
 	}
 	

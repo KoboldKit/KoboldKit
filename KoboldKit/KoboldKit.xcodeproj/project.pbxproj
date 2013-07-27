@@ -102,7 +102,7 @@
 		DC484CAE178C43400067DAA4 /* KKIntegerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D1177B1647004182E4 /* KKIntegerArray.m */; };
 		DC484CAF178C43400067DAA4 /* KKPointArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D3177B1647004182E4 /* KKPointArray.m */; };
 		DC484CB0178C43400067DAA4 /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE920176CA25F003E4087 /* KKMutableNumber.m */; };
-		DC484CB1178C43400067DAA4 /* KKIvarSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE922176CA25F003E4087 /* KKIvarSetter.m */; };
+		DC484CB1178C43400067DAA4 /* KKClassVarSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE922176CA25F003E4087 /* KKClassVarSetter.m */; };
 		DC484CB2178C43400067DAA4 /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */; };
 		DC484CB3178C43400067DAA4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC95BA7C1786DFB800E31DA6 /* Reachability.m */; };
 		DC484CB4178C43400067DAA4 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD2E2E176A40C400F307CD /* JRSwizzle.m */; };
@@ -160,6 +160,8 @@
 		DC63B449178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */; };
 		DC63B44A178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */; };
 		DC63B44B178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */; };
+		DC8EED1E17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
+		DC8EED1F17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */; };
 		DCB76E5E178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
 		DCB76E5F178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
@@ -215,7 +217,7 @@
 		DCD7A25D178C7449004A0467 /* KKIntegerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D1177B1647004182E4 /* KKIntegerArray.m */; };
 		DCD7A25E178C7449004A0467 /* KKPointArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D3177B1647004182E4 /* KKPointArray.m */; };
 		DCD7A25F178C7449004A0467 /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE920176CA25F003E4087 /* KKMutableNumber.m */; };
-		DCD7A260178C7449004A0467 /* KKIvarSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE922176CA25F003E4087 /* KKIvarSetter.m */; };
+		DCD7A260178C7449004A0467 /* KKClassVarSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE922176CA25F003E4087 /* KKClassVarSetter.m */; };
 		DCD7A261178C7449004A0467 /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */; };
 		DCD7A262178C7449004A0467 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC95BA7C1786DFB800E31DA6 /* Reachability.m */; };
 		DCD7A263178C7449004A0467 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
@@ -405,8 +407,8 @@
 		DC4DE91B176CA0AC003E4087 /* ZipUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipUtils.m; sourceTree = "<group>"; };
 		DC4DE91F176CA25F003E4087 /* KKMutableNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KKMutableNumber.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		DC4DE920176CA25F003E4087 /* KKMutableNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMutableNumber.m; sourceTree = "<group>"; };
-		DC4DE921176CA25F003E4087 /* KKIvarSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KKIvarSetter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		DC4DE922176CA25F003E4087 /* KKIvarSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKIvarSetter.m; sourceTree = "<group>"; };
+		DC4DE921176CA25F003E4087 /* KKClassVarSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KKClassVarSetter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DC4DE922176CA25F003E4087 /* KKClassVarSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKClassVarSetter.m; sourceTree = "<group>"; };
 		DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KoboldKit.h"; sourceTree = "<group>"; };
 		DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KoboldKit.m"; sourceTree = "<group>"; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -417,6 +419,7 @@
 		DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
+		DC8EED1D17A40788000C1995 /* objectTypes.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTypes.lua; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DC95BA7B1786DFB800E31DA6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DC95BA7C1786DFB800E31DA6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -636,6 +639,7 @@
 				DC18B09F178C7BC400641A6D /* config.lua */,
 				DC18B0A0178C7BC400641A6D /* devconfig.lua */,
 				DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */,
+				DC8EED1D17A40788000C1995 /* objectTypes.lua */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -802,8 +806,8 @@
 				DCB087D3177B1647004182E4 /* KKPointArray.m */,
 				DC4DE91F176CA25F003E4087 /* KKMutableNumber.h */,
 				DC4DE920176CA25F003E4087 /* KKMutableNumber.m */,
-				DC4DE921176CA25F003E4087 /* KKIvarSetter.h */,
-				DC4DE922176CA25F003E4087 /* KKIvarSetter.m */,
+				DC4DE921176CA25F003E4087 /* KKClassVarSetter.h */,
+				DC4DE922176CA25F003E4087 /* KKClassVarSetter.m */,
 				DC96A7F71786E75400CE0827 /* KKDownloadProjectFiles.h */,
 				DC96A7F81786E75400CE0827 /* KKDownloadProjectFiles.m */,
 			);
@@ -1341,6 +1345,7 @@
 				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
 				DC3B4465178F45FF007625D2 /* Dummy_Player.png in Resources */,
 				DC18B113178C7BC400641A6D /* other.plist in Resources */,
+				DC8EED1F17A40788000C1995 /* objectTypes.lua in Resources */,
 				DC18B0FF178C7BC400641A6D /* forest.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1382,6 +1387,7 @@
 				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC18B112178C7BC400641A6D /* other.plist in Resources */,
 				DC18B0FE178C7BC400641A6D /* forest.plist in Resources */,
+				DC8EED1E17A40788000C1995 /* objectTypes.lua in Resources */,
 				DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */,
 				DC63B446178DEED400B36C59 /* TestArena.tmx in Resources */,
 			);
@@ -1468,7 +1474,7 @@
 				DC484CAE178C43400067DAA4 /* KKIntegerArray.m in Sources */,
 				DC484CAF178C43400067DAA4 /* KKPointArray.m in Sources */,
 				DC484CB0178C43400067DAA4 /* KKMutableNumber.m in Sources */,
-				DC484CB1178C43400067DAA4 /* KKIvarSetter.m in Sources */,
+				DC484CB1178C43400067DAA4 /* KKClassVarSetter.m in Sources */,
 				DC484CB2178C43400067DAA4 /* KKDownloadProjectFiles.m in Sources */,
 				DC484CB3178C43400067DAA4 /* Reachability.m in Sources */,
 				DC484CB4178C43400067DAA4 /* JRSwizzle.m in Sources */,
@@ -1556,7 +1562,7 @@
 				DCD7A25D178C7449004A0467 /* KKIntegerArray.m in Sources */,
 				DCD7A25E178C7449004A0467 /* KKPointArray.m in Sources */,
 				DCD7A25F178C7449004A0467 /* KKMutableNumber.m in Sources */,
-				DCD7A260178C7449004A0467 /* KKIvarSetter.m in Sources */,
+				DCD7A260178C7449004A0467 /* KKClassVarSetter.m in Sources */,
 				DCD7A261178C7449004A0467 /* KKDownloadProjectFiles.m in Sources */,
 				DCD7A262178C7449004A0467 /* Reachability.m in Sources */,
 				DCD7A263178C7449004A0467 /* CGPointExtension.m in Sources */,

@@ -28,6 +28,7 @@
 	{
 		_layer = layer;
 		_tilemap = _layer.tilemap;
+		self.name = layer.name;
 	}
 	return self;
 }

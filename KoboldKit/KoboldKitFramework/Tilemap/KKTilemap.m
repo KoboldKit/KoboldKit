@@ -18,7 +18,7 @@
 #import "KKTMXReader.h"
 #import "KKTMXWriter.h"
 #import "KKMacros.h"
-#import "KKIvarSetter.h"
+#import "KKClassVarSetter.h"
 
 #import "CGPointExtension.h"
 #import "KoboldKit.h"
@@ -173,26 +173,26 @@
 	// Tiled properties that match name and type of a class' ivar are set to the object's ivar
 	// This allows users to configure KTTilemap* class properties from within Tiled (though there's always the risk of misusing this power)
 	{
-		KKIvarSetter* ivarSetter = [[KKIvarSetter alloc] initWithClass:[KKTilemap class]];
-		[ivarSetter setIvarsFromDictionary:_properties.properties target:self];
+		KKClassVarSetter* ivarSetter = [[KKClassVarSetter alloc] initWithClass:[KKTilemap class]];
+		[ivarSetter setIvarsWithDictionary:_properties.properties target:self];
 	}
 	{
-		KKIvarSetter* ivarSetter = [[KKIvarSetter alloc] initWithClass:[KKTilemapTileset class]];
+		KKClassVarSetter* ivarSetter = [[KKClassVarSetter alloc] initWithClass:[KKTilemapTileset class]];
 		for (KKTilemapTileset* tileset in _tilesets)
 		{
-			[ivarSetter setIvarsFromDictionary:tileset.properties.properties target:tileset];
+			[ivarSetter setIvarsWithDictionary:tileset.properties.properties target:tileset];
 		}
 	}
 	{
-		KKIvarSetter* ivarSetter = [[KKIvarSetter alloc] initWithClass:[KKTilemapLayer class]];
-		KKIvarSetter* ivarSetterObject = [[KKIvarSetter alloc] initWithClass:[KKTilemapObject class]];
+		KKClassVarSetter* ivarSetter = [[KKClassVarSetter alloc] initWithClass:[KKTilemapLayer class]];
+		KKClassVarSetter* ivarSetterObject = [[KKClassVarSetter alloc] initWithClass:[KKTilemapObject class]];
 		for (KKTilemapLayer* layer in _layers)
 		{
-			[ivarSetter setIvarsFromDictionary:layer.properties.properties target:layer];
+			[ivarSetter setIvarsWithDictionary:layer.properties.properties target:layer];
 
 			for (KKTilemapObject* object in layer.objects)
 			{
-				[ivarSetterObject setIvarsFromDictionary:object.properties.properties target:object];
+				[ivarSetterObject setIvarsWithDictionary:object.properties.properties target:object];
 			}
 		}
 	}

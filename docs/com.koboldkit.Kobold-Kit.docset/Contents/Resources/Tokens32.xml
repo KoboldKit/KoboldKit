@@ -13,6 +13,39 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setLayer:</TokenIdentifier>
+			<Abstract type="html">Reference to the object layer for quick access to the object's layer.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object layer the object is on.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/layer</TokenIdentifier>
+			<Abstract type="html">Reference to the object layer for quick access to the object's layer.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object layer the object is on.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/layer</TokenIdentifier>
+			<Abstract type="html">Reference to the object layer for quick access to the object's layer.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object layer the object is on.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setName:</TokenIdentifier>
 			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
@@ -46,39 +79,42 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setUserType:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setType:</TokenIdentifier>
 			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
-   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
+   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. 
+Normally the type is used to identify an object defined in the objectTypes.lua config file.  TILED-EDITABLE</Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *userType</Declaration>
+			<Declaration>@property (atomic, copy) NSString *type</Declaration>
 			
 			
-			<Anchor>//api/name/userType</Anchor>
+			<Anchor>//api/name/type</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/userType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/type</TokenIdentifier>
 			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
-   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
+   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. 
+Normally the type is used to identify an object defined in the objectTypes.lua config file.  TILED-EDITABLE</Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *userType</Declaration>
+			<Declaration>@property (atomic, copy) NSString *type</Declaration>
 			
 			
-			<Anchor>//api/name/userType</Anchor>
+			<Anchor>//api/name/type</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/userType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/type</TokenIdentifier>
 			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
-   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. TILED-EDITABLE </Abstract>
+   Object Types added in the Tiled Preferences dialog. You can also import &amp; export Object Types from there. 
+Normally the type is used to identify an object defined in the objectTypes.lua config file.  TILED-EDITABLE</Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy) NSString *userType</Declaration>
+			<Declaration>@property (atomic, copy) NSString *type</Declaration>
 			
 			
-			<Anchor>//api/name/userType</Anchor>
+			<Anchor>//api/name/type</Anchor>
 		</Token>
 		
 		<Token>
@@ -214,39 +250,72 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setType:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setObjectType:</TokenIdentifier>
 			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
    having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) KKTilemapObjectType type</Declaration>
+			<Declaration>@property (atomic) KKTilemapObjectType objectType</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/objectType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/type</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/objectType</TokenIdentifier>
 			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
    having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) KKTilemapObjectType type</Declaration>
+			<Declaration>@property (atomic) KKTilemapObjectType objectType</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/objectType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/type</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/objectType</TokenIdentifier>
 			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
    having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
 			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) KKTilemapObjectType type</Declaration>
+			<Declaration>@property (atomic) KKTilemapObjectType objectType</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/objectType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setHidden:</TokenIdentifier>
+			<Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL hidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract></ReturnValue>
+			<Anchor>//api/name/hidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/hidden</TokenIdentifier>
+			<Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL hidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract></ReturnValue>
+			<Anchor>//api/name/hidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/hidden</TokenIdentifier>
+			<Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL hidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract></ReturnValue>
+			<Anchor>//api/name/hidden</Anchor>
 		</Token>
 		
 	</File>

@@ -10,6 +10,18 @@
 
 @implementation PlayerCharacter
 
+-(void) nodeDidSpawnWithObject:(KKTilemapObject*)object
+{
+	NSLog(@"-(void) nodeDidSpawnWithObject:(KKTilemapObject*)object");
+	LOG_EXPR(object);
+	
+	// tilamep node
+	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.parent.parent;
+	NSAssert1([tilemapNode isKindOfClass:[KKTilemapNode class]], @"player.parent.parent (%@) is not the tilemap node!", tilemapNode);
+	
+	[self setupWithPlayerObject:object movementBounds:tilemapNode.bounds];
+}
+
 -(void) setupWithPlayerObject:(KKTilemapObject*)playerObject movementBounds:(CGRect)movementBounds
 {
 	KKTilemapProperties* playerProperties = playerObject.properties;
@@ -68,10 +80,12 @@
 	LOG_EXPR(self.physicsBody.density);
 	LOG_EXPR(self.physicsBody.restitution);
 	LOG_EXPR(self.physicsBody.area);
-	
+
+	/*
 	// apply Tiled properties to ivars
 	KKIvarSetter* ivarSetter = [[KKIvarSetter alloc] initWithClass:[self class]];
-	[ivarSetter setIvarsFromDictionary:playerProperties.properties target:self];
+	[ivarSetter setIvarsWithDictionary:playerProperties.properties target:self];
+	 */
 	LOG_EXPR(_jumpSpeedInitial);
 	LOG_EXPR(_jumpSpeedDeceleration);
 	LOG_EXPR(_fallSpeedAcceleration);

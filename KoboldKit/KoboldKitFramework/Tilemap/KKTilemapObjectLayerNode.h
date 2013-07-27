@@ -22,6 +22,9 @@
 }
 
 /** (not documented) */
+@property (atomic, readonly, weak) KKTilemapLayer* layer;
+
+/** (not documented) */
 +(id) objectLayerWithLayer:(KKTilemapLayer*)layer tilemap:(KKTilemap*)tilemap;
 
 @end

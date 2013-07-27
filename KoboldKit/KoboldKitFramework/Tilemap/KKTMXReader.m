@@ -251,12 +251,7 @@
 	}
 
 	// Tiled quirk: object layers only write visible="0" to TMX when not visible, otherwise visible is simply omitted from TMX file
-	layer.hidden = NO;
-	NSString* visible = [attributes objectForKey:@"visible"];
-	if (visible)
-	{
-		layer.hidden = [visible isEqualToString:@"0"];
-	}
+	layer.hidden = [[attributes objectForKey:@"visible"] isEqualToString:@"0"];
 
 	[_tilemap addLayer:layer];
 
@@ -285,12 +280,14 @@
 	else
 	{
 		KKTilemapPolyObject* polyObject = [[KKTilemapPolyObject alloc] init];
-		polyObject.type = KKTilemapObjectTypeUnset; // it could be a zero-sized rectangle object
+		polyObject.objectType = KKTilemapObjectTypeUnset; // it could be a zero-sized rectangle object
 		object = polyObject;
 	}
 
+	object.layer = _parsingLayer;
 	object.name = [attributes objectForKey:@"name"];
-	object.userType = [attributes objectForKey:@"type"];
+	object.type = [attributes objectForKey:@"type"];
+	object.hidden = [[attributes objectForKey:@"visible"] isEqualToString:@"0"];
 	
 	NSString* rotation = [attributes objectForKey:@"rotation"];
 	if (rotation)
@@ -304,7 +301,7 @@
 	position.y = [[attributes objectForKey:@"y"] intValue];
 	// Correct y position. (Tiled uses Y origin on top extending downward, cocos2d has Y origin at bottom extending upward)
 	position.y = (_tilemap.size.height * _tilemap.gridSize.height) - position.y;
-	if (object.type == KKTilemapObjectTypeRectangle)
+	if (object.objectType == KKTilemapObjectTypeRectangle)
 	{
 		// rectangles have their origin point at the upper left corner, but we need it to be in the lower left corner
 		position.y -= object.size.height;
@@ -319,19 +316,19 @@
 -(void) parsePolygonWithAttributes:(NSDictionary*)attributes
 {
 	[(KKTilemapPolyObject*)_parsingObject makePointsFromString:[attributes objectForKey:@"points"]];
-	_parsingObject.type = KKTilemapObjectTypePolygon;
+	_parsingObject.objectType = KKTilemapObjectTypePolygon;
 }
 
 -(void) parsePolyLineWithAttributes:(NSDictionary*)attributes
 {
 	[(KKTilemapPolyObject*)_parsingObject makePointsFromString:[attributes objectForKey:@"points"]];
-	_parsingObject.type = KKTilemapObjectTypePolyLine;
+	_parsingObject.objectType = KKTilemapObjectTypePolyLine;
 }
 
 -(void) parseEllipseWithAttributes:(NSDictionary*)attributes
 {
 	((KKTilemapRectangleObject*)_parsingObject).ellipse = YES;
-	_parsingObject.type = KKTilemapObjectTypeEllipse;
+	_parsingObject.objectType = KKTilemapObjectTypeEllipse;
 
 #pragma message "FIXME: ellipse position/anchor is not correct"
 	//_parsingObject.position = CGPointMake(_parsingObject.position.x + _tilemap.gridSize.width, _parsingObject.position.y + _parsingObject.size.height);
@@ -341,7 +338,7 @@
 {
 	// Add the object to the object Layer
 	NSAssert2(_parsingLayer.isObjectLayer, @"ERROR adding object %@: parsing layer (%@) is not an object layer", _parsingObject, _parsingLayer);
-	if (_parsingObject.type == KKTilemapObjectTypeUnset)
+	if (_parsingObject.objectType == KKTilemapObjectTypeUnset)
 	{
 		// we have a zero-sized rectangle object, replace parsing object
 		_parsingObject = [_parsingObject rectangleObjectFromPolyObject:(KKTilemapPolyObject*)_parsingObject];

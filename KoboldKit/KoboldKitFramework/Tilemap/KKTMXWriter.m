@@ -283,10 +283,12 @@ NSString* stringFromUnsignedInt(unsigned int u)
 	
 	[_xmlWriter writeStartElement:@"object"];
 	[_xmlWriter writeAttribute:@"name" value:object.name];
-	[_xmlWriter writeAttribute:@"type" value:object.userType];
+	[_xmlWriter writeAttribute:@"type" value:object.type];
 	[_xmlWriter writeAttribute:@"x" value:intStringFromFloat(object.position.x)];
+	[_xmlWriter writeAttribute:@"visible" value:stringFromInt(!object.hidden)];
+
 	float yPos = (_tilemap.size.height * _tilemap.gridSize.height) - object.position.y;
-	if (object.type == KKTilemapObjectTypeRectangle)
+	if (object.objectType == KKTilemapObjectTypeRectangle)
 	{
 		yPos -= object.size.height;
 	}
@@ -309,9 +311,9 @@ NSString* stringFromUnsignedInt(unsigned int u)
 	[self writeProperties:object.properties];
 
 	// write specific subclasses
-	if (object.type == KKTilemapObjectTypePolygon || object.type == KKTilemapObjectTypePolyLine)
+	if (object.objectType == KKTilemapObjectTypePolygon || object.objectType == KKTilemapObjectTypePolyLine)
 	{
-		[_xmlWriter writeStartElement:(object.type == KKTilemapObjectTypePolygon ? @"polygon" : @"polyline")];
+		[_xmlWriter writeStartElement:(object.objectType == KKTilemapObjectTypePolygon ? @"polygon" : @"polyline")];
 		[self writePolyObjectPoints:(KKTilemapPolyObject*)object];
 		[_xmlWriter writeEndElement];
 	}

@@ -19,6 +19,15 @@
 #import "KKStayInBoundsBehavior.h"
 #import "KKIntegerArray.h"
 #import "KKMutableNumber.h"
+#import "KKView.h"
+#import "KKScene.h"
+#import "KKModel.h"
+#import "KKClassVarSetter.h"
+
+// dummy category to prevent unrecognized selector warning
+@interface KKTilemapNode (nodeDidSpawnWithObject)
+-(void) nodeDidSpawnWithObject:(KKTilemapObject*)object;
+@end
 
 
 @implementation KKTilemapNode
@@ -199,17 +208,17 @@
 
 #pragma mark Layers
 
--(KKTilemapTileLayerNode*) tileLayerNodeWithName:(NSString*)name
+-(KKTilemapTileLayerNode*) tileLayerNodeNamed:(NSString*)name
 {
 	KKTilemapTileLayerNode* node = (KKTilemapTileLayerNode*)[self childNodeWithName:name];
-	NSAssert2([node isKindOfClass:[KKTilemapTileLayerNode class]], @"node with name %@ is not a KKTilemapTileLayerNode, it is: %@", name, node);
+	NSAssert2(node == nil || [node isKindOfClass:[KKTilemapTileLayerNode class]], @"node with name '%@' is not a KKTilemapTileLayerNode, it is: %@", name, node);
 	return node;
 }
 
--(KKTilemapObjectLayerNode*) objectLayerNodeWithName:(NSString*)name
+-(KKTilemapObjectLayerNode*) objectLayerNodeNamed:(NSString*)name
 {
 	KKTilemapObjectLayerNode* node = (KKTilemapObjectLayerNode*)[self childNodeWithName:name];
-	NSAssert2([node isKindOfClass:[KKTilemapObjectLayerNode class]], @"node with name %@ is not a KKTilemapObjectLayerNode, it is: %@", name, node);
+	NSAssert2(node == nil || [node isKindOfClass:[KKTilemapObjectLayerNode class]], @"node with name '%@' is not a KKTilemapObjectLayerNode, it is: %@", name, node);
 	return node;
 }
 
@@ -239,7 +248,7 @@
 	}
 }
 
--(SKNode*) createPhysicsCollisions
+-(SKNode*) createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode*)tileLayerNode
 {
 	/*
 	KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
@@ -315,12 +324,12 @@
 	 */
 
 	SKNode* containerNode;
-	NSArray* contours = [_mainTileLayerNode.layer contourPathsFromLayer:_mainTileLayerNode.layer];
+	NSArray* contours = [tileLayerNode.layer contourPathsFromLayer:tileLayerNode.layer];
 	if (contours.count)
 	{
 		containerNode = [SKNode node];
-		containerNode.name = [NSString stringWithFormat:@"%@:PhysicsBlockingContainerNode", _mainTileLayerNode.name];
-		[_mainTileLayerNode addChild:containerNode];
+		containerNode.name = [NSString stringWithFormat:@"%@:PhysicsBlockingContainerNode", tileLayerNode.name];
+		[tileLayerNode addChild:containerNode];
 		
 		for (id contour in contours)
 		{
@@ -333,16 +342,16 @@
 	return containerNode;
 }
 
--(SKNode*) createPhysicsCollisionsWithObjectLayerNamed:(NSString*)layerName
+-(SKNode*) createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode
 {
 	SKNode* containerNode;
-	KKTilemapLayer* objectLayer = [_tilemap layerNamed:layerName];
+	KKTilemapLayer* objectLayer = objectLayerNode.layer;
 	NSArray* objectPaths = [objectLayer pathsFromObjects];
 	
 	if (objectPaths.count)
 	{
 		containerNode = [SKNode node];
-		containerNode.name = [NSString stringWithFormat:@"%@:PhysicsBlockingContainerNode", layerName];
+		containerNode.name = [NSString stringWithFormat:@"%@:PhysicsBlockingContainerNode", objectLayerNode.name];
 		[_mainTileLayerNode addChild:containerNode];
 		
 		NSUInteger i = 0;
@@ -368,6 +377,71 @@
 	}
 
 	return containerNode;
+}
+
+#pragma mark Spawn Objects
+
+-(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode
+{
+	[self spawnObjectsWithLayerNode:objectLayerNode targetLayerNode:_mainTileLayerNode];
+}
+
+-(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode targetLayerNode:(KKTilemapTileLayerNode*)targetTileLayerNode
+{
+	NSMutableDictionary* cachedVarSetters = [NSMutableDictionary dictionaryWithCapacity:4];
+	
+	NSDictionary* objectTypes = [objectLayerNode.kkScene.kkView.model objectForKey:@"objectTypes"];
+	NSAssert(objectTypes, @"view's objectTypes config dictionary is nil (scene, view or model nil?)");
+	
+	CGSize gridSize = targetTileLayerNode.layer.tilemap.gridSize;
+	
+	// for each object on layer
+	KKTilemapLayer* objectLayer = objectLayerNode.layer;
+	for (KKTilemapObject* object in objectLayer.objects)
+	{
+		NSString* objectType = object.type;
+		if (objectType)
+		{
+			// find the matching objectTypes definition
+			NSDictionary* objectDef = [objectTypes objectForKey:objectType];
+			
+			NSString* objectClassName = [objectDef objectForKey:@"nodeClass"];
+			NSAssert2(objectClassName, @"Can't create object named '%@' (object type: '%@') - 'nodeClass' entry missing for object & its parents. Check objectTypes.lua", object.name, objectType);
+			
+			Class objectNodeClass = NSClassFromString(objectClassName);
+			NSAssert3(objectNodeClass, @"Can't create object named '%@' (object type: '%@') - no such class: %@", object.name, objectType, objectClassName);
+			NSAssert3([objectNodeClass isSubclassOfClass:[SKNode class]], @"Can't create object named '%@' (object type: '%@') - class '%@' does not inherit from SKNode", object.name, objectType, objectClassName);
+			
+			// TODO: use a custom initializer where appropriate and setup in objectTypes.lua
+			SKNode* objectNode = [objectNodeClass node];
+			objectNode.position = CGPointMake(object.position.x * gridSize.width, object.position.y * gridSize.height);
+			objectNode.hidden = object.hidden;
+			objectNode.zRotation = object.rotation;
+			objectNode.name = (object.name.length ? object.name : objectClassName);
+			[targetTileLayerNode addChild:objectNode];
+			
+			// apply object properties & ivars
+			NSDictionary* properties = [objectDef objectForKey:@"classProperties"];
+			if (properties.count)
+			{
+				KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:objectClassName];
+				if (varSetter == nil)
+				{
+					varSetter = [[KKClassVarSetter alloc] initWithClass:objectNodeClass];
+					[cachedVarSetters setObject:varSetter forKey:@"objectClassName"];
+				}
+				
+				[varSetter setIvarsWithDictionary:properties target:objectNode];
+				[varSetter setPropertiesWithDictionary:properties target:objectNode];
+			}
+	
+			// call objectDidSpawn on newly spawned object (if available)
+			if ([objectNode respondsToSelector:@selector(nodeDidSpawnWithObject:)])
+			{
+				[objectNode performSelector:@selector(nodeDidSpawnWithObject:) withObject:object];
+			}
+		}
+	}
 }
 
 #pragma mark Bounds

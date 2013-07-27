@@ -39,7 +39,7 @@ typedef enum
 
 /** Utility class that allows to set an object's ivars from a NSDictionary. The dictionary must have strings as keys (the ivar names)
    and KKMutableNumber or NSString types as values. */
-@interface KKIvarSetter : NSObject
+@interface KKClassVarSetter : NSObject
 {
 	@private
 	Class _class;
@@ -52,6 +52,10 @@ typedef enum
 
 /** Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
    and either NSString or KKMutableNumber as values. The target's class must match the class the KKIvarSetter object was initialized with. */
--(void) setIvarsFromDictionary:(NSDictionary*)ivarsDictionary target:(id)target;
+-(void) setIvarsWithDictionary:(NSDictionary*)ivarsDictionary target:(id)target;
+
+/** Calls property setters in the target if their key in the dictionary matches the property name and type. The dictionary must have NSString as keys
+ and either NSString or KKMutableNumber as values. The target's class must match the class the KKIvarSetter object was initialized with. */
+-(void) setPropertiesWithDictionary:(NSDictionary*)propertiesDictionary target:(id)target;
 
 @end

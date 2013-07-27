@@ -64,7 +64,7 @@
 #import "KKPointArray.h"
 #import "KKDownloadProjectFiles.h"
 #import "KKLua.h"
-#import "KKIvarSetter.h"
+#import "KKClassVarSetter.h"
 
 // NS* categories
 #import "NSCoder+KoboldKit.h"

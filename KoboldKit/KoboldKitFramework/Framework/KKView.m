@@ -60,10 +60,13 @@ static BOOL _showsNodeAnchorPoints = NO;
 	[self reloadConfig];
 }
 
+#pragma mark Config
+
 -(void) reloadConfig
 {
 	[self loadConfig:@"config.lua"];
 	[self loadConfig:@"devconfig.lua"];
+	[self loadConfig:@"objectTypes.lua" flattenHierarchy:YES];
 	
 	self.showsDrawCount = [_model boolForKeyPath:@"devconfig.showsDrawCount"];
 	self.showsFPS = [_model boolForKeyPath:@"devconfig.showsFPS"];
@@ -75,14 +78,57 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) loadConfig:(NSString*)configFile
 {
+	[self loadConfig:configFile flattenHierarchy:NO];
+}
+
+-(void) loadConfig:(NSString*)configFile flattenHierarchy:(BOOL)flattenHierarchy
+{
 	NSString* path = [NSFileManager pathForFile:configFile];
 	if (path)
 	{
-		NSDictionary* config = [NSDictionary dictionaryWithContentsOfLuaScript:path];
+		NSMutableDictionary* config = [NSMutableDictionary dictionaryWithContentsOfLuaScript:path];
 		if (config)
 		{
+			if (flattenHierarchy)
+			{
+				[self flattenHierarchyWithConfig:config];
+			}
+			
 			NSString* key = [[configFile lastPathComponent] stringByDeletingPathExtension];
 			[_model setObject:config forKey:key];
+		}
+	}
+}
+
+-(void) flattenHierarchyWithConfig:(NSMutableDictionary*)config
+{
+	for (id key in config)
+	{
+		id value = [config valueForKey:key];
+		if ([value isKindOfClass:[NSMutableDictionary class]])
+		{
+			NSMutableDictionary* objectDef = (NSMutableDictionary*)value;
+			NSString* parentName = [objectDef objectForKey:@"inheritsFrom"];
+			if (parentName.length)
+			{
+				NSDictionary* parentObjectDef = [config objectForKey:parentName];
+				NSAssert2(parentObjectDef, @"object type '%@' tries to inherit from unknown parent object type '%@'", key, parentName);
+				if (parentObjectDef)
+				{
+					[self inheritValuesFrom:parentObjectDef childObject:objectDef];
+				}
+			}
+		}
+	}
+}
+
+-(void) inheritValuesFrom:(NSDictionary*)parentObject childObject:(NSMutableDictionary*)childObject
+{
+	for (id parentKey in parentObject)
+	{
+		if ([childObject objectForKey:parentKey] == nil)
+		{
+			[childObject setObject:[parentObject objectForKey:parentKey] forKey:parentKey];
 		}
 	}
 }

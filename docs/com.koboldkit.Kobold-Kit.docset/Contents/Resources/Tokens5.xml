@@ -1,149 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKControlPadBehavior.html">
+	<File path="Classes/KKClassVarSetter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKControlPadBehavior</TokenIdentifier>
-			<Abstract type="html">Emulates a digital control pad (d-pad), updates its node with textures based on the direction.
-Sends a KKControlPadDidChangeDirection notification every time direction changes.</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKClassVarSetter</TokenIdentifier>
+			<Abstract type="html">Utility class that allows to set an object's ivars from a NSDictionary. The dictionary must have strings as keys (the ivar names)
+   and KKMutableNumber or NSString types as values. </Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
 			<NodeRef refid="5"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setDeadZone:</TokenIdentifier>
-			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKClassVarSetter/initWithClass:</TokenIdentifier>
+			<Abstract type="html">Initialize ivar setter with a class.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
+			<Declaration>- (id)initWithClass:(Class)class</Declaration>
 			
 			
-			<Anchor>//api/name/deadZone</Anchor>
+			<Anchor>//api/name/initWithClass:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/deadZone</TokenIdentifier>
-			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKClassVarSetter/setIvarsWithDictionary:target:</TokenIdentifier>
+			<Abstract type="html">Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
+   and either NSString or KKMutableNumber as values. The target's class must match the class the KKIvarSetter object was initialized with. </Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
+			<Declaration>- (void)setIvarsWithDictionary:(NSDictionary *)ivarsDictionary target:(id)target</Declaration>
 			
 			
-			<Anchor>//api/name/deadZone</Anchor>
+			<Anchor>//api/name/setIvarsWithDictionary:target:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/deadZone</TokenIdentifier>
-			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKClassVarSetter/setPropertiesWithDictionary:target:</TokenIdentifier>
+			<Abstract type="html">Calls property setters in the target if their key in the dictionary matches the property name and type. The dictionary must have NSString as keys
+and either NSString or KKMutableNumber as values. The target's class must match the class the KKIvarSetter object was initialized with.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
-			
-			
-			<Anchor>//api/name/deadZone</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setDirection:</TokenIdentifier>
-			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
+			<Declaration>- (void)setPropertiesWithDictionary:(NSDictionary *)propertiesDictionary target:(id)target</Declaration>
 			
 			
-			<Anchor>//api/name/direction</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/direction</TokenIdentifier>
-			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
-			
-			
-			<Anchor>//api/name/direction</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/direction</TokenIdentifier>
-			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
-			
-			
-			<Anchor>//api/name/direction</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setVertical:</TokenIdentifier>
-			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL vertical</Declaration>
-			
-			
-			<Anchor>//api/name/vertical</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/vertical</TokenIdentifier>
-			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL vertical</Declaration>
-			
-			
-			<Anchor>//api/name/vertical</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/vertical</TokenIdentifier>
-			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL vertical</Declaration>
-			
-			
-			<Anchor>//api/name/vertical</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKControlPadBehavior/controlPadBehaviorWithTextures:</TokenIdentifier>
-			<Abstract type="html">Initializes a control pad behavior with either 4 or 8 d-pad directional textures. Start with the texture for "right button pressed"
-and continue adding textures in counter-clockwise order (ie "upper right button pressed", "up button pressed", and so on).
-The "idle" state is the texture the sprite has been initialized with.</Abstract>
-			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
-			
-			<Declaration>+ (id)controlPadBehaviorWithTextures:(NSArray *)textures</Declaration>
-			
-			
-			<Anchor>//api/name/controlPadBehaviorWithTextures:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKControlPadBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)didJoinController</Declaration>
-			
-			
-			<Anchor>//api/name/didJoinController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKControlPadBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)didLeaveController</Declaration>
-			
-			
-			<Anchor>//api/name/didLeaveController</Anchor>
+			<Anchor>//api/name/setPropertiesWithDictionary:target:</Anchor>
 		</Token>
 		
 	</File>

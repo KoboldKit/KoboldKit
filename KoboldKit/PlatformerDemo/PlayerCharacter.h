@@ -30,7 +30,9 @@
 	BOOL _jumping;
 }
 
--(void) setupWithPlayerObject:(KKTilemapObject*)playerObject movementBounds:(CGRect)movementBounds;
+@property (atomic) BOOL running;
+@property (atomic) float someFloat;
+@property (atomic) int someInt;
 
 -(void) controlPadDidChangeDirection:(NSNotification*)note;
 -(void) attackButtonPressed:(NSNotification*)note;

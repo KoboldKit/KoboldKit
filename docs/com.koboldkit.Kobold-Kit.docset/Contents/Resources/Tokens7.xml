@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKDownloadProjectFiles.html">
+	<File path="Classes/KKDoubleNumber.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKDownloadProjectFiles</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKDoubleNumber</TokenIdentifier>
+			<Abstract type="html">Used internally. Part of the KKMutableNumber class cluster.</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKDownloadProjectFiles/downloadProjectFilesWithURL:completionBlock:</TokenIdentifier>
-			<Abstract type="html">(nd)</Abstract>
-			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKDoubleNumber/initWithDouble:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type double</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
 			
-			<Declaration>+ (id)downloadProjectFilesWithURL:(NSURL *)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
+			<Declaration>- (id)initWithDouble:(double)doubleNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/downloadProjectFilesWithURL:completionBlock:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKDownloadProjectFiles/initWithURL:completionBlock:</TokenIdentifier>
-			<Abstract type="html">(nd)</Abstract>
-			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithURL:(NSURL *)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
-			
-			
-			<Anchor>//api/name/initWithURL:completionBlock:</Anchor>
+			<Anchor>//api/name/initWithDouble:</Anchor>
 		</Token>
 		
 	</File>

@@ -134,11 +134,11 @@ which perform each layer's rendering.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/tileLayerNodeWithName:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/tileLayerNodeNamed:</TokenIdentifier>
 			<Abstract type="html">The name identifying a tile layer.</Abstract>
 			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapTileLayerNode *)tileLayerNodeWithName:(NSString *)name</Declaration>
+			<Declaration>- (KKTilemapTileLayerNode *)tileLayerNodeNamed:(NSString *)name</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>name</Name>
@@ -146,15 +146,15 @@ which perform each layer's rendering.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The tile layer node with the name, or nil if there's no tile layer with that name.</Abstract></ReturnValue>
-			<Anchor>//api/name/tileLayerNodeWithName:</Anchor>
+			<Anchor>//api/name/tileLayerNodeNamed:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/objectLayerNodeWithName:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/objectLayerNodeNamed:</TokenIdentifier>
 			<Abstract type="html">The name identifying an object layer.</Abstract>
 			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapObjectLayerNode *)objectLayerNodeWithName:(NSString *)name</Declaration>
+			<Declaration>- (KKTilemapObjectLayerNode *)objectLayerNodeNamed:(NSString *)name</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>name</Name>
@@ -162,26 +162,26 @@ which perform each layer's rendering.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The object layer node with the name, or nil if there's no object layer with that name.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectLayerNodeWithName:</Anchor>
+			<Anchor>//api/name/objectLayerNodeNamed:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/createPhysicsCollisions</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/createPhysicsShapesWithTileLayerNode:</TokenIdentifier>
 			<Abstract type="html">Creates physics blocking shapes from the main tile layer's blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.</Abstract>
 			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>- (SKNode *)createPhysicsCollisions</Declaration>
+			<Declaration>- (SKNode *)createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode *)tileLayerNode</Declaration>
 			
 			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
-			<Anchor>//api/name/createPhysicsCollisions</Anchor>
+			<Anchor>//api/name/createPhysicsShapesWithTileLayerNode:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/createPhysicsCollisionsWithObjectLayerNamed:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/createPhysicsShapesWithObjectLayerNode:</TokenIdentifier>
 			<Abstract type="html">Creates physics blocking shapes from an object layer's objects.</Abstract>
 			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
-			<Declaration>- (SKNode *)createPhysicsCollisionsWithObjectLayerNamed:(NSString *)layerName</Declaration>
+			<Declaration>- (SKNode *)createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode *)objectLayerNode</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>layerName</Name>
@@ -189,7 +189,44 @@ which perform each layer's rendering.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
-			<Anchor>//api/name/createPhysicsCollisionsWithObjectLayerNamed:</Anchor>
+			<Anchor>//api/name/createPhysicsShapesWithObjectLayerNode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/spawnObjectsWithLayerNode:</TokenIdentifier>
+			<Abstract type="html">Spawns the objects of an object layer and adds them as child nodes to the mainTileLayerNode.
+The object's classes and properties are defined in objects.lua.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)objectLayerNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">An object layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/spawnObjectsWithLayerNode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/spawnObjectsWithLayerNode:targetLayerNode:</TokenIdentifier>
+			<Abstract type="html">Spawns the objects of an object layer and adds them as child nodes to the target tile layer.
+The object's classes and properties are defined in objects.lua.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)objectLayerNode targetLayerNode:(KKTilemapTileLayerNode *)targetTileLayerNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">An object layer.</Abstract>
+				</Parameter><Parameter>
+					<Name>targetLayer</Name>
+					<Abstract type="html">The tile layer to which the spawned objects will be added as child nodes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/spawnObjectsWithLayerNode:targetLayerNode:</Anchor>
 		</Token>
 		
 		<Token>
@@ -201,6 +238,18 @@ which perform each layer's rendering.</Abstract>
 			
 			
 			<Anchor>//api/name/restrictScrollingToMapBoundary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/enableParallaxScrolling</TokenIdentifier>
+			<Abstract type="html">Enables parallax scrolling which makes other layers follow the main tile layer's position with parallax offset.
+Call this after setting up any camera follow object.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
+			
+			<Declaration>- (void)enableParallaxScrolling</Declaration>
+			
+			
+			<Anchor>//api/name/enableParallaxScrolling</Anchor>
 		</Token>
 		
 	</File>

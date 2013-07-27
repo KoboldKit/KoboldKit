@@ -58,15 +58,21 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/createPhysicsCollisions">&nbsp;&nbsp;&nbsp;&nbsp;- createPhysicsCollisions</option>
+	<option value="//api/name/createPhysicsShapesWithObjectLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- createPhysicsShapesWithObjectLayerNode:</option>
 	
-	<option value="//api/name/createPhysicsCollisionsWithObjectLayerNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- createPhysicsCollisionsWithObjectLayerNamed:</option>
+	<option value="//api/name/createPhysicsShapesWithTileLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- createPhysicsShapesWithTileLayerNode:</option>
 	
-	<option value="//api/name/objectLayerNodeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- objectLayerNodeWithName:</option>
+	<option value="//api/name/enableParallaxScrolling">&nbsp;&nbsp;&nbsp;&nbsp;- enableParallaxScrolling</option>
+	
+	<option value="//api/name/objectLayerNodeNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- objectLayerNodeNamed:</option>
 	
 	<option value="//api/name/restrictScrollingToMapBoundary">&nbsp;&nbsp;&nbsp;&nbsp;- restrictScrollingToMapBoundary</option>
 	
-	<option value="//api/name/tileLayerNodeWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- tileLayerNodeWithName:</option>
+	<option value="//api/name/spawnObjectsWithLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjectsWithLayerNode:</option>
+	
+	<option value="//api/name/spawnObjectsWithLayerNode:targetLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjectsWithLayerNode:targetLayerNode:</option>
+	
+	<option value="//api/name/tileLayerNodeNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- tileLayerNodeNamed:</option>
 	
 	
 	
@@ -112,15 +118,21 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPhysicsCollisions">createPhysicsCollisions</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPhysicsShapesWithObjectLayerNode:">createPhysicsShapesWithObjectLayerNode:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPhysicsCollisionsWithObjectLayerNamed:">createPhysicsCollisionsWithObjectLayerNamed:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPhysicsShapesWithTileLayerNode:">createPhysicsShapesWithTileLayerNode:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLayerNodeWithName:">objectLayerNodeWithName:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableParallaxScrolling">enableParallaxScrolling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLayerNodeNamed:">objectLayerNodeNamed:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restrictScrollingToMapBoundary">restrictScrollingToMapBoundary</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileLayerNodeWithName:">tileLayerNodeWithName:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjectsWithLayerNode:">spawnObjectsWithLayerNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjectsWithLayerNode:targetLayerNode:">spawnObjectsWithLayerNode:targetLayerNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileLayerNodeNamed:">tileLayerNodeNamed:</a></span></li>
 	
 </ul></li>
 
@@ -207,29 +219,45 @@ which perform each layer&rsquo;s rendering.</p>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/tileLayerNodeWithName:">&ndash;&nbsp;tileLayerNodeWithName:</a></code>
+		<code><a href="#//api/name/tileLayerNodeNamed:">&ndash;&nbsp;tileLayerNodeNamed:</a></code>
 		<span class="tooltip"><p>The name identifying a tile layer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/objectLayerNodeWithName:">&ndash;&nbsp;objectLayerNodeWithName:</a></code>
+		<code><a href="#//api/name/objectLayerNodeNamed:">&ndash;&nbsp;objectLayerNodeNamed:</a></code>
 		<span class="tooltip"><p>The name identifying an object layer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/createPhysicsCollisions">&ndash;&nbsp;createPhysicsCollisions</a></code>
+		<code><a href="#//api/name/createPhysicsShapesWithTileLayerNode:">&ndash;&nbsp;createPhysicsShapesWithTileLayerNode:</a></code>
 		<span class="tooltip"><p>Creates physics blocking shapes from the main tile layer&rsquo;s blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/createPhysicsCollisionsWithObjectLayerNamed:">&ndash;&nbsp;createPhysicsCollisionsWithObjectLayerNamed:</a></code>
+		<code><a href="#//api/name/createPhysicsShapesWithObjectLayerNode:">&ndash;&nbsp;createPhysicsShapesWithObjectLayerNode:</a></code>
 		<span class="tooltip"><p>Creates physics blocking shapes from an object layer&rsquo;s objects.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spawnObjectsWithLayerNode:">&ndash;&nbsp;spawnObjectsWithLayerNode:</a></code>
+		<span class="tooltip"><p>Spawns the objects of an object layer and adds them as child nodes to the <a href="#//api/name/mainTileLayerNode">mainTileLayerNode</a>.
+The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spawnObjectsWithLayerNode:targetLayerNode:">&ndash;&nbsp;spawnObjectsWithLayerNode:targetLayerNode:</a></code>
+		<span class="tooltip"><p>Spawns the objects of an object layer and adds them as child nodes to the target tile layer.
+The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 	</span>
 	
 	
@@ -237,6 +265,14 @@ which perform each layer&rsquo;s rendering.</p>
 	<span class="tooltip">
 		<code><a href="#//api/name/restrictScrollingToMapBoundary">&ndash;&nbsp;restrictScrollingToMapBoundary</a></code>
 		<span class="tooltip"><p>Enables boundary scrolling. This prevents the map&rsquo;s main tile layer from ever scrolling outside its <a href="#//api/name/bounds">bounds</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableParallaxScrolling">&ndash;&nbsp;enableParallaxScrolling</a></code>
+		<span class="tooltip"><p>Enables parallax scrolling which makes other layers follow the main tile layer&rsquo;s position with parallax offset.
+Call this <em>after</em> setting up any camera follow object.</p></span>
 	</span>
 	
 	
@@ -438,47 +474,8 @@ which perform each layer&rsquo;s rendering.</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/createPhysicsCollisions" title="createPhysicsCollisions"></a>
-	<h3 class="subsubtitle method-title">createPhysicsCollisions</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Creates physics blocking shapes from the main tile layer&rsquo;s blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsCollisions</code></div>
-	
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The node containing child nodes for each physics body created.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKTilemapNode.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/createPhysicsCollisionsWithObjectLayerNamed:" title="createPhysicsCollisionsWithObjectLayerNamed:"></a>
-	<h3 class="subsubtitle method-title">createPhysicsCollisionsWithObjectLayerNamed:</h3>
+	<a name="//api/name/createPhysicsShapesWithObjectLayerNode:" title="createPhysicsShapesWithObjectLayerNode:"></a>
+	<h3 class="subsubtitle method-title">createPhysicsShapesWithObjectLayerNode:</h3>
 	
 	
 	
@@ -487,7 +484,7 @@ which perform each layer&rsquo;s rendering.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsCollisionsWithObjectLayerNamed:(NSString *)<em>layerName</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -526,8 +523,82 @@ which perform each layer&rsquo;s rendering.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/objectLayerNodeWithName:" title="objectLayerNodeWithName:"></a>
-	<h3 class="subsubtitle method-title">objectLayerNodeWithName:</h3>
+	<a name="//api/name/createPhysicsShapesWithTileLayerNode:" title="createPhysicsShapesWithTileLayerNode:"></a>
+	<h3 class="subsubtitle method-title">createPhysicsShapesWithTileLayerNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates physics blocking shapes from the main tile layer&rsquo;s blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode *)<em>tileLayerNode</em></code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The node containing child nodes for each physics body created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableParallaxScrolling" title="enableParallaxScrolling"></a>
+	<h3 class="subsubtitle method-title">enableParallaxScrolling</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables parallax scrolling which makes other layers follow the main tile layer&rsquo;s position with parallax offset.
+Call this <em>after</em> setting up any camera follow object.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)enableParallaxScrolling</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectLayerNodeNamed:" title="objectLayerNodeNamed:"></a>
+	<h3 class="subsubtitle method-title">objectLayerNodeNamed:</h3>
 	
 	
 	
@@ -536,7 +607,7 @@ which perform each layer&rsquo;s rendering.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (KKTilemapObjectLayerNode *)objectLayerNodeWithName:(NSString *)<em>name</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (KKTilemapObjectLayerNode *)objectLayerNodeNamed:(NSString *)<em>name</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -609,8 +680,103 @@ which perform each layer&rsquo;s rendering.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/tileLayerNodeWithName:" title="tileLayerNodeWithName:"></a>
-	<h3 class="subsubtitle method-title">tileLayerNodeWithName:</h3>
+	<a name="//api/name/spawnObjectsWithLayerNode:" title="spawnObjectsWithLayerNode:"></a>
+	<h3 class="subsubtitle method-title">spawnObjectsWithLayerNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Spawns the objects of an object layer and adds them as child nodes to the <a href="#//api/name/mainTileLayerNode">mainTileLayerNode</a>.
+The object&rsquo;s classes and properties are defined in objects.lua.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layer</em></dt>
+			<dd><p>An object layer.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spawnObjectsWithLayerNode:targetLayerNode:" title="spawnObjectsWithLayerNode:targetLayerNode:"></a>
+	<h3 class="subsubtitle method-title">spawnObjectsWithLayerNode:targetLayerNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Spawns the objects of an object layer and adds them as child nodes to the target tile layer.
+The object&rsquo;s classes and properties are defined in objects.lua.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em> targetLayerNode:(KKTilemapTileLayerNode *)<em>targetTileLayerNode</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>layer</em></dt>
+			<dd><p>An object layer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>targetLayer</em></dt>
+			<dd><p>The tile layer to which the spawned objects will be added as child nodes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tileLayerNodeNamed:" title="tileLayerNodeNamed:"></a>
+	<h3 class="subsubtitle method-title">tileLayerNodeNamed:</h3>
 	
 	
 	
@@ -619,7 +785,7 @@ which perform each layer&rsquo;s rendering.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (KKTilemapTileLayerNode *)tileLayerNodeWithName:(NSString *)<em>name</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (KKTilemapTileLayerNode *)tileLayerNodeNamed:(NSString *)<em>name</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -670,7 +836,7 @@ which perform each layer&rsquo;s rendering.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-10)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-27)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

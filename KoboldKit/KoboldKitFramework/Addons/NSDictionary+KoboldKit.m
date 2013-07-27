@@ -8,6 +8,7 @@
 
 #import "KKCompatibility.h"
 #import "NSDictionary+KoboldKit.h"
+#import "KKMutableNumber.h"
 #import "KKLua.h"
 
 @implementation NSDictionary (KoboldKit)
@@ -102,7 +103,7 @@ typedef enum
 	
 	if (lua_istable(L, anIndex))
 	{
-		dict = [NSMutableDictionary dictionaryWithCapacity:4];
+		dict = [NSMutableDictionary dictionaryWithCapacity:3];
 		
 		lua_pushnil(L); // first key
 		while (lua_next(L, -2) != 0)
@@ -127,15 +128,15 @@ typedef enum
 			switch (luaValueType)
 			{
 				case LUA_TNUMBER:
-					[dict setObject:[NSNumber numberWithFloat:(float)lua_tonumber(L, -1)] forKey:key];
+					[dict setObject:[KKMutableNumber numberWithFloat:(float)lua_tonumber(L, -1)] forKey:key];
 					break;
-					
+
+				case LUA_TBOOLEAN:
+					[dict setObject:[KKMutableNumber numberWithBool:lua_toboolean(L, -1)] forKey:key];
+					break;
+
 				case LUA_TSTRING:
 					[dict setObject:[NSString stringWithCString:lua_tostring(L, -1) encoding:NSUTF8StringEncoding] forKey:key];
-					break;
-					
-				case LUA_TBOOLEAN:
-					[dict setObject:[NSNumber numberWithBool:lua_toboolean(L, -1)] forKey:key];
 					break;
 					
 				case LUA_TTABLE:
@@ -165,10 +166,20 @@ typedef enum
 	return dict;
 }
 
-+(NSDictionary*) dictionaryWithContentsOfLuaScript:(NSString*)aFile
++(NSDictionary*) dictionaryWithContentsOfLuaScript:(NSString*)luaScript
+{
+	return [NSMutableDictionary dictionaryWithContentsOfLuaScript:luaScript];
+}
+
+@end
+
+
+@implementation NSMutableDictionary (KoboldKit)
+
++(NSMutableDictionary*) dictionaryWithContentsOfLuaScript:(NSString*)luaScript
 {
 	NSMutableDictionary* dict = nil;
-	BOOL didLoadFile = [KKLua doFile:aFile];
+	BOOL didLoadFile = [KKLua doFile:luaScript];
 	
 	if (didLoadFile)
 	{

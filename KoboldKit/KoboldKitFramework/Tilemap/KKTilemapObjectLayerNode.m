@@ -24,6 +24,7 @@
 	{
 		_layer = layer;
 		_tilemap = tilemap;
+		self.name = layer.name;
 	}
 	return self;
 }

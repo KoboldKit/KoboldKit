@@ -16,6 +16,7 @@
 {
 	@private
 	NSMutableArray* _sceneStack;
+	NSDictionary* _tiledObjects;
 }
 
 /** @name Presenting Scenes */

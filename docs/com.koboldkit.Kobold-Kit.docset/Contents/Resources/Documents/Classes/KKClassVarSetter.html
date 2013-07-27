@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KKIvarSetter Class Reference</title>
+		<title>KKClassVarSetter Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KKIvarSetter Class Reference</h1>
+				<h1 class="hideInXcode">KKClassVarSetter Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -46,7 +46,9 @@
 	
 	<option value="//api/name/initWithClass:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithClass:</option>
 	
-	<option value="//api/name/setIvarsFromDictionary:target:">&nbsp;&nbsp;&nbsp;&nbsp;- setIvarsFromDictionary:target:</option>
+	<option value="//api/name/setIvarsWithDictionary:target:">&nbsp;&nbsp;&nbsp;&nbsp;- setIvarsWithDictionary:target:</option>
+	
+	<option value="//api/name/setPropertiesWithDictionary:target:">&nbsp;&nbsp;&nbsp;&nbsp;- setPropertiesWithDictionary:target:</option>
 	
 	
 	
@@ -78,7 +80,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithClass:">initWithClass:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setIvarsFromDictionary:target:">setIvarsFromDictionary:target:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setIvarsWithDictionary:target:">setIvarsWithDictionary:target:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPropertiesWithDictionary:target:">setPropertiesWithDictionary:target:</a></span></li>
 	
 </ul></li>
 
@@ -87,7 +91,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KKIvarSetter Class Reference" name="top"></a>
+				<a title="KKClassVarSetter Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -96,7 +100,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KKIvarSetter Class Reference</h1>
+						<h1 class="title title-header">KKClassVarSetter Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -107,7 +111,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKIvarSetter.h<br />KKIvarSetter.m</td>
+	<td class="specification-value">KKClassVarSetter.h<br />KKClassVarSetter.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -143,9 +147,17 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setIvarsFromDictionary:target:">&ndash;&nbsp;setIvarsFromDictionary:target:</a></code>
+		<code><a href="#//api/name/setIvarsWithDictionary:target:">&ndash;&nbsp;setIvarsWithDictionary:target:</a></code>
 		<span class="tooltip"><p>Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
    and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKIvarSetter object was initialized with.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setPropertiesWithDictionary:target:">&ndash;&nbsp;setPropertiesWithDictionary:target:</a></code>
+		<span class="tooltip"><p>Calls property setters in the target if their key in the dictionary matches the property name and type. The dictionary must have NSString as keys
+and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKIvarSetter object was initialized with.</p></span>
 	</span>
 	
 	
@@ -194,15 +206,15 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKIvarSetter.h</code><br />
+		<code class="declared-in-ref">KKClassVarSetter.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setIvarsFromDictionary:target:" title="setIvarsFromDictionary:target:"></a>
-	<h3 class="subsubtitle method-title">setIvarsFromDictionary:target:</h3>
+	<a name="//api/name/setIvarsWithDictionary:target:" title="setIvarsWithDictionary:target:"></a>
+	<h3 class="subsubtitle method-title">setIvarsWithDictionary:target:</h3>
 	
 	
 	
@@ -212,7 +224,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)setIvarsFromDictionary:(NSDictionary *)<em>ivarsDictionary</em> target:(id)<em>target</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setIvarsWithDictionary:(NSDictionary *)<em>ivarsDictionary</em> target:(id)<em>target</em></code></div>
 	
 	
 	
@@ -229,7 +241,42 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKIvarSetter.h</code><br />
+		<code class="declared-in-ref">KKClassVarSetter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setPropertiesWithDictionary:target:" title="setPropertiesWithDictionary:target:"></a>
+	<h3 class="subsubtitle method-title">setPropertiesWithDictionary:target:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Calls property setters in the target if their key in the dictionary matches the property name and type. The dictionary must have NSString as keys
+and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKIvarSetter object was initialized with.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setPropertiesWithDictionary:(NSDictionary *)<em>propertiesDictionary</em> target:(id)<em>target</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKClassVarSetter.h</code><br />
 	</div>				
 	
 	
@@ -248,7 +295,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-10)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-27)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

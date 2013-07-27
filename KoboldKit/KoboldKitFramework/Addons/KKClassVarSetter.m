@@ -6,7 +6,7 @@
 //
 //
 
-#import "KKIvarSetter.h"
+#import "KKClassVarSetter.h"
 #import "KKMutableNumber.h"
 #import "KKTypes.h"
 
@@ -84,7 +84,7 @@ static Class kMutableNumberClass;
 	{
 		_type = KKIvarTypeString;
 	}
-} /* updateTypeFromEncoding */
+}
 
 -(void) setIvarInTarget:(id)target value:(id)value
 {
@@ -125,7 +125,7 @@ static Class kMutableNumberClass;
 			default:
 				[NSException raise:@"can't set ivar"
 				            format:@"failed to set ivar %@ to number value %@ in target %@ - reason: ivar's type isn't handled in the switch", self, value, target];
-		} /* switch */
+		}
 	}
 	else if ([value isKindOfClass:kStringClass])
 	{
@@ -161,13 +161,13 @@ static Class kMutableNumberClass;
 			default:
 				[NSException raise:@"can't set ivar"
 				            format:@"failed to set ivar %@ to string value %@ in target %@ - reason: ivar's type isn't handled in the switch. Possibly a float number with comma as decimal separator?", self, value, target];
-		} /* switch */
+		}
 	}
-}         /* setIvarInTarget */
+}
 
 @end
 
-@implementation KKIvarSetter
+@implementation KKClassVarSetter
 
 -(id) initWithClass:(Class)class
 {
@@ -214,7 +214,7 @@ static Class kMutableNumberClass;
 	}
 
 	// LOG_EXPR(_ivarInfos);
-} /* createIvarList */
+}
 
 -(KKIvarInfo*) ivarInfoForName:(NSString*)name
 {
@@ -232,22 +232,40 @@ static Class kMutableNumberClass;
 	return foundIvarInfo;
 }
 
--(void) setIvarsFromDictionary:(NSDictionary*)ivarsDictionary target:(id)target
+-(void) setIvarsWithDictionary:(NSDictionary*)ivarsDictionary target:(id)target
 {
 	NSAssert2([target isKindOfClass:_class], @"class mismatch! target class %@ != expected class %@", NSStringFromClass([target class]), NSStringFromClass(_class));
 
 	[ivarsDictionary enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL* stop)
 	{
 		NSAssert1([key isKindOfClass:[NSString class]], @"dictionary key must be a NSString, but it's a %@", NSStringFromClass([key class]));
-		NSString* name = key;
 
-		KKIvarInfo* ivarInfo = [self ivarInfoForName:name];
-		if (ivarInfo)
+		if ([key hasPrefix:@"_"])
 		{
-			//NSLog(@"Tiled var: %@ = %@", name, obj);
-			[ivarInfo setIvarInTarget:target value:obj];
+			KKIvarInfo* ivarInfo = [self ivarInfoForName:key];
+			if (ivarInfo)
+			{
+				//NSLog(@"var: %@ = %@", name, obj);
+				[ivarInfo setIvarInTarget:target value:obj];
+			}
 		}
 	}];
-} /* setIvarsFromDictionary */
+}
+
+-(void) setPropertiesWithDictionary:(NSDictionary*)propertiesDictionary target:(id)target
+{
+	NSAssert2([target isKindOfClass:_class], @"class mismatch! target class %@ != expected class %@", NSStringFromClass([target class]), NSStringFromClass(_class));
+	
+	[propertiesDictionary enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL* stop)
+	{
+		NSAssert1([key isKindOfClass:[NSString class]], @"dictionary key must be a NSString, but it's a %@", NSStringFromClass([key class]));
+		 
+		if ([key hasPrefix:@"_"] == NO)
+		{
+			//NSLog(@"set property '%@' value '%@'", key, obj);
+			[target setValue:obj forKey:key];
+		}
+	}];
+}
 
 @end

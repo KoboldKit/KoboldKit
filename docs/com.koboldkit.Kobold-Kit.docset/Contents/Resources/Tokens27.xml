@@ -715,11 +715,11 @@ Always nil for tile layers.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/objectByName:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayer/objectNamed:</TokenIdentifier>
 			<Abstract type="html">The name identifying an object.</Abstract>
 			<DeclaredIn>KKTilemapLayer.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapObject *)objectByName:(NSString *)name</Declaration>
+			<Declaration>- (KKTilemapObject *)objectNamed:(NSString *)name</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>name</Name>
@@ -727,7 +727,7 @@ Always nil for tile layers.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">the first object with the given name, or nil if there's no object with this name on this layer. Object names are case-sensitive!</Abstract></ReturnValue>
-			<Anchor>//api/name/objectByName:</Anchor>
+			<Anchor>//api/name/objectNamed:</Anchor>
 		</Token>
 		
 	</File>

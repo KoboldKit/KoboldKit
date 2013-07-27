@@ -41,8 +41,8 @@
 	_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:_tmxFile];
 	[self addChild:_tilemapNode];
 	
-	[_tilemapNode createPhysicsCollisions];
-	[_tilemapNode createPhysicsCollisionsWithObjectLayerNamed:@"extra-collision"];
+	[_tilemapNode createPhysicsShapesWithTileLayerNode:_tilemapNode.mainTileLayerNode];
+	[_tilemapNode createPhysicsShapesWithObjectLayerNode:[_tilemapNode objectLayerNodeNamed:@"extra-collision"]];
 
 	// test write TMX
 	[_tilemapNode.tilemap writeToFile:[NSFileManager pathForDocumentsFile:@"testWrite.tmx"]];
@@ -59,7 +59,10 @@
 	LOG_EXPR(self.physicsWorld.gravity);
 	LOG_EXPR(self.physicsWorld.speed);
 
-	[self setupPlayerCharacter];
+	[_tilemapNode spawnObjectsWithLayerNode:[_tilemapNode objectLayerNodeNamed:@"game objects"]];
+
+	_playerCharacter = (PlayerCharacter*)[_tilemapNode.mainTileLayerNode childNodeWithName:@"player"];
+	NSAssert1([_playerCharacter isKindOfClass:[PlayerCharacter class]], @"player node (%@) is not of class PlayerCharacter!", _playerCharacter);
 	
 	[self createSimpleControls];
 	//[self createVirtualJoypad];
@@ -76,6 +79,18 @@
 	[_curtainSprite runAction:[SKAction sequence:@[[SKAction fadeAlphaTo:0 duration:0.5], [SKAction removeFromParent]]]];
 	_curtainSprite = nil;
 }
+
+/*
+-(void) setupPlayerCharacter
+{
+	KKTilemapObject* playerObject = [[_tilemapNode.tilemap layerNamed:@"game objects"] objectNamed:@"player"];
+	NSAssert(playerObject, @"No object named 'player' on tilemap!");
+	
+	_playerCharacter = [PlayerCharacter node];
+	[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
+	[_playerCharacter setupWithPlayerObject:playerObject movementBounds:_tilemapNode.bounds];
+}
+ */
 
 -(void) addDevelopmentButtons
 {
@@ -140,16 +155,6 @@
 {
 	MenuScene* newScene = [MenuScene sceneWithSize:self.size];
 	[self.view presentScene:newScene];
-}
-
--(void) setupPlayerCharacter
-{
-	KKTilemapObject* playerObject = [[_tilemapNode.tilemap layerNamed:@"game objects"] objectNamed:@"player"];
-	NSAssert(playerObject, @"No object named 'player' on tilemap!");
-	
-	_playerCharacter = [PlayerCharacter node];
-	[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
-	[_playerCharacter setupWithPlayerObject:playerObject movementBounds:_tilemapNode.bounds];
 }
 
 /*

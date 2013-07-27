@@ -11,6 +11,7 @@
 @class KKTilemapProperties;
 @class KKTilemapPolyObject;
 @class KKTilemapRectangleObject;
+@class KKTilemapLayer;
 
 /** @file KTTilemapObject.h */
 
@@ -39,11 +40,16 @@ typedef enum : unsigned char
 	KKTilemapProperties* _properties;
 }
 
+/** Reference to the object layer for quick access to the object's layer.
+ @returns The object layer the object is on. */
+@property (atomic, weak) KKTilemapLayer* layer;
+
 /** Name of the object.  TILED-EDITABLE */
 @property (atomic, copy) NSString* name;
 /** The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
-   Object Types added in the Tiled Preferences dialog. You can also import & export Object Types from there. TILED-EDITABLE */
-@property (atomic, copy) NSString* userType;
+   Object Types added in the Tiled Preferences dialog. You can also import & export Object Types from there. 
+ Normally the type is used to identify an object defined in the objectTypes.lua config file.  TILED-EDITABLE */
+@property (atomic, copy) NSString* type;
 /** The object's properties. */
 @property (atomic, readonly) KKTilemapProperties* properties;
 /** The rotation of the object (in Euler coordinates, radians). */
@@ -54,7 +60,9 @@ typedef enum : unsigned char
 @property (atomic) CGSize size;
 /** The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
    having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! */
-@property (atomic) KKTilemapObjectType type;
+@property (atomic) KKTilemapObjectType objectType;
+/** @returns NO if the object is visible, YES if it is not visible. */
+@property (atomic) BOOL hidden;
 
 // TMX Parser needs these
 -(KKTilemapRectangleObject*) rectangleObjectFromPolyObject:(KKTilemapPolyObject*)polyObject;
