@@ -165,6 +165,9 @@
 		DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */; };
 		DC8EED2317A53FBA000C1995 /* NSString+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8EED2117A53FBA000C1995 /* NSString+KoboldKit.m */; };
 		DC8EED2417A53FBA000C1995 /* NSString+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8EED2117A53FBA000C1995 /* NSString+KoboldKit.m */; };
+		DC8EED2717A58773000C1995 /* NSObject+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2517A58773000C1995 /* NSObject+KoboldKit.h */; };
+		DC8EED2817A58773000C1995 /* NSObject+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8EED2617A58773000C1995 /* NSObject+KoboldKit.m */; };
+		DC8EED2917A58773000C1995 /* NSObject+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8EED2617A58773000C1995 /* NSObject+KoboldKit.m */; };
 		DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */; };
 		DCB76E5E178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
 		DCB76E5F178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
@@ -425,6 +428,8 @@
 		DC8EED1D17A40788000C1995 /* objectTypes.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTypes.lua; sourceTree = "<group>"; };
 		DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KoboldKit.h"; sourceTree = "<group>"; };
 		DC8EED2117A53FBA000C1995 /* NSString+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KoboldKit.m"; sourceTree = "<group>"; };
+		DC8EED2517A58773000C1995 /* NSObject+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KoboldKit.h"; sourceTree = "<group>"; };
+		DC8EED2617A58773000C1995 /* NSObject+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KoboldKit.m"; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DC95BA7B1786DFB800E31DA6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DC95BA7C1786DFB800E31DA6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -908,6 +913,8 @@
 				DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */,
 				DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */,
 				DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */,
+				DC8EED2517A58773000C1995 /* NSObject+KoboldKit.h */,
+				DC8EED2617A58773000C1995 /* NSObject+KoboldKit.m */,
 				DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */,
 				DC8EED2117A53FBA000C1995 /* NSString+KoboldKit.m */,
 			);
@@ -1195,6 +1202,7 @@
 			files = (
 				DCB76E66178CB19C0047B4EC /* KKTilemapTileLayerNode.h in Headers */,
 				DCB76E63178CB19C0047B4EC /* KKTilemapObjectLayerNode.h in Headers */,
+				DC8EED2717A58773000C1995 /* NSObject+KoboldKit.h in Headers */,
 				DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */,
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
@@ -1477,6 +1485,7 @@
 				DC484CA5178C43400067DAA4 /* KKTMXWriter.m in Sources */,
 				DC484CAA178C43400067DAA4 /* NSCoder+KoboldKit.m in Sources */,
 				DC484CAB178C43400067DAA4 /* NSFileManager+KoboldKit.m in Sources */,
+				DC8EED2917A58773000C1995 /* NSObject+KoboldKit.m in Sources */,
 				DCB76E65178CB19C0047B4EC /* KKTilemapObjectLayerNode.m in Sources */,
 				DC484CAC178C43400067DAA4 /* NSDictionary+KoboldKit.m in Sources */,
 				DC484CAD178C43400067DAA4 /* KKLua.m in Sources */,
@@ -1567,6 +1576,7 @@
 				DCD7A259178C7449004A0467 /* NSCoder+KoboldKit.m in Sources */,
 				DCD7A25A178C7449004A0467 /* NSFileManager+KoboldKit.m in Sources */,
 				DCD7A25B178C7449004A0467 /* NSDictionary+KoboldKit.m in Sources */,
+				DC8EED2817A58773000C1995 /* NSObject+KoboldKit.m in Sources */,
 				DCB76E64178CB19C0047B4EC /* KKTilemapObjectLayerNode.m in Sources */,
 				DCD7A25C178C7449004A0467 /* KKLua.m in Sources */,
 				DCD7A25D178C7449004A0467 /* KKIntegerArray.m in Sources */,

@@ -168,28 +168,28 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeStartElementWithNamespace:localName:">&ndash;&nbsp;writeStartElementWithNamespace:localName:</a></code>
-		<span class="tooltip"><p>..</p></span>
+		<span class="tooltip"><p>The namespace.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeEndElementWithNamespace:localName:">&ndash;&nbsp;writeEndElementWithNamespace:localName:</a></code>
-		<span class="tooltip"><p>..</p></span>
+		<span class="tooltip"><p>The namespace.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeEmptyElementWithNamespace:localName:">&ndash;&nbsp;writeEmptyElementWithNamespace:localName:</a></code>
-		<span class="tooltip"><p>..</p></span>
+		<span class="tooltip"><p>The namespace.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeAttributeWithNamespace:localName:value:">&ndash;&nbsp;writeAttributeWithNamespace:localName:value:</a></code>
-		<span class="tooltip"><p>..</p></span>
+		<span class="tooltip"><p>The namespace.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
@@ -224,14 +224,14 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getPrefix:">&ndash;&nbsp;getPrefix:</a></code>
-		<span class="tooltip"><p>..</p></span>
+		<span class="tooltip"><p>The namespace prefix.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getNamespaceURI:">&ndash;&nbsp;getNamespaceURI:</a></code>
-		<span class="tooltip"><p>..</p></span>
+		<span class="tooltip"><p>The namespace for the prefix.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
@@ -259,14 +259,29 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>..</p>
+		<p>The namespace for the prefix.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (NSString *)getNamespaceURI:(NSString *)<em>prefix</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>prefix</em></dt>
+			<dd><p>The namespace prefix.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The namespace for the prefix.</p>
+	</div>
 	
 	
 	
@@ -293,14 +308,29 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>..</p>
+		<p>The namespace prefix.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (NSString *)getPrefix:(NSString *)<em>namespaceURI</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The namespace prefix.</p>
+	</div>
 	
 	
 	
@@ -333,6 +363,16 @@
 	
 	<div class="method-subsection method-declaration"><code>- (void)setDefaultNamespace:(NSString *)<em>namespaceURI</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -368,6 +408,21 @@
 	<div class="method-subsection method-declaration"><code>- (void)setPrefix:(NSString *)<em>prefix</em> namespaceURI:(NSString *)<em>namespaceURI</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>prefix</em></dt>
+			<dd><p>The namespace prefix.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -395,12 +450,32 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>..</p>
+		<p>The namespace.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)writeAttributeWithNamespace:(NSString *)<em>namespaceURI</em> localName:(NSString *)<em>localName</em> value:(NSString *)<em>value</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localName</em></dt>
+			<dd><p>The attribute name.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The attribute value.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -436,6 +511,16 @@
 	<div class="method-subsection method-declaration"><code>- (void)writeDefaultNamespace:(NSString *)<em>namespaceURI</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -463,12 +548,27 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>..</p>
+		<p>The namespace.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)writeEmptyElementWithNamespace:(NSString *)<em>namespaceURI</em> localName:(NSString *)<em>localName</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localName</em></dt>
+			<dd><p>The element name.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -497,12 +597,27 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>..</p>
+		<p>The namespace.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)writeEndElementWithNamespace:(NSString *)<em>namespaceURI</em> localName:(NSString *)<em>localName</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localName</em></dt>
+			<dd><p>The element name.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -538,6 +653,21 @@
 	<div class="method-subsection method-declaration"><code>- (void)writeNamespace:(NSString *)<em>prefix</em> namespaceURI:(NSString *)<em>namespaceURI</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>prefix</em></dt>
+			<dd><p>The namespace prefix.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -565,12 +695,27 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>..</p>
+		<p>The namespace.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)writeStartElementWithNamespace:(NSString *)<em>namespaceURI</em> localName:(NSString *)<em>localName</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>namespaceURI</em></dt>
+			<dd><p>The namespace.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localName</em></dt>
+			<dd><p>The element name.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -605,7 +750,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-28)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

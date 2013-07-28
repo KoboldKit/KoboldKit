@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+// var types
 typedef enum
 {
 	KKIvarTypeUnknown = 0,
@@ -33,7 +34,9 @@ typedef enum
 @property (nonatomic, copy) NSString* encoding;
 /** The type of the ivar which is deducted from the encoding. */
 @property (atomic, readonly) KKIvarType type;
-/** Set the ivar in the given target to the value. */
+/** Set the ivar in the given target to the value.
+ @param target The target object for the ivar.
+ @param value The value to assign to the ivar. */
 -(void) setIvarInTarget:(id)target value:(id)value;
 @end
 
@@ -47,15 +50,22 @@ typedef enum
 	NSMutableArray* _ivarInfos;
 }
 
-/** Initialize ivar setter with a class. */
+/** Initialize ivar setter with a class.
+ @param class The class on which to set variables.
+ @returns A new instance of KKClassVarSetter */
 -(id) initWithClass:(Class)class;
 
 /** Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
-   and either NSString or KKMutableNumber as values. The target's class must match the class the KKIvarSetter object was initialized with. */
+   and either NSString or KKMutableNumber as values. The target's class must match the class the KKClassVarSetter object was initialized with.
+ @param ivarsDictionary A NSString keyed dictionary with values for ivars. The keys must begin with _ which is the standard prefix of ivar names.
+ @param target The target to which to set the ivar values. */
 -(void) setIvarsWithDictionary:(NSDictionary*)ivarsDictionary target:(id)target;
 
-/** Calls property setters in the target if their key in the dictionary matches the property name and type. The dictionary must have NSString as keys
- and either NSString or KKMutableNumber as values. The target's class must match the class the KKIvarSetter object was initialized with. */
+/** Calls property setters in the target by using setValue:forKey: (KVC). The dictionary must have NSString as keys
+ and either NSString or KKMutableNumber as values which must match or be convertible to the property's type. 
+ The target's class must match the class the KKClassVarSetter object was initialized with.
+ @param propertiesDictionary A NSString keyed dictionary with values for properties. The keys must match existing properties' names for the given class.
+ @param target The target to which to set the properties. */
 -(void) setPropertiesWithDictionary:(NSDictionary*)propertiesDictionary target:(id)target;
 
 @end

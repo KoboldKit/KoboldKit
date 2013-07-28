@@ -17,7 +17,7 @@
 }
 
 /** @returns Bounds rect in scene coordinates. */
-@property (atomic) CGRect bounds;
+@property (nonatomic) CGRect bounds;
 
 /** If either x/width or y/height are set to INFINITY then that axis will not check for bounds. Thus if the node
  should be able to move endlessly in horizontal direction but not outside the screen at the top or bottom,

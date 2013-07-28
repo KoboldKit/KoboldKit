@@ -551,7 +551,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileset/textureForGid:</TokenIdentifier>
-			<Abstract type="html">The texture for a specific GID, or nil if the gid is not in this tileset.</Abstract>
+			<Abstract type="html">Gets the texture of a tile GID from this tileset.</Abstract>
 			<DeclaredIn>KKTilemapTileset.h</DeclaredIn>			
 			
 			<Declaration>- (SKTexture *)textureForGid:(gid_t)gid</Declaration>

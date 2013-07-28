@@ -70,6 +70,7 @@
 #import "NSCoder+KoboldKit.h"
 #import "NSDictionary+KoboldKit.h"
 #import "NSFileManager+KoboldKit.h"
+#import "NSObject+KoboldKit.h"
 #import "NSString+KoboldKit.h"
 
 // external

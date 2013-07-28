@@ -86,22 +86,32 @@ For example this allows you to perform certain actions n frames from now, instea
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addSceneEventsObserver:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Adds a scene event observer.</Abstract>
 			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
 			<Declaration>- (void)addSceneEventsObserver:(id)observer</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/addSceneEventsObserver:</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeSceneEventsObserver:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Removes a scene event observer.</Abstract>
 			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
 			<Declaration>- (void)removeSceneEventsObserver:(id)observer</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events. </Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/removeSceneEventsObserver:</Anchor>
 		</Token>
@@ -115,7 +125,7 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 			<Declaration>- (void)addInputEventsObserver:(id)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>receiver</Name>
+					<Name>observer</Name>
 					<Abstract type="html">Any object that implements touch, mouse, or other input events.</Abstract>
 				</Parameter>
 			</Parameters>
@@ -131,7 +141,7 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 			<Declaration>- (void)removeInputEventsObserver:(id)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>receiver</Name>
+					<Name>observer</Name>
 					<Abstract type="html">An object that was previously registered as input receiver.</Abstract>
 				</Parameter>
 			</Parameters>

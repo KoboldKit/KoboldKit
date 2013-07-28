@@ -1,69 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/SKScene+KoboldKit.html">
+	<File path="Categories/NSString+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/SKScene(KoboldKit)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">NSString category methods</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
 			
 			<NodeRef refid="51"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/observeNotification:selector:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/rectValue</TokenIdentifier>
+			<Abstract type="html">A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector</Declaration>
+			<Declaration>- (CGRect)rectValue</Declaration>
 			
-			
-			<Anchor>//api/name/observeNotification:selector:</Anchor>
+			<ReturnValue><Abstract type="html">A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}".</Abstract></ReturnValue>
+			<Anchor>//api/name/rectValue</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/observeNotification:selector:object:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/sizeValue</TokenIdentifier>
+			<Abstract type="html">A CGSize converted from a string size representation like "{10, 20}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector object:(id)notificationSender</Declaration>
+			<Declaration>- (CGSize)sizeValue</Declaration>
 			
-			
-			<Anchor>//api/name/observeNotification:selector:object:</Anchor>
+			<ReturnValue><Abstract type="html">A CGSize converted from a string size representation like "{10, 20}".</Abstract></ReturnValue>
+			<Anchor>//api/name/sizeValue</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardNotification:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/pointValue</TokenIdentifier>
+			<Abstract type="html">A CGPoint converted from a string point representation like "{300, 400}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)disregardNotification:(NSString *)notificationName</Declaration>
+			<Declaration>- (CGPoint)pointValue</Declaration>
 			
-			
-			<Anchor>//api/name/disregardNotification:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardNotification:object:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (void)disregardNotification:(NSString *)notificationName object:(id)notificationSender</Declaration>
-			
-			
-			<Anchor>//api/name/disregardNotification:object:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardAllNotifications</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (void)disregardAllNotifications</Declaration>
-			
-			
-			<Anchor>//api/name/disregardAllNotifications</Anchor>
+			<ReturnValue><Abstract type="html">A CGPoint converted from a string point representation like "{300, 400}".</Abstract></ReturnValue>
+			<Anchor>//api/name/pointValue</Anchor>
 		</Token>
 		
 	</File>

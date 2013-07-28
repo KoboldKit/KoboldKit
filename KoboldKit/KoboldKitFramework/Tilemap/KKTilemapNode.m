@@ -398,27 +398,27 @@
 	
 	// for each object on layer
 	KKTilemapLayer* objectLayer = objectLayerNode.layer;
-	for (KKTilemapObject* object in objectLayer.objects)
+	for (KKTilemapObject* tilemapObject in objectLayer.objects)
 	{
-		NSString* objectType = object.type;
+		NSString* objectType = tilemapObject.type;
 		if (objectType)
 		{
 			// find the matching objectTypes definition
 			NSDictionary* objectDef = [objectTypes objectForKey:objectType];
 			
-			NSString* objectClassName = [objectDef objectForKey:@"nodeClass"];
-			NSAssert2(objectClassName, @"Can't create object named '%@' (object type: '%@') - 'nodeClass' entry missing for object & its parents. Check objectTypes.lua", object.name, objectType);
+			NSString* objectClassName = [objectDef objectForKey:@"className"];
+			NSAssert2(objectClassName, @"Can't create object named '%@' (object type: '%@') - 'nodeClass' entry missing for object & its parents. Check objectTypes.lua", tilemapObject.name, objectType);
 			
 			Class objectNodeClass = NSClassFromString(objectClassName);
-			NSAssert3(objectNodeClass, @"Can't create object named '%@' (object type: '%@') - no such class: %@", object.name, objectType, objectClassName);
-			NSAssert3([objectNodeClass isSubclassOfClass:[SKNode class]], @"Can't create object named '%@' (object type: '%@') - class '%@' does not inherit from SKNode", object.name, objectType, objectClassName);
+			NSAssert3(objectNodeClass, @"Can't create object named '%@' (object type: '%@') - no such class: %@", tilemapObject.name, objectType, objectClassName);
+			NSAssert3([objectNodeClass isSubclassOfClass:[SKNode class]], @"Can't create object named '%@' (object type: '%@') - class '%@' does not inherit from SKNode", tilemapObject.name, objectType, objectClassName);
 			
 			// TODO: use a custom initializer where appropriate and setup in objectTypes.lua
 			SKNode* objectNode = [objectNodeClass node];
-			objectNode.position = object.position;
-			objectNode.hidden = object.hidden;
-			objectNode.zRotation = object.rotation;
-			objectNode.name = (object.name.length ? object.name : objectClassName);
+			objectNode.position = tilemapObject.position;
+			objectNode.hidden = tilemapObject.hidden;
+			objectNode.zRotation = tilemapObject.rotation;
+			objectNode.name = (tilemapObject.name.length ? tilemapObject.name : objectClassName);
 			[targetTileLayerNode addChild:objectNode];
 			
 			// create physics body
@@ -426,16 +426,16 @@
 			if (physicsBodyDef.count)
 			{
 				SKPhysicsBody* body = nil;
-				NSString* bodyType = [physicsBodyDef objectForKey:@"bodyType"];
-				if ([bodyType isEqualToString:@"rectangle"])
+				NSString* shapeType = [physicsBodyDef objectForKey:@"shapeType"];
+				if ([shapeType isEqualToString:@"rectangle"])
 				{
-					CGSize size = [[physicsBodyDef objectForKey:@"bodySize"] sizeValue];
-					NSAssert(CGSizeEqualToSize(size, CGSizeZero) == NO, @"physicsBody bodySize is 0,0 for object type '%@'", objectType);
-					body = [objectNode physicsBodyWithRectangleOfSize:size];
+					CGSize shapeSize = [[physicsBodyDef objectForKey:@"shapeSize"] sizeValue];
+					NSAssert(CGSizeEqualToSize(shapeSize, CGSizeZero) == NO, @"physicsBody shapeSize is 0,0 for object type '%@'", objectType);
+					body = [objectNode physicsBodyWithRectangleOfSize:shapeSize];
 				}
 				else
 				{
-					[NSException raise:NSInternalInconsistencyException format:@"physicsBody bodyType (%@) is unsupported for object type '%@'", bodyType, objectType];
+					[NSException raise:NSInternalInconsistencyException format:@"physicsBody shapeType (%@) is unsupported for object type '%@'", shapeType, objectType];
 				}
 				
 				LOG_EXPR([body class]);
@@ -449,7 +449,7 @@
 				}
 			}
 			
-			// apply object properties & ivars
+			// apply node properties & ivars
 			NSDictionary* properties = [objectDef objectForKey:@"properties"];
 			if (properties.count)
 			{
@@ -457,17 +457,48 @@
 				if (varSetter == nil)
 				{
 					varSetter = [[KKClassVarSetter alloc] initWithClass:objectNodeClass];
-					[cachedVarSetters setObject:varSetter forKey:@"objectClassName"];
+					[cachedVarSetters setObject:varSetter forKey:objectClassName];
 				}
 				
 				[varSetter setIvarsWithDictionary:properties target:objectNode];
 				[varSetter setPropertiesWithDictionary:properties target:objectNode];
 			}
 	
+			// create and add behaviors
+			NSDictionary* behaviors = [objectDef objectForKey:@"behaviors"];
+			for (NSDictionary* behaviorDef in [behaviors allValues])
+			{
+				NSString* behaviorClassName = [behaviorDef objectForKey:@"className"];
+				NSAssert1(behaviorClassName, @"Can't create behavior for object type: '%@' - 'behaviorClass' entry missing. Check objectTypes.lua", objectType);
+				
+				Class behaviorClass = NSClassFromString(behaviorClassName);
+				NSAssert2(behaviorClass, @"Can't create behavior named '%@' (object type: '%@') - no such behavior class", behaviorClassName, objectType);
+				NSAssert2([behaviorClass isSubclassOfClass:[KKNodeBehavior class]], @"Can't create behavior named '%@' (object type: '%@') - class does not inherit from KKNodeBehavior", behaviorClassName, objectType);
+				
+				KKNodeBehavior* behavior = [behaviorClass behavior];
+				
+				// apply behavior properties & ivars
+				NSDictionary* properties = [behaviorDef objectForKey:@"properties"];
+				if (properties.count)
+				{
+					KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:behaviorClassName];
+					if (varSetter == nil)
+					{
+						varSetter = [[KKClassVarSetter alloc] initWithClass:behaviorClass];
+						[cachedVarSetters setObject:varSetter forKey:behaviorClassName];
+					}
+					
+					[varSetter setIvarsWithDictionary:properties target:behavior];
+					[varSetter setPropertiesWithDictionary:properties target:behavior];
+				}
+				
+				[objectNode addBehavior:behavior withKey:[behaviorDef objectForKey:@"key"]];
+			}
+			
 			// call objectDidSpawn on newly spawned object (if available)
 			if ([objectNode respondsToSelector:@selector(nodeDidSpawnWithObject:)])
 			{
-				[objectNode performSelector:@selector(nodeDidSpawnWithObject:) withObject:object];
+				[objectNode performSelector:@selector(nodeDidSpawnWithObject:) withObject:tilemapObject];
 			}
 		}
 	}

@@ -149,7 +149,15 @@
 			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
 			
 			<Declaration>- (void)setIvarInTarget:(id)target value:(id)value</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target object for the ivar.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value to assign to the ivar.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/setIvarInTarget:value:</Anchor>
 		</Token>

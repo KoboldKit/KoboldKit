@@ -19,6 +19,7 @@ typedef enum
 	KKSceneGraphDumpAll = 0,
 } KKSceneGraphDumpOptions;
 
+// internal use
 typedef enum
 {
 	KKMainLoopStageInit = 0,
@@ -28,7 +29,7 @@ typedef enum
 } KKMainLoopStage;
 
 /** KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
- dispatches events (input, physics).*/
+ dispatches events (input, physics). */
 @interface KKScene : SKScene <SKPhysicsContactDelegate, KKSceneEventDelegate>
 {
 	@private
@@ -54,23 +55,20 @@ typedef enum
 /** @returns The view cast to a KKView object. */
 @property (atomic, readonly) KKView* kkView;
 
-/** (not documented) */
+/** Adds a scene event observer.
+ @param observer The receiver of scene events. */
 -(void) addSceneEventsObserver:(id)observer;
-/** (not documented) */
+/** Removes a scene event observer.
+  @param observer The receiver of scene events. */
 -(void) removeSceneEventsObserver:(id)observer;
 
 /** Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
  Note: this is a preliminary, inefficient system. It will eventually be replaced.
- @param receiver Any object that implements touch, mouse, or other input events. */
+ @param observer Any object that implements touch, mouse, or other input events. */
 -(void) addInputEventsObserver:(id)observer;
 /** Unregisters a class as generic input receiver.
- @param receiver An object that was previously registered as input receiver. */
+ @param observer An object that was previously registered as input receiver. */
 -(void) removeInputEventsObserver:(id)observer;
-
-// internal use
--(BOOL) isEqualToScene:(KKScene*)scene;
--(BOOL) isEqualToSceneTree:(KKScene*)scene;
--(BOOL) isEqualToSceneProperties:(KKScene*)scene;
 
 /** Dumps the scene graph to a string.
  @param options Determines what will be included in the dump.
@@ -81,5 +79,10 @@ typedef enum
 // internal use
 -(void) registerController:(KKNodeController*)controller;
 -(void) unregisterController:(KKNodeController*)controller;
+
+// internal use
+-(BOOL) isEqualToScene:(KKScene*)scene;
+-(BOOL) isEqualToSceneTree:(KKScene*)scene;
+-(BOOL) isEqualToSceneProperties:(KKScene*)scene;
 
 @end

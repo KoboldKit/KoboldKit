@@ -12,6 +12,7 @@
 @class KKPointArray;
 @class KKTilemapLayer;
 
+// neighbor indices
 typedef enum
 {
 	KKNeighborLeft,
@@ -27,6 +28,8 @@ typedef enum
 } KKNeighborIndices;
 
 
+/** Internal use. Performs contour tracing of a tile layer and returns the resulting contour segments
+ as CGPathRef or KKPointArray. */
 @interface KKTilemapLayerContourTracer : NSObject
 {
 	@private
@@ -46,10 +49,17 @@ typedef enum
 	BOOL _mapBorderBlocking;
 }
 
-/** Contains KTPointArray of points definining a single contour's line segments. */
+/** Contains array of CGPathRef definining the contours' line segments. */
 @property (atomic, readonly) NSArray* contourSegments;
 
+/** Parses the tile layer and creates a contour map.
+ @returns Instance of KKTilemapLayerContourTracer.
+ @param layer A tile layer. */
 +(id) contourMapFromTileLayer:(KKTilemapLayer*)layer;
+/** Parses the tile layer and creates a contour map.
+ @returns Instance of KKTilemapLayerContourTracer.
+ @param layer A tile layer.
+ @param blockingGids An integer array of specific GIDs that should be considered as blocking. */
 +(id) contourMapFromTileLayer:(KKTilemapLayer*)layer blockingGids:(KKIntegerArray*)blockingGids;
 
 @end

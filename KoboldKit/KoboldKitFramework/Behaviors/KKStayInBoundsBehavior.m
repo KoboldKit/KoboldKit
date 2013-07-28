@@ -29,9 +29,17 @@
 {
 	_wantsUpdate = YES;
 	_isSpriteNode = [self.node isKindOfClass:[SKSpriteNode class]];
+}
 
-	// update once immediately
-	[self didSimulatePhysics];
+-(void) setBounds:(CGRect)bounds
+{
+	_bounds = bounds;
+	
+	if (CGRectIsEmpty(_bounds) == NO)
+	{
+		// immediately update with new bounds
+		[self didSimulatePhysics];
+	}
 }
 
 -(void) didSimulatePhysics

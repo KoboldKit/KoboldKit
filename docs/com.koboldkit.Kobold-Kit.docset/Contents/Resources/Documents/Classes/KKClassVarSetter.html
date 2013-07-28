@@ -149,15 +149,16 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/setIvarsWithDictionary:target:">&ndash;&nbsp;setIvarsWithDictionary:target:</a></code>
 		<span class="tooltip"><p>Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
-   and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKIvarSetter object was initialized with.</p></span>
+   and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKClassVarSetter object was initialized with.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setPropertiesWithDictionary:target:">&ndash;&nbsp;setPropertiesWithDictionary:target:</a></code>
-		<span class="tooltip"><p>Calls property setters in the target if their key in the dictionary matches the property name and type. The dictionary must have NSString as keys
-and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKIvarSetter object was initialized with.</p></span>
+		<span class="tooltip"><p>Calls property setters in the target by using setValue:forKey: (KVC). The dictionary must have NSString as keys
+and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values which must match or be convertible to the property&rsquo;s type.
+The target&rsquo;s class must match the class the KKClassVarSetter object was initialized with.</p></span>
 	</span>
 	
 	
@@ -192,7 +193,22 @@ and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber
 	<div class="method-subsection method-declaration"><code>- (id)initWithClass:(Class)<em>class</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>class</em></dt>
+			<dd><p>The class on which to set variables.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new instance of KKClassVarSetter</p>
+	</div>
 	
 	
 	
@@ -220,12 +236,27 @@ and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber
 	
 	<div class="method-subsection brief-description">
 		<p>Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
-   and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKIvarSetter object was initialized with.</p>
+   and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKClassVarSetter object was initialized with.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)setIvarsWithDictionary:(NSDictionary *)<em>ivarsDictionary</em> target:(id)<em>target</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ivarsDictionary</em></dt>
+			<dd><p>A NSString keyed dictionary with values for ivars. The keys must begin with _ which is the standard prefix of ivar names.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to which to set the ivar values.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -254,13 +285,29 @@ and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Calls property setters in the target if their key in the dictionary matches the property name and type. The dictionary must have NSString as keys
-and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values. The target&rsquo;s class must match the class the KKIvarSetter object was initialized with.</p>
+		<p>Calls property setters in the target by using setValue:forKey: (KVC). The dictionary must have NSString as keys
+and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> as values which must match or be convertible to the property&rsquo;s type.
+The target&rsquo;s class must match the class the KKClassVarSetter object was initialized with.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)setPropertiesWithDictionary:(NSDictionary *)<em>propertiesDictionary</em> target:(id)<em>target</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>propertiesDictionary</em></dt>
+			<dd><p>A NSString keyed dictionary with values for properties. The keys must match existing properties' names for the given class.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to which to set the properties.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -295,7 +342,7 @@ and either NSString or <a href="../Classes/KKMutableNumber.html">KKMutableNumber
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-28)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

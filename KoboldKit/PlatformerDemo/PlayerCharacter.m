@@ -15,14 +15,19 @@
 	NSLog(@"-(void) nodeDidSpawnWithObject:(KKTilemapObject*)object");
 	LOG_EXPR(object);
 	
-	// tilamep node
-	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.parent.parent;
-	NSAssert1([tilemapNode isKindOfClass:[KKTilemapNode class]], @"player.parent.parent (%@) is not the tilemap node!", tilemapNode);
+	[self setupPlayerSpriteWithObject:object];
 	
-	[self setupWithPlayerObject:object movementBounds:tilemapNode.bounds];
+	// update bounds behavior with tilemap bounds
+	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.parent.parent;
+	NSAssert1([tilemapNode isKindOfClass:[KKTilemapNode class]], @"player.parent.parent (%@) is not a KKTilemapNode!", tilemapNode);
+	KKStayInBoundsBehavior* stayInBoundsBehavior = [self behaviorWithClass:[KKStayInBoundsBehavior class]];
+	stayInBoundsBehavior.bounds = tilemapNode.bounds;
+
+	// receive updates
+	[self observeSceneEvents];
 }
 
--(void) setupWithPlayerObject:(KKTilemapObject*)playerObject movementBounds:(CGRect)movementBounds
+-(void) setupPlayerSpriteWithObject:(KKTilemapObject*)playerObject
 {
 	CGSize playerSize = playerObject.size;
 	
@@ -69,27 +74,6 @@
 	LOG_EXPR(_fallSpeedAcceleration);
 	LOG_EXPR(_fallSpeedLimit);
 	LOG_EXPR(_runSpeedAcceleration);
-	
-	KKTilemapProperties* playerProperties = playerObject.properties;
-	
-	// limit maximum speed of the player
-	if ([playerProperties numberForKey:@"velocityLimit"])
-	{
-		CGFloat limit = [playerProperties numberForKey:@"velocityLimit"].doubleValue;
-		[self addBehavior:[KKLimitVelocityBehavior limitVelocity:limit]];
-	}
-	
-	// prevent player from leaving the area
-	if ([playerProperties numberForKey:@"stayInBounds"].boolValue)
-	{
-		[self addBehavior:[KKStayInBoundsBehavior stayInBounds:movementBounds]];
-	}
-	
-	// make the camera follow the player
-	[self addBehavior:[KKCameraFollowBehavior behavior] withKey:@"camera"];
-
-	// receive updates
-	[self observeSceneEvents];
 }
 
 -(void) controlPadDidChangeDirection:(NSNotification*)note

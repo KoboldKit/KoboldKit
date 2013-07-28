@@ -59,6 +59,8 @@
 	
 	<option value="//api/name/behaviorForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- behaviorForKey:</option>
 	
+	<option value="//api/name/behaviorWithClass:">&nbsp;&nbsp;&nbsp;&nbsp;- behaviorWithClass:</option>
+	
 	<option value="//api/name/centerOnNode:">&nbsp;&nbsp;&nbsp;&nbsp;- centerOnNode:</option>
 	
 	<option value="//api/name/createController">&nbsp;&nbsp;&nbsp;&nbsp;- createController</option>
@@ -87,10 +89,6 @@
 	
 	<option value="//api/name/pauseControllersInNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- pauseControllersInNodeTree:</option>
 	
-	<option value="//api/name/performSelector:afterDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelector:afterDelay:</option>
-	
-	<option value="//api/name/performSelectorInBackground:">&nbsp;&nbsp;&nbsp;&nbsp;- performSelectorInBackground:</option>
-	
 	<option value="//api/name/physicsBodyWithEdgeChainFromPath:">&nbsp;&nbsp;&nbsp;&nbsp;- physicsBodyWithEdgeChainFromPath:</option>
 	
 	<option value="//api/name/physicsBodyWithEdgeLoopFromPath:">&nbsp;&nbsp;&nbsp;&nbsp;- physicsBodyWithEdgeLoopFromPath:</option>
@@ -102,6 +100,8 @@
 	<option value="//api/name/removeBehavior:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehavior:</option>
 	
 	<option value="//api/name/removeBehaviorForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehaviorForKey:</option>
+	
+	<option value="//api/name/removeBehaviorWithClass:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehaviorWithClass:</option>
 	
 	<option value="//api/name/resumeControllersInNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- resumeControllersInNodeTree:</option>
 	
@@ -132,8 +132,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the KKScene">Accessing the KKScene</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Behaviors">Working with Behaviors</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scheduling Selectors">Scheduling Selectors</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to input events">Subscribe to input events</a></span></li>
 	
@@ -169,6 +167,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/behaviorForKey:">behaviorForKey:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/behaviorWithClass:">behaviorWithClass:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centerOnNode:">centerOnNode:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createController">createController</a></span></li>
@@ -197,10 +197,6 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pauseControllersInNodeTree:">pauseControllersInNodeTree:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelector:afterDelay:">performSelector:afterDelay:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSelectorInBackground:">performSelectorInBackground:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/physicsBodyWithEdgeChainFromPath:">physicsBodyWithEdgeChainFromPath:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/physicsBodyWithEdgeLoopFromPath:">physicsBodyWithEdgeLoopFromPath:</a></span></li>
@@ -212,6 +208,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehavior:">removeBehavior:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehaviorForKey:">removeBehaviorForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehaviorWithClass:">removeBehaviorWithClass:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeControllersInNodeTree:">resumeControllersInNodeTree:</a></span></li>
 	
@@ -270,7 +268,7 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/centerOnNode:">&ndash;&nbsp;centerOnNode:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Changes the receiver&rsquo;s position so that it is centered on the given node.</p></span>
 	</span>
 	
 	
@@ -385,6 +383,13 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/behaviorWithClass:">&ndash;&nbsp;behaviorWithClass:</a></code>
+		<span class="tooltip"><p>The first behavior of the given class. Returns nil if no behavior with that class was found.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/hasBehaviors">&ndash;&nbsp;hasBehaviors</a></code>
 		<span class="tooltip"><p>YES if the node has one or more behaviors.</p></span>
 	</span>
@@ -406,30 +411,15 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/removeAllBehaviors">&ndash;&nbsp;removeAllBehaviors</a></code>
-		<span class="tooltip"><p>Removes all behaviors from the node.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Scheduling Selectors" name="task_Scheduling Selectors"></a>
-						<h3 class="subsubtitle task-title">Scheduling Selectors</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/performSelector:afterDelay:">&ndash;&nbsp;performSelector:afterDelay:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<code><a href="#//api/name/removeBehaviorWithClass:">&ndash;&nbsp;removeBehaviorWithClass:</a></code>
+		<span class="tooltip"><p>Removes the first behavior with the given class.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/performSelectorInBackground:">&ndash;&nbsp;performSelectorInBackground:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<code><a href="#//api/name/removeAllBehaviors">&ndash;&nbsp;removeAllBehaviors</a></code>
+		<span class="tooltip"><p>Removes all behaviors from the node.</p></span>
 	</span>
 	
 	
@@ -444,14 +434,15 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeInputEvents">&ndash;&nbsp;observeInputEvents</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver starts receiving input events. The receiver will receive any event method for touches,
+accelerometer, keyboard, mouse by simply implementing the corresponding input event method (ie touchesBegan:withEvent:).</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardInputEvents">&ndash;&nbsp;disregardInputEvents</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver stops receiving all input events.</p></span>
 	</span>
 	
 	
@@ -466,14 +457,15 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeSceneEvents">&ndash;&nbsp;observeSceneEvents</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver starts receiving all scene events. These events include update, didSimulatePhysics, didEvaluateActions as well as
+scene resizing and scene move to/from view. Receiver only needs to implement the corresponding event methods.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardSceneEvents">&ndash;&nbsp;disregardSceneEvents</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver stops receiving all scene events.</p></span>
 	</span>
 	
 	
@@ -488,56 +480,56 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeNotification:selector:">&ndash;&nbsp;observeNotification:selector:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver observes notifications posted by notification center.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeNotification:selector:object:">&ndash;&nbsp;observeNotification:selector:object:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardNotification:">&ndash;&nbsp;disregardNotification:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver disregards all notifications with the given name.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardNotification:object:">&ndash;&nbsp;disregardNotification:object:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver disregards notifications with the given name coming from a specific object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardAllNotifications">&ndash;&nbsp;disregardAllNotifications</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Receiver disregards any and all notification sent by the notification center.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/physicsBodyWithEdgeLoopFromPath:">&ndash;&nbsp;physicsBodyWithEdgeLoopFromPath:</a></code>
-		<span class="tooltip"><p>nd</p></span>
+		<span class="tooltip"><p>Creates a physics Body with edge loop shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/physicsBodyWithEdgeChainFromPath:">&ndash;&nbsp;physicsBodyWithEdgeChainFromPath:</a></code>
-		<span class="tooltip"><p>nd</p></span>
+		<span class="tooltip"><p>Creates a physics Body with edge chain shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/physicsBodyWithRectangleOfSize:">&ndash;&nbsp;physicsBodyWithRectangleOfSize:</a></code>
-		<span class="tooltip"><p>nd</p></span>
+		<span class="tooltip"><p>Creates a physics Body with rectangle shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p></span>
 	</span>
 	
 	
@@ -780,7 +772,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (KKNodeBehavior *)behaviorForKey:(NSString *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)behaviorForKey:(NSString *)<em>key</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -819,18 +811,77 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/behaviorWithClass:" title="behaviorWithClass:"></a>
+	<h3 class="subsubtitle method-title">behaviorWithClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The first behavior of the given class. Returns nil if no behavior with that class was found.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)behaviorWithClass:(Class)<em>behaviorClass</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behaviorClass</em></dt>
+			<dd><p>The Class of the behavior.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The first behavior of the given class. Returns nil if no behavior with that class was found.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/centerOnNode:" title="centerOnNode:"></a>
 	<h3 class="subsubtitle method-title">centerOnNode:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Changes the receiver&rsquo;s position so that it is centered on the given node.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)centerOnNode:(SKNode *)<em>node</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>node</em></dt>
+			<dd><p>The node to center on.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -927,7 +978,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver disregards any and all notification sent by the notification center.</p>
 	</div>		
 	
 	
@@ -961,7 +1012,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver stops receiving all input events.</p>
 	</div>		
 	
 	
@@ -995,12 +1046,22 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver disregards all notifications with the given name.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notificationName</em></dt>
+			<dd><p>A string uniquely identifying the notification.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1029,12 +1090,27 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver disregards notifications with the given name coming from a specific object.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em> object:(id)<em>notificationSender</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notificationName</em></dt>
+			<dd><p>A string uniquely identifying the notification.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notificationSender</em></dt>
+			<dd><p>The notification sender object whose notifications are observed.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1063,7 +1139,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver stops receiving all scene events.</p>
 	</div>		
 	
 	
@@ -1136,7 +1212,8 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver starts receiving input events. The receiver will receive any event method for touches,
+accelerometer, keyboard, mouse by simply implementing the corresponding input event method (ie touchesBegan:withEvent:).</p>
 	</div>		
 	
 	
@@ -1170,12 +1247,27 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver observes notifications posted by notification center.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notificationName</em></dt>
+			<dd><p>A string uniquely identifying the notification.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notificationSelector</em></dt>
+			<dd><p>The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1204,12 +1296,32 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em> object:(id)<em>notificationSender</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notificationName</em></dt>
+			<dd><p>A string uniquely identifying the notification.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notificationSelector</em></dt>
+			<dd><p>The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notificationSender</em></dt>
+			<dd><p>The notification sender object whose notifications are observed.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1238,7 +1350,8 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Receiver starts receiving all scene events. These events include update, didSimulatePhysics, didEvaluateActions as well as
+scene resizing and scene move to/from view. Receiver only needs to implement the corresponding event methods.</p>
 	</div>		
 	
 	
@@ -1310,88 +1423,35 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/performSelector:afterDelay:" title="performSelector:afterDelay:"></a>
-	<h3 class="subsubtitle method-title">performSelector:afterDelay:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)performSelector:(SEL)<em>aSelector</em> afterDelay:(NSTimeInterval)<em>delay</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/performSelectorInBackground:" title="performSelectorInBackground:"></a>
-	<h3 class="subsubtitle method-title">performSelectorInBackground:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)performSelectorInBackground:(SEL)<em>aSelector</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/physicsBodyWithEdgeChainFromPath:" title="physicsBodyWithEdgeChainFromPath:"></a>
 	<h3 class="subsubtitle method-title">physicsBodyWithEdgeChainFromPath:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>nd</p>
+		<p>Creates a physics Body with edge chain shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithEdgeChainFromPath:(CGPathRef)<em>path</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The CGPath with chain points.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created SKPhysicsBody.</p>
+	</div>
 	
 	
 	
@@ -1418,14 +1478,29 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>nd</p>
+		<p>Creates a physics Body with edge loop shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithEdgeLoopFromPath:(CGPathRef)<em>path</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The CGPath with edge points.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created SKPhysicsBody.</p>
+	</div>
 	
 	
 	
@@ -1452,14 +1527,29 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>nd</p>
+		<p>Creates a physics Body with rectangle shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithRectangleOfSize:(CGSize)<em>size</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>The size of the rectangle.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>size The newly created SKPhysicsBody.</p>
+	</div>
 	
 	
 	
@@ -1602,6 +1692,50 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/removeBehaviorWithClass:" title="removeBehaviorWithClass:"></a>
+	<h3 class="subsubtitle method-title">removeBehaviorWithClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes the first behavior with the given class.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeBehaviorWithClass:(Class)<em>behaviorClass</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behaviorClass</em></dt>
+			<dd><p>The Class of the behavior.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/resumeControllersInNodeTree:" title="resumeControllersInNodeTree:"></a>
 	<h3 class="subsubtitle method-title">resumeControllersInNodeTree:</h3>
 	
@@ -1692,7 +1826,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-28)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

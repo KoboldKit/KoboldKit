@@ -12,6 +12,7 @@
 #import "KKLua.h"
 #import "NSDictionary+KoboldKit.h"
 #import "NSFileManager+KoboldKit.h"
+#import "KKClassVarSetter.h"
 
 #define ASSERT_SCENE_STACK_INTEGRITY() NSAssert2([_sceneStack lastObject] == self.scene, @"scene stack out of synch! Presented scene: %@ - topmost scene on stack: %@", self.scene, [_sceneStack lastObject])
 
@@ -74,6 +75,11 @@ static BOOL _showsNodeAnchorPoints = NO;
 	self.showsPhysicsShapes = [_model boolForKeyPath:@"devconfig.showsPhysicsShapes"];
 	self.showsNodeFrames = [_model boolForKeyPath:@"devconfig.showsNodeFrames"];
 	self.showsNodeAnchorPoints = [_model boolForKeyPath:@"devconfig.showsNodeAnchorPoints"];
+
+	/*
+	KKClassVarSetter* setter = [[KKClassVarSetter alloc] initWithClass:[self class]];
+	[setter setIvarsWithDictionary:@{@"_showsCPUStats": [NSNumber numberWithBool:YES], @"_showsGPUStats": [NSNumber numberWithBool:YES]} target:self];
+	 */
 }
 
 -(void) loadConfig:(NSString*)configFile

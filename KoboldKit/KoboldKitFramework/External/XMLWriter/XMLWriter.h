@@ -26,40 +26,44 @@
 
 #import <Foundation/Foundation.h>
 
-/** xml stream writer protocol */
+/** xml stream writer protocol, see: https://code.google.com/p/xswi/w/list */
 @protocol XMLStreamWriter
 
 /** .. */
 -(void) writeStartDocument;
-/** .. */
+/** ..
+ @param version The XML version string. */
 -(void) writeStartDocumentWithVersion:(NSString*)version;
-/** .. */
+/** @param encoding The XML encoding as string.
+ @param version The XML version string. */
 -(void) writeStartDocumentWithEncoding:(NSString*)encoding version:(NSString*)version;
 
-/** .. */
+/** @param localName The name of the element. */
 -(void) writeStartElement:(NSString*)localName;
 
 /** .. */
 -(void) writeEndElement;  // automatic end element (mirrors previous start element at the same level)
-/** .. */
+/** @param localName The name of the element. */
 -(void) writeEndElement:(NSString*)localName;
 
-/** .. */
+/** @param localName The name of the element. */
 -(void) writeEmptyElement:(NSString*)localName;
 
 /** .. */
 -(void) writeEndDocument; // write any remaining end elements
 
-/** .. */
+/** @param localName The name of the attribute.
+ @param value The attribute value. */
 -(void) writeAttribute:(NSString*)localName value:(NSString*)value;
 
-/** .. */
+/** @param text The text to write. */
 -(void) writeCharacters:(NSString*)text;
-/** .. */
+/** @param comment The comment text to write. */
 -(void) writeComment:(NSString*)comment;
-/** .. */
+/** @param target The target string.
+ @param data The data string. */
 -(void) writeProcessingInstruction:(NSString*)target data:(NSString*)data;
-/** .. */
+/** @param cdata The cdata string. */
 -(void) writeCData:(NSString*)cdata;
 
 /** @returns the written xml string buffer */
@@ -67,9 +71,9 @@
 /** @returns the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default) */
 -(NSData*) toData;
 
-/** flush the buffers, if any */
+/** flush the buffers */
 -(void) flush;
-/** close the writer and buffers, if any */
+/** close the writer and buffers */
 -(void) close;
 
 @end
@@ -77,34 +81,47 @@
 /** xml stream writer with namespace support */
 @protocol NSXMLStreamWriter<XMLStreamWriter>
 
-/** .. */
+/** @param namespaceURI The namespace.
+ @param localName The element name. */
 -(void) writeStartElementWithNamespace:(NSString*)namespaceURI localName:(NSString*)localName;
-/** .. */
+/** @param namespaceURI The namespace.
+ @param localName The element name. */
 -(void) writeEndElementWithNamespace:(NSString*)namespaceURI localName:(NSString*)localName;
-/** .. */
+/** @param namespaceURI The namespace.
+ @param localName The element name. */
 -(void) writeEmptyElementWithNamespace:(NSString*)namespaceURI localName:(NSString*)localName;
 
-/** .. */
+/** @param namespaceURI The namespace.
+ @param localName The attribute name.
+ @param value The attribute value. */
 -(void) writeAttributeWithNamespace:(NSString*)namespaceURI localName:(NSString*)localName value:(NSString*)value;
 
-/** set a namespace and prefix */
+/** set a namespace and prefix
+ @param prefix The namespace prefix.
+ @param namespaceURI The namespace. */
 -(void) setPrefix:(NSString*)prefix namespaceURI:(NSString*)namespaceURI;
-/** write (and set) a namespace and prefix */
+/** write (and set) a namespace and prefix 
+ @param prefix The namespace prefix.
+ @param namespaceURI The namespace. */
 -(void) writeNamespace:(NSString*)prefix namespaceURI:(NSString*)namespaceURI;
 
-/** set the default namespace (empty prefix) */
+/** set the default namespace (empty prefix)
+ @param namespaceURI The namespace. */
 -(void) setDefaultNamespace:(NSString*)namespaceURI;
-/** write (and set) the default namespace */
+/** write (and set) the default namespace 
+ @param namespaceURI The namespace. */
 -(void) writeDefaultNamespace:(NSString*)namespaceURI;
 
-/** .. */
+/** @returns The namespace prefix.
+ @param namespaceURI The namespace.  */
 -(NSString*) getPrefix:(NSString*)namespaceURI;
-/** .. */
+/** @returns The namespace for the prefix.
+ @param prefix The namespace prefix. */
 -(NSString*) getNamespaceURI:(NSString*)prefix;
 
 @end
 
-/** XMLWriter writes XML files. Mainly used for iOS since there is no built-in XML writer API for iOS. */
+/** XMLWriter writes XML files. Mainly used for iOS since there is no built-in XML writer API for iOS. See: https://code.google.com/p/xswi/w/list */
 @interface XMLWriter : NSObject<NSXMLStreamWriter>
 {
 	// the current output buffer
@@ -144,13 +161,13 @@
 	BOOL automaticEmptyElements;
 }
 
-/** .. */
+/** @returns XML indentation string */
 @property (atomic, retain, readwrite) NSString* indentation;
-/** .. */
+/** @returns lineBreak string */
 @property (atomic, retain, readwrite) NSString* lineBreak;
-/** .. */
+/** @returns automatic empty elements */
 @property (atomic, assign, readwrite) BOOL automaticEmptyElements;
-/** .. */
+/** @returns indentation level */
 @property (atomic, readonly) int level;
 
 /** helpful for formatting, special needs
@@ -163,9 +180,11 @@
 
 /** write any outstanding namespace declaration attributes in a start element */
 -(void) writeNamespaceAttributes;
-/** write escaped text to the stream */
+/** write escaped text to the stream 
+ @param value The escaped string. */
 -(void) writeEscape:(NSString*)value;
-/** wrote unescaped text to the stream */
+/** wrote unescaped text to the stream
+ @param value The unescaped string. */
 -(void) write:(NSString*)value;
 
 @end

@@ -107,9 +107,14 @@
 	[[self createController] addBehaviors:behaviors];
 }
 
--(KKNodeBehavior*) behaviorForKey:(NSString*)key
+-(id) behaviorForKey:(NSString*)key
 {
 	return [[self createController] behaviorForKey:key];
+}
+
+-(id) behaviorWithClass:(Class)behaviorClass
+{
+	return [[self createController] behaviorWithClass:behaviorClass];
 }
 
 -(BOOL) hasBehaviors
@@ -127,21 +132,14 @@
 	[[self createController] removeBehaviorForKey:key];
 }
 
+-(void) removeBehaviorWithClass:(Class)behaviorClass
+{
+	[[self createController] removeBehaviorWithClass:behaviorClass];
+}
+
 -(void) removeAllBehaviors
 {
 	[[self createController] removeAllBehaviors];
-}
-
-#pragma mark Perform Selector
-
--(void) performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay
-{
-	[self performSelector:aSelector withObject:self afterDelay:delay];
-}
-
--(void) performSelectorInBackground:(SEL)aSelector
-{
-	[self performSelectorInBackground:aSelector withObject:self];
 }
 
 #pragma mark Notifications

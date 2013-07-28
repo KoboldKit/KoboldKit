@@ -33,10 +33,13 @@
 		_target = target;
 		_positionOffset = positionOffset;
 		_positionMultiplier = positionMultiplier;
-		
-		_wantsUpdate = YES;
 	}
 	return self;
+}
+
+-(void) didJoinController
+{
+	_wantsUpdate = YES;
 }
 
 -(void) didSimulatePhysics

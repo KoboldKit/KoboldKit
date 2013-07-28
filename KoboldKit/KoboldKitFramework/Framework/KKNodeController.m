@@ -104,6 +104,18 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	return nil;
 }
 
+-(id) behaviorWithClass:(Class)behaviorClass
+{
+	for (KKNodeBehavior* behavior in _behaviors)
+	{
+		if ([behavior isMemberOfClass:behaviorClass])
+		{
+			return behavior;
+		}
+	}
+	return nil;
+}
+
 -(BOOL) hasBehaviors
 {
 	return _behaviors.count > 0;
@@ -128,6 +140,18 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 				[self removeBehavior:behavior];
 				break;
 			}
+		}
+	}
+}
+
+-(void) removeBehaviorWithClass:(Class)behaviorClass
+{
+	for (KKNodeBehavior* behavior in [_behaviors reverseObjectEnumerator])
+	{
+		if ([behavior isMemberOfClass:behaviorClass])
+		{
+			[self removeBehavior:behavior];
+			break;
 		}
 	}
 }

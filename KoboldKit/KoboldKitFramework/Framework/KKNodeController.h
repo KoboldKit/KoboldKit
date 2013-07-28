@@ -58,6 +58,11 @@ extern NSString* const KKNodeControllerUserDataKey;
 /** (not documented) */
 -(void) removeAllBehaviors;
 
+/** nd */
+-(id) behaviorWithClass:(Class)behaviorClass;
+/** nd */
+-(void) removeBehaviorWithClass:(Class)behaviorClass;
+
 /** (not documented) */
 -(void) update:(NSTimeInterval)currentTime;
 /** (not documented) */

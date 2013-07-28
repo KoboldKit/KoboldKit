@@ -9,7 +9,7 @@ local objectTypes =
 		-- used by Tiled (needs simple tool to convert to Tiled objectdef.xml format)
 		tiledColor = "#ff0055", 
 		-- create an instance of this class (class must inherit from SKNode or its subclasses)
-		nodeClass = "PlayerCharacter",
+		className = "PlayerCharacter",
 		
 		-- optional: use a custom init method with default params
 		--init = {"spriteWithColor:size:", "{200, 0, 0}", "{240, 120}"},
@@ -31,8 +31,8 @@ local objectTypes =
 		-- physics body properties
 		physicsBody =
 		{
-			bodyType = "rectangle",
-			bodySize = "{15, 20}",
+			shapeType = "rectangle",
+			shapeSize = "{15, 20}",
 			
 			properties =
 			{
@@ -49,9 +49,9 @@ local objectTypes =
 		
 		behaviors =
 		{
-			{behaviorClass = "KKLimitVelocityBehavior",	properties = {velocityLimit = 100}},
-			{behaviorClass = "KKStayInBoundsBehavior",	properties = {bounds = "{{0, 0}, {100, 100}}"}},
-			{behaviorClass = "KKCameraFollowBehavior"},
+			--{behaviorClass = "KKLimitVelocityBehavior", properties = {velocityLimit = 100}},
+			{className = "KKStayInBoundsBehavior", properties = {bounds = "{{0, 0}, {0, 0}}"}},
+			{className = "KKCameraFollowBehavior"},
 		},
 	},
 

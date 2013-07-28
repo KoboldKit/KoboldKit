@@ -10,15 +10,23 @@
 @interface NSCoder (KoboldKit)
 
 #if TARGET_OS_IPHONE
-/** encode a CGPoint */
+/** Encodes a CGPoint.
+ @param point The point to encode.
+ @param key The archive key. */
 -(void) encodePoint:(CGPoint)point forKey:(NSString*)key;
-/** decode a CGPoint */
+/** Decodes a CGPoint
+ @returns The decoded point.
+ @param key The archive key. */
 -(CGPoint) decodePointForKey:(NSString*)key;
 #else
-/** encode a CGPoint on OS X */
+/** Encodes a CGPoint using the same method defined by UIGeometry.h on iOS. 
+ @param point The point to encode.
+ @param key The archive key. */
 -(void) encodeCGPoint:(CGPoint)point forKey:(NSString*)key;
-/** decode a CGPoint on OS X */
+/** Decodes a CGPoint using the same method defined by UIGeometry.h on iOS.
+ @returns The decoded point.
+ @param key The archive key. */
 -(CGPoint) decodeCGPointForKey:(NSString*)key;
-#endif /* if TARGET_OS_IPHONE */
+#endif
 
 @end

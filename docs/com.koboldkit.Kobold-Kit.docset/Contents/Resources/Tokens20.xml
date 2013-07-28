@@ -290,6 +290,28 @@ also check the controller's paused state to ensure they don't process/forward ev
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorWithClass:</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (id)behaviorWithClass:(Class)behaviorClass</Declaration>
+			
+			
+			<Anchor>//api/name/behaviorWithClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehaviorWithClass:</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeBehaviorWithClass:(Class)behaviorClass</Declaration>
+			
+			
+			<Anchor>//api/name/removeBehaviorWithClass:</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/update:</TokenIdentifier>
 			<Abstract type="html">(not documented)</Abstract>
 			<DeclaredIn>KKNodeController.h</DeclaredIn>			

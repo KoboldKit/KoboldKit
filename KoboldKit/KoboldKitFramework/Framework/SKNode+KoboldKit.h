@@ -17,7 +17,8 @@
 
 /** @name Changing the Node's Position */
 
-/** (not documented) */
+/** Changes the receiver's position so that it is centered on the given node.
+ @param node The node to center on. */
 -(void) centerOnNode:(SKNode*)node;
 
 /** @name Observing Node's Child Status */
@@ -28,6 +29,7 @@
 -(void) willMoveFromParent;
 
 /** @name Working with Controllers */
+
 /** Returns the node's controller object. */
 @property (atomic) KKNodeController* controller;
 /** Creates node controller if one does not exist yet. Returns the new or existing instance. */
@@ -40,12 +42,13 @@
  @param rootNode The node whose node tree will be resumed. */
 -(void) resumeControllersInNodeTree:(SKNode*)rootNode;
 
-
 /** @name Accessing the KKScene */
+
 /** Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties. */
 @property (atomic, readonly) KKScene* kkScene;
 
 /** @name Working with Behaviors */
+
 /** Adds a behavior to the node. The behavior will be copied.
  @param behavior The behavior to add. */
 -(void) addBehavior:(KKNodeBehavior*)behavior;
@@ -58,7 +61,10 @@
 -(void) addBehaviors:(NSArray*)behaviors;
 /** @returns The behavior for the key. Returns nil if no behavior with that key was found.
  @param key A unique key identifying the behavior. */
--(KKNodeBehavior*) behaviorForKey:(NSString*)key;
+-(id) behaviorForKey:(NSString*)key;
+/** @returns The first behavior of the given class. Returns nil if no behavior with that class was found.
+ @param behaviorClass The Class of the behavior. */
+-(id) behaviorWithClass:(Class)behaviorClass;
 /** @returns YES if the node has one or more behaviors. */
 -(BOOL) hasBehaviors;
 /** Removes the behavior.
@@ -67,49 +73,61 @@
 /** Removes the behavior with the given key.
  @param key The unique key identifying the behavior. */
 -(void) removeBehaviorForKey:(NSString*)key;
+/** Removes the first behavior with the given class.
+ @param behaviorClass The Class of the behavior. */
+-(void) removeBehaviorWithClass:(Class)behaviorClass;
 /** Removes all behaviors from the node. */
 -(void) removeAllBehaviors;
 
-/** @name Scheduling Selectors */
-
-/** (not documented) */
--(void) performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay;
-/** (not documented) */
--(void) performSelectorInBackground:(SEL)aSelector;
-
 /** @name Subscribe to input events */
 
-/** (not documented) */
+/** Receiver starts receiving input events. The receiver will receive any event method for touches,
+ accelerometer, keyboard, mouse by simply implementing the corresponding input event method (ie touchesBegan:withEvent:). */
 -(void) observeInputEvents;
-/** (not documented) */
+/** Receiver stops receiving all input events. */
 -(void) disregardInputEvents;
 
 /** @name Subscribe to scene events */
 
-/** (not documented) */
+/** Receiver starts receiving all scene events. These events include update, didSimulatePhysics, didEvaluateActions as well as
+ scene resizing and scene move to/from view. Receiver only needs to implement the corresponding event methods. */
 -(void) observeSceneEvents;
-/** (not documented) */
+/** Receiver stops receiving all scene events. */
 -(void) disregardSceneEvents;
 
 /** @name Subscribe to notifications */
 
-/** (not documented) */
+/** Receiver observes notifications posted by notification center.
+ @param notificationName A string uniquely identifying the notification.
+ @param notificationSelector The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter. */
 -(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector;
-/** (not documented) */
+/** Receiver observes notifications posted by notification center but only those notifications posted by a specific object.
+ @param notificationName A string uniquely identifying the notification.
+ @param notificationSelector The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.
+ @param notificationSender The notification sender object whose notifications are observed. */
 -(void) observeNotification:(NSString*)notificationName selector:(SEL)notificationSelector object:(id)notificationSender;
-/** (not documented) */
+/** Receiver disregards all notifications with the given name.
+ @param notificationName A string uniquely identifying the notification. */
 -(void) disregardNotification:(NSString*)notificationName;
-/** (not documented) */
+/** Receiver disregards notifications with the given name coming from a specific object.
+ @param notificationName A string uniquely identifying the notification.
+ @param notificationSender The notification sender object whose notifications are observed. */
 -(void) disregardNotification:(NSString*)notificationName object:(id)notificationSender;
-/** (not documented) */
+/** Receiver disregards any and all notification sent by the notification center. */
 -(void) disregardAllNotifications;
 
 
-/** nd */
+/** Creates a physics Body with edge loop shape. Also assigns the physics body to the node's self.physicsBody property.
+ @param path The CGPath with edge points.
+ @returns The newly created SKPhysicsBody. */
 -(SKPhysicsBody*) physicsBodyWithEdgeLoopFromPath:(CGPathRef)path;
-/** nd */
+/** Creates a physics Body with edge chain shape. Also assigns the physics body to the node's self.physicsBody property.
+ @param path The CGPath with chain points.
+ @returns The newly created SKPhysicsBody. */
 -(SKPhysicsBody*) physicsBodyWithEdgeChainFromPath:(CGPathRef)path;
-/** nd */
+/** Creates a physics Body with rectangle shape. Also assigns the physics body to the node's self.physicsBody property.
+ @param size The size of the rectangle.
+ @returns size The newly created SKPhysicsBody. */
 -(SKPhysicsBody*) physicsBodyWithRectangleOfSize:(CGSize)size;
 
 // internal use only

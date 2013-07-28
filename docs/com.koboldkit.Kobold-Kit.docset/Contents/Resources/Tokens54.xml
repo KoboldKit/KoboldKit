@@ -1,201 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/XMLStreamWriter.html">
+	<File path="Protocols/KKSceneEventDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/XMLStreamWriter</TokenIdentifier>
-			<Abstract type="html">xml stream writer protocol</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/KKSceneEventDelegate</TokenIdentifier>
+			<Abstract type="html">Informal protocol defining the "update" methods an object can implement and receive when subscribed
+to updates in the scene.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>
 			
 			<NodeRef refid="54"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeStartDocument</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/update:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeStartDocument</Declaration>
+			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
 			
 			
-			<Anchor>//api/name/writeStartDocument</Anchor>
+			<Anchor>//api/name/update:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeStartDocumentWithVersion:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didUpdateBehaviors</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeStartDocumentWithVersion:(NSString *)version</Declaration>
+			<Declaration>- (void)didUpdateBehaviors</Declaration>
 			
 			
-			<Anchor>//api/name/writeStartDocumentWithVersion:</Anchor>
+			<Anchor>//api/name/didUpdateBehaviors</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeStartDocumentWithEncoding:version:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didEvaluateActions</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeStartDocumentWithEncoding:(NSString *)encoding version:(NSString *)version</Declaration>
+			<Declaration>- (void)didEvaluateActions</Declaration>
 			
 			
-			<Anchor>//api/name/writeStartDocumentWithEncoding:version:</Anchor>
+			<Anchor>//api/name/didEvaluateActions</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeStartElement:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeStartElement:(NSString *)localName</Declaration>
+			<Declaration>- (void)didSimulatePhysics</Declaration>
 			
 			
-			<Anchor>//api/name/writeStartElement:</Anchor>
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeEndElement</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/willMoveFromView:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEndElement</Declaration>
+			<Declaration>- (void)willMoveFromView:(SKView *)view</Declaration>
 			
 			
-			<Anchor>//api/name/writeEndElement</Anchor>
+			<Anchor>//api/name/willMoveFromView:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeEndElement:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didMoveToView:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEndElement:(NSString *)localName</Declaration>
+			<Declaration>- (void)didMoveToView:(SKView *)view</Declaration>
 			
 			
-			<Anchor>//api/name/writeEndElement:</Anchor>
+			<Anchor>//api/name/didMoveToView:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeEmptyElement:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didChangeSize:</TokenIdentifier>
+			<Abstract type="html">(not documented)</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEmptyElement:(NSString *)localName</Declaration>
-			
-			
-			<Anchor>//api/name/writeEmptyElement:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeEndDocument</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeEndDocument</Declaration>
+			<Declaration>- (void)didChangeSize:(CGSize)oldSize</Declaration>
 			
 			
-			<Anchor>//api/name/writeEndDocument</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeAttribute:value:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeAttribute:(NSString *)localName value:(NSString *)value</Declaration>
-			
-			
-			<Anchor>//api/name/writeAttribute:value:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeCharacters:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeCharacters:(NSString *)text</Declaration>
-			
-			
-			<Anchor>//api/name/writeCharacters:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeComment:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeComment:(NSString *)comment</Declaration>
-			
-			
-			<Anchor>//api/name/writeComment:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeProcessingInstruction:data:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeProcessingInstruction:(NSString *)target data:(NSString *)data</Declaration>
-			
-			
-			<Anchor>//api/name/writeProcessingInstruction:data:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeCData:</TokenIdentifier>
-			<Abstract type="html">..</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeCData:(NSString *)cdata</Declaration>
-			
-			
-			<Anchor>//api/name/writeCData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/toString</TokenIdentifier>
-			<Abstract type="html">the written xml string buffer</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (NSMutableString *)toString</Declaration>
-			
-			<ReturnValue><Abstract type="html">the written xml string buffer</Abstract></ReturnValue>
-			<Anchor>//api/name/toString</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/toData</TokenIdentifier>
-			<Abstract type="html">the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default)</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (NSData *)toData</Declaration>
-			
-			<ReturnValue><Abstract type="html">the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default)</Abstract></ReturnValue>
-			<Anchor>//api/name/toData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/flush</TokenIdentifier>
-			<Abstract type="html">flush the buffers, if any</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)flush</Declaration>
-			
-			
-			<Anchor>//api/name/flush</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/close</TokenIdentifier>
-			<Abstract type="html">close the writer and buffers, if any</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)close</Declaration>
-			
-			
-			<Anchor>//api/name/close</Anchor>
+			<Anchor>//api/name/didChangeSize:</Anchor>
 		</Token>
 		
 	</File>

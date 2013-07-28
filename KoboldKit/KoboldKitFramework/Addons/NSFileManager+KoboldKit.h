@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** NSFileManager category methods for Kobold Kit */
 @interface NSFileManager (KoboldKit)
 
 /** @name Locating Files and Paths */
@@ -35,6 +36,7 @@
 /** Searches for the file in the given NSSearchPathDirectory and returns the absolute path to the file if it was found.
  @returns The absolute path to the file, or nil if the file could not be found.
  @param file A filename.
+ @param directory The NSSearchPathDirectory constant where to look for the file.
  @returns The path to the file or nil if the file couldn't be found in the directory. */
 +(NSString*) pathForFile:(NSString*)file inDirectory:(NSSearchPathDirectory)directory;
 
