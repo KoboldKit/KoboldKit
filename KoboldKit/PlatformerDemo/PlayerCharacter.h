@@ -23,6 +23,8 @@
 	CGFloat _runSpeedAcceleration;
 	CGFloat _runSpeedDeceleration;
 	CGFloat _runSpeedLimit;
+	
+	NSString* _defaultImage;
 
 	__weak KKButtonBehavior* _jumpButton;
 
@@ -33,6 +35,10 @@
 @property (atomic) BOOL running;
 @property (atomic) float someFloat;
 @property (atomic) int someInt;
+
+@property (atomic) CGRect someRect;
+@property (atomic) CGSize someSize;
+@property (atomic) CGPoint somePoint;
 
 -(void) controlPadDidChangeDirection:(NSNotification*)note;
 -(void) attackButtonPressed:(NSNotification*)note;

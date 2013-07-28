@@ -157,7 +157,6 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 		{
 			if (touch == _theBeganTouch && [self.node containsPoint:[touch locationInNode:self.node.parent]] == NO)
 			{
-				NSLog(@"lost ofucs");
 				didLoseFocus = YES;
 				[self inputDidMoveLoseFocus:YES];
 				break;

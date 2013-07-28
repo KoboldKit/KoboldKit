@@ -389,6 +389,7 @@
 -(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode targetLayerNode:(KKTilemapTileLayerNode*)targetTileLayerNode
 {
 	NSMutableDictionary* cachedVarSetters = [NSMutableDictionary dictionaryWithCapacity:4];
+	[cachedVarSetters setObject:[[KKClassVarSetter alloc] initWithClass:NSClassFromString(@"PKPhysicsBody")] forKey:@"PKPhysicsBody"];
 	
 	NSDictionary* objectTypes = [objectLayerNode.kkScene.kkView.model objectForKey:@"objectTypes"];
 	NSAssert(objectTypes, @"view's objectTypes config dictionary is nil (scene, view or model nil?)");
@@ -414,14 +415,42 @@
 			
 			// TODO: use a custom initializer where appropriate and setup in objectTypes.lua
 			SKNode* objectNode = [objectNodeClass node];
-			objectNode.position = CGPointMake(object.position.x * gridSize.width, object.position.y * gridSize.height);
+			objectNode.position = object.position;
 			objectNode.hidden = object.hidden;
 			objectNode.zRotation = object.rotation;
 			objectNode.name = (object.name.length ? object.name : objectClassName);
 			[targetTileLayerNode addChild:objectNode];
 			
+			// create physics body
+			NSDictionary* physicsBodyDef = [objectDef objectForKey:@"physicsBody"];
+			if (physicsBodyDef.count)
+			{
+				SKPhysicsBody* body = nil;
+				NSString* bodyType = [physicsBodyDef objectForKey:@"bodyType"];
+				if ([bodyType isEqualToString:@"rectangle"])
+				{
+					CGSize size = [[physicsBodyDef objectForKey:@"bodySize"] sizeValue];
+					NSAssert(CGSizeEqualToSize(size, CGSizeZero) == NO, @"physicsBody bodySize is 0,0 for object type '%@'", objectType);
+					body = [objectNode physicsBodyWithRectangleOfSize:size];
+				}
+				else
+				{
+					[NSException raise:NSInternalInconsistencyException format:@"physicsBody bodyType (%@) is unsupported for object type '%@'", bodyType, objectType];
+				}
+				
+				LOG_EXPR([body class]);
+				
+				// apply physics body object properties & ivars
+				NSDictionary* properties = [physicsBodyDef objectForKey:@"properties"];
+				if (properties.count && body)
+				{
+					KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:@"PKPhysicsBody"];
+					[varSetter setPropertiesWithDictionary:properties target:body];
+				}
+			}
+			
 			// apply object properties & ivars
-			NSDictionary* properties = [objectDef objectForKey:@"classProperties"];
+			NSDictionary* properties = [objectDef objectForKey:@"properties"];
 			if (properties.count)
 			{
 				KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:objectClassName];

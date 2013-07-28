@@ -24,21 +24,19 @@
 
 -(void) setupWithPlayerObject:(KKTilemapObject*)playerObject movementBounds:(CGRect)movementBounds
 {
-	KKTilemapProperties* playerProperties = playerObject.properties;
-	NSString* defaultImage = [playerProperties stringForKey:@"defaultImage"];
 	CGSize playerSize = playerObject.size;
 	
-	if (defaultImage.length > 0)
+	if (_defaultImage.length)
 	{
-		SKTexture* texture = [SKTexture textureWithImageNamed:defaultImage];
+		SKTexture* texture = [SKTexture textureWithImageNamed:_defaultImage];
 		if (texture)
 		{
-			_playerSprite = [SKSpriteNode spriteNodeWithImageNamed:defaultImage];
+			_playerSprite = [SKSpriteNode spriteNodeWithImageNamed:_defaultImage];
 		}
 		else
 		{
 			SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
-			texture = [atlas textureNamed:defaultImage];
+			texture = [atlas textureNamed:_defaultImage];
 			_playerSprite = [SKSpriteNode spriteNodeWithTexture:texture];
 		}
 
@@ -48,30 +46,16 @@
 	{
 		_playerSprite = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:playerSize];
 	}
+	
+	// center position on tile
+	CGPoint pos = self.position;
+	pos.x += playerSize.width / 2;
+	pos.y += playerSize.height / 2;
+	self.position = pos;
+
 	[self addChild:_playerSprite];
 
-	CGSize bboxSize = playerSize;
-	NSString* bboxString = [playerProperties stringForKey:@"boundingBox"];
-	if (bboxString.length)
-	{
-		bboxSize = CGSizeFromString(bboxString);
-	}
 	LOG_EXPR(playerSize);
-	LOG_EXPR(bboxSize);
-	
-	[self physicsBodyWithRectangleOfSize:bboxSize];
-	self.physicsBody.contactTestBitMask = 0xFFFFFFFF;
-	self.physicsBody.affectedByGravity = NO;
-	self.name = @"player";
-	self.position = CGPointMake(playerObject.position.x + playerSize.width / 2,
-								playerObject.position.y + playerSize.height / 2);
-	
-	self.physicsBody.allowsRotation = [playerProperties numberForKey:@"allowsRotation"].boolValue;
-	self.physicsBody.angularDamping = [playerProperties numberForKey:@"angularDamping"].floatValue;
-	self.physicsBody.linearDamping = [playerProperties numberForKey:@"linearDamping"].floatValue;
-	self.physicsBody.friction = [playerProperties numberForKey:@"friction"].floatValue;
-	self.physicsBody.mass = [playerProperties numberForKey:@"mass"].floatValue;
-	self.physicsBody.restitution = [playerProperties numberForKey:@"restitution"].floatValue;
 	LOG_EXPR(self.physicsBody.allowsRotation);
 	LOG_EXPR(self.physicsBody.angularDamping);
 	LOG_EXPR(self.physicsBody.linearDamping);
@@ -80,17 +64,13 @@
 	LOG_EXPR(self.physicsBody.density);
 	LOG_EXPR(self.physicsBody.restitution);
 	LOG_EXPR(self.physicsBody.area);
-
-	/*
-	// apply Tiled properties to ivars
-	KKIvarSetter* ivarSetter = [[KKIvarSetter alloc] initWithClass:[self class]];
-	[ivarSetter setIvarsWithDictionary:playerProperties.properties target:self];
-	 */
 	LOG_EXPR(_jumpSpeedInitial);
 	LOG_EXPR(_jumpSpeedDeceleration);
 	LOG_EXPR(_fallSpeedAcceleration);
 	LOG_EXPR(_fallSpeedLimit);
 	LOG_EXPR(_runSpeedAcceleration);
+	
+	KKTilemapProperties* playerProperties = playerObject.properties;
 	
 	// limit maximum speed of the player
 	if ([playerProperties numberForKey:@"velocityLimit"])

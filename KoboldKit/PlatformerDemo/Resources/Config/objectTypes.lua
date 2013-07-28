@@ -24,13 +24,15 @@ local objectTypes =
 			_runSpeedAcceleration = 0,		-- how fast player accelerates sideways (0 = instant)
 			_runSpeedDeceleration = 0,		-- how fast player decelerates sideways (0 = instant)
 			_runSpeedLimit = 200,			-- max sideways running speed
+			
+			_defaultImage = "Dummy_Player_32.png",
 		},
 		
 		-- physics body properties
 		physicsBody =
 		{
 			bodyType = "rectangle",
-			bodySize = "{10, 10}",
+			bodySize = "{15, 20}",
 			
 			properties =
 			{
@@ -47,18 +49,9 @@ local objectTypes =
 		
 		behaviors =
 		{
-			{
-				behaviorClass = "KKLimitVelocityBehavior", 
-				velocityLimit = 100, 
-				angularVelocityLimit = 5
-			},
-			{
-				behaviorClass = "KKStayInBoundsBehavior", 
-				bounds = "{0, 0, 100, 100}"
-			},
-			{
-				behaviorClass = "KKCameraFollowBehavior",
-			},
+			{behaviorClass = "KKLimitVelocityBehavior",	properties = {velocityLimit = 100}},
+			{behaviorClass = "KKStayInBoundsBehavior",	properties = {bounds = "{{0, 0}, {100, 100}}"}},
+			{behaviorClass = "KKCameraFollowBehavior"},
 		},
 	},
 
