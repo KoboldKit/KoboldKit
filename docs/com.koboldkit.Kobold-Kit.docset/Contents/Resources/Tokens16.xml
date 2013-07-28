@@ -31,8 +31,13 @@
 			<DeclaredIn>KKLua.h</DeclaredIn>			
 			
 			<Declaration>+ (BOOL)doFile:(NSString *)aFile</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>aFile</Name>
+					<Abstract type="html">The full path to a Lua script file.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the file was found and the script was executed without errors.</Abstract></ReturnValue>
 			<Anchor>//api/name/doFile:</Anchor>
 		</Token>
 		
@@ -45,8 +50,13 @@
 			<DeclaredIn>KKLua.h</DeclaredIn>			
 			
 			<Declaration>+ (BOOL)doString:(NSString *)aString</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>aString</Name>
+					<Abstract type="html">A Lua script as string.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the string was executed without errors.</Abstract></ReturnValue>
 			<Anchor>//api/name/doString:</Anchor>
 		</Token>
 		
@@ -67,7 +77,12 @@
 			<DeclaredIn>KKLua.h</DeclaredIn>			
 			
 			<Declaration>+ (void)logLuaErrorWithMessage:(NSString *)aMessage</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>aMessage</Name>
+					<Abstract type="html">The custom message to append to the log.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/logLuaErrorWithMessage:</Anchor>
 		</Token>

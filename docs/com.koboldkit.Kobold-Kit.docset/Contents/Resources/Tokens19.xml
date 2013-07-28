@@ -19,183 +19,195 @@ Behaviors differ from actions in several ways:
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setName:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's name.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
 			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/name</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's name.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
 			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/name</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's name.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
 			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setController:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's node controller.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
 			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/controller</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's node controller.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
 			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/controller</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's node controller.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
 			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setNode:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's owning node.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
 			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/node</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's owning node.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
 			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/node</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">The behavior's owning node.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
 			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setWantsUpdate:</TokenIdentifier>
-			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
 			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/wantsUpdate</TokenIdentifier>
-			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
 			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/wantsUpdate</TokenIdentifier>
-			<Abstract type="html">(not documented) set by subclasses</Abstract>
+			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
 			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/setEnabled:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
 			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/enabled</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
 			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKNodeBehavior/enabled</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
 			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/KKNodeBehavior/behavior</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
+			<Abstract type="html">Creates a new instance.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>+ (id)behavior</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">The new instance.</Abstract></ReturnValue>
 			<Anchor>//api/name/behavior</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/removeFromNode</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Removes the behavior from its owning node and controller.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)removeFromNode</Declaration>
@@ -206,7 +218,7 @@ Behaviors differ from actions in several ways:
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)didJoinController</Declaration>
@@ -217,7 +229,7 @@ Behaviors differ from actions in several ways:
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)didLeaveController</Declaration>
@@ -228,18 +240,23 @@ Behaviors differ from actions in several ways:
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/update:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Standard update method.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>currentTime</Name>
+					<Abstract type="html">The current time since app start.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/update:</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didEvaluateActions</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Update after actions have been evaluated.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)didEvaluateActions</Declaration>
@@ -250,7 +267,7 @@ Behaviors differ from actions in several ways:
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Update after physics world was simulated.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)didSimulatePhysics</Declaration>
@@ -261,22 +278,36 @@ Behaviors differ from actions in several ways:
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/postNotificationName:</TokenIdentifier>
-			<Abstract type="html">(not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.</Abstract>
+			<Abstract type="html">Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)postNotificationName:(NSString *)name</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The uniquely identifying name of the notification.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/postNotificationName:</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKNodeBehavior/postNotificationName:userInfo:</TokenIdentifier>
-			<Abstract type="html">(not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys.</Abstract>
+			<Abstract type="html">Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys.</Abstract>
 			<DeclaredIn>KKNodeBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)postNotificationName:(NSString *)name userInfo:(NSDictionary *)userInfo</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The uniquely identifying name of the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">A dictionary with custom key/value which the notification receiver may need. A key "behavior" containing the
+sending behavior object is always added to the dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/postNotificationName:userInfo:</Anchor>
 		</Token>

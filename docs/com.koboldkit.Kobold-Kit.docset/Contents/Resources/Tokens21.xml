@@ -83,8 +83,13 @@
 			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
 			<Declaration>+ (id)pointArrayWithCapacity:(NSUInteger)capacity</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity reserved for the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
 			<Anchor>//api/name/pointArrayWithCapacity:</Anchor>
 		</Token>
 		
@@ -94,8 +99,16 @@
 			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
 			<Declaration>+ (id)pointArrayWithPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">A memory buffer containing CGPoints. The buffer is copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of CGPoint in the buffer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
 			<Anchor>//api/name/pointArrayWithPoints:count:</Anchor>
 		</Token>
 		
@@ -105,7 +118,15 @@
 			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
 			<Declaration>- (void)addPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Memeory buffer containing points. Buffer is copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of CGPoint in the buffer.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/addPoints:count:</Anchor>
 		</Token>
@@ -116,7 +137,12 @@
 			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
 			<Declaration>- (void)addPoint:(CGPoint)point</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point to add.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/addPoint:</Anchor>
 		</Token>
@@ -138,9 +164,52 @@
 			<DeclaredIn>KKPointArray.h</DeclaredIn>			
 			
 			<Declaration>- (CGPoint)pointAtIndex:(NSUInteger)index</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of a point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The point at the given index.</Abstract></ReturnValue>
 			<Anchor>//api/name/pointAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/lastPoint</TokenIdentifier>
+			<Abstract type="html">The last point in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)lastPoint</Declaration>
+			
+			<ReturnValue><Abstract type="html">The last point in the array.</Abstract></ReturnValue>
+			<Anchor>//api/name/lastPoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removeLastPoint</TokenIdentifier>
+			<Abstract type="html">Removes the last point from the array. Does nothing if the array is empty.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeLastPoint</Declaration>
+			
+			
+			<Anchor>//api/name/removeLastPoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removePointsStartingAtIndex:</TokenIdentifier>
+			<Abstract type="html">Removes all points from index to last point. Does nothing if index >= count. The array then contains (index - 1) points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)removePointsStartingAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The lowest index from which to remove all remaining points.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removePointsStartingAtIndex:</Anchor>
 		</Token>
 		
 	</File>

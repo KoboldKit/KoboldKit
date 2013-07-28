@@ -87,7 +87,7 @@ extern NSString* const KKButtonDidEndExecuteNotification;
  You can override the method in a subclass to perform your own deselection style. */
 -(void) endSelect;
 /** Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
- You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call `[super execute]`
+ You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call [super execute]
  in your implementation. */
 -(void) execute;
 

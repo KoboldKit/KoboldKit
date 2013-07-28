@@ -6,11 +6,21 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <SpriteKit/SpriteKit.h>
+#import "KKCompatibility.h"
 #import "KKNode.h"
+
+@class KKTilemap;
+@class KKTilemapLayer;
 
 /** (not documented) may be removed */
 @interface KKTilemapLayerNode : KKNode
+{
+	@protected
+	__weak KKTilemap* _tilemap;
+	__weak KKTilemapLayer* _layer;
+}
 
+/** @returns The tilemap layer object. */
+@property (atomic, readonly, weak) KKTilemapLayer* layer;
 
 @end

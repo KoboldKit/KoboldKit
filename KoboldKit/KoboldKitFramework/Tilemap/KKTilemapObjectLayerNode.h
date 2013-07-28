@@ -11,20 +11,11 @@
 @class KKTilemap;
 @class KKTilemapLayer;
 
-/** (not documented) */
+/** Object layer node renders Tiled objects. */
 @interface KKTilemapObjectLayerNode : KKTilemapLayerNode
-{
-@protected
-	__weak KKTilemap* _tilemap;
-	__weak KKTilemapLayer* _layer;
-	
-@private
-}
 
-/** (not documented) */
-@property (atomic, readonly, weak) KKTilemapLayer* layer;
-
-/** (not documented) */
-+(id) objectLayerWithLayer:(KKTilemapLayer*)layer tilemap:(KKTilemap*)tilemap;
+/** @param layer A tilemap object layer.
+ @returns A new instance. */
++(id) objectLayerNodeWithLayer:(KKTilemapLayer*)layer;
 
 @end

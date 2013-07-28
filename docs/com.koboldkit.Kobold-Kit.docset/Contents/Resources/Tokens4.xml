@@ -14,7 +14,7 @@ at 0.5,0.5 if you want to center on the node.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
 			<DeclaredIn>KKCameraFollowBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)didJoinController</Declaration>
@@ -25,7 +25,7 @@ at 0.5,0.5 if you want to center on the node.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
 			<DeclaredIn>KKCameraFollowBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)didLeaveController</Declaration>
@@ -36,7 +36,7 @@ at 0.5,0.5 if you want to center on the node.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Update after physics world was simulated.</Abstract>
 			<DeclaredIn>KKCameraFollowBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)didSimulatePhysics</Declaration>

@@ -43,6 +43,7 @@
 @class KKTilemapLayer;
 @class KKTilemapObject;
 
+// current parsing element type
 typedef enum
 {
 	KKTilemapParsingElementNone,
@@ -55,6 +56,7 @@ typedef enum
 	KKTilemapParsingElementImageLayer,
 } KKTilemapParsingElement;
 
+// TMX format flags
 typedef enum
 {
 	KKTilemapDataFormatNone = 1 << 0,
@@ -83,7 +85,9 @@ typedef enum
 	BOOL _parsingData;
 }
 
-/** (not documented) */
+/** Internal use only.
+ @param the full path to a tmx file
+ @param the tilemap object into which the TMX file is loaded */
 -(void) loadTMXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap;
 
 @end

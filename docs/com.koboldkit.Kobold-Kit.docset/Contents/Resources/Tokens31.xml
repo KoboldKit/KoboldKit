@@ -171,7 +171,12 @@ which perform each layer's rendering.</Abstract>
 			<DeclaredIn>KKTilemapNode.h</DeclaredIn>			
 			
 			<Declaration>- (SKNode *)createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode *)tileLayerNode</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>tileLayerNode</Name>
+					<Abstract type="html">The tile layer node for which to create physics shapes.</Abstract>
+				</Parameter>
+			</Parameters>
 			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
 			<Anchor>//api/name/createPhysicsShapesWithTileLayerNode:</Anchor>
 		</Token>
@@ -184,8 +189,8 @@ which perform each layer's rendering.</Abstract>
 			<Declaration>- (SKNode *)createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode *)objectLayerNode</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>layerName</Name>
-					<Abstract type="html">The name of an object layer whose objects should be converted to physics collisions.</Abstract>
+					<Name>objectLayerNode</Name>
+					<Abstract type="html">The object layer node from whose objects to create physics shapes.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
@@ -201,8 +206,8 @@ The object's classes and properties are defined in objects.lua.</Abstract>
 			<Declaration>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)objectLayerNode</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>layer</Name>
-					<Abstract type="html">An object layer.</Abstract>
+					<Name>objectLayerNode</Name>
+					<Abstract type="html">The object layer node for which to spawn objects.</Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -218,11 +223,11 @@ The object's classes and properties are defined in objects.lua.</Abstract>
 			<Declaration>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)objectLayerNode targetLayerNode:(KKTilemapTileLayerNode *)targetTileLayerNode</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>layer</Name>
-					<Abstract type="html">An object layer.</Abstract>
+					<Name>objectLayerNode</Name>
+					<Abstract type="html">The object layer node for which to spawn objects.</Abstract>
 				</Parameter><Parameter>
-					<Name>targetLayer</Name>
-					<Abstract type="html">The tile layer to which the spawned objects will be added as child nodes.</Abstract>
+					<Name>targetTileLayerNode</Name>
+					<Abstract type="html">The tile layer node to which the spawned objects will be added as child nodes.</Abstract>
 				</Parameter>
 			</Parameters>
 			

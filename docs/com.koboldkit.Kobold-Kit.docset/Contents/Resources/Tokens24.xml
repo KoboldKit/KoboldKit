@@ -15,11 +15,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKTMXReader/loadTMXFile:tilemap:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Internal use only.</Abstract>
 			<DeclaredIn>KKTMXReader.h</DeclaredIn>			
 			
 			<Declaration>- (void)loadTMXFile:(NSString *)tmxFile tilemap:(KKTilemap *)tilemap</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>the</Name>
+					<Abstract type="html">tilemap object into which the TMX file is loaded</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/loadTMXFile:tilemap:</Anchor>
 		</Token>

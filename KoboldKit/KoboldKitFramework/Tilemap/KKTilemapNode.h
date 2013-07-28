@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <SpriteKit/SpriteKit.h>
+#import "KKCompatibility.h"
 #import "KKNode.h"
 
 @class KKTilemap;
@@ -48,22 +48,23 @@
 -(KKTilemapObjectLayerNode*) objectLayerNodeNamed:(NSString*)name;
 
 /** Creates physics blocking shapes from the main tile layer's blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.
+ @param tileLayerNode The tile layer node for which to create physics shapes.
  @returns The node containing child nodes for each physics body created. */
 -(SKNode*) createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode*)tileLayerNode;
 
 /** Creates physics blocking shapes from an object layer's objects.
- @param layerName The name of an object layer whose objects should be converted to physics collisions.
+ @param objectLayerNode The object layer node from whose objects to create physics shapes.
  @returns The node containing child nodes for each physics body created. */
 -(SKNode*) createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode;
 
 /** Spawns the objects of an object layer and adds them as child nodes to the mainTileLayerNode.
  The object's classes and properties are defined in objects.lua. 
- @param layer An object layer. */
+ @param objectLayerNode The object layer node for which to spawn objects. */
 -(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode;
 /** Spawns the objects of an object layer and adds them as child nodes to the target tile layer.
  The object's classes and properties are defined in objects.lua.
- @param layer An object layer.
- @param targetLayer The tile layer to which the spawned objects will be added as child nodes. */
+ @param objectLayerNode The object layer node for which to spawn objects.
+ @param targetTileLayerNode The tile layer node to which the spawned objects will be added as child nodes. */
 -(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode targetLayerNode:(KKTilemapTileLayerNode*)targetTileLayerNode;
 
 /** Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds. */

@@ -62,9 +62,15 @@
 	
 	<option value="//api/name/addPoints:count:">&nbsp;&nbsp;&nbsp;&nbsp;- addPoints:count:</option>
 	
+	<option value="//api/name/lastPoint">&nbsp;&nbsp;&nbsp;&nbsp;- lastPoint</option>
+	
 	<option value="//api/name/pointAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- pointAtIndex:</option>
 	
 	<option value="//api/name/removeAllPoints">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllPoints</option>
+	
+	<option value="//api/name/removeLastPoint">&nbsp;&nbsp;&nbsp;&nbsp;- removeLastPoint</option>
+	
+	<option value="//api/name/removePointsStartingAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- removePointsStartingAtIndex:</option>
 	
 	
 	
@@ -114,9 +120,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addPoints:count:">addPoints:count:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastPoint">lastPoint</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointAtIndex:">pointAtIndex:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllPoints">removeAllPoints</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeLastPoint">removeLastPoint</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removePointsStartingAtIndex:">removePointsStartingAtIndex:</a></span></li>
 	
 </ul></li>
 
@@ -234,6 +246,27 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastPoint">&ndash;&nbsp;lastPoint</a></code>
+		<span class="tooltip"><p>The last point in the array.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeLastPoint">&ndash;&nbsp;removeLastPoint</a></code>
+		<span class="tooltip"><p>Removes the last point from the array. Does nothing if the array is empty.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removePointsStartingAtIndex:">&ndash;&nbsp;removePointsStartingAtIndex:</a></code>
+		<span class="tooltip"><p>Removes all <a href="#//api/name/points">points</a> from index to last point. Does nothing if index >= <a href="#//api/name/count">count</a>. The array then contains (index - 1) <a href="#//api/name/points">points</a>.</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -337,7 +370,22 @@
 	<div class="method-subsection method-declaration"><code>+ (id)pointArrayWithCapacity:(NSUInteger)<em>capacity</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>capacity</em></dt>
+			<dd><p>The initial capacity reserved for the array.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new instance.</p>
+	</div>
 	
 	
 	
@@ -371,7 +419,27 @@
 	<div class="method-subsection method-declaration"><code>+ (id)pointArrayWithPoints:(CGPoint *)<em>points</em> count:(NSUInteger)<em>count</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>points</em></dt>
+			<dd><p>A memory buffer containing CGPoints. The buffer is copied.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>The number of CGPoint in the buffer.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new instance.</p>
+	</div>
 	
 	
 	
@@ -413,6 +481,16 @@
 	<div class="method-subsection method-declaration"><code>- (void)addPoint:(CGPoint)<em>point</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>The point to add.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -447,7 +525,61 @@
 	<div class="method-subsection method-declaration"><code>- (void)addPoints:(CGPoint *)<em>points</em> count:(NSUInteger)<em>count</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>points</em></dt>
+			<dd><p>Memeory buffer containing <a href="#//api/name/points">points</a>. Buffer is copied.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>The number of CGPoint in the buffer.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKPointArray.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastPoint" title="lastPoint"></a>
+	<h3 class="subsubtitle method-title">lastPoint</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The last point in the array.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CGPoint)lastPoint</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The last point in the array.</p>
+	</div>
 	
 	
 	
@@ -481,7 +613,22 @@
 	<div class="method-subsection method-declaration"><code>- (CGPoint)pointAtIndex:(NSUInteger)<em>index</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The index of a point.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The point at the given index.</p>
+	</div>
 	
 	
 	
@@ -514,6 +661,84 @@
 	
 	<div class="method-subsection method-declaration"><code>- (void)removeAllPoints</code></div>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKPointArray.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeLastPoint" title="removeLastPoint"></a>
+	<h3 class="subsubtitle method-title">removeLastPoint</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes the last point from the array. Does nothing if the array is empty.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeLastPoint</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKPointArray.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removePointsStartingAtIndex:" title="removePointsStartingAtIndex:"></a>
+	<h3 class="subsubtitle method-title">removePointsStartingAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes all <a href="#//api/name/points">points</a> from index to last point. Does nothing if index >= <a href="#//api/name/count">count</a>. The array then contains (index - 1) <a href="#//api/name/points">points</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removePointsStartingAtIndex:(NSUInteger)<em>index</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The lowest index from which to remove all remaining <a href="#//api/name/points">points</a>.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	

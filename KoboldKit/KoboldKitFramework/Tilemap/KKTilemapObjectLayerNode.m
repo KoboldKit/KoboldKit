@@ -12,21 +12,9 @@
 
 @implementation KKTilemapObjectLayerNode
 
-+(id) objectLayerWithLayer:(KKTilemapLayer*)layer tilemap:(KKTilemap*)tilemap
++(id) objectLayerNodeWithLayer:(KKTilemapLayer*)layer
 {
-	return [[self alloc] initWithLayer:layer tilemap:tilemap];
-}
-
--(id) initWithLayer:(KKTilemapLayer*)layer tilemap:(KKTilemap*)tilemap
-{
-	self = [super init];
-	if (self)
-	{
-		_layer = layer;
-		_tilemap = tilemap;
-		self.name = layer.name;
-	}
-	return self;
+	return [[self alloc] initWithLayer:layer];
 }
 
 @end

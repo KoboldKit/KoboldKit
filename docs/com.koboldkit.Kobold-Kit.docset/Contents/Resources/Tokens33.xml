@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObjectLayerNode</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Object layer node renders Tiled objects.</Abstract>
 			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>
 			
 			<NodeRef refid="33"/>
@@ -12,47 +12,19 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObjectLayerNode/setLayer:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapObjectLayerNode/objectLayerNodeWithLayer:</TokenIdentifier>
+			<Abstract type="html">A tilemap object layer.</Abstract>
 			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
-			
-			
-			<Anchor>//api/name/layer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObjectLayerNode/layer</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
-			
-			
-			<Anchor>//api/name/layer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObjectLayerNode/layer</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
-			
-			
-			<Anchor>//api/name/layer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapObjectLayerNode/objectLayerWithLayer:tilemap:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
-			
-			<Declaration>+ (id)objectLayerWithLayer:(KKTilemapLayer *)layer tilemap:(KKTilemap *)tilemap</Declaration>
-			
-			
-			<Anchor>//api/name/objectLayerWithLayer:tilemap:</Anchor>
+			<Declaration>+ (id)objectLayerNodeWithLayer:(KKTilemapLayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">A tilemap object layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLayerNodeWithLayer:</Anchor>
 		</Token>
 		
 	</File>

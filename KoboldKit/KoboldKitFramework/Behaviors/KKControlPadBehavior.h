@@ -39,7 +39,9 @@ extern NSString* const KKControlPadDidChangeDirectionNotification;
 
 /** Initializes a control pad behavior with either 4 or 8 d-pad directional textures. Start with the texture for "right button pressed"
  and continue adding textures in counter-clockwise order (ie "upper right button pressed", "up button pressed", and so on).
- The "idle" state is the texture the sprite has been initialized with. */
+ The "idle" state is the texture the sprite has been initialized with.
+ @param textures The textures to use for the different dpad directional states.
+ @returns A new instance. */
 +(id) controlPadBehaviorWithTextures:(NSArray*)textures;
 
 @end

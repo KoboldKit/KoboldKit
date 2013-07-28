@@ -491,8 +491,8 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>layerName</em></dt>
-			<dd><p>The name of an object layer whose objects should be converted to physics collisions.</p></dd>
+			<dt><em>objectLayerNode</em></dt>
+			<dd><p>The object layer node from whose objects to create physics shapes.</p></dd>
 		</dl>
 		
 	</div>
@@ -535,6 +535,16 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 	
 	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode *)<em>tileLayerNode</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tileLayerNode</em></dt>
+			<dd><p>The tile layer node for which to create physics shapes.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -698,8 +708,8 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>layer</em></dt>
-			<dd><p>An object layer.</p></dd>
+			<dt><em>objectLayerNode</em></dt>
+			<dd><p>The object layer node for which to spawn objects.</p></dd>
 		</dl>
 		
 	</div>
@@ -743,13 +753,13 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>layer</em></dt>
-			<dd><p>An object layer.</p></dd>
+			<dt><em>objectLayerNode</em></dt>
+			<dd><p>The object layer node for which to spawn objects.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>targetLayer</em></dt>
-			<dd><p>The tile layer to which the spawned objects will be added as child nodes.</p></dd>
+			<dt><em>targetTileLayerNode</em></dt>
+			<dd><p>The tile layer node to which the spawned objects will be added as child nodes.</p></dd>
 		</dl>
 		
 	</div>

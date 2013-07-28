@@ -282,7 +282,7 @@ You can override the method in a subclass to perform your own deselection style.
 	<span class="tooltip">
 		<code><a href="#//api/name/execute">&ndash;&nbsp;execute</a></code>
 		<span class="tooltip"><p>Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
-You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call <code>[super execute]</code>
+You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call [super execute]
 in your implementation.</p></span>
 	</span>
 	
@@ -298,28 +298,29 @@ in your implementation.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Sent when the <a href="../Classes/KKNodeBehavior.html#//api/name/behavior">behavior</a> was added to a <a href="../Classes/KKNodeBehavior.html#//api/name/node">node</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Sent when the <a href="../Classes/KKNodeBehavior.html#//api/name/behavior">behavior</a> was removed from a <a href="../Classes/KKNodeBehavior.html#//api/name/node">node</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setEnabled:">&ndash;&nbsp;setEnabled:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/update:">&ndash;&nbsp;update:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Standard update method.</p></span>
 	</span>
 	
 	
@@ -579,7 +580,7 @@ for example in a tutorial. You can also override the method in a subclass to per
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Sent when the <a href="../Classes/KKNodeBehavior.html#//api/name/behavior">behavior</a> was added to a <a href="../Classes/KKNodeBehavior.html#//api/name/node">node</a>.</p>
 	</div>		
 	
 	
@@ -613,7 +614,7 @@ for example in a tutorial. You can also override the method in a subclass to per
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Sent when the <a href="../Classes/KKNodeBehavior.html#//api/name/behavior">behavior</a> was removed from a <a href="../Classes/KKNodeBehavior.html#//api/name/node">node</a>.</p>
 	</div>		
 	
 	
@@ -683,7 +684,7 @@ You can override the method in a subclass to perform your own deselection style.
 	
 	<div class="method-subsection brief-description">
 		<p>Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
-You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call <code>[super execute]</code>
+You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call [super execute]
 in your implementation.</p>
 	</div>		
 	
@@ -718,7 +719,8 @@ in your implementation.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p>
 	</div>		
 	
 	
@@ -726,6 +728,12 @@ in your implementation.</p>
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p>
+	</div>
 	
 	
 	
@@ -752,12 +760,22 @@ in your implementation.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Standard update method.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)update:(NSTimeInterval)<em>currentTime</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currentTime</em></dt>
+			<dd><p>The current time since app start.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	

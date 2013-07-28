@@ -219,7 +219,7 @@ in your implementation.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
 			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)didJoinController</Declaration>
@@ -230,7 +230,7 @@ in your implementation.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
 			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)didLeaveController</Declaration>
@@ -241,22 +241,29 @@ in your implementation.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setEnabled:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
 			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)setEnabled:(BOOL)enabled</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
 			<Anchor>//api/name/setEnabled:</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/update:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Standard update method.</Abstract>
 			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>currentTime</Name>
+					<Abstract type="html">The current time since app start.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/update:</Anchor>
 		</Token>

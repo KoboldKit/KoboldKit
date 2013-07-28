@@ -156,21 +156,21 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gid">&nbsp;&nbsp;gid</a></code>
-		<span class="tooltip"><p>Returns the memory buffer containing a layer&rsquo;s tile GIDs.</p></span>
+		<span class="tooltip"><p>the memory buffer containing a layer&rsquo;s tile GIDs.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gidSize">&nbsp;&nbsp;gidSize</a></code>
-		<span class="tooltip"><p>Returns the size (in bytes) of the GID memory buffer. Equal to (mapSize.width * mapSize.height * sizeof(gid_t)).</p></span>
+		<span class="tooltip"><p>the size (in bytes) of the GID memory buffer. Equal to (mapSize.width * mapSize.height * sizeof(gid_t)).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gidCount">&nbsp;&nbsp;gidCount</a></code>
-		<span class="tooltip"><p>Returns the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</p></span>
+		<span class="tooltip"><p>the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -202,7 +202,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the memory buffer containing a layer&rsquo;s tile GIDs.</p>
+		<p>the memory buffer containing a layer&rsquo;s tile GIDs.</p>
 	</div>		
 	
 	
@@ -210,6 +210,11 @@
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the memory buffer containing a layer&rsquo;s tile GIDs.</p>
+	</div>
 	
 	
 	
@@ -236,7 +241,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</p>
+		<p>the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</p>
 	</div>		
 	
 	
@@ -244,6 +249,11 @@
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</p>
+	</div>
 	
 	
 	
@@ -270,7 +280,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the size (in bytes) of the GID memory buffer. Equal to (mapSize.width * mapSize.height * sizeof(gid_t)).</p>
+		<p>the size (in bytes) of the GID memory buffer. Equal to (mapSize.width * mapSize.height * sizeof(gid_t)).</p>
 	</div>		
 	
 	
@@ -278,6 +288,11 @@
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the size (in bytes) of the GID memory buffer. Equal to (mapSize.width * mapSize.height * sizeof(gid_t)).</p>
+	</div>
 	
 	
 	
@@ -321,6 +336,21 @@
 	
 	<div class="method-subsection method-declaration"><code>- (void)takeOwnershipOfGidBuffer:(gid_t *)<em>tiles</em> bufferSize:(unsigned int)<em>bufferSize</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tiles</em></dt>
+			<dd><p>A pointer to a member buffer containing tile GIDs.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bufferSize</em></dt>
+			<dd><p>The size of the buffer in bytes.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	

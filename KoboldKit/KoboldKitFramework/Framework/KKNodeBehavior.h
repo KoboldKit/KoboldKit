@@ -29,39 +29,47 @@
 
 @property (atomic, copy, readonly) NSString* key;
 
-/** (not documented) */
+/** @returns The behavior's name. */
 @property (atomic, copy) NSString* name;
-/** (not documented) */
+/** @returns The behavior's node controller. */
 @property (atomic, weak) KKNodeController* controller;
-/** (not documented) */
+/** @returns The behavior's owning node. */
 @property (atomic, weak) SKNode* node;
-/** (not documented) set by subclasses */
+/** @returns Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+ Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame. */
 @property (atomic, readonly) BOOL wantsUpdate;
-/** (not documented) */
+/** @returns Whether the behavior is enabled. 
+ Disabled behaviors don't receive update messages. */
 @property (atomic) BOOL enabled;
 
-/** nd */
+/** Creates a new instance.
+ @returns The new instance. */
 +(id) behavior;
 
-/** (not documented) */
+/** Removes the behavior from its owning node and controller. */
 -(void) removeFromNode;
 
-/** (not documented) */
+/** Sent when the behavior was added to a node. */
 -(void) didJoinController;
-/** (not documented) */
+/** Sent when the behavior was removed from a node. */
 -(void) didLeaveController;
 
-/** (not documented) */
+/** Standard update method.
+ @param currentTime The current time since app start. */
 -(void) update:(NSTimeInterval)currentTime;
-/** (not documented) */
+/** Update after actions have been evaluated. */
 -(void) didEvaluateActions;
-/** (not documented) */
+/** Update after physics world was simulated. */
 -(void) didSimulatePhysics;
 
 
-/** (not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object. */
+/** Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.
+ @param name The uniquely identifying name of the notification. */
 -(void) postNotificationName:(NSString*)name;
-/** (not documented) posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys. */
+/** Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys. 
+ @param name The uniquely identifying name of the notification. 
+ @param userInfo A dictionary with custom key/value which the notification receiver may need. A key "behavior" containing the
+ sending behavior object is always added to the dictionary. */
 -(void) postNotificationName:(NSString*)name userInfo:(NSDictionary*)userInfo;
 
 

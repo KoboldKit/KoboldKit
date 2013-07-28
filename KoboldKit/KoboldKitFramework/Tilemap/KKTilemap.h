@@ -7,7 +7,6 @@
 //
 
 #import "KKTypes.h"
-#import <SpriteKit/SpriteKit.h>
 
 /** @file KKTilemap.h */
 
@@ -98,7 +97,7 @@ typedef enum : unsigned char
 /** @name Creating a Tilemap */
 
 /** Parse and create a KKTilemap from a file. The file must be in TMX format.
- @param: tmxFile The name of a TMX file in the bundle, or an absolute path to a TMX file in a non-bundle directory. 
+ @param tmxFile The name of a TMX file in the bundle, or an absolute path to a TMX file in a non-bundle directory. 
  @returns A new instance of KTTilemap initialized with the contents of the TMX file. */
 +(id) tilemapWithContentsOfFile:(NSString*)tmxFile;
 

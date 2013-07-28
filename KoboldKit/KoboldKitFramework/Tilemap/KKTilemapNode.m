@@ -63,14 +63,14 @@
 		{
 			if (layer.isTileLayer)
 			{
-				KKTilemapTileLayerNode* tileLayer = [KKTilemapTileLayerNode tileLayerWithLayer:layer];
+				KKTilemapTileLayerNode* tileLayer = [KKTilemapTileLayerNode tileLayerNodeWithLayer:layer];
 				tileLayer.alpha = layer.alpha;
 				[self addChild:tileLayer];
 				[_tileLayers addObject:tileLayer];
 			}
 			else
 			{
-				KKTilemapObjectLayerNode* objectLayer = [KKTilemapObjectLayerNode objectLayerWithLayer:layer tilemap:_tilemap];
+				KKTilemapObjectLayerNode* objectLayer = [KKTilemapObjectLayerNode objectLayerNodeWithLayer:layer];
 				[self addChild:objectLayer];
 			}
 		}
@@ -393,8 +393,6 @@
 	
 	NSDictionary* objectTypes = [objectLayerNode.kkScene.kkView.model objectForKey:@"objectTypes"];
 	NSAssert(objectTypes, @"view's objectTypes config dictionary is nil (scene, view or model nil?)");
-	
-	CGSize gridSize = targetTileLayerNode.layer.tilemap.gridSize;
 	
 	// for each object on layer
 	KKTilemapLayer* objectLayer = objectLayerNode.layer;

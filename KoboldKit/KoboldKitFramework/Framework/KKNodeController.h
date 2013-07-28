@@ -36,38 +36,52 @@ extern NSString* const KKNodeControllerUserDataKey;
  @returns The current paused status. */
 @property (atomic) BOOL paused;
 
-/** Creates a controller with a list of behaviors. */
+/** Creates a controller with a list of behaviors.
+ @param behaviors An array containing KKNodeBehavior objects. 
+ @returns A new instance. */
 +(id) controllerWithBehaviors:(NSArray*)behaviors;
-/** (not documented) */
+/** Creates a controller with a list of behaviors.
+ @param behaviors An array containing KKNodeBehavior objects.
+ @returns A new instance. */
 -(id) initWithBehaviors:(NSArray*)behaviors;
 
-/** (not documented) */
+/** Adds a behavior.
+ @param behavior The behavior to add. */
 -(void) addBehavior:(KKNodeBehavior*)behavior;
-/** (not documented) */
+/** Adds a behavior with key.
+ @param behavior The behavior to add.
+ @param key The behavior's uniquely identifying key. */
 -(void) addBehavior:(KKNodeBehavior*)behavior withKey:(NSString*)key;
-/** (not documented) */
+/** Adds a list of behaviors.
+ @param behaviors An array containing KKNodeBehavior objects. */
 -(void) addBehaviors:(NSArray*)behaviors;
-/** (not documented) */
--(KKNodeBehavior*) behaviorForKey:(NSString*)key;
-/** (not documented) */
+/** @param key A key uniquely identifying the behavior.
+ @returns The behavior for the key or nil if there is no behavior with that key. */
+-(id) behaviorForKey:(NSString*)key;
+/** @param behaviorClass The class uniquely identifying the behavior.
+ @returns The first found behavior being a member of the class or nil if there is no behavior with that class. */
+-(id) behaviorWithClass:(Class)behaviorClass;
+/** @returns YES if the controller has one or more behaviors. */
 -(BOOL) hasBehaviors;
-/** (not documented) */
+/** Removes a specific behavior. Does nothing if the behavior isn't in the list.
+ @param behavior The behavior to remove */
 -(void) removeBehavior:(KKNodeBehavior*)behavior;
-/** (not documented) */
+/** Removes a specific behavior by key. Does nothing if there's no behavior with this key in the list.
+ @param key The key uniquely identifying the behavior to remove. */
 -(void) removeBehaviorForKey:(NSString*)key;
-/** (not documented) */
+/** Removes a specific behavior by class. Does nothing if there's no behavior being a member of the class in the list.
+ @param behaviorClass The behavior class to remove. */
+-(void) removeBehaviorWithClass:(Class)behaviorClass;
+/** Removes all behaviors from the controller. */
 -(void) removeAllBehaviors;
 
-/** nd */
--(id) behaviorWithClass:(Class)behaviorClass;
-/** nd */
--(void) removeBehaviorWithClass:(Class)behaviorClass;
 
-/** (not documented) */
+/** Standard update method.
+ @param currentTime The time elapsed since app launch. */
 -(void) update:(NSTimeInterval)currentTime;
-/** (not documented) */
+/** Update after actions have been evaluated. */
 -(void) didEvaluateActions;
-/** (not documented) */
+/** Update after physics world has been simulated. */
 -(void) didSimulatePhysics;
 
 // internal use

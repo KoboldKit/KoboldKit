@@ -16,21 +16,9 @@
 
 @implementation KKTilemapTileLayerNode
 
-+(id) tileLayerWithLayer:(KKTilemapLayer*)layer
++(id) tileLayerNodeWithLayer:(KKTilemapLayer*)layer
 {
 	return [[self alloc] initWithLayer:layer];
-}
-
--(id) initWithLayer:(KKTilemapLayer*)layer
-{
-	self = [super init];
-	if (self)
-	{
-		_layer = layer;
-		_tilemap = _layer.tilemap;
-		self.name = layer.name;
-	}
-	return self;
 }
 
 -(void) didMoveToParent

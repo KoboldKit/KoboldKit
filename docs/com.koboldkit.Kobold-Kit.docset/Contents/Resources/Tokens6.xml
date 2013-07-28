@@ -119,14 +119,19 @@ The "idle" state is the texture the sprite has been initialized with.</Abstract>
 			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>			
 			
 			<Declaration>+ (id)controlPadBehaviorWithTextures:(NSArray *)textures</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>textures</Name>
+					<Abstract type="html">The textures to use for the different dpad directional states.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
 			<Anchor>//api/name/controlPadBehaviorWithTextures:</Anchor>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
 			<DeclaredIn>KKControlPadBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)didJoinController</Declaration>
@@ -137,7 +142,7 @@ The "idle" state is the texture the sprite has been initialized with.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
 			<DeclaredIn>KKControlPadBehavior.m</DeclaredIn>			
 			
 			<Declaration>- (void)didLeaveController</Declaration>

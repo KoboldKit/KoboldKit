@@ -268,98 +268,98 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithBehaviors:">&ndash;&nbsp;initWithBehaviors:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Creates a controller with a list of <a href="#//api/name/behaviors">behaviors</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehavior:">&ndash;&nbsp;addBehavior:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Adds a behavior.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehavior:withKey:">&ndash;&nbsp;addBehavior:withKey:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Adds a behavior with key.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehaviors:">&ndash;&nbsp;addBehaviors:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Adds a list of <a href="#//api/name/behaviors">behaviors</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviorForKey:">&ndash;&nbsp;behaviorForKey:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/hasBehaviors">&ndash;&nbsp;hasBehaviors</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/removeBehavior:">&ndash;&nbsp;removeBehavior:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/removeBehaviorForKey:">&ndash;&nbsp;removeBehaviorForKey:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/removeAllBehaviors">&ndash;&nbsp;removeAllBehaviors</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>A key uniquely identifying the behavior.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviorWithClass:">&ndash;&nbsp;behaviorWithClass:</a></code>
-		<span class="tooltip"><p>nd</p></span>
+		<span class="tooltip"><p>The class uniquely identifying the behavior.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasBehaviors">&ndash;&nbsp;hasBehaviors</a></code>
+		<span class="tooltip"><p>YES if the controller has one or more <a href="#//api/name/behaviors">behaviors</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeBehavior:">&ndash;&nbsp;removeBehavior:</a></code>
+		<span class="tooltip"><p>Removes a specific behavior. Does nothing if the behavior isn&rsquo;t in the list.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeBehaviorForKey:">&ndash;&nbsp;removeBehaviorForKey:</a></code>
+		<span class="tooltip"><p>Removes a specific behavior by key. Does nothing if there&rsquo;s no behavior with this key in the list.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeBehaviorWithClass:">&ndash;&nbsp;removeBehaviorWithClass:</a></code>
-		<span class="tooltip"><p>nd</p></span>
+		<span class="tooltip"><p>Removes a specific behavior by class. Does nothing if there&rsquo;s no behavior being a member of the class in the list.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllBehaviors">&ndash;&nbsp;removeAllBehaviors</a></code>
+		<span class="tooltip"><p>Removes all <a href="#//api/name/behaviors">behaviors</a> from the controller.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/update:">&ndash;&nbsp;update:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Standard update method.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didEvaluateActions">&ndash;&nbsp;didEvaluateActions</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Update after actions have been evaluated.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Update after physics world has been simulated.</p></span>
 	</span>
 	
 	
@@ -594,7 +594,22 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	<div class="method-subsection method-declaration"><code>+ (id)controllerWithBehaviors:(NSArray *)<em>behaviors</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behaviors</em></dt>
+			<dd><p>An array containing <a href="../Classes/KKNodeBehavior.html">KKNodeBehavior</a> objects.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new instance.</p>
+	</div>
 	
 	
 	
@@ -629,12 +644,22 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Adds a behavior.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)addBehavior:(KKNodeBehavior *)<em>behavior</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behavior</em></dt>
+			<dd><p>The behavior to add.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -663,12 +688,27 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Adds a behavior with key.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)addBehavior:(KKNodeBehavior *)<em>behavior</em> withKey:(NSString *)<em>key</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behavior</em></dt>
+			<dd><p>The behavior to add.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The behavior&rsquo;s uniquely identifying key.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -697,12 +737,22 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Adds a list of <a href="#//api/name/behaviors">behaviors</a>.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)addBehaviors:(NSArray *)<em>behaviors</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behaviors</em></dt>
+			<dd><p>An array containing <a href="../Classes/KKNodeBehavior.html">KKNodeBehavior</a> objects.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -731,14 +781,29 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>A key uniquely identifying the behavior.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (KKNodeBehavior *)behaviorForKey:(NSString *)<em>key</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)behaviorForKey:(NSString *)<em>key</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>A key uniquely identifying the behavior.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The behavior for the key or nil if there is no behavior with that key.</p>
+	</div>
 	
 	
 	
@@ -765,14 +830,29 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>nd</p>
+		<p>The class uniquely identifying the behavior.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (id)behaviorWithClass:(Class)<em>behaviorClass</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behaviorClass</em></dt>
+			<dd><p>The class uniquely identifying the behavior.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The first found behavior being a member of the class or nil if there is no behavior with that class.</p>
+	</div>
 	
 	
 	
@@ -799,7 +879,7 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Update after actions have been evaluated.</p>
 	</div>		
 	
 	
@@ -833,7 +913,7 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Update after physics world has been simulated.</p>
 	</div>		
 	
 	
@@ -867,7 +947,7 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>YES if the controller has one or more <a href="#//api/name/behaviors">behaviors</a>.</p>
 	</div>		
 	
 	
@@ -875,6 +955,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the controller has one or more <a href="#//api/name/behaviors">behaviors</a>.</p>
+	</div>
 	
 	
 	
@@ -901,14 +986,29 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Creates a controller with a list of <a href="#//api/name/behaviors">behaviors</a>.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (id)initWithBehaviors:(NSArray *)<em>behaviors</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behaviors</em></dt>
+			<dd><p>An array containing <a href="../Classes/KKNodeBehavior.html">KKNodeBehavior</a> objects.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new instance.</p>
+	</div>
 	
 	
 	
@@ -935,7 +1035,7 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Removes all <a href="#//api/name/behaviors">behaviors</a> from the controller.</p>
 	</div>		
 	
 	
@@ -969,12 +1069,22 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Removes a specific behavior. Does nothing if the behavior isn&rsquo;t in the list.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)removeBehavior:(KKNodeBehavior *)<em>behavior</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behavior</em></dt>
+			<dd><p>The behavior to remove</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1003,12 +1113,22 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Removes a specific behavior by key. Does nothing if there&rsquo;s no behavior with this key in the list.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)removeBehaviorForKey:(NSString *)<em>key</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the behavior to remove.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1037,12 +1157,22 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>nd</p>
+		<p>Removes a specific behavior by class. Does nothing if there&rsquo;s no behavior being a member of the class in the list.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)removeBehaviorWithClass:(Class)<em>behaviorClass</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behaviorClass</em></dt>
+			<dd><p>The behavior class to remove.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -1071,12 +1201,22 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Standard update method.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)update:(NSTimeInterval)<em>currentTime</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currentTime</em></dt>
+			<dd><p>The time elapsed since app launch.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	

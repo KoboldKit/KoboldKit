@@ -13,18 +13,27 @@
  The multiplier can be used to achieve a parallaxing effect. */
 @interface KKFollowTargetBehavior : KKNodeBehavior
 
-/** (not documented) */
+/** The target the behavior's node is following. */
 @property (atomic, weak) SKNode* target;
-/** (not documented) */
+/** The target's position is multiplied by this position multiplier before the resulting point is set as the node's position. */
 @property (atomic) CGPoint positionMultiplier;
-/** (not documented) */
+/** The target's position has this offset added before the resulting point is set as the node's position. */
 @property (atomic) CGPoint positionOffset;
 
-/** (not documented) */
+/** Follow another node.
+ @param target The node to follow.
+ @returns A new instance. */
 +(id) followTarget:(SKNode*)target;
-/** (not documented) */
+/** Follow another node at an offset.
+ @param target The node to follow.
+ @param positionOffset The offset to add to the target's position.
+ @returns A new instance. */
 +(id) followTarget:(SKNode*)target offset:(CGPoint)positionOffset;
-/** (not documented) */
+/** Follow another node at an offset with multiplier (for parallaxing effect).
+ @param target The node to follow.
+ @param positionOffset The offset to add to the target's position.
+ @param positionMultiplier Multiply the target position by these multipliers.
+ @returns A new instance. */
 +(id) followTarget:(SKNode*)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier;
 
 @end

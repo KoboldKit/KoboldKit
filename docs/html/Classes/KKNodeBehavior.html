@@ -207,98 +207,100 @@ Behaviors differ from actions in several ways:
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>The behavior&rsquo;s name.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/controller">&nbsp;&nbsp;controller</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>The behavior&rsquo;s <a href="#//api/name/node">node</a> controller.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/node">&nbsp;&nbsp;node</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>The behavior&rsquo;s owning node.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/wantsUpdate">&nbsp;&nbsp;wantsUpdate</a></code>
-		<span class="tooltip"><p>(not documented) set by subclasses</p></span>
+		<span class="tooltip"><p>Whether the <a href="#//api/name/behavior">behavior</a> wants to receive update/didSimulatePhysics/<a href="#//api/name/didEvaluateActions">didEvaluateActions</a> messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/enabled">&nbsp;&nbsp;enabled</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behavior">+&nbsp;behavior</a></code>
-		<span class="tooltip"><p>nd</p></span>
+		<span class="tooltip"><p>Creates a new instance.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeFromNode">&ndash;&nbsp;removeFromNode</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Removes the <a href="#//api/name/behavior">behavior</a> from its owning <a href="#//api/name/node">node</a> and <a href="#//api/name/controller">controller</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Sent when the <a href="../Classes/KKNodeBehavior.html#//api/name/behavior">behavior</a> was added to a <a href="../Classes/KKNodeBehavior.html#//api/name/node">node</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Sent when the <a href="../Classes/KKNodeBehavior.html#//api/name/behavior">behavior</a> was removed from a <a href="../Classes/KKNodeBehavior.html#//api/name/node">node</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/update:">&ndash;&nbsp;update:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Standard update method.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didEvaluateActions">&ndash;&nbsp;didEvaluateActions</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Update after actions have been evaluated.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Update after physics world was simulated.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/postNotificationName:">&ndash;&nbsp;postNotificationName:</a></code>
-		<span class="tooltip"><p>(not documented) posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object.</p></span>
+		<span class="tooltip"><p>Posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/postNotificationName:userInfo:">&ndash;&nbsp;postNotificationName:userInfo:</a></code>
-		<span class="tooltip"><p>(not documented) posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object, and custom userInfo keys.</p></span>
+		<span class="tooltip"><p>Posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object, and custom userInfo keys.</p></span>
 	</span>
 	
 	
@@ -322,7 +324,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>The behavior&rsquo;s <a href="#//api/name/node">node</a> controller.</p>
 	</div>		
 	
 	
@@ -330,6 +332,11 @@ Behaviors differ from actions in several ways:
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The behavior&rsquo;s <a href="#//api/name/node">node</a> controller.</p>
+	</div>
 	
 	
 	
@@ -356,7 +363,8 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p>
 	</div>		
 	
 	
@@ -364,6 +372,12 @@ Behaviors differ from actions in several ways:
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p>
+	</div>
 	
 	
 	
@@ -390,7 +404,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>The behavior&rsquo;s name.</p>
 	</div>		
 	
 	
@@ -398,6 +412,11 @@ Behaviors differ from actions in several ways:
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The behavior&rsquo;s name.</p>
+	</div>
 	
 	
 	
@@ -424,7 +443,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>The behavior&rsquo;s owning node.</p>
 	</div>		
 	
 	
@@ -432,6 +451,11 @@ Behaviors differ from actions in several ways:
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The behavior&rsquo;s owning node.</p>
+	</div>
 	
 	
 	
@@ -458,7 +482,8 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented) set by subclasses</p>
+		<p>Whether the <a href="#//api/name/behavior">behavior</a> wants to receive update/didSimulatePhysics/<a href="#//api/name/didEvaluateActions">didEvaluateActions</a> messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</p>
 	</div>		
 	
 	
@@ -466,6 +491,12 @@ Behaviors differ from actions in several ways:
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether the <a href="#//api/name/behavior">behavior</a> wants to receive update/didSimulatePhysics/<a href="#//api/name/didEvaluateActions">didEvaluateActions</a> messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</p>
+	</div>
 	
 	
 	
@@ -500,7 +531,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>nd</p>
+		<p>Creates a new instance.</p>
 	</div>		
 	
 	
@@ -508,6 +539,11 @@ Behaviors differ from actions in several ways:
 	
 	
 	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The new instance.</p>
+	</div>
 	
 	
 	
@@ -542,7 +578,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Update after actions have been evaluated.</p>
 	</div>		
 	
 	
@@ -576,7 +612,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Sent when the <a href="../Classes/KKNodeBehavior.html#//api/name/behavior">behavior</a> was added to a <a href="../Classes/KKNodeBehavior.html#//api/name/node">node</a>.</p>
 	</div>		
 	
 	
@@ -610,7 +646,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Sent when the <a href="../Classes/KKNodeBehavior.html#//api/name/behavior">behavior</a> was removed from a <a href="../Classes/KKNodeBehavior.html#//api/name/node">node</a>.</p>
 	</div>		
 	
 	
@@ -644,7 +680,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Update after physics world was simulated.</p>
 	</div>		
 	
 	
@@ -678,12 +714,22 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented) posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object.</p>
+		<p>Posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)postNotificationName:(NSString *)<em>name</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The uniquely identifying <a href="#//api/name/name">name</a> of the notification.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -712,12 +758,28 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented) posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object, and custom userInfo keys.</p>
+		<p>Posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; key pointing to the sending <a href="#//api/name/behavior">behavior</a> object, and custom userInfo keys.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)postNotificationName:(NSString *)<em>name</em> userInfo:(NSDictionary *)<em>userInfo</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The uniquely identifying <a href="#//api/name/name">name</a> of the notification.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userInfo</em></dt>
+			<dd><p>A dictionary with custom key/value which the notification receiver may need. A key &ldquo;behavior&rdquo; containing the
+sending <a href="#//api/name/behavior">behavior</a> object is always added to the dictionary.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -746,7 +808,7 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Removes the <a href="#//api/name/behavior">behavior</a> from its owning <a href="#//api/name/node">node</a> and <a href="#//api/name/controller">controller</a>.</p>
 	</div>		
 	
 	
@@ -780,12 +842,22 @@ Behaviors differ from actions in several ways:
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Standard update method.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)update:(NSTimeInterval)<em>currentTime</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currentTime</em></dt>
+			<dd><p>The current time since app start.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	

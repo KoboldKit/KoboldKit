@@ -15,8 +15,6 @@
 @interface KKTilemapTileLayerNode : KKTilemapLayerNode
 {
 	@private
-	__weak KKTilemap* _tilemap;
-	__weak KKTilemapLayer* _layer;
 	NSMutableDictionary* _batchNodes;
 	NSMutableArray* _visibleTiles;
 	CGSize _visibleTilesOnScreen;
@@ -24,11 +22,9 @@
 	CGPoint _previousPosition;
 }
 
-/** (not documented) */
-@property (atomic, readonly, weak) KKTilemapLayer* layer;
-
-/** (not documented) */
-+(id) tileLayerWithLayer:(KKTilemapLayer*)layer;
+/** @param layer The tilemap layer object.
+ @returns A new instance. */
++(id) tileLayerNodeWithLayer:(KKTilemapLayer*)layer;
 
 /** Updates the layer's tile sprites based on position, scale and view size. */
 -(void) updateLayer;
