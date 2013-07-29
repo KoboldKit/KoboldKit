@@ -9,7 +9,7 @@
 #import "KKNode.h"
 #import "SKNode+KoboldKit.h"
 #import "KKNodeController.h"
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 
 @implementation KKNode
 +(void) sendChildrenWillMoveFromParentWithNode:(SKNode*)node
@@ -70,7 +70,7 @@
 	if (controller)
 	{
 		controller.node = copy;
-		for (KKNodeBehavior* behavior in controller.behaviors)
+		for (KKBehavior* behavior in controller.behaviors)
 		{
 			behavior.controller = copy.controller;
 			behavior.node = copy;

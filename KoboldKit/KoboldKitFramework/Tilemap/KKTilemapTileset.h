@@ -79,6 +79,7 @@ typedef enum : gid_t
 @property (atomic, readonly) KKTilemapTileProperties* tileProperties;
 
 /** Gets the texture of a tile GID from this tileset.
+ @param gid The tile gid whose texture should be returned.
  @returns The texture for a specific GID, or nil if the gid is not in this tileset. */
 -(SKTexture*) textureForGid:(gid_t)gid;
 

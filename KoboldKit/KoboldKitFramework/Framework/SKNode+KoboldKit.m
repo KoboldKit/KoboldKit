@@ -8,7 +8,7 @@
 
 #import "SKNode+KoboldKit.h"
 #import "KKNodeController.h"
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 #import "KKScene.h"
 #import "KKNode.h"
 #import "CGPointExtension.h"
@@ -92,12 +92,12 @@
 
 #pragma mark Behaviors
 
--(void) addBehavior:(KKNodeBehavior*)behavior
+-(void) addBehavior:(KKBehavior*)behavior
 {
 	[[self createController] addBehavior:behavior];
 }
 
--(void) addBehavior:(KKNodeBehavior*)behavior withKey:(NSString*)key
+-(void) addBehavior:(KKBehavior*)behavior withKey:(NSString*)key
 {
 	[[self createController] addBehavior:behavior withKey:key];
 }
@@ -122,7 +122,7 @@
 	return [[self createController] hasBehaviors];
 }
 
--(void) removeBehavior:(KKNodeBehavior*)behavior
+-(void) removeBehavior:(KKBehavior*)behavior
 {
 	[[self createController] removeBehavior:behavior];
 }
@@ -312,7 +312,7 @@
 	if (controller)
 	{
 		controller.node = copy;
-		for (KKNodeBehavior* behavior in controller.behaviors)
+		for (KKBehavior* behavior in controller.behaviors)
 		{
 			behavior.controller = copy.controller;
 			behavior.node = copy;

@@ -11,7 +11,7 @@
 extern NSString* const KKNodeControllerUserDataKey;
 
 @class KKNode;
-@class KKNodeBehavior;
+@class KKBehavior;
 @class KKModel;
 
 /** KKNodeController adds game component (behavior, model) functionality to a node. */
@@ -37,23 +37,23 @@ extern NSString* const KKNodeControllerUserDataKey;
 @property (atomic) BOOL paused;
 
 /** Creates a controller with a list of behaviors.
- @param behaviors An array containing KKNodeBehavior objects. 
+ @param behaviors An array containing KKBehavior objects.
  @returns A new instance. */
 +(id) controllerWithBehaviors:(NSArray*)behaviors;
 /** Creates a controller with a list of behaviors.
- @param behaviors An array containing KKNodeBehavior objects.
+ @param behaviors An array containing KKBehavior objects.
  @returns A new instance. */
 -(id) initWithBehaviors:(NSArray*)behaviors;
 
 /** Adds a behavior.
  @param behavior The behavior to add. */
--(void) addBehavior:(KKNodeBehavior*)behavior;
+-(void) addBehavior:(KKBehavior*)behavior;
 /** Adds a behavior with key.
  @param behavior The behavior to add.
  @param key The behavior's uniquely identifying key. */
--(void) addBehavior:(KKNodeBehavior*)behavior withKey:(NSString*)key;
+-(void) addBehavior:(KKBehavior*)behavior withKey:(NSString*)key;
 /** Adds a list of behaviors.
- @param behaviors An array containing KKNodeBehavior objects. */
+ @param behaviors An array containing KKBehavior objects. */
 -(void) addBehaviors:(NSArray*)behaviors;
 /** @param key A key uniquely identifying the behavior.
  @returns The behavior for the key or nil if there is no behavior with that key. */
@@ -65,7 +65,7 @@ extern NSString* const KKNodeControllerUserDataKey;
 -(BOOL) hasBehaviors;
 /** Removes a specific behavior. Does nothing if the behavior isn't in the list.
  @param behavior The behavior to remove */
--(void) removeBehavior:(KKNodeBehavior*)behavior;
+-(void) removeBehavior:(KKBehavior*)behavior;
 /** Removes a specific behavior by key. Does nothing if there's no behavior with this key in the list.
  @param key The key uniquely identifying the behavior to remove. */
 -(void) removeBehaviorForKey:(NSString*)key;

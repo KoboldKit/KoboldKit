@@ -16,8 +16,6 @@
 	PlayerCharacter* _playerCharacter;
 	KKTilemapNode* _tilemapNode;
 
-	//KKPhysicsDebugNode* _physicsContactDebugNode;
-	
 	CGPoint rayStart;
 	CGPoint rayEnd;
 }

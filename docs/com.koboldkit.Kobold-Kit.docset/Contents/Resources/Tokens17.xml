@@ -1,435 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKModel.html">
+	<File path="Classes/KKLimitVelocityBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKModel</TokenIdentifier>
-			<Abstract type="html">Model object allows you to story integral data types by key (name) as mutable numbers.
-Useful to store automatically NSCoding/NSCopying conformant values to any node without having to subclass it.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKLimitVelocityBehavior</TokenIdentifier>
+			<Abstract type="html">Sets upper and lower limits of a physics body's velocities.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="17"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setController:</TokenIdentifier>
-			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/setVelocityLimit:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
 			
-			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/controller</Anchor>
+			
+			<Anchor>//api/name/velocityLimit</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/controller</TokenIdentifier>
-			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/velocityLimit</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
 			
-			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/controller</Anchor>
+			
+			<Anchor>//api/name/velocityLimit</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKModel/controller</TokenIdentifier>
-			<Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKLimitVelocityBehavior/velocityLimit</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
 			
-			<ReturnValue><Abstract type="html">The model's controller object. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/controller</Anchor>
+			
+			<Anchor>//api/name/velocityLimit</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setBool:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/setAngularVelocityLimit:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)setBool:(BOOL)boolValue forKey:(NSString *)key</Declaration>
+			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/angularVelocityLimit</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKLimitVelocityBehavior/angularVelocityLimit</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitVelocity:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum velocity.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)limitVelocity:(CGFloat)velocityLimit</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>boolValue</Name>
-					<Abstract type="html">A boolean.</Abstract>
+					<Name>velocityLimit</Name>
+					<Abstract type="html">The physics body's maximum velocity.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/limitVelocity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitVelocity:limitAngularVelocity:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum velocity.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)limitVelocity:(CGFloat)velocityLimit limitAngularVelocity:(CGFloat)angularVelocityLimit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>velocityLimit</Name>
+					<Abstract type="html">The physics body's maximum velocity.</Abstract>
 				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
+					<Name>angularVelocityLimit</Name>
+					<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setBool:forKey:</Anchor>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/limitVelocity:limitAngularVelocity:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/boolForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value of the given type for key. Returns NO if there's no value with this key.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitAngularVelocity:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)boolForKey:(NSString *)key</Declaration>
+			<Declaration>+ (id)limitAngularVelocity:(CGFloat)angularVelocityLimit</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
+					<Name>angularVelocityLimit</Name>
+					<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The BOOL value for the key, or NO if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/boolForKey:</Anchor>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/limitAngularVelocity:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setFloat:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.m</DeclaredIn>			
 			
-			<Declaration>- (void)setFloat:(float)floatValue forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>floatValue</Name>
-					<Abstract type="html">A float.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)didJoinController</Declaration>
 			
-			<Anchor>//api/name/setFloat:forKey:</Anchor>
+			
+			<Anchor>//api/name/didJoinController</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/floatForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/didEvaluateActions</TokenIdentifier>
+			<Abstract type="html">Update after actions have been evaluated.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.m</DeclaredIn>			
 			
-			<Declaration>- (float)floatForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The float value for the key, or 0.0f if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/floatForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setDouble:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
+			<Declaration>- (void)didEvaluateActions</Declaration>
 			
-			<Declaration>- (void)setDouble:(double)doubleValue forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>doubleValue</Name>
-					<Abstract type="html">A double.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
 			
-			<Anchor>//api/name/setDouble:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/doubleForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (double)doubleForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The double value for the key, or 0.0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/doubleForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setInt32:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (void)setInt32:(int32_t)int32Value forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>int32Value</Name>
-					<Abstract type="html">A 32-bit integer.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setInt32:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/int32ForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (int32_t)int32ForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The int32_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/int32ForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setUnsignedInt32:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value (32-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (void)setUnsignedInt32:(uint32_t)unsignedInt32Value forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>unsignedInt32Value</Name>
-					<Abstract type="html">An unsigned 32-bit integer.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setUnsignedInt32:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/unsignedInt32ForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value (32-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (uint32_t)unsignedInt32ForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The uint32_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/unsignedInt32ForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setInt64:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (void)setInt64:(int64_t)int64Value forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>int64Value</Name>
-					<Abstract type="html">A 64-bit integer.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setInt64:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/int64ForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (int64_t)int64ForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The int64_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/int64ForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setUnsignedInt64:forKey:</TokenIdentifier>
-			<Abstract type="html">Set value (64-Bit) of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (void)setUnsignedInt64:(uint64_t)unsignedInt64Value forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>unsignedInt64Value</Name>
-					<Abstract type="html">An unsigned 64-bit integer.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setUnsignedInt64:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/unsignedInt64ForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the value (64-Bit) of the given type for key. Returns 0 if there's no value with this key.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (uint64_t)unsignedInt64ForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The uint64_t value for the key, or 0 if there's no variable with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/unsignedInt64ForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setObject:forKey:</TokenIdentifier>
-			<Abstract type="html">Assign or replace any object with the given key. If object is nil, the object for that key will be removed.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">The object to store in the dictionary.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A unique string to identify the object.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setObject:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/objectForKey:</TokenIdentifier>
-			<Abstract type="html">The object for key or nil if there's no object associated with this key.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (id)objectForKey:(NSString *)key</Declaration>
-			
-			<ReturnValue><Abstract type="html">The object for key or nil if there's no object associated with this key.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/valueForKeyPath:</TokenIdentifier>
-			<Abstract type="html">The KVC path to a value.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (id)valueForKeyPath:(NSString *)keyPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>keyPath</Name>
-					<Abstract type="html">The KVC path to a value.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
-			<Anchor>//api/name/valueForKeyPath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/boolForKeyPath:</TokenIdentifier>
-			<Abstract type="html">The KVC path to a value.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)boolForKeyPath:(NSString *)keyPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>keyPath</Name>
-					<Abstract type="html">The KVC path to a value.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
-			<Anchor>//api/name/boolForKeyPath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/floatForKeyPath:</TokenIdentifier>
-			<Abstract type="html">The KVC path to a value.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (float)floatForKeyPath:(NSString *)keyPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>keyPath</Name>
-					<Abstract type="html">The KVC path to a value.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
-			<Anchor>//api/name/floatForKeyPath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/doubleForKeyPath:</TokenIdentifier>
-			<Abstract type="html">The KVC path to a value.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (double)doubleForKeyPath:(NSString *)keyPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>keyPath</Name>
-					<Abstract type="html">The KVC path to a value.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
-			<Anchor>//api/name/doubleForKeyPath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/intForKeyPath:</TokenIdentifier>
-			<Abstract type="html">The KVC path to a value.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (int32_t)intForKeyPath:(NSString *)keyPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>keyPath</Name>
-					<Abstract type="html">The KVC path to a value.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
-			<Anchor>//api/name/intForKeyPath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/unsignedIntForKeyPath:</TokenIdentifier>
-			<Abstract type="html">The KVC path to a value.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (uint32_t)unsignedIntForKeyPath:(NSString *)keyPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>keyPath</Name>
-					<Abstract type="html">The KVC path to a value.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The value for the path, or nil.</Abstract></ReturnValue>
-			<Anchor>//api/name/unsignedIntForKeyPath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKModel/mutableNumberForKey:</TokenIdentifier>
-			<Abstract type="html">Accessing the KKMutableNumber object directly allows you to change the value without having to reassign it using a setter method.</Abstract>
-			<DeclaredIn>KKModel.h</DeclaredIn>			
-			
-			<Declaration>- (KKMutableNumber *)mutableNumberForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>A</Name>
-					<Abstract type="html">unique string identifying the variable.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The underlying KKMutableNumber object for a specific variable.A mutable number object or nil if no variable with the given key was found.</Abstract></ReturnValue>
-			<Anchor>//api/name/mutableNumberForKey:</Anchor>
+			<Anchor>//api/name/didEvaluateActions</Anchor>
 		</Token>
 		
 	</File>

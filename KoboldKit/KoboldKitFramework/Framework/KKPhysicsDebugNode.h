@@ -8,6 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+// incomplete, supposed to render physics body shapes, possibly superceded by SKNode+KoboldKit functionality
 @interface KKPhysicsDebugNode : SKNode
 {
 	@private

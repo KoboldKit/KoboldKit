@@ -1,36 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKLimitVelocityBehavior.html">
+	<File path="Classes/KKIntegerArray.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKLimitVelocityBehavior</TokenIdentifier>
-			<Abstract type="html">Sets upper and lower limits of a physics body's velocities.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKIntegerArray</TokenIdentifier>
+			<Abstract type="html">Wraps a C array of NSUInteger with a slim NSArray type interface.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIntegerArray/setCount:</TokenIdentifier>
+			<Abstract type="html">Number of integers in the array.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
 			
-			<Declaration>- (void)didJoinController</Declaration>
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
 			
 			
-			<Anchor>//api/name/didJoinController</Anchor>
+			<Anchor>//api/name/count</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/didEvaluateActions</TokenIdentifier>
-			<Abstract type="html">Update after actions have been evaluated.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIntegerArray/count</TokenIdentifier>
+			<Abstract type="html">Number of integers in the array.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
 			
-			<Declaration>- (void)didEvaluateActions</Declaration>
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
 			
 			
-			<Anchor>//api/name/didEvaluateActions</Anchor>
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKIntegerArray/count</TokenIdentifier>
+			<Abstract type="html">Number of integers in the array.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIntegerArray/setIntegers:</TokenIdentifier>
+			<Abstract type="html">The integer array as C memory buffer.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSUInteger *integers</Declaration>
+			
+			
+			<Anchor>//api/name/integers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIntegerArray/integers</TokenIdentifier>
+			<Abstract type="html">The integer array as C memory buffer.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSUInteger *integers</Declaration>
+			
+			
+			<Anchor>//api/name/integers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKIntegerArray/integers</TokenIdentifier>
+			<Abstract type="html">The integer array as C memory buffer.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSUInteger *integers</Declaration>
+			
+			
+			<Anchor>//api/name/integers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKIntegerArray/integerArrayWithCapacity:</TokenIdentifier>
+			<Abstract type="html">The initial size of the array.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>+ (id)integerArrayWithCapacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial size of the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/integerArrayWithCapacity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIntegerArray/addInteger:</TokenIdentifier>
+			<Abstract type="html">Adds an integer at the end of the array.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)addInteger:(NSUInteger)integer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>integer</Name>
+					<Abstract type="html">The integer to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addInteger:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIntegerArray/removeAllIntegers</TokenIdentifier>
+			<Abstract type="html">Empties the array.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllIntegers</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllIntegers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIntegerArray/integerAtIndex:</TokenIdentifier>
+			<Abstract type="html">An array index.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)integerAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">An array index.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The integer at the index.</Abstract></ReturnValue>
+			<Anchor>//api/name/integerAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIntegerArray/lastInteger</TokenIdentifier>
+			<Abstract type="html">The last integer in the array. Returns 0 if the array is empty.</Abstract>
+			<DeclaredIn>KKIntegerArray.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)lastInteger</Declaration>
+			
+			<ReturnValue><Abstract type="html">The last integer in the array. Returns 0 if the array is empty.</Abstract></ReturnValue>
+			<Anchor>//api/name/lastInteger</Anchor>
 		</Token>
 		
 	</File>

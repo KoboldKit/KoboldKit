@@ -1,15 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKInt64Number.html">
+	<File path="Classes/KKFollowTargetBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKInt64Number</TokenIdentifier>
-			<Abstract type="html">Used internally. Part of the KKMutableNumber class cluster.</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKFollowTargetBehavior</TokenIdentifier>
+			<Abstract type="html">Updates the owning node's position from another node's position, applying optional offset and/or multiplier.
+The multiplier can be used to achieve a parallaxing effect.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="12"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowTargetBehavior/setTarget:</TokenIdentifier>
+			<Abstract type="html">The target the behavior's node is following.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowTargetBehavior/target</TokenIdentifier>
+			<Abstract type="html">The target the behavior's node is following.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowTargetBehavior/target</TokenIdentifier>
+			<Abstract type="html">The target the behavior's node is following.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowTargetBehavior/setPositionMultiplier:</TokenIdentifier>
+			<Abstract type="html">The target's position is multiplied by this position multiplier before the resulting point is set as the node's position.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowTargetBehavior/positionMultiplier</TokenIdentifier>
+			<Abstract type="html">The target's position is multiplied by this position multiplier before the resulting point is set as the node's position.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowTargetBehavior/positionMultiplier</TokenIdentifier>
+			<Abstract type="html">The target's position is multiplied by this position multiplier before the resulting point is set as the node's position.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionMultiplier</Declaration>
+			
+			
+			<Anchor>//api/name/positionMultiplier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowTargetBehavior/setPositionOffset:</TokenIdentifier>
+			<Abstract type="html">The target's position has this offset added before the resulting point is set as the node's position.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowTargetBehavior/positionOffset</TokenIdentifier>
+			<Abstract type="html">The target's position has this offset added before the resulting point is set as the node's position.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowTargetBehavior/positionOffset</TokenIdentifier>
+			<Abstract type="html">The target's position has this offset added before the resulting point is set as the node's position.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionOffset</Declaration>
+			
+			
+			<Anchor>//api/name/positionOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKFollowTargetBehavior/followTarget:</TokenIdentifier>
+			<Abstract type="html">Follow another node.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)followTarget:(SKNode *)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The node to follow.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/followTarget:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKFollowTargetBehavior/followTarget:offset:</TokenIdentifier>
+			<Abstract type="html">Follow another node at an offset.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)followTarget:(SKNode *)target offset:(CGPoint)positionOffset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The node to follow.</Abstract>
+				</Parameter><Parameter>
+					<Name>positionOffset</Name>
+					<Abstract type="html">The offset to add to the target's position.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/followTarget:offset:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKFollowTargetBehavior/followTarget:offset:multiplier:</TokenIdentifier>
+			<Abstract type="html">Follow another node at an offset with multiplier (for parallaxing effect).</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)followTarget:(SKNode *)target offset:(CGPoint)positionOffset multiplier:(CGPoint)positionMultiplier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The node to follow.</Abstract>
+				</Parameter><Parameter>
+					<Name>positionOffset</Name>
+					<Abstract type="html">The offset to add to the target's position.</Abstract>
+				</Parameter><Parameter>
+					<Name>positionMultiplier</Name>
+					<Abstract type="html">Multiply the target position by these multipliers.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/followTarget:offset:multiplier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowTargetBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didJoinController</Declaration>
+			
+			
+			<Anchor>//api/name/didJoinController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowTargetBehavior/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">Update after physics world was simulated.</Abstract>
+			<DeclaredIn>KKFollowTargetBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didSimulatePhysics</Declaration>
+			
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

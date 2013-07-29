@@ -1,83 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapLayerContourTracer.html">
+	<File path="Classes/KKTMXWriter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerContourTracer</TokenIdentifier>
-			<Abstract type="html">Internal use. Performs contour tracing of a tile layer and returns the resulting contour segments
-as CGPathRef or KKPointArray.</Abstract>
-			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTMXWriter</TokenIdentifier>
+			<Abstract type="html">Internal use only.
+Writes a KTTilemap object to a file in TMX format. The resulting TMX can be opened in Tiled Map Editor
+   or other tools/engines that support the TMX format. </Abstract>
+			<DeclaredIn>KKTMXWriter.h</DeclaredIn>
 			
 			<NodeRef refid="28"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerContourTracer/setContourSegments:</TokenIdentifier>
-			<Abstract type="html">Contains array of CGPathRef definining the contours' line segments.</Abstract>
-			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTMXWriter/writeTMXFile:tilemap:</TokenIdentifier>
+			<Abstract type="html">Writes a KTTilemap object hierarchy to a file in TMX format.</Abstract>
+			<DeclaredIn>KKTMXWriter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
-			
-			
-			<Anchor>//api/name/contourSegments</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerContourTracer/contourSegments</TokenIdentifier>
-			<Abstract type="html">Contains array of CGPathRef definining the contours' line segments.</Abstract>
-			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
-			
-			
-			<Anchor>//api/name/contourSegments</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerContourTracer/contourSegments</TokenIdentifier>
-			<Abstract type="html">Contains array of CGPathRef definining the contours' line segments.</Abstract>
-			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
-			
-			
-			<Anchor>//api/name/contourSegments</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapLayerContourTracer/contourMapFromTileLayer:</TokenIdentifier>
-			<Abstract type="html">Parses the tile layer and creates a contour map.</Abstract>
-			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
-			
-			<Declaration>+ (id)contourMapFromTileLayer:(KKTilemapLayer *)layer</Declaration>
+			<Declaration>- (void)writeTMXFile:(NSString *)file tilemap:(KKTilemap *)tilemap</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>layer</Name>
-					<Abstract type="html">A tile layer.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Instance of KKTilemapLayerContourTracer.</Abstract></ReturnValue>
-			<Anchor>//api/name/contourMapFromTileLayer:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapLayerContourTracer/contourMapFromTileLayer:blockingGids:</TokenIdentifier>
-			<Abstract type="html">Parses the tile layer and creates a contour map.</Abstract>
-			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
-			
-			<Declaration>+ (id)contourMapFromTileLayer:(KKTilemapLayer *)layer blockingGids:(KKIntegerArray *)blockingGids</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>layer</Name>
-					<Abstract type="html">A tile layer.</Abstract>
+					<Name>file</Name>
+					<Abstract type="html">The full path to a file.</Abstract>
 				</Parameter><Parameter>
-					<Name>blockingGids</Name>
-					<Abstract type="html">An integer array of specific GIDs that should be considered as blocking.</Abstract>
+					<Name>tilemap</Name>
+					<Abstract type="html">The KTTilemap object hierarchy to write.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Instance of KKTilemapLayerContourTracer.</Abstract></ReturnValue>
-			<Anchor>//api/name/contourMapFromTileLayer:blockingGids:</Anchor>
+			
+			<Anchor>//api/name/writeTMXFile:tilemap:</Anchor>
 		</Token>
 		
 	</File>

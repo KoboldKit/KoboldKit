@@ -1,5 +1,5 @@
 //
-//  KKNodeBehavior.h
+//  KKBehavior.h
 //  KoboldKitDemo
 //
 //  Created by Steffen Itterheim on 13.06.13.
@@ -13,13 +13,14 @@
 
 /** Behaviors add custom logic to a node.
  Behaviors differ from actions in several ways:
+ 
  - they are useful for any logic code that is hard or impossible to implement with (custom) actions, such as event processing
  - they usually run indefinitely and can be paused by pausing the controller
  - they may have a state (ivars)
  - they may have a public interface (properties, methods)
  - they can not be reversed
  */
-@interface KKNodeBehavior : NSObject <NSCoding, NSCopying>
+@interface KKBehavior : NSObject <NSCoding, NSCopying>
 {
 	@protected
 	BOOL _wantsUpdate;
@@ -27,8 +28,10 @@
 	@private
 }
 
-@property (atomic, copy, readonly) NSString* key;
+/** @name Properties */
 
+/** @returns The behavior's uniquely identifying key. */
+@property (atomic, copy, readonly) NSString* key;
 /** @returns The behavior's name. */
 @property (atomic, copy) NSString* name;
 /** @returns The behavior's node controller. */
@@ -42,12 +45,15 @@
  Disabled behaviors don't receive update messages. */
 @property (atomic) BOOL enabled;
 
+/** @name Create Behavior */
 /** Creates a new instance.
  @returns The new instance. */
 +(id) behavior;
 
 /** Removes the behavior from its owning node and controller. */
 -(void) removeFromNode;
+
+/** @name Behavior Events */
 
 /** Sent when the behavior was added to a node. */
 -(void) didJoinController;
@@ -62,6 +68,7 @@
 /** Update after physics world was simulated. */
 -(void) didSimulatePhysics;
 
+/** @name Notifications */
 
 /** Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.
  @param name The uniquely identifying name of the notification. */
@@ -74,7 +81,7 @@
 
 
 // internal use
--(BOOL) isEqualToBehavior:(KKNodeBehavior*)behavior;
+-(BOOL) isEqualToBehavior:(KKBehavior*)behavior;
 -(void) internal_joinController:(KKNodeController*)controller withKey:(NSString*)key;
 
 @end

@@ -1,48 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKCameraFollowBehavior.html">
+	<File path="Classes/KKBoolNumber.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKCameraFollowBehavior</TokenIdentifier>
-			<Abstract type="html">Makes the "camera" follow this node. The node's parent should be the scrolling world, the scene's anchorPoint should be
-at 0.5,0.5 if you want to center on the node.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKBoolNumber</TokenIdentifier>
+			<Abstract type="html">Used internally. Part of the KKMutableNumber class cluster.</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
 			<NodeRef refid="4"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBoolNumber/initWithBool:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type BOOL</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
 			
-			<Declaration>- (void)didJoinController</Declaration>
+			<Declaration>- (id)initWithBool:(BOOL)boolNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/didJoinController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)didLeaveController</Declaration>
-			
-			
-			<Anchor>//api/name/didLeaveController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">Update after physics world was simulated.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)didSimulatePhysics</Declaration>
-			
-			
-			<Anchor>//api/name/didSimulatePhysics</Anchor>
+			<Anchor>//api/name/initWithBool:</Anchor>
 		</Token>
 		
 	</File>

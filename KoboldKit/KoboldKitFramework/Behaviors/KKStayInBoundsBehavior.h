@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 
 /** Prevents a node's position from passing over the bounds rectangle.
  (TODO: Optionally sends notifications when node comes in to contact with the bounds and when contact ends.) */
-@interface KKStayInBoundsBehavior : KKNodeBehavior
+@interface KKStayInBoundsBehavior : KKBehavior
 {
 	@private
 	BOOL _isSpriteNode;

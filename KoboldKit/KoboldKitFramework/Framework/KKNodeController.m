@@ -10,7 +10,7 @@
 #import "SKNode+KoboldKit.h"
 #import "KKScene.h"
 #import "KKModel.h"
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 
 NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
@@ -58,7 +58,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 #pragma mark Behaviors
 
--(void) addBehavior:(KKNodeBehavior*)behavior withKey:(NSString*)key
+-(void) addBehavior:(KKBehavior*)behavior withKey:(NSString*)key
 {
 	[self removeBehaviorForKey:key];
 
@@ -79,22 +79,22 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	_hasBehaviorWantingUpdate = (_hasBehaviorWantingUpdate || behavior.wantsUpdate);
 }
 
--(void) addBehavior:(KKNodeBehavior*)behavior
+-(void) addBehavior:(KKBehavior*)behavior
 {
 	[self addBehavior:behavior withKey:nil];
 }
 
 -(void) addBehaviors:(NSArray*)behaviors
 {
-	for (KKNodeBehavior* behavior in behaviors)
+	for (KKBehavior* behavior in behaviors)
 	{
 		[self addBehavior:behavior];
 	}
 }
 
--(KKNodeBehavior*) behaviorForKey:(NSString*)key
+-(KKBehavior*) behaviorForKey:(NSString*)key
 {
-	for (KKNodeBehavior* behavior in _behaviors)
+	for (KKBehavior* behavior in _behaviors)
 	{
 		if ([key isEqualToString:behavior.key])
 		{
@@ -106,7 +106,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(id) behaviorWithClass:(Class)behaviorClass
 {
-	for (KKNodeBehavior* behavior in _behaviors)
+	for (KKBehavior* behavior in _behaviors)
 	{
 		if ([behavior isMemberOfClass:behaviorClass])
 		{
@@ -121,7 +121,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	return _behaviors.count > 0;
 }
 
--(void) removeBehavior:(KKNodeBehavior*)behavior
+-(void) removeBehavior:(KKBehavior*)behavior
 {
 	[_behaviors removeObject:behavior];
 
@@ -133,7 +133,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 {
 	if (key)
 	{
-		for (KKNodeBehavior* behavior in [_behaviors reverseObjectEnumerator])
+		for (KKBehavior* behavior in [_behaviors reverseObjectEnumerator])
 		{
 			if ([key isEqualToString:behavior.key])
 			{
@@ -146,7 +146,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(void) removeBehaviorWithClass:(Class)behaviorClass
 {
-	for (KKNodeBehavior* behavior in [_behaviors reverseObjectEnumerator])
+	for (KKBehavior* behavior in [_behaviors reverseObjectEnumerator])
 	{
 		if ([behavior isMemberOfClass:behaviorClass])
 		{
@@ -158,7 +158,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(void) removeAllBehaviors
 {
-	for (KKNodeBehavior* behavior in [_behaviors reverseObjectEnumerator])
+	for (KKBehavior* behavior in [_behaviors reverseObjectEnumerator])
 	{
 		[self removeBehavior:behavior];
 	}
@@ -172,7 +172,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 {
 	if (_hasBehaviorWantingUpdate)
 	{
-		for (KKNodeBehavior* behavior in _behaviors)
+		for (KKBehavior* behavior in _behaviors)
 		{
 			if (behavior.wantsUpdate)
 			{
@@ -186,7 +186,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 {
 	if (_hasBehaviorWantingUpdate)
 	{
-		for (KKNodeBehavior* behavior in _behaviors)
+		for (KKBehavior* behavior in _behaviors)
 		{
 			if (behavior.wantsUpdate)
 			{
@@ -200,7 +200,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 {
 	if (_hasBehaviorWantingUpdate)
 	{
-		for (KKNodeBehavior* behavior in _behaviors)
+		for (KKBehavior* behavior in _behaviors)
 		{
 			if (behavior.wantsUpdate)
 			{
@@ -227,7 +227,7 @@ static NSString* const ArchiveKeyForPaused = @"paused";
 		_behaviors = [decoder decodeObjectForKey:ArchiveKeyForBehaviors];
 		_paused = [decoder decodeBoolForKey:ArchiveKeyForPaused];
 		
-		for (KKNodeBehavior* behavior in _behaviors)
+		for (KKBehavior* behavior in _behaviors)
 		{
 			
 		}
@@ -267,8 +267,8 @@ static NSString* const ArchiveKeyForPaused = @"paused";
 	
 	for (NSUInteger i = 0; i < behaviorsCount; i++)
 	{
-		KKNodeBehavior* selfBehavior = [self.behaviors objectAtIndex:i];
-		KKNodeBehavior* controllerBehavior = [controller.behaviors objectAtIndex:i];
+		KKBehavior* selfBehavior = [self.behaviors objectAtIndex:i];
+		KKBehavior* controllerBehavior = [controller.behaviors objectAtIndex:i];
 		
 		if ([selfBehavior isEqualToBehavior:controllerBehavior] == NO)
 			return NO;

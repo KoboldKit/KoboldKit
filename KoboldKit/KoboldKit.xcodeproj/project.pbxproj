@@ -84,7 +84,7 @@
 		DC484C98178C43400067DAA4 /* KKNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD141774CA84004C981A /* KKNode.m */; };
 		DC484C99178C43400067DAA4 /* KKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0C1774CA5B004C981A /* KKModel.m */; };
 		DC484C9A178C43400067DAA4 /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
-		DC484C9B178C43400067DAA4 /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
+		DC484C9B178C43400067DAA4 /* KKBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKBehavior.m */; };
 		DC484C9C178C43400067DAA4 /* KKTilemap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F1176C9E2B003E4087 /* KKTilemap.m */; };
 		DC484C9D178C43400067DAA4 /* KKTilemapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE8F3176C9E2B003E4087 /* KKTilemapLayer.m */; };
 		DC484C9E178C43400067DAA4 /* KKTilemapLayerContourTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087CE177B1625004182E4 /* KKTilemapLayerContourTracer.m */; };
@@ -199,7 +199,7 @@
 		DCD7A241178C7449004A0467 /* KKNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD141774CA84004C981A /* KKNode.m */; };
 		DCD7A242178C7449004A0467 /* KKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0C1774CA5B004C981A /* KKModel.m */; };
 		DCD7A243178C7449004A0467 /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD0A1774CA5B004C981A /* KKNodeController.m */; };
-		DCD7A244178C7449004A0467 /* KKNodeBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */; };
+		DCD7A244178C7449004A0467 /* KKBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD081774CA5B004C981A /* KKBehavior.m */; };
 		DCD7A245178C7449004A0467 /* KKButtonBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD2E1774CAE2004C981A /* KKButtonBehavior.m */; };
 		DCD7A246178C7449004A0467 /* KKControlPadBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD301774CAE2004C981A /* KKControlPadBehavior.m */; };
 		DCD7A247178C7449004A0467 /* KKFollowTargetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD321774CAE2004C981A /* KKFollowTargetBehavior.m */; };
@@ -495,8 +495,8 @@
 		DC96A86A17876A2C00CE0827 /* KKLua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLua.m; sourceTree = "<group>"; };
 		DC96A86C17876F6100CE0827 /* NSDictionary+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KoboldKit.h"; sourceTree = "<group>"; };
 		DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KoboldKit.m"; sourceTree = "<group>"; };
-		DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeBehavior.h; sourceTree = "<group>"; };
-		DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeBehavior.m; sourceTree = "<group>"; };
+		DC9CFD071774CA5B004C981A /* KKBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKBehavior.h; sourceTree = "<group>"; };
+		DC9CFD081774CA5B004C981A /* KKBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKBehavior.m; sourceTree = "<group>"; };
 		DC9CFD091774CA5B004C981A /* KKNodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeController.h; sourceTree = "<group>"; };
 		DC9CFD0A1774CA5B004C981A /* KKNodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeController.m; sourceTree = "<group>"; };
 		DC9CFD0B1774CA5B004C981A /* KKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKModel.h; sourceTree = "<group>"; };
@@ -932,8 +932,8 @@
 				DC9CFD0C1774CA5B004C981A /* KKModel.m */,
 				DC9CFD091774CA5B004C981A /* KKNodeController.h */,
 				DC9CFD0A1774CA5B004C981A /* KKNodeController.m */,
-				DC9CFD071774CA5B004C981A /* KKNodeBehavior.h */,
-				DC9CFD081774CA5B004C981A /* KKNodeBehavior.m */,
+				DC9CFD071774CA5B004C981A /* KKBehavior.h */,
+				DC9CFD081774CA5B004C981A /* KKBehavior.m */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -1472,7 +1472,7 @@
 				DC484C98178C43400067DAA4 /* KKNode.m in Sources */,
 				DC484C99178C43400067DAA4 /* KKModel.m in Sources */,
 				DC484C9A178C43400067DAA4 /* KKNodeController.m in Sources */,
-				DC484C9B178C43400067DAA4 /* KKNodeBehavior.m in Sources */,
+				DC484C9B178C43400067DAA4 /* KKBehavior.m in Sources */,
 				DC484C9C178C43400067DAA4 /* KKTilemap.m in Sources */,
 				DC484C9D178C43400067DAA4 /* KKTilemapLayer.m in Sources */,
 				DC484C9E178C43400067DAA4 /* KKTilemapLayerContourTracer.m in Sources */,
@@ -1555,7 +1555,7 @@
 				DCD7A241178C7449004A0467 /* KKNode.m in Sources */,
 				DCD7A242178C7449004A0467 /* KKModel.m in Sources */,
 				DCD7A243178C7449004A0467 /* KKNodeController.m in Sources */,
-				DCD7A244178C7449004A0467 /* KKNodeBehavior.m in Sources */,
+				DCD7A244178C7449004A0467 /* KKBehavior.m in Sources */,
 				DCD7A245178C7449004A0467 /* KKButtonBehavior.m in Sources */,
 				DCD7A246178C7449004A0467 /* KKControlPadBehavior.m in Sources */,
 				DCB76E67178CB19C0047B4EC /* KKTilemapTileLayerNode.m in Sources */,

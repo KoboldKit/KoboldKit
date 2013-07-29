@@ -111,7 +111,8 @@
  @param key A unique string to identify the object.
 */
 -(void) setObject:(id)object forKey:(NSString*)key;
-/** @returns The object for key or nil if there's no object associated with this key. */
+/**  @param key A unique string identifying the object.
+ @returns The object for key or nil if there's no object associated with this key. */
 -(id) objectForKey:(NSString*)key;
 
 /** KVC / KVO */
@@ -140,7 +141,7 @@
 
 /** Accessing the KKMutableNumber object directly allows you to change the value without having to reassign it using a setter method.
  @returns The underlying KKMutableNumber object for a specific variable.
- @param A unique string identifying the variable.
+ @param key A unique string identifying the variable.
  @returns A mutable number object or nil if no variable with the given key was found. */
 -(KKMutableNumber*) mutableNumberForKey:(NSString*)key;
 

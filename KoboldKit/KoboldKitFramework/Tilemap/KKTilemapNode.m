@@ -471,9 +471,9 @@
 				
 				Class behaviorClass = NSClassFromString(behaviorClassName);
 				NSAssert2(behaviorClass, @"Can't create behavior named '%@' (object type: '%@') - no such behavior class", behaviorClassName, objectType);
-				NSAssert2([behaviorClass isSubclassOfClass:[KKNodeBehavior class]], @"Can't create behavior named '%@' (object type: '%@') - class does not inherit from KKNodeBehavior", behaviorClassName, objectType);
+				NSAssert2([behaviorClass isSubclassOfClass:[KKBehavior class]], @"Can't create behavior named '%@' (object type: '%@') - class does not inherit from KKBehavior", behaviorClassName, objectType);
 				
-				KKNodeBehavior* behavior = [behaviorClass behavior];
+				KKBehavior* behavior = [behaviorClass behavior];
 				
 				// apply behavior properties & ivars
 				NSDictionary* properties = [behaviorDef objectForKey:@"properties"];

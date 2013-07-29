@@ -1,92 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/KKSceneEventDelegate.html">
+	<File path="Categories/NSString+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/KKSceneEventDelegate</TokenIdentifier>
-			<Abstract type="html">Informal protocol defining the "update" methods an object can implement and receive when subscribed
-to updates in the scene.</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">NSString category methods</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
 			
 			<NodeRef refid="54"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/update:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/rectValue</TokenIdentifier>
+			<Abstract type="html">A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
+			<Declaration>- (CGRect)rectValue</Declaration>
 			
-			
-			<Anchor>//api/name/update:</Anchor>
+			<ReturnValue><Abstract type="html">A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}".</Abstract></ReturnValue>
+			<Anchor>//api/name/rectValue</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didUpdateBehaviors</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/sizeValue</TokenIdentifier>
+			<Abstract type="html">A CGSize converted from a string size representation like "{10, 20}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)didUpdateBehaviors</Declaration>
+			<Declaration>- (CGSize)sizeValue</Declaration>
 			
-			
-			<Anchor>//api/name/didUpdateBehaviors</Anchor>
+			<ReturnValue><Abstract type="html">A CGSize converted from a string size representation like "{10, 20}".</Abstract></ReturnValue>
+			<Anchor>//api/name/sizeValue</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didEvaluateActions</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/pointValue</TokenIdentifier>
+			<Abstract type="html">A CGPoint converted from a string point representation like "{300, 400}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)didEvaluateActions</Declaration>
+			<Declaration>- (CGPoint)pointValue</Declaration>
 			
-			
-			<Anchor>//api/name/didEvaluateActions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>- (void)didSimulatePhysics</Declaration>
-			
-			
-			<Anchor>//api/name/didSimulatePhysics</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/willMoveFromView:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>- (void)willMoveFromView:(SKView *)view</Declaration>
-			
-			
-			<Anchor>//api/name/willMoveFromView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didMoveToView:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>- (void)didMoveToView:(SKView *)view</Declaration>
-			
-			
-			<Anchor>//api/name/didMoveToView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didChangeSize:</TokenIdentifier>
-			<Abstract type="html">(not documented)</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>- (void)didChangeSize:(CGSize)oldSize</Declaration>
-			
-			
-			<Anchor>//api/name/didChangeSize:</Anchor>
+			<ReturnValue><Abstract type="html">A CGPoint converted from a string point representation like "{300, 400}".</Abstract></ReturnValue>
+			<Anchor>//api/name/pointValue</Anchor>
 		</Token>
 		
 	</File>

@@ -1,423 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKView.html">
+	<File path="Classes/KKTilemapTileObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKView</TokenIdentifier>
-			<Abstract type="html">Kobold Kit apps use KKView as their view. It provides additional features like the ability to push &amp; pop scenes.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileObject</TokenIdentifier>
+			<Abstract type="html">A tile object.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
 			<NodeRef refid="41"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/setSceneStack:</TokenIdentifier>
-			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileObject/setGid:</TokenIdentifier>
+			<Abstract type="html">The GID of the tile object.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
+			<Declaration>@property (atomic) gid_t gid</Declaration>
 			
-			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
-			<Anchor>//api/name/sceneStack</Anchor>
+			
+			<Anchor>//api/name/gid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/sceneStack</TokenIdentifier>
-			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileObject/gid</TokenIdentifier>
+			<Abstract type="html">The GID of the tile object.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
+			<Declaration>@property (atomic) gid_t gid</Declaration>
 			
-			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
-			<Anchor>//api/name/sceneStack</Anchor>
+			
+			<Anchor>//api/name/gid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKView/sceneStack</TokenIdentifier>
-			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapTileObject/gid</TokenIdentifier>
+			<Abstract type="html">The GID of the tile object.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
+			<Declaration>@property (atomic) gid_t gid</Declaration>
 			
-			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
-			<Anchor>//api/name/sceneStack</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/setModel:</TokenIdentifier>
-			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/model</TokenIdentifier>
-			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKView/model</TokenIdentifier>
-			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsPhysicsShapes:</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
-			
-			
-			<Anchor>//api/name/showsPhysicsShapes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsPhysicsShapes</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
-			
-			
-			<Anchor>//api/name/showsPhysicsShapes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsPhysicsShapes</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
-			
-			
-			<Anchor>//api/name/showsPhysicsShapes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsNodeFrames:</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
-			
-			
-			<Anchor>//api/name/showsNodeFrames</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsNodeFrames</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
-			
-			
-			<Anchor>//api/name/showsNodeFrames</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsNodeFrames</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
-			
-			
-			<Anchor>//api/name/showsNodeFrames</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsNodeAnchorPoints:</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
-			
-			
-			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsNodeAnchorPoints</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
-			
-			
-			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsNodeAnchorPoints</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
-			
-			
-			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsPhysicsShapes</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)showsPhysicsShapes</Declaration>
-			
-			
-			<Anchor>//api/name/showsPhysicsShapes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsNodeFrames</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)showsNodeFrames</Declaration>
-			
-			
-			<Anchor>//api/name/showsNodeFrames</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsNodeAnchorPoints</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)showsNodeAnchorPoints</Declaration>
-			
-			
-			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:</TokenIdentifier>
-			<Abstract type="html">Presents a scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)presentScene:(SKScene *)scene</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>scene</Name>
-					<Abstract type="html">The scene to present.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/presentScene:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:transition:</TokenIdentifier>
-			<Abstract type="html">Presents a scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)presentScene:(SKScene *)scene transition:(SKTransition *)transition</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>scene</Name>
-					<Abstract type="html">The scene to present.</Abstract>
-				</Parameter><Parameter>
-					<Name>transition</Name>
-					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/presentScene:transition:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:unwindStack:</TokenIdentifier>
-			<Abstract type="html">Presents a scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)presentScene:(KKScene *)scene unwindStack:(BOOL)unwindStack</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>scene</Name>
-					<Abstract type="html">The scene to present.</Abstract>
-				</Parameter><Parameter>
-					<Name>unwindStack</Name>
-					<Abstract type="html">If YES removes all scenes from the stack before adding the new scene.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/presentScene:unwindStack:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:transition:unwindStack:</TokenIdentifier>
-			<Abstract type="html">Presents a scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)presentScene:(KKScene *)scene transition:(KKTransition *)transition unwindStack:(BOOL)unwindStack</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>scene</Name>
-					<Abstract type="html">The scene to present.</Abstract>
-				</Parameter><Parameter>
-					<Name>transition</Name>
-					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
-				</Parameter><Parameter>
-					<Name>unwindStack</Name>
-					<Abstract type="html">If YES removes all scenes from the stack before adding the new scene.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/presentScene:transition:unwindStack:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/pushScene:</TokenIdentifier>
-			<Abstract type="html">Presents a scene, suspends the currently presented scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)pushScene:(KKScene *)scene</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>scene</Name>
-					<Abstract type="html">The scene to present.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/pushScene:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/pushScene:transition:</TokenIdentifier>
-			<Abstract type="html">Presents a scene, suspends the currently presented scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)pushScene:(KKScene *)scene transition:(KKTransition *)transition</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>scene</Name>
-					<Abstract type="html">The scene to present.</Abstract>
-				</Parameter><Parameter>
-					<Name>transition</Name>
-					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/pushScene:transition:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/popScene</TokenIdentifier>
-			<Abstract type="html">Pops the topmost scene from the stack and presents the new topmost scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)popScene</Declaration>
-			
-			
-			<Anchor>//api/name/popScene</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/popSceneWithTransition:</TokenIdentifier>
-			<Abstract type="html">Pops the topmost scene from the stack and presents the new topmost scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)popSceneWithTransition:(KKTransition *)transition</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>transition</Name>
-					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/popSceneWithTransition:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToRootScene</TokenIdentifier>
-			<Abstract type="html">Pops all scenes from the stack except for the root scene, then presents the root scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)popToRootScene</Declaration>
-			
-			
-			<Anchor>//api/name/popToRootScene</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToRootSceneWithTransition:</TokenIdentifier>
-			<Abstract type="html">Pops all scenes from the stack except for the root scene, then presents the root scene.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)popToRootSceneWithTransition:(KKTransition *)transition</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>transition</Name>
-					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/popToRootSceneWithTransition:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToSceneNamed:</TokenIdentifier>
-			<Abstract type="html">Searches for the first scene with the given name in the scene stack and presents it.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)popToSceneNamed:(NSString *)name</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">The name of a scene on the stack to be presented.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/popToSceneNamed:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToSceneNamed:transition:</TokenIdentifier>
-			<Abstract type="html">Searches for the first scene with the given name in the scene stack and presents it.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)popToSceneNamed:(NSString *)name transition:(KKTransition *)transition</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">The name of a scene on the stack to be presented.</Abstract>
-				</Parameter><Parameter>
-					<Name>transition</Name>
-					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/popToSceneNamed:transition:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/reloadConfig</TokenIdentifier>
-			<Abstract type="html">Reloads the config files, replacing the existing "config" and "devconfig" entries in the model.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>- (void)reloadConfig</Declaration>
-			
-			
-			<Anchor>//api/name/reloadConfig</Anchor>
+			<Anchor>//api/name/gid</Anchor>
 		</Token>
 		
 	</File>

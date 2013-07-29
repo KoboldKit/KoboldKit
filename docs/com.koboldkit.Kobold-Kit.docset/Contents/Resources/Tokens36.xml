@@ -1,80 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapRectangleObject.html">
+	<File path="Classes/KKTilemapObjectLayerNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapRectangleObject</TokenIdentifier>
-			<Abstract type="html">A rectangle object, usually referred to as simply "object" in Tiled.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObjectLayerNode</TokenIdentifier>
+			<Abstract type="html">Object layer node renders Tiled objects.</Abstract>
+			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>
 			
 			<NodeRef refid="36"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/setRect:</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapObjectLayerNode/objectLayerNodeWithLayer:</TokenIdentifier>
+			<Abstract type="html">A tilemap object layer.</Abstract>
+			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGRect rect</Declaration>
-			
-			
-			<Anchor>//api/name/rect</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/rect</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) CGRect rect</Declaration>
-			
-			
-			<Anchor>//api/name/rect</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapRectangleObject/rect</TokenIdentifier>
-			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) CGRect rect</Declaration>
-			
-			
-			<Anchor>//api/name/rect</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/setEllipse:</TokenIdentifier>
-			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL ellipse</Declaration>
-			
-			
-			<Anchor>//api/name/ellipse</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/ellipse</TokenIdentifier>
-			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL ellipse</Declaration>
-			
-			
-			<Anchor>//api/name/ellipse</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapRectangleObject/ellipse</TokenIdentifier>
-			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL ellipse</Declaration>
-			
-			
-			<Anchor>//api/name/ellipse</Anchor>
+			<Declaration>+ (id)objectLayerNodeWithLayer:(KKTilemapLayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">A tilemap object layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLayerNodeWithLayer:</Anchor>
 		</Token>
 		
 	</File>

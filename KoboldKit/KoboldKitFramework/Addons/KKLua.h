@@ -21,22 +21,27 @@ extern "C" {
 
 inline lua_State* currentLuaState();
 
-// Debug Helpers
+/** @name Debug Helpers */
+/** Prints the stack of the Lua state to the debug log. */
 void lua_printStack(lua_State* L);
+/** Prints the stack of the Lua state starting at index to the debug log. */
 void lua_printStackAt(lua_State* L, int i);
+
 // void wax_printTable(lua_State *L, int t);
 // void wax_log(int flag, NSString *format, ...);
-
 // int wax_errorFunction(lua_State *L);
 // int wax_pcall(lua_State *L, int argumentCount, int returnCount);
 
 /** Static class containing various Lua related helper methods. */
 @interface KKLua : NSObject
 
+/** One-time setup of Lua. Automatically called by the Kobold Kit framework. */
 +(void) setup;
 
-/** @returns The lua state. */
+/** @returns The current lua state. Needed only for custom Lua code. */
 +(lua_State*) luaState;
+
+/** @name Execute Scripts */
 
 /** Runs the Lua script file. File is a filename with or without path to the file, and with extension.
    Returns YES if the execution was successful and NO if it failed. Note that this is different from Lua,
@@ -53,6 +58,8 @@ void lua_printStackAt(lua_State* L, int i);
  @param aString A Lua script as string.
  @returns YES if the string was executed without errors. */
 +(BOOL) doString:(NSString*)aString;
+
+/** @name Error Handling */
 
 /*   Returns the Class with the same name of a Lua script. First, it checks if the class already exists, and if so it returns the existing class.
    Otherwise it will doFile the lua script scriptName.lua and create a waxClass with the given superClass to create this class. On the next call the class

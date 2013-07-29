@@ -1,16 +1,16 @@
 //
-//  KKNodeBehavior.m
+//  KKBehavior.m
 //  KoboldKitDemo
 //
 //  Created by Steffen Itterheim on 13.06.13.
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
 
-@implementation KKNodeBehavior
+@implementation KKBehavior
 
 #pragma mark Init / Dealloc
 
@@ -122,7 +122,7 @@ static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 
 -(id) copyWithZone:(NSZone*)zone
 {
-	KKNodeBehavior* copy = [[[self class] allocWithZone:zone] init];
+	KKBehavior* copy = [[[self class] allocWithZone:zone] init];
 	copy->_key = [_key copy];
 	copy->_wantsUpdate = _wantsUpdate;
 	return copy;
@@ -130,7 +130,7 @@ static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 
 #pragma mark Equality
 
--(BOOL) isEqualToBehavior:(KKNodeBehavior*)behavior
+-(BOOL) isEqualToBehavior:(KKBehavior*)behavior
 {
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;

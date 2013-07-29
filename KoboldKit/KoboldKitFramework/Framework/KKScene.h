@@ -11,7 +11,6 @@
 
 @class KKNodeController;
 @class KKView;
-@class KKPhysicsDebugNode;
 
 /** Scene Graph dump options. */
 typedef enum
@@ -36,7 +35,6 @@ typedef enum
 	NSMutableArray* _controllers;
 	NSMutableArray* _inputObservers;
 	NSMutableArray* _sceneUpdateObservers;
-	NSMutableArray* _sceneDidUpdateBehaviorsObservers;
 	NSMutableArray* _sceneDidEvaluateActionsObservers;
 	NSMutableArray* _sceneDidSimulatePhysicsObservers;
 	NSMutableArray* _sceneWillMoveFromViewObservers;
@@ -79,8 +77,6 @@ typedef enum
 // internal use
 -(void) registerController:(KKNodeController*)controller;
 -(void) unregisterController:(KKNodeController*)controller;
-
-// internal use
 -(BOOL) isEqualToScene:(KKScene*)scene;
 -(BOOL) isEqualToSceneTree:(KKScene*)scene;
 -(BOOL) isEqualToSceneProperties:(KKScene*)scene;

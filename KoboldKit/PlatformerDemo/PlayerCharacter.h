@@ -8,7 +8,7 @@
 
 #import <KoboldKit/KoboldKit.h>
 
-@interface PlayerCharacter : SKNode
+@interface PlayerCharacter : KKNode
 {
 @private
 	SKSpriteNode* _playerSprite;

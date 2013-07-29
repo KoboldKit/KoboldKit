@@ -35,12 +35,12 @@
 #import <ifaddrs.h>
 #import <netdb.h>
 
-/**
+/*
  * Does ARC support support GCD objects?
  * It does if the minimum deployment target is iOS 6+ or Mac OS X 8+
  * 
  * @see http://opensource.apple.com/source/libdispatch/libdispatch-228.18/os/object.h
- **/
+ */
 #if OS_OBJECT_USE_OBJC
 #define NEEDS_DISPATCH_RETAIN_RELEASE 0
 #else
@@ -48,9 +48,11 @@
 #endif
 
 
+/** not documented */
 extern NSString *const kReachabilityChangedNotification;
 
-typedef enum 
+/** not documented */
+typedef enum
 {
 	// Apple NetworkStatus Compatible Names.
 	NotReachable     = 0,
@@ -60,43 +62,64 @@ typedef enum
 
 @class Reachability;
 
+/** not documented */
 typedef void (^NetworkReachable)(Reachability * reachability);
+/** not documented */
 typedef void (^NetworkUnreachable)(Reachability * reachability);
 
+/** Tony Million's Reachability class: https://github.com/tonymillion/Reachability */
 @interface Reachability : NSObject
 
+/** not documented */
 @property (nonatomic, copy) NetworkReachable    reachableBlock;
+/** not documented */
 @property (nonatomic, copy) NetworkUnreachable  unreachableBlock;
 
-
+/** not documented */
 @property (nonatomic, assign) BOOL reachableOnWWAN;
 
+/** not documented
+ @param hostname The host name (URL). */
 +(Reachability*)reachabilityWithHostName:(NSString*)hostname;
+/** not documented */
 +(Reachability*)reachabilityForInternetConnection;
+/** not documented
+ @param hostAddress .. */
 +(Reachability*)reachabilityWithAddress:(const struct sockaddr_in*)hostAddress;
+/** not documented */
 +(Reachability*)reachabilityForLocalWiFi;
-
+/** not documented
+ @param ref .. */
 -(Reachability *)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;
 
+/** not documented */
 -(BOOL)startNotifier;
+/** not documented */
 -(void)stopNotifier;
 
+/** not documented */
 -(BOOL)isReachable;
+/** not documented */
 -(BOOL)isReachableViaWWAN;
+/** not documented */
 -(BOOL)isReachableViaWiFi;
 
-// WWAN may be available, but not active until a connection has been established.
-// WiFi may require a connection for VPN on Demand.
--(BOOL)isConnectionRequired; // Identical DDG variant.
--(BOOL)connectionRequired; // Apple's routine.
-// Dynamic, on demand connection?
+/** @returns Identical DDG variant. */
+-(BOOL)isConnectionRequired;
+/** @returns Apple's routine. */
+-(BOOL)connectionRequired;
+/** @returns Dynamic, on demand connection? */
 -(BOOL)isConnectionOnDemand;
-// Is user intervention required?
+/** @returns Is user intervention required? */
 -(BOOL)isInterventionRequired;
 
+/** not documented */
 -(NetworkStatus)currentReachabilityStatus;
+/** not documented */
 -(SCNetworkReachabilityFlags)reachabilityFlags;
+/** not documented */
 -(NSString*)currentReachabilityString;
+/** not documented */
 -(NSString*)currentReachabilityFlags;
 
 @end

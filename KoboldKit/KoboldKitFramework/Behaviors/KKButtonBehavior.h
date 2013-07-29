@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 
 @class KKButtonBehavior;
 
@@ -48,7 +48,7 @@ extern NSString* const KKButtonDidEndExecuteNotification;
  
  Note: an NSNotification is sent because using blocks or target/selector would prevent the class from being NSCopying/NSCoding compliant.
  Blocks and target/selector can not be copied or archived. */
-@interface KKButtonBehavior : KKNodeBehavior
+@interface KKButtonBehavior : KKBehavior
 {
 	@private
 	CGFloat _originalXScale;

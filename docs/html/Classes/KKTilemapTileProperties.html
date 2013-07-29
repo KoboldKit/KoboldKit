@@ -168,14 +168,14 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:setNumber:forKey:">&ndash;&nbsp;propertiesForGid:setNumber:forKey:</a></code>
-		<span class="tooltip"><p>Sets the number for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p></span>
+		<span class="tooltip"><p>Sets the number for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:setString:forKey:">&ndash;&nbsp;propertiesForGid:setString:forKey:</a></code>
-		<span class="tooltip"><p>Sets the string for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p></span>
+		<span class="tooltip"><p>Sets the string for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p></span>
 	</span>
 	
 	
@@ -183,23 +183,21 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:setValue:forKey:">&ndash;&nbsp;propertiesForGid:setValue:forKey:</a></code>
 		<span class="tooltip"><p>(KTTMXReader only) Sets a string or number (if string is convertible to number) for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>.
-   Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p></span>
+   Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:">&ndash;&nbsp;propertiesForGid:</a></code>
-		<span class="tooltip"><p>Returns the <a href="#//api/name/properties">properties</a> for a tile gid. Returns nil if the gid has no <a href="#//api/name/properties">properties</a>.</p></span>
+		<span class="tooltip"><p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:createNonExistingProperties:">&ndash;&nbsp;propertiesForGid:createNonExistingProperties:</a></code>
-		<span class="tooltip"><p>Returns the <a href="#//api/name/properties">properties</a> for a tile gid. If createNonExistingProperties is YES and if the gid has no <a href="#//api/name/properties">properties</a>, will create a new
-   KTTilemapProperties object, set it as the tile gid&rsquo;s <a href="#//api/name/properties">properties</a> object, and return it. If createNonExistingProperties is NO behaves
-   identical to <a href="#//api/name/propertiesForGid:">propertiesForGid:</a> by returning nil for non-existing tile <a href="#//api/name/properties">properties</a>.</p></span>
+		<span class="tooltip"><p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p></span>
 	</span>
 	
 	
@@ -267,14 +265,29 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the <a href="#//api/name/properties">properties</a> for a tile gid. Returns nil if the gid has no <a href="#//api/name/properties">properties</a>.</p>
+		<p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gid</em></dt>
+			<dd><p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the <a href="#//api/name/properties">properties</a> for a tile gid. Returns nil if the gid has no <a href="#//api/name/properties">properties</a>.</p>
+	</div>
 	
 	
 	
@@ -301,16 +314,35 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the <a href="#//api/name/properties">properties</a> for a tile gid. If createNonExistingProperties is YES and if the gid has no <a href="#//api/name/properties">properties</a>, will create a new
-   KTTilemapProperties object, set it as the tile gid&rsquo;s <a href="#//api/name/properties">properties</a> object, and return it. If createNonExistingProperties is NO behaves
-   identical to <a href="#//api/name/propertiesForGid:">propertiesForGid:</a> by returning nil for non-existing tile <a href="#//api/name/properties">properties</a>.</p>
+		<p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> createNonExistingProperties:(BOOL)<em>createNonExistingProperties</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gid</em></dt>
+			<dd><p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>createNonExistingProperties</em></dt>
+			<dd><p>If YES and the gid has no <a href="#//api/name/properties">properties</a> it will create a new KTTilemapProperties object, set it as the tile gid&rsquo;s <a href="#//api/name/properties">properties</a> object,
+and return it. If createNonExistingProperties is NO behaves identical to <a href="#//api/name/propertiesForGid:">propertiesForGid:</a> by returning nil for non-existing tile <a href="#//api/name/properties">properties</a>.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/properties">properties</a> for a tile gid.</p>
+	</div>
 	
 	
 	
@@ -337,14 +369,39 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Sets the number for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+		<p>Sets the number for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setNumber:(KKMutableNumber *)<em>number</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gid</em></dt>
+			<dd><p>The gid whose <a href="#//api/name/properties">properties</a> will be used.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>number</em></dt>
+			<dd><p>The number to set.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the number.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+	</div>
 	
 	
 	
@@ -371,14 +428,39 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Sets the string for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+		<p>Sets the string for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setString:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gid</em></dt>
+			<dd><p>The gid whose <a href="#//api/name/properties">properties</a> will be used.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>The string to set.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the number.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+	</div>
 	
 	
 	
@@ -406,14 +488,39 @@
 	
 	<div class="method-subsection brief-description">
 		<p>(KTTMXReader only) Sets a string or number (if string is convertible to number) for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>.
-   Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet. Returns that tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+   Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setValue:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gid</em></dt>
+			<dd><p>The gid whose <a href="#//api/name/properties">properties</a> will be used.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>The string to set. If the string is convertible to a number, will create a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> object and set that instead.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the number.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The tile&rsquo;s <a href="#//api/name/properties">properties</a>.</p>
+	</div>
 	
 	
 	
@@ -446,7 +553,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-28)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

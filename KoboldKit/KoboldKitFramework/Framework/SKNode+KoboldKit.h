@@ -9,7 +9,7 @@
 #import "KKCompatibility.h"
 
 @class KKNodeController;
-@class KKNodeBehavior;
+@class KKBehavior;
 @class KKScene;
 
 /** Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors. */
@@ -51,11 +51,11 @@
 
 /** Adds a behavior to the node. The behavior will be copied.
  @param behavior The behavior to add. */
--(void) addBehavior:(KKNodeBehavior*)behavior;
+-(void) addBehavior:(KKBehavior*)behavior;
 /** Adds a behavior to the node with a key. Replaces any existing behavior with the same key. The behavior will be copied. 
  @param behavior The behavior to add.
  @param key A unique key used to identify the behavior. */
--(void) addBehavior:(KKNodeBehavior*)behavior withKey:(NSString*)key;
+-(void) addBehavior:(KKBehavior*)behavior withKey:(NSString*)key;
 /** Adds multiple behaviors from an array. The behaviors will be copied.
  @param behaviors An array containing behaviors to add. */
 -(void) addBehaviors:(NSArray*)behaviors;
@@ -69,7 +69,7 @@
 -(BOOL) hasBehaviors;
 /** Removes the behavior.
  @param behavior The behavior to remove. */
--(void) removeBehavior:(KKNodeBehavior*)behavior;
+-(void) removeBehavior:(KKBehavior*)behavior;
 /** Removes the behavior with the given key.
  @param key The unique key identifying the behavior. */
 -(void) removeBehaviorForKey:(NSString*)key;
@@ -136,6 +136,7 @@
 
 @end
 
+#pragma mark SK*Node Categories
 
 @interface SKCropNode (KoboldKit)
 @end

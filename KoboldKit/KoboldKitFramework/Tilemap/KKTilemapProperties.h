@@ -31,27 +31,37 @@
 @property (atomic, readonly) NSUInteger count;
 
 /** Sets the number for the given key. If a value for the given key already exists the number will take its place.
-
-   Caution: it is illegal to set a KKMutableNumber for an already existing key that stores a NSString. */
+   Caution: it is illegal to set a KKMutableNumber for an already existing key that stores a NSString.
+ @param number The KKMutableNumber number to set.
+ @param key The key uniquely identifying the number. */
 -(void) setNumber:(KKMutableNumber*)number forKey:(NSString*)key;
 
 /** Sets the string for the given key. If a value for the given key already exists the string will take its place.
-
-   Caution: it is illegal to set a NSString for an already existing key that stores a KKMutableNumber. */
+   Caution: it is illegal to set a NSString for an already existing key that stores a KKMutableNumber.
+ @param string The NSString to set.
+  @param key The key uniquely identifying the number. */
 -(void) setString:(NSString*)string forKey:(NSString*)key;
 
 /** (KTTMXReader only) This method first determines if the string can be converted to KKMutableNumber and if so, will set the KKMutableNumber.
-   Otherwise it will set the string. */
+   Otherwise it will set the string.
+ @param string The string to set. If the string can be converted to a number, a KKMutableNumber object will be created and set instead.
+ @param key The key uniquely identifying the string or number. */
 -(void) setValue:(NSString*)string forKey:(NSString*)key;
 
 /** Returns a KKMutableNumber from a string if the string is convertable to a number. Otherwise returns nil.
-   Note: floating point numbers must use . (dot) as floating point separator. */
+   Note: floating point numbers must use . (dot) as floating point separator.
+ @param string The string to convert to KKMutableNumber.
+ @returns The converted number or nil if the string can't be converted to a number. */
 -(KKMutableNumber*) numberFromString:(NSString*)string;
 
-/** Returns the KKMutableNumber for the key. If there's no number for that key returns nil. */
+/** Returns the KKMutableNumber for the key. If there's no number for that key returns nil.
+ @param key The key uniquely identifying the number.
+ @returns The number for the key, or nil if there's no number with this key. */
 -(KKMutableNumber*) numberForKey:(NSString*)key;
 
-/** Returns the NSString for the key. If there's no string for that key returns nil. */
+/** Returns the NSString for the key. If there's no string for that key returns nil.
+ @param key The key uniquely identifying the string.
+ @returns The string for the key, or nil if there's no string with this key. */
 -(NSString*) stringForKey:(NSString*)key;
 
 @end

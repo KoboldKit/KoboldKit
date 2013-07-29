@@ -8,5 +8,5 @@
 
 NSString* kkVersionString()
 {
-	return @"Kobold Kit™ 0x0700";
+	return @"Kobold Kit™ 0x7777";
 }

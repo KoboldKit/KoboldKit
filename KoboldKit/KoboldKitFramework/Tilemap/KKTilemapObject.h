@@ -83,7 +83,8 @@ typedef enum : unsigned char
 /** In cases where you manually create or change polygon points you should run updateBoundingBox to update the boundingBox property. */
 -(void) updateBoundingBox;
 /** (TMX Parser Only) Creates the points array from a CGPoint encoded string where string representation of CGPoint are separated by a space character.
-   For example: @"0,0 -80,80 -80,160 0,200 80,200" */
+   For example: @"0,0 -80,80 -80,160 0,200 80,200"
+ @param string The string encoded list of points to be converted to a points array. */
 -(void) makePointsFromString:(NSString*)string;
 @end
 

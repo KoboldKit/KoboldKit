@@ -108,7 +108,7 @@ static NSString* const ArchiveKeyForOtherNode = @"otherNode";
 
 #pragma mark Equality
 
--(BOOL) isEqualToBehavior:(KKNodeBehavior*)behavior
+-(BOOL) isEqualToBehavior:(KKBehavior*)behavior
 {
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;

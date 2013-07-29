@@ -12,7 +12,6 @@
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
 #import "KKViewOriginNode.h"
-#import "KKPhysicsDebugNode.h"
 
 @implementation KKScene
 
@@ -46,7 +45,6 @@
 	_controllers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_inputObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneUpdateObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
-	_sceneDidUpdateBehaviorsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidEvaluateActionsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidSimulatePhysicsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneWillMoveFromViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
@@ -198,11 +196,6 @@
 			{
 				[_sceneUpdateObservers addObject:observer];
 			}
-			if ([observer respondsToSelector:@selector(didUpdateBehaviors)] &&
-				[_sceneDidUpdateBehaviorsObservers indexOfObject:observer] == NSNotFound)
-			{
-				[_sceneDidUpdateBehaviorsObservers addObject:observer];
-			}
 			if ([observer respondsToSelector:@selector(didEvaluateActions)] &&
 				[_sceneDidEvaluateActionsObservers indexOfObject:observer] == NSNotFound)
 			{
@@ -241,7 +234,6 @@
 {
 	dispatch_async(dispatch_get_main_queue(), ^{
 		[_sceneUpdateObservers removeObject:observer];
-		[_sceneDidUpdateBehaviorsObservers removeObject:observer];
 		[_sceneDidEvaluateActionsObservers removeObject:observer];
 		[_sceneDidSimulatePhysicsObservers removeObject:observer];
 		[_sceneWillMoveFromViewObservers removeObject:observer];
@@ -451,7 +443,6 @@
 static NSString* const ArchiveKeyForControllers = @"controllers";
 static NSString* const ArchiveKeyForInputObservers = @"inputObservers";
 static NSString* const ArchiveKeyForSceneUpdateObservers = @"sceneUpdateObservers";
-static NSString* const ArchiveKeyForSceneDidUpdateBehaviorsObservers = @"sceneDidUpdateBehaviorsObservers";
 static NSString* const ArchiveKeyForSceneDidEvaluateActionsObservers = @"sceneDidEvaluateActionsObservers";
 static NSString* const ArchiveKeyForSceneDidSimulatePhysicsObservers = @"sceneDidSimulatePhysicsObservers";
 static NSString* const ArchiveKeyForSceneWillMoveFromViewObservers = @"sceneWillMoveFromViewObservers";
@@ -466,7 +457,6 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 		_controllers = [decoder decodeObjectForKey:ArchiveKeyForControllers];
 		_inputObservers = [decoder decodeObjectForKey:ArchiveKeyForInputObservers];
 		_sceneUpdateObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneUpdateObservers];
-		_sceneDidUpdateBehaviorsObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneDidUpdateBehaviorsObservers];
 		_sceneDidEvaluateActionsObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneDidEvaluateActionsObservers];
 		_sceneDidSimulatePhysicsObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneDidSimulatePhysicsObservers];
 		_sceneWillMoveFromViewObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneWillMoveFromViewObservers];
@@ -482,7 +472,6 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 	[encoder encodeObject:_controllers forKey:ArchiveKeyForControllers];
 	[encoder encodeObject:_inputObservers forKey:ArchiveKeyForInputObservers];
 	[encoder encodeObject:_sceneUpdateObservers forKey:ArchiveKeyForSceneUpdateObservers];
-	[encoder encodeObject:_sceneDidUpdateBehaviorsObservers forKey:ArchiveKeyForSceneDidUpdateBehaviorsObservers];
 	[encoder encodeObject:_sceneDidEvaluateActionsObservers forKey:ArchiveKeyForSceneDidEvaluateActionsObservers];
 	[encoder encodeObject:_sceneDidSimulatePhysicsObservers forKey:ArchiveKeyForSceneDidSimulatePhysicsObservers];
 	[encoder encodeObject:_sceneWillMoveFromViewObservers forKey:ArchiveKeyForSceneWillMoveFromViewObservers];

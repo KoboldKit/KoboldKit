@@ -250,42 +250,42 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/update:">&ndash;&nbsp;update:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>The standard update method.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didEvaluateActions">&ndash;&nbsp;didEvaluateActions</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Called after actions have been evaluated.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didSimulatePhysics">&ndash;&nbsp;didSimulatePhysics</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Called after physics world has been simulated.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/willMoveFromView:">&ndash;&nbsp;willMoveFromView:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Called when scene will leave the view.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didMoveToView:">&ndash;&nbsp;didMoveToView:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Called when scene will attach to a view.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didChangeSize:">&ndash;&nbsp;didChangeSize:</a></code>
-		<span class="tooltip"><p>(not documented)</p></span>
+		<span class="tooltip"><p>Called when scene changed its size, ie after rotating or changing views.</p></span>
 	</span>
 	
 	
@@ -488,12 +488,22 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Called when scene changed its size, ie after rotating or changing views.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)didChangeSize:(CGSize)<em>oldSize</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>oldSize</em></dt>
+			<dd><p>The scene&rsquo;s previous size. The scene.size property contains the new size.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -522,7 +532,7 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Called after actions have been evaluated.</p>
 	</div>		
 	
 	
@@ -556,12 +566,22 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Called when scene will attach to a view.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)didMoveToView:(SKView *)<em>view</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The view the scene is attached to. Identical to scene.view.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -590,7 +610,7 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Called after physics world has been simulated.</p>
 	</div>		
 	
 	
@@ -761,12 +781,22 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>The standard update method.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)update:(NSTimeInterval)<em>currentTime</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currentTime</em></dt>
+			<dd><p>The time elapsed since app launch.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -795,12 +825,22 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(not documented)</p>
+		<p>Called when scene will leave the view.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)willMoveFromView:(SKView *)<em>view</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The view the scene is leaving. Identical to scene.view.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -835,7 +875,7 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-28)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

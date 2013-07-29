@@ -86,8 +86,8 @@ typedef enum
 }
 
 /** Internal use only.
- @param the full path to a tmx file
- @param the tilemap object into which the TMX file is loaded */
+ @param tmxFile The full path to the TMX file to load.
+ @param tilemap The tilemap object into which the TMX file is loaded. */
 -(void) loadTMXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap;
 
 @end

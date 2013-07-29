@@ -188,14 +188,16 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setNumber:forKey:">&ndash;&nbsp;setNumber:forKey:</a></code>
-		<span class="tooltip"><p>Sets the number for the given key. If a value for the given key already exists the number will take its place.</p></span>
+		<span class="tooltip"><p>Sets the number for the given key. If a value for the given key already exists the number will take its place.
+   Caution: it is illegal to set a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> for an already existing key that stores a NSString.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setString:forKey:">&ndash;&nbsp;setString:forKey:</a></code>
-		<span class="tooltip"><p>Sets the string for the given key. If a value for the given key already exists the string will take its place.</p></span>
+		<span class="tooltip"><p>Sets the string for the given key. If a value for the given key already exists the string will take its place.
+   Caution: it is illegal to set a NSString for an already existing key that stores a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a>.</p></span>
 	</span>
 	
 	
@@ -334,7 +336,22 @@
 	<div class="method-subsection method-declaration"><code>- (KKMutableNumber *)numberForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the number.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The number for the key, or nil if there&rsquo;s no number with this key.</p>
+	</div>
 	
 	
 	
@@ -369,7 +386,22 @@
 	<div class="method-subsection method-declaration"><code>- (KKMutableNumber *)numberFromString:(NSString *)<em>string</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>The string to convert to <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a>.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The converted number or nil if the string can&rsquo;t be converted to a number.</p>
+	</div>
 	
 	
 	
@@ -396,23 +428,34 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Sets the number for the given key. If a value for the given key already exists the number will take its place.</p>
+		<p>Sets the number for the given key. If a value for the given key already exists the number will take its place.
+   Caution: it is illegal to set a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> for an already existing key that stores a NSString.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)setNumber:(KKMutableNumber *)<em>number</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>   Caution: it is illegal to set a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> for an already existing key that stores a NSString.</p>
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>number</em></dt>
+			<dd><p>The <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> number to set.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the number.</p></dd>
+		</dl>
+		
 	</div>
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -435,23 +478,34 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Sets the string for the given key. If a value for the given key already exists the string will take its place.</p>
+		<p>Sets the string for the given key. If a value for the given key already exists the string will take its place.
+   Caution: it is illegal to set a NSString for an already existing key that stores a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a>.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)setString:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
 	
 	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>   Caution: it is illegal to set a NSString for an already existing key that stores a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a>.</p>
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>The NSString to set.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the number.</p></dd>
+		</dl>
+		
 	</div>
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -481,6 +535,21 @@
 	
 	<div class="method-subsection method-declaration"><code>- (void)setValue:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
 	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>The string to set. If the string can be converted to a number, a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> object will be created and set instead.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the string or number.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -516,7 +585,22 @@
 	<div class="method-subsection method-declaration"><code>- (NSString *)stringForKey:(NSString *)<em>key</em></code></div>
 	
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key uniquely identifying the string.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string for the key, or nil if there&rsquo;s no string with this key.</p>
+	</div>
 	
 	
 	
@@ -549,7 +633,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-28)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

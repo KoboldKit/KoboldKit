@@ -100,7 +100,7 @@ static NSNumberFormatter* __numberFormatter = nil;
 #endif /* if DEBUG */
 
 	return nil;
-} /* numberFromString */
+}
 
 -(void) setValue:(NSString*)string forKey:(NSString*)key
 {

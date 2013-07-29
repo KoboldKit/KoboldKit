@@ -9,9 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 
 
-// Stub Subclasses implementing common methods which can't be put in a category or swizzled.
-
-
+/** In Kobold Kit KKNode must be used in place of SKNode to ensure that KK messaging works (ie didMoveToParent, willMoveFromParent, etc). */
 @interface KKNode : SKNode
 
 // internal use

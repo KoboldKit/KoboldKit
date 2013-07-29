@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 #import "KKArcadeInputState.h"
 
 /** Notification name, sent by KKControlPadBehavior when button should execute its action. */
@@ -16,7 +16,7 @@ extern NSString* const KKControlPadDidChangeDirectionNotification;
  Sends a KKControlPadDidChangeDirection notification every time direction changes.
  
  @warning *Caution:* Only works on SKSpriteNode classes! */
-@interface KKControlPadBehavior : KKNodeBehavior
+@interface KKControlPadBehavior : KKBehavior
 {
 	@private
 	

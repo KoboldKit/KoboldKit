@@ -32,18 +32,18 @@
  ®returns The view's model object. */
 @property (atomic, readonly) KKModel* model;
 
-/** nd */
+/** If YES, will render physics shape outlines. */
 @property (atomic) BOOL showsPhysicsShapes;
-/** nd */
+/** If YES, will render node outlines according to their frame property. */
 @property (atomic) BOOL showsNodeFrames;
-/** nd */
+/** If YES, will render a dot on the node's position. */
 @property (atomic) BOOL showsNodeAnchorPoints;
 
-/** nd */
+/** @returns Whether physics shape outlines are drawn. */
 +(BOOL) showsPhysicsShapes;
-/** nd */
+/** @returns Whether node frame outlines are drawn. */
 +(BOOL) showsNodeFrames;
-/** nd */
+/** @returns Whether node positions are drawn. */
 +(BOOL) showsNodeAnchorPoints;
 
 /** Presents a scene. 

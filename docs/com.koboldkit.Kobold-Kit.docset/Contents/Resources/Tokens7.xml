@@ -1,30 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKDoubleNumber.html">
+	<File path="Classes/KKClassVarSetter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKDoubleNumber</TokenIdentifier>
-			<Abstract type="html">Used internally. Part of the KKMutableNumber class cluster.</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKClassVarSetter</TokenIdentifier>
+			<Abstract type="html">Utility class that allows to set an object's ivars from a NSDictionary. The dictionary must have strings as keys (the ivar names)
+   and KKMutableNumber or NSString types as values. </Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKDoubleNumber/initWithDouble:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type double</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKClassVarSetter/initWithClass:</TokenIdentifier>
+			<Abstract type="html">Initialize ivar setter with a class.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithDouble:(double)doubleNumber</Declaration>
+			<Declaration>- (id)initWithClass:(Class)class</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
+					<Name>class</Name>
+					<Abstract type="html">The class on which to set variables.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance of KKClassVarSetter</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKClassVarSetter/setIvarsWithDictionary:target:</TokenIdentifier>
+			<Abstract type="html">Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
+   and either NSString or KKMutableNumber as values. The target's class must match the class the KKClassVarSetter object was initialized with.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setIvarsWithDictionary:(NSDictionary *)ivarsDictionary target:(id)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ivarsDictionary</Name>
+					<Abstract type="html">A NSString keyed dictionary with values for ivars. The keys must begin with _ which is the standard prefix of ivar names.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to which to set the ivar values.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/initWithDouble:</Anchor>
+			<Anchor>//api/name/setIvarsWithDictionary:target:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKClassVarSetter/setPropertiesWithDictionary:target:</TokenIdentifier>
+			<Abstract type="html">Calls property setters in the target by using setValue:forKey: (KVC). The dictionary must have NSString as keys
+and either NSString or KKMutableNumber as values which must match or be convertible to the property's type.
+The target's class must match the class the KKClassVarSetter object was initialized with.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPropertiesWithDictionary:(NSDictionary *)propertiesDictionary target:(id)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertiesDictionary</Name>
+					<Abstract type="html">A NSString keyed dictionary with values for properties. The keys must match existing properties' names for the given class.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to which to set the properties.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPropertiesWithDictionary:target:</Anchor>
 		</Token>
 		
 	</File>

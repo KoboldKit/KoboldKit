@@ -7,11 +7,11 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 
 /** Updates the owning node's position from another node's position, applying optional offset and/or multiplier.
  The multiplier can be used to achieve a parallaxing effect. */
-@interface KKFollowTargetBehavior : KKNodeBehavior
+@interface KKFollowTargetBehavior : KKBehavior
 
 /** The target the behavior's node is following. */
 @property (atomic, weak) SKNode* target;

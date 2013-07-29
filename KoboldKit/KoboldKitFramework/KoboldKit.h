@@ -26,12 +26,11 @@
 #import "KKNode.h"
 #import "KKScene.h"
 #import "KKViewOriginNode.h"
-#import "KKPhysicsDebugNode.h"
 
 // framework
 #import "KKNodeController.h"
 #import "KKModel.h"
-#import "KKNodeBehavior.h"
+#import "KKBehavior.h"
 
 // behaviors
 #import "KKButtonBehavior.h"

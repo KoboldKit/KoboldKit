@@ -1,226 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKButtonBehavior.html">
+	<File path="Classes/KKBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKButtonBehavior</TokenIdentifier>
-			<Abstract type="html">KKButtonBehavior turns any node into a button. Touch/Click on the node while be detected, the node is scaled while selected.
-Scaling is optional and can be modified/disabled with the selectedScale property.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKBehavior</TokenIdentifier>
+			<Abstract type="html">Behaviors add custom logic to a node.
+Behaviors differ from actions in several ways:</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="3"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setSelectedTexture:</TokenIdentifier>
-			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setKey:</TokenIdentifier>
+			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			<Declaration>@property (atomic, copy, readonly) NSString *key</Declaration>
 			
-			
-			<Anchor>//api/name/selectedTexture</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/selectedTexture</TokenIdentifier>
-			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/key</TokenIdentifier>
+			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			<Declaration>@property (atomic, copy, readonly) NSString *key</Declaration>
 			
-			
-			<Anchor>//api/name/selectedTexture</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/selectedTexture</TokenIdentifier>
-			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/key</TokenIdentifier>
+			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			<Declaration>@property (atomic, copy, readonly) NSString *key</Declaration>
 			
-			
-			<Anchor>//api/name/selectedTexture</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setSelectedScale:</TokenIdentifier>
-			<Abstract type="html">Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setName:</TokenIdentifier>
+			<Abstract type="html">The behavior's name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat selectedScale</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			<ReturnValue><Abstract type="html">The current focus scale.</Abstract></ReturnValue>
-			<Anchor>//api/name/selectedScale</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/selectedScale</TokenIdentifier>
-			<Abstract type="html">Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/name</TokenIdentifier>
+			<Abstract type="html">The behavior's name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat selectedScale</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			<ReturnValue><Abstract type="html">The current focus scale.</Abstract></ReturnValue>
-			<Anchor>//api/name/selectedScale</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/selectedScale</TokenIdentifier>
-			<Abstract type="html">Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/name</TokenIdentifier>
+			<Abstract type="html">The behavior's name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGFloat selectedScale</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			<ReturnValue><Abstract type="html">The current focus scale.</Abstract></ReturnValue>
-			<Anchor>//api/name/selectedScale</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setSelected:</TokenIdentifier>
-			<Abstract type="html">YES if the button is currently selected.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setController:</TokenIdentifier>
+			<Abstract type="html">The behavior's node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) BOOL selected</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button is currently selected.</Abstract></ReturnValue>
-			<Anchor>//api/name/selected</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/selected</TokenIdentifier>
-			<Abstract type="html">YES if the button is currently selected.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/controller</TokenIdentifier>
+			<Abstract type="html">The behavior's node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) BOOL selected</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button is currently selected.</Abstract></ReturnValue>
-			<Anchor>//api/name/selected</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/selected</TokenIdentifier>
-			<Abstract type="html">YES if the button is currently selected.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/controller</TokenIdentifier>
+			<Abstract type="html">The behavior's node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) BOOL selected</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button is currently selected.</Abstract></ReturnValue>
-			<Anchor>//api/name/selected</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setExecutesWhenPressed:</TokenIdentifier>
-			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setNode:</TokenIdentifier>
+			<Abstract type="html">The behavior's owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
-			<Anchor>//api/name/executesWhenPressed</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/executesWhenPressed</TokenIdentifier>
-			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/node</TokenIdentifier>
+			<Abstract type="html">The behavior's owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
-			<Anchor>//api/name/executesWhenPressed</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/executesWhenPressed</TokenIdentifier>
-			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/node</TokenIdentifier>
+			<Abstract type="html">The behavior's owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
-			<Anchor>//api/name/executesWhenPressed</Anchor>
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setContinuous:</TokenIdentifier>
-			<Abstract type="html">If enabled, the button will send the execute notification continuously as long as it is pressed. It will also send the "released" notification
-when it is no longer pressed.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setWantsUpdate:</TokenIdentifier>
+			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL continuous</Declaration>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button will execute continously while pressed.</Abstract></ReturnValue>
-			<Anchor>//api/name/continuous</Anchor>
+			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/continuous</TokenIdentifier>
-			<Abstract type="html">If enabled, the button will send the execute notification continuously as long as it is pressed. It will also send the "released" notification
-when it is no longer pressed.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/wantsUpdate</TokenIdentifier>
+			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL continuous</Declaration>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button will execute continously while pressed.</Abstract></ReturnValue>
-			<Anchor>//api/name/continuous</Anchor>
+			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/continuous</TokenIdentifier>
-			<Abstract type="html">If enabled, the button will send the execute notification continuously as long as it is pressed. It will also send the "released" notification
-when it is no longer pressed.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/wantsUpdate</TokenIdentifier>
+			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) BOOL continuous</Declaration>
+			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
 			
-			<ReturnValue><Abstract type="html">YES if the button will execute continously while pressed.</Abstract></ReturnValue>
-			<Anchor>//api/name/continuous</Anchor>
+			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
+Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
+			<Anchor>//api/name/wantsUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/beginSelect</TokenIdentifier>
-			<Abstract type="html">Will make the node enter the selected state. This is normally used internally, but you may want to use this to highlight buttons,
-for example in a tutorial. You can also override the method in a subclass to perform your own selection style, perhaps changing texture or color.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)beginSelect</Declaration>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
-			
-			<Anchor>//api/name/beginSelect</Anchor>
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/endSelect</TokenIdentifier>
-			<Abstract type="html">Will make the node exit the selected state. This is normally used internally, but may be helpful for tutorials (see beginSelect.
-You can override the method in a subclass to perform your own deselection style.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/enabled</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)endSelect</Declaration>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
-			
-			<Anchor>//api/name/endSelect</Anchor>
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/execute</TokenIdentifier>
-			<Abstract type="html">Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
-You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call [super execute]
-in your implementation.</Abstract>
-			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/enabled</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)execute</Declaration>
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
 			
-			
-			<Anchor>//api/name/execute</Anchor>
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/didJoinController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/KKBehavior/behavior</TokenIdentifier>
+			<Abstract type="html">Creates a new instance.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)behavior</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/behavior</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/removeFromNode</TokenIdentifier>
+			<Abstract type="html">Removes the behavior from its owning node and controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeFromNode</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didJoinController</TokenIdentifier>
 			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
-			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)didJoinController</Declaration>
 			
@@ -229,9 +256,9 @@ in your implementation.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/didLeaveController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didLeaveController</TokenIdentifier>
 			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
-			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)didLeaveController</Declaration>
 			
@@ -240,22 +267,9 @@ in your implementation.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setEnabled:</TokenIdentifier>
-			<Abstract type="html">Whether the behavior is enabled.
-Disabled behaviors don't receive update messages.</Abstract>
-			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)setEnabled:(BOOL)enabled</Declaration>
-			
-			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
-Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
-			<Anchor>//api/name/setEnabled:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/update:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/update:</TokenIdentifier>
 			<Abstract type="html">Standard update method.</Abstract>
-			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
 			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
 			<Parameters>
@@ -266,6 +280,64 @@ Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
 			</Parameters>
 			
 			<Anchor>//api/name/update:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didEvaluateActions</TokenIdentifier>
+			<Abstract type="html">Update after actions have been evaluated.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)didEvaluateActions</Declaration>
+			
+			
+			<Anchor>//api/name/didEvaluateActions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">Update after physics world was simulated.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)didSimulatePhysics</Declaration>
+			
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/postNotificationName:</TokenIdentifier>
+			<Abstract type="html">Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)postNotificationName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The uniquely identifying name of the notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postNotificationName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/postNotificationName:userInfo:</TokenIdentifier>
+			<Abstract type="html">Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)postNotificationName:(NSString *)name userInfo:(NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The uniquely identifying name of the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">A dictionary with custom key/value which the notification receiver may need. A key "behavior" containing the
+sending behavior object is always added to the dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postNotificationName:userInfo:</Anchor>
 		</Token>
 		
 	</File>
