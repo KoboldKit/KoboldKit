@@ -32,7 +32,7 @@ local objectTypes =
 		physicsBody =
 		{
 			shapeType = "rectangle",
-			shapeSize = "{15, 20}",
+			shapeSize = "{32, 36}",
 			
 			properties =
 			{
