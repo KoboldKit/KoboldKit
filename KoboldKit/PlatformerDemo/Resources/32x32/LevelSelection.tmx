@@ -5,8 +5,8 @@
   <property name="physicsSimulationSpeed" value="1.0"/>
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
- <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1">
-  <image source="Tileset_Geometry_16x16.png" trans="ff00ff" width="256" height="256"/>
+ <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_Geometry_16x16.png" width="256" height="256"/>
  </tileset>
  <layer name="background" width="64" height="48">
   <data encoding="base64" compression="zlib">
@@ -15,7 +15,7 @@
  </layer>
  <layer name="doors" width="64" height="48">
   <data encoding="base64" compression="zlib">
-   eJztyDENACAMAEFWUAAKwL9CaoGlacJd8su3BgAAAAAAAAAAAPCHHo1CP9uMVqGfbUen0Ad4dQHeTwNz
+   eJztzrERABAUBUEpFVAB/Vfo9yB4gd2Zy681AAAAAAAAAAAAgD/0aqQngma10hNBuzrpCYAHF0TZAJQ=
   </data>
  </layer>
  <layer name="mainlayer" width="64" height="48">
@@ -23,12 +23,12 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1MENgzAQRNGBCiAVUEGoAPovK+bABeICYN9Kr4CvkT0nmQEAAAAAAAAAgEf6NktRa/NJ3ZuiX3+NG5rxYk+d/mPrf///2/vP3Y+tK/b3dj9tub+LN+ntDiQ/y+ixtQ==
+   eJztzwENgDAQBMFPFdAqQAFVUPzL4m2Qm0lWwFYBAAAAAAAAAAB/9XR3aLtblesq//5z+fef/n+6EdrbTSm4DzGhFsM=
   </data>
  </layer>
  <layer name="labels" width="64" height="48">
   <data encoding="base64" compression="zlib">
-   eJztyMsRglAUBUH2qAH4CQAxANEAVBLQ/CPhxMDieavorprNdB0AAAAAAAAAAABbcU9TeqRngd/aK73TJ80F/j9806/QB9ro0y7t06HAb+2YTumcLgV+a0O6pjHdCnzWWwBsCxgH
+   eJztzkkRwgAABMH8OQRAEMAhgENAAAOJfyWsB6rYB91V859hAAAAAAAAAAAA4F9c0y3d06P80jClZ3qld/mlZU5LewL4uVVap03all8admmfxnQovzQc0ymd06X8wnc+VPUEAg==
   </data>
  </layer>
  <objectgroup name="labels and doors" width="64" height="48">
