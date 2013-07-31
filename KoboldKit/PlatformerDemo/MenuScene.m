@@ -42,8 +42,7 @@
 
 -(void) didDownloadProjectFiles:(NSDictionary*)projectFiles
 {
-	[_pleaseWait removeAllActions];
-	[_pleaseWait runAction:[SKAction sequence:@[[SKAction moveToY:-_pleaseWait.fontSize duration:0.3], [SKAction removeFromParent]]]];
+	[_pleaseWait removeFromParent];
 	_pleaseWait = nil;
 
 	if (projectFiles == nil)
@@ -120,8 +119,12 @@
 			height -= tmxLabel.fontSize + 2;
 		}
 		
-		_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height + -height);
-		[_tmxLoadMenu runAction:[SKAction moveToY:self.size.height - 50 duration:0.3]];
+		_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height - 50);
+		//_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height + -height);
+		//[_tmxLoadMenu runAction:[SKAction moveToY:self.size.height - 50 duration:0.3]];
+
+		LOG_EXPR(_tmxLoadMenu.position);
+		LOG_EXPR(self.size.height - 50);
 	}
 }
 

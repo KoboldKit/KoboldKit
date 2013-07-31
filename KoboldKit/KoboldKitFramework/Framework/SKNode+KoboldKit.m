@@ -22,7 +22,8 @@
 @dynamic kkScene;
 -(KKScene*) kkScene
 {
-	NSAssert1(self.scene == nil || [self.scene isKindOfClass:[KKScene class]], @"scene (%@) is not a KKScene object", self.scene);
+	NSAssert(self.scene, @"self.scene property is (still) nil. The scene property is only valid after the node has been added as child to another node.");
+	NSAssert1([self.scene isKindOfClass:[KKScene class]], @"scene (%@) is not a KKScene object", self.scene);
 	return (KKScene*)self.scene;
 }
 

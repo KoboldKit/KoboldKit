@@ -12,9 +12,6 @@
 
 -(void) nodeDidSpawnWithObject:(KKTilemapObject*)object
 {
-	NSLog(@"-(void) nodeDidSpawnWithObject:(KKTilemapObject*)object");
-	LOG_EXPR(object);
-	
 	[self setupPlayerSpriteWithObject:object];
 	
 	// update bounds behavior with tilemap bounds
