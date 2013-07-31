@@ -20,11 +20,11 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2dFNwzAUBdAACwALAAvABLABLAD7z0EisCiodtJaxvXrOdL9t33rFyWdJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+HHVewE09TzpOLKbObe9F0Ez+o0t9fvWeyE04f7Gpt/YUr+v3zGnY3F/Y4vW78Wcyw05l3f+v/N59Dl9PX3t6XHOfSEP/76yPqLd39RvpD3ViHYW+v0tN59PfU7nnrMvk353jXoW6Z7mMuKeWhj1LPS7zXIWy3+Ep/g+UXrXSXNYv2WlM9pN7jfQsve1O6rfdcee31rvW7uvuaPHruucUttvLsv3hS3fEO7mPDVch7TJIfOxZg5Lv34/9uR9T/Q7Xg55/tU8Z6WcTx4JMqw=
+   eJzt2dFNwzAUBVADC1AWABaACWADWAD2n4NE1AJVcZrWcVy750j3t3Jy+16UNgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPhzV/sAFPUWdNyz3ZCH2oegGP32Lfb7WfsgFGF++6bfvsV+P/axp/tifvvWW783Q24X5Fre+Q/3c+t7+j78XtPLkKeZPG9+sjp6m9/Yb0/XlKO3e7FWv3GPty61ny99T6ees+9hnX53+7Su1fmNc5rKWv22Psf6nXb4ea0azz7+R3iJ7xNz7zpxD2/Vb6tzPHeP/if1HSjZ+7EZ3bLfVuf43Pt3rPel3efM6Lnnuqbk9pvK+PvCkt8QHoe8FjyHlMkp+zFnD0u9fr8n8jUR/baXU55/Oc9Zmc8PNL0z6g==
   </data>
  </layer>
  <objectgroup name="game objects" width="120" height="80">
-  <object name="player" type="Player" x="305" y="1160" width="32" height="32">
+  <object name="player" type="Player" x="1233" y="1161" width="16" height="32">
    <properties>
     <property name="_fallSpeedAcceleration" value="100"/>
     <property name="_fallSpeedLimit" value="150"/>
@@ -37,7 +37,7 @@
     <property name="_runSpeedLimit" value="180"/>
     <property name="allowsRotation" value="NO"/>
     <property name="angularDamping" value="0"/>
-    <property name="boundingBox" value="{2,2}"/>
+    <property name="boundingBox" value="{1,4}"/>
     <property name="defaultImage" value="Dummy_Player.png"/>
     <property name="friction" value="0"/>
     <property name="linearDamping" value="0"/>
