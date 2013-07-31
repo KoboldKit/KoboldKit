@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="40" tilewidth="16" tileheight="16" backgroundcolor="#ffffff">
+ <properties>
+  <property name="physicsGravityY" value="-9.81"/>
+  <property name="physicsSimulationSpeed" value="1.0"/>
+  <property name="restrictScrollingToMapBoundary" value="YES"/>
+ </properties>
+ <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_Geometry_16x16.png" width="128" height="128"/>
+ </tileset>
+ <layer name="background" width="60" height="40">
+  <properties>
+   <property name="_endlessScrollingHorizontal" value="YES"/>
+   <property name="_endlessScrollingVertical" value="YES"/>
+   <property name="_parallaxFactor" value="{0.5,0.5}"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztz8ENwCAMBEH6cf/95ZsHigJBEFsz0v1vWwMAAAAAAABmxOkDG8Vt1UVnVfVaqzY/tVZrftNapXmkNXvzTGvW5i+t2ZpXtGZpXtn6t+YLFJEUVA==
+  </data>
+ </layer>
+ <layer name="mainlayer" width="60" height="40">
+  <properties>
+   <property name="_mainTileLayer" value="YES"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztw8EJAAAIBKCjX/sv3BpFCiYAAAAAAAAAwHb1bKseOV/9CwU=
+  </data>
+ </layer>
+ <objectgroup name="game objects" width="60" height="40">
+  <object name="player" type="Player" x="64" y="480" width="16" height="32"/>
+ </objectgroup>
+</map>
