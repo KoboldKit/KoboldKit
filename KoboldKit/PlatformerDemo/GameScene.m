@@ -59,9 +59,9 @@
 	LOG_EXPR(self.physicsWorld.gravity);
 	LOG_EXPR(self.physicsWorld.speed);
 
-	[_tilemapNode spawnObjectsWithLayerNode:[_tilemapNode objectLayerNodeNamed:@"game objects"]];
-
-	_playerCharacter = (PlayerCharacter*)[_tilemapNode.mainTileLayerNode childNodeWithName:@"player"];
+	[_tilemapNode spawnObjectsWithLayerNode:_tilemapNode.gameObjectsLayerNode];
+	
+	_playerCharacter = (PlayerCharacter*)[_tilemapNode.gameObjectsLayerNode childNodeWithName:@"player"];
 	NSAssert1([_playerCharacter isKindOfClass:[PlayerCharacter class]], @"player node (%@) is not of class PlayerCharacter!", _playerCharacter);
 	
 	[self createSimpleControls];
@@ -79,18 +79,6 @@
 	[_curtainSprite runAction:[SKAction sequence:@[[SKAction fadeAlphaTo:0 duration:0.5], [SKAction removeFromParent]]]];
 	_curtainSprite = nil;
 }
-
-/*
--(void) setupPlayerCharacter
-{
-	KKTilemapObject* playerObject = [[_tilemapNode.tilemap layerNamed:@"game objects"] objectNamed:@"player"];
-	NSAssert(playerObject, @"No object named 'player' on tilemap!");
-	
-	_playerCharacter = [PlayerCharacter node];
-	[_tilemapNode.mainTileLayerNode addChild:_playerCharacter];
-	[_playerCharacter setupWithPlayerObject:playerObject movementBounds:_tilemapNode.bounds];
-}
- */
 
 -(void) addDevelopmentButtons
 {

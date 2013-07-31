@@ -14,9 +14,11 @@
 {
 	[self setupPlayerSpriteWithObject:object];
 	
+	// 1st parent = object layer node, 2nd parent = tile layer node, 3rd parent = tilemap node
+	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.parent.parent.parent;
+	NSAssert1([tilemapNode isKindOfClass:[KKTilemapNode class]], @"player.parent.parent.parent (%@) is not a KKTilemapNode!", tilemapNode);
+
 	// update bounds behavior with tilemap bounds
-	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.parent.parent;
-	NSAssert1([tilemapNode isKindOfClass:[KKTilemapNode class]], @"player.parent.parent (%@) is not a KKTilemapNode!", tilemapNode);
 	KKStayInBoundsBehavior* stayInBoundsBehavior = [self behaviorWithClass:[KKStayInBoundsBehavior class]];
 	stayInBoundsBehavior.bounds = tilemapNode.bounds;
 
@@ -101,7 +103,7 @@
 -(void) jumpButtonPressed:(NSNotification*)note
 {
 	CGPoint velocity = self.physicsBody.velocity;
-	if (_jumping == NO && velocity.y > -0.001 && velocity.y < 0.001)
+	if (_jumping == NO /*&& velocity.y > -0.001 && velocity.y < 0.001*/)
 	{
 		_jumping = YES;
 		velocity.y = _jumpSpeedInitial;
@@ -206,6 +208,7 @@
 	 */
 }
 
+/*
 -(void) didBeginContact:(SKPhysicsContact*)contact
 {
 	SKPhysicsBody* myBody = self.physicsBody;
@@ -214,12 +217,20 @@
 		// FIXME: this should actually check for collision with floor
 		
 		// prevent jitter on floor
-		/*
 		CGPoint velocity = myBody.velocity;
 		velocity.y = 0.0;
 		myBody.velocity = velocity;
-		 */
 	}
 }
+
+-(void) didEndContact:(SKPhysicsContact*)contact
+{
+	SKPhysicsBody* myBody = self.physicsBody;
+	if (contact.bodyA == myBody || contact.bodyB == myBody)
+	{
+		_inContact = NO;
+	}
+}
+*/
 
 @end

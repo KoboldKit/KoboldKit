@@ -14,7 +14,13 @@
 -(void) didJoinController
 {
 	_wantsUpdate = YES;
-	
+
+	// defaults to parent's parent (in a tilemap hierarchy this is the tile layer of the object)
+	if (_scrollingNode == nil)
+	{
+		_scrollingNode = self.node.parent.parent;
+	}
+
 	// update once immediately
 	[self didSimulatePhysics];
 }
@@ -25,14 +31,13 @@
 
 -(void) didSimulatePhysics
 {
-	SKNode* node = self.node;
-	SKNode* parent = node.parent;
-	if (parent)
+	if (_scrollingNode)
 	{
-		CGPoint cameraPositionInScene = [node.scene convertPoint:node.position fromNode:parent];
-		CGPoint pos = CGPointMake(parent.position.x - cameraPositionInScene.x,
-								  parent.position.y - cameraPositionInScene.y);
-		parent.position = pos;
+		SKNode* node = self.node;
+		CGPoint cameraPositionInScene = [node.scene convertPoint:node.position fromNode:_scrollingNode];
+		CGPoint pos = CGPointMake(_scrollingNode.position.x - cameraPositionInScene.x,
+								  _scrollingNode.position.y - cameraPositionInScene.y);
+		_scrollingNode.position = pos;
 	}
 }
 

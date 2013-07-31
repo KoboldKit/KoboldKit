@@ -263,7 +263,7 @@ static Class kMutableNumberClass;
 		if ([key hasPrefix:@"_"] == NO)
 		{
 			//NSLog(@"set property '%@' value '%@'", key, obj);
-			[target setValue:obj forKey:key];
+			[target setValue:obj forKeyPath:key];
 		}
 	}];
 }

@@ -19,8 +19,8 @@
 @interface KKTilemapNode : KKNode
 {
 	@private
-	__weak KKTilemapTileLayerNode* _mainTileLayerNode;
-	NSMutableArray* _tileLayers;
+	NSMutableArray* _tileLayerNodes;
+	NSMutableArray* _objectLayerNodes;
 }
 
 /** @returns the tilemap model object containing the tilemap's data.*/
@@ -32,7 +32,11 @@
 
 /** The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it's the first tile layer.
  @returns the "main" tile layer node.  */
-@property (atomic, readonly) KKTilemapTileLayerNode* mainTileLayerNode;
+@property (atomic, weak, readonly) KKTilemapTileLayerNode* mainTileLayerNode;
+
+/** The game object layer is the object layer where (most) game objects reside. Usually the layer that scrolls parallel to the main tile layer.
+ @returns the "game objects" object layer node.  */
+@property (atomic, weak, readonly) KKTilemapObjectLayerNode* gameObjectsLayerNode;
 
 /** Creates a tilemap node from a TMX file.
  @param tmxFile The filename of a TMX file in the bundle or an absolute path to a TMX file. 
@@ -57,15 +61,10 @@
  @returns The node containing child nodes for each physics body created. */
 -(SKNode*) createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode;
 
-/** Spawns the objects of an object layer and adds them as child nodes to the mainTileLayerNode.
+/** Spawns the objects of an object layer and adds them as child nodes to the objectLayerNode.
  The object's classes and properties are defined in objects.lua. 
  @param objectLayerNode The object layer node for which to spawn objects. */
 -(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode;
-/** Spawns the objects of an object layer and adds them as child nodes to the target tile layer.
- The object's classes and properties are defined in objects.lua.
- @param objectLayerNode The object layer node for which to spawn objects.
- @param targetTileLayerNode The tile layer node to which the spawned objects will be added as child nodes. */
--(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode targetLayerNode:(KKTilemapTileLayerNode*)targetTileLayerNode;
 
 /** Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds. */
 -(void) restrictScrollingToMapBoundary;

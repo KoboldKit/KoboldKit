@@ -46,7 +46,8 @@
 	{
 		self.name = tmxFile;
 		_tilemap = [KKTilemap tilemapWithContentsOfFile:tmxFile];
-		_tileLayers = [NSMutableArray arrayWithCapacity:2];
+		_tileLayerNodes = [NSMutableArray arrayWithCapacity:2];
+		_objectLayerNodes = [NSMutableArray arrayWithCapacity:2];
 	}
 	return self;
 }
@@ -59,23 +60,29 @@
 		
 		self.scene.backgroundColor = _tilemap.backgroundColor;
 		
+		KKTilemapTileLayerNode* tileLayer = nil;
+		
 		for (KKTilemapLayer* layer in _tilemap.layers)
 		{
 			if (layer.isTileLayer)
 			{
-				KKTilemapTileLayerNode* tileLayer = [KKTilemapTileLayerNode tileLayerNodeWithLayer:layer];
+				tileLayer = [KKTilemapTileLayerNode tileLayerNodeWithLayer:layer];
 				tileLayer.alpha = layer.alpha;
 				[self addChild:tileLayer];
-				[_tileLayers addObject:tileLayer];
+				[_tileLayerNodes addObject:tileLayer];
 			}
 			else
 			{
 				KKTilemapObjectLayerNode* objectLayer = [KKTilemapObjectLayerNode objectLayerNodeWithLayer:layer];
-				[self addChild:objectLayer];
+				objectLayer.zPosition = -1;
+				NSAssert1(tileLayer, @"can't add object layer '%@' because no tile layer precedes it", layer.name);
+				[tileLayer addChild:objectLayer];
+				[_objectLayerNodes addObject:objectLayer];
 			}
 		}
 		
 		_mainTileLayerNode = [self findMainTileLayerNode];
+		_gameObjectsLayerNode = [self findGameObjectsLayerNode];
 	}
 }
 
@@ -83,12 +90,12 @@
 {
 	// parallaxing behavior
 	KKFollowTargetBehavior* parallaxBehavior = [KKFollowTargetBehavior followTarget:_mainTileLayerNode];
-	for (KKTilemapTileLayerNode* tileLayerNode in _tileLayers)
+	for (KKTilemapLayerNode* layerNode in _tileLayerNodes)
 	{
-		if (tileLayerNode != _mainTileLayerNode)
+		if (layerNode != _gameObjectsLayerNode)
 		{
-			parallaxBehavior.positionMultiplier = tileLayerNode.layer.parallaxFactor;
-			[tileLayerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKFollowTargetBehavior class])];
+			parallaxBehavior.positionMultiplier = layerNode.layer.parallaxFactor;
+			[layerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKFollowTargetBehavior class])];
 		}
 	}
 }
@@ -135,7 +142,7 @@
 
 -(void) didSimulatePhysics
 {
-	for (KKTilemapTileLayerNode* tileLayer in _tileLayers)
+	for (KKTilemapTileLayerNode* tileLayer in _tileLayerNodes)
 	{
 		[tileLayer updateLayer];
 	}
@@ -145,81 +152,56 @@
 
 #pragma mark Main Layer
 
-@dynamic mainTileLayerNode;
--(KKTilemapTileLayerNode*) mainTileLayerNode
-{
-	if (_mainTileLayerNode == nil)
-	{
-		_mainTileLayerNode = [self findMainTileLayerNode];
-	}
-	
-	return _mainTileLayerNode;
-}
-
 -(KKTilemapTileLayerNode*) findMainTileLayerNode
 {
-	const CGPoint notParallaxing = CGPointMake(1.0, 1.0);
-	Class tileLayerNodeClass = [KKTilemapTileLayerNode class];
-	KKTilemapTileLayerNode* backgroundTileLayerNode;
-	KKTilemapTileLayerNode* mainTileLayerNodeAccordingToParallax;
-	KKTilemapTileLayerNode* mainTileLayerNode;
-	
-	for (KKTilemapTileLayerNode* tileLayerNode in self.children)
-	{
-		if ([tileLayerNode isKindOfClass:tileLayerNodeClass])
-		{
-			if (tileLayerNode.layer.mainTileLayer)
-			{
-				mainTileLayerNode = tileLayerNode;
-				break;
-			}
-			else if (mainTileLayerNodeAccordingToParallax == nil &&
-					 CGPointEqualToPoint(tileLayerNode.layer.parallaxFactor, notParallaxing))
-			{
-				// the main layer is the first tile layer with parallax factor 1.0/1.0 (not parallaxing)
-				mainTileLayerNodeAccordingToParallax = tileLayerNode;
-			}
-			
-			if (backgroundTileLayerNode == nil)
-			{
-				backgroundTileLayerNode = tileLayerNode;
-			}
-		}
-	}
-	
+	KKTilemapTileLayerNode* mainTileLayerNode = [self tileLayerNodeNamed:@"main layer"];
 	if (mainTileLayerNode == nil)
 	{
-		if (mainTileLayerNodeAccordingToParallax)
-		{
-			mainTileLayerNode = mainTileLayerNodeAccordingToParallax;
-		}
-		else
-		{
-			mainTileLayerNode = backgroundTileLayerNode;
-		}
-
-		NSLog(@"WARNING: KKTilemapNode could not determine 'main' layer, using this layer: %@", mainTileLayerNode.layer);
+		mainTileLayerNode = [self tileLayerNodeNamed:@"mainlayer"];
 	}
 	
-	NSLog(@"Main Tile Layer: %@", mainTileLayerNode.layer.name);
-	
+	NSAssert(mainTileLayerNode, @"tile layer named 'main layer' is missing!");
 	return mainTileLayerNode;
+}
+
+-(KKTilemapObjectLayerNode*) findGameObjectsLayerNode
+{
+	KKTilemapObjectLayerNode* gameObjectsLayerNode = [self objectLayerNodeNamed:@"game objects"];
+	if (gameObjectsLayerNode == nil)
+	{
+		gameObjectsLayerNode = [self objectLayerNodeNamed:@"gameobjects"];
+	}
+	
+	NSAssert(gameObjectsLayerNode, @"object layer named 'game objects' is missing!");
+	return gameObjectsLayerNode;
 }
 
 #pragma mark Layers
 
 -(KKTilemapTileLayerNode*) tileLayerNodeNamed:(NSString*)name
 {
-	KKTilemapTileLayerNode* node = (KKTilemapTileLayerNode*)[self childNodeWithName:name];
-	NSAssert2(node == nil || [node isKindOfClass:[KKTilemapTileLayerNode class]], @"node with name '%@' is not a KKTilemapTileLayerNode, it is: %@", name, node);
-	return node;
+	for (KKTilemapTileLayerNode* tileLayerNode in _tileLayerNodes)
+	{
+		if ([tileLayerNode.name isEqualToString:name])
+		{
+			return tileLayerNode;
+		}
+	}
+	
+	return nil;
 }
 
 -(KKTilemapObjectLayerNode*) objectLayerNodeNamed:(NSString*)name
 {
-	KKTilemapObjectLayerNode* node = (KKTilemapObjectLayerNode*)[self childNodeWithName:name];
-	NSAssert2(node == nil || [node isKindOfClass:[KKTilemapObjectLayerNode class]], @"node with name '%@' is not a KKTilemapObjectLayerNode, it is: %@", name, node);
-	return node;
+	for (KKTilemapObjectLayerNode* objectLayerNode in _objectLayerNodes)
+	{
+		if ([objectLayerNode.name isEqualToString:name])
+		{
+			return objectLayerNode;
+		}
+	}
+	
+	return nil;
 }
 
 #pragma mark Collision
@@ -383,11 +365,6 @@
 
 -(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode
 {
-	[self spawnObjectsWithLayerNode:objectLayerNode targetLayerNode:_mainTileLayerNode];
-}
-
--(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode targetLayerNode:(KKTilemapTileLayerNode*)targetTileLayerNode
-{
 	NSMutableDictionary* cachedVarSetters = [NSMutableDictionary dictionaryWithCapacity:4];
 	[cachedVarSetters setObject:[[KKClassVarSetter alloc] initWithClass:NSClassFromString(@"PKPhysicsBody")] forKey:@"PKPhysicsBody"];
 	
@@ -417,7 +394,7 @@
 			objectNode.hidden = tilemapObject.hidden;
 			objectNode.zRotation = tilemapObject.rotation;
 			objectNode.name = (tilemapObject.name.length ? tilemapObject.name : objectClassName);
-			[targetTileLayerNode addChild:objectNode];
+			[objectLayerNode addChild:objectNode];
 			
 			// create physics body
 			NSDictionary* physicsBodyDef = [objectDef objectForKey:@"physicsBody"];
@@ -491,6 +468,15 @@
 				}
 				
 				[objectNode addBehavior:behavior withKey:[behaviorDef objectForKey:@"key"]];
+			}
+			
+			// override properties with properties from Tiled
+			properties = tilemapObject.properties.properties;
+			if (properties.count)
+			{
+				KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:objectClassName];
+				[varSetter setIvarsWithDictionary:properties target:objectNode];
+				[varSetter setPropertiesWithDictionary:properties target:objectNode];
 			}
 			
 			// call objectDidSpawn on newly spawned object (if available)

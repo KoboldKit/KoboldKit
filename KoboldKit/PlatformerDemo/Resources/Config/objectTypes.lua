@@ -16,7 +16,7 @@ local objectTypes =
 		
 		properties =
 		{
-			_fallSpeedAcceleration = 100, -- how fast player accelerates when falling down
+			_fallSpeedAcceleration = 50, -- how fast player accelerates when falling down
 			_fallSpeedLimit = 250,			-- max falling speed
 			_jumpAbortVelocity = 150,		-- the (max) upwards velocity forcibly set when jump is aborted
 			_jumpSpeedInitial = 500,		-- how fast the player initially moves upwards when jumping is initiated
@@ -52,6 +52,11 @@ local objectTypes =
 			--{behaviorClass = "KKLimitVelocityBehavior", properties = {velocityLimit = 100}},
 			{className = "KKStayInBoundsBehavior", properties = {bounds = "{{0, 0}, {0, 0}}"}},
 			{className = "KKCameraFollowBehavior"},
+		},
+		
+		actions =
+		{
+			-- not yet supported
 		},
 	},
 

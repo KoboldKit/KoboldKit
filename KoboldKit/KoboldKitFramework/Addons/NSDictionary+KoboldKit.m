@@ -128,7 +128,7 @@ typedef enum
 			switch (luaValueType)
 			{
 				case LUA_TNUMBER:
-					[dict setObject:[KKMutableNumber numberWithFloat:(float)lua_tonumber(L, -1)] forKey:key];
+					[dict setObject:[KKMutableNumber numberWithDouble:lua_tonumber(L, -1)] forKey:key];
 					break;
 
 				case LUA_TBOOLEAN:
