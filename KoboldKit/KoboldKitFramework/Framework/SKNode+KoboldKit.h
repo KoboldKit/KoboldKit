@@ -138,6 +138,10 @@
 
 #pragma mark SK*Node Categories
 
+@interface SKSpriteNode (KoboldKit)
+@property (nonatomic) NSString* imageName;
+@end
+
 @interface SKCropNode (KoboldKit)
 @end
 @interface SKEffectNode (KoboldKit)
@@ -147,8 +151,6 @@
 @interface SKLabelNode (KoboldKit)
 @end
 @interface SKShapeNode (KoboldKit)
-@end
-@interface SKSpriteNode (KoboldKit)
 @end
 @interface SKVideoNode (KoboldKit)
 @end

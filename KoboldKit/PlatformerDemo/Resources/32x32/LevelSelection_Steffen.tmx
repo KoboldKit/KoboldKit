@@ -33,9 +33,10 @@
   </data>
  </layer>
  <objectgroup draworder="topdown" name="labels and doors" width="64" height="48">
-  <object name="stage" x="464" y="608" width="64" height="16">
+  <object name="stage" type="LabelNode" x="208" y="624" width="64" height="16">
    <properties>
-    <property name="defaultImage" value="dummy_stage.png"/>
+    <property name="fontColor" value="0.0 1.0 0.5 1.0"/>
+    <property name="text" value="stage"/>
    </properties>
   </object>
   <object name="rank" x="272" y="720" width="64" height="16">
@@ -43,9 +44,9 @@
     <property name="defaultImage" value="dummy_rank.png"/>
    </properties>
   </object>
-  <object name="level" x="144" y="624" width="32" height="16">
+  <object name="level" type="SpriteNode" x="144" y="624" width="32" height="16">
    <properties>
-    <property name="defaultImage" value="dummy_level.png"/>
+    <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
   <object name="category" x="272" y="688" width="64" height="16">

@@ -76,10 +76,13 @@ static BOOL _showsNodeAnchorPoints = NO;
 	self.showsNodeFrames = [_model boolForKeyPath:@"devconfig.showsNodeFrames"];
 	self.showsNodeAnchorPoints = [_model boolForKeyPath:@"devconfig.showsNodeAnchorPoints"];
 
-	/*
-	KKClassVarSetter* setter = [[KKClassVarSetter alloc] initWithClass:[self class]];
-	[setter setIvarsWithDictionary:@{@"_showsCPUStats": [NSNumber numberWithBool:YES], @"_showsGPUStats": [NSNumber numberWithBool:YES]} target:self];
-	 */
+	[self setValue:@([_model boolForKeyPath:@"devconfig.showsCoreAnimationFPS"]) forKey:@"_showsCoreAnimationFPS"];
+	[self setValue:@([_model boolForKeyPath:@"devconfig.showsGPUStats"]) forKey:@"_showsGPUStats"];
+	[self setValue:@([_model boolForKeyPath:@"devconfig.showsCPUStats"]) forKey:@"_showsCPUStats"];
+	[self setValue:@([_model boolForKeyPath:@"devconfig.showsCulledNodesInNodeCount"]) forKey:@"_showsCulledNodesInNodeCount"];
+	[self setValue:@([_model boolForKeyPath:@"devconfig.showsTotalAreaRendered"]) forKey:@"_showsTotalAreaRendered"];
+	[self setValue:@([_model boolForKeyPath:@"devconfig.showsSpriteBounds"]) forKey:@"_showsSpriteBounds"];
+	[self setValue:@([_model boolForKeyPath:@"devconfig.shouldCenterStats"]) forKey:@"_shouldCenterStats"];
 }
 
 -(void) loadConfig:(NSString*)configFile

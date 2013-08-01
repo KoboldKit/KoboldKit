@@ -59,7 +59,7 @@
 	LOG_EXPR(self.physicsWorld.gravity);
 	LOG_EXPR(self.physicsWorld.speed);
 
-	[_tilemapNode spawnObjectsWithLayerNode:_tilemapNode.gameObjectsLayerNode];
+	[_tilemapNode spawnObjects];
 	
 	_playerCharacter = (PlayerCharacter*)[_tilemapNode.gameObjectsLayerNode childNodeWithName:@"player"];
 	NSAssert1([_playerCharacter isKindOfClass:[PlayerCharacter class]], @"player node (%@) is not of class PlayerCharacter!", _playerCharacter);

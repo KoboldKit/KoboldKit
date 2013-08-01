@@ -232,6 +232,27 @@ static Class kMutableNumberClass;
 	return foundIvarInfo;
 }
 
+-(id) convertedObject:(id)obj forKey:(id)key
+{
+	if ([obj isKindOfClass:[NSDictionary class]])
+	{
+		NSDictionary* dict = (NSDictionary*)obj;
+		NSAssert1(dict.count == 1, @"can't convert dictionary (%@) with multiple values", dict);
+		for (NSString* key in dict)
+		{
+			if ([key isEqualToString:@"color"])
+			{
+				return [[dict objectForKey:key] color];
+			}
+		}
+	}
+	else if ([obj isKindOfClass:[NSString class]] && [[key lowercaseString] containsString:@"color"])
+	{
+		return [obj color];
+	}
+	return obj;
+}
+
 -(void) setIvarsWithDictionary:(NSDictionary*)ivarsDictionary target:(id)target
 {
 	NSAssert2([target isKindOfClass:_class], @"class mismatch! target class %@ != expected class %@", NSStringFromClass([target class]), NSStringFromClass(_class));
@@ -245,6 +266,8 @@ static Class kMutableNumberClass;
 			KKIvarInfo* ivarInfo = [self ivarInfoForName:key];
 			if (ivarInfo)
 			{
+				obj = [self convertedObject:obj forKey:key];
+
 				//NSLog(@"var: %@ = %@", name, obj);
 				[ivarInfo setIvarInTarget:target value:obj];
 			}
@@ -262,6 +285,8 @@ static Class kMutableNumberClass;
 		 
 		if ([key hasPrefix:@"_"] == NO)
 		{
+			obj = [self convertedObject:obj forKey:key];
+			
 			//NSLog(@"set property '%@' value '%@'", key, obj);
 			[target setValue:obj forKeyPath:key];
 		}

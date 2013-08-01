@@ -60,12 +60,30 @@ local objectTypes =
 		},
 	},
 
-	SuperPlayer =
+	SubclassPlayer =
 	{
 		inheritsFrom = "Player",
-		
 	},
 
+	SpriteNode =
+	{
+		className = "SKSpriteNode",
+		properties =
+		{
+			imageName = "MissingResource.png",
+		},
+	},
+	LabelNode =
+	{
+		className = "SKLabelNode",
+		properties =
+		{
+			fontName = "Arial",
+			fontSize = 10,
+			fontColor = {color = "1.0 0.0 1.0 1.0"}, -- color = "R G B A"
+			text = "<missing text>",
+		},
+	},
 }
 
 return objectTypes

@@ -43,5 +43,17 @@
 #endif
 }
 
+-(SKColor*) color
+{
+	CIColor* ciColor = [CIColor colorWithString:self];
+	UIColor* uiColor = [UIColor colorWithCIColor:ciColor];
+	return uiColor;
+}
+
+-(BOOL) containsString:(NSString*)subString
+{
+	return ([self rangeOfString:subString].location != NSNotFound);
+}
+
 
 @end

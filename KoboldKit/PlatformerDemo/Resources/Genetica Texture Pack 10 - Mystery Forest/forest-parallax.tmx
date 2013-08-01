@@ -61,26 +61,7 @@
   </data>
  </layer>
  <objectgroup draworder="topdown" name="game objects" width="32" height="16">
-  <object name="player" type="Player" x="416" y="32" width="22" height="48">
-   <properties>
-    <property name="_fallSpeedAcceleration" value="100"/>
-    <property name="_fallSpeedLimit" value="250"/>
-    <property name="_jumpAbortVelocity" value="150"/>
-    <property name="_jumpSpeedDeceleration" value="20"/>
-    <property name="_jumpSpeedInitial" value="500"/>
-    <property name="_runSpeedAcceleration" value="0"/>
-    <property name="_runSpeedDeceleration" value="0"/>
-    <property name="_runSpeedLimit" value="200"/>
-    <property name="allowsRotation" value="NO"/>
-    <property name="angularDamping" value="0"/>
-    <property name="boundingBox" value="{10, 10}"/>
-    <property name="defaultImage" value=""/>
-    <property name="friction" value="0"/>
-    <property name="linearDamping" value="0"/>
-    <property name="mass" value="0.33"/>
-    <property name="restitution" value="0.04"/>
-   </properties>
-  </object>
+  <object name="player" type="Player" x="416" y="32" width="22" height="48"/>
  </objectgroup>
  <layer name="flare layer" width="32" height="16" opacity="0.8">
   <properties>

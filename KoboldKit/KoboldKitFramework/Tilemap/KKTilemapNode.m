@@ -363,6 +363,14 @@
 
 #pragma mark Spawn Objects
 
+-(void) spawnObjects
+{
+	for (KKTilemapObjectLayerNode* objectLayerNode in _objectLayerNodes)
+	{
+		[self spawnObjectsWithLayerNode:objectLayerNode];
+	}
+}
+
 -(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode
 {
 	NSMutableDictionary* cachedVarSetters = [NSMutableDictionary dictionaryWithCapacity:4];
@@ -475,6 +483,12 @@
 			if (properties.count)
 			{
 				KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:objectClassName];
+				if (varSetter == nil)
+				{
+					varSetter = [[KKClassVarSetter alloc] initWithClass:objectNodeClass];
+					[cachedVarSetters setObject:varSetter forKey:objectClassName];
+				}
+
 				[varSetter setIvarsWithDictionary:properties target:objectNode];
 				[varSetter setPropertiesWithDictionary:properties target:objectNode];
 			}

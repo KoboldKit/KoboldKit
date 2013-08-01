@@ -61,6 +61,9 @@
  @returns The node containing child nodes for each physics body created. */
 -(SKNode*) createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode;
 
+/** Spawns the objects of all object layers and adds them as child nodes to their corresponding objectLayerNode.
+ The object's classes and properties are defined in objects.lua. */
+-(void) spawnObjects;
 /** Spawns the objects of an object layer and adds them as child nodes to the objectLayerNode.
  The object's classes and properties are defined in objects.lua. 
  @param objectLayerNode The object layer node for which to spawn objects. */

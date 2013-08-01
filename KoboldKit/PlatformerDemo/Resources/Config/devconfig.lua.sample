@@ -16,12 +16,21 @@ local config =
 	-- these values are recognized and used
 	developmentWebServerURL = "http://10.0.0.8:32111",
 
-	showsFPS = true,
-	showsDrawCount = true,
-	showsNodeCount = true,
-	showsPhysicsShapes = true,
-	showsNodeFrames = true,
-	showsNodeAnchorPoints = true,
+	showsFPS = YES,
+	showsDrawCount = YES,
+	showsNodeCount = YES,
+	showsPhysicsShapes = YES,
+	showsNodeFrames = NO,
+	showsNodeAnchorPoints = NO,
+
+	-- private debug flags
+	showsCoreAnimationFPS = YES,
+	showsCPUStats = YES,
+	showsGPUStats = YES,
+	showsCulledNodesInNodeCount = NO,
+	showsTotalAreaRendered = NO,
+	showsSpriteBounds = NO,
+	shouldCenterStats = NO,
 
 
 	-- below are example values

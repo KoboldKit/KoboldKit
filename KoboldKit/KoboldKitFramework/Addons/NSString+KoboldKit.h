@@ -18,4 +18,13 @@
 /** @returns A CGPoint converted from a string point representation like "{300, 400}". */
 -(CGPoint) pointValue;
 
+/** @returns String converted to SKColor object. The string must be in the form "1.0 1.0 1.0 1.0" where the
+ values stand for the RGBA color values in the same order. */
+-(SKColor*) color;
+
+/** Performs a case sensitive search for a substring. Returns YES if the string contains the substring.
+ @param subString The sub string to search for.
+ @returns YES if the subString is contained in the string. */
+-(BOOL) containsString:(NSString*)subString;
+
 @end

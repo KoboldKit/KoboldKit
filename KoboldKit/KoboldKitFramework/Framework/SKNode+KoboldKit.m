@@ -407,6 +407,20 @@
 
 #pragma mark SK*Node Categories
 
+@implementation SKSpriteNode (KoboldKit)
+@dynamic imageName;
+-(void) setImageName:(NSString *)imageName
+{
+	SKTexture* texture = [SKTexture textureWithImageNamed:imageName];
+	self.texture = texture;
+	self.size = texture.size;
+}
+-(NSString*) imageName
+{
+	return nil;
+}
+@end
+
 @implementation SKCropNode (KoboldKit)
 @end
 @implementation SKEffectNode (KoboldKit)
@@ -416,8 +430,6 @@
 @implementation SKLabelNode (KoboldKit)
 @end
 @implementation SKShapeNode (KoboldKit)
-@end
-@implementation SKSpriteNode (KoboldKit)
 @end
 @implementation SKVideoNode (KoboldKit)
 @end
