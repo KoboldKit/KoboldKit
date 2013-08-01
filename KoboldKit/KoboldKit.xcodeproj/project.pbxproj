@@ -168,6 +168,9 @@
 		DC71015D17AA926A00F95BAD /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015817AA926A00F95BAD /* DemoSandbox.tmx */; };
 		DC71015E17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */; };
 		DC71015F17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */; };
+		DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */; };
+		DC71016317AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
+		DC71016417AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
 		DC8EED1E17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DC8EED1F17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */; };
@@ -435,6 +438,8 @@
 		DC71015717AA926A00F95BAD /* DemoLevel01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01.tmx; sourceTree = "<group>"; };
 		DC71015817AA926A00F95BAD /* DemoSandbox.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoSandbox.tmx; sourceTree = "<group>"; };
 		DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
+		DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnContactBehavior.h; sourceTree = "<group>"; };
+		DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnContactBehavior.m; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8EED1D17A40788000C1995 /* objectTypes.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTypes.lua; sourceTree = "<group>"; };
@@ -976,6 +981,8 @@
 				DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */,
 				DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */,
 				DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */,
+				DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */,
+				DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -1230,6 +1237,7 @@
 				DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */,
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
+				DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */,
 				DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1482,6 +1490,7 @@
 				DC484CCB178C43690067DAA4 /* lobject.c in Sources */,
 				DC484CCC178C43690067DAA4 /* lopcodes.c in Sources */,
 				DC484CCD178C43690067DAA4 /* loslib.c in Sources */,
+				DC71016417AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */,
 				DC484CCE178C43690067DAA4 /* lparser.c in Sources */,
 				DC484CCF178C43690067DAA4 /* lstate.c in Sources */,
 				DC484CD0178C43690067DAA4 /* lstring.c in Sources */,
@@ -1573,6 +1582,7 @@
 				DCD7A284178C7453004A0467 /* ltm.c in Sources */,
 				DCD7A285178C7453004A0467 /* lundump.c in Sources */,
 				DCD7A286178C7453004A0467 /* lvm.c in Sources */,
+				DC71016317AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */,
 				DCD7A287178C7453004A0467 /* lzio.c in Sources */,
 				DCD7A288178C7453004A0467 /* base64.c in Sources */,
 				DCD7A238178C7449004A0467 /* KKMacApplication.m in Sources */,

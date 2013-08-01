@@ -28,4 +28,10 @@
 /** Called when scene changed its size, ie after rotating or changing views.
  @param oldSize The scene's previous size. The scene.size property contains the new size. */
 -(void) didChangeSize:(CGSize)oldSize;
+/** Called when two objects's physics bodies get in contact.
+ @param contact The contact object. */
+-(void) didBeginContact:(SKPhysicsContact *)contact;
+/** Called when two objects's physics bodies' contact ends.
+ @param contact The contact object. */
+-(void) didEndContact:(SKPhysicsContact *)contact;
 @end
