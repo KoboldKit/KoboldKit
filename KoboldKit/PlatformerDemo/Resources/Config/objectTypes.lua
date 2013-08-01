@@ -19,20 +19,20 @@ local objectTypes =
 			_fallSpeedAcceleration = 50, -- how fast player accelerates when falling down
 			_fallSpeedLimit = 250,			-- max falling speed
 			_jumpAbortVelocity = 150,		-- the (max) upwards velocity forcibly set when jump is aborted
-			_jumpSpeedInitial = 500,		-- how fast the player initially moves upwards when jumping is initiated
-			_jumpSpeedDeceleration = 20,	-- how fast upwards motion (caused by jumping) decelerates
+			_jumpSpeedInitial = 350,		-- how fast the player initially moves upwards when jumping is initiated
+			_jumpSpeedDeceleration = 16,	-- how fast upwards motion (caused by jumping) decelerates
 			_runSpeedAcceleration = 0,		-- how fast player accelerates sideways (0 = instant)
 			_runSpeedDeceleration = 0,		-- how fast player decelerates sideways (0 = instant)
 			_runSpeedLimit = 200,			-- max sideways running speed
 			
-			_defaultImage = "Dummy_Player_32.png",
+			_defaultImage = "Dummy_Player.png",
 		},
 		
 		-- physics body properties
 		physicsBody =
 		{
 			shapeType = "rectangle",
-			shapeSize = "{32, 36}",
+			shapeSize = "{16, 24}",
 			
 			properties =
 			{
@@ -65,7 +65,7 @@ local objectTypes =
 		inheritsFrom = "Player",
 	},
 
-	SpriteNode =
+	ObjectImage =
 	{
 		className = "SKSpriteNode",
 		properties =
@@ -73,7 +73,7 @@ local objectTypes =
 			imageName = "MissingResource.png",
 		},
 	},
-	LabelNode =
+	ObjectText =
 	{
 		className = "SKLabelNode",
 		properties =

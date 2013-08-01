@@ -8,15 +8,20 @@
  <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1" margin="1">
   <image source="Tileset_Geometry_16x16.png" width="128" height="128"/>
  </tileset>
+ <layer name="background" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztl0EKwCAMBH1Bb/3/V3sxUESpQtWY2QEPAW0zZD2YkhBCCI/ceV15WR0Vmm/paXVUaL4GJc8GzZeWZ5ovLc80X1qeab60PNN8T89z693TmiPN99R3Q69n6UPz7d3nhVHPr/sb3Xf03Kl1NN9edvf5Vy3fOrv7XJ1nL/3Onqvhpe/Zc6X6lu7v79bo/e9onys9hRDCMw8P9SlL
+  </data>
+ </layer>
  <layer name="mainlayer" width="60" height="40">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztw4EJAAAIA6DR/0f3xiIFEwAAAAAAAACg3TwLcMUCkU4AeQ==
+   eJztmNsKQEAURc/wgic+gP//TEpS05lL80C2tWq/bTorjDqjmY1RJtMldsVXC3y1fWcny6sTAQD4dEf6t4d4EPX/Twy+2uCrDb7a4KsNvtrgqw2+2uD7bYKdO4xU1HwH83fqqvt1fDV9r+92s3/41jzXv/qudp/X3i46PuNz++pQ2Wvtp66veY9L7l3iXl7H6+Z6rf3SbKUAwHfZAaztB8w=
   </data>
  </layer>
  <objectgroup name="game objects" width="60" height="40">
-  <object name="player" type="Player" x="64" y="480" width="16" height="32"/>
+  <object name="player" type="Player" x="776" y="480" width="16" height="32"/>
  </objectgroup>
 </map>
