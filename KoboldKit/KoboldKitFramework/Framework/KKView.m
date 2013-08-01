@@ -116,15 +116,19 @@ static BOOL _showsNodeAnchorPoints = NO;
 		id value = [config valueForKey:key];
 		if ([value isKindOfClass:[NSMutableDictionary class]])
 		{
+			// check for inheritance
 			NSMutableDictionary* objectDef = (NSMutableDictionary*)value;
 			NSString* parentName = [objectDef objectForKey:@"inheritsFrom"];
-			if (parentName.length)
+			
+			while (parentName.length)
 			{
+				// inherit values from the parent object
 				NSDictionary* parentObjectDef = [config objectForKey:parentName];
 				NSAssert2(parentObjectDef, @"object type '%@' tries to inherit from unknown parent object type '%@'", key, parentName);
 				if (parentObjectDef)
 				{
 					[self inheritValuesFrom:parentObjectDef childObject:objectDef];
+					parentName = [parentObjectDef objectForKey:@"inheritsFrom"];
 				}
 			}
 		}
@@ -133,11 +137,17 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) inheritValuesFrom:(NSDictionary*)parentObject childObject:(NSMutableDictionary*)childObject
 {
+	Class dictionaryClass = [NSDictionary class];
 	for (id parentKey in parentObject)
 	{
-		if ([childObject objectForKey:parentKey] == nil)
+		id object = [childObject objectForKey:parentKey];
+		if (object == nil)
 		{
 			[childObject setObject:[parentObject objectForKey:parentKey] forKey:parentKey];
+		}
+		else if ([object isKindOfClass:dictionaryClass])
+		{
+			[NSException raise:NSInternalInconsistencyException format:@"inheriting table properties not yet implemented"];
 		}
 	}
 }

@@ -175,12 +175,14 @@
 	{
 		KKClassVarSetter* ivarSetter = [[KKClassVarSetter alloc] initWithClass:[KKTilemap class]];
 		[ivarSetter setIvarsWithDictionary:_properties.properties target:self];
+		//[ivarSetter setPropertiesWithDictionary:_properties.properties target:self];
 	}
 	{
 		KKClassVarSetter* ivarSetter = [[KKClassVarSetter alloc] initWithClass:[KKTilemapTileset class]];
 		for (KKTilemapTileset* tileset in _tilesets)
 		{
 			[ivarSetter setIvarsWithDictionary:tileset.properties.properties target:tileset];
+			//[ivarSetter setPropertiesWithDictionary:tileset.properties.properties target:tileset];
 		}
 	}
 	{
@@ -189,10 +191,12 @@
 		for (KKTilemapLayer* layer in _layers)
 		{
 			[ivarSetter setIvarsWithDictionary:layer.properties.properties target:layer];
+			//[ivarSetter setPropertiesWithDictionary:layer.properties.properties target:layer];
 
 			for (KKTilemapObject* object in layer.objects)
 			{
 				[ivarSetterObject setIvarsWithDictionary:object.properties.properties target:object];
+				//[ivarSetterObject setPropertiesWithDictionary:object.properties.properties target:object];
 			}
 		}
 	}

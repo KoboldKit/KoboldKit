@@ -107,7 +107,7 @@
 		for (NSString* tmxFile in tmxFiles)
 		{
 			KKLabelNode* tmxLabel = [KKLabelNode labelNodeWithFontNamed:@"Courier"];
-			tmxLabel.fontSize = 28;
+			tmxLabel.fontSize = 22;
 			tmxLabel.text = tmxFile;
 			tmxLabel.position = CGPointMake(0, height);
 			[_tmxLoadMenu addChild:tmxLabel];
@@ -119,7 +119,7 @@
 			height -= tmxLabel.fontSize + 2;
 		}
 		
-		_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height - 50);
+		_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height - 32);
 		//_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height + -height);
 		//[_tmxLoadMenu runAction:[SKAction moveToY:self.size.height - 50 duration:0.3]];
 

@@ -2,8 +2,32 @@
 -- Defines names of objects in Tileds to determine which ObjC classes to create
 -- and which properties/ivars to set on these classes.
 
+local kContactCategoryPlayer = 1
+local kContactCategoryPickupItem = 2
+
 local objectTypes =
 {
+	SpriteNode =
+	{
+		className = "SKSpriteNode",
+		properties =
+		{
+			imageName = "MissingResource.png",
+		},
+	},
+
+	LabelNode =
+	{
+		className = "SKLabelNode",
+		properties =
+		{
+			fontName = "Arial",
+			fontSize = 10,
+			fontColor = {color = "1.0 0.0 1.0 1.0"}, -- color = "R G B A"
+			text = "<missing text>",
+		},
+	},
+
 	Player =
 	{
 		-- used by Tiled (needs simple tool to convert to Tiled objectdef.xml format)
@@ -42,8 +66,10 @@ local objectTypes =
 				linearDamping = 0,
 				angularDamping = 0,
 				friction = 0,
-				contactTestBitMask = 0xffffffff,
 				affectedByGravity = NO,
+				categoryBitMask = kContactCategoryPlayer,
+				contactTestBitMask = 0, --kContactCategoryPlayer + kContactCategoryPickupItem,
+				collisionBitMask = 0xffffffff - kContactCategoryPickupItem,
 			},
 		},
 		
@@ -52,6 +78,7 @@ local objectTypes =
 			--{behaviorClass = "KKLimitVelocityBehavior", properties = {velocityLimit = 100}},
 			{className = "KKStayInBoundsBehavior", properties = {bounds = "{{0, 0}, {0, 0}}"}},
 			{className = "KKCameraFollowBehavior"},
+			--{className = "KKPickupItemCollectorBehavior"},
 		},
 		
 		actions =
@@ -60,29 +87,32 @@ local objectTypes =
 		},
 	},
 
-	SubclassPlayer =
+	PickupItem =
 	{
-		inheritsFrom = "Player",
-	},
-
-	SpriteNode =
-	{
-		className = "SKSpriteNode",
-		properties =
+		inheritsFrom = "SpriteNode",
+		physicsBody =
 		{
-			imageName = "MissingResource.png",
+			shapeType = "rectangle",
+			shapeSize = "{10, 10}",
+			properties =
+			{
+				categoryBitMask = kContactCategoryPickupItem,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = 0,
+				affectedByGravity = NO,
+				dynamic = YES,
+			},
+		},
+		behaviors =
+		{
+			--{className = "KKRemoveOnContactBehavior"}, -- physics contact resolves in a remove of this node
+			--{className = "KKPickupItemBehavior"}, -- remove of this node sends message to KKPickupItemCollectorBehavior
 		},
 	},
-	LabelNode =
+	
+	Briefcase =
 	{
-		className = "SKLabelNode",
-		properties =
-		{
-			fontName = "Arial",
-			fontSize = 10,
-			fontColor = {color = "1.0 0.0 1.0 1.0"}, -- color = "R G B A"
-			text = "<missing text>",
-		},
+		inheritsFrom = "PickupItem",
 	},
 }
 

@@ -162,6 +162,12 @@
 		DC63B44B178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */; };
 		DC71015417A934B300F95BAD /* LevelSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015317A934B300F95BAD /* LevelSelection.tmx */; };
 		DC71015517A934B300F95BAD /* LevelSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015317A934B300F95BAD /* LevelSelection.tmx */; };
+		DC71015A17AA926A00F95BAD /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015717AA926A00F95BAD /* DemoLevel01.tmx */; };
+		DC71015B17AA926A00F95BAD /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015717AA926A00F95BAD /* DemoLevel01.tmx */; };
+		DC71015C17AA926A00F95BAD /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015817AA926A00F95BAD /* DemoSandbox.tmx */; };
+		DC71015D17AA926A00F95BAD /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015817AA926A00F95BAD /* DemoSandbox.tmx */; };
+		DC71015E17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */; };
+		DC71015F17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */; };
 		DC8EED1E17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DC8EED1F17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */; };
@@ -426,6 +432,9 @@
 		DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
 		DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
 		DC71015317A934B300F95BAD /* LevelSelection.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LevelSelection.tmx; sourceTree = "<group>"; };
+		DC71015717AA926A00F95BAD /* DemoLevel01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01.tmx; sourceTree = "<group>"; };
+		DC71015817AA926A00F95BAD /* DemoSandbox.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoSandbox.tmx; sourceTree = "<group>"; };
+		DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8EED1D17A40788000C1995 /* objectTypes.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTypes.lua; sourceTree = "<group>"; };
@@ -828,6 +837,16 @@
 			path = Addons;
 			sourceTree = "<group>";
 		};
+		DC71015617AA926A00F95BAD /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DC71015717AA926A00F95BAD /* DemoLevel01.tmx */,
+				DC71015817AA926A00F95BAD /* DemoSandbox.tmx */,
+				DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		DC95BA791786DFB800E31DA6 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -1022,6 +1041,7 @@
 		DCCC6198178C5574009EC802 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC71015617AA926A00F95BAD /* Demo */,
 				DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */,
 				DC18B09A178C7BC400641A6D /* 32x32 */,
 				DC18B09E178C7BC400641A6D /* Config */,
@@ -1340,6 +1360,7 @@
 				DC18B0FB178C7BC400641A6D /* forest-ipadhd.pvr.ccz in Resources */,
 				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
 				DC63B445178DEED400B36C59 /* PlayerValueTest.tmx in Resources */,
+				DC71015D17AA926A00F95BAD /* DemoSandbox.tmx in Resources */,
 				DC18B115178C7BC400641A6D /* other.png in Resources */,
 				DC18B101178C7BC400641A6D /* forest.png in Resources */,
 				DC18B0D3178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
@@ -1357,6 +1378,7 @@
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
 				DC18B111178C7BC400641A6D /* other-ipadhd.pvr.ccz in Resources */,
 				DC18B117178C7BC400641A6D /* other.pvr.ccz in Resources */,
+				DC71015B17AA926A00F95BAD /* DemoLevel01.tmx in Resources */,
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0F3178C7BC400641A6D /* forest-hd.png in Resources */,
 				DC18B119178C7BC400641A6D /* other.tps in Resources */,
@@ -1366,6 +1388,7 @@
 				DC3B4465178F45FF007625D2 /* Dummy_Player.png in Resources */,
 				DC18B113178C7BC400641A6D /* other.plist in Resources */,
 				DC8EED1F17A40788000C1995 /* objectTypes.lua in Resources */,
+				DC71015F17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B0FF178C7BC400641A6D /* forest.plist in Resources */,
 				DC71015517A934B300F95BAD /* LevelSelection.tmx in Resources */,
 			);
@@ -1382,9 +1405,11 @@
 				DC18B0F6178C7BC400641A6D /* forest-ipadhd.plist in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
 				DC63B448178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */,
+				DC71015E17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B106178C7BC400641A6D /* other-hd.plist in Resources */,
 				DC18B0FA178C7BC400641A6D /* forest-ipadhd.pvr.ccz in Resources */,
 				DC18B114178C7BC400641A6D /* other.png in Resources */,
+				DC71015C17AA926A00F95BAD /* DemoSandbox.tmx in Resources */,
 				DC18B100178C7BC400641A6D /* forest.png in Resources */,
 				DC18B0D2178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
 				DC18B102178C7BC400641A6D /* forest.pvr.ccz in Resources */,
@@ -1401,6 +1426,7 @@
 				DC71015417A934B300F95BAD /* LevelSelection.tmx in Resources */,
 				DC18B110178C7BC400641A6D /* other-ipadhd.pvr.ccz in Resources */,
 				DC18B116178C7BC400641A6D /* other.pvr.ccz in Resources */,
+				DC71015A17AA926A00F95BAD /* DemoLevel01.tmx in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0F2178C7BC400641A6D /* forest-hd.png in Resources */,
 				DC3B4464178F45FF007625D2 /* Dummy_Player.png in Resources */,

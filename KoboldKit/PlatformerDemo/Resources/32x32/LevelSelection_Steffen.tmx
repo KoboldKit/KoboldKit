@@ -9,12 +9,12 @@
  <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1">
   <image source="Tileset_Geometry_16x16.png" trans="ff00ff" width="256" height="256"/>
  </tileset>
- <layer name="background" width="64" height="48">
+ <layer name="background" width="64" height="48" visible="0">
   <data encoding="base64" compression="zlib">
    eJztw0ENAAAMA6GzUP9mZ2MPSFg1VVVVVVVVVVVVVVX19QPm/swB
   </data>
  </layer>
- <layer name="doors" width="64" height="48">
+ <layer name="doors" width="64" height="48" visible="0">
   <data encoding="base64" compression="zlib">
    eJztyDENACAMAEFWUAAKwL9CaoGlacJd8su3BgAAAAAAAAAAAPCHHo1CP9uMVqGfbUen0Ad4dQHeTwNz
   </data>
@@ -27,7 +27,7 @@
    eJzt1MENgzAQRNGBCiAVUEGoAPovK+bABeICYN9Kr4CvkT0nmQEAAAAAAAAAgEf6NktRa/NJ3ZuiX3+NG5rxYk+d/mPrf///2/vP3Y+tK/b3dj9tub+LN+ntDiQ/y+ixtQ==
   </data>
  </layer>
- <layer name="labels" width="64" height="48">
+ <layer name="labels" width="64" height="48" visible="0">
   <data encoding="base64" compression="zlib">
    eJztyMsRglAUBUH2qAH4CQAxANEAVBLQ/CPhxMDieavorprNdB0AAAAAAAAAAABbcU9TeqRngd/aK73TJ80F/j9806/QB9ro0y7t06HAb+2YTumcLgV+a0O6pjHdCnzWWwBsCxgH
   </data>
@@ -55,6 +55,7 @@
    </properties>
   </object>
   <object name="entry001" x="576" y="640" width="64" height="64"/>
+  <object name="koffer" type="Briefcase" x="160" y="672" width="16" height="16"/>
  </objectgroup>
  <objectgroup draworder="topdown" name="game objects" width="64" height="48">
   <object name="player" type="Player" x="30" y="644" width="16" height="32"/>
