@@ -8,12 +8,13 @@
 
 #import "KKCameraFollowBehavior.h"
 #import "SKNode+KoboldKit.h"
+#import "KKScene.h"
 
 @implementation KKCameraFollowBehavior
 
 -(void) didJoinController
 {
-	_wantsUpdate = YES;
+	[self.node.kkScene addSceneEventsObserver:self];
 
 	// defaults to parent's parent (in a tilemap hierarchy this is the tile layer of the object)
 	if (_scrollingNode == nil)
@@ -27,6 +28,7 @@
 
 -(void) didLeaveController
 {
+	[self.node.kkScene removeSceneEventsObserver:self];
 }
 
 -(void) didSimulatePhysics

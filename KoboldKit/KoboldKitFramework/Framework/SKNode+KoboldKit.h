@@ -34,6 +34,8 @@
 @property (atomic) KKNodeController* controller;
 /** Creates node controller if one does not exist yet. Returns the new or existing instance. */
 -(KKNodeController*) createController;
+/** Removes the controller from the node. */
+-(void) removeController;
 
 /** Pauses all controllers of the nodes beginning with rootNode.
  @param rootNode The node whose node tree will be paused. */
@@ -62,9 +64,12 @@
 /** @returns The behavior for the key. Returns nil if no behavior with that key was found.
  @param key A unique key identifying the behavior. */
 -(id) behaviorForKey:(NSString*)key;
-/** @returns The first behavior of the given class. Returns nil if no behavior with that class was found.
+/** @returns The first behavior of the given kind of class. Returns nil if no behavior with that class was found.
  @param behaviorClass The Class of the behavior. */
--(id) behaviorWithClass:(Class)behaviorClass;
+-(id) behaviorKindOfClass:(Class)behaviorClass;
+/** @returns The first behavior that is a member of the given class. Returns nil if no behavior with that class was found.
+ @param behaviorClass The Class of the behavior. */
+-(id) behaviorMemberOfClass:(Class)behaviorClass;
 /** @returns YES if the node has one or more behaviors. */
 -(BOOL) hasBehaviors;
 /** Removes the behavior.

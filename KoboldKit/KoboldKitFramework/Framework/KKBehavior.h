@@ -7,6 +7,9 @@
 //
 
 #import "KKCompatibility.h"
+#import "SKNode+KoboldKit.h"
+#import "KKScene.h"
+#import "KKNodeController.h"
 
 @class KKNode;
 @class KKNodeController;
@@ -21,12 +24,6 @@
  - they can not be reversed
  */
 @interface KKBehavior : NSObject <NSCoding, NSCopying>
-{
-	@protected
-	BOOL _wantsUpdate;
-	
-	@private
-}
 
 /** @name Properties */
 
@@ -38,9 +35,6 @@
 @property (atomic, weak) KKNodeController* controller;
 /** @returns The behavior's owning node. */
 @property (atomic, weak) SKNode* node;
-/** @returns Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
- Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame. */
-@property (atomic, readonly) BOOL wantsUpdate;
 /** @returns Whether the behavior is enabled. 
  Disabled behaviors don't receive update messages. */
 @property (atomic) BOOL enabled;

@@ -10,6 +10,7 @@
 #import "SKNode+KoboldKit.h"
 #import "KKScene.h"
 #import "CGPointExtension.h"
+#import "KKSpriteNode.h"
 
 NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidChangeDirection:notification";
 

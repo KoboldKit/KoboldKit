@@ -20,7 +20,6 @@ extern NSString* const KKNodeControllerUserDataKey;
 	@private
 	NSMutableArray* _behaviors;
 	KKModel* _model;
-	BOOL _hasBehaviorWantingUpdate;
 }
 
 /** @returns The controller's owning node. You should never change this reference yourself! */
@@ -59,8 +58,11 @@ extern NSString* const KKNodeControllerUserDataKey;
  @returns The behavior for the key or nil if there is no behavior with that key. */
 -(id) behaviorForKey:(NSString*)key;
 /** @param behaviorClass The class uniquely identifying the behavior.
+ @returns The first found behavior being a kind of class or nil if there is no behavior with that class. */
+-(id) behaviorKindOfClass:(Class)behaviorClass;
+/** @param behaviorClass The class uniquely identifying the behavior.
  @returns The first found behavior being a member of the class or nil if there is no behavior with that class. */
--(id) behaviorWithClass:(Class)behaviorClass;
+-(id) behaviorMemberOfClass:(Class)behaviorClass;
 /** @returns YES if the controller has one or more behaviors. */
 -(BOOL) hasBehaviors;
 /** Removes a specific behavior. Does nothing if the behavior isn't in the list.
@@ -75,14 +77,6 @@ extern NSString* const KKNodeControllerUserDataKey;
 /** Removes all behaviors from the controller. */
 -(void) removeAllBehaviors;
 
-
-/** Standard update method.
- @param currentTime The time elapsed since app launch. */
--(void) update:(NSTimeInterval)currentTime;
-/** Update after actions have been evaluated. */
--(void) didEvaluateActions;
-/** Update after physics world has been simulated. */
--(void) didSimulatePhysics;
 
 // internal use
 -(BOOL) isEqualToController:(KKNodeController*)controller;

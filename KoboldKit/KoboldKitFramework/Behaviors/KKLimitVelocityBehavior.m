@@ -39,7 +39,12 @@
 
 -(void) didJoinController
 {
-	_wantsUpdate = YES;
+	[self.node.kkScene addSceneEventsObserver:self];
+}
+
+-(void) didLeaveController
+{
+	[self.node.kkScene removeSceneEventsObserver:self];
 }
 
 -(void) didEvaluateActions

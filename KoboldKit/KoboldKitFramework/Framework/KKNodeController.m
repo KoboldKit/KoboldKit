@@ -29,6 +29,17 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	if (self)
 	{
 		[self addBehaviors:behaviors];
+		self.model = [KKModel model];
+	}
+	return self;
+}
+
+-(id) init
+{
+	self = [super init];
+	if (self)
+	{
+		self.model = [KKModel model];
 	}
 	return self;
 }
@@ -36,7 +47,6 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 -(void) dealloc
 {
 	[self removeAllBehaviors];
-	[_node.kkScene unregisterController:self];
 }
 
 #pragma mark Properties
@@ -75,8 +85,6 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	}
 	
 	[behavior didJoinController];
-	
-	_hasBehaviorWantingUpdate = (_hasBehaviorWantingUpdate || behavior.wantsUpdate);
 }
 
 -(void) addBehavior:(KKBehavior*)behavior
@@ -104,7 +112,19 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	return nil;
 }
 
--(id) behaviorWithClass:(Class)behaviorClass
+-(id) behaviorKindOfClass:(Class)behaviorClass
+{
+	for (KKBehavior* behavior in _behaviors)
+	{
+		if ([behavior isKindOfClass:behaviorClass])
+		{
+			return behavior;
+		}
+	}
+	return nil;
+}
+
+-(id) behaviorMemberOfClass:(Class)behaviorClass
 {
 	for (KKBehavior* behavior in _behaviors)
 	{
@@ -166,49 +186,6 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	_behaviors = nil;
 }
 
-#pragma mark Update
-
--(void) update:(NSTimeInterval)currentTime
-{
-	if (_hasBehaviorWantingUpdate)
-	{
-		for (KKBehavior* behavior in _behaviors)
-		{
-			if (behavior.wantsUpdate)
-			{
-				[behavior update:currentTime];
-			}
-		}
-	}
-}
-
--(void) didEvaluateActions
-{
-	if (_hasBehaviorWantingUpdate)
-	{
-		for (KKBehavior* behavior in _behaviors)
-		{
-			if (behavior.wantsUpdate)
-			{
-				[behavior didEvaluateActions];
-			}
-		}
-	}
-}
-
--(void) didSimulatePhysics
-{
-	if (_hasBehaviorWantingUpdate)
-	{
-		for (KKBehavior* behavior in _behaviors)
-		{
-			if (behavior.wantsUpdate)
-			{
-				[behavior didSimulatePhysics];
-			}
-		}
-	}
-}
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 

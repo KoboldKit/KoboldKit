@@ -19,7 +19,7 @@
 	NSAssert1([tilemapNode isKindOfClass:[KKTilemapNode class]], @"player.parent.parent.parent (%@) is not a KKTilemapNode!", tilemapNode);
 
 	// update bounds behavior with tilemap bounds
-	KKStayInBoundsBehavior* stayInBoundsBehavior = [self behaviorWithClass:[KKStayInBoundsBehavior class]];
+	KKStayInBoundsBehavior* stayInBoundsBehavior = [self behaviorKindOfClass:[KKStayInBoundsBehavior class]];
 	stayInBoundsBehavior.bounds = tilemapNode.bounds;
 
 	// receive updates

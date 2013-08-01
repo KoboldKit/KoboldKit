@@ -11,6 +11,11 @@
 
 @implementation KKModel
 
++(id) model
+{
+	return [KKModel new];
+}
+
 #pragma mark Key/Value Model
 -(void) setValue:(id)value forKey:(NSString*)key
 {

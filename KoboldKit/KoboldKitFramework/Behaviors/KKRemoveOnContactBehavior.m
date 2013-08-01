@@ -24,12 +24,17 @@
 
 -(void) didBeginContact:(SKPhysicsContact *)contact
 {
-	[self.node removeFromParent];
+	SKNode* myNode = self.node;
+	if (contact.bodyA.node == myNode || contact.bodyB.node == myNode)
+	{
+		[self.node removeFromParent];
+	}
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
+/*
 static NSString* const ArchiveKeyForOtherNode = @"otherNode";
 
 -(id) initWithCoder:(NSCoder*)decoder
@@ -37,22 +42,18 @@ static NSString* const ArchiveKeyForOtherNode = @"otherNode";
 	self = [super init];
 	if (self)
 	{
-		/*
 		 _target = [decoder decodeObjectForKey:ArchiveKeyForOtherNode];
 		 _positionOffset = [decoder decodeCGPointForKey:ArchiveKeyForPositionOffset];
 		 _positionMultiplier = [decoder decodeCGPointForKey:ArchiveKeyForPositionMultiplier];
-		 */
 	}
 	return self;
 }
 
 -(void) encodeWithCoder:(NSCoder*)encoder
 {
-	/*
 	 [encoder encodeObject:_target forKey:ArchiveKeyForOtherNode];
 	 [encoder encodeCGPoint:_positionOffset forKey:ArchiveKeyForPositionOffset];
 	 [encoder encodeCGPoint:_positionMultiplier forKey:ArchiveKeyForPositionMultiplier];
-	 */
 }
 
 #pragma mark NSCopying
@@ -73,5 +74,6 @@ static NSString* const ArchiveKeyForOtherNode = @"otherNode";
 		return NO;
 	return NO;
 }
+*/
 
 @end

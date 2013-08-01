@@ -22,6 +22,9 @@
 /** @returns The model's controller object. You should never change this reference yourself! */
 @property (atomic, weak) KKNodeController* controller;
 
+/** @returns A new instance. */
++(id) model;
+
 /** @name Bool Variables */
 
 /** Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.

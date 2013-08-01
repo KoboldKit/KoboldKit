@@ -16,7 +16,7 @@
  </layer>
  <layer name="moving background" width="60" height="40">
   <properties>
-   <property name="_endlessScrollingHorizontal" value="NO"/>
+   <property name="_endlessScrollingHorizontal" value="YES"/>
    <property name="_endlessScrollingVertical" value="YES"/>
    <property name="_parallaxFactor" value="{0.5,0.5}"/>
    <property name="xScale" value="0.5"/>
@@ -36,7 +36,27 @@
  </layer>
  <objectgroup draworder="topdown" name="game objects" width="60" height="40">
   <object name="player" type="Player" x="64" y="480" width="16" height="32"/>
-  <object name="koffer" type="Briefcase" x="144" y="496" width="16" height="16">
+  <object name="koffer" type="Briefcase" x="144" y="512" width="16" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="koffer" type="Briefcase" x="184" y="504" width="16" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="koffer" type="Briefcase" x="224" y="512" width="16" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="koffer" type="Briefcase" x="256" y="512" width="16" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="koffer" type="Briefcase" x="288" y="512" width="16" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>

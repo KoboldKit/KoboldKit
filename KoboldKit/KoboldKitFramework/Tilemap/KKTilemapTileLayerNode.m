@@ -50,7 +50,7 @@
 	// get all tileset textures and create batch nodes, but don't add them as child just yet
 	for (KKTilemapTileset* tileset in _tilemap.tilesets)
 	{
-		KKNode* batchNode = [KKNode node];
+		SKNode* batchNode = [SKNode node];
 		batchNode.zPosition = 1;
 		[_batchNodes setObject:batchNode forKey:tileset.imageFile];
 		
@@ -60,12 +60,12 @@
 	
 	// initialize sprites with dummy textures
 	_visibleTiles = [NSMutableArray arrayWithCapacity:_visibleTilesOnScreen.width * _visibleTilesOnScreen.height];
-	KKSpriteNode* tileSprite = nil;
+	SKSpriteNode* tileSprite = nil;
 	for (int tilePosY = 0; tilePosY < _visibleTilesOnScreen.height; tilePosY++)
 	{
 		for (int tilePosX = 0; tilePosX < _visibleTilesOnScreen.width; tilePosX++)
 		{
-			tileSprite = [KKSpriteNode node];
+			tileSprite = [SKSpriteNode node];
 			tileSprite.size = CGSizeMake(_tilemap.gridSize.width, _tilemap.gridSize.height);
 			tileSprite.hidden = YES;
 			tileSprite.anchorPoint = CGPointZero;
@@ -111,8 +111,8 @@
 		CGPoint offsetInPoints = CGPointMake(offsetInTiles.x * gridSize.width, offsetInTiles.y * gridSize.height);
 		
 		NSUInteger i = 0;
-		KKSpriteNode* tileSprite = nil;
-		KKNode* currentBatchNode = nil;
+		SKSpriteNode* tileSprite = nil;
+		SKNode* currentBatchNode = nil;
 		KKTilemapTileset* previousTileset = nil;
 		NSUInteger countBatchNodeReparenting = 0;
 		

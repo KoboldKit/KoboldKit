@@ -10,42 +10,10 @@
 #import "SKNode+KoboldKit.h"
 #import "KKNodeController.h"
 #import "KKBehavior.h"
+#import "KKNodeShared.h"
 
 @implementation KKNode
-+(void) sendChildrenWillMoveFromParentWithNode:(SKNode*)node
-{
-	for (SKNode* child in node.children)
-	{
-		[child willMoveFromParent];
-	}
-}
-
-#pragma mark Add/Remove Child Override
--(void) addChild:(SKNode*)node
-{
-	[super addChild:node];
-	[node didMoveToParent];
-}
--(void) insertChild:(SKNode*)node atIndex:(NSInteger)index
-{
-	[super insertChild:node atIndex:index];
-	[node didMoveToParent];
-}
--(void) removeFromParent
-{
-	[self willMoveFromParent];
-	[super removeFromParent];
-}
--(void) removeAllChildren
-{
-	[KKNode sendChildrenWillMoveFromParentWithNode:self];
-	[super removeAllChildren];
-}
--(void) removeChildrenInArray:(NSArray*)array
-{
-	[KKNode sendChildrenWillMoveFromParentWithNode:self];
-	[super removeChildrenInArray:array];
-}
+KKNODE_SHARED_CODE
 
 #pragma mark Description
 

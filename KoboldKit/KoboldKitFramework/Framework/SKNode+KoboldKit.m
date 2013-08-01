@@ -40,7 +40,6 @@
 	if (controller == nil)
 	{
 		[self.userData removeObjectForKey:KKNodeControllerUserDataKey];
-		[self.kkScene unregisterController:controller];
 	}
 	else
 	{
@@ -54,7 +53,6 @@
 		}
 
 		controller.node = self;
-		[self.kkScene registerController:controller];
 	}
 }
 
@@ -67,6 +65,11 @@
 		[self setController:controller];
 	}
 	return controller;
+}
+
+-(void) removeController
+{
+	[self setController:nil];
 }
 
 -(void) pauseOrResumeControllersInNodeTree:(SKNode*)rootNode pause:(BOOL)pause
@@ -110,37 +113,42 @@
 
 -(id) behaviorForKey:(NSString*)key
 {
-	return [[self createController] behaviorForKey:key];
+	return [self.controller behaviorForKey:key];
 }
 
--(id) behaviorWithClass:(Class)behaviorClass
+-(id) behaviorKindOfClass:(Class)behaviorClass
 {
-	return [[self createController] behaviorWithClass:behaviorClass];
+	return [self.controller behaviorKindOfClass:behaviorClass];
+}
+
+-(id) behaviorMemberOfClass:(Class)behaviorClass
+{
+	return [self.controller behaviorMemberOfClass:behaviorClass];
 }
 
 -(BOOL) hasBehaviors
 {
-	return [[self createController] hasBehaviors];
+	return [self.controller hasBehaviors];
 }
 
 -(void) removeBehavior:(KKBehavior*)behavior
 {
-	[[self createController] removeBehavior:behavior];
+	[self.controller removeBehavior:behavior];
 }
 
 -(void) removeBehaviorForKey:(NSString*)key
 {
-	[[self createController] removeBehaviorForKey:key];
+	[self.controller removeBehaviorForKey:key];
 }
 
 -(void) removeBehaviorWithClass:(Class)behaviorClass
 {
-	[[self createController] removeBehaviorWithClass:behaviorClass];
+	[self.controller removeBehaviorWithClass:behaviorClass];
 }
 
 -(void) removeAllBehaviors
 {
-	[[self createController] removeAllBehaviors];
+	[self.controller removeAllBehaviors];
 }
 
 #pragma mark Notifications

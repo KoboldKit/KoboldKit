@@ -7,7 +7,7 @@ local kContactCategoryPickupItem = 2
 
 local objectTypes =
 {
-	SpriteNode =
+	ObjectImage =
 	{
 		className = "SKSpriteNode",
 		properties =
@@ -16,7 +16,7 @@ local objectTypes =
 		},
 	},
 
-	LabelNode =
+	ObjectText =
 	{
 		className = "SKLabelNode",
 		properties =
@@ -78,7 +78,7 @@ local objectTypes =
 			--{behaviorClass = "KKLimitVelocityBehavior", properties = {velocityLimit = 100}},
 			{className = "KKStayInBoundsBehavior", properties = {bounds = "{{0, 0}, {0, 0}}"}},
 			{className = "KKCameraFollowBehavior"},
-			--{className = "KKPickupItemCollectorBehavior"},
+			{className = "KKItemCollectorBehavior"},
 		},
 		
 		actions =
@@ -89,6 +89,8 @@ local objectTypes =
 
 	PickupItem =
 	{
+		inheritsFrom = "ObjectImage",
+		physicsBody =
 		{
 			shapeType = "rectangle",
 			shapeSize = "{10, 10}",
@@ -104,7 +106,7 @@ local objectTypes =
 		behaviors =
 		{
 			--{className = "KKRemoveOnContactBehavior"}, -- physics contact resolves in a remove of this node
-			--{className = "KKPickupItemBehavior"}, -- remove of this node sends message to KKPickupItemCollectorBehavior
+			{className = "KKPickupItemBehavior", properties = {itemType = 1, name = "briefcase"}},
 		},
 	},
 	

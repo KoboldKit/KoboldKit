@@ -12,7 +12,5 @@
 /** In Kobold Kit KKNode must be used in place of SKNode to ensure that KK messaging works (ie didMoveToParent, willMoveFromParent, etc). */
 @interface KKNode : SKNode
 
-// internal use
-+(void) sendChildrenWillMoveFromParentWithNode:(SKNode*)node;
 
 @end

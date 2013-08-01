@@ -25,6 +25,8 @@
 #import "KKView.h"
 #import "KKNode.h"
 #import "KKScene.h"
+#import "KKSpriteNode.h"
+#import "KKLabelNode.h"
 #import "KKViewOriginNode.h"
 
 // framework
@@ -39,6 +41,7 @@
 #import "KKCameraFollowBehavior.h"
 #import "KKStayInBoundsBehavior.h"
 #import "KKLimitVelocityBehavior.h"
+#import "KKRemoveOnContactBehavior.h"
 
 // tilemap model
 #import "KKTilemap.h"

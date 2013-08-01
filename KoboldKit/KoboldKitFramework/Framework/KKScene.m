@@ -12,8 +12,10 @@
 #import "KKNodeController.h"
 #import "SKNode+KoboldKit.h"
 #import "KKViewOriginNode.h"
+#import "KKNodeShared.h"
 
 @implementation KKScene
+KKNODE_SHARED_CODE
 
 #pragma mark Init / Dealloc
 
@@ -42,7 +44,6 @@
 	self.physicsWorld.contactDelegate = self;
 	
 	const NSUInteger kInitialCapacity = 4;
-	_controllers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_inputObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneUpdateObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidEvaluateActionsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
@@ -57,35 +58,11 @@
 	NSLog(@"scene init");
 }
 
--(void) dealloc
-{
-	NSLog(@"dealloc: %@", self);
-}
-
 @dynamic kkView;
 -(KKView*) kkView
 {
 	NSAssert1([self.view isKindOfClass:[KKView class]], @"Scene's view (%@) is not a KKView class", self.view);
 	return (KKView*)self.view;
-}
-
-#pragma mark Controllers
-
--(void) registerController:(KKNodeController*)controller
-{
-	dispatch_async(dispatch_get_main_queue(), ^{
-		if ([_controllers indexOfObject:controller] == NSNotFound)
-		{
-			[_controllers addObject:controller];
-		}
-	});
-}
-
--(void) unregisterController:(KKNodeController*)controller
-{
-	dispatch_async(dispatch_get_main_queue(), ^{
-		[_controllers removeObject:controller];
-	});
 }
 
 #pragma mark Update
@@ -97,15 +74,6 @@
 	
 	++_frameCount;
 	
-	// update controllers
-	for (KKNodeController* controller in _controllers)
-	{
-		if (controller.paused == NO)
-		{
-			[controller update:currentTime];
-		}
-	}
-
 	for (id observer in _sceneUpdateObservers)
 	{
 		[observer update:currentTime];
@@ -117,15 +85,6 @@
 	NSAssert(_mainLoopStage == KKMainLoopStageDidUpdate, @"Main Loop Error: it seems you implemented update: but did not call [super update:currentTime]");
 	_mainLoopStage = KKMainLoopStageDidEvaluateActions;
 
-	// update controllers
-	for (KKNodeController* controller in _controllers)
-	{
-		if (controller.paused == NO)
-		{
-			[controller didEvaluateActions];
-		}
-	}
-
 	for (id observer in _sceneDidEvaluateActionsObservers)
 	{
 		[observer didEvaluateActions];
@@ -136,15 +95,6 @@
 {
 	NSAssert(_mainLoopStage == KKMainLoopStageDidEvaluateActions, @"Main Loop Error: it seems you implemented didEvaluateActions: but did not call [super didEvaluateActions]");
 	_mainLoopStage = KKMainLoopStageDidSimulatePhysics;
-
-	// update controllers
-	for (KKNodeController* controller in _controllers)
-	{
-		if (controller.paused == NO)
-		{
-			[controller didSimulatePhysics];
-		}
-	}
 
 	for (id observer in _sceneDidSimulatePhysicsObservers)
 	{
@@ -188,7 +138,7 @@
 -(void) addSceneEventsObserver:(id)observer
 {
 	// prevent users from registering the scene, because it will always call these methods if implemented
-	if (observer != self)
+	if (observer && observer != self)
 	{
 		dispatch_async(dispatch_get_main_queue(), ^{
 			if ([observer respondsToSelector:@selector(update:)] &&
@@ -232,34 +182,43 @@
 
 -(void) removeSceneEventsObserver:(id)observer
 {
-	dispatch_async(dispatch_get_main_queue(), ^{
-		[_sceneUpdateObservers removeObject:observer];
-		[_sceneDidEvaluateActionsObservers removeObject:observer];
-		[_sceneDidSimulatePhysicsObservers removeObject:observer];
-		[_sceneWillMoveFromViewObservers removeObject:observer];
-		[_sceneDidMoveToViewObservers removeObject:observer];
-		[_sceneDidBeginContactObservers removeObject:observer];
-		[_sceneDidEndContactObservers removeObject:observer];
-    });
+	if (observer)
+	{
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[_sceneUpdateObservers removeObject:observer];
+			[_sceneDidEvaluateActionsObservers removeObject:observer];
+			[_sceneDidSimulatePhysicsObservers removeObject:observer];
+			[_sceneWillMoveFromViewObservers removeObject:observer];
+			[_sceneDidMoveToViewObservers removeObject:observer];
+			[_sceneDidBeginContactObservers removeObject:observer];
+			[_sceneDidEndContactObservers removeObject:observer];
+		});
+	}
 }
 
 #pragma mark Input
 
 -(void) addInputEventsObserver:(id)observer
 {
-	dispatch_async(dispatch_get_main_queue(), ^{
-		if ([_inputObservers indexOfObject:observer] == NSNotFound)
-		{
-			[_inputObservers addObject:observer];
-		}
-    });
+	if (observer)
+	{
+		dispatch_async(dispatch_get_main_queue(), ^{
+			if ([_inputObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_inputObservers addObject:observer];
+			}
+		});
+	}
 }
 
 -(void) removeInputEventsObserver:(id)observer
 {
-	dispatch_async(dispatch_get_main_queue(), ^{
-		[_inputObservers removeObject:observer];
-    });
+	if (observer)
+	{
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[_inputObservers removeObject:observer];
+		});
+	}
 }
 
 #pragma mark Touches
@@ -390,33 +349,6 @@
 	return dump;
 }
 
-#pragma mark Add/Remove Child Override
--(void) addChild:(SKNode*)node
-{
-	[super addChild:node];
-	[node didMoveToParent];
-}
--(void) insertChild:(SKNode*)node atIndex:(NSInteger)index
-{
-	[super insertChild:node atIndex:index];
-	[node didMoveToParent];
-}
--(void) removeFromParent
-{
-	[self willMoveFromParent];
-	[super removeFromParent];
-}
--(void) removeAllChildren
-{
-	[KKNode sendChildrenWillMoveFromParentWithNode:self];
-	[super removeAllChildren];
-}
--(void) removeChildrenInArray:(NSArray*)array
-{
-	[KKNode sendChildrenWillMoveFromParentWithNode:self];
-	[super removeChildrenInArray:array];
-}
-
 #pragma mark AnchorPoint
 
 -(void) setAnchorPoint:(CGPoint)anchorPoint
@@ -454,7 +386,6 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 	self = [super initWithCoder:decoder];
 	if (self)
 	{
-		_controllers = [decoder decodeObjectForKey:ArchiveKeyForControllers];
 		_inputObservers = [decoder decodeObjectForKey:ArchiveKeyForInputObservers];
 		_sceneUpdateObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneUpdateObservers];
 		_sceneDidEvaluateActionsObservers = [decoder decodeObjectForKey:ArchiveKeyForSceneDidEvaluateActionsObservers];
@@ -469,7 +400,6 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 -(void) encodeWithCoder:(NSCoder*)encoder
 {
 	[super encodeWithCoder:encoder];
-	[encoder encodeObject:_controllers forKey:ArchiveKeyForControllers];
 	[encoder encodeObject:_inputObservers forKey:ArchiveKeyForInputObservers];
 	[encoder encodeObject:_sceneUpdateObservers forKey:ArchiveKeyForSceneUpdateObservers];
 	[encoder encodeObject:_sceneDidEvaluateActionsObservers forKey:ArchiveKeyForSceneDidEvaluateActionsObservers];
@@ -485,7 +415,6 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 {
 	KKScene* copy = [super copyWithZone:zone];
 #pragma message "FIXME: this array copy is wrong, will make separate copies of observers!"
-	copy->_controllers = [[NSMutableArray alloc] initWithArray:_controllers copyItems:YES];
 	copy->_inputObservers = [[NSMutableArray alloc] initWithArray:_inputObservers copyItems:YES];
 	copy->_sceneUpdateObservers = [[NSMutableArray alloc] initWithArray:_sceneUpdateObservers copyItems:YES];
 	// TODO ...

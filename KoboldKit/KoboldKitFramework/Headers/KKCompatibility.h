@@ -45,9 +45,7 @@ typedef SKCropNode KKCropNode;
 typedef SKEffectNode KKEffectNode;
 typedef SKEmitterNode KKEmitterNode;
 typedef SKKeyframeSequence KKKeyframeSequence;
-typedef SKLabelNode KKLabelNode;
 typedef SKShapeNode KKShapeNode;
-typedef SKSpriteNode KKSpriteNode;
 typedef SKVideoNode KKVideoNode;
 
 typedef SKPhysicsContact KKPhysicsContact;

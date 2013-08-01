@@ -95,7 +95,6 @@
 static NSString* const ArchiveKeyForKey = @"key";
 static NSString* const ArchiveKeyForController = @"controller";
 static NSString* const ArchiveKeyForNode = @"node";
-static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 
 -(id) initWithCoder:(NSCoder*)decoder
 {
@@ -105,7 +104,6 @@ static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 		_key = [decoder decodeObjectForKey:ArchiveKeyForKey];
 		_controller = [decoder decodeObjectForKey:ArchiveKeyForController];
 		_node = [decoder decodeObjectForKey:ArchiveKeyForNode];
-		_wantsUpdate = [decoder decodeBoolForKey:ArchiveKeyForWantsUpdate];
 	}
 	return self;
 }
@@ -115,7 +113,6 @@ static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 	[encoder encodeObject:_key forKey:ArchiveKeyForKey];
 	[encoder encodeObject:_controller forKey:ArchiveKeyForController];
 	[encoder encodeObject:_node forKey:ArchiveKeyForNode];
-	[encoder encodeBool:_wantsUpdate forKey:ArchiveKeyForWantsUpdate];
 }
 
 #pragma mark NSCopying
@@ -124,7 +121,8 @@ static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 {
 	KKBehavior* copy = [[[self class] allocWithZone:zone] init];
 	copy->_key = [_key copy];
-	copy->_wantsUpdate = _wantsUpdate;
+	copy->_name = [_name copy];
+	copy->_enabled = _enabled;
 	return copy;
 }
 
@@ -137,9 +135,6 @@ static NSString* const ArchiveKeyForWantsUpdate = @"wantsUpdate";
 	
 	if ((_key != nil || behavior.key != nil) &&
 		[_key isEqualToString:behavior.key] == NO)
-		return NO;
-	
-	if (_wantsUpdate != behavior.wantsUpdate)
 		return NO;
 	
 	return YES;

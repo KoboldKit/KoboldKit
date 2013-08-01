@@ -18,19 +18,15 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 @implementation KKButtonBehavior
 
--(void) dealloc
-{
-	NSLog(@"dealloc: %@", self);
-}
-
 -(void) didJoinController
 {
 	_selectedScale = 1.1f;
 
 	SKNode* node = self.node;
-	[node.kkScene addInputEventsObserver:self];
 	_originalXScale = node.xScale;
 	_originalYScale = node.yScale;
+
+	[node.kkScene addInputEventsObserver:self];
 
 	if (_selectedTexture)
 	{
@@ -44,7 +40,9 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) didLeaveController
 {
-	[self.node.kkScene removeInputEventsObserver:self];
+	KKScene* scene = self.node.kkScene;
+	[scene removeInputEventsObserver:self];
+	[scene removeSceneEventsObserver:self];
 }
 
 -(void) beginSelect
@@ -220,7 +218,14 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	if (_continuous != continuous)
 	{
 		_continuous = continuous;
-		_wantsUpdate = _continuous;
+		if (_continuous)
+		{
+			[self.node.kkScene addSceneEventsObserver:self];
+		}
+		else
+		{
+			[self.node.kkScene removeSceneEventsObserver:self];
+		}
 	}
 }
 

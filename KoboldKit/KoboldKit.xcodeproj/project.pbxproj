@@ -171,6 +171,21 @@
 		DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */; };
 		DC71016317AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
 		DC71016417AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
+		DC71016817AABD5B00F95BAD /* KKSpriteNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71016617AABD5B00F95BAD /* KKSpriteNode.h */; };
+		DC71016917AABD5B00F95BAD /* KKSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016717AABD5B00F95BAD /* KKSpriteNode.m */; };
+		DC71016A17AABD5B00F95BAD /* KKSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016717AABD5B00F95BAD /* KKSpriteNode.m */; };
+		DC71016D17AABD6D00F95BAD /* KKLabelNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71016B17AABD6D00F95BAD /* KKLabelNode.h */; };
+		DC71016E17AABD6D00F95BAD /* KKLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016C17AABD6D00F95BAD /* KKLabelNode.m */; };
+		DC71016F17AABD6D00F95BAD /* KKLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016C17AABD6D00F95BAD /* KKLabelNode.m */; };
+		DC71017217AABDF200F95BAD /* KKNodeShared.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71017017AABDF200F95BAD /* KKNodeShared.h */; };
+		DC71017317AABDF200F95BAD /* KKNodeShared.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017117AABDF200F95BAD /* KKNodeShared.m */; };
+		DC71017417AABDF200F95BAD /* KKNodeShared.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017117AABDF200F95BAD /* KKNodeShared.m */; };
+		DC71017717AACFB600F95BAD /* KKPickupItemBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71017517AACFB600F95BAD /* KKPickupItemBehavior.h */; };
+		DC71017817AACFB600F95BAD /* KKPickupItemBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017617AACFB600F95BAD /* KKPickupItemBehavior.m */; };
+		DC71017917AACFB600F95BAD /* KKPickupItemBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017617AACFB600F95BAD /* KKPickupItemBehavior.m */; };
+		DC71017C17AAD22600F95BAD /* KKItemCollectorBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71017A17AAD22600F95BAD /* KKItemCollectorBehavior.h */; };
+		DC71017D17AAD22600F95BAD /* KKItemCollectorBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */; };
+		DC71017E17AAD22600F95BAD /* KKItemCollectorBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */; };
 		DC8EED1E17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DC8EED1F17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */; };
@@ -440,6 +455,16 @@
 		DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
 		DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnContactBehavior.h; sourceTree = "<group>"; };
 		DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnContactBehavior.m; sourceTree = "<group>"; };
+		DC71016617AABD5B00F95BAD /* KKSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSpriteNode.h; sourceTree = "<group>"; };
+		DC71016717AABD5B00F95BAD /* KKSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSpriteNode.m; sourceTree = "<group>"; };
+		DC71016B17AABD6D00F95BAD /* KKLabelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLabelNode.h; sourceTree = "<group>"; };
+		DC71016C17AABD6D00F95BAD /* KKLabelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLabelNode.m; sourceTree = "<group>"; };
+		DC71017017AABDF200F95BAD /* KKNodeShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeShared.h; sourceTree = "<group>"; };
+		DC71017117AABDF200F95BAD /* KKNodeShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeShared.m; sourceTree = "<group>"; };
+		DC71017517AACFB600F95BAD /* KKPickupItemBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPickupItemBehavior.h; sourceTree = "<group>"; };
+		DC71017617AACFB600F95BAD /* KKPickupItemBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPickupItemBehavior.m; sourceTree = "<group>"; };
+		DC71017A17AAD22600F95BAD /* KKItemCollectorBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKItemCollectorBehavior.h; sourceTree = "<group>"; };
+		DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKItemCollectorBehavior.m; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8EED1D17A40788000C1995 /* objectTypes.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTypes.lua; sourceTree = "<group>"; };
@@ -771,17 +796,15 @@
 			name = "TMX Reader/Writer";
 			sourceTree = "<group>";
 		};
-		DC484BBE178C34720067DAA4 /* AppDelegate & Controller */ = {
+		DC484BBE178C34720067DAA4 /* AppDelegate & Principal Class */ = {
 			isa = PBXGroup;
 			children = (
 				DC484BBF178C34930067DAA4 /* KKAppDelegate.h */,
 				DC484BC0178C34930067DAA4 /* KKAppDelegate.m */,
-				DC9CFD1A1774CA84004C981A /* KKViewController.h */,
-				DC9CFD1B1774CA84004C981A /* KKViewController.m */,
 				DC484C0B178C36DB0067DAA4 /* KKMacApplication.h */,
 				DC484C0C178C36DB0067DAA4 /* KKMacApplication.m */,
 			);
-			name = "AppDelegate & Controller";
+			name = "AppDelegate & Principal Class";
 			sourceTree = "<group>";
 		};
 		DC484C18178C40800067DAA4 /* Other Frameworks */ = {
@@ -850,6 +873,17 @@
 				DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		DC71016517AABD2B00F95BAD /* View & Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CFD1A1774CA84004C981A /* KKViewController.h */,
+				DC9CFD1B1774CA84004C981A /* KKViewController.m */,
+				DC9CFD181774CA84004C981A /* KKView.h */,
+				DC9CFD191774CA84004C981A /* KKView.m */,
+			);
+			name = "View & Controller";
 			sourceTree = "<group>";
 		};
 		DC95BA791786DFB800E31DA6 /* Reachability */ = {
@@ -952,10 +986,11 @@
 		DC9CFD061774CA5B004C981A /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				DC484BBE178C34720067DAA4 /* AppDelegate & Controller */,
+				DC484BBE178C34720067DAA4 /* AppDelegate & Principal Class */,
+				DC71016517AABD2B00F95BAD /* View & Controller */,
 				DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */,
 				DCB087D6177B2F57004182E4 /* Sprite Kit Categories */,
-				DCB087EC177BAC3F004182E4 /* View Scene Node */,
+				DCB087EC177BAC3F004182E4 /* Sprite Kit Node Subclasses */,
 				DC9CFD0B1774CA5B004C981A /* KKModel.h */,
 				DC9CFD0C1774CA5B004C981A /* KKModel.m */,
 				DC9CFD091774CA5B004C981A /* KKNodeController.h */,
@@ -983,6 +1018,10 @@
 				DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */,
 				DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */,
 				DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */,
+				DC71017517AACFB600F95BAD /* KKPickupItemBehavior.h */,
+				DC71017617AACFB600F95BAD /* KKPickupItemBehavior.m */,
+				DC71017A17AAD22600F95BAD /* KKItemCollectorBehavior.h */,
+				DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -1020,18 +1059,22 @@
 			name = "Sprite Kit Categories";
 			sourceTree = "<group>";
 		};
-		DCB087EC177BAC3F004182E4 /* View Scene Node */ = {
+		DCB087EC177BAC3F004182E4 /* Sprite Kit Node Subclasses */ = {
 			isa = PBXGroup;
 			children = (
-				DC9CFD181774CA84004C981A /* KKView.h */,
-				DC9CFD191774CA84004C981A /* KKView.m */,
+				DC71017017AABDF200F95BAD /* KKNodeShared.h */,
+				DC71017117AABDF200F95BAD /* KKNodeShared.m */,
+				DC9CFD131774CA84004C981A /* KKNode.h */,
+				DC9CFD141774CA84004C981A /* KKNode.m */,
 				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
 				DC9CFD151774CA84004C981A /* KKScene.h */,
 				DC9CFD161774CA84004C981A /* KKScene.m */,
-				DC9CFD131774CA84004C981A /* KKNode.h */,
-				DC9CFD141774CA84004C981A /* KKNode.m */,
+				DC71016617AABD5B00F95BAD /* KKSpriteNode.h */,
+				DC71016717AABD5B00F95BAD /* KKSpriteNode.m */,
+				DC71016B17AABD6D00F95BAD /* KKLabelNode.h */,
+				DC71016C17AABD6D00F95BAD /* KKLabelNode.m */,
 			);
-			name = "View Scene Node";
+			name = "Sprite Kit Node Subclasses";
 			sourceTree = "<group>";
 		};
 		DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */ = {
@@ -1233,12 +1276,17 @@
 			files = (
 				DCB76E66178CB19C0047B4EC /* KKTilemapTileLayerNode.h in Headers */,
 				DCB76E63178CB19C0047B4EC /* KKTilemapObjectLayerNode.h in Headers */,
+				DC71016817AABD5B00F95BAD /* KKSpriteNode.h in Headers */,
+				DC71017C17AAD22600F95BAD /* KKItemCollectorBehavior.h in Headers */,
+				DC71016D17AABD6D00F95BAD /* KKLabelNode.h in Headers */,
 				DC8EED2717A58773000C1995 /* NSObject+KoboldKit.h in Headers */,
+				DC71017717AACFB600F95BAD /* KKPickupItemBehavior.h in Headers */,
 				DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */,
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
 				DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */,
 				DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */,
+				DC71017217AABDF200F95BAD /* KKNodeShared.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1458,6 +1506,7 @@
 			files = (
 				DC484CD9178C43BE0067DAA4 /* KKViewOriginNode.m in Sources */,
 				DC484CDA178C43BE0067DAA4 /* KKPhysicsDebugNode.m in Sources */,
+				DC71016A17AABD5B00F95BAD /* KKSpriteNode.m in Sources */,
 				DCB76E62178CB19C0047B4EC /* KKTilemapNode.m in Sources */,
 				DC484CDB178C43BE0067DAA4 /* KKButtonBehavior.m in Sources */,
 				DC484CDC178C43BE0067DAA4 /* KKControlPadBehavior.m in Sources */,
@@ -1479,6 +1528,7 @@
 				DC484CC1178C43690067DAA4 /* ldo.c in Sources */,
 				DC484CC2178C43690067DAA4 /* ldump.c in Sources */,
 				DC484CC3178C43690067DAA4 /* lfunc.c in Sources */,
+				DC71016F17AABD6D00F95BAD /* KKLabelNode.m in Sources */,
 				DC484CC4178C43690067DAA4 /* lgc.c in Sources */,
 				DC484CC5178C43690067DAA4 /* linit.c in Sources */,
 				DCB76E5F178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */,
@@ -1501,10 +1551,12 @@
 				DC484CD5178C43690067DAA4 /* lundump.c in Sources */,
 				DC484CD6178C43690067DAA4 /* lvm.c in Sources */,
 				DC484CD7178C43690067DAA4 /* lzio.c in Sources */,
+				DC71017417AABDF200F95BAD /* KKNodeShared.m in Sources */,
 				DC484CD8178C43690067DAA4 /* base64.c in Sources */,
 				DC484C91178C43400067DAA4 /* KKMacApplication.m in Sources */,
 				DC484C92178C43400067DAA4 /* KKAppDelegate.m in Sources */,
 				DC484C93178C43400067DAA4 /* KKViewController.m in Sources */,
+				DC71017E17AAD22600F95BAD /* KKItemCollectorBehavior.m in Sources */,
 				DC484C94178C43400067DAA4 /* SKNode+KoboldKit.m in Sources */,
 				DC484C95178C43400067DAA4 /* SKScene+KoboldKit.m in Sources */,
 				DC484C96178C43400067DAA4 /* KKView.m in Sources */,
@@ -1515,6 +1567,7 @@
 				DC484C9A178C43400067DAA4 /* KKNodeController.m in Sources */,
 				DC484C9B178C43400067DAA4 /* KKBehavior.m in Sources */,
 				DC484C9C178C43400067DAA4 /* KKTilemap.m in Sources */,
+				DC71017917AACFB600F95BAD /* KKPickupItemBehavior.m in Sources */,
 				DC484C9D178C43400067DAA4 /* KKTilemapLayer.m in Sources */,
 				DC484C9E178C43400067DAA4 /* KKTilemapLayerContourTracer.m in Sources */,
 				DC484C9F178C43400067DAA4 /* KKTilemapTileset.m in Sources */,
@@ -1550,6 +1603,7 @@
 			files = (
 				DCD7A268178C7453004A0467 /* lapi.c in Sources */,
 				DCD7A269178C7453004A0467 /* lauxlib.c in Sources */,
+				DC71016917AABD5B00F95BAD /* KKSpriteNode.m in Sources */,
 				DCB76E61178CB19C0047B4EC /* KKTilemapNode.m in Sources */,
 				DCD7A26A178C7453004A0467 /* lbaselib.c in Sources */,
 				DCD7A26B178C7453004A0467 /* lbitlib.c in Sources */,
@@ -1571,6 +1625,7 @@
 				DCD7A27A178C7453004A0467 /* loadlib.c in Sources */,
 				DCD7A27B178C7453004A0467 /* lobject.c in Sources */,
 				DCD7A27C178C7453004A0467 /* lopcodes.c in Sources */,
+				DC71016E17AABD6D00F95BAD /* KKLabelNode.m in Sources */,
 				DCD7A27D178C7453004A0467 /* loslib.c in Sources */,
 				DCD7A27E178C7453004A0467 /* lparser.c in Sources */,
 				DCB76E5E178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */,
@@ -1593,10 +1648,12 @@
 				DCD7A23D178C7449004A0467 /* SKNode+KoboldKit.m in Sources */,
 				DCD7A23E178C7449004A0467 /* SKScene+KoboldKit.m in Sources */,
 				DCD7A23F178C7449004A0467 /* KKView.m in Sources */,
+				DC71017317AABDF200F95BAD /* KKNodeShared.m in Sources */,
 				DCD7A240178C7449004A0467 /* KKScene.m in Sources */,
 				DCD7A241178C7449004A0467 /* KKNode.m in Sources */,
 				DCD7A242178C7449004A0467 /* KKModel.m in Sources */,
 				DCD7A243178C7449004A0467 /* KKNodeController.m in Sources */,
+				DC71017D17AAD22600F95BAD /* KKItemCollectorBehavior.m in Sources */,
 				DCD7A244178C7449004A0467 /* KKBehavior.m in Sources */,
 				DCD7A245178C7449004A0467 /* KKButtonBehavior.m in Sources */,
 				DCD7A246178C7449004A0467 /* KKControlPadBehavior.m in Sources */,
@@ -1607,6 +1664,7 @@
 				DCD7A24A178C7449004A0467 /* KKLimitVelocityBehavior.m in Sources */,
 				DCD7A24B178C7449004A0467 /* KKTilemap.m in Sources */,
 				DCD7A24C178C7449004A0467 /* KKTilemapLayer.m in Sources */,
+				DC71017817AACFB600F95BAD /* KKPickupItemBehavior.m in Sources */,
 				DCD7A24D178C7449004A0467 /* KKTilemapLayerContourTracer.m in Sources */,
 				DCD7A24E178C7449004A0467 /* KKTilemapTileset.m in Sources */,
 				DCD7A24F178C7449004A0467 /* KKTilemapLayerTiles.m in Sources */,

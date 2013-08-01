@@ -27,8 +27,13 @@
 
 -(void) didJoinController
 {
-	_wantsUpdate = YES;
+	[self.node.kkScene addSceneEventsObserver:self];
 	_isSpriteNode = [self.node isKindOfClass:[SKSpriteNode class]];
+}
+
+-(void) didLeaveController
+{
+	[self.node.kkScene removeSceneEventsObserver:self];
 }
 
 -(void) setBounds:(CGRect)bounds

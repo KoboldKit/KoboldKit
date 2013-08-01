@@ -32,7 +32,6 @@ typedef enum
 @interface KKScene : SKScene <SKPhysicsContactDelegate, KKSceneEventDelegate>
 {
 	@private
-	NSMutableArray* _controllers;
 	NSMutableArray* _inputObservers;
 	NSMutableArray* _sceneUpdateObservers;
 	NSMutableArray* _sceneDidEvaluateActionsObservers;
@@ -75,8 +74,6 @@ typedef enum
 
 
 // internal use
--(void) registerController:(KKNodeController*)controller;
--(void) unregisterController:(KKNodeController*)controller;
 -(BOOL) isEqualToScene:(KKScene*)scene;
 -(BOOL) isEqualToSceneTree:(KKScene*)scene;
 -(BOOL) isEqualToSceneProperties:(KKScene*)scene;
