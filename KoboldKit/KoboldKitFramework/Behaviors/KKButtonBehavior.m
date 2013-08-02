@@ -18,10 +18,18 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 @implementation KKButtonBehavior
 
+-(id) init
+{
+	self = [super init];
+	if (self)
+	{
+		_selectedScale = 1.1f;
+	}
+	return self;
+}
+
 -(void) didJoinController
 {
-	_selectedScale = 1.1f;
-
 	SKNode* node = self.node;
 	_originalXScale = node.xScale;
 	_originalYScale = node.yScale;
