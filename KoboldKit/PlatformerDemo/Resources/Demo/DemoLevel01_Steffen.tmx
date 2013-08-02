@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="60" height="40" tilewidth="16" tileheight="16" backgroundcolor="#ffffc8">
+ <properties>
+  <property name="physicsGravityY" value="-9.81"/>
+  <property name="physicsSimulationSpeed" value="1.0"/>
+  <property name="restrictScrollingToMapBoundary" value="YES"/>
+ </properties>
+ <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_Geometry_16x16.png" width="128" height="128"/>
+ </tileset>
+ <layer name="background" width="60" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMBKFb37/haugOCaumqqqqqqqqqqrq+wEzAVRh
+  </data>
+ </layer>
+ <layer name="moving background" width="60" height="40">
+  <properties>
+   <property name="_endlessScrollingHorizontal" value="YES"/>
+   <property name="_endlessScrollingVertical" value="YES"/>
+   <property name="_parallaxFactor" value="{0.5,0.5}"/>
+   <property name="xScale" value="0.5"/>
+   <property name="yScale" value="0.5"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztz7cNwDAQQ1Ft47D/gFajRoBthUs88APs+UphjDHGGGMMr8v7gGFH3V13eh8xqFnbMpt7a2bzmzWj+c+ayTxqzWCetSKbV62I5l0rklnKimCWtkY2a1kjmrWtkcxW1ghma6un2cvqYfa2WpqjWC3M0aya5qhWDXN0q6QZxSphRrPumFGtK2Z064w5i3XEnM36Zc5q7c0PR8SJbg==
+  </data>
+ </layer>
+ <layer name="mainlayer" width="60" height="40">
+  <properties>
+   <property name="_mainTileLayer" value="YES"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt0T0KgDAMBtDSQXDp5iX0/vdTQSGDk9gf4T34SCgUEpISAAAAAAAAAPzP1nuAxvKVKfRnypEl9HctD2+x5vBvxMyDpbbe+9m3rrczfTVbix2jNY13g5p2+UwGCw==
+  </data>
+ </layer>
+ <objectgroup draworder="topdown" name="game objects" width="60" height="40">
+  <object name="player" type="Player" x="336" y="512" width="16" height="32"/>
+  <object name="koffer" type="Briefcase" x="144" y="512" width="16" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="koffer" type="Briefcase" x="184" y="504" width="16" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="koffer" type="Briefcase" x="208" y="464" width="48" height="80">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="koffer" type="Briefcase" x="256" y="512" width="16" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="koffer" type="Briefcase" x="288" y="512" width="16" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+   </properties>
+  </object>
+  <object name="exitdoor" type="ExitDoor" x="240" y="432" width="96" height="16">
+   <properties>
+    <property name="imageName" value="Dummy_Player.png"/>
+    <property name="xScale" value="4"/>
+   </properties>
+  </object>
+  <object name="DemoLevel01.tmx" type="ObjectTrigger" x="368" y="448" width="32" height="96">
+   <properties>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
