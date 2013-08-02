@@ -115,7 +115,9 @@ static NSArray* kPVRImageFileExtensions = nil;
 	// convert to original texture's units
 	CGRect rect = CGRectMake(x / texSize.width, y / texSize.height, _tileSize.width / texSize.width, _tileSize.height / texSize.height);
 	
-	return [SKTexture textureWithRect:rect inTexture:_texture];
+	SKTexture* tileTexture = [SKTexture textureWithRect:rect inTexture:_texture];
+	tileTexture.filteringMode = SKTextureFilteringNearest;
+	return tileTexture;
 }
 
 -(SKTexture*) textureForGid:(gid_t)gid
