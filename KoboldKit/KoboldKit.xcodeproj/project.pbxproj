@@ -11,8 +11,6 @@
 		DC042A83178C5A06009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */; };
 		DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
 		DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC09DB8D178C84C6000E0B61 /* MainMenu.xib */; };
-		DC18B0D2178C7BC400641A6D /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */; };
-		DC18B0D3178C7BC400641A6D /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */; };
 		DC18B0D4178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
 		DC18B0D5178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
 		DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
@@ -27,8 +25,6 @@
 		DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */; };
 		DC2DD46617ABEA06000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 		DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
-		DC3B4464178F45FF007625D2 /* Dummy_Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3B4463178F45FF007625D2 /* Dummy_Player.png */; };
-		DC3B4465178F45FF007625D2 /* Dummy_Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3B4463178F45FF007625D2 /* Dummy_Player.png */; };
 		DC484C44178C40BB0067DAA4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
 		DC484C8F178C42ED0067DAA4 /* KKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD481774CBE1004C981A /* KKVersion.m */; };
 		DC484C90178C42EF0067DAA4 /* KKVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CFD481774CBE1004C981A /* KKVersion.m */; };
@@ -110,18 +106,20 @@
 		DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
 		DC484CE1178C43BE0067DAA4 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
 		DC484CE4178C465E0067DAA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484CE3178C465E0067DAA4 /* libz.dylib */; };
-		DC63B448178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */; };
-		DC63B449178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */; };
-		DC63B44A178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */; };
-		DC63B44B178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */; };
-		DC71015417A934B300F95BAD /* LevelSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015317A934B300F95BAD /* LevelSelection.tmx */; };
-		DC71015517A934B300F95BAD /* LevelSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015317A934B300F95BAD /* LevelSelection.tmx */; };
-		DC71015A17AA926A00F95BAD /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015717AA926A00F95BAD /* DemoLevel01.tmx */; };
-		DC71015B17AA926A00F95BAD /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015717AA926A00F95BAD /* DemoLevel01.tmx */; };
-		DC71015C17AA926A00F95BAD /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015817AA926A00F95BAD /* DemoSandbox.tmx */; };
-		DC71015D17AA926A00F95BAD /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC71015817AA926A00F95BAD /* DemoSandbox.tmx */; };
-		DC71015E17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */; };
-		DC71015F17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */; };
+		DC5D4AC017AC04B700CF69EB /* Dummy_Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4AB817AC04B700CF69EB /* Dummy_Player.png */; };
+		DC5D4AC117AC04B700CF69EB /* Dummy_Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4AB817AC04B700CF69EB /* Dummy_Player.png */; };
+		DC5D4AC217AC04B700CF69EB /* LevelSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4AB917AC04B700CF69EB /* LevelSelection.tmx */; };
+		DC5D4AC317AC04B700CF69EB /* LevelSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4AB917AC04B700CF69EB /* LevelSelection.tmx */; };
+		DC5D4AC417AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABA17AC04B700CF69EB /* Tileset_Geometry_16x16_old.png */; };
+		DC5D4AC517AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABA17AC04B700CF69EB /* Tileset_Geometry_16x16_old.png */; };
+		DC5D4AC617AC04B700CF69EB /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABB17AC04B700CF69EB /* Tileset_Geometry_32x32.png */; };
+		DC5D4AC717AC04B700CF69EB /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABB17AC04B700CF69EB /* Tileset_Geometry_32x32.png */; };
+		DC5D4AC817AC04B700CF69EB /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */; };
+		DC5D4AC917AC04B700CF69EB /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */; };
+		DC5D4ACA17AC04B700CF69EB /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */; };
+		DC5D4ACB17AC04B700CF69EB /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */; };
+		DC5D4ACC17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */; };
+		DC5D4ACD17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */; };
 		DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */; };
 		DC71016317AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
 		DC71016417AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
@@ -293,7 +291,6 @@
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DC09DB8D178C84C6000E0B61 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
 		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
 		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
 		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua.sample; sourceTree = "<group>"; };
@@ -318,7 +315,6 @@
 		DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles.tps"; sourceTree = "<group>"; };
 		DC2F43D4176CC13B005846A7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		DC2F43D5176CC13B005846A7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		DC3B4463178F45FF007625D2 /* Dummy_Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dummy_Player.png; sourceTree = "<group>"; };
 		DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
 		DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
 		DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+KoboldKit.h"; sourceTree = "<group>"; };
@@ -364,12 +360,13 @@
 		DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KoboldKit.h"; sourceTree = "<group>"; };
 		DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KoboldKit.m"; sourceTree = "<group>"; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
-		DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
-		DC71015317A934B300F95BAD /* LevelSelection.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LevelSelection.tmx; sourceTree = "<group>"; };
-		DC71015717AA926A00F95BAD /* DemoLevel01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01.tmx; sourceTree = "<group>"; };
-		DC71015817AA926A00F95BAD /* DemoSandbox.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoSandbox.tmx; sourceTree = "<group>"; };
-		DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
+		DC5D4AB817AC04B700CF69EB /* Dummy_Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dummy_Player.png; sourceTree = "<group>"; };
+		DC5D4AB917AC04B700CF69EB /* LevelSelection.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LevelSelection.tmx; sourceTree = "<group>"; };
+		DC5D4ABA17AC04B700CF69EB /* Tileset_Geometry_16x16_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16_old.png; sourceTree = "<group>"; };
+		DC5D4ABB17AC04B700CF69EB /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
+		DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01.tmx; sourceTree = "<group>"; };
+		DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoSandbox.tmx; sourceTree = "<group>"; };
+		DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
 		DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnContactBehavior.h; sourceTree = "<group>"; };
 		DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnContactBehavior.m; sourceTree = "<group>"; };
 		DC71016617AABD5B00F95BAD /* KKSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSpriteNode.h; sourceTree = "<group>"; };
@@ -589,17 +586,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC18B09A178C7BC400641A6D /* 32x32 */ = {
-			isa = PBXGroup;
-			children = (
-				DC71015317A934B300F95BAD /* LevelSelection.tmx */,
-				DC3B4463178F45FF007625D2 /* Dummy_Player.png */,
-				DC63B440178DEED400B36C59 /* Tileset_Geometry_16x16.png */,
-				DC63B441178DEED400B36C59 /* Tileset_Geometry_32x32.png */,
-			);
-			path = 32x32;
-			sourceTree = "<group>";
-		};
 		DC18B09E178C7BC400641A6D /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,12 +718,23 @@
 			path = Addons;
 			sourceTree = "<group>";
 		};
-		DC71015617AA926A00F95BAD /* Demo */ = {
+		DC5D4AB717AC04B700CF69EB /* 32x32 */ = {
 			isa = PBXGroup;
 			children = (
-				DC71015717AA926A00F95BAD /* DemoLevel01.tmx */,
-				DC71015817AA926A00F95BAD /* DemoSandbox.tmx */,
-				DC71015917AA926A00F95BAD /* Tileset_Geometry_16x16.png */,
+				DC5D4AB817AC04B700CF69EB /* Dummy_Player.png */,
+				DC5D4AB917AC04B700CF69EB /* LevelSelection.tmx */,
+				DC5D4ABA17AC04B700CF69EB /* Tileset_Geometry_16x16_old.png */,
+				DC5D4ABB17AC04B700CF69EB /* Tileset_Geometry_32x32.png */,
+			);
+			path = 32x32;
+			sourceTree = "<group>";
+		};
+		DC5D4ABC17AC04B700CF69EB /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */,
+				DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */,
+				DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -959,9 +956,8 @@
 		DCCC6198178C5574009EC802 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC71015617AA926A00F95BAD /* Demo */,
-				DC18B09D178C7BC400641A6D /* ATTRIBUTIONS */,
-				DC18B09A178C7BC400641A6D /* 32x32 */,
+				DC5D4AB717AC04B700CF69EB /* 32x32 */,
+				DC5D4ABC17AC04B700CF69EB /* Demo */,
 				DC18B09E178C7BC400641A6D /* Config */,
 				DC18B0C5178C7BC400641A6D /* Jetpack.atlas */,
 			);
@@ -1272,23 +1268,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC63B44B178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */,
 				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
+				DC5D4AC517AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */,
 				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
-				DC71015D17AA926A00F95BAD /* DemoSandbox.tmx in Resources */,
-				DC18B0D3178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
 				DCD11E44178C522300FBC406 /* Credits.rtf in Resources */,
-				DC63B449178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */,
 				DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */,
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
-				DC71015B17AA926A00F95BAD /* DemoLevel01.tmx in Resources */,
+				DC5D4AC117AC04B700CF69EB /* Dummy_Player.png in Resources */,
+				DC5D4ACD17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
-				DC3B4465178F45FF007625D2 /* Dummy_Player.png in Resources */,
+				DC5D4ACB17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
+				DC5D4AC917AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
+				DC5D4AC317AC04B700CF69EB /* LevelSelection.tmx in Resources */,
+				DC5D4AC717AC04B700CF69EB /* Tileset_Geometry_32x32.png in Resources */,
 				DC8EED1F17A40788000C1995 /* objectTypes.lua in Resources */,
-				DC71015F17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */,
-				DC71015517A934B300F95BAD /* LevelSelection.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1296,19 +1291,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5D4AC017AC04B700CF69EB /* Dummy_Player.png in Resources */,
+				DC5D4AC817AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
-				DC63B44A178DEED400B36C59 /* Tileset_Geometry_32x32.png in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
-				DC63B448178DEED400B36C59 /* Tileset_Geometry_16x16.png in Resources */,
-				DC71015E17AA926A00F95BAD /* Tileset_Geometry_16x16.png in Resources */,
-				DC71015C17AA926A00F95BAD /* DemoSandbox.tmx in Resources */,
-				DC18B0D2178C7BC400641A6D /* ATTRIBUTIONS in Resources */,
+				DC5D4AC617AC04B700CF69EB /* Tileset_Geometry_32x32.png in Resources */,
 				DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */,
+				DC5D4ACA17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
+				DC5D4ACC17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B0D4178C7BC400641A6D /* config.lua in Resources */,
-				DC71015417A934B300F95BAD /* LevelSelection.tmx in Resources */,
-				DC71015A17AA926A00F95BAD /* DemoLevel01.tmx in Resources */,
+				DC5D4AC217AC04B700CF69EB /* LevelSelection.tmx in Resources */,
+				DC5D4AC417AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
-				DC3B4464178F45FF007625D2 /* Dummy_Player.png in Resources */,
 				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC8EED1E17A40788000C1995 /* objectTypes.lua in Resources */,
 				DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */,
