@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="64" height="48" tilewidth="16" tileheight="16">
  <properties>
   <property name="physicsGravityY" value="-9.81"/>
   <property name="physicsSimulationSpeed" value="1.0"/>
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
- <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1" margin="1">
-  <image source="Tileset_Geometry_16x16.png" width="256" height="256"/>
+ <tileset firstgid="1" name="Tileset_Geometry_16x16_old" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_Geometry_16x16_old.png" width="256" height="256"/>
  </tileset>
  <layer name="background" width="64" height="48">
   <data encoding="base64" compression="zlib">
@@ -31,7 +32,7 @@
    eJztzkkRwgAABMH8OQRAEMAhgENAAAOJfyWsB6rYB91V859hAAAAAAAAAAAA4F9c0y3d06P80jClZ3qld/mlZU5LewL4uVVap03all8admmfxnQovzQc0ymd06X8wnc+VPUEAg==
   </data>
  </layer>
- <objectgroup name="labels and doors" width="64" height="48">
+ <objectgroup draworder="topdown" name="labels and doors" width="64" height="48">
   <object name="stage" x="208" y="616" width="64" height="16">
    <properties>
     <property name="defaultImage" value="dummy_stage.png"/>
@@ -54,7 +55,7 @@
   </object>
   <object name="entry001" x="208" y="648" width="64" height="64"/>
  </objectgroup>
- <objectgroup name="game objects" width="64" height="48">
+ <objectgroup draworder="topdown" name="game objects" width="64" height="48">
   <object name="player" type="Player" x="30" y="644" width="16" height="32"/>
  </objectgroup>
 </map>

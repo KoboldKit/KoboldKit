@@ -7,9 +7,18 @@ local kContactCategoryPickupItem = 2
 
 local objectTypes =
 {
+	-- default node types and their class names
+	Node = {className = "KKNode"},
+	SpriteNode = {className = "KKSpriteNode"},
+	LabelNode = {className = "KKLabelNode"},
+	-- not yet supported
+	EmitterNode = {className = "KKEmitterNode"},
+	ShapeNode = {className = "KKShapeNode"},
+	VideoNode = {className = "KKAutoplayVideoNode"},
+	
 	ObjectTrigger =
 	{
-		className = "KKNode",
+		inheritsFrom = "Node",
 		behaviors =
 		{
 			--{className = "KKTriggerBehavior"},
@@ -18,12 +27,12 @@ local objectTypes =
 	
 	ObjectImage =
 	{
-		className = "KKSpriteNode",
+		inheritsFrom = "SpriteNode",
 	},
 
 	ObjectText =
 	{
-		className = "KKLabelNode",
+		inheritsFrom = "LabelNode",
 		properties =
 		{
 			fontName = "Arial",
@@ -129,7 +138,7 @@ local objectTypes =
 	
 	ExitDoor =
 	{
-		className = "KKNode",
+		inheritsFrom = "ObjectImage",
 		behaviors =
 		{
 			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenExitDoor"}},
@@ -138,7 +147,7 @@ local objectTypes =
 	
 	ExitPortal =
 	{
-		className = "KKNode",
+		inheritsFrom = "Node",
 	},
 }
 

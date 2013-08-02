@@ -258,7 +258,7 @@
 
 	gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
 	NSAssert2(_highestGid >= gidWithoutFlags,
-			  @"Invalid gid: there's no tileset for gid %u - highest available gid is %u.\nNOTE: if this happens on a Retina iPad supply -ipadhd tilesets or set CCFileUtils iPad suffixes as shown in _Feature-Demo-Template_ -> TilemapWithBorderSceneViewController",
+			  @"Invalid gid: there's no tileset for gid %u - highest available gid is %u.",
 			  gidWithoutFlags, _highestGid);
 
 	if (gidWithoutFlags > 0)
