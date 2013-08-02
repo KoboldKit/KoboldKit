@@ -63,8 +63,8 @@ local objectTypes =
 		
 		properties =
 		{
-			_fallSpeedAcceleration = 50, -- how fast player accelerates when falling down
-			_fallSpeedLimit = 250,			-- max falling speed
+			_fallSpeedAcceleration = 50, -- how fast player accelerates when falling down 50
+			_fallSpeedLimit = 400,			-- max falling speed 300
 			_jumpAbortVelocity = 150,		-- the (max) upwards velocity forcibly set when jump is aborted
 			_jumpSpeedInitial = 350,		-- how fast the player initially moves upwards when jumping is initiated
 			_jumpSpeedDeceleration = 16,	-- how fast upwards motion (caused by jumping) decelerates
@@ -72,7 +72,7 @@ local objectTypes =
 			_runSpeedDeceleration = 0,		-- how fast player decelerates sideways (0 = instant)
 			_runSpeedLimit = 200,			-- max sideways running speed
 			
-			_defaultImage = "Dummy_Player.png",
+			_defaultImage = "dummy_stickman.png",
 		},
 		
 		-- physics body properties
@@ -135,6 +135,7 @@ local objectTypes =
 		properties =
 		{
 			name = "briefcase",
+			imageName = "dummy_case.png",
 		},
 	},
 	
