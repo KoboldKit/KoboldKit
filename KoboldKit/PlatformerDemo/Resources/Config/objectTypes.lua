@@ -84,7 +84,7 @@ local objectTypes =
 			{className = "KKStayInBoundsBehavior", properties = {bounds = "{{0, 0}, {0, 0}}"}},
 			{className = "KKCameraFollowBehavior"},
 			{className = "KKItemCollectorBehavior"},
-			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 5, notification = "EnoughBriefcasesCollected"}},
+			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 5, notification = "OpenExitDoor"}},
 		},
 		
 		actions =
@@ -132,7 +132,7 @@ local objectTypes =
 		className = "KKNode",
 		behaviors =
 		{
-			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "EnoughBriefcasesCollected"}},
+			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenExitDoor"}},
 		},
 	},
 	
