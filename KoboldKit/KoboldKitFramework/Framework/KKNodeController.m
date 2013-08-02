@@ -109,12 +109,13 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 			{
 				[self removePotentialPhysicsContactObserver:_node];
 			}
-			if (node != nil)
-			{
-				[self addPotentialPhysicsContactObserver:node];
-			}
 			
 			_node = node;
+
+			if (_node)
+			{
+				[self addPotentialPhysicsContactObserver:_node];
+			}
 		}
 	}
 }

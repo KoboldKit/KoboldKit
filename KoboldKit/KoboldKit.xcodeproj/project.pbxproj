@@ -126,6 +126,9 @@
 		DC5D4AD517AC164700CF69EB /* KKRemoveOnNotificationBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5D4AD317AC164700CF69EB /* KKRemoveOnNotificationBehavior.h */; };
 		DC5D4AD617AC164700CF69EB /* KKRemoveOnNotificationBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */; };
 		DC5D4AD717AC164700CF69EB /* KKRemoveOnNotificationBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */; };
+		DC5D4ADB17AC4A7400CF69EB /* KKContactNotificationNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5D4AD917AC4A7400CF69EB /* KKContactNotificationNode.h */; };
+		DC5D4ADC17AC4A7400CF69EB /* KKContactNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D4ADA17AC4A7400CF69EB /* KKContactNotificationNode.m */; };
+		DC5D4ADD17AC4A7400CF69EB /* KKContactNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D4ADA17AC4A7400CF69EB /* KKContactNotificationNode.m */; };
 		DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */; };
 		DC71016317AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
 		DC71016417AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
@@ -377,6 +380,8 @@
 		DC5D4ACF17AC131300CF69EB /* KKNotifyOnItemCountBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNotifyOnItemCountBehavior.m; sourceTree = "<group>"; };
 		DC5D4AD317AC164700CF69EB /* KKRemoveOnNotificationBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnNotificationBehavior.h; sourceTree = "<group>"; };
 		DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnNotificationBehavior.m; sourceTree = "<group>"; };
+		DC5D4AD917AC4A7400CF69EB /* KKContactNotificationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKContactNotificationNode.h; sourceTree = "<group>"; };
+		DC5D4ADA17AC4A7400CF69EB /* KKContactNotificationNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKContactNotificationNode.m; sourceTree = "<group>"; };
 		DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnContactBehavior.h; sourceTree = "<group>"; };
 		DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnContactBehavior.m; sourceTree = "<group>"; };
 		DC71016617AABD5B00F95BAD /* KKSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSpriteNode.h; sourceTree = "<group>"; };
@@ -749,6 +754,15 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		DC5D4AD817AC4A2800CF69EB /* unused */ = {
+			isa = PBXGroup;
+			children = (
+				DCB087E9177BAC2F004182E4 /* KKPhysicsDebugNode.h */,
+				DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */,
+			);
+			name = unused;
+			sourceTree = "<group>";
+		};
 		DC71016517AABD2B00F95BAD /* View & Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -860,6 +874,7 @@
 		DC9CFD061774CA5B004C981A /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				DC5D4AD817AC4A2800CF69EB /* unused */,
 				DC484BBE178C34720067DAA4 /* AppDelegate & Principal Class */,
 				DC71016517AABD2B00F95BAD /* View & Controller */,
 				DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */,
@@ -961,8 +976,8 @@
 			children = (
 				DCB087E3177B439B004182E4 /* KKViewOriginNode.h */,
 				DCB087E4177B439B004182E4 /* KKViewOriginNode.m */,
-				DCB087E9177BAC2F004182E4 /* KKPhysicsDebugNode.h */,
-				DCB087EA177BAC2F004182E4 /* KKPhysicsDebugNode.m */,
+				DC5D4AD917AC4A7400CF69EB /* KKContactNotificationNode.h */,
+				DC5D4ADA17AC4A7400CF69EB /* KKContactNotificationNode.m */,
 			);
 			name = "Kobold Kit Nodes";
 			sourceTree = "<group>";
@@ -1163,6 +1178,7 @@
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
 				DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */,
+				DC5D4ADB17AC4A7400CF69EB /* KKContactNotificationNode.h in Headers */,
 				DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */,
 				DC71017217AABDF200F95BAD /* KKNodeShared.h in Headers */,
 			);
@@ -1422,6 +1438,7 @@
 				DC484CB4178C43400067DAA4 /* JRSwizzle.m in Sources */,
 				DC484CB5178C43400067DAA4 /* VTPG_Common.m in Sources */,
 				DC484CB6178C43400067DAA4 /* XMLWriter.m in Sources */,
+				DC5D4ADD17AC4A7400CF69EB /* KKContactNotificationNode.m in Sources */,
 				DC484CB7178C43400067DAA4 /* ZipUtils.m in Sources */,
 				DC484C8F178C42ED0067DAA4 /* KKVersion.m in Sources */,
 			);
@@ -1521,6 +1538,7 @@
 				DCD7A264178C7449004A0467 /* JRSwizzle.m in Sources */,
 				DCD7A265178C7449004A0467 /* VTPG_Common.m in Sources */,
 				DCD7A266178C7449004A0467 /* XMLWriter.m in Sources */,
+				DC5D4ADC17AC4A7400CF69EB /* KKContactNotificationNode.m in Sources */,
 				DCD7A267178C7449004A0467 /* ZipUtils.m in Sources */,
 				DC484C90178C42EF0067DAA4 /* KKVersion.m in Sources */,
 			);

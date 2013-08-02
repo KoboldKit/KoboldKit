@@ -10,9 +10,9 @@
 
 @implementation PlayerCharacter
 
--(void) nodeDidSpawnWithObject:(KKTilemapObject*)object
+-(void) nodeDidSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject
 {
-	[self setupPlayerSpriteWithObject:object];
+	[self setupPlayerSpriteWithObject:tilemapObject];
 	
 	// 1st parent = object layer node, 2nd parent = tile layer node, 3rd parent = tilemap node
 	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.parent.parent.parent;
@@ -51,12 +51,6 @@
 		_playerSprite = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:playerSize];
 	}
 	
-	// center position on tile
-	CGPoint pos = self.position;
-	pos.x += playerSize.width / 2;
-	pos.y += playerSize.height / 2;
-	self.position = pos;
-
 	[self addChild:_playerSprite];
 
 	LOG_EXPR(playerSize);

@@ -4,6 +4,7 @@
 
 local kContactCategoryPlayer = 1
 local kContactCategoryPickupItem = 2
+local kContactCategoryTrigger = 4
 
 local objectTypes =
 {
@@ -11,6 +12,7 @@ local objectTypes =
 	Node = {className = "KKNode"},
 	SpriteNode = {className = "KKSpriteNode"},
 	LabelNode = {className = "KKLabelNode"},
+	ContactNotificationNode = {className = "KKContactNotificationNode"},
 	-- not yet supported
 	EmitterNode = {className = "KKEmitterNode"},
 	ShapeNode = {className = "KKShapeNode"},
@@ -18,10 +20,26 @@ local objectTypes =
 	
 	ObjectTrigger =
 	{
-		inheritsFrom = "Node",
-		behaviors =
+		inheritsFrom = "ContactNotificationNode",
+		physicsBody =
 		{
-			--{className = "KKTriggerBehavior"},
+			shapeType = "rectangle",
+			shapeSize = "{16, 16}",
+			
+			properties = 
+			{
+				affectedByGravity = NO,
+				categoryBitMask = kContactCategoryTrigger,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = 0,
+				affectedByGravity = NO,
+				dynamic = NO,
+			},
+		},
+		properties =
+		{
+			notification = "not set",
+			notifyRepeatedly = NO,
 		},
 	},
 	
@@ -83,7 +101,7 @@ local objectTypes =
 				affectedByGravity = NO,
 				categoryBitMask = kContactCategoryPlayer,
 				contactTestBitMask = 0, --kContactCategoryPlayer + kContactCategoryPickupItem,
-				collisionBitMask = 0xffffffff - kContactCategoryPickupItem,
+				collisionBitMask = 0xffffffff - (kContactCategoryPickupItem + kContactCategoryTrigger),
 			},
 		},
 		
@@ -115,7 +133,7 @@ local objectTypes =
 				contactTestBitMask = kContactCategoryPlayer,
 				collisionBitMask = 0,
 				affectedByGravity = NO,
-				dynamic = YES,
+				dynamic = NO,
 			},
 		},
 		behaviors =

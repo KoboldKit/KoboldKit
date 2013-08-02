@@ -31,11 +31,11 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt0bkNgEAQA8AV2bUC/fdHejFiH8SM5NyWIwAAAAAAAADge67uAsWOn2UNS7buffbmetrprW4VG3dnzPsg0w1M/gWN
+   eJzt0T0KgDAMBtDSQXDp5iX0/vdTQSGDk9gf4T34SCgUEpISAAAAAAAAAPzP1nuAxvKVKfRnypEl9HctD2+x5vBvxMyDpbbe+9m3rrczfTVbix2jNY13g5p2+UwGCw==
   </data>
  </layer>
  <objectgroup draworder="topdown" name="game objects" width="60" height="40">
-  <object name="player" type="Player" x="64" y="480" width="16" height="32"/>
+  <object name="player" type="Player" x="336" y="512" width="16" height="32"/>
   <object name="koffer" type="Briefcase" x="144" y="512" width="16" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
@@ -65,6 +65,11 @@
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
     <property name="xScale" value="4"/>
+   </properties>
+  </object>
+  <object type="ObjectTrigger" x="96" y="432" width="32" height="96">
+   <properties>
+    <property name="notification" value="TestTrigger"/>
    </properties>
   </object>
  </objectgroup>

@@ -24,11 +24,6 @@
 #import "KKModel.h"
 #import "KKClassVarSetter.h"
 
-// dummy category to prevent unrecognized selector warning
-@interface KKTilemapNode (nodeDidSpawnWithObject)
--(void) nodeDidSpawnWithObject:(KKTilemapObject*)object;
-@end
-
 
 @implementation KKTilemapNode
 
@@ -398,7 +393,7 @@
 			
 			// TODO: use a custom initializer where appropriate and setup in objectTypes.lua
 			SKNode* objectNode = [objectNodeClass node];
-			objectNode.position = tilemapObject.position;
+			objectNode.position = CGPointMake(tilemapObject.position.x + tilemapObject.size.width / 2.0, tilemapObject.position.y + tilemapObject.size.height / 2.0);
 			objectNode.hidden = tilemapObject.hidden;
 			objectNode.zRotation = tilemapObject.rotation;
 			objectNode.name = (tilemapObject.name.length ? tilemapObject.name : objectClassName);
@@ -411,16 +406,24 @@
 			if (physicsBodyDef.count)
 			{
 				SKPhysicsBody* body = nil;
-				NSString* shapeType = [physicsBodyDef objectForKey:@"shapeType"];
-				if ([shapeType isEqualToString:@"rectangle"])
+				if ([objectNode respondsToSelector:@selector(physicsBodyWithTilemapObject:)])
 				{
-					CGSize shapeSize = [[physicsBodyDef objectForKey:@"shapeSize"] sizeValue];
-					NSAssert(CGSizeEqualToSize(shapeSize, CGSizeZero) == NO, @"physicsBody shapeSize is 0,0 for object type '%@'", objectType);
-					body = [objectNode physicsBodyWithRectangleOfSize:shapeSize];
+					body = [objectNode performSelector:@selector(physicsBodyWithTilemapObject:) withObject:tilemapObject];
 				}
-				else
+
+				if (body == nil)
 				{
-					[NSException raise:NSInternalInconsistencyException format:@"physicsBody shapeType (%@) is unsupported for object type '%@'", shapeType, objectType];
+					NSString* shapeType = [physicsBodyDef objectForKey:@"shapeType"];
+					if ([shapeType isEqualToString:@"rectangle"])
+					{
+						CGSize shapeSize = [[physicsBodyDef objectForKey:@"shapeSize"] sizeValue];
+						NSAssert(CGSizeEqualToSize(shapeSize, CGSizeZero) == NO, @"physicsBody shapeSize is 0,0 for object type '%@'", objectType);
+						body = [objectNode physicsBodyWithRectangleOfSize:shapeSize];
+					}
+					else
+					{
+						[NSException raise:NSInternalInconsistencyException format:@"physicsBody shapeType (%@) is unsupported for object type '%@'", shapeType, objectType];
+					}
 				}
 				
 				// apply physics body object properties & ivars
@@ -502,9 +505,9 @@
 			}
 			
 			// call objectDidSpawn on newly spawned object (if available)
-			if ([objectNode respondsToSelector:@selector(nodeDidSpawnWithObject:)])
+			if ([objectNode respondsToSelector:@selector(nodeDidSpawnWithTilemapObject:)])
 			{
-				[objectNode performSelector:@selector(nodeDidSpawnWithObject:) withObject:tilemapObject];
+				[objectNode performSelector:@selector(nodeDidSpawnWithTilemapObject:) withObject:tilemapObject];
 			}
 		}
 	}
