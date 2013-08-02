@@ -50,8 +50,7 @@ KKNODE_SHARED_CODE
 	_sceneDidSimulatePhysicsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneWillMoveFromViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidMoveToViewObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
-	_sceneDidBeginContactObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
-	_sceneDidEndContactObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+	_physicsContactObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	
 	_mainLoopStage = KKMainLoopStageDidSimulatePhysics;
 	
@@ -135,6 +134,8 @@ KKNODE_SHARED_CODE
 	LOG_EXPR(self.size);
 }
 
+#pragma mark Scene Events Observer
+
 -(void) addSceneEventsObserver:(id)observer
 {
 	// prevent users from registering the scene, because it will always call these methods if implemented
@@ -166,16 +167,6 @@ KKNODE_SHARED_CODE
 			{
 				[_sceneDidMoveToViewObservers addObject:observer];
 			}
-			if ([observer respondsToSelector:@selector(didBeginContact:)] &&
-				[_sceneDidBeginContactObservers indexOfObject:observer] == NSNotFound)
-			{
-				[_sceneDidBeginContactObservers addObject:observer];
-			}
-			if ([observer respondsToSelector:@selector(didEndContact:)] &&
-				[_sceneDidEndContactObservers indexOfObject:observer] == NSNotFound)
-			{
-				[_sceneDidEndContactObservers addObject:observer];
-			}
 		});
 	}
 }
@@ -190,13 +181,38 @@ KKNODE_SHARED_CODE
 			[_sceneDidSimulatePhysicsObservers removeObject:observer];
 			[_sceneWillMoveFromViewObservers removeObject:observer];
 			[_sceneDidMoveToViewObservers removeObject:observer];
-			[_sceneDidBeginContactObservers removeObject:observer];
-			[_sceneDidEndContactObservers removeObject:observer];
+			[_physicsContactObservers removeObject:observer];
 		});
 	}
 }
 
-#pragma mark Input
+#pragma mark Physics Contact Observer
+
+-(void) addPhysicsContactEventsObserver:(id<KKPhysicsContactEventDelegate>)observer
+{
+	if (observer)
+	{
+		dispatch_async(dispatch_get_main_queue(), ^{
+			if ([_physicsContactObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_physicsContactObservers addObject:observer];
+			}
+		});
+	}
+}
+
+-(void) removePhysicsContactEventsObserver:(id<KKPhysicsContactEventDelegate>)observer
+{
+	if (observer)
+	{
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[_physicsContactObservers removeObject:observer];
+		});
+	}
+}
+
+
+#pragma mark Input Observer
 
 -(void) addInputEventsObserver:(id)observer
 {
@@ -320,17 +336,41 @@ KKNODE_SHARED_CODE
 
 -(void) didBeginContact:(SKPhysicsContact *)contact
 {
-	for (id observer in _sceneDidBeginContactObservers)
+	SKPhysicsBody* bodyA = contact.bodyA;
+	SKPhysicsBody* bodyB = contact.bodyB;
+	SKNode* nodeA = bodyA.node;
+	SKNode* nodeB = bodyB.node;
+	for (id<KKPhysicsContactEventDelegate> observer in _physicsContactObservers)
 	{
-		[observer didBeginContact:contact];
+		SKNode* observerNode = observer.node;
+		if (observerNode == nodeA)
+		{
+			[observer didBeginContact:contact otherBody:bodyB];
+		}
+		else if (observerNode == nodeB)
+		{
+			[observer didBeginContact:contact otherBody:bodyA];
+		}
 	}
 }
 
 -(void) didEndContact:(SKPhysicsContact *)contact
 {
-	for (id observer in _sceneDidEndContactObservers)
+	SKPhysicsBody* bodyA = contact.bodyA;
+	SKPhysicsBody* bodyB = contact.bodyB;
+	SKNode* nodeA = bodyA.node;
+	SKNode* nodeB = bodyB.node;
+	for (id<KKPhysicsContactEventDelegate> observer in _physicsContactObservers)
 	{
-		[observer didEndContact:contact];
+		SKNode* observerNode = observer.node;
+		if (observerNode == nodeA)
+		{
+			[observer didEndContact:contact otherBody:bodyB];
+		}
+		else if (observerNode == nodeB)
+		{
+			[observer didEndContact:contact otherBody:bodyA];
+		}
 	}
 }
 

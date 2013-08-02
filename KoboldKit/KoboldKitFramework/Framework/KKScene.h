@@ -8,6 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "KKSceneEventDelegate.h"
+#import "KKPhysicsContactEventDelegate.h"
 
 @class KKNodeController;
 @class KKView;
@@ -33,13 +34,14 @@ typedef enum
 {
 	@private
 	NSMutableArray* _inputObservers;
+	
 	NSMutableArray* _sceneUpdateObservers;
 	NSMutableArray* _sceneDidEvaluateActionsObservers;
 	NSMutableArray* _sceneDidSimulatePhysicsObservers;
 	NSMutableArray* _sceneWillMoveFromViewObservers;
 	NSMutableArray* _sceneDidMoveToViewObservers;
-	NSMutableArray* _sceneDidBeginContactObservers;
-	NSMutableArray* _sceneDidEndContactObservers;
+	
+	NSMutableArray* _physicsContactObservers;
 	
 	// used to detect missing super calls
 	KKMainLoopStage _mainLoopStage;
@@ -58,6 +60,13 @@ typedef enum
 /** Removes a scene event observer.
   @param observer The receiver of scene events. */
 -(void) removeSceneEventsObserver:(id)observer;
+
+/** Adds a physics contact event observer.
+ @param observer The receiver of scene events. */
+-(void) addPhysicsContactEventsObserver:(id<KKPhysicsContactEventDelegate>)observer;
+/** Removes a physics contact event observer.
+ @param observer The receiver of scene events. */
+-(void) removePhysicsContactEventsObserver:(id<KKPhysicsContactEventDelegate>)observer;
 
 /** Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
  Note: this is a preliminary, inefficient system. It will eventually be replaced.

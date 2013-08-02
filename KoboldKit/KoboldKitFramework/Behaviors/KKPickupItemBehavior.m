@@ -11,20 +11,15 @@
 
 @implementation KKPickupItemBehavior
 
--(void) didBeginContact:(SKPhysicsContact *)contact
+-(void) didBeginContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody
 {
 	// inform the other party about the pick up
-	SKNode* myNode = self.node;
-	SKNode* nodeA = contact.bodyA.node;
-	SKNode* nodeB = contact.bodyB.node;
-	if (myNode == nodeA || myNode == nodeB)
-	{
-		SKNode* otherNode = (nodeB == myNode) ? nodeA : nodeB;
-		KKItemCollectorBehavior* collectorBehavior = [otherNode behaviorKindOfClass:[KKItemCollectorBehavior class]];
-		[collectorBehavior didPickUpItem:self];
+	SKNode* otherNode = otherBody.node;
+	
+	KKItemCollectorBehavior* collectorBehavior = [otherNode behaviorKindOfClass:[KKItemCollectorBehavior class]];
+	[collectorBehavior didPickUpItem:self];
 		
-		[myNode removeFromParent];
-	}
+	[self.node removeFromParent];
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

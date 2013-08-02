@@ -12,23 +12,9 @@
 
 @implementation KKRemoveOnContactBehavior
 
--(void) didJoinController
+-(void) didBeginContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody
 {
-	[self.node.kkScene addSceneEventsObserver:self];
-}
-
--(void) didLeaveController
-{
-	[self.node.kkScene removeSceneEventsObserver:self];
-}
-
--(void) didBeginContact:(SKPhysicsContact *)contact
-{
-	SKNode* myNode = self.node;
-	if (contact.bodyA.node == myNode || contact.bodyB.node == myNode)
-	{
-		[self.node removeFromParent];
-	}
+	[self.node removeFromParent];
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

@@ -19,7 +19,7 @@
 	{
 		_contacts = [NSMutableArray arrayWithCapacity:16];
 		
-#pragma message "work around SK empty nodes render bug"
+#pragma message "FIXME: work around SK empty nodes render bug"
 		[self addChild:[SKNode node]];
 	}
 	return self;

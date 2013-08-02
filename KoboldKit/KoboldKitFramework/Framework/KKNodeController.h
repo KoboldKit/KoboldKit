@@ -7,6 +7,7 @@
 //
 
 #import "KKCompatibility.h"
+#import "KKPhysicsContactEventDelegate.h"
 
 extern NSString* const KKNodeControllerUserDataKey;
 
@@ -15,11 +16,15 @@ extern NSString* const KKNodeControllerUserDataKey;
 @class KKModel;
 
 /** KKNodeController adds game component (behavior, model) functionality to a node. */
-@interface KKNodeController : NSObject <NSCoding, NSCopying>
+@interface KKNodeController : NSObject <KKPhysicsContactEventDelegate, NSCoding, NSCopying>
 {
 	@private
 	NSMutableArray* _behaviors;
+	NSMutableArray* _physicsDidBeginContactObservers;
+	NSMutableArray* _physicsDidEndContactObservers;
 	KKModel* _model;
+	__weak SKNode* _node;
+	BOOL _observingPhysicsContactEvents;
 }
 
 /** @returns The controller's owning node. You should never change this reference yourself! */
@@ -80,5 +85,8 @@ extern NSString* const KKNodeControllerUserDataKey;
 
 // internal use
 -(BOOL) isEqualToController:(KKNodeController*)controller;
+-(void) willRemoveController;
+-(void) nodeDidMoveToParent;
+-(void) nodeWillMoveFromParent;
 
 @end

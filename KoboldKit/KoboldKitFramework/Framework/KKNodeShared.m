@@ -15,12 +15,8 @@
 
 +(void) deallocWithNode:(SKNode*)node
 {
+	NSLog(@"dealloc: %@", node);
 	[node removeController];
-}
-
-+(void) removeFromParentWithNode:(SKNode*)node
-{
-	[node willMoveFromParent];
 }
 
 +(void) sendChildrenWillMoveFromParentWithNode:(SKNode*)node
@@ -28,17 +24,20 @@
 	for (SKNode* child in node.children)
 	{
 		[child willMoveFromParent];
+		[child.controller nodeWillMoveFromParent];
 	}
 }
 
 +(void) didMoveToParentWithNode:(SKNode*)node
 {
 	[node didMoveToParent];
+	[node.controller nodeDidMoveToParent];
 }
 
 +(void) willMoveFromParentWithNode:(SKNode*)node
 {
 	[node willMoveFromParent];
+	[node.controller nodeWillMoveFromParent];
 }
 
 @end

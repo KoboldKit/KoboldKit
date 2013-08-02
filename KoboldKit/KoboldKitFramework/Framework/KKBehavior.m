@@ -29,6 +29,11 @@
 	return self;
 }
 
+-(void) dealloc
+{
+	NSLog(@"dealloc: %@", self);
+}
+
 #pragma mark Join / Leave
 
 -(void) internal_joinController:(KKNodeController*)controller withKey:(NSString*)key

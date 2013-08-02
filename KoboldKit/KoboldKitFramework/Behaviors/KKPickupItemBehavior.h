@@ -10,7 +10,7 @@
 
 /** In addition to removing the node (see KKRemoveOnContactBehavior) this node also informs
  the other contacting node's KKItemCollectorBehavior about the pick up. */
-@interface KKPickupItemBehavior : KKRemoveOnContactBehavior
+@interface KKPickupItemBehavior : KKBehavior
 
 @property (atomic) NSUInteger itemType;
 

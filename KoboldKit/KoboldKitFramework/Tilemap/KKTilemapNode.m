@@ -404,7 +404,7 @@
 			objectNode.name = (tilemapObject.name.length ? tilemapObject.name : objectClassName);
 			[objectLayerNode addChild:objectNode];
 			
-			NSLog(@"---> Spawned object: %@", objectClassName);
+			//NSLog(@"---> Spawned object: %@", objectClassName);
 			
 			// create physics body
 			NSDictionary* physicsBodyDef = [objectDef objectForKey:@"physicsBody"];
@@ -431,7 +431,7 @@
 					[varSetter setPropertiesWithDictionary:properties target:body];
 				}
 				
-				NSLog(@"\tphysicsBody: %@", properties);
+				//NSLog(@"\tphysicsBody: %@", properties);
 			}
 			
 			// apply node properties & ivars
@@ -448,7 +448,7 @@
 				[varSetter setIvarsWithDictionary:properties target:objectNode];
 				[varSetter setPropertiesWithDictionary:properties target:objectNode];
 
-				NSLog(@"\tproperties: %@", properties);
+				//NSLog(@"\tproperties: %@", properties);
 			}
 	
 			// create and add behaviors
@@ -481,7 +481,7 @@
 				
 				[objectNode addBehavior:behavior withKey:[behaviorDef objectForKey:@"key"]];
 				
-				NSLog(@"\tbehavior: %@", behaviorClassName);
+				//NSLog(@"\tbehavior: %@", behaviorClassName);
 			}
 			
 			// override properties with properties from Tiled
@@ -498,7 +498,7 @@
 				[varSetter setIvarsWithDictionary:properties target:objectNode];
 				[varSetter setPropertiesWithDictionary:properties target:objectNode];
 
-				NSLog(@"\tTiled properties: %@", properties);
+				//NSLog(@"\tTiled properties: %@", properties);
 			}
 			
 			// call objectDidSpawn on newly spawned object (if available)

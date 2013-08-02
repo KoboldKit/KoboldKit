@@ -62,7 +62,7 @@ typedef enum : unsigned char
  @returns The highest-numbered (theoretical) gid considering all tilesets. */
 @property (atomic) gid_t highestGid;
 
-#pragma message "Tilemap iPad scale factor still needed with Sprite Kit?"
+#pragma message "FIXME: Tilemap iPad scale factor still needed with Sprite Kit?"
 
 /** @name Scaling */
 

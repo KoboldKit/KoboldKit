@@ -16,6 +16,11 @@
 	return [KKModel new];
 }
 
+-(void) dealloc
+{
+	NSLog(@"dealloc: %@", self);
+}
+
 #pragma mark Key/Value Model
 -(void) setValue:(id)value forKey:(NSString*)key
 {

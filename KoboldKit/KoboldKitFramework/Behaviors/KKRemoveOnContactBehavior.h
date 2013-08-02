@@ -11,6 +11,4 @@
 /** This behavior removes the node when its physicsBody generates a contact event. */
 @interface KKRemoveOnContactBehavior : KKBehavior
 
--(void) didBeginContact:(SKPhysicsContact *)contact;
-
 @end

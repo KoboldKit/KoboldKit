@@ -69,6 +69,8 @@
 		DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC18B126178C7E9300641A6D /* Images-Mac.xcassets */; };
 		DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */; };
 		DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */; };
+		DC2DD46617ABEA06000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
+		DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 		DC3B4464178F45FF007625D2 /* Dummy_Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3B4463178F45FF007625D2 /* Dummy_Player.png */; };
 		DC3B4465178F45FF007625D2 /* Dummy_Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3B4463178F45FF007625D2 /* Dummy_Player.png */; };
 		DC484C44178C40BB0067DAA4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
@@ -305,8 +307,6 @@
 		DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 		DCD7EC55178C57FC00BBAFB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
 		DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
-		DCDB338C178D808400C13739 /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
-		DCDB338D178D808400C13739 /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -387,6 +387,7 @@
 		DC18B126178C7E9300641A6D /* Images-Mac.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-Mac.xcassets"; sourceTree = "<group>"; };
 		DC1E506D1775ED500063CEDC /* KKCameraFollowBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCameraFollowBehavior.h; sourceTree = "<group>"; };
 		DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCameraFollowBehavior.m; sourceTree = "<group>"; };
+		DC2DD46817ABEE3C000351BE /* KKPhysicsContactEventDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPhysicsContactEventDelegate.h; sourceTree = "<group>"; };
 		DC2F43CB176CC13B005846A7 /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
 		DC2F43CC176CC13B005846A7 /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
 		DC2F43CD176CC13B005846A7 /* crawl-tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles-hd.png"; sourceTree = "<group>"; };
@@ -1062,11 +1063,12 @@
 		DCB087EC177BAC3F004182E4 /* Sprite Kit Node Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
+				DC2DD46817ABEE3C000351BE /* KKPhysicsContactEventDelegate.h */,
 				DC71017017AABDF200F95BAD /* KKNodeShared.h */,
 				DC71017117AABDF200F95BAD /* KKNodeShared.m */,
 				DC9CFD131774CA84004C981A /* KKNode.h */,
 				DC9CFD141774CA84004C981A /* KKNode.m */,
-				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
 				DC9CFD151774CA84004C981A /* KKScene.h */,
 				DC9CFD161774CA84004C981A /* KKScene.m */,
 				DC71016617AABD5B00F95BAD /* KKSpriteNode.h */,
@@ -1700,7 +1702,7 @@
 			files = (
 				DCD7EC4A178C573500BBAFB0 /* AppDelegate.m in Sources */,
 				DCD7EC4C178C573500BBAFB0 /* MenuScene.m in Sources */,
-				DCDB338D178D808400C13739 /* PlayerCharacter.m in Sources */,
+				DC2DD46617ABEA06000351BE /* PlayerCharacter.m in Sources */,
 				DCD7EC4B178C573500BBAFB0 /* GameScene.m in Sources */,
 				DCD11E40178C522300FBC406 /* main.m in Sources */,
 				DCD7EC4D178C573500BBAFB0 /* ViewController.m in Sources */,
@@ -1713,7 +1715,7 @@
 			files = (
 				DCD7A289178C7526004A0467 /* AppDelegate.m in Sources */,
 				DCD7A28A178C7526004A0467 /* GameScene.m in Sources */,
-				DCDB338C178D808400C13739 /* PlayerCharacter.m in Sources */,
+				DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */,
 				DCD7A28B178C7526004A0467 /* MenuScene.m in Sources */,
 				DCD7A28C178C7526004A0467 /* ViewController.m in Sources */,
 				DCD7A28D178C7526004A0467 /* main.m in Sources */,

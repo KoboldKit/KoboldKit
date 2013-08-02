@@ -9,7 +9,7 @@ local objectTypes =
 {
 	ObjectImage =
 	{
-		className = "SKSpriteNode",
+		className = "KKSpriteNode",
 		properties =
 		{
 			imageName = "MissingResource.png",
@@ -18,7 +18,7 @@ local objectTypes =
 
 	ObjectText =
 	{
-		className = "SKLabelNode",
+		className = "KKLabelNode",
 		properties =
 		{
 			fontName = "Arial",

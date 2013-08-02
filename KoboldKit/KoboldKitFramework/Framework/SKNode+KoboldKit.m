@@ -39,6 +39,7 @@
 {
 	if (controller == nil)
 	{
+		[self.controller willRemoveController];
 		[self.userData removeObjectForKey:KKNodeControllerUserDataKey];
 	}
 	else

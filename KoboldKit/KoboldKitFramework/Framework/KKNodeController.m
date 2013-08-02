@@ -28,8 +28,8 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	self = [super init];
 	if (self)
 	{
+		[self sharedInit];
 		[self addBehaviors:behaviors];
-		self.model = [KKModel model];
 	}
 	return self;
 }
@@ -39,21 +39,49 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	self = [super init];
 	if (self)
 	{
-		self.model = [KKModel model];
+		[self sharedInit];
 	}
 	return self;
 }
 
+-(void) sharedInit
+{
+	_behaviors = [NSMutableArray array];
+	_physicsDidBeginContactObservers = [NSMutableArray array];
+	_physicsDidEndContactObservers = [NSMutableArray array];
+}
+
 -(void) dealloc
+{
+	NSLog(@"dealloc: %@", self);
+}
+
+// called when the node removes the controller (set to nil)
+-(void) willRemoveController
 {
 	[self removeAllBehaviors];
 }
 
+-(void) nodeDidMoveToParent
+{
+	[self startObservingPhysicsContactEvents];
+}
+
+-(void) nodeWillMoveFromParent
+{
+	[self stopObservingPhysicsContactEvents];
+}
+
 #pragma mark Properties
 
-@dynamic model;
 -(KKModel*) model
 {
+	// created on demand
+	if (_model == nil)
+	{
+		_model = [KKModel model];
+		_model.controller = self;
+	}
 	return _model;
 }
 
@@ -66,6 +94,31 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	}
 }
 
+-(SKNode*) node
+{
+	return _node;
+}
+
+-(void) setNode:(SKNode*)node
+{
+	@synchronized(self)
+	{
+		if (_node != node)
+		{
+			if (_node != nil)
+			{
+				[self removePotentialPhysicsContactObserver:_node];
+			}
+			if (node != nil)
+			{
+				[self addPotentialPhysicsContactObserver:node];
+			}
+			
+			_node = node;
+		}
+	}
+}
+
 #pragma mark Behaviors
 
 -(void) addBehavior:(KKBehavior*)behavior withKey:(NSString*)key
@@ -74,17 +127,10 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 	behavior = [behavior copy];
 	[behavior internal_joinController:self withKey:key];
-	
-	if (_behaviors == nil)
-	{
-		_behaviors = [NSMutableArray arrayWithObject:behavior];
-	}
-	else
-	{
-		[_behaviors addObject:behavior];
-	}
+	[_behaviors addObject:behavior];
 	
 	[behavior didJoinController];
+	[self addPotentialPhysicsContactObserver:behavior];
 }
 
 -(void) addBehavior:(KKBehavior*)behavior
@@ -146,6 +192,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	[_behaviors removeObject:behavior];
 
 	[behavior didLeaveController];
+	[self removePotentialPhysicsContactObserver:behavior];
 }
 
 
@@ -182,8 +229,69 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	{
 		[self removeBehavior:behavior];
 	}
-	
-	_behaviors = nil;
+}
+
+#pragma mark Physics Contact Events
+
+-(void) didBeginContact:(SKPhysicsContact*)contact otherBody:(SKPhysicsBody*)otherBody
+{
+	for (id<KKPhysicsContactEventDelegate> observer in _physicsDidBeginContactObservers)
+	{
+		[observer didBeginContact:contact otherBody:otherBody];
+	}
+}
+
+-(void) didEndContact:(SKPhysicsContact*)contact otherBody:(SKPhysicsBody*)otherBody
+{
+	for (id<KKPhysicsContactEventDelegate> observer in _physicsDidEndContactObservers)
+	{
+		[observer didEndContact:contact otherBody:otherBody];
+	}
+}
+
+-(void) startObservingPhysicsContactEvents
+{
+	if (_observingPhysicsContactEvents == NO)
+	{
+		_observingPhysicsContactEvents = YES;
+		[_node.kkScene addPhysicsContactEventsObserver:self];
+	}
+}
+
+-(void) stopObservingPhysicsContactEvents
+{
+	if (_observingPhysicsContactEvents == YES)
+	{
+		_observingPhysicsContactEvents = NO;
+		[_node.kkScene removePhysicsContactEventsObserver:self];
+	}
+}
+
+-(void) addPotentialPhysicsContactObserver:(id)potentialObserver
+{
+	BOOL didAdd = NO;
+	if ([potentialObserver respondsToSelector:@selector(didBeginContact:otherBody:)])
+	{
+		[_physicsDidBeginContactObservers addObject:potentialObserver];
+		didAdd = YES;
+	}
+	if ([potentialObserver respondsToSelector:@selector(didEndContact:otherBody:)])
+	{
+		[self startObservingPhysicsContactEvents];
+		[_physicsDidEndContactObservers addObject:potentialObserver];
+		didAdd = YES;
+	}
+
+	if (didAdd && _observingPhysicsContactEvents == NO)
+	{
+		[self startObservingPhysicsContactEvents];
+	}
+}
+
+-(void) removePotentialPhysicsContactObserver:(id)potentialObserver
+{
+	[_physicsDidBeginContactObservers removeObject:potentialObserver];
+	[_physicsDidEndContactObservers removeObject:potentialObserver];
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

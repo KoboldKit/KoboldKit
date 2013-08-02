@@ -15,7 +15,6 @@
  subclass and the actual functionality is in a class method in this class. */
 @interface KKNodeShared : NSObject
 +(void) deallocWithNode:(SKNode*)node;
-+(void) removeFromParentWithNode:(SKNode*)node;
 +(void) sendChildrenWillMoveFromParentWithNode:(SKNode*)node;
 +(void) didMoveToParentWithNode:(SKNode*)node;
 +(void) willMoveFromParentWithNode:(SKNode*)node;
@@ -34,7 +33,7 @@
 	[KKNodeShared didMoveToParentWithNode:node]; \
 } \
 -(void) removeFromParent { \
-	[KKNodeShared removeFromParentWithNode:self]; \
+	[KKNodeShared willMoveFromParentWithNode:self]; \
 	[super removeFromParent]; \
 } \
 -(void) removeAllChildren { \
