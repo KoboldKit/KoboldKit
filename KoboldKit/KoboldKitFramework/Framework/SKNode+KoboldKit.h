@@ -11,6 +11,7 @@
 @class KKNodeController;
 @class KKBehavior;
 @class KKScene;
+@class KKTilemapObject;
 
 /** Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors. */
 @interface SKNode (KoboldKit)
@@ -134,6 +135,10 @@
  @param size The size of the rectangle.
  @returns size The newly created SKPhysicsBody. */
 -(SKPhysicsBody*) physicsBodyWithRectangleOfSize:(CGSize)size;
+
+/** nd */
+-(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject;
+
 
 // internal use only
 -(BOOL) isEqualToNode:(SKNode*)node;

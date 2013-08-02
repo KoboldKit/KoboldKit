@@ -14,6 +14,7 @@
 #import "CGPointExtension.h"
 #import "KKMacros.h"
 #import "KKView.h"
+#import "KKTilemapObject.h"
 
 @implementation SKNode (KoboldKit)
 
@@ -304,6 +305,11 @@
 	[self addPhysicsBodyDrawNodeWithPath:path];
 	CGPathRelease(path);
 	return physicsBody;
+}
+
+-(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject
+{
+	return [self physicsBodyWithRectangleOfSize:tilemapObject.size];
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

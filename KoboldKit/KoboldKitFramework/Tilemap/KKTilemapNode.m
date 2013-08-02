@@ -405,33 +405,16 @@
 			NSDictionary* physicsBodyDef = [objectDef objectForKey:@"physicsBody"];
 			if (physicsBodyDef.count)
 			{
-				SKPhysicsBody* body = nil;
-				if ([objectNode respondsToSelector:@selector(physicsBodyWithTilemapObject:)])
+				SKPhysicsBody* body = [objectNode physicsBodyWithTilemapObject:tilemapObject];
+				if (body)
 				{
-					body = [objectNode performSelector:@selector(physicsBodyWithTilemapObject:) withObject:tilemapObject];
-				}
-
-				if (body == nil)
-				{
-					NSString* shapeType = [physicsBodyDef objectForKey:@"shapeType"];
-					if ([shapeType isEqualToString:@"rectangle"])
+					// apply physics body object properties & ivars
+					NSDictionary* properties = [physicsBodyDef objectForKey:@"properties"];
+					if (properties.count)
 					{
-						CGSize shapeSize = [[physicsBodyDef objectForKey:@"shapeSize"] sizeValue];
-						NSAssert(CGSizeEqualToSize(shapeSize, CGSizeZero) == NO, @"physicsBody shapeSize is 0,0 for object type '%@'", objectType);
-						body = [objectNode physicsBodyWithRectangleOfSize:shapeSize];
+						KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:@"PKPhysicsBody"];
+						[varSetter setPropertiesWithDictionary:properties target:body];
 					}
-					else
-					{
-						[NSException raise:NSInternalInconsistencyException format:@"physicsBody shapeType (%@) is unsupported for object type '%@'", shapeType, objectType];
-					}
-				}
-				
-				// apply physics body object properties & ivars
-				NSDictionary* properties = [physicsBodyDef objectForKey:@"properties"];
-				if (properties.count && body)
-				{
-					KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:@"PKPhysicsBody"];
-					[varSetter setPropertiesWithDictionary:properties target:body];
 				}
 				
 				//NSLog(@"\tphysicsBody: %@", properties);

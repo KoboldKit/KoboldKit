@@ -16,7 +16,7 @@
 -(void) didMoveToParent
 {
 	[self createController];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationNotSet:) name:@"not set" object:self];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationNotSet:) name:@"<missing notification>" object:self];
 }
 
 -(void) willMoveFromParent
@@ -26,7 +26,7 @@
 
 -(void) notificationNotSet:(NSNotification*)notification
 {
-	[NSException raise:NSInternalInconsistencyException format:@"contact notification node (%@) received a 'not set' notification (%@)", self, notification];
+	[NSException raise:NSInternalInconsistencyException format:@"contact notification node (%@) received a '<missing notification>' notification (%@)", self, notification];
 }
 
 -(void) postNotification
@@ -37,11 +37,6 @@
 -(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject
 {
 	return [self physicsBodyWithRectangleOfSize:tilemapObject.size];
-}
-
--(void) nodeDidSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject
-{
-	
 }
 
 -(void) didBeginContact:(SKPhysicsContact*)contact otherBody:(SKPhysicsBody*)otherBody

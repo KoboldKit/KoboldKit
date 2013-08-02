@@ -46,7 +46,7 @@
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
-  <object name="koffer" type="Briefcase" x="224" y="512" width="16" height="16">
+  <object name="koffer" type="Briefcase" x="208" y="464" width="48" height="80">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
@@ -61,15 +61,15 @@
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
-  <object name="exitdoor" type="ExitDoor" x="240" y="432" width="32" height="16">
+  <object name="exitdoor" type="ExitDoor" x="240" y="432" width="96" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
     <property name="xScale" value="4"/>
    </properties>
   </object>
-  <object type="ObjectTrigger" x="96" y="432" width="32" height="96">
+  <object name="DemoLevel01.tmx" type="ObjectTrigger" x="368" y="448" width="32" height="96">
    <properties>
-    <property name="notification" value="TestTrigger"/>
+    <property name="notification" value="LoadMap"/>
    </properties>
   </object>
  </objectgroup>

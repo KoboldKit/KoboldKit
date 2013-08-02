@@ -10,9 +10,9 @@ local objectTypes =
 {
 	-- default node types and their class names
 	Node = {className = "KKNode"},
-	SpriteNode = {className = "KKSpriteNode"},
+	SpriteNode = {className = "KKSpriteNode", tiledColor = "#ffffff"},
 	LabelNode = {className = "KKLabelNode"},
-	ContactNotificationNode = {className = "KKContactNotificationNode"},
+	ContactNotificationNode = {className = "KKContactNotificationNode", tiledColor = "#ff00ff"},
 	-- not yet supported
 	EmitterNode = {className = "KKEmitterNode"},
 	ShapeNode = {className = "KKShapeNode"},
@@ -23,22 +23,16 @@ local objectTypes =
 		inheritsFrom = "ContactNotificationNode",
 		physicsBody =
 		{
-			shapeType = "rectangle",
-			shapeSize = "{16, 16}",
-			
 			properties = 
 			{
-				affectedByGravity = NO,
 				categoryBitMask = kContactCategoryTrigger,
 				contactTestBitMask = kContactCategoryPlayer,
-				collisionBitMask = 0,
-				affectedByGravity = NO,
 				dynamic = NO,
 			},
 		},
 		properties =
 		{
-			notification = "not set",
+			notification = "<missing notification>",
 			notifyRepeatedly = NO,
 		},
 	},
@@ -67,9 +61,6 @@ local objectTypes =
 		-- create an instance of this class (class must inherit from SKNode or its subclasses)
 		className = "PlayerCharacter",
 		
-		-- optional: use a custom init method with default params
-		--init = {"spriteWithColor:size:", "{200, 0, 0}", "{240, 120}"},
-		
 		properties =
 		{
 			_fallSpeedAcceleration = 50, -- how fast player accelerates when falling down
@@ -87,9 +78,6 @@ local objectTypes =
 		-- physics body properties
 		physicsBody =
 		{
-			shapeType = "rectangle",
-			shapeSize = "{16, 24}",
-			
 			properties =
 			{
 				allowsRotation = NO,
@@ -125,14 +113,10 @@ local objectTypes =
 		inheritsFrom = "ObjectImage",
 		physicsBody =
 		{
-			shapeType = "rectangle",
-			shapeSize = "{10, 10}",
 			properties =
 			{
 				categoryBitMask = kContactCategoryPickupItem,
 				contactTestBitMask = kContactCategoryPlayer,
-				collisionBitMask = 0,
-				affectedByGravity = NO,
 				dynamic = NO,
 			},
 		},

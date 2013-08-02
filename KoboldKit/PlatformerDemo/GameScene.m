@@ -33,8 +33,19 @@
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+-(void) loadMapNotification:(NSNotification*)notification
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:@"LoadMap" object:nil];
+
+	GameScene* newScene = [GameScene node];
+	newScene.tmxFile = ((SKNode*)notification.object).name;
+	[self.scene.view presentScene:newScene /*transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]*/];
+}
+
 -(void) didMoveToView:(SKView *)view
 {
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadMapNotification:) name:@"LoadMap" object:nil];
+
 	// always call super in "event" methods of KKScene subclasses
 	[super didMoveToView:view];
 	
