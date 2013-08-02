@@ -12,6 +12,4 @@
  the other contacting node's KKItemCollectorBehavior about the pick up. */
 @interface KKPickupItemBehavior : KKBehavior
 
-@property (atomic) NSUInteger itemType;
-
 @end

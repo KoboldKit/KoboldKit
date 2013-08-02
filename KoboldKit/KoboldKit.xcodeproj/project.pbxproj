@@ -120,6 +120,12 @@
 		DC5D4ACB17AC04B700CF69EB /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */; };
 		DC5D4ACC17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */; };
 		DC5D4ACD17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */; };
+		DC5D4AD017AC131300CF69EB /* KKNotifyOnItemCountBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5D4ACE17AC131300CF69EB /* KKNotifyOnItemCountBehavior.h */; };
+		DC5D4AD117AC131300CF69EB /* KKNotifyOnItemCountBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D4ACF17AC131300CF69EB /* KKNotifyOnItemCountBehavior.m */; };
+		DC5D4AD217AC131300CF69EB /* KKNotifyOnItemCountBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D4ACF17AC131300CF69EB /* KKNotifyOnItemCountBehavior.m */; };
+		DC5D4AD517AC164700CF69EB /* KKRemoveOnNotificationBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5D4AD317AC164700CF69EB /* KKRemoveOnNotificationBehavior.h */; };
+		DC5D4AD617AC164700CF69EB /* KKRemoveOnNotificationBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */; };
+		DC5D4AD717AC164700CF69EB /* KKRemoveOnNotificationBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */; };
 		DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */; };
 		DC71016317AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
 		DC71016417AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */; };
@@ -367,6 +373,10 @@
 		DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01.tmx; sourceTree = "<group>"; };
 		DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoSandbox.tmx; sourceTree = "<group>"; };
 		DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
+		DC5D4ACE17AC131300CF69EB /* KKNotifyOnItemCountBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNotifyOnItemCountBehavior.h; sourceTree = "<group>"; };
+		DC5D4ACF17AC131300CF69EB /* KKNotifyOnItemCountBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNotifyOnItemCountBehavior.m; sourceTree = "<group>"; };
+		DC5D4AD317AC164700CF69EB /* KKRemoveOnNotificationBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnNotificationBehavior.h; sourceTree = "<group>"; };
+		DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnNotificationBehavior.m; sourceTree = "<group>"; };
 		DC71016017AAB38B00F95BAD /* KKRemoveOnContactBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnContactBehavior.h; sourceTree = "<group>"; };
 		DC71016117AAB38B00F95BAD /* KKRemoveOnContactBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnContactBehavior.m; sourceTree = "<group>"; };
 		DC71016617AABD5B00F95BAD /* KKSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSpriteNode.h; sourceTree = "<group>"; };
@@ -886,6 +896,10 @@
 				DC71017617AACFB600F95BAD /* KKPickupItemBehavior.m */,
 				DC71017A17AAD22600F95BAD /* KKItemCollectorBehavior.h */,
 				DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */,
+				DC5D4ACE17AC131300CF69EB /* KKNotifyOnItemCountBehavior.h */,
+				DC5D4ACF17AC131300CF69EB /* KKNotifyOnItemCountBehavior.m */,
+				DC5D4AD317AC164700CF69EB /* KKRemoveOnNotificationBehavior.h */,
+				DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -1137,6 +1151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB76E66178CB19C0047B4EC /* KKTilemapTileLayerNode.h in Headers */,
+				DC5D4AD017AC131300CF69EB /* KKNotifyOnItemCountBehavior.h in Headers */,
+				DC5D4AD517AC164700CF69EB /* KKRemoveOnNotificationBehavior.h in Headers */,
 				DCB76E63178CB19C0047B4EC /* KKTilemapObjectLayerNode.h in Headers */,
 				DC71016817AABD5B00F95BAD /* KKSpriteNode.h in Headers */,
 				DC71017C17AAD22600F95BAD /* KKItemCollectorBehavior.h in Headers */,
@@ -1328,7 +1344,9 @@
 				DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */,
 				DC484CE1178C43BE0067DAA4 /* CGPointExtension.m in Sources */,
 				DC8EED2417A53FBA000C1995 /* NSString+KoboldKit.m in Sources */,
+				DC5D4AD217AC131300CF69EB /* KKNotifyOnItemCountBehavior.m in Sources */,
 				DC484CB8178C43690067DAA4 /* lapi.c in Sources */,
+				DC5D4AD717AC164700CF69EB /* KKRemoveOnNotificationBehavior.m in Sources */,
 				DC484CB9178C43690067DAA4 /* lauxlib.c in Sources */,
 				DC484CBA178C43690067DAA4 /* lbaselib.c in Sources */,
 				DC484CBB178C43690067DAA4 /* lbitlib.c in Sources */,
@@ -1425,7 +1443,9 @@
 				DCD7A26F178C7453004A0467 /* ldblib.c in Sources */,
 				DCD7A270178C7453004A0467 /* ldebug.c in Sources */,
 				DC8EED2317A53FBA000C1995 /* NSString+KoboldKit.m in Sources */,
+				DC5D4AD117AC131300CF69EB /* KKNotifyOnItemCountBehavior.m in Sources */,
 				DCD7A271178C7453004A0467 /* ldo.c in Sources */,
+				DC5D4AD617AC164700CF69EB /* KKRemoveOnNotificationBehavior.m in Sources */,
 				DCD7A272178C7453004A0467 /* ldump.c in Sources */,
 				DCD7A273178C7453004A0467 /* lfunc.c in Sources */,
 				DCD7A274178C7453004A0467 /* lgc.c in Sources */,

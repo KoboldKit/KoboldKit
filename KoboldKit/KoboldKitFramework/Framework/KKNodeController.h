@@ -82,7 +82,6 @@ extern NSString* const KKNodeControllerUserDataKey;
 /** Removes all behaviors from the controller. */
 -(void) removeAllBehaviors;
 
-
 // internal use
 -(BOOL) isEqualToController:(KKNodeController*)controller;
 -(void) willRemoveController;

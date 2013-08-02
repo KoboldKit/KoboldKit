@@ -7,13 +7,18 @@ local kContactCategoryPickupItem = 2
 
 local objectTypes =
 {
+	ObjectTrigger =
+	{
+		className = "KKNode",
+		behaviors =
+		{
+			--{className = "KKTriggerBehavior"},
+		},
+	},
+	
 	ObjectImage =
 	{
 		className = "KKSpriteNode",
-		properties =
-		{
-			imageName = "MissingResource.png",
-		},
 	},
 
 	ObjectText =
@@ -79,6 +84,7 @@ local objectTypes =
 			{className = "KKStayInBoundsBehavior", properties = {bounds = "{{0, 0}, {0, 0}}"}},
 			{className = "KKCameraFollowBehavior"},
 			{className = "KKItemCollectorBehavior"},
+			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 5, notification = "EnoughBriefcasesCollected"}},
 		},
 		
 		actions =
@@ -105,14 +111,34 @@ local objectTypes =
 		},
 		behaviors =
 		{
-			--{className = "KKRemoveOnContactBehavior"}, -- physics contact resolves in a remove of this node
-			{className = "KKPickupItemBehavior", properties = {itemType = 1, name = "briefcase"}},
+			{className = "KKRemoveOnContactBehavior"}, -- physics contact resolves in a remove of this node
+			{className = "KKPickupItemBehavior"},
 		},
 	},
-	
+
+
+	-- Game-Specific Items
 	Briefcase =
 	{
 		inheritsFrom = "PickupItem",
+		properties =
+		{
+			name = "briefcase",
+		},
+	},
+	
+	ExitDoor =
+	{
+		className = "KKNode",
+		behaviors =
+		{
+			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "EnoughBriefcasesCollected"}},
+		},
+	},
+	
+	ExitPortal =
+	{
+		className = "KKNode",
 	},
 }
 

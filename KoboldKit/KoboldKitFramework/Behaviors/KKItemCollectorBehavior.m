@@ -10,27 +10,39 @@
 #import "KKPickupItemBehavior.h"
 #import "KKModel.h"
 #import "KKMutableNumber.h"
+#import "KKNotifyOnItemCountBehavior.h"
 
 @implementation KKItemCollectorBehavior
 
 -(void) didPickUpItem:(KKPickupItemBehavior*)itemBehavior
 {
 	// by default counts the number of item pickups
-	NSString* itemName = itemBehavior.name;
+	NSString* itemName = itemBehavior.node.name;
 	if (itemName.length)
 	{
 		KKModel* model = self.controller.model;
-		KKMutableNumber* count = [model objectForKey:itemName];
-		if (count)
+		KKMutableNumber* itemCountNumber = [model objectForKey:itemName];
+		
+		unsigned int itemCount = 1;
+		if (itemCountNumber)
 		{
-			[count setUnsignedIntValue:count.unsignedIntValue + 1];
+			itemCount = itemCountNumber.unsignedIntValue + 1;
+			[itemCountNumber setUnsignedIntValue:itemCount];
 		}
 		else
 		{
-			[model setUnsignedInt32:1 forKey:itemName];
+			[model setUnsignedInt32:itemCount forKey:itemName];
 		}
-		
-		LOG_EXPR([[model objectForKey:itemName] unsignedIntValue]);
+
+		Class itemCountBehaviorClass = [KKNotifyOnItemCountBehavior class];
+		for (KKBehavior* behavior in self.controller.behaviors)
+		{
+			if ([behavior isKindOfClass:itemCountBehaviorClass])
+			{
+				KKNotifyOnItemCountBehavior* itemCountBehavior = (KKNotifyOnItemCountBehavior*)behavior;
+				[itemCountBehavior didPickUpItemWithName:itemName count:itemCount];
+			}
+		}
 	}
 }
 
