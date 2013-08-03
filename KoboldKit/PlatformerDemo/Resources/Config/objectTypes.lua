@@ -63,8 +63,8 @@ local objectTypes =
 		
 		properties =
 		{
-			_fallSpeedAcceleration = 50, -- how fast player accelerates when falling down 50
-			_fallSpeedLimit = 400,			-- max falling speed 300
+			_fallSpeedAcceleration = 50, -- how fast player accelerates when falling down
+			_fallSpeedLimit = 300,			-- max falling speed
 			_jumpAbortVelocity = 150,		-- the (max) upwards velocity forcibly set when jump is aborted
 			_jumpSpeedInitial = 350,		-- how fast the player initially moves upwards when jumping is initiated
 			_jumpSpeedDeceleration = 16,	-- how fast upwards motion (caused by jumping) decelerates
