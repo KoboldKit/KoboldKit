@@ -72,6 +72,11 @@
 }
 
 #if TARGET_OS_IPHONE
+-(BOOL) prefersStatusBarHidden
+{
+	return YES;
+}
+
 -(BOOL) shouldAutorotate
 {
     return YES;
