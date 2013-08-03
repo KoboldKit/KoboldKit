@@ -17,7 +17,8 @@
 
 -(void) nodeDidSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject
 {
-	[self setupPlayerSpriteWithObject:tilemapObject];
+	_tilemapPlayerObject = tilemapObject;
+	[self setupPlayerSprite];
 	
 	// 1st parent = object layer node, 2nd parent = tile layer node, 3rd parent = tilemap node
 	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.parent.parent.parent;
@@ -31,9 +32,9 @@
 	[self observeSceneEvents];
 }
 
--(void) setupPlayerSpriteWithObject:(KKTilemapObject*)playerObject
+-(void) setupPlayerSprite
 {
-	CGSize playerSize = playerObject.size;
+	CGSize playerSize = _tilemapPlayerObject.size;
 	
 	if (_defaultImage.length)
 	{
@@ -59,21 +60,35 @@
 	[self addChild:_playerSprite];
 }
 
+-(void) respawn
+{
+	_playerSprite.alpha = 1.0;
+	self.alpha = 1.0;
+	[self observeSceneEvents];
+	
+	self.position = CGPointMake(_tilemapPlayerObject.position.x + _playerSprite.size.width / 2.0,
+								_tilemapPlayerObject.position.y + _playerSprite.size.height / 2.0);
+}
+
 -(void) die
 {
 	[self disregardSceneEvents];
-	self.physicsBody = nil;
+	self.physicsBody.velocity = CGPointZero;
+	_currentControlPadDirection = CGPointZero;
 	
 	KKEmitterNode* emitter = [KKEmitterNode emitterWithFile:@"playerdeath.sks"];
 	emitter.position = CGPointMake(self.position.x, self.position.y - _playerSprite.size.height / 2.0);
 	[self.parent addChild:emitter];
 
-	[emitter advanceSimulationTime:0.08];
-	NSArray* sequence = @[[SKAction waitForDuration:0.1], [SKAction runBlock:^{emitter.particleBirthRate = 0.0;}], [SKAction waitForDuration:7.0], [SKAction removeFromParent]];
+	[emitter advanceSimulationTime:0.1];
+	NSArray* sequence = @[[SKAction waitForDuration:0.1], [SKAction runBlock:^{ emitter.particleBirthRate = 0.0; }], [SKAction waitForDuration:7.0], [SKAction removeFromParent]];
 	[emitter runAction:[SKAction sequence:sequence]];
 	
-	sequence = @[[SKAction fadeOutWithDuration:0.2], [SKAction removeFromParent]];
-	[_playerSprite runAction:[SKAction sequence:sequence]];
+	SKAction* fadeOutAction = [SKAction fadeOutWithDuration:0.2];
+	[_playerSprite runAction:fadeOutAction];
+	[self runAction:fadeOutAction];
+	
+	sequence = @[[SKAction waitForDuration:2.0], [SKAction runBlock:^{ [self respawn]; }]];
 	[self runAction:[SKAction sequence:sequence]];
 }
 

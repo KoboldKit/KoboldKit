@@ -44,11 +44,6 @@
 
 -(void) playerDidStepInDeadlyTrap:(NSNotification*)notification
 {
-	// disable input
-	[self enumerateChildNodesWithName:@"joypad" usingBlock:^(SKNode *node, BOOL *stop) {
-		[node removeFromParent];
-	}];
-	
 	// kill the player
 	[_playerCharacter die];
 }

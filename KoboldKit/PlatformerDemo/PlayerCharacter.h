@@ -11,6 +11,7 @@
 @interface PlayerCharacter : KKNode
 {
 @private
+	__weak KKTilemapObject* _tilemapPlayerObject;
 	KKSpriteNode* _playerSprite;
 
 	// these values are Tiled-editable via properties of the same name
