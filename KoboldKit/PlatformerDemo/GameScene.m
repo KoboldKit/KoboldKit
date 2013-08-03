@@ -39,7 +39,7 @@
 
 	GameScene* newScene = [GameScene node];
 	newScene.tmxFile = ((SKNode*)notification.object).name;
-	[self.scene.view presentScene:newScene /*transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]*/];
+	[self.scene.view presentScene:newScene transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]];
 }
 
 -(void) didMoveToView:(SKView *)view
