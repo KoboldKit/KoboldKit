@@ -1,5 +1,5 @@
 //
-//  NSFileManager+KoboldKit.h
+//  NSBundle+KoboldKit.h
 //  KoboldKit
 //
 //  Created by Steffen Itterheim on 04.07.13.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /** NSFileManager category methods for Kobold Kit */
-@interface NSFileManager (KoboldKit)
+@interface NSBundle (KoboldKit)
 
 /** @name Locating Files and Paths */
 

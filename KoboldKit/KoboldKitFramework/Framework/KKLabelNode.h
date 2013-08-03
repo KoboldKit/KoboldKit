@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <SpriteKit/SpriteKit.h>
+#import "KKCompatibility.h"
 #import "KKTilemapObjectSpawnDelegate.h"
 
 @interface KKLabelNode : SKLabelNode <KKTilemapObjectSpawnDelegate>

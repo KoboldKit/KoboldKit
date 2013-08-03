@@ -42,9 +42,21 @@
 	[self.scene.view presentScene:newScene transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]];
 }
 
+-(void) playerDidStepInDeadlyTrap:(NSNotification*)notification
+{
+	// disable input
+	[self enumerateChildNodesWithName:@"joypad" usingBlock:^(SKNode *node, BOOL *stop) {
+		[node removeFromParent];
+	}];
+	
+	// kill the player
+	[_playerCharacter die];
+}
+
 -(void) didMoveToView:(SKView *)view
 {
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadMapNotification:) name:@"LoadMap" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerDidStepInDeadlyTrap:) name:@"DeadlyTrap" object:nil];
 
 	// always call super in "event" methods of KKScene subclasses
 	[super didMoveToView:view];
@@ -56,7 +68,7 @@
 	[_tilemapNode createPhysicsShapesWithObjectLayerNode:[_tilemapNode objectLayerNodeNamed:@"extra-collision"]];
 
 	// test write TMX
-	[_tilemapNode.tilemap writeToFile:[NSFileManager pathForDocumentsFile:@"testWrite.tmx"]];
+	[_tilemapNode.tilemap writeToFile:[NSBundle pathForDocumentsFile:@"testWrite.tmx"]];
 	
 	// apply global settings from Tiled
 	KKTilemapProperties* mapProperties = _tilemapNode.tilemap.properties;
@@ -226,6 +238,7 @@
 -(void) createSimpleControls
 {
 	KKViewOriginNode* joypadNode = [KKViewOriginNode node];
+	joypadNode.name = @"joypad";
 	[self addChild:joypadNode];
 
 	SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];

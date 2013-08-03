@@ -11,7 +11,7 @@
 #import "KKModel.h"
 #import "KKLua.h"
 #import "NSDictionary+KoboldKit.h"
-#import "NSFileManager+KoboldKit.h"
+#import "NSBundle+KoboldKit.h"
 #import "KKClassVarSetter.h"
 
 #define ASSERT_SCENE_STACK_INTEGRITY() NSAssert2([_sceneStack lastObject] == self.scene, @"scene stack out of synch! Presented scene: %@ - topmost scene on stack: %@", self.scene, [_sceneStack lastObject])
@@ -92,7 +92,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) loadConfig:(NSString*)configFile flattenHierarchy:(BOOL)flattenHierarchy
 {
-	NSString* path = [NSFileManager pathForFile:configFile];
+	NSString* path = [NSBundle pathForFile:configFile];
 	if (path)
 	{
 		NSMutableDictionary* config = [NSMutableDictionary dictionaryWithContentsOfLuaScript:path];

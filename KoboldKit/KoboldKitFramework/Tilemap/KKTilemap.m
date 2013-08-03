@@ -208,7 +208,7 @@
 {
 	if ([tmxFile isAbsolutePath] == NO)
 	{
-		return [NSFileManager pathForFile:tmxFile];
+		return [NSBundle pathForFile:tmxFile];
 	}
 	
 	return tmxFile;

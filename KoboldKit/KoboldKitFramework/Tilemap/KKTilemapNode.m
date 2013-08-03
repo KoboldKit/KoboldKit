@@ -300,8 +300,54 @@
 	NSArray* contours = [_mainTileLayerNode.layer pathsWithBlockingGids:finalBlockingGids];
 	 */
 
+	KKIntegerArray* nonBlockingGids = [KKIntegerArray integerArrayWithCapacity:32];
+	for (KKTilemapTileset* tileset in _tilemap.tilesets)
+	{
+		id nonBlocking = [tileset.properties.properties objectForKey:@"nonBlockingTiles"];
+		if ([nonBlocking isKindOfClass:[KKMutableNumber class]])
+		{
+			[nonBlockingGids addInteger:[nonBlocking intValue]];
+		}
+		else if ([nonBlocking isKindOfClass:[NSString class]])
+		{
+			NSString* nonBlockingTiles = (NSString*)nonBlocking;
+			NSAssert([[nonBlockingTiles lowercaseString] isEqualToString:@"all"] == NO, @"the keyword 'all' is not allowed for nonBlockingTiles property");
+			if (nonBlockingTiles && nonBlockingTiles.length > 0)
+			{
+				NSArray* components = [nonBlockingTiles componentsSeparatedByString:@","];
+				[self addGidStringComponents:components toGidArray:nonBlockingGids gidOffset:tileset.firstGid];
+			}
+		}
+	}
+	
+	LOG_EXPR(nonBlockingGids);
+
+	unsigned int nonBlockingGidsCount = nonBlockingGids.count;
+	NSUInteger* nonBlockingGidValues = nonBlockingGids.integers;
+	
+	KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
+	for (unsigned int i = 1; i <= _tilemap.highestGid; i++)
+	{
+		BOOL isBlocking = YES;
+		
+		for (unsigned int k = 0; k < nonBlockingGidsCount; k++)
+		{
+			if (i == nonBlockingGidValues[k])
+			{
+				isBlocking = NO;
+				break;
+			}
+		}
+		
+		if (isBlocking)
+		{
+			[blockingGids addInteger:i];
+		}
+	}
+	
 	SKNode* containerNode;
-	NSArray* contours = [tileLayerNode.layer contourPathsFromLayer:tileLayerNode.layer];
+	NSArray* contours = [tileLayerNode.layer contourPathsWithBlockingGids:blockingGids];
+	//NSArray* contours = [tileLayerNode.layer contourPathsFromLayer:tileLayerNode.layer];
 	if (contours.count)
 	{
 		containerNode = [SKNode node];

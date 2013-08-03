@@ -43,7 +43,6 @@ typedef SKTextureAtlas KKTextureAtlas;
 
 typedef SKCropNode KKCropNode;
 typedef SKEffectNode KKEffectNode;
-typedef SKEmitterNode KKEmitterNode;
 typedef SKKeyframeSequence KKKeyframeSequence;
 typedef SKShapeNode KKShapeNode;
 typedef SKVideoNode KKVideoNode;

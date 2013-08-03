@@ -53,7 +53,7 @@
 		// fallback to loading all TMX files already present
 #if TARGET_OS_IPHONE
 		// only scan the user's documents directory on iOS
-		path = [NSFileManager pathToDocumentsDirectory];
+		path = [NSBundle pathToDocumentsDirectory];
 		NSDirectoryEnumerator* documentsEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:path];
 		NSString* file;
 		while (file = [documentsEnumerator nextObject])

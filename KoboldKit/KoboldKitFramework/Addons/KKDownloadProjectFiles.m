@@ -10,7 +10,7 @@
 #import <netinet/in.h>
 #import "Reachability.h"
 #import "KKModel.h"
-#import "NSFileManager+KoboldKit.h"
+#import "NSBundle+KoboldKit.h"
 
 @implementation KKDownloadProjectFiles
 
@@ -50,7 +50,7 @@
 				{
 					dispatch_group_async(dispatchGroup, dispatchQueue, ^{
 						NSData* data = [NSData dataWithContentsOfURL:remoteFileURL];
-						NSString* saveFile = [NSFileManager pathForDocumentsFile:file];
+						NSString* saveFile = [NSBundle pathForDocumentsFile:file];
 						NSError* error;
 						
 						if ([data writeToFile:saveFile options:0 error:&error] == NO)
@@ -77,7 +77,7 @@
 	NSError* error;
 	
 	// get the file attributes to retrieve the local file's modified date
-	NSString* localFile = [NSFileManager pathForDocumentsFile:[remoteFileURL lastPathComponent]];
+	NSString* localFile = [NSBundle pathForDocumentsFile:[remoteFileURL lastPathComponent]];
 	NSDictionary* fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:localFile error:&error];
 	if (error)
 	{

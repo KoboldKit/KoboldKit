@@ -40,23 +40,41 @@
 		SKTexture* texture = [SKTexture textureWithImageNamed:_defaultImage];
 		if (texture)
 		{
-			_playerSprite = [SKSpriteNode spriteNodeWithImageNamed:_defaultImage];
+			_playerSprite = [KKSpriteNode spriteNodeWithImageNamed:_defaultImage];
 		}
 		else
 		{
 			SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
 			texture = [atlas textureNamed:_defaultImage];
-			_playerSprite = [SKSpriteNode spriteNodeWithTexture:texture];
+			_playerSprite = [KKSpriteNode spriteNodeWithTexture:texture];
 		}
 
 		playerSize = _playerSprite.size;
 	}
 	else
 	{
-		_playerSprite = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:playerSize];
+		_playerSprite = [KKSpriteNode spriteNodeWithColor:[SKColor redColor] size:playerSize];
 	}
 	
 	[self addChild:_playerSprite];
+}
+
+-(void) die
+{
+	[self disregardSceneEvents];
+	self.physicsBody = nil;
+	
+	KKEmitterNode* emitter = [KKEmitterNode emitterWithFile:@"playerdeath.sks"];
+	emitter.position = CGPointMake(self.position.x, self.position.y - _playerSprite.size.height / 2.0);
+	[self.parent addChild:emitter];
+
+	[emitter advanceSimulationTime:0.08];
+	NSArray* sequence = @[[SKAction waitForDuration:0.1], [SKAction runBlock:^{emitter.particleBirthRate = 0.0;}], [SKAction waitForDuration:7.0], [SKAction removeFromParent]];
+	[emitter runAction:[SKAction sequence:sequence]];
+	
+	sequence = @[[SKAction fadeOutWithDuration:0.2], [SKAction removeFromParent]];
+	[_playerSprite runAction:[SKAction sequence:sequence]];
+	[self runAction:[SKAction sequence:sequence]];
 }
 
 -(void) controlPadDidChangeDirection:(NSNotification*)note

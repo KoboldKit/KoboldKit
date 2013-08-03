@@ -27,6 +27,7 @@
 #import "KKScene.h"
 #import "KKSpriteNode.h"
 #import "KKLabelNode.h"
+#import "KKEmitterNode.h"
 #import "KKViewOriginNode.h"
 
 // framework
@@ -42,6 +43,10 @@
 #import "KKStayInBoundsBehavior.h"
 #import "KKLimitVelocityBehavior.h"
 #import "KKRemoveOnContactBehavior.h"
+#import "KKPickupItemBehavior.h"
+#import "KKItemCollectorBehavior.h"
+#import "KKNotifyOnItemCountBehavior.h"
+#import "KKRemoveOnNotificationBehavior.h"
 
 // tilemap model
 #import "KKTilemap.h"
@@ -71,7 +76,7 @@
 // NS* categories
 #import "NSCoder+KoboldKit.h"
 #import "NSDictionary+KoboldKit.h"
-#import "NSFileManager+KoboldKit.h"
+#import "NSBundle+KoboldKit.h"
 #import "NSObject+KoboldKit.h"
 #import "NSString+KoboldKit.h"
 

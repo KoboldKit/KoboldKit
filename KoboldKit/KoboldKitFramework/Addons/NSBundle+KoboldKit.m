@@ -1,16 +1,16 @@
 //
-//  NSFileManager+KoboldKit.m
+//  NSBundle+KoboldKit.m
 //  KoboldKit
 //
 //  Created by Steffen Itterheim on 04.07.13.
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "NSFileManager+KoboldKit.h"
+#import "NSBundle+KoboldKit.h"
 
 static NSString* CFBundleName = nil;
 
-@implementation NSFileManager (KoboldKit)
+@implementation NSBundle (KoboldKit)
 
 +(NSString*) pathForBundleFile:(NSString*)file
 {
@@ -33,7 +33,7 @@ static NSString* CFBundleName = nil;
 
 +(NSString*) pathForDocumentsFile:(NSString*)file
 {
-	return [NSFileManager pathForFile:file inDirectory:NSDocumentDirectory];
+	return [NSBundle pathForFile:file inDirectory:NSDocumentDirectory];
 }
 
 +(NSString*) pathForFile:(NSString*)file inDirectory:(NSSearchPathDirectory)directory
@@ -55,10 +55,10 @@ static NSString* CFBundleName = nil;
 	//path = [NSFileManager pathForAppSupportFile:file];
 	//if ([fileManager fileExistsAtPath:path] == NO)
 	{
-		path = [NSFileManager pathForDocumentsFile:file];
+		path = [NSBundle pathForDocumentsFile:file];
 		if ([fileManager fileExistsAtPath:path] == NO)
 		{
-			path = [NSFileManager pathForBundleFile:file];
+			path = [NSBundle pathForBundleFile:file];
 		}
 	}
 	return path;

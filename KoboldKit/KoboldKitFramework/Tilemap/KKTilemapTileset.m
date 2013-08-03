@@ -11,7 +11,7 @@
 #import "KKTilemap.h"
 #import "KKTilemapProperties.h"
 #import "KKTilemapTileProperties.h"
-#import "NSFileManager+KoboldKit.h"
+#import "NSBundle+KoboldKit.h"
 
 @implementation KKTilemapTileset
 
@@ -68,7 +68,7 @@ static NSArray* kPVRImageFileExtensions = nil;
 		// no pvr version of tileset found, load the default tileset image
 		if (_texture == nil)
 		{
-			_texture = [KKTexture textureWithImageNamed:[NSFileManager pathForFile:_imageFile]];
+			_texture = [KKTexture textureWithImageNamed:[NSBundle pathForFile:_imageFile]];
 			_texture.filteringMode = SKTextureFilteringNearest;
 			NSLog(@"Tileset texture: %@", _texture);
 		}

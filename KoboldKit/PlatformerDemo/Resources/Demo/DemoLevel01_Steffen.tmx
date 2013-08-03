@@ -7,6 +7,9 @@
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
  <tileset firstgid="1" name="Tileset_Geometry_16x16" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <properties>
+   <property name="nonBlockingTiles" value="43-44"/>
+  </properties>
   <image source="Tileset_Geometry_16x16.png" width="128" height="128"/>
  </tileset>
  <layer name="background" width="60" height="40" visible="0">
@@ -70,6 +73,12 @@
   <object name="DemoLevel01.tmx" type="ObjectTrigger" x="368" y="448" width="32" height="96">
    <properties>
     <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object type="ObjectTrigger" x="0" y="528" width="16" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="notifyRepeatedly" value="YES"/>
    </properties>
   </object>
  </objectgroup>

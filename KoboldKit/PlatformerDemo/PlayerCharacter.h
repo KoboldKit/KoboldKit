@@ -11,7 +11,7 @@
 @interface PlayerCharacter : KKNode
 {
 @private
-	SKSpriteNode* _playerSprite;
+	KKSpriteNode* _playerSprite;
 
 	// these values are Tiled-editable via properties of the same name
 	CGPoint _currentControlPadDirection;
@@ -45,5 +45,7 @@
 -(void) attackButtonPressed:(NSNotification*)note;
 -(void) jumpButtonPressed:(NSNotification*)note;
 -(void) jumpButtonReleased:(NSNotification*)note;
+
+-(void) die;
 
 @end

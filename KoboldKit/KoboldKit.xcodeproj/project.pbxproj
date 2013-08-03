@@ -10,6 +10,12 @@
 		DC042A81178C59FA009FDBF8 /* libKoboldKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C6B178C418C0067DAA4 /* libKoboldKit.a */; };
 		DC042A83178C5A06009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */; };
 		DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
+		DC04802B17AD2C18002EBD1E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = DC04802817AD2C18002EBD1E /* spark.png */; };
+		DC04802C17AD2C18002EBD1E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = DC04802817AD2C18002EBD1E /* spark.png */; };
+		DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC04802D17AD2C63002EBD1E /* playerdeath.sks */; };
+		DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC04802D17AD2C63002EBD1E /* playerdeath.sks */; };
+		DC04803217AD2DA1002EBD1E /* KKEmitterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC04803117AD2DA1002EBD1E /* KKEmitterNode.m */; };
+		DC04803317AD2DA1002EBD1E /* KKEmitterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC04803117AD2DA1002EBD1E /* KKEmitterNode.m */; };
 		DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC09DB8D178C84C6000E0B61 /* MainMenu.xib */; };
 		DC18B0D4178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
 		DC18B0D5178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
@@ -50,7 +56,7 @@
 		DC484CA4178C43400067DAA4 /* KKTMXReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE907176C9E2B003E4087 /* KKTMXReader.m */; };
 		DC484CA5178C43400067DAA4 /* KKTMXWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE909176C9E2B003E4087 /* KKTMXWriter.m */; };
 		DC484CAA178C43400067DAA4 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
-		DC484CAB178C43400067DAA4 /* NSFileManager+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */; };
+		DC484CAB178C43400067DAA4 /* NSBundle+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSBundle+KoboldKit.m */; };
 		DC484CAC178C43400067DAA4 /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */; };
 		DC484CAD178C43400067DAA4 /* KKLua.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86A17876A2C00CE0827 /* KKLua.m */; };
 		DC484CAE178C43400067DAA4 /* KKIntegerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D1177B1647004182E4 /* KKIntegerArray.m */; };
@@ -204,7 +210,7 @@
 		DCD7A253178C7449004A0467 /* KKTMXReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE907176C9E2B003E4087 /* KKTMXReader.m */; };
 		DCD7A254178C7449004A0467 /* KKTMXWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE909176C9E2B003E4087 /* KKTMXWriter.m */; };
 		DCD7A259178C7449004A0467 /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */; };
-		DCD7A25A178C7449004A0467 /* NSFileManager+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */; };
+		DCD7A25A178C7449004A0467 /* NSBundle+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8AF1785DD5E0018D6C5 /* NSBundle+KoboldKit.m */; };
 		DCD7A25B178C7449004A0467 /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */; };
 		DCD7A25C178C7449004A0467 /* KKLua.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A86A17876A2C00CE0827 /* KKLua.m */; };
 		DCD7A25D178C7449004A0467 /* KKIntegerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB087D1177B1647004182E4 /* KKIntegerArray.m */; };
@@ -299,6 +305,10 @@
 
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		DC04802817AD2C18002EBD1E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		DC04802D17AD2C63002EBD1E /* playerdeath.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = playerdeath.sks; sourceTree = "<group>"; };
+		DC04803017AD2DA1002EBD1E /* KKEmitterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKEmitterNode.h; sourceTree = "<group>"; };
+		DC04803117AD2DA1002EBD1E /* KKEmitterNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKEmitterNode.m; sourceTree = "<group>"; };
 		DC09DB8D178C84C6000E0B61 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
 		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
@@ -326,8 +336,8 @@
 		DC2F43D5176CC13B005846A7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
 		DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
-		DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+KoboldKit.h"; sourceTree = "<group>"; };
-		DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+KoboldKit.m"; sourceTree = "<group>"; };
+		DC41B8AE1785DD5E0018D6C5 /* NSBundle+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KoboldKit.h"; sourceTree = "<group>"; };
+		DC41B8AF1785DD5E0018D6C5 /* NSBundle+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KoboldKit.m"; sourceTree = "<group>"; };
 		DC484BBF178C34930067DAA4 /* KKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
 		DC484BC0178C34930067DAA4 /* KKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
 		DC484C0B178C36DB0067DAA4 /* KKMacApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMacApplication.h; sourceTree = "<group>"; };
@@ -878,8 +888,8 @@
 				DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */,
 				DC96A86C17876F6100CE0827 /* NSDictionary+KoboldKit.h */,
 				DC96A86D17876F6100CE0827 /* NSDictionary+KoboldKit.m */,
-				DC41B8AE1785DD5E0018D6C5 /* NSFileManager+KoboldKit.h */,
-				DC41B8AF1785DD5E0018D6C5 /* NSFileManager+KoboldKit.m */,
+				DC41B8AE1785DD5E0018D6C5 /* NSBundle+KoboldKit.h */,
+				DC41B8AF1785DD5E0018D6C5 /* NSBundle+KoboldKit.m */,
 				DC8EED2517A58773000C1995 /* NSObject+KoboldKit.h */,
 				DC8EED2617A58773000C1995 /* NSObject+KoboldKit.m */,
 				DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */,
@@ -979,6 +989,8 @@
 				DC71016717AABD5B00F95BAD /* KKSpriteNode.m */,
 				DC71016B17AABD6D00F95BAD /* KKLabelNode.h */,
 				DC71016C17AABD6D00F95BAD /* KKLabelNode.m */,
+				DC04803017AD2DA1002EBD1E /* KKEmitterNode.h */,
+				DC04803117AD2DA1002EBD1E /* KKEmitterNode.m */,
 			);
 			name = "Sprite Kit Node Subclasses";
 			sourceTree = "<group>";
@@ -1001,6 +1013,8 @@
 				DC5D4ABC17AC04B700CF69EB /* Demo */,
 				DC18B09E178C7BC400641A6D /* Config */,
 				DC18B0C5178C7BC400641A6D /* Jetpack.atlas */,
+				DC04802817AD2C18002EBD1E /* spark.png */,
+				DC04802D17AD2C63002EBD1E /* playerdeath.sks */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1312,6 +1326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC04802C17AD2C18002EBD1E /* spark.png in Resources */,
 				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
 				DC5D4AC517AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */,
 				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
@@ -1320,6 +1335,7 @@
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
 				DC5D4AC117AC04B700CF69EB /* Dummy_Player.png in Resources */,
 				DC5D4ACD17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,
+				DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
@@ -1347,9 +1363,11 @@
 				DC5D4AC217AC04B700CF69EB /* LevelSelection.tmx in Resources */,
 				DC5D4AC417AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
+				DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC8EED1E17A40788000C1995 /* objectTypes.lua in Resources */,
 				DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */,
+				DC04802B17AD2C18002EBD1E /* spark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1436,7 +1454,7 @@
 				DC484CA4178C43400067DAA4 /* KKTMXReader.m in Sources */,
 				DC484CA5178C43400067DAA4 /* KKTMXWriter.m in Sources */,
 				DC484CAA178C43400067DAA4 /* NSCoder+KoboldKit.m in Sources */,
-				DC484CAB178C43400067DAA4 /* NSFileManager+KoboldKit.m in Sources */,
+				DC484CAB178C43400067DAA4 /* NSBundle+KoboldKit.m in Sources */,
 				DC8EED2917A58773000C1995 /* NSObject+KoboldKit.m in Sources */,
 				DCB76E65178CB19C0047B4EC /* KKTilemapObjectLayerNode.m in Sources */,
 				DC484CAC178C43400067DAA4 /* NSDictionary+KoboldKit.m in Sources */,
@@ -1535,7 +1553,7 @@
 				DCD7A253178C7449004A0467 /* KKTMXReader.m in Sources */,
 				DCD7A254178C7449004A0467 /* KKTMXWriter.m in Sources */,
 				DCD7A259178C7449004A0467 /* NSCoder+KoboldKit.m in Sources */,
-				DCD7A25A178C7449004A0467 /* NSFileManager+KoboldKit.m in Sources */,
+				DCD7A25A178C7449004A0467 /* NSBundle+KoboldKit.m in Sources */,
 				DCD7A25B178C7449004A0467 /* NSDictionary+KoboldKit.m in Sources */,
 				DC8EED2817A58773000C1995 /* NSObject+KoboldKit.m in Sources */,
 				DCB76E64178CB19C0047B4EC /* KKTilemapObjectLayerNode.m in Sources */,
@@ -1565,6 +1583,7 @@
 				DC2DD46617ABEA06000351BE /* PlayerCharacter.m in Sources */,
 				DCD7EC4B178C573500BBAFB0 /* GameScene.m in Sources */,
 				DCD11E40178C522300FBC406 /* main.m in Sources */,
+				DC04803317AD2DA1002EBD1E /* KKEmitterNode.m in Sources */,
 				DCD7EC4D178C573500BBAFB0 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1578,6 +1597,7 @@
 				DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */,
 				DCD7A28B178C7526004A0467 /* MenuScene.m in Sources */,
 				DCD7A28C178C7526004A0467 /* ViewController.m in Sources */,
+				DC04803217AD2DA1002EBD1E /* KKEmitterNode.m in Sources */,
 				DCD7A28D178C7526004A0467 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
