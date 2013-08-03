@@ -14,6 +14,8 @@
 #import "KKMacros.h"
 #import "KKTypes.h"
 #import "KKArcadeInputState.h"
+#import "KKSceneEventDelegate.h"
+#import "KKPhysicsContactEventDelegate.h"
 
 // Sprite Kit categories
 #import "SKNode+KoboldKit.h"

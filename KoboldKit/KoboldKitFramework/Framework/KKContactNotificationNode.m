@@ -43,10 +43,20 @@
 {
 	[self postNotification];
 	
-	if (_notifyRepeatedly == NO)
+	if (_onlyOnce)
 	{
 		[self removeFromParent];
 	}
+}
+
+@dynamic triggerType;
+-(NSString*) triggerType
+{
+	return _notification;
+}
+-(void) setTriggerType:(NSString *)triggerType
+{
+	self.notification = triggerType;
 }
 
 @end

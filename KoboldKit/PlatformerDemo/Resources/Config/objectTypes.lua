@@ -5,6 +5,7 @@
 local kContactCategoryPlayer = 1
 local kContactCategoryPickupItem = 2
 local kContactCategoryTrigger = 4
+local kContactCategoryStaticObject = 8
 
 local objectTypes =
 {
@@ -30,10 +31,14 @@ local objectTypes =
 				dynamic = NO,
 			},
 		},
+	},
+
+	ObjectTriggerOnce =
+	{
+		inheritsFrom = "ObjectTrigger",
 		properties =
 		{
-			notification = "<missing notification>",
-			notifyRepeatedly = NO,
+			onlyOnce = YES,
 		},
 	},
 	
@@ -149,15 +154,20 @@ local objectTypes =
 	ExitDoor =
 	{
 		inheritsFrom = "ObjectImage",
+		physicsBody =
+		{
+			properties =
+			{
+				categoryBitMask = kContactCategoryStaticObject,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = 0xffffffff,
+				dynamic = NO,
+			},
+		},
 		behaviors =
 		{
 			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenExitDoor"}},
 		},
-	},
-	
-	ExitPortal =
-	{
-		inheritsFrom = "Node",
 	},
 }
 

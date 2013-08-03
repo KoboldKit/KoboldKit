@@ -32,6 +32,7 @@
 
 	BOOL _running;
 	BOOL _jumping;
+	BOOL _onFloor;
 }
 
 @property (atomic) BOOL running;

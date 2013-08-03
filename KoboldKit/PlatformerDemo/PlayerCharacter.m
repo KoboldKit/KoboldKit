@@ -88,7 +88,7 @@
 	[_playerSprite runAction:fadeOutAction];
 	[self runAction:fadeOutAction];
 	
-	sequence = @[[SKAction waitForDuration:2.0], [SKAction runBlock:^{ [self respawn]; }]];
+	sequence = @[[SKAction waitForDuration:1.5], [SKAction runBlock:^{ [self respawn]; }]];
 	[self runAction:[SKAction sequence:sequence]];
 }
 
@@ -120,8 +120,9 @@
 -(void) jumpButtonPressed:(NSNotification*)note
 {
 	CGPoint velocity = self.physicsBody.velocity;
-	if (_jumping == NO /*&& velocity.y > -0.001 && velocity.y < 0.001*/)
+	if (_onFloor && _jumping == NO)
 	{
+		_onFloor = NO;
 		_jumping = YES;
 		velocity.y = _jumpSpeedInitial;
 		self.physicsBody.velocity = velocity;
@@ -167,7 +168,7 @@
 			[self endJump];
 		}
 	}
-	else
+	else if (_onFloor == NO)
 	{
 		if (_fallSpeedAcceleration == 0.0 || _fallSpeedAcceleration >= _fallSpeedLimit)
 		{
@@ -177,6 +178,10 @@
 		{
 			velocity.y -= _fallSpeedAcceleration;
 		}
+	}
+	else
+	{
+		velocity.y = 0.0;
 	}
 	
 	velocity.y = MAX(velocity.y, -_fallSpeedLimit);
@@ -223,6 +228,24 @@
 	LOG_EXPR(_playerSprite.parent.parent.position);
 	LOG_EXPR(_playerSprite.parent.parent.parent.position);
 	 */
+}
+
+-(void) didEvaluateActions
+{
+	_onFloor = NO;
+	CGPoint rayStart = self.position;
+	CGPoint rayEnd = CGPointMake(rayStart.x, rayStart.y - (_playerSprite.size.height / 2.0 + 2));
+	
+	// find body below player
+	SKPhysicsWorld* physicsWorld = self.scene.physicsWorld;
+	[physicsWorld enumerateBodiesAlongRayStart:rayStart end:rayEnd usingBlock:^(SKPhysicsBody *body, CGPoint point, CGPoint normal, BOOL *stop) {
+		_onFloor = YES;
+		
+		// force the player at the same y coord on the floor (they physics engine will force the player back up to the edge)
+		CGPoint pos = self.position;
+		pos.y -= 2.0;
+		self.position = pos;
+	}];
 }
 
 /*

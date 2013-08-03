@@ -227,79 +227,6 @@
 
 -(SKNode*) createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode*)tileLayerNode
 {
-	/*
-	KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
-	KKIntegerArray* nonBlockingGids = [KKIntegerArray integerArrayWithCapacity:32];
-	for (KKTilemapTileset* tileset in _tilemap.tilesets)
-	{
-		id blocking = [tileset.properties.properties objectForKey:@"blockingTiles"];
-		if ([blocking isKindOfClass:[KKMutableNumber class]])
-		{
-			[blockingGids addInteger:[blocking intValue]];
-		}
-		else if ([blocking isKindOfClass:[NSString class]])
-		{
-			NSString* blockingTiles = (NSString*)blocking;
-			if (blockingTiles == nil || [[blockingTiles lowercaseString] isEqualToString:@"all"])
-			{
-				// assume all tiles are blocking
-				for (gid_t gid = tileset.firstGid; gid <= tileset.lastGid; gid++)
-				{
-					[blockingGids addInteger:gid];
-				}
-			}
-			else if (blockingTiles.length > 0)
-			{
-				NSArray* components = [blockingTiles componentsSeparatedByString:@","];
-				[self addGidStringComponents:components toGidArray:blockingGids gidOffset:tileset.firstGid];
-			}
-		}
-
-		id nonBlocking = [tileset.properties.properties objectForKey:@"nonBlockingTiles"];
-		if ([nonBlocking isKindOfClass:[KKMutableNumber class]])
-		{
-			[nonBlockingGids addInteger:[nonBlocking intValue]];
-		}
-		else if ([blocking isKindOfClass:[NSString class]])
-		{
-			NSString* nonBlockingTiles = (NSString*)nonBlocking;
-			NSAssert([[nonBlockingTiles lowercaseString] isEqualToString:@"all"] == NO, @"the keyword 'all' is not allowed for nonBlockingTiles property");
-			if (nonBlockingTiles && nonBlockingTiles.length > 0)
-			{
-				NSArray* components = [nonBlockingTiles componentsSeparatedByString:@","];
-				[self addGidStringComponents:components toGidArray:nonBlockingGids gidOffset:tileset.firstGid];
-			}
-		}
-	}
-	
-	// remove all gids explicitly marked as nonBlocking from blocking array
-	KKIntegerArray* finalBlockingGids = [KKIntegerArray integerArrayWithCapacity:blockingGids.count];
-	for (NSUInteger i = 0; i < blockingGids.count; i++)
-	{
-		BOOL gidIsBlocking = YES;
-		gid_t blockingGid = blockingGids.integers[i];
-		
-		for (NSUInteger j = 0; j < nonBlockingGids.count; j++)
-		{
-			gid_t nonBlockingGid = nonBlockingGids.integers[j];
-			if (blockingGid == nonBlockingGid)
-			{
-				gidIsBlocking = NO;
-				break;
-			}
-		}
-		
-		if (gidIsBlocking)
-		{
-			[finalBlockingGids addInteger:blockingGid];
-		}
-	}
-	
-	LOG_EXPR(finalBlockingGids);
-	
-	NSArray* contours = [_mainTileLayerNode.layer pathsWithBlockingGids:finalBlockingGids];
-	 */
-
 	KKIntegerArray* nonBlockingGids = [KKIntegerArray integerArrayWithCapacity:32];
 	for (KKTilemapTileset* tileset in _tilemap.tilesets)
 	{
@@ -347,7 +274,6 @@
 	
 	SKNode* containerNode;
 	NSArray* contours = [tileLayerNode.layer contourPathsWithBlockingGids:blockingGids];
-	//NSArray* contours = [tileLayerNode.layer contourPathsFromLayer:tileLayerNode.layer];
 	if (contours.count)
 	{
 		containerNode = [SKNode node];
@@ -455,17 +381,8 @@
 					param = [objectDef objectForKey:paramName];
 				}
 				
-				objectNode = [objectNodeClass performSelector:NSSelectorFromString(initMethodName) withObject:param];
-				
-				/*
-				SEL selector = NSSelectorFromString(initMethodName);
-				NSMethodSignature* methodSignature = [objectNodeClass instanceMethodSignatureForSelector:selector];
-				NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:methodSig];
-				invocation.selector = selector;
-				invocation.target = objectNodeClass;
-				[invocation invoke];
-				objectNode = [invocation getReturnValue:<#(void *)#>];M
-				 */
+				SUPPRESS_PERFORM_SELECTOR_LEAK_WARNING(objectNode = [objectNodeClass performSelector:NSSelectorFromString(initMethodName)
+																						  withObject:param]);
 				
 				if ([objectNode isKindOfClass:[SKEmitterNode class]])
 				{

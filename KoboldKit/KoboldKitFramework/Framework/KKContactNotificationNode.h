@@ -11,7 +11,8 @@
 @interface KKContactNotificationNode : KKNode
 
 @property (atomic, copy) NSString* notification;
-@property (atomic) BOOL notifyRepeatedly;
+@property (atomic) NSString* triggerType; // alias
+@property (atomic) BOOL onlyOnce;
 
 -(void) postNotification;
 

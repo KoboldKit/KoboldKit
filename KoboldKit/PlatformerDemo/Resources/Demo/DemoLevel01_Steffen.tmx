@@ -38,7 +38,7 @@
   </data>
  </layer>
  <objectgroup draworder="topdown" name="game objects" width="60" height="40">
-  <object name="player" type="Player" x="336" y="512" width="16" height="32"/>
+  <object name="player" type="Player" x="336" y="400" width="16" height="32"/>
   <object name="koffer" type="Briefcase" x="144" y="512" width="16" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
@@ -49,7 +49,7 @@
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
-  <object name="koffer" type="Briefcase" x="208" y="512" width="32" height="32">
+  <object name="koffer" type="Briefcase" x="208" y="512" width="16" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
@@ -64,13 +64,12 @@
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
-  <object name="exitdoor" type="ExitDoor" x="240" y="432" width="96" height="16">
+  <object name="exitdoor" type="ExitDoor" x="384" y="400" width="16" height="144">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
-    <property name="xScale" value="4"/>
    </properties>
   </object>
-  <object name="DemoLevel01.tmx" type="ObjectTrigger" x="368" y="448" width="32" height="96">
+  <object name="DemoLevel01_Steffen.tmx" type="ObjectTrigger" x="400" y="400" width="32" height="144">
    <properties>
     <property name="notification" value="LoadMap"/>
    </properties>
@@ -78,10 +77,10 @@
   <object type="ObjectTrigger" x="0" y="528" width="16" height="16">
    <properties>
     <property name="notification" value="DeadlyTrap"/>
-    <property name="notifyRepeatedly" value="YES"/>
+    <property name="onlyOnce" value="NO"/>
    </properties>
   </object>
-  <object type="Emitter" x="192" y="464" width="16" height="16">
+  <object type="Emitter" x="208" y="432" width="16" height="16">
    <properties>
     <property name="emitterFile" value="playerdeath.sks"/>
    </properties>

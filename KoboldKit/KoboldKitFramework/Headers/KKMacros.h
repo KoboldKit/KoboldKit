@@ -66,4 +66,12 @@
 #define KKRANDOM_MINUS1_1()              ((random() / (float)0x3fffffff) - 1.0f)
 #define KKRANDOM_0_1()                   ((random() / (float)0x7fffffff))
 
+
+#define SUPPRESS_PERFORM_SELECTOR_LEAK_WARNING(code)                        \
+_Pragma("clang diagnostic push")                                        \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")     \
+code;                                                                   \
+_Pragma("clang diagnostic pop")                                         \
+
+
 #endif

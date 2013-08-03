@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="60" height="40" tilewidth="16" tileheight="16" backgroundcolor="#ffffff">
  <properties>
   <property name="physicsGravityY" value="-9.81"/>
@@ -13,19 +14,12 @@
    eJztl0EKwCAMBH1Bb/3/V3sxoFJRSzRpdgc8CEV3cC2YEiGEEI/ceVx5yDwqaL6tp8yjguYroPRZQPNF6zOaL1qf0XzR+ozmi9ZnNF/vfe69a1bnvfW8oe176t2glfvrHNV39ru/eo7ub3Rf6xzafR3hJe8pX+uc2n2lb411Tt7fPecqeMm9+1xRfVv3ct03ZvddzXnSs9wTydeS3f8pQiLxADuEMic=
   </data>
  </layer>
- <objectgroup name="spikes" width="60" height="40">
-  <object name="SpikeA01" type="SpikeA" x="576" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="592" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="608" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="624" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="640" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="656" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="672" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="736" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="752" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="704" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="688" y="576" width="16" height="16"/>
-  <object name="SpikeA01" type="SpikeA" x="720" y="576" width="16" height="16"/>
+ <objectgroup draworder="topdown" name="spikes" width="60" height="40">
+  <object name="SpikeA01" type="ObjectTrigger" x="576" y="576" width="192" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="mainlayer" width="60" height="40">
   <properties>
@@ -35,7 +29,7 @@
    eJztmN0KgzAMhaNj8+dqPoB7/8dUEJmE2KZuGDyeD85dlH5NsZhORDqVXnDRrvTFgr7Yvm8jQ+iKCCHEpp7ziF7EiaDfPxr6YkNfbOiLDX2xoS829MWGvthE+z7nvFSaH95XyfJPv5do33/Tij1jvsq8ubT/V/cthb6Yvut36iP38PX09a6+o3zvJ2sWre+01Ly6ctYdrd973nOOvb3We5c6D62z7mh9bm2l2fZ6jd47q8aqTdVZ9RG+kfHsT64XuRBsJpGICxk=
   </data>
  </layer>
- <objectgroup name="game objects" width="60" height="40">
+ <objectgroup draworder="topdown" name="game objects" width="60" height="40">
   <object name="player" type="Player" x="776" y="480" width="16" height="32"/>
  </objectgroup>
 </map>
