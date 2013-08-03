@@ -12,7 +12,7 @@
 
 @implementation GameScene
 
--(id)initWithSize:(CGSize)size
+-(id) initWithSize:(CGSize)size
 {
     if (self = [super initWithSize:size])
 	{
@@ -37,7 +37,7 @@
 {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:@"LoadMap" object:nil];
 
-	GameScene* newScene = [GameScene node];
+	GameScene* newScene = [GameScene sceneWithSize:self.size];
 	newScene.tmxFile = ((SKNode*)notification.object).name;
 	[self.scene.view presentScene:newScene transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]];
 }

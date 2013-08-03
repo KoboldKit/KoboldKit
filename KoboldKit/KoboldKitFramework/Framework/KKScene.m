@@ -31,9 +31,16 @@ KKNODE_SHARED_CODE
 
 -(id) init
 {
-	self = [super init];
+#if TARGET_OS_IPHONE
+	CGSize windowSize = [UIApplication sharedApplication].keyWindow.frame.size;
+#else
+	CGSize windowSize = [NSApplication sharedApplication].keyWindow.frame.size;
+#endif
+	
+	self = [super initWithSize:windowSize];
 	if (self)
 	{
+		NSLog(@"WARNING: scene (%@) created without specifying size. Using window size: {%.0f, %.0f}. Use sceneWithSize: initializer to prevent this warning.", self, windowSize.width, windowSize.height);
 		[self initDefaults];
 	}
 	return self;

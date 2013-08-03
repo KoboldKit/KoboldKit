@@ -57,21 +57,6 @@
 	}
 	
 	[self addChild:_playerSprite];
-
-	LOG_EXPR(playerSize);
-	LOG_EXPR(self.physicsBody.allowsRotation);
-	LOG_EXPR(self.physicsBody.angularDamping);
-	LOG_EXPR(self.physicsBody.linearDamping);
-	LOG_EXPR(self.physicsBody.friction);
-	LOG_EXPR(self.physicsBody.mass);
-	LOG_EXPR(self.physicsBody.density);
-	LOG_EXPR(self.physicsBody.restitution);
-	LOG_EXPR(self.physicsBody.area);
-	LOG_EXPR(_jumpSpeedInitial);
-	LOG_EXPR(_jumpSpeedDeceleration);
-	LOG_EXPR(_fallSpeedAcceleration);
-	LOG_EXPR(_fallSpeedLimit);
-	LOG_EXPR(_runSpeedAcceleration);
 }
 
 -(void) controlPadDidChangeDirection:(NSNotification*)note
