@@ -71,7 +71,7 @@ local objectTypes =
 			_runSpeedAcceleration = 0,		-- how fast player accelerates sideways (0 = instant)
 			_runSpeedDeceleration = 0,		-- how fast player decelerates sideways (0 = instant)
 			_runSpeedLimit = 200,			-- max sideways running speed
-			_boundingBox = "{12, 28}",
+			_boundingBox = "{14, 24}",
 			
 			_defaultImage = "dummy_stickman.png",
 		},
@@ -137,6 +137,15 @@ local objectTypes =
 		{
 			name = "briefcase",
 			imageName = "dummy_case.png",
+		},
+	},
+
+	SpikeA =
+	{
+		inheritsFrom = "ObjectImage",
+		properties =
+		{
+			imageName = "trap_spike01.png",
 		},
 	},
 	
