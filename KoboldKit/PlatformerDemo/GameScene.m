@@ -48,10 +48,19 @@
 	[_playerCharacter die];
 }
 
+-(void) checkpointActivated:(NSNotification*)notification
+{
+	LOG_EXPR(notification.object);
+	LOG_EXPR([notification.object class]);
+	
+	[_playerCharacter setCheckpointWithNode:notification.object];
+}
+
 -(void) didMoveToView:(SKView *)view
 {
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadMapNotification:) name:@"LoadMap" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerDidStepInDeadlyTrap:) name:@"DeadlyTrap" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkpointActivated:) name:@"CheckpointActivated" object:nil];
 
 	// always call super in "event" methods of KKScene subclasses
 	[super didMoveToView:view];

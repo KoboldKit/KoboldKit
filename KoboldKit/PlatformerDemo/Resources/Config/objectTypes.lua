@@ -2,6 +2,7 @@
 -- Defines names of objects in Tileds to determine which ObjC classes to create
 -- and which properties/ivars to set on these classes.
 
+local kContactCategoryWorld = 0
 local kContactCategoryPlayer = 1
 local kContactCategoryPickupItem = 2
 local kContactCategoryTrigger = 4
@@ -39,6 +40,24 @@ local objectTypes =
 		properties =
 		{
 			onlyOnce = YES,
+		},
+	},
+	
+	Checkpoint =
+	{
+		inheritsFrom = "SpriteNode",
+		physicsBody =
+		{
+			properties =
+			{
+				categoryBitMask = kContactCategoryTrigger,
+				contactTestBitMask = kContactCategoryPlayer,
+				dynamic = NO,
+			},
+		},
+		behaviors =
+		{
+			{className = "KKNotifyOnContactBehavior", properties = {notification = "CheckpointActivated"}},
 		},
 	},
 	

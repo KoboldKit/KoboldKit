@@ -15,6 +15,7 @@
 	KKSpriteNode* _playerSprite;
 
 	// these values are Tiled-editable via properties of the same name
+	CGPoint _respawnPosition;
 	CGPoint _currentControlPadDirection;
 	CGSize _boundingBox;
 	CGFloat _jumpSpeedInitial;
@@ -49,5 +50,6 @@
 -(void) jumpButtonReleased:(NSNotification*)note;
 
 -(void) die;
+-(void) setCheckpointWithNode:(SKNode*)checkpointNode;
 
 @end

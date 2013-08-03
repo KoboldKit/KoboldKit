@@ -153,6 +153,9 @@
 		DC71017C17AAD22600F95BAD /* KKItemCollectorBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71017A17AAD22600F95BAD /* KKItemCollectorBehavior.h */; };
 		DC71017D17AAD22600F95BAD /* KKItemCollectorBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */; };
 		DC71017E17AAD22600F95BAD /* KKItemCollectorBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */; };
+		DC7EF8E317AD92B200831FEB /* KKNotifyOnContactBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7EF8E117AD92B200831FEB /* KKNotifyOnContactBehavior.h */; };
+		DC7EF8E417AD92B200831FEB /* KKNotifyOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */; };
+		DC7EF8E517AD92B200831FEB /* KKNotifyOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */; };
 		DC8EED1E17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DC8EED1F17A40788000C1995 /* objectTypes.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTypes.lua */; };
 		DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */; };
@@ -404,6 +407,8 @@
 		DC71017617AACFB600F95BAD /* KKPickupItemBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPickupItemBehavior.m; sourceTree = "<group>"; };
 		DC71017A17AAD22600F95BAD /* KKItemCollectorBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKItemCollectorBehavior.h; sourceTree = "<group>"; };
 		DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKItemCollectorBehavior.m; sourceTree = "<group>"; };
+		DC7EF8E117AD92B200831FEB /* KKNotifyOnContactBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNotifyOnContactBehavior.h; sourceTree = "<group>"; };
+		DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNotifyOnContactBehavior.m; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8EED1D17A40788000C1995 /* objectTypes.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTypes.lua; sourceTree = "<group>"; };
@@ -934,6 +939,8 @@
 				DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */,
 				DC5D4ACE17AC131300CF69EB /* KKNotifyOnItemCountBehavior.h */,
 				DC5D4ACF17AC131300CF69EB /* KKNotifyOnItemCountBehavior.m */,
+				DC7EF8E117AD92B200831FEB /* KKNotifyOnContactBehavior.h */,
+				DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */,
 				DC5D4AD317AC164700CF69EB /* KKRemoveOnNotificationBehavior.h */,
 				DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */,
 			);
@@ -1207,6 +1214,7 @@
 				DC5D4ADB17AC4A7400CF69EB /* KKContactNotificationNode.h in Headers */,
 				DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */,
 				DC71017217AABDF200F95BAD /* KKNodeShared.h in Headers */,
+				DC7EF8E317AD92B200831FEB /* KKNotifyOnContactBehavior.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1404,6 +1412,7 @@
 				DC484CC1178C43690067DAA4 /* ldo.c in Sources */,
 				DC484CC2178C43690067DAA4 /* ldump.c in Sources */,
 				DC484CC3178C43690067DAA4 /* lfunc.c in Sources */,
+				DC7EF8E517AD92B200831FEB /* KKNotifyOnContactBehavior.m in Sources */,
 				DC71016F17AABD6D00F95BAD /* KKLabelNode.m in Sources */,
 				DC484CC4178C43690067DAA4 /* lgc.c in Sources */,
 				DC484CC5178C43690067DAA4 /* linit.c in Sources */,
@@ -1504,6 +1513,7 @@
 				DCD7A27A178C7453004A0467 /* loadlib.c in Sources */,
 				DCD7A27B178C7453004A0467 /* lobject.c in Sources */,
 				DCD7A27C178C7453004A0467 /* lopcodes.c in Sources */,
+				DC7EF8E417AD92B200831FEB /* KKNotifyOnContactBehavior.m in Sources */,
 				DC71016E17AABD6D00F95BAD /* KKLabelNode.m in Sources */,
 				DCD7A27D178C7453004A0467 /* loslib.c in Sources */,
 				DCD7A27E178C7453004A0467 /* lparser.c in Sources */,

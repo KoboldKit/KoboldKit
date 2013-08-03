@@ -38,7 +38,7 @@
   </data>
  </layer>
  <objectgroup draworder="topdown" name="game objects" width="60" height="40">
-  <object name="player" type="Player" x="336" y="400" width="16" height="32"/>
+  <object name="player" type="Player" x="336" y="512" width="16" height="32"/>
   <object name="koffer" type="Briefcase" x="144" y="512" width="16" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
@@ -80,10 +80,11 @@
     <property name="onlyOnce" value="NO"/>
    </properties>
   </object>
-  <object type="Emitter" x="208" y="432" width="16" height="16">
+  <object type="Emitter" x="400" y="528" width="16" height="16">
    <properties>
     <property name="emitterFile" value="playerdeath.sks"/>
    </properties>
   </object>
+  <object name="checkpointA1" type="Checkpoint" x="96" y="464" width="16" height="32"/>
  </objectgroup>
 </map>

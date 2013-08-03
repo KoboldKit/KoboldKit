@@ -18,6 +18,7 @@
 -(void) nodeDidSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject
 {
 	_tilemapPlayerObject = tilemapObject;
+	_respawnPosition = self.position;
 	[self setupPlayerSprite];
 	
 	// 1st parent = object layer node, 2nd parent = tile layer node, 3rd parent = tilemap node
@@ -60,14 +61,19 @@
 	[self addChild:_playerSprite];
 }
 
+-(void) setCheckpointWithNode:(SKNode*)checkpointNode
+{
+	_respawnPosition = checkpointNode.position;
+	LOG_EXPR(_respawnPosition);
+}
+
 -(void) respawn
 {
 	_playerSprite.alpha = 1.0;
 	self.alpha = 1.0;
 	[self observeSceneEvents];
 	
-	self.position = CGPointMake(_tilemapPlayerObject.position.x + _playerSprite.size.width / 2.0,
-								_tilemapPlayerObject.position.y + _playerSprite.size.height / 2.0);
+	self.position = _respawnPosition;
 }
 
 -(void) die
@@ -239,12 +245,15 @@
 	// find body below player
 	SKPhysicsWorld* physicsWorld = self.scene.physicsWorld;
 	[physicsWorld enumerateBodiesAlongRayStart:rayStart end:rayEnd usingBlock:^(SKPhysicsBody *body, CGPoint point, CGPoint normal, BOOL *stop) {
-		_onFloor = YES;
-		
-		// force the player at the same y coord on the floor (they physics engine will force the player back up to the edge)
-		CGPoint pos = self.position;
-		pos.y -= 2.0;
-		self.position = pos;
+		if (body.contactTestBitMask == 0)
+		{
+			_onFloor = YES;
+			
+			// force the player at the same y coord on the floor (they physics engine will force the player back up to the edge)
+			point.y += _playerSprite.size.height / 2.0;
+			self.position = point;
+			*stop = YES;
+		}
 	}];
 }
 
