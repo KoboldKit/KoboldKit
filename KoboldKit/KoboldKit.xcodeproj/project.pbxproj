@@ -535,6 +535,7 @@
 		DCD7EC52178C57FC00BBAFB0 /* PlatformerDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlatformerDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB338A178D808400C13739 /* PlayerCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCharacter.h; sourceTree = "<group>"; };
 		DCDB338B178D808400C13739 /* PlayerCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCharacter.m; sourceTree = "<group>"; };
+		DCDB506817AD1D2400AABEA1 /* KKTilemapObjectSpawnDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTilemapObjectSpawnDelegate.h; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -601,6 +602,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC04802617AD1E1B002EBD1E /* Controller, Model, Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CFD2C1774CAE2004C981A /* Prefab Behaviors */,
+				DC9CFD0B1774CA5B004C981A /* KKModel.h */,
+				DC9CFD0C1774CA5B004C981A /* KKModel.m */,
+				DC9CFD091774CA5B004C981A /* KKNodeController.h */,
+				DC9CFD0A1774CA5B004C981A /* KKNodeController.m */,
+				DC9CFD071774CA5B004C981A /* KKBehavior.h */,
+				DC9CFD081774CA5B004C981A /* KKBehavior.m */,
+			);
+			name = "Controller, Model, Behaviors";
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		DC18B09E178C7BC400641A6D /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -688,6 +704,7 @@
 		DC4DE8EF176C9E2B003E4087 /* Tilemap */ = {
 			isa = PBXGroup;
 			children = (
+				DCDB506817AD1D2400AABEA1 /* KKTilemapObjectSpawnDelegate.h */,
 				DCB76E57178CB19C0047B4EC /* KKTilemapNode.h */,
 				DCB76E58178CB19C0047B4EC /* KKTilemapNode.m */,
 				DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */,
@@ -877,20 +894,14 @@
 				DC5D4AD817AC4A2800CF69EB /* unused */,
 				DC484BBE178C34720067DAA4 /* AppDelegate & Principal Class */,
 				DC71016517AABD2B00F95BAD /* View & Controller */,
-				DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */,
 				DCB087D6177B2F57004182E4 /* Sprite Kit Categories */,
 				DCB087EC177BAC3F004182E4 /* Sprite Kit Node Subclasses */,
-				DC9CFD0B1774CA5B004C981A /* KKModel.h */,
-				DC9CFD0C1774CA5B004C981A /* KKModel.m */,
-				DC9CFD091774CA5B004C981A /* KKNodeController.h */,
-				DC9CFD0A1774CA5B004C981A /* KKNodeController.m */,
-				DC9CFD071774CA5B004C981A /* KKBehavior.h */,
-				DC9CFD081774CA5B004C981A /* KKBehavior.m */,
+				DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
 		};
-		DC9CFD2C1774CAE2004C981A /* Behaviors */ = {
+		DC9CFD2C1774CAE2004C981A /* Prefab Behaviors */ = {
 			isa = PBXGroup;
 			children = (
 				DC9CFD2D1774CAE2004C981A /* KKButtonBehavior.h */,
@@ -916,7 +927,8 @@
 				DC5D4AD317AC164700CF69EB /* KKRemoveOnNotificationBehavior.h */,
 				DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */,
 			);
-			path = Behaviors;
+			name = "Prefab Behaviors";
+			path = ../Behaviors;
 			sourceTree = "<group>";
 		};
 		DC9CFD421774CBE1004C981A /* Headers */ = {
@@ -957,12 +969,12 @@
 			children = (
 				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
 				DC2DD46817ABEE3C000351BE /* KKPhysicsContactEventDelegate.h */,
+				DC9CFD151774CA84004C981A /* KKScene.h */,
+				DC9CFD161774CA84004C981A /* KKScene.m */,
 				DC71017017AABDF200F95BAD /* KKNodeShared.h */,
 				DC71017117AABDF200F95BAD /* KKNodeShared.m */,
 				DC9CFD131774CA84004C981A /* KKNode.h */,
 				DC9CFD141774CA84004C981A /* KKNode.m */,
-				DC9CFD151774CA84004C981A /* KKScene.h */,
-				DC9CFD161774CA84004C981A /* KKScene.m */,
 				DC71016617AABD5B00F95BAD /* KKSpriteNode.h */,
 				DC71016717AABD5B00F95BAD /* KKSpriteNode.m */,
 				DC71016B17AABD6D00F95BAD /* KKLabelNode.h */,
@@ -1078,7 +1090,7 @@
 				DC484CE2178C44750067DAA4 /* KoboldKit-Prefix.pch */,
 				DC9CFD421774CBE1004C981A /* Headers */,
 				DC9CFD061774CA5B004C981A /* Framework */,
-				DC9CFD2C1774CAE2004C981A /* Behaviors */,
+				DC04802617AD1E1B002EBD1E /* Controller, Model, Behaviors */,
 				DC4DE8EF176C9E2B003E4087 /* Tilemap */,
 				DC4DE91E176CA25F003E4087 /* Addons */,
 				DCDD2E2B176A40C400F307CD /* External */,

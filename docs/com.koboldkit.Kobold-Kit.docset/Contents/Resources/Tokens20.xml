@@ -46,6 +46,17 @@ Useful to store automatically NSCoding/NSCopying conformant values to any node w
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKModel/model</TokenIdentifier>
+			<Abstract type="html">A new instance.</Abstract>
+			<DeclaredIn>KKModel.h</DeclaredIn>			
+			
+			<Declaration>+ (id)model</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKModel/setBool:forKey:</TokenIdentifier>
 			<Abstract type="html">Set value of the given type for key. Value is mutable, it is not an NSNumber to avoid alloc/dealloc for every set.</Abstract>
 			<DeclaredIn>KKModel.h</DeclaredIn>			

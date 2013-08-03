@@ -1,404 +1,423 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/XMLWriter.html">
+	<File path="Classes/KKView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/XMLWriter</TokenIdentifier>
-			<Abstract type="html">XMLWriter writes XML files. Mainly used for iOS since there is no built-in XML writer API for iOS. See: https://code.google.com/p/xswi/w/list</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKView</TokenIdentifier>
+			<Abstract type="html">Kobold Kit apps use KKView as their view. It provides additional features like the ability to push &amp; pop scenes.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
 			<NodeRef refid="48"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setIndentation:</TokenIdentifier>
-			<Abstract type="html">XML indentation string</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setSceneStack:</TokenIdentifier>
+			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, retain, readwrite) NSString *indentation</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
 			
-			<ReturnValue><Abstract type="html">XML indentation string</Abstract></ReturnValue>
-			<Anchor>//api/name/indentation</Anchor>
+			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
+			<Anchor>//api/name/sceneStack</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/indentation</TokenIdentifier>
-			<Abstract type="html">XML indentation string</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/sceneStack</TokenIdentifier>
+			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, retain, readwrite) NSString *indentation</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
 			
-			<ReturnValue><Abstract type="html">XML indentation string</Abstract></ReturnValue>
-			<Anchor>//api/name/indentation</Anchor>
+			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
+			<Anchor>//api/name/sceneStack</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/XMLWriter/indentation</TokenIdentifier>
-			<Abstract type="html">XML indentation string</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/sceneStack</TokenIdentifier>
+			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, retain, readwrite) NSString *indentation</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
 			
-			<ReturnValue><Abstract type="html">XML indentation string</Abstract></ReturnValue>
-			<Anchor>//api/name/indentation</Anchor>
+			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
+			<Anchor>//api/name/sceneStack</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setLineBreak:</TokenIdentifier>
-			<Abstract type="html">lineBreak string</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setModel:</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, retain, readwrite) NSString *lineBreak</Declaration>
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
 			
-			<ReturnValue><Abstract type="html">lineBreak string</Abstract></ReturnValue>
-			<Anchor>//api/name/lineBreak</Anchor>
+			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/lineBreak</TokenIdentifier>
-			<Abstract type="html">lineBreak string</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/model</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, retain, readwrite) NSString *lineBreak</Declaration>
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
 			
-			<ReturnValue><Abstract type="html">lineBreak string</Abstract></ReturnValue>
-			<Anchor>//api/name/lineBreak</Anchor>
+			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/XMLWriter/lineBreak</TokenIdentifier>
-			<Abstract type="html">lineBreak string</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/model</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, retain, readwrite) NSString *lineBreak</Declaration>
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
 			
-			<ReturnValue><Abstract type="html">lineBreak string</Abstract></ReturnValue>
-			<Anchor>//api/name/lineBreak</Anchor>
+			<ReturnValue><Abstract type="html">The view's model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setAutomaticEmptyElements:</TokenIdentifier>
-			<Abstract type="html">automatic empty elements</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsPhysicsShapes:</TokenIdentifier>
+			<Abstract type="html">If YES, will render physics shape outlines.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, assign, readwrite) BOOL automaticEmptyElements</Declaration>
+			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
 			
-			<ReturnValue><Abstract type="html">automatic empty elements</Abstract></ReturnValue>
-			<Anchor>//api/name/automaticEmptyElements</Anchor>
+			
+			<Anchor>//api/name/showsPhysicsShapes</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/automaticEmptyElements</TokenIdentifier>
-			<Abstract type="html">automatic empty elements</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsPhysicsShapes</TokenIdentifier>
+			<Abstract type="html">If YES, will render physics shape outlines.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, assign, readwrite) BOOL automaticEmptyElements</Declaration>
+			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
 			
-			<ReturnValue><Abstract type="html">automatic empty elements</Abstract></ReturnValue>
-			<Anchor>//api/name/automaticEmptyElements</Anchor>
+			
+			<Anchor>//api/name/showsPhysicsShapes</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/XMLWriter/automaticEmptyElements</TokenIdentifier>
-			<Abstract type="html">automatic empty elements</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsPhysicsShapes</TokenIdentifier>
+			<Abstract type="html">If YES, will render physics shape outlines.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, assign, readwrite) BOOL automaticEmptyElements</Declaration>
+			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
 			
-			<ReturnValue><Abstract type="html">automatic empty elements</Abstract></ReturnValue>
-			<Anchor>//api/name/automaticEmptyElements</Anchor>
+			
+			<Anchor>//api/name/showsPhysicsShapes</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setLevel:</TokenIdentifier>
-			<Abstract type="html">indentation level</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsNodeFrames:</TokenIdentifier>
+			<Abstract type="html">If YES, will render node outlines according to their frame property.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) int level</Declaration>
+			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
 			
-			<ReturnValue><Abstract type="html">indentation level</Abstract></ReturnValue>
-			<Anchor>//api/name/level</Anchor>
+			
+			<Anchor>//api/name/showsNodeFrames</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/level</TokenIdentifier>
-			<Abstract type="html">indentation level</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsNodeFrames</TokenIdentifier>
+			<Abstract type="html">If YES, will render node outlines according to their frame property.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) int level</Declaration>
+			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
 			
-			<ReturnValue><Abstract type="html">indentation level</Abstract></ReturnValue>
-			<Anchor>//api/name/level</Anchor>
+			
+			<Anchor>//api/name/showsNodeFrames</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/XMLWriter/level</TokenIdentifier>
-			<Abstract type="html">indentation level</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsNodeFrames</TokenIdentifier>
+			<Abstract type="html">If YES, will render node outlines according to their frame property.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) int level</Declaration>
+			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
 			
-			<ReturnValue><Abstract type="html">indentation level</Abstract></ReturnValue>
-			<Anchor>//api/name/level</Anchor>
+			
+			<Anchor>//api/name/showsNodeFrames</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeLinebreak</TokenIdentifier>
-			<Abstract type="html">helpful for formatting, special needs
-write linebreak, if any</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsNodeAnchorPoints:</TokenIdentifier>
+			<Abstract type="html">If YES, will render a dot on the node's position.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeLinebreak</Declaration>
+			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
 			
 			
-			<Anchor>//api/name/writeLinebreak</Anchor>
+			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeIndentation</TokenIdentifier>
-			<Abstract type="html">write indentation, if any</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsNodeAnchorPoints</TokenIdentifier>
+			<Abstract type="html">If YES, will render a dot on the node's position.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeIndentation</Declaration>
+			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
 			
 			
-			<Anchor>//api/name/writeIndentation</Anchor>
+			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeCloseStartElement</TokenIdentifier>
-			<Abstract type="html">write end of start element, so that the start tag is complete</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsNodeAnchorPoints</TokenIdentifier>
+			<Abstract type="html">If YES, will render a dot on the node's position.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeCloseStartElement</Declaration>
+			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
 			
 			
-			<Anchor>//api/name/writeCloseStartElement</Anchor>
+			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeNamespaceAttributes</TokenIdentifier>
-			<Abstract type="html">write any outstanding namespace declaration attributes in a start element</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsPhysicsShapes</TokenIdentifier>
+			<Abstract type="html">Whether physics shape outlines are drawn.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeNamespaceAttributes</Declaration>
+			<Declaration>+ (BOOL)showsPhysicsShapes</Declaration>
 			
-			
-			<Anchor>//api/name/writeNamespaceAttributes</Anchor>
+			<ReturnValue><Abstract type="html">Whether physics shape outlines are drawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/showsPhysicsShapes</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeEscape:</TokenIdentifier>
-			<Abstract type="html">write escaped text to the stream</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsNodeFrames</TokenIdentifier>
+			<Abstract type="html">Whether node frame outlines are drawn.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEscape:(NSString *)value</Declaration>
+			<Declaration>+ (BOOL)showsNodeFrames</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether node frame outlines are drawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/showsNodeFrames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsNodeAnchorPoints</TokenIdentifier>
+			<Abstract type="html">Whether node positions are drawn.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)showsNodeAnchorPoints</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether node positions are drawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:</TokenIdentifier>
+			<Abstract type="html">Presents a scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)presentScene:(SKScene *)scene</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>value</Name>
-					<Abstract type="html">The escaped string.</Abstract>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeEscape:</Anchor>
+			<Anchor>//api/name/presentScene:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/write:</TokenIdentifier>
-			<Abstract type="html">wrote unescaped text to the stream</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:transition:</TokenIdentifier>
+			<Abstract type="html">Presents a scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)write:(NSString *)value</Declaration>
+			<Declaration>- (void)presentScene:(SKScene *)scene transition:(SKTransition *)transition</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>value</Name>
-					<Abstract type="html">The unescaped string.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/write:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setPrefix:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">set a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
-			
-			<Declaration>- (void)setPrefix:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
 				</Parameter><Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setPrefix:namespaceURI:</Anchor>
+			<Anchor>//api/name/presentScene:transition:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/getPrefix:</TokenIdentifier>
-			<Abstract type="html">The namespace prefix.</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:unwindStack:</TokenIdentifier>
+			<Abstract type="html">Presents a scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)getPrefix:(NSString *)namespaceURI</Declaration>
+			<Declaration>- (void)presentScene:(KKScene *)scene unwindStack:(BOOL)unwindStack</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The namespace prefix.</Abstract></ReturnValue>
-			<Anchor>//api/name/getPrefix:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeStartElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
-			
-			<Declaration>- (void)writeStartElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
 				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
+					<Name>unwindStack</Name>
+					<Abstract type="html">If YES removes all scenes from the stack before adding the new scene.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeStartElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/presentScene:unwindStack:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeEndElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:transition:unwindStack:</TokenIdentifier>
+			<Abstract type="html">Presents a scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEndElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>- (void)presentScene:(KKScene *)scene transition:(KKTransition *)transition unwindStack:(BOOL)unwindStack</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
 				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeEndElementWithNamespace:localName:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeEmptyElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
-			
-			<Declaration>- (void)writeEmptyElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
 				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
+					<Name>unwindStack</Name>
+					<Abstract type="html">If YES removes all scenes from the stack before adding the new scene.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeEmptyElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/presentScene:transition:unwindStack:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeAttributeWithNamespace:localName:value:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/pushScene:</TokenIdentifier>
+			<Abstract type="html">Presents a scene, suspends the currently presented scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeAttributeWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName value:(NSString *)value</Declaration>
+			<Declaration>- (void)pushScene:(KKScene *)scene</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pushScene:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/pushScene:transition:</TokenIdentifier>
+			<Abstract type="html">Presents a scene, suspends the currently presented scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)pushScene:(KKScene *)scene transition:(KKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
 				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The attribute name.</Abstract>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pushScene:transition:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popScene</TokenIdentifier>
+			<Abstract type="html">Pops the topmost scene from the stack and presents the new topmost scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)popScene</Declaration>
+			
+			
+			<Anchor>//api/name/popScene</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popSceneWithTransition:</TokenIdentifier>
+			<Abstract type="html">Pops the topmost scene from the stack and presents the new topmost scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)popSceneWithTransition:(KKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/popSceneWithTransition:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToRootScene</TokenIdentifier>
+			<Abstract type="html">Pops all scenes from the stack except for the root scene, then presents the root scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)popToRootScene</Declaration>
+			
+			
+			<Anchor>//api/name/popToRootScene</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToRootSceneWithTransition:</TokenIdentifier>
+			<Abstract type="html">Pops all scenes from the stack except for the root scene, then presents the root scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)popToRootSceneWithTransition:(KKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/popToRootSceneWithTransition:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToSceneNamed:</TokenIdentifier>
+			<Abstract type="html">Searches for the first scene with the given name in the scene stack and presents it.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)popToSceneNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of a scene on the stack to be presented.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/popToSceneNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToSceneNamed:transition:</TokenIdentifier>
+			<Abstract type="html">Searches for the first scene with the given name in the scene stack and presents it.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
+			
+			<Declaration>- (void)popToSceneNamed:(NSString *)name transition:(KKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of a scene on the stack to be presented.</Abstract>
 				</Parameter><Parameter>
-					<Name>value</Name>
-					<Abstract type="html">The attribute value.</Abstract>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeAttributeWithNamespace:localName:value:</Anchor>
+			<Anchor>//api/name/popToSceneNamed:transition:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/setDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">set the default namespace (empty prefix)</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/reloadConfig</TokenIdentifier>
+			<Abstract type="html">Reloads the config files, replacing the existing "config" and "devconfig" entries in the model.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>			
 			
-			<Declaration>- (void)setDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)reloadConfig</Declaration>
 			
-			<Anchor>//api/name/setDefaultNamespace:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeNamespace:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">write (and set) a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
 			
-			<Declaration>- (void)writeNamespace:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter><Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeNamespace:namespaceURI:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/writeDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">write (and set) the default namespace</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
-			
-			<Declaration>- (void)writeDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeDefaultNamespace:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/XMLWriter/getNamespaceURI:</TokenIdentifier>
-			<Abstract type="html">The namespace for the prefix.</Abstract>
-			<DeclaredIn>XMLWriter.m</DeclaredIn>			
-			
-			<Declaration>- (NSString *)getNamespaceURI:(NSString *)prefix</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The namespace for the prefix.</Abstract></ReturnValue>
-			<Anchor>//api/name/getNamespaceURI:</Anchor>
+			<Anchor>//api/name/reloadConfig</Anchor>
 		</Token>
 		
 	</File>

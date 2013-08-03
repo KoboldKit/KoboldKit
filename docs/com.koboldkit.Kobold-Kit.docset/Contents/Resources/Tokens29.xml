@@ -1,581 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemap.html">
+	<File path="Classes/KKScene.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemap</TokenIdentifier>
-			<Abstract type="html">Represents a TMX Tilemap "map", ie global properties. The tilemap is usually created from a TMX file via the parseTMXFile method.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKScene</TokenIdentifier>
+			<Abstract type="html">KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
+dispatches events (input, physics).</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
 			
 			<NodeRef refid="29"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setSize:</TokenIdentifier>
-			<Abstract type="html">The size of the map, in tiles.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/setFrameCount:</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGSize size</Declaration>
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the map, in tiles.</Abstract></ReturnValue>
-			<Anchor>//api/name/size</Anchor>
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/size</TokenIdentifier>
-			<Abstract type="html">The size of the map, in tiles.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/frameCount</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGSize size</Declaration>
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the map, in tiles.</Abstract></ReturnValue>
-			<Anchor>//api/name/size</Anchor>
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/size</TokenIdentifier>
-			<Abstract type="html">The size of the map, in tiles.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKScene/frameCount</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGSize size</Declaration>
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the map, in tiles.</Abstract></ReturnValue>
-			<Anchor>//api/name/size</Anchor>
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setGridSize:</TokenIdentifier>
-			<Abstract type="html">The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/setKkView:</TokenIdentifier>
+			<Abstract type="html">The view cast to a KKView object.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGSize gridSize</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the grid (tiles) in points.</Abstract></ReturnValue>
-			<Anchor>//api/name/gridSize</Anchor>
+			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/gridSize</TokenIdentifier>
-			<Abstract type="html">The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/kkView</TokenIdentifier>
+			<Abstract type="html">The view cast to a KKView object.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGSize gridSize</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the grid (tiles) in points.</Abstract></ReturnValue>
-			<Anchor>//api/name/gridSize</Anchor>
+			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/gridSize</TokenIdentifier>
-			<Abstract type="html">The size of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as "Tile Size".</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKScene/kkView</TokenIdentifier>
+			<Abstract type="html">The view cast to a KKView object.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGSize gridSize</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			<ReturnValue><Abstract type="html">The size of the grid (tiles) in points.</Abstract></ReturnValue>
-			<Anchor>//api/name/gridSize</Anchor>
+			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setLargestTileSize:</TokenIdentifier>
-			<Abstract type="html">This is the tileSize of the tileset with the largest tile size. Will be the same as gridSize for tilemaps whose tilesets all use the same tile size.
-   But if you use tilesets of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
-   tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addSceneEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Adds a scene event observer.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) CGSize largestTileSize</Declaration>
-			
-			<ReturnValue><Abstract type="html">The largest tile size found in the tilesets used by this tilemap.</Abstract></ReturnValue>
-			<Anchor>//api/name/largestTileSize</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/largestTileSize</TokenIdentifier>
-			<Abstract type="html">This is the tileSize of the tileset with the largest tile size. Will be the same as gridSize for tilemaps whose tilesets all use the same tile size.
-   But if you use tilesets of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
-   tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) CGSize largestTileSize</Declaration>
-			
-			<ReturnValue><Abstract type="html">The largest tile size found in the tilesets used by this tilemap.</Abstract></ReturnValue>
-			<Anchor>//api/name/largestTileSize</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/largestTileSize</TokenIdentifier>
-			<Abstract type="html">This is the tileSize of the tileset with the largest tile size. Will be the same as gridSize for tilemaps whose tilesets all use the same tile size.
-   But if you use tilesets of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
-   tiles of all sizes properly appear on the screen and do not "pop in/out" near the screen borders. Valid only after tilesets have loaded their textures.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) CGSize largestTileSize</Declaration>
-			
-			<ReturnValue><Abstract type="html">The largest tile size found in the tilesets used by this tilemap.</Abstract></ReturnValue>
-			<Anchor>//api/name/largestTileSize</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setProperties:</TokenIdentifier>
-			<Abstract type="html">The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
-			
-			<ReturnValue><Abstract type="html">The dictionary of properties.</Abstract></ReturnValue>
-			<Anchor>//api/name/properties</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/properties</TokenIdentifier>
-			<Abstract type="html">The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
-			
-			<ReturnValue><Abstract type="html">The dictionary of properties.</Abstract></ReturnValue>
-			<Anchor>//api/name/properties</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/properties</TokenIdentifier>
-			<Abstract type="html">The map's global properties. Editable in Tiled from the menu: Map -> Map Properties.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
-			
-			<ReturnValue><Abstract type="html">The dictionary of properties.</Abstract></ReturnValue>
-			<Anchor>//api/name/properties</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setOrientation:</TokenIdentifier>
-			<Abstract type="html">The orientiation (type) of tilemap.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKTilemapOrientation orientation</Declaration>
-			
-			<ReturnValue><Abstract type="html">The map's KKTilemapOrientation.</Abstract></ReturnValue>
-			<Anchor>//api/name/orientation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/orientation</TokenIdentifier>
-			<Abstract type="html">The orientiation (type) of tilemap.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKTilemapOrientation orientation</Declaration>
-			
-			<ReturnValue><Abstract type="html">The map's KKTilemapOrientation.</Abstract></ReturnValue>
-			<Anchor>//api/name/orientation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/orientation</TokenIdentifier>
-			<Abstract type="html">The orientiation (type) of tilemap.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKTilemapOrientation orientation</Declaration>
-			
-			<ReturnValue><Abstract type="html">The map's KKTilemapOrientation.</Abstract></ReturnValue>
-			<Anchor>//api/name/orientation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setBackgroundColor:</TokenIdentifier>
-			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) SKColor *backgroundColor</Declaration>
-			
-			<ReturnValue><Abstract type="html">The background color.</Abstract></ReturnValue>
-			<Anchor>//api/name/backgroundColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/backgroundColor</TokenIdentifier>
-			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) SKColor *backgroundColor</Declaration>
-			
-			<ReturnValue><Abstract type="html">The background color.</Abstract></ReturnValue>
-			<Anchor>//api/name/backgroundColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/backgroundColor</TokenIdentifier>
-			<Abstract type="html">The tilemap's background color. Seen only if there are empty tiles on all layers. Defaults to black.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) SKColor *backgroundColor</Declaration>
-			
-			<ReturnValue><Abstract type="html">The background color.</Abstract></ReturnValue>
-			<Anchor>//api/name/backgroundColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setHighestGid:</TokenIdentifier>
-			<Abstract type="html">The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
-   Mainly needed for bounds checks, don't change this value.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) gid_t highestGid</Declaration>
-			
-			<ReturnValue><Abstract type="html">The highest-numbered (theoretical) gid considering all tilesets.</Abstract></ReturnValue>
-			<Anchor>//api/name/highestGid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/highestGid</TokenIdentifier>
-			<Abstract type="html">The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
-   Mainly needed for bounds checks, don't change this value.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) gid_t highestGid</Declaration>
-			
-			<ReturnValue><Abstract type="html">The highest-numbered (theoretical) gid considering all tilesets.</Abstract></ReturnValue>
-			<Anchor>//api/name/highestGid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/highestGid</TokenIdentifier>
-			<Abstract type="html">The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
-   Mainly needed for bounds checks, don't change this value.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) gid_t highestGid</Declaration>
-			
-			<ReturnValue><Abstract type="html">The highest-numbered (theoretical) gid considering all tilesets.</Abstract></ReturnValue>
-			<Anchor>//api/name/highestGid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setIPadScaleFactor:</TokenIdentifier>
-			<Abstract type="html">By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) float iPadScaleFactor</Declaration>
-			
-			<ReturnValue><Abstract type="html">The iPad scale factor.</Abstract></ReturnValue>
-			<Anchor>//api/name/iPadScaleFactor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/iPadScaleFactor</TokenIdentifier>
-			<Abstract type="html">By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) float iPadScaleFactor</Declaration>
-			
-			<ReturnValue><Abstract type="html">The iPad scale factor.</Abstract></ReturnValue>
-			<Anchor>//api/name/iPadScaleFactor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/iPadScaleFactor</TokenIdentifier>
-			<Abstract type="html">By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) float iPadScaleFactor</Declaration>
-			
-			<ReturnValue><Abstract type="html">The iPad scale factor.</Abstract></ReturnValue>
-			<Anchor>//api/name/iPadScaleFactor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setScaleTilesetSpacingAndMargin:</TokenIdentifier>
-			<Abstract type="html">If set to YES, will also scale each tileset's spacing &amp; margin properties. This can be used if you simply upscale an iPhone tileset with an image program,
-   which will also increase any existing spacing &amp; margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
-   atlas files regardless of the contained image's scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
-   neither spacing between tiles nor margin between outermost tiles and texture border.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL scaleTilesetSpacingAndMargin</Declaration>
-			
-			<ReturnValue><Abstract type="html">Whether to also scale up spacing and margin if iPadScaleFactor is > 1.0.</Abstract></ReturnValue>
-			<Anchor>//api/name/scaleTilesetSpacingAndMargin</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/scaleTilesetSpacingAndMargin</TokenIdentifier>
-			<Abstract type="html">If set to YES, will also scale each tileset's spacing &amp; margin properties. This can be used if you simply upscale an iPhone tileset with an image program,
-   which will also increase any existing spacing &amp; margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
-   atlas files regardless of the contained image's scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
-   neither spacing between tiles nor margin between outermost tiles and texture border.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL scaleTilesetSpacingAndMargin</Declaration>
-			
-			<ReturnValue><Abstract type="html">Whether to also scale up spacing and margin if iPadScaleFactor is > 1.0.</Abstract></ReturnValue>
-			<Anchor>//api/name/scaleTilesetSpacingAndMargin</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/scaleTilesetSpacingAndMargin</TokenIdentifier>
-			<Abstract type="html">If set to YES, will also scale each tileset's spacing &amp; margin properties. This can be used if you simply upscale an iPhone tileset with an image program,
-   which will also increase any existing spacing &amp; margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
-   atlas files regardless of the contained image's scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
-   neither spacing between tiles nor margin between outermost tiles and texture border.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL scaleTilesetSpacingAndMargin</Declaration>
-			
-			<ReturnValue><Abstract type="html">Whether to also scale up spacing and margin if iPadScaleFactor is > 1.0.</Abstract></ReturnValue>
-			<Anchor>//api/name/scaleTilesetSpacingAndMargin</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/applyIpadScaleFactor</TokenIdentifier>
-			<Abstract type="html">Applies the iPadScaleFactor property. You only need to call this if you're creating a tilemap from scratch at runtime, after your map was completely
-   set up. And only if you actually use iPadScaleFactor other than the default. </Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>- (void)applyIpadScaleFactor</Declaration>
-			
-			
-			<Anchor>//api/name/applyIpadScaleFactor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemap/tilemapWithContentsOfFile:</TokenIdentifier>
-			<Abstract type="html">Parse and create a KKTilemap from a file. The file must be in TMX format.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>+ (id)tilemapWithContentsOfFile:(NSString *)tmxFile</Declaration>
+			<Declaration>- (void)addSceneEventsObserver:(id)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tmxFile</Name>
-					<Abstract type="html">The name of a TMX file in the bundle, or an absolute path to a TMX file in a non-bundle directory.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance of KTTilemap initialized with the contents of the TMX file.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilemapWithContentsOfFile:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemap/tilemapWithOrientation:mapSize:gridSize:</TokenIdentifier>
-			<Abstract type="html">Creates an empty tilemap. Use this if you want to create your tilemap world entirely in code.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>+ (id)tilemapWithOrientation:(KKTilemapOrientation)orientation mapSize:(CGSize)mapSize gridSize:(CGSize)gridSize</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>orientation</Name>
-					<Abstract type="html">The orientation (type) of tilemap.</Abstract>
-				</Parameter><Parameter>
-					<Name>mapSize</Name>
-					<Abstract type="html">The size of the tilemap, in tiles.</Abstract>
-				</Parameter><Parameter>
-					<Name>gridSize</Name>
-					<Abstract type="html">The grid size (tile size of the tilemap.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new, empty instance of KTTilemap.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilemapWithOrientation:mapSize:gridSize:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/writeToFile:</TokenIdentifier>
-			<Abstract type="html">Writes the tilemap to a file path. The resulting file will be in TMX format.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeToFile:(NSString *)path</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">An absolute path to a file in a writable directory (ie AppData or Documents).</Abstract>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeToFile:</Anchor>
+			<Anchor>//api/name/addSceneEventsObserver:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setTilesets:</TokenIdentifier>
-			<Abstract type="html">List of tilesets (KKTilemapTileset used by this map.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeSceneEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Removes a scene event observer.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSArray *tilesets</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of KTTilemapTileset objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilesets</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/tilesets</TokenIdentifier>
-			<Abstract type="html">List of tilesets (KKTilemapTileset used by this map.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *tilesets</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of KTTilemapTileset objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilesets</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/tilesets</TokenIdentifier>
-			<Abstract type="html">List of tilesets (KKTilemapTileset used by this map.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *tilesets</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of KTTilemapTileset objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilesets</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/addTileset:</TokenIdentifier>
-			<Abstract type="html">Adds a tileset to the list of tilesets. Only needed when creating or changing a tilemap at runtime.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>- (void)addTileset:(KKTilemapTileset *)tileset</Declaration>
+			<Declaration>- (void)removeSceneEventsObserver:(id)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tileset</Name>
-					<Abstract type="html">The tileset to add to the tilemap.</Abstract>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events. </Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addTileset:</Anchor>
+			<Anchor>//api/name/removeSceneEventsObserver:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/tilesetForGid:</TokenIdentifier>
-			<Abstract type="html">Returns the tileset for a specific gid. Mainly to access that tile's properties. Will return nil for invalid gids (gid that points to a non-existing tileset,
-   or if gid is 0).</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addPhysicsContactEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Adds a physics contact event observer.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapTileset *)tilesetForGid:(gid_t)gid</Declaration>
+			<Declaration>- (void)addPhysicsContactEventsObserver:(id&lt;KKPhysicsContactEventDelegate&gt;)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>gid</Name>
-					<Abstract type="html">The GID of a tile.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The tileset the gid is part of, or nil if the GID is out of bounds.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilesetForGid:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/tilesetNamed:</TokenIdentifier>
-			<Abstract type="html">The name of a tileset as displayed in Tiled.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>- (KKTilemapTileset *)tilesetNamed:(NSString *)name</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">The name of a tileset as displayed in Tiled.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the tileset with the given name. Returns nil if there's no tileset with this name.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilesetNamed:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/replaceTileset:withTileset:</TokenIdentifier>
-			<Abstract type="html">Replaces a tileset with another (actually: it creates an alias) so that tiles drawn with the originalTileset will now be drawn using the otherTileset.
-   This can be used to change the atmosphere of the tilemap, perhaps by changing from summer to winter, from "before attack" to "after attack", and so on.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>- (void)replaceTileset:(KKTilemapTileset *)originalTileset withTileset:(KKTilemapTileset *)otherTileset</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>originalTileset</Name>
-					<Abstract type="html">The tileset you want to replace.</Abstract>
-				</Parameter><Parameter>
-					<Name>otherTileset</Name>
-					<Abstract type="html">The tileset you want to replace it with.</Abstract>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/replaceTileset:withTileset:</Anchor>
+			<Anchor>//api/name/addPhysicsContactEventsObserver:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/restoreTileset:</TokenIdentifier>
-			<Abstract type="html">If tileset was replaced with replaceTileset: method, will restore it so that tiles will be drawn from this tileset again.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removePhysicsContactEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Removes a physics contact event observer.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>- (void)restoreTileset:(KKTilemapTileset *)originalTileset</Declaration>
+			<Declaration>- (void)removePhysicsContactEventsObserver:(id&lt;KKPhysicsContactEventDelegate&gt;)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>originalTileset</Name>
-					<Abstract type="html">The tileset to restore.</Abstract>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/restoreTileset:</Anchor>
+			<Anchor>//api/name/removePhysicsContactEventsObserver:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/setLayers:</TokenIdentifier>
-			<Abstract type="html">List of layers (KKTilemapLayer used by this map, in the draw order respectively the reverse order they appear
-in Tiled's Layers list (bottom-most = first, top-most = last).</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addInputEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
+Note: this is a preliminary, inefficient system. It will eventually be replaced.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly) NSArray *layers</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of KTTilemapLayer objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/layers</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/layers</TokenIdentifier>
-			<Abstract type="html">List of layers (KKTilemapLayer used by this map, in the draw order respectively the reverse order they appear
-in Tiled's Layers list (bottom-most = first, top-most = last).</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *layers</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of KTTilemapLayer objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/layers</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemap/layers</TokenIdentifier>
-			<Abstract type="html">List of layers (KKTilemapLayer used by this map, in the draw order respectively the reverse order they appear
-in Tiled's Layers list (bottom-most = first, top-most = last).</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *layers</Declaration>
-			
-			<ReturnValue><Abstract type="html">An array of KTTilemapLayer objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/layers</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/addLayer:</TokenIdentifier>
-			<Abstract type="html">Adds a layer to the list of layers.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
-			
-			<Declaration>- (void)addLayer:(KKTilemapLayer *)layer</Declaration>
+			<Declaration>- (void)addInputEventsObserver:(id)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>layer</Name>
-					<Abstract type="html">The layer to add.</Abstract>
+					<Name>observer</Name>
+					<Abstract type="html">Any object that implements touch, mouse, or other input events.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addLayer:</Anchor>
+			<Anchor>//api/name/addInputEventsObserver:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemap/layerNamed:</TokenIdentifier>
-			<Abstract type="html">The name identifying a layer, as edited in Tiled.</Abstract>
-			<DeclaredIn>KKTilemap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeInputEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Unregisters a class as generic input receiver.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
 			
-			<Declaration>- (KKTilemapLayer *)layerNamed:(NSString *)name</Declaration>
+			<Declaration>- (void)removeInputEventsObserver:(id)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">The name identifying a layer, as edited in Tiled.</Abstract>
+					<Name>observer</Name>
+					<Abstract type="html">An object that was previously registered as input receiver.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The first layer with the given name, or nil if there's no layer with that name. Layer names are case-sensitive!</Abstract></ReturnValue>
-			<Anchor>//api/name/layerNamed:</Anchor>
+			
+			<Anchor>//api/name/removeInputEventsObserver:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/dumpSceneGraph:</TokenIdentifier>
+			<Abstract type="html">Dumps the scene graph to a string.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)dumpSceneGraph:(KKSceneGraphDumpOptions)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Determines what will be included in the dump.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string containing the textual dump of the scene graph.</Abstract></ReturnValue>
+			<Anchor>//api/name/dumpSceneGraph:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/update:</TokenIdentifier>
+			<Abstract type="html">The standard update method.</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>currentTime</Name>
+					<Abstract type="html">The time elapsed since app launch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/update:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didEvaluateActions</TokenIdentifier>
+			<Abstract type="html">Called after actions have been evaluated.</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)didEvaluateActions</Declaration>
+			
+			
+			<Anchor>//api/name/didEvaluateActions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">Called after physics world has been simulated.</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)didSimulatePhysics</Declaration>
+			
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/willMoveFromView:</TokenIdentifier>
+			<Abstract type="html">Called when scene will leave the view.</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)willMoveFromView:(SKView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">The view the scene is leaving. Identical to scene.view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/willMoveFromView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didMoveToView:</TokenIdentifier>
+			<Abstract type="html">Called when scene will attach to a view.</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)didMoveToView:(SKView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">The view the scene is attached to. Identical to scene.view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didMoveToView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didChangeSize:</TokenIdentifier>
+			<Abstract type="html">Called when scene changed its size, ie after rotating or changing views.</Abstract>
+			<DeclaredIn>KKScene.m</DeclaredIn>			
+			
+			<Declaration>- (void)didChangeSize:(CGSize)oldSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>oldSize</Name>
+					<Abstract type="html">The scene's previous size. The scene.size property contains the new size.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didChangeSize:</Anchor>
 		</Token>
 		
 	</File>

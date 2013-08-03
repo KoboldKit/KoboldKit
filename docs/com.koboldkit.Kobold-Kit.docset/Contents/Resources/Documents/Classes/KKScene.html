@@ -53,6 +53,8 @@
 	
 	<option value="//api/name/addInputEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- addInputEventsObserver:</option>
 	
+	<option value="//api/name/addPhysicsContactEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- addPhysicsContactEventsObserver:</option>
+	
 	<option value="//api/name/addSceneEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- addSceneEventsObserver:</option>
 	
 	<option value="//api/name/didChangeSize:">&nbsp;&nbsp;&nbsp;&nbsp;- didChangeSize:</option>
@@ -66,6 +68,8 @@
 	<option value="//api/name/dumpSceneGraph:">&nbsp;&nbsp;&nbsp;&nbsp;- dumpSceneGraph:</option>
 	
 	<option value="//api/name/removeInputEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeInputEventsObserver:</option>
+	
+	<option value="//api/name/removePhysicsContactEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removePhysicsContactEventsObserver:</option>
 	
 	<option value="//api/name/removeSceneEventsObserver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSceneEventsObserver:</option>
 	
@@ -111,6 +115,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addInputEventsObserver:">addInputEventsObserver:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addPhysicsContactEventsObserver:">addPhysicsContactEventsObserver:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSceneEventsObserver:">addSceneEventsObserver:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didChangeSize:">didChangeSize:</a></span></li>
@@ -124,6 +130,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dumpSceneGraph:">dumpSceneGraph:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeInputEventsObserver:">removeInputEventsObserver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removePhysicsContactEventsObserver:">removePhysicsContactEventsObserver:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSceneEventsObserver:">removeSceneEventsObserver:</a></span></li>
 	
@@ -214,6 +222,20 @@ For example this allows you to perform certain actions n frames from now, instea
 	<span class="tooltip">
 		<code><a href="#//api/name/removeSceneEventsObserver:">&ndash;&nbsp;removeSceneEventsObserver:</a></code>
 		<span class="tooltip"><p>Removes a scene event observer.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addPhysicsContactEventsObserver:">&ndash;&nbsp;addPhysicsContactEventsObserver:</a></code>
+		<span class="tooltip"><p>Adds a physics contact event observer.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removePhysicsContactEventsObserver:">&ndash;&nbsp;removePhysicsContactEventsObserver:</a></code>
+		<span class="tooltip"><p>Removes a physics contact event observer.</p></span>
 	</span>
 	
 	
@@ -413,6 +435,50 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 		<dl class="argument-def parameter-def">
 			<dt><em>observer</em></dt>
 			<dd><p>Any object that implements touch, mouse, or other input events.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKScene.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addPhysicsContactEventsObserver:" title="addPhysicsContactEventsObserver:"></a>
+	<h3 class="subsubtitle method-title">addPhysicsContactEventsObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a physics contact event observer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addPhysicsContactEventsObserver:(id&lt;KKPhysicsContactEventDelegate&gt;)<em>observer</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>observer</em></dt>
+			<dd><p>The receiver of scene events.</p></dd>
 		</dl>
 		
 	</div>
@@ -731,6 +797,50 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/removePhysicsContactEventsObserver:" title="removePhysicsContactEventsObserver:"></a>
+	<h3 class="subsubtitle method-title">removePhysicsContactEventsObserver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a physics contact event observer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removePhysicsContactEventsObserver:(id&lt;KKPhysicsContactEventDelegate&gt;)<em>observer</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>observer</em></dt>
+			<dd><p>The receiver of scene events.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKScene.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/removeSceneEventsObserver:" title="removeSceneEventsObserver:"></a>
 	<h3 class="subsubtitle method-title">removeSceneEventsObserver:</h3>
 	
@@ -875,7 +985,7 @@ Note: this is a preliminary, inefficient system. It will eventually be replaced.
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-29)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-03)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

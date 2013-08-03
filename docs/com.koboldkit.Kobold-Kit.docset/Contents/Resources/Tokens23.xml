@@ -279,11 +279,27 @@ also check the controller's paused state to ensure they don't process/forward ev
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorWithClass:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorKindOfClass:</TokenIdentifier>
 			<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
 			<DeclaredIn>KKNodeController.h</DeclaredIn>			
 			
-			<Declaration>- (id)behaviorWithClass:(Class)behaviorClass</Declaration>
+			<Declaration>- (id)behaviorKindOfClass:(Class)behaviorClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behaviorClass</Name>
+					<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The first found behavior being a kind of class or nil if there is no behavior with that class.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviorKindOfClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorMemberOfClass:</TokenIdentifier>
+			<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			
+			<Declaration>- (id)behaviorMemberOfClass:(Class)behaviorClass</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>behaviorClass</Name>
@@ -291,7 +307,7 @@ also check the controller's paused state to ensure they don't process/forward ev
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The first found behavior being a member of the class or nil if there is no behavior with that class.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviorWithClass:</Anchor>
+			<Anchor>//api/name/behaviorMemberOfClass:</Anchor>
 		</Token>
 		
 		<Token>
@@ -365,41 +381,41 @@ also check the controller's paused state to ensure they don't process/forward ev
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/update:</TokenIdentifier>
-			<Abstract type="html">Standard update method.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/didBeginContact:otherBody:</TokenIdentifier>
+			<Abstract type="html">Called when two objects's physics bodies get in contact.</Abstract>
+			<DeclaredIn>KKNodeController.m</DeclaredIn>			
 			
-			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
+			<Declaration>- (void)didBeginContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>currentTime</Name>
-					<Abstract type="html">The time elapsed since app launch.</Abstract>
+					<Name>contact</Name>
+					<Abstract type="html">The contact object.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherBody</Name>
+					<Abstract type="html">The other contacting body.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/update:</Anchor>
+			<Anchor>//api/name/didBeginContact:otherBody:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/didEvaluateActions</TokenIdentifier>
-			<Abstract type="html">Update after actions have been evaluated.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/didEndContact:otherBody:</TokenIdentifier>
+			<Abstract type="html">Called when two objects's physics bodies' contact ends.</Abstract>
+			<DeclaredIn>KKNodeController.m</DeclaredIn>			
 			
-			<Declaration>- (void)didEvaluateActions</Declaration>
+			<Declaration>- (void)didEndContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contact</Name>
+					<Abstract type="html">The contact object.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherBody</Name>
+					<Abstract type="html">The other contacting body.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/didEvaluateActions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">Update after physics world has been simulated.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (void)didSimulatePhysics</Declaration>
-			
-			
-			<Anchor>//api/name/didSimulatePhysics</Anchor>
+			<Anchor>//api/name/didEndContact:otherBody:</Anchor>
 		</Token>
 		
 	</File>

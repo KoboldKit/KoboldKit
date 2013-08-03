@@ -15,12 +15,6 @@
 @class KKTilemapObjectLayerNode;
 @class KKIntegerArray;
 
-@protocol KKTilemapObjectSpawnDelegate <NSObject>
-@optional
--(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject;
--(void) nodeDidSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject;
-@end
-
 /** A tilemap node renders a TMX tilemap. It has KKTilemapTileLayerNode and KKTilempaObjectLayerNode as children
  which perform each layer's rendering. */
 @interface KKTilemapNode : KKNode

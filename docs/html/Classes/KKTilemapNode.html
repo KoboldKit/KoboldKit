@@ -42,6 +42,8 @@
 	
 	<option value="//api/name/bounds">&nbsp;&nbsp;&nbsp;&nbsp;bounds</option>
 	
+	<option value="//api/name/gameObjectsLayerNode">&nbsp;&nbsp;&nbsp;&nbsp;gameObjectsLayerNode</option>
+	
 	<option value="//api/name/mainTileLayerNode">&nbsp;&nbsp;&nbsp;&nbsp;mainTileLayerNode</option>
 	
 	<option value="//api/name/tilemap">&nbsp;&nbsp;&nbsp;&nbsp;tilemap</option>
@@ -68,9 +70,9 @@
 	
 	<option value="//api/name/restrictScrollingToMapBoundary">&nbsp;&nbsp;&nbsp;&nbsp;- restrictScrollingToMapBoundary</option>
 	
-	<option value="//api/name/spawnObjectsWithLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjectsWithLayerNode:</option>
+	<option value="//api/name/spawnObjects">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjects</option>
 	
-	<option value="//api/name/spawnObjectsWithLayerNode:targetLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjectsWithLayerNode:targetLayerNode:</option>
+	<option value="//api/name/spawnObjectsWithLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjectsWithLayerNode:</option>
 	
 	<option value="//api/name/tileLayerNodeNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- tileLayerNodeNamed:</option>
 	
@@ -100,6 +102,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bounds">bounds</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameObjectsLayerNode">gameObjectsLayerNode</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mainTileLayerNode">mainTileLayerNode</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemap">tilemap</a></span></li>
@@ -128,9 +132,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restrictScrollingToMapBoundary">restrictScrollingToMapBoundary</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjectsWithLayerNode:">spawnObjectsWithLayerNode:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjects">spawnObjects</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjectsWithLayerNode:targetLayerNode:">spawnObjectsWithLayerNode:targetLayerNode:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjectsWithLayerNode:">spawnObjectsWithLayerNode:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileLayerNodeNamed:">tileLayerNodeNamed:</a></span></li>
 	
@@ -212,6 +216,13 @@ which perform each layer&rsquo;s rendering.</p>
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/gameObjectsLayerNode">&nbsp;&nbsp;gameObjectsLayerNode</a></code>
+		<span class="tooltip"><p>The game object layer is the object layer where (most) game objects reside. Usually the layer that scrolls parallel to the main tile layer.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/tilemapWithContentsOfFile:">+&nbsp;tilemapWithContentsOfFile:</a></code>
 		<span class="tooltip"><p>Creates a <a href="#//api/name/tilemap">tilemap</a> node from a TMX file.</p></span>
 	</span>
@@ -247,16 +258,16 @@ which perform each layer&rsquo;s rendering.</p>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/spawnObjectsWithLayerNode:">&ndash;&nbsp;spawnObjectsWithLayerNode:</a></code>
-		<span class="tooltip"><p>Spawns the objects of an object layer and adds them as child nodes to the <a href="#//api/name/mainTileLayerNode">mainTileLayerNode</a>.
+		<code><a href="#//api/name/spawnObjects">&ndash;&nbsp;spawnObjects</a></code>
+		<span class="tooltip"><p>Spawns the objects of all object layers and adds them as child nodes to their corresponding objectLayerNode.
 The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/spawnObjectsWithLayerNode:targetLayerNode:">&ndash;&nbsp;spawnObjectsWithLayerNode:targetLayerNode:</a></code>
-		<span class="tooltip"><p>Spawns the objects of an object layer and adds them as child nodes to the target tile layer.
+		<code><a href="#//api/name/spawnObjectsWithLayerNode:">&ndash;&nbsp;spawnObjectsWithLayerNode:</a></code>
+		<span class="tooltip"><p>Spawns the objects of an object layer and adds them as child nodes to the objectLayerNode.
 The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 	</span>
 	
@@ -331,6 +342,45 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/gameObjectsLayerNode" title="gameObjectsLayerNode"></a>
+	<h3 class="subsubtitle method-title">gameObjectsLayerNode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The game object layer is the object layer where (most) game objects reside. Usually the layer that scrolls parallel to the main tile layer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic, weak, readonly) KKTilemapObjectLayerNode *gameObjectsLayerNode</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the &ldquo;game objects&rdquo; object layer node.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/mainTileLayerNode" title="mainTileLayerNode"></a>
 	<h3 class="subsubtitle method-title">mainTileLayerNode</h3>
 	
@@ -341,7 +391,7 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapTileLayerNode *mainTileLayerNode</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, weak, readonly) KKTilemapTileLayerNode *mainTileLayerNode</code></div>
 	
 	
 	
@@ -690,29 +740,19 @@ Call this <em>after</em> setting up any camera follow object.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/spawnObjectsWithLayerNode:" title="spawnObjectsWithLayerNode:"></a>
-	<h3 class="subsubtitle method-title">spawnObjectsWithLayerNode:</h3>
+	<a name="//api/name/spawnObjects" title="spawnObjects"></a>
+	<h3 class="subsubtitle method-title">spawnObjects</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Spawns the objects of an object layer and adds them as child nodes to the <a href="#//api/name/mainTileLayerNode">mainTileLayerNode</a>.
+		<p>Spawns the objects of all object layers and adds them as child nodes to their corresponding objectLayerNode.
 The object&rsquo;s classes and properties are defined in objects.lua.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)spawnObjects</code></div>
 	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>objectLayerNode</em></dt>
-			<dd><p>The object layer node for which to spawn objects.</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
@@ -735,18 +775,18 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/spawnObjectsWithLayerNode:targetLayerNode:" title="spawnObjectsWithLayerNode:targetLayerNode:"></a>
-	<h3 class="subsubtitle method-title">spawnObjectsWithLayerNode:targetLayerNode:</h3>
+	<a name="//api/name/spawnObjectsWithLayerNode:" title="spawnObjectsWithLayerNode:"></a>
+	<h3 class="subsubtitle method-title">spawnObjectsWithLayerNode:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Spawns the objects of an object layer and adds them as child nodes to the target tile layer.
+		<p>Spawns the objects of an object layer and adds them as child nodes to the objectLayerNode.
 The object&rsquo;s classes and properties are defined in objects.lua.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em> targetLayerNode:(KKTilemapTileLayerNode *)<em>targetTileLayerNode</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -755,11 +795,6 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 		<dl class="argument-def parameter-def">
 			<dt><em>objectLayerNode</em></dt>
 			<dd><p>The object layer node for which to spawn objects.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>targetTileLayerNode</em></dt>
-			<dd><p>The tile layer node to which the spawned objects will be added as child nodes.</p></dd>
 		</dl>
 		
 	</div>
@@ -846,7 +881,7 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-29)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-03)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

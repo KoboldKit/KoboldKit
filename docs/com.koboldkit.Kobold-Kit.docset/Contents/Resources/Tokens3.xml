@@ -145,45 +145,6 @@ Behaviors differ from actions in several ways:</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setWantsUpdate:</TokenIdentifier>
-			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
-Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
-			<DeclaredIn>KKBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
-			
-			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
-Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
-			<Anchor>//api/name/wantsUpdate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/wantsUpdate</TokenIdentifier>
-			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
-Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
-			<DeclaredIn>KKBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
-			
-			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
-Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
-			<Anchor>//api/name/wantsUpdate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/wantsUpdate</TokenIdentifier>
-			<Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
-Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract>
-			<DeclaredIn>KKBehavior.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) BOOL wantsUpdate</Declaration>
-			
-			<ReturnValue><Abstract type="html">Whether the behavior wants to receive update/didSimulatePhysics/didEvaluateActions messages.
-Usually set by custom subclasses. Just set wantsUpdate to YES and implement the methods you want called every frame.</Abstract></ReturnValue>
-			<Anchor>//api/name/wantsUpdate</Anchor>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setEnabled:</TokenIdentifier>
 			<Abstract type="html">Whether the behavior is enabled.
 Disabled behaviors don't receive update messages.</Abstract>

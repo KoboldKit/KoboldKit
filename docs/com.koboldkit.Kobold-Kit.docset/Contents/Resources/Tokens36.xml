@@ -1,30 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapObjectLayerNode.html">
+	<File path="Classes/KKTilemapLayerNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObjectLayerNode</TokenIdentifier>
-			<Abstract type="html">Object layer node renders Tiled objects.</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerNode</TokenIdentifier>
+			<Abstract type="html">(not documented) may be removed</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
 			
 			<NodeRef refid="36"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapObjectLayerNode/objectLayerNodeWithLayer:</TokenIdentifier>
-			<Abstract type="html">A tilemap object layer.</Abstract>
-			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setLayer:</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
 			
-			<Declaration>+ (id)objectLayerNodeWithLayer:(KKTilemapLayer *)layer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>layer</Name>
-					<Abstract type="html">A tilemap object layer.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectLayerNodeWithLayer:</Anchor>
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/layer</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/layer</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
 		</Token>
 		
 	</File>

@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTMXReader.html">
+	<File path="Classes/KKRemoveOnContactBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTMXReader</TokenIdentifier>
-			<Abstract type="html">Internal use only. Temporary object that parses a TMX file and creates the KTTilemap hierarchy containing KTTilemapTileset,
-   KTTilemapLayer, KTTilemapLayerTiles and KTTilemapObject. Used by KTTilemap which has its own parseTMX method. Not meant to be subclassed
-   or modified. </Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKRemoveOnContactBehavior</TokenIdentifier>
+			<Abstract type="html">This behavior removes the node when its physicsBody generates a contact event.</Abstract>
+			<DeclaredIn>KKRemoveOnContactBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="27"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTMXReader/loadTMXFile:tilemap:</TokenIdentifier>
-			<Abstract type="html">Internal use only.</Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>			
-			
-			<Declaration>- (void)loadTMXFile:(NSString *)tmxFile tilemap:(KKTilemap *)tilemap</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tmxFile</Name>
-					<Abstract type="html">The full path to the TMX file to load.</Abstract>
-				</Parameter><Parameter>
-					<Name>tilemap</Name>
-					<Abstract type="html">The tilemap object into which the TMX file is loaded.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loadTMXFile:tilemap:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

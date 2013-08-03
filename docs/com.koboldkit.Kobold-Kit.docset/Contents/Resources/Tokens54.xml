@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSString+KoboldKit.html">
+	<File path="Categories/NSDictionary+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSString(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">NSString category methods</Abstract>
-			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">Kobold Kit extensions</Abstract>
+			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>
 			
 			<NodeRef refid="54"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/rectValue</TokenIdentifier>
-			<Abstract type="html">A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}".</Abstract>
-			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(KoboldKit)/dictionaryWithContentsOfLuaScript:</TokenIdentifier>
+			<Abstract type="html">Runs the given Lua script file and transforms the returned Lua table into a KVC coded NSDictionary.
+Navigate the table with valueForKeyPath:</Abstract>
+			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (CGRect)rectValue</Declaration>
-			
-			<ReturnValue><Abstract type="html">A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}".</Abstract></ReturnValue>
-			<Anchor>//api/name/rectValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/sizeValue</TokenIdentifier>
-			<Abstract type="html">A CGSize converted from a string size representation like "{10, 20}".</Abstract>
-			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (CGSize)sizeValue</Declaration>
-			
-			<ReturnValue><Abstract type="html">A CGSize converted from a string size representation like "{10, 20}".</Abstract></ReturnValue>
-			<Anchor>//api/name/sizeValue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/pointValue</TokenIdentifier>
-			<Abstract type="html">A CGPoint converted from a string point representation like "{300, 400}".</Abstract>
-			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (CGPoint)pointValue</Declaration>
-			
-			<ReturnValue><Abstract type="html">A CGPoint converted from a string point representation like "{300, 400}".</Abstract></ReturnValue>
-			<Anchor>//api/name/pointValue</Anchor>
+			<Declaration>+ (NSDictionary *)dictionaryWithContentsOfLuaScript:(NSString *)scriptFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scriptFile</Name>
+					<Abstract type="html">The name of a Lua script file.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The Lua table as a dictionary, or nil if there are any errors.</Abstract></ReturnValue>
+			<Anchor>//api/name/dictionaryWithContentsOfLuaScript:</Anchor>
 		</Token>
 		
 	</File>

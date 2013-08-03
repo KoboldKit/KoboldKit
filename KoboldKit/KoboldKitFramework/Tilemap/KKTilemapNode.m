@@ -398,7 +398,24 @@
 			objectNode.zRotation = tilemapObject.rotation;
 			objectNode.name = (tilemapObject.name.length ? tilemapObject.name : objectClassName);
 			[objectLayerNode addChild:objectNode];
-			
+
+			// apply node properties & ivars
+			NSDictionary* properties = [objectDef objectForKey:@"properties"];
+			if (properties.count)
+			{
+				KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:objectClassName];
+				if (varSetter == nil)
+				{
+					varSetter = [[KKClassVarSetter alloc] initWithClass:objectNodeClass];
+					[cachedVarSetters setObject:varSetter forKey:objectClassName];
+				}
+				
+				[varSetter setIvarsWithDictionary:properties target:objectNode];
+				[varSetter setPropertiesWithDictionary:properties target:objectNode];
+				
+				//NSLog(@"\tproperties: %@", properties);
+			}
+
 			//NSLog(@"---> Spawned object: %@", objectClassName);
 			
 			// create physics body
@@ -420,23 +437,6 @@
 				//NSLog(@"\tphysicsBody: %@", properties);
 			}
 			
-			// apply node properties & ivars
-			NSDictionary* properties = [objectDef objectForKey:@"properties"];
-			if (properties.count)
-			{
-				KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:objectClassName];
-				if (varSetter == nil)
-				{
-					varSetter = [[KKClassVarSetter alloc] initWithClass:objectNodeClass];
-					[cachedVarSetters setObject:varSetter forKey:objectClassName];
-				}
-				
-				[varSetter setIvarsWithDictionary:properties target:objectNode];
-				[varSetter setPropertiesWithDictionary:properties target:objectNode];
-
-				//NSLog(@"\tproperties: %@", properties);
-			}
-	
 			// create and add behaviors
 			NSDictionary* behaviors = [objectDef objectForKey:@"behaviors"];
 			for (NSDictionary* behaviorDef in [behaviors allValues])

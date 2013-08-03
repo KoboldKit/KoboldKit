@@ -1,195 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/NSXMLStreamWriter.html">
+	<File path="Categories/NSString+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/NSXMLStreamWriter</TokenIdentifier>
-			<Abstract type="html">xml stream writer with namespace support</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">NSString category methods</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
 			
 			<NodeRef refid="58"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeStartElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/rectValue</TokenIdentifier>
+			<Abstract type="html">A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeStartElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (CGRect)rectValue</Declaration>
 			
-			<Anchor>//api/name/writeStartElementWithNamespace:localName:</Anchor>
+			<ReturnValue><Abstract type="html">A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}".</Abstract></ReturnValue>
+			<Anchor>//api/name/rectValue</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEndElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/sizeValue</TokenIdentifier>
+			<Abstract type="html">A CGSize converted from a string size representation like "{10, 20}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEndElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (CGSize)sizeValue</Declaration>
 			
-			<Anchor>//api/name/writeEndElementWithNamespace:localName:</Anchor>
+			<ReturnValue><Abstract type="html">A CGSize converted from a string size representation like "{10, 20}".</Abstract></ReturnValue>
+			<Anchor>//api/name/sizeValue</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEmptyElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/pointValue</TokenIdentifier>
+			<Abstract type="html">A CGPoint converted from a string point representation like "{300, 400}".</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEmptyElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (CGPoint)pointValue</Declaration>
 			
-			<Anchor>//api/name/writeEmptyElementWithNamespace:localName:</Anchor>
+			<ReturnValue><Abstract type="html">A CGPoint converted from a string point representation like "{300, 400}".</Abstract></ReturnValue>
+			<Anchor>//api/name/pointValue</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeAttributeWithNamespace:localName:value:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/color</TokenIdentifier>
+			<Abstract type="html">String converted to SKColor object. The string must be in the form "1.0 1.0 1.0 1.0" where the
+values stand for the RGBA color values in the same order.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeAttributeWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName value:(NSString *)value</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The attribute name.</Abstract>
-				</Parameter><Parameter>
-					<Name>value</Name>
-					<Abstract type="html">The attribute value.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (SKColor *)color</Declaration>
 			
-			<Anchor>//api/name/writeAttributeWithNamespace:localName:value:</Anchor>
+			<ReturnValue><Abstract type="html">String converted to SKColor object. The string must be in the form "1.0 1.0 1.0 1.0" where the
+values stand for the RGBA color values in the same order.</Abstract></ReturnValue>
+			<Anchor>//api/name/color</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setPrefix:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">set a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(KoboldKit)/containsString:</TokenIdentifier>
+			<Abstract type="html">Performs a case sensitive search for a substring. Returns YES if the string contains the substring.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)setPrefix:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Declaration>- (BOOL)containsString:(NSString *)subString</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter><Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>subString</Name>
+					<Abstract type="html">The sub string to search for.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setPrefix:namespaceURI:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeNamespace:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">write (and set) a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeNamespace:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter><Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeNamespace:namespaceURI:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">set the default namespace (empty prefix)</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)setDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setDefaultNamespace:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">write (and set) the default namespace</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeDefaultNamespace:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getPrefix:</TokenIdentifier>
-			<Abstract type="html">The namespace prefix.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)getPrefix:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The namespace prefix.</Abstract></ReturnValue>
-			<Anchor>//api/name/getPrefix:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getNamespaceURI:</TokenIdentifier>
-			<Abstract type="html">The namespace for the prefix.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)getNamespaceURI:(NSString *)prefix</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The namespace for the prefix.</Abstract></ReturnValue>
-			<Anchor>//api/name/getNamespaceURI:</Anchor>
+			<ReturnValue><Abstract type="html">YES if the subString is contained in the string.</Abstract></ReturnValue>
+			<Anchor>//api/name/containsString:</Anchor>
 		</Token>
 		
 	</File>

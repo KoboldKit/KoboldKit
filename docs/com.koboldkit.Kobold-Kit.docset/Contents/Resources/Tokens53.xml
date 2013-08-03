@@ -1,49 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSObject+KoboldKit.html">
+	<File path="Categories/NSCoder+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSObject(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">NSObject category methods for Kobold Kit</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSCoder(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">Adds encode/decode convenience methods for common structs not supported natively (or cross-platform) by NSCoder.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
 			
 			<NodeRef refid="53"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(KoboldKit)/performSelector:afterDelay:</TokenIdentifier>
-			<Abstract type="html">Performs a selector with delay, with 'self' automatically sent to the selector.</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/encodePoint:forKey:</TokenIdentifier>
+			<Abstract type="html">Encodes a CGPoint.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay</Declaration>
+			<Declaration>- (void)encodePoint:(CGPoint)point forKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>aSelector</Name>
-					<Abstract type="html">The selector to perform. Selector must take a single id parameter.</Abstract>
+					<Name>point</Name>
+					<Abstract type="html">The point to encode.</Abstract>
 				</Parameter><Parameter>
-					<Name>delay</Name>
-					<Abstract type="html">The time to wait (in seconds) before performing the selector.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/performSelector:afterDelay:</Anchor>
+			<Anchor>//api/name/encodePoint:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(KoboldKit)/performSelectorInBackground:</TokenIdentifier>
-			<Abstract type="html">Performs a selector in background, with 'self' automatically sent to the selector.</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/decodePointForKey:</TokenIdentifier>
+			<Abstract type="html">Decodes a CGPoint</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)performSelectorInBackground:(SEL)aSelector</Declaration>
+			<Declaration>- (CGPoint)decodePointForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>aSelector</Name>
-					<Abstract type="html">The selector to perform. Selector must take a single id parameter.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The decoded point.</Abstract></ReturnValue>
+			<Anchor>//api/name/decodePointForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/encodeCGPoint:forKey:</TokenIdentifier>
+			<Abstract type="html">Encodes a CGPoint using the same method defined by UIGeometry.h on iOS.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)encodeCGPoint:(CGPoint)point forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point to encode.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/performSelectorInBackground:</Anchor>
+			<Anchor>//api/name/encodeCGPoint:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/decodeCGPointForKey:</TokenIdentifier>
+			<Abstract type="html">Decodes a CGPoint using the same method defined by UIGeometry.h on iOS.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)decodeCGPointForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The decoded point.</Abstract></ReturnValue>
+			<Anchor>//api/name/decodeCGPointForKey:</Anchor>
 		</Token>
 		
 	</File>

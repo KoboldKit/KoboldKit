@@ -10,6 +10,11 @@
 
 @implementation PlayerCharacter
 
+-(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject *)tilemapObject
+{
+	return [self physicsBodyWithRectangleOfSize:_boundingBox];
+}
+
 -(void) nodeDidSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject
 {
 	[self setupPlayerSpriteWithObject:tilemapObject];

@@ -7,7 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "KKTilemapObjectSpawnDelegate.h"
 
-@interface KKLabelNode : SKLabelNode
+@interface KKLabelNode : SKLabelNode <KKTilemapObjectSpawnDelegate>
 
 @end

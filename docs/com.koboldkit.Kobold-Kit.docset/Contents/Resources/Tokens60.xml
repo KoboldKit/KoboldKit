@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/SKScene+KoboldKit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/SKScene(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">SKScene category methods for Kobold Kit</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
+			
+			<NodeRef refid="60"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/enumerateBodiesUsingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerates all physics bodies in the world by passing an INFINITY rect to enumerateBodiesInRect.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)enumerateBodiesUsingBlock:(void ( ^ ) ( SKPhysicsBody *body , BOOL *stop ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block that is called for every physics body.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateBodiesUsingBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/observeNotification:selector:</TokenIdentifier>
+			<Abstract type="html">Receiver observes notifications posted by notification center.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSelector</Name>
+					<Abstract type="html">The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/observeNotification:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/observeNotification:selector:object:</TokenIdentifier>
+			<Abstract type="html">Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector object:(id)notificationSender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSelector</Name>
+					<Abstract type="html">The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSender</Name>
+					<Abstract type="html">The notification sender object whose notifications are observed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/observeNotification:selector:object:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardNotification:</TokenIdentifier>
+			<Abstract type="html">Receiver disregards all notifications with the given name.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)disregardNotification:(NSString *)notificationName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/disregardNotification:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardNotification:object:</TokenIdentifier>
+			<Abstract type="html">Receiver disregards notifications with the given name coming from a specific object.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)disregardNotification:(NSString *)notificationName object:(id)notificationSender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSender</Name>
+					<Abstract type="html">The notification sender object whose notifications are observed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/disregardNotification:object:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKScene(KoboldKit)/disregardAllNotifications</TokenIdentifier>
+			<Abstract type="html">Receiver disregards any and all notification sent by the notification center.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)disregardAllNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/disregardAllNotifications</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/KKSceneEventDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/KKSceneEventDelegate</TokenIdentifier>
+			<Abstract type="html">Informal protocol defining the "update" methods an object can implement and receive when subscribed
+to updates in the scene.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/update:</TokenIdentifier>
+			<Abstract type="html">The standard update method.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>currentTime</Name>
+					<Abstract type="html">The time elapsed since app launch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/update:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didEvaluateActions</TokenIdentifier>
+			<Abstract type="html">Called after actions have been evaluated.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)didEvaluateActions</Declaration>
+			
+			
+			<Anchor>//api/name/didEvaluateActions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">Called after physics world has been simulated.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)didSimulatePhysics</Declaration>
+			
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/willMoveFromView:</TokenIdentifier>
+			<Abstract type="html">Called when scene will leave the view.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)willMoveFromView:(SKView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">The view the scene is leaving. Identical to scene.view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/willMoveFromView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didMoveToView:</TokenIdentifier>
+			<Abstract type="html">Called when scene will attach to a view.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)didMoveToView:(SKView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">The view the scene is attached to. Identical to scene.view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didMoveToView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didChangeSize:</TokenIdentifier>
+			<Abstract type="html">Called when scene changed its size, ie after rotating or changing views.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)didChangeSize:(CGSize)oldSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>oldSize</Name>
+					<Abstract type="html">The scene's previous size. The scene.size property contains the new size.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didChangeSize:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

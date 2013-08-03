@@ -1,47 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapLayerNode.html">
+	<File path="Classes/KKTMXWriter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerNode</TokenIdentifier>
-			<Abstract type="html">(not documented) may be removed</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTMXWriter</TokenIdentifier>
+			<Abstract type="html">Internal use only.
+Writes a KTTilemap object to a file in TMX format. The resulting TMX can be opened in Tiled Map Editor
+   or other tools/engines that support the TMX format. </Abstract>
+			<DeclaredIn>KKTMXWriter.h</DeclaredIn>
 			
 			<NodeRef refid="32"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setLayer:</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTMXWriter/writeTMXFile:tilemap:</TokenIdentifier>
+			<Abstract type="html">Writes a KTTilemap object hierarchy to a file in TMX format.</Abstract>
+			<DeclaredIn>KKTMXWriter.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			<Declaration>- (void)writeTMXFile:(NSString *)file tilemap:(KKTilemap *)tilemap</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>file</Name>
+					<Abstract type="html">The full path to a file.</Abstract>
+				</Parameter><Parameter>
+					<Name>tilemap</Name>
+					<Abstract type="html">The KTTilemap object hierarchy to write.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/layer</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
-			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/layer</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
-			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
+			<Anchor>//api/name/writeTMXFile:tilemap:</Anchor>
 		</Token>
 		
 	</File>

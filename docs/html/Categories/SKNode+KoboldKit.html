@@ -59,7 +59,9 @@
 	
 	<option value="//api/name/behaviorForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- behaviorForKey:</option>
 	
-	<option value="//api/name/behaviorWithClass:">&nbsp;&nbsp;&nbsp;&nbsp;- behaviorWithClass:</option>
+	<option value="//api/name/behaviorKindOfClass:">&nbsp;&nbsp;&nbsp;&nbsp;- behaviorKindOfClass:</option>
+	
+	<option value="//api/name/behaviorMemberOfClass:">&nbsp;&nbsp;&nbsp;&nbsp;- behaviorMemberOfClass:</option>
 	
 	<option value="//api/name/centerOnNode:">&nbsp;&nbsp;&nbsp;&nbsp;- centerOnNode:</option>
 	
@@ -95,6 +97,8 @@
 	
 	<option value="//api/name/physicsBodyWithRectangleOfSize:">&nbsp;&nbsp;&nbsp;&nbsp;- physicsBodyWithRectangleOfSize:</option>
 	
+	<option value="//api/name/physicsBodyWithTilemapObject:">&nbsp;&nbsp;&nbsp;&nbsp;- physicsBodyWithTilemapObject:</option>
+	
 	<option value="//api/name/removeAllBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllBehaviors</option>
 	
 	<option value="//api/name/removeBehavior:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehavior:</option>
@@ -102,6 +106,8 @@
 	<option value="//api/name/removeBehaviorForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehaviorForKey:</option>
 	
 	<option value="//api/name/removeBehaviorWithClass:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehaviorWithClass:</option>
+	
+	<option value="//api/name/removeController">&nbsp;&nbsp;&nbsp;&nbsp;- removeController</option>
 	
 	<option value="//api/name/resumeControllersInNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- resumeControllersInNodeTree:</option>
 	
@@ -167,7 +173,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/behaviorForKey:">behaviorForKey:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/behaviorWithClass:">behaviorWithClass:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/behaviorKindOfClass:">behaviorKindOfClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/behaviorMemberOfClass:">behaviorMemberOfClass:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centerOnNode:">centerOnNode:</a></span></li>
 	
@@ -203,6 +211,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/physicsBodyWithRectangleOfSize:">physicsBodyWithRectangleOfSize:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/physicsBodyWithTilemapObject:">physicsBodyWithTilemapObject:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllBehaviors">removeAllBehaviors</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehavior:">removeBehavior:</a></span></li>
@@ -210,6 +220,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehaviorForKey:">removeBehaviorForKey:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehaviorWithClass:">removeBehaviorWithClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeController">removeController</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeControllersInNodeTree:">resumeControllersInNodeTree:</a></span></li>
 	
@@ -318,6 +330,13 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/removeController">&ndash;&nbsp;removeController</a></code>
+		<span class="tooltip"><p>Removes the <a href="#//api/name/controller">controller</a> from the node.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/pauseControllersInNodeTree:">&ndash;&nbsp;pauseControllersInNodeTree:</a></code>
 		<span class="tooltip"><p>Pauses all controllers of the nodes beginning with rootNode.</p></span>
 	</span>
@@ -383,8 +402,15 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/behaviorWithClass:">&ndash;&nbsp;behaviorWithClass:</a></code>
-		<span class="tooltip"><p>The first behavior of the given class. Returns nil if no behavior with that class was found.</p></span>
+		<code><a href="#//api/name/behaviorKindOfClass:">&ndash;&nbsp;behaviorKindOfClass:</a></code>
+		<span class="tooltip"><p>The first behavior of the given kind of class. Returns nil if no behavior with that class was found.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/behaviorMemberOfClass:">&ndash;&nbsp;behaviorMemberOfClass:</a></code>
+		<span class="tooltip"><p>The first behavior that is a member of the given class. Returns nil if no behavior with that class was found.</p></span>
 	</span>
 	
 	
@@ -530,6 +556,13 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 	<span class="tooltip">
 		<code><a href="#//api/name/physicsBodyWithRectangleOfSize:">&ndash;&nbsp;physicsBodyWithRectangleOfSize:</a></code>
 		<span class="tooltip"><p>Creates a physics Body with rectangle shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/physicsBodyWithTilemapObject:">&ndash;&nbsp;physicsBodyWithTilemapObject:</a></code>
+		<span class="tooltip"><p>nd</p></span>
 	</span>
 	
 	
@@ -811,17 +844,17 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/behaviorWithClass:" title="behaviorWithClass:"></a>
-	<h3 class="subsubtitle method-title">behaviorWithClass:</h3>
+	<a name="//api/name/behaviorKindOfClass:" title="behaviorKindOfClass:"></a>
+	<h3 class="subsubtitle method-title">behaviorKindOfClass:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The first behavior of the given class. Returns nil if no behavior with that class was found.</p>
+		<p>The first behavior of the given kind of class. Returns nil if no behavior with that class was found.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (id)behaviorWithClass:(Class)<em>behaviorClass</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)behaviorKindOfClass:(Class)<em>behaviorClass</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -838,7 +871,56 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The first behavior of the given class. Returns nil if no behavior with that class was found.</p>
+		<p>The first behavior of the given kind of class. Returns nil if no behavior with that class was found.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/behaviorMemberOfClass:" title="behaviorMemberOfClass:"></a>
+	<h3 class="subsubtitle method-title">behaviorMemberOfClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The first behavior that is a member of the given class. Returns nil if no behavior with that class was found.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)behaviorMemberOfClass:(Class)<em>behaviorClass</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>behaviorClass</em></dt>
+			<dd><p>The Class of the behavior.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The first behavior that is a member of the given class. Returns nil if no behavior with that class was found.</p>
 	</div>
 	
 	
@@ -1570,6 +1652,40 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/physicsBodyWithTilemapObject:" title="physicsBodyWithTilemapObject:"></a>
+	<h3 class="subsubtitle method-title">physicsBodyWithTilemapObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>nd</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithTilemapObject:(KKTilemapObject *)<em>tilemapObject</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/removeAllBehaviors" title="removeAllBehaviors"></a>
 	<h3 class="subsubtitle method-title">removeAllBehaviors</h3>
 	
@@ -1736,6 +1852,40 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/removeController" title="removeController"></a>
+	<h3 class="subsubtitle method-title">removeController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes the <a href="#//api/name/controller">controller</a> from the node.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/resumeControllersInNodeTree:" title="resumeControllersInNodeTree:"></a>
 	<h3 class="subsubtitle method-title">resumeControllersInNodeTree:</h3>
 	
@@ -1826,7 +1976,7 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-07-29)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-03)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

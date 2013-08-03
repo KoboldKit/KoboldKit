@@ -7,10 +7,11 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "KKTilemapObjectSpawnDelegate.h"
 
 
 /** In Kobold Kit KKNode must be used in place of SKNode to ensure that KK messaging works (ie didMoveToParent, willMoveFromParent, etc). */
-@interface KKNode : SKNode
+@interface KKNode : SKNode <KKTilemapObjectSpawnDelegate>
 
 
 @end
