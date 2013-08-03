@@ -231,7 +231,7 @@
 	SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
 
 	KKSpriteNode* dpadNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_directions_background"]];
-	dpadNode.position = CGPointMake(dpadNode.size.width / 2 + 1, dpadNode.size.height / 2 + 10);
+	dpadNode.position = CGPointMake(dpadNode.size.width / 2 + 0, dpadNode.size.height / 2 + 0);
 	[joypadNode addChild:dpadNode];
 	
 	NSArray* dpadTextures = [NSArray arrayWithObjects:
@@ -245,7 +245,7 @@
 
 	CGSize sceneSize = self.size;
 	KKSpriteNode* jumpButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_jump_notpressed"]];
-	jumpButtonNode.position = CGPointMake(sceneSize.width - (jumpButtonNode.size.width / 2 + 10), jumpButtonNode.size.height / 2 + 10);
+	jumpButtonNode.position = CGPointMake(sceneSize.width - (jumpButtonNode.size.width / 2 + 0), jumpButtonNode.size.height / 2 + 0);
 	[joypadNode addChild:jumpButtonNode];
 	
 	KKButtonBehavior* button = [KKButtonBehavior new];
