@@ -437,8 +437,47 @@
 			NSAssert3(objectNodeClass, @"Can't create object named '%@' (object type: '%@') - no such class: %@", tilemapObject.name, objectType, objectClassName);
 			NSAssert3([objectNodeClass isSubclassOfClass:[SKNode class]], @"Can't create object named '%@' (object type: '%@') - class '%@' does not inherit from SKNode", tilemapObject.name, objectType, objectClassName);
 			
-			// TODO: use a custom initializer where appropriate and setup in objectTypes.lua
-			SKNode* objectNode = [objectNodeClass node];
+			// use a custom initializer where appropriate
+			SKNode* objectNode;
+			NSString* initMethodName = [objectDef objectForKey:@"initMethod"];
+			if (initMethodName.length)
+			{
+				NSString* paramName = [objectDef objectForKey:@"initParam"];
+
+				// get param from Tiled properties
+				NSMutableDictionary* tilemapObjectProperties = tilemapObject.properties.properties;
+				id param = [tilemapObjectProperties objectForKey:paramName];
+				[tilemapObjectProperties removeObjectForKey:paramName];
+
+				// get param from objecttypes.lua instead
+				if (param == nil)
+				{
+					param = [objectDef objectForKey:paramName];
+				}
+				
+				objectNode = [objectNodeClass performSelector:NSSelectorFromString(initMethodName) withObject:param];
+				
+				/*
+				SEL selector = NSSelectorFromString(initMethodName);
+				NSMethodSignature* methodSignature = [objectNodeClass instanceMethodSignatureForSelector:selector];
+				NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:methodSig];
+				invocation.selector = selector;
+				invocation.target = objectNodeClass;
+				[invocation invoke];
+				objectNode = [invocation getReturnValue:<#(void *)#>];M
+				 */
+				
+				if ([objectNode isKindOfClass:[SKEmitterNode class]])
+				{
+					// prevents assertions in KKVarSetter
+					objectClassName = @"SKEmitterNode";
+				}
+			}
+			else
+			{
+				objectNode = [objectNodeClass node];
+			}
+			
 			objectNode.position = CGPointMake(tilemapObject.position.x + tilemapObject.size.width / 2.0, tilemapObject.position.y + tilemapObject.size.height / 2.0);
 			objectNode.hidden = tilemapObject.hidden;
 			objectNode.zRotation = tilemapObject.rotation;

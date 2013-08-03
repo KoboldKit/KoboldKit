@@ -15,13 +15,12 @@
    by using the propertiesForGid: methods. If a gid has no properties nil will be returned. In cases where you want to create the properties of a gid
    use the createNonExistingProperties flag so that a new KTTilemapProperties object is created and associated with the gid if the gid has no properties yet. */
 @interface KKTilemapTileProperties : NSObject
-{
-	@private
-	NSMutableDictionary* _properties;
-}
 
 /** Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile's properties. */
-@property (atomic, readonly) NSDictionary* properties;
+@property (atomic, readonly) NSMutableDictionary* properties;
+
+/** Returns the number of property items. */
+@property (atomic, readonly) NSUInteger count;
 
 /** Sets the number for the key on the tile gid's properties. Creates an instance of KTTilemapProperties if the gid has no properties yet.
  @param gid The gid whose properties will be used.

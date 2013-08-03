@@ -19,13 +19,9 @@
    Caution: for decimal numbers to be recognized you must use the dot as decimal separator (comma won't work). The reason for not making it locale-aware
    is that sharing TMX files between users with different system locales (ie US vs DE) would be difficult because it would require converting the TMX from one locale to the other. */
 @interface KKTilemapProperties : NSObject
-{
-	@private
-	NSMutableDictionary* _properties;
-}
 
 /** The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects. */
-@property (atomic, readonly) NSDictionary* properties;
+@property (atomic, readonly) NSMutableDictionary* properties;
 
 /** Returns the number of property items. */
 @property (atomic, readonly) NSUInteger count;

@@ -72,5 +72,11 @@
 	return properties;
 }
 
+@dynamic count;
+-(NSUInteger) count
+{
+	return _properties.count;
+}
+
 @end
 

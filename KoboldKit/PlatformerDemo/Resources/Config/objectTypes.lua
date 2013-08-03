@@ -12,9 +12,9 @@ local objectTypes =
 	Node = {className = "KKNode"},
 	SpriteNode = {className = "KKSpriteNode", tiledColor = "#ffffff"},
 	LabelNode = {className = "KKLabelNode"},
+	EmitterNode = {className = "KKEmitterNode", initMethod = "emitterWithFile:", initParam = "emitterFile"},
 	ContactNotificationNode = {className = "KKContactNotificationNode", tiledColor = "#ff00ff"},
 	-- not yet supported
-	EmitterNode = {className = "KKEmitterNode"},
 	ShapeNode = {className = "KKShapeNode"},
 	VideoNode = {className = "KKAutoplayVideoNode"},
 	
@@ -35,6 +35,12 @@ local objectTypes =
 			notification = "<missing notification>",
 			notifyRepeatedly = NO,
 		},
+	},
+	
+	Emitter =
+	{
+		inheritsFrom = "EmitterNode",
+		emitterFile = "<missingfile.sks>",
 	},
 	
 	ObjectImage =
@@ -71,7 +77,7 @@ local objectTypes =
 			_runSpeedAcceleration = 0,		-- how fast player accelerates sideways (0 = instant)
 			_runSpeedDeceleration = 0,		-- how fast player decelerates sideways (0 = instant)
 			_runSpeedLimit = 200,			-- max sideways running speed
-			_boundingBox = "{14, 24}",
+			_boundingBox = "{12, 28}",
 			
 			_defaultImage = "dummy_stickman.png",
 		},
@@ -137,15 +143,6 @@ local objectTypes =
 		{
 			name = "briefcase",
 			imageName = "dummy_case.png",
-		},
-	},
-
-	SpikeA =
-	{
-		inheritsFrom = "ObjectImage",
-		properties =
-		{
-			imageName = "trap_spike01.png",
 		},
 	},
 	
