@@ -48,7 +48,7 @@ typedef enum : unsigned char
 @property (atomic, copy) NSString* name;
 /** The type of object assigned by the user. The type is editable in Tiled from an object's properties dialog. The Types list in Tiled is prefilled with the
    Object Types added in the Tiled Preferences dialog. You can also import & export Object Types from there. 
- Normally the type is used to identify an object defined in the objectTypes.lua config file.  TILED-EDITABLE */
+ Normally the type is used to identify an object defined in the objectTemplates.lua config file.  TILED-EDITABLE */
 @property (atomic, copy) NSString* type;
 /** The object's properties. */
 @property (atomic, readonly) KKTilemapProperties* properties;

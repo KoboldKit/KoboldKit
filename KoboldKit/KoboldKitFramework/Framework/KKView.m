@@ -67,7 +67,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 {
 	[self loadConfig:@"config.lua"];
 	[self loadConfig:@"devconfig.lua"];
-	[self loadConfig:@"objectTypes.lua" flattenHierarchy:YES];
+	[self loadConfig:@"objectTemplates.lua" flattenHierarchy:YES];
 	
 	self.showsDrawCount = [_model boolForKeyPath:@"devconfig.showsDrawCount"];
 	self.showsFPS = [_model boolForKeyPath:@"devconfig.showsFPS"];

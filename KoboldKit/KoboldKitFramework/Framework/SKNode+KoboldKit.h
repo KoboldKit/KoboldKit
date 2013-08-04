@@ -12,6 +12,7 @@
 @class KKBehavior;
 @class KKScene;
 @class KKTilemapObject;
+@class KKModel;
 
 /** Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors. */
 @interface SKNode (KoboldKit)
@@ -31,12 +32,17 @@
 
 /** @name Working with Controllers */
 
-/** Returns the node's controller object. */
+/** @returns the node's controller object. */
 @property (atomic) KKNodeController* controller;
 /** Creates node controller if one does not exist yet. Returns the new or existing instance. */
 -(KKNodeController*) createController;
 /** Removes the controller from the node. */
 -(void) removeController;
+
+/** @returns The node's model */
+@property (atomic, readonly) KKModel* model;
+/** @returns The node's model */
+@property (atomic, readonly) KKModel* info; // alias
 
 /** Pauses all controllers of the nodes beginning with rootNode.
  @param rootNode The node whose node tree will be paused. */

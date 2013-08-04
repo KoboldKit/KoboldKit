@@ -24,12 +24,17 @@
 #pragma mark Key/Value Model
 -(void) setValue:(id)value forKey:(NSString*)key
 {
+	[self setValue:value forKeyPath:key];
+}
+
+-(void) setValue:(id)value forKeyPath:(NSString*)keyPath
+{
 	if (_keyedValues == nil)
 	{
 		_keyedValues = [NSMutableDictionary dictionary];
 	}
 	
-	[_keyedValues setValue:value forKey:key];
+	[_keyedValues setValue:value forKeyPath:keyPath];
 }
 
 #pragma mark BOOL

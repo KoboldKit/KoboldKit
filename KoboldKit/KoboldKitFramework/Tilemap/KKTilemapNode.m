@@ -343,8 +343,8 @@
 	NSMutableDictionary* cachedVarSetters = [NSMutableDictionary dictionaryWithCapacity:4];
 	[cachedVarSetters setObject:[[KKClassVarSetter alloc] initWithClass:NSClassFromString(@"PKPhysicsBody")] forKey:@"PKPhysicsBody"];
 	
-	NSDictionary* objectTypes = [objectLayerNode.kkScene.kkView.model objectForKey:@"objectTypes"];
-	NSAssert(objectTypes, @"view's objectTypes config dictionary is nil (scene, view or model nil?)");
+	NSDictionary* objectTemplates = [objectLayerNode.kkScene.kkView.model objectForKey:@"objectTemplates"];
+	NSAssert(objectTemplates, @"view's objectTemplates config dictionary is nil (scene, view or model nil?)");
 	
 	// for each object on layer
 	KKTilemapLayer* objectLayer = objectLayerNode.layer;
@@ -353,11 +353,11 @@
 		NSString* objectType = tilemapObject.type;
 		if (objectType)
 		{
-			// find the matching objectTypes definition
-			NSDictionary* objectDef = [objectTypes objectForKey:objectType];
+			// find the matching objectTemplates definition
+			NSDictionary* objectDef = [objectTemplates objectForKey:objectType];
 			
 			NSString* objectClassName = [objectDef objectForKey:@"className"];
-			NSAssert2(objectClassName, @"Can't create object named '%@' (object type: '%@') - 'nodeClass' entry missing for object & its parents. Check objectTypes.lua", tilemapObject.name, objectType);
+			NSAssert2(objectClassName, @"Can't create object named '%@' (object type: '%@') - 'nodeClass' entry missing for object & its parents. Check objectTemplates.lua", tilemapObject.name, objectType);
 			
 			Class objectNodeClass = NSClassFromString(objectClassName);
 			NSAssert3(objectNodeClass, @"Can't create object named '%@' (object type: '%@') - no such class: %@", tilemapObject.name, objectType, objectClassName);
@@ -375,7 +375,7 @@
 				id param = [tilemapObjectProperties objectForKey:paramName];
 				[tilemapObjectProperties removeObjectForKey:paramName];
 
-				// get param from objecttypes.lua instead
+				// get param from objectTemplates.lua instead
 				if (param == nil)
 				{
 					param = [objectDef objectForKey:paramName];
@@ -444,7 +444,7 @@
 			for (NSDictionary* behaviorDef in [behaviors allValues])
 			{
 				NSString* behaviorClassName = [behaviorDef objectForKey:@"className"];
-				NSAssert1(behaviorClassName, @"Can't create behavior for object type: '%@' - 'behaviorClass' entry missing. Check objectTypes.lua", objectType);
+				NSAssert1(behaviorClassName, @"Can't create behavior for object type: '%@' - 'behaviorClass' entry missing. Check objectTemplates.lua", objectType);
 				
 				Class behaviorClass = NSClassFromString(behaviorClassName);
 				NSAssert2(behaviorClass, @"Can't create behavior named '%@' (object type: '%@') - no such behavior class", behaviorClassName, objectType);

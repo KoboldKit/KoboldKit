@@ -30,6 +30,16 @@
 
 #pragma mark Controller
 
+@dynamic model, info;
+-(KKModel*) model
+{
+	return self.controller.model;
+}
+-(KKModel*) info
+{
+	return self.controller.model;
+}
+
 @dynamic controller;
 -(KKNodeController*) controller
 {

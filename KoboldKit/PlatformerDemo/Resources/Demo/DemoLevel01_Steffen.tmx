@@ -88,5 +88,21 @@
    </properties>
   </object>
   <object name="checkpointA1" type="Checkpoint" x="96" y="512" width="16" height="32"/>
+  <object name="p1" x="128" y="480">
+   <polyline points="0,0 32,-32 64,0 80,-48 96,16 112,-16 112,0 128,-16 144,0 176,-16 224,0 224,-16"/>
+  </object>
+  <object name="p2" x="144" y="432">
+   <polygon points="0,0 192,32 176,-16 144,0 80,-32 80,0"/>
+  </object>
+  <object name="p1Mover" type="Text" x="128" y="384" width="32" height="32">
+   <properties>
+    <property name="text" value="I'm walking!"/>
+   </properties>
+  </object>
+  <object name="p2Mover" type="Text" x="176" y="368" width="32" height="32">
+   <properties>
+    <property name="text" value="I'm following!"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

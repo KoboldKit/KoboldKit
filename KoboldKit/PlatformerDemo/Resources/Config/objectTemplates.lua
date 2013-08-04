@@ -1,4 +1,4 @@
--- objectTypes.lua
+-- objectTemplates.lua
 -- Defines names of objects in Tileds to determine which ObjC classes to create
 -- and which properties/ivars to set on these classes.
 
@@ -8,8 +8,15 @@ local kContactCategoryPickupItem = 2
 local kContactCategoryTrigger = 4
 local kContactCategoryStaticObject = 8
 
-local objectTypes =
+local objectTemplates =
 {
+	-- Behavior templates are not actually nodes but one or more behaviors that can be added to a node in Tiled
+	-- with the behavior's properties taken from Tiled's properties
+	FollowPath =
+	{
+		{className = "KKFollowPathBehavior"}, -- physics contact resolves in a remove of this node
+	},
+
 	-- default node types and their class names
 	Node = {className = "KKNode"},
 	SpriteNode = {className = "KKSpriteNode", tiledColor = "#ffffff"},
@@ -157,7 +164,6 @@ local objectTypes =
 		},
 	},
 
-
 	-- Game-Specific Items
 	Briefcase =
 	{
@@ -189,4 +195,4 @@ local objectTypes =
 	},
 }
 
-return objectTypes
+return objectTemplates
