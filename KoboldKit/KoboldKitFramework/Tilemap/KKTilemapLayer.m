@@ -182,58 +182,9 @@
 	NSMutableArray* paths = [NSMutableArray arrayWithCapacity:_objects.count];
 	for (KKTilemapObject* object in _objects)
 	{
-		[paths addObject:[self createPathFromObject:object]];
+		[paths addObject:[object path]];
 	}
 	return paths;
-}
-
--(id) createPathFromObject:(KKTilemapObject*)object
-{
-	CGPathRef path = nil;
-	CGRect rect = {CGPointZero, object.size};
-	
-	switch (object.objectType)
-	{
-		case KKTilemapObjectTypeTile:
-		case KKTilemapObjectTypeRectangle:
-			path = CGPathCreateWithRect(rect, nil);
-			break;
-		case KKTilemapObjectTypeEllipse:
-			path = CGPathCreateWithEllipseInRect(rect, nil);
-			break;
-		case KKTilemapObjectTypePolyLine:
-		case KKTilemapObjectTypePolygon:
-		{
-			KKTilemapPolyObject* polyObject = (KKTilemapPolyObject*)object;
-			NSUInteger numPoints = polyObject.numberOfPoints;
-			CGPoint* points = polyObject.points;
-			
-			CGMutablePathRef poly = CGPathCreateMutable();
-			CGPathMoveToPoint(poly, nil, points[0].x, points[0].y);
-			for (NSUInteger i = 1; i < numPoints; i++)
-			{
-				CGPoint p = points[i];
-				CGPathAddLineToPoint(poly, nil, p.x, p.y);
-			}
-			
-			if (object.objectType == KKTilemapObjectTypePolygon)
-			{
-				// close the polygon
-				CGPathAddLineToPoint(poly, nil, points[0].x, points[0].y);
-			}
-			
-			CGAffineTransform transform = CGAffineTransformMakeTranslation(rect.origin.x, rect.origin.y);
-			path = CGPathCreateCopyByTransformingPath(poly, &transform);
-			CGPathRelease(poly);
-			break;
-		}
-			
-		default:
-			[NSException raise:NSInternalInconsistencyException format:@"unhandled tilemap object.type %u", object.objectType];
-			break;
-	}
-	
-	return (__bridge_transfer id)path;
 }
 
 #pragma mark Objects

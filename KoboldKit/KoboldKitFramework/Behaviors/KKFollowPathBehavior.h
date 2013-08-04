@@ -12,5 +12,9 @@
 
 @property (atomic, copy) NSString* pathName;
 @property (atomic) CGFloat moveSpeed;
+@property (atomic) CGFloat initialWaitDuration;
+@property (atomic) NSUInteger repeatCount;
+@property (atomic) BOOL relativeToObject;
+@property (atomic) BOOL orientToPath;
 
 @end

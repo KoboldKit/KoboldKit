@@ -12,10 +12,13 @@ local behaviorTemplates =
 		properties = 
 		{
 			pathName = "<missing path>",	-- name of path object
-			moveSpeed = 2,					-- movement speed in points per frame
-			--repeatCount = 1,				-- 0 == repeat indefinitely, for polylines 1 == move to end, 2 == move to end and back to start
+			moveSpeed = 10,					-- movement speed in points per frame
+			relativeToObject = NO,			-- if YES, object will follow path as if path were at object's position
+			orientToPath = NO,				-- if YES, object will rotate in direction of current path segment
+			initialWaitDuration = 0,		-- start follow immediately (time in seconds)
+			repeatCount = 0,					-- 0 == repeat indefinitely, for polylines 1 == move to end, 2 == move to end and back to start
+			
 			--waypointWaitDuration = 0,
-			--initialWaitDuration = 0,
 		},
 	},
 }

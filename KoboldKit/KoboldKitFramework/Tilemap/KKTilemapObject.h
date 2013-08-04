@@ -64,6 +64,10 @@ typedef enum : unsigned char
 /** @returns NO if the object is visible, YES if it is not visible. */
 @property (atomic) BOOL hidden;
 
+/** Turns the object's outline in a CGPathRef.
+ @returns The newly created CGPathRef. */
+-(id) path;
+
 // TMX Parser needs these
 -(KKTilemapRectangleObject*) rectangleObjectFromPolyObject:(KKTilemapPolyObject*)polyObject;
 -(void) internal_setProperties:(KKTilemapProperties*)properties;

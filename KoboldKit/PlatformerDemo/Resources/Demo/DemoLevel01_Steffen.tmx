@@ -88,24 +88,31 @@
    </properties>
   </object>
   <object name="checkpointA1" type="Checkpoint" x="96" y="512" width="16" height="32"/>
-  <object name="p1" x="128" y="480">
-   <polyline points="0,0 32,-32 64,0 80,-48 96,16 112,-16 112,0 128,-16 144,0 176,-16 224,0 224,-16"/>
-  </object>
-  <object name="p2" x="144" y="432">
+  <object name="p2" x="176" y="544">
    <polygon points="0,0 192,32 176,-16 144,0 80,-32 80,0"/>
   </object>
-  <object name="p1Mover" type="Text" x="128" y="384" width="32" height="32">
+  <object name="p1Mover" type="Text" x="144" y="560" width="32" height="16">
    <properties>
     <property name="FollowPath" value="YES"/>
-    <property name="FollowPath.moveSpeed" value="4"/>
+    <property name="FollowPath.initialWaitDuration" value="0"/>
+    <property name="FollowPath.moveSpeed" value="200"/>
     <property name="FollowPath.pathName" value="p1"/>
-    <property name="text" value="I'm walking!"/>
+    <property name="FollowPath.relativeToObject" value="NO"/>
+    <property name="FollowPath.repeatCount" value="0"/>
+    <property name="text" value="X"/>
    </properties>
   </object>
   <object name="p2Mover" type="Text" x="176" y="368" width="32" height="32">
    <properties>
     <property name="text" value="I'm following!"/>
    </properties>
+  </object>
+  <object name="p3" x="96" y="592" width="80" height="16">
+   <ellipse/>
+  </object>
+  <object name="p4" x="160" y="448" width="48" height="48"/>
+  <object name="p1" x="96" y="560">
+   <polyline points="0,0 48,-16 112,0 128,-16 144,0 144,-16 160,-16"/>
   </object>
  </objectgroup>
 </map>
