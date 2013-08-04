@@ -18,7 +18,7 @@
 
 @implementation SKNode (KoboldKit)
 
-#pragma mark Scene
+#pragma mark Properties
 
 @dynamic kkScene;
 -(KKScene*) kkScene
@@ -27,8 +27,6 @@
 	NSAssert1([self.scene isKindOfClass:[KKScene class]], @"scene (%@) is not a KKScene object", self.scene);
 	return (KKScene*)self.scene;
 }
-
-#pragma mark Controller
 
 @dynamic model, info;
 -(KKModel*) model
@@ -39,6 +37,16 @@
 {
 	return self.controller.model;
 }
+
+#pragma mark KVC
+
+-(id) valueForUndefinedKey:(NSString*)key
+{
+	// assume undefined keys to refer to behaviors by key
+	return [self.controller behaviorForKey:key];
+}
+
+#pragma mark Controller
 
 @dynamic controller;
 -(KKNodeController*) controller

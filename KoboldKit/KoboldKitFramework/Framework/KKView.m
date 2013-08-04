@@ -67,7 +67,8 @@ static BOOL _showsNodeAnchorPoints = NO;
 {
 	[self loadConfig:@"config.lua"];
 	[self loadConfig:@"devconfig.lua"];
-	[self loadConfig:@"objectTemplates.lua" flattenHierarchy:YES];
+	[self loadConfig:@"objectTemplates.lua" inheritProperties:YES];
+	[self loadConfig:@"behaviorTemplates.lua"];
 	
 	self.showsDrawCount = [_model boolForKeyPath:@"devconfig.showsDrawCount"];
 	self.showsFPS = [_model boolForKeyPath:@"devconfig.showsFPS"];
@@ -87,10 +88,10 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) loadConfig:(NSString*)configFile
 {
-	[self loadConfig:configFile flattenHierarchy:NO];
+	[self loadConfig:configFile inheritProperties:NO];
 }
 
--(void) loadConfig:(NSString*)configFile flattenHierarchy:(BOOL)flattenHierarchy
+-(void) loadConfig:(NSString*)configFile inheritProperties:(BOOL)flattenHierarchy
 {
 	NSString* path = [NSBundle pathForFile:configFile];
 	if (path)

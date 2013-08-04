@@ -28,7 +28,7 @@
 /** @name Properties */
 
 /** @returns The behavior's uniquely identifying key. */
-@property (atomic, copy, readonly) NSString* key;
+@property (atomic, copy) NSString* key;
 /** @returns The behavior's name. */
 @property (atomic, copy) NSString* name;
 /** @returns The behavior's node controller. */

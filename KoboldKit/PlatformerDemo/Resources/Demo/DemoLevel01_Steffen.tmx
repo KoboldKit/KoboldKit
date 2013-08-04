@@ -96,6 +96,9 @@
   </object>
   <object name="p1Mover" type="Text" x="128" y="384" width="32" height="32">
    <properties>
+    <property name="FollowPath" value="YES"/>
+    <property name="FollowPath.moveSpeed" value="4"/>
+    <property name="FollowPath.pathName" value="p1"/>
     <property name="text" value="I'm walking!"/>
    </properties>
   </object>

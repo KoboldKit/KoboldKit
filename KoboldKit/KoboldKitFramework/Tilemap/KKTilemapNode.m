@@ -55,24 +55,27 @@
 		
 		self.scene.backgroundColor = _tilemap.backgroundColor;
 		
-		KKTilemapTileLayerNode* tileLayer = nil;
+		KKTilemapTileLayerNode* tileLayerNode = nil;
 		
 		for (KKTilemapLayer* layer in _tilemap.layers)
 		{
 			if (layer.isTileLayer)
 			{
-				tileLayer = [KKTilemapTileLayerNode tileLayerNodeWithLayer:layer];
-				tileLayer.alpha = layer.alpha;
-				[self addChild:tileLayer];
-				[_tileLayerNodes addObject:tileLayer];
+				tileLayerNode = [KKTilemapTileLayerNode tileLayerNodeWithLayer:layer];
+				tileLayerNode.alpha = layer.alpha;
+				tileLayerNode.tilemapNode = self;
+				[self addChild:tileLayerNode];
+				[_tileLayerNodes addObject:tileLayerNode];
 			}
 			else
 			{
-				KKTilemapObjectLayerNode* objectLayer = [KKTilemapObjectLayerNode objectLayerNodeWithLayer:layer];
-				objectLayer.zPosition = -1;
-				NSAssert1(tileLayer, @"can't add object layer '%@' because no tile layer precedes it", layer.name);
-				[tileLayer addChild:objectLayer];
-				[_objectLayerNodes addObject:objectLayer];
+				KKTilemapObjectLayerNode* objectLayerNode = [KKTilemapObjectLayerNode objectLayerNodeWithLayer:layer];
+				objectLayerNode.zPosition = -1;
+				objectLayerNode.tilemapNode = self;
+				
+				NSAssert1(tileLayerNode, @"can't add object layer '%@' because no tile layer precedes it", layer.name);
+				[tileLayerNode addChild:objectLayerNode];
+				[_objectLayerNodes addObject:objectLayerNode];
 			}
 		}
 		
@@ -340,11 +343,14 @@
 
 -(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode
 {
-	NSMutableDictionary* cachedVarSetters = [NSMutableDictionary dictionaryWithCapacity:4];
-	[cachedVarSetters setObject:[[KKClassVarSetter alloc] initWithClass:NSClassFromString(@"PKPhysicsBody")] forKey:@"PKPhysicsBody"];
+	NSMutableDictionary* varSetterCache = [NSMutableDictionary dictionaryWithCapacity:4];
+	[varSetterCache setObject:[[KKClassVarSetter alloc] initWithClass:NSClassFromString(@"PKPhysicsBody")] forKey:@"PKPhysicsBody"];
 	
 	NSDictionary* objectTemplates = [objectLayerNode.kkScene.kkView.model objectForKey:@"objectTemplates"];
 	NSAssert(objectTemplates, @"view's objectTemplates config dictionary is nil (scene, view or model nil?)");
+	
+	NSDictionary* behaviorTemplates = [objectLayerNode.kkScene.kkView.model objectForKey:@"behaviorTemplates"];
+	NSAssert(behaviorTemplates, @"view's behaviorTemplates config dictionary is nil (scene, view or model nil?)");
 	
 	// for each object on layer
 	KKTilemapLayer* objectLayer = objectLayerNode.layer;
@@ -399,21 +405,20 @@
 			objectNode.hidden = tilemapObject.hidden;
 			objectNode.zRotation = tilemapObject.rotation;
 			objectNode.name = (tilemapObject.name.length ? tilemapObject.name : objectClassName);
-			[objectLayerNode addChild:objectNode];
 
 			// apply node properties & ivars
-			NSDictionary* properties = [objectDef objectForKey:@"properties"];
-			if (properties.count)
+			NSDictionary* nodeProperties = [objectDef objectForKey:@"properties"];
+			if (nodeProperties.count)
 			{
-				KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:objectClassName];
+				KKClassVarSetter* varSetter = [varSetterCache objectForKey:objectClassName];
 				if (varSetter == nil)
 				{
 					varSetter = [[KKClassVarSetter alloc] initWithClass:objectNodeClass];
-					[cachedVarSetters setObject:varSetter forKey:objectClassName];
+					[varSetterCache setObject:varSetter forKey:objectClassName];
 				}
 				
-				[varSetter setIvarsWithDictionary:properties target:objectNode];
-				[varSetter setPropertiesWithDictionary:properties target:objectNode];
+				[varSetter setIvarsWithDictionary:nodeProperties target:objectNode];
+				[varSetter setPropertiesWithDictionary:nodeProperties target:objectNode];
 				
 				//NSLog(@"\tproperties: %@", properties);
 			}
@@ -431,7 +436,7 @@
 					NSDictionary* properties = [physicsBodyDef objectForKey:@"properties"];
 					if (properties.count)
 					{
-						KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:@"PKPhysicsBody"];
+						KKClassVarSetter* varSetter = [varSetterCache objectForKey:@"PKPhysicsBody"];
 						[varSetter setPropertiesWithDictionary:properties target:body];
 					}
 				}
@@ -441,54 +446,52 @@
 			
 			// create and add behaviors
 			NSDictionary* behaviors = [objectDef objectForKey:@"behaviors"];
-			for (NSDictionary* behaviorDef in [behaviors allValues])
+			for (NSString* behaviorDefKey in behaviors)
 			{
-				NSString* behaviorClassName = [behaviorDef objectForKey:@"className"];
-				NSAssert1(behaviorClassName, @"Can't create behavior for object type: '%@' - 'behaviorClass' entry missing. Check objectTemplates.lua", objectType);
+				NSDictionary* behaviorDef = [behaviors objectForKey:behaviorDefKey];
+				KKBehavior* behavior = [self behaviorWithTemplate:behaviorDef objectNode:objectNode varSetterCache:varSetterCache];
 				
-				Class behaviorClass = NSClassFromString(behaviorClassName);
-				NSAssert2(behaviorClass, @"Can't create behavior named '%@' (object type: '%@') - no such behavior class", behaviorClassName, objectType);
-				NSAssert2([behaviorClass isSubclassOfClass:[KKBehavior class]], @"Can't create behavior named '%@' (object type: '%@') - class does not inherit from KKBehavior", behaviorClassName, objectType);
-				
-				KKBehavior* behavior = [behaviorClass behavior];
-				
-				// apply behavior properties & ivars
-				NSDictionary* properties = [behaviorDef objectForKey:@"properties"];
-				if (properties.count)
-				{
-					KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:behaviorClassName];
-					if (varSetter == nil)
-					{
-						varSetter = [[KKClassVarSetter alloc] initWithClass:behaviorClass];
-						[cachedVarSetters setObject:varSetter forKey:behaviorClassName];
-					}
-					
-					[varSetter setIvarsWithDictionary:properties target:behavior];
-					[varSetter setPropertiesWithDictionary:properties target:behavior];
-				}
-				
-				[objectNode addBehavior:behavior withKey:[behaviorDef objectForKey:@"key"]];
-				
-				//NSLog(@"\tbehavior: %@", behaviorClassName);
+				[objectNode addBehavior:behavior withKey:behaviorDefKey];
 			}
 			
 			// override properties with properties from Tiled
-			properties = tilemapObject.properties.properties;
-			if (properties.count)
+			NSMutableDictionary* tiledProperties = tilemapObject.properties.properties;
+			if (tiledProperties.count)
 			{
-				KKClassVarSetter* varSetter = [cachedVarSetters objectForKey:objectClassName];
+				KKClassVarSetter* varSetter = [varSetterCache objectForKey:objectClassName];
 				if (varSetter == nil)
 				{
 					varSetter = [[KKClassVarSetter alloc] initWithClass:objectNodeClass];
-					[cachedVarSetters setObject:varSetter forKey:objectClassName];
+					[varSetterCache setObject:varSetter forKey:objectClassName];
+				}
+				
+				// process behavior templates first
+				for (NSString* propertyKey in tiledProperties.allKeys)
+				{
+					// test if a behavior template property exists
+					NSDictionary* behaviorTemplate = [behaviorTemplates objectForKey:propertyKey];
+					if (behaviorTemplate)
+					{
+						// test if the behavior is enabled, and remove the key to avoid varsetter from trying to "set" it
+						KKMutableNumber* behaviorEnabled = [tiledProperties objectForKey:propertyKey];
+						[tiledProperties removeObjectForKey:propertyKey];
+						
+						if (behaviorEnabled.boolValue)
+						{
+							KKBehavior* behavior = [self behaviorWithTemplate:behaviorTemplate objectNode:objectNode varSetterCache:varSetterCache];
+							[objectNode addBehavior:behavior withKey:propertyKey];
+						}
+					}
 				}
 
-				[varSetter setIvarsWithDictionary:properties target:objectNode];
-				[varSetter setPropertiesWithDictionary:properties target:objectNode];
+				[varSetter setIvarsWithDictionary:tiledProperties target:objectNode];
+				[varSetter setPropertiesWithDictionary:tiledProperties target:objectNode];
 
 				//NSLog(@"\tTiled properties: %@", properties);
 			}
-			
+
+			[objectLayerNode addChild:objectNode];
+
 			// call objectDidSpawn on newly spawned object (if available)
 			if ([objectNode respondsToSelector:@selector(nodeDidSpawnWithTilemapObject:)])
 			{
@@ -496,6 +499,35 @@
 			}
 		}
 	}
+}
+
+-(KKBehavior*) behaviorWithTemplate:(NSDictionary*)behaviorDef objectNode:(SKNode*)objectNode varSetterCache:(NSMutableDictionary*)varSetterCache
+{
+	NSString* behaviorClassName = [behaviorDef objectForKey:@"className"];
+	NSAssert1(behaviorClassName, @"Can't create behavior (%@) - 'behaviorClass' entry missing. Check objectTemplates.lua", behaviorDef);
+	
+	Class behaviorClass = NSClassFromString(behaviorClassName);
+	NSAssert1(behaviorClass, @"Can't create behavior named '%@' - no such behavior class", behaviorClassName);
+	NSAssert1([behaviorClass isSubclassOfClass:[KKBehavior class]], @"Can't create behavior named '%@' - class does not inherit from KKBehavior", behaviorClassName);
+	
+	KKBehavior* behavior = [behaviorClass behavior];
+	
+	// apply behavior properties & ivars
+	NSDictionary* behaviorProperties = [behaviorDef objectForKey:@"properties"];
+	if (behaviorProperties.count)
+	{
+		KKClassVarSetter* varSetter = [varSetterCache objectForKey:behaviorClassName];
+		if (varSetter == nil)
+		{
+			varSetter = [[KKClassVarSetter alloc] initWithClass:behaviorClass];
+			[varSetterCache setObject:varSetter forKey:behaviorClassName];
+		}
+		
+		[varSetter setIvarsWithDictionary:behaviorProperties target:behavior];
+		[varSetter setPropertiesWithDictionary:behaviorProperties target:behavior];
+	}
+	
+	return behavior;
 }
 
 #pragma mark Objects

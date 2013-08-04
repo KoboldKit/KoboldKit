@@ -64,6 +64,11 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(void) nodeDidMoveToParent
 {
+	for (KKBehavior* behavior in _behaviors)
+	{
+		[behavior didJoinController];
+	}
+	
 	[self startObservingPhysicsContactEvents];
 }
 
@@ -130,7 +135,11 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	[behavior internal_joinController:self withKey:key];
 	[_behaviors addObject:behavior];
 	
-	[behavior didJoinController];
+	if (_node.parent)
+	{
+		[behavior didJoinController];
+	}
+	
 	[self addPotentialPhysicsContactObserver:behavior];
 }
 
@@ -252,7 +261,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(void) startObservingPhysicsContactEvents
 {
-	if (_observingPhysicsContactEvents == NO)
+	if (_observingPhysicsContactEvents == NO && _node.parent)
 	{
 		_observingPhysicsContactEvents = YES;
 		[_node.kkScene addPhysicsContactEventsObserver:self];
@@ -261,7 +270,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(void) stopObservingPhysicsContactEvents
 {
-	if (_observingPhysicsContactEvents == YES)
+	if (_observingPhysicsContactEvents == YES && _node.parent)
 	{
 		_observingPhysicsContactEvents = NO;
 		[_node.kkScene removePhysicsContactEventsObserver:self];

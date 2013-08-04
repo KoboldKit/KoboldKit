@@ -156,6 +156,11 @@
 		DC7EF8E317AD92B200831FEB /* KKNotifyOnContactBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7EF8E117AD92B200831FEB /* KKNotifyOnContactBehavior.h */; };
 		DC7EF8E417AD92B200831FEB /* KKNotifyOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */; };
 		DC7EF8E517AD92B200831FEB /* KKNotifyOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */; };
+		DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
+		DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
+		DC7EF8EB17AEABFB00831FEB /* KKFollowPathBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7EF8E917AEABFB00831FEB /* KKFollowPathBehavior.h */; };
+		DC7EF8EC17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */; };
+		DC7EF8ED17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */; };
 		DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */; };
@@ -409,6 +414,9 @@
 		DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKItemCollectorBehavior.m; sourceTree = "<group>"; };
 		DC7EF8E117AD92B200831FEB /* KKNotifyOnContactBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNotifyOnContactBehavior.h; sourceTree = "<group>"; };
 		DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNotifyOnContactBehavior.m; sourceTree = "<group>"; };
+		DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = behaviorTemplates.lua; sourceTree = "<group>"; };
+		DC7EF8E917AEABFB00831FEB /* KKFollowPathBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFollowPathBehavior.h; sourceTree = "<group>"; };
+		DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFollowPathBehavior.m; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8EED1D17A40788000C1995 /* objectTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTemplates.lua; sourceTree = "<group>"; };
@@ -639,6 +647,7 @@
 				DC18B0A0178C7BC400641A6D /* devconfig.lua */,
 				DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */,
 				DC8EED1D17A40788000C1995 /* objectTemplates.lua */,
+				DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -943,6 +952,8 @@
 				DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */,
 				DC5D4AD317AC164700CF69EB /* KKRemoveOnNotificationBehavior.h */,
 				DC5D4AD417AC164700CF69EB /* KKRemoveOnNotificationBehavior.m */,
+				DC7EF8E917AEABFB00831FEB /* KKFollowPathBehavior.h */,
+				DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */,
 			);
 			name = "Prefab Behaviors";
 			path = ../Behaviors;
@@ -1208,6 +1219,7 @@
 				DC8EED2717A58773000C1995 /* NSObject+KoboldKit.h in Headers */,
 				DC71017717AACFB600F95BAD /* KKPickupItemBehavior.h in Headers */,
 				DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */,
+				DC7EF8EB17AEABFB00831FEB /* KKFollowPathBehavior.h in Headers */,
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
 				DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */,
@@ -1343,6 +1355,7 @@
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
 				DC5D4AC117AC04B700CF69EB /* Dummy_Player.png in Resources */,
 				DC5D4ACD17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,
+				DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
 				DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
@@ -1371,6 +1384,7 @@
 				DC5D4AC217AC04B700CF69EB /* LevelSelection.tmx in Resources */,
 				DC5D4AC417AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
+				DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
 				DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */,
@@ -1461,6 +1475,7 @@
 				DC484CA2178C43400067DAA4 /* KKTilemapProperties.m in Sources */,
 				DC484CA3178C43400067DAA4 /* KKTilemapTileProperties.m in Sources */,
 				DC484CA4178C43400067DAA4 /* KKTMXReader.m in Sources */,
+				DC7EF8ED17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */,
 				DC484CA5178C43400067DAA4 /* KKTMXWriter.m in Sources */,
 				DC484CAA178C43400067DAA4 /* NSCoder+KoboldKit.m in Sources */,
 				DC484CAB178C43400067DAA4 /* NSBundle+KoboldKit.m in Sources */,
@@ -1562,6 +1577,7 @@
 				DCD7A252178C7449004A0467 /* KKTilemapTileProperties.m in Sources */,
 				DCD7A253178C7449004A0467 /* KKTMXReader.m in Sources */,
 				DCD7A254178C7449004A0467 /* KKTMXWriter.m in Sources */,
+				DC7EF8EC17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */,
 				DCD7A259178C7449004A0467 /* NSCoder+KoboldKit.m in Sources */,
 				DCD7A25A178C7449004A0467 /* NSBundle+KoboldKit.m in Sources */,
 				DCD7A25B178C7449004A0467 /* NSDictionary+KoboldKit.m in Sources */,

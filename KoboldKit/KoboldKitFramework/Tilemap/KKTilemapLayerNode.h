@@ -11,8 +11,9 @@
 
 @class KKTilemap;
 @class KKTilemapLayer;
+@class KKTilemapNode;
 
-/** (not documented) may be removed */
+/** Common base class for both KKTilemapObjectLayerNode and KKTilemapTileLayerNode */
 @interface KKTilemapLayerNode : KKNode
 {
 	@protected
@@ -22,5 +23,8 @@
 
 /** @returns The tilemap layer object. */
 @property (atomic, readonly, weak) KKTilemapLayer* layer;
+
+/** @returns The layer's tilemap node. */
+@property (atomic, weak) KKTilemapNode* tilemapNode;
 
 @end
