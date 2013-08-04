@@ -21,5 +21,6 @@
 }
 
 @property (atomic, copy) NSString* tmxFile;
+@property (atomic, copy) NSString* spawnAtCheckpoint;
 
 @end

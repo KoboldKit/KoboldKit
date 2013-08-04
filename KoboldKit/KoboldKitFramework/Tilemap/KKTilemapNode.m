@@ -498,6 +498,23 @@
 	}
 }
 
+#pragma mark Objects
+
+-(KKTilemapObject*) objectNamed:(NSString*)name
+{
+	for (KKTilemapObjectLayerNode* objectLayerNode in _objectLayerNodes)
+	{
+		for (KKTilemapObject* object in objectLayerNode.layer.objects)
+		{
+			if ([object.name isEqualToString:name])
+			{
+				return object;
+			}
+		}
+	}
+	return nil;
+}
+
 #pragma mark Bounds
 
 @dynamic bounds;

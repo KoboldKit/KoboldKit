@@ -52,6 +52,11 @@
  @returns The object layer node with the name, or nil if there's no object layer with that name. */
 -(KKTilemapObjectLayerNode*) objectLayerNodeNamed:(NSString*)name;
 
+/** Searches all object layers for an object with a matching name.
+ @param name The name identifying the object.
+ @returns The first object (of any object layer) with a matching name, or nil if no such object exists. */
+-(KKTilemapObject*) objectNamed:(NSString*)name;
+
 /** Creates physics blocking shapes from the main tile layer's blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.
  @param tileLayerNode The tile layer node for which to create physics shapes.
  @returns The node containing child nodes for each physics body created. */

@@ -71,6 +71,8 @@
   </object>
   <object name="DemoLevel01_Steffen.tmx" type="ObjectTrigger" x="400" y="400" width="32" height="144">
    <properties>
+    <property name="info.checkpoint" value="checkpointA1"/>
+    <property name="info.tmxFile" value="DemoLevel01_Steffen.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
@@ -85,6 +87,6 @@
     <property name="emitterFile" value="playerdeath.sks"/>
    </properties>
   </object>
-  <object name="checkpointA1" type="Checkpoint" x="96" y="464" width="16" height="32"/>
+  <object name="checkpointA1" type="Checkpoint" x="96" y="512" width="16" height="32"/>
  </objectgroup>
 </map>

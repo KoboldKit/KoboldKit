@@ -31,7 +31,7 @@
 
 -(void) postNotification
 {
-	[[NSNotificationCenter defaultCenter] postNotificationName:_notification object:self];
+	[[NSNotificationCenter defaultCenter] postNotificationName:_notification object:self userInfo:_info];
 }
 
 -(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject
@@ -57,6 +57,15 @@
 -(void) setTriggerType:(NSString *)triggerType
 {
 	self.notification = triggerType;
+}
+
+-(NSMutableDictionary*) info
+{
+	if (_info == nil)
+	{
+		_info = [NSMutableDictionary dictionaryWithCapacity:4];
+	}
+	return _info;
 }
 
 @end

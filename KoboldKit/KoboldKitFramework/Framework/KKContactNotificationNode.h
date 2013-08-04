@@ -9,9 +9,14 @@
 #import "KKNode.h"
 
 @interface KKContactNotificationNode : KKNode
+{
+	@private
+	NSMutableDictionary* _info;
+}
 
 @property (atomic, copy) NSString* notification;
 @property (atomic) NSString* triggerType; // alias
+@property (nonatomic, readonly) NSMutableDictionary* info;
 @property (atomic) BOOL onlyOnce;
 
 -(void) postNotification;

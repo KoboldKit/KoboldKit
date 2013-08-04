@@ -61,10 +61,16 @@
 	[self addChild:_playerSprite];
 }
 
--(void) setCheckpointWithNode:(SKNode*)checkpointNode
+-(void) setCheckpoint:(KKTilemapObject*)checkpointObject
 {
-	_respawnPosition = checkpointNode.position;
+	_respawnPosition = CGPointMake(checkpointObject.position.x + checkpointObject.size.width / 2.0,
+								   checkpointObject.position.y + checkpointObject.size.height / 2.0);
 	LOG_EXPR(_respawnPosition);
+}
+
+-(void) moveToCheckpoint
+{
+	self.position = _respawnPosition;
 }
 
 -(void) respawn
@@ -72,8 +78,7 @@
 	_playerSprite.alpha = 1.0;
 	self.alpha = 1.0;
 	[self observeSceneEvents];
-	
-	self.position = _respawnPosition;
+	[self moveToCheckpoint];
 }
 
 -(void) die
@@ -86,7 +91,7 @@
 	emitter.position = CGPointMake(self.position.x, self.position.y - _playerSprite.size.height / 2.0);
 	[self.parent addChild:emitter];
 
-	[emitter advanceSimulationTime:0.1];
+	[emitter advanceSimulationTime:0.15];
 	NSArray* sequence = @[[SKAction waitForDuration:0.1], [SKAction runBlock:^{ emitter.particleBirthRate = 0.0; }], [SKAction waitForDuration:7.0], [SKAction removeFromParent]];
 	[emitter runAction:[SKAction sequence:sequence]];
 	

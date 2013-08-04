@@ -50,6 +50,7 @@
 -(void) jumpButtonReleased:(NSNotification*)note;
 
 -(void) die;
--(void) setCheckpointWithNode:(SKNode*)checkpointNode;
+-(void) setCheckpoint:(KKTilemapObject*)checkpointObject;
+-(void) moveToCheckpoint;
 
 @end

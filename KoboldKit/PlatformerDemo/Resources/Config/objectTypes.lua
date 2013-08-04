@@ -106,7 +106,6 @@ local objectTypes =
 			_defaultImage = "dummy_stickman.png",
 		},
 		
-		-- physics body properties
 		physicsBody =
 		{
 			properties =
@@ -133,9 +132,9 @@ local objectTypes =
 			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 5, notification = "OpenExitDoor"}},
 		},
 		
-		actions =
+		actions = 
 		{
-			-- not yet supported
+			-- not yet, coming soon
 		},
 	},
 

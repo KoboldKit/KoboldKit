@@ -37,8 +37,13 @@
 {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:@"LoadMap" object:nil];
 
+	NSString* checkpoint = notification.userInfo[@"checkpoint"];
+	NSString* tmxFile = notification.userInfo[@"tmxFile"];
+	NSAssert1(tmxFile.length, @"LoadMap notification is missing the info.tmxFile property! Sender: %@", notification.object);
+	
 	GameScene* newScene = [GameScene sceneWithSize:self.size];
-	newScene.tmxFile = ((SKNode*)notification.object).name;
+	newScene.tmxFile = tmxFile;
+	newScene.spawnAtCheckpoint = checkpoint;
 	[self.scene.view presentScene:newScene transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]];
 }
 
@@ -53,7 +58,8 @@
 	LOG_EXPR(notification.object);
 	LOG_EXPR([notification.object class]);
 	
-	[_playerCharacter setCheckpointWithNode:notification.object];
+	KKTilemapObject* checkpoint = [_tilemapNode objectNamed:((SKNode*)notification.object).name];
+	[_playerCharacter setCheckpoint:checkpoint];
 }
 
 -(void) didMoveToView:(SKView *)view
@@ -91,6 +97,13 @@
 	_playerCharacter = (PlayerCharacter*)[_tilemapNode.gameObjectsLayerNode childNodeWithName:@"player"];
 	NSAssert1([_playerCharacter isKindOfClass:[PlayerCharacter class]], @"player node (%@) is not of class PlayerCharacter!", _playerCharacter);
 	
+	if (_spawnAtCheckpoint.length)
+	{
+		KKTilemapObject* object = [_tilemapNode objectNamed:_spawnAtCheckpoint];
+		[_playerCharacter setCheckpoint:object];
+		[_playerCharacter moveToCheckpoint];
+	}
+	
 	[self createSimpleControls];
 	//[self createVirtualJoypad];
 	[self addDevelopmentButtons];
@@ -103,7 +116,7 @@
 	[_tilemapNode enableParallaxScrolling];
 
 	// remove the curtain
-	[_curtainSprite runAction:[SKAction sequence:@[[SKAction fadeAlphaTo:0 duration:0.5], [SKAction removeFromParent]]]];
+	[_curtainSprite runAction:[SKAction sequence:@[[SKAction waitForDuration:0.1], [SKAction fadeAlphaTo:0 duration:0.5], [SKAction removeFromParent]]]];
 	_curtainSprite = nil;
 }
 
