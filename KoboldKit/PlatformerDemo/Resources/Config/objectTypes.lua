@@ -20,7 +20,7 @@ local objectTypes =
 	ShapeNode = {className = "KKShapeNode"},
 	VideoNode = {className = "KKAutoplayVideoNode"},
 	
-	ObjectTrigger =
+	Trigger =
 	{
 		inheritsFrom = "ContactNotificationNode",
 		physicsBody =
@@ -34,7 +34,7 @@ local objectTypes =
 		},
 	},
 
-	ObjectTriggerOnce =
+	TriggerOnce =
 	{
 		inheritsFrom = "ObjectTrigger",
 		properties =
@@ -67,12 +67,12 @@ local objectTypes =
 		emitterFile = "<missingfile.sks>",
 	},
 	
-	ObjectImage =
+	Image =
 	{
 		inheritsFrom = "SpriteNode",
 	},
 
-	ObjectText =
+	Text =
 	{
 		inheritsFrom = "LabelNode",
 		properties =

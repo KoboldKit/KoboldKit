@@ -15,7 +15,7 @@
   </data>
  </layer>
  <objectgroup draworder="topdown" name="spikes" width="60" height="40">
-  <object name="SpikeA01" type="ObjectTrigger" x="576" y="576" width="192" height="16">
+  <object name="SpikeA01" type="Trigger" x="576" y="576" width="192" height="16">
    <properties>
     <property name="notification" value="DeadlyTrap"/>
    </properties>

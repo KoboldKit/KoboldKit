@@ -44,7 +44,7 @@
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
-  <object name="koffer" type="Briefcase" x="184" y="504" width="16" height="16">
+  <object name="koffer" type="Briefcase" x="176" y="512" width="16" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
@@ -69,14 +69,14 @@
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
-  <object name="lädt das nächste level" type="ObjectTrigger" x="400" y="400" width="32" height="144">
+  <object name="lädt das nächste level" type="Trigger" x="400" y="400" width="32" height="144">
    <properties>
     <property name="info.checkpoint" value="checkpointA1"/>
     <property name="info.tmxFile" value="DemoLevel01_Steffen.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object type="ObjectTrigger" x="0" y="528" width="16" height="16">
+  <object type="Trigger" x="0" y="528" width="16" height="16">
    <properties>
     <property name="notification" value="DeadlyTrap"/>
     <property name="onlyOnce" value="NO"/>
