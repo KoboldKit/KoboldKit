@@ -36,7 +36,7 @@ local objectTypes =
 
 	TriggerOnce =
 	{
-		inheritsFrom = "ObjectTrigger",
+		inheritsFrom = "Trigger",
 		properties =
 		{
 			onlyOnce = YES,
@@ -140,7 +140,7 @@ local objectTypes =
 
 	PickupItem =
 	{
-		inheritsFrom = "ObjectImage",
+		inheritsFrom = "Image",
 		physicsBody =
 		{
 			properties =
@@ -171,7 +171,7 @@ local objectTypes =
 	
 	ExitDoor =
 	{
-		inheritsFrom = "ObjectImage",
+		inheritsFrom = "Image",
 		physicsBody =
 		{
 			properties =
