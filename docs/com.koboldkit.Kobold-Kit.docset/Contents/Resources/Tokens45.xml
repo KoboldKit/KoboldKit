@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapTileObject.html">
+	<File path="Classes/KKTilemapTileLayerNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileObject</TokenIdentifier>
-			<Abstract type="html">A tile object.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileLayerNode</TokenIdentifier>
+			<Abstract type="html">Tile layer node renders a TMX tile layer.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>
 			
 			<NodeRef refid="45"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileObject/setGid:</TokenIdentifier>
-			<Abstract type="html">The GID of the tile object.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapTileLayerNode/tileLayerNodeWithLayer:</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) gid_t gid</Declaration>
-			
-			
-			<Anchor>//api/name/gid</Anchor>
+			<Declaration>+ (id)tileLayerNodeWithLayer:(KKTilemapLayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">The tilemap layer object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/tileLayerNodeWithLayer:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileObject/gid</TokenIdentifier>
-			<Abstract type="html">The GID of the tile object.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileLayerNode/updateLayer</TokenIdentifier>
+			<Abstract type="html">Updates the layer's tile sprites based on position, scale and view size.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic) gid_t gid</Declaration>
-			
-			
-			<Anchor>//api/name/gid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapTileObject/gid</TokenIdentifier>
-			<Abstract type="html">The GID of the tile object.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) gid_t gid</Declaration>
+			<Declaration>- (void)updateLayer</Declaration>
 			
 			
-			<Anchor>//api/name/gid</Anchor>
+			<Anchor>//api/name/updateLayer</Anchor>
 		</Token>
 		
 	</File>

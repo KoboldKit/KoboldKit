@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTMXWriter.html">
+	<File path="Classes/KKTMXReader.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTMXWriter</TokenIdentifier>
-			<Abstract type="html">Internal use only.
-Writes a KTTilemap object to a file in TMX format. The resulting TMX can be opened in Tiled Map Editor
-   or other tools/engines that support the TMX format. </Abstract>
-			<DeclaredIn>KKTMXWriter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTMXReader</TokenIdentifier>
+			<Abstract type="html">Internal use only. Temporary object that parses a TMX file and creates the KTTilemap hierarchy containing KTTilemapTileset,
+   KTTilemapLayer, KTTilemapLayerTiles and KTTilemapObject. Used by KTTilemap which has its own parseTMX method. Not meant to be subclassed
+   or modified. </Abstract>
+			<DeclaredIn>KKTMXReader.h</DeclaredIn>
 			
 			<NodeRef refid="32"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTMXWriter/writeTMXFile:tilemap:</TokenIdentifier>
-			<Abstract type="html">Writes a KTTilemap object hierarchy to a file in TMX format.</Abstract>
-			<DeclaredIn>KKTMXWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTMXReader/loadTMXFile:tilemap:</TokenIdentifier>
+			<Abstract type="html">Internal use only.</Abstract>
+			<DeclaredIn>KKTMXReader.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeTMXFile:(NSString *)file tilemap:(KKTilemap *)tilemap</Declaration>
+			<Declaration>- (void)loadTMXFile:(NSString *)tmxFile tilemap:(KKTilemap *)tilemap</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>file</Name>
-					<Abstract type="html">The full path to a file.</Abstract>
+					<Name>tmxFile</Name>
+					<Abstract type="html">The full path to the TMX file to load.</Abstract>
 				</Parameter><Parameter>
 					<Name>tilemap</Name>
-					<Abstract type="html">The KTTilemap object hierarchy to write.</Abstract>
+					<Abstract type="html">The tilemap object into which the TMX file is loaded.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeTMXFile:tilemap:</Anchor>
+			<Anchor>//api/name/loadTMXFile:tilemap:</Anchor>
 		</Token>
 		
 	</File>

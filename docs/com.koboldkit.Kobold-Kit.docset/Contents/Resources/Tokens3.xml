@@ -17,7 +17,7 @@ Behaviors differ from actions in several ways:</Abstract>
 			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
 			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy, readonly) NSString *key</Declaration>
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
 			
 			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
 			<Anchor>//api/name/key</Anchor>
@@ -28,7 +28,7 @@ Behaviors differ from actions in several ways:</Abstract>
 			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
 			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy, readonly) NSString *key</Declaration>
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
 			
 			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
 			<Anchor>//api/name/key</Anchor>
@@ -39,7 +39,7 @@ Behaviors differ from actions in several ways:</Abstract>
 			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
 			<DeclaredIn>KKBehavior.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, copy, readonly) NSString *key</Declaration>
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
 			
 			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
 			<Anchor>//api/name/key</Anchor>

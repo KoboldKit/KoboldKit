@@ -1,93 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSFileManager+KoboldKit.html">
+	<File path="Categories/NSCoder+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSFileManager(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">NSFileManager category methods for Kobold Kit</Abstract>
-			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSCoder(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">Adds encode/decode convenience methods for common structs not supported natively (or cross-platform) by NSCoder.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
 			
 			<NodeRef refid="55"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathForBundleFile:</TokenIdentifier>
-			<Abstract type="html">The absolute path to the file or nil if the file could not be found.</Abstract>
-			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/encodePoint:forKey:</TokenIdentifier>
+			<Abstract type="html">Encodes a CGPoint.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)pathForBundleFile:(NSString *)file</Declaration>
+			<Declaration>- (void)encodePoint:(CGPoint)point forKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>file</Name>
-					<Abstract type="html">A filename.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The absolute path to the file or nil if the file could not be found.The path to the file or nil if the file couldn't be found in the bundle.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForBundleFile:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathForDocumentsFile:</TokenIdentifier>
-			<Abstract type="html">The absolute path to the file.</Abstract>
-			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)pathForDocumentsFile:(NSString *)file</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>file</Name>
-					<Abstract type="html">A filename.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The absolute path to the file.The path to the file or nil if the file couldn't be found in the user's documents directory.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForDocumentsFile:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathForFile:inDirectory:</TokenIdentifier>
-			<Abstract type="html">Searches for the file in the given NSSearchPathDirectory and returns the absolute path to the file if it was found.</Abstract>
-			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)pathForFile:(NSString *)file inDirectory:(NSSearchPathDirectory)directory</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>file</Name>
-					<Abstract type="html">A filename.</Abstract>
+					<Name>point</Name>
+					<Abstract type="html">The point to encode.</Abstract>
 				</Parameter><Parameter>
-					<Name>directory</Name>
-					<Abstract type="html">The NSSearchPathDirectory constant where to look for the file.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The absolute path to the file, or nil if the file could not be found.The path to the file or nil if the file couldn't be found in the directory.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForFile:inDirectory:</Anchor>
+			
+			<Anchor>//api/name/encodePoint:forKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathForFile:</TokenIdentifier>
-			<Abstract type="html">Searches for the file in the documents directory first, before trying the bundle and returns the absolute path
-to the file where it was first found.</Abstract>
-			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/decodePointForKey:</TokenIdentifier>
+			<Abstract type="html">Decodes a CGPoint</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)pathForFile:(NSString *)file</Declaration>
+			<Declaration>- (CGPoint)decodePointForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>file</Name>
-					<Abstract type="html">A filename.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The absolute path to the file, or nil if the file could not be found in any of the searched directories.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathForFile:</Anchor>
+			<ReturnValue><Abstract type="html">The decoded point.</Abstract></ReturnValue>
+			<Anchor>//api/name/decodePointForKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSFileManager(KoboldKit)/pathToDocumentsDirectory</TokenIdentifier>
-			<Abstract type="html">The full path to the documents directory.</Abstract>
-			<DeclaredIn>NSFileManager+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/encodeCGPoint:forKey:</TokenIdentifier>
+			<Abstract type="html">Encodes a CGPoint using the same method defined by UIGeometry.h on iOS.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)pathToDocumentsDirectory</Declaration>
+			<Declaration>- (void)encodeCGPoint:(CGPoint)point forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point to encode.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			<ReturnValue><Abstract type="html">The full path to the documents directory.</Abstract></ReturnValue>
-			<Anchor>//api/name/pathToDocumentsDirectory</Anchor>
+			<Anchor>//api/name/encodeCGPoint:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSCoder(KoboldKit)/decodeCGPointForKey:</TokenIdentifier>
+			<Abstract type="html">Decodes a CGPoint using the same method defined by UIGeometry.h on iOS.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)decodeCGPointForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The decoded point.</Abstract></ReturnValue>
+			<Anchor>//api/name/decodeCGPointForKey:</Anchor>
 		</Token>
 		
 	</File>

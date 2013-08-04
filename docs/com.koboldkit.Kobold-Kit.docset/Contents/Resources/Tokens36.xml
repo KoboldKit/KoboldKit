@@ -1,47 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapLayerNode.html">
+	<File path="Classes/KKTilemapLayerContourTracer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerNode</TokenIdentifier>
-			<Abstract type="html">(not documented) may be removed</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerContourTracer</TokenIdentifier>
+			<Abstract type="html">Internal use. Performs contour tracing of a tile layer and returns the resulting contour segments
+as CGPathRef or KKPointArray.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>
 			
 			<NodeRef refid="36"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setLayer:</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerContourTracer/setContourSegments:</TokenIdentifier>
+			<Abstract type="html">Contains array of CGPathRef definining the contours' line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
 			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
+			
+			<Anchor>//api/name/contourSegments</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/layer</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerContourTracer/contourSegments</TokenIdentifier>
+			<Abstract type="html">Contains array of CGPathRef definining the contours' line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
 			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
+			
+			<Anchor>//api/name/contourSegments</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/layer</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerContourTracer/contourSegments</TokenIdentifier>
+			<Abstract type="html">Contains array of CGPathRef definining the contours' line segments.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
 			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *contourSegments</Declaration>
 			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
+			
+			<Anchor>//api/name/contourSegments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapLayerContourTracer/contourMapFromTileLayer:</TokenIdentifier>
+			<Abstract type="html">Parses the tile layer and creates a contour map.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
+			
+			<Declaration>+ (id)contourMapFromTileLayer:(KKTilemapLayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">A tile layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Instance of KKTilemapLayerContourTracer.</Abstract></ReturnValue>
+			<Anchor>//api/name/contourMapFromTileLayer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapLayerContourTracer/contourMapFromTileLayer:blockingGids:</TokenIdentifier>
+			<Abstract type="html">Parses the tile layer and creates a contour map.</Abstract>
+			<DeclaredIn>KKTilemapLayerContourTracer.h</DeclaredIn>			
+			
+			<Declaration>+ (id)contourMapFromTileLayer:(KKTilemapLayer *)layer blockingGids:(KKIntegerArray *)blockingGids</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">A tile layer.</Abstract>
+				</Parameter><Parameter>
+					<Name>blockingGids</Name>
+					<Abstract type="html">An integer array of specific GIDs that should be considered as blocking.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Instance of KKTilemapLayerContourTracer.</Abstract></ReturnValue>
+			<Anchor>//api/name/contourMapFromTileLayer:blockingGids:</Anchor>
 		</Token>
 		
 	</File>

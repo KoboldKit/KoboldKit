@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSMutableDictionary+KoboldKit.html">
+	<File path="Categories/NSDictionary+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSMutableDictionary(KoboldKit)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(KoboldKit)</TokenIdentifier>
 			<Abstract type="html">Kobold Kit extensions</Abstract>
 			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>
 			
@@ -12,12 +12,12 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(KoboldKit)/dictionaryWithContentsOfLuaScript:</TokenIdentifier>
-			<Abstract type="html">Runs the given Lua script file and transforms the returned Lua table into a KVC coded NSMutableDictionary.
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(KoboldKit)/dictionaryWithContentsOfLuaScript:</TokenIdentifier>
+			<Abstract type="html">Runs the given Lua script file and transforms the returned Lua table into a KVC coded NSDictionary.
 Navigate the table with valueForKeyPath:</Abstract>
 			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableDictionary *)dictionaryWithContentsOfLuaScript:(NSString *)scriptFile</Declaration>
+			<Declaration>+ (NSDictionary *)dictionaryWithContentsOfLuaScript:(NSString *)scriptFile</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>scriptFile</Name>

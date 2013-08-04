@@ -1,41 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapTileLayerNode.html">
+	<File path="Classes/KKTilemapRectangleObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileLayerNode</TokenIdentifier>
-			<Abstract type="html">Tile layer node renders a TMX tile layer.</Abstract>
-			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapRectangleObject</TokenIdentifier>
+			<Abstract type="html">A rectangle object, usually referred to as simply "object" in Tiled.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
 			<NodeRef refid="44"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapTileLayerNode/tileLayerNodeWithLayer:</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/setRect:</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>+ (id)tileLayerNodeWithLayer:(KKTilemapLayer *)layer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>layer</Name>
-					<Abstract type="html">The tilemap layer object.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/tileLayerNodeWithLayer:</Anchor>
+			<Declaration>@property (atomic) CGRect rect</Declaration>
+			
+			
+			<Anchor>//api/name/rect</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileLayerNode/updateLayer</TokenIdentifier>
-			<Abstract type="html">Updates the layer's tile sprites based on position, scale and view size.</Abstract>
-			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/rect</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
 			
-			<Declaration>- (void)updateLayer</Declaration>
+			<Declaration>@property (atomic) CGRect rect</Declaration>
 			
 			
-			<Anchor>//api/name/updateLayer</Anchor>
+			<Anchor>//api/name/rect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapRectangleObject/rect</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGRect rect</Declaration>
+			
+			
+			<Anchor>//api/name/rect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/setEllipse:</TokenIdentifier>
+			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL ellipse</Declaration>
+			
+			
+			<Anchor>//api/name/ellipse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/ellipse</TokenIdentifier>
+			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL ellipse</Declaration>
+			
+			
+			<Anchor>//api/name/ellipse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapRectangleObject/ellipse</TokenIdentifier>
+			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL ellipse</Declaration>
+			
+			
+			<Anchor>//api/name/ellipse</Anchor>
 		</Token>
 		
 	</File>

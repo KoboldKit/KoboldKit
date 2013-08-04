@@ -1,49 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSObject+KoboldKit.html">
+	<File path="Categories/NSMutableDictionary+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSObject(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">NSObject category methods for Kobold Kit</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableDictionary(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">Kobold Kit extensions</Abstract>
+			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>
 			
 			<NodeRef refid="57"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(KoboldKit)/performSelector:afterDelay:</TokenIdentifier>
-			<Abstract type="html">Performs a selector with delay, with 'self' automatically sent to the selector.</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(KoboldKit)/dictionaryWithContentsOfLuaScript:</TokenIdentifier>
+			<Abstract type="html">Runs the given Lua script file and transforms the returned Lua table into a KVC coded NSMutableDictionary.
+Navigate the table with valueForKeyPath:</Abstract>
+			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>			
 			
-			<Declaration>- (void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay</Declaration>
+			<Declaration>+ (NSMutableDictionary *)dictionaryWithContentsOfLuaScript:(NSString *)scriptFile</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>aSelector</Name>
-					<Abstract type="html">The selector to perform. Selector must take a single id parameter.</Abstract>
-				</Parameter><Parameter>
-					<Name>delay</Name>
-					<Abstract type="html">The time to wait (in seconds) before performing the selector.</Abstract>
+					<Name>scriptFile</Name>
+					<Abstract type="html">The name of a Lua script file.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/performSelector:afterDelay:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(KoboldKit)/performSelectorInBackground:</TokenIdentifier>
-			<Abstract type="html">Performs a selector in background, with 'self' automatically sent to the selector.</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (void)performSelectorInBackground:(SEL)aSelector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>aSelector</Name>
-					<Abstract type="html">The selector to perform. Selector must take a single id parameter.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/performSelectorInBackground:</Anchor>
+			<ReturnValue><Abstract type="html">The Lua table as a dictionary, or nil if there are any errors.</Abstract></ReturnValue>
+			<Anchor>//api/name/dictionaryWithContentsOfLuaScript:</Anchor>
 		</Token>
 		
 	</File>

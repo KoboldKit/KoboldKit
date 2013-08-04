@@ -1,17 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKViewOriginNode.html">
+	<File path="Classes/KKViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKViewOriginNode</TokenIdentifier>
-			<Abstract type="html">Children of this node will always have their origin at the lower left corner of the view,
-regardless of the scene's anchorPoint. This class is mainly used to keep HUD elements
-in a scrolling world fixed on the screen because the origin (0,0) is fixed to the lower left corner.</Abstract>
-			<DeclaredIn>KKViewOriginNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKViewController</TokenIdentifier>
+			<Abstract type="html">View controller for a Kobold Kit view, supposed to be subclassed by user for the Kobold Kit view controller &amp; view.
+Creates the KKView and performs other setup tasks. Combines code for both iOS &amp; OS X platforms to a single uniform controller.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
 			<NodeRef refid="50"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/setKkView:</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view controller's view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Called after view did load. Declaration needed for Mac OS X whose NSViewController knows no viewDidLoad method.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/presentFirstScene</TokenIdentifier>
+			<Abstract type="html">Called when the view is ready to present the first scene. Override in your subclass to present the very first scene.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)presentFirstScene</Declaration>
+			
+			
+			<Anchor>//api/name/presentFirstScene</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

@@ -1,15 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKRemoveOnContactBehavior.html">
+	<File path="Classes/KKPointArray.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKRemoveOnContactBehavior</TokenIdentifier>
-			<Abstract type="html">This behavior removes the node when its physicsBody generates a contact event.</Abstract>
-			<DeclaredIn>KKRemoveOnContactBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKPointArray</TokenIdentifier>
+			<Abstract type="html">A simple and efficient array of CGPoint structs.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
 			<NodeRef refid="27"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/setCount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/count</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKPointArray/count</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/setPoints:</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/points</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKPointArray/points</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKPointArray/pointArrayWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Creates a points array, reserving capacity amount of memory for points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>+ (id)pointArrayWithCapacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity reserved for the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/pointArrayWithCapacity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKPointArray/pointArrayWithPoints:count:</TokenIdentifier>
+			<Abstract type="html">Creates a points array by copying count points from the points buffer (array). You can delete (free) your points buffer after calling this method.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>+ (id)pointArrayWithPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">A memory buffer containing CGPoints. The buffer is copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of CGPoint in the buffer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/pointArrayWithPoints:count:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/addPoints:count:</TokenIdentifier>
+			<Abstract type="html">Adds the given number of points from an existing CGPoint array or memory buffer.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Memeory buffer containing points. Buffer is copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of CGPoint in the buffer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPoints:count:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/addPoint:</TokenIdentifier>
+			<Abstract type="html">Adds a single point to the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPoint:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPoint:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removeAllPoints</TokenIdentifier>
+			<Abstract type="html">Removes all points from the array. You can then start re-adding points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllPoints</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllPoints</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/pointAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the point at the given index. If the index is out of bounds an exception is raised.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)pointAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of a point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The point at the given index.</Abstract></ReturnValue>
+			<Anchor>//api/name/pointAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/lastPoint</TokenIdentifier>
+			<Abstract type="html">The last point in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)lastPoint</Declaration>
+			
+			<ReturnValue><Abstract type="html">The last point in the array.</Abstract></ReturnValue>
+			<Anchor>//api/name/lastPoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removeLastPoint</TokenIdentifier>
+			<Abstract type="html">Removes the last point from the array. Does nothing if the array is empty.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeLastPoint</Declaration>
+			
+			
+			<Anchor>//api/name/removeLastPoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removePointsStartingAtIndex:</TokenIdentifier>
+			<Abstract type="html">Removes all points from index to last point. Does nothing if index >= count. The array then contains (index - 1) points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)removePointsStartingAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The lowest index from which to remove all remaining points.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removePointsStartingAtIndex:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

@@ -1,35 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTMXReader.html">
+	<File path="Classes/KKStayInBoundsBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTMXReader</TokenIdentifier>
-			<Abstract type="html">Internal use only. Temporary object that parses a TMX file and creates the KTTilemap hierarchy containing KTTilemapTileset,
-   KTTilemapLayer, KTTilemapLayerTiles and KTTilemapObject. Used by KTTilemap which has its own parseTMX method. Not meant to be subclassed
-   or modified. </Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKStayInBoundsBehavior</TokenIdentifier>
+			<Abstract type="html">Prevents a node's position from passing over the bounds rectangle.
+(TODO: Optionally sends notifications when node comes in to contact with the bounds and when contact ends.)</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
 			
 			<NodeRef refid="31"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTMXReader/loadTMXFile:tilemap:</TokenIdentifier>
-			<Abstract type="html">Internal use only.</Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/setBounds:</TokenIdentifier>
+			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>			
 			
-			<Declaration>- (void)loadTMXFile:(NSString *)tmxFile tilemap:(KKTilemap *)tilemap</Declaration>
+			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
+			
+			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/bounds</TokenIdentifier>
+			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
+			
+			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKStayInBoundsBehavior/bounds</TokenIdentifier>
+			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
+			
+			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKStayInBoundsBehavior/stayInBounds:</TokenIdentifier>
+			<Abstract type="html">If either x/width or y/height are set to INFINITY then that axis will not check for bounds. Thus if the node
+should be able to move endlessly in horizontal direction but not outside the screen at the top or bottom,
+set bounds.size.width or bounds.origin.x to INFINITY.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)stayInBounds:(CGRect)bounds</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tmxFile</Name>
-					<Abstract type="html">The full path to the TMX file to load.</Abstract>
-				</Parameter><Parameter>
-					<Name>tilemap</Name>
-					<Abstract type="html">The tilemap object into which the TMX file is loaded.</Abstract>
+					<Name>bounds</Name>
+					<Abstract type="html">The boundary rectangle.</Abstract>
 				</Parameter>
 			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of the class.</Abstract></ReturnValue>
+			<Anchor>//api/name/stayInBounds:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.m</DeclaredIn>			
 			
-			<Anchor>//api/name/loadTMXFile:tilemap:</Anchor>
+			<Declaration>- (void)didJoinController</Declaration>
+			
+			
+			<Anchor>//api/name/didJoinController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/didLeaveController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didLeaveController</Declaration>
+			
+			
+			<Anchor>//api/name/didLeaveController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">Update after physics world was simulated.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didSimulatePhysics</Declaration>
+			
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
 		</Token>
 		
 	</File>
