@@ -250,7 +250,7 @@
 	// find body below player
 	SKPhysicsWorld* physicsWorld = self.scene.physicsWorld;
 	[physicsWorld enumerateBodiesAlongRayStart:rayStart end:rayEnd usingBlock:^(SKPhysicsBody *body, CGPoint point, CGPoint normal, BOOL *stop) {
-		if (body.contactTestBitMask == 0)
+		if (body.contactTestBitMask <= 1)
 		{
 			_onFloor = YES;
 			

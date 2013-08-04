@@ -8,6 +8,8 @@ local kContactCategoryPickupItem = 2
 local kContactCategoryTrigger = 4
 local kContactCategoryStaticObject = 8
 
+local kGameObjectCollisionBitMask = 0xffffffff - (kContactCategoryPickupItem + kContactCategoryTrigger)
+
 local objectTemplates =
 {
 	-- Behavior templates are not actually nodes but one or more behaviors that can be added to a node in Tiled
@@ -126,7 +128,7 @@ local objectTemplates =
 				affectedByGravity = NO,
 				categoryBitMask = kContactCategoryPlayer,
 				contactTestBitMask = 0, --kContactCategoryPlayer + kContactCategoryPickupItem,
-				collisionBitMask = 0xffffffff - (kContactCategoryPickupItem + kContactCategoryTrigger),
+				collisionBitMask = kGameObjectCollisionBitMask,
 			},
 		},
 		
@@ -191,6 +193,27 @@ local objectTemplates =
 		behaviors =
 		{
 			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenExitDoor"}},
+		},
+	},
+
+	Platform =
+	{
+		inheritsFrom = "Image",
+			
+		physicsBody =
+		{
+			properties =
+			{
+				categoryBitMask = kContactCategoryStaticObject,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = kGameObjectCollisionBitMask,
+				dynamic = YES,
+				allowsRotation = NO,
+				affectedByGravity = NO,
+				mass = 265535,
+				friction = 1,
+				restitution = 0,
+			},
 		},
 	},
 }

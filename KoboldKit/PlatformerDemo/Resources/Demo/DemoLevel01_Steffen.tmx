@@ -49,7 +49,7 @@
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
-  <object name="koffer" type="Briefcase" x="208" y="512" width="16" height="16">
+  <object name="koffer" type="Briefcase" x="240" y="384" width="16" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
    </properties>
@@ -88,21 +88,21 @@
    </properties>
   </object>
   <object name="checkpointA1" type="Checkpoint" x="96" y="512" width="16" height="32"/>
-  <object name="p2" x="176" y="544">
-   <polygon points="0,0 192,32 176,-16 144,0 80,-32 80,0"/>
+  <object name="p2" x="144" y="464">
+   <polygon points="0,32 192,32 176,-16 144,-48 48,-48 16,-16"/>
   </object>
-  <object name="p1Mover" type="Text" x="144" y="560" width="32" height="16">
+  <object name="p1Mover" type="Platform" x="80" y="416" width="64" height="32">
    <properties>
     <property name="FollowPath" value="YES"/>
     <property name="FollowPath.initialWaitDuration" value="0"/>
-    <property name="FollowPath.moveSpeed" value="200"/>
-    <property name="FollowPath.pathName" value="p1"/>
+    <property name="FollowPath.moveSpeed" value="60"/>
+    <property name="FollowPath.pathName" value="p2"/>
     <property name="FollowPath.relativeToObject" value="NO"/>
     <property name="FollowPath.repeatCount" value="0"/>
-    <property name="text" value="X"/>
+    <property name="imageName" value="Dummy_Player.png"/>
    </properties>
   </object>
-  <object name="p2Mover" type="Text" x="176" y="368" width="32" height="32">
+  <object name="p2Mover" type="Text" x="32" y="368" width="32" height="32">
    <properties>
     <property name="text" value="I'm following!"/>
    </properties>
@@ -111,7 +111,7 @@
    <ellipse/>
   </object>
   <object name="p4" x="160" y="448" width="48" height="48"/>
-  <object name="p1" x="96" y="560">
+  <object name="p1" x="144" y="432">
    <polyline points="0,0 48,-16 112,0 128,-16 144,0 144,-16 160,-16"/>
   </object>
  </objectgroup>
