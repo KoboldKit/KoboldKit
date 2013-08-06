@@ -444,7 +444,8 @@
 @dynamic imageName;
 -(void) setImageName:(NSString *)imageName
 {
-	SKTexture* texture = [SKTexture textureWithImageNamed:imageName];
+#pragma message "FIXME: only works with Jetpack atlas atm"
+	SKTexture* texture = [[SKTextureAtlas atlasNamed:@"Jetpack"] textureNamed:imageName];
 	self.texture = texture;
 	self.size = texture.size;
 }
