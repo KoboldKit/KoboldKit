@@ -15,12 +15,16 @@
 	return [self physicsBodyWithRectangleOfSize:_boundingBox];
 }
 
+// called from spawning objects via Tilemap node
 -(void) nodeDidSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject
 {
 	_tilemapPlayerObject = tilemapObject;
 	_respawnPosition = self.position;
-	[self setupPlayerSprite];
-	
+
+	NSAssert(_defaultImage.length, @"defaultImage property not set for player object in Tiled!");
+	_playerSprite = [KKSpriteNode spriteNodeWithImageNamed:_defaultImage];
+	[self addChild:_playerSprite];
+
 	// 1st parent = object layer node, 2nd parent = tile layer node, 3rd parent = tilemap node
 	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.parent.parent.parent;
 	NSAssert1([tilemapNode isKindOfClass:[KKTilemapNode class]], @"player.parent.parent.parent (%@) is not a KKTilemapNode!", tilemapNode);
@@ -33,56 +37,10 @@
 	[self observeSceneEvents];
 }
 
--(void) setupPlayerSprite
-{
-	CGSize playerSize = _tilemapPlayerObject.size;
-	
-	if (_defaultImage.length)
-	{
-		SKTexture* texture = [SKTexture textureWithImageNamed:_defaultImage];
-		if (texture)
-		{
-			_playerSprite = [KKSpriteNode spriteNodeWithImageNamed:_defaultImage];
-		}
-		else
-		{
-			SKTextureAtlas* atlas = [SKTextureAtlas atlasNamed:@"Jetpack"];
-			texture = [atlas textureNamed:_defaultImage];
-			_playerSprite = [KKSpriteNode spriteNodeWithTexture:texture];
-		}
-
-		playerSize = _playerSprite.size;
-	}
-	else
-	{
-		_playerSprite = [KKSpriteNode spriteNodeWithColor:[SKColor redColor] size:playerSize];
-	}
-	
-	[self addChild:_playerSprite];
-}
-
--(void) setCheckpoint:(KKTilemapObject*)checkpointObject
-{
-	_respawnPosition = CGPointMake(checkpointObject.position.x + checkpointObject.size.width / 2.0,
-								   checkpointObject.position.y + checkpointObject.size.height / 2.0);
-	LOG_EXPR(_respawnPosition);
-}
-
--(void) moveToCheckpoint
-{
-	self.position = _respawnPosition;
-}
-
--(void) respawn
-{
-	_playerSprite.alpha = 1.0;
-	self.alpha = 1.0;
-	[self observeSceneEvents];
-	[self moveToCheckpoint];
-}
-
 -(void) die
 {
+	// death hides the player, plays an effect, then "respawns" player after some time
+	
 	[self disregardSceneEvents];
 	self.physicsBody.velocity = CGPointZero;
 	_currentControlPadDirection = CGPointZero;
@@ -103,6 +61,26 @@
 	[self runAction:[SKAction sequence:sequence]];
 }
 
+-(void) respawn
+{
+	_playerSprite.alpha = 1.0;
+	self.alpha = 1.0;
+	[self observeSceneEvents];
+	[self moveToCheckpoint];
+}
+
+-(void) setCheckpoint:(KKTilemapObject*)checkpointObject
+{
+	// center respawn position on checkpoint object
+	_respawnPosition = CGPointMake(checkpointObject.position.x + checkpointObject.size.width / 2.0,
+								   checkpointObject.position.y + checkpointObject.size.height / 2.0);
+}
+
+-(void) moveToCheckpoint
+{
+	self.position = _respawnPosition;
+}
+
 -(void) controlPadDidChangeDirection:(NSNotification*)note
 {
 	KKControlPadBehavior* controlPad = [note.userInfo objectForKey:@"behavior"];
@@ -121,11 +99,6 @@
 		}
 		_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), speed);
 	}
-}
-
--(void) attackButtonPressed:(NSNotification*)note
-{
-	NSLog(@"attack!");
 }
 
 -(void) jumpButtonPressed:(NSNotification*)note
@@ -167,6 +140,7 @@
 
 -(void) update:(NSTimeInterval)currentTime
 {
+	// custom non-physics velocity to tweak player's behavior to be less like a physics body but a "real" jump'n run character
 	CGPoint velocity = self.physicsBody.velocity;
 	if (_jumping)
 	{
@@ -228,20 +202,9 @@
 	}
 	
 	self.physicsBody.velocity = velocity;
-	
-	//NSLog(@"pos: {%.0f, %.0f}", _playerCharacter.position.x, _playerCharacter.position.y);
-	//NSLog(@"pos: {%.0f, %.0f}", _tilemapNode.mainTileLayerNode.position.x, _tilemapNode.mainTileLayerNode.position.y);
-	
-	/*
-	NSLog(@"----------------------------");
-	LOG_EXPR(_playerSprite.position);
-	LOG_EXPR(_playerSprite.parent.position);
-	LOG_EXPR(_playerSprite.parent.parent.position);
-	LOG_EXPR(_playerSprite.parent.parent.parent.position);
-	 */
 }
 
--(void) didEvaluateActions
+-(void) testPlayerOnFloor
 {
 	_onFloor = NO;
 	CGPoint rayStart = self.position;
@@ -257,34 +220,15 @@
 			// force the player at the same y coord on the floor (they physics engine will force the player back up to the edge)
 			point.y += _playerSprite.size.height / 2.0;
 			self.position = point;
+			
 			*stop = YES;
 		}
 	}];
 }
 
-/*
--(void) didBeginContact:(SKPhysicsContact*)contact
+-(void) didEvaluateActions
 {
-	SKPhysicsBody* myBody = self.physicsBody;
-	if (contact.bodyA == myBody || contact.bodyB == myBody)
-	{
-		// FIXME: this should actually check for collision with floor
-		
-		// prevent jitter on floor
-		CGPoint velocity = myBody.velocity;
-		velocity.y = 0.0;
-		myBody.velocity = velocity;
-	}
+	[self testPlayerOnFloor];
 }
-
--(void) didEndContact:(SKPhysicsContact*)contact
-{
-	SKPhysicsBody* myBody = self.physicsBody;
-	if (contact.bodyA == myBody || contact.bodyB == myBody)
-	{
-		_inContact = NO;
-	}
-}
-*/
 
 @end

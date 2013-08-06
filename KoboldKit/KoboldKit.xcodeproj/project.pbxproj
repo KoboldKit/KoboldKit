@@ -112,14 +112,6 @@
 		DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
 		DC484CE1178C43BE0067DAA4 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
 		DC484CE4178C465E0067DAA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484CE3178C465E0067DAA4 /* libz.dylib */; };
-		DC5D4AC017AC04B700CF69EB /* Dummy_Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4AB817AC04B700CF69EB /* Dummy_Player.png */; };
-		DC5D4AC117AC04B700CF69EB /* Dummy_Player.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4AB817AC04B700CF69EB /* Dummy_Player.png */; };
-		DC5D4AC217AC04B700CF69EB /* LevelSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4AB917AC04B700CF69EB /* LevelSelection.tmx */; };
-		DC5D4AC317AC04B700CF69EB /* LevelSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4AB917AC04B700CF69EB /* LevelSelection.tmx */; };
-		DC5D4AC417AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABA17AC04B700CF69EB /* Tileset_Geometry_16x16_old.png */; };
-		DC5D4AC517AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABA17AC04B700CF69EB /* Tileset_Geometry_16x16_old.png */; };
-		DC5D4AC617AC04B700CF69EB /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABB17AC04B700CF69EB /* Tileset_Geometry_32x32.png */; };
-		DC5D4AC717AC04B700CF69EB /* Tileset_Geometry_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABB17AC04B700CF69EB /* Tileset_Geometry_32x32.png */; };
 		DC5D4AC817AC04B700CF69EB /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */; };
 		DC5D4AC917AC04B700CF69EB /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */; };
 		DC5D4ACA17AC04B700CF69EB /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */; };
@@ -389,10 +381,6 @@
 		DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KoboldKit.h"; sourceTree = "<group>"; };
 		DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KoboldKit.m"; sourceTree = "<group>"; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		DC5D4AB817AC04B700CF69EB /* Dummy_Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dummy_Player.png; sourceTree = "<group>"; };
-		DC5D4AB917AC04B700CF69EB /* LevelSelection.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LevelSelection.tmx; sourceTree = "<group>"; };
-		DC5D4ABA17AC04B700CF69EB /* Tileset_Geometry_16x16_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16_old.png; sourceTree = "<group>"; };
-		DC5D4ABB17AC04B700CF69EB /* Tileset_Geometry_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_32x32.png; sourceTree = "<group>"; };
 		DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01.tmx; sourceTree = "<group>"; };
 		DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoSandbox.tmx; sourceTree = "<group>"; };
 		DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
@@ -777,17 +765,6 @@
 			path = Addons;
 			sourceTree = "<group>";
 		};
-		DC5D4AB717AC04B700CF69EB /* 32x32 */ = {
-			isa = PBXGroup;
-			children = (
-				DC5D4AB817AC04B700CF69EB /* Dummy_Player.png */,
-				DC5D4AB917AC04B700CF69EB /* LevelSelection.tmx */,
-				DC5D4ABA17AC04B700CF69EB /* Tileset_Geometry_16x16_old.png */,
-				DC5D4ABB17AC04B700CF69EB /* Tileset_Geometry_32x32.png */,
-			);
-			path = 32x32;
-			sourceTree = "<group>";
-		};
 		DC5D4ABC17AC04B700CF69EB /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1031,7 +1008,6 @@
 		DCCC6198178C5574009EC802 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC5D4AB717AC04B700CF69EB /* 32x32 */,
 				DC5D4ABC17AC04B700CF69EB /* Demo */,
 				DC18B09E178C7BC400641A6D /* Config */,
 				DC18B0C5178C7BC400641A6D /* Jetpack.atlas */,
@@ -1352,12 +1328,10 @@
 			files = (
 				DC04802C17AD2C18002EBD1E /* spark.png in Resources */,
 				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
-				DC5D4AC517AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */,
 				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
 				DCD11E44178C522300FBC406 /* Credits.rtf in Resources */,
 				DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */,
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
-				DC5D4AC117AC04B700CF69EB /* Dummy_Player.png in Resources */,
 				DC5D4ACD17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,
 				DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
 				DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */,
@@ -1367,8 +1341,6 @@
 				DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
 				DC5D4ACB17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
 				DC5D4AC917AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
-				DC5D4AC317AC04B700CF69EB /* LevelSelection.tmx in Resources */,
-				DC5D4AC717AC04B700CF69EB /* Tileset_Geometry_32x32.png in Resources */,
 				DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1377,17 +1349,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC5D4AC017AC04B700CF69EB /* Dummy_Player.png in Resources */,
 				DC5D4AC817AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
-				DC5D4AC617AC04B700CF69EB /* Tileset_Geometry_32x32.png in Resources */,
 				DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */,
 				DC5D4ACA17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
 				DC5D4ACC17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B0D4178C7BC400641A6D /* config.lua in Resources */,
-				DC5D4AC217AC04B700CF69EB /* LevelSelection.tmx in Resources */,
-				DC5D4AC417AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
 				DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */,

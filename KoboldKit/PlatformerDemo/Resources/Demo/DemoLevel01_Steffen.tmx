@@ -34,7 +34,7 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt0TEKgDAMBdDSQXDp5iX0/vdTQSGDU7Fa5T34JBQKCUkJAAAAAAAAAP5tCfmqfGQI/Z6yZQr9WcvFW6w5/OsxY2dp7e397NtW7Ux3zfbEjtGc+rtBSysVqQZh
+   eJzt2bENgDAMBVEDDVTAHOy/H4loKBClEec76fd+UrpERGyFVqn56wOS08tOLzu97PSy08tOLzu97PSy08tOLzu97PSy0xsxtI1tU/ItGT1517j+lfbkWzLyPbPT+95x2x/r3rHQuncpNL3s6WWve0+3hhB1
   </data>
  </layer>
  <objectgroup draworder="topdown" name="game objects" width="60" height="40">
@@ -45,7 +45,7 @@
     <property name="yScale" value="-0.5"/>
    </properties>
   </object>
-  <object name="koffer" type="Briefcase" x="96" y="512" width="16" height="16">
+  <object name="koffer" type="Briefcase" x="80" y="416" width="16" height="16">
    <properties>
     <property name="imageName" value="Dummy_Player.png"/>
     <property name="yScale" value="-0.5"/>
@@ -93,11 +93,11 @@
     <property name="emitterFile" value="playerdeath.sks"/>
    </properties>
   </object>
-  <object name="checkpointA1" type="Checkpoint" x="112" y="512" width="16" height="32"/>
+  <object name="checkpointA1" type="Checkpoint" x="80" y="416" width="16" height="32"/>
   <object name="p2" x="128" y="448">
    <polygon points="0,32 192,32 176,-16 144,-48 48,-48 16,-16"/>
   </object>
-  <object name="p1Mover" type="Platform" x="48" y="320" width="64" height="32">
+  <object name="p1Mover" type="Platform" x="160" y="352" width="64" height="32">
    <properties>
     <property name="FollowPath" value="YES"/>
     <property name="FollowPath.initialWaitDuration" value="0"/>
@@ -108,13 +108,6 @@
     <property name="imageName" value="Dummy_Player.png"/>
     <property name="yScale" value="-1"/>
    </properties>
-  </object>
-  <object name="p3" x="96" y="592" width="80" height="16">
-   <ellipse/>
-  </object>
-  <object name="p4" x="80" y="240" width="48" height="48"/>
-  <object name="p1" x="144" y="368">
-   <polyline points="0,0 48,-16 112,0 128,-16 144,0 144,-16 160,-16"/>
   </object>
  </objectgroup>
 </map>

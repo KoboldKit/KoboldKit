@@ -16,12 +16,13 @@
 {
 	[super presentFirstScene];
 	
-    // Create and configure the scene.
-	KKScene* scene = [MenuScene sceneWithSize:self.view.bounds.size];
-	//KKScene* scene = [GameScene sceneWithSize:self.view.bounds.size];
-    
-    // Present the scene.
-    [self.kkView presentScene:scene];
+    // Create and present the scene.
+	//KKScene* scene = [MenuScene sceneWithSize:self.view.bounds.size];
+	//[self.kkView presentScene:scene];
+	
+	GameScene* gameScene = [GameScene sceneWithSize:self.view.bounds.size];
+	gameScene.tmxFile = @"DemoLevel01_Steffen.tmx";
+	[self.kkView presentScene:gameScene transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]];
 }
 
 @end

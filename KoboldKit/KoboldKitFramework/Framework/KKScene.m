@@ -117,12 +117,12 @@ KKNODE_SHARED_CODE
 		[observer willMoveFromView:view];
 	}
 
-	// make sure no node is still hooked into the notification center
+	// make sure no node is still hooked into the notification center when the scene changes
 	NSNotificationCenter* notificationCenter = [NSNotificationCenter defaultCenter];
-	[self enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop)
-	 {
-		 [notificationCenter removeObserver:node];
-	 }];
+	[notificationCenter removeObserver:self];
+	[self enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop) {
+		[notificationCenter removeObserver:node];
+	}];
 }
 
 -(void) didMoveToView:(SKView *)view

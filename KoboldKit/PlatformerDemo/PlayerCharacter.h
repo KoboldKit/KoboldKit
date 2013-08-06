@@ -45,7 +45,6 @@
 @property (atomic) CGPoint somePoint;
 
 -(void) controlPadDidChangeDirection:(NSNotification*)note;
--(void) attackButtonPressed:(NSNotification*)note;
 -(void) jumpButtonPressed:(NSNotification*)note;
 -(void) jumpButtonReleased:(NSNotification*)note;
 

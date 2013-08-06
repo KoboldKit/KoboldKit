@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+
+#pragma mark THIS CLASS NOT DISCUSSED IN BOOK; ONLY CONTAINS STUB METHODS
+
+
 @implementation AppDelegate
 
 #if TARGET_OS_IPHONE
