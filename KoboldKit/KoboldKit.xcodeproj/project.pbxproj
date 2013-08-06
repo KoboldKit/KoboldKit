@@ -169,6 +169,8 @@
 		DC8EED2717A58773000C1995 /* NSObject+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2517A58773000C1995 /* NSObject+KoboldKit.h */; };
 		DC8EED2817A58773000C1995 /* NSObject+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8EED2617A58773000C1995 /* NSObject+KoboldKit.m */; };
 		DC8EED2917A58773000C1995 /* NSObject+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8EED2617A58773000C1995 /* NSObject+KoboldKit.m */; };
+		DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
+		DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
 		DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB76E55178CB19C0047B4EC /* KKTilemapLayerNode.h */; };
 		DCB76E5E178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
 		DCB76E5F178CB19C0047B4EC /* KKTilemapLayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB76E56178CB19C0047B4EC /* KKTilemapLayerNode.m */; };
@@ -521,6 +523,7 @@
 		DC9CFD4B1774CC97004C981A /* Introduction-to-KoboldKit-template.appledoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Introduction-to-KoboldKit-template.appledoc"; sourceTree = "<group>"; };
 		DC9CFD4C1774CDA9004C981A /* index.appledoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.appledoc; sourceTree = "<group>"; };
 		DCA1F0DC178C334000459A31 /* KKCompatibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCompatibility.h; sourceTree = "<group>"; };
+		DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01_Steffen.tmx; sourceTree = "<group>"; };
 		DCB087CD177B1625004182E4 /* KKTilemapLayerContourTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapLayerContourTracer.h; sourceTree = "<group>"; };
 		DCB087CE177B1625004182E4 /* KKTilemapLayerContourTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemapLayerContourTracer.m; sourceTree = "<group>"; };
 		DCB087D0177B1647004182E4 /* KKIntegerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KKIntegerArray.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -788,6 +791,7 @@
 		DC5D4ABC17AC04B700CF69EB /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */,
 				DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */,
 				DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */,
 				DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */,
@@ -1360,6 +1364,7 @@
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
+				DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
 				DC5D4ACB17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
 				DC5D4AC917AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
 				DC5D4AC317AC04B700CF69EB /* LevelSelection.tmx in Resources */,
@@ -1384,6 +1389,7 @@
 				DC5D4AC217AC04B700CF69EB /* LevelSelection.tmx in Resources */,
 				DC5D4AC417AC04B700CF69EB /* Tileset_Geometry_16x16_old.png in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
+				DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
 				DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
 				DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
