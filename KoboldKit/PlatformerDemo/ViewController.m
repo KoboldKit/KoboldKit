@@ -16,6 +16,9 @@
 {
 	[super presentFirstScene];
 	
+	
+	[[SKTAudio sharedInstance] playBackgroundMusic:@"Time to business, guys.mp3"];
+
     // Create and present the scene.
 	KKScene* scene = [MenuScene sceneWithSize:self.view.bounds.size];
 	[self.kkView presentScene:scene];
