@@ -172,7 +172,7 @@
 
 -(void) addDevelopmentButtons
 {
-#if FALSE
+#if DEBUG
 	KKViewOriginNode* hudNode = [KKViewOriginNode node];
 	[self addChild:hudNode];
 	

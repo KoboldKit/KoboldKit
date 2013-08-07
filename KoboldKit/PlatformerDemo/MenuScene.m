@@ -31,14 +31,6 @@
 											  [self didDownloadProjectFiles:contents];
 											  [self.kkView reloadConfig];
 										}];
-	
-	SKSpriteNode* s1 = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(200, 200)];
-//	s1.alpha = 0.5;
-	s1.position = CGPointMake(200, 200);
-	[self addChild:s1];
-	
-	SKSpriteNode* s2 = [SKSpriteNode spriteNodeWithColor:[SKColor greenColor] size:CGSizeMake(100, 100)];
-	[s1 addChild:s2];
 }
 
 -(void) addPleaseWaitLabel
