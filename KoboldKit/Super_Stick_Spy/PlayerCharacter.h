@@ -36,13 +36,7 @@
 	BOOL _onFloor;
 }
 
-@property (atomic) BOOL running;
-@property (atomic) float someFloat;
-@property (atomic) int someInt;
-
-@property (atomic) CGRect someRect;
-@property (atomic) CGSize someSize;
-@property (atomic) CGPoint somePoint;
+@property (atomic) CGPoint anchorPoint;
 
 -(void) controlPadDidChangeDirection:(NSNotification*)note;
 -(void) jumpButtonPressed:(NSNotification*)note;

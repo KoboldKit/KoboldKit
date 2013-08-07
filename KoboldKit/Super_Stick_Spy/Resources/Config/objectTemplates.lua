@@ -111,7 +111,8 @@ local objectTemplates =
 			_runSpeedDeceleration = 0,		-- how fast player decelerates sideways (0 = instant)
 			_runSpeedLimit = 200,			-- max sideways running speed
 			_boundingBox = "{12, 28}",
-			
+			anchorPoint = "{0.5, 0.3}",
+
 			_defaultImage = "dummy_stickman.png",
 		},
 		
