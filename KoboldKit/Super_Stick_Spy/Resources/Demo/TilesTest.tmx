@@ -8,9 +8,19 @@
  <tileset firstgid="1" name="Tileset_Geometry_16x16_test" tilewidth="16" tileheight="16" spacing="1" margin="1">
   <image source="Tileset_Geometry_16x16_test.png" width="256" height="256"/>
  </tileset>
+ <layer name="background3" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt0TEKgDAQRNGgHkDNAcT7X9LU0dRx4D2YZquFXwoAAAAAAAAAAAAAAAAAAAAAAAAAvC1ta7dt6keM7G1Ht7OtznyKoevjdhe9kuiVRa8semXRK4teWfTKolcWvQD+6QHGwAJ/
+  </data>
+ </layer>
+ <layer name="background2" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt0cEJgDAQRNFFLUBNASb9N+meF3KUILwH/z4wEQAAAAAAAAAAAAAAAAAAAAAAAAAAfGnL9tKxdBEzZ3aV7qytHMXUk/XSCH8BAADA37wY/QFf
+  </data>
+ </layer>
  <layer name="background" width="108" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1sENwjAMAMAKkBiADWAVNmD/Xeinj0ISKHJaV9xJ/jZWbMcdBgAAAAAAAAAAAAAAAAAAACDCfesEWES99kW99uWxdQLMmJ84a9yl+YkTdZdmKF7POzVD8dzpXNY3IWteNecxji9x6nBO1v7NmtcSl8BvZenfLHl8ozRDU5Rcx7j9ECVZ+jdLHsQ6DPXeru2K1jy0dkvtLOIs3RWRu+VftWbok9KuaMlcr9Y7kinWNNW3xz83/WSeM96p174s3XsArOcJR2cK4w==
+   eJzt1lFOwkAQBuAGSDgAT6i86IsGjuENvP9d3ERJRLZNF6dlGr8v+R9bJrszTLsOAAAAAAAAAAAAAAAAAAAAiPB+7wJo4r6WxX0ty8e9C+CC+Ykzx1manzhRZ2mG4k15pmYonjO9lPU/IWtdfbYl61/ZTPA7Wfs3a10tdoHvytK/WeoYozZD59Q8l7zckJos/dtax77koeTxO08lh+ii+LNV99XHryVvP3IsOXX1XTE0D0O7ZdXzDHFad0Xkbvmv+vp6TG/XdsWQzPfVdwbZMqfz/U7xzc10Ms8Z19zXsrTuPQDm8wkJSQxt
   </data>
  </layer>
  <objectgroup name="HelperScreensizes" width="108" height="60" visible="0">
@@ -33,7 +43,7 @@
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
-  <object name="player" type="Player" x="160" y="816" width="16" height="32"/>
+  <object name="player" type="Player" x="944" y="816" width="16" height="32"/>
   <object name="spawnEntry" type="Checkpoint" x="48" y="832" width="16" height="32"/>
   <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
    <properties>
@@ -83,10 +93,20 @@
     <property name="imageName" value="dummy_findenoughcases.png"/>
    </properties>
   </object>
+  <object name="unlockdoors" type="Image" x="832" y="752" width="48" height="48">
+   <properties>
+    <property name="imageName" value="dummy_ballsman.png"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="foreground" width="108" height="60">
   <data encoding="base64" compression="zlib">
    eJzt100KwjAQhuEcQQXXKngAf47gVgTdqlDvfwkrUlA7Scfmpwl9H/h2TRsymYQaAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfJ3q3BQ5DzVBfLkonztGnQW0qFdZqFdeuu6nh/I9leEe09z1vuuj7R+tMfeZZi016+Oqu7Z/tMZSL2lN74pxmvUJ3UMuY6lX3zWtTPeZGbqHfOfzGRvtf1/qf8FmXppeGpODx9iYPZ7yrAphUmf6k1nA94fYv5Xx7ztbf5fWV4s6y5+sAr4/5v79p+9K6iOph5rsTbtemzrbnkm5f6/C92wpqY+kHoqV0rn2tu2ucI1x3S22cVIPxUrpuva2dFes/3xeMy5VSjA37328E9K1t6W7wjUm93q5zpJckvK8aeornYs51IvIWZk26pVvqFdZeZ2LQ57LhJD0eQJK8JsY
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1FEKglAQhtHBWoDmAqzcQO1/c87DFSSiHh30HPgQfLrww0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR9Vll9Z157fwW58NrVs27vsc/pja9549wl7Vfe71zOZwF6va7vXK3uEuVrbda+Uu1jV9+Wevus601wKM9wNe
   </data>
  </layer>
 </map>
