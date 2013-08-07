@@ -8,12 +8,17 @@
  <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
   <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
  </tileset>
+ <layer name="sublayer" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztz7ENg0AUREHKMMaQ4oTUWHL/fbFXwx36sjQjvXx3mgAAAAAAuMszLemV1uItPb5pS0f6FW/p1b78+4fmkebqEQPs6V09YoBPOqtHANDtAoAEAo0=
+  </data>
+ </layer>
  <layer name="mainlayer" width="50" height="40">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1MsJgDAQQMGgHXj0hxbgXbD/vlwrCBgSEGfgHZPsXpISAAAAAPBVYzRFc7Q0eK/L1L+894zW6Iiu8jGLDQVnn11a7bBl2hvNAdST+3drBfBXN4BmAyI=
+   eJzt1MEJACAMBEHRDqxA+2/SEuIjKIEZ2P+9rjUAAAAAgDs9aPyblmr+HnBpBe33k4Bk0e9WCaCKAyMKAas=
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="50" height="40">
@@ -31,14 +36,21 @@
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object name="stageSign001" type="Image" x="352" y="408" width="64" height="16">
+  <object name="stageSign001" type="Image" x="432" y="440" width="64" height="16">
    <properties>
     <property name="imageName" value="dummy_stage.png"/>
    </properties>
   </object>
-  <object name="stage001" type="Image" x="368" y="424" width="32" height="16">
+  <object name="stage001" type="Image" x="448" y="456" width="32" height="16">
    <properties>
     <property name="imageName" value="dummy_stage001.png"/>
+   </properties>
+  </object>
+  <object name="ExitToStage001" type="Trigger" x="464" y="480" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnEntry"/>
+    <property name="info.tmxFile" value="DemoStage001.tmx"/>
+    <property name="notification" value="LoadMap"/>
    </properties>
   </object>
  </objectgroup>
