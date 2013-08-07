@@ -46,8 +46,8 @@
 -(SKColor*) color
 {
 	CIColor* ciColor = [CIColor colorWithString:self];
-	UIColor* uiColor = [UIColor colorWithCIColor:ciColor];
-	return uiColor;
+	SKColor* skColor = [SKColor colorWithCIColor:ciColor];
+	return skColor;
 }
 
 -(BOOL) containsString:(NSString*)subString

@@ -324,7 +324,7 @@
 		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
 		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua.sample; sourceTree = "<group>"; };
 		DC18B0C5178C7BC400641A6D /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
-		DC18B11E178C7E3B00641A6D /* PlatformerDemo-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlatformerDemo-iOS-Info.plist"; sourceTree = "<group>"; };
+		DC18B11E178C7E3B00641A6D /* Super_Stick_Spy-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Super_Stick_Spy-iOS-Info.plist"; sourceTree = "<group>"; };
 		DC18B11F178C7E3B00641A6D /* PlatformerDemo-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlatformerDemo-Mac-Info.plist"; sourceTree = "<group>"; };
 		DC18B121178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		DC18B123178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -544,7 +544,7 @@
 		DCB76E5A178CB19C0047B4EC /* KKTilemapObjectLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemapObjectLayerNode.m; sourceTree = "<group>"; };
 		DCB76E5B178CB19C0047B4EC /* KKTilemapTileLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapTileLayerNode.h; sourceTree = "<group>"; };
 		DCB76E5C178CB19C0047B4EC /* KKTilemapTileLayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTilemapTileLayerNode.m; sourceTree = "<group>"; };
-		DCCC619C178C560B009EC802 /* PlatformerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlatformerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DCCC619C178C560B009EC802 /* Super_Stick_Spy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Super_Stick_Spy-Prefix.pch"; sourceTree = "<group>"; };
 		DCD11E36178C522300FBC406 /* PlatformerDemo-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlatformerDemo-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD11E3D178C522300FBC406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCD11E3F178C522300FBC406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -558,7 +558,7 @@
 		DCD7EC47178C573500BBAFB0 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
 		DCD7EC48178C573500BBAFB0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DCD7EC49178C573500BBAFB0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DCD7EC52178C57FC00BBAFB0 /* PlatformerDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlatformerDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD7EC52178C57FC00BBAFB0 /* Super_Stick_Spy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super_Stick_Spy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB338A178D808400C13739 /* PlayerCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCharacter.h; sourceTree = "<group>"; };
 		DCDB338B178D808400C13739 /* PlayerCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCharacter.m; sourceTree = "<group>"; };
 		DCDB506817AD1D2400AABEA1 /* KKTilemapObjectSpawnDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTilemapObjectSpawnDelegate.h; sourceTree = "<group>"; };
@@ -1041,7 +1041,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DCD11E39178C522300FBC406 /* PlatformerDemo */ = {
+		DCD11E39178C522300FBC406 /* Super Stick Spy */ = {
 			isa = PBXGroup;
 			children = (
 				DCD7EC42178C573500BBAFB0 /* AppDelegate.h */,
@@ -1054,24 +1054,25 @@
 				DCD7EC45178C573500BBAFB0 /* GameScene.m */,
 				DCDB338A178D808400C13739 /* PlayerCharacter.h */,
 				DCDB338B178D808400C13739 /* PlayerCharacter.m */,
-				DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */,
-				DC18B126178C7E9300641A6D /* Images-Mac.xcassets */,
-				DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */,
-				DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */,
-				DC09DB8D178C84C6000E0B61 /* MainMenu.xib */,
-				DC18B11E178C7E3B00641A6D /* PlatformerDemo-iOS-Info.plist */,
-				DC18B11F178C7E3B00641A6D /* PlatformerDemo-Mac-Info.plist */,
 				DCCC6198178C5574009EC802 /* Resources */,
 				DCD11E3A178C522300FBC406 /* Supporting Files */,
 			);
+			name = "Super Stick Spy";
 			path = PlatformerDemo;
 			sourceTree = "<group>";
 		};
 		DCD11E3A178C522300FBC406 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */,
+				DC18B126178C7E9300641A6D /* Images-Mac.xcassets */,
+				DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */,
+				DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */,
+				DC09DB8D178C84C6000E0B61 /* MainMenu.xib */,
+				DC18B11E178C7E3B00641A6D /* Super_Stick_Spy-iOS-Info.plist */,
+				DC18B11F178C7E3B00641A6D /* PlatformerDemo-Mac-Info.plist */,
 				DCD11E3F178C522300FBC406 /* main.m */,
-				DCCC619C178C560B009EC802 /* PlatformerDemo-Prefix.pch */,
+				DCCC619C178C560B009EC802 /* Super_Stick_Spy-Prefix.pch */,
 				DCD11E3C178C522300FBC406 /* InfoPlist.strings */,
 				DCD11E42178C522300FBC406 /* Credits.rtf */,
 			);
@@ -1081,7 +1082,7 @@
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
-				DCD11E39178C522300FBC406 /* PlatformerDemo */,
+				DCD11E39178C522300FBC406 /* Super Stick Spy */,
 				DCDD2DF01769FD2E00F307CD /* KoboldKitFramework */,
 				DCDD2E021769FD2E00F307CD /* KoboldKitFrameworkTests */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
@@ -1095,7 +1096,7 @@
 				DC484C43178C40BB0067DAA4 /* KoboldKit.framework */,
 				DC484C6B178C418C0067DAA4 /* libKoboldKit.a */,
 				DCD11E36178C522300FBC406 /* PlatformerDemo-Mac.app */,
-				DCD7EC52178C57FC00BBAFB0 /* PlatformerDemo-iOS.app */,
+				DCD7EC52178C57FC00BBAFB0 /* Super_Stick_Spy-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1290,9 +1291,9 @@
 			productReference = DCD11E36178C522300FBC406 /* PlatformerDemo-Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DCD7EC51178C57FC00BBAFB0 /* PlatformerDemo-iOS */ = {
+		DCD7EC51178C57FC00BBAFB0 /* Super_Stick_Spy-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "PlatformerDemo-iOS" */;
+			buildConfigurationList = DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "Super_Stick_Spy-iOS" */;
 			buildPhases = (
 				DCD7EC4E178C57FC00BBAFB0 /* Sources */,
 				DCD7EC4F178C57FC00BBAFB0 /* Frameworks */,
@@ -1303,9 +1304,9 @@
 			dependencies = (
 				DC496BF5178C6DAC00CCA840 /* PBXTargetDependency */,
 			);
-			name = "PlatformerDemo-iOS";
+			name = "Super_Stick_Spy-iOS";
 			productName = "PlatformerDemo-iOS";
-			productReference = DCD7EC52178C57FC00BBAFB0 /* PlatformerDemo-iOS.app */;
+			productReference = DCD7EC52178C57FC00BBAFB0 /* Super_Stick_Spy-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1330,7 +1331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCD7EC51178C57FC00BBAFB0 /* PlatformerDemo-iOS */,
+				DCD7EC51178C57FC00BBAFB0 /* Super_Stick_Spy-iOS */,
 				DCD11E35178C522300FBC406 /* PlatformerDemo-Mac */,
 				DC484C6A178C418C0067DAA4 /* libKoboldKit.a */,
 				DC484C42178C40BB0067DAA4 /* KoboldKit.framework */,
@@ -1837,12 +1838,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlatformerDemo/PlatformerDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "PlatformerDemo/Super_Stick_Spy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "PlatformerDemo/PlatformerDemo-iOS-Info.plist";
+				INFOPLIST_FILE = "PlatformerDemo/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1858,8 +1859,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PlatformerDemo/PlatformerDemo-Prefix.pch";
-				INFOPLIST_FILE = "PlatformerDemo/PlatformerDemo-iOS-Info.plist";
+				GCC_PREFIX_HEADER = "PlatformerDemo/Super_Stick_Spy-Prefix.pch";
+				INFOPLIST_FILE = "PlatformerDemo/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1971,7 +1972,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "PlatformerDemo-iOS" */ = {
+		DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "Super_Stick_Spy-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCD7EC86178C57FD00BBAFB0 /* Debug */,
