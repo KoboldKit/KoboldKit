@@ -330,6 +330,13 @@
 	return [self physicsBodyWithRectangleOfSize:tilemapObject.size];
 }
 
+#pragma mark Sound
+
+-(void) playSoundFileNamed:(NSString*)soundFile
+{
+	[self runAction:[SKAction playSoundFileNamed:soundFile waitForCompletion:NO]];
+}
+
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 

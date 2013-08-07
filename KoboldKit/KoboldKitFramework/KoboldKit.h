@@ -20,6 +20,7 @@
 // Sprite Kit categories
 #import "SKNode+KoboldKit.h"
 #import "SKScene+KoboldKit.h"
+#import "SKAction+KoboldKit.h"
 
 // subclasses
 #import "KKAppDelegate.h"
@@ -88,3 +89,5 @@
 #import "VTPG_Common.h"
 #import "XMLWriter.h"
 #import "ZipUtils.h"
+#import "SKTAudio.h"
+#import "SKTUtils.h"

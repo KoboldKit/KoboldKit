@@ -29,6 +29,48 @@
 		DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC18B126178C7E9300641A6D /* Images-Mac.xcassets */; };
 		DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */; };
 		DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */; };
+		DC25515217B27C0A0078151C /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC25515117B27C0A0078151C /* ATTRIBUTIONS */; };
+		DC25515317B27C0A0078151C /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC25515117B27C0A0078151C /* ATTRIBUTIONS */; };
+		DC25515617B27C590078151C /* suspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25515517B27C590078151C /* suspense.mp3 */; };
+		DC25515717B27C590078151C /* suspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25515517B27C590078151C /* suspense.mp3 */; };
+		DC25516417B27E8E0078151C /* SKAction+SKTExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = DC25515917B27E8E0078151C /* SKAction+SKTExtras.h */; };
+		DC25516517B27E8E0078151C /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25515A17B27E8E0078151C /* SKAction+SKTExtras.m */; };
+		DC25516617B27E8E0078151C /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25515A17B27E8E0078151C /* SKAction+SKTExtras.m */; };
+		DC25516717B27E8E0078151C /* SKEmitterNode+SKTExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = DC25515B17B27E8E0078151C /* SKEmitterNode+SKTExtras.h */; };
+		DC25516817B27E8E0078151C /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25515C17B27E8E0078151C /* SKEmitterNode+SKTExtras.m */; };
+		DC25516917B27E8E0078151C /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25515C17B27E8E0078151C /* SKEmitterNode+SKTExtras.m */; };
+		DC25516A17B27E8E0078151C /* SKNode+SKTExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = DC25515D17B27E8E0078151C /* SKNode+SKTExtras.h */; };
+		DC25516B17B27E8E0078151C /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25515E17B27E8E0078151C /* SKNode+SKTExtras.m */; };
+		DC25516C17B27E8E0078151C /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25515E17B27E8E0078151C /* SKNode+SKTExtras.m */; };
+		DC25516D17B27E8E0078151C /* SKTAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = DC25515F17B27E8E0078151C /* SKTAudio.h */; };
+		DC25516E17B27E8E0078151C /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25516017B27E8E0078151C /* SKTAudio.m */; };
+		DC25516F17B27E8E0078151C /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25516017B27E8E0078151C /* SKTAudio.m */; };
+		DC25517117B27E8E0078151C /* SKTUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DC25516217B27E8E0078151C /* SKTUtils.h */; };
+		DC25517217B27E8E0078151C /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC25516317B27E8E0078151C /* SKTUtils.mm */; };
+		DC25517317B27E8E0078151C /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC25516317B27E8E0078151C /* SKTUtils.mm */; };
+		DC25517517B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */; };
+		DC25517617B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */; };
+		DC25517817B281910078151C /* Time to business, guys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25517717B281910078151C /* Time to business, guys.mp3 */; };
+		DC25517917B281910078151C /* Time to business, guys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25517717B281910078151C /* Time to business, guys.mp3 */; };
+		DC25518217B285C50078151C /* chirp.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517B17B285C50078151C /* chirp.wav */; };
+		DC25518317B285C50078151C /* chirp.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517B17B285C50078151C /* chirp.wav */; };
+		DC25518417B285C50078151C /* die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517C17B285C50078151C /* die.wav */; };
+		DC25518517B285C50078151C /* die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517C17B285C50078151C /* die.wav */; };
+		DC25518617B285C50078151C /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517D17B285C50078151C /* jump.wav */; };
+		DC25518717B285C50078151C /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517D17B285C50078151C /* jump.wav */; };
+		DC25518817B285C50078151C /* land.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517E17B285C50078151C /* land.wav */; };
+		DC25518917B285C50078151C /* land.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517E17B285C50078151C /* land.wav */; };
+		DC25518A17B285C50078151C /* pickup.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517F17B285C50078151C /* pickup.wav */; };
+		DC25518B17B285C50078151C /* pickup.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517F17B285C50078151C /* pickup.wav */; };
+		DC25518E17B285C50078151C /* teleport.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25518117B285C50078151C /* teleport.wav */; };
+		DC25518F17B285C50078151C /* teleport.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25518117B285C50078151C /* teleport.wav */; };
+		DC25519217B286670078151C /* SKAction+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC25519017B286670078151C /* SKAction+KoboldKit.h */; };
+		DC25519317B286670078151C /* SKAction+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25519117B286670078151C /* SKAction+KoboldKit.m */; };
+		DC25519417B286670078151C /* SKAction+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25519117B286670078151C /* SKAction+KoboldKit.m */; };
+		DC25519617B287810078151C /* respawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519517B287810078151C /* respawn.wav */; };
+		DC25519717B287810078151C /* respawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519517B287810078151C /* respawn.wav */; };
+		DC25519917B2894D0078151C /* checkpoint.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519817B2894D0078151C /* checkpoint.wav */; };
+		DC25519A17B2894D0078151C /* checkpoint.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519817B2894D0078151C /* checkpoint.wav */; };
 		DC2DD46617ABEA06000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 		DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 		DC484C44178C40BB0067DAA4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
@@ -324,18 +366,31 @@
 		DC18B126178C7E9300641A6D /* Images-Mac.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-Mac.xcassets"; sourceTree = "<group>"; };
 		DC1E506D1775ED500063CEDC /* KKCameraFollowBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCameraFollowBehavior.h; sourceTree = "<group>"; };
 		DC1E506E1775ED500063CEDC /* KKCameraFollowBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCameraFollowBehavior.m; sourceTree = "<group>"; };
+		DC25515117B27C0A0078151C /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
+		DC25515517B27C590078151C /* suspense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suspense.mp3; sourceTree = "<group>"; };
+		DC25515917B27E8E0078151C /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		DC25515A17B27E8E0078151C /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		DC25515B17B27E8E0078151C /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		DC25515C17B27E8E0078151C /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		DC25515D17B27E8E0078151C /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		DC25515E17B27E8E0078151C /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		DC25515F17B27E8E0078151C /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		DC25516017B27E8E0078151C /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		DC25516217B27E8E0078151C /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		DC25516317B27E8E0078151C /* SKTUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKTUtils.mm; sourceTree = "<group>"; };
+		DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WeltHerrschererTheme1.mp3; sourceTree = "<group>"; };
+		DC25517717B281910078151C /* Time to business, guys.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Time to business, guys.mp3"; sourceTree = "<group>"; };
+		DC25517B17B285C50078151C /* chirp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chirp.wav; sourceTree = "<group>"; };
+		DC25517C17B285C50078151C /* die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = die.wav; sourceTree = "<group>"; };
+		DC25517D17B285C50078151C /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		DC25517E17B285C50078151C /* land.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = land.wav; sourceTree = "<group>"; };
+		DC25517F17B285C50078151C /* pickup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickup.wav; sourceTree = "<group>"; };
+		DC25518117B285C50078151C /* teleport.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = teleport.wav; sourceTree = "<group>"; };
+		DC25519017B286670078151C /* SKAction+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+KoboldKit.h"; sourceTree = "<group>"; };
+		DC25519117B286670078151C /* SKAction+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+KoboldKit.m"; sourceTree = "<group>"; };
+		DC25519517B287810078151C /* respawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = respawn.wav; sourceTree = "<group>"; };
+		DC25519817B2894D0078151C /* checkpoint.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = checkpoint.wav; sourceTree = "<group>"; };
 		DC2DD46817ABEE3C000351BE /* KKPhysicsContactEventDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPhysicsContactEventDelegate.h; sourceTree = "<group>"; };
-		DC2F43CB176CC13B005846A7 /* crawl-tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tilemap.tmx"; sourceTree = "<group>"; };
-		DC2F43CC176CC13B005846A7 /* crawl-tiles-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles-hd.plist"; sourceTree = "<group>"; };
-		DC2F43CD176CC13B005846A7 /* crawl-tiles-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles-hd.png"; sourceTree = "<group>"; };
-		DC2F43CE176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles-hd.pvr.ccz"; sourceTree = "<group>"; };
-		DC2F43CF176CC13B005846A7 /* crawl-tiles-hd.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles-hd.tps"; sourceTree = "<group>"; };
-		DC2F43D0176CC13B005846A7 /* crawl-tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "crawl-tiles.plist"; sourceTree = "<group>"; };
-		DC2F43D1176CC13B005846A7 /* crawl-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crawl-tiles.png"; sourceTree = "<group>"; };
-		DC2F43D2176CC13B005846A7 /* crawl-tiles.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crawl-tiles.pvr.ccz"; sourceTree = "<group>"; };
-		DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crawl-tiles.tps"; sourceTree = "<group>"; };
-		DC2F43D4176CC13B005846A7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		DC2F43D5176CC13B005846A7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		DC41B8A81785A7C00018D6C5 /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
 		DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
 		DC41B8AE1785DD5E0018D6C5 /* NSBundle+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KoboldKit.h"; sourceTree = "<group>"; };
@@ -643,22 +698,47 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		DC2F43CA176CC13B005846A7 /* crawl-tiles Oct-5-2010 */ = {
+		DC25515417B27C590078151C /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				DC2F43CB176CC13B005846A7 /* crawl-tilemap.tmx */,
-				DC2F43CC176CC13B005846A7 /* crawl-tiles-hd.plist */,
-				DC2F43CD176CC13B005846A7 /* crawl-tiles-hd.png */,
-				DC2F43CE176CC13B005846A7 /* crawl-tiles-hd.pvr.ccz */,
-				DC2F43CF176CC13B005846A7 /* crawl-tiles-hd.tps */,
-				DC2F43D0176CC13B005846A7 /* crawl-tiles.plist */,
-				DC2F43D1176CC13B005846A7 /* crawl-tiles.png */,
-				DC2F43D2176CC13B005846A7 /* crawl-tiles.pvr.ccz */,
-				DC2F43D3176CC13B005846A7 /* crawl-tiles.tps */,
-				DC2F43D4176CC13B005846A7 /* LICENSE.txt */,
-				DC2F43D5176CC13B005846A7 /* README.txt */,
+				DC25517A17B285C50078151C /* sfx */,
+				DC25517717B281910078151C /* Time to business, guys.mp3 */,
+				DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */,
+				DC25515517B27C590078151C /* suspense.mp3 */,
 			);
-			path = "crawl-tiles Oct-5-2010";
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		DC25515817B27E8E0078151C /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				DC25515917B27E8E0078151C /* SKAction+SKTExtras.h */,
+				DC25515A17B27E8E0078151C /* SKAction+SKTExtras.m */,
+				DC25515B17B27E8E0078151C /* SKEmitterNode+SKTExtras.h */,
+				DC25515C17B27E8E0078151C /* SKEmitterNode+SKTExtras.m */,
+				DC25515D17B27E8E0078151C /* SKNode+SKTExtras.h */,
+				DC25515E17B27E8E0078151C /* SKNode+SKTExtras.m */,
+				DC25515F17B27E8E0078151C /* SKTAudio.h */,
+				DC25516017B27E8E0078151C /* SKTAudio.m */,
+				DC25516217B27E8E0078151C /* SKTUtils.h */,
+				DC25516317B27E8E0078151C /* SKTUtils.mm */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		DC25517A17B285C50078151C /* sfx */ = {
+			isa = PBXGroup;
+			children = (
+				DC25519817B2894D0078151C /* checkpoint.wav */,
+				DC25519517B287810078151C /* respawn.wav */,
+				DC25517B17B285C50078151C /* chirp.wav */,
+				DC25517C17B285C50078151C /* die.wav */,
+				DC25517D17B285C50078151C /* jump.wav */,
+				DC25517E17B285C50078151C /* land.wav */,
+				DC25517F17B285C50078151C /* pickup.wav */,
+				DC25518117B285C50078151C /* teleport.wav */,
+			);
+			path = sfx;
 			sourceTree = "<group>";
 		};
 		DC2F43E617708EDC005846A7 /* Tilemap Model */ = {
@@ -969,6 +1049,8 @@
 				DC9CFD0E1774CA5B004C981A /* SKNode+KoboldKit.m */,
 				DCB087DA177B3783004182E4 /* SKScene+KoboldKit.h */,
 				DCB087DB177B3783004182E4 /* SKScene+KoboldKit.m */,
+				DC25519017B286670078151C /* SKAction+KoboldKit.h */,
+				DC25519117B286670078151C /* SKAction+KoboldKit.m */,
 			);
 			name = "Sprite Kit Categories";
 			sourceTree = "<group>";
@@ -1008,6 +1090,8 @@
 		DCCC6198178C5574009EC802 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC25515117B27C0A0078151C /* ATTRIBUTIONS */,
+				DC25515417B27C590078151C /* Audio */,
 				DC5D4ABC17AC04B700CF69EB /* Demo */,
 				DC18B09E178C7BC400641A6D /* Config */,
 				DC18B0C5178C7BC400641A6D /* Jetpack.atlas */,
@@ -1115,7 +1199,6 @@
 		DCDD2E021769FD2E00F307CD /* KoboldKitFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC2F43CA176CC13B005846A7 /* crawl-tiles Oct-5-2010 */,
 				DCDD2E081769FD2E00F307CD /* KoboldKitLibraryTests.m */,
 				DCFDF3BB176B244A00F2CAD0 /* TestScene.h */,
 				DCFDF3BC176B244A00F2CAD0 /* TestScene.m */,
@@ -1136,6 +1219,7 @@
 		DCDD2E2B176A40C400F307CD /* External */ = {
 			isa = PBXGroup;
 			children = (
+				DC25515817B27E8E0078151C /* SKTUtils */,
 				DC96A7FB178760F400CE0827 /* lua */,
 				DC95BA791786DFB800E31DA6 /* Reachability */,
 				DCFDF3BE176B3FE100F2CAD0 /* CGPointExtension */,
@@ -1191,17 +1275,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB76E66178CB19C0047B4EC /* KKTilemapTileLayerNode.h in Headers */,
+				DC25516417B27E8E0078151C /* SKAction+SKTExtras.h in Headers */,
 				DC5D4AD017AC131300CF69EB /* KKNotifyOnItemCountBehavior.h in Headers */,
 				DC5D4AD517AC164700CF69EB /* KKRemoveOnNotificationBehavior.h in Headers */,
 				DCB76E63178CB19C0047B4EC /* KKTilemapObjectLayerNode.h in Headers */,
 				DC71016817AABD5B00F95BAD /* KKSpriteNode.h in Headers */,
 				DC71017C17AAD22600F95BAD /* KKItemCollectorBehavior.h in Headers */,
 				DC71016D17AABD6D00F95BAD /* KKLabelNode.h in Headers */,
+				DC25516D17B27E8E0078151C /* SKTAudio.h in Headers */,
 				DC8EED2717A58773000C1995 /* NSObject+KoboldKit.h in Headers */,
+				DC25517117B27E8E0078151C /* SKTUtils.h in Headers */,
+				DC25516A17B27E8E0078151C /* SKNode+SKTExtras.h in Headers */,
+				DC25519217B286670078151C /* SKAction+KoboldKit.h in Headers */,
 				DC71017717AACFB600F95BAD /* KKPickupItemBehavior.h in Headers */,
 				DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */,
 				DC7EF8EB17AEABFB00831FEB /* KKFollowPathBehavior.h in Headers */,
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
+				DC25516717B27E8E0078151C /* SKEmitterNode+SKTExtras.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
 				DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */,
 				DC5D4ADB17AC4A7400CF69EB /* KKContactNotificationNode.h in Headers */,
@@ -1327,18 +1417,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC25515717B27C590078151C /* suspense.mp3 in Resources */,
+				DC25518717B285C50078151C /* jump.wav in Resources */,
 				DC04802C17AD2C18002EBD1E /* spark.png in Resources */,
+				DC25518917B285C50078151C /* land.wav in Resources */,
+				DC25517917B281910078151C /* Time to business, guys.mp3 in Resources */,
+				DC25518B17B285C50078151C /* pickup.wav in Resources */,
 				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
 				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
 				DCD11E44178C522300FBC406 /* Credits.rtf in Resources */,
+				DC25518317B285C50078151C /* chirp.wav in Resources */,
+				DC25519A17B2894D0078151C /* checkpoint.wav in Resources */,
+				DC25518517B285C50078151C /* die.wav in Resources */,
+				DC25519717B287810078151C /* respawn.wav in Resources */,
 				DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */,
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
 				DC5D4ACD17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,
 				DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
+				DC25518F17B285C50078151C /* teleport.wav in Resources */,
+				DC25517617B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */,
 				DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
+				DC25515317B27C0A0078151C /* ATTRIBUTIONS in Resources */,
 				DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
 				DC5D4ACB17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
 				DC5D4AC917AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
@@ -1350,17 +1452,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC25518617B285C50078151C /* jump.wav in Resources */,
 				DC5D4AC817AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
+				DC25518817B285C50078151C /* land.wav in Resources */,
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
+				DC25515617B27C590078151C /* suspense.mp3 in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
 				DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */,
+				DC25515217B27C0A0078151C /* ATTRIBUTIONS in Resources */,
 				DC5D4ACA17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
+				DC25518217B285C50078151C /* chirp.wav in Resources */,
+				DC25518A17B285C50078151C /* pickup.wav in Resources */,
 				DC5D4ACC17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,
+				DC25518E17B285C50078151C /* teleport.wav in Resources */,
+				DC25519617B287810078151C /* respawn.wav in Resources */,
+				DC25517517B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */,
+				DC25517817B281910078151C /* Time to business, guys.mp3 in Resources */,
 				DC18B0D4178C7BC400641A6D /* config.lua in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
 				DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
+				DC25518417B285C50078151C /* die.wav in Resources */,
 				DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */,
+				DC25519917B2894D0078151C /* checkpoint.wav in Resources */,
 				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */,
 				DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */,
@@ -1382,6 +1496,7 @@
 				DC484CDB178C43BE0067DAA4 /* KKButtonBehavior.m in Sources */,
 				DC484CDC178C43BE0067DAA4 /* KKControlPadBehavior.m in Sources */,
 				DC484CDD178C43BE0067DAA4 /* KKFollowTargetBehavior.m in Sources */,
+				DC25519417B286670078151C /* SKAction+KoboldKit.m in Sources */,
 				DC484CDE178C43BE0067DAA4 /* KKCameraFollowBehavior.m in Sources */,
 				DC484CDF178C43BE0067DAA4 /* KKStayInBoundsBehavior.m in Sources */,
 				DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */,
@@ -1393,6 +1508,7 @@
 				DC484CB9178C43690067DAA4 /* lauxlib.c in Sources */,
 				DC484CBA178C43690067DAA4 /* lbaselib.c in Sources */,
 				DC484CBB178C43690067DAA4 /* lbitlib.c in Sources */,
+				DC25516917B27E8E0078151C /* SKEmitterNode+SKTExtras.m in Sources */,
 				DC484CBC178C43690067DAA4 /* lcode.c in Sources */,
 				DC484CBD178C43690067DAA4 /* lcorolib.c in Sources */,
 				DC484CBE178C43690067DAA4 /* lctype.c in Sources */,
@@ -1414,6 +1530,7 @@
 				DC484CCB178C43690067DAA4 /* lobject.c in Sources */,
 				DC484CCC178C43690067DAA4 /* lopcodes.c in Sources */,
 				DC484CCD178C43690067DAA4 /* loslib.c in Sources */,
+				DC25516F17B27E8E0078151C /* SKTAudio.m in Sources */,
 				DC71016417AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */,
 				DC484CCE178C43690067DAA4 /* lparser.c in Sources */,
 				DC484CCF178C43690067DAA4 /* lstate.c in Sources */,
@@ -1438,6 +1555,7 @@
 				DC484C97178C43400067DAA4 /* KKScene.m in Sources */,
 				DC484C98178C43400067DAA4 /* KKNode.m in Sources */,
 				DC484C99178C43400067DAA4 /* KKModel.m in Sources */,
+				DC25516617B27E8E0078151C /* SKAction+SKTExtras.m in Sources */,
 				DC484C9A178C43400067DAA4 /* KKNodeController.m in Sources */,
 				DC484C9B178C43400067DAA4 /* KKBehavior.m in Sources */,
 				DC484C9C178C43400067DAA4 /* KKTilemap.m in Sources */,
@@ -1448,6 +1566,7 @@
 				DC484CA0178C43400067DAA4 /* KKTilemapLayerTiles.m in Sources */,
 				DC484CA1178C43400067DAA4 /* KKTilemapObject.m in Sources */,
 				DC484CA2178C43400067DAA4 /* KKTilemapProperties.m in Sources */,
+				DC25516C17B27E8E0078151C /* SKNode+SKTExtras.m in Sources */,
 				DC484CA3178C43400067DAA4 /* KKTilemapTileProperties.m in Sources */,
 				DC484CA4178C43400067DAA4 /* KKTMXReader.m in Sources */,
 				DC7EF8ED17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */,
@@ -1461,6 +1580,7 @@
 				DC484CAE178C43400067DAA4 /* KKIntegerArray.m in Sources */,
 				DC484CAF178C43400067DAA4 /* KKPointArray.m in Sources */,
 				DC484CB0178C43400067DAA4 /* KKMutableNumber.m in Sources */,
+				DC25517317B27E8E0078151C /* SKTUtils.mm in Sources */,
 				DC484CB1178C43400067DAA4 /* KKClassVarSetter.m in Sources */,
 				DC484CB2178C43400067DAA4 /* KKDownloadProjectFiles.m in Sources */,
 				DC484CB3178C43400067DAA4 /* Reachability.m in Sources */,
@@ -1484,6 +1604,7 @@
 				DCD7A26A178C7453004A0467 /* lbaselib.c in Sources */,
 				DCD7A26B178C7453004A0467 /* lbitlib.c in Sources */,
 				DCD7A26C178C7453004A0467 /* lcode.c in Sources */,
+				DC25519317B286670078151C /* SKAction+KoboldKit.m in Sources */,
 				DCD7A26D178C7453004A0467 /* lcorolib.c in Sources */,
 				DCD7A26E178C7453004A0467 /* lctype.c in Sources */,
 				DCD7A26F178C7453004A0467 /* ldblib.c in Sources */,
@@ -1495,6 +1616,7 @@
 				DCD7A272178C7453004A0467 /* ldump.c in Sources */,
 				DCD7A273178C7453004A0467 /* lfunc.c in Sources */,
 				DCD7A274178C7453004A0467 /* lgc.c in Sources */,
+				DC25516817B27E8E0078151C /* SKEmitterNode+SKTExtras.m in Sources */,
 				DCD7A275178C7453004A0467 /* linit.c in Sources */,
 				DCD7A276178C7453004A0467 /* liolib.c in Sources */,
 				DCD7A277178C7453004A0467 /* llex.c in Sources */,
@@ -1516,6 +1638,7 @@
 				DCD7A284178C7453004A0467 /* ltm.c in Sources */,
 				DCD7A285178C7453004A0467 /* lundump.c in Sources */,
 				DCD7A286178C7453004A0467 /* lvm.c in Sources */,
+				DC25516E17B27E8E0078151C /* SKTAudio.m in Sources */,
 				DC71016317AAB38B00F95BAD /* KKRemoveOnContactBehavior.m in Sources */,
 				DCD7A287178C7453004A0467 /* lzio.c in Sources */,
 				DCD7A288178C7453004A0467 /* base64.c in Sources */,
@@ -1540,6 +1663,7 @@
 				DCD7A247178C7449004A0467 /* KKFollowTargetBehavior.m in Sources */,
 				DCD7A248178C7449004A0467 /* KKCameraFollowBehavior.m in Sources */,
 				DCD7A249178C7449004A0467 /* KKStayInBoundsBehavior.m in Sources */,
+				DC25516517B27E8E0078151C /* SKAction+SKTExtras.m in Sources */,
 				DCD7A24A178C7449004A0467 /* KKLimitVelocityBehavior.m in Sources */,
 				DCD7A24B178C7449004A0467 /* KKTilemap.m in Sources */,
 				DCD7A24C178C7449004A0467 /* KKTilemapLayer.m in Sources */,
@@ -1550,6 +1674,7 @@
 				DCD7A250178C7449004A0467 /* KKTilemapObject.m in Sources */,
 				DCD7A251178C7449004A0467 /* KKTilemapProperties.m in Sources */,
 				DCD7A252178C7449004A0467 /* KKTilemapTileProperties.m in Sources */,
+				DC25516B17B27E8E0078151C /* SKNode+SKTExtras.m in Sources */,
 				DCD7A253178C7449004A0467 /* KKTMXReader.m in Sources */,
 				DCD7A254178C7449004A0467 /* KKTMXWriter.m in Sources */,
 				DC7EF8EC17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */,
@@ -1563,6 +1688,7 @@
 				DCD7A25E178C7449004A0467 /* KKPointArray.m in Sources */,
 				DCD7A25F178C7449004A0467 /* KKMutableNumber.m in Sources */,
 				DCD7A260178C7449004A0467 /* KKClassVarSetter.m in Sources */,
+				DC25517217B27E8E0078151C /* SKTUtils.mm in Sources */,
 				DCD7A261178C7449004A0467 /* KKDownloadProjectFiles.m in Sources */,
 				DCD7A262178C7449004A0467 /* Reachability.m in Sources */,
 				DCD7A263178C7449004A0467 /* CGPointExtension.m in Sources */,

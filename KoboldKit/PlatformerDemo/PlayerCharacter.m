@@ -40,6 +40,7 @@
 -(void) die
 {
 	// death hides the player, plays an effect, then "respawns" player after some time
+	[self playSoundFileNamed:@"die.wav"];
 	
 	[self disregardSceneEvents];
 	self.physicsBody.velocity = CGPointZero;
@@ -63,6 +64,8 @@
 
 -(void) respawn
 {
+	[self playSoundFileNamed:@"respawn.wav"];
+
 	_playerSprite.alpha = 1.0;
 	self.alpha = 1.0;
 	[self observeSceneEvents];
@@ -72,8 +75,14 @@
 -(void) setCheckpoint:(KKTilemapObject*)checkpointObject
 {
 	// center respawn position on checkpoint object
-	_respawnPosition = CGPointMake(checkpointObject.position.x + checkpointObject.size.width / 2.0,
-								   checkpointObject.position.y + checkpointObject.size.height / 2.0);
+	CGPoint respawnPos = CGPointMake(checkpointObject.position.x + checkpointObject.size.width / 2.0,
+									 checkpointObject.position.y + checkpointObject.size.height / 2.0);
+	
+	if (CGPointEqualToPoint(respawnPos, _respawnPosition) == NO)
+	{
+		_respawnPosition = respawnPos;
+		[self playSoundFileNamed:@"checkpoint.wav"];
+	}
 }
 
 -(void) moveToCheckpoint
@@ -112,6 +121,8 @@
 		self.physicsBody.velocity = velocity;
 		
 		_jumpButton = [note.userInfo objectForKey:@"behavior"];
+		
+		[self playSoundFileNamed:@"jump.wav"];
 	}
 }
 

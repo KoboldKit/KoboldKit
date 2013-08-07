@@ -145,6 +145,8 @@
 /** nd */
 -(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject;
 
+/** nd */
+-(void) playSoundFileNamed:(NSString*)soundFile;
 
 // internal use only
 -(BOOL) isEqualToNode:(SKNode*)node;

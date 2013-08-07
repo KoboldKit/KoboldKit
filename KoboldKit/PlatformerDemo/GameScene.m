@@ -23,6 +23,14 @@
 		_curtainSprite = [KKSpriteNode spriteNodeWithColor:[SKColor grayColor] size:self.size];
 		_curtainSprite.zPosition = -1000;
 		[self addChild:_curtainSprite];
+		
+		[self playSoundFileNamed:@"teleport.wav"];
+		
+		SKAction* jingle = [SKAction playSoundFileNamed:@"Time to business, guys.mp3" waitForCompletion:YES];
+		SKAction* loop = [SKAction runBlock:^{
+			[[SKTAudio sharedInstance] playBackgroundMusic:@"WeltHerrschererTheme1.mp3"];
+		}];
+		[self runAction:[SKAction sequence:@[jingle, loop]]];
     }
     return self;
 }

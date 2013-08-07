@@ -16,6 +16,8 @@
 
 -(void) didPickUpItem:(KKPickupItemBehavior*)itemBehavior
 {
+	[self.node playSoundFileNamed:@"pickup.wav"];
+
 	// by default counts the number of item pickups
 	NSString* itemName = itemBehavior.node.name;
 	if (itemName.length)
