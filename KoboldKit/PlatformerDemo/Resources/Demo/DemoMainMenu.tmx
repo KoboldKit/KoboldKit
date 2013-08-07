@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="20" tilewidth="16" tileheight="16" backgroundcolor="#ffffff">
+ <properties>
+  <property name="physicsGravityY" value="-9.81"/>
+  <property name="physicsSimulationSpeed" value="1.0"/>
+  <property name="restrictScrollingToMapBoundary" value="YES"/>
+ </properties>
+ <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
+ </tileset>
+ <layer name="mainlayer" width="50" height="20">
+  <properties>
+   <property name="_mainTileLayer" value="YES"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJwTYhgaQICAvBBdXEE5GPXH4AKj/hhcYNQfgwsMF3/IA7ECHjxU/EEIjPpjcIHh4g9bIGYaBngUjIJRMAqGCgAADywDCQ==
+  </data>
+ </layer>
+ <objectgroup color="#00ff00" name="game objects" width="50" height="20">
+  <object name="player" type="Player" x="296" y="176" width="16" height="32"/>
+  <object name="gameTitle" type="Image" x="64" y="64" width="480" height="80">
+   <properties>
+    <property name="imageName" value="dummy_gametitle.png"/>
+   </properties>
+  </object>
+  <object name="goToStages" type="Image" x="688" y="112" width="96" height="16">
+   <properties>
+    <property name="imageName" value="dummy_levels.png"/>
+   </properties>
+  </object>
+  <object name="ExitToStageSelection" type="Trigger" x="752" y="144" width="48" height="64">
+   <properties>
+    <property name="info.checkpoint" value="spawnEntry"/>
+    <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="spawnEntryMainMenu" type="Checkpoint" x="704" y="176" width="16" height="32"/>
+ </objectgroup>
+</map>
