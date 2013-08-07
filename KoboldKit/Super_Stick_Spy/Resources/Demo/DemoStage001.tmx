@@ -10,7 +10,7 @@
  </tileset>
  <layer name="sublayer" width="108" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt2rsNwkAQBFCnFMY/hQqgAqjAVM4SEB46nSXvnXhPmtgrjRPLM00A/btErtlHUO0WuWcfQbVH5Jl9BNXmyCv7CICBbbIPAAAA+DO+wwAAAIAvO8Cx2AGOxQ5wLHaAAAC08P+dkXhfAQAA6F1pw7CN7CL7yGHVi/iltGHQV59KGwZ99am0YdDX2D6dHSOnyHnF59oItsnqy0awTVZfNoJtlvbV+s/LRhAAAJZ7A72wFo4=
+   eJzt2rsOgkAQBVBbP8x3q1+g8dFqY6tf7lhYCQgksrt6TnI7SCYZWWK4oxFA/taRTeohaG0b2aUegtbOkUvqIWjtFrmnHgKgYOPUAwAAAPwZ/8MAAACAFz3AsugBlkUPsCx6gAAA9OH7OyXxewUAACB3dR2GSWQamUXmg05Ek7oOg33lqa7DYF95qusw2FfZnjtbRJaRVeJZ+tpHjg05dbyn6vpcpNrXkB3Bw5evH1KqfXXtCDY9D59cO97zy/vq+82r6v3adKYN6bXfnM9F3uX8nPGu6zkKAFR7AK0FKY4=
   </data>
  </layer>
  <objectgroup name="HelperScreensizes" width="108" height="60" visible="0">
@@ -33,7 +33,7 @@
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
-  <object name="player" type="Player" x="160" y="816" width="16" height="32"/>
+  <object name="player" type="Player" x="848" y="752" width="16" height="32"/>
   <object name="spawnEntry" type="Checkpoint" x="48" y="832" width="16" height="32"/>
   <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
    <properties>
