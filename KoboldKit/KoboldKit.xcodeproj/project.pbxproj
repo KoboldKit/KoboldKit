@@ -154,10 +154,6 @@
 		DC484CE0178C43BE0067DAA4 /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41B8A91785A7C00018D6C5 /* KKLimitVelocityBehavior.m */; };
 		DC484CE1178C43BE0067DAA4 /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */; };
 		DC484CE4178C465E0067DAA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484CE3178C465E0067DAA4 /* libz.dylib */; };
-		DC5D4AC817AC04B700CF69EB /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */; };
-		DC5D4AC917AC04B700CF69EB /* DemoLevel01.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */; };
-		DC5D4ACA17AC04B700CF69EB /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */; };
-		DC5D4ACB17AC04B700CF69EB /* DemoSandbox.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */; };
 		DC5D4ACC17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */; };
 		DC5D4ACD17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */; };
 		DC5D4AD017AC131300CF69EB /* KKNotifyOnItemCountBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5D4ACE17AC131300CF69EB /* KKNotifyOnItemCountBehavior.h */; };
@@ -441,8 +437,6 @@
 		DC4DE923176CA25F003E4087 /* NSCoder+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KoboldKit.h"; sourceTree = "<group>"; };
 		DC4DE924176CA25F003E4087 /* NSCoder+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+KoboldKit.m"; sourceTree = "<group>"; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01.tmx; sourceTree = "<group>"; };
-		DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoSandbox.tmx; sourceTree = "<group>"; };
 		DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
 		DC5D4ACE17AC131300CF69EB /* KKNotifyOnItemCountBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNotifyOnItemCountBehavior.h; sourceTree = "<group>"; };
 		DC5D4ACF17AC131300CF69EB /* KKNotifyOnItemCountBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNotifyOnItemCountBehavior.m; sourceTree = "<group>"; };
@@ -863,8 +857,6 @@
 			isa = PBXGroup;
 			children = (
 				DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */,
-				DC5D4ABD17AC04B700CF69EB /* DemoLevel01.tmx */,
-				DC5D4ABE17AC04B700CF69EB /* DemoSandbox.tmx */,
 				DC5D4ABF17AC04B700CF69EB /* Tileset_Geometry_16x16.png */,
 			);
 			path = Demo;
@@ -1460,8 +1452,6 @@
 				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
 				DC25515317B27C0A0078151C /* ATTRIBUTIONS in Resources */,
 				DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
-				DC5D4ACB17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
-				DC5D4AC917AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
 				DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1471,14 +1461,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC25518617B285C50078151C /* jump.wav in Resources */,
-				DC5D4AC817AC04B700CF69EB /* DemoLevel01.tmx in Resources */,
 				DC25518817B285C50078151C /* land.wav in Resources */,
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
 				DC25515617B27C590078151C /* suspense.mp3 in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
 				DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */,
 				DC25515217B27C0A0078151C /* ATTRIBUTIONS in Resources */,
-				DC5D4ACA17AC04B700CF69EB /* DemoSandbox.tmx in Resources */,
 				DC25518217B285C50078151C /* chirp.wav in Resources */,
 				DC25518A17B285C50078151C /* pickup.wav in Resources */,
 				DC5D4ACC17AC04B700CF69EB /* Tileset_Geometry_16x16.png in Resources */,

@@ -5,12 +5,12 @@
   <property name="physicsSimulationSpeed" value="1.0"/>
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
- <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
-  <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
+ <tileset firstgid="1" name="Tileset_Geometry_16x16_test" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_Geometry_16x16_test.png" width="256" height="256"/>
  </tileset>
- <layer name="sublayer" width="108" height="60">
+ <layer name="background" width="108" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt2rsNAjEQBNBLKYx/ChVABVDBUTlLQGiwfBJri/ekyVeaS06eaQLo3ylyzj6CapfINfsIqt0i9+wjqDZHHtlHAAxslX0AAADAn/EfBgAAALzZAY7FDnAsdoBjsQMEAKCF93dG4nsFAACgd6UNwzqyiWwju59exCelDYO++lTaMOirT6UNg77G9upsHzlEjsm38F1WXzaCbbL6shFss7Sv1jcvG0EAAFjuCem3FeU=
+   eJzt1sENwjAMAMAKkBiADWAVNmD/Xeinj0ISKHJaV9xJ/jZWbMcdBgAAAAAAAAAAAAAAAAAAACDCfesEWES99kW99uWxdQLMmJ84a9yl+YkTdZdmKF7POzVD8dzpXNY3IWteNecxji9x6nBO1v7NmtcSl8BvZenfLHl8ozRDU5Rcx7j9ECVZ+jdLHsQ6DPXeru2K1jy0dkvtLOIs3RWRu+VftWbok9KuaMlcr9Y7kinWNNW3xz83/WSeM96p174s3XsArOcJR2cK4w==
   </data>
  </layer>
  <objectgroup name="HelperScreensizes" width="108" height="60" visible="0">
@@ -29,11 +29,11 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztXG1SJCEMRa3Vv+oFdryAu3sAdQ6w3v86O5TbNS1FSICQD5pX9X5N0Q15JARCz1MI4Wkyvl54EuSvxr6U2s1IyBYvQRY/gX5gfYntjqLZK2ILL5hJs1IsmUGrDSX/jPSi5zObRXzDiw8uva7woNnbhXed4/xx4f1/PnQ+C8LNhbcE9o7lMehrMoOPUe3YO5al1xc2H/wT6nxia3cOtH3aR/KO9Nk3hd8iZtCLM97l7ME9X/a5YNTvfsdzuK5RuffOoBcnJPTCsOUVXvWKOQfXeo0hZ4/t/aPfnfbDq16Sc71kD2k/P7JecR2n+MfSi5etsQkaf409JOPiLHq1zvU4zv06CPGd4d0xX+XIU73qlTvzTfNgzD6c4+yJi1QtverFVTPhHOeouLjfR34GW3pR6789Wu3PCihxTtLPMGj4l3btavRcnEkvC7Xf0Xql+QtnfJTUS1Or0TFQyt8k9dKsf2jmT5T9AtUXZ9MLqn/kfKrnbtuoei5mI0t6lWpNtesBViPvjc2javCYL8Z5Z0Uv6rupz2m9+0eF1r0Jb3pp1DEgaGgmpdffwHtGZOX+xsi9zynDXGyw7F/W/MzC3seDXlb8jNtWLbmQZn74Wfncmv0NlmPuz1a3XBXzX+zOdC1bciFP/jW6L9r+S8HS69qXI+oVY/JWS5SsIUKk5ipp/Vk7t4HAaTMLuU6rn6V9seprXDazkutw6dWS26T8Hb7nNClb7nhw2YwyH9NvOCTrHZTzOs73jaopSepl/a6IBa2w75K45hXXXTHv7PWro8xpKzzC910zsUavXOw7QgyyxJpv1c7B/vfIs7Plnrh2n2cgducD8otavTx88y9lU4yQnSg5HnRWTz2LozwLorbdW7Xq3Y/m5raFe64YtG2vodWGdG5b1ypiRKwpsSZe5/rhwaYp0ty95/x/5PzNgbrGeohNVHCe/5+C/PylrLHetCqd/aX74J7z/wUeSO2lZkBpbkNrBdQGW1ugdlJnSTOg5X8YoDa1tU1pekHN+kBZK6A21vXqrXtLUSreYHd0tPVazLM2ji7qsjaOLi4uLi7K8h9lSx9v
+   eJzt1zluwzAUBUBdITd49z+liyBNYJmkxEVMZoBXmPwLCzU+DgAAAAAAAAAAAAAAAAAAAJ4ojWGtDKpljAyqZYwMquWaVOTKrP8oDbmzo7cRM3eQTnUppLcRM58mJ6ntvXPf2+x9K+Rmbykz1bznJz1mtM6+Y/T8XWVx/+y5u8rR5/vNh8zof5K8Sc/ZI6VyR03NLlL43Trrd0Z6t+8sO0khLbW1c7guqx+wkRTS2nN1F3Vy4a71vPaeb19H//+RZ/WflO5Hy0aZobRv1jtok8Zz1krjOWvlQ4C/6QVNRyKS
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
-  <object name="player" type="Player" x="848" y="752" width="16" height="32"/>
+  <object name="player" type="Player" x="160" y="816" width="16" height="32"/>
   <object name="spawnEntry" type="Checkpoint" x="48" y="832" width="16" height="32"/>
   <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
    <properties>
@@ -84,4 +84,9 @@
    </properties>
   </object>
  </objectgroup>
+ <layer name="foreground" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt100KwjAQhuEcQQXXKngAf47gVgTdqlDvfwkrUlA7Scfmpwl9H/h2TRsymYQaAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfJ3q3BQ5DzVBfLkonztGnQW0qFdZqFdeuu6nh/I9leEe09z1vuuj7R+tMfeZZi016+Oqu7Z/tMZSL2lN74pxmvUJ3UMuY6lX3zWtTPeZGbqHfOfzGRvtf1/qf8FmXppeGpODx9iYPZ7yrAphUmf6k1nA94fYv5Xx7ztbf5fWV4s6y5+sAr4/5v79p+9K6iOph5rsTbtemzrbnkm5f6/C92wpqY+kHoqV0rn2tu2ucI1x3S22cVIPxUrpuva2dFes/3xeMy5VSjA37328E9K1t6W7wjUm93q5zpJckvK8aeornYs51IvIWZk26pVvqFdZeZ2LQ57LhJD0eQJK8JsY
+  </data>
+ </layer>
 </map>
