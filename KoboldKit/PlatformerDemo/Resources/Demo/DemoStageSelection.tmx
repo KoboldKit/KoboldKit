@@ -10,7 +10,7 @@
  </tileset>
  <layer name="sublayer" width="50" height="40">
   <data encoding="base64" compression="zlib">
-   eJztz7ENg0AUREHKMMaQ4oTUWHL/fbFXwx36sjQjvXx3mgAAAAAAuMszLemV1uItPb5pS0f6FW/p1b78+4fmkebqEQPs6V09YoBPOqtHANDtAoAEAo0=
+   eJzt1LERgDAMQ9GMAROECWCFEPbfBy1AhYMc7r871ZYblQIAc1mU1V0iQFU2d4kAu3K4SwBJOfZqxE3HXo246dgrNhKzYK9y3WSvgGfsVa6b7BUiNeVUunKZu7zBH7n85Q8AwLduWKILFA==
   </data>
  </layer>
  <layer name="mainlayer" width="50" height="40">
@@ -18,40 +18,122 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1MEJACAMBEHRDqxA+2/SEuIjKIEZ2P+9rjUAAAAAgDs9aPyblmr+HnBpBe33k4Bk0e9WCaCKAyMKAas=
+   eJztl0sOwyAMRGmrttuoF2h6gX4O0Nz/WAVVSBYCCwMmXsyTZkdsj3AminPAEk+vVaCXQs3efoFb5bnInakf538Ia7b2o0h95OprzF/ql1OYodUHra85fw2L6/dhAfiwRfDx9ToW9Pa6EF0Ftc/Jsx+mj1SnjA8u6zXys6Ta70Qg3SFLe7UIzo72QXdHsnM59vQxEviwlVdbpw/k1ViQV7gPDZBXyCsNkFe4Dw2QV38fK6OZeSVROpfkLi3T6+Pgyv/+M2n1EeenOx3fsz38SH3k5k+Z5Yfuwub4DOnJFC4HR0gyCwAAWOIHN/oeCg==
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="50" height="40">
-  <object name="player" type="Player" x="224" y="496" width="16" height="32"/>
-  <object name="mainMenu" type="Image" x="16" y="432" width="112" height="16">
+  <object name="player" type="Player" x="448" y="96" width="16" height="32"/>
+  <object name="mainMenu" type="Image" x="64" y="480" width="80" height="32">
    <properties>
-    <property name="imageName" value="dummy_mainmenu.png"/>
+    <property name="imageName" value="dummy_lobby.png"/>
    </properties>
   </object>
-  <object name="spawnEntry" type="Checkpoint" x="80" y="496" width="16" height="32"/>
-  <object name="ExitToMainMenu" type="Trigger" x="0" y="464" width="48" height="64">
+  <object name="spawnEntry" type="Checkpoint" x="48" y="496" width="16" height="32"/>
+  <object name="ExitToMainMenu" type="Trigger" x="0" y="464" width="16" height="64">
    <properties>
     <property name="info.checkpoint" value="spawnEntryMainMenu"/>
     <property name="info.tmxFile" value="DemoMainMenu.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object name="stageSign001" type="Image" x="432" y="440" width="64" height="16">
-   <properties>
-    <property name="imageName" value="dummy_stage.png"/>
-   </properties>
-  </object>
-  <object name="stage001" type="Image" x="448" y="456" width="32" height="16">
+  <object name="stage001" type="Image" x="32" y="368" width="32" height="16">
    <properties>
     <property name="imageName" value="dummy_stage001.png"/>
    </properties>
   </object>
-  <object name="ExitToStage001" type="Trigger" x="464" y="480" width="16" height="48">
+  <object name="ExitToStage001" type="Trigger" x="32" y="384" width="16" height="48">
    <properties>
     <property name="info.checkpoint" value="spawnEntry"/>
     <property name="info.tmxFile" value="DemoStage001.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
+  <object name="spawnStage001" type="Checkpoint" x="64" y="400" width="16" height="32"/>
+  <object name="stage002" type="Image" x="496" y="368" width="32" height="16">
+   <properties>
+    <property name="imageName" value="dummy_stage002.png"/>
+   </properties>
+  </object>
+  <object name="stage003" type="Image" x="32" y="272" width="32" height="16">
+   <properties>
+    <property name="imageName" value="dummy_stage003.png"/>
+   </properties>
+  </object>
+  <object name="stage005" type="Image" x="32" y="176" width="32" height="16">
+   <properties>
+    <property name="imageName" value="dummy_stage005.png"/>
+   </properties>
+  </object>
+  <object name="stage004" type="Image" x="496" y="272" width="32" height="16">
+   <properties>
+    <property name="imageName" value="dummy_stage004.png"/>
+   </properties>
+  </object>
+  <object name="stage006" type="Image" x="496" y="176" width="32" height="16">
+   <properties>
+    <property name="imageName" value="dummy_stage006.png"/>
+   </properties>
+  </object>
+  <object name="stage007" type="Image" x="32" y="80" width="32" height="16">
+   <properties>
+    <property name="imageName" value="dummy_stage007.png"/>
+   </properties>
+  </object>
+  <object name="spawnStage002" type="Checkpoint" x="480" y="400" width="16" height="32"/>
+  <object name="spawnStage003" type="Checkpoint" x="64" y="304" width="16" height="32"/>
+  <object name="spawnStage004" type="Checkpoint" x="480" y="304" width="16" height="32"/>
+  <object name="spawnStage005" type="Checkpoint" x="64" y="208" width="16" height="32"/>
+  <object name="spawnStage006" type="Checkpoint" x="480" y="208" width="16" height="32"/>
+  <object name="spawnStage007" type="Checkpoint" x="64" y="112" width="16" height="32"/>
+  <object name="ExitToStage002" type="Trigger" x="512" y="384" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnEntry"/>
+    <property name="info.tmxFile" value="DemoStage002.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="ExitToStage003" type="Trigger" x="32" y="288" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnEntry"/>
+    <property name="info.tmxFile" value="DemoStage003.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="ExitToStage004" type="Trigger" x="512" y="288" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnEntry"/>
+    <property name="info.tmxFile" value="DemoStage004.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="ExitToStage005" type="Trigger" x="32" y="192" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnEntry"/>
+    <property name="info.tmxFile" value="DemoStage005.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="ExitToStage006" type="Trigger" x="512" y="192" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnEntry"/>
+    <property name="info.tmxFile" value="DemoStage006.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="ExitToStage007" type="Trigger" x="32" y="96" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnEntry"/>
+    <property name="info.tmxFile" value="DemoStage007.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="basement" type="Image" x="656" y="96" width="112" height="32">
+   <properties>
+    <property name="imageName" value="dummy_basement.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff00" name="screensizes" width="50" height="40" visible="0">
+  <object x="0" y="320" width="576" height="320"/>
  </objectgroup>
 </map>

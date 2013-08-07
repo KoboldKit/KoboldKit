@@ -138,7 +138,11 @@ local objectTemplates =
 			{className = "KKStayInBoundsBehavior", properties = {bounds = "{{0, 0}, {0, 0}}"}},
 			{className = "KKCameraFollowBehavior"},
 			{className = "KKItemCollectorBehavior"},
-			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 5, notification = "OpenExitDoor"}},
+			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 1, notification = "OpenLockedDoor1"}},
+			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 2, notification = "OpenLockedDoor2"}},
+			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 3, notification = "OpenLockedDoor3"}},
+			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 4, notification = "OpenLockedDoor4"}},
+			{className = "KKNotifyOnItemCountBehavior", properties = {itemName = "briefcase", count = 5, notification = "OpenLockedDoor5"}},
 		},
 		
 		actions = 
@@ -193,6 +197,121 @@ local objectTemplates =
 		behaviors =
 		{
 			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenExitDoor"}},
+		},
+	},
+
+	LockedDoor1 =
+	{
+		inheritsFrom = "Image",
+		physicsBody =
+		{
+			properties =
+			{
+				categoryBitMask = kContactCategoryStaticObject,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = 0xffffffff,
+				dynamic = NO,				
+			},
+		},
+		properties =
+		{			
+			imageName = "dummy_lockeddoor1.png",
+		},
+		behaviors =
+		{
+			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenLockedDoor1"}},
+		},
+	},
+
+	LockedDoor2 =
+	{
+		inheritsFrom = "Image",
+		physicsBody =
+		{
+			properties =
+			{
+				categoryBitMask = kContactCategoryStaticObject,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = 0xffffffff,
+				dynamic = NO,				
+			},
+		},
+		properties =
+		{			
+			imageName = "dummy_lockeddoor2.png",
+		},
+		behaviors =
+		{
+			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenLockedDoor2"}},
+		},
+	},
+
+	LockedDoor3 =
+	{
+		inheritsFrom = "Image",
+		physicsBody =
+		{
+			properties =
+			{
+				categoryBitMask = kContactCategoryStaticObject,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = 0xffffffff,
+				dynamic = NO,				
+			},
+		},
+		properties =
+		{			
+			imageName = "dummy_lockeddoor3.png",
+		},
+		behaviors =
+		{
+			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenLockedDoor3"}},
+		},
+	},
+
+	LockedDoor4 =
+	{
+		inheritsFrom = "Image",
+		physicsBody =
+		{
+			properties =
+			{
+				categoryBitMask = kContactCategoryStaticObject,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = 0xffffffff,
+				dynamic = NO,				
+			},
+		},
+		properties =
+		{			
+			imageName = "dummy_lockeddoor4.png",
+		},
+		behaviors =
+		{
+			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenLockedDoor4"}},
+		},
+	},
+
+	LockedDoor5 =
+	{
+		inheritsFrom = "Image",
+		physicsBody =
+		{
+			properties =
+			{
+				categoryBitMask = kContactCategoryStaticObject,
+				contactTestBitMask = kContactCategoryPlayer,
+				collisionBitMask = 0xffffffff,
+				dynamic = NO,				
+			},
+		},
+		properties =
+		{			
+			imageName = "dummy_lockeddoor5.png",
+		},
+		behaviors =
+		{
+			{className = "KKRemoveOnNotificationBehavior", properties = {notification = "OpenLockedDoor5"}},
 		},
 	},
 

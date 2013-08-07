@@ -8,33 +8,38 @@
  <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
   <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
  </tileset>
+ <layer name="sublayer" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztz7kNACAMBEE3x9N/RbgHB2A0I21+FwEAdDOyma1sX95S4cdbfvkB0NUBf7MEaQ==
+  </data>
+ </layer>
  <layer name="mainlayer" width="50" height="20">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJwTYhgaQICAvBBdXEE5GPXH4AKj/hhcYNQfgwsMF3/IA7ECHjxU/EEIjPpjcIHh4g9bIGYaBngUjIJRMAqGCgAADywDCQ==
+   eJztz8ENwCAMQ9GoI7BAmQAmYP+1ihcoJBKSg/wlH314ZoqpNlfJ1gOOEvic7jW/hdGBvBZWB/JYmB1o18LuQDuWDA4ES/1ZFscqObi6xTHmngumlFJZ+gC4kgi2
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="50" height="20">
   <object name="player" type="Player" x="296" y="176" width="16" height="32"/>
-  <object name="gameTitle" type="Image" x="64" y="64" width="480" height="80">
+  <object name="gameTitle" type="Image" x="64" y="80" width="480" height="80">
    <properties>
     <property name="imageName" value="dummy_gametitle.png"/>
    </properties>
   </object>
-  <object name="goToStages" type="Image" x="688" y="112" width="96" height="16">
+  <object name="goToStages" type="Image" x="656" y="160" width="80" height="32">
    <properties>
-    <property name="imageName" value="dummy_levels.png"/>
+    <property name="imageName" value="dummy_stagemenu.png"/>
    </properties>
   </object>
-  <object name="ExitToStageSelection" type="Trigger" x="752" y="144" width="48" height="64">
+  <object name="ExitToStageSelection" type="Trigger" x="784" y="144" width="16" height="64">
    <properties>
     <property name="info.checkpoint" value="spawnEntry"/>
     <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object name="spawnEntryMainMenu" type="Checkpoint" x="704" y="176" width="16" height="32"/>
+  <object name="spawnEntryMainMenu" type="Checkpoint" x="736" y="176" width="16" height="32"/>
  </objectgroup>
 </map>
