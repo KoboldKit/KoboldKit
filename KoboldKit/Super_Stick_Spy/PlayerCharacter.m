@@ -10,6 +10,17 @@
 
 @implementation PlayerCharacter
 
+-(id) init
+{
+	self = [super init];
+	if (self)
+	{
+		// default anchorPoint
+		self.anchorPoint = CGPointMake(0.5, 0.5);
+	}
+	return self;
+}
+
 -(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject *)tilemapObject
 {
 	return [self physicsBodyWithRectangleOfSize:_boundingBox];
@@ -23,6 +34,7 @@
 
 	NSAssert(_defaultImage.length, @"defaultImage property not set for player object in Tiled!");
 	_playerSprite = [KKSpriteNode spriteNodeWithImageNamed:_defaultImage];
+	_playerSprite.anchorPoint = _anchorPoint;
 	[self addChild:_playerSprite];
 
 	// 1st parent = object layer node, 2nd parent = tile layer node, 3rd parent = tilemap node

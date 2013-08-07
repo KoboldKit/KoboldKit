@@ -42,7 +42,7 @@
 	_pleaseWait.position = CGPointMake(self.size.width / 2, self.size.height / 2);
 	[self addChild:_pleaseWait];
 	
-	SKAction* sequence = [SKAction sequence:@[[SKAction scaleXTo:0.9 duration:0.1], [SKAction scaleXTo:1.0 duration:0.2]]];
+	SKAction* sequence = [SKAction sequence:@[[SKAction scaleXTo:0.97 duration:0.1], [SKAction scaleXTo:1.0 duration:0.2]]];
 	[_pleaseWait runAction:[SKAction repeatActionForever:sequence]];
 }
 

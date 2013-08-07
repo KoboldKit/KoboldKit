@@ -53,7 +53,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 -(void) dealloc
 {
-	NSLog(@"dealloc: %@", self);
+	//NSLog(@"dealloc: %@", self);
 }
 
 // called when the node removes the controller (set to nil)
