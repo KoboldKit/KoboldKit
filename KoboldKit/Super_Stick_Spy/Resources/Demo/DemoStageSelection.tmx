@@ -5,12 +5,17 @@
   <property name="physicsSimulationSpeed" value="1.0"/>
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
- <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
-  <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
+ <tileset firstgid="1" name="Tileset_GeometryB" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_GeometryB.png" width="256" height="256"/>
  </tileset>
- <layer name="sublayer" width="50" height="40">
+ <layer name="doors" width="50" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt1LERgDAMQ9GMAROECWCFEPbfBy1AhYMc7r871ZYblQIAc1mU1V0iQFU2d4kAu3K4SwBJOfZqxE3HXo246dgrNhKzYK9y3WSvgGfsVa6b7BUiNeVUunKZu7zBH7n85Q8AwLduWKILFA==
+   eJzt1LENgDAQBEH3XwhUABVAX3YDZLbujWakj++jbQ1gL8e4M/3EBNe4O/3EBM+4N/0EFJXo1YrNRK9WbCZ6pZHsQq9qbeoVfNOrWpt6BQDAH3VthB3I
+  </data>
+ </layer>
+ <layer name="background" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1NEJgDAMBFDHUDdwAt1/MoVSkGC1p1cT5R7ktyY2va4TaWMKepbnt2fiWSjPf8ikOWJZthoqa6w8swfOvFO1fZR4vuO9ox364l4x57C78/SuES3v482d+/NeRcgrxhwI5RWX8qos77fyCqe8SpRXXMqra8ornPIqiZxXZ6L0bTH78swrhty/ld9Z9HlK/Vse87TMFCQH0RIREV8rG7AZ7A==
   </data>
  </layer>
  <layer name="mainlayer" width="50" height="40">
@@ -18,17 +23,16 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztl0sOwyAMRGmrttuoF2h6gX4O0Nz/WAVVSBYCCwMmXsyTZkdsj3AminPAEk+vVaCXQs3efoFb5bnInakf538Ia7b2o0h95OprzF/ql1OYodUHra85fw2L6/dhAfiwRfDx9ToW9Pa6EF0Ftc/Jsx+mj1SnjA8u6zXys6Ta70Qg3SFLe7UIzo72QXdHsnM59vQxEviwlVdbpw/k1ViQV7gPDZBXyCsNkFe4Dw2QV38fK6OZeSVROpfkLi3T6+Pgyv/+M2n1EeenOx3fsz38SH3k5k+Z5Yfuwub4DOnJFC4HR0gyCwAAWOIHN/oeCg==
+   eJztlEEKwCAMBH1C///a3gWLJrs2ygx46MEkY+i2BpV4EkdZK9Kv7x1h5OHC6bH6Zhmy+zoBPGpxm4cq+7K1o3NU2sfqG/XfeGjzm33c51Elr7IeFcCDvHKAB3nlAA/yygEe9+WVovZMb+X58joVRcY4dheZI3qvn/1Pn9WeM7Pu8lH+X84+OzMIAGAnLw7JFZE=
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="50" height="40">
-  <object name="player" type="Player" x="448" y="96" width="16" height="32"/>
-  <object name="mainMenu" type="Image" x="64" y="480" width="80" height="32">
+  <object name="mainMenu" type="Image" x="16" y="480" width="80" height="32">
    <properties>
     <property name="imageName" value="dummy_lobby.png"/>
    </properties>
   </object>
-  <object name="spawnEntry" type="Checkpoint" x="48" y="496" width="16" height="32"/>
+  <object name="spawnEntry" type="Checkpoint" x="32" y="496" width="16" height="32"/>
   <object name="ExitToMainMenu" type="Trigger" x="0" y="464" width="16" height="64">
    <properties>
     <property name="info.checkpoint" value="spawnEntryMainMenu"/>
@@ -132,8 +136,11 @@
     <property name="imageName" value="dummy_basement.png"/>
    </properties>
   </object>
+  <object name="player" type="Player" x="256" y="448" width="16" height="32"/>
  </objectgroup>
- <objectgroup color="#ffff00" name="screensizes" width="50" height="40" visible="0">
-  <object x="0" y="320" width="576" height="320"/>
- </objectgroup>
+ <layer name="foreground" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztldENwjAMRG8FYAGXDWAAlAWA/behUmUpSlMUx27ajzvpfvKR3KXO6wRgoulgp9kfo1+Be3nOy32HXRK4l+c879lv1O/t605sOy//Vnvd4SgJ2ONMEiw9HrOvjb417n0x7NnjPIf2SGjnX+s7/vcue7m6xSaprB0lwXE9ytlpnbmaNMsRPcrZ8fw7NAvn6hy8egb0SCCvoiQgr6SyZhF5tZaAvNIeCeRVlATklVTWLCKv1hKQVy13kBDDKyuPenpEcNbay+s8l/boVSSvPBL09dD85UzrOxvdR2DrsZW/9Ig++Sxonr2YYuGg1dYsNE3TZ/IPG/OwFQ==
+  </data>
+ </layer>
 </map>

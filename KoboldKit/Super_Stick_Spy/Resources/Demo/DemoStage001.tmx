@@ -8,9 +8,12 @@
  <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
   <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
  </tileset>
- <layer name="sublayer" width="108" height="60">
+ <tileset firstgid="226" name="Tileset_GeometryB" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_GeometryB.png" width="256" height="256"/>
+ </tileset>
+ <layer name="needed under objects to prevent crash" width="108" height="60" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt2rsNAjEQBNBLKYx/ChVABVDBUTlLQGiwfBJri/ekyVeaS06eaQLo3ylyzj6CapfINfsIqt0i9+wjqDZHHtlHAAxslX0AAADAn/EfBgAAALzZAY7FDnAsdoBjsQMEAKCF93dG4nsFAACgd6UNwzqyiWwju59exCelDYO++lTaMOirT6UNg77G9upsHzlEjsm38F1WXzaCbbL6shFss7Sv1jcvG0EAAFjuCem3FeU=
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
   </data>
  </layer>
  <objectgroup name="HelperScreensizes" width="108" height="60" visible="0">
@@ -24,17 +27,22 @@
   <object x="1152" y="0" width="576" height="320"/>
   <object x="1152" y="320" width="576" height="320"/>
  </objectgroup>
+ <layer name="background" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztnEFywyAMRZNle4L2/qdsummyYMZ1MJawkL7gvxkvbQRfEjLy+HYjhJB3Pu/RFhANX9QLDsZQLr6fev1GG3HCz/N6CC/0uVhwJcb2axm9XivkC8s51va8s/g40rjcp+GVL46ejeZbvbT08pjjyJjY6uc57kg0do+oGaPWLateWx+MyBFlfO+xs+q1JXIO3mNTr1xjz6BXT24qNcnVfOadF2fQq9AzF6v5S+pVC01n0qv1HiO9Z39Jkaxj6z1PquVMeu3xPPu9mhfP3tkL2fT6uGPbPNo25Lkf0Rs3NX+1Zia9MvqGlp49VMPsennEVAvrOXuu4Yq937P6UxuLXnqNHueo/5EJyRoh6BXRi0XcS1uxWEDQK/NzvMmml9V5Xda91Esv63PRrPFxFW8/sxovql8YQYRvjhpzhTiLyN2S+rAHzftNq8Y8qlFX7fej2PFCY4u33Sh1EPXKBVJ9oLEl+jusaFDi/YU2dlaINeQ5am3rqW0saiFPWvG0r8m8kZzXeROZf5Bjy5vetTg7C7ekZmN0/zCKDL5byzerglRnkTbS2KrlPuKPtFdLMMiwd81K5Df6RE9P3YB0FofESD+2eDZrxP+MXA+utS3Z9oha7b5SvpzB/y19DsV/UeyQ0Dr7q9F7/l8DxX9R7CC29PxPqHVPa2+Z4dt9dNhb9ke7P2zR9g6Q9Rrd87a6POEZRU6Q44y8wx4sIYQQYsMfMYRIQg==
+  </data>
+ </layer>
  <layer name="mainlayer" width="108" height="60">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztXG1SJCEMRa3Vv+oFdryAu3sAdQ6w3v86O5TbNS1FSICQD5pX9X5N0Q15JARCz1MI4Wkyvl54EuSvxr6U2s1IyBYvQRY/gX5gfYntjqLZK2ILL5hJs1IsmUGrDSX/jPSi5zObRXzDiw8uva7woNnbhXed4/xx4f1/PnQ+C8LNhbcE9o7lMehrMoOPUe3YO5al1xc2H/wT6nxia3cOtH3aR/KO9Nk3hd8iZtCLM97l7ME9X/a5YNTvfsdzuK5RuffOoBcnJPTCsOUVXvWKOQfXeo0hZ4/t/aPfnfbDq16Sc71kD2k/P7JecR2n+MfSi5etsQkaf409JOPiLHq1zvU4zv06CPGd4d0xX+XIU73qlTvzTfNgzD6c4+yJi1QtverFVTPhHOeouLjfR34GW3pR6789Wu3PCihxTtLPMGj4l3btavRcnEkvC7Xf0Xql+QtnfJTUS1Or0TFQyt8k9dKsf2jmT5T9AtUXZ9MLqn/kfKrnbtuoei5mI0t6lWpNtesBViPvjc2javCYL8Z5Z0Uv6rupz2m9+0eF1r0Jb3pp1DEgaGgmpdffwHtGZOX+xsi9zynDXGyw7F/W/MzC3seDXlb8jNtWLbmQZn74Wfncmv0NlmPuz1a3XBXzX+zOdC1bciFP/jW6L9r+S8HS69qXI+oVY/JWS5SsIUKk5ipp/Vk7t4HAaTMLuU6rn6V9seprXDazkutw6dWS26T8Hb7nNClb7nhw2YwyH9NvOCTrHZTzOs73jaopSepl/a6IBa2w75K45hXXXTHv7PWro8xpKzzC910zsUavXOw7QgyyxJpv1c7B/vfIs7Plnrh2n2cgducD8otavTx88y9lU4yQnSg5HnRWTz2LozwLorbdW7Xq3Y/m5raFe64YtG2vodWGdG5b1ypiRKwpsSZe5/rhwaYp0ty95/x/5PzNgbrGeohNVHCe/5+C/PylrLHetCqd/aX74J7z/wUeSO2lZkBpbkNrBdQGW1ugdlJnSTOg5X8YoDa1tU1pekHN+kBZK6A21vXqrXtLUSreYHd0tPVazLM2ji7qsjaOLi4uLi7K8h9lSx9v
+   eJztlEGOwzAMA/P/3/YHi6KXYtG0tixpLJkEeDGaiOK4eVzX9ZBlWf7nLqJ7FK850T2Kib9oDuI1J5pDJ2ZZu9AciB0jJF65/y/rfO/dfs2lOXjwyri/nlrZm+bgwctT4lWL3W735u68kiMlXuK1kuPuvKI99rf2ES3xyuPlwbQjL0uHxF35lMP6O7rjyG4y9vTUyPtpFuL1PW/WHpG7jKrKXfqW/e680i6jqvoteM+euRMhglEHXpRoXl4ddeOVkUe85meOqCovS26C18zszPeszhAvv75X1Z3XSM+VeD1FMcrIELU/KfGqxespoqfI+eQdmcli7e9EXtGzV7Lsrh06Eq9xkV1l8bJm2VHEXY6aLV5n86IzRefMnLW7oyRee/GiM9K9iZccxeraIPuJHhWdU/7Ni87W3ZbeZ0Xv2MmWjmdF70h36dHTyrOz+egeT+BFiu6dYFVZdPcn8PLcgeijK5c7idd+0rellsRrXJYdrZ1kcRGv8WdWZonXS7t0QvOS57jRmWTxkmVZluVo/wGPbf/h
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
-  <object name="player" type="Player" x="848" y="752" width="16" height="32"/>
-  <object name="spawnEntry" type="Checkpoint" x="48" y="832" width="16" height="32"/>
+  <object name="player" type="Player" x="160" y="832" width="16" height="32"/>
+  <object name="spawnEntry" type="Checkpoint" x="32" y="832" width="16" height="32"/>
   <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
    <properties>
     <property name="info.checkpoint" value="spawnStage001"/>
@@ -44,7 +52,7 @@
   </object>
   <object name="b1" type="Briefcase" x="256" y="848" width="16" height="16"/>
   <object name="b2" type="Briefcase" x="1008" y="560" width="16" height="16"/>
-  <object name="b3" type="Briefcase" x="304" y="592" width="16" height="16"/>
+  <object name="b3" type="Briefcase" x="304" y="608" width="16" height="16"/>
   <object name="b4" type="Briefcase" x="1584" y="256" width="16" height="16"/>
   <object name="b5" type="Briefcase" x="1552" y="128" width="16" height="16"/>
   <object name="ld1" type="LockedDoor1" x="480" y="800" width="24" height="64"/>
@@ -58,12 +66,12 @@
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object name="abort" type="Image" x="64" y="816" width="80" height="32">
+  <object name="abort" type="Image" x="16" y="816" width="80" height="32">
    <properties>
     <property name="imageName" value="dummy_abort.png"/>
    </properties>
   </object>
-  <object name="exit" type="Image" x="1616" y="736" width="48" height="32">
+  <object name="exit" type="Image" x="1664" y="736" width="48" height="32">
    <properties>
     <property name="imageName" value="dummy_exit.png"/>
    </properties>
@@ -84,4 +92,9 @@
    </properties>
   </object>
  </objectgroup>
+ <layer name="foreground" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztXFtSLDEIndEd6AIsNzC6/2WpC7D96KpUDIQAAZKGqvN3+ybh8ArEebrfbk+JRCJR4P3AxwZ4C6BLCzwf2EHuAXRp4UOfm/D12MgHd/Ehqazigy8HfryV1ZGvA99EcM/yuIiP1bqcwf2I7UvOsoqPSc5Y54ZWzuv5B8Tx+d3rYLyA/u+ebe3Al4b/nJxC8QZan1In9OqGkr+a93rdHfii+A9VIH1o1jyS2LkKX6UNzqw9IH2c62usPVK7r8rXLFuvpacPq7vFHVgv+RrTR/I1Dk5sOmuS3jc9fWjGRco+duCLY+vQ+aF/J1mbahuc/a7MF3aPgc5ff1ODeo+i1KvYPY/q5yvyRZ2ZYHW89jm5cZHCZWk3K/KlkeNnnVOz/ijrfI96XmuWyL3/tuw1Ml+leMRD7zmIRewYyaGcve/Ol4VPWZzZmq+/WOgx+/XOx736c7SeteJrtm9B8w/Ipzi5dPZsENNRJL40ZrGtWkrbfmb7KuaL1vU85T6ppWfKGTh8jdqEhR494yFlbcq9lDKfkOZSr7xoxRdFz1ZvHjTE8q1LmWtrO5tZH2r2iKz64phY+RilDrFcU7K2p5/N8LFW3WrZB6XolfOmqPazEbR8EqpRpfOx2fYXvT6ctZe6RoH6q73vrHujq8XD2Xvxrmt6skp9aLUXq3dYXNHWWZ0/PXInx89ae4noa575MzpfnNpGoxay0lmvJ1/XZNbzDkq/TlMX0esNrbdHO4AbS3u9cE27au3Re364Gl+WNt2KN1fi6IRkVnulGBQFVN9qxb4r2rc3qLPa5EYfUJ2H9dJG/lbNcxa6IyDdY3kmSg83GqTvUTG77s3vMB2Pzuquwpe0XyTxEc03CJyev7fuOb4lfZOB6Sn67+Z469/at6ylVbtL+v8t+9Wcy3FrImgf0e2/Fu3+v7X9avwdYzTBen+tu5ak/29tv9Qcu5IfWdZ5qwvn94Swb7DcMvp2P/n6L5zfYeDW8xHuSyvIaH7o5Qrsm+h8zZ57a8Ay3mA9igh8JdoYjaMJX+QMNpFIJGLjF0wmqPw=
+  </data>
+ </layer>
 </map>
