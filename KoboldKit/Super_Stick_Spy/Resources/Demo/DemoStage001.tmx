@@ -27,9 +27,14 @@
   <object x="1152" y="0" width="576" height="320"/>
   <object x="1152" y="320" width="576" height="320"/>
  </objectgroup>
+ <layer name="doors" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1UENACEQBMFFPSjgFIBOkMALbpMqBZP0YyIAAAAAAAAAAAAAAAAAAAAAAAAA4P9qiWjl9QpO9d3q0yuNsVtNveAqv5aLX8vFrwEAQD4LhpUHGw==
+  </data>
+ </layer>
  <layer name="background" width="108" height="60">
   <data encoding="base64" compression="zlib">
-   eJztnEFywyAMRZNle4L2/qdsummyYMZ1MJawkL7gvxkvbQRfEjLy+HYjhJB3Pu/RFhANX9QLDsZQLr6fev1GG3HCz/N6CC/0uVhwJcb2axm9XivkC8s51va8s/g40rjcp+GVL46ejeZbvbT08pjjyJjY6uc57kg0do+oGaPWLateWx+MyBFlfO+xs+q1JXIO3mNTr1xjz6BXT24qNcnVfOadF2fQq9AzF6v5S+pVC01n0qv1HiO9Z39Jkaxj6z1PquVMeu3xPPu9mhfP3tkL2fT6uGPbPNo25Lkf0Rs3NX+1Zia9MvqGlp49VMPsennEVAvrOXuu4Yq937P6UxuLXnqNHueo/5EJyRoh6BXRi0XcS1uxWEDQK/NzvMmml9V5Xda91Esv63PRrPFxFW8/sxovql8YQYRvjhpzhTiLyN2S+rAHzftNq8Y8qlFX7fej2PFCY4u33Sh1EPXKBVJ9oLEl+jusaFDi/YU2dlaINeQ5am3rqW0saiFPWvG0r8m8kZzXeROZf5Bjy5vetTg7C7ekZmN0/zCKDL5byzerglRnkTbS2KrlPuKPtFdLMMiwd81K5Df6RE9P3YB0FofESD+2eDZrxP+MXA+utS3Z9oha7b5SvpzB/y19DsV/UeyQ0Dr7q9F7/l8DxX9R7CC29PxPqHVPa2+Z4dt9dNhb9ke7P2zR9g6Q9Rrd87a6POEZRU6Q44y8wx4sIYQQYsMfMYRIQg==
+   eJztnMFyhSAMRfuW7Re0//+VbTd9LpzxWYQEQ3ID98y4VAI3CZE4vr0RQsh/Ph7RFhANn9QLDsZQLr6eev1GG9Hg+3n9CC/0uVhwJ8bOaxm9XivkC8s5lva8Vnxcabzfp2HLF1fPRvOtXmp6ecxxZEwc9fMcdyQau0fUjFHrllWvow9G5Ih9fO+xs+p1JHIO3mNTr1xjz6BXT27aa5K7+cw7L86g107PXKzmL6lXLTSdSa/ae4z0nvMlRbKOtfc8qZYz6XXG8+z3bl5svbPvZNPr/YFt82jbkOd+RW/clPzVmpn0yugbWnr2UA2z6+URUzWs5+y5hiv2flv1pzYWvfQaPc5V/yMTkjVC0CuiF4u4l9ZicQdBr8zP8SabXlbndVn3Ui+9rM9Fs8bHXbz9zGq8qH5hBBG+OWrMFeIsIndL6sMeNO83tRrzqkZdtd+PYseGxhZvu1HqIOqVC6T6QGNL9HdY0aDE+4Y2dlaINeQ5am3rqW0saiFPavF0rsm8kZzXeROZf5Bjy5vetWidhVtSsjG6fxhFBt8t5ZtVQaqzSB1pbJVyH/FH2qslGGTYu2Yl8ht9oqenbkA6i0NipB9bPJs14isj14NrbUu2PaJUu6+UL2fwf0ufQ/FfFDsk1M7+SvSe/5dA8V8UO9DI5Mclev4nVLuntrcgfLufXa8Ws/WW0e3b0O4PR7S9A/T18Oh937084RlFTtDjjLzCHiwhhBBiwx9JYEaJ
   </data>
  </layer>
  <layer name="mainlayer" width="108" height="60">
@@ -37,13 +42,13 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztlEGOwzAMA/P/3/YHi6KXYtG0tixpLJkEeDGaiOK4eVzX9ZBlWf7nLqJ7FK850T2Kib9oDuI1J5pDJ2ZZu9AciB0jJF65/y/rfO/dfs2lOXjwyri/nlrZm+bgwctT4lWL3W735u68kiMlXuK1kuPuvKI99rf2ES3xyuPlwbQjL0uHxF35lMP6O7rjyG4y9vTUyPtpFuL1PW/WHpG7jKrKXfqW/e680i6jqvoteM+euRMhglEHXpRoXl4ddeOVkUe85meOqCovS26C18zszPeszhAvv75X1Z3XSM+VeD1FMcrIELU/KfGqxespoqfI+eQdmcli7e9EXtGzV7Lsrh06Eq9xkV1l8bJm2VHEXY6aLV5n86IzRefMnLW7oyRee/GiM9K9iZccxeraIPuJHhWdU/7Ni87W3ZbeZ0Xv2MmWjmdF70h36dHTyrOz+egeT+BFiu6dYFVZdPcn8PLcgeijK5c7idd+0rellsRrXJYdrZ1kcRGv8WdWZonXS7t0QvOS57jRmWTxkmVZluVo/wGPbf/h
+   eJztlEGOwzAMA/P/3/YHi6KXYtG0tixpLJkEeDGaiOK4eVzX9ZBlWf7nLqJ7FK850T2Kib9oDuI1J5pDJ2ZZu9AciB0jJF65/y/rfO/dfs2lOXjwyri/nlrZm+bgwctT4lWL3W735u68kiMlXuK1kuPuvKI99rf2ES3xyuPlwbQjL0uHxF35lMP6O7rjyG4y9vTUyPtpFuL1PW/WHpG7jKrKXfqW/e680i6jqvoteM+euRMhglEHXpRoXl4ddeOVkUe85meOqCovS26C18zszPeszhAvv75X1Z3XSM+VeD1FMcrIELU/KfGqxespoqfI+eQdmcli7e9EXtGzV7Lsrh06Eq9xkV1l8bJm2VHEXY6aLV5n86IzRefMnLW7oyRee/GiM9K9iZccxeraIPuJHhWdU/7Ni87W3ZbeZ0Xv2MmWjmdF70h36dHTyrOz+egeT+BFie6cYlVVdO+n8PLageqjK5c7idd+0vellsRrXJb9rH1kchGvsWdWZonXS7v0QbOS57jRmWTxkmVZluVo/wEYFwd4
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
-  <object name="player" type="Player" x="160" y="832" width="16" height="32"/>
-  <object name="spawnEntry" type="Checkpoint" x="32" y="832" width="16" height="32"/>
-  <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
+  <object name="player" type="Player" x="1328" y="752" width="16" height="32"/>
+  <object name="spawnEntry" type="Checkpoint" x="64" y="832" width="16" height="32"/>
+  <object name="ExitToStageSelection" type="Trigger" x="32" y="816" width="16" height="48">
    <properties>
     <property name="info.checkpoint" value="spawnStage001"/>
     <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
@@ -59,19 +64,19 @@
   <object name="ld2" type="LockedDoor2" x="848" y="416" width="24" height="64"/>
   <object name="ld5" type="LockedDoor5" x="1568" y="720" width="24" height="64"/>
   <object name="ld4" type="LockedDoor4" x="1328" y="32" width="24" height="64"/>
-  <object name="ExitToStageSelection" type="Trigger" x="1712" y="720" width="16" height="64">
+  <object name="ExitToStageSelection" type="Trigger" x="1680" y="736" width="16" height="48">
    <properties>
     <property name="info.checkpoint" value="spawnStage001"/>
     <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object name="abort" type="Image" x="16" y="816" width="80" height="32">
+  <object name="abort" type="Image" x="72" y="820" width="80" height="32">
    <properties>
     <property name="imageName" value="dummy_abort.png"/>
    </properties>
   </object>
-  <object name="exit" type="Image" x="1664" y="736" width="48" height="32">
+  <object name="exit" type="Image" x="1608" y="740" width="48" height="32">
    <properties>
     <property name="imageName" value="dummy_exit.png"/>
    </properties>
@@ -86,7 +91,7 @@
     <property name="imageName" value="dummy_unlockdoors.png"/>
    </properties>
   </object>
-  <object name="findenoughcases" type="Image" x="1424" y="688" width="80" height="48">
+  <object name="findenoughcases" type="Image" x="1392" y="688" width="80" height="48">
    <properties>
     <property name="imageName" value="dummy_findenoughcases.png"/>
    </properties>
@@ -94,7 +99,7 @@
  </objectgroup>
  <layer name="foreground" width="108" height="60">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
 </map>

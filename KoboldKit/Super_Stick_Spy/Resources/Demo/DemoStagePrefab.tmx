@@ -5,12 +5,12 @@
   <property name="physicsSimulationSpeed" value="1.0"/>
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
- <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
-  <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
+ <tileset firstgid="1" name="Tileset_GeometryB" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_GeometryB.png" width="256" height="256"/>
  </tileset>
- <layer name="sublayer" width="108" height="60">
+ <layer name="needed under objects to prevent crash" width="108" height="60" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt0cENgDAMBEE3lxBC//1wEiXwQEYz0v5tXRUAAAAAAAAAAAAAAAAAAAAAAAAAANDVSmfa6fr4lrdGmumo568/slcv9urFXgAA0NcNyxMJAQ==
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
   </data>
  </layer>
  <objectgroup name="HelperScreensizes" width="108" height="60" visible="0">
@@ -24,12 +24,22 @@
   <object x="1152" y="0" width="576" height="320"/>
   <object x="1152" y="320" width="576" height="320"/>
  </objectgroup>
+ <layer name="doors" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
+  </data>
+ </layer>
+ <layer name="background" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
+  </data>
+ </layer>
  <layer name="mainlayer" width="108" height="60">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztw7EJADAIADDxEv+/smPBTXCSBBIBAAAAAAAAAAAAAAAAAAAAAAAAAABftQAA2/JwAADmHtZbAO8=
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
@@ -37,7 +47,7 @@
   <object name="spawnEntry" type="Checkpoint" x="48" y="832" width="16" height="32"/>
   <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
    <properties>
-    <property name="info.checkpoint" value="spawnStage001"/>
+    <property name="info.checkpoint" value="spawnStage002"/>
     <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
@@ -47,14 +57,14 @@
   <object name="b3" type="Briefcase" x="272" y="832" width="16" height="16"/>
   <object name="b4" type="Briefcase" x="304" y="832" width="16" height="16"/>
   <object name="b5" type="Briefcase" x="336" y="832" width="16" height="16"/>
-  <object name="ld1" type="LockedDoor1" x="368" y="816" width="24" height="48"/>
-  <object name="ld2" type="LockedDoor2" x="416" y="816" width="24" height="48"/>
-  <object name="ld3" type="LockedDoor3" x="464" y="816" width="24" height="48"/>
-  <object name="ld5" type="LockedDoor5" x="560" y="816" width="24" height="48"/>
-  <object name="ld4" type="LockedDoor4" x="512" y="816" width="24" height="48"/>
+  <object name="ld1" type="LockedDoor1" x="368" y="800" width="24" height="64"/>
+  <object name="ld2" type="LockedDoor2" x="416" y="800" width="24" height="64"/>
+  <object name="ld3" type="LockedDoor3" x="464" y="800" width="24" height="64"/>
+  <object name="ld5" type="LockedDoor5" x="560" y="800" width="24" height="64"/>
+  <object name="ld4" type="LockedDoor4" x="512" y="800" width="24" height="64"/>
   <object name="ExitToStageSelection" type="Trigger" x="864" y="800" width="16" height="64">
    <properties>
-    <property name="info.checkpoint" value="spawnStage001"/>
+    <property name="info.checkpoint" value="spawnStage002"/>
     <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
@@ -70,4 +80,9 @@
    </properties>
   </object>
  </objectgroup>
+ <layer name="foreground" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
+  </data>
+ </layer>
 </map>

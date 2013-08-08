@@ -5,12 +5,12 @@
   <property name="physicsSimulationSpeed" value="1.0"/>
   <property name="restrictScrollingToMapBoundary" value="YES"/>
  </properties>
- <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
-  <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
+ <tileset firstgid="1" name="Tileset_GeometryB" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_GeometryB.png" width="256" height="256"/>
  </tileset>
- <layer name="sublayer" width="108" height="60">
+ <layer name="needed under objects to prevent crash" width="108" height="60" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt0cENgDAMBEE3lxBC//1wEiXwQEYz0v5tXRUAAAAAAAAAAAAAAAAAAAAAAAAAANDVSmfa6fr4lrdGmumo568/slcv9urFXgAA0NcNyxMJAQ==
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
   </data>
  </layer>
  <objectgroup name="HelperScreensizes" width="108" height="60" visible="0">
@@ -24,18 +24,28 @@
   <object x="1152" y="0" width="576" height="320"/>
   <object x="1152" y="320" width="576" height="320"/>
  </objectgroup>
+ <layer name="doors" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztyEEJACAQAEH7B9EEmkB7eQ3kXgcyA/vZ1gD4SY9G4lNrRivxqbWjk/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwNsFqawIgw==
+  </data>
+ </layer>
+ <layer name="background" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt3EFOgwAQhlGOYb2BJ9D7VC/g/RfKohsCFipt+ZL3ktkBIf3bYYZFhwFgu7dn3wCbyKtFXvd32qEuPna63rTOv/V5p2uP9fqPz4/H0xda5NUir+Oay0ZexzWXzfvD74K1pnm9DObDI9MPW6Y74kheLfJqkVeLvFrkdVzmwxb7cot9uUU/bLEv98mrRV4t8mqR13GZD1vsyy325Rb9sMW+3CevFnm1yKtFXsdlPmyxL7fYl1v0wxb7cp+8WuTVYj68ne96i7xa5NUir5bLfuSdQ8u139n4Hmnt/0BNj50eN3et08AWt/TFtXO5+X1/nmMtY17fTy6um3t2fC3UX5bOWXMuAAAs+QFeGipO
+  </data>
+ </layer>
  <layer name="mainlayer" width="108" height="60">
   <properties>
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztw7EJADAIADDxEv+/smPBTXCSBBIBAAAAAAAAAAAAAAAAAAAAAAAAAABftQAA2/JwAADmHtZbAO8=
+   eJzt2zEOwjAUwNAegfufFlXsoXRo7I+flI0h+VZKhcRxsLxay0Wzex70NdHUs00806leLvVyqddzdn+fE9ZqNjS7Z0VYq9lM9O3cZPVyqZdLveaYeKaTudc/3i+zernUy6VeLvVyqZdLvVzqNUe9eLpfLvVyqZdLvVzq5VIvl3q51GuOevF0v1zq5VIvl3q51MulXi71cqnXHPXi6X651MulXi71uq//L7vQ5kPbDw1tPrT90NDmQ9sPDW0+tP3Q0OZD2w/NlXe2J1H2QXa116/v5avP3XnXzwdpTpR9kNXLZddvHD0P79ndp15JkuRpb5VSH5E=
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
-  <object name="player" type="Player" x="160" y="768" width="16" height="32"/>
-  <object name="spawnEntry" type="Checkpoint" x="48" y="832" width="16" height="32"/>
-  <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
+  <object name="player" type="Player" x="960" y="64" width="16" height="32"/>
+  <object name="spawnEntry" type="Checkpoint" x="928" y="64" width="16" height="32"/>
+  <object name="ExitToStageSelection" type="Trigger" x="896" y="48" width="16" height="48">
    <properties>
     <property name="info.checkpoint" value="spawnStage002"/>
     <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
@@ -47,27 +57,38 @@
   <object name="b3" type="Briefcase" x="272" y="832" width="16" height="16"/>
   <object name="b4" type="Briefcase" x="304" y="832" width="16" height="16"/>
   <object name="b5" type="Briefcase" x="336" y="832" width="16" height="16"/>
-  <object name="ld1" type="LockedDoor1" x="368" y="816" width="24" height="48"/>
-  <object name="ld2" type="LockedDoor2" x="416" y="816" width="24" height="48"/>
-  <object name="ld3" type="LockedDoor3" x="464" y="816" width="24" height="48"/>
-  <object name="ld5" type="LockedDoor5" x="560" y="816" width="24" height="48"/>
-  <object name="ld4" type="LockedDoor4" x="512" y="816" width="24" height="48"/>
-  <object name="ExitToStageSelection" type="Trigger" x="864" y="800" width="16" height="64">
+  <object name="ld1" type="LockedDoor1" x="368" y="800" width="24" height="64"/>
+  <object name="ld2" type="LockedDoor2" x="416" y="800" width="24" height="64"/>
+  <object name="ld3" type="LockedDoor3" x="464" y="800" width="24" height="64"/>
+  <object name="ld5" type="LockedDoor5" x="688" y="32" width="24" height="64"/>
+  <object name="ld4" type="LockedDoor4" x="512" y="800" width="24" height="64"/>
+  <object name="ExitToStageSelection" type="Trigger" x="816" y="48" width="16" height="48">
    <properties>
     <property name="info.checkpoint" value="spawnStage002"/>
     <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object name="abort" type="Image" x="64" y="816" width="80" height="32">
+  <object name="abort" type="Image" x="936" y="52" width="80" height="32">
    <properties>
     <property name="imageName" value="dummy_abort.png"/>
    </properties>
   </object>
-  <object name="exit" type="Image" x="768" y="816" width="48" height="32">
+  <object name="exit" type="Image" x="744" y="52" width="48" height="32">
    <properties>
     <property name="imageName" value="dummy_exit.png"/>
    </properties>
   </object>
+  <object name="checkpoint" type="Image" x="1136" y="48" width="224" height="32">
+   <properties>
+    <property name="imageName" value="dummy_checkpoint.png"/>
+   </properties>
+  </object>
+  <object name="respawn1" type="Checkpoint" x="1232" y="32" width="32" height="64"/>
  </objectgroup>
+ <layer name="foreground" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt3OFtwjAQhuFboWWBoxuUAZAXaDtDGaBVBwB19CZVkJBJ1Iik3H3ya+n5A9YJ/Anjyw9vzWwLoAmvC+2HOmWFWpmcv1c2S4cPdZ5WqJVpuMVnQ17zh1t8NuQ1f7jFZzPmcaHdUOd5hVpT3juHf6q9EcurdVP7AnnlRF55Fbs+s5NXXnU2PvLa5XvRn7d1dTYvnbfrqH6HJ/i8ravzejDOh5mxH2qpe8QdeckhLy3kpYW88ipGv6yE86EW+mUt9Mta2A+10C/rIy8t5KWFvPIqRr+shPOhFvplLfTLWtgPtdAv6yMvLeSlhbzyKka/rITzoRb6ZS30y1rYD7XQL+sjLy3kdbti97/HhvPh7TLd4eEWvx7ZkZcW8tJCXlrO/dHUM4d7Drf49VDx1++sf4409x6oem49b6zW5b1YWJ5X/5x27rm8nlvPG6uV+b7KjDL8j7nFr4OKPq+PzmegrwTroKI/dxw7p0DfCdYBAAC04QcqUBcX
+  </data>
+ </layer>
 </map>
