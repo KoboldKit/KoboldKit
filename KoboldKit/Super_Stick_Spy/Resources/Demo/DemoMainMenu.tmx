@@ -8,9 +8,12 @@
  <tileset firstgid="1" name="Tileset_Geometry_16x16_256" tilewidth="16" tileheight="16" spacing="1" margin="1">
   <image source="Tileset_Geometry_16x16_256.png" width="256" height="256"/>
  </tileset>
- <layer name="sublayer" width="50" height="20">
+ <tileset firstgid="226" name="Tileset_GeometryB" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_GeometryB.png" width="256" height="256"/>
+ </tileset>
+ <layer name="background" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJztz7kNACAMBEE3x9N/RbgHB2A0I21+FwEAdDOyma1sX95S4cdbfvkB0NUBf7MEaQ==
+   eJzt0jsOgDAMBFG7JUDP/U8ZEJ8t02OMi3nStiSjYAZ8Y/K/bxCDjlroqIWOWsaOru3JO4I7Tu1O3mVx/8Om7zTPb5h15qKt/v5NAQC5HjXuZ24=
   </data>
  </layer>
  <layer name="mainlayer" width="50" height="20">
@@ -18,7 +21,7 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztz8ENwCAMQ9GoI7BAmQAmYP+1ihcoJBKSg/wlH314ZoqpNlfJ1gOOEvic7jW/hdGBvBZWB/JYmB1o18LuQDuWDA4ES/1ZFscqObi6xTHmngumlFJZ+gC4kgi2
+   eJzt1LEJADAMxEDvv202SOU+hhTyowMPIB5cJZIDvmkHUVLHZBdqR0vqeNmF3tGSOn7+Nyo7WJI6Ek6StrhEdG01
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="50" height="20">
@@ -28,7 +31,7 @@
     <property name="imageName" value="dummy_gametitle.png"/>
    </properties>
   </object>
-  <object name="goToStages" type="Image" x="656" y="160" width="80" height="32">
+  <object name="goToStages" type="Image" x="704" y="160" width="80" height="32">
    <properties>
     <property name="imageName" value="dummy_stagemenu.png"/>
    </properties>
@@ -40,6 +43,11 @@
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object name="spawnEntryMainMenu" type="Checkpoint" x="736" y="176" width="16" height="32"/>
+  <object name="spawnEntryMainMenu" type="Checkpoint" x="752" y="176" width="16" height="32"/>
  </objectgroup>
+ <layer name="foreground" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYmRgYBrFo5jKWBGI9QcZlifDH8xAPNgA4zDxhx4Z8TIY/QEDpMTLYPYHKfEymP0BA8TEy1DwByxe8OGh4A9iwKg/BhcQAvrjM8PQxwPdLhrFo3gUj2JiMQAx2j5q
+  </data>
+ </layer>
 </map>
