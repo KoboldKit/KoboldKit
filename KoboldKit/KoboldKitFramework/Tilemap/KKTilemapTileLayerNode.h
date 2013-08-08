@@ -15,12 +15,12 @@
 @interface KKTilemapTileLayerNode : KKTilemapLayerNode
 {
 	@private
-	NSMutableDictionary* _batchNodes;
+	//NSMutableDictionary* _batchNodes;
 	SKNode* _batchNode;
 	
-	NSMutableArray* _visibleTiles;
-	//void** _visibleTiles;
-	//NSUInteger _visibleTilesCount;
+	//NSMutableArray* _visibleTiles;
+	void** _visibleTiles;
+	NSUInteger _visibleTilesCount;
 	
 	CGSize _visibleTilesOnScreen;
 	CGSize _viewBoundary;

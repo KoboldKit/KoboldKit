@@ -29,14 +29,11 @@
 	CGSize gridSize = _tilemap.gridSize;
 	CGSize mapSize = _tilemap.size;
 	
-	_visibleTilesOnScreen = CGSizeMake(sceneSize.width / gridSize.width + 1, sceneSize.height / gridSize.height + 1);
+	_visibleTilesOnScreen = CGSizeMake(ceil(sceneSize.width / gridSize.width + 1), ceil(sceneSize.height / gridSize.height + 1));
 	_viewBoundary = CGSizeMake(-(mapSize.width * gridSize.width - (_visibleTilesOnScreen.width - 1) * gridSize.width),
 							   -(mapSize.height * gridSize.height - (_visibleTilesOnScreen.height - 1) * gridSize.height));
 
-	if (_batchNodes == nil)
-	{
-		[self createTilesetBatchNodes];
-	}
+	[self createTilesetBatchNodes];
 	
 	// force initial draw
 	_tilemap.modified = YES;
@@ -65,7 +62,11 @@
 	}
 	
 	// initialize sprites with dummy textures
-	_visibleTiles = [NSMutableArray arrayWithCapacity:_visibleTilesOnScreen.width * _visibleTilesOnScreen.height];
+	//_visibleTiles = [NSMutableArray arrayWithCapacity:_visibleTilesOnScreen.width * _visibleTilesOnScreen.height];
+	NSUInteger bufferSize = sizeof(SKSpriteNode*) * _visibleTilesOnScreen.width * _visibleTilesOnScreen.height;
+	_visibleTiles = (void**)malloc(bufferSize);
+
+	NSUInteger i = 0;
 	SKSpriteNode* tileSprite = nil;
 	for (int tilePosY = 0; tilePosY < _visibleTilesOnScreen.height; tilePosY++)
 	{
@@ -77,9 +78,19 @@
 			tileSprite.anchorPoint = CGPointZero;
 			[_batchNode addChild:tileSprite];
 			
-			[_visibleTiles addObject:tileSprite];
+			//[_visibleTiles addObject:tileSprite];
+			_visibleTiles[i++] = (__bridge void*)tileSprite;
 		}
 	}
+	
+	_visibleTilesCount = i;
+}
+
+-(void) willMoveFromParent
+{
+	free(_visibleTiles);
+	_visibleTiles = nil;
+	_visibleTilesCount = 0;
 }
 
 -(void) setPosition:(CGPoint)position
@@ -129,11 +140,19 @@
 		{
 			for (int viewTilePosX = 0; viewTilePosX < _visibleTilesOnScreen.width; viewTilePosX++)
 			{
+				/*
 				NSAssert2(_visibleTiles.count > i,
 						  @"Tile layer index (%u) out of bounds (%u)! Perhaps due to window resize?",
 						  (unsigned int)i, (unsigned int)_visibleTiles.count);
 				
 				tileSprite = [_visibleTiles objectAtIndex:i++];
+				 */
+				
+				NSAssert2(_visibleTilesCount > i,
+						  @"Tile layer index (%u) out of bounds (%u)! Perhaps due to window resize?",
+						  (unsigned int)i, (unsigned int)_visibleTilesCount);
+				
+				tileSprite = (__bridge SKSpriteNode*)_visibleTiles[i++];
 				
 				// get the proper git coordinate, wrap around as needed
 				CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x, (mapSize.height - 1 - viewTilePosY) - offsetInTiles.y);
@@ -167,7 +186,12 @@
 					 */
 				}
 
-				tileSprite.texture = [currentTileset textureForGid:gid];
+				// saves a little bit performance to make the assignment only when necessary
+				SKTexture* tileSpriteTexture = [currentTileset textureForGid:gid];
+				if (tileSprite.texture != tileSpriteTexture)
+				{
+					tileSprite.texture = tileSpriteTexture;
+				}
 				NSAssert1(tileSprite.texture, @"tilesprite texture is nil for gid: %u", gid);
 		
 				/*
