@@ -129,15 +129,24 @@
 		CGPoint offsetInTiles = CGPointMake((int32_t)(positionInPoints.x / gridSize.width), (int32_t)(positionInPoints.y / gridSize.height));
 		CGPoint offsetInPoints = CGPointMake(offsetInTiles.x * gridSize.width, offsetInTiles.y * gridSize.height);
 		
-		NSUInteger i = 0;
-		SKSpriteNode* tileSprite = nil;
-		KKTilemapTileset* currentTileset = nil;
-		KKTilemapTileset* previousTileset = nil;
+		//SKSpriteNode* nextTileSprite = (__bridge SKSpriteNode*)_visibleTiles[i++];
+
 		//SKNode* currentBatchNode = nil;
 		//NSUInteger countBatchNodeReparenting = 0;
 		
+		//dispatch_queue_t fetchTileQueue = dispatch_queue_create("fetchTileQueue", DISPATCH_QUEUE_CONCURRENT);
+		dispatch_group_t renderGroup = dispatch_group_create();
+		dispatch_queue_t highPriorityQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+		
+		//dispatch_async(fetchTileQueue, ^{
 		for (int viewTilePosY = 0; viewTilePosY < _visibleTilesOnScreen.height; viewTilePosY++)
 		{
+			dispatch_group_async(renderGroup, highPriorityQueue, ^{
+				SKSpriteNode* tileSprite = nil;
+				NSUInteger i = viewTilePosY * _visibleTilesOnScreen.height;
+				KKTilemapTileset* currentTileset = nil;
+				KKTilemapTileset* previousTileset = nil;
+				
 			for (int viewTilePosX = 0; viewTilePosX < _visibleTilesOnScreen.width; viewTilePosX++)
 			{
 				/*
@@ -148,11 +157,19 @@
 				tileSprite = [_visibleTiles objectAtIndex:i++];
 				 */
 				
-				NSAssert2(_visibleTilesCount > i,
+				NSAssert2(_visibleTilesCount >= i,
 						  @"Tile layer index (%u) out of bounds (%u)! Perhaps due to window resize?",
 						  (unsigned int)i, (unsigned int)_visibleTilesCount);
 				
 				tileSprite = (__bridge SKSpriteNode*)_visibleTiles[i++];
+				/*
+				dispatch_async(fetchTileQueue, ^{
+					if (i < _visibleTilesCount)
+					{
+						nextTileSprite = (__bridge SKSpriteNode*)_visibleTiles[i++];
+					}
+				});
+				*/
 				
 				// get the proper git coordinate, wrap around as needed
 				CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x, (mapSize.height - 1 - viewTilePosY) - offsetInTiles.y);
@@ -169,30 +186,30 @@
 
 				// get the gid's tileset, reuse previous tileset if possible
 				currentTileset = previousTileset;
-				if (currentTileset == nil || gid < currentTileset.firstGid || gid > currentTileset.lastGid)
+				if (gid < currentTileset.firstGid || gid > currentTileset.lastGid || currentTileset == nil)
 				{
 					currentTileset = [_tilemap tilesetForGid:gid];
 					NSAssert1(currentTileset, @"Invalid gid: no tileset found for gid %u!", (gid & KKTilemapTileFlipMask));
 				}
 				
+				/*
 				// switch the batch node if the current gid uses a different tileset than the previous gid
 				if (currentTileset != previousTileset)
 				{
 					previousTileset = currentTileset;
 					
-					/*
 					currentBatchNode = [_batchNodes objectForKey:currentTileset.imageFile];
 					NSAssert1(currentBatchNode, @"batch node not found for key: %@", currentTileset.imageFile);
-					 */
 				}
+				 */
 
 				// saves a little bit performance to make the assignment only when necessary
 				SKTexture* tileSpriteTexture = [currentTileset textureForGid:gid];
+				NSAssert1(tileSpriteTexture, @"tilesprite texture is nil for gid: %u", gid);
 				if (tileSprite.texture != tileSpriteTexture)
 				{
 					tileSprite.texture = tileSpriteTexture;
 				}
-				NSAssert1(tileSprite.texture, @"tilesprite texture is nil for gid: %u", gid);
 		
 				/*
 				// change the tile sprite's batch node since we're switching tilesets
@@ -268,7 +285,12 @@
 				tileSprite.xScale = xScale;
 				tileSprite.yScale = yScale;
 				tileSprite.position = tileSpritePosition;
+				
+				previousTileset = currentTileset;
 			}
+				
+			});
+
 		}
 		
 		/*
@@ -277,6 +299,8 @@
 			LOG_EXPR(countBatchNodeReparenting);
 		}
 		 */
+
+		dispatch_group_wait(renderGroup, DISPATCH_TIME_FOREVER);
 	}
 	
 	_previousPosition = self.position;

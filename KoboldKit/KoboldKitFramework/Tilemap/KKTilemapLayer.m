@@ -67,7 +67,7 @@
 	}
 
 	return tileCoord.x + tileCoord.y * _size.width;
-} /* indexForTileCoord */
+}
 
 -(gid_t) tileGidAt:(CGPoint)tileCoord
 {
