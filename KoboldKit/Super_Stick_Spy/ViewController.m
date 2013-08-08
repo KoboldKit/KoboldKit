@@ -16,18 +16,11 @@
 {
 	[super presentFirstScene];
 	
-	
-	[[SKTAudio sharedInstance] playBackgroundMusic:@"Time to business, guys.mp3"];
-
-    // Create and present the scene.
-	KKScene* scene = [MenuScene sceneWithSize:self.view.bounds.size];
-	[self.kkView presentScene:scene];
-	
-	/*
-	GameScene* gameScene = [GameScene sceneWithSize:self.view.bounds.size];
-	gameScene.tmxFile = @"DemoLevel01_Steffen.tmx";
-	[self.kkView presentScene:gameScene transition:[SKTransition fadeWithColor:[SKColor grayColor] duration:0.5]];
-	 */
+    // Create and present the first scene
+	GameScene *gameScene = [GameScene sceneWithSize:self.view.bounds.size];
+	gameScene.tmxFile = @"DemoMainMenu.tmx";
+	SKTransition *transition = [SKTransition fadeWithColor:[SKColor grayColor] duration:0.5];
+	[self.kkView presentScene:gameScene transition:transition];
 }
 
 @end
