@@ -44,15 +44,21 @@
 
 -(void) createTilesetBatchNodes
 {
-	NSUInteger numTilesets = _tilemap.tilesets.count;
-	_batchNodes = [NSMutableDictionary dictionaryWithCapacity:numTilesets];
+	//NSUInteger numTilesets = _tilemap.tilesets.count;
+	//_batchNodes = [NSMutableDictionary dictionaryWithCapacity:numTilesets];
+	
+	_batchNode = [SKNode node];
+	_batchNode.zPosition = 1;
+	[self addChild:_batchNode];
 
 	// get all tileset textures and create batch nodes, but don't add them as child just yet
 	for (KKTilemapTileset* tileset in _tilemap.tilesets)
 	{
+		/*
 		SKNode* batchNode = [SKNode node];
 		batchNode.zPosition = 1;
 		[_batchNodes setObject:batchNode forKey:tileset.imageFile];
+		 */
 		
 		// load and setup textures
 		[tileset texture];
@@ -69,6 +75,8 @@
 			tileSprite.size = CGSizeMake(_tilemap.gridSize.width, _tilemap.gridSize.height);
 			tileSprite.hidden = YES;
 			tileSprite.anchorPoint = CGPointZero;
+			[_batchNode addChild:tileSprite];
+			
 			[_visibleTiles addObject:tileSprite];
 		}
 	}
@@ -87,7 +95,7 @@
 {
 	self.hidden = _layer.hidden;
 	
-	if (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified)
+	//if (self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
 	{
 		// create initial tiles to fill screen
 		CGSize mapSize = _tilemap.size;
@@ -112,9 +120,10 @@
 		
 		NSUInteger i = 0;
 		SKSpriteNode* tileSprite = nil;
-		SKNode* currentBatchNode = nil;
+		KKTilemapTileset* currentTileset = nil;
 		KKTilemapTileset* previousTileset = nil;
-		NSUInteger countBatchNodeReparenting = 0;
+		//SKNode* currentBatchNode = nil;
+		//NSUInteger countBatchNodeReparenting = 0;
 		
 		for (int viewTilePosY = 0; viewTilePosY < _visibleTilesOnScreen.height; viewTilePosY++)
 		{
@@ -140,7 +149,7 @@
 				tileSprite.hidden = NO;
 
 				// get the gid's tileset, reuse previous tileset if possible
-				KKTilemapTileset* currentTileset = previousTileset;
+				currentTileset = previousTileset;
 				if (currentTileset == nil || gid < currentTileset.firstGid || gid > currentTileset.lastGid)
 				{
 					currentTileset = [_tilemap tilesetForGid:gid];
@@ -151,13 +160,17 @@
 				if (currentTileset != previousTileset)
 				{
 					previousTileset = currentTileset;
+					
+					/*
 					currentBatchNode = [_batchNodes objectForKey:currentTileset.imageFile];
 					NSAssert1(currentBatchNode, @"batch node not found for key: %@", currentTileset.imageFile);
+					 */
 				}
 
 				tileSprite.texture = [currentTileset textureForGid:gid];
 				NSAssert1(tileSprite.texture, @"tilesprite texture is nil for gid: %u", gid);
-				
+		
+				/*
 				// change the tile sprite's batch node since we're switching tilesets
 				if (tileSprite.parent != currentBatchNode)
 				{
@@ -171,6 +184,7 @@
 						[self addChild:currentBatchNode];
 					}
 				}
+				 */
 				
 				/*
 				// draw tile coords if enabled, only every second column (to avoid overlap)
@@ -186,10 +200,8 @@
 				// update position
 				CGPoint tileSpritePosition = CGPointMake(viewTilePosX * gridSize.width + offsetInPoints.x,
 														 viewTilePosY * gridSize.height + offsetInPoints.y);
-				// set flip defaults
-				tileSprite.zRotation = 0.0;
-				tileSprite.xScale = 1.0;
-				tileSprite.yScale = 1.0;
+				// set flip & rotation defaults
+				CGFloat zRotation = 0.0, xScale = 1.0, yScale = 1.0;
 				
 				const CGFloat k270DegreesRadians = M_PI_2 * 3.0;
 				if (gid & KKTilemapTileDiagonalFlip)
@@ -198,19 +210,19 @@
 					gid_t gidFlipFlags = gid & (KKTilemapTileHorizontalFlip | KKTilemapTileVerticalFlip);
 					if (gidFlipFlags == 0)
 					{
-						tileSprite.zRotation = M_PI_2; // 90°
-						tileSprite.xScale = -1.0;
+						zRotation = M_PI_2; // 90°
+						xScale = -1.0;
 						tileSpritePosition.x += gridSize.width;
 						tileSpritePosition.y += gridSize.height;
 					}
 					else if (gidFlipFlags == KKTilemapTileHorizontalFlip)
 					{
-						tileSprite.zRotation = k270DegreesRadians;
+						zRotation = k270DegreesRadians;
 						tileSpritePosition.y += gridSize.height;
 					}
 					else if (gidFlipFlags == KKTilemapTileVerticalFlip)
 					{
-						tileSprite.zRotation = M_PI_2; // 90°
+						zRotation = M_PI_2; // 90°
 						tileSpritePosition.x += gridSize.width;
 					}
 				}
@@ -218,16 +230,19 @@
 				{
 					if ((gid & KKTilemapTileHorizontalFlip) == KKTilemapTileHorizontalFlip)
 					{
-						tileSprite.xScale = -1.0;
+						xScale = -1.0;
 						tileSpritePosition.x += gridSize.width;
 					}
 					if ((gid & KKTilemapTileVerticalFlip) == KKTilemapTileVerticalFlip)
 					{
-						tileSprite.yScale = -1.0;
+						yScale = -1.0;
 						tileSpritePosition.y += gridSize.height;
 					}
 				}
 				
+				tileSprite.zRotation = zRotation;
+				tileSprite.xScale = xScale;
+				tileSprite.yScale = yScale;
 				tileSprite.position = tileSpritePosition;
 			}
 		}

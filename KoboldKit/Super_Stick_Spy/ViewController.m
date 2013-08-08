@@ -18,7 +18,7 @@
 	
     // Create and present the first scene
 	GameScene *gameScene = [GameScene sceneWithSize:self.view.bounds.size];
-	gameScene.tmxFile = @"DemoMainMenu.tmx";
+	gameScene.tmxFile = @"DemoStage002.tmx";
 	SKTransition *transition = [SKTransition fadeWithColor:[SKColor grayColor] duration:0.5];
 	[self.kkView presentScene:gameScene transition:transition];
 }
