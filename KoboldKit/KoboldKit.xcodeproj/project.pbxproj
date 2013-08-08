@@ -31,8 +31,6 @@
 		DC10607C17B3C9BC005BB9D0 /* DemoStageSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10606217B3C9BC005BB9D0 /* DemoStageSelection.tmx */; };
 		DC10607D17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */; };
 		DC10607E17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */; };
-		DC10607F17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_test.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606417B3C9BC005BB9D0 /* Tileset_Geometry_16x16_test.png */; };
-		DC10608017B3C9BC005BB9D0 /* Tileset_Geometry_16x16_test.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606417B3C9BC005BB9D0 /* Tileset_Geometry_16x16_test.png */; };
 		DC10608117B3C9BC005BB9D0 /* Tileset_GeometryB.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */; };
 		DC10608217B3C9BC005BB9D0 /* Tileset_GeometryB.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */; };
 		DC10608317B3C9BC005BB9D0 /* TilesTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */; };
@@ -380,7 +378,6 @@
 		DC10606117B3C9BC005BB9D0 /* DemoStagePrefab.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStagePrefab.tmx; sourceTree = "<group>"; };
 		DC10606217B3C9BC005BB9D0 /* DemoStageSelection.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStageSelection.tmx; sourceTree = "<group>"; };
 		DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16_256.png; sourceTree = "<group>"; };
-		DC10606417B3C9BC005BB9D0 /* Tileset_Geometry_16x16_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16_test.png; sourceTree = "<group>"; };
 		DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_GeometryB.png; sourceTree = "<group>"; };
 		DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TilesTest.tmx; sourceTree = "<group>"; };
 		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
@@ -890,7 +887,6 @@
 				DC10606117B3C9BC005BB9D0 /* DemoStagePrefab.tmx */,
 				DC10606217B3C9BC005BB9D0 /* DemoStageSelection.tmx */,
 				DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */,
-				DC10606417B3C9BC005BB9D0 /* Tileset_Geometry_16x16_test.png */,
 				DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */,
 				DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */,
 				DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */,
@@ -1469,7 +1465,6 @@
 				DC04802C17AD2C18002EBD1E /* spark.png in Resources */,
 				DC25518917B285C50078151C /* land.wav in Resources */,
 				DC25517917B281910078151C /* Time to business, guys.mp3 in Resources */,
-				DC10608017B3C9BC005BB9D0 /* Tileset_Geometry_16x16_test.png in Resources */,
 				DC10607A17B3C9BC005BB9D0 /* DemoStagePrefab.tmx in Resources */,
 				DC25518B17B285C50078151C /* pickup.wav in Resources */,
 				DC10606A17B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */,
@@ -1519,7 +1514,6 @@
 				DC25518217B285C50078151C /* chirp.wav in Resources */,
 				DC10608117B3C9BC005BB9D0 /* Tileset_GeometryB.png in Resources */,
 				DC25518A17B285C50078151C /* pickup.wav in Resources */,
-				DC10607F17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_test.png in Resources */,
 				DC10606917B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */,
 				DC25518E17B285C50078151C /* teleport.wav in Resources */,
 				DC25519617B287810078151C /* respawn.wav in Resources */,
