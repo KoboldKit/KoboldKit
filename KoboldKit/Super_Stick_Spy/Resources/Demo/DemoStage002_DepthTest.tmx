@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="108" height="60" tilewidth="16" tileheight="16" backgroundcolor="#ffffff">
+ <properties>
+  <property name="physicsGravityY" value="-9.81"/>
+  <property name="physicsSimulationSpeed" value="1.0"/>
+  <property name="restrictScrollingToMapBoundary" value="YES"/>
+ </properties>
+ <tileset firstgid="1" name="Tileset_GeometryB" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="Tileset_GeometryB.png" width="256" height="256"/>
+ </tileset>
+ <layer name="needed under objects to prevent crash" width="108" height="60" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
+  </data>
+ </layer>
+ <objectgroup name="HelperScreensizes" width="108" height="60" visible="0">
+  <object x="0" y="640" width="576" height="320"/>
+  <object x="0" y="320" width="576" height="320"/>
+  <object x="0" y="0" width="576" height="320"/>
+  <object x="576" y="640" width="576" height="320"/>
+  <object x="576" y="0" width="576" height="320"/>
+  <object x="576" y="320" width="576" height="320"/>
+  <object x="1152" y="640" width="576" height="320"/>
+  <object x="1152" y="0" width="576" height="320"/>
+  <object x="1152" y="320" width="576" height="320"/>
+ </objectgroup>
+ <layer name="doors" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztyEEJACAQAEH7B9EEmkB7eQ3kXgcyA/vZ1gD4SY9G4lNrRivxqbWjk/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwNsFqawIgw==
+  </data>
+ </layer>
+ <layer name="Tile Layer 7" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt18ENwjAMBVCPAUwAE8D+k3HkAm2CIidu35N6dpQv/yoRAAAAAAAAAAAAAAAA53Tt+G6Tzsh/HrMPQBd51fIK3XlUdrEWeeUZcdct3akzx3gmzbGD7e4x/75mz69kRF6X+N5zreTVJ6v3Vp3Ph93J86vnenpPXrXounXYnVq8hY9nawf3/o+yzre1g3v0bS3yqkVetXgLrEUeAAAAcA5vjiwMPg==
+  </data>
+ </layer>
+ <layer name="Tile Layer 6" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2NttwzAMBVCu0GYBthu0AwReoO3+27R/RQKbkuFHFOAcgJ+CDF2QthwBAAAAAAAAAAAAAAAA43vtrMujHpAbb531/qgH5Ia8nktvXh9hdo6gN681pRePc3/W0199F3WdWSOvY20562ys752dZma/qo9+Gmu/Ftat6T89OC/j/POq9pRXLeO483qJ+Tn3Wewpr1o1u1pzryVjOYup2Hev/VknQ++MYGnOrZl78jpPRv3emcKsG0nGfzb39M54MtyFn0n1TbnHXbj1fpT1fjL68qp6sHU/M2/3k9GX15aS135a/w7XzEx5jSFj233AXeBcrR6UBwAAAFv8Am8qQZY=
+  </data>
+ </layer>
+ <layer name="background" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztnO1NxDAMhjsGsAETcPsAC7D/D65CkaKoSfydN8WPFAkBbR2/tuukdz2OZDfeVxuQsLirXjmvvch5HcfLc7w+x5uTLZbcVa/Hwdfgw+C6RXvrUXg4nV87Pp/ja/B3qg6aeNwp79Ch6lD/n9T/bd6ljnwkehUs6p7lef4DGr1arPIl8+6PK59T9eLkQOadDZKaZtH3Zr7IaH1/+nHmw/OYH+bo6aPNl3Jea1DXYpJ6KFmnUM+NkneoerW+P/G01ePe6MHq63NA0KslKu9Q82oEol4F77i/o16aOaH7Y6c6WPDUy8Mf9T7w6j7FG0l/iJwjUbatipFV62UN7XOVGu5aY/asgqJHZA2Vrpf/E5L5evWzEfXwtL2O49kc0O5H7X4OB+vck6yXtfnFOR6hX2t9pIkhj7zT6EWxJ6KeIq8hTyzj0CK/RvZYxmsPdL0sie7nPebvWUc197MrtDWSsz9vkRto8TrDqz5QYkzbH1rE8dWaCaEvpBIZb6jr5Z1yztrWej0zu5bH82UJu+llNW/KtSi/q+Hu+UigXAOlZvZs9bAv+vmyJeh2RtmH7ocCwt7HiKg6iaaX5PswCHUzqk6i6aXNI7Q8pPRr3POtAC1OvKD0Uj00n8e2JjIP2rqJ0mvO8PyOyegaaKDVzB6S9TKXXXyxA5p6iJw3K+pdhD806+Wd8ibCVtQ+DTmvVrIqftH12rW38wLheQqHneryCtD0SsZYfx6gRVvvvOtlOX/72eAd6nJErkXvH0r13qHujPbCUOONqwdV76u6g/L9XgpX80R63lHw6FfaXOu9x4fih1l89d6r1bNFyx37O4mPqH7g+kvyPoc7j56PUEB979yqcQVCTCd0HtXP350xoncM5dgkSZIkSZIk6fELIgSSNw==
+  </data>
+ </layer>
+ <layer name="mainlayer" width="108" height="60">
+  <properties>
+   <property name="_mainTileLayer" value="YES"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztl1GOwzAIRHuE3P+0+7lVlNSAB5hJeFLUSnEwZozBx+fzOeaRepjojoXC8zRmXVrMurSYde19U42CjxG661h33WZ9fsXr6n8EtObdMVPTCxX/qB2k9kpU5RcaNn+qWOllycOrb3bx5P6bsOjFSGctZAXpX0a/0WGrW6+s/Mraixk54NWrM/c89QvZe57nQGL1BR1nBr2ybFdzpxd6juy8686v1dwoKvTyzJ1hi7F+Rens9ZD7+S16McKkVyYKdyELkZxT1ev7t2rOingw1fwod3sQ0Q911bQ7npBf1XkU/Q7hZ4de3v26GmtZAyqXuvdnl17W+b32Iu8936HPR6+NbL2uxijrhbIdhSG/dvdrVo9gsfU2vTzvGKjQa7dWr+x69/HT9Krs9xnzi+3O801WrUTNv/oWrRdifCYd9cyzd6vzCzG+EkW9Is+Ov0xnpqWeIfxT7Q3Y9dodlzlPl15MjF7/trPOUiRWm7vrUdBLhd0eu2pctDdk7h8iIO5EqHhk6MUI4sxl5zj9f1reeIjEItuPlY9v5kov6/gsP67eqeRNtq8RvTJyzqLXgIn96KWFpweI1EUWvZTO5U4mPlqMXlpU3il263h2b6hwz1TwEYF3jayxQPUt3WTcge5sdsYCMbeSrlbOa/DkpKcvvxunmjddRPSqYPS6hl2veX6fOUx6DWu6987UrmEYhmEYKvkD+LREoQ==
+  </data>
+ </layer>
+ <objectgroup color="#00ff00" name="game objects" width="108" height="60">
+  <object name="player" type="Player" x="960" y="64" width="16" height="32"/>
+  <object name="spawnEntry" type="Checkpoint" x="928" y="64" width="16" height="32"/>
+  <object name="ExitToStageSelection" type="Trigger" x="896" y="48" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnStage002"/>
+    <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="b1" type="Briefcase" x="1344" y="784" width="16" height="16"/>
+  <object name="b2" type="Briefcase" x="32" y="736" width="16" height="16"/>
+  <object name="b3" type="Briefcase" x="1440" y="464" width="16" height="16"/>
+  <object name="b4" type="Briefcase" x="40" y="432" width="16" height="16"/>
+  <object name="b5" type="Briefcase" x="24" y="80" width="16" height="16"/>
+  <object name="ld5" type="LockedDoor5" x="688" y="32" width="24" height="64"/>
+  <object name="ExitToStageSelection" type="Trigger" x="816" y="48" width="16" height="48">
+   <properties>
+    <property name="info.checkpoint" value="spawnStage002"/>
+    <property name="info.tmxFile" value="DemoStageSelection.tmx"/>
+    <property name="notification" value="LoadMap"/>
+   </properties>
+  </object>
+  <object name="abort" type="Image" x="936" y="52" width="80" height="32">
+   <properties>
+    <property name="imageName" value="dummy_abort.png"/>
+   </properties>
+  </object>
+  <object name="exit" type="Image" x="744" y="52" width="48" height="32">
+   <properties>
+    <property name="imageName" value="dummy_exit.png"/>
+   </properties>
+  </object>
+  <object name="checkpoint" type="Image" x="1396" y="48" width="224" height="32">
+   <properties>
+    <property name="imageName" value="dummy_checkpoint.png"/>
+   </properties>
+  </object>
+  <object name="rs1" type="Checkpoint" x="1488" y="32" width="32" height="64"/>
+  <object type="Trigger" x="1184" y="848" width="528" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+  <object type="Trigger" x="16" y="832" width="1088" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+  <object name="rs2" type="Checkpoint" x="1072" y="688" width="32" height="64"/>
+  <object name="rs3" type="Checkpoint" x="224" y="304" width="32" height="64"/>
+  <object name="rs4" type="Checkpoint" x="832" y="288" width="32" height="48"/>
+  <object type="Trigger" x="16" y="496" width="192" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+  <object type="Trigger" x="16" y="204" width="208" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+  <object type="Trigger" x="976" y="368" width="64" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+  <object type="Trigger" x="1040" y="432" width="64" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+  <object type="Trigger" x="1104" y="496" width="96" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+  <object type="Trigger" x="1200" y="544" width="96" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+  <object type="Trigger" x="1296" y="576" width="144" height="16">
+   <properties>
+    <property name="notification" value="DeadlyTrap"/>
+    <property name="onlyOnce" value="NO"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="foreground" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztXOuRGzEI/lpI0gCXDnIFZNTAJTU4BeRRQDJuIKk59g/N7WE9QEISXi8z/LG9AoH4AEneJwBPB98Nhwt/ccKfHdjDO3+EH3qBnc+DwVieOM7Lk78siHDM656IcMwr0rsLv7/whxEKGRFh3/76BLkPYn75aiA/+t6an9m8PPLpwt8y3+X8QLCrO1rirlRbPHKdmPMDFX6ntX8u7lrxk+v2SNziLyvcax2H67ZXDrjFlRZ/5ciq3qiNw3XbK3ObU+IzbpMAeQzMiruo296Z++ZFYBOLute6zifY2iXA534Yt/3VjjXMuT7z/cI/FPwPb/1jFXfR77EmH2WXHJGxXK1eVNA16nbtU35f+I+Cz0I7tNaZ1jEg9dfsHoP3iM8FXclAXs0Olv01H1Niy2AonzIyRsecpfzW3Dcr31nuSeVizzrupPXhzL1967gjjPeXVvYof7XMqefZEZRb+5Y4rJUtibuQeGaEv0bkpUjbfWDP5wA1IuhjiRKf8fG8xEgkwlw8u9KINSKpi1b1yz3Ez1W2vVfLmcgJ+bOKnD+2th2JoYSyv6T98kqKeszilvla1bNU0YUSn/FntfpH3eM6rs2hhjVRj5n+2u7n/BTM2SpfE9OlpV/W+ovLlPbMufny8SR1VM9eIN/P+Suf+g1p444Kc6zZkyrf5/ThMnvxlI9nhWGScXv118adRKcef6X04TJ5TI84S/bqrxE6jcbD3vlL9nhb8oZ0n7Eln5WohJHEZIeEfpL9eU1scJkr16uWCGPz2ZVKGMnl95wvS9cxl5mav/SO1mwirMVHLn9Gv8xlessRJSLM13Xbz/Bz2Bnny79wv/7iOU2Sz3rzGiVk9OCh9nz5XJCvwUgPmEkZXVP2aM1r1zVS6gVnni9b8ooYpEn6WcjRjGHJAevOqjhRQc+UHVtxUiund4xVcZT6T4QlblJF1y334KRGzip/BfTHUarntb6703v/QlKv5Wq0AH2/7CGOVhKhb56Seu2cebalPrSKm5X5iOOmBjMJY9etZk1L+uU9xA3HTS3mrvq/WUu/7DluZhFBhyNW/u3BQ49xE6kH7yRE0OFI6vct3NIvB/iPmx68kxBB5y/NnXCrfEOV7x+JLPoGwmP4azTWzSKLd/OU1gnBh79GY91eiODDXwfJiHBbo4zAol68G42X2/FPeL0b7A2XCXN64V68632+5u/cGaY33CHU+4F7qAO0/qj5m5DHnZXvz4p6BbTXLaPPOyRkXa8Q8rhTe4+PxA619ZV7r1a8+2Fxv3VP9R1Bnyc0dqitr9r//1re57BnTp1VechlhFec1r7PYc98Rtpfq9d0y720R2UPa/rswA4HH3zwwQcffPBj8H8/UmjH
+  </data>
+ </layer>
+</map>
