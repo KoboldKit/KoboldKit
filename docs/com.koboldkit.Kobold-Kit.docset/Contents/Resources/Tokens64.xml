@@ -1,195 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/NSXMLStreamWriter.html">
+	<File path="Protocols/KKSceneEventDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/NSXMLStreamWriter</TokenIdentifier>
-			<Abstract type="html">xml stream writer with namespace support</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/KKSceneEventDelegate</TokenIdentifier>
+			<Abstract type="html">Informal protocol defining the "update" methods an object can implement and receive when subscribed
+to updates in the scene.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>
 			
 			<NodeRef refid="64"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeStartElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/update:</TokenIdentifier>
+			<Abstract type="html">The standard update method.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeStartElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
+					<Name>currentTime</Name>
+					<Abstract type="html">The time elapsed since app launch.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeStartElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/update:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEndElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didEvaluateActions</TokenIdentifier>
+			<Abstract type="html">Called after actions have been evaluated.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEndElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)didEvaluateActions</Declaration>
 			
-			<Anchor>//api/name/writeEndElementWithNamespace:localName:</Anchor>
+			
+			<Anchor>//api/name/didEvaluateActions</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEmptyElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didSimulatePhysics</TokenIdentifier>
+			<Abstract type="html">Called after physics world has been simulated.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeEmptyElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)didSimulatePhysics</Declaration>
 			
-			<Anchor>//api/name/writeEmptyElementWithNamespace:localName:</Anchor>
+			
+			<Anchor>//api/name/didSimulatePhysics</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeAttributeWithNamespace:localName:value:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/willMoveFromView:</TokenIdentifier>
+			<Abstract type="html">Called when scene will leave the view.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeAttributeWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName value:(NSString *)value</Declaration>
+			<Declaration>- (void)willMoveFromView:(SKView *)view</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The attribute name.</Abstract>
-				</Parameter><Parameter>
-					<Name>value</Name>
-					<Abstract type="html">The attribute value.</Abstract>
+					<Name>view</Name>
+					<Abstract type="html">The view the scene is leaving. Identical to scene.view.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeAttributeWithNamespace:localName:value:</Anchor>
+			<Anchor>//api/name/willMoveFromView:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setPrefix:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">set a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didMoveToView:</TokenIdentifier>
+			<Abstract type="html">Called when scene will attach to a view.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)setPrefix:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Declaration>- (void)didMoveToView:(SKView *)view</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter><Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>view</Name>
+					<Abstract type="html">The view the scene is attached to. Identical to scene.view.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setPrefix:namespaceURI:</Anchor>
+			<Anchor>//api/name/didMoveToView:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeNamespace:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">write (and set) a namespace and prefix</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didChangeSize:</TokenIdentifier>
+			<Abstract type="html">Called when scene changed its size, ie after rotating or changing views.</Abstract>
+			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (void)writeNamespace:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Declaration>- (void)didChangeSize:(CGSize)oldSize</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter><Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>oldSize</Name>
+					<Abstract type="html">The scene's previous size. The scene.size property contains the new size.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeNamespace:namespaceURI:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">set the default namespace (empty prefix)</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)setDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setDefaultNamespace:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">write (and set) the default namespace</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (void)writeDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeDefaultNamespace:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getPrefix:</TokenIdentifier>
-			<Abstract type="html">The namespace prefix.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)getPrefix:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The namespace prefix.</Abstract></ReturnValue>
-			<Anchor>//api/name/getPrefix:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getNamespaceURI:</TokenIdentifier>
-			<Abstract type="html">The namespace for the prefix.</Abstract>
-			<DeclaredIn>XMLWriter.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)getNamespaceURI:(NSString *)prefix</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The namespace for the prefix.</Abstract></ReturnValue>
-			<Anchor>//api/name/getNamespaceURI:</Anchor>
+			<Anchor>//api/name/didChangeSize:</Anchor>
 		</Token>
 		
 	</File>

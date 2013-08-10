@@ -79,6 +79,7 @@
 						<NodeRef refid="59"/>
 						<NodeRef refid="60"/>
 						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
 						
 					</Subnodes>
 				</Node>
@@ -88,10 +89,10 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="62"/>
 						<NodeRef refid="63"/>
 						<NodeRef refid="64"/>
 						<NodeRef refid="65"/>
+						<NodeRef refid="66"/>
 						
 					</Subnodes>
 				</Node>
@@ -334,27 +335,31 @@
 			<Path>Categories/NSString+KoboldKit.html</Path>
 		</Node>
 		<Node id="60">
+			<Name>SKAction(KoboldKit)</Name>
+			<Path>Categories/SKAction+KoboldKit.html</Path>
+		</Node>
+		<Node id="61">
 			<Name>SKNode(KoboldKit)</Name>
 			<Path>Categories/SKNode+KoboldKit.html</Path>
 		</Node>
-		<Node id="61">
+		<Node id="62">
 			<Name>SKScene(KoboldKit)</Name>
 			<Path>Categories/SKScene+KoboldKit.html</Path>
 		</Node>
 		
-		<Node id="62">
+		<Node id="63">
 			<Name>KKPhysicsContactEventDelegate</Name>
 			<Path>Protocols/KKPhysicsContactEventDelegate.html</Path>
 		</Node>
-		<Node id="63">
+		<Node id="64">
 			<Name>KKSceneEventDelegate</Name>
 			<Path>Protocols/KKSceneEventDelegate.html</Path>
 		</Node>
-		<Node id="64">
+		<Node id="65">
 			<Name>NSXMLStreamWriter</Name>
 			<Path>Protocols/NSXMLStreamWriter.html</Path>
 		</Node>
-		<Node id="65">
+		<Node id="66">
 			<Name>XMLStreamWriter</Name>
 			<Path>Protocols/XMLStreamWriter.html</Path>
 		</Node>
