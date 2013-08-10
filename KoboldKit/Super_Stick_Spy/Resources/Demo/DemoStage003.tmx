@@ -31,7 +31,7 @@
  </layer>
  <layer name="background" width="108" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1bEJwDAMBEDtv0qcBRwP57TuBEkwInfwnYqHLxQBAAAAAAAAAAAAAAAAAMAT7c6VyLmrIIvj5Tu+Za9a7FVLj9z/GrsKAgAAAAAAAAAAvzEB+QgT+A==
+   eJzt2TEKgDAMBdDc/yrqBdTDWZAuLu3UpvgefLoGQpefCAAAAAAAAAAAYKS95Co5Zg9Cl+3zktsZ7/8CAAAAgNFq99uKbjiH3s5XN5yDfa3FvtZSbyut3LMGBAAAAAAAAAAAfuMBF7sY1w==
   </data>
  </layer>
  <layer name="mainlayer" width="108" height="60">
@@ -39,11 +39,11 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1kEJAAAIBEEj2D+tCfStOAMX4WAjAAAAAAAAAAAAAAAAYKdsBgDAP10b6kOY+Q0AAAAAAAAAAHBBAZ7uATE=
+   eJzt1sEJADAIA0BHcP9pO0Dx4ac0cAcuYAikCgAAAAAAAAAAAAAAAP7UwwE33cgiryzyymIzZNnkNW1DWb/n51n0BgAAAAAAAAAASHAA+/QB0Q==
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
-  <object name="player" type="Player" x="256" y="576" width="16" height="32"/>
+  <object name="player" type="Player" x="176" y="480" width="16" height="32"/>
   <object name="spawnEntry" type="Checkpoint" x="48" y="832" width="16" height="32"/>
   <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
    <properties>
@@ -79,7 +79,7 @@
     <property name="imageName" value="dummy_exit.png"/>
    </properties>
   </object>
-  <object name="p1Mover" type="Platform" x="224" y="448" width="32" height="32">
+  <object name="p1Mover" type="Platform" x="280" y="344" width="32" height="32">
    <properties>
     <property name="FollowPath" value="YES"/>
     <property name="FollowPath.initialWaitDuration" value="0"/>
@@ -94,7 +94,7 @@
   <object name="path1" x="312" y="488">
    <polygon points="16,128 176,128 176,64 16,64"/>
   </object>
-  <object type="Trigger" x="320" y="416" width="32" height="32">
+  <object type="Trigger" x="304" y="240" width="32" height="32">
    <properties>
     <property name="notification" value="DeadlyTrap"/>
     <property name="onlyOnce" value="NO"/>
