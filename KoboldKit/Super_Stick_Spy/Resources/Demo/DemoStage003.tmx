@@ -84,7 +84,7 @@
     <property name="FollowPath" value="YES"/>
     <property name="FollowPath.initialWaitDuration" value="0"/>
     <property name="FollowPath.moveSpeed" value="60"/>
-    <property name="FollowPath.pathName" value="path1"/>
+    <property name="FollowPath.pathName" value="path2"/>
     <property name="FollowPath.relativeToObject" value="YES"/>
     <property name="FollowPath.repeatCount" value="0"/>
     <property name="imageName" value="dummy_movingsaw.png"/>
@@ -99,6 +99,9 @@
     <property name="notification" value="DeadlyTrap"/>
     <property name="onlyOnce" value="NO"/>
    </properties>
+  </object>
+  <object name="path2" x="304" y="420">
+   <polyline points="-4,64 28,44 72,16 -28,-4 -48,52"/>
   </object>
  </objectgroup>
  <layer name="foreground" width="108" height="60">
