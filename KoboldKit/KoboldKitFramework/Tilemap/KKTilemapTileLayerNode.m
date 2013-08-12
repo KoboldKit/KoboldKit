@@ -10,8 +10,7 @@
 #import "KKTilemap.h"
 #import "KKTilemapLayer.h"
 #import "KKTilemapTileset.h"
-#import "SKNode+KoboldKit.h"
-#import "KKScene.h"
+#import "KKTilemapLayerTiles.h"
 #import "KKMacros.h"
 
 @implementation KKTilemapTileLayerNode
@@ -95,24 +94,26 @@
 {
 	self.hidden = _layer.hidden;
 	
-	//if (self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
+	if (self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
 	{
+		// Rendering is split into top and bottom half rows to utilize dual-core CPUs.
+		// All iOS 7 devices except iPhone 4 have dual-core CPUs.
+		
 		NSUInteger halfHeight = _visibleTilesOnScreen.height / 2.0;
 		//[self renderLinesFrom:0 to:halfHeight];
 		//[self renderLinesFrom:halfHeight to:_visibleTilesOnScreen.height];
 
-		dispatch_queue_t renderQueue = dispatch_queue_create("tilerenderqueue", DISPATCH_QUEUE_CONCURRENT);
-		//dispatch_queue_t renderQueue2 = dispatch_queue_create("tilerenderqueue2", DISPATCH_QUEUE_CONCURRENT);
-		dispatch_group_t renderGroup = dispatch_group_create();
+		dispatch_queue_t tileRenderQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+		dispatch_group_t tileRenderGroup = dispatch_group_create();
 		
-		dispatch_group_async(renderGroup, renderQueue, ^{
+		dispatch_group_async(tileRenderGroup, tileRenderQueue, ^{
 			[self renderLinesFrom:0 to:halfHeight];
 		});
-		dispatch_group_async(renderGroup, renderQueue, ^{
+		dispatch_group_async(tileRenderGroup, tileRenderQueue, ^{
 			[self renderLinesFrom:halfHeight to:_visibleTilesOnScreen.height];
 		});
 		
-		dispatch_group_wait(renderGroup, DISPATCH_TIME_FOREVER);
+		dispatch_group_wait(tileRenderGroup, DISPATCH_TIME_FOREVER);
 	}
 	
 	_previousPosition = self.position;
@@ -126,13 +127,13 @@
 	
 	CGPoint tilemapOffset = ccpSub(self.scene.frame.origin, self.parent.position);
 	CGPoint positionInPoints = ccpMult(ccpSub(self.position, tilemapOffset), -1.0f);
+
 	// fast-forward position by one tile width/height in negative direction
 	// reason: 1 and -1 would use the same tile due to the division in tileOffset calculation (tilesize 40: position 39 and -39 would both index tile 0)
 	if (positionInPoints.x < 0.0f)
 	{
 		positionInPoints.x -= gridSize.width;
 	}
-	
 	if (positionInPoints.y < 0.0f)
 	{
 		positionInPoints.y -= gridSize.height;
@@ -145,6 +146,10 @@
 	SKSpriteNode* tileSprite = nil;
 	KKTilemapTileset* currentTileset = nil;
 	KKTilemapTileset* previousTileset = nil;
+	NSUInteger layerGidCount = _layer.tileCount;
+	gid_t* layerGids = _layer.tiles.gid;
+	BOOL endlessScrollingHorizontal = _layer.endlessScrollingHorizontal;
+	BOOL endlessScrollingVertical = _layer.endlessScrollingVertical;
 
 	for (NSUInteger viewTilePosY = fromLine; viewTilePosY < toLine; viewTilePosY++)
 	{
@@ -155,8 +160,42 @@
 					  (unsigned int)i, (unsigned int)_visibleTilesCount);
 			
 			// get the proper git coordinate, wrap around as needed
-			CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x, (mapSize.height - 1 - viewTilePosY) - offsetInTiles.y);
-			gid_t gid = [_layer tileGidWithFlagsAt:gidCoordInLayer];
+			CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x,
+												  mapSize.height - 1 - viewTilePosY - offsetInTiles.y);
+			
+			if (endlessScrollingHorizontal)
+			{
+				// adjust the tile coord to be within bounds of the map when endless scrolling is enabled
+				gidCoordInLayer.x = (NSInteger)gidCoordInLayer.x % (NSInteger)mapSize.width;
+				
+				// ensure positive coords
+				if (gidCoordInLayer.x < 0.0f)
+				{
+					gidCoordInLayer.x += mapSize.width;
+				}
+			}
+			
+			if (endlessScrollingVertical)
+			{
+				// adjust the tile coord to be within bounds of the map when endless scrolling is enabled
+				gidCoordInLayer.y = (NSInteger)gidCoordInLayer.y % (NSInteger)mapSize.height;
+				
+				// ensure positive coords
+				if (gidCoordInLayer.y < 0.0f)
+				{
+					gidCoordInLayer.y += mapSize.height;
+				}
+			}
+
+			// calculate the gid index and verify it
+			NSUInteger gidIndex = (NSUInteger)(gidCoordInLayer.x + gidCoordInLayer.y * mapSize.width);
+			if (gidIndex >= layerGidCount)
+			{
+				continue;
+			}
+			
+			// get the gid for the coordinate
+			gid_t gid = layerGids[gidIndex];
 			
 			// no tile at this coordinate? If so, skip drawing this tile.
 			if ((gid & KKTilemapTileFlipMask) == 0)
