@@ -29,7 +29,7 @@
 	CGSize gridSize = _tilemap.gridSize;
 	CGSize mapSize = _tilemap.size;
 	
-	_visibleTilesOnScreen = CGSizeMake(ceil(sceneSize.width / gridSize.width + 1), ceil(sceneSize.height / gridSize.height + 1));
+	_visibleTilesOnScreen = CGSizeMake(ceil(sceneSize.width / gridSize.width) + 2, ceil(sceneSize.height / gridSize.height) + 2);
 	_viewBoundary = CGSizeMake(-(mapSize.width * gridSize.width - (_visibleTilesOnScreen.width - 1) * gridSize.width),
 							   -(mapSize.height * gridSize.height - (_visibleTilesOnScreen.height - 1) * gridSize.height));
 
@@ -109,22 +109,19 @@
 		}
 		 */
 		
-		NSUInteger halfHeight = _visibleTilesOnScreen.height / 2.0;
-		//[self renderLinesFrom:0 to:halfHeight];
-		//[self renderLinesFrom:halfHeight to:_visibleTilesOnScreen.height];
-
+		// Rendering is split into top and bottom half rows to best utilize dual-core CPUs.
+		// All iOS 7 devices except iPhone 4 have dual-core CPUs.
 		dispatch_queue_t tileRenderQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
 		dispatch_group_t tileRenderGroup = dispatch_group_create();
 		
-		// Rendering is split into top and bottom half rows to best utilize dual-core CPUs.
-		// All iOS 7 devices except iPhone 4 have dual-core CPUs.
+		NSUInteger halfHeight = (NSUInteger)(_visibleTilesOnScreen.height / 2.0);
 		dispatch_group_async(tileRenderGroup, tileRenderQueue, ^{
 			[self renderLinesFrom:0 to:halfHeight];
 		});
 		dispatch_group_async(tileRenderGroup, tileRenderQueue, ^{
 			[self renderLinesFrom:halfHeight to:_visibleTilesOnScreen.height];
 		});
-		
+
 		dispatch_group_wait(tileRenderGroup, DISPATCH_TIME_FOREVER);
 
 		/*
