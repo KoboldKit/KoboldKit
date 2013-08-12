@@ -91,3 +91,4 @@
 #import "ZipUtils.h"
 #import "SKTAudio.h"
 #import "SKTUtils.h"
+#import "CCProfiling.h"

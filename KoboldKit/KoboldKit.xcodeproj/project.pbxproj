@@ -207,6 +207,9 @@
 		DC7EF8EB17AEABFB00831FEB /* KKFollowPathBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7EF8E917AEABFB00831FEB /* KKFollowPathBehavior.h */; };
 		DC7EF8EC17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */; };
 		DC7EF8ED17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */; };
+		DC8B9C2217B9232700606646 /* CCProfiling.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B9C2017B9232700606646 /* CCProfiling.h */; };
+		DC8B9C2317B9232700606646 /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B9C2117B9232700606646 /* CCProfiling.m */; };
+		DC8B9C2417B9232700606646 /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B9C2117B9232700606646 /* CCProfiling.m */; };
 		DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */; };
@@ -485,6 +488,8 @@
 		DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = behaviorTemplates.lua; sourceTree = "<group>"; };
 		DC7EF8E917AEABFB00831FEB /* KKFollowPathBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFollowPathBehavior.h; sourceTree = "<group>"; };
 		DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFollowPathBehavior.m; sourceTree = "<group>"; };
+		DC8B9C2017B9232700606646 /* CCProfiling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCProfiling.h; sourceTree = "<group>"; };
+		DC8B9C2117B9232700606646 /* CCProfiling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCProfiling.m; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8EED1D17A40788000C1995 /* objectTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTemplates.lua; sourceTree = "<group>"; };
@@ -914,6 +919,15 @@
 			name = "View & Controller";
 			sourceTree = "<group>";
 		};
+		DC8B9C1F17B9232700606646 /* Profiling */ = {
+			isa = PBXGroup;
+			children = (
+				DC8B9C2017B9232700606646 /* CCProfiling.h */,
+				DC8B9C2117B9232700606646 /* CCProfiling.m */,
+			);
+			path = Profiling;
+			sourceTree = "<group>";
+		};
 		DC95BA791786DFB800E31DA6 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -1261,6 +1275,7 @@
 		DCDD2E2B176A40C400F307CD /* External */ = {
 			isa = PBXGroup;
 			children = (
+				DC8B9C1F17B9232700606646 /* Profiling */,
 				DC25515817B27E8E0078151C /* SKTUtils */,
 				DC96A7FB178760F400CE0827 /* lua */,
 				DC95BA791786DFB800E31DA6 /* Reachability */,
@@ -1335,6 +1350,7 @@
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DC25516717B27E8E0078151C /* SKEmitterNode+SKTExtras.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
+				DC8B9C2217B9232700606646 /* CCProfiling.h in Headers */,
 				DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */,
 				DC5D4ADB17AC4A7400CF69EB /* KKContactNotificationNode.h in Headers */,
 				DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */,
@@ -1567,6 +1583,7 @@
 				DC484CBD178C43690067DAA4 /* lcorolib.c in Sources */,
 				DC484CBE178C43690067DAA4 /* lctype.c in Sources */,
 				DC484CBF178C43690067DAA4 /* ldblib.c in Sources */,
+				DC8B9C2417B9232700606646 /* CCProfiling.m in Sources */,
 				DC484CC0178C43690067DAA4 /* ldebug.c in Sources */,
 				DC484CC1178C43690067DAA4 /* ldo.c in Sources */,
 				DC484CC2178C43690067DAA4 /* ldump.c in Sources */,
@@ -1675,6 +1692,7 @@
 				DCD7A276178C7453004A0467 /* liolib.c in Sources */,
 				DCD7A277178C7453004A0467 /* llex.c in Sources */,
 				DCD7A278178C7453004A0467 /* lmathlib.c in Sources */,
+				DC8B9C2317B9232700606646 /* CCProfiling.m in Sources */,
 				DCD7A279178C7453004A0467 /* lmem.c in Sources */,
 				DCD7A27A178C7453004A0467 /* loadlib.c in Sources */,
 				DCD7A27B178C7453004A0467 /* lobject.c in Sources */,
