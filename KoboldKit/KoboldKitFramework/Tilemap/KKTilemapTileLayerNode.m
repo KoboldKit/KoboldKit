@@ -58,18 +58,17 @@
 
 	NSUInteger i = 0;
 	SKSpriteNode* tileSprite = nil;
-	for (NSUInteger tilePosY = 0; tilePosY < _visibleTilesOnScreen.height; tilePosY++)
+	for (int tilePosY = 0; tilePosY < _visibleTilesOnScreen.height; tilePosY++)
 	{
-		for (NSUInteger tilePosX = 0; tilePosX < _visibleTilesOnScreen.width; tilePosX++)
+		for (int tilePosX = 0; tilePosX < _visibleTilesOnScreen.width; tilePosX++)
 		{
 			tileSprite = [SKSpriteNode node];
 			tileSprite.size = CGSizeMake(_tilemap.gridSize.width, _tilemap.gridSize.height);
 			//tileSprite.hidden = YES;
 			tileSprite.anchorPoint = CGPointZero;
-			//[_batchNode addChild:tileSprite];
+			[_batchNode addChild:tileSprite];
 			
-			// retains the sprite
-			_visibleTiles[i++] = (__bridge_retained void*)tileSprite;
+			_visibleTiles[i++] = (__bridge void*)tileSprite;
 		}
 	}
 	
@@ -78,18 +77,9 @@
 
 -(void) willMoveFromParent
 {
-	for (NSUInteger i = 0; i < _visibleTilesCount; i++)
-	{
-		// pseudo "release" via bridge cast
-		SKSpriteNode* tileSprite = (__bridge_transfer SKSpriteNode*)_visibleTiles[i];
-		tileSprite = nil; // shut up warning
-	}
-	
 	free(_visibleTiles);
 	_visibleTiles = nil;
 	_visibleTilesCount = 0;
-	
-	[_batchNode removeAllChildren];
 }
 
 -(void) setPosition:(CGPoint)position
@@ -108,10 +98,9 @@
 	//if (self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
 	{
 		NSUInteger halfHeight = _visibleTilesOnScreen.height / 2.0;
-		[self renderLinesFrom:0 to:halfHeight];
-		[self renderLinesFrom:halfHeight to:_visibleTilesOnScreen.height];
+		//[self renderLinesFrom:0 to:halfHeight];
+		//[self renderLinesFrom:halfHeight to:_visibleTilesOnScreen.height];
 
-		/*
 		dispatch_queue_t renderQueue = dispatch_queue_create("tilerenderqueue", DISPATCH_QUEUE_CONCURRENT);
 		//dispatch_queue_t renderQueue2 = dispatch_queue_create("tilerenderqueue2", DISPATCH_QUEUE_CONCURRENT);
 		dispatch_group_t renderGroup = dispatch_group_create();
@@ -124,7 +113,6 @@
 		});
 		
 		dispatch_group_wait(renderGroup, DISPATCH_TIME_FOREVER);
-		 */
 	}
 	
 	_previousPosition = self.position;
@@ -166,9 +154,6 @@
 					  @"Tile layer index (%u) out of bounds (%u)! Perhaps due to window resize?",
 					  (unsigned int)i, (unsigned int)_visibleTilesCount);
 			
-			//CCProfilingBeginTimingBlock(@"getgid");
-			tileSprite = (__bridge SKSpriteNode*)_visibleTiles[i];
-			
 			// get the proper git coordinate, wrap around as needed
 			CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x, (mapSize.height - 1 - viewTilePosY) - offsetInTiles.y);
 			gid_t gid = [_layer tileGidWithFlagsAt:gidCoordInLayer];
@@ -178,9 +163,6 @@
 			{
 				continue;
 			}
-			
-			i++;
-			//CCProfilingEndTimingBlock(@"getgid");
 			
 			/*
 			 // draw tile coords if enabled, only every second column (to avoid overlap)
@@ -194,7 +176,6 @@
 			 */
 			
 			// update position
-			//CCProfilingBeginTimingBlock(@"flip");
 			CGPoint tileSpritePosition = CGPointMake(viewTilePosX * gridSize.width + offsetInPoints.x,
 													 viewTilePosY * gridSize.height + offsetInPoints.y);
 			
@@ -236,18 +217,15 @@
 					tileSpritePosition.y += gridSize.height;
 				}
 			}
-			//CCProfilingEndTimingBlock(@"flip");
-			
-			//CCProfilingBeginTimingBlock(@"assign");
+
+			tileSprite = (__bridge SKSpriteNode*)_visibleTiles[i++];
 			tileSprite.zRotation = zRotation;
 			tileSprite.xScale = xScale;
 			tileSprite.yScale = yScale;
 			tileSprite.position = tileSpritePosition;
-			//tileSprite.hidden = NO;
-			//CCProfilingEndTimingBlock(@"assign");
+			tileSprite.hidden = NO;
 			
 			// get the gid's tileset, reuse previous tileset if possible
-			//CCProfilingBeginTimingBlock(@"tileset");
 			currentTileset = previousTileset;
 			if (gid < currentTileset.firstGid || gid > currentTileset.lastGid || currentTileset == nil)
 			{
@@ -263,36 +241,17 @@
 			{
 				tileSprite.texture = tileSpriteTexture;
 			}
-
-			if (tileSprite.parent == nil)
-			{
-				[_batchNode addChild:tileSprite];
-			}
 			
 			previousTileset = currentTileset;
-			//CCProfilingEndTimingBlock(@"tileset");
 		}
 	}
 	
 	// hide the remaining sprites
-	NSUInteger removeCount = 0;
 	NSUInteger remainingTilesCount = toLine * _visibleTilesOnScreen.width;
 	for (NSUInteger k = i; k < remainingTilesCount; k++)
 	{
-		tileSprite = (__bridge SKSpriteNode*)_visibleTiles[k];
-		if (tileSprite.parent)
-		{
-			removeCount++;
-			[tileSprite removeFromParent];
-		}
+		[(__bridge SKSpriteNode*)_visibleTiles[k] setHidden:YES];
 	}
-	
-	/*
-	if (removeCount)
-	{
-		LOG_EXPR(removeCount);
-	}
-	*/
 }
 
 @end
