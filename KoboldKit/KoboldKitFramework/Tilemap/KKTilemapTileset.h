@@ -82,6 +82,10 @@ typedef enum : gid_t
  @param gid The tile gid whose texture should be returned.
  @returns The texture for a specific GID, or nil if the gid is not in this tileset. */
 -(SKTexture*) textureForGid:(gid_t)gid;
+/** Gets the texture of a tile GID from this tileset. Gid must not have any flags set.
+ @param gid The tile gid without flags whose texture should be returned.
+ @returns The texture for a specific GID, or nil if the gid is not in this tileset. */
+-(SKTexture*) textureForGidWithoutFlags:(gid_t)gidWithoutFlags;
 
 // internal use only
 -(void) setAlternateTileset:(KKTilemapTileset*)alternateTileset;

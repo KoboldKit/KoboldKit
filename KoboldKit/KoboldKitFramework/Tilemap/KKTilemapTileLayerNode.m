@@ -168,7 +168,7 @@
 	KKTilemapTileset* previousTileset = nil;
 	NSUInteger layerGidCount = _layer.tileCount;
 	gid_t* layerGids = _layer.tiles.gid;
-	gid_t currentGid = 0, previousGid = 0;
+	gid_t currentGid = 0, currentGidWithoutFlags = 0, previousGidWithoutFlags = 0;
 	SKTexture* tileSpriteTexture;
 	BOOL endlessScrollingHorizontal = _layer.endlessScrollingHorizontal;
 	BOOL endlessScrollingVertical = _layer.endlessScrollingVertical;
@@ -219,9 +219,10 @@
 			
 			// get the gid for the coordinate
 			currentGid = layerGids[gidIndex];
+			currentGidWithoutFlags = currentGid & KKTilemapTileFlipMask;
 			
 			// no tile at this coordinate? If so, skip drawing this tile.
-			if ((currentGid & KKTilemapTileFlipMask) == 0)
+			if (currentGidWithoutFlags == 0)
 			{
 				continue;
 			}
@@ -230,58 +231,64 @@
 			CGPoint tileSpritePosition = CGPointMake(viewTilePosX * gridSize.width + offsetInPoints.x,
 													 viewTilePosY * gridSize.height + offsetInPoints.y);
 			
-			// set flip & rotation defaults, which may require updating position
+			// set flip & rotation defaults, which may add position offsets due to rotation around lower-left-corner anchorPoint
 			CGFloat zRotation = 0.0, xScale = 1.0, yScale = 1.0;
-			if (currentGid & KKTilemapTileDiagonalFlip)
+			if (currentGid != currentGidWithoutFlags)
 			{
-				// handle the diagonally flipped states.
-				gid_t gidFlipFlags = currentGid & (KKTilemapTileHorizontalFlip | KKTilemapTileVerticalFlip);
-				if (gidFlipFlags == 0)
+				if (currentGid & KKTilemapTileDiagonalFlip)
 				{
-					zRotation = M_PI_2; // 90°
-					xScale = -1.0;
-					tileSpritePosition.x += gridSize.width;
-					tileSpritePosition.y += gridSize.height;
+					// handle the diagonally flipped states.
+					gid_t gidFlipFlags = currentGid & (KKTilemapTileHorizontalFlip | KKTilemapTileVerticalFlip);
+					if (gidFlipFlags == 0)
+					{
+						zRotation = M_PI_2; // 90°
+						xScale = -1.0;
+						tileSpritePosition.x += gridSize.width;
+						tileSpritePosition.y += gridSize.height;
+					}
+					else if (gidFlipFlags == KKTilemapTileHorizontalFlip)
+					{
+						zRotation = k270DegreesRadians;
+						tileSpritePosition.y += gridSize.height;
+					}
+					else if (gidFlipFlags == KKTilemapTileVerticalFlip)
+					{
+						zRotation = M_PI_2; // 90°
+						tileSpritePosition.x += gridSize.width;
+					}
 				}
-				else if (gidFlipFlags == KKTilemapTileHorizontalFlip)
+				else
 				{
-					zRotation = k270DegreesRadians;
-					tileSpritePosition.y += gridSize.height;
-				}
-				else if (gidFlipFlags == KKTilemapTileVerticalFlip)
-				{
-					zRotation = M_PI_2; // 90°
-					tileSpritePosition.x += gridSize.width;
-				}
-			}
-			else
-			{
-				if ((currentGid & KKTilemapTileHorizontalFlip) == KKTilemapTileHorizontalFlip)
-				{
-					xScale = -1.0;
-					tileSpritePosition.x += gridSize.width;
-				}
-				if ((currentGid & KKTilemapTileVerticalFlip) == KKTilemapTileVerticalFlip)
-				{
-					yScale = -1.0;
-					tileSpritePosition.y += gridSize.height;
+					// handle axis-aligned flipping
+					if ((currentGid & KKTilemapTileHorizontalFlip) == KKTilemapTileHorizontalFlip)
+					{
+						xScale = -1.0;
+						tileSpritePosition.x += gridSize.width;
+					}
+					if ((currentGid & KKTilemapTileVerticalFlip) == KKTilemapTileVerticalFlip)
+					{
+						yScale = -1.0;
+						tileSpritePosition.y += gridSize.height;
+					}
 				}
 			}
 
-			// if gids differ we need a different texture, perhaps a different tileset
-			if (currentGid != previousGid)
+			// if gids differ we certainly need a different texture, and perhaps a different tileset even
+			if (currentGidWithoutFlags != previousGidWithoutFlags)
 			{
 				// get the gid's tileset, reuse previous tileset if possible
 				currentTileset = previousTileset;
-				if (currentGid < currentTileset.firstGid || currentGid > currentTileset.lastGid || currentTileset == nil)
+				if (currentGidWithoutFlags < currentTileset.firstGid ||
+					currentGidWithoutFlags > currentTileset.lastGid ||
+					currentTileset == nil)
 				{
-					currentTileset = previousTileset = [_tilemap tilesetForGid:currentGid];
-					NSAssert1(currentTileset, @"Invalid gid: no tileset found for gid %u!", (currentGid & KKTilemapTileFlipMask));
+					currentTileset = previousTileset = [_tilemap tilesetForGidWithoutFlags:currentGidWithoutFlags];
+					NSAssert1(currentTileset, @"Invalid gid: no tileset found for gid %u!", currentGidWithoutFlags);
 				}
 				
-				tileSpriteTexture = [currentTileset textureForGid:currentGid];
+				tileSpriteTexture = [currentTileset textureForGidWithoutFlags:currentGidWithoutFlags];
 				
-				previousGid = currentGid;
+				previousGidWithoutFlags = currentGidWithoutFlags;
 			}
 			
 			// update the tile sprite properties (alpha is inherited from layer)

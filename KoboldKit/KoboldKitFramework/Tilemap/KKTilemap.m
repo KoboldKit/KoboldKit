@@ -254,14 +254,20 @@
 
 -(KKTilemapTileset*) tilesetForGid:(gid_t)gid
 {
-	KKTilemapTileset* foundTileset = nil;
-
 	gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
+	return [self tilesetForGidWithoutFlags:gidWithoutFlags];
+}
+
+-(KKTilemapTileset*) tilesetForGidWithoutFlags:(gid_t)gidWithoutFlags
+{
+	NSAssert1((gidWithoutFlags & KKTilemapTileFlipMask) == gidWithoutFlags, @"gid %u has flags set! Mask out flags or use tilesetForGid: instead.", gidWithoutFlags);
 	NSAssert2(_highestGid >= gidWithoutFlags,
 			  @"Invalid gid: there's no tileset for gid %u - highest available gid is %u.",
 			  gidWithoutFlags, _highestGid);
-
-	if (gidWithoutFlags > 0)
+	
+	KKTilemapTileset* foundTileset = nil;
+	
+	if (gidWithoutFlags != 0)
 	{
 		for (KKTilemapTileset* tileset in _tilesets)
 		{
@@ -269,13 +275,13 @@
 			{
 				break;
 			}
-
+			
 			foundTileset = tileset;
 		}
 	}
-
+	
 	return foundTileset;
-} /* tilesetForGid */
+}
 
 -(KKTilemapTileset*) tilesetNamed:(NSString*)name
 {
