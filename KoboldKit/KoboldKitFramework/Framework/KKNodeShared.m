@@ -15,7 +15,7 @@
 
 +(void) deallocWithNode:(SKNode*)node
 {
-	NSLog(@"dealloc: %@", node);
+	//NSLog(@"dealloc: %@", node);
 	[node removeController];
 }
 

@@ -17,8 +17,8 @@
 	@private
 	SKNode* _batchNode;
 	
-	void** _visibleTiles;
-	NSUInteger _visibleTilesCount;
+	void** _visibleTileSprites;
+	NSUInteger _visibleTileSpritesCount;
 	
 	CGSize _visibleTilesOnScreen;
 	CGSize _viewBoundary;

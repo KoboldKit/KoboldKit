@@ -21,7 +21,7 @@
 	
 		// hide screen in the first couple frames behind a "curtain" sprite since it takes a few frames for the scene to be fully set up
 		_curtainSprite = [KKSpriteNode spriteNodeWithColor:[SKColor grayColor] size:self.size];
-		_curtainSprite.zPosition = -1000;
+		_curtainSprite.zPosition = 1000;
 		[self addChild:_curtainSprite];
 		
 		[self playSoundFileNamed:@"teleport.wav"];
@@ -209,7 +209,7 @@
 	}];
 	
 	_curtainSprite = [KKSpriteNode spriteNodeWithColor:[SKColor greenColor] size:self.size];
-	_curtainSprite.zPosition = -1000;
+	_curtainSprite.zPosition = 1000;
 	[self addChild:_curtainSprite];
 	
 	SKLabelNode* loadingLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC004C5517BA8786007CE7B1 /* CGVectorExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = DC004C5317BA8786007CE7B1 /* CGVectorExtension.h */; };
+		DC004C5617BA8786007CE7B1 /* CGVectorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DC004C5417BA8786007CE7B1 /* CGVectorExtension.m */; };
+		DC004C5717BA8786007CE7B1 /* CGVectorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DC004C5417BA8786007CE7B1 /* CGVectorExtension.m */; };
 		DC042A81178C59FA009FDBF8 /* libKoboldKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C6B178C418C0067DAA4 /* libKoboldKit.a */; };
 		DC042A83178C5A06009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */; };
 		DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
@@ -207,6 +210,9 @@
 		DC7EF8EB17AEABFB00831FEB /* KKFollowPathBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7EF8E917AEABFB00831FEB /* KKFollowPathBehavior.h */; };
 		DC7EF8EC17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */; };
 		DC7EF8ED17AEABFB00831FEB /* KKFollowPathBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */; };
+		DC8B9C2217B9232700606646 /* CCProfiling.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B9C2017B9232700606646 /* CCProfiling.h */; };
+		DC8B9C2317B9232700606646 /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B9C2117B9232700606646 /* CCProfiling.m */; };
+		DC8B9C2417B9232700606646 /* CCProfiling.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B9C2117B9232700606646 /* CCProfiling.m */; };
 		DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EED2017A53FBA000C1995 /* NSString+KoboldKit.h */; };
@@ -365,6 +371,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC004C5317BA8786007CE7B1 /* CGVectorExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGVectorExtension.h; sourceTree = "<group>"; };
+		DC004C5417BA8786007CE7B1 /* CGVectorExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGVectorExtension.m; sourceTree = "<group>"; };
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DC04802817AD2C18002EBD1E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		DC04802D17AD2C63002EBD1E /* playerdeath.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = playerdeath.sks; sourceTree = "<group>"; };
@@ -485,6 +493,8 @@
 		DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = behaviorTemplates.lua; sourceTree = "<group>"; };
 		DC7EF8E917AEABFB00831FEB /* KKFollowPathBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFollowPathBehavior.h; sourceTree = "<group>"; };
 		DC7EF8EA17AEABFB00831FEB /* KKFollowPathBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFollowPathBehavior.m; sourceTree = "<group>"; };
+		DC8B9C2017B9232700606646 /* CCProfiling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCProfiling.h; sourceTree = "<group>"; };
+		DC8B9C2117B9232700606646 /* CCProfiling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCProfiling.m; sourceTree = "<group>"; };
 		DC8CD4A817760E0D0005AB51 /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
 		DC8CD4A917760E0D0005AB51 /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8EED1D17A40788000C1995 /* objectTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTemplates.lua; sourceTree = "<group>"; };
@@ -914,6 +924,15 @@
 			name = "View & Controller";
 			sourceTree = "<group>";
 		};
+		DC8B9C1F17B9232700606646 /* Profiling */ = {
+			isa = PBXGroup;
+			children = (
+				DC8B9C2017B9232700606646 /* CCProfiling.h */,
+				DC8B9C2117B9232700606646 /* CCProfiling.m */,
+			);
+			path = Profiling;
+			sourceTree = "<group>";
+		};
 		DC95BA791786DFB800E31DA6 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -1261,6 +1280,7 @@
 		DCDD2E2B176A40C400F307CD /* External */ = {
 			isa = PBXGroup;
 			children = (
+				DC8B9C1F17B9232700606646 /* Profiling */,
 				DC25515817B27E8E0078151C /* SKTUtils */,
 				DC96A7FB178760F400CE0827 /* lua */,
 				DC95BA791786DFB800E31DA6 /* Reachability */,
@@ -1305,6 +1325,8 @@
 			children = (
 				DCFDF3BF176B3FE100F2CAD0 /* CGPointExtension.h */,
 				DCFDF3C0176B3FE100F2CAD0 /* CGPointExtension.m */,
+				DC004C5317BA8786007CE7B1 /* CGVectorExtension.h */,
+				DC004C5417BA8786007CE7B1 /* CGVectorExtension.m */,
 			);
 			path = CGPointExtension;
 			sourceTree = "<group>";
@@ -1327,6 +1349,7 @@
 				DC25516D17B27E8E0078151C /* SKTAudio.h in Headers */,
 				DC8EED2717A58773000C1995 /* NSObject+KoboldKit.h in Headers */,
 				DC25517117B27E8E0078151C /* SKTUtils.h in Headers */,
+				DC004C5517BA8786007CE7B1 /* CGVectorExtension.h in Headers */,
 				DC25516A17B27E8E0078151C /* SKNode+SKTExtras.h in Headers */,
 				DC25519217B286670078151C /* SKAction+KoboldKit.h in Headers */,
 				DC71017717AACFB600F95BAD /* KKPickupItemBehavior.h in Headers */,
@@ -1335,6 +1358,7 @@
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DC25516717B27E8E0078151C /* SKEmitterNode+SKTExtras.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
+				DC8B9C2217B9232700606646 /* CCProfiling.h in Headers */,
 				DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */,
 				DC5D4ADB17AC4A7400CF69EB /* KKContactNotificationNode.h in Headers */,
 				DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */,
@@ -1567,6 +1591,7 @@
 				DC484CBD178C43690067DAA4 /* lcorolib.c in Sources */,
 				DC484CBE178C43690067DAA4 /* lctype.c in Sources */,
 				DC484CBF178C43690067DAA4 /* ldblib.c in Sources */,
+				DC8B9C2417B9232700606646 /* CCProfiling.m in Sources */,
 				DC484CC0178C43690067DAA4 /* ldebug.c in Sources */,
 				DC484CC1178C43690067DAA4 /* ldo.c in Sources */,
 				DC484CC2178C43690067DAA4 /* ldump.c in Sources */,
@@ -1579,6 +1604,7 @@
 				DC484CC6178C43690067DAA4 /* liolib.c in Sources */,
 				DC484CC7178C43690067DAA4 /* llex.c in Sources */,
 				DC484CC8178C43690067DAA4 /* lmathlib.c in Sources */,
+				DC004C5717BA8786007CE7B1 /* CGVectorExtension.m in Sources */,
 				DC484CC9178C43690067DAA4 /* lmem.c in Sources */,
 				DC484CCA178C43690067DAA4 /* loadlib.c in Sources */,
 				DC484CCB178C43690067DAA4 /* lobject.c in Sources */,
@@ -1675,6 +1701,7 @@
 				DCD7A276178C7453004A0467 /* liolib.c in Sources */,
 				DCD7A277178C7453004A0467 /* llex.c in Sources */,
 				DCD7A278178C7453004A0467 /* lmathlib.c in Sources */,
+				DC8B9C2317B9232700606646 /* CCProfiling.m in Sources */,
 				DCD7A279178C7453004A0467 /* lmem.c in Sources */,
 				DCD7A27A178C7453004A0467 /* loadlib.c in Sources */,
 				DCD7A27B178C7453004A0467 /* lobject.c in Sources */,
@@ -1687,6 +1714,7 @@
 				DCD7A27F178C7453004A0467 /* lstate.c in Sources */,
 				DCD7A280178C7453004A0467 /* lstring.c in Sources */,
 				DCD7A281178C7453004A0467 /* lstrlib.c in Sources */,
+				DC004C5617BA8786007CE7B1 /* CGVectorExtension.m in Sources */,
 				DCD7A282178C7453004A0467 /* ltable.c in Sources */,
 				DCD7A283178C7453004A0467 /* ltablib.c in Sources */,
 				DCD7A284178C7453004A0467 /* ltm.c in Sources */,
@@ -1848,10 +1876,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
-				);
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1875,10 +1899,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
-				);
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

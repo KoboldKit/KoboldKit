@@ -130,6 +130,12 @@ typedef enum : unsigned char
  @returns The tileset the gid is part of, or nil if the GID is out of bounds. */
 -(KKTilemapTileset*) tilesetForGid:(gid_t)gid;
 
+/** Returns the tileset for a specific gid without flags. Mainly to access that tile's properties. Will return nil for invalid gids (gid that points to a non-existing tileset,
+ or if gid is 0).
+ @param gid The GID of a tile. Must not have any flags set.
+ @returns The tileset the gid is part of, or nil if the GID is out of bounds. */
+-(KKTilemapTileset*) tilesetForGidWithoutFlags:(gid_t)gidWithoutFlags;
+
 /** @param name The name of a tileset as displayed in Tiled.
  @returns the tileset with the given name. Returns nil if there's no tileset with this name. */
 -(KKTilemapTileset*) tilesetNamed:(NSString*)name;

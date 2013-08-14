@@ -122,21 +122,28 @@ static NSArray* kPVRImageFileExtensions = nil;
 
 -(SKTexture*) textureForGid:(gid_t)gid
 {
+	gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
+	return [self textureForGidWithoutFlags:gidWithoutFlags];
+}
+
+-(SKTexture*) textureForGidWithoutFlags:(gid_t)gidWithoutFlags
+{
+	NSAssert1((gidWithoutFlags & KKTilemapTileFlipMask) == gidWithoutFlags, @"gid %u has flags set! Mask out flags or use textureForGid: instead.", gidWithoutFlags);
+	
 	if (_alternateTileset)
 	{
-		gid_t alternateGid = (gid - _firstGid) + _alternateTileset.firstGid;
+		gid_t alternateGid = (gidWithoutFlags - _firstGid) + _alternateTileset.firstGid;
 		return [_alternateTileset textureForGid:alternateGid];
 	}
-
-	gid_t tilesetGid = (gid & KKTilemapTileFlipMask);
-	if (gid == 0 || tilesetGid < _firstGid || tilesetGid > _lastGid)
+	
+	if (gidWithoutFlags == 0 || gidWithoutFlags < _firstGid || gidWithoutFlags > _lastGid)
 	{
 		return nil;
 	}
-
-	tilesetGid -= _firstGid;
-	NSAssert2(tilesetGid < _tileTextures.count, @"can't get texture rect for gid %u (index out of bounds) from tileset: %@", tilesetGid, self);
-	return _tileTextures[tilesetGid];
+	
+	gidWithoutFlags -= _firstGid;
+	NSAssert2(gidWithoutFlags < _tileTextures.count, @"can't get texture rect for gid %u (index out of bounds) from tileset: %@", gidWithoutFlags, self);
+	return _tileTextures[gidWithoutFlags];
 }
 
 -(KKTilemapProperties*) properties

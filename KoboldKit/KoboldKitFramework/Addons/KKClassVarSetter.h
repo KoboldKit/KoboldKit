@@ -19,6 +19,7 @@ typedef enum
 	KKIvarTypeDouble,
 	KKIvarTypeFloat,
 	KKIvarTypePoint,
+	KKIvarTypeVector,
 	KKIvarTypeSize,
 	KKIvarTypeRect,
 	KKIvarTypeString,

@@ -9,6 +9,8 @@
 #ifndef KoboldKit_KKArcadeInputState_h
 #define KoboldKit_KKArcadeInputState_h
 
+#import "CGVectorExtension.h"
+
 /** @file KKArcadeInputState.h */
 
 // The original joystick/button enum values are from:
@@ -90,34 +92,34 @@ typedef enum
 } KKArcadeInputState;
 
 /** Returns a unit vector pointing in the joystick direction of the given player (1 or 2). */
-CG_INLINE CGPoint vectorFromJoystickStateAndPlayer(KKArcadeInputState state, NSUInteger player)
+CG_INLINE CGVector vectorFromJoystickStateAndPlayer(KKArcadeInputState state, NSUInteger player)
 {
 	state = (KKArcadeInputState)(state & (player == 2 ? KKArcadeJoystick2Mask : KKArcadeJoystickMask));
 	switch (state)
 	{
 		case KKArcadeJoystickRight:
-			return CGPointMake(1.0f, 0.0f);
+			return CGVectorMake(1.0, 0.0);
 		case KKArcadeJoystickUpRight:
-			return CGPointMake(0.70710678118655f, 0.70710678118655f);
+			return CGVectorMake(0.70710678118655, 0.70710678118655);
 		case KKArcadeJoystickUp:
-			return CGPointMake(0.0f, 1.0f);
+			return CGVectorMake(0.0, 1.0);
 		case KKArcadeJoystickUpLeft:
-			return CGPointMake(-0.70710678118655f, 0.70710678118655f);
+			return CGVectorMake(-0.70710678118655, 0.70710678118655);
 		case KKArcadeJoystickLeft:
-			return CGPointMake(-1.0f, 0.0f);
+			return CGVectorMake(-1.0, 0.0);
 		case KKArcadeJoystickDownLeft:
-			return CGPointMake(-0.70710678118655f, -0.70710678118655f);
+			return CGVectorMake(-0.70710678118655, -0.70710678118655);
 		case KKArcadeJoystickDown:
-			return CGPointMake(0.0f, -1.0f);
+			return CGVectorMake(0.0, -1.0);
 		case KKArcadeJoystickDownRight:
-			return CGPointMake(0.70710678118655f, -0.70710678118655f);
+			return CGVectorMake(0.70710678118655, -0.70710678118655);
 		default:
-			return CGPointZero;
+			return CGVectorZero;
 	}
 }
 
 /** Returns a unit vector pointing in the joystick direction of player 1. */
-CG_INLINE CGPoint vectorFromJoystickState(KKArcadeInputState state)
+CG_INLINE CGVector vectorFromJoystickState(KKArcadeInputState state)
 {
 	return vectorFromJoystickStateAndPlayer(state, 1);
 }

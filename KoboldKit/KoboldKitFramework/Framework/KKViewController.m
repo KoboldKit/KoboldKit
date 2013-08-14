@@ -13,6 +13,45 @@
 
 @implementation KKViewController
 
+@dynamic kkView;
+-(KKView*) kkView
+{
+	return (KKView*)self.view;
+}
+
+-(void) viewDidLoad
+{
+#if TARGET_OS_IPHONE
+	[super viewDidLoad];
+#endif
+	
+	[self swizzleMethods];
+	
+    // Configure the view.
+	KKView* kkView = (KKView*)self.view;
+	NSAssert1([kkView isKindOfClass:[KKView class]],
+			  @"KKViewController: view must be of class KKView, but its class is: %@. You may need to change this in your code or in Interface Builder (Identity Inspector -> Custom Class).",
+			  NSStringFromClass([kkView class]));
+}
+
+-(void) viewWillLayoutSubviews
+{
+#if TARGET_OS_IPHONE
+	[super viewWillLayoutSubviews];
+#endif
+
+	if (_firstScenePresented == NO)
+	{
+		_firstScenePresented = YES;
+		[self presentFirstScene];
+	}
+}
+
+-(void) presentFirstScene
+{
+	LOG_EXPR(self.view.bounds.size);
+}
+
 -(void) checkSwizzleError:(NSError*)error
 {
 	NSAssert1(error == nil, @"Method swizzling error: %@", error);
@@ -30,41 +69,6 @@
 	 */
 }
 
-@dynamic kkView;
--(KKView*) kkView
-{
-	return (KKView*)self.view;
-}
-
--(void) viewDidLoad
-{
-#if TARGET_OS_IPHONE
-    [super viewDidLoad];
-#endif
-	
-	[self swizzleMethods];
-	
-    // Configure the view.
-	KKView* kkView = (KKView*)self.view;
-	NSAssert1([kkView isKindOfClass:[KKView class]],
-			  @"KKViewController: view must be of class KKView, but its class is: %@. You may need to change this in your code or in Interface Builder (Identity Inspector -> Custom Class).",
-			  NSStringFromClass([kkView class]));
-}
-
--(void) viewDidAppear:(BOOL)animated
-{
-#if TARGET_OS_IPHONE
-    [super viewDidAppear:animated];
-#endif
-	
-	[self presentFirstScene];
-}
-
--(void) presentFirstScene
-{
-	LOG_EXPR(self.view.bounds.size);
-}
-
 #if TARGET_OS_IPHONE
 -(BOOL) prefersStatusBarHidden
 {
@@ -78,7 +82,7 @@
 
 -(NSUInteger) supportedInterfaceOrientations
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone)
 	{
         return UIInterfaceOrientationMaskLandscape;
     }
@@ -88,7 +92,7 @@
     }
 }
 
--(void)didReceiveMemoryWarning
+-(void) didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
