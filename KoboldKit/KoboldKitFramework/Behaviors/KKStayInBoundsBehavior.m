@@ -62,7 +62,7 @@
 	}
 	
 	SKPhysicsBody* body = node.physicsBody;
-	CGPoint velocity = body.velocity;
+	CGVector velocity = body.velocity;
 	
 	// keep node within defined borders
 	if (_bounds.origin.x != INFINITY && _bounds.size.width != INFINITY)
@@ -71,13 +71,13 @@
 		if ((nodePos.x + nodeSize.width * (1.0 - anchorPoint.x)) > maxWidth)
 		{
 			nodePos.x = maxWidth - nodeSize.width * (1.0 - anchorPoint.x);
-			velocity.x = 0;
+			velocity.dx = 0;
 		}
 		
 		if ((nodePos.x - nodeSize.width * anchorPoint.x) < _bounds.origin.x)
 		{
 			nodePos.x = _bounds.origin.x + nodeSize.width * anchorPoint.x;
-			velocity.x = 0;
+			velocity.dx = 0;
 		}
 	}
 	
@@ -87,13 +87,13 @@
 		if ((nodePos.y + nodeSize.height * (1.0 - anchorPoint.y)) > maxHeight)
 		{
 			nodePos.y = maxHeight - nodeSize.height * (1.0 - anchorPoint.y);
-			velocity.y = 0;
+			velocity.dy = 0;
 		}
 		
 		if ((nodePos.y - nodeSize.height * anchorPoint.y) < _bounds.origin.y)
 		{
 			nodePos.y = _bounds.origin.y + nodeSize.height * anchorPoint.y;
-			velocity.y = 0;
+			velocity.dy = 0;
 		}
 	}
 	

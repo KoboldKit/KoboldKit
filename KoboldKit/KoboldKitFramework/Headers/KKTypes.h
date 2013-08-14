@@ -41,6 +41,19 @@ static inline CGPoint pointFromString(NSString* pointString)
 #endif
 }
 
+/** Converts a string to a CGVector. Same as CGVectorFromString/NSVectorFromString but works on both platforms. */
+static inline CGVector vectorFromString(NSString* vectorString)
+{
+#pragma message "FIXME: there doesn't seem to be an equivalent of CGPointFromString for CGVector"
+	CGPoint point;
+#if TARGET_OS_IPHONE
+	point = CGPointFromString(vectorString);
+#else
+	point = NSPointFromString(vectorString);
+#endif
+	return CGVectorMake(point.x, point.y);
+}
+
 /** Converts a string to a CGSize. Same as CGSizeFromString/NSSizeFromString but works on both platforms. */
 static inline CGSize sizeFromString(NSString* pointString)
 {

@@ -86,6 +86,7 @@
 // external
 #import "Reachability.h"
 #import "CGPointExtension.h"
+#import "CGVectorExtension.h"
 #import "VTPG_Common.h"
 #import "XMLWriter.h"
 #import "ZipUtils.h"

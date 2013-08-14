@@ -16,7 +16,7 @@
 
 	// these values are Tiled-editable via properties of the same name
 	CGPoint _respawnPosition;
-	CGPoint _currentControlPadDirection;
+	CGVector _currentControlPadDirection;
 	CGSize _boundingBox;
 	CGFloat _jumpSpeedInitial;
 	CGFloat _jumpSpeedDeceleration;

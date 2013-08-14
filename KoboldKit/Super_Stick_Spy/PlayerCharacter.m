@@ -55,8 +55,8 @@
 	[self playSoundFileNamed:@"die.wav"];
 	
 	[self disregardSceneEvents];
-	self.physicsBody.velocity = CGPointZero;
-	_currentControlPadDirection = CGPointZero;
+	self.physicsBody.velocity = CGVectorZero;
+	_currentControlPadDirection = CGVectorZero;
 	
 	KKEmitterNode* emitter = [KKEmitterNode emitterWithFile:@"playerdeath.sks"];
 	emitter.position = CGPointMake(self.position.x, self.position.y - _playerSprite.size.height / 2.0);
@@ -108,7 +108,7 @@
 	if (controlPad.direction == KKArcadeJoystickNone)
 	{
 		_running = NO;
-		_currentControlPadDirection = CGPointZero;
+		_currentControlPadDirection = CGVectorZero;
 	}
 	else
 	{
@@ -118,18 +118,18 @@
 		{
 			speed = _runSpeedLimit;
 		}
-		_currentControlPadDirection = ccpMult(vectorFromJoystickState(controlPad.direction), speed);
+		_currentControlPadDirection = ccvMult(vectorFromJoystickState(controlPad.direction), speed);
 	}
 }
 
 -(void) jumpButtonPressed:(NSNotification*)note
 {
-	CGPoint velocity = self.physicsBody.velocity;
+	CGVector velocity = self.physicsBody.velocity;
 	if (_onFloor && _jumping == NO)
 	{
 		_onFloor = NO;
 		_jumping = YES;
-		velocity.y = _jumpSpeedInitial;
+		velocity.dy = _jumpSpeedInitial;
 		self.physicsBody.velocity = velocity;
 		
 		_jumpButton = [note.userInfo objectForKey:@"behavior"];
@@ -144,10 +144,10 @@
 	{
 		[self endJump];
 
-		CGPoint velocity = self.physicsBody.velocity;
-		if (velocity.y > _jumpAbortVelocity)
+		CGVector velocity = self.physicsBody.velocity;
+		if (velocity.dy > _jumpAbortVelocity)
 		{
-			velocity.y = _jumpAbortVelocity;
+			velocity.dy = _jumpAbortVelocity;
 		}
 		self.physicsBody.velocity = velocity;
 	}
@@ -164,12 +164,12 @@
 -(void) update:(NSTimeInterval)currentTime
 {
 	// custom non-physics velocity to tweak player's behavior to be less like a physics body but a "real" jump'n run character
-	CGPoint velocity = self.physicsBody.velocity;
+	CGVector velocity = self.physicsBody.velocity;
 	if (_jumping)
 	{
-		if (velocity.y > 0.0)
+		if (velocity.dy > 0.0)
 		{
-			velocity.y -= _jumpSpeedDeceleration;
+			velocity.dy -= _jumpSpeedDeceleration;
 		}
 		else
 		{
@@ -180,46 +180,46 @@
 	{
 		if (_fallSpeedAcceleration == 0.0 || _fallSpeedAcceleration >= _fallSpeedLimit)
 		{
-			velocity.y = -_fallSpeedLimit;
+			velocity.dy = -_fallSpeedLimit;
 		}
 		else
 		{
-			velocity.y -= _fallSpeedAcceleration;
+			velocity.dy -= _fallSpeedAcceleration;
 		}
 	}
 	else
 	{
-		velocity.y = 0.0;
+		velocity.dy = 0.0;
 	}
 	
-	velocity.y = MAX(velocity.y, -_fallSpeedLimit);
+	velocity.dy = MAX(velocity.dy, -_fallSpeedLimit);
 
 	if (_running)
 	{
-		velocity.x += _currentControlPadDirection.x;
-		velocity.x = MIN(velocity.x, _runSpeedLimit);
-		velocity.x = MAX(velocity.x, -_runSpeedLimit);
+		velocity.dx += _currentControlPadDirection.dx;
+		velocity.dx = MIN(velocity.dx, _runSpeedLimit);
+		velocity.dx = MAX(velocity.dx, -_runSpeedLimit);
 	}
-	else if (velocity.x != 0.0)
+	else if (velocity.dx != 0.0)
 	{
 		if (_runSpeedDeceleration == 0)
 		{
-			velocity.x = 0.0;
+			velocity.dx = 0.0;
 		}
-		else if (velocity.x > 0.0)
+		else if (velocity.dx > 0.0)
 		{
-			velocity.x -= _runSpeedDeceleration;
-			if (velocity.x < 0.0)
+			velocity.dx -= _runSpeedDeceleration;
+			if (velocity.dx < 0.0)
 			{
-				velocity.x = 0.0;
+				velocity.dx = 0.0;
 			}
 		}
 		else
 		{
-			velocity.x += _runSpeedDeceleration;
-			if (velocity.x > 0.0)
+			velocity.dx += _runSpeedDeceleration;
+			if (velocity.dx > 0.0)
 			{
-				velocity.x = 0.0;
+				velocity.dx = 0.0;
 			}
 		}
 	}
@@ -235,7 +235,7 @@
 	
 	// find body below player
 	SKPhysicsWorld* physicsWorld = self.scene.physicsWorld;
-	[physicsWorld enumerateBodiesAlongRayStart:rayStart end:rayEnd usingBlock:^(SKPhysicsBody *body, CGPoint point, CGPoint normal, BOOL *stop) {
+	[physicsWorld enumerateBodiesAlongRayStart:rayStart end:rayEnd usingBlock:^(SKPhysicsBody *body, CGPoint point, CGVector normal, BOOL *stop) {
 		if (body.contactTestBitMask <= 1)
 		{
 			_onFloor = YES;

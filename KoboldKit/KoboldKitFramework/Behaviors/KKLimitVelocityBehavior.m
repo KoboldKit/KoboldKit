@@ -7,7 +7,7 @@
 //
 
 #import "KKLimitVelocityBehavior.h"
-#import "CGPointExtension.h"
+#import "CGVectorExtension.h"
 
 @implementation KKLimitVelocityBehavior
 
@@ -54,11 +54,11 @@
 	{
 		if (_velocityLimit != 0.0)
 		{
-			CGPoint velocity = physicsBody.velocity;
-			CGFloat speed = ccpLengthSQ(velocity);
+			CGVector velocity = physicsBody.velocity;
+			CGFloat speed = ccvLengthSQ(velocity);
 			if (speed > (_velocityLimit * _velocityLimit))
 			{
-				CGPoint cappedVelocity = ccpMult(ccpNormalize(velocity), _velocityLimit);
+				CGVector cappedVelocity = ccvMult(ccvNormalize(velocity), _velocityLimit);
 				physicsBody.velocity = cappedVelocity;
 			}
 		}

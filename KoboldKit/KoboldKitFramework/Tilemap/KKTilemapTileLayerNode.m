@@ -42,7 +42,7 @@
 -(void) createTilesetBatchNodes
 {
 	_batchNode = [SKNode node];
-	_batchNode.zPosition = 1;
+	_batchNode.zPosition = -1;
 	[self addChild:_batchNode];
 
 	// get all tileset textures and create batch nodes, but don't add them as child just yet

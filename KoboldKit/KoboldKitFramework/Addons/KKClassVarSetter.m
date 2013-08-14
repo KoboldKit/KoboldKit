@@ -72,6 +72,10 @@ static Class kMutableNumberClass;
 	{
 		_type = KKIvarTypePoint;
 	}
+	else if ([_encoding hasPrefix:@"{CGVector="])
+	{
+		_type = KKIvarTypeVector;
+	}
 	else if ([_encoding hasPrefix:@"{CGSize="])
 	{
 		_type = KKIvarTypeSize;
@@ -131,12 +135,22 @@ static Class kMutableNumberClass;
 	{
 		NSString* stringValue = value;
 
+		// IMPORTANT:
+		// Struct values need to be assigned as copies to the ivar, because the local var created here will be garbage
+		// after the method returns. This is what the extra CG..Make() calls are for. Don't "optimize" by removing them!
 		switch (_type)
 		{
 			case KKIvarTypePoint:
 			{
 				CGPoint point = pointFromString(stringValue);
 				*((CGPoint*)ivarPointer) = CGPointMake(point.x, point.y);
+				break;
+			}
+
+			case KKIvarTypeVector:
+			{
+				CGVector vector = vectorFromString(stringValue);
+				*((CGVector*)ivarPointer) = CGVectorMake(vector.dx, vector.dy);
 				break;
 			}
 
