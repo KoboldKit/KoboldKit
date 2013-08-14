@@ -31,7 +31,12 @@
  </layer>
  <layer name="background" width="108" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt2TEKgDAMBdDc/yrqBdTDWZAuLu3UpvgefLoGQpefCAAAAAAAAAAAYKS95Co5Zg9Cl+3zktsZ7/8CAAAAgNFq99uKbjiH3s5XN5yDfa3FvtZSbyut3LMGBAAAAAAAAAAAfuMBF7sY1w==
+   eJzt2eEJwjAQBtCMoW7gBLqAupI7qQuowxmQIhQx+ZGzpH0PPgoHbROOErimBAAAAAAAAADwf6uc9cTZhO+SlnZTL6Cha84j5xb4jm3j550ra3N0GV0jtO7Xkt3T+/uKtE+fs+SQc8w5FWrfUnvvuOb86suczi8AAADgt2H2W0rkbJh6tTPfyNkw9fSrL/rVl+HfSinPqRYIAAAAAAAAAAAsxgueGCPV
+  </data>
+ </layer>
+ <layer name="opendoors fg" width="108" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztzLEJADAMA7Dc0JfS/29qtowpdCsSeDHYEQAAAAAAAAAAAAD/y8qurKF72d7+AQAAAAAAAAAAAAAAAAAA7QA8FQL+
   </data>
  </layer>
  <layer name="mainlayer" width="108" height="60">
@@ -39,11 +44,11 @@
    <property name="_mainTileLayer" value="YES"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1sEJADAIA0BHcP9pO0Dx4ac0cAcuYAikCgAAAAAAAAAAAAAAAP7UwwE33cgiryzyymIzZNnkNW1DWb/n51n0BgAAAAAAAAAASHAA+/QB0Q==
+   eJzt2cEJACEMBEBLuA7sv0u/h0jIcR8XZiAfwU+WoOgYAAAAAAAAAABQey4o+vQri7yyyCvLfpbMV1Vrp+ru3dcAAPjPWwH0mY0s8soiryzuDFm+5OUv6R56nsXcAAAAAAAAAAAACRZjIgcC
   </data>
  </layer>
  <objectgroup color="#00ff00" name="game objects" width="108" height="60">
-  <object name="player" type="Player" x="176" y="480" width="16" height="32"/>
+  <object name="player" type="Player" x="912" y="352" width="16" height="32"/>
   <object name="spawnEntry" type="Checkpoint" x="48" y="832" width="16" height="32"/>
   <object name="ExitToStageSelection" type="Trigger" x="0" y="800" width="16" height="64">
    <properties>
@@ -52,13 +57,12 @@
     <property name="notification" value="LoadMap"/>
    </properties>
   </object>
-  <object name="b1" type="Briefcase" x="208" y="832" width="16" height="16"/>
-  <object name="b2" type="Briefcase" x="240" y="832" width="16" height="16"/>
-  <object name="b3" type="Briefcase" x="272" y="832" width="16" height="16"/>
-  <object name="b4" type="Briefcase" x="304" y="832" width="16" height="16"/>
-  <object name="b5" type="Briefcase" x="336" y="832" width="16" height="16"/>
-  <object name="ld1" type="LockedDoor1" x="368" y="800" width="24" height="64"/>
-  <object name="ld2" type="LockedDoor2" x="416" y="800" width="24" height="64"/>
+  <object name="b1" type="Briefcase" x="856" y="368" width="16" height="16"/>
+  <object name="b2" type="Briefcase" x="1016" y="368" width="16" height="16"/>
+  <object name="b3" type="Briefcase" x="776" y="368" width="16" height="16"/>
+  <object name="b4" type="Briefcase" x="1096" y="368" width="16" height="16"/>
+  <object name="b5" type="Briefcase" x="696" y="368" width="16" height="16"/>
+  <object name="D1" type="LockedDoor1" x="960" y="336" width="48" height="48"/>
   <object name="ld3" type="LockedDoor3" x="464" y="800" width="24" height="64"/>
   <object name="ld5" type="LockedDoor5" x="560" y="800" width="24" height="64"/>
   <object name="ld4" type="LockedDoor4" x="512" y="800" width="24" height="64"/>
@@ -84,7 +88,7 @@
     <property name="FollowPath" value="YES"/>
     <property name="FollowPath.initialWaitDuration" value="0"/>
     <property name="FollowPath.moveSpeed" value="60"/>
-    <property name="FollowPath.pathName" value="path2"/>
+    <property name="FollowPath.pathName" value="path1"/>
     <property name="FollowPath.relativeToObject" value="YES"/>
     <property name="FollowPath.repeatCount" value="0"/>
     <property name="imageName" value="dummy_movingsaw.png"/>
@@ -100,13 +104,14 @@
     <property name="onlyOnce" value="NO"/>
    </properties>
   </object>
-  <object name="path2" x="304" y="420">
-   <polyline points="-4,64 28,44 72,16 -28,-4 -48,52"/>
-  </object>
+  <object name="D2" type="LockedDoor2" x="800" y="336" width="48" height="48"/>
+  <object name="D3" type="LockedDoor3" x="1040" y="336" width="48" height="48"/>
+  <object name="D4" type="LockedDoor4" x="720" y="336" width="48" height="48"/>
+  <object name="D5" type="LockedDoor5" x="1120" y="336" width="48" height="48"/>
  </objectgroup>
  <layer name="foreground" width="108" height="60">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgZlQAAB
+   eJzt1cEJhDAQQNFpQbeBsB3YgQ249t+Nc3RBJRcZlPfgXwKBDDlMBAAAAAAAAAAAnBuysbjP7VO+R8vm7FfYevOMb9Kyb/Uj6NbCfz1Jy6b43yd7V2dH9d7ds7/6LVG7u+wvAAAAAAAAAAAAAAAAAIBaG299GOo=
   </data>
  </layer>
 </map>

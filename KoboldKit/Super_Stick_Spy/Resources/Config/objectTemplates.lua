@@ -216,7 +216,7 @@ local objectTemplates =
 		},
 		properties =
 		{			
-			imageName = "dummy_lockeddoor1.png",
+			imageName = "dummy_lockeddoor_1_3x1.png",
 		},
 		behaviors =
 		{
@@ -239,7 +239,7 @@ local objectTemplates =
 		},
 		properties =
 		{			
-			imageName = "dummy_lockeddoor2.png",
+			imageName = "dummy_lockeddoor_2_3x1.png",
 		},
 		behaviors =
 		{
@@ -262,7 +262,7 @@ local objectTemplates =
 		},
 		properties =
 		{			
-			imageName = "dummy_lockeddoor3.png",
+			imageName = "dummy_lockeddoor_3_3x1.png",
 		},
 		behaviors =
 		{
@@ -285,7 +285,7 @@ local objectTemplates =
 		},
 		properties =
 		{			
-			imageName = "dummy_lockeddoor4.png",
+			imageName = "dummy_lockeddoor_4_3x1.png",
 		},
 		behaviors =
 		{
@@ -308,7 +308,7 @@ local objectTemplates =
 		},
 		properties =
 		{			
-			imageName = "dummy_lockeddoor5.png",
+			imageName = "dummy_lockeddoor_5_3x1.png",
 		},
 		behaviors =
 		{
