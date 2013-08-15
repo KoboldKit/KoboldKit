@@ -164,6 +164,8 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 	_direction = KKArcadeJoystickNone;
 	[self updateDirectionTexture];
 	[self postNotificationName:KKControlPadDidChangeDirectionNotification];
+	_trackedTouch = 0;
+	_trackedTouchRetained = nil;
 }
 
 -(void) updateDirectionTexture
@@ -272,6 +274,7 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 				}
 				//NSLog(@"pad touches began: %p", touch);
 				_trackedTouch = (NSUInteger)touch;
+				_trackedTouchRetained = touch;
 				[self updateDirectionFromLocation:touchLocation];
 				break;
 			}
@@ -303,9 +306,6 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 {
 	if (_trackedTouch)
 	{
-		//UITouch* theTrackedTouch = (__bridge UITouch*)(void*)_trackedTouch;
-		//NSLog(@"pad tracked touch phase: %u - ended: %@", theTrackedTouch.phase, (theTrackedTouch.phase == UITouchPhaseEnded || theTrackedTouch.phase == UITouchPhaseCancelled) ? @"YES" : @"NO");
-		
 		for (UITouch* touch in touches)
 		{
 			//NSLog(@"pad trying end touch: %p", touch);
@@ -313,7 +313,6 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 			{
 				//NSLog(@"pad touches ended: reset...");
 				[self resetDirection];
-				_trackedTouch = 0;
 				break;
 			}
 		}
@@ -332,7 +331,6 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 		{
 			NSLog(@"pad touch prematurely ENDED! %p .......................", trackedTouch);
 			[self resetDirection];
-			_trackedTouch = 0;
 		}
 	}
 }
