@@ -131,7 +131,11 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 {
 	[self removeBehaviorForKey:key];
 
-	behavior = [behavior copy];
+	// don't copy like actions
+	//behavior = [behavior copy];
+
+	NSAssert3(behavior.node == nil, @"The behavior (%@) already belongs to node (%@) ---- tried to add it to node: %@", behavior, behavior.node, self.node);
+
 	[behavior internal_joinController:self withKey:key];
 	[_behaviors addObject:behavior];
 	

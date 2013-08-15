@@ -137,9 +137,8 @@
 							 [atlas textureNamed:@"button_directions_left"],
 							 nil];
 	KKControlPadBehavior* dpad = [KKControlPadBehavior controlPadBehaviorWithTextures:dpadTextures];
-	[dpadNode addBehavior:dpad withKey:@"simple dpad"];
-
 	dpad.deadZone = 0;
+	[dpadNode addBehavior:dpad withKey:@"simple dpad"];
 
 	CGSize sceneSize = self.size;
 	KKSpriteNode* jumpButtonNode = [KKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"button_jump_notpressed"]];

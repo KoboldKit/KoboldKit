@@ -93,7 +93,7 @@
 		if (layerNode != _gameObjectsLayerNode)
 		{
 			parallaxBehavior.positionMultiplier = layerNode.layer.parallaxFactor;
-			[layerNode addBehavior:parallaxBehavior withKey:NSStringFromClass([KKFollowTargetBehavior class])];
+			[layerNode addBehavior:[parallaxBehavior copy] withKey:NSStringFromClass([KKFollowTargetBehavior class])];
 		}
 	}
 }
