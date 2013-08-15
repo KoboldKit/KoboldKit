@@ -39,6 +39,13 @@
 
 /** @file KKMacros.h */
 
+
+/** Enabling contributor mode adds pragma messages for things one could fix, improve, add. */
+//#define CONTRIBUTOR_MESSAGE(msg) _Pragma("message " ## msg)
+//CONTRIBUTOR_MESSAGE(TEST: -- xxxxx --)
+//_Pragma("message \"THIS IS A TEST!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\"");
+
+
 /** Epsilon and Float equality */
 #if CGFLOAT_IS_DOUBLE
 #define EPSILON_VALUE DBL_EPSILON
@@ -46,13 +53,14 @@
 #define EPSILON_VALUE FLT_EPSILON
 #endif
 
+
+/** "Is nearly equal" implementation for float/double values */
 #define CGFloatEqualToFloat(__x, __y) (fabs(__x - __y) <= (fabs(__x) > fabs(__y) ? fabs(__y) : fabs(__x)) * EPSILON_VALUE)
 
 
-/**  */
-#define KKMethodUnavailable(reason) __attribute__((unavailable(reason)))
+/** Raise exception when a method with this macro isn't overridden in its subclass. */
 #define KKMustOverrideMethod()      [NSException raise : NSInternalInconsistencyException format : @"%s must be overridden in subclass/category or you called [super %s]", __PRETTY_FUNCTION__, __PRETTY_FUNCTION__]
-
+#define KKMethodUnavailable(reason) __attribute__((unavailable(reason)))
 
 
 /** Radians to Degrees and vice versa */
@@ -67,6 +75,7 @@
 #define KKRANDOM_0_1()                   ((random() / (float)0x7fffffff))
 
 
+/** Suppress a compiler warning regarding the performSelector: method. */
 #define SUPPRESS_PERFORM_SELECTOR_LEAK_WARNING(code)                        \
 _Pragma("clang diagnostic push")                                        \
 _Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")     \

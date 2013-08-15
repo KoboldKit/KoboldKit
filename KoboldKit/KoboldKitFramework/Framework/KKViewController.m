@@ -10,6 +10,7 @@
 #import "SKNode+KoboldKit.h"
 #import "KKView.h"
 #import "JRSwizzle.h"
+#import "KKVersion.h"
 
 @implementation KKViewController
 
@@ -26,6 +27,8 @@
 #endif
 	
 	[self swizzleMethods];
+
+	NSLog(@"KKView - %@", kkVersionString());
 	
     // Configure the view.
 	KKView* kkView = (KKView*)self.view;
@@ -43,13 +46,14 @@
 	if (_firstScenePresented == NO)
 	{
 		_firstScenePresented = YES;
+		
+		NSLog(@"KKView - presentFirstScene");
 		[self presentFirstScene];
 	}
 }
 
 -(void) presentFirstScene
 {
-	LOG_EXPR(self.view.bounds.size);
 }
 
 -(void) checkSwizzleError:(NSError*)error

@@ -60,8 +60,6 @@ KKNODE_SHARED_CODE
 	_physicsContactObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	
 	_mainLoopStage = KKMainLoopStageDidSimulatePhysics;
-	
-	NSLog(@"scene init");
 }
 
 @dynamic kkView;
@@ -110,7 +108,7 @@ KKNODE_SHARED_CODE
 
 -(void) willMoveFromView:(SKView *)view
 {
-	NSLog(@"willMoveFromView");
+	NSLog(@"KKScene - willMoveFromView");
 
 	for (id observer in _sceneWillMoveFromViewObservers)
 	{
@@ -127,8 +125,8 @@ KKNODE_SHARED_CODE
 
 -(void) didMoveToView:(SKView *)view
 {
-	NSLog(@"didMoveToView");
-
+	NSLog(@"KKScene - didMoveToView - scene: %p", self);
+	
 	for (id observer in _sceneDidMoveToViewObservers)
 	{
 		[observer didMoveToView:view];
@@ -137,8 +135,7 @@ KKNODE_SHARED_CODE
 
 -(void) didChangeSize:(CGSize)oldSize
 {
-	NSLog(@"didChangeSize");
-	LOG_EXPR(self.size);
+	NSLog(@"KKScene - didChangeSize:{%.1f, %.1f} - scene: %p", self.size.width, self.size.height, self);
 }
 
 #pragma mark Scene Events Observer

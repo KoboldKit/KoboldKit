@@ -38,7 +38,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 	if (_selectedTexture)
 	{
-		SKSpriteNode* sprite = (SKSpriteNode*)self.node;
+		SKSpriteNode* sprite = (SKSpriteNode*)node;
 		if ([sprite isKindOfClass:[SKSpriteNode class]])
 		{
 			_originalTexture = sprite.texture;
@@ -51,6 +51,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	KKScene* scene = self.node.kkScene;
 	[scene removeInputEventsObserver:self];
 	[scene removeSceneEventsObserver:self];
+	_originalTexture = nil;
 }
 
 -(void) beginSelect

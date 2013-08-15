@@ -19,6 +19,8 @@
 
 -(void) didMoveToView:(SKView *)view
 {
+	[super didMoveToView:view];
+	
 	[self addPleaseWaitLabel];
 	
 	// Transfers all changed resource files from the remote server to the app support directory.
@@ -128,9 +130,6 @@
 		_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height - 16);
 		//_tmxLoadMenu.position = CGPointMake(self.size.width / 2, self.size.height + -height);
 		//[_tmxLoadMenu runAction:[SKAction moveToY:self.size.height - 50 duration:0.3]];
-
-		LOG_EXPR(_tmxLoadMenu.position);
-		LOG_EXPR(self.size.height - 50);
 	}
 }
 
