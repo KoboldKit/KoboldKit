@@ -54,6 +54,14 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	_originalTexture = nil;
 }
 
+-(void) didChangeEnabledState
+{
+	if (self.enabled == NO)
+	{
+		_trackedTouch = 0;
+	}
+}
+
 -(void) beginSelect
 {
 	_selected = YES;
@@ -92,7 +100,10 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	if (_originalTexture)
 	{
 		SKSpriteNode* sprite = (SKSpriteNode*)self.node;
-		sprite.texture = _originalTexture;
+		if (sprite.texture != _originalTexture)
+		{
+			sprite.texture = _originalTexture;
+		}
 	}
 }
 
@@ -147,7 +158,12 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 		{
 			if ([self.node containsPoint:[touch locationInNode:self.node.parent]])
 			{
-				_theBeganTouch = touch;
+				if (_trackedTouch)
+				{
+					NSLog(@"ALERT: button already tracking touch: %x (new touch: %p)", _trackedTouch, touch);
+				}
+				_trackedTouch = (NSUInteger)touch;
+				//NSLog(@"button began: %p", touch);
 				[self beginSelect];
 				break;
 			}
@@ -157,12 +173,12 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	if (_selected && self.enabled)
+	if (_trackedTouch)
 	{
 		BOOL didLoseFocus = NO;
 		for (UITouch* touch in touches)
 		{
-			if (touch == _theBeganTouch && [self.node containsPoint:[touch locationInNode:self.node.parent]] == NO)
+			if ((NSUInteger)touch == _trackedTouch && [self.node containsPoint:[touch locationInNode:self.node.parent]] == NO)
 			{
 				didLoseFocus = YES;
 				[self inputDidMoveLoseFocus:YES];
@@ -179,13 +195,26 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 
 -(void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	NSLog(@"button touches cancelled");
 	[self touchesEnded:touches withEvent:event];
 }
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	_theBeganTouch = nil;
-	[self inputDidEnd];
+	if (_trackedTouch)
+	{
+		for (UITouch* touch in touches)
+		{
+			//NSLog(@"button trying end touch: %p", touch);
+			if ((NSUInteger)touch == _trackedTouch)
+			{
+				//NSLog(@"button ended");
+				[self inputDidEnd];
+				_trackedTouch = 0;
+				break;
+			}
+		}
+	}
 }
 #else // OS X
 

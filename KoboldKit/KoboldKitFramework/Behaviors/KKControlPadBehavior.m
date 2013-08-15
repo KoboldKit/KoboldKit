@@ -44,11 +44,21 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 	_textures = textures;
 	
 	[self.node.kkScene addInputEventsObserver:self];
+	[self.node.kkScene addSceneEventsObserver:self];
 }
 
 -(void) didLeaveController
 {
 	[self.node.kkScene removeInputEventsObserver:self];
+	[self.node.kkScene removeSceneEventsObserver:self];
+}
+
+-(void) didChangeEnabledState
+{
+	if (self.enabled == NO)
+	{
+		_trackedTouch = 0;
+	}
 }
 
 #pragma mark input event handling
@@ -151,12 +161,9 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 
 -(void) resetDirection
 {
-	if (_direction != KKArcadeJoystickNone)
-	{
-		_direction = KKArcadeJoystickNone;
-		[self updateDirectionTexture];
-		[self postNotificationName:KKControlPadDidChangeDirectionNotification];
-	}
+	_direction = KKArcadeJoystickNone;
+	[self updateDirectionTexture];
+	[self postNotificationName:KKControlPadDidChangeDirectionNotification];
 }
 
 -(void) updateDirectionTexture
@@ -239,12 +246,10 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 	}
 
 	SKSpriteNode* sprite = (SKSpriteNode*)self.node;
-	sprite.texture = newTexture;
-}
-
--(void) inputEnded
-{
-	[self resetDirection];
+	if (sprite.texture != newTexture)
+	{
+		sprite.texture = newTexture;
+	}
 }
 
 #pragma mark Input Events
@@ -252,7 +257,7 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 #if TARGET_OS_IPHONE
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	if (self.enabled && _trackedTouch == nil)
+	if (self.enabled)
 	{
 		for (UITouch* touch in touches)
 		{
@@ -261,7 +266,12 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 			BOOL locationOnDpad = [node containsPoint:touchLocation];
 			if (locationOnDpad)
 			{
-				_trackedTouch = touch;
+				if (_trackedTouch)
+				{
+					NSLog(@"ALERT: pad already tracking touch: %x (new touch: %p)", _trackedTouch, touch);
+				}
+				//NSLog(@"pad touches began: %p", touch);
+				_trackedTouch = (NSUInteger)touch;
 				[self updateDirectionFromLocation:touchLocation];
 				break;
 			}
@@ -271,11 +281,11 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	if (self.enabled)
+	if (_trackedTouch)
 	{
 		for (UITouch* touch in touches)
 		{
-			if (touch == _trackedTouch)
+			if ((NSUInteger)touch == _trackedTouch)
 			{
 				[self updateDirectionFromLocation:[touch locationInNode:self.node.parent]];
 			}
@@ -283,22 +293,52 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 	}
 }
 
+-(void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	NSLog(@"pad touches cancelled");
+	[self touchesEnded:touches withEvent:event];
+}
+
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	if (self.enabled)
+	if (_trackedTouch)
 	{
+		//UITouch* theTrackedTouch = (__bridge UITouch*)(void*)_trackedTouch;
+		//NSLog(@"pad tracked touch phase: %u - ended: %@", theTrackedTouch.phase, (theTrackedTouch.phase == UITouchPhaseEnded || theTrackedTouch.phase == UITouchPhaseCancelled) ? @"YES" : @"NO");
+		
 		for (UITouch* touch in touches)
 		{
-			if (touch == _trackedTouch)
+			//NSLog(@"pad trying end touch: %p", touch);
+			if ((NSUInteger)touch == _trackedTouch)
 			{
-				_trackedTouch = nil;
-				[self inputEnded];
+				//NSLog(@"pad touches ended: reset...");
+				[self resetDirection];
+				_trackedTouch = 0;
 				break;
 			}
 		}
 	}
 }
-#else
+
+-(void) didSimulatePhysics
+{
+	if (_trackedTouch)
+	{
+		DEVELOPER_FIXME("find out why control pad touches sometimes do not receive ended message. \
+						Seems to be related with button behabior, pressing both button and pad, and then releasing both at the same time.")
+		// detect touch ended without the touchesEnded method being called (this happens occassionally for whatever reason)
+		UITouch* trackedTouch = (__bridge UITouch*)(void*)_trackedTouch;
+		if (trackedTouch.phase == UITouchPhaseEnded || trackedTouch.phase == UITouchPhaseCancelled)
+		{
+			NSLog(@"pad touch prematurely ENDED! %p .......................", trackedTouch);
+			[self resetDirection];
+			_trackedTouch = 0;
+		}
+	}
+}
+
+#else // Mac OS X
+
 #endif
 
 #pragma mark !! Update methods below whenever class layout changes !!

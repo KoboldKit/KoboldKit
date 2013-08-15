@@ -19,11 +19,7 @@ extern NSString* const KKControlPadDidChangeDirectionNotification;
 @interface KKControlPadBehavior : KKBehavior
 {
 	@private
-	
-#if TARGET_OS_IPHONE
-	__weak UITouch* _trackedTouch;
-#endif
-	
+	NSUInteger _trackedTouch;
 	NSArray* _textures;
 	int _directionsCount;
 }

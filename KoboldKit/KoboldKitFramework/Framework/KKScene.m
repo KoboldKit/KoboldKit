@@ -243,9 +243,14 @@ KKNODE_SHARED_CODE
 
 #pragma mark Touches
 
+#pragma message "FIXME: remove calls to respondsToSelector by separating observers into individual touch event arrays"
+
 #if TARGET_OS_IPHONE
+
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	[super touchesBegan:touches withEvent:event];
+	
 	for (id observer in _inputObservers)
 	{
 		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
@@ -257,6 +262,8 @@ KKNODE_SHARED_CODE
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	[super touchesMoved:touches withEvent:event];
+	
 	for (id observer in _inputObservers)
 	{
 		if ([observer respondsToSelector:@selector(touchesMoved:withEvent:)])
@@ -268,6 +275,8 @@ KKNODE_SHARED_CODE
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	[super touchesEnded:touches withEvent:event];
+	
 	for (id observer in _inputObservers)
 	{
 		if ([observer respondsToSelector:@selector(touchesEnded:withEvent:)])
@@ -279,6 +288,8 @@ KKNODE_SHARED_CODE
 
 -(void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	[super touchesCancelled:touches withEvent:event];
+	
 	for (id observer in _inputObservers)
 	{
 		if ([observer respondsToSelector:@selector(touchesCancelled:withEvent:)])
@@ -292,6 +303,8 @@ KKNODE_SHARED_CODE
 
 -(void) mouseDown:(NSEvent*)theEvent
 {
+	[super mouseDown:theEvent];
+	
 	for (id observer in _inputObservers)
 	{
 		if ([observer respondsToSelector:@selector(mouseDown:)])
@@ -303,6 +316,8 @@ KKNODE_SHARED_CODE
 
 -(void) mouseDragged:(NSEvent*)theEvent
 {
+	[super mouseDragged:theEvent];
+
 	for (id observer in _inputObservers)
 	{
 		if ([observer respondsToSelector:@selector(mouseDragged:)])
@@ -314,6 +329,8 @@ KKNODE_SHARED_CODE
 
 -(void) mouseMoved:(NSEvent*)theEvent
 {
+	[super mouseMoved:theEvent];
+
 	for (id observer in _inputObservers)
 	{
 		if ([observer respondsToSelector:@selector(mouseMoved:)])
@@ -325,6 +342,8 @@ KKNODE_SHARED_CODE
 
 -(void) mouseUp:(NSEvent*)theEvent
 {
+	[super mouseUp:theEvent];
+
 	for (id observer in _inputObservers)
 	{
 		if ([observer respondsToSelector:@selector(mouseUp:)])

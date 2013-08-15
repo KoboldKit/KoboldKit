@@ -24,6 +24,10 @@
  - they can not be reversed
  */
 @interface KKBehavior : NSObject <NSCoding, NSCopying>
+{
+	@private
+	BOOL _enabled;
+}
 
 /** @name Properties */
 
@@ -53,14 +57,8 @@
 -(void) didJoinController;
 /** Sent when the behavior was removed from a node. */
 -(void) didLeaveController;
-
-/** Standard update method.
- @param currentTime The current time since app start. */
--(void) update:(NSTimeInterval)currentTime;
-/** Update after actions have been evaluated. */
--(void) didEvaluateActions;
-/** Update after physics world was simulated. */
--(void) didSimulatePhysics;
+/** Sent when the enabled state of the behavior was changed. */
+-(void) didChangeEnabledState;
 
 /** @name Notifications */
 

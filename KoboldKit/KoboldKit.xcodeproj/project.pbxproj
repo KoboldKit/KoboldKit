@@ -638,6 +638,7 @@
 		DCDB338A178D808400C13739 /* PlayerCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCharacter.h; sourceTree = "<group>"; };
 		DCDB338B178D808400C13739 /* PlayerCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCharacter.m; sourceTree = "<group>"; };
 		DCDB506817AD1D2400AABEA1 /* KKTilemapObjectSpawnDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTilemapObjectSpawnDelegate.h; sourceTree = "<group>"; };
+		DCDC592C17BD3CA90018AB6F /* KKConfigMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKConfigMacros.h; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1037,8 +1038,7 @@
 				DC484BBE178C34720067DAA4 /* AppDelegate & Principal Class */,
 				DC71016517AABD2B00F95BAD /* View & Controller */,
 				DCB087D6177B2F57004182E4 /* Sprite Kit Categories */,
-				DCB087EC177BAC3F004182E4 /* Sprite Kit Node Subclasses */,
-				DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */,
+				DCB087EC177BAC3F004182E4 /* Kobold Kit Nodes */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -1081,6 +1081,7 @@
 			isa = PBXGroup;
 			children = (
 				DCA1F0DC178C334000459A31 /* KKCompatibility.h */,
+				DCDC592C17BD3CA90018AB6F /* KKConfigMacros.h */,
 				DC9CFD441774CBE1004C981A /* KKMacros.h */,
 				DC9CFD461774CBE1004C981A /* KKTypes.h */,
 				DC9CFD471774CBE1004C981A /* KKVersion.h */,
@@ -1112,28 +1113,19 @@
 			name = "Sprite Kit Categories";
 			sourceTree = "<group>";
 		};
-		DCB087EC177BAC3F004182E4 /* Sprite Kit Node Subclasses */ = {
+		DCB087EC177BAC3F004182E4 /* Kobold Kit Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
-				DC2DD46817ABEE3C000351BE /* KKPhysicsContactEventDelegate.h */,
-				DC9CFD151774CA84004C981A /* KKScene.h */,
-				DC9CFD161774CA84004C981A /* KKScene.m */,
 				DC71017017AABDF200F95BAD /* KKNodeShared.h */,
 				DC71017117AABDF200F95BAD /* KKNodeShared.m */,
-				DC9CFD131774CA84004C981A /* KKNode.h */,
-				DC9CFD141774CA84004C981A /* KKNode.m */,
-				DC71016617AABD5B00F95BAD /* KKSpriteNode.h */,
-				DC71016717AABD5B00F95BAD /* KKSpriteNode.m */,
-				DC71016B17AABD6D00F95BAD /* KKLabelNode.h */,
-				DC71016C17AABD6D00F95BAD /* KKLabelNode.m */,
-				DC04803017AD2DA1002EBD1E /* KKEmitterNode.h */,
-				DC04803117AD2DA1002EBD1E /* KKEmitterNode.m */,
+				DCDC592B17BD36890018AB6F /* Protocols */,
+				DCDC592A17BD366D0018AB6F /* Sprite Kit Subclasses */,
+				DCB087ED177BAC62004182E4 /* Custom Nodes */,
 			);
-			name = "Sprite Kit Node Subclasses";
+			name = "Kobold Kit Nodes";
 			sourceTree = "<group>";
 		};
-		DCB087ED177BAC62004182E4 /* Kobold Kit Nodes */ = {
+		DCB087ED177BAC62004182E4 /* Custom Nodes */ = {
 			isa = PBXGroup;
 			children = (
 				DCB087E3177B439B004182E4 /* KKViewOriginNode.h */,
@@ -1141,7 +1133,7 @@
 				DC5D4AD917AC4A7400CF69EB /* KKContactNotificationNode.h */,
 				DC5D4ADA17AC4A7400CF69EB /* KKContactNotificationNode.m */,
 			);
-			name = "Kobold Kit Nodes";
+			name = "Custom Nodes";
 			sourceTree = "<group>";
 		};
 		DCCC6198178C5574009EC802 /* Resources */ = {
@@ -1194,6 +1186,32 @@
 				DCD11E42178C522300FBC406 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCDC592A17BD366D0018AB6F /* Sprite Kit Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CFD151774CA84004C981A /* KKScene.h */,
+				DC9CFD161774CA84004C981A /* KKScene.m */,
+				DC9CFD131774CA84004C981A /* KKNode.h */,
+				DC9CFD141774CA84004C981A /* KKNode.m */,
+				DC71016617AABD5B00F95BAD /* KKSpriteNode.h */,
+				DC71016717AABD5B00F95BAD /* KKSpriteNode.m */,
+				DC71016B17AABD6D00F95BAD /* KKLabelNode.h */,
+				DC71016C17AABD6D00F95BAD /* KKLabelNode.m */,
+				DC04803017AD2DA1002EBD1E /* KKEmitterNode.h */,
+				DC04803117AD2DA1002EBD1E /* KKEmitterNode.m */,
+			);
+			name = "Sprite Kit Subclasses";
+			sourceTree = "<group>";
+		};
+		DCDC592B17BD36890018AB6F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DC9CFD171774CA84004C981A /* KKSceneEventDelegate.h */,
+				DC2DD46817ABEE3C000351BE /* KKPhysicsContactEventDelegate.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		DCDD2D9F1769FD0A00F307CD = {

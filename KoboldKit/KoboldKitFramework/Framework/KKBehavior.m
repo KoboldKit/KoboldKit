@@ -51,23 +51,14 @@
 {
 }
 
+-(void) didChangeEnabledState
+{
+	
+}
+
 -(void) removeFromNode
 {
 	[self.node removeBehavior:self];
-}
-
-#pragma mark Update
-
--(void) update:(NSTimeInterval)currentTime
-{
-}
-
--(void) didEvaluateActions
-{
-}
-
--(void) didSimulatePhysics
-{
 }
 
 #pragma mark Notifications
@@ -92,6 +83,23 @@
 -(void) postNotificationName:(NSString *)name
 {
 	[self postNotificationName:name userInfo:nil];
+}
+
+@dynamic enabled;
+-(BOOL) enabled
+{
+	return _enabled;
+}
+-(void) setEnabled:(BOOL)enabled
+{
+	@synchronized(self)
+	{
+		if (_enabled != enabled)
+		{
+			_enabled = enabled;
+			[self didChangeEnabledState];
+		}
+	}
 }
 
 #pragma mark !! Update methods below whenever class layout changes !!

@@ -35,15 +35,28 @@
 #ifndef KoboldKitDemo_KKMacros_h
 #define KoboldKitDemo_KKMacros_h
 
+#import "KKConfigMacros.h"
 #import "float.h"
 
 /** @file KKMacros.h */
 
 
-/** Enabling contributor mode adds pragma messages for things one could fix, improve, add. */
-//#define CONTRIBUTOR_MESSAGE(msg) _Pragma("message " ## msg)
-//CONTRIBUTOR_MESSAGE(TEST: -- xxxxx --)
-//_Pragma("message \"THIS IS A TEST!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\"");
+/** Enabling developer mode adds pragma messages for things one could fix, improve, add. */
+
+#if SHOW_DEVELOPER_MESSAGES
+#define PRAGMA_MESSAGE(x) _Pragma(#x)
+// Callout to other developers. Use for messages that don't fit in the FIXME/TODO categories.
+#define DEVELOPER_MESSAGE(msg) PRAGMA_MESSAGE(message msg)
+// Implies suboptimal code that could be improved, made more flexible, elegant, faster.
+#define DEVELOPER_FIXME(msg) PRAGMA_MESSAGE(message "FIXME: " msg)
+// Implies something is missing, a feature that could be added.
+#define DEVELOPER_TODO(msg) PRAGMA_MESSAGE(message "TODO: " msg)
+#else
+#define DEVELOPER_MESSAGE(msg)
+#define DEVELOPER_FIXME(msg)
+#define DEVELOPER_TODO(msg)
+#endif
+
 
 
 /** Epsilon and Float equality */
