@@ -92,7 +92,7 @@
 
 	
 	// debug only
-	[self addDevelopmentButtons];
+	//[self addDevelopmentButtons];
 }
 
 -(void) loadMapNotification:(NSNotification*)notification

@@ -179,6 +179,7 @@ local objectTemplates =
 		{
 			name = "briefcase",
 			imageName = "dummy_case.png",
+			--imageName = "dummy_case2.png",
 		},
 	},
 	
@@ -308,7 +309,8 @@ local objectTemplates =
 		},
 		properties =
 		{			
-			imageName = "dummy_lockeddoor_5_3x1.png",
+			--imageName = "dummy_lockeddoor_5_3x1.png",
+			imageName = "dummy_lockeddoor_5_3x1_B.png",
 		},
 		behaviors =
 		{
