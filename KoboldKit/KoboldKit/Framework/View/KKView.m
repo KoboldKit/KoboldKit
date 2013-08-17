@@ -265,7 +265,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 	}
 }
 
-#pragma Debug
+#pragma mark Debug
 
 @dynamic showsPhysicsShapes;
 +(BOOL) showsPhysicsShapes

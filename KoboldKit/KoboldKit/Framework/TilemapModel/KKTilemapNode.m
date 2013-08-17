@@ -252,15 +252,15 @@
 	
 	LOG_EXPR(nonBlockingGids);
 
-	unsigned int nonBlockingGidsCount = nonBlockingGids.count;
+	NSUInteger nonBlockingGidsCount = nonBlockingGids.count;
 	NSUInteger* nonBlockingGidValues = nonBlockingGids.integers;
 	
 	KKIntegerArray* blockingGids = [KKIntegerArray integerArrayWithCapacity:32];
-	for (unsigned int i = 1; i <= _tilemap.highestGid; i++)
+	for (NSUInteger i = 1; i <= _tilemap.highestGid; i++)
 	{
 		BOOL isBlocking = YES;
 		
-		for (unsigned int k = 0; k < nonBlockingGidsCount; k++)
+		for (NSUInteger k = 0; k < nonBlockingGidsCount; k++)
 		{
 			if (i == nonBlockingGidValues[k])
 			{
