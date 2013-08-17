@@ -62,24 +62,6 @@ static CDBufferManager *bufferManager = nil;
 	return self;
 }
 
-// Memory
-- (void) dealloc
-{
-	am = nil;
-	soundEngine = nil;
-	bufferManager = nil;
-	[super dealloc];
-}
-
-+(void) end
-{
-	am = nil;
-	[CDAudioManager end];
-	[bufferManager release];
-	[sharedEngine release];
-	sharedEngine = nil;
-}
-
 #pragma mark SimpleAudioEngine - background music
 
 -(void) preloadBackgroundMusic:(NSString*) filePath {

@@ -94,7 +94,7 @@ typedef enum {
 	NSString		*audioSourceFilePath;
 	NSInteger		numberOfLoops;
 	float			volume;
-	id<CDLongAudioSourceDelegate> delegate;
+	__weak id<CDLongAudioSourceDelegate> delegate;
 	BOOL			mute;
 	BOOL			enabled_;
 	BOOL			backgroundMusic;
@@ -108,7 +108,7 @@ typedef enum {
 @property (readonly) NSString *audioSourceFilePath;
 @property (readwrite, nonatomic) NSInteger numberOfLoops;
 @property (readwrite, nonatomic) float volume;
-@property (assign) id<CDLongAudioSourceDelegate> delegate;
+@property (weak) id<CDLongAudioSourceDelegate> delegate;
 /* This long audio source functions as background music */
 @property (readwrite, nonatomic) BOOL backgroundMusic;
 
@@ -185,8 +185,6 @@ typedef enum {
 -(BOOL) isOtherAudioPlaying;
 /** Sets the way the audio manager interacts with the operating system such as whether it shares output with other apps or obeys the mute switch */
 -(void) setMode:(tAudioManagerMode) mode;
-/** Shuts down the shared audio manager instance so that it can be reinitialised */
-+(void) end;
 
 /** Call if you want to use built in resign behavior but need to do some additional audio processing on resign active. */
 - (void) applicationWillResignActive;

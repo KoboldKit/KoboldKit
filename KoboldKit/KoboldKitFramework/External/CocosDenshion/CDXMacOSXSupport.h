@@ -57,7 +57,7 @@ extern OSStatus AudioSessionGetProperty(UInt32 inID, UInt32 *ioDataSize, void *o
 @interface AVAudioPlayer : NSObject <NSSoundDelegate> {
 	
 	// properties
-	id<AVAudioPlayerDelegate> delegate;
+	__weak id<AVAudioPlayerDelegate> delegate;
 	NSUInteger numberOfChannels;
 	BOOL playing;
 	NSTimeInterval duration; 
@@ -98,7 +98,7 @@ extern OSStatus AudioSessionGetProperty(UInt32 inID, UInt32 *ioDataSize, void *o
 @property(readonly) NSUInteger numberOfChannels;
 @property(readonly) NSTimeInterval duration; /* the duration of the sound. */
 
-@property(assign) id<AVAudioPlayerDelegate> delegate; /* the delegate will be sent playerDidFinishPlaying */ 
+@property(weak) id<AVAudioPlayerDelegate> delegate; /* the delegate will be sent playerDidFinishPlaying */
 
 /* one of these three properties will be non-nil based on the init... method used */
 @property(readonly) NSURL *url; /* returns nil if object was not created with a URL */
@@ -186,16 +186,16 @@ enum {
 	double currentHardwareSampleRate;
 	NSInteger currentHardwareInputNumberOfChannels;
 	NSInteger currentHardwareOutputNumberOfChannels;
-	id<AVAudioSessionDelegate> delegate;
+	__weak id<AVAudioSessionDelegate> delegate;
 
 @private
-    __strong void *_impl;
+    void *_impl;
 }
 
 /* returns singleton instance */
 + (id)sharedInstance;
 
-@property(assign) id<AVAudioSessionDelegate> delegate;
+@property(weak) id<AVAudioSessionDelegate> delegate;
 
 - (BOOL)setActive:(BOOL)beActive error:(NSError**)outError;
 - (BOOL)setActive:(BOOL)beActive withFlags:(NSInteger)flags error:(NSError**)outError;

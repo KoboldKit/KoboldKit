@@ -165,7 +165,6 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 	[self updateDirectionTexture];
 	[self postNotificationName:KKControlPadDidChangeDirectionNotification];
 	_trackedTouch = 0;
-	_trackedTouchRetained = nil;
 }
 
 -(void) updateDirectionTexture
@@ -274,7 +273,6 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 				}
 				//NSLog(@"pad touches began: %p", touch);
 				_trackedTouch = (NSUInteger)touch;
-				_trackedTouchRetained = touch;
 				[self updateDirectionFromLocation:touchLocation];
 				break;
 			}

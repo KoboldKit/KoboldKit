@@ -202,6 +202,22 @@
 		DC71017C17AAD22600F95BAD /* KKItemCollectorBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC71017A17AAD22600F95BAD /* KKItemCollectorBehavior.h */; };
 		DC71017D17AAD22600F95BAD /* KKItemCollectorBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */; };
 		DC71017E17AAD22600F95BAD /* KKItemCollectorBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */; };
+		DC7C201B17BFD696001F5425 /* CDAudioManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7C200D17BFD696001F5425 /* CDAudioManager.h */; };
+		DC7C201C17BFD696001F5425 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C200E17BFD696001F5425 /* CDAudioManager.m */; };
+		DC7C201D17BFD696001F5425 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C200E17BFD696001F5425 /* CDAudioManager.m */; };
+		DC7C201E17BFD696001F5425 /* CDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7C200F17BFD696001F5425 /* CDConfig.h */; };
+		DC7C201F17BFD696001F5425 /* CDOpenALSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7C201017BFD696001F5425 /* CDOpenALSupport.h */; };
+		DC7C202017BFD696001F5425 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C201117BFD696001F5425 /* CDOpenALSupport.m */; };
+		DC7C202117BFD696001F5425 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C201117BFD696001F5425 /* CDOpenALSupport.m */; };
+		DC7C202217BFD696001F5425 /* CDXMacOSXSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7C201217BFD696001F5425 /* CDXMacOSXSupport.h */; };
+		DC7C202317BFD696001F5425 /* CDXMacOSXSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C201317BFD696001F5425 /* CDXMacOSXSupport.m */; };
+		DC7C202417BFD696001F5425 /* CDXMacOSXSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C201317BFD696001F5425 /* CDXMacOSXSupport.m */; };
+		DC7C202817BFD696001F5425 /* CocosDenshion.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7C201617BFD696001F5425 /* CocosDenshion.h */; };
+		DC7C202917BFD696001F5425 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C201717BFD696001F5425 /* CocosDenshion.m */; };
+		DC7C202A17BFD696001F5425 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C201717BFD696001F5425 /* CocosDenshion.m */; };
+		DC7C202C17BFD696001F5425 /* SimpleAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7C201917BFD696001F5425 /* SimpleAudioEngine.h */; };
+		DC7C202D17BFD696001F5425 /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C201A17BFD696001F5425 /* SimpleAudioEngine.m */; };
+		DC7C202E17BFD696001F5425 /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C201A17BFD696001F5425 /* SimpleAudioEngine.m */; };
 		DC7EF8E317AD92B200831FEB /* KKNotifyOnContactBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7EF8E117AD92B200831FEB /* KKNotifyOnContactBehavior.h */; };
 		DC7EF8E417AD92B200831FEB /* KKNotifyOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */; };
 		DC7EF8E517AD92B200831FEB /* KKNotifyOnContactBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */; };
@@ -496,6 +512,17 @@
 		DC71017617AACFB600F95BAD /* KKPickupItemBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPickupItemBehavior.m; sourceTree = "<group>"; };
 		DC71017A17AAD22600F95BAD /* KKItemCollectorBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKItemCollectorBehavior.h; sourceTree = "<group>"; };
 		DC71017B17AAD22600F95BAD /* KKItemCollectorBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKItemCollectorBehavior.m; sourceTree = "<group>"; };
+		DC7C200D17BFD696001F5425 /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
+		DC7C200E17BFD696001F5425 /* CDAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAudioManager.m; sourceTree = "<group>"; };
+		DC7C200F17BFD696001F5425 /* CDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConfig.h; sourceTree = "<group>"; };
+		DC7C201017BFD696001F5425 /* CDOpenALSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOpenALSupport.h; sourceTree = "<group>"; };
+		DC7C201117BFD696001F5425 /* CDOpenALSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOpenALSupport.m; sourceTree = "<group>"; };
+		DC7C201217BFD696001F5425 /* CDXMacOSXSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDXMacOSXSupport.h; sourceTree = "<group>"; };
+		DC7C201317BFD696001F5425 /* CDXMacOSXSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDXMacOSXSupport.m; sourceTree = "<group>"; };
+		DC7C201617BFD696001F5425 /* CocosDenshion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosDenshion.h; sourceTree = "<group>"; };
+		DC7C201717BFD696001F5425 /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
+		DC7C201917BFD696001F5425 /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
+		DC7C201A17BFD696001F5425 /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
 		DC7EF8E117AD92B200831FEB /* KKNotifyOnContactBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNotifyOnContactBehavior.h; sourceTree = "<group>"; };
 		DC7EF8E217AD92B200831FEB /* KKNotifyOnContactBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNotifyOnContactBehavior.m; sourceTree = "<group>"; };
 		DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = behaviorTemplates.lua; sourceTree = "<group>"; };
@@ -941,6 +968,24 @@
 			name = "View & Controller";
 			sourceTree = "<group>";
 		};
+		DC7C200C17BFD696001F5425 /* CocosDenshion */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C200D17BFD696001F5425 /* CDAudioManager.h */,
+				DC7C200E17BFD696001F5425 /* CDAudioManager.m */,
+				DC7C200F17BFD696001F5425 /* CDConfig.h */,
+				DC7C201017BFD696001F5425 /* CDOpenALSupport.h */,
+				DC7C201117BFD696001F5425 /* CDOpenALSupport.m */,
+				DC7C201217BFD696001F5425 /* CDXMacOSXSupport.h */,
+				DC7C201317BFD696001F5425 /* CDXMacOSXSupport.m */,
+				DC7C201617BFD696001F5425 /* CocosDenshion.h */,
+				DC7C201717BFD696001F5425 /* CocosDenshion.m */,
+				DC7C201917BFD696001F5425 /* SimpleAudioEngine.h */,
+				DC7C201A17BFD696001F5425 /* SimpleAudioEngine.m */,
+			);
+			path = CocosDenshion;
+			sourceTree = "<group>";
+		};
 		DC8B9C1F17B9232700606646 /* Profiling */ = {
 			isa = PBXGroup;
 			children = (
@@ -1314,6 +1359,7 @@
 		DCDD2E2B176A40C400F307CD /* External */ = {
 			isa = PBXGroup;
 			children = (
+				DC7C200C17BFD696001F5425 /* CocosDenshion */,
 				DC8B9C1F17B9232700606646 /* Profiling */,
 				DC25515817B27E8E0078151C /* SKTUtils */,
 				DC96A7FB178760F400CE0827 /* lua */,
@@ -1373,6 +1419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB76E66178CB19C0047B4EC /* KKTilemapTileLayerNode.h in Headers */,
+				DC7C201B17BFD696001F5425 /* CDAudioManager.h in Headers */,
 				DC25516417B27E8E0078151C /* SKAction+SKTExtras.h in Headers */,
 				DC5D4AD017AC131300CF69EB /* KKNotifyOnItemCountBehavior.h in Headers */,
 				DC5D4AD517AC164700CF69EB /* KKRemoveOnNotificationBehavior.h in Headers */,
@@ -1380,22 +1427,27 @@
 				DC71016817AABD5B00F95BAD /* KKSpriteNode.h in Headers */,
 				DC71017C17AAD22600F95BAD /* KKItemCollectorBehavior.h in Headers */,
 				DC71016D17AABD6D00F95BAD /* KKLabelNode.h in Headers */,
+				DC7C202C17BFD696001F5425 /* SimpleAudioEngine.h in Headers */,
 				DC25516D17B27E8E0078151C /* SKTAudio.h in Headers */,
 				DC8EED2717A58773000C1995 /* NSObject+KoboldKit.h in Headers */,
 				DC25517117B27E8E0078151C /* SKTUtils.h in Headers */,
 				DC004C5517BA8786007CE7B1 /* CGVectorExtension.h in Headers */,
+				DC7C201E17BFD696001F5425 /* CDConfig.h in Headers */,
 				DC25516A17B27E8E0078151C /* SKNode+SKTExtras.h in Headers */,
 				DC25519217B286670078151C /* SKAction+KoboldKit.h in Headers */,
 				DC71017717AACFB600F95BAD /* KKPickupItemBehavior.h in Headers */,
 				DC8EED2217A53FBA000C1995 /* NSString+KoboldKit.h in Headers */,
 				DC7EF8EB17AEABFB00831FEB /* KKFollowPathBehavior.h in Headers */,
+				DC7C202817BFD696001F5425 /* CocosDenshion.h in Headers */,
 				DCB76E60178CB19C0047B4EC /* KKTilemapNode.h in Headers */,
 				DC25516717B27E8E0078151C /* SKEmitterNode+SKTExtras.h in Headers */,
 				DCD11DC6178C49CC00FBC406 /* KoboldKit.h in Headers */,
+				DC7C201F17BFD696001F5425 /* CDOpenALSupport.h in Headers */,
 				DC8B9C2217B9232700606646 /* CCProfiling.h in Headers */,
 				DC71016217AAB38B00F95BAD /* KKRemoveOnContactBehavior.h in Headers */,
 				DC5D4ADB17AC4A7400CF69EB /* KKContactNotificationNode.h in Headers */,
 				DCB76E5D178CB19C0047B4EC /* KKTilemapLayerNode.h in Headers */,
+				DC7C202217BFD696001F5425 /* CDXMacOSXSupport.h in Headers */,
 				DC71017217AABDF200F95BAD /* KKNodeShared.h in Headers */,
 				DC7EF8E317AD92B200831FEB /* KKNotifyOnContactBehavior.h in Headers */,
 			);
@@ -1650,6 +1702,8 @@
 				DC484CC9178C43690067DAA4 /* lmem.c in Sources */,
 				DC484CCA178C43690067DAA4 /* loadlib.c in Sources */,
 				DC484CCB178C43690067DAA4 /* lobject.c in Sources */,
+				DC7C202117BFD696001F5425 /* CDOpenALSupport.m in Sources */,
+				DC7C202E17BFD696001F5425 /* SimpleAudioEngine.m in Sources */,
 				DC484CCC178C43690067DAA4 /* lopcodes.c in Sources */,
 				DC484CCD178C43690067DAA4 /* loslib.c in Sources */,
 				DC25516F17B27E8E0078151C /* SKTAudio.m in Sources */,
@@ -1678,8 +1732,10 @@
 				DC484C98178C43400067DAA4 /* KKNode.m in Sources */,
 				DC484C99178C43400067DAA4 /* KKModel.m in Sources */,
 				DC25516617B27E8E0078151C /* SKAction+SKTExtras.m in Sources */,
+				DC7C202417BFD696001F5425 /* CDXMacOSXSupport.m in Sources */,
 				DC484C9A178C43400067DAA4 /* KKNodeController.m in Sources */,
 				DC484C9B178C43400067DAA4 /* KKBehavior.m in Sources */,
+				DC7C201D17BFD696001F5425 /* CDAudioManager.m in Sources */,
 				DC484C9C178C43400067DAA4 /* KKTilemap.m in Sources */,
 				DC71017917AACFB600F95BAD /* KKPickupItemBehavior.m in Sources */,
 				DC484C9D178C43400067DAA4 /* KKTilemapLayer.m in Sources */,
@@ -1702,6 +1758,7 @@
 				DC484CAE178C43400067DAA4 /* KKIntegerArray.m in Sources */,
 				DC484CAF178C43400067DAA4 /* KKPointArray.m in Sources */,
 				DC484CB0178C43400067DAA4 /* KKMutableNumber.m in Sources */,
+				DC7C202A17BFD696001F5425 /* CocosDenshion.m in Sources */,
 				DC25517317B27E8E0078151C /* SKTUtils.mm in Sources */,
 				DC484CB1178C43400067DAA4 /* KKClassVarSetter.m in Sources */,
 				DC484CB2178C43400067DAA4 /* KKDownloadProjectFiles.m in Sources */,
@@ -1760,6 +1817,8 @@
 				DCD7A282178C7453004A0467 /* ltable.c in Sources */,
 				DCD7A283178C7453004A0467 /* ltablib.c in Sources */,
 				DCD7A284178C7453004A0467 /* ltm.c in Sources */,
+				DC7C202017BFD696001F5425 /* CDOpenALSupport.m in Sources */,
+				DC7C202D17BFD696001F5425 /* SimpleAudioEngine.m in Sources */,
 				DCD7A285178C7453004A0467 /* lundump.c in Sources */,
 				DCD7A286178C7453004A0467 /* lvm.c in Sources */,
 				DC25516E17B27E8E0078151C /* SKTAudio.m in Sources */,
@@ -1788,8 +1847,10 @@
 				DCD7A248178C7449004A0467 /* KKCameraFollowBehavior.m in Sources */,
 				DCD7A249178C7449004A0467 /* KKStayInBoundsBehavior.m in Sources */,
 				DC25516517B27E8E0078151C /* SKAction+SKTExtras.m in Sources */,
+				DC7C202317BFD696001F5425 /* CDXMacOSXSupport.m in Sources */,
 				DCD7A24A178C7449004A0467 /* KKLimitVelocityBehavior.m in Sources */,
 				DCD7A24B178C7449004A0467 /* KKTilemap.m in Sources */,
+				DC7C201C17BFD696001F5425 /* CDAudioManager.m in Sources */,
 				DCD7A24C178C7449004A0467 /* KKTilemapLayer.m in Sources */,
 				DC71017817AACFB600F95BAD /* KKPickupItemBehavior.m in Sources */,
 				DCD7A24D178C7449004A0467 /* KKTilemapLayerContourTracer.m in Sources */,
@@ -1812,6 +1873,7 @@
 				DCD7A25E178C7449004A0467 /* KKPointArray.m in Sources */,
 				DCD7A25F178C7449004A0467 /* KKMutableNumber.m in Sources */,
 				DCD7A260178C7449004A0467 /* KKClassVarSetter.m in Sources */,
+				DC7C202917BFD696001F5425 /* CocosDenshion.m in Sources */,
 				DC25517217B27E8E0078151C /* SKTUtils.mm in Sources */,
 				DCD7A261178C7449004A0467 /* KKDownloadProjectFiles.m in Sources */,
 				DCD7A262178C7449004A0467 /* Reachability.m in Sources */,

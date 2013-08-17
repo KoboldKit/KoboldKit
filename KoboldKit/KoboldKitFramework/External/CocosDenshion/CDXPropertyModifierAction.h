@@ -22,7 +22,6 @@
  $Id$
  */
 
-#import "cocos2d.h"
 #import "SimpleAudioEngine.h"
 
 /** Base class for actions that modify audio properties

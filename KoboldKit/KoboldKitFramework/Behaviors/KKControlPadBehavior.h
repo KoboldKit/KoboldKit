@@ -19,7 +19,6 @@ extern NSString* const KKControlPadDidChangeDirectionNotification;
 @interface KKControlPadBehavior : KKBehavior
 {
 	@private
-	UITouch* _trackedTouchRetained;
 	NSUInteger _trackedTouch;
 	NSArray* _textures;
 	int _directionsCount;
