@@ -19,6 +19,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import <objc/runtime.h>
 #import "KKMacros.h"
+#import "KKTypes.h"
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>

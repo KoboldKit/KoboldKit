@@ -92,7 +92,7 @@
 
 	
 	// debug only
-	//[self addDevelopmentButtons];
+	[self addDevelopmentButtons];
 }
 
 -(void) loadMapNotification:(NSNotification*)notification
@@ -173,7 +173,7 @@
 
 -(void) addDevelopmentButtons
 {
-#if DEBUG
+//#if DEBUG
 	KKViewOriginNode* hudNode = [KKViewOriginNode node];
 	[self addChild:hudNode];
 	
@@ -198,7 +198,7 @@
 	
 	[menuLabel addBehavior:[KKButtonBehavior behavior]];
 	[self observeNotification:KKButtonDidExecuteNotification selector:@selector(menuButtonPressed:) object:menuLabel];
-#endif
+//#endif
 }
 
 -(void) reloadButtonPressed:(NSNotification*)notification
