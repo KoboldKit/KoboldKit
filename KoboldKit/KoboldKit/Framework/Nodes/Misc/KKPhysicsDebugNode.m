@@ -18,9 +18,6 @@
 	if (self)
 	{
 		_contacts = [NSMutableArray arrayWithCapacity:16];
-		
-#pragma message "FIXME: work around SK empty nodes render bug"
-		[self addChild:[SKNode node]];
 	}
 	return self;
 }
@@ -53,9 +50,6 @@
 	{
 		_contactNode = [SKNode node];
 		[self addChild:_contactNode];
-
-#pragma message "work around SK empty nodes render bug"
-		[_contactNode addChild:[SKNode node]];
 	}
 	else
 	{

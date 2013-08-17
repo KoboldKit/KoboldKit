@@ -30,11 +30,9 @@
 
 	NSLog(@"KKView - %@", kkVersionString());
 	
-    // Configure the view.
-	KKView* kkView = (KKView*)self.view;
-	NSAssert1([kkView isKindOfClass:[KKView class]],
+	NSAssert1([self.kkView isKindOfClass:[KKView class]],
 			  @"KKViewController: view must be of class KKView, but its class is: %@. You may need to change this in your code or in Interface Builder (Identity Inspector -> Custom Class).",
-			  NSStringFromClass([kkView class]));
+			  NSStringFromClass([self.kkView class]));
 }
 
 -(void) viewWillLayoutSubviews
