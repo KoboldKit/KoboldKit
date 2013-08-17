@@ -14,6 +14,8 @@
 		DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC04802D17AD2C63002EBD1E /* playerdeath.sks */; };
 		DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC04802D17AD2C63002EBD1E /* playerdeath.sks */; };
 		DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC09DB8D178C84C6000E0B61 /* MainMenu.xib */; };
+		DC0DA03C17C012E500216338 /* libKoboldKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0DA03917C0126900216338 /* libKoboldKit.a */; };
+		DC0DA03D17C013FE00216338 /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0DA03B17C0126900216338 /* KoboldKit.framework */; };
 		DC10606717B3C9BC005BB9D0 /* ColorTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605817B3C9BC005BB9D0 /* ColorTest.tmx */; };
 		DC10606817B3C9BC005BB9D0 /* ColorTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605817B3C9BC005BB9D0 /* ColorTest.tmx */; };
 		DC10606917B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605917B3C9BC005BB9D0 /* DemoMainMenu.tmx */; };
@@ -110,11 +112,29 @@
 		DCFE4D7317B2B512006675A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DC0DA03817C0126900216338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC0DA03317C0126900216338 /* KoboldKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC484C6B178C418C0067DAA4;
+			remoteInfo = libKoboldKit.a;
+		};
+		DC0DA03A17C0126900216338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC0DA03317C0126900216338 /* KoboldKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC484C43178C40BB0067DAA4;
+			remoteInfo = KoboldKit.framework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DC04802817AD2C18002EBD1E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		DC04802D17AD2C63002EBD1E /* playerdeath.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = playerdeath.sks; sourceTree = "<group>"; };
 		DC09DB8D178C84C6000E0B61 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		DC0DA03317C0126900216338 /* KoboldKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KoboldKit.xcodeproj; path = KoboldKit/KoboldKit.xcodeproj; sourceTree = "<group>"; };
 		DC10605817B3C9BC005BB9D0 /* ColorTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ColorTest.tmx; sourceTree = "<group>"; };
 		DC10605917B3C9BC005BB9D0 /* DemoMainMenu.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoMainMenu.tmx; sourceTree = "<group>"; };
 		DC10605A17B3C9BC005BB9D0 /* DemoStage001.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStage001.tmx; sourceTree = "<group>"; };
@@ -193,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0DA03D17C013FE00216338 /* KoboldKit.framework in Frameworks */,
 				DCFE4D7317B2B512006675A2 /* CoreGraphics.framework in Frameworks */,
 				DCFE4D6E17B2B4F3006675A2 /* CoreMedia.framework in Frameworks */,
 				DCFE4D6C17B2B4E8006675A2 /* AVFoundation.framework in Frameworks */,
@@ -206,6 +227,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0DA03C17C012E500216338 /* libKoboldKit.a in Frameworks */,
 				DCFE4D7217B2B502006675A2 /* CoreMedia.framework in Frameworks */,
 				DCFE4D7017B2B4FC006675A2 /* AVFoundation.framework in Frameworks */,
 				DCD7A292178C7545004A0467 /* libz.dylib in Frameworks */,
@@ -220,6 +242,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC0DA03417C0126900216338 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC0DA03917C0126900216338 /* libKoboldKit.a */,
+				DC0DA03B17C0126900216338 /* KoboldKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DC18B09E178C7BC400641A6D /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +378,7 @@
 				DCD11E39178C522300FBC406 /* Super Stick Spy */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
 				DCDD2DA91769FD0A00F307CD /* Products */,
+				DC0DA03317C0126900216338 /* KoboldKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -439,6 +471,12 @@
 			mainGroup = DCDD2D9F1769FD0A00F307CD;
 			productRefGroup = DCDD2DA91769FD0A00F307CD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DC0DA03417C0126900216338 /* Products */;
+					ProjectRef = DC0DA03317C0126900216338 /* KoboldKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DCD7EC51178C57FC00BBAFB0 /* Super_Stick_Spy-iOS */,
@@ -446,6 +484,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DC0DA03917C0126900216338 /* libKoboldKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKoboldKit.a;
+			remoteRef = DC0DA03817C0126900216338 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DC0DA03B17C0126900216338 /* KoboldKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KoboldKit.framework;
+			remoteRef = DC0DA03A17C0126900216338 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DCD11E34178C522300FBC406 /* Resources */ = {
@@ -614,13 +669,14 @@
 					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-Mac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -640,9 +696,10 @@
 					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-Mac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -656,12 +713,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -677,8 +735,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
+				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
