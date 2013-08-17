@@ -252,17 +252,17 @@ static Class kMutableNumberClass;
 	{
 		NSDictionary* dict = (NSDictionary*)obj;
 		NSAssert1(dict.count == 1, @"can't convert dictionary (%@) with multiple values", dict);
-		for (NSString* key in dict)
+		for (NSString* dictKey in dict)
 		{
-			if ([key isEqualToString:@"color"])
+			if ([dictKey isEqualToString:@"color"])
 			{
-				return [[dict objectForKey:key] color];
+				return [(NSString*)[dict objectForKey:dictKey] color];
 			}
 		}
 	}
 	else if ([obj isKindOfClass:[NSString class]] && [[key lowercaseString] containsString:@"color"])
 	{
-		return [obj color];
+		return [(NSString*)obj color];
 	}
 	return obj;
 }
