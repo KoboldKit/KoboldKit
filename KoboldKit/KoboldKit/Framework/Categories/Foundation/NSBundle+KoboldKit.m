@@ -39,6 +39,9 @@ static NSString* CFBundleName = nil;
 +(NSString*) pathForFile:(NSString*)file inDirectory:(NSSearchPathDirectory)directory
 {
 	NSString* path = [NSSearchPathForDirectoriesInDomains(directory, NSUserDomainMask, YES) lastObject];
+#if !TARGET_OS_IPHONE
+	path = [path stringByAppendingPathComponent:[NSBundle mainBundle].bundleIdentifier];
+#endif
 	return [path stringByAppendingPathComponent:file];
 }
 
@@ -52,15 +55,12 @@ static NSString* CFBundleName = nil;
 	NSFileManager* fileManager = [NSFileManager defaultManager];
 	NSString* path = nil;
 	
-	//path = [NSFileManager pathForAppSupportFile:file];
-	//if ([fileManager fileExistsAtPath:path] == NO)
+	path = [NSBundle pathForDocumentsFile:file];
+	if ([fileManager fileExistsAtPath:path] == NO)
 	{
-		path = [NSBundle pathForDocumentsFile:file];
-		if ([fileManager fileExistsAtPath:path] == NO)
-		{
-			path = [NSBundle pathForBundleFile:file];
-		}
+		path = [NSBundle pathForBundleFile:file];
 	}
+
 	return path;
 }
 
