@@ -31,18 +31,6 @@ local config =
 	showsTotalAreaRendered = NO,
 	showsSpriteBounds = NO,
 	shouldCenterStats = NO,
-
-
-	-- below are example values
-	myIP = "10.0.0.1",
-	myPort = "1234",
-	cheatCodes = {"invulnerable", "unlimitedAmmo"},
-	
-	testValuesForWorkInProgressCode = {
-		drawBackwards = true,
-		fastButInaccurate = true,
-		extraCycles = 3,
-	},
 }
 
 return config
