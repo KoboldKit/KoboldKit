@@ -8,6 +8,15 @@
 
 #import "KKTypes.h"
 
+#import "KKTilemapLayer.h"
+#import "KKTilemapLayerTiles.h"
+#import "KKTilemapObject.h"
+#import "KKTilemapProperties.h"
+#import "KKTilemapTileProperties.h"
+#import "KKTilemapTileset.h"
+#import "KKTMXReader.h"
+#import "KKTMXWriter.h"
+
 /** @file KKTilemap.h */
 
 @class KKTilemap;

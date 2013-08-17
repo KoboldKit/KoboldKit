@@ -10,7 +10,7 @@
 
 /** @file VTPG_Common.h */
 
-#import "KKCompatibility.h"
+#import "KKFramework.h"
 
 // based off of http://www.dribin.org/dave/blog/archives/2008/09/22/convert_to_nsstring/
 static NSString* VTPG_DDToStringFromTypeAndValue(const char* typeCode, void* value);

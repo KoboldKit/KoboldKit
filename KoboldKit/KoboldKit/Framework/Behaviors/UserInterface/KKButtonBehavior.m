@@ -6,11 +6,10 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKCompatibility.h"
+#import "KKFramework.h"
 #import "KKButtonBehavior.h"
 #import "KKMacros.h"
 #import "KKScene.h"
-#import "SKNode+KoboldKit.h"
 
 NSString* const KKButtonDidExecuteNotification = @"KKButtonBehavior:execute";
 NSString* const KKButtonDidEndExecuteNotification = @"KKButtonBehavior:endExecute";

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKCompatibility.h"
+#import "KKFramework.h"
 #import "KKNode.h"
 
 /** Children of this node will always have their origin at the lower left corner of the view,

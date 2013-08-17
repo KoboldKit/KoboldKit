@@ -9,85 +9,36 @@
 // GLOBAL HEADER IMPORTS
 
 // headers
-#import "KKCompatibility.h"
-#import "KKVersion.h"
-#import "KKMacros.h"
-#import "KKTypes.h"
-#import "KKArcadeInputState.h"
-#import "KKSceneEventDelegate.h"
-#import "KKPhysicsContactEventDelegate.h"
+#import "KKFramework.h"
 
-// Sprite Kit categories
-#import "SKNode+KoboldKit.h"
-#import "SKScene+KoboldKit.h"
-#import "SKAction+KoboldKit.h"
-
-// subclasses
+// framework
 #import "KKAppDelegate.h"
 #import "KKViewController.h"
 #import "KKView.h"
-#import "KKNode.h"
-#import "KKScene.h"
-#import "KKSpriteNode.h"
-#import "KKLabelNode.h"
-#import "KKEmitterNode.h"
-#import "KKViewOriginNode.h"
 
-// framework
+// component model
 #import "KKNodeController.h"
 #import "KKModel.h"
 #import "KKBehavior.h"
-
-// behaviors
-#import "KKButtonBehavior.h"
-#import "KKFollowTargetBehavior.h"
-#import "KKControlPadBehavior.h"
-#import "KKCameraFollowBehavior.h"
-#import "KKStayInBoundsBehavior.h"
-#import "KKLimitVelocityBehavior.h"
-#import "KKRemoveOnContactBehavior.h"
-#import "KKPickupItemBehavior.h"
-#import "KKItemCollectorBehavior.h"
-#import "KKNotifyOnItemCountBehavior.h"
-#import "KKRemoveOnNotificationBehavior.h"
-
-// tilemap model
-#import "KKTilemap.h"
-#import "KKTilemapLayer.h"
-#import "KKTilemapLayerContourTracer.h"
-#import "KKTilemapLayerTiles.h"
-#import "KKTilemapObject.h"
-#import "KKTilemapProperties.h"
-#import "KKTilemapTileProperties.h"
-#import "KKTilemapTileset.h"
-#import "KKTMXReader.h"
-#import "KKTMXWriter.h"
-
-// tilemap nodes
-#import "KKTilemapNode.h"
-#import "KKTilemapTileLayerNode.h"
-#import "KKTilemapObjectLayerNode.h"
-
-// addons
 #import "KKMutableNumber.h"
+
+// staging headers which include all other headers of their module
+#import "KKBehaviors.h"
+#import "KKExternals.h"
+#import "KKNodes.h"
+#import "KKTilemap.h"
+
+// collections
 #import "KKIntegerArray.h"
 #import "KKPointArray.h"
-#import "KKDownloadProjectFiles.h"
+
+// protocols
+#import "KKSceneEventDelegate.h"
+#import "KKPhysicsContactEventDelegate.h"
+
+// scripting
 #import "KKLua.h"
+
+// utility
+#import "KKDownloadProjectFiles.h"
 #import "KKClassVarSetter.h"
-
-// NS* categories
-#import "NSCoder+KoboldKit.h"
-#import "NSDictionary+KoboldKit.h"
-#import "NSBundle+KoboldKit.h"
-#import "NSObject+KoboldKit.h"
-#import "NSString+KoboldKit.h"
-
-// external
-#import "Reachability.h"
-#import "CGPointExtension.h"
-#import "CGVectorExtension.h"
-#import "VTPG_Common.h"
-#import "XMLWriter.h"
-#import "ZipUtils.h"
-#import "CCProfiling.h"

@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKCompatibility.h"
-#import "SKNode+KoboldKit.h"
+#import "KKFramework.h"
 #import "KKScene.h"
 #import "KKNodeController.h"
 

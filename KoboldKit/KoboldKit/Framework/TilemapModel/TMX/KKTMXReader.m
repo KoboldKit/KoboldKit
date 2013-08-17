@@ -43,11 +43,10 @@
 #import "KKTilemapLayer.h"
 #import "KKMutableNumber.h"
 #import "KKMacros.h"
+#import "KKFramework.h"
 
 #import "base64.h"
 #import "ZipUtils.h"
-
-#import "KKCompatibility.h"
 
 @implementation KKTMXReader
 

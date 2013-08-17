@@ -1,5 +1,5 @@
 //
-//  KKCompatibility.h
+//  KKFramework.h
 //  KoboldKit
 //
 //  Created by Steffen Itterheim on 09.07.13.
@@ -11,15 +11,24 @@
  typedefs SK classes that haven't been subclassed yet for forward compatibility. */
 
 
-#ifndef KoboldKit_KKCompatibility_h
-#define KoboldKit_KKCompatibility_h
+#ifndef KoboldKit_KKFramework_h
+#define KoboldKit_KKFramework_h
 
 #import <Availability.h>
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
 #import <objc/runtime.h>
+#import <objc/message.h>
+
+#import "KKCategories.h"
 #import "KKMacros.h"
 #import "KKTypes.h"
+#import "KKVersion.h"
+
+// important externals
+#import "VTPG_Common.h"
+#import "CGPointExtension.h"
+#import "CGVectorExtension.h"
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
@@ -39,7 +48,6 @@ typedef NSWindow KKWindow;
 
 #define NSStringFromCGRect NSStringFromRect
 #endif
-
 
 /** typedefs for SK forward compatibility */
 typedef SKTransition KKTransition;

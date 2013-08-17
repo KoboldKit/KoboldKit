@@ -35,7 +35,7 @@
 #ifndef KoboldKitDemo_KKMacros_h
 #define KoboldKitDemo_KKMacros_h
 
-#import "KKConfigMacros.h"
+#import "KKConfig.h"
 #import "float.h"
 
 /** @file KKMacros.h */

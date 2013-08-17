@@ -1,6 +1,13 @@
+//
+//  KKLua.m
+//  KoboldKit
+//
+//  Created by Steffen Itterheim on 09.07.13.
+//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
+//
 
 #import "KKLua.h"
-#import "KKCompatibility.h"
+#import "KKFramework.h"
 
 static lua_State* luaState;
 

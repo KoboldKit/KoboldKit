@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKCompatibility.h"
-#import "NSDictionary+KoboldKit.h"
+#import "KKFramework.h"
 #import "KKMutableNumber.h"
 #import "KKLua.h"
 

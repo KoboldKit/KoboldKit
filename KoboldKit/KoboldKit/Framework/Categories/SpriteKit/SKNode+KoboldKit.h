@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import "KKCompatibility.h"
+#import "KKFramework.h"
 
 @class KKNodeController;
 @class KKBehavior;

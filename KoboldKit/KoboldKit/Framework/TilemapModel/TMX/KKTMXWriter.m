@@ -17,7 +17,7 @@
 #import "KKTilemapLayer.h"
 #import "KKMutableNumber.h"
 #import "KKMacros.h"
-#import "KKCompatibility.h"
+#import "KKFramework.h"
 
 #import <zlib.h>
 #import "XMLWriter.h"

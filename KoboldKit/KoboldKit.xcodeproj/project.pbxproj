@@ -284,8 +284,8 @@
 		DC34B1F817BFDFA200039C20 /* KKNodeController.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0A517BFDFA100039C20 /* KKNodeController.h */; };
 		DC34B1F917BFDFA200039C20 /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B0A617BFDFA100039C20 /* KKNodeController.m */; };
 		DC34B1FA17BFDFA200039C20 /* KKNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B0A617BFDFA100039C20 /* KKNodeController.m */; };
-		DC34B1FB17BFDFA200039C20 /* KKCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0A717BFDFA100039C20 /* KKCompatibility.h */; };
-		DC34B1FC17BFDFA200039C20 /* KKConfigMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0A817BFDFA100039C20 /* KKConfigMacros.h */; };
+		DC34B1FB17BFDFA200039C20 /* KKFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0A717BFDFA100039C20 /* KKFramework.h */; };
+		DC34B1FC17BFDFA200039C20 /* KKConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0A817BFDFA100039C20 /* KKConfig.h */; };
 		DC34B1FD17BFDFA200039C20 /* KKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0A917BFDFA100039C20 /* KKMacros.h */; };
 		DC34B1FE17BFDFA200039C20 /* KKTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0AA17BFDFA100039C20 /* KKTypes.h */; };
 		DC34B1FF17BFDFA200039C20 /* KKVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0AB17BFDFA100039C20 /* KKVersion.h */; };
@@ -312,9 +312,6 @@
 		DC34B21417BFDFA200039C20 /* KKContactNotificationNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0BC17BFDFA100039C20 /* KKContactNotificationNode.h */; };
 		DC34B21517BFDFA200039C20 /* KKContactNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B0BD17BFDFA100039C20 /* KKContactNotificationNode.m */; };
 		DC34B21617BFDFA200039C20 /* KKContactNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B0BD17BFDFA100039C20 /* KKContactNotificationNode.m */; };
-		DC34B21717BFDFA200039C20 /* KKPhysicsDebugNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0BE17BFDFA100039C20 /* KKPhysicsDebugNode.h */; };
-		DC34B21817BFDFA200039C20 /* KKPhysicsDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B0BF17BFDFA100039C20 /* KKPhysicsDebugNode.m */; };
-		DC34B21917BFDFA200039C20 /* KKPhysicsDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B0BF17BFDFA100039C20 /* KKPhysicsDebugNode.m */; };
 		DC34B21A17BFDFA200039C20 /* KKViewOriginNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B0C017BFDFA100039C20 /* KKViewOriginNode.h */; };
 		DC34B21B17BFDFA200039C20 /* KKViewOriginNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B0C117BFDFA100039C20 /* KKViewOriginNode.m */; };
 		DC34B21C17BFDFA200039C20 /* KKViewOriginNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B0C117BFDFA100039C20 /* KKViewOriginNode.m */; };
@@ -387,6 +384,7 @@
 		DC34B26417BFE57500039C20 /* ZipUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34B25F17BFE57500039C20 /* ZipUtils.h */; };
 		DC34B26517BFE57500039C20 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B26017BFE57500039C20 /* ZipUtils.m */; };
 		DC34B26617BFE57500039C20 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC34B26017BFE57500039C20 /* ZipUtils.m */; };
+		DC34B26817BFE96E00039C20 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
 		DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
 		DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
 		DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
@@ -404,7 +402,6 @@
 		DCD7A28B178C7526004A0467 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC47178C573500BBAFB0 /* MenuScene.m */; };
 		DCD7A28C178C7526004A0467 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC49178C573500BBAFB0 /* ViewController.m */; };
 		DCD7A28D178C7526004A0467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD11E3F178C522300FBC406 /* main.m */; };
-		DCD7A290178C753D004A0467 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
 		DCD7A292178C7545004A0467 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD7A291178C7545004A0467 /* libz.dylib */; };
 		DCD7EC4A178C573500BBAFB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC43178C573500BBAFB0 /* AppDelegate.m */; };
 		DCD7EC4B178C573500BBAFB0 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC45178C573500BBAFB0 /* GameScene.m */; };
@@ -637,8 +634,8 @@
 		DC34B0A417BFDFA100039C20 /* KKMutableNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMutableNumber.m; sourceTree = "<group>"; };
 		DC34B0A517BFDFA100039C20 /* KKNodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNodeController.h; sourceTree = "<group>"; };
 		DC34B0A617BFDFA100039C20 /* KKNodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNodeController.m; sourceTree = "<group>"; };
-		DC34B0A717BFDFA100039C20 /* KKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCompatibility.h; sourceTree = "<group>"; };
-		DC34B0A817BFDFA100039C20 /* KKConfigMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKConfigMacros.h; sourceTree = "<group>"; };
+		DC34B0A717BFDFA100039C20 /* KKFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFramework.h; sourceTree = "<group>"; };
+		DC34B0A817BFDFA100039C20 /* KKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKConfig.h; sourceTree = "<group>"; };
 		DC34B0A917BFDFA100039C20 /* KKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMacros.h; sourceTree = "<group>"; };
 		DC34B0AA17BFDFA100039C20 /* KKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTypes.h; sourceTree = "<group>"; };
 		DC34B0AB17BFDFA100039C20 /* KKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKVersion.h; sourceTree = "<group>"; };
@@ -657,8 +654,6 @@
 		DC34B0BA17BFDFA100039C20 /* KKSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSpriteNode.m; sourceTree = "<group>"; };
 		DC34B0BC17BFDFA100039C20 /* KKContactNotificationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKContactNotificationNode.h; sourceTree = "<group>"; };
 		DC34B0BD17BFDFA100039C20 /* KKContactNotificationNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKContactNotificationNode.m; sourceTree = "<group>"; };
-		DC34B0BE17BFDFA100039C20 /* KKPhysicsDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPhysicsDebugNode.h; sourceTree = "<group>"; };
-		DC34B0BF17BFDFA100039C20 /* KKPhysicsDebugNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPhysicsDebugNode.m; sourceTree = "<group>"; };
 		DC34B0C017BFDFA100039C20 /* KKViewOriginNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKViewOriginNode.h; sourceTree = "<group>"; };
 		DC34B0C117BFDFA100039C20 /* KKViewOriginNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKViewOriginNode.m; sourceTree = "<group>"; };
 		DC34B0C317BFDFA100039C20 /* KKTilemapLayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTilemapLayerNode.h; sourceTree = "<group>"; };
@@ -708,6 +703,10 @@
 		DC34B25E17BFE57500039C20 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 		DC34B25F17BFE57500039C20 /* ZipUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipUtils.h; sourceTree = "<group>"; };
 		DC34B26017BFE57500039C20 /* ZipUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipUtils.m; sourceTree = "<group>"; };
+		DC34B26717BFE72900039C20 /* KKCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCategories.h; sourceTree = "<group>"; };
+		DC34B26917BFE9EC00039C20 /* KKBehaviors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKBehaviors.h; sourceTree = "<group>"; };
+		DC34B26A17BFEA7C00039C20 /* KKNodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKNodes.h; sourceTree = "<group>"; };
+		DC34B26B17BFEB2A00039C20 /* KKExternals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKExternals.h; sourceTree = "<group>"; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -757,6 +756,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC34B26817BFE96E00039C20 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,7 +774,6 @@
 				DCFE4D7317B2B512006675A2 /* CoreGraphics.framework in Frameworks */,
 				DCFE4D6E17B2B4F3006675A2 /* CoreMedia.framework in Frameworks */,
 				DCFE4D6C17B2B4E8006675A2 /* AVFoundation.framework in Frameworks */,
-				DCD7A290178C753D004A0467 /* libz.dylib in Frameworks */,
 				DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */,
 				DCCC619D178C5626009EC802 /* KoboldKit.framework in Frameworks */,
 				DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */,
@@ -863,6 +862,7 @@
 		DC34AFDC17BFDFA100039C20 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				DC34B26B17BFEB2A00039C20 /* KKExternals.h */,
 				DC34AFDD17BFDFA100039C20 /* CGPointExtension */,
 				DC34AFE217BFDFA100039C20 /* CocosDenshion */,
 				DC34AFF117BFDFA100039C20 /* iCade+GameDock */,
@@ -1033,8 +1033,8 @@
 		DC34B06017BFDFA100039C20 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				DC34B0A717BFDFA100039C20 /* KKCompatibility.h */,
-				DC34B0A817BFDFA100039C20 /* KKConfigMacros.h */,
+				DC34B0A717BFDFA100039C20 /* KKFramework.h */,
+				DC34B0A817BFDFA100039C20 /* KKConfig.h */,
 				DC34B0A917BFDFA100039C20 /* KKMacros.h */,
 				DC34B0AA17BFDFA100039C20 /* KKTypes.h */,
 				DC34B0AB17BFDFA100039C20 /* KKVersion.h */,
@@ -1068,6 +1068,7 @@
 		DC34B06617BFDFA100039C20 /* Behaviors */ = {
 			isa = PBXGroup;
 			children = (
+				DC34B26917BFE9EC00039C20 /* KKBehaviors.h */,
 				DC34B06717BFDFA100039C20 /* ContactObserver */,
 				DC34B06C17BFDFA100039C20 /* Items */,
 				DC34B07317BFDFA100039C20 /* Movement */,
@@ -1141,6 +1142,7 @@
 		DC34B08617BFDFA100039C20 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				DC34B26717BFE72900039C20 /* KKCategories.h */,
 				DC34B08717BFDFA100039C20 /* Foundation */,
 				DC34B09217BFDFA100039C20 /* SpriteKit */,
 			);
@@ -1206,6 +1208,7 @@
 		DC34B0AD17BFDFA100039C20 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				DC34B26A17BFEA7C00039C20 /* KKNodes.h */,
 				DC34B0AE17BFDFA100039C20 /* Framework */,
 				DC34B0BB17BFDFA100039C20 /* Misc */,
 				DC34B0C217BFDFA100039C20 /* Tilemap */,
@@ -1237,8 +1240,6 @@
 			children = (
 				DC34B0BC17BFDFA100039C20 /* KKContactNotificationNode.h */,
 				DC34B0BD17BFDFA100039C20 /* KKContactNotificationNode.m */,
-				DC34B0BE17BFDFA100039C20 /* KKPhysicsDebugNode.h */,
-				DC34B0BF17BFDFA100039C20 /* KKPhysicsDebugNode.m */,
 				DC34B0C017BFDFA100039C20 /* KKViewOriginNode.h */,
 				DC34B0C117BFDFA100039C20 /* KKViewOriginNode.m */,
 			);
@@ -1532,7 +1533,7 @@
 				DC34B16E17BFDFA100039C20 /* lua.h in Headers */,
 				DC34B17F17BFDFA100039C20 /* CCProfiling.h in Headers */,
 				DC34B23B17BFDFA200039C20 /* KKTilemapObject.h in Headers */,
-				DC34B1FB17BFDFA200039C20 /* KKCompatibility.h in Headers */,
+				DC34B1FB17BFDFA200039C20 /* KKFramework.h in Headers */,
 				DC34B26417BFE57500039C20 /* ZipUtils.h in Headers */,
 				DC34B13117BFDFA100039C20 /* lctype.h in Headers */,
 				DC34B1B917BFDFA100039C20 /* KKCameraFollowBehavior.h in Headers */,
@@ -1546,7 +1547,6 @@
 				DC34B16117BFDFA100039C20 /* lstring.h in Headers */,
 				DC34B24417BFDFA200039C20 /* KKTilemapTileset.h in Headers */,
 				DC34B22817BFDFA200039C20 /* KKTilemapObjectSpawnDelegate.h in Headers */,
-				DC34B21717BFDFA200039C20 /* KKPhysicsDebugNode.h in Headers */,
 				DC34B14117BFDFA100039C20 /* lgc.h in Headers */,
 				DC34B19B17BFDFA100039C20 /* XMLWriter.h in Headers */,
 				DC34B24717BFDFA200039C20 /* KKTMXReader.h in Headers */,
@@ -1569,7 +1569,7 @@
 				DC34B1FE17BFDFA200039C20 /* KKTypes.h in Headers */,
 				DC34B13917BFDFA100039C20 /* ldo.h in Headers */,
 				DC34B1EC17BFDFA200039C20 /* KKPointArray.h in Headers */,
-				DC34B1FC17BFDFA200039C20 /* KKConfigMacros.h in Headers */,
+				DC34B1FC17BFDFA200039C20 /* KKConfig.h in Headers */,
 				DC34B1E617BFDFA200039C20 /* SKScene+KoboldKit.h in Headers */,
 				DC34B13E17BFDFA100039C20 /* lfunc.h in Headers */,
 				DC34B22017BFDFA200039C20 /* KKTilemapObjectLayerNode.h in Headers */,
@@ -1804,7 +1804,6 @@
 				DC34B14317BFDFA100039C20 /* linit.c in Sources */,
 				DC34B13317BFDFA100039C20 /* ldblib.c in Sources */,
 				DC34B21617BFDFA200039C20 /* KKContactNotificationNode.m in Sources */,
-				DC34B21917BFDFA200039C20 /* KKPhysicsDebugNode.m in Sources */,
 				DC34B16517BFDFA100039C20 /* ltable.c in Sources */,
 				DC34B12E17BFDFA100039C20 /* lcorolib.c in Sources */,
 				DC34B16817BFDFA100039C20 /* ltablib.c in Sources */,
@@ -1915,7 +1914,6 @@
 				DC34B14217BFDFA100039C20 /* linit.c in Sources */,
 				DC34B13217BFDFA100039C20 /* ldblib.c in Sources */,
 				DC34B21517BFDFA200039C20 /* KKContactNotificationNode.m in Sources */,
-				DC34B21817BFDFA200039C20 /* KKPhysicsDebugNode.m in Sources */,
 				DC34B16417BFDFA100039C20 /* ltable.c in Sources */,
 				DC34B12D17BFDFA100039C20 /* lcorolib.c in Sources */,
 				DC34B16717BFDFA100039C20 /* ltablib.c in Sources */,

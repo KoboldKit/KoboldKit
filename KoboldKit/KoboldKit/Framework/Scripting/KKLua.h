@@ -1,6 +1,12 @@
+//
+//  KKLua.h
+//  KoboldKit
+//
+//  Created by Steffen Itterheim on 09.07.13.
+//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
+//
 
 #import <Availability.h>
-
 
 // if compiled as (Objective) C++ code the includes must be inside an extern "C" declaration
 #ifdef __cplusplus

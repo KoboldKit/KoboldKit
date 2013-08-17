@@ -1,13 +1,13 @@
 //
-//  KKConfigMacros.h
+//  KKConfig.h
 //  KoboldKit
 //
 //  Created by Steffen Itterheim on 15.08.13.
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#ifndef KoboldKit_KKConfigMacros_h
-#define KoboldKit_KKConfigMacros_h
+#ifndef KoboldKit_KKConfig_h
+#define KoboldKit_KKConfig_h
 
 
 /** If enabled (1) compiling the framework will print out messages from other developers as compiler warnings
