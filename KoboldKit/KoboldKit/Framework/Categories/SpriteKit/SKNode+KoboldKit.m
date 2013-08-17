@@ -390,7 +390,7 @@
 		return NO;
 	}
 	
-#pragma message "TODO: compare userData in isEqual"
+DEVELOPER_TODO("compare userData in isEqual")
 
 	if (recursive)
 	{
@@ -451,7 +451,7 @@
 @dynamic imageName;
 -(void) setImageName:(NSString *)imageName
 {
-#pragma message "FIXME: only works with Jetpack atlas atm"
+DEVELOPER_FIXME("only works with Jetpack atlas atm")
 	SKTexture* texture = [[SKTextureAtlas atlasNamed:@"Jetpack"] textureNamed:imageName];
 	self.texture = texture;
 	self.size = texture.size;

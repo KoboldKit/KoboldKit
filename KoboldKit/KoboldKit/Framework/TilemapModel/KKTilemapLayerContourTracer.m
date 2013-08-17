@@ -352,7 +352,7 @@ static NSInteger neighborOffsets[8];
 
 -(void) convertSegmentsToPath
 {
-#pragma message "FIXME: create CGPathRef within algorithm"
+DEVELOPER_FIXME("create CGPathRef within algorithm")
 	
 	NSMutableArray* pathSegments = [NSMutableArray arrayWithCapacity:_contourSegments.count];
 	for (KKPointArray* contour in _contourSegments)

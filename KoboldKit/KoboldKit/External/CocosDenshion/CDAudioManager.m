@@ -24,6 +24,7 @@
 
 
 #import "CDAudioManager.h"
+#import "KKMacros.h"
 
 NSString * const kCDN_AudioManagerInitialised = @"kCDN_AudioManagerInitialised";
 
@@ -692,7 +693,7 @@ static BOOL configured = FALSE;
 - (void) cdAudioSourceDidFinishPlaying:(CDLongAudioSource *) audioSource {
 	CDLOGINFO(@"Denshion::CDAudioManager - audio manager got told background music finished");
 	if (backgroundMusicCompletionSelector != nil) {
-		[backgroundMusicCompletionListener performSelector:backgroundMusicCompletionSelector];
+		SUPPRESS_PERFORM_SELECTOR_LEAK_WARNING([backgroundMusicCompletionListener performSelector:backgroundMusicCompletionSelector]);
 	}
 }
 

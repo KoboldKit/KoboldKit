@@ -279,7 +279,7 @@ NSString* stringFromUnsignedInt(unsigned int u)
 
 -(void) writeObject:(KKTilemapObject*)object
 {
-#pragma message "TODO: TMX write ellipse objects"
+DEVELOPER_TODO("TMX write ellipse objects")
 	
 	[_xmlWriter writeStartElement:@"object"];
 	[_xmlWriter writeAttribute:@"name" value:object.name];

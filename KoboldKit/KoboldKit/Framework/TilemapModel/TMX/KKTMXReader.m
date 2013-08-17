@@ -329,7 +329,7 @@
 	((KKTilemapRectangleObject*)_parsingObject).ellipse = YES;
 	_parsingObject.objectType = KKTilemapObjectTypeEllipse;
 
-#pragma message "FIXME: ellipse position/anchor is not correct"
+DEVELOPER_FIXME("ellipse position/anchor is not correct")
 	//_parsingObject.position = CGPointMake(_parsingObject.position.x + _tilemap.gridSize.width, _parsingObject.position.y + _parsingObject.size.height);
 }
 

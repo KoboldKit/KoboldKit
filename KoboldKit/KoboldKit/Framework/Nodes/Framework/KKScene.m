@@ -243,7 +243,7 @@ KKNODE_SHARED_CODE
 
 #pragma mark Touches
 
-#pragma message "FIXME: remove calls to respondsToSelector by separating observers into individual touch event arrays"
+DEVELOPER_FIXME("remove calls to respondsToSelector by separating observers into individual touch event arrays")
 
 #if TARGET_OS_IPHONE
 
@@ -477,7 +477,7 @@ static NSString* const ArchiveKeyForFrameCount = @"frameCount";
 -(id) copyWithZone:(NSZone*)zone
 {
 	KKScene* copy = [super copyWithZone:zone];
-#pragma message "FIXME: this array copy is wrong, will make separate copies of observers!"
+DEVELOPER_FIXME("this array copy is wrong, will make separate copies of observers!")
 	copy->_inputObservers = [[NSMutableArray alloc] initWithArray:_inputObservers copyItems:YES];
 	copy->_sceneUpdateObservers = [[NSMutableArray alloc] initWithArray:_sceneUpdateObservers copyItems:YES];
 	// TODO ...

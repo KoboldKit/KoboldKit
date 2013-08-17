@@ -373,8 +373,8 @@ static NSString* const ArchiveKeyForPaused = @"paused";
 			return NO;
 	}
 	
-#pragma message "TODO: compare model in isEqual"
-#pragma message "TODO: compare userData in isEqual"
+DEVELOPER_TODO("compare model in isEqual")
+DEVELOPER_TODO("compare userData in isEqual")
 	
 	return YES;
 }

@@ -282,6 +282,6 @@
 
 #pragma mark Equality
 
-#pragma message "TODO: model isEqualTo.."
+DEVELOPER_TODO("model isEqualTo..")
 
 @end

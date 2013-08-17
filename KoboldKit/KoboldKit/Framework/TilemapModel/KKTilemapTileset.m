@@ -41,7 +41,7 @@ static NSArray* kPVRImageFileExtensions = nil;
 
 	if (_texture == nil)
 	{
-#pragma message "TODO: tilemap pvr texture load"
+DEVELOPER_TODO("tilemap pvr texture load")
 		/*
 		if (kPVRImageFileExtensions == nil)
 		{
