@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC19539C17C126D600EC526C /* KKEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = DC19539A17C126D600EC526C /* KKEntity.h */; };
+		DC19539D17C126D600EC526C /* KKEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DC19539B17C126D600EC526C /* KKEntity.m */; };
+		DC19539E17C126D600EC526C /* KKEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DC19539B17C126D600EC526C /* KKEntity.m */; };
+		DC1953A417C130AC00EC526C /* KKEntityDynamicsBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1953A217C130AC00EC526C /* KKEntityDynamicsBehavior.h */; };
+		DC1953A517C130AC00EC526C /* KKEntityDynamicsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953A317C130AC00EC526C /* KKEntityDynamicsBehavior.m */; };
+		DC1953A617C130AC00EC526C /* KKEntityDynamicsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953A317C130AC00EC526C /* KKEntityDynamicsBehavior.m */; };
+		DC1953AC17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1953AA17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.h */; };
+		DC1953AD17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953AB17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.m */; };
+		DC1953AE17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953AB17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.m */; };
+		DC1953B017C143FF00EC526C /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1953AF17C143FF00EC526C /* KoboldKit.framework */; };
+		DC1953BA17C15D3800EC526C /* KKItemCollectorBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1953B417C15D3800EC526C /* KKItemCollectorBehavior.h */; };
+		DC1953BB17C15D3800EC526C /* KKItemCollectorBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953B517C15D3800EC526C /* KKItemCollectorBehavior.m */; };
+		DC1953BC17C15D3800EC526C /* KKItemCollectorBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953B517C15D3800EC526C /* KKItemCollectorBehavior.m */; };
+		DC1953BD17C15D3800EC526C /* KKNotifyOnItemCountBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1953B617C15D3800EC526C /* KKNotifyOnItemCountBehavior.h */; };
+		DC1953BE17C15D3800EC526C /* KKNotifyOnItemCountBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953B717C15D3800EC526C /* KKNotifyOnItemCountBehavior.m */; };
+		DC1953BF17C15D3800EC526C /* KKNotifyOnItemCountBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953B717C15D3800EC526C /* KKNotifyOnItemCountBehavior.m */; };
+		DC1953C017C15D3800EC526C /* KKPickupItemBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1953B817C15D3800EC526C /* KKPickupItemBehavior.h */; };
+		DC1953C117C15D3800EC526C /* KKPickupItemBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953B917C15D3800EC526C /* KKPickupItemBehavior.m */; };
+		DC1953C217C15D3800EC526C /* KKPickupItemBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953B917C15D3800EC526C /* KKPickupItemBehavior.m */; };
+		DC1953C617C15DDB00EC526C /* KKControlPadBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1953C417C15DDB00EC526C /* KKControlPadBehavior.h */; };
+		DC1953C717C15DDB00EC526C /* KKControlPadBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953C517C15DDB00EC526C /* KKControlPadBehavior.m */; };
+		DC1953C817C15DDB00EC526C /* KKControlPadBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953C517C15DDB00EC526C /* KKControlPadBehavior.m */; };
+		DC1953D317C15F1A00EC526C /* KKProNodes.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1953CF17C15F1A00EC526C /* KKProNodes.h */; };
+		DC1953D417C15F1A00EC526C /* KKContactNotificationNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1953D117C15F1A00EC526C /* KKContactNotificationNode.h */; };
+		DC1953D517C15F1A00EC526C /* KKContactNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953D217C15F1A00EC526C /* KKContactNotificationNode.m */; };
+		DC1953D617C15F1A00EC526C /* KKContactNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953D217C15F1A00EC526C /* KKContactNotificationNode.m */; };
+		DC1953D717C15FE000EC526C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DC37E8ED17C10B1900A04FCB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD996017C0C8A5008C4F3B /* Reachability.m */; };
 		DCBD9AFC17C0C8A5008C4F3B /* KKProFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD99B717C0C8A5008C4F3B /* KKProFramework.h */; };
 		DCBD9AFF17C0C8A5008C4F3B /* KKProVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD99BA17C0C8A5008C4F3B /* KKProVersion.h */; };
@@ -34,6 +61,26 @@
 
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		DC19539A17C126D600EC526C /* KKEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKEntity.h; sourceTree = "<group>"; };
+		DC19539B17C126D600EC526C /* KKEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKEntity.m; sourceTree = "<group>"; };
+		DC1953A117C12EC200EC526C /* KKProBehaviors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKProBehaviors.h; sourceTree = "<group>"; };
+		DC1953A217C130AC00EC526C /* KKEntityDynamicsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKEntityDynamicsBehavior.h; sourceTree = "<group>"; };
+		DC1953A317C130AC00EC526C /* KKEntityDynamicsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKEntityDynamicsBehavior.m; sourceTree = "<group>"; };
+		DC1953A917C1419C00EC526C /* KKProCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKProCategories.h; sourceTree = "<group>"; };
+		DC1953AA17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KKTilemapNode+KoboldKitPro.h"; sourceTree = "<group>"; };
+		DC1953AB17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KKTilemapNode+KoboldKitPro.m"; sourceTree = "<group>"; };
+		DC1953AF17C143FF00EC526C /* KoboldKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKit.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKit.framework"; sourceTree = "<group>"; };
+		DC1953B417C15D3800EC526C /* KKItemCollectorBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKItemCollectorBehavior.h; sourceTree = "<group>"; };
+		DC1953B517C15D3800EC526C /* KKItemCollectorBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKItemCollectorBehavior.m; sourceTree = "<group>"; };
+		DC1953B617C15D3800EC526C /* KKNotifyOnItemCountBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNotifyOnItemCountBehavior.h; sourceTree = "<group>"; };
+		DC1953B717C15D3800EC526C /* KKNotifyOnItemCountBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNotifyOnItemCountBehavior.m; sourceTree = "<group>"; };
+		DC1953B817C15D3800EC526C /* KKPickupItemBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPickupItemBehavior.h; sourceTree = "<group>"; };
+		DC1953B917C15D3800EC526C /* KKPickupItemBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPickupItemBehavior.m; sourceTree = "<group>"; };
+		DC1953C417C15DDB00EC526C /* KKControlPadBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKControlPadBehavior.h; sourceTree = "<group>"; };
+		DC1953C517C15DDB00EC526C /* KKControlPadBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKControlPadBehavior.m; sourceTree = "<group>"; };
+		DC1953CF17C15F1A00EC526C /* KKProNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProNodes.h; sourceTree = "<group>"; };
+		DC1953D117C15F1A00EC526C /* KKContactNotificationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKContactNotificationNode.h; sourceTree = "<group>"; };
+		DC1953D217C15F1A00EC526C /* KKContactNotificationNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKContactNotificationNode.m; sourceTree = "<group>"; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -72,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1953D717C15FE000EC526C /* SpriteKit.framework in Frameworks */,
+				DC1953B017C143FF00EC526C /* KoboldKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +134,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC19539817C1261600EC526C /* Tilemap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tilemap;
+			sourceTree = "<group>";
+		};
+		DC19539917C126CC00EC526C /* EntityModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC19539A17C126D600EC526C /* KKEntity.h */,
+				DC19539B17C126D600EC526C /* KKEntity.m */,
+			);
+			path = EntityModel;
+			sourceTree = "<group>";
+		};
+		DC19539F17C12EAD00EC526C /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				DC1953A117C12EC200EC526C /* KKProBehaviors.h */,
+				DC1953A017C12EAD00EC526C /* Entity */,
+				DC1953B317C15D3800EC526C /* Items */,
+				DC1953CE17C15F1A00EC526C /* Nodes */,
+				DC1953C317C15DDB00EC526C /* UserInterface */,
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		DC1953A017C12EAD00EC526C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DC1953A217C130AC00EC526C /* KKEntityDynamicsBehavior.h */,
+				DC1953A317C130AC00EC526C /* KKEntityDynamicsBehavior.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DC1953A717C1415900EC526C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DC1953A917C1419C00EC526C /* KKProCategories.h */,
+				DC1953A817C1415900EC526C /* KoboldKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DC1953A817C1415900EC526C /* KoboldKit */ = {
+			isa = PBXGroup;
+			children = (
+				DC1953AA17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.h */,
+				DC1953AB17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.m */,
+			);
+			path = KoboldKit;
+			sourceTree = "<group>";
+		};
+		DC1953B317C15D3800EC526C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				DC1953B417C15D3800EC526C /* KKItemCollectorBehavior.h */,
+				DC1953B517C15D3800EC526C /* KKItemCollectorBehavior.m */,
+				DC1953B617C15D3800EC526C /* KKNotifyOnItemCountBehavior.h */,
+				DC1953B717C15D3800EC526C /* KKNotifyOnItemCountBehavior.m */,
+				DC1953B817C15D3800EC526C /* KKPickupItemBehavior.h */,
+				DC1953B917C15D3800EC526C /* KKPickupItemBehavior.m */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		DC1953C317C15DDB00EC526C /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				DC1953C417C15DDB00EC526C /* KKControlPadBehavior.h */,
+				DC1953C517C15DDB00EC526C /* KKControlPadBehavior.m */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		DC1953CE17C15F1A00EC526C /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				DC1953CF17C15F1A00EC526C /* KKProNodes.h */,
+				DC1953D017C15F1A00EC526C /* Tilemap */,
+			);
+			name = Nodes;
+			path = ../Nodes;
+			sourceTree = "<group>";
+		};
+		DC1953D017C15F1A00EC526C /* Tilemap */ = {
+			isa = PBXGroup;
+			children = (
+				DC1953D117C15F1A00EC526C /* KKContactNotificationNode.h */,
+				DC1953D217C15F1A00EC526C /* KKContactNotificationNode.m */,
+			);
+			path = Tilemap;
+			sourceTree = "<group>";
+		};
 		DC484C18178C40800067DAA4 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +273,10 @@
 				DCBD99B717C0C8A5008C4F3B /* KKProFramework.h */,
 				DCBD99BA17C0C8A5008C4F3B /* KKProVersion.h */,
 				DCBD99BB17C0C8A5008C4F3B /* KKProVersion.m */,
+				DC19539F17C12EAD00EC526C /* Behaviors */,
+				DC1953A717C1415900EC526C /* Categories */,
+				DC19539917C126CC00EC526C /* EntityModel */,
+				DC19539817C1261600EC526C /* Tilemap */,
 				DCBD99F617C0C8A5008C4F3B /* Utility */,
 			);
 			path = Framework;
@@ -167,6 +316,7 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC1953AF17C143FF00EC526C /* KoboldKit.framework */,
 				DCFE4D7117B2B502006675A2 /* CoreMedia.framework */,
 				DCFE4D6F17B2B4FC006675A2 /* AVFoundation.framework */,
 				DCFE4D6D17B2B4F3006675A2 /* CoreMedia.framework */,
@@ -194,11 +344,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1953A417C130AC00EC526C /* KKEntityDynamicsBehavior.h in Headers */,
+				DC1953BA17C15D3800EC526C /* KKItemCollectorBehavior.h in Headers */,
+				DC1953AC17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.h in Headers */,
+				DC1953D317C15F1A00EC526C /* KKProNodes.h in Headers */,
 				DCBD9B5817C0C8A5008C4F3B /* KoboldKitPro.h in Headers */,
 				DCBD9AFF17C0C8A5008C4F3B /* KKProVersion.h in Headers */,
+				DC1953D417C15F1A00EC526C /* KKContactNotificationNode.h in Headers */,
+				DC1953C017C15D3800EC526C /* KKPickupItemBehavior.h in Headers */,
+				DC1953BD17C15D3800EC526C /* KKNotifyOnItemCountBehavior.h in Headers */,
 				DCBD9AFC17C0C8A5008C4F3B /* KKProFramework.h in Headers */,
+				DC1953C617C15DDB00EC526C /* KKControlPadBehavior.h in Headers */,
 				DCBD9B5717C0C8A5008C4F3B /* KoboldKitPro-Prefix.pch in Headers */,
 				DCBD9B4E17C0C8A5008C4F3B /* KKDownloadProjectFiles.h in Headers */,
+				DC19539C17C126D600EC526C /* KKEntity.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +442,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1953A617C130AC00EC526C /* KKEntityDynamicsBehavior.m in Sources */,
+				DC19539E17C126D600EC526C /* KKEntity.m in Sources */,
+				DC1953AE17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.m in Sources */,
 				DCBD9B5017C0C8A5008C4F3B /* KKDownloadProjectFiles.m in Sources */,
+				DC1953BF17C15D3800EC526C /* KKNotifyOnItemCountBehavior.m in Sources */,
 				DCD9CAF017C10A7900535043 /* Reachability.m in Sources */,
+				DC1953C217C15D3800EC526C /* KKPickupItemBehavior.m in Sources */,
+				DC1953C817C15DDB00EC526C /* KKControlPadBehavior.m in Sources */,
 				DCBD9B0117C0C8A5008C4F3B /* KKProVersion.m in Sources */,
+				DC1953D617C15F1A00EC526C /* KKContactNotificationNode.m in Sources */,
+				DC1953BC17C15D3800EC526C /* KKItemCollectorBehavior.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +460,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1953A517C130AC00EC526C /* KKEntityDynamicsBehavior.m in Sources */,
+				DC19539D17C126D600EC526C /* KKEntity.m in Sources */,
+				DC1953AD17C1421D00EC526C /* KKTilemapNode+KoboldKitPro.m in Sources */,
 				DCBD9B4F17C0C8A5008C4F3B /* KKDownloadProjectFiles.m in Sources */,
+				DC1953BE17C15D3800EC526C /* KKNotifyOnItemCountBehavior.m in Sources */,
 				DC37E8ED17C10B1900A04FCB /* Reachability.m in Sources */,
+				DC1953C117C15D3800EC526C /* KKPickupItemBehavior.m in Sources */,
+				DC1953C717C15DDB00EC526C /* KKControlPadBehavior.m in Sources */,
 				DCBD9B0017C0C8A5008C4F3B /* KKProVersion.m in Sources */,
+				DC1953D517C15F1A00EC526C /* KKContactNotificationNode.m in Sources */,
+				DC1953BB17C15D3800EC526C /* KKItemCollectorBehavior.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +483,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -328,6 +507,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -408,16 +591,19 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../**";
+				HEADER_SEARCH_PATHS = "../KoboldKitFree/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -453,16 +639,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KoboldKitPro-Prefix.pch";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../**";
+				HEADER_SEARCH_PATHS = "../KoboldKitFree/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = macosx;
 				TARGETED_DEVICE_FAMILY = "1,2";

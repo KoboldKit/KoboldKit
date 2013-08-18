@@ -25,6 +25,7 @@
 	if (self)
 	{
 		_enabled = YES;
+		[self didInitialize];
 	}
 	return self;
 }
@@ -43,8 +44,18 @@
 	_key = [key copy];
 }
 
+-(void) removeFromNode
+{
+	[self.node removeBehavior:self];
+}
+
+#pragma mark Subclass overrides
+-(void) didInitialize
+{
+}
+
 -(void) didJoinController
-{	
+{
 }
 
 -(void) didLeaveController
@@ -53,12 +64,6 @@
 
 -(void) didChangeEnabledState
 {
-	
-}
-
--(void) removeFromNode
-{
-	[self.node removeBehavior:self];
 }
 
 #pragma mark Notifications

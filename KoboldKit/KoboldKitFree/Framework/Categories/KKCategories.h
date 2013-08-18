@@ -6,9 +6,6 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#ifndef KoboldKit_KKCategories_h
-#define KoboldKit_KKCategories_h
-
 // Foundation
 #import "NSBundle+KoboldKit.h"
 #import "NSCoder+KoboldKit.h"
@@ -20,6 +17,3 @@
 #import "SKNode+KoboldKit.h"
 #import "SKScene+KoboldKit.h"
 #import "SKAction+KoboldKit.h"
-
-
-#endif

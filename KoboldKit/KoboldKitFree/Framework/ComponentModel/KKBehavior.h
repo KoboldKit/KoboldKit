@@ -52,6 +52,8 @@
 
 /** @name Behavior Events */
 
+/** Sent when the behavior is first created. */
+-(void) didInitialize;
 /** Sent when the behavior was added to a node. */
 -(void) didJoinController;
 /** Sent when the behavior was removed from a node. */

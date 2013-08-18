@@ -6,9 +6,6 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#ifndef KoboldKit_KKNodes_h
-#define KoboldKit_KKNodes_h
-
 // import all node headers here
 
 // framework
@@ -23,5 +20,3 @@
 #import "KKTilemapNode.h"
 #import "KKTilemapTileLayerNode.h"
 #import "KKTilemapObjectLayerNode.h"
-
-#endif

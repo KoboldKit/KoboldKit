@@ -32,14 +32,10 @@
  * THE SOFTWARE.
  */
 
-#ifndef KoboldKitDemo_KKMacros_h
-#define KoboldKitDemo_KKMacros_h
-
 #import "KKConfig.h"
 #import "float.h"
 
 /** @file KKMacros.h */
-
 
 /** Enabling developer mode adds pragma messages for things one could fix, improve, add. */
 
@@ -95,5 +91,3 @@ _Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")     \
 code;                                                                   \
 _Pragma("clang diagnostic pop")                                         \
 
-
-#endif

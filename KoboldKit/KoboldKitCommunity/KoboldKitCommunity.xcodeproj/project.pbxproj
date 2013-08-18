@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1953B217C1443400EC526C /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1953B117C1443400EC526C /* KoboldKit.framework */; };
 		DCBD9B5717C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DCBD9A0017C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch */; };
 		DCBD9B5817C0C8A5008C4F3B /* KoboldKitCommunity.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD9A0117C0C8A5008C4F3B /* KoboldKitCommunity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCD9C89817C105F400535043 /* KKCommunityExternals.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C88A17C105F400535043 /* KKCommunityExternals.h */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		DC1953B117C1443400EC526C /* KoboldKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKit.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKit.framework"; sourceTree = "<group>"; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1953B217C1443400EC526C /* KoboldKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +203,7 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC1953B117C1443400EC526C /* KoboldKit.framework */,
 				DCFE4D7117B2B502006675A2 /* CoreMedia.framework */,
 				DCFE4D6F17B2B4FC006675A2 /* AVFoundation.framework */,
 				DCFE4D6D17B2B4F3006675A2 /* CoreMedia.framework */,
@@ -340,6 +344,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -360,6 +368,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -440,9 +452,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -485,9 +499,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KoboldKitCommunity-Prefix.pch";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;

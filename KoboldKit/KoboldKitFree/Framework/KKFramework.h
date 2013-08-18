@@ -10,10 +10,6 @@
 /** This header includes all the most commonly needed headers and 
  typedefs SK classes that haven't been subclassed yet for forward compatibility. */
 
-
-#ifndef KoboldKit_KKFramework_h
-#define KoboldKit_KKFramework_h
-
 #import <Availability.h>
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
@@ -70,5 +66,3 @@ typedef SKPhysicsJointPin KKPhysicsJointPin;
 typedef SKPhysicsJointSliding KKPhysicsJointSliding;
 typedef SKPhysicsJointSpring KKPhysicsJointSpring;
 typedef SKPhysicsWorld KKPhysicsWorld;
-
-#endif

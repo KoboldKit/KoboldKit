@@ -6,9 +6,6 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#ifndef KoboldKit_KKExternals_h
-#define KoboldKit_KKExternals_h
-
 // import all external headers here
 #import "CCProfiling.h"
 #import "CGPointExtension.h"
@@ -31,5 +28,3 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif // __cplusplus
-
-#endif

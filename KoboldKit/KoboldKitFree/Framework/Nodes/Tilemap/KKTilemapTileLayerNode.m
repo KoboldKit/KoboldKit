@@ -86,8 +86,8 @@
 {
 	// prevent flicker, particularly when tilesets have no spacing between tiles
 	// does allow .5 coords for pixel-precision positioning on Retina devices
-	position.x = (int)(position.x * 2.0) / 2.0;
-	position.y = (int)(position.y * 2.0) / 2.0;
+	position.x = round(position.x * 2.0) / 2.0;
+	position.y = round(position.y * 2.0) / 2.0;
 	[super setPosition:position];
 }
 

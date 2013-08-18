@@ -46,6 +46,16 @@
 		DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC18B126178C7E9300641A6D /* Images-Mac.xcassets */; };
 		DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */; };
 		DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */; };
+		DC19538317C1248C00EC526C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538217C1248C00EC526C /* OpenAL.framework */; };
+		DC19538717C124A500EC526C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538617C124A500EC526C /* OpenAL.framework */; };
+		DC19538A17C124E800EC526C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538817C124E800EC526C /* GameController.framework */; };
+		DC19538B17C124E800EC526C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538917C124E800EC526C /* GameKit.framework */; };
+		DC19538E17C124F000EC526C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538C17C124F000EC526C /* GameController.framework */; };
+		DC19538F17C124F000EC526C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538D17C124F000EC526C /* GameKit.framework */; };
+		DC19539117C124F600EC526C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19539017C124F600EC526C /* CoreMotion.framework */; };
+		DC19539317C1251900EC526C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19539217C1251900EC526C /* UIKit.framework */; };
+		DC19539517C1252300EC526C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19539417C1252300EC526C /* Cocoa.framework */; };
+		DC19539717C1254600EC526C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19539617C1254600EC526C /* AppKit.framework */; };
 		DC25515217B27C0A0078151C /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC25515117B27C0A0078151C /* ATTRIBUTIONS */; };
 		DC25515317B27C0A0078151C /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC25515117B27C0A0078151C /* ATTRIBUTIONS */; };
 		DC25515617B27C590078151C /* suspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25515517B27C590078151C /* suspense.mp3 */; };
@@ -81,7 +91,6 @@
 		DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
 		DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
 		DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */; };
-		DCD11E37178C522300FBC406 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
 		DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD11E3C178C522300FBC406 /* InfoPlist.strings */; };
 		DCD11E40178C522300FBC406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD11E3F178C522300FBC406 /* main.m */; };
@@ -98,7 +107,6 @@
 		DCD7EC4D178C573500BBAFB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC49178C573500BBAFB0 /* ViewController.m */; };
 		DCD7EC53178C57FC00BBAFB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
 		DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
-		DCD7EC55178C57FC00BBAFB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
 		DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DCD9C8B517C1070400535043 /* libKoboldKitCommunity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */; };
 		DCDC593317BE2D980018AB6F /* DemoStage002_DepthTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCDC592F17BE2D980018AB6F /* DemoStage002_DepthTest.tmx */; };
@@ -158,6 +166,16 @@
 		DC18B123178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-iOS.xcassets"; sourceTree = "<group>"; };
 		DC18B126178C7E9300641A6D /* Images-Mac.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-Mac.xcassets"; sourceTree = "<group>"; };
+		DC19538217C1248C00EC526C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
+		DC19538617C124A500EC526C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		DC19538817C124E800EC526C /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		DC19538917C124E800EC526C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		DC19538C17C124F000EC526C /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		DC19538D17C124F000EC526C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		DC19539017C124F600EC526C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		DC19539217C1251900EC526C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DC19539417C1252300EC526C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DC19539617C1254600EC526C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DC25515117B27C0A0078151C /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
 		DC25515517B27C590078151C /* suspense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suspense.mp3; sourceTree = "<group>"; };
 		DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WeltHerrschererTheme1.mp3; sourceTree = "<group>"; };
@@ -222,15 +240,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC19539717C1254600EC526C /* AppKit.framework in Frameworks */,
+				DC19539517C1252300EC526C /* Cocoa.framework in Frameworks */,
+				DC19538A17C124E800EC526C /* GameController.framework in Frameworks */,
+				DC19538B17C124E800EC526C /* GameKit.framework in Frameworks */,
 				DC37E8F617C10B5D00A04FCB /* KoboldKitCommunity.framework in Frameworks */,
 				DC37E8F417C10B5900A04FCB /* KoboldKitPro.framework in Frameworks */,
 				DC0DA03D17C013FE00216338 /* KoboldKit.framework in Frameworks */,
 				DCFE4D7317B2B512006675A2 /* CoreGraphics.framework in Frameworks */,
 				DCFE4D6E17B2B4F3006675A2 /* CoreMedia.framework in Frameworks */,
 				DCFE4D6C17B2B4E8006675A2 /* AVFoundation.framework in Frameworks */,
+				DC19538717C124A500EC526C /* OpenAL.framework in Frameworks */,
 				DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */,
 				DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */,
-				DCD11E37178C522300FBC406 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +260,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC19539317C1251900EC526C /* UIKit.framework in Frameworks */,
+				DC19539117C124F600EC526C /* CoreMotion.framework in Frameworks */,
+				DC19538E17C124F000EC526C /* GameController.framework in Frameworks */,
+				DC19538F17C124F000EC526C /* GameKit.framework in Frameworks */,
 				DCD9C8B517C1070400535043 /* libKoboldKitCommunity.a in Frameworks */,
 				DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */,
 				DC0DA03C17C012E500216338 /* libKoboldKit.a in Frameworks */,
@@ -246,7 +272,7 @@
 				DCD7A292178C7545004A0467 /* libz.dylib in Frameworks */,
 				DC042A83178C5A06009FDBF8 /* SystemConfiguration.framework in Frameworks */,
 				DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */,
-				DCD7EC55178C57FC00BBAFB0 /* UIKit.framework in Frameworks */,
+				DC19538317C1248C00EC526C /* OpenAL.framework in Frameworks */,
 				DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */,
 				DCD7EC53178C57FC00BBAFB0 /* Foundation.framework in Frameworks */,
 			);
@@ -407,6 +433,16 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC19539617C1254600EC526C /* AppKit.framework */,
+				DC19539417C1252300EC526C /* Cocoa.framework */,
+				DC19539217C1251900EC526C /* UIKit.framework */,
+				DC19539017C124F600EC526C /* CoreMotion.framework */,
+				DC19538C17C124F000EC526C /* GameController.framework */,
+				DC19538D17C124F000EC526C /* GameKit.framework */,
+				DC19538817C124E800EC526C /* GameController.framework */,
+				DC19538917C124E800EC526C /* GameKit.framework */,
+				DC19538617C124A500EC526C /* OpenAL.framework */,
+				DC19538217C1248C00EC526C /* OpenAL.framework */,
 				DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */,
 				DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */,
 				DCD9C8B017C106FE00535043 /* KoboldKitCommunity.framework */,
@@ -728,6 +764,7 @@
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F0686E86-B01A-4F18-82F8-D096B7E6EA9E";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -742,6 +779,7 @@
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F0686E86-B01A-4F18-82F8-D096B7E6EA9E";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

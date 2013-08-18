@@ -6,9 +6,6 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#ifndef KoboldKit_KKArcadeInputState_h
-#define KoboldKit_KKArcadeInputState_h
-
 #import "CGVectorExtension.h"
 
 /** @file KKArcadeInputState.h */
@@ -123,5 +120,3 @@ CG_INLINE CGVector vectorFromJoystickState(KKArcadeInputState state)
 {
 	return vectorFromJoystickStateAndPlayer(state, 1);
 }
-
-#endif

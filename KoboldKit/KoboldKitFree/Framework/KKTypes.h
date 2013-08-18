@@ -4,9 +4,6 @@
 //
 //
 
-#ifndef KoboldKitLibrary_KTTypes_h
-#define KoboldKitLibrary_KTTypes_h
-
 /** @file KKTypes.h */
 
 #import "CGPointExtension.h"
@@ -74,4 +71,3 @@ static inline CGRect rectFromString(NSString* pointString)
 #endif
 }
 
-#endif
