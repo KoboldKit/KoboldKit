@@ -78,6 +78,8 @@
 		DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
 		DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
+		DCA8449617C10239000C63F2 /* KoboldKitPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */; };
+		DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */; };
 		DCD11E37178C522300FBC406 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
 		DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD11E3C178C522300FBC406 /* InfoPlist.strings */; };
@@ -176,6 +178,8 @@
 		DC8EED1D17A40788000C1995 /* objectTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTemplates.lua; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01_Steffen.tmx; sourceTree = "<group>"; };
+		DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitPro.framework; path = "../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitPro.framework"; sourceTree = "<group>"; };
+		DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKoboldKitPro.a; path = "KoboldKit/KoboldKitPro/build/Debug-iphoneos/libKoboldKitPro.a"; sourceTree = "<group>"; };
 		DCCC619C178C560B009EC802 /* Super_Stick_Spy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Super_Stick_Spy-Prefix.pch"; sourceTree = "<group>"; };
 		DCD11E36178C522300FBC406 /* Super_Stick_Spy-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super_Stick_Spy-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD11E3D178C522300FBC406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA8449617C10239000C63F2 /* KoboldKitPro.framework in Frameworks */,
 				DC0DA03D17C013FE00216338 /* KoboldKit.framework in Frameworks */,
 				DCFE4D7317B2B512006675A2 /* CoreGraphics.framework in Frameworks */,
 				DCFE4D6E17B2B4F3006675A2 /* CoreMedia.framework in Frameworks */,
@@ -227,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */,
 				DC0DA03C17C012E500216338 /* libKoboldKit.a in Frameworks */,
 				DCFE4D7217B2B502006675A2 /* CoreMedia.framework in Frameworks */,
 				DCFE4D7017B2B4FC006675A2 /* AVFoundation.framework in Frameworks */,
@@ -394,6 +400,8 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */,
+				DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */,
 				DCFE4D7117B2B502006675A2 /* CoreMedia.framework */,
 				DCFE4D6F17B2B4FC006675A2 /* AVFoundation.framework */,
 				DCFE4D6D17B2B4F3006675A2 /* CoreMedia.framework */,
@@ -667,6 +675,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
 				);
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -676,7 +685,6 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-Mac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -694,12 +702,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
 				);
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-Mac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -720,7 +728,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -739,7 +746,6 @@
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
-				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -786,6 +792,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -824,6 +831,7 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = macosx;
 				TARGETED_DEVICE_FAMILY = "1,2";

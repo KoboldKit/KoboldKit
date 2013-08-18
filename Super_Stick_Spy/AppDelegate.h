@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <KoboldKit/KoboldKit.h>
+#import "KKAppDelegate.h"
 
 @interface AppDelegate : KKAppDelegate
 

@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <KoboldKit/KoboldKit.h>
 #import "AppDelegate.h"
 
 int main(int argc, char * argv[])

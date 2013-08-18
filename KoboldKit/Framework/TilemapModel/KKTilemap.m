@@ -6,22 +6,8 @@
 //
 //
 
-
-
 #import "KKTilemap.h"
-#import "KKTilemapTileset.h"
-#import "KKTilemapProperties.h"
-#import "KKTilemapTileset.h"
-#import "KKTilemapLayer.h"
-#import "KKTilemapLayerTiles.h"
-#import "KKTilemapObject.h"
-#import "KKTMXReader.h"
-#import "KKTMXWriter.h"
-#import "KKMacros.h"
 #import "KKClassVarSetter.h"
-
-#import "CGPointExtension.h"
-#import "KoboldKit.h"
 
 #pragma mark KTTilemap
 

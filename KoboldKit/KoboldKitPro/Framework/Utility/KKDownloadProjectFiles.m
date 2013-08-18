@@ -92,7 +92,7 @@
 	[NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
 	if (error)
 	{
-		LOG_EXPR(error);
+		NSLog(@"ERROR: %@", error);
 		return YES;
 	}
 	
