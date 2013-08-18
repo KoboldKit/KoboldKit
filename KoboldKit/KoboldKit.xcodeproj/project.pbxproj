@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DC34B26817BFE96E00039C20 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4DE928176CA4EB003E4087 /* libz.dylib */; };
-		DCBD9A0217C0C8A5008C4F3B /* index.appledoc in Resources */ = {isa = PBXBuildFile; fileRef = DCBD98F317C0C8A5008C4F3B /* index.appledoc */; };
-		DCBD9A0317C0C8A5008C4F3B /* Introduction-to-KoboldKit-template.appledoc in Resources */ = {isa = PBXBuildFile; fileRef = DCBD98F417C0C8A5008C4F3B /* Introduction-to-KoboldKit-template.appledoc */; };
 		DCBD9A0417C0C8A5008C4F3B /* CGPointExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD98F717C0C8A5008C4F3B /* CGPointExtension.h */; };
 		DCBD9A0517C0C8A5008C4F3B /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD98F817C0C8A5008C4F3B /* CGPointExtension.m */; };
 		DCBD9A0617C0C8A5008C4F3B /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD98F817C0C8A5008C4F3B /* CGPointExtension.m */; };
@@ -1344,8 +1342,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBD9A0317C0C8A5008C4F3B /* Introduction-to-KoboldKit-template.appledoc in Resources */,
-				DCBD9A0217C0C8A5008C4F3B /* index.appledoc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

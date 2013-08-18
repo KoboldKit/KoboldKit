@@ -1,7 +1,7 @@
 KoboldKit
 =========
 
-Kobold Kit is a game engine built on Sprite Kit. It adds additional features, flexibility, convenience, blabla…. :)
+Kobold Kit is a game engine built on Sprite Kit. It adds additional features, flexibility, convenience, etc etc…. :)
 
 Links
 -----
@@ -15,29 +15,6 @@ Report Issues: https://github.com/LearnCocos2D/KoboldKit/issues
 Discuss: http://koboldkit.uservoice.com (PLEASE refrain from referencing Sprite Kit classes, features, etc, even indirectly until the NDA is lifted)
 
 
-Status
-------
-
-Work in progress. Needs testing. The demo project will become a starter kit template for a tilemap platfomer game showcasing cool Kobold Kit features.
-
-Current/Next Tasks:
-- more demo game features (controls, items, etc)
-
-Recently completed:
-- configuration files & Lua
-- refactored project to framework
-- Mac OS X version
-- development server file transfer
-- tilemap collision countour tracing for physics
-- world camera node (now a behavior)
-- tilemap scrolling API
-- virtual joypad
-- port Tilemap renderer from KT
-- port TMX Reader/Writer from KT
-- NSCoding/NSCopying compliance
-- Controller, Model and Behaviors added (framework)
-- push/pop scenes
-
 How to Help
 ------
 
@@ -48,11 +25,6 @@ Try it out, ask questions about things that aren't obvious, make suggestions, re
 Let's keep it simple: use the issue tracker for bug reports, suggestions AND questions:
 https://github.com/LearnCocos2D/KoboldKit/issues
 
-No need to report the following:
-- missing/spotty documentation (will get another pass before release)
-- anything related to the "current/next tasks" list (it's work in progress)
-- Mac support (waiting for a 10.0 prerelease build with fewer potentially catastrophic issues like the login deadlock)
-
 Overview
 ------
 
@@ -61,30 +33,29 @@ Nodes are extended via KKNodeController. The controller provides KKNodeModel and
 KKNodeBehavior purpose:
 - add game logic (behavior) to any node without subclassing
 - should be used whenever custom actions won't suffice (ie internal state, event handling, etc)
-- if used well, will result in highly reusable code (goal is to have a library of prebuilt behaviors)
+- if used well, will result in highly reusable code (library of prebuilt behaviors)
 
 Example: button behavior. Added to any node, turns it into a touch/clickable button like a CCMenu item.
+Or: KKRemoveOnContactBehavior. Automatically removes the node when it contacts with another physics body.
 
-KKNodeModel purpose:
-- storage for keyed variables (variables by name)
-- these variables are automatically coded/copied
-- again: no subclassing just to add variables, and coding/copying is automatic
-
-Subclasses of models are intended to host larger amounts of data and business logic. For example a custom model could do:
+Behaviors can also host larger amounts of data and game logic. For example a custom behavior could:
 - generate a collision map from a tilemap
 - use the collision map to calculate and return a path (pathfinding)
 - store the world locations of world actors (enemies, resources, etc)
 - provide interface for game AI to find nearest location of resource, or enemy "hotspots" to avoid
 - provide interface to check for collisions or other properties (ie type of terrain an such)
 
-Again the idea is to be able to re-use the same model for another tilemap, perhaps even another project.
+KKNodeModel purpose:
+- storage for keyed variables (variables by name)
+- these variables are automatically coded/copied
+- again: no subclassing needed to merely add variables, and coding/copying is automatic
+
+Note: for all intents and purposes the model can be seen as a data storage layer for behaviors (and the node)
+with which a node's behaviors can exchange information without having to know about each other.
 
 
 KKScene purpose:
 - act as contact delegate and dispatcher
 - act as input delegate and dispatcher
 
-
 This is just a rough description. More details as things move forward.
-
-PS: documentation use appledoc (html & docset), check this preview: http://cl.ly/image/3d3f2P0w2C1y
