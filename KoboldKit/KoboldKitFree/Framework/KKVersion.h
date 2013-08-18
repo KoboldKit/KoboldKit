@@ -9,4 +9,4 @@
 /** @file KKVersion.h */
 
 /** Returns the Kobold Kit version as string. */
-NSString* kkVersionString();
+NSString* koboldKitVersion();

@@ -28,8 +28,6 @@
 	
 	[self swizzleMethods];
 
-	NSLog(@"KKView - %@", kkVersionString());
-	
 	NSAssert1([self.kkView isKindOfClass:[KKView class]],
 			  @"KKViewController: view must be of class KKView, but its class is: %@. You may need to change this in your code or in Interface Builder (Identity Inspector -> Custom Class).",
 			  NSStringFromClass([self.kkView class]));

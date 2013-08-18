@@ -6,7 +6,7 @@
 
 #import "KKVersion.h"
 
-NSString* kkVersionString()
+NSString* koboldKitVersion()
 {
-	return @"Kobold Kit™ 0x7777";
+	return @"Kobold Kit™ v7.0";
 }

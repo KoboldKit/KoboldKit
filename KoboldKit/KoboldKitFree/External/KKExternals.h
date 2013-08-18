@@ -11,7 +11,6 @@
 
 // import all external headers here
 #import "CCProfiling.h"
-#import "CDSimpleAudioEngine.h"
 #import "CGPointExtension.h"
 #import "CGVectorExtension.h"
 #import "KKArcadeInputState.h"
@@ -31,5 +30,9 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif // __cplusplus
+
+// not normally included but available when you need it:
+//#import "CocosDenshion.h"
+//#import "CDSimpleAudioEngine.h"
 
 #endif

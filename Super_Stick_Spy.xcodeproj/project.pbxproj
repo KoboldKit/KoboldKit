@@ -72,13 +72,14 @@
 		DC25519A17B2894D0078151C /* checkpoint.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519817B2894D0078151C /* checkpoint.wav */; };
 		DC2DD46617ABEA06000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 		DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
+		DC37E8F417C10B5900A04FCB /* KoboldKitPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */; };
+		DC37E8F617C10B5D00A04FCB /* KoboldKitCommunity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */; };
 		DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
 		DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
 		DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
 		DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
 		DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
-		DCA8449617C10239000C63F2 /* KoboldKitPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */; };
 		DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */; };
 		DCD11E37178C522300FBC406 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC484C16178C40800067DAA4 /* Cocoa.framework */; };
 		DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
@@ -99,6 +100,7 @@
 		DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 		DCD7EC55178C57FC00BBAFB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAF1769FD0A00F307CD /* UIKit.framework */; };
 		DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
+		DCD9C8B517C1070400535043 /* libKoboldKitCommunity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */; };
 		DCDC593317BE2D980018AB6F /* DemoStage002_DepthTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCDC592F17BE2D980018AB6F /* DemoStage002_DepthTest.tmx */; };
 		DCDC593417BE2D980018AB6F /* DemoStage002_DepthTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCDC592F17BE2D980018AB6F /* DemoStage002_DepthTest.tmx */; };
 		DCDC593517BE2D980018AB6F /* DemoStage003.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCDC593017BE2D980018AB6F /* DemoStage003.tmx */; };
@@ -168,6 +170,7 @@
 		DC25518117B285C50078151C /* teleport.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = teleport.wav; sourceTree = "<group>"; };
 		DC25519517B287810078151C /* respawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = respawn.wav; sourceTree = "<group>"; };
 		DC25519817B2894D0078151C /* checkpoint.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = checkpoint.wav; sourceTree = "<group>"; };
+		DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitCommunity.framework; path = "../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitCommunity.framework"; sourceTree = "<group>"; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -179,7 +182,7 @@
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01_Steffen.tmx; sourceTree = "<group>"; };
 		DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitPro.framework; path = "../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitPro.framework"; sourceTree = "<group>"; };
-		DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKoboldKitPro.a; path = "KoboldKit/KoboldKitPro/build/Debug-iphoneos/libKoboldKitPro.a"; sourceTree = "<group>"; };
+		DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitPro.a; path = "KoboldKit/KoboldKitPro/build/Debug-iphoneos/libKoboldKitPro.a"; sourceTree = "<group>"; };
 		DCCC619C178C560B009EC802 /* Super_Stick_Spy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Super_Stick_Spy-Prefix.pch"; sourceTree = "<group>"; };
 		DCD11E36178C522300FBC406 /* Super_Stick_Spy-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super_Stick_Spy-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD11E3D178C522300FBC406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 		DCD7EC48178C573500BBAFB0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DCD7EC49178C573500BBAFB0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DCD7EC52178C57FC00BBAFB0 /* Super_Stick_Spy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super_Stick_Spy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD9C8B017C106FE00535043 /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitCommunity.framework; path = KoboldKit/KoboldKitCommunity/build/Debug/KoboldKitCommunity.framework; sourceTree = "<group>"; };
+		DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitCommunity.a; path = "KoboldKit/KoboldKitCommunity/build/Debug-iphoneos/libKoboldKitCommunity.a"; sourceTree = "<group>"; };
 		DCDB338A178D808400C13739 /* PlayerCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCharacter.h; sourceTree = "<group>"; };
 		DCDB338B178D808400C13739 /* PlayerCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCharacter.m; sourceTree = "<group>"; };
 		DCDC592F17BE2D980018AB6F /* DemoStage002_DepthTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStage002_DepthTest.tmx; sourceTree = "<group>"; };
@@ -217,7 +222,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA8449617C10239000C63F2 /* KoboldKitPro.framework in Frameworks */,
+				DC37E8F617C10B5D00A04FCB /* KoboldKitCommunity.framework in Frameworks */,
+				DC37E8F417C10B5900A04FCB /* KoboldKitPro.framework in Frameworks */,
 				DC0DA03D17C013FE00216338 /* KoboldKit.framework in Frameworks */,
 				DCFE4D7317B2B512006675A2 /* CoreGraphics.framework in Frameworks */,
 				DCFE4D6E17B2B4F3006675A2 /* CoreMedia.framework in Frameworks */,
@@ -232,6 +238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD9C8B517C1070400535043 /* libKoboldKitCommunity.a in Frameworks */,
 				DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */,
 				DC0DA03C17C012E500216338 /* libKoboldKit.a in Frameworks */,
 				DCFE4D7217B2B502006675A2 /* CoreMedia.framework in Frameworks */,
@@ -400,6 +407,9 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */,
+				DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */,
+				DCD9C8B017C106FE00535043 /* KoboldKitCommunity.framework */,
 				DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */,
 				DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */,
 				DCFE4D7117B2B502006675A2 /* CoreMedia.framework */,
@@ -674,7 +684,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
 					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
 				);
 				GCC_FAST_MATH = YES;
@@ -701,7 +710,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
 					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
 				);
 				GCC_FAST_MATH = YES;

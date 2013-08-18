@@ -9,11 +9,11 @@
 // GLOBAL HEADER IMPORTS
 
 // headers
-#import "KKProFramework.h"
-#import "KKProVersion.h"
+#import "KKCommunityFramework.h"
+#import "KKCommunityVersion.h"
 
 // staging headers which include all other headers of their module
-#import "KKProExternals.h"
-
-// individual class headers
-#import "KKDownloadProjectFiles.h"
+#import "KKCommunityExternals.h"
+#import "KKCommunityBehaviors.h"
+#import "KKCommunityCategories.h"
+#import "KKCommunityNodes.h"

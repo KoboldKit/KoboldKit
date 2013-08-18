@@ -15,6 +15,10 @@
 -(void) presentFirstScene
 {
 	[super presentFirstScene];
+
+	NSLog(@"%@", koboldKitVersion());
+	NSLog(@"%@", koboldKitProVersion());
+	NSLog(@"%@", koboldKitCommunityVersion());
 	
 	MenuScene* menuScene = [MenuScene sceneWithSize:self.view.bounds.size];
 	[self.kkView presentScene:menuScene];

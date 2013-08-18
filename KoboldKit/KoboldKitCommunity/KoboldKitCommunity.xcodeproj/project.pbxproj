@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC37E8ED17C10B1900A04FCB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD996017C0C8A5008C4F3B /* Reachability.m */; };
-		DCBD9AFC17C0C8A5008C4F3B /* KKProFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD99B717C0C8A5008C4F3B /* KKProFramework.h */; };
-		DCBD9AFF17C0C8A5008C4F3B /* KKProVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD99BA17C0C8A5008C4F3B /* KKProVersion.h */; };
-		DCBD9B0017C0C8A5008C4F3B /* KKProVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD99BB17C0C8A5008C4F3B /* KKProVersion.m */; };
-		DCBD9B0117C0C8A5008C4F3B /* KKProVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD99BB17C0C8A5008C4F3B /* KKProVersion.m */; };
-		DCBD9B4E17C0C8A5008C4F3B /* KKDownloadProjectFiles.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD99F917C0C8A5008C4F3B /* KKDownloadProjectFiles.h */; };
-		DCBD9B4F17C0C8A5008C4F3B /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD99FA17C0C8A5008C4F3B /* KKDownloadProjectFiles.m */; };
-		DCBD9B5017C0C8A5008C4F3B /* KKDownloadProjectFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD99FA17C0C8A5008C4F3B /* KKDownloadProjectFiles.m */; };
-		DCBD9B5717C0C8A5008C4F3B /* KoboldKitPro-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DCBD9A0017C0C8A5008C4F3B /* KoboldKitPro-Prefix.pch */; };
-		DCBD9B5817C0C8A5008C4F3B /* KoboldKitPro.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD9A0117C0C8A5008C4F3B /* KoboldKitPro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCD9CAF017C10A7900535043 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD996017C0C8A5008C4F3B /* Reachability.m */; };
+		DCBD9B5717C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DCBD9A0017C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch */; };
+		DCBD9B5817C0C8A5008C4F3B /* KoboldKitCommunity.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD9A0117C0C8A5008C4F3B /* KoboldKitCommunity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCD9C89817C105F400535043 /* KKCommunityExternals.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C88A17C105F400535043 /* KKCommunityExternals.h */; };
+		DCD9C89917C105F400535043 /* KKCommunityBehaviors.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C88D17C105F400535043 /* KKCommunityBehaviors.h */; };
+		DCD9C89A17C105F400535043 /* KKCommunityCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C89017C105F400535043 /* KKCommunityCategories.h */; };
+		DCD9C89B17C105F400535043 /* KKCommunityFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C89217C105F400535043 /* KKCommunityFramework.h */; };
+		DCD9C89C17C105F400535043 /* KKCommunityVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C89317C105F400535043 /* KKCommunityVersion.h */; };
+		DCD9C89D17C105F400535043 /* KKCommunityVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C89417C105F400535043 /* KKCommunityVersion.m */; };
+		DCD9C89E17C105F400535043 /* KKCommunityVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C89417C105F400535043 /* KKCommunityVersion.m */; };
+		DCD9C89F17C105F400535043 /* KKCommunityNodes.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C89617C105F400535043 /* KKCommunityNodes.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,24 +37,21 @@
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DC484C1B178C40800067DAA4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		DC484C43178C40BB0067DAA4 /* KoboldKitPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KoboldKitPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC484C6B178C418C0067DAA4 /* libKoboldKitPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKitPro.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC484C43178C40BB0067DAA4 /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KoboldKitCommunity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC484C6B178C418C0067DAA4 /* libKoboldKitCommunity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKitCommunity.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC484CE3178C465E0067DAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DCBD98F317C0C8A5008C4F3B /* index.appledoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.appledoc; sourceTree = "<group>"; };
-		DCBD98F417C0C8A5008C4F3B /* Introduction-to-KoboldKit-template.appledoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Introduction-to-KoboldKit-template.appledoc"; sourceTree = "<group>"; };
-		DCBD990F17C0C8A5008C4F3B /* KKProExternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProExternals.h; sourceTree = "<group>"; };
-		DCBD995F17C0C8A5008C4F3B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		DCBD996017C0C8A5008C4F3B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		DCBD99B717C0C8A5008C4F3B /* KKProFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProFramework.h; sourceTree = "<group>"; };
-		DCBD99BA17C0C8A5008C4F3B /* KKProVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProVersion.h; sourceTree = "<group>"; };
-		DCBD99BB17C0C8A5008C4F3B /* KKProVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKProVersion.m; sourceTree = "<group>"; };
-		DCBD99F917C0C8A5008C4F3B /* KKDownloadProjectFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDownloadProjectFiles.h; sourceTree = "<group>"; };
-		DCBD99FA17C0C8A5008C4F3B /* KKDownloadProjectFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDownloadProjectFiles.m; sourceTree = "<group>"; };
-		DCBD9A0017C0C8A5008C4F3B /* KoboldKitPro-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KoboldKitPro-Prefix.pch"; sourceTree = "<group>"; };
-		DCBD9A0117C0C8A5008C4F3B /* KoboldKitPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoboldKitPro.h; sourceTree = "<group>"; };
+		DCBD9A0017C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KoboldKitCommunity-Prefix.pch"; sourceTree = "<group>"; };
+		DCBD9A0117C0C8A5008C4F3B /* KoboldKitCommunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoboldKitCommunity.h; sourceTree = "<group>"; };
 		DCD7A291178C7545004A0467 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		DCD9C88A17C105F400535043 /* KKCommunityExternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityExternals.h; sourceTree = "<group>"; };
+		DCD9C88D17C105F400535043 /* KKCommunityBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityBehaviors.h; sourceTree = "<group>"; };
+		DCD9C89017C105F400535043 /* KKCommunityCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityCategories.h; sourceTree = "<group>"; };
+		DCD9C89217C105F400535043 /* KKCommunityFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityFramework.h; sourceTree = "<group>"; };
+		DCD9C89317C105F400535043 /* KKCommunityVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityVersion.h; sourceTree = "<group>"; };
+		DCD9C89417C105F400535043 /* KKCommunityVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommunityVersion.m; sourceTree = "<group>"; };
+		DCD9C89617C105F400535043 /* KKCommunityNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityNodes.h; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -98,57 +94,94 @@
 		DCBD98F217C0C8A5008C4F3B /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				DCBD98F317C0C8A5008C4F3B /* index.appledoc */,
-				DCBD98F417C0C8A5008C4F3B /* Introduction-to-KoboldKit-template.appledoc */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
 		};
-		DCBD98F517C0C8A5008C4F3B /* External */ = {
+		DCD9C88917C105F400535043 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				DCBD990F17C0C8A5008C4F3B /* KKProExternals.h */,
-				DCBD995D17C0C8A5008C4F3B /* Reachability */,
+				DCD9C88A17C105F400535043 /* KKCommunityExternals.h */,
 			);
 			path = External;
 			sourceTree = "<group>";
 		};
-		DCBD995D17C0C8A5008C4F3B /* Reachability */ = {
+		DCD9C88B17C105F400535043 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				DCBD995F17C0C8A5008C4F3B /* Reachability.h */,
-				DCBD996017C0C8A5008C4F3B /* Reachability.m */,
-			);
-			path = Reachability;
-			sourceTree = "<group>";
-		};
-		DCBD996D17C0C8A5008C4F3B /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				DCBD99B717C0C8A5008C4F3B /* KKProFramework.h */,
-				DCBD99BA17C0C8A5008C4F3B /* KKProVersion.h */,
-				DCBD99BB17C0C8A5008C4F3B /* KKProVersion.m */,
-				DCBD99F617C0C8A5008C4F3B /* Utility */,
+				DCD9C89217C105F400535043 /* KKCommunityFramework.h */,
+				DCD9C89317C105F400535043 /* KKCommunityVersion.h */,
+				DCD9C89417C105F400535043 /* KKCommunityVersion.m */,
+				DCD9C88C17C105F400535043 /* Behaviors */,
+				DCD9C88E17C105F400535043 /* Categories */,
+				DCD9C89517C105F400535043 /* Nodes */,
+				DCD9C89717C105F400535043 /* Protocols */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
 		};
-		DCBD99F617C0C8A5008C4F3B /* Utility */ = {
+		DCD9C88C17C105F400535043 /* Behaviors */ = {
 			isa = PBXGroup;
 			children = (
-				DCBD99F917C0C8A5008C4F3B /* KKDownloadProjectFiles.h */,
-				DCBD99FA17C0C8A5008C4F3B /* KKDownloadProjectFiles.m */,
+				DCD9C88D17C105F400535043 /* KKCommunityBehaviors.h */,
 			);
-			path = Utility;
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		DCD9C88E17C105F400535043 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DCD9C89017C105F400535043 /* KKCommunityCategories.h */,
+				DCD9C88F17C105F400535043 /* Foundation */,
+				DCD9C8A017C106A400535043 /* KoboldKit */,
+				DCD9C89117C105F400535043 /* SpriteKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DCD9C88F17C105F400535043 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		DCD9C89117C105F400535043 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		DCD9C89517C105F400535043 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				DCD9C89617C105F400535043 /* KKCommunityNodes.h */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		DCD9C89717C105F400535043 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DCD9C8A017C106A400535043 /* KoboldKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KoboldKit;
 			sourceTree = "<group>";
 		};
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
-				DCBD9A0117C0C8A5008C4F3B /* KoboldKitPro.h */,
-				DCBD9A0017C0C8A5008C4F3B /* KoboldKitPro-Prefix.pch */,
-				DCBD996D17C0C8A5008C4F3B /* Framework */,
-				DCBD98F517C0C8A5008C4F3B /* External */,
+				DCBD9A0117C0C8A5008C4F3B /* KoboldKitCommunity.h */,
+				DCBD9A0017C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch */,
+				DCD9C88B17C105F400535043 /* Framework */,
+				DCD9C88917C105F400535043 /* External */,
 				DCBD98F217C0C8A5008C4F3B /* Documentation */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
 				DCDD2DA91769FD0A00F307CD /* Products */,
@@ -158,8 +191,8 @@
 		DCDD2DA91769FD0A00F307CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC484C43178C40BB0067DAA4 /* KoboldKitPro.framework */,
-				DC484C6B178C418C0067DAA4 /* libKoboldKitPro.a */,
+				DC484C43178C40BB0067DAA4 /* KoboldKitCommunity.framework */,
+				DC484C6B178C418C0067DAA4 /* libKoboldKitCommunity.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,20 +227,23 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBD9B5817C0C8A5008C4F3B /* KoboldKitPro.h in Headers */,
-				DCBD9AFF17C0C8A5008C4F3B /* KKProVersion.h in Headers */,
-				DCBD9AFC17C0C8A5008C4F3B /* KKProFramework.h in Headers */,
-				DCBD9B5717C0C8A5008C4F3B /* KoboldKitPro-Prefix.pch in Headers */,
-				DCBD9B4E17C0C8A5008C4F3B /* KKDownloadProjectFiles.h in Headers */,
+				DCD9C89A17C105F400535043 /* KKCommunityCategories.h in Headers */,
+				DCBD9B5817C0C8A5008C4F3B /* KoboldKitCommunity.h in Headers */,
+				DCD9C89917C105F400535043 /* KKCommunityBehaviors.h in Headers */,
+				DCD9C89F17C105F400535043 /* KKCommunityNodes.h in Headers */,
+				DCD9C89B17C105F400535043 /* KKCommunityFramework.h in Headers */,
+				DCD9C89C17C105F400535043 /* KKCommunityVersion.h in Headers */,
+				DCD9C89817C105F400535043 /* KKCommunityExternals.h in Headers */,
+				DCBD9B5717C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DC484C42178C40BB0067DAA4 /* KoboldKitPro.framework */ = {
+		DC484C42178C40BB0067DAA4 /* KoboldKitCommunity.framework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "KoboldKitPro.framework" */;
+			buildConfigurationList = DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "KoboldKitCommunity.framework" */;
 			buildPhases = (
 				DC484C3E178C40BB0067DAA4 /* Sources */,
 				DC484C3F178C40BB0067DAA4 /* Frameworks */,
@@ -218,14 +254,14 @@
 			);
 			dependencies = (
 			);
-			name = KoboldKitPro.framework;
+			name = KoboldKitCommunity.framework;
 			productName = KoboldKit;
-			productReference = DC484C43178C40BB0067DAA4 /* KoboldKitPro.framework */;
+			productReference = DC484C43178C40BB0067DAA4 /* KoboldKitCommunity.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DC484C6A178C418C0067DAA4 /* libKoboldKitPro.a */ = {
+		DC484C6A178C418C0067DAA4 /* libKoboldKitCommunity.a */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libKoboldKitPro.a" */;
+			buildConfigurationList = DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libKoboldKitCommunity.a" */;
 			buildPhases = (
 				DC484C67178C418C0067DAA4 /* Sources */,
 				DC484C68178C418C0067DAA4 /* Frameworks */,
@@ -235,9 +271,9 @@
 			);
 			dependencies = (
 			);
-			name = libKoboldKitPro.a;
+			name = libKoboldKitCommunity.a;
 			productName = KoboldKit;
-			productReference = DC484C6B178C418C0067DAA4 /* libKoboldKitPro.a */;
+			productReference = DC484C6B178C418C0067DAA4 /* libKoboldKitCommunity.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +285,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Steffen Itterheim";
 			};
-			buildConfigurationList = DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKitPro" */;
+			buildConfigurationList = DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKitCommunity" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -262,8 +298,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC484C6A178C418C0067DAA4 /* libKoboldKitPro.a */,
-				DC484C42178C40BB0067DAA4 /* KoboldKitPro.framework */,
+				DC484C6A178C418C0067DAA4 /* libKoboldKitCommunity.a */,
+				DC484C42178C40BB0067DAA4 /* KoboldKitCommunity.framework */,
 			);
 		};
 /* End PBXProject section */
@@ -283,9 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBD9B5017C0C8A5008C4F3B /* KKDownloadProjectFiles.m in Sources */,
-				DCD9CAF017C10A7900535043 /* Reachability.m in Sources */,
-				DCBD9B0117C0C8A5008C4F3B /* KKProVersion.m in Sources */,
+				DCD9C89E17C105F400535043 /* KKCommunityVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBD9B4F17C0C8A5008C4F3B /* KKDownloadProjectFiles.m in Sources */,
-				DC37E8ED17C10B1900A04FCB /* Reachability.m in Sources */,
-				DCBD9B0017C0C8A5008C4F3B /* KKProVersion.m in Sources */,
+				DCD9C89D17C105F400535043 /* KKCommunityVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +347,7 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = KoboldKitPro;
+				PRODUCT_NAME = KoboldKitCommunity;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -331,7 +363,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = KoboldKitPro;
+				PRODUCT_NAME = KoboldKitCommunity;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -350,7 +382,7 @@
 					"$(inherited)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = KoboldKitPro;
+				PRODUCT_NAME = KoboldKitCommunity;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -367,7 +399,7 @@
 				);
 				DSTROOT = /tmp/KoboldKit.dst;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = KoboldKitPro;
+				PRODUCT_NAME = KoboldKitCommunity;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -401,7 +433,7 @@
 				GCC_FAST_MATH = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitPro-Prefix.pch";
+				GCC_PREFIX_HEADER = "KoboldKitCommunity-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -451,7 +483,7 @@
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitPro-Prefix.pch";
+				GCC_PREFIX_HEADER = "KoboldKitCommunity-Prefix.pch";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
@@ -474,7 +506,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "KoboldKitPro.framework" */ = {
+		DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "KoboldKitCommunity.framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC484C62178C40BB0067DAA4 /* Debug */,
@@ -483,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libKoboldKitPro.a" */ = {
+		DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libKoboldKitCommunity.a" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC484C88178C418D0067DAA4 /* Debug */,
@@ -492,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKitPro" */ = {
+		DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKitCommunity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCDD2DE21769FD0A00F307CD /* Debug */,
