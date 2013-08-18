@@ -42,16 +42,14 @@ BOOL kCCProfilerCategoryParticles = NO;
 
 @implementation CCProfiler
 
-static CCProfiler* g_sharedProfiler;
-
 +(CCProfiler*) sharedProfiler
 {
-	if (!g_sharedProfiler)
-	{
-		g_sharedProfiler = [[CCProfiler alloc] init];
-	}
-
-	return g_sharedProfiler;
+    static CCProfiler* sharedInstance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[CCProfiler alloc] init];
+    });
+    return sharedInstance;
 }
 
 -(CCProfilingTimer*) createAndAddTimerWithName:(NSString*)timerName

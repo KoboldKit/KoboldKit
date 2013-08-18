@@ -187,9 +187,10 @@ enum {
 	NSInteger currentHardwareInputNumberOfChannels;
 	NSInteger currentHardwareOutputNumberOfChannels;
 	__weak id<AVAudioSessionDelegate> delegate;
-
+/*
 @private
     void *_impl;
+ */
 }
 
 /* returns singleton instance */

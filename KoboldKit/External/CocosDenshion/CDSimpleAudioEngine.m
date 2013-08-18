@@ -22,38 +22,29 @@
  $Id$
  */
 
-#import "SimpleAudioEngine.h"
+#import "CDSimpleAudioEngine.h"
 
-@implementation SimpleAudioEngine
+@implementation CDSimpleAudioEngine
 
-static SimpleAudioEngine *sharedEngine = nil;
 static CDSoundEngine* soundEngine = nil;
-static CDAudioManager *am = nil;
-static CDBufferManager *bufferManager = nil;
+static CDAudioManager* am = nil;
+static CDBufferManager* bufferManager = nil;
 
 // Init
-+ (SimpleAudioEngine *) sharedEngine
++(CDSimpleAudioEngine*) sharedSimpleAudioEngine
 {
-	@synchronized(self)     {
-		if (!sharedEngine)
-			sharedEngine = [[SimpleAudioEngine alloc] init];
-	}
-	return sharedEngine;
-}
-
-+ (id) alloc
-{
-	@synchronized(self)     {
-		NSAssert(sharedEngine == nil, @"Attempted to allocate a second instance of a singleton.");
-		return [super alloc];
-	}
-	return nil;
+    static CDSimpleAudioEngine* sharedInstance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[CDSimpleAudioEngine alloc] init];
+    });
+    return sharedInstance;
 }
 
 -(id) init
 {
 	if((self=[super init])) {
-		am = [CDAudioManager sharedManager];
+		am = [CDAudioManager sharedAudioManager];
 		soundEngine = am.soundEngine;
 		bufferManager = [[CDBufferManager alloc] initWithEngine:soundEngine];
 		mute_ = NO;

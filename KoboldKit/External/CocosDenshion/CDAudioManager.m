@@ -33,7 +33,7 @@ NSString * const kCDN_AudioManagerInitialised = @"kCDN_AudioManagerInitialised";
 
 -(void) main {
 	[super main];
-	[CDAudioManager sharedManager];
+	[CDAudioManager sharedAudioManager];
 }
 
 @end
@@ -209,7 +209,7 @@ NSString * const kCDN_AudioManagerInitialised = @"kCDN_AudioManagerInitialised";
 		//Check if background music can play as rules may have changed during
 		//the interruption. This is to address a specific issue in 4.x when
 		//fast task switching
-		if([CDAudioManager sharedManager].willPlayBackgroundMusic) {
+		if([CDAudioManager sharedAudioManager].willPlayBackgroundMusic) {
 			[player play];
 		}
 	} else {
@@ -262,20 +262,20 @@ static BOOL configured = FALSE;
 }
 
 // Init
-+ (CDAudioManager *) sharedManager
++(CDAudioManager*) sharedAudioManager
 {
-	@synchronized(self)     {
-		if (!sharedManager) {
-			if (!configured) {
-				//Set defaults here
-				configuredMode = kAMM_FxPlusMusicIfNoOtherAudio;
-			}
-			sharedManager = [[CDAudioManager alloc] init:configuredMode];
-			_sharedManagerState = kAMStateInitialised;//This is only really relevant when using asynchronous initialisation
-			[[NSNotificationCenter defaultCenter] postNotificationName:kCDN_AudioManagerInitialised object:nil];
+    static CDAudioManager* sharedInstance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+		if (!configured) {
+			//Set defaults here
+			configuredMode = kAMM_FxPlusMusicIfNoOtherAudio;
 		}
-	}
-	return sharedManager;
+		sharedManager = [[CDAudioManager alloc] init:configuredMode];
+		_sharedManagerState = kAMStateInitialised; //This is only really relevant when using asynchronous initialisation
+		[[NSNotificationCenter defaultCenter] postNotificationName:kCDN_AudioManagerInitialised object:nil];
+    });
+    return sharedInstance;
 }
 
 + (tAudioManagerState) sharedManagerState {

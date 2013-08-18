@@ -51,6 +51,7 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 {
 	[self.node.kkScene removeInputEventsObserver:self];
 	[self.node.kkScene removeSceneEventsObserver:self];
+	_trackedTouch = 0;
 }
 
 -(void) didChangeEnabledState
