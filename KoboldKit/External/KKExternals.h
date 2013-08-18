@@ -11,6 +11,7 @@
 
 // import all external headers here
 #import "CCProfiling.h"
+#import "CDSimpleAudioEngine.h"
 #import "CGPointExtension.h"
 #import "CGVectorExtension.h"
 #import "KKArcadeInputState.h"

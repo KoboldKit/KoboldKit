@@ -168,7 +168,7 @@ typedef enum {
 @property (readonly) BOOL willPlayBackgroundMusic;
 
 /** Returns the shared singleton */
-+ (CDAudioManager *) sharedManager;
++ (CDAudioManager *) sharedAudioManager;
 + (tAudioManagerState) sharedManagerState;
 /** Configures the shared singleton with a mode*/
 + (void) configure: (tAudioManagerMode) mode;

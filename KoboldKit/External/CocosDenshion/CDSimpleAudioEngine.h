@@ -37,7 +37,7 @@
  - Frameworks: OpenAL, AudioToolbox, AVFoundation
  @since v0.8
  */
-@interface SimpleAudioEngine : NSObject <CDAudioInterruptProtocol> {
+@interface CDSimpleAudioEngine : NSObject <CDAudioInterruptProtocol> {
 
 	BOOL	mute_;
 	BOOL	enabled_;
@@ -51,7 +51,7 @@
 @property (readonly) BOOL willPlayBackgroundMusic;
 
 /** returns the shared instance of the SimpleAudioEngine object */
-+ (SimpleAudioEngine*) sharedEngine;
++ (CDSimpleAudioEngine*) sharedSimpleAudioEngine;
 
 /** Preloads a music file so it will be ready to play as background music */
 -(void) preloadBackgroundMusic:(NSString*) filePath;

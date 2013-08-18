@@ -27,9 +27,9 @@
 #elif defined(__MAC_OS_X_VERSION_MAX_ALLOWED)
 
 #import "CDXMacOSXSupport.h"
-#import "SimpleAudioEngine.h"
+#import "CDSimpleAudioEngine.h"
 
-NSString * const AVAudioSessionCategoryAmbient = @"AVAudioSessionCategoryAmbient";
+NSString *const AVAudioSessionCategoryAmbient = @"AVAudioSessionCategoryAmbient";
 NSString *const AVAudioSessionCategorySoloAmbient = @"AVAudioSessionCategorySoloAmbient";
 NSString *const AVAudioSessionCategoryPlayback = @"AVAudioSessionCategoryPlayback";
 NSString *const AVAudioSessionCategoryRecord = @"AVAudioSessionCategoryRecord";
