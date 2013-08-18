@@ -32,8 +32,4 @@ extern "C" {
 }
 #endif // __cplusplus
 
-// not normally included but available when you need it:
-//#import "CocosDenshion.h"
-//#import "CDSimpleAudioEngine.h"
-
 #endif

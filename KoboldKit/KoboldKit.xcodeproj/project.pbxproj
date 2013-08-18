@@ -103,21 +103,6 @@
 		DCD9C9BD17C1094E00535043 /* CGVectorExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8C817C1094D00535043 /* CGVectorExtension.h */; };
 		DCD9C9BE17C1094E00535043 /* CGVectorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8C917C1094D00535043 /* CGVectorExtension.m */; };
 		DCD9C9BF17C1094E00535043 /* CGVectorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8C917C1094D00535043 /* CGVectorExtension.m */; };
-		DCD9C9C017C1094E00535043 /* CDAudioManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8CB17C1094D00535043 /* CDAudioManager.h */; };
-		DCD9C9C117C1094E00535043 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8CC17C1094D00535043 /* CDAudioManager.m */; };
-		DCD9C9C217C1094E00535043 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8CC17C1094D00535043 /* CDAudioManager.m */; };
-		DCD9C9C317C1094E00535043 /* CDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8CD17C1094D00535043 /* CDConfig.h */; };
-		DCD9C9C417C1094E00535043 /* CDOpenALSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8CE17C1094D00535043 /* CDOpenALSupport.h */; };
-		DCD9C9C517C1094E00535043 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8CF17C1094D00535043 /* CDOpenALSupport.m */; };
-		DCD9C9C617C1094E00535043 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8CF17C1094D00535043 /* CDOpenALSupport.m */; };
-		DCD9C9C717C1094E00535043 /* CDSimpleAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8D017C1094D00535043 /* CDSimpleAudioEngine.h */; };
-		DCD9C9C817C1094E00535043 /* CDSimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8D117C1094D00535043 /* CDSimpleAudioEngine.m */; };
-		DCD9C9C917C1094E00535043 /* CDSimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8D117C1094D00535043 /* CDSimpleAudioEngine.m */; };
-		DCD9C9CA17C1094E00535043 /* CDXMacOSXSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8D217C1094D00535043 /* CDXMacOSXSupport.h */; };
-		DCD9C9CC17C1094E00535043 /* CDXMacOSXSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8D317C1094D00535043 /* CDXMacOSXSupport.m */; };
-		DCD9C9CD17C1094E00535043 /* CocosDenshion.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8D417C1094D00535043 /* CocosDenshion.h */; };
-		DCD9C9CE17C1094E00535043 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8D517C1094D00535043 /* CocosDenshion.m */; };
-		DCD9C9CF17C1094E00535043 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8D517C1094D00535043 /* CocosDenshion.m */; };
 		DCD9C9D117C1094E00535043 /* KKArcadeInputState.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8D817C1094D00535043 /* KKArcadeInputState.h */; };
 		DCD9C9D217C1094E00535043 /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C8DA17C1094D00535043 /* JRSwizzle.h */; };
 		DCD9C9D317C1094E00535043 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C8DB17C1094D00535043 /* JRSwizzle.m */; };
@@ -535,17 +520,6 @@
 		DCD9C8C717C1094D00535043 /* CGPointExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointExtension.m; sourceTree = "<group>"; };
 		DCD9C8C817C1094D00535043 /* CGVectorExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGVectorExtension.h; sourceTree = "<group>"; };
 		DCD9C8C917C1094D00535043 /* CGVectorExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGVectorExtension.m; sourceTree = "<group>"; };
-		DCD9C8CB17C1094D00535043 /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
-		DCD9C8CC17C1094D00535043 /* CDAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAudioManager.m; sourceTree = "<group>"; };
-		DCD9C8CD17C1094D00535043 /* CDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConfig.h; sourceTree = "<group>"; };
-		DCD9C8CE17C1094D00535043 /* CDOpenALSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOpenALSupport.h; sourceTree = "<group>"; };
-		DCD9C8CF17C1094D00535043 /* CDOpenALSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOpenALSupport.m; sourceTree = "<group>"; };
-		DCD9C8D017C1094D00535043 /* CDSimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSimpleAudioEngine.h; sourceTree = "<group>"; };
-		DCD9C8D117C1094D00535043 /* CDSimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSimpleAudioEngine.m; sourceTree = "<group>"; };
-		DCD9C8D217C1094D00535043 /* CDXMacOSXSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDXMacOSXSupport.h; sourceTree = "<group>"; };
-		DCD9C8D317C1094D00535043 /* CDXMacOSXSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDXMacOSXSupport.m; sourceTree = "<group>"; };
-		DCD9C8D417C1094D00535043 /* CocosDenshion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosDenshion.h; sourceTree = "<group>"; };
-		DCD9C8D517C1094D00535043 /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
 		DCD9C8D817C1094D00535043 /* KKArcadeInputState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKArcadeInputState.h; sourceTree = "<group>"; };
 		DCD9C8DA17C1094D00535043 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		DCD9C8DB17C1094D00535043 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
@@ -930,7 +904,6 @@
 			children = (
 				DCD9C8DC17C1094D00535043 /* KKExternals.h */,
 				DCD9C8C517C1094D00535043 /* CGPointExtension */,
-				DCD9C8CA17C1094D00535043 /* CocosDenshion */,
 				DCD9C8D717C1094D00535043 /* iCade+GameDock */,
 				DCD9C8D917C1094D00535043 /* JRSwizzle */,
 				DCD9C8DD17C1094D00535043 /* lua */,
@@ -952,24 +925,6 @@
 				DCD9C8C917C1094D00535043 /* CGVectorExtension.m */,
 			);
 			path = CGPointExtension;
-			sourceTree = "<group>";
-		};
-		DCD9C8CA17C1094D00535043 /* CocosDenshion */ = {
-			isa = PBXGroup;
-			children = (
-				DCD9C8CB17C1094D00535043 /* CDAudioManager.h */,
-				DCD9C8CC17C1094D00535043 /* CDAudioManager.m */,
-				DCD9C8CD17C1094D00535043 /* CDConfig.h */,
-				DCD9C8CE17C1094D00535043 /* CDOpenALSupport.h */,
-				DCD9C8CF17C1094D00535043 /* CDOpenALSupport.m */,
-				DCD9C8D017C1094D00535043 /* CDSimpleAudioEngine.h */,
-				DCD9C8D117C1094D00535043 /* CDSimpleAudioEngine.m */,
-				DCD9C8D217C1094D00535043 /* CDXMacOSXSupport.h */,
-				DCD9C8D317C1094D00535043 /* CDXMacOSXSupport.m */,
-				DCD9C8D417C1094D00535043 /* CocosDenshion.h */,
-				DCD9C8D517C1094D00535043 /* CocosDenshion.m */,
-			);
-			path = CocosDenshion;
 			sourceTree = "<group>";
 		};
 		DCD9C8D717C1094D00535043 /* iCade+GameDock */ = {
@@ -1516,7 +1471,6 @@
 				DCB0BCD217C10FD9002A61A8 /* ALSoundSource.h in Headers */,
 				DCD9C9E217C1094E00535043 /* lcode.h in Headers */,
 				DCD9CA7C17C1094E00535043 /* SKAction+KoboldKit.h in Headers */,
-				DCD9C9C317C1094E00535043 /* CDConfig.h in Headers */,
 				DCD9CA9917C1094E00535043 /* KKMacros.h in Headers */,
 				DCD9CAC517C1094E00535043 /* KKTilemapObjectSpawnDelegate.h in Headers */,
 				DCD9CA1117C1094E00535043 /* lparser.h in Headers */,
@@ -1527,7 +1481,6 @@
 				DCD9CA0917C1094E00535043 /* lobject.h in Headers */,
 				DCD9CA1C17C1094E00535043 /* ltable.h in Headers */,
 				DCB0BCDD17C10FD9002A61A8 /* OpenALManager.h in Headers */,
-				DCD9C9C417C1094E00535043 /* CDOpenALSupport.h in Headers */,
 				DCD9CA3B17C1094E00535043 /* ZipUtils.h in Headers */,
 				DCB0BCE017C10FD9002A61A8 /* OALAudioSession.h in Headers */,
 				DCD9CAE717C1094E00535043 /* KKClassVarSetter.h in Headers */,
@@ -1551,7 +1504,6 @@
 				DCD9CA3E17C1094E00535043 /* KKAppDelegate.h in Headers */,
 				DCBD9B5717C0C8A5008C4F3B /* KoboldKit-Prefix.pch in Headers */,
 				DCD9CAA117C1094E00535043 /* KKLabelNode.h in Headers */,
-				DCD9C9C717C1094E00535043 /* CDSimpleAudioEngine.h in Headers */,
 				DCB0BCEC17C10FD9002A61A8 /* mach_timing.h in Headers */,
 				DCD9C9DB17C1094E00535043 /* lauxlib.h in Headers */,
 				DCD9CA2517C1094E00535043 /* lualib.h in Headers */,
@@ -1582,8 +1534,6 @@
 				DCD9CAC017C1094E00535043 /* KKTilemapTileLayerNode.h in Headers */,
 				DCB0BCFB17C10FD9002A61A8 /* SynthesizeSingleton.h in Headers */,
 				DCB0BCED17C10FD9002A61A8 /* NSMutableArray+WeakReferences.h in Headers */,
-				DCD9C9CD17C1094E00535043 /* CocosDenshion.h in Headers */,
-				DCD9C9CA17C1094E00535043 /* CDXMacOSXSupport.h in Headers */,
 				DCD9CAC917C1094E00535043 /* KKTilemap.h in Headers */,
 				DCD9CADE17C1094E00535043 /* KKTilemapTileset.h in Headers */,
 				DCD9CA4117C1094E00535043 /* KKMacApplication.h in Headers */,
@@ -1603,7 +1553,6 @@
 				DCD9CA2217C1094E00535043 /* lua.h in Headers */,
 				DCB0BCBA17C10FD9002A61A8 /* OALSimpleAudio.h in Headers */,
 				DCB0BCE617C10FD9002A61A8 /* ARCSafe_MemMgmt.h in Headers */,
-				DCD9C9C017C1094E00535043 /* CDAudioManager.h in Headers */,
 				DCD9CA9417C1094E00535043 /* KKNodeController.h in Headers */,
 				DCB0BCB117C10FD9002A61A8 /* OALAudioTrack.h in Headers */,
 				DCD9CA0417C1094E00535043 /* lmem.h in Headers */,
@@ -1802,7 +1751,6 @@
 				DCD9CA9317C1094E00535043 /* KKMutableNumber.m in Sources */,
 				DCD9CA4317C1094E00535043 /* KKMacApplication.m in Sources */,
 				DCD9CA4017C1094E00535043 /* KKAppDelegate.m in Sources */,
-				DCD9C9CF17C1094E00535043 /* CocosDenshion.m in Sources */,
 				DCD9C9FB17C1094E00535043 /* liolib.c in Sources */,
 				DCD9CA2A17C1094E00535043 /* lvm.c in Sources */,
 				DCD9CA7417C1094E00535043 /* NSDictionary+KoboldKit.m in Sources */,
@@ -1819,8 +1767,6 @@
 				DCD9CAA617C1094E00535043 /* KKNode.m in Sources */,
 				DCD9CA3117C1094E00535043 /* CCProfiling.m in Sources */,
 				DCD9CA8D17C1094E00535043 /* KKBehavior.m in Sources */,
-				DCD9C9C217C1094E00535043 /* CDAudioManager.m in Sources */,
-				DCD9C9C617C1094E00535043 /* CDOpenALSupport.m in Sources */,
 				DCD9CA4917C1094E00535043 /* KKRemoveOnContactBehavior.m in Sources */,
 				DCD9CA5217C1094E00535043 /* KKPickupItemBehavior.m in Sources */,
 				DCD9CADD17C1094E00535043 /* KKTilemapTileProperties.m in Sources */,
@@ -1848,7 +1794,6 @@
 				DCD9CA0E17C1094E00535043 /* loslib.c in Sources */,
 				DCD9CA8A17C1094E00535043 /* KKPointArray.m in Sources */,
 				DCB0BCB017C10FD9002A61A8 /* OALUtilityActions.m in Sources */,
-				DCD9C9CC17C1094E00535043 /* CDXMacOSXSupport.m in Sources */,
 				DCD9C9F917C1094E00535043 /* linit.c in Sources */,
 				DCB0BCA717C10FD9002A61A8 /* OALAction.m in Sources */,
 				DCD9CA8117C1094E00535043 /* SKNode+KoboldKit.m in Sources */,
@@ -1856,7 +1801,6 @@
 				DCD9C9EE17C1094E00535043 /* ldo.c in Sources */,
 				DCD9C9D717C1094E00535043 /* lapi.c in Sources */,
 				DCD9CA6B17C1094E00535043 /* KKControlPadBehavior.m in Sources */,
-				DCD9C9C917C1094E00535043 /* CDSimpleAudioEngine.m in Sources */,
 				DCB0BCE917C10FD9002A61A8 /* IOSVersion.m in Sources */,
 				DCD9CA3717C1094E00535043 /* XMLWriter.m in Sources */,
 				DCB0BCD817C10FD9002A61A8 /* ALSource.m in Sources */,
@@ -1939,7 +1883,6 @@
 				DCD9CA9217C1094E00535043 /* KKMutableNumber.m in Sources */,
 				DCD9CA4217C1094E00535043 /* KKMacApplication.m in Sources */,
 				DCD9CA3F17C1094E00535043 /* KKAppDelegate.m in Sources */,
-				DCD9C9CE17C1094E00535043 /* CocosDenshion.m in Sources */,
 				DCD9C9FA17C1094E00535043 /* liolib.c in Sources */,
 				DCD9CA2917C1094E00535043 /* lvm.c in Sources */,
 				DCB0BCA617C10FD9002A61A8 /* OALAction.m in Sources */,
@@ -1959,8 +1902,6 @@
 				DCD9CAA517C1094E00535043 /* KKNode.m in Sources */,
 				DCD9CA3017C1094E00535043 /* CCProfiling.m in Sources */,
 				DCD9CA8C17C1094E00535043 /* KKBehavior.m in Sources */,
-				DCD9C9C117C1094E00535043 /* CDAudioManager.m in Sources */,
-				DCD9C9C517C1094E00535043 /* CDOpenALSupport.m in Sources */,
 				DCD9CA4817C1094E00535043 /* KKRemoveOnContactBehavior.m in Sources */,
 				DCD9CA5117C1094E00535043 /* KKPickupItemBehavior.m in Sources */,
 				DCB0BCAC17C10FD9002A61A8 /* OALAudioActions.m in Sources */,
@@ -1992,7 +1933,6 @@
 				DCB0BCC717C10FD9002A61A8 /* ALChannelSource.m in Sources */,
 				DCD9C9D617C1094E00535043 /* lapi.c in Sources */,
 				DCD9CA6A17C1094E00535043 /* KKControlPadBehavior.m in Sources */,
-				DCD9C9C817C1094E00535043 /* CDSimpleAudioEngine.m in Sources */,
 				DCD9CA3617C1094E00535043 /* XMLWriter.m in Sources */,
 				DCB0BCC417C10FD9002A61A8 /* ALCaptureDevice.m in Sources */,
 			);
@@ -2108,7 +2048,6 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -2152,7 +2091,6 @@
 				GCC_PREFIX_HEADER = "KoboldKit-Prefix.pch";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
