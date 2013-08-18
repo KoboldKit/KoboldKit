@@ -11,12 +11,13 @@
 #import "KKModel.h"
 #import "KKMutableNumber.h"
 #import "KKNotifyOnItemCountBehavior.h"
+#import "KKExternals.h"
 
 @implementation KKItemCollectorBehavior
 
 -(void) didPickUpItem:(KKPickupItemBehavior*)itemBehavior
 {
-	[self.node playSoundFileNamed:@"pickup.wav"];
+	[[OALSimpleAudio sharedInstance] playEffect:@"pickup.wav"];
 
 	// by default counts the number of item pickups
 	NSString* itemName = itemBehavior.node.name;

@@ -324,12 +324,22 @@ NSString* const KKControlPadDidChangeDirectionNotification = @"KKControlPadDidCh
 	{
 		DEVELOPER_FIXME("find out why control pad touches sometimes do not receive ended message. \
 						Seems to be related with button behabior, pressing both button and pad, and then releasing both at the same time.")
-		// detect touch ended without the touchesEnded method being called (this happens occassionally for whatever reason)
-		UITouch* trackedTouch = (__bridge UITouch*)(void*)_trackedTouch;
-		if (trackedTouch.phase == UITouchPhaseEnded || trackedTouch.phase == UITouchPhaseCancelled)
+		
+		// if the view displays a different (new) scene than the node's scene skip performing the check
+		SKScene* scene = self.node.scene;
+		if (scene != scene.view.scene)
 		{
-			NSLog(@"pad touch prematurely ENDED! %p .......................", trackedTouch);
-			[self resetDirection];
+			_trackedTouch = 0;
+		}
+		else
+		{
+			// detect touch ended without the touchesEnded method being called (this happens occassionally for whatever reason)
+			UITouch* trackedTouch = (__bridge UITouch*)(void*)_trackedTouch;
+			if (trackedTouch.phase == UITouchPhaseEnded || trackedTouch.phase == UITouchPhaseCancelled)
+			{
+				NSLog(@"pad touch prematurely ENDED! %p .......................", trackedTouch);
+				[self resetDirection];
+			}
 		}
 	}
 }

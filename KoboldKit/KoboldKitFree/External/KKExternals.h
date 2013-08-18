@@ -14,6 +14,7 @@
 #import "CGPointExtension.h"
 #import "CGVectorExtension.h"
 #import "KKArcadeInputState.h"
+#import "ObjectAL/ObjectAL/ObjectAL (iOS)/ObjectAL.h"
 #import "VTPG_Common.h"
 #import "XMLWriter.h"
 #import "ZipUtils.h"

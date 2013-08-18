@@ -24,26 +24,19 @@
 		_curtainSprite.zPosition = 1000;
 		[self addChild:_curtainSprite];
 		
-		[self playSoundFileNamed:@"teleport.wav"];
-		
-		/*
-		SKAction* jingle = [SKAction playSoundFileNamed:@"Time to business, guys.mp3" waitForCompletion:YES];
-		SKAction* loop = [SKAction runBlock:^{
-		}];
-		[self runAction:[SKAction sequence:@[jingle, loop]]];
-		*/
+		[[OALSimpleAudio sharedInstance] playEffect:@"teleport.wav"];
     }
     return self;
 }
 
 -(void) didMoveToView:(SKView *)view
 {
+	// always call super in "event" methods of KKScene subclasses
+	[super didMoveToView:view];
+
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadMapNotification:) name:@"LoadMap" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerDidStepInDeadlyTrap:) name:@"DeadlyTrap" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkpointActivated:) name:@"CheckpointActivated" object:nil];
-	
-	// always call super in "event" methods of KKScene subclasses
-	[super didMoveToView:view];
 	
 	_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:_tmxFile];
 	[self addChild:_tilemapNode];

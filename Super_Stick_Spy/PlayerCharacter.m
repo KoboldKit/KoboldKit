@@ -52,8 +52,8 @@
 -(void) die
 {
 	// death hides the player, plays an effect, then "respawns" player after some time
-	[self playSoundFileNamed:@"die.wav"];
-	
+	[[OALSimpleAudio sharedInstance] playEffect:@"die.wav"];
+
 	[self disregardSceneEvents];
 	self.physicsBody.velocity = CGVectorZero;
 	_currentControlPadDirection = CGVectorZero;
@@ -76,7 +76,7 @@
 
 -(void) respawn
 {
-	[self playSoundFileNamed:@"respawn.wav"];
+	[[OALSimpleAudio sharedInstance] playEffect:@"respawn.wav"];
 
 	_playerSprite.alpha = 1.0;
 	self.alpha = 1.0;
@@ -93,7 +93,7 @@
 	if (CGPointEqualToPoint(respawnPos, _respawnPosition) == NO)
 	{
 		_respawnPosition = respawnPos;
-		[self playSoundFileNamed:@"checkpoint.wav"];
+		[[OALSimpleAudio sharedInstance] playEffect:@"checkpoint.wav"];
 	}
 }
 
@@ -134,7 +134,7 @@
 		
 		_jumpButton = [note.userInfo objectForKey:@"behavior"];
 		
-		[self playSoundFileNamed:@"jump.wav"];
+		[[OALSimpleAudio sharedInstance] playEffect:@"jump.wav"];
 	}
 }
 

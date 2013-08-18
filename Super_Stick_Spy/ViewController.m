@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
+#import <KoboldKit.h>
 #import "ViewController.h"
 #import "GameScene.h"
 #import "MenuScene.h"
@@ -20,6 +21,8 @@
 	NSLog(@"%@", koboldKitProVersion());
 	NSLog(@"%@", koboldKitCommunityVersion());
 	
+	[[OALSimpleAudio sharedInstance] playBg:@"Time to business, guys.mp3"];
+
 	MenuScene* menuScene = [MenuScene sceneWithSize:self.view.bounds.size];
 	[self.kkView presentScene:menuScene];
 	
