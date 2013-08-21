@@ -7,3 +7,4 @@
 //
 
 #import "KKTilemapNode+KoboldKitPro.h"
+#import "SKNode+KoboldKitPro.h"

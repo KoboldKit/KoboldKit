@@ -194,7 +194,7 @@ KKNODE_SHARED_CODE
 
 -(void) addPhysicsContactEventsObserver:(id<KKPhysicsContactEventDelegate>)observer
 {
-	if (observer)
+	if (observer && observer != (id)self)
 	{
 		dispatch_async(dispatch_get_main_queue(), ^{
 			if ([_physicsContactObservers indexOfObject:observer] == NSNotFound)
@@ -220,7 +220,7 @@ KKNODE_SHARED_CODE
 
 -(void) addInputEventsObserver:(id)observer
 {
-	if (observer)
+	if (observer && observer != self)
 	{
 		dispatch_async(dispatch_get_main_queue(), ^{
 			if ([_inputObservers indexOfObject:observer] == NSNotFound)

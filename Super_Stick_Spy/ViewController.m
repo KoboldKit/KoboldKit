@@ -21,7 +21,7 @@
 	NSLog(@"%@", koboldKitProVersion());
 	NSLog(@"%@", koboldKitCommunityVersion());
 	
-	[[OALSimpleAudio sharedInstance] playBg:@"Time to business, guys.mp3"];
+	//[[OALSimpleAudio sharedInstance] playBg:@"Time to business, guys.mp3"];
 
 	MenuScene* menuScene = [MenuScene sceneWithSize:self.view.bounds.size];
 	[self.kkView presentScene:menuScene];

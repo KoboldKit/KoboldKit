@@ -34,6 +34,9 @@
 		DC1953D517C15F1A00EC526C /* KKContactNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953D217C15F1A00EC526C /* KKContactNotificationNode.m */; };
 		DC1953D617C15F1A00EC526C /* KKContactNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953D217C15F1A00EC526C /* KKContactNotificationNode.m */; };
 		DC1953D717C15FE000EC526C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
+		DC25C39C17C4F79100170E3A /* SKNode+KoboldKitPro.h in Headers */ = {isa = PBXBuildFile; fileRef = DC25C39A17C4F79100170E3A /* SKNode+KoboldKitPro.h */; };
+		DC25C39D17C4F79100170E3A /* SKNode+KoboldKitPro.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25C39B17C4F79100170E3A /* SKNode+KoboldKitPro.m */; };
+		DC25C39E17C4F79100170E3A /* SKNode+KoboldKitPro.m in Sources */ = {isa = PBXBuildFile; fileRef = DC25C39B17C4F79100170E3A /* SKNode+KoboldKitPro.m */; };
 		DC37E8ED17C10B1900A04FCB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD996017C0C8A5008C4F3B /* Reachability.m */; };
 		DCBD9AFC17C0C8A5008C4F3B /* KKProFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD99B717C0C8A5008C4F3B /* KKProFramework.h */; };
 		DCBD9AFF17C0C8A5008C4F3B /* KKProVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD99BA17C0C8A5008C4F3B /* KKProVersion.h */; };
@@ -81,6 +84,8 @@
 		DC1953CF17C15F1A00EC526C /* KKProNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProNodes.h; sourceTree = "<group>"; };
 		DC1953D117C15F1A00EC526C /* KKContactNotificationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKContactNotificationNode.h; sourceTree = "<group>"; };
 		DC1953D217C15F1A00EC526C /* KKContactNotificationNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKContactNotificationNode.m; sourceTree = "<group>"; };
+		DC25C39A17C4F79100170E3A /* SKNode+KoboldKitPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+KoboldKitPro.h"; sourceTree = "<group>"; };
+		DC25C39B17C4F79100170E3A /* SKNode+KoboldKitPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+KoboldKitPro.m"; sourceTree = "<group>"; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -176,6 +181,7 @@
 			children = (
 				DC1953A917C1419C00EC526C /* KKProCategories.h */,
 				DC1953A817C1415900EC526C /* KoboldKit */,
+				DC25C39917C4F77400170E3A /* SpriteKit */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -228,6 +234,15 @@
 				DC1953D217C15F1A00EC526C /* KKContactNotificationNode.m */,
 			);
 			path = Tilemap;
+			sourceTree = "<group>";
+		};
+		DC25C39917C4F77400170E3A /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				DC25C39A17C4F79100170E3A /* SKNode+KoboldKitPro.h */,
+				DC25C39B17C4F79100170E3A /* SKNode+KoboldKitPro.m */,
+			);
+			path = SpriteKit;
 			sourceTree = "<group>";
 		};
 		DC484C18178C40800067DAA4 /* Other Frameworks */ = {
@@ -357,6 +372,7 @@
 				DC1953C617C15DDB00EC526C /* KKControlPadBehavior.h in Headers */,
 				DCBD9B5717C0C8A5008C4F3B /* KoboldKitPro-Prefix.pch in Headers */,
 				DCBD9B4E17C0C8A5008C4F3B /* KKDownloadProjectFiles.h in Headers */,
+				DC25C39C17C4F79100170E3A /* SKNode+KoboldKitPro.h in Headers */,
 				DC19539C17C126D600EC526C /* KKEntity.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +465,7 @@
 				DC1953BF17C15D3800EC526C /* KKNotifyOnItemCountBehavior.m in Sources */,
 				DCD9CAF017C10A7900535043 /* Reachability.m in Sources */,
 				DC1953C217C15D3800EC526C /* KKPickupItemBehavior.m in Sources */,
+				DC25C39E17C4F79100170E3A /* SKNode+KoboldKitPro.m in Sources */,
 				DC1953C817C15DDB00EC526C /* KKControlPadBehavior.m in Sources */,
 				DCBD9B0117C0C8A5008C4F3B /* KKProVersion.m in Sources */,
 				DC1953D617C15F1A00EC526C /* KKContactNotificationNode.m in Sources */,
@@ -467,6 +484,7 @@
 				DC1953BE17C15D3800EC526C /* KKNotifyOnItemCountBehavior.m in Sources */,
 				DC37E8ED17C10B1900A04FCB /* Reachability.m in Sources */,
 				DC1953C117C15D3800EC526C /* KKPickupItemBehavior.m in Sources */,
+				DC25C39D17C4F79100170E3A /* SKNode+KoboldKitPro.m in Sources */,
 				DC1953C717C15DDB00EC526C /* KKControlPadBehavior.m in Sources */,
 				DCBD9B0017C0C8A5008C4F3B /* KKProVersion.m in Sources */,
 				DC1953D517C15F1A00EC526C /* KKContactNotificationNode.m in Sources */,

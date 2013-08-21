@@ -7,6 +7,7 @@
 //
 
 #import "PlayerCharacter.h"
+#import "KKEntity.h"
 
 @implementation PlayerCharacter
 
@@ -31,6 +32,7 @@
 {
 	_tilemapPlayerObject = tilemapObject;
 	_respawnPosition = self.position;
+	_entity = self.entity;
 
 	NSAssert(_defaultImage.length, @"defaultImage property not set for player object in Tiled!");
 	_playerSprite = [KKSpriteNode spriteNodeWithImageNamed:_defaultImage];
@@ -124,13 +126,13 @@
 
 -(void) jumpButtonPressed:(NSNotification*)note
 {
-	CGVector velocity = self.physicsBody.velocity;
-	if (_onFloor && _jumping == NO)
+	CGPoint velocity = _entity.velocity;
+	if (/*_onFloor &&*/ _jumping == NO)
 	{
 		_onFloor = NO;
 		_jumping = YES;
-		velocity.dy = _jumpSpeedInitial;
-		self.physicsBody.velocity = velocity;
+		velocity.y = _jumpSpeedInitial;
+		_entity.velocity = velocity;
 		
 		_jumpButton = [note.userInfo objectForKey:@"behavior"];
 		
@@ -144,12 +146,12 @@
 	{
 		[self endJump];
 
-		CGVector velocity = self.physicsBody.velocity;
-		if (velocity.dy > _jumpAbortVelocity)
+		CGPoint velocity = _entity.velocity;
+		if (velocity.y > _jumpAbortVelocity)
 		{
-			velocity.dy = _jumpAbortVelocity;
+			velocity.y = _jumpAbortVelocity;
 		}
-		self.physicsBody.velocity = velocity;
+		_entity.velocity = velocity;
 	}
 }
 
@@ -161,6 +163,14 @@
 	_jumpButton = nil;
 }
 
+-(void) update:(NSTimeInterval)currentTime
+{
+	CGPoint velocity = _entity.velocity;
+	velocity.x = _currentControlPadDirection.dx;
+	_entity.velocity = velocity;
+}
+
+/*
 -(void) update:(NSTimeInterval)currentTime
 {
 	// custom non-physics velocity to tweak player's behavior to be less like a physics body but a "real" jump'n run character
@@ -253,5 +263,6 @@
 {
 	[self testPlayerOnFloor];
 }
+*/
 
 @end

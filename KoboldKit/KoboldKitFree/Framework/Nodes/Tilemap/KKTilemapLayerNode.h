@@ -27,4 +27,10 @@
 /** @returns The layer's tilemap node. */
 @property (atomic, weak) KKTilemapNode* tilemapNode;
 
+/** Converts a point from scene coordinates to tile coordinates within the layer. */
+-(CGPoint) tileCoordForPoint:(CGPoint)point;
+
+-(CGPoint) centerPositionForTileCoord:(CGPoint)tileCoord;
+-(CGPoint) positionForTileCoord:(CGPoint)tileCoord;
+
 @end

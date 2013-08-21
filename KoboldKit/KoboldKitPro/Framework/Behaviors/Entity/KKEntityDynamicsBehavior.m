@@ -15,6 +15,9 @@
 {
 	_kinematicEntities = [NSMutableArray arrayWithCapacity:10];
 	_dynamicEntities = [NSMutableArray arrayWithCapacity:10];
+	
+	_gravity = CGPointMake(0.0, -0.98);
+	_speed = 1.0;
 }
 
 -(void) didJoinController
@@ -44,7 +47,50 @@
 
 -(void) didEvaluateActions
 {
+	const CGPoint infinityVelocity = CGPointMake(INFINITY, INFINITY);
+	KKTilemapNode* tilemapNode = (KKTilemapNode*)self.node;
 	
+	for (KKEntity* entity in _dynamicEntities)
+	{
+		// apply gravity
+		CGPoint newVelocity = ccpAdd(entity.velocity, _gravity);
+		
+		// cap new velocity
+		CGPoint maxVelocity = entity.maximumVelocity;
+		if (CGPointEqualToPoint(maxVelocity, infinityVelocity) == NO)
+		{
+			newVelocity.x = MAX(newVelocity.x, -maxVelocity.x);
+			newVelocity.x = MIN(newVelocity.x, maxVelocity.x);
+			newVelocity.y = MAX(newVelocity.y, -maxVelocity.y);
+			newVelocity.y = MIN(newVelocity.y, maxVelocity.y);
+		}
+
+		// speed is unaffected by max velocity caps, hence speed is applied afterwards
+		newVelocity = ccpMult(newVelocity, _speed);
+		LOG_EXPR(newVelocity);
+		
+		// update position
+		CGPoint previousPosition = entity.position;
+		CGPoint newPosition;
+		newPosition.x = previousPosition.x + newVelocity.x;
+		newPosition.y = previousPosition.y + newVelocity.y;
+
+		CGPoint tileCoord = [tilemapNode.mainTileLayerNode tileCoordForPoint:newPosition];
+		tileCoord.y += 1;
+		
+		gid_t gid = [tilemapNode.mainTileLayerNode.layer tileGidAt:tileCoord];
+		if (gid)
+		{
+			newVelocity.y = 0.0;
+			CGPoint tilePos = [tilemapNode.mainTileLayerNode positionForTileCoord:tileCoord];
+			newPosition.y = tilePos.y + 2 * tilemapNode.tilemap.gridSize.height;
+		}
+
+		// apply updated velocity & position to entity and node
+		entity.velocity = newVelocity;
+		entity.position = newPosition;
+		entity.node.position = newPosition;
+	}
 }
 
 @end

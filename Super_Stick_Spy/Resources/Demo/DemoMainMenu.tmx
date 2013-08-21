@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="50" height="20" tilewidth="16" tileheight="16" backgroundcolor="#ffffff">
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="50" height="20" tilewidth="16" tileheight="16" backgroundcolor="#003200">
  <properties>
   <property name="physicsGravityY" value="-9.81"/>
   <property name="physicsSimulationSpeed" value="1.0"/>
@@ -24,7 +25,7 @@
    eJzt1LEJADAMxEDvv202SOU+hhTyowMPIB5cJZIDvmkHUVLHZBdqR0vqeNmF3tGSOn7+Nyo7WJI6Ek6StrhEdG01
   </data>
  </layer>
- <objectgroup color="#00ff00" name="game objects" width="50" height="20">
+ <objectgroup color="#00ff00" draworder="topdown" name="game objects" width="50" height="20">
   <object name="player" type="Player" x="296" y="176" width="16" height="32"/>
   <object name="gameTitle" type="Image" x="80" y="80" width="448" height="64">
    <properties>
@@ -47,7 +48,7 @@
  </objectgroup>
  <layer name="foreground" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYmRgYBrFo5jKWBGI9QcZlifDH8xAPNgA4zDxhx4Z8TIY/QEDpMTLYPYHKfEymP0BA8TEy1DwByxe8OGh4A9iwKg/BhcQAvrjM8PQxwPdLhrFo3gUj2JiMQAx2j5q
+   eJxjYmRgYBrFo5jKWBGI9QcZlifDH8xAPNgA4zDxhx4Z8TIY/QEDpMTLYPYHKfEymP0BA8TEy1DwByxe8OGh4A9iwKg/BhcQAvrjM8PQxwPdLhrFo3gU0x5HDJO8DgB0Qz6/
   </data>
  </layer>
 </map>

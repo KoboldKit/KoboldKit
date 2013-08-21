@@ -6,11 +6,14 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
+@class KKEntity;
+
 @interface PlayerCharacter : KKNode
 {
 @private
 	__weak KKTilemapObject* _tilemapPlayerObject;
 	KKSpriteNode* _playerSprite;
+	KKEntity* _entity;
 
 	// these values are Tiled-editable via properties of the same name
 	CGPoint _respawnPosition;

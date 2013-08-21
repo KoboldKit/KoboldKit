@@ -11,3 +11,4 @@
  typedefs SK classes that haven't been subclassed yet for forward compatibility. */
 
 #import <../KoboldKit.h>
+#import "KKCommunityCategories.h"

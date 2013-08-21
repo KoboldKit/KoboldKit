@@ -25,6 +25,8 @@
 		[self addChild:_curtainSprite];
 		
 		[[OALSimpleAudio sharedInstance] playEffect:@"teleport.wav"];
+		
+		[self observeInputEvents];
     }
     return self;
 }
@@ -57,6 +59,7 @@
 		self.physicsWorld.speed = [mapProperties numberForKey:@"physicsSpeed"].floatValue;
 	}
 	
+	[_tilemapNode addBehavior:[KKEntityDynamicsBehavior new]];
 	[_tilemapNode spawnObjects];
 	
 	_playerCharacter = (PlayerCharacter*)[_tilemapNode.gameObjectsLayerNode childNodeWithName:@"player"];
@@ -226,6 +229,15 @@
 {
 	MenuScene* newScene = [MenuScene sceneWithSize:self.size];
 	[self.view presentScene:newScene];
+}
+
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[super touchesBegan:touches withEvent:event];
+	
+	CGPoint touchPos = [[touches anyObject] locationInNode:self];
+	CGPoint touchedTileCoord = [_tilemapNode.mainTileLayerNode tileCoordForPoint:touchPos];
+	LOG_EXPR(touchedTileCoord);
 }
 
 @end

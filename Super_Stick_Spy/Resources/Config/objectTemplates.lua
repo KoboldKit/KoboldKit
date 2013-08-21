@@ -105,17 +105,18 @@ local objectTemplates =
 			_fallSpeedAcceleration = 50, -- how fast player accelerates when falling down
 			_fallSpeedLimit = 300,			-- max falling speed
 			_jumpAbortVelocity = 150,		-- the (max) upwards velocity forcibly set when jump is aborted
-			_jumpSpeedInitial = 350,		-- how fast the player initially moves upwards when jumping is initiated
+			_jumpSpeedInitial = 35,		-- how fast the player initially moves upwards when jumping is initiated
 			_jumpSpeedDeceleration = 16,	-- how fast upwards motion (caused by jumping) decelerates
 			_runSpeedAcceleration = 0,		-- how fast player accelerates sideways (0 = instant)
 			_runSpeedDeceleration = 0,		-- how fast player decelerates sideways (0 = instant)
-			_runSpeedLimit = 200,			-- max sideways running speed
+			_runSpeedLimit = 8,				-- max sideways running speed
 			_boundingBox = "{12, 28}",
 			--anchorPoint = "{0.5, 0.3}",
 
 			_defaultImage = "dummy_stickman.png",
 		},
 		
+		--[[
 		physicsBody =
 		{
 			properties =
@@ -132,6 +133,7 @@ local objectTemplates =
 				collisionBitMask = kGameObjectCollisionBitMask,
 			},
 		},
+		--]]
 		
 		behaviors =
 		{

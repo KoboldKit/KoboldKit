@@ -7,6 +7,8 @@
 //
 
 #import "KKTilemapNode+KoboldKitPro.h"
+#import "KKEntityDynamicsBehavior.h"
+#import "KKEntity.h"
 #import "../KoboldKit.h"
 
 @implementation KKTilemapNode (KoboldKitPro)
@@ -23,6 +25,8 @@
 
 -(void) spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode*)objectLayerNode
 {
+	KKEntityDynamicsBehavior* entityDynamicsBehavior = [self behaviorKindOfClass:[KKEntityDynamicsBehavior class]];
+	
 	NSMutableDictionary* varSetterCache = [NSMutableDictionary dictionaryWithCapacity:4];
 	[varSetterCache setObject:[[KKClassVarSetter alloc] initWithClass:NSClassFromString(@"PKPhysicsBody")] forKey:@"PKPhysicsBody"];
 	
@@ -171,7 +175,22 @@
 			}
 			
 			[objectLayerNode addChild:objectNode];
-			
+
+			// create entity
+			if (entityDynamicsBehavior)
+			{
+				if ([tilemapObject.name isEqualToString:@"player"])
+				{
+					NSAssert1(objectNode.physicsBody == nil, @"entity dynamics can't be used with node (%@) because it has a physicsBody", objectNode);
+					
+					KKEntity* entity = [KKEntity entityWithNode:objectNode tilemapObject:tilemapObject];
+					entity.type = KKEntityTypeDynamic;
+					entity.maximumVelocity = CGPointMake(15.0, 15.0);
+					[entityDynamicsBehavior addEntity:entity];
+					LOG_EXPR(entity);
+				}
+			}
+
 			// call objectDidSpawn on newly spawned object (if available)
 			if ([objectNode respondsToSelector:@selector(nodeDidSpawnWithTilemapObject:)])
 			{

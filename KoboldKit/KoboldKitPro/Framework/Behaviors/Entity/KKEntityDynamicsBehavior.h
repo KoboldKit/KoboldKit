@@ -17,6 +17,9 @@
 	NSMutableArray* _dynamicEntities;
 }
 
+@property (atomic) CGPoint gravity;
+@property (atomic) CGFloat speed;
+
 -(void) addEntity:(KKEntity*)entity;
 
 @end

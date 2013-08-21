@@ -24,9 +24,9 @@ typedef enum
 @interface KKEntity : NSObject
 
 /** Current velocity. */
-@property (atomic) CGVector velocity;
-/** Maximum velocity, in positive direction (will also cap negative velocity accordingly). */
-@property (atomic) CGVector maximumVelocity;
+@property (atomic) CGPoint velocity;
+/** Maximum velocity, in positive direction (will also cap negative velocity accordingly). Defaults to INFINITY. */
+@property (atomic) CGPoint maximumVelocity;
 /** Current position. */
 @property (atomic) CGPoint position;
 /** Current position, rounded to the next nearest pixel coordinate (ie 1.0, 1.5, 2.0, 2.5, etc). */
@@ -46,5 +46,7 @@ typedef enum
 
 /** Inactive objects still exist in memory but behave as if they didn't. */
 //@property (atomic) BOOL active;
+
++(id) entityWithNode:(SKNode*)node tilemapObject:(KKTilemapObject*)tilemapObject;
 
 @end
