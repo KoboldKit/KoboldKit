@@ -1,0 +1,1137 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>XMLStreamWriter Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">XMLStreamWriter Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/close">&nbsp;&nbsp;&nbsp;&nbsp;- close</option>
+	
+	<option value="//api/name/flush">&nbsp;&nbsp;&nbsp;&nbsp;- flush</option>
+	
+	<option value="//api/name/toData">&nbsp;&nbsp;&nbsp;&nbsp;- toData</option>
+	
+	<option value="//api/name/toString">&nbsp;&nbsp;&nbsp;&nbsp;- toString</option>
+	
+	<option value="//api/name/writeAttribute:value:">&nbsp;&nbsp;&nbsp;&nbsp;- writeAttribute:value:</option>
+	
+	<option value="//api/name/writeCData:">&nbsp;&nbsp;&nbsp;&nbsp;- writeCData:</option>
+	
+	<option value="//api/name/writeCharacters:">&nbsp;&nbsp;&nbsp;&nbsp;- writeCharacters:</option>
+	
+	<option value="//api/name/writeComment:">&nbsp;&nbsp;&nbsp;&nbsp;- writeComment:</option>
+	
+	<option value="//api/name/writeEmptyElement:">&nbsp;&nbsp;&nbsp;&nbsp;- writeEmptyElement:</option>
+	
+	<option value="//api/name/writeEndDocument">&nbsp;&nbsp;&nbsp;&nbsp;- writeEndDocument</option>
+	
+	<option value="//api/name/writeEndElement">&nbsp;&nbsp;&nbsp;&nbsp;- writeEndElement</option>
+	
+	<option value="//api/name/writeEndElement:">&nbsp;&nbsp;&nbsp;&nbsp;- writeEndElement:</option>
+	
+	<option value="//api/name/writeProcessingInstruction:data:">&nbsp;&nbsp;&nbsp;&nbsp;- writeProcessingInstruction:data:</option>
+	
+	<option value="//api/name/writeStartDocument">&nbsp;&nbsp;&nbsp;&nbsp;- writeStartDocument</option>
+	
+	<option value="//api/name/writeStartDocumentWithEncoding:version:">&nbsp;&nbsp;&nbsp;&nbsp;- writeStartDocumentWithEncoding:version:</option>
+	
+	<option value="//api/name/writeStartDocumentWithVersion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeStartDocumentWithVersion:</option>
+	
+	<option value="//api/name/writeStartElement:">&nbsp;&nbsp;&nbsp;&nbsp;- writeStartElement:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/close">close</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flush">flush</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toData">toData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toString">toString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeAttribute:value:">writeAttribute:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeCData:">writeCData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeCharacters:">writeCharacters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeComment:">writeComment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeEmptyElement:">writeEmptyElement:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeEndDocument">writeEndDocument</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeEndElement">writeEndElement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeEndElement:">writeEndElement:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeProcessingInstruction:data:">writeProcessingInstruction:data:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeStartDocument">writeStartDocument</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeStartDocumentWithEncoding:version:">writeStartDocumentWithEncoding:version:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeStartDocumentWithVersion:">writeStartDocumentWithVersion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeStartElement:">writeStartElement:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="XMLStreamWriter Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">XMLStreamWriter Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">XMLWriter.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>xml stream writer protocol, see: <a href="https://code.google.com/p/xswi/w/list">https://code.google.com/p/xswi/w/list</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeStartDocument">&ndash;&nbsp;writeStartDocument</a></code>
+		<span class="tooltip"><p>..</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeStartDocumentWithVersion:">&ndash;&nbsp;writeStartDocumentWithVersion:</a></code>
+		<span class="tooltip"><p>..</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeStartDocumentWithEncoding:version:">&ndash;&nbsp;writeStartDocumentWithEncoding:version:</a></code>
+		<span class="tooltip"><p>The XML encoding as string.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeStartElement:">&ndash;&nbsp;writeStartElement:</a></code>
+		<span class="tooltip"><p>The name of the element.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeEndElement">&ndash;&nbsp;writeEndElement</a></code>
+		<span class="tooltip"><p>..</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeEndElement:">&ndash;&nbsp;writeEndElement:</a></code>
+		<span class="tooltip"><p>The name of the element.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeEmptyElement:">&ndash;&nbsp;writeEmptyElement:</a></code>
+		<span class="tooltip"><p>The name of the element.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeEndDocument">&ndash;&nbsp;writeEndDocument</a></code>
+		<span class="tooltip"><p>..</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeAttribute:value:">&ndash;&nbsp;writeAttribute:value:</a></code>
+		<span class="tooltip"><p>The name of the attribute.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeCharacters:">&ndash;&nbsp;writeCharacters:</a></code>
+		<span class="tooltip"><p>The text to write.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeComment:">&ndash;&nbsp;writeComment:</a></code>
+		<span class="tooltip"><p>The comment text to write.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeProcessingInstruction:data:">&ndash;&nbsp;writeProcessingInstruction:data:</a></code>
+		<span class="tooltip"><p>The target string.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeCData:">&ndash;&nbsp;writeCData:</a></code>
+		<span class="tooltip"><p>The cdata string.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toString">&ndash;&nbsp;toString</a></code>
+		<span class="tooltip"><p>the written xml string buffer</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toData">&ndash;&nbsp;toData</a></code>
+		<span class="tooltip"><p>the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default)</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flush">&ndash;&nbsp;flush</a></code>
+		<span class="tooltip"><p>flush the buffers</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/close">&ndash;&nbsp;close</a></code>
+		<span class="tooltip"><p>close the writer and buffers</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/close" title="close"></a>
+	<h3 class="subsubtitle method-title">close</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>close the writer and buffers</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)close</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flush" title="flush"></a>
+	<h3 class="subsubtitle method-title">flush</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>flush the buffers</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)flush</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toData" title="toData"></a>
+	<h3 class="subsubtitle method-title">toData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)toData</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toString" title="toString"></a>
+	<h3 class="subsubtitle method-title">toString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the written xml string buffer</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSMutableString *)toString</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the written xml string buffer</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeAttribute:value:" title="writeAttribute:value:"></a>
+	<h3 class="subsubtitle method-title">writeAttribute:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the attribute.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeAttribute:(NSString *)<em>localName</em> value:(NSString *)<em>value</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localName</em></dt>
+			<dd><p>The name of the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The attribute value.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeCData:" title="writeCData:"></a>
+	<h3 class="subsubtitle method-title">writeCData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The cdata string.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeCData:(NSString *)<em>cdata</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cdata</em></dt>
+			<dd><p>The cdata string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeCharacters:" title="writeCharacters:"></a>
+	<h3 class="subsubtitle method-title">writeCharacters:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text to write.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeCharacters:(NSString *)<em>text</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>The text to write.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeComment:" title="writeComment:"></a>
+	<h3 class="subsubtitle method-title">writeComment:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The comment text to write.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeComment:(NSString *)<em>comment</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>comment</em></dt>
+			<dd><p>The comment text to write.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeEmptyElement:" title="writeEmptyElement:"></a>
+	<h3 class="subsubtitle method-title">writeEmptyElement:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the element.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeEmptyElement:(NSString *)<em>localName</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localName</em></dt>
+			<dd><p>The name of the element.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeEndDocument" title="writeEndDocument"></a>
+	<h3 class="subsubtitle method-title">writeEndDocument</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>..</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeEndDocument</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeEndElement" title="writeEndElement"></a>
+	<h3 class="subsubtitle method-title">writeEndElement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>..</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeEndElement</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeEndElement:" title="writeEndElement:"></a>
+	<h3 class="subsubtitle method-title">writeEndElement:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the element.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeEndElement:(NSString *)<em>localName</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localName</em></dt>
+			<dd><p>The name of the element.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeProcessingInstruction:data:" title="writeProcessingInstruction:data:"></a>
+	<h3 class="subsubtitle method-title">writeProcessingInstruction:data:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The target string.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeProcessingInstruction:(NSString *)<em>target</em> data:(NSString *)<em>data</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target string.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The data string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeStartDocument" title="writeStartDocument"></a>
+	<h3 class="subsubtitle method-title">writeStartDocument</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>..</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeStartDocument</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeStartDocumentWithEncoding:version:" title="writeStartDocumentWithEncoding:version:"></a>
+	<h3 class="subsubtitle method-title">writeStartDocumentWithEncoding:version:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The XML encoding as string.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeStartDocumentWithEncoding:(NSString *)<em>encoding</em> version:(NSString *)<em>version</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>The XML encoding as string.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>version</em></dt>
+			<dd><p>The XML version string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeStartDocumentWithVersion:" title="writeStartDocumentWithVersion:"></a>
+	<h3 class="subsubtitle method-title">writeStartDocumentWithVersion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>..</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeStartDocumentWithVersion:(NSString *)<em>version</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>version</em></dt>
+			<dd><p>The XML version string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeStartElement:" title="writeStartElement:"></a>
+	<h3 class="subsubtitle method-title">writeStartElement:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the element.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)writeStartElement:(NSString *)<em>localName</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localName</em></dt>
+			<dd><p>The name of the element.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">XMLWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

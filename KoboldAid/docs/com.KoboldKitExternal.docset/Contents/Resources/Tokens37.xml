@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSMutableArray+WeakReferences.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableArray(WeakReferences)</TokenIdentifier>
+			<Abstract type="html">Adds to NSMutableArray the ability to create an array that keeps weak references.</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(WeakReferences)/mutableArrayUsingWeakReferences</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableArray that uses weak references.</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mutableArrayUsingWeakReferences</Declaration>
+			
+			
+			<Anchor>//api/name/mutableArrayUsingWeakReferences</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(WeakReferences)/mutableArrayUsingWeakReferencesWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableArray that uses weak references.</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mutableArrayUsingWeakReferencesWithCapacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity of the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mutableArrayUsingWeakReferencesWithCapacity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(WeakReferences)/newMutableArrayUsingWeakReferences</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableArray that uses weak references (no pending autorelease).</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>			
+			
+			<Declaration>+ (id)newMutableArrayUsingWeakReferences</Declaration>
+			
+			
+			<Anchor>//api/name/newMutableArrayUsingWeakReferences</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(WeakReferences)/newMutableArrayUsingWeakReferencesWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableArray that uses weak references (no pending autorelease).</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>			
+			
+			<Declaration>+ (id)newMutableArrayUsingWeakReferencesWithCapacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity of the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/newMutableArrayUsingWeakReferencesWithCapacity:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

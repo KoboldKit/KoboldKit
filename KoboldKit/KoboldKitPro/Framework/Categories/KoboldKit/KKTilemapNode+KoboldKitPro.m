@@ -9,7 +9,6 @@
 #import "KKTilemapNode+KoboldKitPro.h"
 #import "KKEntityDynamicsBehavior.h"
 #import "KKEntity.h"
-#import "../KoboldKit.h"
 
 @implementation KKTilemapNode (KoboldKitPro)
 

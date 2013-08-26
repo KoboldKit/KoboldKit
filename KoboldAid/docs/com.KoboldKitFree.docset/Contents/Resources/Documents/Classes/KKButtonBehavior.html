@@ -1,0 +1,895 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>KKButtonBehavior Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KKButtonBehavior Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/continuous">&nbsp;&nbsp;&nbsp;&nbsp;continuous</option>
+	
+	<option value="//api/name/executesWhenPressed">&nbsp;&nbsp;&nbsp;&nbsp;executesWhenPressed</option>
+	
+	<option value="//api/name/selected">&nbsp;&nbsp;&nbsp;&nbsp;selected</option>
+	
+	<option value="//api/name/selectedScale">&nbsp;&nbsp;&nbsp;&nbsp;selectedScale</option>
+	
+	<option value="//api/name/selectedTexture">&nbsp;&nbsp;&nbsp;&nbsp;selectedTexture</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/beginSelect">&nbsp;&nbsp;&nbsp;&nbsp;- beginSelect</option>
+	
+	<option value="//api/name/didChangeEnabledState">&nbsp;&nbsp;&nbsp;&nbsp;- didChangeEnabledState</option>
+	
+	<option value="//api/name/didJoinController">&nbsp;&nbsp;&nbsp;&nbsp;- didJoinController</option>
+	
+	<option value="//api/name/didLeaveController">&nbsp;&nbsp;&nbsp;&nbsp;- didLeaveController</option>
+	
+	<option value="//api/name/endSelect">&nbsp;&nbsp;&nbsp;&nbsp;- endSelect</option>
+	
+	<option value="//api/name/execute">&nbsp;&nbsp;&nbsp;&nbsp;- execute</option>
+	
+	<option value="//api/name/setEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;- setEnabled:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Selection Properties">Selection Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Select &amp; Execute Methods">Select &amp; Execute Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/continuous">continuous</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executesWhenPressed">executesWhenPressed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selected">selected</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedScale">selectedScale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedTexture">selectedTexture</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginSelect">beginSelect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didChangeEnabledState">didChangeEnabledState</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didJoinController">didJoinController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLeaveController">didLeaveController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSelect">endSelect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/execute">execute</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setEnabled:">setEnabled:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="KKButtonBehavior Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KKButtonBehavior Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/KKBehavior.html">KKBehavior</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">KKButtonBehavior.h<br />KKButtonBehavior.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>KKButtonBehavior turns any node into a button. Touch/Click on the node while be detected, the node is scaled while <a href="#//api/name/selected">selected</a>.
+Scaling is optional and can be modified/disabled with the <a href="#//api/name/selectedScale">selectedScale</a> property.</p>
+
+<p>If a touch/click started and then ended on the node, a notification with name <code>KKButtonDidExecute</code> is posted to the
+<a href="https://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/nsnotificationcenter_Class/Reference/Reference.html">NSNotificationCenter</a>
+with the button behavior&rsquo;s node as sender.</p>
+
+<p>To register to receive the button notifications:</p>
+
+<pre><code>NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
+[nc addObserver:self
+       selector:@selector(buttonDidExecute:)
+           name:KKButtonDidExecute
+         object:buttonNode];
+</code></pre>
+
+<p>The observer is usually <code>self</code> but can be any other object implementing the selector.
+The selector can have any name.
+The object parameter should be the node containing the KKButtonBehavior instance, or nil. If you use <code>nil</code> as object,
+the selector receives all KKButtonDidExecute notifications from all KKButtonBehaviors.</p>
+
+<p>The selector implementation takes one argument of type NSNotification:</p>
+
+<pre><code>-(void) buttonDidExecute:(NSNotification*)note
+{
+    // object is the sending node:
+    SKNode* node = note.object;
+
+    // get the behavior
+    KKButtonBehavior* buttonBehavior = [node behaviorForKey:@"theKey"];
+}
+</code></pre>
+
+<p>Note: an NSNotification is sent because using blocks or target/selector would prevent the class from being NSCopying/NSCoding compliant.
+Blocks and target/selector can not be copied or archived.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Selection Properties" name="task_Selection Properties"></a>
+						<h3 class="subsubtitle task-title">Selection Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedTexture">&nbsp;&nbsp;selectedTexture</a></code>
+		<span class="tooltip"><p>Set the <a href="#//api/name/selected">selected</a> texture if you want this to be exchanged with the sprite&rsquo;s texture during selection. Only works with SKSpriteNode nodes.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedScale">&nbsp;&nbsp;selectedScale</a></code>
+		<span class="tooltip"><p>Determines the amount of scale when the button is <a href="#//api/name/selected">selected</a>. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selected">&nbsp;&nbsp;selected</a></code>
+		<span class="tooltip"><p>YES if the button is currently selected.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executesWhenPressed">&nbsp;&nbsp;executesWhenPressed</a></code>
+		<span class="tooltip"><p>If enabled, the button will send the <a href="#//api/name/execute">execute</a> notification when it is pressed. The default will send the notification when the button is released.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/continuous">&nbsp;&nbsp;continuous</a></code>
+		<span class="tooltip"><p>If enabled, the button will send the <a href="#//api/name/execute">execute</a> notification continuously as long as it is pressed. It will also send the &ldquo;released&rdquo; notification
+when it is no longer pressed.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Select &amp; Execute Methods" name="task_Select &amp; Execute Methods"></a>
+						<h3 class="subsubtitle task-title">Select &amp; Execute Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginSelect">&ndash;&nbsp;beginSelect</a></code>
+		<span class="tooltip"><p>Will make the node enter the <a href="#//api/name/selected">selected</a> state. This is normally used internally, but you may want to use this to highlight buttons,
+for example in a tutorial. You can also override the method in a subclass to perform your own selection style, perhaps changing texture or color.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endSelect">&ndash;&nbsp;endSelect</a></code>
+		<span class="tooltip"><p>Will make the node exit the <a href="#//api/name/selected">selected</a> state. This is normally used internally, but may be helpful for tutorials (see <a href="#//api/name/beginSelect">beginSelect</a>).
+You can override the method in a subclass to perform your own deselection style.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/execute">&ndash;&nbsp;execute</a></code>
+		<span class="tooltip"><p>Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
+You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call [super execute]
+in your implementation.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
+		<span class="tooltip"><p>Sent when the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> was added to a <a href="../Classes/KKBehavior.html#//api/name/node">node</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
+		<span class="tooltip"><p>Sent when the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> was removed from a <a href="../Classes/KKBehavior.html#//api/name/node">node</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didChangeEnabledState">&ndash;&nbsp;didChangeEnabledState</a></code>
+		<span class="tooltip"><p>Sent when the <a href="../Classes/KKBehavior.html#//api/name/enabled">enabled</a> state of the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> was changed.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setEnabled:">&ndash;&nbsp;setEnabled:</a></code>
+		<span class="tooltip"><p>Whether the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/continuous" title="continuous"></a>
+	<h3 class="subsubtitle method-title">continuous</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If enabled, the button will send the <a href="#//api/name/execute">execute</a> notification continuously as long as it is pressed. It will also send the &ldquo;released&rdquo; notification
+when it is no longer pressed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL continuous</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the button will <a href="#//api/name/execute">execute</a> continously while pressed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/executesWhenPressed" title="executesWhenPressed"></a>
+	<h3 class="subsubtitle method-title">executesWhenPressed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If enabled, the button will send the <a href="#//api/name/execute">execute</a> notification when it is pressed. The default will send the notification when the button is released.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL executesWhenPressed</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the button will <a href="#//api/name/execute">execute</a> when pressed. NO if the button will <a href="#//api/name/execute">execute</a> when released.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selected" title="selected"></a>
+	<h3 class="subsubtitle method-title">selected</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>YES if the button is currently selected.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) BOOL selected</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the button is currently selected.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedScale" title="selectedScale"></a>
+	<h3 class="subsubtitle method-title">selectedScale</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Determines the amount of scale when the button is <a href="#//api/name/selected">selected</a>. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGFloat selectedScale</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The current focus scale.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedTexture" title="selectedTexture"></a>
+	<h3 class="subsubtitle method-title">selectedTexture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the <a href="#//api/name/selected">selected</a> texture if you want this to be exchanged with the sprite&rsquo;s texture during selection. Only works with SKSpriteNode nodes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) SKTexture *selectedTexture</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/beginSelect" title="beginSelect"></a>
+	<h3 class="subsubtitle method-title">beginSelect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Will make the node enter the <a href="#//api/name/selected">selected</a> state. This is normally used internally, but you may want to use this to highlight buttons,
+for example in a tutorial. You can also override the method in a subclass to perform your own selection style, perhaps changing texture or color.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)beginSelect</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didChangeEnabledState" title="didChangeEnabledState"></a>
+	<h3 class="subsubtitle method-title">didChangeEnabledState</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the <a href="../Classes/KKBehavior.html#//api/name/enabled">enabled</a> state of the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> was changed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didChangeEnabledState</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didJoinController" title="didJoinController"></a>
+	<h3 class="subsubtitle method-title">didJoinController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> was added to a <a href="../Classes/KKBehavior.html#//api/name/node">node</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didJoinController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didLeaveController" title="didLeaveController"></a>
+	<h3 class="subsubtitle method-title">didLeaveController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> was removed from a <a href="../Classes/KKBehavior.html#//api/name/node">node</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)didLeaveController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endSelect" title="endSelect"></a>
+	<h3 class="subsubtitle method-title">endSelect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Will make the node exit the <a href="#//api/name/selected">selected</a> state. This is normally used internally, but may be helpful for tutorials (see <a href="#//api/name/beginSelect">beginSelect</a>).
+You can override the method in a subclass to perform your own deselection style.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)endSelect</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/execute" title="execute"></a>
+	<h3 class="subsubtitle method-title">execute</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
+You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call [super execute]
+in your implementation.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)execute</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKButtonBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setEnabled:" title="setEnabled:"></a>
+	<h3 class="subsubtitle method-title">setEnabled:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setEnabled:(BOOL)<em>enabled</em></code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether the <a href="../Classes/KKBehavior.html#//api/name/behavior">behavior</a> is enabled.
+Disabled behaviors don&rsquo;t receive update messages.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKBehavior.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

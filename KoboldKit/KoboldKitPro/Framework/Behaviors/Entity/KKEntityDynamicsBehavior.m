@@ -13,8 +13,9 @@
 
 -(void) didInitialize
 {
-	_kinematicEntities = [NSMutableArray arrayWithCapacity:10];
-	_dynamicEntities = [NSMutableArray arrayWithCapacity:10];
+	_kinematicEntities = [NSMutableArray arrayWithCapacity:8];
+	_dynamicEntities = [NSMutableArray arrayWithCapacity:8];
+	_playerEntities = [NSMutableArray arrayWithCapacity:2];
 	
 	_gravity = CGPointMake(0.0, -0.98);
 	_speed = 1.0;
@@ -28,6 +29,10 @@
 -(void) didLeaveController
 {
 	[self.node.kkScene removeSceneEventsObserver:self];
+	
+	[_kinematicEntities removeAllObjects];
+	[_dynamicEntities removeAllObjects];
+	[_playerEntities removeAllObjects];
 }
 
 
@@ -38,6 +43,10 @@
 	if (entity.type == KKEntityTypeDynamic)
 	{
 		[_dynamicEntities addObject:entity];
+	}
+	else if (entity.type == KKEntityTypePlayer)
+	{
+		[_playerEntities addObject:entity];
 	}
 	else
 	{

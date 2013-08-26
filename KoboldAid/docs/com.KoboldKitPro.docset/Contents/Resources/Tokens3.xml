@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKEntity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKEntity</TokenIdentifier>
+			<Abstract type="html">An entity represents an object in a game world which is used to position its view (node, check for collisions
+and perform any other custom game logic.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setVelocity:</TokenIdentifier>
+			<Abstract type="html">Current velocity.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/velocity</TokenIdentifier>
+			<Abstract type="html">Current velocity.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/velocity</TokenIdentifier>
+			<Abstract type="html">Current velocity.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setMaximumVelocity:</TokenIdentifier>
+			<Abstract type="html">Maximum velocity, in positive direction (will also cap negative velocity accordingly). Defaults to INFINITY.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint maximumVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/maximumVelocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/maximumVelocity</TokenIdentifier>
+			<Abstract type="html">Maximum velocity, in positive direction (will also cap negative velocity accordingly). Defaults to INFINITY.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint maximumVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/maximumVelocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/maximumVelocity</TokenIdentifier>
+			<Abstract type="html">Maximum velocity, in positive direction (will also cap negative velocity accordingly). Defaults to INFINITY.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint maximumVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/maximumVelocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setPosition:</TokenIdentifier>
+			<Abstract type="html">Current position.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/position</TokenIdentifier>
+			<Abstract type="html">Current position.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/position</TokenIdentifier>
+			<Abstract type="html">Current position.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setPositionInPixels:</TokenIdentifier>
+			<Abstract type="html">Current position, rounded to the next nearest pixel coordinate (ie 1.0, 1.5, 2.0, 2.5, etc).</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/positionInPixels</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/positionInPixels</TokenIdentifier>
+			<Abstract type="html">Current position, rounded to the next nearest pixel coordinate (ie 1.0, 1.5, 2.0, 2.5, etc).</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/positionInPixels</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/positionInPixels</TokenIdentifier>
+			<Abstract type="html">Current position, rounded to the next nearest pixel coordinate (ie 1.0, 1.5, 2.0, 2.5, etc).</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint positionInPixels</Declaration>
+			
+			
+			<Anchor>//api/name/positionInPixels</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setSpawnPosition:</TokenIdentifier>
+			<Abstract type="html">Position the object should appear in the world. Unless modified it is identical to initialPosition.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint spawnPosition</Declaration>
+			
+			
+			<Anchor>//api/name/spawnPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/spawnPosition</TokenIdentifier>
+			<Abstract type="html">Position the object should appear in the world. Unless modified it is identical to initialPosition.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint spawnPosition</Declaration>
+			
+			
+			<Anchor>//api/name/spawnPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/spawnPosition</TokenIdentifier>
+			<Abstract type="html">Position the object should appear in the world. Unless modified it is identical to initialPosition.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGPoint spawnPosition</Declaration>
+			
+			
+			<Anchor>//api/name/spawnPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setInitialPosition:</TokenIdentifier>
+			<Abstract type="html">Initial position is normally the position the object was positioned at in the editor.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) CGPoint initialPosition</Declaration>
+			
+			
+			<Anchor>//api/name/initialPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/initialPosition</TokenIdentifier>
+			<Abstract type="html">Initial position is normally the position the object was positioned at in the editor.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) CGPoint initialPosition</Declaration>
+			
+			
+			<Anchor>//api/name/initialPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/initialPosition</TokenIdentifier>
+			<Abstract type="html">Initial position is normally the position the object was positioned at in the editor.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) CGPoint initialPosition</Declaration>
+			
+			
+			<Anchor>//api/name/initialPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setBoundingBox:</TokenIdentifier>
+			<Abstract type="html">Bounding box determines how big the entity is, used for collision detection.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGRect boundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/boundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/boundingBox</TokenIdentifier>
+			<Abstract type="html">Bounding box determines how big the entity is, used for collision detection.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGRect boundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/boundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/boundingBox</TokenIdentifier>
+			<Abstract type="html">Bounding box determines how big the entity is, used for collision detection.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGRect boundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/boundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setNode:</TokenIdentifier>
+			<Abstract type="html">The node (if any) that represents the object visually.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/node</TokenIdentifier>
+			<Abstract type="html">The node (if any) that represents the object visually.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/node</TokenIdentifier>
+			<Abstract type="html">The node (if any) that represents the object visually.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/setType:</TokenIdentifier>
+			<Abstract type="html">Type determines certain behaviors.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKEntityType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKEntity/type</TokenIdentifier>
+			<Abstract type="html">Type determines certain behaviors.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKEntityType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKEntity/type</TokenIdentifier>
+			<Abstract type="html">Type determines certain behaviors.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKEntityType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKEntity/entityWithNode:tilemapObject:</TokenIdentifier>
+			<Abstract type="html">Creates an entity.</Abstract>
+			<DeclaredIn>KKEntity.h</DeclaredIn>			
+			
+			<Declaration>+ (id)entityWithNode:(SKNode *)node tilemapObject:(KKTilemapObject *)tilemapObject</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that represents the entity in the scene.</Abstract>
+				</Parameter><Parameter>
+					<Name>tilemapObject</Name>
+					<Abstract type="html">The tilemap object that spawned the node and entity.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/entityWithNode:tilemapObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -7,7 +7,6 @@
 //
 
 #import "KKLimitVelocityBehavior.h"
-#import "CGVectorExtension.h"
 
 @implementation KKLimitVelocityBehavior
 

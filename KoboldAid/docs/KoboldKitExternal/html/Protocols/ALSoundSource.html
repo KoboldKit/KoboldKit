@@ -1,0 +1,2142 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ALSoundSource Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ALSoundSource Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/coneInnerAngle">&nbsp;&nbsp;&nbsp;&nbsp;coneInnerAngle</option>
+	
+	<option value="//api/name/coneOuterAngle">&nbsp;&nbsp;&nbsp;&nbsp;coneOuterAngle</option>
+	
+	<option value="//api/name/coneOuterGain">&nbsp;&nbsp;&nbsp;&nbsp;coneOuterGain</option>
+	
+	<option value="//api/name/direction">&nbsp;&nbsp;&nbsp;&nbsp;direction</option>
+	
+	<option value="//api/name/gain">&nbsp;&nbsp;&nbsp;&nbsp;gain</option>
+	
+	<option value="//api/name/interruptible">&nbsp;&nbsp;&nbsp;&nbsp;interruptible</option>
+	
+	<option value="//api/name/looping">&nbsp;&nbsp;&nbsp;&nbsp;looping</option>
+	
+	<option value="//api/name/maxDistance">&nbsp;&nbsp;&nbsp;&nbsp;maxDistance</option>
+	
+	<option value="//api/name/maxGain">&nbsp;&nbsp;&nbsp;&nbsp;maxGain</option>
+	
+	<option value="//api/name/minGain">&nbsp;&nbsp;&nbsp;&nbsp;minGain</option>
+	
+	<option value="//api/name/muted">&nbsp;&nbsp;&nbsp;&nbsp;muted</option>
+	
+	<option value="//api/name/pan">&nbsp;&nbsp;&nbsp;&nbsp;pan</option>
+	
+	<option value="//api/name/paused">&nbsp;&nbsp;&nbsp;&nbsp;paused</option>
+	
+	<option value="//api/name/pitch">&nbsp;&nbsp;&nbsp;&nbsp;pitch</option>
+	
+	<option value="//api/name/playing">&nbsp;&nbsp;&nbsp;&nbsp;playing</option>
+	
+	<option value="//api/name/position">&nbsp;&nbsp;&nbsp;&nbsp;position</option>
+	
+	<option value="//api/name/referenceDistance">&nbsp;&nbsp;&nbsp;&nbsp;referenceDistance</option>
+	
+	<option value="//api/name/reverbObstruction">&nbsp;&nbsp;&nbsp;&nbsp;reverbObstruction</option>
+	
+	<option value="//api/name/reverbOcclusion">&nbsp;&nbsp;&nbsp;&nbsp;reverbOcclusion</option>
+	
+	<option value="//api/name/reverbSendLevel">&nbsp;&nbsp;&nbsp;&nbsp;reverbSendLevel</option>
+	
+	<option value="//api/name/rolloffFactor">&nbsp;&nbsp;&nbsp;&nbsp;rolloffFactor</option>
+	
+	<option value="//api/name/sourceRelative">&nbsp;&nbsp;&nbsp;&nbsp;sourceRelative</option>
+	
+	<option value="//api/name/sourceType">&nbsp;&nbsp;&nbsp;&nbsp;sourceType</option>
+	
+	<option value="//api/name/velocity">&nbsp;&nbsp;&nbsp;&nbsp;velocity</option>
+	
+	<option value="//api/name/volume">&nbsp;&nbsp;&nbsp;&nbsp;volume</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/clear">&nbsp;&nbsp;&nbsp;&nbsp;- clear</option>
+	
+	<option value="//api/name/fadeTo:duration:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- fadeTo:duration:target:selector:</option>
+	
+	<option value="//api/name/panTo:duration:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- panTo:duration:target:selector:</option>
+	
+	<option value="//api/name/pitchTo:duration:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- pitchTo:duration:target:selector:</option>
+	
+	<option value="//api/name/play:">&nbsp;&nbsp;&nbsp;&nbsp;- play:</option>
+	
+	<option value="//api/name/play:gain:pitch:pan:loop:">&nbsp;&nbsp;&nbsp;&nbsp;- play:gain:pitch:pan:loop:</option>
+	
+	<option value="//api/name/play:loop:">&nbsp;&nbsp;&nbsp;&nbsp;- play:loop:</option>
+	
+	<option value="//api/name/rewind">&nbsp;&nbsp;&nbsp;&nbsp;- rewind</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/stopActions">&nbsp;&nbsp;&nbsp;&nbsp;- stopActions</option>
+	
+	<option value="//api/name/stopFade">&nbsp;&nbsp;&nbsp;&nbsp;- stopFade</option>
+	
+	<option value="//api/name/stopPan">&nbsp;&nbsp;&nbsp;&nbsp;- stopPan</option>
+	
+	<option value="//api/name/stopPitch">&nbsp;&nbsp;&nbsp;&nbsp;- stopPitch</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/coneInnerAngle">coneInnerAngle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/coneOuterAngle">coneOuterAngle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/coneOuterGain">coneOuterGain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/direction">direction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gain">gain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interruptible">interruptible</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/looping">looping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxDistance">maxDistance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxGain">maxGain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minGain">minGain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/muted">muted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pan">pan</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paused">paused</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pitch">pitch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playing">playing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/position">position</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/referenceDistance">referenceDistance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reverbObstruction">reverbObstruction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reverbOcclusion">reverbOcclusion</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reverbSendLevel">reverbSendLevel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rolloffFactor">rolloffFactor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sourceRelative">sourceRelative</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sourceType">sourceType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/velocity">velocity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/volume">volume</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clear">clear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fadeTo:duration:target:selector:">fadeTo:duration:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panTo:duration:target:selector:">panTo:duration:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pitchTo:duration:target:selector:">pitchTo:duration:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/play:">play:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/play:gain:pitch:pan:loop:">play:gain:pitch:pan:loop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/play:loop:">play:loop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rewind">rewind</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopActions">stopActions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopFade">stopFade</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopPan">stopPan</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopPitch">stopPitch</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ALSoundSource Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ALSoundSource Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ALSoundSource.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Manages all properties relating to an OpenAL sound source.
+There are currently two classes that adhere to this protocol: ALSource
+and ChannelSource (which collectively manipulates a set of ALSource objects).
+A full description of the properties themselves is available in the
+OpenAL 1.1 Specification and Reference:
+<a href="http://connect.creativelabs.com/openal/Documentation">http://connect.creativelabs.com/openal/Documentation</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/coneInnerAngle">&nbsp;&nbsp;coneInnerAngle</a></code>
+		<span class="tooltip"><p>Cone inner angle (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/coneOuterAngle">&nbsp;&nbsp;coneOuterAngle</a></code>
+		<span class="tooltip"><p>Cone outer angle (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/coneOuterGain">&nbsp;&nbsp;coneOuterGain</a></code>
+		<span class="tooltip"><p>Cone outer <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/direction">&nbsp;&nbsp;direction</a></code>
+		<span class="tooltip"><p>Direction (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gain">&nbsp;&nbsp;gain</a></code>
+		<span class="tooltip"><p>Gain (<a href="../Protocols/ALSoundSource.html#//api/name/volume">volume</a>) (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/volume">&nbsp;&nbsp;volume</a></code>
+		<span class="tooltip"><p>Volume (alias to <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a>).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interruptible">&nbsp;&nbsp;interruptible</a></code>
+		<span class="tooltip"><p>If true, this source may be interrupted when resources are low.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/looping">&nbsp;&nbsp;looping</a></code>
+		<span class="tooltip"><p>Looping (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxDistance">&nbsp;&nbsp;maxDistance</a></code>
+		<span class="tooltip"><p>Max distance (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxGain">&nbsp;&nbsp;maxGain</a></code>
+		<span class="tooltip"><p>Max <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minGain">&nbsp;&nbsp;minGain</a></code>
+		<span class="tooltip"><p>Min <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/muted">&nbsp;&nbsp;muted</a></code>
+		<span class="tooltip"><p>If true, this source is muted.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paused">&nbsp;&nbsp;paused</a></code>
+		<span class="tooltip"><p>If true, this source is currently paused.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pitch">&nbsp;&nbsp;pitch</a></code>
+		<span class="tooltip"><p>Pitch (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playing">&nbsp;&nbsp;playing</a></code>
+		<span class="tooltip"><p>If true, this source is currently playing audio.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/position">&nbsp;&nbsp;position</a></code>
+		<span class="tooltip"><p>Position (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/referenceDistance">&nbsp;&nbsp;referenceDistance</a></code>
+		<span class="tooltip"><p>Reference distance (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rolloffFactor">&nbsp;&nbsp;rolloffFactor</a></code>
+		<span class="tooltip"><p>Rolloff factor (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sourceRelative">&nbsp;&nbsp;sourceRelative</a></code>
+		<span class="tooltip"><p>Source relative (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sourceType">&nbsp;&nbsp;sourceType</a></code>
+		<span class="tooltip"><p>Source type (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/velocity">&nbsp;&nbsp;velocity</a></code>
+		<span class="tooltip"><p>Velocity (OpenAL property).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pan">&nbsp;&nbsp;pan</a></code>
+		<span class="tooltip"><p>Pan value (-1.0 = far left, 1.0 = far right).
+Note: This effect is simulated by changing the source&rsquo;s X <a href="../Protocols/ALSoundSource.html#//api/name/position">position</a>.
+Do not use this property if you are modifying the <a href="../Protocols/ALSoundSource.html#//api/name/position">position</a> property as well.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reverbSendLevel">&nbsp;&nbsp;reverbSendLevel</a></code>
+		<span class="tooltip"><p>Reverb send level (how much reverb affects this source). (iOS 5.0+)
+0.0 = fully dry, 1.0 = fully wet.
+Default 0.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reverbOcclusion">&nbsp;&nbsp;reverbOcclusion</a></code>
+		<span class="tooltip"><p>Reverb occlusion (wall/door between listener and source). (iOS 5.0+)
+-100.0db (most occlusion) to 0.0 (no occlusion).
+Default 0.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reverbObstruction">&nbsp;&nbsp;reverbObstruction</a></code>
+		<span class="tooltip"><p>Reverb obstruction (object between listener and source). (iOS 5.0+)
+-100.0db (most obstruction) to 0.0 (no obstruction).
+Default 0.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/play:">&ndash;&nbsp;play:</a></code>
+		<span class="tooltip"><p>Play a sound.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/play:loop:">&ndash;&nbsp;play:loop:</a></code>
+		<span class="tooltip"><p>Play a sound, optionally <a href="../Protocols/ALSoundSource.html#//api/name/looping">looping</a>.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/play:gain:pitch:pan:loop:">&ndash;&nbsp;play:gain:pitch:pan:loop:</a></code>
+		<span class="tooltip"><p>Play a sound, setting <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a>, <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a>, <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a>, and <a href="../Protocols/ALSoundSource.html#//api/name/looping">looping</a>.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		<span class="tooltip"><p>Stop <a href="../Protocols/ALSoundSource.html#//api/name/playing">playing</a> the current sound.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rewind">&ndash;&nbsp;rewind</a></code>
+		<span class="tooltip"><p>Stop <a href="../Protocols/ALSoundSource.html#//api/name/playing">playing</a> the current sound and set its state to AL_INITIAL.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fadeTo:duration:target:selector:">&ndash;&nbsp;fadeTo:duration:target:selector:</a></code>
+		<span class="tooltip"><p>Fade to the specified <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> value.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopFade">&ndash;&nbsp;stopFade</a></code>
+		<span class="tooltip"><p>Stop the currently running fade operation, if any.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panTo:duration:target:selector:">&ndash;&nbsp;panTo:duration:target:selector:</a></code>
+		<span class="tooltip"><p><a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a> to the specified value.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopPan">&ndash;&nbsp;stopPan</a></code>
+		<span class="tooltip"><p>Stop the currently running <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a> operation, if any.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pitchTo:duration:target:selector:">&ndash;&nbsp;pitchTo:duration:target:selector:</a></code>
+		<span class="tooltip"><p>Gradually change <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> to the specified value.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopPitch">&ndash;&nbsp;stopPitch</a></code>
+		<span class="tooltip"><p>Stop the currently running <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> operation, if any.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopActions">&ndash;&nbsp;stopActions</a></code>
+		<span class="tooltip"><p>Stop any currently running fade, <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a>, or <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> operations.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
+		<span class="tooltip"><p>Clear any buffers this source is currently using.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/coneInnerAngle" title="coneInnerAngle"></a>
+	<h3 class="subsubtitle method-title">coneInnerAngle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cone inner angle (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float coneInnerAngle</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/coneOuterAngle" title="coneOuterAngle"></a>
+	<h3 class="subsubtitle method-title">coneOuterAngle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cone outer angle (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float coneOuterAngle</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/coneOuterGain" title="coneOuterGain"></a>
+	<h3 class="subsubtitle method-title">coneOuterGain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cone outer <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float coneOuterGain</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/direction" title="direction"></a>
+	<h3 class="subsubtitle method-title">direction</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Direction (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALVector direction</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gain" title="gain"></a>
+	<h3 class="subsubtitle method-title">gain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gain (<a href="../Protocols/ALSoundSource.html#//api/name/volume">volume</a>) (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float gain</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interruptible" title="interruptible"></a>
+	<h3 class="subsubtitle method-title">interruptible</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, this source may be interrupted when resources are low.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool interruptible</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/looping" title="looping"></a>
+	<h3 class="subsubtitle method-title">looping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Looping (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool looping</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxDistance" title="maxDistance"></a>
+	<h3 class="subsubtitle method-title">maxDistance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Max distance (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float maxDistance</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxGain" title="maxGain"></a>
+	<h3 class="subsubtitle method-title">maxGain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Max <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float maxGain</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minGain" title="minGain"></a>
+	<h3 class="subsubtitle method-title">minGain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Min <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float minGain</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/muted" title="muted"></a>
+	<h3 class="subsubtitle method-title">muted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, this source is muted.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool muted</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pan" title="pan"></a>
+	<h3 class="subsubtitle method-title">pan</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pan value (-1.0 = far left, 1.0 = far right).
+Note: This effect is simulated by changing the source&rsquo;s X <a href="../Protocols/ALSoundSource.html#//api/name/position">position</a>.
+Do not use this property if you are modifying the <a href="../Protocols/ALSoundSource.html#//api/name/position">position</a> property as well.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float pan</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paused" title="paused"></a>
+	<h3 class="subsubtitle method-title">paused</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, this source is currently paused.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool paused</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pitch" title="pitch"></a>
+	<h3 class="subsubtitle method-title">pitch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pitch (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float pitch</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playing" title="playing"></a>
+	<h3 class="subsubtitle method-title">playing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, this source is currently playing audio.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) bool playing</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/position" title="position"></a>
+	<h3 class="subsubtitle method-title">position</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Position (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALPoint position</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/referenceDistance" title="referenceDistance"></a>
+	<h3 class="subsubtitle method-title">referenceDistance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reference distance (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float referenceDistance</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reverbObstruction" title="reverbObstruction"></a>
+	<h3 class="subsubtitle method-title">reverbObstruction</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reverb obstruction (object between listener and source). (iOS 5.0+)
+-100.0db (most obstruction) to 0.0 (no obstruction).
+Default 0.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float reverbObstruction</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reverbOcclusion" title="reverbOcclusion"></a>
+	<h3 class="subsubtitle method-title">reverbOcclusion</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reverb occlusion (wall/door between listener and source). (iOS 5.0+)
+-100.0db (most occlusion) to 0.0 (no occlusion).
+Default 0.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float reverbOcclusion</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reverbSendLevel" title="reverbSendLevel"></a>
+	<h3 class="subsubtitle method-title">reverbSendLevel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reverb send level (how much reverb affects this source). (iOS 5.0+)
+0.0 = fully dry, 1.0 = fully wet.
+Default 0.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float reverbSendLevel</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rolloffFactor" title="rolloffFactor"></a>
+	<h3 class="subsubtitle method-title">rolloffFactor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Rolloff factor (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float rolloffFactor</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sourceRelative" title="sourceRelative"></a>
+	<h3 class="subsubtitle method-title">sourceRelative</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Source relative (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) int sourceRelative</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sourceType" title="sourceType"></a>
+	<h3 class="subsubtitle method-title">sourceType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Source type (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) int sourceType</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/velocity" title="velocity"></a>
+	<h3 class="subsubtitle method-title">velocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Velocity (OpenAL property).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALVector velocity</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/volume" title="volume"></a>
+	<h3 class="subsubtitle method-title">volume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Volume (alias to <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a>).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float volume</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clear" title="clear"></a>
+	<h3 class="subsubtitle method-title">clear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clear any buffers this source is currently using.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fadeTo:duration:target:selector:" title="fadeTo:duration:target:selector:"></a>
+	<h3 class="subsubtitle method-title">fadeTo:duration:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fade to the specified <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> value.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)fadeTo:(float)<em>gain</em> duration:(float)<em>duration</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gain</em></dt>
+			<dd><p>The <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> to fade to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the fade operation in seconds.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to notify when the fade completes (can be nil).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to call when the fade completes. The selector must accept
+a single parameter, which will be the object that performed the fade.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panTo:duration:target:selector:" title="panTo:duration:target:selector:"></a>
+	<h3 class="subsubtitle method-title">panTo:duration:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a> to the specified value.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)panTo:(float)<em>pan</em> duration:(float)<em>duration</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pan</em></dt>
+			<dd><p>The value to <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a> to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a> operation in seconds.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to notify when the <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a> completes (can be nil).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to call when the <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a> completes. The selector must accept
+a single parameter, which will be the object that performed the <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pitchTo:duration:target:selector:" title="pitchTo:duration:target:selector:"></a>
+	<h3 class="subsubtitle method-title">pitchTo:duration:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gradually change <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> to the specified value.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)pitchTo:(float)<em>pitch</em> duration:(float)<em>duration</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pitch</em></dt>
+			<dd><p>The value to change <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> operation in seconds.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to notify when the <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> change completes (can be nil).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to call when the <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> change completes. The selector
+must accept a single parameter, which will be the object that performed the <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> change.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/play:" title="play:"></a>
+	<h3 class="subsubtitle method-title">play:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play a sound.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)<em>buffer</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buffer</em></dt>
+			<dd><p>the buffer to play.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the source <a href="../Protocols/ALSoundSource.html#//api/name/playing">playing</a> the sound, or nil if the sound could not be played.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/play:gain:pitch:pan:loop:" title="play:gain:pitch:pan:loop:"></a>
+	<h3 class="subsubtitle method-title">play:gain:pitch:pan:loop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play a sound, setting <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a>, <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a>, <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a>, and <a href="../Protocols/ALSoundSource.html#//api/name/looping">looping</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)<em>buffer</em> gain:(float)<em>gain</em> pitch:(float)<em>pitch</em> pan:(float)<em>pan</em> loop:(bool)<em>loop</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buffer</em></dt>
+			<dd><p>the buffer to play.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gain</em></dt>
+			<dd><p>The <a href="../Protocols/ALSoundSource.html#//api/name/gain">gain</a> (<a href="../Protocols/ALSoundSource.html#//api/name/volume">volume</a>) to play at (0.0 - 1.0).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pitch</em></dt>
+			<dd><p>The <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> to play at (1.0 = normal <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a>).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pan</em></dt>
+			<dd><p>Left-right panning (-1.0 = far left, 1.0 = far right).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loop</em></dt>
+			<dd><p>If TRUE, the sound will loop until you call &ldquo;stop&rdquo; on the returned sound source.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the source <a href="../Protocols/ALSoundSource.html#//api/name/playing">playing</a> the sound, or nil if the sound could not be played.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/play:loop:" title="play:loop:"></a>
+	<h3 class="subsubtitle method-title">play:loop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play a sound, optionally <a href="../Protocols/ALSoundSource.html#//api/name/looping">looping</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)<em>buffer</em> loop:(bool)<em>loop</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buffer</em></dt>
+			<dd><p>the buffer to play.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loop</em></dt>
+			<dd><p>If TRUE, the sound will loop until you call &ldquo;stop&rdquo; on the returned sound source.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the source <a href="../Protocols/ALSoundSource.html#//api/name/playing">playing</a> the sound, or nil if the sound could not be played.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rewind" title="rewind"></a>
+	<h3 class="subsubtitle method-title">rewind</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop <a href="../Protocols/ALSoundSource.html#//api/name/playing">playing</a> the current sound and set its state to AL_INITIAL.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)rewind</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop <a href="../Protocols/ALSoundSource.html#//api/name/playing">playing</a> the current sound.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopActions" title="stopActions"></a>
+	<h3 class="subsubtitle method-title">stopActions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop any currently running fade, <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a>, or <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> operations.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopActions</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopFade" title="stopFade"></a>
+	<h3 class="subsubtitle method-title">stopFade</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop the currently running fade operation, if any.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopFade</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopPan" title="stopPan"></a>
+	<h3 class="subsubtitle method-title">stopPan</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop the currently running <a href="../Protocols/ALSoundSource.html#//api/name/pan">pan</a> operation, if any.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopPan</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopPitch" title="stopPitch"></a>
+	<h3 class="subsubtitle method-title">stopPitch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop the currently running <a href="../Protocols/ALSoundSource.html#//api/name/pitch">pitch</a> operation, if any.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopPitch</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALSoundSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

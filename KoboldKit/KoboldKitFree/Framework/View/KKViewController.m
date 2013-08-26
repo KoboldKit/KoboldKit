@@ -9,7 +9,6 @@
 #import "KKViewController.h"
 #import "SKNode+KoboldKit.h"
 #import "KKView.h"
-#import "JRSwizzle.h"
 #import "KKVersion.h"
 
 @implementation KKViewController

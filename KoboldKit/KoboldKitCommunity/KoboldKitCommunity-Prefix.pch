@@ -5,6 +5,7 @@
 //
 
 #ifdef __OBJC__
-	#import "../KoboldKit.h"
+	#import "../KoboldKitFree/KoboldKit.h"
+	#import "../KoboldKitExternal/KoboldKitExternal.h"
 	#import "KKCommunityFramework.h"
 #endif

@@ -109,7 +109,7 @@ local objectTemplates =
 			_jumpSpeedDeceleration = 16,	-- how fast upwards motion (caused by jumping) decelerates
 			_runSpeedAcceleration = 0,		-- how fast player accelerates sideways (0 = instant)
 			_runSpeedDeceleration = 0,		-- how fast player decelerates sideways (0 = instant)
-			_runSpeedLimit = 8,				-- max sideways running speed
+			_runSpeedLimit = 10,				-- max sideways running speed
 			_boundingBox = "{12, 28}",
 			--anchorPoint = "{0.5, 0.3}",
 

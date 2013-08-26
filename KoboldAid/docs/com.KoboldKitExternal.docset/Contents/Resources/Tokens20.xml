@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALCallAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALCallAction</TokenIdentifier>
+			<Abstract type="html">Calls a selector on a target.
+This action will ignore whatever target it is run against,
+and will invoke the selector on the target specified at creation
+time.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithCallTarget:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:withObject:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to pass to the selector.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithCallTarget:selector:withObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:withObject:withObject:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)firstObject withObject:(id)secondObject</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter><Parameter>
+					<Name>firstObject</Name>
+					<Abstract type="html">The first object to pass to the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>secondObject</Name>
+					<Abstract type="html">The second object to pass to the selector.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithCallTarget:selector:withObject:withObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCallTarget:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:withObject:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to pass to the selector.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Initialize an action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCallTarget:selector:withObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:withObject:withObject:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)firstObject withObject:(id)secondObject</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter><Parameter>
+					<Name>firstObject</Name>
+					<Abstract type="html">The first object to pass to the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>secondObject</Name>
+					<Abstract type="html">The second object to pass to the selector.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCallTarget:selector:withObject:withObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

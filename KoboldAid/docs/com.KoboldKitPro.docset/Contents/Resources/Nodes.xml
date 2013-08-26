@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Kobold Kit</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="5"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		<Node id="1">
+			<Name>KKControlPadBehavior</Name>
+			<Path>Classes/KKControlPadBehavior.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>KKDownloadProjectFiles</Name>
+			<Path>Classes/KKDownloadProjectFiles.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>KKEntity</Name>
+			<Path>Classes/KKEntity.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>KKPickupItemBehavior</Name>
+			<Path>Classes/KKPickupItemBehavior.html</Path>
+		</Node>
+		
+		<Node id="5">
+			<Name>KKTilemapNode(KoboldKitPro)</Name>
+			<Path>Categories/KKTilemapNode+KoboldKitPro.html</Path>
+		</Node>
+		
+		
+	</Library>
+</DocSetNodes>

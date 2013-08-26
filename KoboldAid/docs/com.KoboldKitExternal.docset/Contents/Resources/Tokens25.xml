@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALSequentialActions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALSequentialActions</TokenIdentifier>
+			<Abstract type="html">A set of actions that get run in sequence.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/setActions:</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/actions</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSequentialActions/actions</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALSequentialActions/actions:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actions:(OALAction *)actions, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>actions</Name>
+					<Abstract type="html">The comma separated list of actions.</Abstract>
+				</Parameter><Parameter>
+					<Name>NS_REQUIRES_NIL_TERMINATION</Name>
+					<Abstract type="html">List of actions must be terminated by a nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new set of sequential actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/actions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALSequentialActions/actionsFromArray:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionsFromArray:(NSArray *)actions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>actions</Name>
+					<Abstract type="html">The actions to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new set of sequential actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionsFromArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/initWithActions:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithActions:(NSArray *)actions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>actions</Name>
+					<Abstract type="html">The actions to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized set of sequential actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithActions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/setPDurations:</TokenIdentifier>
+			<Abstract type="html">The durations of the actions.</Abstract>
+			<DeclaredIn>OALUtilityActions.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *pDurations</Declaration>
+			
+			
+			<Anchor>//api/name/pDurations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/pDurations</TokenIdentifier>
+			<Abstract type="html">The durations of the actions.</Abstract>
+			<DeclaredIn>OALUtilityActions.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *pDurations</Declaration>
+			
+			
+			<Anchor>//api/name/pDurations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSequentialActions/pDurations</TokenIdentifier>
+			<Abstract type="html">The durations of the actions.</Abstract>
+			<DeclaredIn>OALUtilityActions.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *pDurations</Declaration>
+			
+			
+			<Anchor>//api/name/pDurations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/setCurrentAction:</TokenIdentifier>
+			<Abstract type="html">The current action being processed.</Abstract>
+			<DeclaredIn>OALUtilityActions.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) OALAction *currentAction</Declaration>
+			
+			
+			<Anchor>//api/name/currentAction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/currentAction</TokenIdentifier>
+			<Abstract type="html">The current action being processed.</Abstract>
+			<DeclaredIn>OALUtilityActions.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) OALAction *currentAction</Declaration>
+			
+			
+			<Anchor>//api/name/currentAction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSequentialActions/currentAction</TokenIdentifier>
+			<Abstract type="html">The current action being processed.</Abstract>
+			<DeclaredIn>OALUtilityActions.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) OALAction *currentAction</Declaration>
+			
+			
+			<Anchor>//api/name/currentAction</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

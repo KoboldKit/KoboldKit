@@ -24,7 +24,6 @@
 #import "KKModel.h"
 #import "KKClassVarSetter.h"
 
-
 @implementation KKTilemapNode
 
 #pragma mark Init/Setup

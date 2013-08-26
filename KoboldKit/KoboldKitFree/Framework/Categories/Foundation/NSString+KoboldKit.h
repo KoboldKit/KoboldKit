@@ -8,6 +8,49 @@
 
 #import <Foundation/Foundation.h>
 
+/** Converts a string to a CGPoint. Same as CGPointFromString/NSPointFromString but works on both platforms. */
+static inline CGPoint pointFromString(NSString* pointString)
+{
+#if TARGET_OS_IPHONE
+	return CGPointFromString(pointString);
+#else
+	return NSPointFromString(pointString);
+#endif
+}
+
+/** Converts a string to a CGVector. Same as CGVectorFromString/NSVectorFromString but works on both platforms. */
+static inline CGVector vectorFromString(NSString* vectorString)
+{
+	CGPoint point;
+#if TARGET_OS_IPHONE
+	point = CGPointFromString(vectorString);
+#else
+	point = NSPointFromString(vectorString);
+#endif
+	return CGVectorMake(point.x, point.y);
+}
+
+/** Converts a string to a CGSize. Same as CGSizeFromString/NSSizeFromString but works on both platforms. */
+static inline CGSize sizeFromString(NSString* pointString)
+{
+#if TARGET_OS_IPHONE
+	return CGSizeFromString(pointString);
+#else
+	return NSSizeFromString(pointString);
+#endif
+}
+
+/** Converts a string to a CGRect. Same as CGRectFromString/NSRectFromString but works on both platforms. */
+static inline CGRect rectFromString(NSString* pointString)
+{
+#if TARGET_OS_IPHONE
+	return CGRectFromString(pointString);
+#else
+	return NSRectFromString(pointString);
+#endif
+}
+
+
 /** NSString category methods */
 @interface NSString (KoboldKit)
 

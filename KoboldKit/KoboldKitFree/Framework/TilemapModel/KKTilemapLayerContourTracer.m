@@ -9,7 +9,6 @@
 #import "KKTilemapLayerContourTracer.h"
 #import "KKPointArray.h"
 #import "KKIntegerArray.h"
-#import "VTPG_Common.h"
 #import "KKTilemap.h"
 #import "KKTilemapLayer.h"
 

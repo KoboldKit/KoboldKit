@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALTargetedAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALTargetedAction</TokenIdentifier>
+			<Abstract type="html">Ignores whatever target it was invoked upon and applies the specified action
+on the target specified at creation time.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALTargetedAction/setForcedTarget:</TokenIdentifier>
+			<Abstract type="html">The target which this action will actually be invoked upon.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id forcedTarget</Declaration>
+			
+			
+			<Anchor>//api/name/forcedTarget</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALTargetedAction/forcedTarget</TokenIdentifier>
+			<Abstract type="html">The target which this action will actually be invoked upon.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id forcedTarget</Declaration>
+			
+			
+			<Anchor>//api/name/forcedTarget</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALTargetedAction/forcedTarget</TokenIdentifier>
+			<Abstract type="html">The target which this action will actually be invoked upon.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id forcedTarget</Declaration>
+			
+			
+			<Anchor>//api/name/forcedTarget</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTargetedAction/actionWithTarget:action:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithTarget:(id)target action:(OALAction *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to run the action upon.</Abstract>
+				</Parameter><Parameter>
+					<Name>action</Name>
+					<Abstract type="html">The action to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithTarget:action:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALTargetedAction/initWithTarget:action:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTarget:(id)target action:(OALAction *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to run the action upon.</Abstract>
+				</Parameter><Parameter>
+					<Name>action</Name>
+					<Abstract type="html">The action to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTarget:action:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

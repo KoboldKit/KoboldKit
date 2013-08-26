@@ -128,7 +128,7 @@
 	}
 
 	[self updateBoundingBox];
-} /* makePointsFromString */
+}
 
 -(void) updateBoundingBox
 {
@@ -147,7 +147,7 @@
 	_boundingBox = CGRectMake(boundingBoxBottomLeft.x, boundingBoxBottomLeft.y, boundingBoxTopRight.x, boundingBoxTopRight.y);
 	_boundingBox.size = CGSizeMake(boundingBoxTopRight.x - _boundingBox.origin.x, boundingBoxTopRight.y - _boundingBox.origin.y);
 	_boundingBox.origin = ccpAdd(_position, _boundingBox.origin);
-} /* updateBoundingBox */
+}
 
 -(void) dealloc
 {

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALPlaceAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALPlaceAction</TokenIdentifier>
+			<Abstract type="html">Places the target at the specified position.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/setPosition:</TokenIdentifier>
+			<Abstract type="html">The position where the target will be placed.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/position</TokenIdentifier>
+			<Abstract type="html">The position where the target will be placed.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALPlaceAction/position</TokenIdentifier>
+			<Abstract type="html">The position where the target will be placed.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALPlaceAction/actionWithPosition:</TokenIdentifier>
+			<Abstract type="html">Create an action with the specified position.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithPosition:(ALPoint)position</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>position</Name>
+					<Abstract type="html">The position to place the target at.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithPosition:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/initWithPosition:</TokenIdentifier>
+			<Abstract type="html">Initialize an action with the specified position.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPosition:(ALPoint)position</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>position</Name>
+					<Abstract type="html">The position to place the target at.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithPosition:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -11,7 +11,6 @@
 #import "KKBehavior.h"
 #import "KKScene.h"
 #import "KKNode.h"
-#import "CGPointExtension.h"
 #import "KKMacros.h"
 #import "KKView.h"
 #import "KKTilemapObject.h"

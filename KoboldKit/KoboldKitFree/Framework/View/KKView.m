@@ -69,21 +69,25 @@ static BOOL _showsNodeAnchorPoints = NO;
 	[self loadConfig:@"devconfig.lua"];
 	[self loadConfig:@"objectTemplates.lua" inheritProperties:YES];
 	[self loadConfig:@"behaviorTemplates.lua"];
-	
-	self.showsDrawCount = [_model boolForKeyPath:@"devconfig.showsDrawCount"];
-	self.showsFPS = [_model boolForKeyPath:@"devconfig.showsFPS"];
-	self.showsNodeCount = [_model boolForKeyPath:@"devconfig.showsNodeCount"];
-	self.showsPhysicsShapes = [_model boolForKeyPath:@"devconfig.showsPhysicsShapes"];
-	self.showsNodeFrames = [_model boolForKeyPath:@"devconfig.showsNodeFrames"];
-	self.showsNodeAnchorPoints = [_model boolForKeyPath:@"devconfig.showsNodeAnchorPoints"];
 
-	[self setValue:@([_model boolForKeyPath:@"devconfig.showsCoreAnimationFPS"]) forKey:@"_showsCoreAnimationFPS"];
-	[self setValue:@([_model boolForKeyPath:@"devconfig.showsGPUStats"]) forKey:@"_showsGPUStats"];
-	[self setValue:@([_model boolForKeyPath:@"devconfig.showsCPUStats"]) forKey:@"_showsCPUStats"];
-	[self setValue:@([_model boolForKeyPath:@"devconfig.showsCulledNodesInNodeCount"]) forKey:@"_showsCulledNodesInNodeCount"];
-	[self setValue:@([_model boolForKeyPath:@"devconfig.showsTotalAreaRendered"]) forKey:@"_showsTotalAreaRendered"];
-	[self setValue:@([_model boolForKeyPath:@"devconfig.showsSpriteBounds"]) forKey:@"_showsSpriteBounds"];
-	[self setValue:@([_model boolForKeyPath:@"devconfig.shouldCenterStats"]) forKey:@"_shouldCenterStats"];
+	BOOL disableAllDebugLabels = [_model boolForKeyPath:@"devconfig.disableAllDebugLabels"];
+	if (disableAllDebugLabels == NO)
+	{
+		self.showsDrawCount = [_model boolForKeyPath:@"devconfig.showsDrawCount"];
+		self.showsFPS = [_model boolForKeyPath:@"devconfig.showsFPS"];
+		self.showsNodeCount = [_model boolForKeyPath:@"devconfig.showsNodeCount"];
+		self.showsPhysicsShapes = [_model boolForKeyPath:@"devconfig.showsPhysicsShapes"];
+		self.showsNodeFrames = [_model boolForKeyPath:@"devconfig.showsNodeFrames"];
+		self.showsNodeAnchorPoints = [_model boolForKeyPath:@"devconfig.showsNodeAnchorPoints"];
+		
+		[self setValue:@([_model boolForKeyPath:@"devconfig.showsCoreAnimationFPS"]) forKey:@"_showsCoreAnimationFPS"];
+		[self setValue:@([_model boolForKeyPath:@"devconfig.showsGPUStats"]) forKey:@"_showsGPUStats"];
+		[self setValue:@([_model boolForKeyPath:@"devconfig.showsCPUStats"]) forKey:@"_showsCPUStats"];
+		[self setValue:@([_model boolForKeyPath:@"devconfig.showsCulledNodesInNodeCount"]) forKey:@"_showsCulledNodesInNodeCount"];
+		[self setValue:@([_model boolForKeyPath:@"devconfig.showsTotalAreaRendered"]) forKey:@"_showsTotalAreaRendered"];
+		[self setValue:@([_model boolForKeyPath:@"devconfig.showsSpriteBounds"]) forKey:@"_showsSpriteBounds"];
+		[self setValue:@([_model boolForKeyPath:@"devconfig.shouldCenterStats"]) forKey:@"_shouldCenterStats"];
+	}
 }
 
 -(void) loadConfig:(NSString*)configFile

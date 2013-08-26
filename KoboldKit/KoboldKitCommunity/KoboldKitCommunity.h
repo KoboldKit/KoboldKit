@@ -13,7 +13,6 @@
 #import "KKCommunityVersion.h"
 
 // staging headers which include all other headers of their module
-#import "KKCommunityExternals.h"
 #import "KKCommunityBehaviors.h"
 #import "KKCommunityCategories.h"
 #import "KKCommunityNodes.h"

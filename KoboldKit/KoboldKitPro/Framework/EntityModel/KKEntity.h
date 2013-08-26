@@ -17,6 +17,8 @@ typedef enum
 	KKEntityTypeKinematic,
 	/** Dynamic entities are affected by gravity and perform collision resolve. */
 	KKEntityTypeDynamic,
+	/** Players are dynamic entities but may be treated differently when it comes to collisions. They are also updated after all the other game elements. */
+	KKEntityTypePlayer,
 } KKEntityType;
 
 /** An entity represents an object in a game world which is used to position its view (node), check for collisions
@@ -47,6 +49,10 @@ typedef enum
 /** Inactive objects still exist in memory but behave as if they didn't. */
 //@property (atomic) BOOL active;
 
+/** Creates an entity.
+ @param node The node that represents the entity in the scene.
+ @param tilemapObject The tilemap object that spawned the node and entity.
+ @returns A new instance. */
 +(id) entityWithNode:(SKNode*)node tilemapObject:(KKTilemapObject*)tilemapObject;
 
 @end

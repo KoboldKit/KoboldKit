@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALSuspendHandler.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALSuspendHandler</TokenIdentifier>
+			<Abstract type="html">Provides two controls (interrupted and manuallySuspended for suspending
+a slave object, and also propagates such control messages to interested
+listeners.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALSuspendHandler/handlerWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Create a new handler with the specified slave target and selector.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>+ (OALSuspendHandler *)handlerWithTarget:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The slave object that will receive suspend/unsuspend events.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector for a "set suspended" method, taking a single
+boolean parameter.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/handlerWithTarget:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/initWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Initialize a handler with the specified slave target and selector.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTarget:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The slave object that will receive suspend/unsuspend events.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector for a "set suspended" method, taking a single
+boolean parameter.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithTarget:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/setManuallySuspended:</TokenIdentifier>
+			<Abstract type="html">If YES, the manual suspend control is set.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			
+			
+			<Anchor>//api/name/manuallySuspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/manuallySuspended</TokenIdentifier>
+			<Abstract type="html">If YES, the manual suspend control is set.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			
+			
+			<Anchor>//api/name/manuallySuspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSuspendHandler/manuallySuspended</TokenIdentifier>
+			<Abstract type="html">If YES, the manual suspend control is set.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			
+			
+			<Anchor>//api/name/manuallySuspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/setInterrupted:</TokenIdentifier>
+			<Abstract type="html">If YES, the interrupt control is set.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool interrupted</Declaration>
+			
+			
+			<Anchor>//api/name/interrupted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/interrupted</TokenIdentifier>
+			<Abstract type="html">If YES, the interrupt control is set.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool interrupted</Declaration>
+			
+			
+			<Anchor>//api/name/interrupted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSuspendHandler/interrupted</TokenIdentifier>
+			<Abstract type="html">If YES, the interrupt control is set.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool interrupted</Declaration>
+			
+			
+			<Anchor>//api/name/interrupted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/setSuspended:</TokenIdentifier>
+			<Abstract type="html">If YES, the slave object is suspended.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/suspended</TokenIdentifier>
+			<Abstract type="html">If YES, the slave object is suspended.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSuspendHandler/suspended</TokenIdentifier>
+			<Abstract type="html">If YES, the slave object is suspended.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/addSuspendListener:</TokenIdentifier>
+			<Abstract type="html">Add a listener that will receive manual suspend and interrupt events.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to register with this handler.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSuspendListener:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/removeSuspendListener:</TokenIdentifier>
+			<Abstract type="html">Remove a registered listener.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to unregister from this handler.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeSuspendListener:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/setSuspendStatusChangeTarget:</TokenIdentifier>
+			<Abstract type="html">Slave object that is notified when this object suspends or unsuspends. WEAK reference</Abstract>
+			<DeclaredIn>OALSuspendHandler.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id suspendStatusChangeTarget</Declaration>
+			
+			
+			<Anchor>//api/name/suspendStatusChangeTarget</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSuspendHandler/suspendStatusChangeTarget</TokenIdentifier>
+			<Abstract type="html">Slave object that is notified when this object suspends or unsuspends. WEAK reference</Abstract>
+			<DeclaredIn>OALSuspendHandler.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id suspendStatusChangeTarget</Declaration>
+			
+			
+			<Anchor>//api/name/suspendStatusChangeTarget</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSuspendHandler/suspendStatusChangeTarget</TokenIdentifier>
+			<Abstract type="html">Slave object that is notified when this object suspends or unsuspends. WEAK reference</Abstract>
+			<DeclaredIn>OALSuspendHandler.m</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id suspendStatusChangeTarget</Declaration>
+			
+			
+			<Anchor>//api/name/suspendStatusChangeTarget</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

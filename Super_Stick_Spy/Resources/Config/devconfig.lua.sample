@@ -16,14 +16,15 @@ local config =
 	-- these values are recognized and used
 	developmentWebServerURL = "http://10.0.0.8:32111",
 
+	-- quickly turn on/off the debug labels without having to change the individual flags below
+	disableAllDebugLabels = NO,
+
+	-- common Sprite Kit labels
 	showsFPS = YES,
 	showsDrawCount = YES,
 	showsNodeCount = YES,
-	showsPhysicsShapes = YES,
-	showsNodeFrames = NO,
-	showsNodeAnchorPoints = NO,
 
-	-- private debug flags
+	-- private Sprite Kit labels
 	showsCoreAnimationFPS = YES,
 	showsCPUStats = YES,
 	showsGPUStats = YES,
@@ -31,6 +32,11 @@ local config =
 	showsTotalAreaRendered = NO,
 	showsSpriteBounds = NO,
 	shouldCenterStats = NO,
+
+	-- additional Kobold Kit labels
+	showsPhysicsShapes = YES,
+	showsNodeFrames = NO,
+	showsNodeAnchorPoints = NO,
 }
 
 return config

@@ -12,7 +12,7 @@
 #import "KKTilemapTileset.h"
 #import "KKTilemapLayerTiles.h"
 #import "KKMacros.h"
-#import "CCProfiling.h"
+
 
 @implementation KKTilemapTileLayerNode
 

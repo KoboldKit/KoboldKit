@@ -45,8 +45,6 @@
 #import "KKMacros.h"
 #import "KKFramework.h"
 
-#import "base64.h"
-#import "ZipUtils.h"
 
 @implementation KKTMXReader
 
@@ -154,7 +152,6 @@
 			int b = (hex      ) & 0xFF;
 
 			_tilemap.backgroundColor = [SKColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1.0];
-			LOG_EXPR(_tilemap.backgroundColor);
 		}
 	}
 }

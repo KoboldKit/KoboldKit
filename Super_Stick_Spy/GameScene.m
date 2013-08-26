@@ -231,6 +231,7 @@
 	[self.view presentScene:newScene];
 }
 
+#if TARGET_OS_IPHONE
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	[super touchesBegan:touches withEvent:event];
@@ -239,5 +240,6 @@
 	CGPoint touchedTileCoord = [_tilemapNode.mainTileLayerNode tileCoordForPoint:touchPos];
 	LOG_EXPR(touchedTileCoord);
 }
+#endif
 
 @end

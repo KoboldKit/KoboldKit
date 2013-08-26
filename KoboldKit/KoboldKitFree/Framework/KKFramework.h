@@ -21,11 +21,6 @@
 #import "KKTypes.h"
 #import "KKVersion.h"
 
-// important externals
-#import "VTPG_Common.h"
-#import "CGPointExtension.h"
-#import "CGVectorExtension.h"
-
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 #else

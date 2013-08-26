@@ -10,5 +10,4 @@
 /** This header includes all the most commonly needed headers and 
  typedefs SK classes that haven't been subclassed yet for forward compatibility. */
 
-#import <../KoboldKit.h>
 #import "KKCommunityCategories.h"

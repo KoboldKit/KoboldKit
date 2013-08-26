@@ -15,6 +15,7 @@
 @private
 	NSMutableArray* _kinematicEntities;
 	NSMutableArray* _dynamicEntities;
+	NSMutableArray* _playerEntities;
 }
 
 @property (atomic) CGPoint gravity;

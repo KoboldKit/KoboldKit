@@ -6,7 +6,6 @@
 //
 //
 
-
 #import "KKTMXWriter.h"
 #import "KKTilemap.h"
 #import "KKTilemapProperties.h"
@@ -20,7 +19,6 @@
 #import "KKFramework.h"
 
 #import <zlib.h>
-#import "XMLWriter.h"
 
 // Base 64 encoding example from http://stackoverflow.com/a/6782480/201863
 

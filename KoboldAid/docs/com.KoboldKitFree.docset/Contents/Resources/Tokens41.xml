@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKTilemapTileLayerNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileLayerNode</TokenIdentifier>
+			<Abstract type="html">Tile layer node renders a TMX tile layer.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapTileLayerNode/tileLayerNodeWithLayer:</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tileLayerNodeWithLayer:(KKTilemapLayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">The tilemap layer object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/tileLayerNodeWithLayer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileLayerNode/updateLayer</TokenIdentifier>
+			<Abstract type="html">Updates the layer's tile sprites based on position, scale and view size.</Abstract>
+			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateLayer</Declaration>
+			
+			
+			<Anchor>//api/name/updateLayer</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

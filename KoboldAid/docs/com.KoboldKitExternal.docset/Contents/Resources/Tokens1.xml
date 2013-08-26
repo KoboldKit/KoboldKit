@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ALBuffer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ALBuffer</TokenIdentifier>
+			<Abstract type="html">A buffer for audio data that will be played via a SoundSource.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setBits:</TokenIdentifier>
+			<Abstract type="html">The size of a sample in bits.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint bits</Declaration>
+			
+			
+			<Anchor>//api/name/bits</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/bits</TokenIdentifier>
+			<Abstract type="html">The size of a sample in bits.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint bits</Declaration>
+			
+			
+			<Anchor>//api/name/bits</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/bits</TokenIdentifier>
+			<Abstract type="html">The size of a sample in bits.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint bits</Declaration>
+			
+			
+			<Anchor>//api/name/bits</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setBufferId:</TokenIdentifier>
+			<Abstract type="html">The ID assigned to this buffer by OpenAL.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALuint bufferId</Declaration>
+			
+			
+			<Anchor>//api/name/bufferId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/bufferId</TokenIdentifier>
+			<Abstract type="html">The ID assigned to this buffer by OpenAL.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALuint bufferId</Declaration>
+			
+			
+			<Anchor>//api/name/bufferId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/bufferId</TokenIdentifier>
+			<Abstract type="html">The ID assigned to this buffer by OpenAL.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALuint bufferId</Declaration>
+			
+			
+			<Anchor>//api/name/bufferId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setChannels:</TokenIdentifier>
+			<Abstract type="html">The number of channels the buffer data plays in.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint channels</Declaration>
+			
+			
+			<Anchor>//api/name/channels</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/channels</TokenIdentifier>
+			<Abstract type="html">The number of channels the buffer data plays in.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint channels</Declaration>
+			
+			
+			<Anchor>//api/name/channels</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/channels</TokenIdentifier>
+			<Abstract type="html">The number of channels the buffer data plays in.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint channels</Declaration>
+			
+			
+			<Anchor>//api/name/channels</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setDevice:</TokenIdentifier>
+			<Abstract type="html">The device this buffer was created for.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) ALDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/device</TokenIdentifier>
+			<Abstract type="html">The device this buffer was created for.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) ALDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/device</TokenIdentifier>
+			<Abstract type="html">The device this buffer was created for.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) ALDevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setFormat:</TokenIdentifier>
+			<Abstract type="html">The format of the audio data (see al.h, ALFORMATXXX).</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALenum format</Declaration>
+			
+			
+			<Anchor>//api/name/format</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/format</TokenIdentifier>
+			<Abstract type="html">The format of the audio data (see al.h, ALFORMATXXX).</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALenum format</Declaration>
+			
+			
+			<Anchor>//api/name/format</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/format</TokenIdentifier>
+			<Abstract type="html">The format of the audio data (see al.h, ALFORMATXXX).</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALenum format</Declaration>
+			
+			
+			<Anchor>//api/name/format</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setFrequency:</TokenIdentifier>
+			<Abstract type="html">The frequency this buffer runs at.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint frequency</Declaration>
+			
+			
+			<Anchor>//api/name/frequency</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/frequency</TokenIdentifier>
+			<Abstract type="html">The frequency this buffer runs at.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint frequency</Declaration>
+			
+			
+			<Anchor>//api/name/frequency</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/frequency</TokenIdentifier>
+			<Abstract type="html">The frequency this buffer runs at.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint frequency</Declaration>
+			
+			
+			<Anchor>//api/name/frequency</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setName:</TokenIdentifier>
+			<Abstract type="html">The name given to this buffer upon creation. You may change it at runtime if you wish.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/name</TokenIdentifier>
+			<Abstract type="html">The name given to this buffer upon creation. You may change it at runtime if you wish.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/name</TokenIdentifier>
+			<Abstract type="html">The name given to this buffer upon creation. You may change it at runtime if you wish.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setSize:</TokenIdentifier>
+			<Abstract type="html">The size, in bytes, of the currently loaded buffer data.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/size</TokenIdentifier>
+			<Abstract type="html">The size, in bytes, of the currently loaded buffer data.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/size</TokenIdentifier>
+			<Abstract type="html">The size, in bytes, of the currently loaded buffer data.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALint size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setDuration:</TokenIdentifier>
+			<Abstract type="html">The duration of the sample in this buffer, in seconds.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) float duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/duration</TokenIdentifier>
+			<Abstract type="html">The duration of the sample in this buffer, in seconds.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) float duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/duration</TokenIdentifier>
+			<Abstract type="html">The duration of the sample in this buffer, in seconds.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) float duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setFreeDataOnDestroy:</TokenIdentifier>
+			<Abstract type="html">If true, calls free() on the audio data when this object gets destroyed.
+Default: YES</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool freeDataOnDestroy</Declaration>
+			
+			
+			<Anchor>//api/name/freeDataOnDestroy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/freeDataOnDestroy</TokenIdentifier>
+			<Abstract type="html">If true, calls free() on the audio data when this object gets destroyed.
+Default: YES</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool freeDataOnDestroy</Declaration>
+			
+			
+			<Anchor>//api/name/freeDataOnDestroy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/freeDataOnDestroy</TokenIdentifier>
+			<Abstract type="html">If true, calls free() on the audio data when this object gets destroyed.
+Default: YES</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool freeDataOnDestroy</Declaration>
+			
+			
+			<Anchor>//api/name/freeDataOnDestroy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/setParentBuffer:</TokenIdentifier>
+			<Abstract type="html">The parent buffer (which owns the uncompressed data)</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) ALBuffer *parentBuffer</Declaration>
+			
+			
+			<Anchor>//api/name/parentBuffer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/parentBuffer</TokenIdentifier>
+			<Abstract type="html">The parent buffer (which owns the uncompressed data)</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) ALBuffer *parentBuffer</Declaration>
+			
+			
+			<Anchor>//api/name/parentBuffer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALBuffer/parentBuffer</TokenIdentifier>
+			<Abstract type="html">The parent buffer (which owns the uncompressed data)</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) ALBuffer *parentBuffer</Declaration>
+			
+			
+			<Anchor>//api/name/parentBuffer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ALBuffer/bufferWithName:data:size:format:frequency:</TokenIdentifier>
+			<Abstract type="html">Make a new buffer.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>+ (id)bufferWithName:(NSString *)name data:(void *)data size:(ALsizei)size format:(ALenum)format frequency:(ALsizei)frequency</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">Optional name that you can use to identify this buffer in your code.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The sound data. Note: ALBuffer will call free() on this data when it is destroyed!</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">The size of the data in bytes.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">The format of the data (see the Core Audio documentation).</Abstract>
+				</Parameter><Parameter>
+					<Name>frequency</Name>
+					<Abstract type="html">The sampling frequency in Hz.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new buffer.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferWithName:data:size:format:frequency:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/initWithName:data:size:format:frequency:</TokenIdentifier>
+			<Abstract type="html">Initialize the buffer.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithName:(NSString *)name data:(void *)data size:(ALsizei)size format:(ALenum)format frequency:(ALsizei)frequency</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">Optional name that you can use to identify this buffer in your code.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The sound data. Note: ALBuffer will call free() on this data when it is destroyed!</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">The size of the data in bytes.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">The format of the data (see the Core Audio documentation).</Abstract>
+				</Parameter><Parameter>
+					<Name>frequency</Name>
+					<Abstract type="html">The sampling frequency in Hz.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized buffer.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithName:data:size:format:frequency:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALBuffer/sliceWithName:offset:size:</TokenIdentifier>
+			<Abstract type="html">Returns a part of the buffer as a new buffer. You can use this method to split a buffer
+into a sub-buffers. The sub-buffers retain a reference to their parent buffer, and share
+the same memory. Therefore, modifying the parent buffer contents will affect its slices
+and vice-versa.</Abstract>
+			<DeclaredIn>ALBuffer.h</DeclaredIn>			
+			
+			<Declaration>- (ALBuffer *)sliceWithName:(NSString *)sliceName offset:(ALsizei)offset size:(ALsizei)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sliceName</Name>
+					<Abstract type="html">Optional name that you can use to identify the created buffer in your code.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">The offset in sound frames where the slice starts.</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">The size of the slice in frames.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The requested buffer.</Abstract></ReturnValue>
+			<Anchor>//api/name/sliceWithName:offset:size:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

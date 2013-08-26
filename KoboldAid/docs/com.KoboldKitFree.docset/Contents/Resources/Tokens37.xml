@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKTilemapObjectLayerNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObjectLayerNode</TokenIdentifier>
+			<Abstract type="html">Object layer node renders Tiled objects.</Abstract>
+			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapObjectLayerNode/objectLayerNodeWithLayer:</TokenIdentifier>
+			<Abstract type="html">A tilemap object layer.</Abstract>
+			<DeclaredIn>KKTilemapObjectLayerNode.h</DeclaredIn>			
+			
+			<Declaration>+ (id)objectLayerNodeWithLayer:(KKTilemapLayer *)layer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layer</Name>
+					<Abstract type="html">A tilemap object layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLayerNodeWithLayer:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

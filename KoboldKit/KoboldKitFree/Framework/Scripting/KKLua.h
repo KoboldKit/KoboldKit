@@ -6,20 +6,7 @@
 //  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
 //
 
-#import <Availability.h>
-
-// if compiled as (Objective) C++ code the includes must be inside an extern "C" declaration
-#ifdef __cplusplus
-extern "C" {
-#endif // __cplusplus
-#include "lua.h"
-#include "lauxlib.h"
-#include "lobject.h"
-#include "lualib.h"
-#ifdef __cplusplus
-}
-#endif // __cplusplus
-
+#import "../KoboldKitExternal/External/lua/LuaImport.h"
 
 #define BEGIN_STACK_MODIFY(L)  int __startStackIndex = lua_gettop((L));
 #define END_STACK_MODIFY(L, i) while (lua_gettop((L)) > (__startStackIndex + (i))) {lua_remove((L), __startStackIndex + 1); }

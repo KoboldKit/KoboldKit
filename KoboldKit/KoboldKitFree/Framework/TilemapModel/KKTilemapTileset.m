@@ -69,7 +69,6 @@ DEVELOPER_TODO("tilemap pvr texture load")
 		{
 			_texture = [KKTexture textureWithImageNamed:[NSBundle pathForFile:_imageFile]];
 			_texture.filteringMode = SKTextureFilteringNearest;
-			NSLog(@"Tileset texture: %@", _texture);
 		}
 
 		NSAssert(_texture, @"could not find (or otherwise load) image file: '%@'", _imageFile);
