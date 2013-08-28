@@ -127,6 +127,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DC5AA88017CD0D530001940A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC484C6A178C418C0067DAA4;
+			remoteInfo = libKoboldKit.a;
+		};
+		DC5AA88217CD0D590001940A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC484C42178C40BB0067DAA4;
+			remoteInfo = KoboldKit.framework;
+		};
 		DC8B562F17CBF16700F95CBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */;
@@ -158,7 +172,7 @@
 		DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_GeometryB.png; sourceTree = "<group>"; };
 		DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TilesTest.tmx; sourceTree = "<group>"; };
 		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
-		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
 		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua.sample; sourceTree = "<group>"; };
 		DC18B0C5178C7BC400641A6D /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
 		DC18B11E178C7E3B00641A6D /* Super_Stick_Spy-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Super_Stick_Spy-iOS-Info.plist"; sourceTree = "<group>"; };
@@ -198,7 +212,7 @@
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = behaviorTemplates.lua; sourceTree = "<group>"; };
 		DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KoboldKit.xcodeproj; path = KoboldKit/KoboldKitFree/KoboldKit.xcodeproj; sourceTree = "<group>"; };
-		DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKoboldKitExternal.a; path = "KoboldKit/KoboldKitExternal/build/Debug-iphoneos/libKoboldKitExternal.a"; sourceTree = "<group>"; };
+		DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitExternal.a; path = "KoboldKit/KoboldKitExternal/build/Debug-iphoneos/libKoboldKitExternal.a"; sourceTree = "<group>"; };
 		DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
 		DC8EED1D17A40788000C1995 /* objectTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTemplates.lua; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -379,7 +393,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DCD11E39178C522300FBC406 /* Super Stick Spy */ = {
+		DCD11E39178C522300FBC406 /* Super_Stick_Spy */ = {
 			isa = PBXGroup;
 			children = (
 				DCD7EC42178C573500BBAFB0 /* AppDelegate.h */,
@@ -395,7 +409,6 @@
 				DCCC6198178C5574009EC802 /* Resources */,
 				DCD11E3A178C522300FBC406 /* Supporting Files */,
 			);
-			name = "Super Stick Spy";
 			path = Super_Stick_Spy;
 			sourceTree = "<group>";
 		};
@@ -420,7 +433,7 @@
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
-				DCD11E39178C522300FBC406 /* Super Stick Spy */,
+				DCD11E39178C522300FBC406 /* Super_Stick_Spy */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
 				DCDD2DA91769FD0A00F307CD /* Products */,
 				DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */,
@@ -490,6 +503,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DC5AA88317CD0D590001940A /* PBXTargetDependency */,
 			);
 			name = "Super_Stick_Spy-Mac";
 			productName = "PlatformerDemo-Mac";
@@ -507,6 +521,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DC5AA88117CD0D530001940A /* PBXTargetDependency */,
 			);
 			name = "Super_Stick_Spy-iOS";
 			productName = "PlatformerDemo-iOS";
@@ -684,6 +699,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC5AA88117CD0D530001940A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libKoboldKit.a;
+			targetProxy = DC5AA88017CD0D530001940A /* PBXContainerItemProxy */;
+		};
+		DC5AA88317CD0D590001940A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KoboldKit.framework;
+			targetProxy = DC5AA88217CD0D590001940A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */ = {

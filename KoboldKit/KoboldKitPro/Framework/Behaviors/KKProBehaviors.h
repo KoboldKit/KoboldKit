@@ -1,10 +1,8 @@
-//
-//  KKProBehaviors.h
-//  KoboldKitPro
-//
-//  Created by Steffen Itterheim on 18.08.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under a PROPRIETARY License:
+ * KoboldKit/KoboldKitPro/KoboldKitPro.License.txt
+ */
 
 #import "KKEntityDynamicsBehavior.h"
 #import "KKPickupItemBehavior.h"

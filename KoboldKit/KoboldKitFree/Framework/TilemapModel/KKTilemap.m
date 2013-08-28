@@ -1,10 +1,8 @@
-//
-// KKTilemap.m
-// Kobold2D-Libraries
-//
-// Created by Steffen Itterheim on 13.10.12.
-//
-//
+/*
+ * Copyright (c) 2012-2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
 
 #import "KKTilemap.h"
 #import "KKClassVarSetter.h"

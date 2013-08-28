@@ -1,21 +1,7 @@
-//
-//  KKArcadeInputState.h
-//  KoboldKit
-//
-//  Created by Steffen Itterheim on 21.06.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
-
-#import "CGVectorExtension.h"
-
-/** @file KKArcadeInputState.h */
-
-// The original joystick/button enum values are from:
-// iCade https://github.com/scarnie/iCade-iOS/tree/master/iCadeTest/iCade and GameDock SDK, both MIT licensed.
-// There are several additions for KoboldTouch. Here's the license text which applies only to the
-// enum named KKArcadeInputState below:
 /*
- Copyright (C) 2011 by Stuart Carnie
+ Copyright (C) 2011-2012 by Stuart Carnie
+ Copyright (C) 2012 by Cascadia Games LLC
+ Copyright (C) 2013 by Steffen Itterheim
  
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -35,6 +21,15 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  */
+
+#import "CGVectorExtension.h"
+
+/** @file KKArcadeInputState.h */
+
+// The original joystick/button enum values are from:
+// iCade https://github.com/scarnie/iCade-iOS/tree/master/iCadeTest/iCade and GameDock SDK, both MIT licensed.
+// There are several additions for KoboldTouch / Kobold Kit.
+
 
 /** Defines the button/joystick states of arcade controllers like GameDock, iCade. Gamedock supports 1 or 2 players, iCade only uses the first player's states. */
 typedef enum

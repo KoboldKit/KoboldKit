@@ -1,10 +1,9 @@
-//
-//  KKExternals.h
-//  KoboldKit
-//
-//  Created by Steffen Itterheim on 17.08.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
+
 
 // import all external headers here
 #import "base64.h"

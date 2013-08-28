@@ -1,8 +1,8 @@
-//
-//
-// Created by Steffen Itterheim on 19.10.12.
-//
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under a PROPRIETARY License:
+ * KoboldKit/KoboldKitPro/KoboldKitPro.License.txt
+ */
 
 #import "KKProVersion.h"
 

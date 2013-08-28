@@ -1,10 +1,9 @@
-//
-//  PlayerCharacter.m
-//  KoboldKit
-//
-//  Created by Steffen Itterheim on 10.07.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under a PROPRIETARY License:
+ * Super_Stick_Spy/SuperStickSpy.License.txt
+ */
+
 
 #import "PlayerCharacter.h"
 #import "KKEntity.h"

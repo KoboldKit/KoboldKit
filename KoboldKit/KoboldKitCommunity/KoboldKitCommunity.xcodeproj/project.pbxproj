@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC8B564117CBFDA500F95CBC /* KKDummyClass.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B563F17CBFDA500F95CBC /* KKDummyClass.h */; };
-		DC8B564217CBFDA500F95CBC /* KKDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B564017CBFDA500F95CBC /* KKDummyClass.m */; };
-		DC8B564317CBFDA500F95CBC /* KKDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B564017CBFDA500F95CBC /* KKDummyClass.m */; };
+		DC8B564117CBFDA500F95CBC /* KKCommunityDummyClass.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B563F17CBFDA500F95CBC /* KKCommunityDummyClass.h */; };
+		DC8B564217CBFDA500F95CBC /* KKCommunityDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B564017CBFDA500F95CBC /* KKCommunityDummyClass.m */; };
+		DC8B564317CBFDA500F95CBC /* KKCommunityDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B564017CBFDA500F95CBC /* KKCommunityDummyClass.m */; };
 		DC8B564E17CC107000F95CBC /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1953B117C1443400EC526C /* KoboldKit.framework */; };
 		DC8B565017CC107000F95CBC /* KoboldKitExternal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B564F17CC107000F95CBC /* KoboldKitExternal.framework */; };
 		DC8B565217CC108B00F95CBC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
@@ -49,8 +49,8 @@
 		DC484C6B178C418C0067DAA4 /* libKoboldKitCommunity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKitCommunity.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC484CE3178C465E0067DAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		DC8B563F17CBFDA500F95CBC /* KKDummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDummyClass.h; sourceTree = "<group>"; };
-		DC8B564017CBFDA500F95CBC /* KKDummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDummyClass.m; sourceTree = "<group>"; };
+		DC8B563F17CBFDA500F95CBC /* KKCommunityDummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityDummyClass.h; sourceTree = "<group>"; };
+		DC8B564017CBFDA500F95CBC /* KKCommunityDummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommunityDummyClass.m; sourceTree = "<group>"; };
 		DC8B564F17CC107000F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DCBD9A0017C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KoboldKitCommunity-Prefix.pch"; sourceTree = "<group>"; };
@@ -122,8 +122,8 @@
 				DCD9C88E17C105F400535043 /* Categories */,
 				DCD9C89517C105F400535043 /* Nodes */,
 				DCD9C89717C105F400535043 /* Protocols */,
-				DC8B563F17CBFDA500F95CBC /* KKDummyClass.h */,
-				DC8B564017CBFDA500F95CBC /* KKDummyClass.m */,
+				DC8B563F17CBFDA500F95CBC /* KKCommunityDummyClass.h */,
+				DC8B564017CBFDA500F95CBC /* KKCommunityDummyClass.m */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 				DCBD9B5817C0C8A5008C4F3B /* KoboldKitCommunity.h in Headers */,
 				DCD9C89917C105F400535043 /* KKCommunityBehaviors.h in Headers */,
 				DCD9C89F17C105F400535043 /* KKCommunityNodes.h in Headers */,
-				DC8B564117CBFDA500F95CBC /* KKDummyClass.h in Headers */,
+				DC8B564117CBFDA500F95CBC /* KKCommunityDummyClass.h in Headers */,
 				DCD9C89B17C105F400535043 /* KKCommunityFramework.h in Headers */,
 				DCD9C89C17C105F400535043 /* KKCommunityVersion.h in Headers */,
 				DCBD9B5717C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch in Headers */,
@@ -330,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD9C89E17C105F400535043 /* KKCommunityVersion.m in Sources */,
-				DC8B564317CBFDA500F95CBC /* KKDummyClass.m in Sources */,
+				DC8B564317CBFDA500F95CBC /* KKCommunityDummyClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD9C89D17C105F400535043 /* KKCommunityVersion.m in Sources */,
-				DC8B564217CBFDA500F95CBC /* KKDummyClass.m in Sources */,
+				DC8B564217CBFDA500F95CBC /* KKCommunityDummyClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,10 +352,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
-				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -376,10 +372,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
-				);
 				FRAMEWORK_VERSION = A;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -395,10 +387,6 @@
 				ARCHS = (
 					armv7,
 					armv7s,
-				);
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -419,10 +407,6 @@
 				ARCHS = (
 					armv7,
 					armv7s,
-				);
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = KoboldKitCommunity;

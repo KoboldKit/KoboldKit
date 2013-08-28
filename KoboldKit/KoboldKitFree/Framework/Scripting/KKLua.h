@@ -1,10 +1,9 @@
-//
-//  KKLua.h
-//  KoboldKit
-//
-//  Created by Steffen Itterheim on 09.07.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2011-2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
+
 
 #import "../KoboldKitExternal/External/lua/LuaImport.h"
 

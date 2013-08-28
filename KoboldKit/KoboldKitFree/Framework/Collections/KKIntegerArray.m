@@ -1,10 +1,8 @@
-//
-//  KTIntegerArray.m
-//  Cocos2D+Box2D-GenerateTilemapCollisions
-//
-//  Created by Steffen Itterheim on 29.05.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2012-2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
 
 #import "KKIntegerArray.h"
 

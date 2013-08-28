@@ -1,10 +1,8 @@
-//
-//  KKControlPadBehavior.m
-//  KoboldKit
-//
-//  Created by Steffen Itterheim on 21.06.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under a PROPRIETARY License:
+ * KoboldKit/KoboldKitPro/KoboldKitPro.License.txt
+ */
 
 #import "KKControlPadBehavior.h"
 #import "SKNode+KoboldKit.h"

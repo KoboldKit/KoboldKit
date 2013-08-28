@@ -1,11 +1,8 @@
-//
-// KTTMXWriter.h
-// KoboldTouch-Libraries
-//
-// Created by Steffen Itterheim on 02.02.13.
-//
-//
-
+/*
+ * Copyright (c) 2012-2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
 
 @class KKTilemap;
 @class XMLWriter;

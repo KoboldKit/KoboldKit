@@ -1,11 +1,8 @@
-//
-// KTTilemapLayerTiles.h
-// KoboldTouch-Libraries
-//
-// Created by Steffen Itterheim on 20.12.12.
-//
-//
-
+/*
+ * Copyright (c) 2012-2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
 
 #import "KKTypes.h"
 

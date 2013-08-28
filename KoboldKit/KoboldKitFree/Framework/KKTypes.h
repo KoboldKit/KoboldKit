@@ -1,8 +1,9 @@
-//
-//
-// Created by Steffen Itterheim on 28.09.12.
-//
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
+
 
 /** @file KKTypes.h */
 

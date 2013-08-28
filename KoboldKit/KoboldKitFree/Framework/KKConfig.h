@@ -1,10 +1,8 @@
-//
-//  KKConfig.h
-//  KoboldKit
-//
-//  Created by Steffen Itterheim on 15.08.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
 
 
 /** If enabled (1) compiling the framework will print out messages from other developers as compiler warnings

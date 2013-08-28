@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0B689C17CE79E300219403 /* KKArcadeInputState.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0B689B17CE79E300219403 /* KKArcadeInputState.h */; };
 		DC3AEEBE17CBDEF70002416A /* CGPointExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3AEE6317CBDEF70002416A /* CGPointExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC3AEEBF17CBDEF70002416A /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEE6417CBDEF70002416A /* CGPointExtension.m */; };
 		DC3AEEC017CBDEF70002416A /* CGPointExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEE6417CBDEF70002416A /* CGPointExtension.m */; };
 		DC3AEEC117CBDEF70002416A /* CGVectorExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3AEE6517CBDEF70002416A /* CGVectorExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC3AEEC217CBDEF70002416A /* CGVectorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEE6617CBDEF70002416A /* CGVectorExtension.m */; };
 		DC3AEEC317CBDEF70002416A /* CGVectorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEE6617CBDEF70002416A /* CGVectorExtension.m */; };
-		DC3AEEC517CBDEF70002416A /* KKArcadeInputState.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3AEE6A17CBDEF70002416A /* KKArcadeInputState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC3AEEC617CBDEF70002416A /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3AEE6C17CBDEF70002416A /* JRSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC3AEEC717CBDEF70002416A /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEE6D17CBDEF70002416A /* JRSwizzle.m */; };
 		DC3AEEC817CBDEF70002416A /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEE6D17CBDEF70002416A /* JRSwizzle.m */; };
@@ -25,8 +25,6 @@
 		DC3AEF2817CBDEF70002416A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEEB117CBDEF70002416A /* Reachability.m */; };
 		DC3AEF2917CBDEF70002416A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEEB117CBDEF70002416A /* Reachability.m */; };
 		DC3AEF2B17CBDEF70002416A /* VTPG_Common.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3AEEB417CBDEF70002416A /* VTPG_Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC3AEF2C17CBDEF70002416A /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEEB517CBDEF70002416A /* VTPG_Common.m */; };
-		DC3AEF2D17CBDEF70002416A /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEEB517CBDEF70002416A /* VTPG_Common.m */; };
 		DC3AEF2E17CBDEF70002416A /* XMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3AEEB717CBDEF70002416A /* XMLWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC3AEF2F17CBDEF70002416A /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEEB817CBDEF70002416A /* XMLWriter.m */; };
 		DC3AEF3017CBDEF70002416A /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3AEEB817CBDEF70002416A /* XMLWriter.m */; };
@@ -231,12 +229,12 @@
 
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		DC0B689B17CE79E300219403 /* KKArcadeInputState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKArcadeInputState.h; sourceTree = "<group>"; };
 		DC1953B117C1443400EC526C /* KoboldKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKit.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKit.framework"; sourceTree = "<group>"; };
 		DC3AEE6317CBDEF70002416A /* CGPointExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointExtension.h; sourceTree = "<group>"; };
 		DC3AEE6417CBDEF70002416A /* CGPointExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPointExtension.m; sourceTree = "<group>"; };
 		DC3AEE6517CBDEF70002416A /* CGVectorExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGVectorExtension.h; sourceTree = "<group>"; };
 		DC3AEE6617CBDEF70002416A /* CGVectorExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGVectorExtension.m; sourceTree = "<group>"; };
-		DC3AEE6A17CBDEF70002416A /* KKArcadeInputState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKArcadeInputState.h; sourceTree = "<group>"; };
 		DC3AEE6C17CBDEF70002416A /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		DC3AEE6D17CBDEF70002416A /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		DC3AEE6E17CBDEF70002416A /* KKExternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKExternals.h; sourceTree = "<group>"; };
@@ -245,7 +243,6 @@
 		DC3AEEB017CBDEF70002416A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DC3AEEB117CBDEF70002416A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		DC3AEEB417CBDEF70002416A /* VTPG_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPG_Common.h; sourceTree = "<group>"; };
-		DC3AEEB517CBDEF70002416A /* VTPG_Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPG_Common.m; sourceTree = "<group>"; };
 		DC3AEEB717CBDEF70002416A /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLWriter.h; sourceTree = "<group>"; };
 		DC3AEEB817CBDEF70002416A /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriter.m; sourceTree = "<group>"; };
 		DC3AEEBA17CBDEF70002416A /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
@@ -413,6 +410,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC0B689A17CE79E300219403 /* KKArcadeInputState */ = {
+			isa = PBXGroup;
+			children = (
+				DC0B689B17CE79E300219403 /* KKArcadeInputState.h */,
+			);
+			path = KKArcadeInputState;
+			sourceTree = "<group>";
+		};
 		DC3AEE6217CBDEF70002416A /* CGPointExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,14 +427,6 @@
 				DC3AEE6617CBDEF70002416A /* CGVectorExtension.m */,
 			);
 			path = CGPointExtension;
-			sourceTree = "<group>";
-		};
-		DC3AEE6917CBDEF70002416A /* iCade+GameDock */ = {
-			isa = PBXGroup;
-			children = (
-				DC3AEE6A17CBDEF70002416A /* KKArcadeInputState.h */,
-			);
-			path = "iCade+GameDock";
 			sourceTree = "<group>";
 		};
 		DC3AEE6B17CBDEF70002416A /* JRSwizzle */ = {
@@ -527,7 +524,6 @@
 			isa = PBXGroup;
 			children = (
 				DC3AEEB417CBDEF70002416A /* VTPG_Common.h */,
-				DC3AEEB517CBDEF70002416A /* VTPG_Common.m */,
 			);
 			path = VTPG;
 			sourceTree = "<group>";
@@ -683,8 +679,8 @@
 			children = (
 				DC3AEE6E17CBDEF70002416A /* KKExternals.h */,
 				DC3AEE6217CBDEF70002416A /* CGPointExtension */,
-				DC3AEE6917CBDEF70002416A /* iCade+GameDock */,
 				DC3AEE6B17CBDEF70002416A /* JRSwizzle */,
+				DC0B689A17CE79E300219403 /* KKArcadeInputState */,
 				DC3AEE6F17CBDEF70002416A /* lua */,
 				DC3AEF5017CBE3F80002416A /* ObjectAL */,
 				DC3AEEAB17CBDEF70002416A /* Profiling */,
@@ -757,7 +753,6 @@
 				DC3AEF2B17CBDEF70002416A /* VTPG_Common.h in Headers */,
 				DC8B549C17CBEABD00F95CBC /* ldebug.h in Headers */,
 				DC3AEEC617CBDEF70002416A /* JRSwizzle.h in Headers */,
-				DC3AEEC517CBDEF70002416A /* KKArcadeInputState.h in Headers */,
 				DC3AEFAF17CBE3F80002416A /* ObjectALConfig.h in Headers */,
 				DC3AEEC117CBDEF70002416A /* CGVectorExtension.h in Headers */,
 				DC3AEF9417CBE3F80002416A /* OALAction+Private.h in Headers */,
@@ -790,6 +785,7 @@
 				DC8B54B417CBEABD00F95CBC /* lmem.h in Headers */,
 				DC3AEFC317CBE3F80002416A /* ALSoundSourcePool.h in Headers */,
 				DC3AEFA717CBE3F80002416A /* OALAudioTracks.h in Headers */,
+				DC0B689C17CE79E300219403 /* KKArcadeInputState.h in Headers */,
 				DC3AEFA117CBE3F80002416A /* OALAudioTrack.h in Headers */,
 				DC8B54C117CBEABD00F95CBC /* lparser.h in Headers */,
 				DC8B54AE17CBEABD00F95CBC /* llex.h in Headers */,
@@ -909,7 +905,6 @@
 				DC3AEFC817CBE3F80002416A /* ALSource.m in Sources */,
 				DC8B548F17CBEABD00F95CBC /* lbitlib.c in Sources */,
 				DC8B54D017CBEABD00F95CBC /* ltm.c in Sources */,
-				DC3AEF2D17CBDEF70002416A /* VTPG_Common.m in Sources */,
 				DC3AEFAD17CBE3F80002416A /* OALSimpleAudio.m in Sources */,
 				DC3AEFCF17CBE3F80002416A /* OpenALManager.m in Sources */,
 				DC3AEFB817CBE3F80002416A /* ALChannelSource.m in Sources */,
@@ -983,7 +978,6 @@
 				DC3AEFC717CBE3F80002416A /* ALSource.m in Sources */,
 				DC8B548E17CBEABD00F95CBC /* lbitlib.c in Sources */,
 				DC8B54CF17CBEABD00F95CBC /* ltm.c in Sources */,
-				DC3AEF2C17CBDEF70002416A /* VTPG_Common.m in Sources */,
 				DC3AEFAC17CBE3F80002416A /* OALSimpleAudio.m in Sources */,
 				DC3AEFCE17CBE3F80002416A /* OpenALManager.m in Sources */,
 				DC3AEFB717CBE3F80002416A /* ALChannelSource.m in Sources */,

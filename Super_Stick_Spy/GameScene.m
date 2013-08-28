@@ -1,10 +1,9 @@
-//
-//  MyScene.m
-//  KoboldKitDemo
-//
-//  Created by Steffen Itterheim on 13.06.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under a PROPRIETARY License:
+ * Super_Stick_Spy/SuperStickSpy.License.txt
+ */
+
 
 #import "GameScene.h"
 #import "MenuScene.h"
@@ -87,7 +86,7 @@
 
 	
 	// debug only
-	[self addDevelopmentButtons];
+	//[self addDevelopmentButtons];
 }
 
 -(void) loadMapNotification:(NSNotification*)notification
@@ -158,13 +157,6 @@
 								 selector:@selector(jumpButtonReleased:)
 								   object:jumpButtonNode];
 }
-
-
-
-
-
-#pragma mark CODE BELOW WILL NOT BE DISCUSSED IN BOOK; WILL BE REMOVED!
-
 
 -(void) addDevelopmentButtons
 {

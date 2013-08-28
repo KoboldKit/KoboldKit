@@ -4,6 +4,35 @@
 // https://github.com/VTPG/CommonCode
 // based off http://www.dribin.org/dave/blog/archives/2008/09/22/convert_to_nsstring/
 
+/*
+ VTPG_Common was published by Vincent Gable into public domain.
+ 
+ Vincent's work is based on ideas from Dave Dribin:
+ http://www.dribin.org/dave/blog/archives/2008/09/22/convert_to_nsstring/
+ http://www.dribin.org/dave/software/#ddfoundation
+ 
+ Dave's DDFoundation library is published under the MIT License:
+ 
+ Copyright (c) 2008 Dave Dribin
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ */
 
 // SI: updated to be compatible with Mac OS, and to compile with both C and C++ code
 

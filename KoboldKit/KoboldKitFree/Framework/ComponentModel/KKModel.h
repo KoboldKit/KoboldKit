@@ -1,10 +1,8 @@
-//
-//  KKNodeModel.h
-//  KoboldKit
-//
-//  Created by Steffen Itterheim on 14.06.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2012-2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
 
 #import <Foundation/Foundation.h>
 

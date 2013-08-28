@@ -1,10 +1,9 @@
-//
-//  AppDelegate.h
-//  KoboldKitDemo
-//
-//  Created by Steffen Itterheim on 13.06.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under a PROPRIETARY License:
+ * Super_Stick_Spy/SuperStickSpy.License.txt
+ */
+
 
 #import "KKAppDelegate.h"
 

@@ -1,12 +1,11 @@
-//
-// KTTMXReader.h
-// KoboldTouch-Libraries
-//
-// Created by Steffen Itterheim on 20.12.12.
-//
-//
-// Adapted and improved TMX Parser Code based on CCTMXXMLParser and related CCTMX* classes.
-// This is the related copyright notice:
+/*
+ * Copyright (c) 2012-2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
+
+// Adapted and improved TMX Parser Code based on CCTMXXMLParser and related CCTMX* classes from cocos2d-iphone:
+
 /*
  * cocos2d for iPhone: http://www.cocos2d-iphone.org
  *
@@ -32,7 +31,6 @@
  * THE SOFTWARE.
  *
  */
-
 
 #import "KKTypes.h"
 

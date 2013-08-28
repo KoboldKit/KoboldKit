@@ -175,6 +175,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DC5AA88417CD0D6D0001940A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B560D17CBF10F00F95CBC /* KoboldKitExternal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC484C6A178C418C0067DAA4;
+			remoteInfo = libKoboldKitExternal.a;
+		};
+		DC5AA88C17CD0D770001940A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B560D17CBF10F00F95CBC /* KoboldKitExternal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC484C42178C40BB0067DAA4;
+			remoteInfo = KoboldKitExternal.framework;
+		};
 		DC8B561517CBF10F00F95CBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC8B560A17CBF10F00F95CBC /* KoboldKitCommunity.xcodeproj */;
@@ -853,6 +867,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DC5AA88D17CD0D770001940A /* PBXTargetDependency */,
 			);
 			name = KoboldKit.framework;
 			productName = KoboldKit;
@@ -870,6 +885,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DC5AA88517CD0D6D0001940A /* PBXTargetDependency */,
 			);
 			name = libKoboldKit.a;
 			productName = KoboldKit;
@@ -1089,6 +1105,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC5AA88517CD0D6D0001940A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libKoboldKitExternal.a;
+			targetProxy = DC5AA88417CD0D6D0001940A /* PBXContainerItemProxy */;
+		};
+		DC5AA88D17CD0D770001940A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KoboldKitExternal.framework;
+			targetProxy = DC5AA88C17CD0D770001940A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DC484C62178C40BB0067DAA4 /* Debug */ = {

@@ -1,12 +1,10 @@
-//
-//  KKMacros.h
-//  KoboldKitDemo
-//
-//  Created by Steffen Itterheim on 13.06.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
 
-// Some code adopted from cocos2d-iphone, License:
+// Some code adopted from cocos2d-iphone:
 /*
  * cocos2d for iPhone: http://www.cocos2d-iphone.org
  *

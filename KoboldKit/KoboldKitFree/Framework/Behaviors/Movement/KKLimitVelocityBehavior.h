@@ -1,10 +1,9 @@
-//
-//  KKLimitVelocityBehavior.h
-//  KoboldKit
-//
-//  Created by Steffen Itterheim on 04.07.13.
-//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
-//
+/*
+ * Copyright (c) 2013 Steffen Itterheim.
+ * Released under the MIT License:
+ * KoboldAid/licenses/KoboldKitFree.License.txt
+ */
+
 
 #import "KKBehavior.h"
 
