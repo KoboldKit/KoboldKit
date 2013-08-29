@@ -40,8 +40,6 @@
 		DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */; };
 		DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C5178C7BC400641A6D /* Jetpack.atlas */; };
 		DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C5178C7BC400641A6D /* Jetpack.atlas */; };
-		DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */; };
-		DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC18B126178C7E9300641A6D /* Images-Mac.xcassets */; };
 		DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */; };
 		DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */; };
 		DC19538317C1248C00EC526C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538217C1248C00EC526C /* OpenAL.framework */; };
@@ -82,6 +80,22 @@
 		DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 		DC37E8F417C10B5900A04FCB /* KoboldKitPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */; };
 		DC37E8F617C10B5D00A04FCB /* KoboldKitCommunity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */; };
+		DC5BCDAA17CF88E500A5CB01 /* Icon-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9817CF88E400A5CB01 /* Icon-ipad.png */; };
+		DC5BCDAB17CF88E500A5CB01 /* Icon-Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9917CF88E400A5CB01 /* Icon-Settings.png */; };
+		DC5BCDAC17CF88E500A5CB01 /* Icon-Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9A17CF88E400A5CB01 /* Icon-Settings@2x.png */; };
+		DC5BCDAD17CF88E500A5CB01 /* Icon-Spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9B17CF88E400A5CB01 /* Icon-Spotlight.png */; };
+		DC5BCDAE17CF88E500A5CB01 /* Icon-Spotlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9C17CF88E400A5CB01 /* Icon-Spotlight@2x.png */; };
+		DC5BCDAF17CF88E500A5CB01 /* Icon@2x-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9D17CF88E400A5CB01 /* Icon@2x-ipad.png */; };
+		DC5BCDB017CF88E500A5CB01 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9E17CF88E400A5CB01 /* Icon@2x.png */; };
+		DC5BCDB217CF88E500A5CB01 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA117CF88E500A5CB01 /* iTunesArtwork */; };
+		DC5BCDB317CF88E500A5CB01 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA217CF88E500A5CB01 /* iTunesArtwork@2x */; };
+		DC5BCDB417CF88E500A5CB01 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA417CF88E500A5CB01 /* Default-568h@2x.png */; };
+		DC5BCDB517CF88E500A5CB01 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA517CF88E500A5CB01 /* Default-Landscape.png */; };
+		DC5BCDB617CF88E500A5CB01 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA617CF88E500A5CB01 /* Default-Landscape@2x.png */; };
+		DC5BCDB717CF88E500A5CB01 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA717CF88E500A5CB01 /* Default-Portrait.png */; };
+		DC5BCDB817CF88E500A5CB01 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA817CF88E500A5CB01 /* Default-Portrait@2x.png */; };
+		DC5BCDB917CF88E500A5CB01 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA917CF88E500A5CB01 /* Default@2x.png */; };
+		DC5BCDBA17CF88F300A5CB01 /* Icons-Mac.iconset in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9F17CF88E400A5CB01 /* Icons-Mac.iconset */; };
 		DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
 		DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
 		DC8B563317CBF18800F95CBC /* libKoboldKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B563017CBF16700F95CBC /* libKoboldKit.a */; };
@@ -179,8 +193,6 @@
 		DC18B11F178C7E3B00641A6D /* Super_Stick_Spy-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Super_Stick_Spy-Mac-Info.plist"; sourceTree = "<group>"; };
 		DC18B121178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		DC18B123178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-iOS.xcassets"; sourceTree = "<group>"; };
-		DC18B126178C7E9300641A6D /* Images-Mac.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-Mac.xcassets"; sourceTree = "<group>"; };
 		DC19538217C1248C00EC526C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
 		DC19538617C124A500EC526C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DC19538817C124E800EC526C /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
@@ -210,6 +222,22 @@
 		DC484C1B178C40800067DAA4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DC484CE3178C465E0067DAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DC5BCD9817CF88E400A5CB01 /* Icon-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-ipad.png"; sourceTree = "<group>"; };
+		DC5BCD9917CF88E400A5CB01 /* Icon-Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Settings.png"; sourceTree = "<group>"; };
+		DC5BCD9A17CF88E400A5CB01 /* Icon-Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Settings@2x.png"; sourceTree = "<group>"; };
+		DC5BCD9B17CF88E400A5CB01 /* Icon-Spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight.png"; sourceTree = "<group>"; };
+		DC5BCD9C17CF88E400A5CB01 /* Icon-Spotlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight@2x.png"; sourceTree = "<group>"; };
+		DC5BCD9D17CF88E400A5CB01 /* Icon@2x-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x-ipad.png"; sourceTree = "<group>"; };
+		DC5BCD9E17CF88E400A5CB01 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DC5BCD9F17CF88E400A5CB01 /* Icons-Mac.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = "Icons-Mac.iconset"; sourceTree = "<group>"; };
+		DC5BCDA117CF88E500A5CB01 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		DC5BCDA217CF88E500A5CB01 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		DC5BCDA417CF88E500A5CB01 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DC5BCDA517CF88E500A5CB01 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		DC5BCDA617CF88E500A5CB01 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		DC5BCDA717CF88E500A5CB01 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		DC5BCDA817CF88E500A5CB01 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		DC5BCDA917CF88E500A5CB01 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = behaviorTemplates.lua; sourceTree = "<group>"; };
 		DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KoboldKit.xcodeproj; path = KoboldKit/KoboldKitFree/KoboldKit.xcodeproj; sourceTree = "<group>"; };
 		DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitExternal.a; path = "KoboldKit/KoboldKitExternal/build/Debug-iphoneos/libKoboldKitExternal.a"; sourceTree = "<group>"; };
@@ -349,6 +377,54 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		DC5BCD9617CF88E400A5CB01 /* KoboldKitResources */ = {
+			isa = PBXGroup;
+			children = (
+				DC5BCD9717CF88E400A5CB01 /* Icons-iOS */,
+				DC5BCD9F17CF88E400A5CB01 /* Icons-Mac.iconset */,
+				DC5BCDA017CF88E500A5CB01 /* iTunesArtwork */,
+				DC5BCDA317CF88E500A5CB01 /* LaunchImages-iOS */,
+			);
+			name = KoboldKitResources;
+			path = KoboldKit/KoboldKitResources;
+			sourceTree = SOURCE_ROOT;
+		};
+		DC5BCD9717CF88E400A5CB01 /* Icons-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DC5BCD9817CF88E400A5CB01 /* Icon-ipad.png */,
+				DC5BCD9917CF88E400A5CB01 /* Icon-Settings.png */,
+				DC5BCD9A17CF88E400A5CB01 /* Icon-Settings@2x.png */,
+				DC5BCD9B17CF88E400A5CB01 /* Icon-Spotlight.png */,
+				DC5BCD9C17CF88E400A5CB01 /* Icon-Spotlight@2x.png */,
+				DC5BCD9D17CF88E400A5CB01 /* Icon@2x-ipad.png */,
+				DC5BCD9E17CF88E400A5CB01 /* Icon@2x.png */,
+			);
+			path = "Icons-iOS";
+			sourceTree = "<group>";
+		};
+		DC5BCDA017CF88E500A5CB01 /* iTunesArtwork */ = {
+			isa = PBXGroup;
+			children = (
+				DC5BCDA117CF88E500A5CB01 /* iTunesArtwork */,
+				DC5BCDA217CF88E500A5CB01 /* iTunesArtwork@2x */,
+			);
+			path = iTunesArtwork;
+			sourceTree = "<group>";
+		};
+		DC5BCDA317CF88E500A5CB01 /* LaunchImages-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DC5BCDA417CF88E500A5CB01 /* Default-568h@2x.png */,
+				DC5BCDA517CF88E500A5CB01 /* Default-Landscape.png */,
+				DC5BCDA617CF88E500A5CB01 /* Default-Landscape@2x.png */,
+				DC5BCDA717CF88E500A5CB01 /* Default-Portrait.png */,
+				DC5BCDA817CF88E500A5CB01 /* Default-Portrait@2x.png */,
+				DC5BCDA917CF88E500A5CB01 /* Default@2x.png */,
+			);
+			path = "LaunchImages-iOS";
+			sourceTree = "<group>";
+		};
 		DC5D4ABC17AC04B700CF69EB /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +483,7 @@
 				DCDB338A178D808400C13739 /* PlayerCharacter.h */,
 				DCDB338B178D808400C13739 /* PlayerCharacter.m */,
 				DCCC6198178C5574009EC802 /* Resources */,
+				DC5BCD9617CF88E400A5CB01 /* KoboldKitResources */,
 				DCD11E3A178C522300FBC406 /* Supporting Files */,
 			);
 			path = Super_Stick_Spy;
@@ -415,8 +492,6 @@
 		DCD11E3A178C522300FBC406 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC18B124178C7E8C00641A6D /* Images-iOS.xcassets */,
-				DC18B126178C7E9300641A6D /* Images-Mac.xcassets */,
 				DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */,
 				DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */,
 				DC09DB8D178C84C6000E0B61 /* MainMenu.xib */,
@@ -590,6 +665,7 @@
 				DC04802C17AD2C18002EBD1E /* spark.png in Resources */,
 				DC25518917B285C50078151C /* land.wav in Resources */,
 				DC25517917B281910078151C /* Time to business, guys.mp3 in Resources */,
+				DC5BCDBA17CF88F300A5CB01 /* Icons-Mac.iconset in Resources */,
 				DC10607A17B3C9BC005BB9D0 /* DemoStagePrefab.tmx in Resources */,
 				DC25518B17B285C50078151C /* pickup.wav in Resources */,
 				DC10606A17B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */,
@@ -613,7 +689,6 @@
 				DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
-				DC18B127178C7E9300641A6D /* Images-Mac.xcassets in Resources */,
 				DC10606C17B3C9BC005BB9D0 /* DemoStage001.tmx in Resources */,
 				DCDC593817BE2D980018AB6F /* Tileset_Geometry_16x16_test.png in Resources */,
 				DC25515317B27C0A0078151C /* ATTRIBUTIONS in Resources */,
@@ -633,19 +708,27 @@
 				DC10606D17B3C9BC005BB9D0 /* DemoStage002.tmx in Resources */,
 				DC10607D17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png in Resources */,
 				DC25518817B285C50078151C /* land.wav in Resources */,
+				DC5BCDB917CF88E500A5CB01 /* Default@2x.png in Resources */,
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
+				DC5BCDB517CF88E500A5CB01 /* Default-Landscape.png in Resources */,
+				DC5BCDAA17CF88E500A5CB01 /* Icon-ipad.png in Resources */,
 				DC10607B17B3C9BC005BB9D0 /* DemoStageSelection.tmx in Resources */,
+				DC5BCDB717CF88E500A5CB01 /* Default-Portrait.png in Resources */,
 				DC25515617B27C590078151C /* suspense.mp3 in Resources */,
 				DCDC593717BE2D980018AB6F /* Tileset_Geometry_16x16_test.png in Resources */,
 				DCDC593917BE2D980018AB6F /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
 				DCDC593517BE2D980018AB6F /* DemoStage003.tmx in Resources */,
 				DC10607917B3C9BC005BB9D0 /* DemoStagePrefab.tmx in Resources */,
-				DC18B125178C7E8C00641A6D /* Images-iOS.xcassets in Resources */,
+				DC5BCDB217CF88E500A5CB01 /* iTunesArtwork in Resources */,
 				DC25515217B27C0A0078151C /* ATTRIBUTIONS in Resources */,
 				DC25518217B285C50078151C /* chirp.wav in Resources */,
+				DC5BCDB317CF88E500A5CB01 /* iTunesArtwork@2x in Resources */,
 				DCDC593317BE2D980018AB6F /* DemoStage002_DepthTest.tmx in Resources */,
+				DC5BCDAC17CF88E500A5CB01 /* Icon-Settings@2x.png in Resources */,
+				DC5BCDAD17CF88E500A5CB01 /* Icon-Spotlight.png in Resources */,
 				DC10608117B3C9BC005BB9D0 /* Tileset_GeometryB.png in Resources */,
+				DC5BCDAE17CF88E500A5CB01 /* Icon-Spotlight@2x.png in Resources */,
 				DC25518A17B285C50078151C /* pickup.wav in Resources */,
 				DC10606917B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */,
 				DC25518E17B285C50078151C /* teleport.wav in Resources */,
@@ -653,15 +736,21 @@
 				DC10606B17B3C9BC005BB9D0 /* DemoStage001.tmx in Resources */,
 				DC25517517B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */,
 				DC25517817B281910078151C /* Time to business, guys.mp3 in Resources */,
+				DC5BCDB417CF88E500A5CB01 /* Default-568h@2x.png in Resources */,
+				DC5BCDAF17CF88E500A5CB01 /* Icon@2x-ipad.png in Resources */,
 				DC18B0D4178C7BC400641A6D /* config.lua in Resources */,
 				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
 				DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
 				DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
+				DC5BCDB017CF88E500A5CB01 /* Icon@2x.png in Resources */,
 				DC25518417B285C50078151C /* die.wav in Resources */,
+				DC5BCDB817CF88E500A5CB01 /* Default-Portrait@2x.png in Resources */,
+				DC5BCDAB17CF88E500A5CB01 /* Icon-Settings.png in Resources */,
 				DC10608317B3C9BC005BB9D0 /* TilesTest.tmx in Resources */,
 				DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC25519917B2894D0078151C /* checkpoint.wav in Resources */,
 				DC10606717B3C9BC005BB9D0 /* ColorTest.tmx in Resources */,
+				DC5BCDB617CF88E500A5CB01 /* Default-Landscape@2x.png in Resources */,
 				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */,
 				DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */,
@@ -752,7 +841,6 @@
 		DCD11E63178C522400FBC406 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Mac";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -760,7 +848,6 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-Mac-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -769,12 +856,10 @@
 		DCD11E64178C522400FBC406 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Mac";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-Mac-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -783,8 +868,6 @@
 		DCD7EC86178C57FD00BBAFB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -802,8 +885,6 @@
 		DCD7EC87178C57FD00BBAFB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -855,6 +936,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_FORMAT = RGBA8888_COMPRESSED;
@@ -899,6 +981,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_FORMAT = RGBA8888_COMPRESSED;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;

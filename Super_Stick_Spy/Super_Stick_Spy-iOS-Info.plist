@@ -8,6 +8,34 @@
 	<string>Stick Spy</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>Icon-Settings</string>
+				<string>Icon-Spotlight</string>
+				<string>Icon</string>
+			</array>
+		</dict>
+	</dict>
+	<key>CFBundleIcons~ipad</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>Icon-Settings</string>
+				<string>Icon-Spotlight</string>
+				<string>Icon@2x-ipad</string>
+				<string>Icon-ipad</string>
+				<string>Icon</string>
+			</array>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>com.koboldkit.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -24,6 +52,49 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UILaunchImages~ipad</key>
+	<array>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Landscape</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Landscape</string>
+			<key>UILaunchImageSize</key>
+			<string>{768, 1024}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Landscape</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Landscape</string>
+			<key>UILaunchImageSize</key>
+			<string>{768, 1024}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default-Portrait</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{768, 1024}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>Default@2x-ipad</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{768, 1024}</string>
+		</dict>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main_iPhone</string>
 	<key>UIMainStoryboardFile~ipad</key>

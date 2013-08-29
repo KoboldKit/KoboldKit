@@ -40,7 +40,6 @@
 		DC5AA83717CD04F60001940A /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA7BA17CD04F60001940A /* lundump.c */; };
 		DC5AA83817CD04F60001940A /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA7BC17CD04F60001940A /* lvm.c */; };
 		DC5AA83917CD04F60001940A /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA7BE17CD04F60001940A /* lzio.c */; };
-		DC5AA85917CD04F60001940A /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA80E17CD04F60001940A /* VTPG_Common.m */; };
 		DC5AA86817CD05080001940A /* NSBundle+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA85F17CD05080001940A /* NSBundle+KoboldKit.m */; };
 		DC5AA86917CD05080001940A /* NSCoder+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA86117CD05080001940A /* NSCoder+KoboldKit.m */; };
 		DC5AA86A17CD05080001940A /* NSDictionary+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA86317CD05080001940A /* NSDictionary+KoboldKit.m */; };
@@ -48,6 +47,7 @@
 		DC5AA86C17CD05080001940A /* NSString+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA86717CD05080001940A /* NSString+KoboldKit.m */; };
 		DC5AA87817CD05720001940A /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA87317CD05720001940A /* KKMutableNumber.m */; };
 		DC5AA87D17CD058E0001940A /* KKLua.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA87C17CD058E0001940A /* KKLua.m */; };
+		DC5BCDBC17CF8BF600A5CB01 /* Icons-Mac.iconset in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDBB17CF8BF600A5CB01 /* Icons-Mac.iconset */; };
 		DCD803C317CCF5C300565DE7 /* KKToolDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD803C217CCF5C300565DE7 /* KKToolDataSource.m */; };
 		DCDCAD8617CCC3D000FAE1E5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDCAD8517CCC3D000FAE1E5 /* Cocoa.framework */; };
 		DCDCAD9017CCC3D000FAE1E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDCAD8E17CCC3D000FAE1E5 /* InfoPlist.strings */; };
@@ -55,7 +55,6 @@
 		DCDCAD9617CCC3D000FAE1E5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DCDCAD9417CCC3D000FAE1E5 /* Credits.rtf */; };
 		DCDCAD9917CCC3D000FAE1E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDCAD9817CCC3D000FAE1E5 /* AppDelegate.m */; };
 		DCDCAD9C17CCC3D000FAE1E5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCDCAD9A17CCC3D000FAE1E5 /* MainMenu.xib */; };
-		DCDCAD9E17CCC3D000FAE1E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDCAD9D17CCC3D000FAE1E5 /* Images.xcassets */; };
 		DCDCADC417CCCDAB00FAE1E5 /* KKToolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDCADC217CCCDAB00FAE1E5 /* KKToolHelper.m */; };
 		DCDCADC717CCCF6B00FAE1E5 /* KKXcodeProject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDCADC617CCCF6B00FAE1E5 /* KKXcodeProject.m */; };
 /* End PBXBuildFile section */
@@ -122,7 +121,6 @@
 		DC5AA7BE17CD04F60001940A /* lzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lzio.c; sourceTree = "<group>"; };
 		DC5AA7BF17CD04F60001940A /* lzio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzio.h; sourceTree = "<group>"; };
 		DC5AA80D17CD04F60001940A /* VTPG_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPG_Common.h; sourceTree = "<group>"; };
-		DC5AA80E17CD04F60001940A /* VTPG_Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPG_Common.m; sourceTree = "<group>"; };
 		DC5AA85E17CD05080001940A /* NSBundle+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KoboldKit.h"; sourceTree = "<group>"; };
 		DC5AA85F17CD05080001940A /* NSBundle+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KoboldKit.m"; sourceTree = "<group>"; };
 		DC5AA86017CD05080001940A /* NSCoder+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+KoboldKit.h"; sourceTree = "<group>"; };
@@ -137,6 +135,7 @@
 		DC5AA87317CD05720001940A /* KKMutableNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMutableNumber.m; sourceTree = "<group>"; };
 		DC5AA87B17CD058E0001940A /* KKLua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLua.h; sourceTree = "<group>"; };
 		DC5AA87C17CD058E0001940A /* KKLua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLua.m; sourceTree = "<group>"; };
+		DC5BCDBB17CF8BF600A5CB01 /* Icons-Mac.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = "Icons-Mac.iconset"; path = "../../../../KoboldKit/KoboldKitResources/Icons-Mac.iconset"; sourceTree = "<group>"; };
 		DCD803C117CCF5C300565DE7 /* KKToolDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKToolDataSource.h; sourceTree = "<group>"; };
 		DCD803C217CCF5C300565DE7 /* KKToolDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKToolDataSource.m; sourceTree = "<group>"; };
 		DCDCAD8217CCC3D000FAE1E5 /* KKNewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKNewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +151,6 @@
 		DCDCAD9717CCC3D000FAE1E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCDCAD9817CCC3D000FAE1E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DCDCAD9B17CCC3D000FAE1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		DCDCAD9D17CCC3D000FAE1E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCDCADA417CCC3D000FAE1E5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DCDCADC117CCCDAB00FAE1E5 /* KKToolHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKToolHelper.h; sourceTree = "<group>"; };
 		DCDCADC217CCCDAB00FAE1E5 /* KKToolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKToolHelper.m; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				DC5AA80D17CD04F60001940A /* VTPG_Common.h */,
-				DC5AA80E17CD04F60001940A /* VTPG_Common.m */,
 			);
 			path = VTPG;
 			sourceTree = "<group>";
@@ -335,14 +332,14 @@
 		DCDCAD8B17CCC3D000FAE1E5 /* KKNewProject */ = {
 			isa = PBXGroup;
 			children = (
+				DCDCAD9717CCC3D000FAE1E5 /* AppDelegate.h */,
+				DCDCAD9817CCC3D000FAE1E5 /* AppDelegate.m */,
+				DCDCAD9A17CCC3D000FAE1E5 /* MainMenu.xib */,
+				DC5BCDBB17CF8BF600A5CB01 /* Icons-Mac.iconset */,
 				DC5AA87A17CD058E0001940A /* Scripting */,
 				DC5AA86D17CD05720001940A /* ComponentModel */,
 				DC5AA85D17CD05080001940A /* Foundation */,
 				DC5AA77A17CD04F50001940A /* External */,
-				DCDCAD9717CCC3D000FAE1E5 /* AppDelegate.h */,
-				DCDCAD9817CCC3D000FAE1E5 /* AppDelegate.m */,
-				DCDCAD9A17CCC3D000FAE1E5 /* MainMenu.xib */,
-				DCDCAD9D17CCC3D000FAE1E5 /* Images.xcassets */,
 				DCDCAD8C17CCC3D000FAE1E5 /* Supporting Files */,
 			);
 			path = KKNewProject;
@@ -432,8 +429,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCDCAD9017CCC3D000FAE1E5 /* InfoPlist.strings in Resources */,
-				DCDCAD9E17CCC3D000FAE1E5 /* Images.xcassets in Resources */,
 				DCDCAD9617CCC3D000FAE1E5 /* Credits.rtf in Resources */,
+				DC5BCDBC17CF8BF600A5CB01 /* Icons-Mac.iconset in Resources */,
 				DCDCAD9C17CCC3D000FAE1E5 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +503,6 @@
 				DC5AA83117CD04F60001940A /* lstate.c in Sources */,
 				DC5AA83817CD04F60001940A /* lvm.c in Sources */,
 				DC5AA82217CD04F60001940A /* ldebug.c in Sources */,
-				DC5AA85917CD04F60001940A /* VTPG_Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +621,6 @@
 		DCDCADB417CCC3D000FAE1E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Steffen Itterheim";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -640,7 +635,6 @@
 		DCDCADB517CCC3D000FAE1E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Developer ID Application: Steffen Itterheim";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
