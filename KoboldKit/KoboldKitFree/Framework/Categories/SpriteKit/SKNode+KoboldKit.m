@@ -323,6 +323,16 @@
 	return physicsBody;
 }
 
+-(SKPhysicsBody*) physicsBodyWithCircleOfRadius:(CGFloat)radius
+{
+	SKPhysicsBody* physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:radius];
+	self.physicsBody = physicsBody;
+	CGPathRef path = CGPathCreateWithEllipseInRect(self.frame, nil);
+	[self addPhysicsBodyDrawNodeWithPath:path];
+	CGPathRelease(path);
+	return physicsBody;
+}
+
 -(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject
 {
 	return [self physicsBodyWithRectangleOfSize:tilemapObject.size];

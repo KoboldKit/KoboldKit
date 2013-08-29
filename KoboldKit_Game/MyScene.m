@@ -5,6 +5,7 @@
  */
 
 #import "MyScene.h"
+#import "RemoveSpaceshipBehavior.h"
 
 @implementation MyScene
 
@@ -14,59 +15,70 @@
 	if (self)
 	{
 		/* Setup your scene here */
-		self.backgroundColor = [SKColor colorWithRed:0.2 green:0.0 blue:0.2 alpha:1.0];
+		self.backgroundColor = [SKColor colorWithRed:0.4 green:0.0 blue:0.4 alpha:1.0];
 		
-		KKLabelNode* myLabel = [KKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+		SKLabelNode* myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
 		myLabel.text = @"Hello, Kobold!";
 		myLabel.fontSize = 60;
-		myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-									   CGRectGetMidY(self.frame));
+		myLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
 		[self addChild:myLabel];
 
-		[self addClearSpaceButton];
+		[self addSmartbombButton];
 	}
 	return self;
 }
 
--(void) addClearSpaceButton
+-(void) addSmartbombButton
 {
-	// label will become a button to remove all spaceships
-	KKLabelNode* removeLabel = [KKLabelNode labelNodeWithFontNamed:@"Monaco"];
-	removeLabel.text = @"Clear Space!";
-	removeLabel.fontSize = 32;
-	removeLabel.zPosition = 1;
-	removeLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-									   self.frame.size.height - removeLabel.frame.size.height);
-	[self addChild:removeLabel];
+	// label will become a button that removes all spaceships
+	SKLabelNode* buttonLabel = [SKLabelNode labelNodeWithFontNamed:@"Monaco"];
+	buttonLabel.text = @"SMARTBOMB!";
+	buttonLabel.fontSize = 32;
+	buttonLabel.zPosition = 1;
+	buttonLabel.position = CGPointMake(CGRectGetMidX(self.frame),
+									   self.frame.size.height - buttonLabel.frame.size.height);
+	[self addChild:buttonLabel];
 	
 	// KKButtonBehavior turns any node into a button
 	KKButtonBehavior* buttonBehavior = [KKButtonBehavior behavior];
 	buttonBehavior.selectedScale = 1.2;
-	[removeLabel addBehavior:buttonBehavior];
+	[buttonLabel addBehavior:buttonBehavior];
 	
 	// observe button execute notification
 	[self observeNotification:KKButtonDidExecuteNotification
 					 selector:@selector(clearSpaceButtonDidExecute:)
-					   object:removeLabel];
+					   object:buttonLabel];
+
+	// preload the sound the button plays
+	[[OALSimpleAudio sharedInstance] preloadEffect:@"die.wav"];
 }
 
 -(void) clearSpaceButtonDidExecute:(NSNotification*)notification
 {
+	[[OALSimpleAudio sharedInstance] playEffect:@"die.wav"];
+
 	[self enumerateChildNodesWithName:@"spaceship" usingBlock:^(SKNode* node, BOOL* stop) {
-		[node removeFromParent];
+		// enable physics, makes spaceships drop (they will be removed by the custom behavior)
+		CGFloat radius = node.frame.size.width / 4.0;
+		node.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:radius];
 	}];
 }
 
 -(void) addSpaceshipAt:(CGPoint)location
 {
-	KKSpriteNode* sprite = [KKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+	SKSpriteNode* sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
 	sprite.position = location;
 	sprite.name = @"spaceship";
 	[sprite setScale:0.5];
 	[self addChild:sprite];
 	
-	KKAction* action = [KKAction rotateByAngle:M_PI duration:1];
-	[sprite runAction:[KKAction repeatActionForever:action]];
+	SKAction* action = [SKAction rotateByAngle:M_PI duration:1];
+	[sprite runAction:[SKAction repeatActionForever:action]];
+
+	// this behavior will remove the node if node's position.y falls below the removeHeight
+	RemoveSpaceshipBehavior* removeBehavior = [RemoveSpaceshipBehavior new];
+	removeBehavior.removeHeight = -sprite.frame.size.height;
+	[sprite addBehavior:removeBehavior];
 }
 
 #if TARGET_OS_IPHONE // iOS

@@ -138,8 +138,12 @@
 -(SKPhysicsBody*) physicsBodyWithEdgeChainFromPath:(CGPathRef)path;
 /** Creates a physics Body with rectangle shape. Also assigns the physics body to the node's self.physicsBody property.
  @param size The size of the rectangle.
- @returns size The newly created SKPhysicsBody. */
+ @returns The newly created SKPhysicsBody. */
 -(SKPhysicsBody*) physicsBodyWithRectangleOfSize:(CGSize)size;
+/** Creates a physics Body with circle shape. Also assigns the physics body to the node's self.physicsBody property.
+ @param radius The circle radius.
+ @returns The newly created SKPhysicsBody. */
+-(SKPhysicsBody*) physicsBodyWithCircleOfRadius:(CGFloat)radius;
 
 /** nd */
 -(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject;

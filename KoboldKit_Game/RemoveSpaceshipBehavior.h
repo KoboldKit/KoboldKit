@@ -4,9 +4,10 @@
  * KoboldAid/licenses/KoboldKitFree.License.txt
  */
 
-#import "KKScene.h"
+#import "KKBehavior.h"
 
-// IMPORTANT: in Kobold Kit all scenes must inherit from KKScene.
-@interface MyScene : KKScene
+@interface RemoveSpaceshipBehavior : KKBehavior
+
+@property CGFloat removeHeight;
 
 @end
