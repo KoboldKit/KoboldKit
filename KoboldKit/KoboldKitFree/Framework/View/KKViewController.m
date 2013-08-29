@@ -9,6 +9,8 @@
 #import "SKNode+KoboldKit.h"
 #import "KKView.h"
 #import "KKVersion.h"
+#import "../KoboldKitCommunity/Framework/KKCommunityVersion.h"
+#import "../KoboldKitPro/Framework/KKProVersion.h"
 
 @implementation KKViewController
 
@@ -41,13 +43,16 @@
 	{
 		_firstScenePresented = YES;
 		
-		NSLog(@"KKView - presentFirstScene");
+		NSLog(@"%@", koboldKitVersion());
+		NSLog(@"%@", koboldKitCommunityVersion());
+		NSLog(@"%@", koboldKitProVersion());
 		[self presentFirstScene];
 	}
 }
 
 -(void) presentFirstScene
 {
+	KKMustOverrideMethod();
 }
 
 -(void) checkSwizzleError:(NSError*)error

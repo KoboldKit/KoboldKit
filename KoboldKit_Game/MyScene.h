@@ -4,9 +4,8 @@
  * KoboldAid/licenses/KoboldKitFree.License.txt
  */
 
-#import "KKCommunityVersion.h"
+#import "KKScene.h"
 
-NSString* koboldKitCommunityVersion()
-{
-	return @"Kobold Kit™ Community v7.0";
-}
+@interface MyScene : KKScene
+
+@end

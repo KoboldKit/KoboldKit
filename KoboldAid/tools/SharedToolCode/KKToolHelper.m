@@ -18,6 +18,7 @@ static NSString* pathToKoboldKit = nil;
 		NSString* workingDir = [[NSUserDefaults standardUserDefaults] stringForKey:@"workingDir"];
 		if (workingDir)
 		{
+			NSLog(@"workingDir provided as command line argument");
 			// step back to KoboldKit root folder when launching the app from Xcode
 			for (int i = 0; i < 3; i++)
 			{
@@ -26,10 +27,12 @@ static NSString* pathToKoboldKit = nil;
 		}
 		else
 		{
-			workingDir = [NSFileManager defaultManager].currentDirectoryPath;
+			NSLog(@"workingDir obtained from bundle path");
+			workingDir = [[NSBundle mainBundle].bundlePath stringByDeletingLastPathComponent];
 		}
 		
 		pathToKoboldKit = workingDir;
+		NSLog(@"pathToKoboldKit is: %@", pathToKoboldKit);
 	}
 
 	return pathToKoboldKit;

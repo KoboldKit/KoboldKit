@@ -14,12 +14,6 @@
 
 -(void) presentFirstScene
 {
-	[super presentFirstScene];
-
-	NSLog(@"%@", koboldKitVersion());
-	NSLog(@"%@", koboldKitProVersion());
-	NSLog(@"%@", koboldKitCommunityVersion());
-	
 	//[[OALSimpleAudio sharedInstance] playBg:@"Time to business, guys.mp3"];
 
 	MenuScene* menuScene = [MenuScene sceneWithSize:self.view.bounds.size];

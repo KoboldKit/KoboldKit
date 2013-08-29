@@ -63,7 +63,7 @@
 -(void) updateDescriptionFromFile
 {
 	NSFileManager* fileManager = [NSFileManager defaultManager];
-	NSArray* descriptionFiles = @[@"description", @"description.txt", @"README", @"README.txt", @"README.md"];
+	NSArray* descriptionFiles = @[@"DESCRIPTION", @"DESCRIPTION.txt", @"README", @"README.txt", @"README.md"];
 	_description = @"(no description available)";
 
 	for (NSString* file in descriptionFiles)
@@ -185,6 +185,10 @@
 	NSString* workspacePath = [NSString stringWithFormat:@"%@/project.xcworkspace", targetProjectPath];
 	NSString* workspaceFile = [NSString stringWithFormat:@"%@/contents.xcworkspacedata", workspacePath];
 	[NSString replaceOccurancesOfString:_name withString:newProjectName inFile:workspaceFile encoding:NSUTF8StringEncoding];
+
+	// string replace in MainMenu.xib
+	NSString* xibFile = [NSString stringWithFormat:@"%@/MainMenu.xib", targetProjectFolderPath];
+	[NSString replaceOccurancesOfString:_name withString:newProjectName inFile:xibFile encoding:NSUTF8StringEncoding];
 
 	// rename files: info.plist, prefix.pch
 	NSString* infoPlistSuffix = @"Info.plist";

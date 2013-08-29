@@ -9,37 +9,15 @@
 /* Begin PBXBuildFile section */
 		DC042A83178C5A06009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */; };
 		DC042A84178C5A12009FDBF8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */; };
-		DC04802B17AD2C18002EBD1E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = DC04802817AD2C18002EBD1E /* spark.png */; };
-		DC04802C17AD2C18002EBD1E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = DC04802817AD2C18002EBD1E /* spark.png */; };
-		DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC04802D17AD2C63002EBD1E /* playerdeath.sks */; };
-		DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC04802D17AD2C63002EBD1E /* playerdeath.sks */; };
 		DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC09DB8D178C84C6000E0B61 /* MainMenu.xib */; };
-		DC10606717B3C9BC005BB9D0 /* ColorTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605817B3C9BC005BB9D0 /* ColorTest.tmx */; };
-		DC10606817B3C9BC005BB9D0 /* ColorTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605817B3C9BC005BB9D0 /* ColorTest.tmx */; };
-		DC10606917B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605917B3C9BC005BB9D0 /* DemoMainMenu.tmx */; };
-		DC10606A17B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605917B3C9BC005BB9D0 /* DemoMainMenu.tmx */; };
-		DC10606B17B3C9BC005BB9D0 /* DemoStage001.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605A17B3C9BC005BB9D0 /* DemoStage001.tmx */; };
-		DC10606C17B3C9BC005BB9D0 /* DemoStage001.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605A17B3C9BC005BB9D0 /* DemoStage001.tmx */; };
-		DC10606D17B3C9BC005BB9D0 /* DemoStage002.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605B17B3C9BC005BB9D0 /* DemoStage002.tmx */; };
-		DC10606E17B3C9BC005BB9D0 /* DemoStage002.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10605B17B3C9BC005BB9D0 /* DemoStage002.tmx */; };
-		DC10607917B3C9BC005BB9D0 /* DemoStagePrefab.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10606117B3C9BC005BB9D0 /* DemoStagePrefab.tmx */; };
-		DC10607A17B3C9BC005BB9D0 /* DemoStagePrefab.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10606117B3C9BC005BB9D0 /* DemoStagePrefab.tmx */; };
-		DC10607B17B3C9BC005BB9D0 /* DemoStageSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10606217B3C9BC005BB9D0 /* DemoStageSelection.tmx */; };
-		DC10607C17B3C9BC005BB9D0 /* DemoStageSelection.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10606217B3C9BC005BB9D0 /* DemoStageSelection.tmx */; };
-		DC10607D17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */; };
-		DC10607E17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */; };
-		DC10608117B3C9BC005BB9D0 /* Tileset_GeometryB.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */; };
-		DC10608217B3C9BC005BB9D0 /* Tileset_GeometryB.png in Resources */ = {isa = PBXBuildFile; fileRef = DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */; };
-		DC10608317B3C9BC005BB9D0 /* TilesTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */; };
-		DC10608417B3C9BC005BB9D0 /* TilesTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */; };
+		DC0C220717CF9C97007FE7B8 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0C220617CF9C97007FE7B8 /* MyScene.m */; };
+		DC0C220817CF9C97007FE7B8 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0C220617CF9C97007FE7B8 /* MyScene.m */; };
+		DC0C220A17CFA1EF007FE7B8 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0C220917CFA1EF007FE7B8 /* Spaceship.png */; };
+		DC0C220B17CFA1EF007FE7B8 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0C220917CFA1EF007FE7B8 /* Spaceship.png */; };
 		DC18B0D4178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
 		DC18B0D5178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
 		DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
 		DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
-		DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */; };
-		DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */; };
-		DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C5178C7BC400641A6D /* Jetpack.atlas */; };
-		DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C5178C7BC400641A6D /* Jetpack.atlas */; };
 		DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */; };
 		DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */; };
 		DC19538317C1248C00EC526C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538217C1248C00EC526C /* OpenAL.framework */; };
@@ -52,32 +30,6 @@
 		DC19539317C1251900EC526C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19539217C1251900EC526C /* UIKit.framework */; };
 		DC19539517C1252300EC526C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19539417C1252300EC526C /* Cocoa.framework */; };
 		DC19539717C1254600EC526C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19539617C1254600EC526C /* AppKit.framework */; };
-		DC25515217B27C0A0078151C /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC25515117B27C0A0078151C /* ATTRIBUTIONS */; };
-		DC25515317B27C0A0078151C /* ATTRIBUTIONS in Resources */ = {isa = PBXBuildFile; fileRef = DC25515117B27C0A0078151C /* ATTRIBUTIONS */; };
-		DC25515617B27C590078151C /* suspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25515517B27C590078151C /* suspense.mp3 */; };
-		DC25515717B27C590078151C /* suspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25515517B27C590078151C /* suspense.mp3 */; };
-		DC25517517B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */; };
-		DC25517617B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */; };
-		DC25517817B281910078151C /* Time to business, guys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25517717B281910078151C /* Time to business, guys.mp3 */; };
-		DC25517917B281910078151C /* Time to business, guys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC25517717B281910078151C /* Time to business, guys.mp3 */; };
-		DC25518217B285C50078151C /* chirp.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517B17B285C50078151C /* chirp.wav */; };
-		DC25518317B285C50078151C /* chirp.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517B17B285C50078151C /* chirp.wav */; };
-		DC25518417B285C50078151C /* die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517C17B285C50078151C /* die.wav */; };
-		DC25518517B285C50078151C /* die.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517C17B285C50078151C /* die.wav */; };
-		DC25518617B285C50078151C /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517D17B285C50078151C /* jump.wav */; };
-		DC25518717B285C50078151C /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517D17B285C50078151C /* jump.wav */; };
-		DC25518817B285C50078151C /* land.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517E17B285C50078151C /* land.wav */; };
-		DC25518917B285C50078151C /* land.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517E17B285C50078151C /* land.wav */; };
-		DC25518A17B285C50078151C /* pickup.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517F17B285C50078151C /* pickup.wav */; };
-		DC25518B17B285C50078151C /* pickup.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25517F17B285C50078151C /* pickup.wav */; };
-		DC25518E17B285C50078151C /* teleport.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25518117B285C50078151C /* teleport.wav */; };
-		DC25518F17B285C50078151C /* teleport.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25518117B285C50078151C /* teleport.wav */; };
-		DC25519617B287810078151C /* respawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519517B287810078151C /* respawn.wav */; };
-		DC25519717B287810078151C /* respawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519517B287810078151C /* respawn.wav */; };
-		DC25519917B2894D0078151C /* checkpoint.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519817B2894D0078151C /* checkpoint.wav */; };
-		DC25519A17B2894D0078151C /* checkpoint.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC25519817B2894D0078151C /* checkpoint.wav */; };
-		DC2DD46617ABEA06000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
-		DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 		DC37E8F417C10B5900A04FCB /* KoboldKitPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */; };
 		DC37E8F617C10B5D00A04FCB /* KoboldKitCommunity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */; };
 		DC5BCDAA17CF88E500A5CB01 /* Icon-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9817CF88E400A5CB01 /* Icon-ipad.png */; };
@@ -96,43 +48,25 @@
 		DC5BCDB817CF88E500A5CB01 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA817CF88E500A5CB01 /* Default-Portrait@2x.png */; };
 		DC5BCDB917CF88E500A5CB01 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA917CF88E500A5CB01 /* Default@2x.png */; };
 		DC5BCDBA17CF88F300A5CB01 /* Icons-Mac.iconset in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9F17CF88E400A5CB01 /* Icons-Mac.iconset */; };
-		DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
-		DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */; };
 		DC8B563317CBF18800F95CBC /* libKoboldKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B563017CBF16700F95CBC /* libKoboldKit.a */; };
 		DC8B563517CBF18900F95CBC /* libKoboldKitExternal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */; };
 		DC8B563717CBF19D00F95CBC /* KoboldKitExternal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */; };
 		DC8B563817CBF1AD00F95CBC /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B563217CBF16700F95CBC /* KoboldKit.framework */; };
-		DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
-		DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC8EED1D17A40788000C1995 /* objectTemplates.lua */; };
-		DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
-		DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */; };
 		DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */; };
 		DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD11E3C178C522300FBC406 /* InfoPlist.strings */; };
 		DCD11E40178C522300FBC406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD11E3F178C522300FBC406 /* main.m */; };
 		DCD11E44178C522300FBC406 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DCD11E42178C522300FBC406 /* Credits.rtf */; };
 		DCD7A289178C7526004A0467 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC43178C573500BBAFB0 /* AppDelegate.m */; };
-		DCD7A28A178C7526004A0467 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC45178C573500BBAFB0 /* GameScene.m */; };
-		DCD7A28B178C7526004A0467 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC47178C573500BBAFB0 /* MenuScene.m */; };
 		DCD7A28C178C7526004A0467 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC49178C573500BBAFB0 /* ViewController.m */; };
 		DCD7A28D178C7526004A0467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD11E3F178C522300FBC406 /* main.m */; };
 		DCD7A292178C7545004A0467 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD7A291178C7545004A0467 /* libz.dylib */; };
 		DCD7EC4A178C573500BBAFB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC43178C573500BBAFB0 /* AppDelegate.m */; };
-		DCD7EC4B178C573500BBAFB0 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC45178C573500BBAFB0 /* GameScene.m */; };
-		DCD7EC4C178C573500BBAFB0 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC47178C573500BBAFB0 /* MenuScene.m */; };
 		DCD7EC4D178C573500BBAFB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7EC49178C573500BBAFB0 /* ViewController.m */; };
 		DCD7EC53178C57FC00BBAFB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAB1769FD0A00F307CD /* Foundation.framework */; };
 		DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 		DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DCD9C8B517C1070400535043 /* libKoboldKitCommunity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */; };
-		DCDC593317BE2D980018AB6F /* DemoStage002_DepthTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCDC592F17BE2D980018AB6F /* DemoStage002_DepthTest.tmx */; };
-		DCDC593417BE2D980018AB6F /* DemoStage002_DepthTest.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCDC592F17BE2D980018AB6F /* DemoStage002_DepthTest.tmx */; };
-		DCDC593517BE2D980018AB6F /* DemoStage003.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCDC593017BE2D980018AB6F /* DemoStage003.tmx */; };
-		DCDC593617BE2D980018AB6F /* DemoStage003.tmx in Resources */ = {isa = PBXBuildFile; fileRef = DCDC593017BE2D980018AB6F /* DemoStage003.tmx */; };
-		DCDC593717BE2D980018AB6F /* Tileset_Geometry_16x16_test.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDC593117BE2D980018AB6F /* Tileset_Geometry_16x16_test.png */; };
-		DCDC593817BE2D980018AB6F /* Tileset_Geometry_16x16_test.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDC593117BE2D980018AB6F /* Tileset_Geometry_16x16_test.png */; };
-		DCDC593917BE2D980018AB6F /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDC593217BE2D980018AB6F /* Tileset_Geometry_16x16.png */; };
-		DCDC593A17BE2D980018AB6F /* Tileset_Geometry_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDC593217BE2D980018AB6F /* Tileset_Geometry_16x16.png */; };
 		DCFE4D6C17B2B4E8006675A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFE4D6B17B2B4E8006675A2 /* AVFoundation.framework */; };
 		DCFE4D6E17B2B4F3006675A2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFE4D6D17B2B4F3006675A2 /* CoreMedia.framework */; };
 		DCFE4D7017B2B4FC006675A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFE4D6F17B2B4FC006675A2 /* AVFoundation.framework */; };
@@ -173,24 +107,14 @@
 
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		DC04802817AD2C18002EBD1E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		DC04802D17AD2C63002EBD1E /* playerdeath.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = playerdeath.sks; sourceTree = "<group>"; };
 		DC09DB8D178C84C6000E0B61 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		DC10605817B3C9BC005BB9D0 /* ColorTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ColorTest.tmx; sourceTree = "<group>"; };
-		DC10605917B3C9BC005BB9D0 /* DemoMainMenu.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoMainMenu.tmx; sourceTree = "<group>"; };
-		DC10605A17B3C9BC005BB9D0 /* DemoStage001.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStage001.tmx; sourceTree = "<group>"; };
-		DC10605B17B3C9BC005BB9D0 /* DemoStage002.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStage002.tmx; sourceTree = "<group>"; };
-		DC10606117B3C9BC005BB9D0 /* DemoStagePrefab.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStagePrefab.tmx; sourceTree = "<group>"; };
-		DC10606217B3C9BC005BB9D0 /* DemoStageSelection.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStageSelection.tmx; sourceTree = "<group>"; };
-		DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16_256.png; sourceTree = "<group>"; };
-		DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_GeometryB.png; sourceTree = "<group>"; };
-		DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TilesTest.tmx; sourceTree = "<group>"; };
-		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		DC0C220517CF9C97007FE7B8 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		DC0C220617CF9C97007FE7B8 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		DC0C220917CFA1EF007FE7B8 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
 		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
-		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua.sample; sourceTree = "<group>"; };
-		DC18B0C5178C7BC400641A6D /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
-		DC18B11E178C7E3B00641A6D /* Super_Stick_Spy-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Super_Stick_Spy-iOS-Info.plist"; sourceTree = "<group>"; };
-		DC18B11F178C7E3B00641A6D /* Super_Stick_Spy-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Super_Stick_Spy-Mac-Info.plist"; sourceTree = "<group>"; };
+		DC18B11E178C7E3B00641A6D /* KoboldKit_Game-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKit_Game-iOS-Info.plist"; sourceTree = "<group>"; };
+		DC18B11F178C7E3B00641A6D /* KoboldKit_Game-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKit_Game-Mac-Info.plist"; sourceTree = "<group>"; };
 		DC18B121178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		DC18B123178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DC19538217C1248C00EC526C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
@@ -203,19 +127,7 @@
 		DC19539217C1251900EC526C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DC19539417C1252300EC526C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DC19539617C1254600EC526C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		DC25515117B27C0A0078151C /* ATTRIBUTIONS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
-		DC25515517B27C590078151C /* suspense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suspense.mp3; sourceTree = "<group>"; };
-		DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WeltHerrschererTheme1.mp3; sourceTree = "<group>"; };
-		DC25517717B281910078151C /* Time to business, guys.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Time to business, guys.mp3"; sourceTree = "<group>"; };
-		DC25517B17B285C50078151C /* chirp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chirp.wav; sourceTree = "<group>"; };
-		DC25517C17B285C50078151C /* die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = die.wav; sourceTree = "<group>"; };
-		DC25517D17B285C50078151C /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
-		DC25517E17B285C50078151C /* land.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = land.wav; sourceTree = "<group>"; };
-		DC25517F17B285C50078151C /* pickup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickup.wav; sourceTree = "<group>"; };
-		DC25518117B285C50078151C /* teleport.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = teleport.wav; sourceTree = "<group>"; };
-		DC25519517B287810078151C /* respawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = respawn.wav; sourceTree = "<group>"; };
-		DC25519817B2894D0078151C /* checkpoint.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = checkpoint.wav; sourceTree = "<group>"; };
-		DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitCommunity.framework; path = "../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitCommunity.framework"; sourceTree = "<group>"; };
+		DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitCommunity.framework; path = "../../depot/_buildoutput/KoboldKit_Game-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitCommunity.framework"; sourceTree = "<group>"; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -238,38 +150,25 @@
 		DC5BCDA717CF88E500A5CB01 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		DC5BCDA817CF88E500A5CB01 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
 		DC5BCDA917CF88E500A5CB01 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = behaviorTemplates.lua; sourceTree = "<group>"; };
 		DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KoboldKit.xcodeproj; path = KoboldKit/KoboldKitFree/KoboldKit.xcodeproj; sourceTree = "<group>"; };
 		DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitExternal.a; path = "KoboldKit/KoboldKitExternal/build/Debug-iphoneos/libKoboldKitExternal.a"; sourceTree = "<group>"; };
-		DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
-		DC8EED1D17A40788000C1995 /* objectTemplates.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = objectTemplates.lua; sourceTree = "<group>"; };
+		DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../depot/_buildoutput/KoboldKit_Game-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoLevel01_Steffen.tmx; sourceTree = "<group>"; };
-		DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitPro.framework; path = "../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitPro.framework"; sourceTree = "<group>"; };
+		DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitPro.framework; path = "../../depot/_buildoutput/KoboldKit_Game-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitPro.framework"; sourceTree = "<group>"; };
 		DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitPro.a; path = "KoboldKit/KoboldKitPro/build/Debug-iphoneos/libKoboldKitPro.a"; sourceTree = "<group>"; };
-		DCCC619C178C560B009EC802 /* Super_Stick_Spy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Super_Stick_Spy-Prefix.pch"; sourceTree = "<group>"; };
-		DCD11E36178C522300FBC406 /* Super_Stick_Spy-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super_Stick_Spy-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCC619C178C560B009EC802 /* KoboldKit_Game-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KoboldKit_Game-Prefix.pch"; sourceTree = "<group>"; };
+		DCD11E36178C522300FBC406 /* KoboldKit_Game-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KoboldKit_Game-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD11E3D178C522300FBC406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCD11E3F178C522300FBC406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCD11E43178C522300FBC406 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		DCD7A291178C7545004A0467 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DCD7EC42178C573500BBAFB0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCD7EC43178C573500BBAFB0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DCD7EC44178C573500BBAFB0 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		DCD7EC45178C573500BBAFB0 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		DCD7EC46178C573500BBAFB0 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
-		DCD7EC47178C573500BBAFB0 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
 		DCD7EC48178C573500BBAFB0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DCD7EC49178C573500BBAFB0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DCD7EC52178C57FC00BBAFB0 /* Super_Stick_Spy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super_Stick_Spy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD7EC52178C57FC00BBAFB0 /* KoboldKit_Game-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KoboldKit_Game-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD9C8B017C106FE00535043 /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitCommunity.framework; path = KoboldKit/KoboldKitCommunity/build/Debug/KoboldKitCommunity.framework; sourceTree = "<group>"; };
 		DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitCommunity.a; path = "KoboldKit/KoboldKitCommunity/build/Debug-iphoneos/libKoboldKitCommunity.a"; sourceTree = "<group>"; };
-		DCDB338A178D808400C13739 /* PlayerCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCharacter.h; sourceTree = "<group>"; };
-		DCDB338B178D808400C13739 /* PlayerCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCharacter.m; sourceTree = "<group>"; };
-		DCDC592F17BE2D980018AB6F /* DemoStage002_DepthTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStage002_DepthTest.tmx; sourceTree = "<group>"; };
-		DCDC593017BE2D980018AB6F /* DemoStage003.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DemoStage003.tmx; sourceTree = "<group>"; };
-		DCDC593117BE2D980018AB6F /* Tileset_Geometry_16x16_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16_test.png; sourceTree = "<group>"; };
-		DCDC593217BE2D980018AB6F /* Tileset_Geometry_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16.png; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -329,10 +228,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC0C221317CFAAC2007FE7B8 /* Mac */ = {
+		DC0C221017CFAA4C007FE7B8 /* Mac */ = {
 			isa = PBXGroup;
 			children = (
-				DC18B11F178C7E3B00641A6D /* Super_Stick_Spy-Mac-Info.plist */,
+				DC18B11F178C7E3B00641A6D /* KoboldKit_Game-Mac-Info.plist */,
 				DC09DB8D178C84C6000E0B61 /* MainMenu.xib */,
 				DCD11E3C178C522300FBC406 /* InfoPlist.strings */,
 				DCD11E42178C522300FBC406 /* Credits.rtf */,
@@ -340,10 +239,10 @@
 			name = Mac;
 			sourceTree = "<group>";
 		};
-		DC0C221417CFAAC7007FE7B8 /* iOS */ = {
+		DC0C221117CFAA52007FE7B8 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DC18B11E178C7E3B00641A6D /* Super_Stick_Spy-iOS-Info.plist */,
+				DC18B11E178C7E3B00641A6D /* KoboldKit_Game-iOS-Info.plist */,
 				DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */,
 				DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */,
 			);
@@ -355,37 +254,8 @@
 			children = (
 				DC18B09F178C7BC400641A6D /* config.lua */,
 				DC18B0A0178C7BC400641A6D /* devconfig.lua */,
-				DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */,
-				DC8EED1D17A40788000C1995 /* objectTemplates.lua */,
-				DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		DC25515417B27C590078151C /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				DC25517A17B285C50078151C /* sfx */,
-				DC25517717B281910078151C /* Time to business, guys.mp3 */,
-				DC25517417B280F10078151C /* WeltHerrschererTheme1.mp3 */,
-				DC25515517B27C590078151C /* suspense.mp3 */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
-		DC25517A17B285C50078151C /* sfx */ = {
-			isa = PBXGroup;
-			children = (
-				DC25519817B2894D0078151C /* checkpoint.wav */,
-				DC25519517B287810078151C /* respawn.wav */,
-				DC25517B17B285C50078151C /* chirp.wav */,
-				DC25517C17B285C50078151C /* die.wav */,
-				DC25517D17B285C50078151C /* jump.wav */,
-				DC25517E17B285C50078151C /* land.wav */,
-				DC25517F17B285C50078151C /* pickup.wav */,
-				DC25518117B285C50078151C /* teleport.wav */,
-			);
-			path = sfx;
 			sourceTree = "<group>";
 		};
 		DC484C18178C40800067DAA4 /* Other Frameworks */ = {
@@ -446,27 +316,6 @@
 			path = "LaunchImages-iOS";
 			sourceTree = "<group>";
 		};
-		DC5D4ABC17AC04B700CF69EB /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				DCDC592F17BE2D980018AB6F /* DemoStage002_DepthTest.tmx */,
-				DCDC593017BE2D980018AB6F /* DemoStage003.tmx */,
-				DCDC593117BE2D980018AB6F /* Tileset_Geometry_16x16_test.png */,
-				DCDC593217BE2D980018AB6F /* Tileset_Geometry_16x16.png */,
-				DC10605817B3C9BC005BB9D0 /* ColorTest.tmx */,
-				DC10605917B3C9BC005BB9D0 /* DemoMainMenu.tmx */,
-				DC10605A17B3C9BC005BB9D0 /* DemoStage001.tmx */,
-				DC10605B17B3C9BC005BB9D0 /* DemoStage002.tmx */,
-				DC10606117B3C9BC005BB9D0 /* DemoStagePrefab.tmx */,
-				DC10606217B3C9BC005BB9D0 /* DemoStageSelection.tmx */,
-				DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */,
-				DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */,
-				DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */,
-				DCA5D52917B126CF0094D666 /* DemoLevel01_Steffen.tmx */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
 		DC8B562817CBF16600F95CBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,44 +328,35 @@
 		DCCC6198178C5574009EC802 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC25515117B27C0A0078151C /* ATTRIBUTIONS */,
-				DC25515417B27C590078151C /* Audio */,
-				DC5D4ABC17AC04B700CF69EB /* Demo */,
+				DC0C220917CFA1EF007FE7B8 /* Spaceship.png */,
 				DC18B09E178C7BC400641A6D /* Config */,
-				DC18B0C5178C7BC400641A6D /* Jetpack.atlas */,
-				DC04802817AD2C18002EBD1E /* spark.png */,
-				DC04802D17AD2C63002EBD1E /* playerdeath.sks */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DCD11E39178C522300FBC406 /* Super_Stick_Spy */ = {
+		DCD11E39178C522300FBC406 /* KoboldKit_Game */ = {
 			isa = PBXGroup;
 			children = (
 				DCD7EC42178C573500BBAFB0 /* AppDelegate.h */,
 				DCD7EC43178C573500BBAFB0 /* AppDelegate.m */,
 				DCD7EC48178C573500BBAFB0 /* ViewController.h */,
 				DCD7EC49178C573500BBAFB0 /* ViewController.m */,
-				DCD7EC46178C573500BBAFB0 /* MenuScene.h */,
-				DCD7EC47178C573500BBAFB0 /* MenuScene.m */,
-				DCD7EC44178C573500BBAFB0 /* GameScene.h */,
-				DCD7EC45178C573500BBAFB0 /* GameScene.m */,
-				DCDB338A178D808400C13739 /* PlayerCharacter.h */,
-				DCDB338B178D808400C13739 /* PlayerCharacter.m */,
+				DC0C220517CF9C97007FE7B8 /* MyScene.h */,
+				DC0C220617CF9C97007FE7B8 /* MyScene.m */,
 				DCCC6198178C5574009EC802 /* Resources */,
 				DC5BCD9617CF88E400A5CB01 /* KoboldKitResources */,
 				DCD11E3A178C522300FBC406 /* Supporting Files */,
 			);
-			path = Super_Stick_Spy;
+			path = KoboldKit_Game;
 			sourceTree = "<group>";
 		};
 		DCD11E3A178C522300FBC406 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DCCC619C178C560B009EC802 /* Super_Stick_Spy-Prefix.pch */,
+				DCCC619C178C560B009EC802 /* KoboldKit_Game-Prefix.pch */,
 				DCD11E3F178C522300FBC406 /* main.m */,
-				DC0C221417CFAAC7007FE7B8 /* iOS */,
-				DC0C221317CFAAC2007FE7B8 /* Mac */,
+				DC0C221117CFAA52007FE7B8 /* iOS */,
+				DC0C221017CFAA4C007FE7B8 /* Mac */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -524,7 +364,7 @@
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
-				DCD11E39178C522300FBC406 /* Super_Stick_Spy */,
+				DCD11E39178C522300FBC406 /* KoboldKit_Game */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
 				DCDD2DA91769FD0A00F307CD /* Products */,
 				DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */,
@@ -534,8 +374,8 @@
 		DCDD2DA91769FD0A00F307CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCD11E36178C522300FBC406 /* Super_Stick_Spy-Mac.app */,
-				DCD7EC52178C57FC00BBAFB0 /* Super_Stick_Spy-iOS.app */,
+				DCD11E36178C522300FBC406 /* KoboldKit_Game-Mac.app */,
+				DCD7EC52178C57FC00BBAFB0 /* KoboldKit_Game-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -583,9 +423,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCD11E35178C522300FBC406 /* Super_Stick_Spy-Mac */ = {
+		DCD11E35178C522300FBC406 /* KoboldKit_Game-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCD11E62178C522400FBC406 /* Build configuration list for PBXNativeTarget "Super_Stick_Spy-Mac" */;
+			buildConfigurationList = DCD11E62178C522400FBC406 /* Build configuration list for PBXNativeTarget "KoboldKit_Game-Mac" */;
 			buildPhases = (
 				DCD11E32178C522300FBC406 /* Sources */,
 				DCD11E33178C522300FBC406 /* Frameworks */,
@@ -596,14 +436,14 @@
 			dependencies = (
 				DC5AA88317CD0D590001940A /* PBXTargetDependency */,
 			);
-			name = "Super_Stick_Spy-Mac";
+			name = "KoboldKit_Game-Mac";
 			productName = "PlatformerDemo-Mac";
-			productReference = DCD11E36178C522300FBC406 /* Super_Stick_Spy-Mac.app */;
+			productReference = DCD11E36178C522300FBC406 /* KoboldKit_Game-Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DCD7EC51178C57FC00BBAFB0 /* Super_Stick_Spy-iOS */ = {
+		DCD7EC51178C57FC00BBAFB0 /* KoboldKit_Game-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "Super_Stick_Spy-iOS" */;
+			buildConfigurationList = DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "KoboldKit_Game-iOS" */;
 			buildPhases = (
 				DCD7EC4E178C57FC00BBAFB0 /* Sources */,
 				DCD7EC4F178C57FC00BBAFB0 /* Frameworks */,
@@ -614,9 +454,9 @@
 			dependencies = (
 				DC5AA88117CD0D530001940A /* PBXTargetDependency */,
 			);
-			name = "Super_Stick_Spy-iOS";
+			name = "KoboldKit_Game-iOS";
 			productName = "PlatformerDemo-iOS";
-			productReference = DCD7EC52178C57FC00BBAFB0 /* Super_Stick_Spy-iOS.app */;
+			productReference = DCD7EC52178C57FC00BBAFB0 /* KoboldKit_Game-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -628,7 +468,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Steffen Itterheim";
 			};
-			buildConfigurationList = DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "Super_Stick_Spy" */;
+			buildConfigurationList = DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKit_Game" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -647,8 +487,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				DCD7EC51178C57FC00BBAFB0 /* Super_Stick_Spy-iOS */,
-				DCD11E35178C522300FBC406 /* Super_Stick_Spy-Mac */,
+				DCD7EC51178C57FC00BBAFB0 /* KoboldKit_Game-iOS */,
+				DCD11E35178C522300FBC406 /* KoboldKit_Game-Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -675,44 +515,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC25515717B27C590078151C /* suspense.mp3 in Resources */,
-				DC25518717B285C50078151C /* jump.wav in Resources */,
-				DC10608417B3C9BC005BB9D0 /* TilesTest.tmx in Resources */,
-				DC04802C17AD2C18002EBD1E /* spark.png in Resources */,
-				DC25518917B285C50078151C /* land.wav in Resources */,
-				DC25517917B281910078151C /* Time to business, guys.mp3 in Resources */,
+				DC0C220B17CFA1EF007FE7B8 /* Spaceship.png in Resources */,
 				DC5BCDBA17CF88F300A5CB01 /* Icons-Mac.iconset in Resources */,
-				DC10607A17B3C9BC005BB9D0 /* DemoStagePrefab.tmx in Resources */,
-				DC25518B17B285C50078151C /* pickup.wav in Resources */,
-				DC10606A17B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */,
-				DC10606817B3C9BC005BB9D0 /* ColorTest.tmx in Resources */,
-				DC10606E17B3C9BC005BB9D0 /* DemoStage002.tmx in Resources */,
 				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
 				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
 				DCD11E44178C522300FBC406 /* Credits.rtf in Resources */,
-				DC25518317B285C50078151C /* chirp.wav in Resources */,
-				DC25519A17B2894D0078151C /* checkpoint.wav in Resources */,
-				DC25518517B285C50078151C /* die.wav in Resources */,
-				DC25519717B287810078151C /* respawn.wav in Resources */,
 				DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */,
-				DC10607C17B3C9BC005BB9D0 /* DemoStageSelection.tmx in Resources */,
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
-				DC7EF8E817AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
-				DC25518F17B285C50078151C /* teleport.wav in Resources */,
-				DC10607E17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png in Resources */,
-				DC25517617B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */,
-				DCDC593A17BE2D980018AB6F /* Tileset_Geometry_16x16.png in Resources */,
-				DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */,
-				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
-				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
-				DC10606C17B3C9BC005BB9D0 /* DemoStage001.tmx in Resources */,
-				DCDC593817BE2D980018AB6F /* Tileset_Geometry_16x16_test.png in Resources */,
-				DC25515317B27C0A0078151C /* ATTRIBUTIONS in Resources */,
-				DCA5D52B17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
-				DCDC593417BE2D980018AB6F /* DemoStage002_DepthTest.tmx in Resources */,
-				DC8EED1F17A40788000C1995 /* objectTemplates.lua in Resources */,
-				DC10608217B3C9BC005BB9D0 /* Tileset_GeometryB.png in Resources */,
-				DCDC593617BE2D980018AB6F /* DemoStage003.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,57 +529,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC25518617B285C50078151C /* jump.wav in Resources */,
-				DC10606D17B3C9BC005BB9D0 /* DemoStage002.tmx in Resources */,
-				DC10607D17B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png in Resources */,
-				DC25518817B285C50078151C /* land.wav in Resources */,
+				DC0C220A17CFA1EF007FE7B8 /* Spaceship.png in Resources */,
 				DC5BCDB917CF88E500A5CB01 /* Default@2x.png in Resources */,
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
 				DC5BCDB517CF88E500A5CB01 /* Default-Landscape.png in Resources */,
 				DC5BCDAA17CF88E500A5CB01 /* Icon-ipad.png in Resources */,
-				DC10607B17B3C9BC005BB9D0 /* DemoStageSelection.tmx in Resources */,
 				DC5BCDB717CF88E500A5CB01 /* Default-Portrait.png in Resources */,
-				DC25515617B27C590078151C /* suspense.mp3 in Resources */,
-				DCDC593717BE2D980018AB6F /* Tileset_Geometry_16x16_test.png in Resources */,
-				DCDC593917BE2D980018AB6F /* Tileset_Geometry_16x16.png in Resources */,
 				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
-				DCDC593517BE2D980018AB6F /* DemoStage003.tmx in Resources */,
-				DC10607917B3C9BC005BB9D0 /* DemoStagePrefab.tmx in Resources */,
 				DC5BCDB217CF88E500A5CB01 /* iTunesArtwork in Resources */,
-				DC25515217B27C0A0078151C /* ATTRIBUTIONS in Resources */,
-				DC25518217B285C50078151C /* chirp.wav in Resources */,
 				DC5BCDB317CF88E500A5CB01 /* iTunesArtwork@2x in Resources */,
-				DCDC593317BE2D980018AB6F /* DemoStage002_DepthTest.tmx in Resources */,
 				DC5BCDAC17CF88E500A5CB01 /* Icon-Settings@2x.png in Resources */,
 				DC5BCDAD17CF88E500A5CB01 /* Icon-Spotlight.png in Resources */,
-				DC10608117B3C9BC005BB9D0 /* Tileset_GeometryB.png in Resources */,
 				DC5BCDAE17CF88E500A5CB01 /* Icon-Spotlight@2x.png in Resources */,
-				DC25518A17B285C50078151C /* pickup.wav in Resources */,
-				DC10606917B3C9BC005BB9D0 /* DemoMainMenu.tmx in Resources */,
-				DC25518E17B285C50078151C /* teleport.wav in Resources */,
-				DC25519617B287810078151C /* respawn.wav in Resources */,
-				DC10606B17B3C9BC005BB9D0 /* DemoStage001.tmx in Resources */,
-				DC25517517B280F10078151C /* WeltHerrschererTheme1.mp3 in Resources */,
-				DC25517817B281910078151C /* Time to business, guys.mp3 in Resources */,
 				DC5BCDB417CF88E500A5CB01 /* Default-568h@2x.png in Resources */,
 				DC5BCDAF17CF88E500A5CB01 /* Icon@2x-ipad.png in Resources */,
 				DC18B0D4178C7BC400641A6D /* config.lua in Resources */,
-				DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */,
-				DCA5D52A17B126CF0094D666 /* DemoLevel01_Steffen.tmx in Resources */,
-				DC7EF8E717AEA2F100831FEB /* behaviorTemplates.lua in Resources */,
 				DC5BCDB017CF88E500A5CB01 /* Icon@2x.png in Resources */,
-				DC25518417B285C50078151C /* die.wav in Resources */,
 				DC5BCDB817CF88E500A5CB01 /* Default-Portrait@2x.png in Resources */,
 				DC5BCDAB17CF88E500A5CB01 /* Icon-Settings.png in Resources */,
-				DC10608317B3C9BC005BB9D0 /* TilesTest.tmx in Resources */,
-				DC04802E17AD2C63002EBD1E /* playerdeath.sks in Resources */,
-				DC25519917B2894D0078151C /* checkpoint.wav in Resources */,
-				DC10606717B3C9BC005BB9D0 /* ColorTest.tmx in Resources */,
 				DC5BCDB617CF88E500A5CB01 /* Default-Landscape@2x.png in Resources */,
-				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
-				DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */,
 				DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */,
-				DC04802B17AD2C18002EBD1E /* spark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,10 +560,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD7EC4A178C573500BBAFB0 /* AppDelegate.m in Sources */,
-				DCD7EC4C178C573500BBAFB0 /* MenuScene.m in Sources */,
-				DC2DD46617ABEA06000351BE /* PlayerCharacter.m in Sources */,
-				DCD7EC4B178C573500BBAFB0 /* GameScene.m in Sources */,
 				DCD11E40178C522300FBC406 /* main.m in Sources */,
+				DC0C220817CF9C97007FE7B8 /* MyScene.m in Sources */,
 				DCD7EC4D178C573500BBAFB0 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -795,10 +571,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD7A289178C7526004A0467 /* AppDelegate.m in Sources */,
-				DCD7A28A178C7526004A0467 /* GameScene.m in Sources */,
-				DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */,
-				DCD7A28B178C7526004A0467 /* MenuScene.m in Sources */,
 				DCD7A28C178C7526004A0467 /* ViewController.m in Sources */,
+				DC0C220717CF9C97007FE7B8 /* MyScene.m in Sources */,
 				DCD7A28D178C7526004A0467 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -863,7 +637,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-Mac-Info.plist";
+				INFOPLIST_FILE = "KoboldKit_Game/KoboldKit_Game-Mac-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -875,7 +649,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-Mac-Info.plist";
+				INFOPLIST_FILE = "KoboldKit_Game/KoboldKit_Game-Mac-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -888,7 +662,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
+				INFOPLIST_FILE = "KoboldKit_Game/KoboldKit_Game-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F0686E86-B01A-4F18-82F8-D096B7E6EA9E";
@@ -901,7 +675,7 @@
 		DCD7EC87178C57FD00BBAFB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
+				INFOPLIST_FILE = "KoboldKit_Game/KoboldKit_Game-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F0686E86-B01A-4F18-82F8-D096B7E6EA9E";
@@ -936,7 +710,7 @@
 				GCC_FAST_MATH = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
+				GCC_PREFIX_HEADER = "KoboldKit_Game/KoboldKit_Game-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -986,7 +760,7 @@
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
+				GCC_PREFIX_HEADER = "KoboldKit_Game/KoboldKit_Game-Prefix.pch";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_SHADOW = YES;
@@ -1010,7 +784,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DCD11E62178C522400FBC406 /* Build configuration list for PBXNativeTarget "Super_Stick_Spy-Mac" */ = {
+		DCD11E62178C522400FBC406 /* Build configuration list for PBXNativeTarget "KoboldKit_Game-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCD11E63178C522400FBC406 /* Debug */,
@@ -1019,7 +793,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "Super_Stick_Spy-iOS" */ = {
+		DCD7EC85178C57FD00BBAFB0 /* Build configuration list for PBXNativeTarget "KoboldKit_Game-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCD7EC86178C57FD00BBAFB0 /* Debug */,
@@ -1028,7 +802,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "Super_Stick_Spy" */ = {
+		DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKit_Game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCDD2DE21769FD0A00F307CD /* Debug */,

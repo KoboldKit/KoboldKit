@@ -17,7 +17,7 @@ extern NSString* const KKButtonDidEndExecuteNotification;
 /** KKButtonBehavior turns any node into a button. Touch/Click on the node while be detected, the node is scaled while selected.
  Scaling is optional and can be modified/disabled with the selectedScale property.
  
- If a touch/click started and then ended on the node, a notification with name `KKButtonDidExecute` is posted to the
+ If a touch/click started and then ended on the node, a notification with name `KKButtonDidExecuteNotification` is posted to the
  [NSNotificationCenter](https://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/nsnotificationcenter_Class/Reference/Reference.html) 
  with the button behavior's node as sender.
  
@@ -26,13 +26,13 @@ extern NSString* const KKButtonDidEndExecuteNotification;
 	NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
 	[nc addObserver:self
 		   selector:@selector(buttonDidExecute:)
-			   name:KKButtonDidExecute
+			   name:KKButtonDidExecuteNotification
 			 object:buttonNode];
  
  The observer is usually `self` but can be any other object implementing the selector.
  The selector can have any name.
  The object parameter should be the node containing the KKButtonBehavior instance, or nil. If you use `nil` as object,
- the selector receives all KKButtonDidExecute notifications from all KKButtonBehaviors.
+ the selector receives all KKButtonDidExecuteNotification notifications from all KKButtonBehaviors.
  
  The selector implementation takes one argument of type NSNotification:
  

@@ -7,6 +7,7 @@
 //
 
 #import "KKCopyFilesFilter.h"
+#import "NSString+KoboldKit.h"
 
 @implementation KKCopyFilesFilter
 
@@ -38,7 +39,7 @@
 	
 	for (NSString* filter in containsFilter)
 	{
-		if ([lowercaseItem rangeOfString:filter.lowercaseString].location != NSNotFound)
+		if ([lowercaseItem containsString:filter.lowercaseString])
 		{
 			[self logFilteredItem:item];
 			return NO;

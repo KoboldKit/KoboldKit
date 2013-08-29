@@ -29,9 +29,6 @@ lua_CFunction lua_atpanic(lua_State* L, lua_CFunction panicf);
 
 void lua_setup()
 {
-	NSFileManager* fileManager = [NSFileManager defaultManager];
-	[fileManager changeCurrentDirectoryPath:[[NSBundle mainBundle] bundlePath]];
-
 	lua_State* L = currentLuaState();
 	lua_atpanic(L, &lua_panic);
 

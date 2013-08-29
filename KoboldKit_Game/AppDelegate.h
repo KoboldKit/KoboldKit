@@ -4,9 +4,8 @@
  * KoboldAid/licenses/KoboldKitFree.License.txt
  */
 
-#import "KKCommunityVersion.h"
+#import "KKAppDelegate.h"
 
-NSString* koboldKitCommunityVersion()
-{
-	return @"Kobold Kit™ Community v7.0";
-}
+@interface AppDelegate : KKAppDelegate
+
+@end

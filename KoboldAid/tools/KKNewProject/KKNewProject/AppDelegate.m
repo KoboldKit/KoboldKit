@@ -14,13 +14,15 @@
 
 -(void) applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	NSLog(@"======================================================================================\nKKNewProject launching...");
+	
 	// always operate with the app's path (ie when running from Xcode working dir will be in DerivedData)
 	NSString* pathToKoboldKit = [KKToolHelper pathToKoboldKit];
-	if ([pathToKoboldKit isEqualToString:[NSFileManager defaultManager].currentDirectoryPath] == NO)
-	{
-		[[NSFileManager defaultManager] changeCurrentDirectoryPath:pathToKoboldKit];
-	}
-	
+
+	// must set the working directory to the same as where the app resides, so that relative paths work as expected
+	NSFileManager* fileManager = [NSFileManager defaultManager];
+	[fileManager changeCurrentDirectoryPath:pathToKoboldKit];
+
 	_projects = [KKXcodeProject xcodeProjectsAtPath:pathToKoboldKit];
 	
 	// create list of copy-able projects
@@ -69,7 +71,11 @@
 
 -(void) controlTextDidChange:(NSNotification *)aNotification
 {
-	[self updateProjectPathLabel];
+	NSTextField* textField = aNotification.object;
+	if (textField.tag == 1)
+	{
+		[self updateProjectPathLabel];
+	}
 }
 
 -(void) updateUserDefaults
@@ -91,9 +97,12 @@
 	KKXcodeProject* project = [self selectedProject];
 	NSString* path = [project projectPathWithDirectory:_directoryField.stringValue
 										   projectName:_projectNameField.stringValue];
-	_projectPathLabel.stringValue = path;
-	
-	[self updateUserDefaults];
+	if (path)
+	{
+		_projectPathLabel.stringValue = path;
+		
+		[self updateUserDefaults];
+	}
 }
 
 -(NSString*) selectedProjectName
