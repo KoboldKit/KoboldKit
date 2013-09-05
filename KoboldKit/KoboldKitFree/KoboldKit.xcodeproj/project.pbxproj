@@ -231,6 +231,34 @@
 			remoteGlobalIDString = DC484C43178C40BB0067DAA4;
 			remoteInfo = KoboldKitPro.framework;
 		};
+		DCE361B017D2288C008F940E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B560A17CBF10F00F95CBC /* KoboldKitCommunity.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC484C6A178C418C0067DAA4;
+			remoteInfo = libKoboldKitCommunity.a;
+		};
+		DCE361B617D2288F008F940E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B561017CBF10F00F95CBC /* KoboldKitPro.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC484C6A178C418C0067DAA4;
+			remoteInfo = libKoboldKitPro.a;
+		};
+		DCE361B817D22893008F940E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B560A17CBF10F00F95CBC /* KoboldKitCommunity.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC484C42178C40BB0067DAA4;
+			remoteInfo = KoboldKitCommunity.framework;
+		};
+		DCE361BA17D22897008F940E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B561017CBF10F00F95CBC /* KoboldKitPro.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC484C42178C40BB0067DAA4;
+			remoteInfo = KoboldKitPro.framework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -867,6 +895,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				DCE361BB17D22897008F940E /* PBXTargetDependency */,
+				DCE361B917D22893008F940E /* PBXTargetDependency */,
 				DC5AA88D17CD0D770001940A /* PBXTargetDependency */,
 			);
 			name = KoboldKit.framework;
@@ -885,6 +915,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				DCE361B717D2288F008F940E /* PBXTargetDependency */,
+				DCE361B117D2288C008F940E /* PBXTargetDependency */,
 				DC5AA88517CD0D6D0001940A /* PBXTargetDependency */,
 			);
 			name = libKoboldKit.a;
@@ -1116,6 +1148,26 @@
 			isa = PBXTargetDependency;
 			name = KoboldKitExternal.framework;
 			targetProxy = DC5AA88C17CD0D770001940A /* PBXContainerItemProxy */;
+		};
+		DCE361B117D2288C008F940E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libKoboldKitCommunity.a;
+			targetProxy = DCE361B017D2288C008F940E /* PBXContainerItemProxy */;
+		};
+		DCE361B717D2288F008F940E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libKoboldKitPro.a;
+			targetProxy = DCE361B617D2288F008F940E /* PBXContainerItemProxy */;
+		};
+		DCE361B917D22893008F940E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KoboldKitCommunity.framework;
+			targetProxy = DCE361B817D22893008F940E /* PBXContainerItemProxy */;
+		};
+		DCE361BB17D22897008F940E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KoboldKitPro.framework;
+			targetProxy = DCE361BA17D22897008F940E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
