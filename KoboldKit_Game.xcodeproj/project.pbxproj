@@ -445,6 +445,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		DCE361C517D3460C008F940E /* KoboldKit_Game-Android */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "";
+			buildConfigurationList = DCE361C817D3460C008F940E /* Build configuration list for PBXLegacyTarget "KoboldKit_Game-Android" */;
+			buildPhases = (
+			);
+			buildToolPath = "${PROJECT_DIR}/KoboldKit/ApportableSupport/launch-apportable.sh";
+			buildWorkingDirectory = "${PROJECT_DIR}";
+			dependencies = (
+			);
+			name = "KoboldKit_Game-Android";
+			passBuildSettingsInEnvironment = 1;
+			productName = "KoboldKit_Game-Android";
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		DCD11E35178C522300FBC406 /* KoboldKit_Game-Mac */ = {
 			isa = PBXNativeTarget;
@@ -512,6 +529,7 @@
 			targets = (
 				DCD7EC51178C57FC00BBAFB0 /* KoboldKit_Game-iOS */,
 				DCD11E35178C522300FBC406 /* KoboldKit_Game-Mac */,
+				DCE361C517D3460C008F940E /* KoboldKit_Game-Android */,
 			);
 		};
 /* End PBXProject section */
@@ -814,6 +832,30 @@
 			};
 			name = Release;
 		};
+		DCE361C617D3460C008F940E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCE361C717D3460C008F940E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -840,6 +882,15 @@
 			buildConfigurations = (
 				DCDD2DE21769FD0A00F307CD /* Debug */,
 				DCDD2DE31769FD0A00F307CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE361C817D3460C008F940E /* Build configuration list for PBXLegacyTarget "KoboldKit_Game-Android" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE361C617D3460C008F940E /* Debug */,
+				DCE361C717D3460C008F940E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
