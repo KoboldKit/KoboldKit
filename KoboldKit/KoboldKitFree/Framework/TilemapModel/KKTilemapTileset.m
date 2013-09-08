@@ -30,13 +30,6 @@
 
 static NSArray* kPVRImageFileExtensions = nil;
 
-@dynamic texture;
--(void) setTexture:(SKTexture *)texture
-{
-	_texture = texture;
-	[self createTileTextures];
-}
-
 -(SKTexture*) texture
 {
 	if (_alternateTileset)
