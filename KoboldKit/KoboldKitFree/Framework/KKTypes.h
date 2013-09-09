@@ -11,20 +11,20 @@
 typedef uint32_t        gid_t;
 
 #if TARGET_OS_IPHONE
-typedef UIEvent         KTEvent;
-typedef UITouch         KTTouch;
-typedef UIView          KTCocoaView;
-typedef UIWindow        KTCocoaWindow;
+typedef UIEvent         KKEvent;
+typedef UITouch         KKTouch;
+typedef UIView          KKCocoaView;
+typedef UIWindow        KKCocoaWindow;
 typedef UIResponder		KKResponder;
-typedef UIApplication   KTApplication;
+typedef UIApplication   KKApplication;
+typedef EAGLContext		KKGLContext;
 
 #else
-typedef NSEvent         KTEvent;
-typedef NSTouch         KTTouch;
-typedef NSView          KTCocoaView;
-typedef NSWindow        KTCocoaWindow;
+typedef NSEvent         KKEvent;
+typedef NSTouch         KKTouch;
+typedef NSView          KKCocoaView;
+typedef NSWindow        KKCocoaWindow;
 typedef NSResponder		KKResponder;
-typedef NSApplication   KTApplication;
+typedef NSApplication   KKApplication;
+typedef NSOpenGLContext	KKGLContext;
 #endif // TARGET_OS_MAC
-
-

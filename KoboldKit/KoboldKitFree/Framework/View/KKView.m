@@ -61,9 +61,13 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 #pragma mark Properties
 
--(EAGLContext*) context
+-(KKGLContext*) context
 {
+#if TARGET_OS_IPHONE
 	return [EAGLContext currentContext];
+#else
+	return [NSOpenGLContext currentContext];
+#endif
 }
 
 #pragma mark Config

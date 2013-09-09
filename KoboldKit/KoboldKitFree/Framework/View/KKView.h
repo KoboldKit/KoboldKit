@@ -33,7 +33,7 @@
  Note: the context is not valid (is nil) before the view controller's viewDidAppear: method runs. In other words the viewDidAppear: method
  is the earliest point where you will get a valid EAGLContext.
  @returns The view's EAGLContext, or nil if the view controller's viewDidAppear method hasn't run yet. */
-@property (atomic, readonly) EAGLContext* context;
+@property (atomic, readonly) KKGLContext* context;
 
 /** If YES, will render physics shape outlines. */
 @property (atomic) BOOL showsPhysicsShapes;
