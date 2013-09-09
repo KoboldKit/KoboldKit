@@ -59,6 +59,13 @@ static BOOL _showsNodeAnchorPoints = NO;
 	[self reloadConfig];
 }
 
+#pragma mark Properties
+
+-(EAGLContext*) context
+{
+	return [EAGLContext currentContext];
+}
+
 #pragma mark Config
 
 -(void) reloadConfig

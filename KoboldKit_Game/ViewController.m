@@ -20,4 +20,13 @@
 	[self.kkView presentScene:myScene];
 }
 
+-(void) viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+
+	// EAGLContext is not valid before viewDidAppear
+	id context = self.kkView.context;
+	NSLog(@"EAGLContext = %@", context);
+}
+
 @end

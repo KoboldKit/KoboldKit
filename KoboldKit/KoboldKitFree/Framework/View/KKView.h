@@ -29,6 +29,12 @@
  ®returns The view's model object. */
 @property (atomic, readonly) KKModel* model;
 
+/** This returns the EAGLContext for the view using a public API call. This enables custom OpenGL code on the Sprite Kit GL context.
+ Note: the context is not valid (is nil) before the view controller's viewDidAppear: method runs. In other words the viewDidAppear: method
+ is the earliest point where you will get a valid EAGLContext.
+ @returns The view's EAGLContext, or nil if the view controller's viewDidAppear method hasn't run yet. */
+@property (atomic, readonly) EAGLContext* context;
+
 /** If YES, will render physics shape outlines. */
 @property (atomic) BOOL showsPhysicsShapes;
 /** If YES, will render node outlines according to their frame property. */
