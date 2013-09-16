@@ -96,18 +96,133 @@
 	
 	if (self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
 	{
-		/*
-		NSString* timerName = @"render layer";
-		BOOL profiling = NO;
-		if ([self.name isEqualToString:@"mainlayer"])
-		{
-			profiling = YES;
-			[[CCProfiler sharedProfiler] createAndAddTimerWithName:timerName];
-			CCProfilingResetTimingBlock(timerName);
-			CCProfilingBeginTimingBlock(timerName);
-		}
-		 */
+		// create initial tiles to fill screen
+		CGSize mapSize = _tilemap.size;
+		CGSize gridSize = _tilemap.gridSize;
 		
+		CGPoint tilemapOffset = ccpSub(self.scene.frame.origin, self.parent.position);
+		CGPoint positionInPoints = ccpMult(ccpSub(self.position, tilemapOffset), -1.0f);
+		// fast-forward position by one tile width/height in negative direction
+		// reason: 1 and -1 would use the same tile due to the division in tileOffset calculation (tilesize 40: position 39 and -39 would both index tile 0)
+		if (positionInPoints.x < 0.0f)
+		{
+			positionInPoints.x -= gridSize.width;
+		}
+		
+		if (positionInPoints.y < 0.0f)
+		{
+			positionInPoints.y -= gridSize.height;
+		}
+		
+		CGPoint offsetInTiles = CGPointMake((int32_t)(positionInPoints.x / gridSize.width), (int32_t)(positionInPoints.y / gridSize.height));
+		CGPoint offsetInPoints = CGPointMake(offsetInTiles.x * gridSize.width, offsetInTiles.y * gridSize.height);
+		
+		NSUInteger i = 0;
+		SKSpriteNode* tileSprite = nil;
+		KKTilemapTileset* currentTileset = nil;
+		KKTilemapTileset* previousTileset = nil;
+		
+		for (int viewTilePosY = 0; viewTilePosY < _visibleTilesOnScreen.height; viewTilePosY++)
+		{
+			for (int viewTilePosX = 0; viewTilePosX < _visibleTilesOnScreen.width; viewTilePosX++)
+			{
+				NSAssert2(_visibleTileSpritesCount > i,
+						  @"Tile layer index (%u) out of bounds (%u)! Perhaps due to window resize?",
+						  (unsigned int)i, (unsigned int)_visibleTileSpritesCount);
+				
+				tileSprite = (__bridge SKSpriteNode*)_visibleTileSprites[i++];
+				
+				// get the proper git coordinate, wrap around as needed
+				CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x, (mapSize.height - 1 - viewTilePosY) - offsetInTiles.y);
+				gid_t gid = [_layer tileGidWithFlagsAt:gidCoordInLayer];
+				
+				// no tile at this coordinate? If so, skip drawing this tile.
+				if ((gid & KKTilemapTileFlipMask) == 0)
+				{
+					tileSprite.hidden = YES;
+					continue;
+				}
+				
+				tileSprite.hidden = NO;
+				
+				// get the gid's tileset, reuse previous tileset if possible
+				currentTileset = previousTileset;
+				if (currentTileset == nil || gid < currentTileset.firstGid || gid > currentTileset.lastGid)
+				{
+					currentTileset = [_tilemap tilesetForGid:gid];
+					NSAssert1(currentTileset, @"Invalid gid: no tileset found for gid %u!", (gid & KKTilemapTileFlipMask));
+				}
+				
+				// switch the batch node if the current gid uses a different tileset than the previous gid
+				if (currentTileset != previousTileset)
+				{
+					previousTileset = currentTileset;
+				}
+				
+				tileSprite.texture = [currentTileset textureForGid:gid];
+				NSAssert1(tileSprite.texture, @"tilesprite texture is nil for gid: %u", gid);
+				
+				// update position
+				CGPoint tileSpritePosition = CGPointMake(viewTilePosX * gridSize.width + offsetInPoints.x,
+														 viewTilePosY * gridSize.height + offsetInPoints.y);
+				// set flip & rotation defaults
+				CGFloat zRotation = 0.0, xScale = 1.0, yScale = 1.0;
+				
+				const CGFloat k270DegreesRadians = M_PI_2 * 3.0;
+				if (gid & KKTilemapTileDiagonalFlip)
+				{
+					// handle the diagonally flipped states.
+					gid_t gidFlipFlags = gid & (KKTilemapTileHorizontalFlip | KKTilemapTileVerticalFlip);
+					if (gidFlipFlags == 0)
+					{
+						zRotation = M_PI_2; // 90°
+						xScale = -1.0;
+						tileSpritePosition.x += gridSize.width;
+						tileSpritePosition.y += gridSize.height;
+					}
+					else if (gidFlipFlags == KKTilemapTileHorizontalFlip)
+					{
+						zRotation = k270DegreesRadians;
+						tileSpritePosition.y += gridSize.height;
+					}
+					else if (gidFlipFlags == KKTilemapTileVerticalFlip)
+					{
+						zRotation = M_PI_2; // 90°
+						tileSpritePosition.x += gridSize.width;
+					}
+				}
+				else
+				{
+					if ((gid & KKTilemapTileHorizontalFlip) == KKTilemapTileHorizontalFlip)
+					{
+						xScale = -1.0;
+						tileSpritePosition.x += gridSize.width;
+					}
+					if ((gid & KKTilemapTileVerticalFlip) == KKTilemapTileVerticalFlip)
+					{
+						yScale = -1.0;
+						tileSpritePosition.y += gridSize.height;
+					}
+				}
+				
+				tileSprite.zRotation = zRotation;
+				tileSprite.xScale = xScale;
+				tileSprite.yScale = yScale;
+				tileSprite.position = tileSpritePosition;
+			}
+		}
+	}
+	
+	_previousPosition = self.position;
+}
+
+/*
+-(void) updateLayer
+{
+	self.hidden = _layer.hidden;
+	
+	if (self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
+	{
 		// Rendering is split into top and bottom half rows to best utilize dual-core CPUs.
 		// All iOS 7 devices except iPhone 4 have dual-core CPUs.
 		dispatch_queue_t tileRenderQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
@@ -122,14 +237,6 @@
 		});
 
 		dispatch_group_wait(tileRenderGroup, DISPATCH_TIME_FOREVER);
-
-		/*
-		if (profiling)
-		{
-			CCProfilingEndTimingBlock(timerName);
-			[[CCProfiler sharedProfiler] displayTimers];
-		}
-		 */
 	}
 	
 	_previousPosition = self.position;
@@ -313,5 +420,5 @@
 		[(__bridge SKSpriteNode*)_visibleTileSprites[k] setHidden:YES];
 	}
 }
-
+*/
 @end

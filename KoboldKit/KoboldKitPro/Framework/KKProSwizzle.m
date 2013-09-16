@@ -19,6 +19,7 @@
 	// perform any Sprite Kit / Kobold Kit method swizzling here
 	NSError* error;
 	
+	// use the Pro tilemap renderer
 	[KKTilemapTileLayerNode jr_swizzleMethod:@selector(updateLayer) withMethod:@selector(kkpro_updateLayer) error:&error];
 	[self checkSwizzleError:error];
 }
