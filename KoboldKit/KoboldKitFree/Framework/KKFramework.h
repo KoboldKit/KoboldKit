@@ -5,7 +5,7 @@
  */
 
 
-/** This header includes all the most commonly needed headers and 
+/** This header includes all the most commonly needed headers within the framework and 
  typedefs SK classes that haven't been subclassed yet for forward compatibility. */
 
 #import <Availability.h>

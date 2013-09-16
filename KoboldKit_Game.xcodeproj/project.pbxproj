@@ -63,6 +63,8 @@
 		DCD7EC54178C57FC00BBAFB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */; };
 		DCD7EC56178C57FC00BBAFB0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DCD9C8B517C1070400535043 /* libKoboldKitCommunity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */; };
+		DCDBA59217E5E54E00796C04 /* libOpenGW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDBA59117E5E54E00796C04 /* libOpenGW.a */; };
+		DCDBA59417E5E55500796C04 /* OpenGW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDBA59317E5E55500796C04 /* OpenGW.framework */; };
 		DCEF82CF17CFD35B00157387 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEF82CB17CFD35B00157387 /* Icon-72.png */; };
 		DCEF82D017CFD35B00157387 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEF82CC17CFD35B00157387 /* Icon-72@2x.png */; };
 		DCEF82D117CFD35B00157387 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEF82CD17CFD35B00157387 /* Icon-Small.png */; };
@@ -155,6 +157,8 @@
 		DC5BCDA717CF88E500A5CB01 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		DC5BCDA817CF88E500A5CB01 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		DC5BCDA917CF88E500A5CB01 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DC6DE74617E4CE5800947898 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
+		DC6DE74917E4D02000947898 /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libc++abi.dylib"; sourceTree = DEVELOPER_DIR; };
 		DC8B562717CBF16600F95CBC /* KoboldKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KoboldKit.xcodeproj; path = KoboldKit/KoboldKitFree/KoboldKit.xcodeproj; sourceTree = "<group>"; };
 		DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitExternal.a; path = "KoboldKit/KoboldKitExternal/build/Debug-iphoneos/libKoboldKitExternal.a"; sourceTree = "<group>"; };
 		DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../depot/_buildoutput/KoboldKit_Game-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 		DCD7EC52178C57FC00BBAFB0 /* KoboldKit_Game-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KoboldKit_Game-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD9C8B017C106FE00535043 /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitCommunity.framework; path = KoboldKit/KoboldKitCommunity/build/Debug/KoboldKitCommunity.framework; sourceTree = "<group>"; };
 		DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitCommunity.a; path = "KoboldKit/KoboldKitCommunity/build/Debug-iphoneos/libKoboldKitCommunity.a"; sourceTree = "<group>"; };
+		DCDBA59117E5E54E00796C04 /* libOpenGW.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libOpenGW.a; path = "KoboldKit/OpenGW/build/Debug-iphoneos/libOpenGW.a"; sourceTree = "<group>"; };
+		DCDBA59317E5E55500796C04 /* OpenGW.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = OpenGW.framework; path = KoboldKit/OpenGW/build/Debug/OpenGW.framework; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -201,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDBA59417E5E55500796C04 /* OpenGW.framework in Frameworks */,
 				DC8B563817CBF1AD00F95CBC /* KoboldKit.framework in Frameworks */,
 				DC8B563717CBF19D00F95CBC /* KoboldKitExternal.framework in Frameworks */,
 				DC37E8F617C10B5D00A04FCB /* KoboldKitCommunity.framework in Frameworks */,
@@ -222,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDBA59217E5E54E00796C04 /* libOpenGW.a in Frameworks */,
 				DC8B563517CBF18900F95CBC /* libKoboldKitExternal.a in Frameworks */,
 				DCD9C8B517C1070400535043 /* libKoboldKitCommunity.a in Frameworks */,
 				DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */,
@@ -406,6 +414,10 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCDBA59317E5E55500796C04 /* OpenGW.framework */,
+				DCDBA59117E5E54E00796C04 /* libOpenGW.a */,
+				DC6DE74917E4D02000947898 /* libc++abi.dylib */,
+				DC6DE74617E4CE5800947898 /* libc++.dylib */,
 				DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */,
 				DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */,
 				DC19539617C1254600EC526C /* AppKit.framework */,
@@ -713,7 +725,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "KoboldKit_Game/KoboldKit_Game-iOS-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F0686E86-B01A-4F18-82F8-D096B7E6EA9E";
 				SDKROOT = iphoneos;
@@ -726,7 +741,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "KoboldKit_Game/KoboldKit_Game-iOS-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F0686E86-B01A-4F18-82F8-D096B7E6EA9E";
 				SDKROOT = iphoneos;
@@ -757,6 +775,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_FAST_MATH = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -778,6 +797,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lC++";
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_FORMAT = RGBA8888_COMPRESSED;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
@@ -809,6 +829,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KoboldKit_Game/KoboldKit_Game-Prefix.pch";
@@ -823,6 +844,7 @@
 				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-lC++";
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_FORMAT = RGBA8888_COMPRESSED;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;

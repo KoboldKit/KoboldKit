@@ -9,6 +9,9 @@
 #import "SKNode+KoboldKit.h"
 #import "KKView.h"
 #import "KKVersion.h"
+#import "KKSwizzle.h"
+#import "../KoboldKitCommunity/Framework/KKCommunitySwizzle.h"
+#import "../KoboldKitPro/Framework/KKProSwizzle.h"
 
 @implementation KKViewController
 
@@ -24,7 +27,10 @@
 	[super viewDidLoad];
 #endif
 	
-	[self swizzleMethods];
+	// method swizzling, see: http://cocoadev.com/MethodSwizzling
+	[KKSwizzle swizzleMethods];
+	[KKCommunitySwizzle swizzleMethods];
+	[KKProSwizzle swizzleMethods];
 
 	NSAssert1([self.kkView isKindOfClass:[KKView class]],
 			  @"KKViewController: view must be of class KKView, but its class is: %@. You may need to change this in your code or in Interface Builder (Identity Inspector -> Custom Class).",
@@ -49,23 +55,6 @@
 -(void) presentFirstScene
 {
 	KKMustOverrideMethod();
-}
-
--(void) checkSwizzleError:(NSError*)error
-{
-	NSAssert1(error == nil, @"Method swizzling error: %@", error);
-}
-
--(void) swizzleMethods
-{
-	/*
-	 // swizzle some methods to hook into Sprite Kit
-	 NSError* error;
-	 
-	 [SKNode jr_swizzleMethod:@selector(copyWithZone:)
-	 withMethod:@selector(kkCopyWithZone:) error:&error];
-	 [self checkSwizzleError:error];
-	 */
 }
 
 #if TARGET_OS_IPHONE

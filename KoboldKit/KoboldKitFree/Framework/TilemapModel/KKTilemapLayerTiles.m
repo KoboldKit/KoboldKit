@@ -9,12 +9,12 @@
 
 @implementation KKTilemapLayerTiles
 
--(void) takeOwnershipOfGidBuffer:(gid_t*)tiles bufferSize:(unsigned int)bufferSize
+-(void) retainGidBuffer:(gid_t*)gid sizeInBytes:(unsigned int)sizeInBytes
 {
 	free(_gid);
-	_gid = tiles;
-	_gidSize = bufferSize;
-	_gidCount = bufferSize / sizeof(gid_t);
+	_gid = gid;
+	_bytes = sizeInBytes;
+	_count = sizeInBytes / sizeof(gid_t);
 }
 
 -(id) initWithCoder:(NSCoder*)aDecoder

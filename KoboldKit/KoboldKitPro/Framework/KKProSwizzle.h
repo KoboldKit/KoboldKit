@@ -4,6 +4,10 @@
  * KoboldKit/KoboldKitPro/KoboldKitPro.License.txt
  */
 
-/** This header includes all the most commonly needed headers within the framework. */
+#import <Foundation/Foundation.h>
 
-#import "KKProCategories.h"
+@interface KKProSwizzle : NSObject
+
++(void) swizzleMethods;
+
+@end

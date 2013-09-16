@@ -1,13 +1,14 @@
-/*
- * Copyright (c) 2013 Steffen Itterheim.
- * Released under a PROPRIETARY License:
- * KoboldKit/KoboldKitPro/KoboldKitPro.License.txt
- */
+//
+//  KKProTilemapNode.h
+//  KoboldKitPro
+//
+//  Created by Steffen Itterheim on 16.09.13.
+//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
+//
 
 #import "KKTilemapNode.h"
 
-/** Kobold Kit Pro extensions to KKTilemapNode */
-@interface KKTilemapNode (KoboldKitPro)
+@interface KKProTilemapNode : KKTilemapNode
 
 /** @name Spawning Objects */
 

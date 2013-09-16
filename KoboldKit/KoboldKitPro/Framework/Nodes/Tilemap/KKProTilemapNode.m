@@ -1,14 +1,16 @@
-/*
- * Copyright (c) 2012-2013 Steffen Itterheim.
- * Released under a PROPRIETARY License:
- * KoboldKit/KoboldKitPro/KoboldKitPro.License.txt
- */
+//
+//  KKProTilemapNode.m
+//  KoboldKitPro
+//
+//  Created by Steffen Itterheim on 16.09.13.
+//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
+//
 
-#import "KKTilemapNode+KoboldKitPro.h"
-#import "KKEntityDynamicsBehavior.h"
+#import "KKProTilemapNode.h"
 #import "KKEntity.h"
+#import "KKEntityDynamicsBehavior.h"
 
-@implementation KKTilemapNode (KoboldKitPro)
+@implementation KKProTilemapNode
 
 #pragma mark Spawn Objects
 
@@ -172,7 +174,7 @@
 			}
 			
 			[objectLayerNode addChild:objectNode];
-
+			
 			// create entity
 			if (entityDynamicsBehavior)
 			{
@@ -187,7 +189,7 @@
 					LOG_EXPR(entity);
 				}
 			}
-
+			
 			// call objectDidSpawn on newly spawned object (if available)
 			if ([objectNode respondsToSelector:@selector(nodeDidSpawnWithTilemapObject:)])
 			{

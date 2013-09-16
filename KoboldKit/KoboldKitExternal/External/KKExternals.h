@@ -10,6 +10,7 @@
 #import "CCProfiling.h"
 #import "CGPointExtension.h"
 #import "CGVectorExtension.h"
+#import "JRSwizzle.h"
 #import "KKArcadeInputState.h"
 #import "LuaImport.h"
 #import "ObjectAL/ObjectAL.h"

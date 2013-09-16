@@ -4,5 +4,5 @@
  * KoboldKit/KoboldKitPro/KoboldKitPro.License.txt
  */
 
-#import "KKTilemapNode+KoboldKitPro.h"
 #import "SKNode+KoboldKitPro.h"
+#import "KKTilemapTileLayerNode+KoboldKitPro.h"

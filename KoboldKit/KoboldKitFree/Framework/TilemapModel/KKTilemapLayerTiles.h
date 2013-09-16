@@ -20,17 +20,17 @@
 /** @returns the memory buffer containing a layer's tile GIDs. */
 @property (atomic, readonly) gid_t* gid;
 /** @returns the size (in bytes) of the GID memory buffer. Equal to (mapSize.width * mapSize.height * sizeof(gid_t)). */
-@property (atomic, readonly) unsigned int gidSize;
+@property (atomic, readonly) unsigned int bytes;
 /** @returns the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height). */
-@property (atomic, readonly) unsigned int gidCount;
+@property (atomic, readonly) unsigned int count;
 
 /** Takes an already allocated GID buffer with the given bufferSize (in bytes) and takes ownership for it.
    Which means: you should not free() the tiles buffer, it will be freed by KTTilemapLayerTiles when it deallocates.
 
    This method also sets the gidCount, which it derives from (gidSize / sizeof(gid_t)).
- @param tiles A pointer to a member buffer containing tile GIDs.
- @param bufferSize The size of the buffer in bytes. */
--(void) takeOwnershipOfGidBuffer:(gid_t*)tiles bufferSize:(unsigned int)bufferSize;
+ @param gid A pointer to a member buffer containing tile GIDs.
+ @param sizeInBytes The size of the buffer in bytes. */
+-(void) retainGidBuffer:(gid_t*)gid sizeInBytes:(unsigned int)sizeInBytes;
 
 @end
 

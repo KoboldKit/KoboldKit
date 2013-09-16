@@ -181,12 +181,12 @@ static Class kMutableNumberClass;
 
 @implementation KKClassVarSetter
 
--(id) initWithClass:(Class)class
+-(id) initWithClass:(Class)klass
 {
 	self = [super init];
 	if (self)
 	{
-		_class = class;
+		_class = klass;
 		[self createIvarList];
 	}
 

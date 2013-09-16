@@ -1,111 +1,31 @@
-/*
- * Copyright (c) 2012-2013 Steffen Itterheim.
- * Released under the MIT License:
- * KoboldAid/licenses/KoboldKitFree.License.txt
- */
+//
+//  KKTilemapTileLayerNode+KoboldKitPro.m
+//  KoboldKitPro
+//
+//  Created by Steffen Itterheim on 16.09.13.
+//  Copyright (c) 2013 Steffen Itterheim. All rights reserved.
+//
 
+#import "KKTilemapTileLayerNode+KoboldKitPro.h"
 
-#import "KKTilemapTileLayerNode.h"
-#import "KKTilemap.h"
-#import "KKTilemapLayer.h"
-#import "KKTilemapTileset.h"
-#import "KKTilemapLayerTiles.h"
-#import "KKMacros.h"
+@implementation KKTilemapTileLayerNode (KoboldKitPro)
 
-
-@implementation KKTilemapTileLayerNode
-
-+(id) tileLayerNodeWithLayer:(KKTilemapLayer*)layer
-{
-	return [[self alloc] initWithLayer:layer];
-}
-
--(void) didMoveToParent
-{
-	NSLog(@"Tile layer: %@", _layer.name);
-	
-	CGSize sceneSize = self.scene.size;
-	CGSize gridSize = _tilemap.gridSize;
-	CGSize mapSize = _tilemap.size;
-	
-	_visibleTilesOnScreen = CGSizeMake(ceil(sceneSize.width / gridSize.width) + 2, ceil(sceneSize.height / gridSize.height) + 2);
-	_viewBoundary = CGSizeMake(-(mapSize.width * gridSize.width - (_visibleTilesOnScreen.width - 1) * gridSize.width),
-							   -(mapSize.height * gridSize.height - (_visibleTilesOnScreen.height - 1) * gridSize.height));
-
-	[self createTilesetBatchNodes];
-	
-	// force initial draw
-	_tilemap.modified = YES;
-}
-
--(void) createTilesetBatchNodes
-{
-	_batchNode = [SKNode node];
-	_batchNode.zPosition = -1;
-	[self addChild:_batchNode];
-
-	// get all tileset textures and create batch nodes, but don't add them as child just yet
-	for (KKTilemapTileset* tileset in _tilemap.tilesets)
-	{
-		// load and setup textures
-		[tileset texture];
-	}
-	
-	// initialize sprites with dummy textures
-	NSUInteger bufferSize = sizeof(SKSpriteNode*) * _visibleTilesOnScreen.width * _visibleTilesOnScreen.height;
-	_visibleTileSprites = (void**)malloc(bufferSize);
-
-	NSUInteger i = 0;
-	SKSpriteNode* tileSprite = nil;
-	for (int tilePosY = 0; tilePosY < _visibleTilesOnScreen.height; tilePosY++)
-	{
-		for (int tilePosX = 0; tilePosX < _visibleTilesOnScreen.width; tilePosX++)
-		{
-			tileSprite = [SKSpriteNode node];
-			tileSprite.size = CGSizeMake(_tilemap.gridSize.width, _tilemap.gridSize.height);
-			//tileSprite.hidden = YES;
-			tileSprite.anchorPoint = CGPointZero;
-			[_batchNode addChild:tileSprite];
-			
-			_visibleTileSprites[i++] = (__bridge void*)tileSprite;
-		}
-	}
-	
-	_visibleTileSpritesCount = i;
-}
-
--(void) willMoveFromParent
-{
-	free(_visibleTileSprites);
-	_visibleTileSprites = nil;
-	_visibleTileSpritesCount = 0;
-}
-
--(void) setPosition:(CGPoint)position
-{
-	// prevent flicker, particularly when tilesets have no spacing between tiles
-	// does allow .5 coords for pixel-precision positioning on Retina devices
-	position.x = round(position.x * 2.0) / 2.0;
-	position.y = round(position.y * 2.0) / 2.0;
-	[super setPosition:position];
-}
-
--(void) updateLayer
+-(void) kkpro_updateLayer
 {
 	self.hidden = _layer.hidden;
 	
 	if (self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
 	{
 		/*
-		NSString* timerName = @"render layer";
-		BOOL profiling = NO;
-		if ([self.name isEqualToString:@"mainlayer"])
-		{
-			profiling = YES;
-			[[CCProfiler sharedProfiler] createAndAddTimerWithName:timerName];
-			CCProfilingResetTimingBlock(timerName);
-			CCProfilingBeginTimingBlock(timerName);
-		}
+		 NSString* timerName = @"render layer";
+		 BOOL profiling = NO;
+		 if ([self.name isEqualToString:@"mainlayer"])
+		 {
+		 profiling = YES;
+		 [[CCProfiler sharedProfiler] createAndAddTimerWithName:timerName];
+		 CCProfilingResetTimingBlock(timerName);
+		 CCProfilingBeginTimingBlock(timerName);
+		 }
 		 */
 		
 		// Rendering is split into top and bottom half rows to best utilize dual-core CPUs.
@@ -115,27 +35,27 @@
 		
 		NSUInteger halfHeight = (NSUInteger)(_visibleTilesOnScreen.height / 2.0);
 		dispatch_group_async(tileRenderGroup, tileRenderQueue, ^{
-			[self renderRowsFrom:0 to:halfHeight];
+			[self kkpro_renderRowsFrom:0 to:halfHeight];
 		});
 		dispatch_group_async(tileRenderGroup, tileRenderQueue, ^{
-			[self renderRowsFrom:halfHeight to:_visibleTilesOnScreen.height];
+			[self kkpro_renderRowsFrom:halfHeight to:_visibleTilesOnScreen.height];
 		});
-
+		
 		dispatch_group_wait(tileRenderGroup, DISPATCH_TIME_FOREVER);
-
+		
 		/*
-		if (profiling)
-		{
-			CCProfilingEndTimingBlock(timerName);
-			[[CCProfiler sharedProfiler] displayTimers];
-		}
+		 if (profiling)
+		 {
+		 CCProfilingEndTimingBlock(timerName);
+		 [[CCProfiler sharedProfiler] displayTimers];
+		 }
 		 */
 	}
 	
 	_previousPosition = self.position;
 }
 
--(void) renderRowsFrom:(NSUInteger)fromRow to:(NSUInteger)toRow
+-(void) kkpro_renderRowsFrom:(NSUInteger)fromRow to:(NSUInteger)toRow
 {
 	// create initial tiles to fill screen
 	CGSize mapSize = _tilemap.size;
@@ -143,7 +63,7 @@
 	
 	CGPoint tilemapOffset = ccpSub(self.scene.frame.origin, self.parent.position);
 	CGPoint positionInPoints = ccpMult(ccpSub(self.position, tilemapOffset), -1.0f);
-
+	
 	// fast-forward position by one tile width/height in negative direction
 	// reason: 1 and -1 would use the same tile due to the division in tileOffset calculation (tilesize 40: position 39 and -39 would both index tile 0)
 	if (positionInPoints.x < 0.0f)
@@ -169,7 +89,7 @@
 	BOOL endlessScrollingHorizontal = _layer.endlessScrollingHorizontal;
 	BOOL endlessScrollingVertical = _layer.endlessScrollingVertical;
 	const CGFloat k270DegreesRadians = M_PI_2 * 3.0;
-
+	
 	for (NSUInteger viewTilePosY = fromRow; viewTilePosY < toRow; viewTilePosY++)
 	{
 		for (NSUInteger viewTilePosX = 0; viewTilePosX < _visibleTilesOnScreen.width; viewTilePosX++)
@@ -205,7 +125,7 @@
 					gidCoordInLayer.y += mapSize.height;
 				}
 			}
-
+			
 			// calculate the gid index and verify it
 			NSUInteger gidIndex = (NSUInteger)(gidCoordInLayer.x + gidCoordInLayer.y * mapSize.width);
 			if (gidIndex >= layerGidCount)
@@ -268,7 +188,7 @@
 					}
 				}
 			}
-
+			
 			// if gids differ we certainly need a different texture, and perhaps a different tileset even
 			if (currentGidWithoutFlags != previousGidWithoutFlags)
 			{
@@ -294,7 +214,7 @@
 			tileSprite.yScale = yScale;
 			tileSprite.position = tileSpritePosition;
 			tileSprite.hidden = NO;
-
+			
 			// saves a little bit performance to make the assignment only when necessary
 			if (tileSprite.texture != tileSpriteTexture)
 			{

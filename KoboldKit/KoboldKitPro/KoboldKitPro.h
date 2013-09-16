@@ -13,6 +13,7 @@
 // staging headers which include all other headers of their module
 #import "KKProBehaviors.h"
 #import "KKProCategories.h"
+#import "KKProNodes.h"
 
 // individual class headers
 #import "KKDownloadProjectFiles.h"

@@ -51,7 +51,7 @@
    - cpvadd( CGPointMake(1,1), CGPointMake(2,2) ); // mixing chipmunk and CG (avoid)
  */
 
-#ifdef TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
 #import <CoreGraphics/CGGeometry.h>
 #elif TARGET_OS_MAC
 #import <Foundation/Foundation.h>

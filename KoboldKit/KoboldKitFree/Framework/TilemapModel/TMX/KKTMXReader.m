@@ -435,12 +435,12 @@ DEVELOPER_FIXME("ellipse position/anchor is not correct")
 			[NSException raise:@"TMX deflate error" format:@"TMX deflating gzip/zlib data of layer (%@) failed", _parsingLayer];
 		}
 
-		[_parsingLayer.tiles takeOwnershipOfGidBuffer:(gid_t*)deflatedTileGidBuffer bufferSize:deflatedTileGidBufferSize];
+		[_parsingLayer.tiles retainGidBuffer:(gid_t*)deflatedTileGidBuffer sizeInBytes:deflatedTileGidBufferSize];
 	}
 	else
 	{
 		// the buffer is not compressed and can be used directly
-		[_parsingLayer.tiles takeOwnershipOfGidBuffer:(gid_t*)tileGidBuffer bufferSize:tileGidBufferSize];
+		[_parsingLayer.tiles retainGidBuffer:(gid_t*)tileGidBuffer sizeInBytes:tileGidBufferSize];
 	}
 
 	[_dataString setString:@""];

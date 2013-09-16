@@ -240,11 +240,11 @@ NSString* stringFromUnsignedInt(unsigned int u)
 // returns a base64, zlib compressed tile data string
 -(NSString*) encodedDataStringFromTileLayer:(KKTilemapLayer*)layer
 {
-	size_t bufferSize = compressBound(layer.tiles.gidSize);
+	size_t bufferSize = compressBound(layer.tiles.bytes);
 	unsigned char* buffer = malloc(bufferSize);
 	NSAssert2(buffer, @"KTTMXWriter: failed to allocate %u bytes for tile layer (%@) data", (unsigned int)bufferSize, layer);
 
-	int result = compress(buffer, &bufferSize, (unsigned char*)layer.tiles.gid, layer.tiles.gidSize);
+	int result = compress(buffer, &bufferSize, (unsigned char*)layer.tiles.gid, layer.tiles.bytes);
 	if (result != Z_OK)
 	{
 		NSString* error = @"unknown error";

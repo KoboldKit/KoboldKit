@@ -39,7 +39,7 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerDidStepInDeadlyTrap:) name:@"DeadlyTrap" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkpointActivated:) name:@"CheckpointActivated" object:nil];
 	
-	_tilemapNode = [KKTilemapNode tilemapWithContentsOfFile:_tmxFile];
+	_tilemapNode = [KKProTilemapNode tilemapWithContentsOfFile:_tmxFile];
 	[self addChild:_tilemapNode];
 	
 	[_tilemapNode createPhysicsShapesWithTileLayerNode:_tilemapNode.mainTileLayerNode];
@@ -50,7 +50,7 @@
 	
 	// apply global settings from Tiled
 	KKTilemapProperties* mapProperties = _tilemapNode.tilemap.properties;
-	self.physicsWorld.gravity = CGPointMake(0, [mapProperties numberForKey:@"physicsGravityY"].floatValue);
+	self.physicsWorld.gravity = CGVectorMake(0, [mapProperties numberForKey:@"physicsGravityY"].floatValue);
 	self.physicsWorld.speed = [mapProperties numberForKey:@"physicsSimulationSpeed"].floatValue;
 	if (self.physicsWorld.speed == 0.0)
 	{

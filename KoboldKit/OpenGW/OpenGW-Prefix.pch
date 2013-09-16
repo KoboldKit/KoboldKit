@@ -4,7 +4,9 @@
  * KoboldAid/licenses/KoboldKitFree.License.txt
  */
 
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <CoreGraphics/CoreGraphics.h>
+#elif __cplusplus
 
-/** This header includes all the most commonly needed headers within the framework. */
-
-#import "KKCommunityCategories.h"
+#endif

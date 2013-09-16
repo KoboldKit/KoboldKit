@@ -4,7 +4,10 @@
  * KoboldAid/licenses/KoboldKitFree.License.txt
  */
 
+#import <Foundation/Foundation.h>
 
-/** This header includes all the most commonly needed headers within the framework. */
+@interface KKSwizzle : NSObject
 
-#import "KKCommunityCategories.h"
++(void) swizzleMethods;
+
+@end

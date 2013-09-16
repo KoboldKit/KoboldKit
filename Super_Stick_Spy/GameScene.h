@@ -11,7 +11,7 @@
 {
 	KKSpriteNode* _curtainSprite;
 	PlayerCharacter* _playerCharacter;
-	KKTilemapNode* _tilemapNode;
+	KKProTilemapNode* _tilemapNode;
 
 	CGPoint rayStart;
 	CGPoint rayEnd;

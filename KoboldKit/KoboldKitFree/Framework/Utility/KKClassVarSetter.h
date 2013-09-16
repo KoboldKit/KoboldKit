@@ -52,7 +52,7 @@ typedef enum
 /** Initialize ivar setter with a class.
  @param class The class on which to set variables.
  @returns A new instance of KKClassVarSetter */
--(id) initWithClass:(Class)class;
+-(id) initWithClass:(Class)klass;
 
 /** Sets the ivars in the target if their key in the dictionary matches the ivar name and type. The dictionary must have NSString as keys
    and either NSString or KKMutableNumber as values. The target's class must match the class the KKClassVarSetter object was initialized with.

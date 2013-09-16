@@ -53,7 +53,9 @@
    - cpvadd( CGVectorMake(1,1), CGVectorMake(2,2) ); // mixing chipmunk and CG (avoid)
  */
 
-#ifdef TARGET_OS_IPHONE
+#import <TargetConditionals.h>
+
+#if TARGET_OS_IPHONE
 #import <CoreGraphics/CGGeometry.h>
 #elif TARGET_OS_MAC
 #import <Foundation/Foundation.h>

@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC8B564117CBFDA500F95CBC /* KKCommunityDummyClass.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B563F17CBFDA500F95CBC /* KKCommunityDummyClass.h */; };
-		DC8B564217CBFDA500F95CBC /* KKCommunityDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B564017CBFDA500F95CBC /* KKCommunityDummyClass.m */; };
-		DC8B564317CBFDA500F95CBC /* KKCommunityDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B564017CBFDA500F95CBC /* KKCommunityDummyClass.m */; };
-		DC8B564E17CC107000F95CBC /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1953B117C1443400EC526C /* KoboldKit.framework */; };
-		DC8B565017CC107000F95CBC /* KoboldKitExternal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B564F17CC107000F95CBC /* KoboldKitExternal.framework */; };
-		DCBD9B5717C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DCBD9A0017C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch */; };
-		DCBD9B5817C0C8A5008C4F3B /* KoboldKitCommunity.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD9A0117C0C8A5008C4F3B /* KoboldKitCommunity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCD9C89917C105F400535043 /* KKCommunityBehaviors.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C88D17C105F400535043 /* KKCommunityBehaviors.h */; };
-		DCD9C89A17C105F400535043 /* KKCommunityCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C89017C105F400535043 /* KKCommunityCategories.h */; };
-		DCD9C89B17C105F400535043 /* KKCommunityFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C89217C105F400535043 /* KKCommunityFramework.h */; };
-		DCD9C89C17C105F400535043 /* KKCommunityVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C89317C105F400535043 /* KKCommunityVersion.h */; };
-		DCD9C89D17C105F400535043 /* KKCommunityVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C89417C105F400535043 /* KKCommunityVersion.m */; };
-		DCD9C89E17C105F400535043 /* KKCommunityVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD9C89417C105F400535043 /* KKCommunityVersion.m */; };
-		DCD9C89F17C105F400535043 /* KKCommunityNodes.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD9C89617C105F400535043 /* KKCommunityNodes.h */; };
-		DCEA06D917E74B670011DED9 /* KKCommunitySwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = DCEA06D717E74B670011DED9 /* KKCommunitySwizzle.h */; };
-		DCEA06DA17E74B670011DED9 /* KKCommunitySwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEA06D817E74B670011DED9 /* KKCommunitySwizzle.m */; };
-		DCEA06DB17E74B670011DED9 /* KKCommunitySwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEA06D817E74B670011DED9 /* KKCommunitySwizzle.m */; };
+		DCDBA58317E5E49B00796C04 /* OGWWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA57F17E5E49B00796C04 /* OGWWorld.h */; };
+		DCDBA58417E5E49B00796C04 /* OGWWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.mm */; };
+		DCDBA58517E5E49B00796C04 /* OGWWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.mm */; };
+		DCDBA58617E5E49B00796C04 /* OpenGW-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA58117E5E49B00796C04 /* OpenGW-Prefix.pch */; };
+		DCDBA58717E5E49B00796C04 /* OpenGW.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA58217E5E49B00796C04 /* OpenGW.h */; };
+		DCDBA59717E5E7CA00796C04 /* GWWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */; };
+		DCDBA59817E5E7CA00796C04 /* GWWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */; };
+		DCDBA59917E5E7CA00796C04 /* GWWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA59617E5E7CA00796C04 /* GWWorld.h */; };
+		DCDBA59C17E5EC1900796C04 /* OGWEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA59A17E5EC1900796C04 /* OGWEntity.h */; };
+		DCDBA59D17E5EC1900796C04 /* OGWEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59B17E5EC1900796C04 /* OGWEntity.m */; };
+		DCDBA59E17E5EC1900796C04 /* OGWEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59B17E5EC1900796C04 /* OGWEntity.m */; };
+		DCDBA5A117E5EC3400796C04 /* OGWMap.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA59F17E5EC3400796C04 /* OGWMap.h */; };
+		DCDBA5A217E5EC3400796C04 /* OGWMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A017E5EC3400796C04 /* OGWMap.m */; };
+		DCDBA5A317E5EC3400796C04 /* OGWMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A017E5EC3400796C04 /* OGWMap.m */; };
+		DCDBA5A617E5EC4100796C04 /* GWEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A417E5EC4100796C04 /* GWEntity.cpp */; };
+		DCDBA5A717E5EC4100796C04 /* GWEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A417E5EC4100796C04 /* GWEntity.cpp */; };
+		DCDBA5A817E5EC4100796C04 /* GWEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA5A517E5EC4100796C04 /* GWEntity.h */; };
+		DCDBA5AB17E5EC4900796C04 /* GWMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A917E5EC4900796C04 /* GWMap.cpp */; };
+		DCDBA5AC17E5EC4900796C04 /* GWMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A917E5EC4900796C04 /* GWMap.cpp */; };
+		DCDBA5AD17E5EC4900796C04 /* GWMap.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA5AA17E5EC4900796C04 /* GWMap.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,37 +43,40 @@
 
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		DC1953B117C1443400EC526C /* KoboldKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKit.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKit.framework"; sourceTree = "<group>"; };
-		DC3AEF4917CBE07D0002416A /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = ../KoboldKitExternal/build/Debug/KoboldKitExternal.framework; sourceTree = "<group>"; };
-		DC3AEF4E17CBE0D70002416A /* index.appledoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.appledoc; sourceTree = "<group>"; };
+		DC1953AF17C143FF00EC526C /* KoboldKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKit.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKit.framework"; sourceTree = "<group>"; };
+		DC3AEF4B17CBE08A0002416A /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = ../KoboldKitExternal/build/Debug/KoboldKitExternal.framework; sourceTree = "<group>"; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DC484C1B178C40800067DAA4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		DC484C43178C40BB0067DAA4 /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KoboldKitCommunity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC484C6B178C418C0067DAA4 /* libKoboldKitCommunity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKoboldKitCommunity.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC484C43178C40BB0067DAA4 /* OpenGW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenGW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC484C6B178C418C0067DAA4 /* libOpenGW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenGW.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC484CE3178C465E0067DAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		DC8B563F17CBFDA500F95CBC /* KKCommunityDummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityDummyClass.h; sourceTree = "<group>"; };
-		DC8B564017CBFDA500F95CBC /* KKCommunityDummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommunityDummyClass.m; sourceTree = "<group>"; };
-		DC8B564F17CC107000F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
+		DC8B564C17CC106000F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DCBD9A0017C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KoboldKitCommunity-Prefix.pch"; sourceTree = "<group>"; };
-		DCBD9A0117C0C8A5008C4F3B /* KoboldKitCommunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoboldKitCommunity.h; sourceTree = "<group>"; };
 		DCD7A291178C7545004A0467 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
-		DCD9C88D17C105F400535043 /* KKCommunityBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityBehaviors.h; sourceTree = "<group>"; };
-		DCD9C89017C105F400535043 /* KKCommunityCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityCategories.h; sourceTree = "<group>"; };
-		DCD9C89217C105F400535043 /* KKCommunityFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityFramework.h; sourceTree = "<group>"; };
-		DCD9C89317C105F400535043 /* KKCommunityVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityVersion.h; sourceTree = "<group>"; };
-		DCD9C89417C105F400535043 /* KKCommunityVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommunityVersion.m; sourceTree = "<group>"; };
-		DCD9C89617C105F400535043 /* KKCommunityNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunityNodes.h; sourceTree = "<group>"; };
+		DCDBA57F17E5E49B00796C04 /* OGWWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWWorld.h; sourceTree = "<group>"; };
+		DCDBA58017E5E49B00796C04 /* OGWWorld.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGWWorld.mm; sourceTree = "<group>"; };
+		DCDBA58117E5E49B00796C04 /* OpenGW-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenGW-Prefix.pch"; sourceTree = "<group>"; };
+		DCDBA58217E5E49B00796C04 /* OpenGW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGW.h; sourceTree = "<group>"; };
+		DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWWorld.cpp; sourceTree = "<group>"; };
+		DCDBA59617E5E7CA00796C04 /* GWWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWWorld.h; sourceTree = "<group>"; };
+		DCDBA59A17E5EC1900796C04 /* OGWEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWEntity.h; sourceTree = "<group>"; };
+		DCDBA59B17E5EC1900796C04 /* OGWEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWEntity.m; sourceTree = "<group>"; };
+		DCDBA59F17E5EC3400796C04 /* OGWMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWMap.h; sourceTree = "<group>"; };
+		DCDBA5A017E5EC3400796C04 /* OGWMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWMap.m; sourceTree = "<group>"; };
+		DCDBA5A417E5EC4100796C04 /* GWEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWEntity.cpp; sourceTree = "<group>"; };
+		DCDBA5A517E5EC4100796C04 /* GWEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWEntity.h; sourceTree = "<group>"; };
+		DCDBA5A917E5EC4900796C04 /* GWMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWMap.cpp; sourceTree = "<group>"; };
+		DCDBA5AA17E5EC4900796C04 /* GWMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWMap.h; sourceTree = "<group>"; };
+		DCDBA5AE17E73D0700796C04 /* OGWTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGWTypes.h; sourceTree = "<group>"; };
+		DCDBA5AF17E73D8000796C04 /* GWTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWTypes.h; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		DCDD2DD41769FD0A00F307CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DCEA06D717E74B670011DED9 /* KKCommunitySwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommunitySwizzle.h; sourceTree = "<group>"; };
-		DCEA06D817E74B670011DED9 /* KKCommunitySwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommunitySwizzle.m; sourceTree = "<group>"; };
 		DCFE4D6B17B2B4E8006675A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DCFE4D6D17B2B4F3006675A2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		DCFE4D6F17B2B4FC006675A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -82,8 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8B565017CC107000F95CBC /* KoboldKitExternal.framework in Frameworks */,
-				DC8B564E17CC107000F95CBC /* KoboldKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,94 +111,41 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		DCBD98F217C0C8A5008C4F3B /* Documentation */ = {
+		DCDBA57D17E5E49B00796C04 /* cpp */ = {
 			isa = PBXGroup;
 			children = (
-				DC3AEF4E17CBE0D70002416A /* index.appledoc */,
+				DCDBA5AF17E73D8000796C04 /* GWTypes.h */,
+				DCDBA59617E5E7CA00796C04 /* GWWorld.h */,
+				DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */,
+				DCDBA5A517E5EC4100796C04 /* GWEntity.h */,
+				DCDBA5A417E5EC4100796C04 /* GWEntity.cpp */,
+				DCDBA5AA17E5EC4900796C04 /* GWMap.h */,
+				DCDBA5A917E5EC4900796C04 /* GWMap.cpp */,
 			);
-			path = Documentation;
+			path = cpp;
 			sourceTree = "<group>";
 		};
-		DCD9C88B17C105F400535043 /* Framework */ = {
+		DCDBA57E17E5E49B00796C04 /* objc */ = {
 			isa = PBXGroup;
 			children = (
-				DCD9C89217C105F400535043 /* KKCommunityFramework.h */,
-				DCD9C89317C105F400535043 /* KKCommunityVersion.h */,
-				DCD9C89417C105F400535043 /* KKCommunityVersion.m */,
-				DCEA06D717E74B670011DED9 /* KKCommunitySwizzle.h */,
-				DCEA06D817E74B670011DED9 /* KKCommunitySwizzle.m */,
-				DCD9C88C17C105F400535043 /* Behaviors */,
-				DCD9C88E17C105F400535043 /* Categories */,
-				DCD9C89517C105F400535043 /* Nodes */,
-				DCD9C89717C105F400535043 /* Protocols */,
-				DC8B563F17CBFDA500F95CBC /* KKCommunityDummyClass.h */,
-				DC8B564017CBFDA500F95CBC /* KKCommunityDummyClass.m */,
+				DCDBA5AE17E73D0700796C04 /* OGWTypes.h */,
+				DCDBA57F17E5E49B00796C04 /* OGWWorld.h */,
+				DCDBA58017E5E49B00796C04 /* OGWWorld.mm */,
+				DCDBA59A17E5EC1900796C04 /* OGWEntity.h */,
+				DCDBA59B17E5EC1900796C04 /* OGWEntity.m */,
+				DCDBA59F17E5EC3400796C04 /* OGWMap.h */,
+				DCDBA5A017E5EC3400796C04 /* OGWMap.m */,
 			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
-		DCD9C88C17C105F400535043 /* Behaviors */ = {
-			isa = PBXGroup;
-			children = (
-				DCD9C88D17C105F400535043 /* KKCommunityBehaviors.h */,
-			);
-			path = Behaviors;
-			sourceTree = "<group>";
-		};
-		DCD9C88E17C105F400535043 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				DCD9C89017C105F400535043 /* KKCommunityCategories.h */,
-				DCD9C88F17C105F400535043 /* Foundation */,
-				DCD9C8A017C106A400535043 /* KoboldKit */,
-				DCD9C89117C105F400535043 /* SpriteKit */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		DCD9C88F17C105F400535043 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		DCD9C89117C105F400535043 /* SpriteKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SpriteKit;
-			sourceTree = "<group>";
-		};
-		DCD9C89517C105F400535043 /* Nodes */ = {
-			isa = PBXGroup;
-			children = (
-				DCD9C89617C105F400535043 /* KKCommunityNodes.h */,
-			);
-			path = Nodes;
-			sourceTree = "<group>";
-		};
-		DCD9C89717C105F400535043 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		DCD9C8A017C106A400535043 /* KoboldKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = KoboldKit;
+			path = objc;
 			sourceTree = "<group>";
 		};
 		DCDD2D9F1769FD0A00F307CD = {
 			isa = PBXGroup;
 			children = (
-				DCBD9A0117C0C8A5008C4F3B /* KoboldKitCommunity.h */,
-				DCBD9A0017C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch */,
-				DCD9C88B17C105F400535043 /* Framework */,
-				DCBD98F217C0C8A5008C4F3B /* Documentation */,
+				DCDBA58217E5E49B00796C04 /* OpenGW.h */,
+				DCDBA58117E5E49B00796C04 /* OpenGW-Prefix.pch */,
+				DCDBA57D17E5E49B00796C04 /* cpp */,
+				DCDBA57E17E5E49B00796C04 /* objc */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
 				DCDD2DA91769FD0A00F307CD /* Products */,
 			);
@@ -203,8 +154,8 @@
 		DCDD2DA91769FD0A00F307CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC484C43178C40BB0067DAA4 /* KoboldKitCommunity.framework */,
-				DC484C6B178C418C0067DAA4 /* libKoboldKitCommunity.a */,
+				DC484C43178C40BB0067DAA4 /* OpenGW.framework */,
+				DC484C6B178C418C0067DAA4 /* libOpenGW.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,9 +163,9 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC8B564F17CC107000F95CBC /* KoboldKitExternal.framework */,
-				DC3AEF4917CBE07D0002416A /* KoboldKitExternal.framework */,
-				DC1953B117C1443400EC526C /* KoboldKit.framework */,
+				DC8B564C17CC106000F95CBC /* KoboldKitExternal.framework */,
+				DC3AEF4B17CBE08A0002416A /* KoboldKitExternal.framework */,
+				DC1953AF17C143FF00EC526C /* KoboldKit.framework */,
 				DCFE4D7117B2B502006675A2 /* CoreMedia.framework */,
 				DCFE4D6F17B2B4FC006675A2 /* AVFoundation.framework */,
 				DCFE4D6D17B2B4F3006675A2 /* CoreMedia.framework */,
@@ -242,24 +193,23 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD9C89A17C105F400535043 /* KKCommunityCategories.h in Headers */,
-				DCBD9B5817C0C8A5008C4F3B /* KoboldKitCommunity.h in Headers */,
-				DCD9C89917C105F400535043 /* KKCommunityBehaviors.h in Headers */,
-				DCD9C89F17C105F400535043 /* KKCommunityNodes.h in Headers */,
-				DC8B564117CBFDA500F95CBC /* KKCommunityDummyClass.h in Headers */,
-				DCD9C89B17C105F400535043 /* KKCommunityFramework.h in Headers */,
-				DCEA06D917E74B670011DED9 /* KKCommunitySwizzle.h in Headers */,
-				DCD9C89C17C105F400535043 /* KKCommunityVersion.h in Headers */,
-				DCBD9B5717C0C8A5008C4F3B /* KoboldKitCommunity-Prefix.pch in Headers */,
+				DCDBA58717E5E49B00796C04 /* OpenGW.h in Headers */,
+				DCDBA5AD17E5EC4900796C04 /* GWMap.h in Headers */,
+				DCDBA5A117E5EC3400796C04 /* OGWMap.h in Headers */,
+				DCDBA59917E5E7CA00796C04 /* GWWorld.h in Headers */,
+				DCDBA58317E5E49B00796C04 /* OGWWorld.h in Headers */,
+				DCDBA59C17E5EC1900796C04 /* OGWEntity.h in Headers */,
+				DCDBA5A817E5EC4100796C04 /* GWEntity.h in Headers */,
+				DCDBA58617E5E49B00796C04 /* OpenGW-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DC484C42178C40BB0067DAA4 /* KoboldKitCommunity.framework */ = {
+		DC484C42178C40BB0067DAA4 /* OpenGW.framework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "KoboldKitCommunity.framework" */;
+			buildConfigurationList = DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "OpenGW.framework" */;
 			buildPhases = (
 				DC484C3E178C40BB0067DAA4 /* Sources */,
 				DC484C3F178C40BB0067DAA4 /* Frameworks */,
@@ -270,14 +220,14 @@
 			);
 			dependencies = (
 			);
-			name = KoboldKitCommunity.framework;
+			name = OpenGW.framework;
 			productName = KoboldKit;
-			productReference = DC484C43178C40BB0067DAA4 /* KoboldKitCommunity.framework */;
+			productReference = DC484C43178C40BB0067DAA4 /* OpenGW.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DC484C6A178C418C0067DAA4 /* libKoboldKitCommunity.a */ = {
+		DC484C6A178C418C0067DAA4 /* libOpenGW.a */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libKoboldKitCommunity.a" */;
+			buildConfigurationList = DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libOpenGW.a" */;
 			buildPhases = (
 				DC484C67178C418C0067DAA4 /* Sources */,
 				DC484C68178C418C0067DAA4 /* Frameworks */,
@@ -287,9 +237,9 @@
 			);
 			dependencies = (
 			);
-			name = libKoboldKitCommunity.a;
+			name = libOpenGW.a;
 			productName = KoboldKit;
-			productReference = DC484C6B178C418C0067DAA4 /* libKoboldKitCommunity.a */;
+			productReference = DC484C6B178C418C0067DAA4 /* libOpenGW.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -301,7 +251,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Steffen Itterheim";
 			};
-			buildConfigurationList = DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKitCommunity" */;
+			buildConfigurationList = DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "OpenGW" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -314,8 +264,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC484C6A178C418C0067DAA4 /* libKoboldKitCommunity.a */,
-				DC484C42178C40BB0067DAA4 /* KoboldKitCommunity.framework */,
+				DC484C6A178C418C0067DAA4 /* libOpenGW.a */,
+				DC484C42178C40BB0067DAA4 /* OpenGW.framework */,
 			);
 		};
 /* End PBXProject section */
@@ -335,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD9C89E17C105F400535043 /* KKCommunityVersion.m in Sources */,
-				DCEA06DB17E74B670011DED9 /* KKCommunitySwizzle.m in Sources */,
-				DC8B564317CBFDA500F95CBC /* KKCommunityDummyClass.m in Sources */,
+				DCDBA59817E5E7CA00796C04 /* GWWorld.cpp in Sources */,
+				DCDBA59E17E5EC1900796C04 /* OGWEntity.m in Sources */,
+				DCDBA5AC17E5EC4900796C04 /* GWMap.cpp in Sources */,
+				DCDBA5A717E5EC4100796C04 /* GWEntity.cpp in Sources */,
+				DCDBA5A317E5EC3400796C04 /* OGWMap.m in Sources */,
+				DCDBA58517E5E49B00796C04 /* OGWWorld.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD9C89D17C105F400535043 /* KKCommunityVersion.m in Sources */,
-				DCEA06DA17E74B670011DED9 /* KKCommunitySwizzle.m in Sources */,
-				DC8B564217CBFDA500F95CBC /* KKCommunityDummyClass.m in Sources */,
+				DCDBA59717E5E7CA00796C04 /* GWWorld.cpp in Sources */,
+				DCDBA59D17E5EC1900796C04 /* OGWEntity.m in Sources */,
+				DCDBA5AB17E5EC4900796C04 /* GWMap.cpp in Sources */,
+				DCDBA5A617E5EC4100796C04 /* GWEntity.cpp in Sources */,
+				DCDBA5A217E5EC3400796C04 /* OGWMap.m in Sources */,
+				DCDBA58417E5E49B00796C04 /* OGWWorld.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +323,7 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = KoboldKitCommunity;
+				PRODUCT_NAME = OpenGW;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -383,7 +339,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = KoboldKitCommunity;
+				PRODUCT_NAME = OpenGW;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -401,7 +357,7 @@
 					"$(inherited)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = KoboldKitCommunity;
+				PRODUCT_NAME = OpenGW;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -417,7 +373,7 @@
 					armv7s,
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = KoboldKitCommunity;
+				PRODUCT_NAME = OpenGW;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -452,15 +408,17 @@
 				GCC_FAST_MATH = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitCommunity-Prefix.pch";
+				GCC_PREFIX_HEADER = "OpenGW-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
@@ -469,10 +427,6 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"../KoboldKitFree/**",
-					"../KoboldKitExternal/**",
-				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -507,10 +461,12 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KoboldKitCommunity-Prefix.pch";
+				GCC_PREFIX_HEADER = "OpenGW-Prefix.pch";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
@@ -519,10 +475,6 @@
 				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"../KoboldKitFree/**",
-					"../KoboldKitExternal/**",
-				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = macosx;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,7 +486,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "KoboldKitCommunity.framework" */ = {
+		DC484C61178C40BB0067DAA4 /* Build configuration list for PBXNativeTarget "OpenGW.framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC484C62178C40BB0067DAA4 /* Debug */,
@@ -543,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libKoboldKitCommunity.a" */ = {
+		DC484C87178C418D0067DAA4 /* Build configuration list for PBXNativeTarget "libOpenGW.a" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC484C88178C418D0067DAA4 /* Debug */,
@@ -552,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "KoboldKitCommunity" */ = {
+		DCDD2DA31769FD0A00F307CD /* Build configuration list for PBXProject "OpenGW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCDD2DE21769FD0A00F307CD /* Debug */,
