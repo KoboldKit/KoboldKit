@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC0B68A417CE9A3600219403 /* KKProDummyClass.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0B68A217CE9A3600219403 /* KKProDummyClass.h */; };
-		DC0B68A517CE9A3600219403 /* KKProDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B68A317CE9A3600219403 /* KKProDummyClass.m */; };
-		DC0B68A617CE9A3600219403 /* KKProDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B68A317CE9A3600219403 /* KKProDummyClass.m */; };
 		DC19539C17C126D600EC526C /* KKEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = DC19539A17C126D600EC526C /* KKEntity.h */; };
 		DC19539D17C126D600EC526C /* KKEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DC19539B17C126D600EC526C /* KKEntity.m */; };
 		DC19539E17C126D600EC526C /* KKEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DC19539B17C126D600EC526C /* KKEntity.m */; };
@@ -73,8 +70,6 @@
 
 /* Begin PBXFileReference section */
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		DC0B68A217CE9A3600219403 /* KKProDummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProDummyClass.h; sourceTree = "<group>"; };
-		DC0B68A317CE9A3600219403 /* KKProDummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKProDummyClass.m; sourceTree = "<group>"; };
 		DC19539A17C126D600EC526C /* KKEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKEntity.h; sourceTree = "<group>"; };
 		DC19539B17C126D600EC526C /* KKEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKEntity.m; sourceTree = "<group>"; };
 		DC1953A117C12EC200EC526C /* KKProBehaviors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKProBehaviors.h; sourceTree = "<group>"; };
@@ -284,8 +279,6 @@
 				DC19539917C126CC00EC526C /* EntityModel */,
 				DCDBA5BA17E7462B00796C04 /* Nodes */,
 				DCBD99F617C0C8A5008C4F3B /* Utility */,
-				DC0B68A217CE9A3600219403 /* KKProDummyClass.h */,
-				DC0B68A317CE9A3600219403 /* KKProDummyClass.m */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -371,7 +364,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC0B68A417CE9A3600219403 /* KKProDummyClass.h in Headers */,
 				DCDBA5C117E7462B00796C04 /* KKProNodes.h in Headers */,
 				DC1953A417C130AC00EC526C /* KKEntityDynamicsBehavior.h in Headers */,
 				DC1953BA17C15D3800EC526C /* KKItemCollectorBehavior.h in Headers */,
@@ -480,7 +472,6 @@
 				DCBD9B5017C0C8A5008C4F3B /* KKDownloadProjectFiles.m in Sources */,
 				DCDBA5C717E7462B00796C04 /* KKProTilemapNode.m in Sources */,
 				DC1953BF17C15D3800EC526C /* KKNotifyOnItemCountBehavior.m in Sources */,
-				DC0B68A617CE9A3600219403 /* KKProDummyClass.m in Sources */,
 				DC1953C217C15D3800EC526C /* KKPickupItemBehavior.m in Sources */,
 				DC25C39E17C4F79100170E3A /* SKNode+KoboldKitPro.m in Sources */,
 				DC1953C817C15DDB00EC526C /* KKControlPadBehavior.m in Sources */,
@@ -501,7 +492,6 @@
 				DCBD9B4F17C0C8A5008C4F3B /* KKDownloadProjectFiles.m in Sources */,
 				DCDBA5C617E7462B00796C04 /* KKProTilemapNode.m in Sources */,
 				DC1953BE17C15D3800EC526C /* KKNotifyOnItemCountBehavior.m in Sources */,
-				DC0B68A517CE9A3600219403 /* KKProDummyClass.m in Sources */,
 				DC1953C117C15D3800EC526C /* KKPickupItemBehavior.m in Sources */,
 				DC25C39D17C4F79100170E3A /* SKNode+KoboldKitPro.m in Sources */,
 				DC1953C717C15DDB00EC526C /* KKControlPadBehavior.m in Sources */,
