@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKBehavior.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKBehavior</TokenIdentifier>
+			<Abstract type="html">Behaviors add custom logic to a node.
+Behaviors differ from actions in several ways:</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setKey:</TokenIdentifier>
+			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/key</TokenIdentifier>
+			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/key</TokenIdentifier>
+			<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setName:</TokenIdentifier>
+			<Abstract type="html">The behavior's name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/name</TokenIdentifier>
+			<Abstract type="html">The behavior's name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/name</TokenIdentifier>
+			<Abstract type="html">The behavior's name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setController:</TokenIdentifier>
+			<Abstract type="html">The behavior's node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/controller</TokenIdentifier>
+			<Abstract type="html">The behavior's node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/controller</TokenIdentifier>
+			<Abstract type="html">The behavior's node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setNode:</TokenIdentifier>
+			<Abstract type="html">The behavior's owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/node</TokenIdentifier>
+			<Abstract type="html">The behavior's owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/node</TokenIdentifier>
+			<Abstract type="html">The behavior's owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior's owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/enabled</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/enabled</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKBehavior/behavior</TokenIdentifier>
+			<Abstract type="html">Creates a new instance.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)behavior</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/behavior</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/removeFromNode</TokenIdentifier>
+			<Abstract type="html">Removes the behavior from its owning node and controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeFromNode</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didInitialize</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior is first created.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)didInitialize</Declaration>
+			
+			
+			<Anchor>//api/name/didInitialize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)didJoinController</Declaration>
+			
+			
+			<Anchor>//api/name/didJoinController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didLeaveController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)didLeaveController</Declaration>
+			
+			
+			<Anchor>//api/name/didLeaveController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didChangeEnabledState</TokenIdentifier>
+			<Abstract type="html">Sent when the enabled state of the behavior was changed.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)didChangeEnabledState</Declaration>
+			
+			
+			<Anchor>//api/name/didChangeEnabledState</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/postNotificationName:</TokenIdentifier>
+			<Abstract type="html">Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)postNotificationName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The uniquely identifying name of the notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postNotificationName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/postNotificationName:userInfo:</TokenIdentifier>
+			<Abstract type="html">Posts a notification to notification center, with userInfo "behavior" key pointing to the sending behavior object, and custom userInfo keys.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)postNotificationName:(NSString *)name userInfo:(NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The uniquely identifying name of the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">A dictionary with custom key/value which the notification receiver may need. A key "behavior" containing the
+sending behavior object is always added to the dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postNotificationName:userInfo:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

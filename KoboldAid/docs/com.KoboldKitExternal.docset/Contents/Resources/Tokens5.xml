@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ALDevice.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ALDevice</TokenIdentifier>
+			<Abstract type="html">A device is a logical mapping to an audio device through the OpenAL implementation.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/setContexts:</TokenIdentifier>
+			<Abstract type="html">All contexts created on this device (ALContext*).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *contexts</Declaration>
+			
+			
+			<Anchor>//api/name/contexts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/contexts</TokenIdentifier>
+			<Abstract type="html">All contexts created on this device (ALContext*).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *contexts</Declaration>
+			
+			
+			<Anchor>//api/name/contexts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDevice/contexts</TokenIdentifier>
+			<Abstract type="html">All contexts created on this device (ALContext*).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *contexts</Declaration>
+			
+			
+			<Anchor>//api/name/contexts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/setDevice:</TokenIdentifier>
+			<Abstract type="html">The OpenAL device pointer.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALCdevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/device</TokenIdentifier>
+			<Abstract type="html">The OpenAL device pointer.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALCdevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDevice/device</TokenIdentifier>
+			<Abstract type="html">The OpenAL device pointer.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) ALCdevice *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/setExtensions:</TokenIdentifier>
+			<Abstract type="html">List of strings describing all extensions available on this device (NSString*).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *extensions</Declaration>
+			
+			
+			<Anchor>//api/name/extensions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/extensions</TokenIdentifier>
+			<Abstract type="html">List of strings describing all extensions available on this device (NSString*).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *extensions</Declaration>
+			
+			
+			<Anchor>//api/name/extensions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDevice/extensions</TokenIdentifier>
+			<Abstract type="html">List of strings describing all extensions available on this device (NSString*).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *extensions</Declaration>
+			
+			
+			<Anchor>//api/name/extensions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/setMajorVersion:</TokenIdentifier>
+			<Abstract type="html">The specification revision for this implementation (major version).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int majorVersion</Declaration>
+			
+			
+			<Anchor>//api/name/majorVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/majorVersion</TokenIdentifier>
+			<Abstract type="html">The specification revision for this implementation (major version).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int majorVersion</Declaration>
+			
+			
+			<Anchor>//api/name/majorVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDevice/majorVersion</TokenIdentifier>
+			<Abstract type="html">The specification revision for this implementation (major version).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int majorVersion</Declaration>
+			
+			
+			<Anchor>//api/name/majorVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/setMinorVersion:</TokenIdentifier>
+			<Abstract type="html">The specification revision for this implementation (minor version).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int minorVersion</Declaration>
+			
+			
+			<Anchor>//api/name/minorVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/minorVersion</TokenIdentifier>
+			<Abstract type="html">The specification revision for this implementation (minor version).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int minorVersion</Declaration>
+			
+			
+			<Anchor>//api/name/minorVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALDevice/minorVersion</TokenIdentifier>
+			<Abstract type="html">The specification revision for this implementation (minor version).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int minorVersion</Declaration>
+			
+			
+			<Anchor>//api/name/minorVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ALDevice/deviceWithDeviceSpecifier:</TokenIdentifier>
+			<Abstract type="html">Open the specified device.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>+ (id)deviceWithDeviceSpecifier:(NSString *)deviceSpecifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceSpecifier</Name>
+					<Abstract type="html">The device to open (nil = default device.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new device.</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceWithDeviceSpecifier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/initWithDeviceSpecifier:</TokenIdentifier>
+			<Abstract type="html">Initialize with the specified device.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDeviceSpecifier:(NSString *)deviceSpecifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceSpecifier</Name>
+					<Abstract type="html">The device to open (nil = default device.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the initialized device.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDeviceSpecifier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/isExtensionPresent:</TokenIdentifier>
+			<Abstract type="html">Check if the specified extension is present.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>- (bool)isExtensionPresent:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The extension to check.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE if the extension is present.</Abstract></ReturnValue>
+			<Anchor>//api/name/isExtensionPresent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/getProcAddress:</TokenIdentifier>
+			<Abstract type="html">Get the address of the specified procedure (C function address).</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>- (void *)getProcAddress:(NSString *)functionName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>functionName</Name>
+					<Abstract type="html">the name of the procedure to get.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the procedure's address, or NULL if it wasn't found.</Abstract></ReturnValue>
+			<Anchor>//api/name/getProcAddress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/clearBuffers</TokenIdentifier>
+			<Abstract type="html">Clear all buffers being used by sources of contexts opened on this device.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>- (void)clearBuffers</Declaration>
+			
+			
+			<Anchor>//api/name/clearBuffers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/notifyContextInitializing:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Used by ALContext to announce initialization.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>- (void)notifyContextInitializing:(ALContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The context that is initializing.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notifyContextInitializing:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/notifyContextDeallocating:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Used by ALContext to announce deallocation.</Abstract>
+			<DeclaredIn>ALDevice.h</DeclaredIn>			
+			
+			<Declaration>- (void)notifyContextDeallocating:(ALContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The context that is deallocating.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notifyContextDeallocating:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/addSuspendListener:</TokenIdentifier>
+			<Abstract type="html">Add a listener that will receive manual suspend and interrupt events.</Abstract>
+			<DeclaredIn>ALDevice.m</DeclaredIn>			
+			
+			<Declaration>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to register with this handler.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSuspendListener:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/removeSuspendListener:</TokenIdentifier>
+			<Abstract type="html">Remove a registered listener.</Abstract>
+			<DeclaredIn>ALDevice.m</DeclaredIn>			
+			
+			<Declaration>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to unregister from this handler.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeSuspendListener:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALDevice/suspended</TokenIdentifier>
+			<Abstract type="html">If YES, this object is suspended.</Abstract>
+			<DeclaredIn>ALDevice.m</DeclaredIn>			
+			
+			<Declaration>- (bool)suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

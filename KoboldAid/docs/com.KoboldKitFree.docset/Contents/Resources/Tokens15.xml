@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKLimitVelocityBehavior.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKLimitVelocityBehavior</TokenIdentifier>
+			<Abstract type="html">Sets upper and lower limits of a physics body's velocities.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/setVelocityLimit:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/velocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/velocityLimit</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/velocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKLimitVelocityBehavior/velocityLimit</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/velocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/setAngularVelocityLimit:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/angularVelocityLimit</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKLimitVelocityBehavior/angularVelocityLimit</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocityLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitVelocity:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum velocity.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)limitVelocity:(CGFloat)velocityLimit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>velocityLimit</Name>
+					<Abstract type="html">The physics body's maximum velocity.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/limitVelocity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitVelocity:limitAngularVelocity:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum velocity.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)limitVelocity:(CGFloat)velocityLimit limitAngularVelocity:(CGFloat)angularVelocityLimit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>velocityLimit</Name>
+					<Abstract type="html">The physics body's maximum velocity.</Abstract>
+				</Parameter><Parameter>
+					<Name>angularVelocityLimit</Name>
+					<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/limitVelocity:limitAngularVelocity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitAngularVelocity:</TokenIdentifier>
+			<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			
+			<Declaration>+ (id)limitAngularVelocity:(CGFloat)angularVelocityLimit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>angularVelocityLimit</Name>
+					<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/limitAngularVelocity:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didJoinController</Declaration>
+			
+			
+			<Anchor>//api/name/didJoinController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/didLeaveController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
+			<DeclaredIn>KKLimitVelocityBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didLeaveController</Declaration>
+			
+			
+			<Anchor>//api/name/didLeaveController</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

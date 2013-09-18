@@ -1,0 +1,3237 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OALAudioTrack Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OALAudioTrack Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/autoPreload">&nbsp;&nbsp;&nbsp;&nbsp;autoPreload</option>
+	
+	<option value="//api/name/currentTime">&nbsp;&nbsp;&nbsp;&nbsp;currentTime</option>
+	
+	<option value="//api/name/currentlyLoadedUrl">&nbsp;&nbsp;&nbsp;&nbsp;currentlyLoadedUrl</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/deviceCurrentTime">&nbsp;&nbsp;&nbsp;&nbsp;deviceCurrentTime</option>
+	
+	<option value="//api/name/duration">&nbsp;&nbsp;&nbsp;&nbsp;duration</option>
+	
+	<option value="//api/name/gain">&nbsp;&nbsp;&nbsp;&nbsp;gain</option>
+	
+	<option value="//api/name/meteringEnabled">&nbsp;&nbsp;&nbsp;&nbsp;meteringEnabled</option>
+	
+	<option value="//api/name/muted">&nbsp;&nbsp;&nbsp;&nbsp;muted</option>
+	
+	<option value="//api/name/numberOfChannels">&nbsp;&nbsp;&nbsp;&nbsp;numberOfChannels</option>
+	
+	<option value="//api/name/numberOfLoops">&nbsp;&nbsp;&nbsp;&nbsp;numberOfLoops</option>
+	
+	<option value="//api/name/pan">&nbsp;&nbsp;&nbsp;&nbsp;pan</option>
+	
+	<option value="//api/name/paused">&nbsp;&nbsp;&nbsp;&nbsp;paused</option>
+	
+	<option value="//api/name/player">&nbsp;&nbsp;&nbsp;&nbsp;player</option>
+	
+	<option value="//api/name/playing">&nbsp;&nbsp;&nbsp;&nbsp;playing</option>
+	
+	<option value="//api/name/preloaded">&nbsp;&nbsp;&nbsp;&nbsp;preloaded</option>
+	
+	<option value="//api/name/volume">&nbsp;&nbsp;&nbsp;&nbsp;volume</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/track">&nbsp;&nbsp;&nbsp;&nbsp;+ track</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- addSuspendListener:</option>
+	
+	<option value="//api/name/averagePowerForChannel:">&nbsp;&nbsp;&nbsp;&nbsp;- averagePowerForChannel:</option>
+	
+	<option value="//api/name/clear">&nbsp;&nbsp;&nbsp;&nbsp;- clear</option>
+	
+	<option value="//api/name/fadeTo:duration:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- fadeTo:duration:target:selector:</option>
+	
+	<option value="//api/name/panTo:duration:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- panTo:duration:target:selector:</option>
+	
+	<option value="//api/name/peakPowerForChannel:">&nbsp;&nbsp;&nbsp;&nbsp;- peakPowerForChannel:</option>
+	
+	<option value="//api/name/play">&nbsp;&nbsp;&nbsp;&nbsp;- play</option>
+	
+	<option value="//api/name/playAfterTrack:">&nbsp;&nbsp;&nbsp;&nbsp;- playAfterTrack:</option>
+	
+	<option value="//api/name/playAfterTrack:timeAdjust:">&nbsp;&nbsp;&nbsp;&nbsp;- playAfterTrack:timeAdjust:</option>
+	
+	<option value="//api/name/playAtTime:">&nbsp;&nbsp;&nbsp;&nbsp;- playAtTime:</option>
+	
+	<option value="//api/name/playFile:">&nbsp;&nbsp;&nbsp;&nbsp;- playFile:</option>
+	
+	<option value="//api/name/playFile:loops:">&nbsp;&nbsp;&nbsp;&nbsp;- playFile:loops:</option>
+	
+	<option value="//api/name/playFileAsync:loops:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- playFileAsync:loops:target:selector:</option>
+	
+	<option value="//api/name/playFileAsync:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- playFileAsync:target:selector:</option>
+	
+	<option value="//api/name/playUrl:">&nbsp;&nbsp;&nbsp;&nbsp;- playUrl:</option>
+	
+	<option value="//api/name/playUrl:loops:">&nbsp;&nbsp;&nbsp;&nbsp;- playUrl:loops:</option>
+	
+	<option value="//api/name/playUrlAsync:loops:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- playUrlAsync:loops:target:selector:</option>
+	
+	<option value="//api/name/playUrlAsync:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- playUrlAsync:target:selector:</option>
+	
+	<option value="//api/name/preloadFile:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadFile:</option>
+	
+	<option value="//api/name/preloadFile:seekTime:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadFile:seekTime:</option>
+	
+	<option value="//api/name/preloadFileAsync:seekTime:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadFileAsync:seekTime:target:selector:</option>
+	
+	<option value="//api/name/preloadFileAsync:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadFileAsync:target:selector:</option>
+	
+	<option value="//api/name/preloadUrl:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadUrl:</option>
+	
+	<option value="//api/name/preloadUrl:seekTime:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadUrl:seekTime:</option>
+	
+	<option value="//api/name/preloadUrlAsync:seekTime:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadUrlAsync:seekTime:target:selector:</option>
+	
+	<option value="//api/name/preloadUrlAsync:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadUrlAsync:target:selector:</option>
+	
+	<option value="//api/name/removeSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSuspendListener:</option>
+	
+	<option value="//api/name/setSuspended:">&nbsp;&nbsp;&nbsp;&nbsp;- setSuspended:</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/stopActions">&nbsp;&nbsp;&nbsp;&nbsp;- stopActions</option>
+	
+	<option value="//api/name/stopFade">&nbsp;&nbsp;&nbsp;&nbsp;- stopFade</option>
+	
+	<option value="//api/name/stopPan">&nbsp;&nbsp;&nbsp;&nbsp;- stopPan</option>
+	
+	<option value="//api/name/suspended">&nbsp;&nbsp;&nbsp;&nbsp;- suspended</option>
+	
+	<option value="//api/name/updateMeters">&nbsp;&nbsp;&nbsp;&nbsp;- updateMeters</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoPreload">autoPreload</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentTime">currentTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentlyLoadedUrl">currentlyLoadedUrl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deviceCurrentTime">deviceCurrentTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/duration">duration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gain">gain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/meteringEnabled">meteringEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/muted">muted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfChannels">numberOfChannels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfLoops">numberOfLoops</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pan">pan</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paused">paused</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/player">player</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playing">playing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloaded">preloaded</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/volume">volume</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/track">track</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSuspendListener:">addSuspendListener:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/averagePowerForChannel:">averagePowerForChannel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clear">clear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fadeTo:duration:target:selector:">fadeTo:duration:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panTo:duration:target:selector:">panTo:duration:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/peakPowerForChannel:">peakPowerForChannel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/play">play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playAfterTrack:">playAfterTrack:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playAfterTrack:timeAdjust:">playAfterTrack:timeAdjust:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playAtTime:">playAtTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playFile:">playFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playFile:loops:">playFile:loops:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playFileAsync:loops:target:selector:">playFileAsync:loops:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playFileAsync:target:selector:">playFileAsync:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playUrl:">playUrl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playUrl:loops:">playUrl:loops:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playUrlAsync:loops:target:selector:">playUrlAsync:loops:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playUrlAsync:target:selector:">playUrlAsync:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadFile:">preloadFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadFile:seekTime:">preloadFile:seekTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadFileAsync:seekTime:target:selector:">preloadFileAsync:seekTime:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadFileAsync:target:selector:">preloadFileAsync:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadUrl:">preloadUrl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadUrl:seekTime:">preloadUrl:seekTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadUrlAsync:seekTime:target:selector:">preloadUrlAsync:seekTime:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadUrlAsync:target:selector:">preloadUrlAsync:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSuspendListener:">removeSuspendListener:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSuspended:">setSuspended:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopActions">stopActions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopFade">stopFade</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopPan">stopPan</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/suspended">suspended</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateMeters">updateMeters</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OALAudioTrack Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OALAudioTrack Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">AVAudioPlayerDelegate<br /><a href="../Protocols/OALSuspendManager.html">OALSuspendManager</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OALAudioTrack.h<br />OALAudioTrack.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Plays an audio <a href="#//api/name/track">track</a> via AVAudioPlayer.
+Unlike AVAudioPlayer, however, it can be re-used to <a href="#//api/name/play">play</a> another file.
+Interruptions can be handled by OALAudioSupport (enabled by default).</p>
+
+<p>(INTERNAL USE) Private interface to OALAudioTrack.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentlyLoadedUrl">&nbsp;&nbsp;currentlyLoadedUrl</a></code>
+		<span class="tooltip"><p>The URL of the currently loaded audio data.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>Optional object that will receive notifications for decoding errors,
+audio interruptions (such as an incoming phone call), and playback completion. <br>
+<strong>Note:</strong> OALAudioTrack keeps a WEAK reference to delegate, so make sure you <a href="#//api/name/clear">clear</a> it
+when your object is going to be deallocated.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gain">&nbsp;&nbsp;gain</a></code>
+		<span class="tooltip"><p>The gain (<a href="#//api/name/volume">volume</a>) for playback (0.0 - 1.0, where 1.0 = no attenuation).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/volume">&nbsp;&nbsp;volume</a></code>
+		<span class="tooltip"><p>The volume (alias to <a href="#//api/name/gain">gain</a>) for playback (0.0 - 1.0, where 1.0 = no attenuation).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pan">&nbsp;&nbsp;pan</a></code>
+		<span class="tooltip"><p>Pan value (-1.0 = far left, 1.0 = far right).
+<strong>Note:</strong> This will have no effect on iOS versions prior to 4.0.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/muted">&nbsp;&nbsp;muted</a></code>
+		<span class="tooltip"><p>If true, audio <a href="#//api/name/track">track</a> is muted</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoPreload">&nbsp;&nbsp;autoPreload</a></code>
+		<span class="tooltip"><p>If true, automatically preload a<a href="#//api/name/gain">gain</a> when playback stops</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloaded">&nbsp;&nbsp;preloaded</a></code>
+		<span class="tooltip"><p>If true, audio <a href="#//api/name/track">track</a> is in preloaded state</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfLoops">&nbsp;&nbsp;numberOfLoops</a></code>
+		<span class="tooltip"><p>The number of times to loop playback (-1 = forever).
+<strong>Note:</strong> This value will be ignored, and get changed when you call the various playXX methods.
+Only &ldquo;play&rdquo; will use the current value of &ldquo;numberOfLoops&rdquo;.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paused">&nbsp;&nbsp;paused</a></code>
+		<span class="tooltip"><p>If true, pause playback.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/player">&nbsp;&nbsp;player</a></code>
+		<span class="tooltip"><p>Access to the underlying AVAudioPlayer object.
+WARNING: Be VERY careful when accessing this, as some methods could cause
+it to fall out of sync with OALAudioTrack (particularly play/pause/<a href="#//api/name/stop">stop</a> methods).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playing">&nbsp;&nbsp;playing</a></code>
+		<span class="tooltip"><p>If true, background music is currently playing.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentTime">&nbsp;&nbsp;currentTime</a></code>
+		<span class="tooltip"><p>The current playback position in seconds from the start of the sound.
+You can set this to change the playback position, whether it is currently <a href="#//api/name/playing">playing</a> or not.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deviceCurrentTime">&nbsp;&nbsp;deviceCurrentTime</a></code>
+		<span class="tooltip"><p>The value of this property increases monotonically while an audio <a href="#//api/name/player">player</a> is <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>. <br><br></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/duration">&nbsp;&nbsp;duration</a></code>
+		<span class="tooltip"><p>The duration, in seconds, of the currently loaded sound.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfChannels">&nbsp;&nbsp;numberOfChannels</a></code>
+		<span class="tooltip"><p>The number of channels in the currently loaded sound.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/track">+&nbsp;track</a></code>
+		<span class="tooltip"><p>Create a new audio track.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadUrl:">&ndash;&nbsp;preloadUrl:</a></code>
+		<span class="tooltip"><p>Preload the contents of a URL for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadUrl:seekTime:">&ndash;&nbsp;preloadUrl:seekTime:</a></code>
+		<span class="tooltip"><p>Preload the contents of a URL for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadFile:">&ndash;&nbsp;preloadFile:</a></code>
+		<span class="tooltip"><p>Preload the contents of a file for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadFile:seekTime:">&ndash;&nbsp;preloadFile:seekTime:</a></code>
+		<span class="tooltip"><p>Preload the contents of a file for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadUrlAsync:target:selector:">&ndash;&nbsp;preloadUrlAsync:target:selector:</a></code>
+		<span class="tooltip"><p>Asynchronously preload the contents of a URL for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadUrlAsync:seekTime:target:selector:">&ndash;&nbsp;preloadUrlAsync:seekTime:target:selector:</a></code>
+		<span class="tooltip"><p>Asynchronously preload the contents of a URL for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadFileAsync:target:selector:">&ndash;&nbsp;preloadFileAsync:target:selector:</a></code>
+		<span class="tooltip"><p>Asynchronously preload the contents of a file for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadFileAsync:seekTime:target:selector:">&ndash;&nbsp;preloadFileAsync:seekTime:target:selector:</a></code>
+		<span class="tooltip"><p>Asynchronously preload the contents of a file for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playUrl:">&ndash;&nbsp;playUrl:</a></code>
+		<span class="tooltip"><p>Play the contents of a URL once.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playUrl:loops:">&ndash;&nbsp;playUrl:loops:</a></code>
+		<span class="tooltip"><p>Play the contents of a URL and loop the specified number of times.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playFile:">&ndash;&nbsp;playFile:</a></code>
+		<span class="tooltip"><p>Play the contents of a file once.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playFile:loops:">&ndash;&nbsp;playFile:loops:</a></code>
+		<span class="tooltip"><p>Play the contents of a file and loop the specified number of times.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playUrlAsync:target:selector:">&ndash;&nbsp;playUrlAsync:target:selector:</a></code>
+		<span class="tooltip"><p>Play the contents of a URL asynchronously once.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playUrlAsync:loops:target:selector:">&ndash;&nbsp;playUrlAsync:loops:target:selector:</a></code>
+		<span class="tooltip"><p>Play the contents of a URL asynchronously and loop the specified number of times.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playFileAsync:target:selector:">&ndash;&nbsp;playFileAsync:target:selector:</a></code>
+		<span class="tooltip"><p>Play the contents of a file asynchronously once.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playFileAsync:loops:target:selector:">&ndash;&nbsp;playFileAsync:loops:target:selector:</a></code>
+		<span class="tooltip"><p>Play the contents of a file asynchronously and loop the specified number of times.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/play">&ndash;&nbsp;play</a></code>
+		<span class="tooltip"><p>Play the currently loaded audio <a href="#//api/name/track">track</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playAtTime:">&ndash;&nbsp;playAtTime:</a></code>
+		<span class="tooltip"><p>Plays a sound asynchronously, starting at a specified point in the audio output device’s timeline.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playAfterTrack:">&ndash;&nbsp;playAfterTrack:</a></code>
+		<span class="tooltip"><p>Plays the currently <a href="#//api/name/preloaded">preloaded</a> <a href="#//api/name/track">track</a> asynchronously when the specified <a href="#//api/name/track">track</a> completes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playAfterTrack:timeAdjust:">&ndash;&nbsp;playAfterTrack:timeAdjust:</a></code>
+		<span class="tooltip"><p>Plays the currently <a href="#//api/name/preloaded">preloaded</a> <a href="#//api/name/track">track</a> asynchronously when the specified <a href="#//api/name/track">track</a> completes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		<span class="tooltip"><p>Stop <a href="#//api/name/playing">playing</a> and stop all operations.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fadeTo:duration:target:selector:">&ndash;&nbsp;fadeTo:duration:target:selector:</a></code>
+		<span class="tooltip"><p>Fade to the specified <a href="#//api/name/gain">gain</a> value.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopFade">&ndash;&nbsp;stopFade</a></code>
+		<span class="tooltip"><p>Stop the currently running fade operation, if any.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panTo:duration:target:selector:">&ndash;&nbsp;panTo:duration:target:selector:</a></code>
+		<span class="tooltip"><p>Pan to the specified <a href="#//api/name/pan">pan</a> value.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopPan">&ndash;&nbsp;stopPan</a></code>
+		<span class="tooltip"><p>Stop the currently running <a href="#//api/name/pan">pan</a> operation, if any.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopActions">&ndash;&nbsp;stopActions</a></code>
+		<span class="tooltip"><p>Stop any internal fade or <a href="#//api/name/pan">pan</a> actions.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
+		<span class="tooltip"><p>Unload and clear all audio data, <a href="#//api/name/stop">stop</a> <a href="#//api/name/playing">playing</a>, and <a href="#//api/name/stop">stop</a> all operations.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/meteringEnabled">&nbsp;&nbsp;meteringEnabled</a></code>
+		<span class="tooltip"><p>If true, metering is enabled.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateMeters">&ndash;&nbsp;updateMeters</a></code>
+		<span class="tooltip"><p>Updates the metering system to give current values.
+You must call this method before calling averagePowerForChannel or peakPowerForChannel in
+order to get current values.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/averagePowerForChannel:">&ndash;&nbsp;averagePowerForChannel:</a></code>
+		<span class="tooltip"><p>Gives the average power for a given channel, in decibels, for the sound being played.
+0 dB indicates maximum power (full scale). <br>
+-160 dB indicates minimum power (near silence). <br>
+If the signal provided to the audio <a href="#//api/name/player">player</a> exceeds full scale, then the value may be > 0. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/peakPowerForChannel:">&ndash;&nbsp;peakPowerForChannel:</a></code>
+		<span class="tooltip"><p>Gives the peak power for a given channel, in decibels, for the sound being played.
+0 dB indicates maximum power (full scale). <br>
+-160 dB indicates minimum power (near silence). <br>
+If the signal provided to the audio <a href="#//api/name/player">player</a> exceeds full scale, then the value may be > 0. <br></p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addSuspendListener:">&ndash;&nbsp;addSuspendListener:</a></code>
+		<span class="tooltip"><p>Add a listener that will receive manual suspend and interrupt events.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeSuspendListener:">&ndash;&nbsp;removeSuspendListener:</a></code>
+		<span class="tooltip"><p>Remove a registered listener.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/suspended">&ndash;&nbsp;suspended</a></code>
+		<span class="tooltip"><p>If YES, this object is suspended.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSuspended:">&ndash;&nbsp;setSuspended:</a></code>
+		<span class="tooltip"><p>(INTERNAL USE) Called by SuspendHandler.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/autoPreload" title="autoPreload"></a>
+	<h3 class="subsubtitle method-title">autoPreload</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, automatically preload a<a href="#//api/name/gain">gain</a> when playback stops</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool autoPreload</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentTime" title="currentTime"></a>
+	<h3 class="subsubtitle method-title">currentTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current playback position in seconds from the start of the sound.
+You can set this to change the playback position, whether it is currently <a href="#//api/name/playing">playing</a> or not.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) NSTimeInterval currentTime</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentlyLoadedUrl" title="currentlyLoadedUrl"></a>
+	<h3 class="subsubtitle method-title">currentlyLoadedUrl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The URL of the currently loaded audio data.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSURL *currentlyLoadedUrl</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Optional object that will receive notifications for decoding errors,
+audio interruptions (such as an incoming phone call), and playback completion. <br>
+<strong>Note:</strong> OALAudioTrack keeps a WEAK reference to delegate, so make sure you <a href="#//api/name/clear">clear</a> it
+when your object is going to be deallocated.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) id&lt;AVAudioPlayerDelegate&gt; delegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deviceCurrentTime" title="deviceCurrentTime"></a>
+	<h3 class="subsubtitle method-title">deviceCurrentTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value of this property increases monotonically while an audio <a href="#//api/name/player">player</a> is <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>. <br><br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) NSTimeInterval deviceCurrentTime</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If more than one audio <a href="#//api/name/player">player</a> is connected to the audio output device, device time continues
+incrementing as long as at least one of the players is <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>. <br><br></p>
+
+<p>If the audio output device has no connected audio players that are either <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>,
+device time reverts to 0. <br><br></p>
+
+<p>Use this property to indicate “now” when calling the <a href="#//api/name/playAtTime:">playAtTime:</a> instance method. By configuring
+multiple audio players to <a href="#//api/name/play">play</a> at a specified offset from deviceCurrentTime, you can perform
+precise synchronization—as described in the discussion for that method.</p>
+
+<p><strong>Note:</strong> This will have no effect on iOS versions prior to 4.0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="subsubtitle method-title">duration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The duration, in seconds, of the currently loaded sound.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) NSTimeInterval duration</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gain" title="gain"></a>
+	<h3 class="subsubtitle method-title">gain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The gain (<a href="#//api/name/volume">volume</a>) for playback (0.0 - 1.0, where 1.0 = no attenuation).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float gain</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/meteringEnabled" title="meteringEnabled"></a>
+	<h3 class="subsubtitle method-title">meteringEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, metering is enabled.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool meteringEnabled</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/muted" title="muted"></a>
+	<h3 class="subsubtitle method-title">muted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, audio <a href="#//api/name/track">track</a> is muted</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool muted</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfChannels" title="numberOfChannels"></a>
+	<h3 class="subsubtitle method-title">numberOfChannels</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of channels in the currently loaded sound.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) NSUInteger numberOfChannels</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfLoops" title="numberOfLoops"></a>
+	<h3 class="subsubtitle method-title">numberOfLoops</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of times to loop playback (-1 = forever).
+<strong>Note:</strong> This value will be ignored, and get changed when you call the various playXX methods.
+Only &ldquo;play&rdquo; will use the current value of &ldquo;numberOfLoops&rdquo;.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) NSInteger numberOfLoops</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pan" title="pan"></a>
+	<h3 class="subsubtitle method-title">pan</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pan value (-1.0 = far left, 1.0 = far right).
+<strong>Note:</strong> This will have no effect on iOS versions prior to 4.0.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float pan</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paused" title="paused"></a>
+	<h3 class="subsubtitle method-title">paused</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, pause playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool paused</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/player" title="player"></a>
+	<h3 class="subsubtitle method-title">player</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Access to the underlying AVAudioPlayer object.
+WARNING: Be VERY careful when accessing this, as some methods could cause
+it to fall out of sync with OALAudioTrack (particularly play/pause/<a href="#//api/name/stop">stop</a> methods).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) AVAudioPlayer *player</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playing" title="playing"></a>
+	<h3 class="subsubtitle method-title">playing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, background music is currently playing.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) bool playing</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloaded" title="preloaded"></a>
+	<h3 class="subsubtitle method-title">preloaded</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, audio <a href="#//api/name/track">track</a> is in preloaded state</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) bool preloaded</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/volume" title="volume"></a>
+	<h3 class="subsubtitle method-title">volume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The volume (alias to <a href="#//api/name/gain">gain</a>) for playback (0.0 - 1.0, where 1.0 = no attenuation).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float volume</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/track" title="track"></a>
+	<h3 class="subsubtitle method-title">track</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new audio track.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)track</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new audio track.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addSuspendListener:" title="addSuspendListener:"></a>
+	<h3 class="subsubtitle method-title">addSuspendListener:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add a listener that will receive manual suspend and interrupt events.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listenerIn</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listener</em></dt>
+			<dd><p>The listener to register with this handler.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/averagePowerForChannel:" title="averagePowerForChannel:"></a>
+	<h3 class="subsubtitle method-title">averagePowerForChannel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gives the average power for a given channel, in decibels, for the sound being played.
+0 dB indicates maximum power (full scale). <br>
+-160 dB indicates minimum power (near silence). <br>
+If the signal provided to the audio <a href="#//api/name/player">player</a> exceeds full scale, then the value may be > 0. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (float)averagePowerForChannel:(NSUInteger)<em>channelNumber</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>channelNumber</em></dt>
+			<dd><p>The channel to get the value from.  For mono or left, use 0.  For right,
+use 1.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the average power for the channel.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> The value returned is in reference to when <a href="#//api/name/updateMeters">updateMeters</a> was last called.
+You must call <a href="#//api/name/updateMeters">updateMeters</a> a<a href="#//api/name/gain">gain</a> before calling this method to get a current value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clear" title="clear"></a>
+	<h3 class="subsubtitle method-title">clear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unload and clear all audio data, <a href="#//api/name/stop">stop</a> <a href="#//api/name/playing">playing</a>, and <a href="#//api/name/stop">stop</a> all operations.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fadeTo:duration:target:selector:" title="fadeTo:duration:target:selector:"></a>
+	<h3 class="subsubtitle method-title">fadeTo:duration:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fade to the specified <a href="#//api/name/gain">gain</a> value.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)fadeTo:(float)<em>gain</em> duration:(float)<em>duration</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gain</em></dt>
+			<dd><p>The <a href="#//api/name/gain">gain</a> to fade to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The <a href="#//api/name/duration">duration</a> of the fade operation in seconds.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to notify when the fade completes (can be nil).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to call when the fade completes.  The selector must accept
+a single parameter, which will be the object that performed the fade.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panTo:duration:target:selector:" title="panTo:duration:target:selector:"></a>
+	<h3 class="subsubtitle method-title">panTo:duration:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pan to the specified <a href="#//api/name/pan">pan</a> value.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)panTo:(float)<em>pan</em> duration:(float)<em>duration</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pan</em></dt>
+			<dd><p>The value to <a href="#//api/name/pan">pan</a> to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The <a href="#//api/name/duration">duration</a> of the <a href="#//api/name/pan">pan</a> operation in seconds.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to notify when the <a href="#//api/name/pan">pan</a> completes (can be nil).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to call when the <a href="#//api/name/pan">pan</a> completes.  The selector must accept
+a single parameter, which will be the object that performed the <a href="#//api/name/pan">pan</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> This will have no effect on iOS versions prior to 4.0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/peakPowerForChannel:" title="peakPowerForChannel:"></a>
+	<h3 class="subsubtitle method-title">peakPowerForChannel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gives the peak power for a given channel, in decibels, for the sound being played.
+0 dB indicates maximum power (full scale). <br>
+-160 dB indicates minimum power (near silence). <br>
+If the signal provided to the audio <a href="#//api/name/player">player</a> exceeds full scale, then the value may be > 0. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (float)peakPowerForChannel:(NSUInteger)<em>channelNumber</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>channelNumber</em></dt>
+			<dd><p>The channel to get the value from.  For mono or left, use 0.  For right,
+use 1.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the average power for the channel.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> The value returned is in reference to when <a href="#//api/name/updateMeters">updateMeters</a> was last called.
+You must call <a href="#//api/name/updateMeters">updateMeters</a> a<a href="#//api/name/gain">gain</a> before calling this method to get a current value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/play" title="play"></a>
+	<h3 class="subsubtitle method-title">play</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the currently loaded audio <a href="#//api/name/track">track</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)play</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playAfterTrack:" title="playAfterTrack:"></a>
+	<h3 class="subsubtitle method-title">playAfterTrack:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Plays the currently <a href="#//api/name/preloaded">preloaded</a> <a href="#//api/name/track">track</a> asynchronously when the specified <a href="#//api/name/track">track</a> completes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playAfterTrack:(OALAudioTrack *)<em>track</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>track</em></dt>
+			<dd><p>The <a href="#//api/name/track">track</a> to <a href="#//api/name/play">play</a> after</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the playback was successfully scheduled.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> This will have no effect on iOS versions prior to 4.0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playAfterTrack:timeAdjust:" title="playAfterTrack:timeAdjust:"></a>
+	<h3 class="subsubtitle method-title">playAfterTrack:timeAdjust:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Plays the currently <a href="#//api/name/preloaded">preloaded</a> <a href="#//api/name/track">track</a> asynchronously when the specified <a href="#//api/name/track">track</a> completes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playAfterTrack:(OALAudioTrack *)<em>track</em> timeAdjust:(NSTimeInterval)<em>timeAdjust</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>track</em></dt>
+			<dd><p>The <a href="#//api/name/track">track</a> to <a href="#//api/name/play">play</a> after</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeAdjust</em></dt>
+			<dd><p>fine-tune value added to the time start offset.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the playback was successfully scheduled.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> This will have no effect on iOS versions prior to 4.0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playAtTime:" title="playAtTime:"></a>
+	<h3 class="subsubtitle method-title">playAtTime:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Plays a sound asynchronously, starting at a specified point in the audio output device’s timeline.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playAtTime:(NSTimeInterval)<em>time</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>time</em></dt>
+			<dd><p>The time (device time) to start <a href="#//api/name/playing">playing</a> at.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the playback was successfully scheduled.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> This will have no effect on iOS versions prior to 4.0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playFile:" title="playFile:"></a>
+	<h3 class="subsubtitle method-title">playFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the contents of a file once.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playFile:(NSString *)<em>path</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The file containing the sound data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playFile:loops:" title="playFile:loops:"></a>
+	<h3 class="subsubtitle method-title">playFile:loops:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the contents of a file and loop the specified number of times.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playFile:(NSString *)<em>path</em> loops:(NSInteger)<em>loops</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The file containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loops</em></dt>
+			<dd><p>The number of times to loop playback (-1 = forever)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playFileAsync:loops:target:selector:" title="playFileAsync:loops:target:selector:"></a>
+	<h3 class="subsubtitle method-title">playFileAsync:loops:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the contents of a file asynchronously and loop the specified number of times.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)playFileAsync:(NSString *)<em>path</em> loops:(NSInteger)<em>loops</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The file containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loops</em></dt>
+			<dd><p>The number of times to loop playback (-1 = forever)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>the target to inform when <a href="#//api/name/playing">playing</a> has started.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>the selector to call when <a href="#//api/name/playing">playing</a> has started.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playFileAsync:target:selector:" title="playFileAsync:target:selector:"></a>
+	<h3 class="subsubtitle method-title">playFileAsync:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the contents of a file asynchronously once.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)playFileAsync:(NSString *)<em>path</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The file containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>the target to inform when <a href="#//api/name/playing">playing</a> has started.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>the selector to call when <a href="#//api/name/playing">playing</a> has started.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playUrl:" title="playUrl:"></a>
+	<h3 class="subsubtitle method-title">playUrl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the contents of a URL once.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playUrl:(NSURL *)<em>url</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL containing the sound data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playUrl:loops:" title="playUrl:loops:"></a>
+	<h3 class="subsubtitle method-title">playUrl:loops:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the contents of a URL and loop the specified number of times.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playUrl:(NSURL *)<em>url</em> loops:(NSInteger)<em>loops</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loops</em></dt>
+			<dd><p>The number of times to loop playback (-1 = forever)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playUrlAsync:loops:target:selector:" title="playUrlAsync:loops:target:selector:"></a>
+	<h3 class="subsubtitle method-title">playUrlAsync:loops:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the contents of a URL asynchronously and loop the specified number of times.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)playUrlAsync:(NSURL *)<em>url</em> loops:(NSInteger)<em>loops</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loops</em></dt>
+			<dd><p>The number of times to loop playback (-1 = forever)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>the target to inform when <a href="#//api/name/playing">playing</a> has started.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>the selector to call when <a href="#//api/name/playing">playing</a> has started.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playUrlAsync:target:selector:" title="playUrlAsync:target:selector:"></a>
+	<h3 class="subsubtitle method-title">playUrlAsync:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the contents of a URL asynchronously once.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)playUrlAsync:(NSURL *)<em>url</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>the target to inform when <a href="#//api/name/playing">playing</a> has started.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>the selector to call when <a href="#//api/name/playing">playing</a> has started.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadFile:" title="preloadFile:"></a>
+	<h3 class="subsubtitle method-title">preloadFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Preload the contents of a file for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadFile:(NSString *)<em>path</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The file containing the sound data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadFile:seekTime:" title="preloadFile:seekTime:"></a>
+	<h3 class="subsubtitle method-title">preloadFile:seekTime:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Preload the contents of a file for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadFile:(NSString *)<em>path</em> seekTime:(NSTimeInterval)<em>seekTime</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The file containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seekTime</em></dt>
+			<dd><p>The position in the file to start <a href="#//api/name/playing">playing</a> at.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadFileAsync:seekTime:target:selector:" title="preloadFileAsync:seekTime:target:selector:"></a>
+	<h3 class="subsubtitle method-title">preloadFileAsync:seekTime:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronously preload the contents of a file for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadFileAsync:(NSString *)<em>path</em> seekTime:(NSTimeInterval)<em>seekTime</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The file containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seekTime</em></dt>
+			<dd><p>The position in the file to start <a href="#//api/name/playing">playing</a> at.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>the target to inform when preparation is complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>the selector to call when preparation is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successfully queued.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadFileAsync:target:selector:" title="preloadFileAsync:target:selector:"></a>
+	<h3 class="subsubtitle method-title">preloadFileAsync:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronously preload the contents of a file for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadFileAsync:(NSString *)<em>path</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The file containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>the target to inform when preparation is complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>the selector to call when preparation is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successfully queued.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadUrl:" title="preloadUrl:"></a>
+	<h3 class="subsubtitle method-title">preloadUrl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Preload the contents of a URL for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadUrl:(NSURL *)<em>url</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL containing the sound data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadUrl:seekTime:" title="preloadUrl:seekTime:"></a>
+	<h3 class="subsubtitle method-title">preloadUrl:seekTime:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Preload the contents of a URL for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadUrl:(NSURL *)<em>url</em> seekTime:(NSTimeInterval)<em>seekTime</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seekTime</em></dt>
+			<dd><p>The position in the file to start <a href="#//api/name/playing">playing</a> at.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadUrlAsync:seekTime:target:selector:" title="preloadUrlAsync:seekTime:target:selector:"></a>
+	<h3 class="subsubtitle method-title">preloadUrlAsync:seekTime:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronously preload the contents of a URL for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadUrlAsync:(NSURL *)<em>url</em> seekTime:(NSTimeInterval)<em>seekTime</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seekTime</em></dt>
+			<dd><p>The position in the file to start <a href="#//api/name/playing">playing</a> at.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>the target to inform when preparation is complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>the selector to call when preparation is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successfully queued.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadUrlAsync:target:selector:" title="preloadUrlAsync:target:selector:"></a>
+	<h3 class="subsubtitle method-title">preloadUrlAsync:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronously preload the contents of a URL for playback.
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadUrlAsync:(NSURL *)<em>url</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>the target to inform when preparation is complete.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>the selector to call when preparation is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successfully queued.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeSuspendListener:" title="removeSuspendListener:"></a>
+	<h3 class="subsubtitle method-title">removeSuspendListener:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove a registered listener.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listenerIn</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listener</em></dt>
+			<dd><p>The listener to unregister from this handler.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSuspended:" title="setSuspended:"></a>
+	<h3 class="subsubtitle method-title">setSuspended:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(INTERNAL USE) Called by SuspendHandler.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setSuspended:(bool)<em>value</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop <a href="#//api/name/playing">playing</a> and stop all operations.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopActions" title="stopActions"></a>
+	<h3 class="subsubtitle method-title">stopActions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop any internal fade or <a href="#//api/name/pan">pan</a> actions.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopActions</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopFade" title="stopFade"></a>
+	<h3 class="subsubtitle method-title">stopFade</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop the currently running fade operation, if any.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopFade</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopPan" title="stopPan"></a>
+	<h3 class="subsubtitle method-title">stopPan</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop the currently running <a href="#//api/name/pan">pan</a> operation, if any.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopPan</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> This will have no effect on iOS versions prior to 4.0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/suspended" title="suspended"></a>
+	<h3 class="subsubtitle method-title">suspended</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If YES, this object is suspended.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)suspended</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateMeters" title="updateMeters"></a>
+	<h3 class="subsubtitle method-title">updateMeters</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates the metering system to give current values.
+You must call this method before calling averagePowerForChannel or peakPowerForChannel in
+order to get current values.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)updateMeters</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALAudioTrack.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

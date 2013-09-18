@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CLASS_A.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CLASS_A</TokenIdentifier>
+			<Abstract type="html">Generates common code required to subclass from a cocos2d action
+while maintaining the functionality of an OALAction.</Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/initWithDuration:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDuration:(float)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of this action in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CLASS_A/actionWithDuration:propertyKey:endValue:</TokenIdentifier>
+			<Abstract type="html">Create a new action using the default function.
+The start value will be the current value of the target this action is applied to.</Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithDuration:(float)duration propertyKey:(NSString *)propertyKey endValue:(float)endValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of this action in seconds.</Abstract>
+				</Parameter><Parameter>
+					<Name>propertyKey</Name>
+					<Abstract type="html">The property to modify.</Abstract>
+				</Parameter><Parameter>
+					<Name>endValue</Name>
+					<Abstract type="html">The "ending" value that this action will converge upon when setting the target's property.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:propertyKey:endValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CLASS_A/actionWithShape:phase:action:</TokenIdentifier>
+			<Abstract type="html">Create a new ease action.</Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>			
+			
+			<Declaration>+ (OALEaseAction *)actionWithShape:(OALEaseShape)shape phase:(OALEasePhase)phase action:(OALAction *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shape</Name>
+					<Abstract type="html">The shape of the curve to apply.</Abstract>
+				</Parameter><Parameter>
+					<Name>phase</Name>
+					<Abstract type="html">What phase of the action to apply the curve to.
+@action The action to apple the curve to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithShape:phase:action:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

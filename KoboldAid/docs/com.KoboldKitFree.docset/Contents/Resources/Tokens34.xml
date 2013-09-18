@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKTilemapLayerTiles.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerTiles</TokenIdentifier>
+			<Abstract type="html">TMX Tiles of a tile layer. This is just a list of GIDs pointing to a specific tile in the tileset.
+   The GIDs have the KTTilemapTileFlip flags encoded, so it is recommended to use the tileAt method from KTTilemapLayer
+   instead of accessing the GIDs directly.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setGid:</TokenIdentifier>
+			<Abstract type="html">the memory buffer containing a layer's tile GIDs.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
+			
+			<ReturnValue><Abstract type="html">the memory buffer containing a layer's tile GIDs.</Abstract></ReturnValue>
+			<Anchor>//api/name/gid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/gid</TokenIdentifier>
+			<Abstract type="html">the memory buffer containing a layer's tile GIDs.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
+			
+			<ReturnValue><Abstract type="html">the memory buffer containing a layer's tile GIDs.</Abstract></ReturnValue>
+			<Anchor>//api/name/gid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/gid</TokenIdentifier>
+			<Abstract type="html">the memory buffer containing a layer's tile GIDs.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
+			
+			<ReturnValue><Abstract type="html">the memory buffer containing a layer's tile GIDs.</Abstract></ReturnValue>
+			<Anchor>//api/name/gid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setGidSize:</TokenIdentifier>
+			<Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) unsigned int gidSize</Declaration>
+			
+			<ReturnValue><Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract></ReturnValue>
+			<Anchor>//api/name/gidSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/gidSize</TokenIdentifier>
+			<Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) unsigned int gidSize</Declaration>
+			
+			<ReturnValue><Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract></ReturnValue>
+			<Anchor>//api/name/gidSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/gidSize</TokenIdentifier>
+			<Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) unsigned int gidSize</Declaration>
+			
+			<ReturnValue><Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract></ReturnValue>
+			<Anchor>//api/name/gidSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setGidCount:</TokenIdentifier>
+			<Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) unsigned int gidCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract></ReturnValue>
+			<Anchor>//api/name/gidCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/gidCount</TokenIdentifier>
+			<Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) unsigned int gidCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract></ReturnValue>
+			<Anchor>//api/name/gidCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/gidCount</TokenIdentifier>
+			<Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) unsigned int gidCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract></ReturnValue>
+			<Anchor>//api/name/gidCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/takeOwnershipOfGidBuffer:bufferSize:</TokenIdentifier>
+			<Abstract type="html">Takes an already allocated GID buffer with the given bufferSize (in bytes) and takes ownership for it.
+   Which means: you should not free() the tiles buffer, it will be freed by KTTilemapLayerTiles when it deallocates.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>			
+			
+			<Declaration>- (void)takeOwnershipOfGidBuffer:(gid_t *)tiles bufferSize:(unsigned int)bufferSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tiles</Name>
+					<Abstract type="html">A pointer to a member buffer containing tile GIDs.</Abstract>
+				</Parameter><Parameter>
+					<Name>bufferSize</Name>
+					<Abstract type="html">The size of the buffer in bytes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/takeOwnershipOfGidBuffer:bufferSize:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

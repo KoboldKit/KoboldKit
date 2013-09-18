@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALMoveByAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALMoveByAction</TokenIdentifier>
+			<Abstract type="html">Moves the target from its current position by the specified
+delta over time in 3D space.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/setDelta:</TokenIdentifier>
+			<Abstract type="html">The amount to move the target by.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint delta</Declaration>
+			
+			
+			<Anchor>//api/name/delta</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/delta</TokenIdentifier>
+			<Abstract type="html">The amount to move the target by.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint delta</Declaration>
+			
+			
+			<Anchor>//api/name/delta</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALMoveByAction/delta</TokenIdentifier>
+			<Abstract type="html">The amount to move the target by.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint delta</Declaration>
+			
+			
+			<Anchor>//api/name/delta</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/setUnitsPerSecond:</TokenIdentifier>
+			<Abstract type="html">The speed at which to move the target.
+If this is 0, the target will be moved at the speed determined by duration.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
+			
+			
+			<Anchor>//api/name/unitsPerSecond</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/unitsPerSecond</TokenIdentifier>
+			<Abstract type="html">The speed at which to move the target.
+If this is 0, the target will be moved at the speed determined by duration.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
+			
+			
+			<Anchor>//api/name/unitsPerSecond</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALMoveByAction/unitsPerSecond</TokenIdentifier>
+			<Abstract type="html">The speed at which to move the target.
+If this is 0, the target will be moved at the speed determined by duration.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
+			
+			
+			<Anchor>//api/name/unitsPerSecond</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALMoveByAction/actionWithDuration:delta:</TokenIdentifier>
+			<Abstract type="html">Create a new action.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithDuration:(float)duration delta:(ALPoint)delta</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the move.</Abstract>
+				</Parameter><Parameter>
+					<Name>delta</Name>
+					<Abstract type="html">The amount to move by.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:delta:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALMoveByAction/actionWithUnitsPerSecond:delta:</TokenIdentifier>
+			<Abstract type="html">Create a new action.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithUnitsPerSecond:(float)unitsPerSecond delta:(ALPoint)delta</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>unitsPerSecond</Name>
+					<Abstract type="html">The rate of movement.</Abstract>
+				</Parameter><Parameter>
+					<Name>delta</Name>
+					<Abstract type="html">The amount to move by.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithUnitsPerSecond:delta:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/initWithDuration:delta:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDuration:(float)duration delta:(ALPoint)delta</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the move.</Abstract>
+				</Parameter><Parameter>
+					<Name>delta</Name>
+					<Abstract type="html">The amount to move by.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:delta:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/initWithUnitsPerSecond:delta:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithUnitsPerSecond:(float)unitsPerSecond delta:(ALPoint)delta</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>unitsPerSecond</Name>
+					<Abstract type="html">The rate of movement.</Abstract>
+				</Parameter><Parameter>
+					<Name>delta</Name>
+					<Abstract type="html">The amount to move by.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithUnitsPerSecond:delta:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

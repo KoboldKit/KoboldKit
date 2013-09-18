@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKIvarInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKIvarInfo</TokenIdentifier>
+			<Abstract type="html">INTERNAL USE! Class that represents an ivar in order to set and get an ivar's value.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setIvar:</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) Ivar ivar</Declaration>
+			
+			
+			<Anchor>//api/name/ivar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/ivar</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) Ivar ivar</Declaration>
+			
+			
+			<Anchor>//api/name/ivar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/ivar</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) Ivar ivar</Declaration>
+			
+			
+			<Anchor>//api/name/ivar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/name</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/name</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setEncoding:</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
+			
+			
+			<Anchor>//api/name/encoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/encoding</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
+			
+			
+			<Anchor>//api/name/encoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/encoding</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
+			
+			
+			<Anchor>//api/name/encoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setType:</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/type</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/type</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setIvarInTarget:value:</TokenIdentifier>
+			<Abstract type="html">Set the ivar in the given target to the value.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setIvarInTarget:(id)target value:(id)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target object for the ivar.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value to assign to the ivar.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setIvarInTarget:value:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

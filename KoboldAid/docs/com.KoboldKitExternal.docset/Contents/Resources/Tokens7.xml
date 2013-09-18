@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ALSoundSourcePool.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ALSoundSourcePool</TokenIdentifier>
+			<Abstract type="html">A pool of sound sources, which can be fetched based on availability.</Abstract>
+			<DeclaredIn>ALSoundSourcePool.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSoundSourcePool/setSources:</TokenIdentifier>
+			<Abstract type="html">All sources managed by this pool (idALSoundSource.</Abstract>
+			<DeclaredIn>ALSoundSourcePool.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *sources</Declaration>
+			
+			
+			<Anchor>//api/name/sources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSoundSourcePool/sources</TokenIdentifier>
+			<Abstract type="html">All sources managed by this pool (idALSoundSource.</Abstract>
+			<DeclaredIn>ALSoundSourcePool.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *sources</Declaration>
+			
+			
+			<Anchor>//api/name/sources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ALSoundSourcePool/sources</TokenIdentifier>
+			<Abstract type="html">All sources managed by this pool (idALSoundSource.</Abstract>
+			<DeclaredIn>ALSoundSourcePool.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *sources</Declaration>
+			
+			
+			<Anchor>//api/name/sources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ALSoundSourcePool/pool</TokenIdentifier>
+			<Abstract type="html">Make a new pool.</Abstract>
+			<DeclaredIn>ALSoundSourcePool.h</DeclaredIn>			
+			
+			<Declaration>+ (id)pool</Declaration>
+			
+			<ReturnValue><Abstract type="html">A new pool.</Abstract></ReturnValue>
+			<Anchor>//api/name/pool</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSoundSourcePool/addSource:</TokenIdentifier>
+			<Abstract type="html">Add a source to this pool.</Abstract>
+			<DeclaredIn>ALSoundSourcePool.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSource:(id&lt;ALSoundSource&gt;)source</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>source</Name>
+					<Abstract type="html">The source to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSoundSourcePool/removeSource:</TokenIdentifier>
+			<Abstract type="html">Remove a source from this pool</Abstract>
+			<DeclaredIn>ALSoundSourcePool.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeSource:(id&lt;ALSoundSource&gt;)source</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>source</Name>
+					<Abstract type="html">The source to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeSource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSoundSourcePool/getFreeSource:</TokenIdentifier>
+			<Abstract type="html">Acquire a free or freeable source from this pool.
+It first attempts to find a completely free source.
+Failing this, it will attempt to interrupt a source and return that (if attemptToInterrupt
+is TRUE).</Abstract>
+			<DeclaredIn>ALSoundSourcePool.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ALSoundSource&gt;)getFreeSource:(bool)attemptToInterrupt</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>attemptToInterrupt</Name>
+					<Abstract type="html">If TRUE, attempt to interrupt sources to free them for use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The freed sound source, or nil if no sources are freeable.</Abstract></ReturnValue>
+			<Anchor>//api/name/getFreeSource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ALSoundSourcePool/moveToHead:</TokenIdentifier>
+			<Abstract type="html">Move a source to the head of the list.</Abstract>
+			<DeclaredIn>ALSoundSourcePool.m</DeclaredIn>			
+			
+			<Declaration>- (void)moveToHead:(int)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">the index of the source to move.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/moveToHead:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

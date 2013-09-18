@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALSimpleAudio.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALSimpleAudio</TokenIdentifier>
+			<Abstract type="html">A simpler interface to the ObjectAL sound library. This singleton can be
+used alone for simpler audio needs, or in conjunction with user-created
+audio objects for more advanced needs (as is done in many of the demos).</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setAllowIpod:</TokenIdentifier>
+			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
+Note: If this is enabled, and another app is playing music, background audio
+playback will use the SOFTWARE codecs, NOT hardware. <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/useHardwareIfAvailable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool allowIpod</Declaration>
+			
+			
+			<Anchor>//api/name/allowIpod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/allowIpod</TokenIdentifier>
+			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
+Note: If this is enabled, and another app is playing music, background audio
+playback will use the SOFTWARE codecs, NOT hardware. <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/useHardwareIfAvailable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool allowIpod</Declaration>
+			
+			
+			<Anchor>//api/name/allowIpod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/allowIpod</TokenIdentifier>
+			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
+Note: If this is enabled, and another app is playing music, background audio
+playback will use the SOFTWARE codecs, NOT hardware. <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/useHardwareIfAvailable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool allowIpod</Declaration>
+			
+			
+			<Anchor>//api/name/allowIpod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setUseHardwareIfAvailable:</TokenIdentifier>
+			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
+(NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/allowIpod</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool useHardwareIfAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/useHardwareIfAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/useHardwareIfAvailable</TokenIdentifier>
+			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
+(NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/allowIpod</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool useHardwareIfAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/useHardwareIfAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/useHardwareIfAvailable</TokenIdentifier>
+			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
+(NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/allowIpod</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool useHardwareIfAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/useHardwareIfAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setHonorSilentSwitch:</TokenIdentifier>
+			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
+turned off (NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/honorSilentSwitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/honorSilentSwitch</TokenIdentifier>
+			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
+turned off (NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/honorSilentSwitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/honorSilentSwitch</TokenIdentifier>
+			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
+turned off (NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/honorSilentSwitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setReservedSources:</TokenIdentifier>
+			<Abstract type="html">The number of sources OALSimpleAudio is using (max 32 on current iOS devices).</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int reservedSources</Declaration>
+			
+			
+			<Anchor>//api/name/reservedSources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/reservedSources</TokenIdentifier>
+			<Abstract type="html">The number of sources OALSimpleAudio is using (max 32 on current iOS devices).</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int reservedSources</Declaration>
+			
+			
+			<Anchor>//api/name/reservedSources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/reservedSources</TokenIdentifier>
+			<Abstract type="html">The number of sources OALSimpleAudio is using (max 32 on current iOS devices).</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int reservedSources</Declaration>
+			
+			
+			<Anchor>//api/name/reservedSources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setChannel:</TokenIdentifier>
+			<Abstract type="html">The channel source used by OALSimpleAudio.
+Only mess with this if you know what you are doing!</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) ALChannelSource *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/channel</TokenIdentifier>
+			<Abstract type="html">The channel source used by OALSimpleAudio.
+Only mess with this if you know what you are doing!</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) ALChannelSource *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/channel</TokenIdentifier>
+			<Abstract type="html">The channel source used by OALSimpleAudio.
+Only mess with this if you know what you are doing!</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) ALChannelSource *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setBackgroundTrackURL:</TokenIdentifier>
+			<Abstract type="html">Background audio URL</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSURL *backgroundTrackURL</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTrackURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/backgroundTrackURL</TokenIdentifier>
+			<Abstract type="html">Background audio URL</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSURL *backgroundTrackURL</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTrackURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/backgroundTrackURL</TokenIdentifier>
+			<Abstract type="html">Background audio URL</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSURL *backgroundTrackURL</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTrackURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setBackgroundTrack:</TokenIdentifier>
+			<Abstract type="html">Background audio track</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) OALAudioTrack *backgroundTrack</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTrack</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/backgroundTrack</TokenIdentifier>
+			<Abstract type="html">Background audio track</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) OALAudioTrack *backgroundTrack</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTrack</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/backgroundTrack</TokenIdentifier>
+			<Abstract type="html">Background audio track</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) OALAudioTrack *backgroundTrack</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTrack</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setBgPaused:</TokenIdentifier>
+			<Abstract type="html">Pauses BG music playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool bgPaused</Declaration>
+			
+			
+			<Anchor>//api/name/bgPaused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/bgPaused</TokenIdentifier>
+			<Abstract type="html">Pauses BG music playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool bgPaused</Declaration>
+			
+			
+			<Anchor>//api/name/bgPaused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/bgPaused</TokenIdentifier>
+			<Abstract type="html">Pauses BG music playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool bgPaused</Declaration>
+			
+			
+			<Anchor>//api/name/bgPaused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setBgMuted:</TokenIdentifier>
+			<Abstract type="html">Mutes BG music playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool bgMuted</Declaration>
+			
+			
+			<Anchor>//api/name/bgMuted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/bgMuted</TokenIdentifier>
+			<Abstract type="html">Mutes BG music playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool bgMuted</Declaration>
+			
+			
+			<Anchor>//api/name/bgMuted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/bgMuted</TokenIdentifier>
+			<Abstract type="html">Mutes BG music playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool bgMuted</Declaration>
+			
+			
+			<Anchor>//api/name/bgMuted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setBgPlaying:</TokenIdentifier>
+			<Abstract type="html">If true, BG music is currently playing</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool bgPlaying</Declaration>
+			
+			
+			<Anchor>//api/name/bgPlaying</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/bgPlaying</TokenIdentifier>
+			<Abstract type="html">If true, BG music is currently playing</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool bgPlaying</Declaration>
+			
+			
+			<Anchor>//api/name/bgPlaying</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/bgPlaying</TokenIdentifier>
+			<Abstract type="html">If true, BG music is currently playing</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool bgPlaying</Declaration>
+			
+			
+			<Anchor>//api/name/bgPlaying</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setBgVolume:</TokenIdentifier>
+			<Abstract type="html">Background music playback gain/volume (0.0 - 1.0)</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float bgVolume</Declaration>
+			
+			
+			<Anchor>//api/name/bgVolume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/bgVolume</TokenIdentifier>
+			<Abstract type="html">Background music playback gain/volume (0.0 - 1.0)</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float bgVolume</Declaration>
+			
+			
+			<Anchor>//api/name/bgVolume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/bgVolume</TokenIdentifier>
+			<Abstract type="html">Background music playback gain/volume (0.0 - 1.0)</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float bgVolume</Declaration>
+			
+			
+			<Anchor>//api/name/bgVolume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setEffectsPaused:</TokenIdentifier>
+			<Abstract type="html">Pauses effects playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool effectsPaused</Declaration>
+			
+			
+			<Anchor>//api/name/effectsPaused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/effectsPaused</TokenIdentifier>
+			<Abstract type="html">Pauses effects playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool effectsPaused</Declaration>
+			
+			
+			<Anchor>//api/name/effectsPaused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/effectsPaused</TokenIdentifier>
+			<Abstract type="html">Pauses effects playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool effectsPaused</Declaration>
+			
+			
+			<Anchor>//api/name/effectsPaused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setEffectsMuted:</TokenIdentifier>
+			<Abstract type="html">Mutes effects playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool effectsMuted</Declaration>
+			
+			
+			<Anchor>//api/name/effectsMuted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/effectsMuted</TokenIdentifier>
+			<Abstract type="html">Mutes effects playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool effectsMuted</Declaration>
+			
+			
+			<Anchor>//api/name/effectsMuted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/effectsMuted</TokenIdentifier>
+			<Abstract type="html">Mutes effects playback</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool effectsMuted</Declaration>
+			
+			
+			<Anchor>//api/name/effectsMuted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setEffectsVolume:</TokenIdentifier>
+			<Abstract type="html">Master effects gain/volume (0.0 - 1.0)</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float effectsVolume</Declaration>
+			
+			
+			<Anchor>//api/name/effectsVolume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/effectsVolume</TokenIdentifier>
+			<Abstract type="html">Master effects gain/volume (0.0 - 1.0)</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float effectsVolume</Declaration>
+			
+			
+			<Anchor>//api/name/effectsVolume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/effectsVolume</TokenIdentifier>
+			<Abstract type="html">Master effects gain/volume (0.0 - 1.0)</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float effectsVolume</Declaration>
+			
+			
+			<Anchor>//api/name/effectsVolume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setPaused:</TokenIdentifier>
+			<Abstract type="html">Pauses everything</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/paused</TokenIdentifier>
+			<Abstract type="html">Pauses everything</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/paused</TokenIdentifier>
+			<Abstract type="html">Pauses everything</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setMuted:</TokenIdentifier>
+			<Abstract type="html">Mutes all audio</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/muted</TokenIdentifier>
+			<Abstract type="html">Mutes all audio</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/muted</TokenIdentifier>
+			<Abstract type="html">Mutes all audio</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setPreloadCacheEnabled:</TokenIdentifier>
+			<Abstract type="html">Enables/disables the preload cache.
+If the preload cache is disabled, effects preloading will do nothing
+(BG preloading will still work).</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool preloadCacheEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/preloadCacheEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/preloadCacheEnabled</TokenIdentifier>
+			<Abstract type="html">Enables/disables the preload cache.
+If the preload cache is disabled, effects preloading will do nothing
+(BG preloading will still work).</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool preloadCacheEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/preloadCacheEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/preloadCacheEnabled</TokenIdentifier>
+			<Abstract type="html">Enables/disables the preload cache.
+If the preload cache is disabled, effects preloading will do nothing
+(BG preloading will still work).</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool preloadCacheEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/preloadCacheEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setPreloadCacheCount:</TokenIdentifier>
+			<Abstract type="html">The number of items currently in the preload cache.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger preloadCacheCount</Declaration>
+			
+			
+			<Anchor>//api/name/preloadCacheCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/preloadCacheCount</TokenIdentifier>
+			<Abstract type="html">The number of items currently in the preload cache.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger preloadCacheCount</Declaration>
+			
+			
+			<Anchor>//api/name/preloadCacheCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/preloadCacheCount</TokenIdentifier>
+			<Abstract type="html">The number of items currently in the preload cache.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger preloadCacheCount</Declaration>
+			
+			
+			<Anchor>//api/name/preloadCacheCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setManuallySuspended:</TokenIdentifier>
+			<Abstract type="html">Set to YES to manually suspend the sound system.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			
+			
+			<Anchor>//api/name/manuallySuspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/manuallySuspended</TokenIdentifier>
+			<Abstract type="html">Set to YES to manually suspend the sound system.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			
+			
+			<Anchor>//api/name/manuallySuspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/manuallySuspended</TokenIdentifier>
+			<Abstract type="html">Set to YES to manually suspend the sound system.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			
+			
+			<Anchor>//api/name/manuallySuspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setInterrupted:</TokenIdentifier>
+			<Abstract type="html">If YES, the sound system is interrupted. iOS Only.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool interrupted</Declaration>
+			
+			
+			<Anchor>//api/name/interrupted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/interrupted</TokenIdentifier>
+			<Abstract type="html">If YES, the sound system is interrupted. iOS Only.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool interrupted</Declaration>
+			
+			
+			<Anchor>//api/name/interrupted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/interrupted</TokenIdentifier>
+			<Abstract type="html">If YES, the sound system is interrupted. iOS Only.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool interrupted</Declaration>
+			
+			
+			<Anchor>//api/name/interrupted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setSuspended:</TokenIdentifier>
+			<Abstract type="html">If YES, the sound system is suspended.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/suspended</TokenIdentifier>
+			<Abstract type="html">If YES, the sound system is suspended.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/suspended</TokenIdentifier>
+			<Abstract type="html">If YES, the sound system is suspended.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALSimpleAudio/sharedInstanceWithSources:</TokenIdentifier>
+			<Abstract type="html">Start OALSimpleAudio with the specified number of reserved sources.
+Call this initializer if you want to use OALSimpleAudio, but keep some of the device's
+audio sources (there are 32 in total) for your own use. <br>
+<strong>Note:</strong> This method must be called ONLY ONCE, <em>BEFORE</em>
+any attempt is made to access the shared instance.
+To change the reserved sources after instantiation, modify reservedSources.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>+ (OALSimpleAudio *)sharedInstanceWithSources:(int)sources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sources</Name>
+					<Abstract type="html">the number of sources OALSimpleAudio will reserve for itself.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The shared instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstanceWithSources:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALSimpleAudio/sharedInstanceWithReservedSources:monoSources:stereoSources:</TokenIdentifier>
+			<Abstract type="html">Start OALSimpleAudio with the specified parameters.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>+ (OALSimpleAudio *)sharedInstanceWithReservedSources:(int)reservedSources monoSources:(int)monoSources stereoSources:(int)stereoSources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reservedSources</Name>
+					<Abstract type="html">The number of sources to reserve for OALSimpleAudio's
+use when initializing.
+iOS currently supports up to 32 sources total.</Abstract>
+				</Parameter><Parameter>
+					<Name>monoSources</Name>
+					<Abstract type="html">The GLOBAL number of sources supporting mono (default 28).</Abstract>
+				</Parameter><Parameter>
+					<Name>stereoSources</Name>
+					<Abstract type="html">The GLOBAL number of sources supporting stereo (default 4).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The shared instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstanceWithReservedSources:monoSources:stereoSources:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/initWithSources:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Initialize with the specified number of reserved sources.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithSources:(int)reservedSources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reservedSources</Name>
+					<Abstract type="html">the number of sources to reserve when initializing.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The shared instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSources:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/initWithReservedSources:monoSources:stereoSources:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Initialize with the specified parameters.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReservedSources:(int)reservedSources monoSources:(int)monoSources stereoSources:(int)stereoSources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reservedSources</Name>
+					<Abstract type="html">The number of sources to reserve for OALSimpleAudio's use when initializing.</Abstract>
+				</Parameter><Parameter>
+					<Name>monoSources</Name>
+					<Abstract type="html">The GLOBAL number of sources supporting mono (default 28).</Abstract>
+				</Parameter><Parameter>
+					<Name>stereoSources</Name>
+					<Abstract type="html">The GLOBAL number of sources supporting stereo (default 4).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The shared instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithReservedSources:monoSources:stereoSources:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/preloadBg:</TokenIdentifier>
+			<Abstract type="html">Preload background music.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (bool)preloadBg:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path containing the background music.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/preloadBg:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/preloadBg:seekTime:</TokenIdentifier>
+			<Abstract type="html">Preload background music.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (bool)preloadBg:(NSString *)path seekTime:(NSTimeInterval)seekTime</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path containing the background music.</Abstract>
+				</Parameter><Parameter>
+					<Name>seekTime</Name>
+					<Abstract type="html">the position in the file to start playing at.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/preloadBg:seekTime:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBg</TokenIdentifier>
+			<Abstract type="html">Play whatever background music is preloaded.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (bool)playBg</Declaration>
+			
+			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/playBg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBgWithLoop:</TokenIdentifier>
+			<Abstract type="html">Play whatever background music is preloaded.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (bool)playBgWithLoop:(bool)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">If true, loop the bg track.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/playBgWithLoop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBg:</TokenIdentifier>
+			<Abstract type="html">Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (bool)playBg:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path containing the background music.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/playBg:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBg:loop:</TokenIdentifier>
+			<Abstract type="html">Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (bool)playBg:(NSString *)path loop:(bool)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path containing the background music.</Abstract>
+				</Parameter><Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">If true, loop the bg track.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/playBg:loop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBg:volume:pan:loop:</TokenIdentifier>
+			<Abstract type="html">Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (bool)playBg:(NSString *)filePath volume:(float)volume pan:(float)pan loop:(bool)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path containing the sound data.</Abstract>
+				</Parameter><Parameter>
+					<Name>volume</Name>
+					<Abstract type="html">The volume (gain) to play at (0.0 - 1.0).</Abstract>
+				</Parameter><Parameter>
+					<Name>pan</Name>
+					<Abstract type="html">Left-right panning (-1.0 = far left, 1.0 = far right) (Only on iOS 4.0+).</Abstract>
+				</Parameter><Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">If TRUE, the sound will loop until you call "stopBg".</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/playBg:volume:pan:loop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/stopBg</TokenIdentifier>
+			<Abstract type="html">Stop the background music playback and rewind.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopBg</Declaration>
+			
+			
+			<Anchor>//api/name/stopBg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/preloadEffect:</TokenIdentifier>
+			<Abstract type="html">Preload and cache a sound effect for later playback.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (ALBuffer *)preloadEffect:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path containing the sound data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/preloadEffect:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/preloadEffect:reduceToMono:</TokenIdentifier>
+			<Abstract type="html">Preload and cache a sound effect for later playback.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (ALBuffer *)preloadEffect:(NSString *)filePath reduceToMono:(bool)reduceToMono</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path containing the sound data.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceToMono</Name>
+					<Abstract type="html">If true, reduce the sample to mono
+(stereo samples don't support panning or positional audio).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/preloadEffect:reduceToMono:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/preloadEffect:reduceToMono:completionBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronous preload and cache sound effect for later playback.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)preloadEffect:(NSString *)filePath reduceToMono:(bool)reduceToMono completionBlock:(void ( ^ ) ( ALBuffer *))completionBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">an NSString with the path containing the sound data.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceToMono</Name>
+					<Abstract type="html">If true, reduce the sample to mono
+(stereo samples don't support panning or positional audio).</Abstract>
+				</Parameter><Parameter>
+					<Name>completionBlock</Name>
+					<Abstract type="html">Executed when loading is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/preloadEffect:reduceToMono:completionBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/preloadEffects:reduceToMono:progressBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronous preload and cache multiple sound effects for later playback.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (void)preloadEffects:(NSArray *)filePaths reduceToMono:(bool)reduceToMono progressBlock:(void ( ^ ) ( NSUInteger progress , NSUInteger successCount , NSUInteger total ))progressBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePaths</Name>
+					<Abstract type="html">An NSArray of NSStrings with the paths containing the sound data.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceToMono</Name>
+					<Abstract type="html">If true, reduce the samples to mono
+(stereo samples don't support panning or positional audio).</Abstract>
+				</Parameter><Parameter>
+					<Name>progressBlock</Name>
+					<Abstract type="html">Executed regularly while file loading is in progress.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/preloadEffects:reduceToMono:progressBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/unloadEffect:</TokenIdentifier>
+			<Abstract type="html">Unload a preloaded effect. Only unloads if no source is currently playing
+that effect (or paused with the effect loaded).</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (bool)unloadEffect:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path containing the sound data that was previously loaded.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the effect was unloaded. Turn on debug logging to see why an
+effect was not unloaded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unloadEffect:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/unloadAllEffects</TokenIdentifier>
+			<Abstract type="html">Unload all preloaded effects that are not currently being played (paused or not).
+Turning on debug logging will show which effects were not unloaded.
+It is useful to put a call to this method in
+"applicationDidReceiveMemoryWarning" in your app delegate.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (void)unloadAllEffects</Declaration>
+			
+			
+			<Anchor>//api/name/unloadAllEffects</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playEffect:</TokenIdentifier>
+			<Abstract type="html">Play a sound effect with volume 1.0, pitch 1.0, pan 0.0, loop NO. The sound will be loaded
+and cached if it wasn't already.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ALSoundSource&gt;)playEffect:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path containing the sound data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The sound source being used for playback, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/playEffect:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playEffect:loop:</TokenIdentifier>
+			<Abstract type="html">Play a sound effect with volume 1.0, pitch 1.0, pan 0.0. The sound will be loaded and cached
+if it wasn't already.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ALSoundSource&gt;)playEffect:(NSString *)filePath loop:(bool)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path containing the sound data.</Abstract>
+				</Parameter><Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The sound source being used for playback, or nil if an error occurred.</Abstract></ReturnValue>
+			<Anchor>//api/name/playEffect:loop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playEffect:volume:pitch:pan:loop:</TokenIdentifier>
+			<Abstract type="html">Play a sound effect. The sound will be loaded and cached if it wasn't already.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ALSoundSource&gt;)playEffect:(NSString *)filePath volume:(float)volume pitch:(float)pitch pan:(float)pan loop:(bool)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path containing the sound data.</Abstract>
+				</Parameter><Parameter>
+					<Name>volume</Name>
+					<Abstract type="html">The volume (gain) to play at (0.0 - 1.0).</Abstract>
+				</Parameter><Parameter>
+					<Name>pitch</Name>
+					<Abstract type="html">The pitch to play at (1.0 = normal pitch).</Abstract>
+				</Parameter><Parameter>
+					<Name>pan</Name>
+					<Abstract type="html">Left-right panning (-1.0 = far left, 1.0 = far right).</Abstract>
+				</Parameter><Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The sound source being used for playback, or nil if an error occurred (You'll need to
+keep this if you want to be able to stop a looped playback).</Abstract></ReturnValue>
+			<Anchor>//api/name/playEffect:volume:pitch:pan:loop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBuffer:volume:pitch:pan:loop:</TokenIdentifier>
+			<Abstract type="html">Play a sound effect from a user-supplied buffer.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ALSoundSource&gt;)playBuffer:(ALBuffer *)buffer volume:(float)volume pitch:(float)pitch pan:(float)pan loop:(bool)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buffer</Name>
+					<Abstract type="html">The buffer containing the sound data.</Abstract>
+				</Parameter><Parameter>
+					<Name>volume</Name>
+					<Abstract type="html">The volume (gain) to play at (0.0 - 1.0).</Abstract>
+				</Parameter><Parameter>
+					<Name>pitch</Name>
+					<Abstract type="html">The pitch to play at (1.0 = normal pitch).</Abstract>
+				</Parameter><Parameter>
+					<Name>pan</Name>
+					<Abstract type="html">Left-right panning (-1.0 = far left, 1.0 = far right).</Abstract>
+				</Parameter><Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The sound source being used for playback, or nil if an error occurred (You'll need to
+keep this if you want to be able to stop a looped playback).</Abstract></ReturnValue>
+			<Anchor>//api/name/playBuffer:volume:pitch:pan:loop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/stopAllEffects</TokenIdentifier>
+			<Abstract type="html">Stop ALL sound effect playback.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopAllEffects</Declaration>
+			
+			
+			<Anchor>//api/name/stopAllEffects</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/stopEverything</TokenIdentifier>
+			<Abstract type="html">Stop all effects and bg music.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopEverything</Declaration>
+			
+			
+			<Anchor>//api/name/stopEverything</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/resetToDefault</TokenIdentifier>
+			<Abstract type="html">Reset everything in this object to its default state.</Abstract>
+			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetToDefault</Declaration>
+			
+			
+			<Anchor>//api/name/resetToDefault</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/internalPreloadEffect:reduceToMono:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Preload a sound effect and return the preloaded buffer.</Abstract>
+			<DeclaredIn>OALSimpleAudio.m</DeclaredIn>			
+			
+			<Declaration>- (ALBuffer *)internalPreloadEffect:(NSString *)filePath reduceToMono:(bool)reduceToMono</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path containing the sound data.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceToMono</Name>
+					<Abstract type="html">If true, reduce the sample to mono
+(stereo samples don't support panning or positional audio).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The preloaded buffer.</Abstract></ReturnValue>
+			<Anchor>//api/name/internalPreloadEffect:reduceToMono:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

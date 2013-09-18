@@ -1,0 +1,2991 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OALSimpleAudio Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OALSimpleAudio Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/allowIpod">&nbsp;&nbsp;&nbsp;&nbsp;allowIpod</option>
+	
+	<option value="//api/name/backgroundTrack">&nbsp;&nbsp;&nbsp;&nbsp;backgroundTrack</option>
+	
+	<option value="//api/name/backgroundTrackURL">&nbsp;&nbsp;&nbsp;&nbsp;backgroundTrackURL</option>
+	
+	<option value="//api/name/bgMuted">&nbsp;&nbsp;&nbsp;&nbsp;bgMuted</option>
+	
+	<option value="//api/name/bgPaused">&nbsp;&nbsp;&nbsp;&nbsp;bgPaused</option>
+	
+	<option value="//api/name/bgPlaying">&nbsp;&nbsp;&nbsp;&nbsp;bgPlaying</option>
+	
+	<option value="//api/name/bgVolume">&nbsp;&nbsp;&nbsp;&nbsp;bgVolume</option>
+	
+	<option value="//api/name/channel">&nbsp;&nbsp;&nbsp;&nbsp;channel</option>
+	
+	<option value="//api/name/effectsMuted">&nbsp;&nbsp;&nbsp;&nbsp;effectsMuted</option>
+	
+	<option value="//api/name/effectsPaused">&nbsp;&nbsp;&nbsp;&nbsp;effectsPaused</option>
+	
+	<option value="//api/name/effectsVolume">&nbsp;&nbsp;&nbsp;&nbsp;effectsVolume</option>
+	
+	<option value="//api/name/honorSilentSwitch">&nbsp;&nbsp;&nbsp;&nbsp;honorSilentSwitch</option>
+	
+	<option value="//api/name/interrupted">&nbsp;&nbsp;&nbsp;&nbsp;interrupted</option>
+	
+	<option value="//api/name/manuallySuspended">&nbsp;&nbsp;&nbsp;&nbsp;manuallySuspended</option>
+	
+	<option value="//api/name/muted">&nbsp;&nbsp;&nbsp;&nbsp;muted</option>
+	
+	<option value="//api/name/paused">&nbsp;&nbsp;&nbsp;&nbsp;paused</option>
+	
+	<option value="//api/name/preloadCacheCount">&nbsp;&nbsp;&nbsp;&nbsp;preloadCacheCount</option>
+	
+	<option value="//api/name/preloadCacheEnabled">&nbsp;&nbsp;&nbsp;&nbsp;preloadCacheEnabled</option>
+	
+	<option value="//api/name/reservedSources">&nbsp;&nbsp;&nbsp;&nbsp;reservedSources</option>
+	
+	<option value="//api/name/suspended">&nbsp;&nbsp;&nbsp;&nbsp;suspended</option>
+	
+	<option value="//api/name/useHardwareIfAvailable">&nbsp;&nbsp;&nbsp;&nbsp;useHardwareIfAvailable</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedInstanceWithReservedSources:monoSources:stereoSources:">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstanceWithReservedSources:monoSources:stereoSources:</option>
+	
+	<option value="//api/name/sharedInstanceWithSources:">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstanceWithSources:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithReservedSources:monoSources:stereoSources:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithReservedSources:monoSources:stereoSources:</option>
+	
+	<option value="//api/name/initWithSources:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSources:</option>
+	
+	<option value="//api/name/internalPreloadEffect:reduceToMono:">&nbsp;&nbsp;&nbsp;&nbsp;- internalPreloadEffect:reduceToMono:</option>
+	
+	<option value="//api/name/playBg">&nbsp;&nbsp;&nbsp;&nbsp;- playBg</option>
+	
+	<option value="//api/name/playBg:">&nbsp;&nbsp;&nbsp;&nbsp;- playBg:</option>
+	
+	<option value="//api/name/playBg:loop:">&nbsp;&nbsp;&nbsp;&nbsp;- playBg:loop:</option>
+	
+	<option value="//api/name/playBg:volume:pan:loop:">&nbsp;&nbsp;&nbsp;&nbsp;- playBg:volume:pan:loop:</option>
+	
+	<option value="//api/name/playBgWithLoop:">&nbsp;&nbsp;&nbsp;&nbsp;- playBgWithLoop:</option>
+	
+	<option value="//api/name/playBuffer:volume:pitch:pan:loop:">&nbsp;&nbsp;&nbsp;&nbsp;- playBuffer:volume:pitch:pan:loop:</option>
+	
+	<option value="//api/name/playEffect:">&nbsp;&nbsp;&nbsp;&nbsp;- playEffect:</option>
+	
+	<option value="//api/name/playEffect:loop:">&nbsp;&nbsp;&nbsp;&nbsp;- playEffect:loop:</option>
+	
+	<option value="//api/name/playEffect:volume:pitch:pan:loop:">&nbsp;&nbsp;&nbsp;&nbsp;- playEffect:volume:pitch:pan:loop:</option>
+	
+	<option value="//api/name/preloadBg:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadBg:</option>
+	
+	<option value="//api/name/preloadBg:seekTime:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadBg:seekTime:</option>
+	
+	<option value="//api/name/preloadEffect:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadEffect:</option>
+	
+	<option value="//api/name/preloadEffect:reduceToMono:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadEffect:reduceToMono:</option>
+	
+	<option value="//api/name/preloadEffect:reduceToMono:completionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadEffect:reduceToMono:completionBlock:</option>
+	
+	<option value="//api/name/preloadEffects:reduceToMono:progressBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadEffects:reduceToMono:progressBlock:</option>
+	
+	<option value="//api/name/resetToDefault">&nbsp;&nbsp;&nbsp;&nbsp;- resetToDefault</option>
+	
+	<option value="//api/name/stopAllEffects">&nbsp;&nbsp;&nbsp;&nbsp;- stopAllEffects</option>
+	
+	<option value="//api/name/stopBg">&nbsp;&nbsp;&nbsp;&nbsp;- stopBg</option>
+	
+	<option value="//api/name/stopEverything">&nbsp;&nbsp;&nbsp;&nbsp;- stopEverything</option>
+	
+	<option value="//api/name/unloadAllEffects">&nbsp;&nbsp;&nbsp;&nbsp;- unloadAllEffects</option>
+	
+	<option value="//api/name/unloadEffect:">&nbsp;&nbsp;&nbsp;&nbsp;- unloadEffect:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowIpod">allowIpod</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundTrack">backgroundTrack</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundTrackURL">backgroundTrackURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bgMuted">bgMuted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bgPaused">bgPaused</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bgPlaying">bgPlaying</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bgVolume">bgVolume</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/channel">channel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/effectsMuted">effectsMuted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/effectsPaused">effectsPaused</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/effectsVolume">effectsVolume</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/honorSilentSwitch">honorSilentSwitch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interrupted">interrupted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/manuallySuspended">manuallySuspended</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/muted">muted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paused">paused</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadCacheCount">preloadCacheCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadCacheEnabled">preloadCacheEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reservedSources">reservedSources</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/suspended">suspended</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/useHardwareIfAvailable">useHardwareIfAvailable</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstanceWithReservedSources:monoSources:stereoSources:">sharedInstanceWithReservedSources:monoSources:stereoSources:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstanceWithSources:">sharedInstanceWithSources:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithReservedSources:monoSources:stereoSources:">initWithReservedSources:monoSources:stereoSources:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSources:">initWithSources:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/internalPreloadEffect:reduceToMono:">internalPreloadEffect:reduceToMono:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playBg">playBg</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playBg:">playBg:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playBg:loop:">playBg:loop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playBg:volume:pan:loop:">playBg:volume:pan:loop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playBgWithLoop:">playBgWithLoop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playBuffer:volume:pitch:pan:loop:">playBuffer:volume:pitch:pan:loop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playEffect:">playEffect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playEffect:loop:">playEffect:loop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playEffect:volume:pitch:pan:loop:">playEffect:volume:pitch:pan:loop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadBg:">preloadBg:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadBg:seekTime:">preloadBg:seekTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadEffect:">preloadEffect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadEffect:reduceToMono:">preloadEffect:reduceToMono:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadEffect:reduceToMono:completionBlock:">preloadEffect:reduceToMono:completionBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadEffects:reduceToMono:progressBlock:">preloadEffects:reduceToMono:progressBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetToDefault">resetToDefault</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAllEffects">stopAllEffects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopBg">stopBg</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopEverything">stopEverything</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unloadAllEffects">unloadAllEffects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unloadEffect:">unloadEffect:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OALSimpleAudio Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OALSimpleAudio Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OALSimpleAudio.h<br />OALSimpleAudio.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A simpler interface to the ObjectAL sound library. This singleton can be
+used alone for simpler audio needs, or in conjunction with user-created
+audio objects for more advanced needs (as is done in many of the demos).</p>
+
+<p>For sound effects, it initializes OpenAL with the default <a href="../Classes/ALDevice.html">ALDevice</a>,
+an <a href="../Classes/ALContext.html">ALContext</a>, and an <a href="../Classes/ALChannelSource.html">ALChannelSource</a> consisting of all 32 interruptible
+<a href="../Classes/ALSource.html">ALSource</a> objects (the maximum currently allowed for iOS).
+If you want to create your own sources as well, change the <a href="#//api/name/reservedSources">reservedSources</a>
+property.</p>
+
+<p>For background audio, it creates a single <a href="../Classes/OALAudioTrack.html">OALAudioTrack</a>, which will not reserve
+resources unless used. (you can create more <a href="../Classes/OALAudioTrack.html">OALAudioTrack</a> objects for your own
+use if you want).</p>
+
+<p>This singleton also provides access to the more common configuration options
+available in OALAudioSupport.</p>
+
+<p>All audio playback commands are delegated either to the <a href="../Classes/ALChannelSource.html">ALChannelSource</a>
+(for sound effects), or to the <a href="../Classes/OALAudioTrack.html">OALAudioTrack</a> (for BG music).</p>
+
+<p>(INTERNAL USE) Private interface to OALSimpleAudio.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowIpod">&nbsp;&nbsp;allowIpod</a></code>
+		<span class="tooltip"><p>If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
+Note: If this is enabled, and another app is playing music, background audio
+playback will use the SOFTWARE codecs, NOT hardware. <br></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/useHardwareIfAvailable">&nbsp;&nbsp;useHardwareIfAvailable</a></code>
+		<span class="tooltip"><p>Determines what to do if no other application is playing audio and <a href="#//api/name/allowIpod">allowIpod</a> = YES
+(NOT SUPPORTED ON THE SIMULATOR). <br></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/honorSilentSwitch">&nbsp;&nbsp;honorSilentSwitch</a></code>
+		<span class="tooltip"><p>If true, mute when backgrounded, screen locked, or the ringer switch is
+turned off (NOT SUPPORTED ON THE SIMULATOR). <br></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reservedSources">&nbsp;&nbsp;reservedSources</a></code>
+		<span class="tooltip"><p>The number of sources OALSimpleAudio is using (max 32 on current iOS devices).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/channel">&nbsp;&nbsp;channel</a></code>
+		<span class="tooltip"><p>The channel source used by OALSimpleAudio.
+Only mess with this if you know what you are doing!</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundTrackURL">&nbsp;&nbsp;backgroundTrackURL</a></code>
+		<span class="tooltip"><p>Background audio URL</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundTrack">&nbsp;&nbsp;backgroundTrack</a></code>
+		<span class="tooltip"><p>Background audio track</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bgPaused">&nbsp;&nbsp;bgPaused</a></code>
+		<span class="tooltip"><p>Pauses BG music playback</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bgMuted">&nbsp;&nbsp;bgMuted</a></code>
+		<span class="tooltip"><p>Mutes BG music playback</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bgPlaying">&nbsp;&nbsp;bgPlaying</a></code>
+		<span class="tooltip"><p>If true, BG music is currently playing</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bgVolume">&nbsp;&nbsp;bgVolume</a></code>
+		<span class="tooltip"><p>Background music playback gain/volume (0.0 - 1.0)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/effectsPaused">&nbsp;&nbsp;effectsPaused</a></code>
+		<span class="tooltip"><p>Pauses effects playback</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/effectsMuted">&nbsp;&nbsp;effectsMuted</a></code>
+		<span class="tooltip"><p>Mutes effects playback</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/effectsVolume">&nbsp;&nbsp;effectsVolume</a></code>
+		<span class="tooltip"><p>Master effects gain/volume (0.0 - 1.0)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paused">&nbsp;&nbsp;paused</a></code>
+		<span class="tooltip"><p>Pauses everything</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/muted">&nbsp;&nbsp;muted</a></code>
+		<span class="tooltip"><p>Mutes all audio</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadCacheEnabled">&nbsp;&nbsp;preloadCacheEnabled</a></code>
+		<span class="tooltip"><p>Enables/disables the preload cache.
+If the preload cache is disabled, effects preloading will do nothing
+(BG preloading will still work).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadCacheCount">&nbsp;&nbsp;preloadCacheCount</a></code>
+		<span class="tooltip"><p>The number of items currently in the preload cache.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/manuallySuspended">&nbsp;&nbsp;manuallySuspended</a></code>
+		<span class="tooltip"><p>Set to YES to manually suspend the sound system.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interrupted">&nbsp;&nbsp;interrupted</a></code>
+		<span class="tooltip"><p>If YES, the sound system is interrupted. iOS Only.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/suspended">&nbsp;&nbsp;suspended</a></code>
+		<span class="tooltip"><p>If YES, the sound system is suspended.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedInstanceWithSources:">+&nbsp;sharedInstanceWithSources:</a></code>
+		<span class="tooltip"><p>Start OALSimpleAudio with the specified number of reserved sources.
+Call this initializer if you want to use OALSimpleAudio, but keep some of the device&rsquo;s
+audio sources (there are 32 in total) for your own use. <br>
+<strong>Note:</strong> This method must be called ONLY ONCE, <em>BEFORE</em>
+any attempt is made to access the shared instance.
+To change the reserved sources after instantiation, modify <a href="#//api/name/reservedSources">reservedSources</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedInstanceWithReservedSources:monoSources:stereoSources:">+&nbsp;sharedInstanceWithReservedSources:monoSources:stereoSources:</a></code>
+		<span class="tooltip"><p>Start OALSimpleAudio with the specified parameters.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithSources:">&ndash;&nbsp;initWithSources:</a></code>
+		<span class="tooltip"><p>(INTERNAL USE) Initialize with the specified number of reserved sources.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithReservedSources:monoSources:stereoSources:">&ndash;&nbsp;initWithReservedSources:monoSources:stereoSources:</a></code>
+		<span class="tooltip"><p>(INTERNAL USE) Initialize with the specified parameters.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadBg:">&ndash;&nbsp;preloadBg:</a></code>
+		<span class="tooltip"><p>Preload background music.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadBg:seekTime:">&ndash;&nbsp;preloadBg:seekTime:</a></code>
+		<span class="tooltip"><p>Preload background music.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playBg">&ndash;&nbsp;playBg</a></code>
+		<span class="tooltip"><p>Play whatever background music is preloaded.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playBgWithLoop:">&ndash;&nbsp;playBgWithLoop:</a></code>
+		<span class="tooltip"><p>Play whatever background music is preloaded.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playBg:">&ndash;&nbsp;playBg:</a></code>
+		<span class="tooltip"><p>Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playBg:loop:">&ndash;&nbsp;playBg:loop:</a></code>
+		<span class="tooltip"><p>Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playBg:volume:pan:loop:">&ndash;&nbsp;playBg:volume:pan:loop:</a></code>
+		<span class="tooltip"><p>Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopBg">&ndash;&nbsp;stopBg</a></code>
+		<span class="tooltip"><p>Stop the background music playback and rewind.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadEffect:">&ndash;&nbsp;preloadEffect:</a></code>
+		<span class="tooltip"><p>Preload and cache a sound effect for later playback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadEffect:reduceToMono:">&ndash;&nbsp;preloadEffect:reduceToMono:</a></code>
+		<span class="tooltip"><p>Preload and cache a sound effect for later playback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadEffect:reduceToMono:completionBlock:">&ndash;&nbsp;preloadEffect:reduceToMono:completionBlock:</a></code>
+		<span class="tooltip"><p>Asynchronous preload and cache sound effect for later playback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadEffects:reduceToMono:progressBlock:">&ndash;&nbsp;preloadEffects:reduceToMono:progressBlock:</a></code>
+		<span class="tooltip"><p>Asynchronous preload and cache multiple sound effects for later playback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unloadEffect:">&ndash;&nbsp;unloadEffect:</a></code>
+		<span class="tooltip"><p>Unload a preloaded effect. Only unloads if no source is currently playing
+that effect (or <a href="#//api/name/paused">paused</a> with the effect loaded).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unloadAllEffects">&ndash;&nbsp;unloadAllEffects</a></code>
+		<span class="tooltip"><p>Unload all preloaded effects that are not currently being played (<a href="#//api/name/paused">paused</a> or not).
+Turning on debug logging will show which effects were not unloaded.
+It is useful to put a call to this method in
+&ldquo;applicationDidReceiveMemoryWarning&rdquo; in your app delegate.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playEffect:">&ndash;&nbsp;playEffect:</a></code>
+		<span class="tooltip"><p>Play a sound effect with volume 1.0, pitch 1.0, pan 0.0, loop NO. The sound will be loaded
+and cached if it wasn&rsquo;t already.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playEffect:loop:">&ndash;&nbsp;playEffect:loop:</a></code>
+		<span class="tooltip"><p>Play a sound effect with volume 1.0, pitch 1.0, pan 0.0. The sound will be loaded and cached
+if it wasn&rsquo;t already.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playEffect:volume:pitch:pan:loop:">&ndash;&nbsp;playEffect:volume:pitch:pan:loop:</a></code>
+		<span class="tooltip"><p>Play a sound effect. The sound will be loaded and cached if it wasn&rsquo;t already.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playBuffer:volume:pitch:pan:loop:">&ndash;&nbsp;playBuffer:volume:pitch:pan:loop:</a></code>
+		<span class="tooltip"><p>Play a sound effect from a user-supplied buffer.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopAllEffects">&ndash;&nbsp;stopAllEffects</a></code>
+		<span class="tooltip"><p>Stop ALL sound effect playback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopEverything">&ndash;&nbsp;stopEverything</a></code>
+		<span class="tooltip"><p>Stop all effects and bg music.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetToDefault">&ndash;&nbsp;resetToDefault</a></code>
+		<span class="tooltip"><p>Reset everything in this object to its default state.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/internalPreloadEffect:reduceToMono:">&ndash;&nbsp;internalPreloadEffect:reduceToMono:</a></code>
+		<span class="tooltip"><p>(INTERNAL USE) Preload a sound effect and return the preloaded buffer.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allowIpod" title="allowIpod"></a>
+	<h3 class="subsubtitle method-title">allowIpod</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
+Note: If this is enabled, and another app is playing music, background audio
+playback will use the SOFTWARE codecs, NOT hardware. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool allowIpod</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If allowIpod = NO, the application will ALWAYS use hardware decoding. <br></p>
+
+<p>iOS Only. <br></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/useHardwareIfAvailable">@property useHardwareIfAvailable</a></p>
+
+<p>Default value: YES</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundTrack" title="backgroundTrack"></a>
+	<h3 class="subsubtitle method-title">backgroundTrack</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Background audio track</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) OALAudioTrack *backgroundTrack</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundTrackURL" title="backgroundTrackURL"></a>
+	<h3 class="subsubtitle method-title">backgroundTrackURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Background audio URL</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSURL *backgroundTrackURL</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bgMuted" title="bgMuted"></a>
+	<h3 class="subsubtitle method-title">bgMuted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Mutes BG music playback</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool bgMuted</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bgPaused" title="bgPaused"></a>
+	<h3 class="subsubtitle method-title">bgPaused</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pauses BG music playback</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool bgPaused</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bgPlaying" title="bgPlaying"></a>
+	<h3 class="subsubtitle method-title">bgPlaying</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, BG music is currently playing</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) bool bgPlaying</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bgVolume" title="bgVolume"></a>
+	<h3 class="subsubtitle method-title">bgVolume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Background music playback gain/volume (0.0 - 1.0)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float bgVolume</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/channel" title="channel"></a>
+	<h3 class="subsubtitle method-title">channel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The channel source used by OALSimpleAudio.
+Only mess with this if you know what you are doing!</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) ALChannelSource *channel</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/effectsMuted" title="effectsMuted"></a>
+	<h3 class="subsubtitle method-title">effectsMuted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Mutes effects playback</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool effectsMuted</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/effectsPaused" title="effectsPaused"></a>
+	<h3 class="subsubtitle method-title">effectsPaused</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pauses effects playback</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool effectsPaused</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/effectsVolume" title="effectsVolume"></a>
+	<h3 class="subsubtitle method-title">effectsVolume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Master effects gain/volume (0.0 - 1.0)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float effectsVolume</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/honorSilentSwitch" title="honorSilentSwitch"></a>
+	<h3 class="subsubtitle method-title">honorSilentSwitch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If true, mute when backgrounded, screen locked, or the ringer switch is
+turned off (NOT SUPPORTED ON THE SIMULATOR). <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>iOS Only. <br></p>
+
+<p>Default value: YES</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interrupted" title="interrupted"></a>
+	<h3 class="subsubtitle method-title">interrupted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If YES, the sound system is interrupted. iOS Only.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) bool interrupted</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/manuallySuspended" title="manuallySuspended"></a>
+	<h3 class="subsubtitle method-title">manuallySuspended</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set to YES to manually suspend the sound system.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool manuallySuspended</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/muted" title="muted"></a>
+	<h3 class="subsubtitle method-title">muted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Mutes all audio</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool muted</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paused" title="paused"></a>
+	<h3 class="subsubtitle method-title">paused</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pauses everything</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool paused</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadCacheCount" title="preloadCacheCount"></a>
+	<h3 class="subsubtitle method-title">preloadCacheCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of items currently in the preload cache.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) NSUInteger preloadCacheCount</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadCacheEnabled" title="preloadCacheEnabled"></a>
+	<h3 class="subsubtitle method-title">preloadCacheEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables/disables the preload cache.
+If the preload cache is disabled, effects preloading will do nothing
+(BG preloading will still work).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool preloadCacheEnabled</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reservedSources" title="reservedSources"></a>
+	<h3 class="subsubtitle method-title">reservedSources</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of sources OALSimpleAudio is using (max 32 on current iOS devices).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) int reservedSources</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/suspended" title="suspended"></a>
+	<h3 class="subsubtitle method-title">suspended</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If YES, the sound system is suspended.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) bool suspended</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/useHardwareIfAvailable" title="useHardwareIfAvailable"></a>
+	<h3 class="subsubtitle method-title">useHardwareIfAvailable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Determines what to do if no other application is playing audio and <a href="#//api/name/allowIpod">allowIpod</a> = YES
+(NOT SUPPORTED ON THE SIMULATOR). <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool useHardwareIfAvailable</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If NO, the application will ALWAYS use software decoding. The advantage to this is that
+the user can background your application and then start audio playing from another
+application. If useHardwareIfAvailable = YES, the user won&rsquo;t be able to do this. <br></p>
+
+<p>If this is set to YES, the application will use hardware decoding if no other application
+is currently playing audio. However, no other application will be able to start playing
+audio if it wasn&rsquo;t playing already. <br></p>
+
+<p>Note: This switch has no effect if <a href="#//api/name/allowIpod">allowIpod</a> = NO. <br></p>
+
+<p>iOS Only. <br></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/allowIpod">@property allowIpod</a></p>
+
+<p>Default value: YES</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedInstanceWithReservedSources:monoSources:stereoSources:" title="sharedInstanceWithReservedSources:monoSources:stereoSources:"></a>
+	<h3 class="subsubtitle method-title">sharedInstanceWithReservedSources:monoSources:stereoSources:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start OALSimpleAudio with the specified parameters.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (OALSimpleAudio *)sharedInstanceWithReservedSources:(int)<em>reservedSources</em> monoSources:(int)<em>monoSources</em> stereoSources:(int)<em>stereoSources</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reservedSources</em></dt>
+			<dd><p>The number of sources to reserve for OALSimpleAudio&rsquo;s
+use when initializing.
+iOS currently supports up to 32 sources total.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>monoSources</em></dt>
+			<dd><p>The GLOBAL number of sources supporting mono (default 28).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>stereoSources</em></dt>
+			<dd><p>The GLOBAL number of sources supporting stereo (default 4).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The shared instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>With this initializer, you can set the total number of mono and stereo sources
+available, as well as how many sources are to be reserved by OALSimpleAudio. <br></p>
+
+<p>The number of mono and stereo sources represents the GLOBAL number of sources
+available for EVERYONE, not just OALSimpleAudio. Their combined values must
+not exceed 32 (the max allowed sources in iOS). <br></p>
+
+<p><a href="#//api/name/reservedSources">reservedSources</a> is independent of this; it represents how many of the above
+mentioned sources to reserve for OALSimpleAudio&rsquo;s use. <br></p>
+
+<p><strong>Note:</strong> This method must be called ONLY ONCE, <em>BEFORE</em>
+any attempt is made to access the shared instance. <br></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedInstanceWithSources:" title="sharedInstanceWithSources:"></a>
+	<h3 class="subsubtitle method-title">sharedInstanceWithSources:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start OALSimpleAudio with the specified number of reserved sources.
+Call this initializer if you want to use OALSimpleAudio, but keep some of the device&rsquo;s
+audio sources (there are 32 in total) for your own use. <br>
+<strong>Note:</strong> This method must be called ONLY ONCE, <em>BEFORE</em>
+any attempt is made to access the shared instance.
+To change the reserved sources after instantiation, modify <a href="#//api/name/reservedSources">reservedSources</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (OALSimpleAudio *)sharedInstanceWithSources:(int)<em>sources</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sources</em></dt>
+			<dd><p>the number of sources OALSimpleAudio will reserve for itself.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The shared instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithReservedSources:monoSources:stereoSources:" title="initWithReservedSources:monoSources:stereoSources:"></a>
+	<h3 class="subsubtitle method-title">initWithReservedSources:monoSources:stereoSources:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(INTERNAL USE) Initialize with the specified parameters.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithReservedSources:(int)<em>reservedSources</em> monoSources:(int)<em>monoSources</em> stereoSources:(int)<em>stereoSources</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reservedSources</em></dt>
+			<dd><p>The number of sources to reserve for OALSimpleAudio&rsquo;s use when initializing.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>monoSources</em></dt>
+			<dd><p>The GLOBAL number of sources supporting mono (default 28).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>stereoSources</em></dt>
+			<dd><p>The GLOBAL number of sources supporting stereo (default 4).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The shared instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSources:" title="initWithSources:"></a>
+	<h3 class="subsubtitle method-title">initWithSources:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(INTERNAL USE) Initialize with the specified number of reserved sources.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithSources:(int)<em>reservedSources</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reservedSources</em></dt>
+			<dd><p>the number of sources to reserve when initializing.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The shared instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/internalPreloadEffect:reduceToMono:" title="internalPreloadEffect:reduceToMono:"></a>
+	<h3 class="subsubtitle method-title">internalPreloadEffect:reduceToMono:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(INTERNAL USE) Preload a sound effect and return the preloaded buffer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (ALBuffer *)internalPreloadEffect:(NSString *)<em>filePath</em> reduceToMono:(bool)<em>reduceToMono</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceToMono</em></dt>
+			<dd><p>If true, reduce the sample to mono
+(stereo samples don&rsquo;t support panning or positional audio).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The preloaded buffer.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playBg" title="playBg"></a>
+	<h3 class="subsubtitle method-title">playBg</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play whatever background music is preloaded.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playBg</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playBg:" title="playBg:"></a>
+	<h3 class="subsubtitle method-title">playBg:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playBg:(NSString *)<em>path</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path containing the background music.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> only <strong>ONE</strong> background music
+file may be played or preloaded at a time via OALSimpleAudio.
+If you play or preload another file, the one currently playing
+will stop.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playBg:loop:" title="playBg:loop:"></a>
+	<h3 class="subsubtitle method-title">playBg:loop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playBg:(NSString *)<em>path</em> loop:(bool)<em>loop</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path containing the background music.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loop</em></dt>
+			<dd><p>If true, loop the bg track.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> only <strong>ONE</strong> background music
+file may be played or preloaded at a time via OALSimpleAudio.
+If you play or preload another file, the one currently playing
+will stop.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playBg:volume:pan:loop:" title="playBg:volume:pan:loop:"></a>
+	<h3 class="subsubtitle method-title">playBg:volume:pan:loop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the background music at the specified path.
+If the music has not been preloaded, this method
+will load the music and then play, incurring a slight delay. <br></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playBg:(NSString *)<em>filePath</em> volume:(float)<em>volume</em> pan:(float)<em>pan</em> loop:(bool)<em>loop</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>volume</em></dt>
+			<dd><p>The volume (gain) to play at (0.0 - 1.0).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pan</em></dt>
+			<dd><p>Left-right panning (-1.0 = far left, 1.0 = far right) (Only on iOS 4.0+).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loop</em></dt>
+			<dd><p>If TRUE, the sound will loop until you call &ldquo;stopBg&rdquo;.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> only <strong>ONE</strong> background music
+file may be played or preloaded at a time via OALSimpleAudio.
+If you play or preload another file, the one currently playing
+will stop. To play multiple audio tracks, create an <a href="../Classes/OALAudioTrack.html">OALAudioTrack</a>. <br></p>
+
+<p><strong>Note:</strong> pan will have no effect when running on iOS
+versions prior to 4.0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playBgWithLoop:" title="playBgWithLoop:"></a>
+	<h3 class="subsubtitle method-title">playBgWithLoop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play whatever background music is preloaded.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)playBgWithLoop:(bool)<em>loop</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loop</em></dt>
+			<dd><p>If true, loop the bg track.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playBuffer:volume:pitch:pan:loop:" title="playBuffer:volume:pitch:pan:loop:"></a>
+	<h3 class="subsubtitle method-title">playBuffer:volume:pitch:pan:loop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play a sound effect from a user-supplied buffer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;ALSoundSource&gt;)playBuffer:(ALBuffer *)<em>buffer</em> volume:(float)<em>volume</em> pitch:(float)<em>pitch</em> pan:(float)<em>pan</em> loop:(bool)<em>loop</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buffer</em></dt>
+			<dd><p>The buffer containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>volume</em></dt>
+			<dd><p>The volume (gain) to play at (0.0 - 1.0).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pitch</em></dt>
+			<dd><p>The pitch to play at (1.0 = normal pitch).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pan</em></dt>
+			<dd><p>Left-right panning (-1.0 = far left, 1.0 = far right).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loop</em></dt>
+			<dd><p>If TRUE, the sound will loop until you call &ldquo;stop&rdquo; on the returned sound source.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The sound source being used for playback, or nil if an error occurred (You&rsquo;ll need to
+keep this if you want to be able to stop a looped playback).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playEffect:" title="playEffect:"></a>
+	<h3 class="subsubtitle method-title">playEffect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play a sound effect with volume 1.0, pitch 1.0, pan 0.0, loop NO. The sound will be loaded
+and cached if it wasn&rsquo;t already.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;ALSoundSource&gt;)playEffect:(NSString *)<em>filePath</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path containing the sound data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The sound source being used for playback, or nil if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playEffect:loop:" title="playEffect:loop:"></a>
+	<h3 class="subsubtitle method-title">playEffect:loop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play a sound effect with volume 1.0, pitch 1.0, pan 0.0. The sound will be loaded and cached
+if it wasn&rsquo;t already.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;ALSoundSource&gt;)playEffect:(NSString *)<em>filePath</em> loop:(bool)<em>loop</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loop</em></dt>
+			<dd><p>If TRUE, the sound will loop until you call &ldquo;stop&rdquo; on the returned sound source.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The sound source being used for playback, or nil if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playEffect:volume:pitch:pan:loop:" title="playEffect:volume:pitch:pan:loop:"></a>
+	<h3 class="subsubtitle method-title">playEffect:volume:pitch:pan:loop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play a sound effect. The sound will be loaded and cached if it wasn&rsquo;t already.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id&lt;ALSoundSource&gt;)playEffect:(NSString *)<em>filePath</em> volume:(float)<em>volume</em> pitch:(float)<em>pitch</em> pan:(float)<em>pan</em> loop:(bool)<em>loop</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>volume</em></dt>
+			<dd><p>The volume (gain) to play at (0.0 - 1.0).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pitch</em></dt>
+			<dd><p>The pitch to play at (1.0 = normal pitch).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pan</em></dt>
+			<dd><p>Left-right panning (-1.0 = far left, 1.0 = far right).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>loop</em></dt>
+			<dd><p>If TRUE, the sound will loop until you call &ldquo;stop&rdquo; on the returned sound source.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The sound source being used for playback, or nil if an error occurred (You&rsquo;ll need to
+keep this if you want to be able to stop a looped playback).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadBg:" title="preloadBg:"></a>
+	<h3 class="subsubtitle method-title">preloadBg:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Preload background music.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadBg:(NSString *)<em>path</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path containing the background music.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> only <strong>ONE</strong> background music
+file may be played or preloaded at a time via OALSimpleAudio.
+If you play or preload another file, the one currently playing
+will stop.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadBg:seekTime:" title="preloadBg:seekTime:"></a>
+	<h3 class="subsubtitle method-title">preloadBg:seekTime:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Preload background music.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)preloadBg:(NSString *)<em>path</em> seekTime:(NSTimeInterval)<em>seekTime</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path containing the background music.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seekTime</em></dt>
+			<dd><p>the position in the file to start playing at.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><strong>Note:</strong> only <strong>ONE</strong> background music
+file may be played or preloaded at a time via OALSimpleAudio.
+If you play or preload another file, the one currently playing
+will stop.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadEffect:" title="preloadEffect:"></a>
+	<h3 class="subsubtitle method-title">preloadEffect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Preload and cache a sound effect for later playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (ALBuffer *)preloadEffect:(NSString *)<em>filePath</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path containing the sound data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadEffect:reduceToMono:" title="preloadEffect:reduceToMono:"></a>
+	<h3 class="subsubtitle method-title">preloadEffect:reduceToMono:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Preload and cache a sound effect for later playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (ALBuffer *)preloadEffect:(NSString *)<em>filePath</em> reduceToMono:(bool)<em>reduceToMono</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceToMono</em></dt>
+			<dd><p>If true, reduce the sample to mono
+(stereo samples don&rsquo;t support panning or positional audio).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadEffect:reduceToMono:completionBlock:" title="preloadEffect:reduceToMono:completionBlock:"></a>
+	<h3 class="subsubtitle method-title">preloadEffect:reduceToMono:completionBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronous preload and cache sound effect for later playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)preloadEffect:(NSString *)<em>filePath</em> reduceToMono:(bool)<em>reduceToMono</em> completionBlock:(void ( ^ ) ( ALBuffer *))<em>completionBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>an NSString with the path containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceToMono</em></dt>
+			<dd><p>If true, reduce the sample to mono
+(stereo samples don&rsquo;t support panning or positional audio).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>Executed when loading is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadEffects:reduceToMono:progressBlock:" title="preloadEffects:reduceToMono:progressBlock:"></a>
+	<h3 class="subsubtitle method-title">preloadEffects:reduceToMono:progressBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronous preload and cache multiple sound effects for later playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)preloadEffects:(NSArray *)<em>filePaths</em> reduceToMono:(bool)<em>reduceToMono</em> progressBlock:(void ( ^ ) ( NSUInteger progress , NSUInteger successCount , NSUInteger total ))<em>progressBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePaths</em></dt>
+			<dd><p>An NSArray of NSStrings with the paths containing the sound data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceToMono</em></dt>
+			<dd><p>If true, reduce the samples to mono
+(stereo samples don&rsquo;t support panning or positional audio).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>progressBlock</em></dt>
+			<dd><p>Executed regularly while file loading is in progress.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetToDefault" title="resetToDefault"></a>
+	<h3 class="subsubtitle method-title">resetToDefault</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reset everything in this object to its default state.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)resetToDefault</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopAllEffects" title="stopAllEffects"></a>
+	<h3 class="subsubtitle method-title">stopAllEffects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop ALL sound effect playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopAllEffects</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopBg" title="stopBg"></a>
+	<h3 class="subsubtitle method-title">stopBg</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop the background music playback and rewind.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopBg</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopEverything" title="stopEverything"></a>
+	<h3 class="subsubtitle method-title">stopEverything</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop all effects and bg music.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)stopEverything</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unloadAllEffects" title="unloadAllEffects"></a>
+	<h3 class="subsubtitle method-title">unloadAllEffects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unload all preloaded effects that are not currently being played (<a href="#//api/name/paused">paused</a> or not).
+Turning on debug logging will show which effects were not unloaded.
+It is useful to put a call to this method in
+&ldquo;applicationDidReceiveMemoryWarning&rdquo; in your app delegate.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)unloadAllEffects</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unloadEffect:" title="unloadEffect:"></a>
+	<h3 class="subsubtitle method-title">unloadEffect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unload a preloaded effect. Only unloads if no source is currently playing
+that effect (or <a href="#//api/name/paused">paused</a> with the effect loaded).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)unloadEffect:(NSString *)<em>filePath</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path containing the sound data that was previously loaded.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the effect was unloaded. Turn on debug logging to see why an
+effect was not unloaded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSimpleAudio.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

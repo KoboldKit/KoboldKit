@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKTilemapLayerNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerNode</TokenIdentifier>
+			<Abstract type="html">Common base class for both KKTilemapObjectLayerNode and KKTilemapTileLayerNode</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setLayer:</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/layer</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/layer</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setTilemapNode:</TokenIdentifier>
+			<Abstract type="html">The layer's tilemap node.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">The layer's tilemap node.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/tilemapNode</TokenIdentifier>
+			<Abstract type="html">The layer's tilemap node.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">The layer's tilemap node.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/tilemapNode</TokenIdentifier>
+			<Abstract type="html">The layer's tilemap node.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">The layer's tilemap node.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapNode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/tileCoordForPoint:</TokenIdentifier>
+			<Abstract type="html">Converts a point from scene coordinates to tile coordinates within the layer.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)tileCoordForPoint:(CGPoint)point</Declaration>
+			
+			
+			<Anchor>//api/name/tileCoordForPoint:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,734 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>KKEntity Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KKEntity Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/boundingBox">&nbsp;&nbsp;&nbsp;&nbsp;boundingBox</option>
+	
+	<option value="//api/name/initialPosition">&nbsp;&nbsp;&nbsp;&nbsp;initialPosition</option>
+	
+	<option value="//api/name/maximumVelocity">&nbsp;&nbsp;&nbsp;&nbsp;maximumVelocity</option>
+	
+	<option value="//api/name/node">&nbsp;&nbsp;&nbsp;&nbsp;node</option>
+	
+	<option value="//api/name/position">&nbsp;&nbsp;&nbsp;&nbsp;position</option>
+	
+	<option value="//api/name/positionInPixels">&nbsp;&nbsp;&nbsp;&nbsp;positionInPixels</option>
+	
+	<option value="//api/name/spawnPosition">&nbsp;&nbsp;&nbsp;&nbsp;spawnPosition</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	<option value="//api/name/velocity">&nbsp;&nbsp;&nbsp;&nbsp;velocity</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/entityWithNode:tilemapObject:">&nbsp;&nbsp;&nbsp;&nbsp;+ entityWithNode:tilemapObject:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundingBox">boundingBox</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialPosition">initialPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumVelocity">maximumVelocity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/node">node</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/position">position</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/positionInPixels">positionInPixels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnPosition">spawnPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/velocity">velocity</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityWithNode:tilemapObject:">entityWithNode:tilemapObject:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="KKEntity Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KKEntity Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">KKEntity.h<br />KKEntity.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An entity represents an object in a game world which is used to <a href="#//api/name/position">position</a> its view (<a href="#//api/name/node">node</a>), check for collisions
+and perform any other custom game logic.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/velocity">&nbsp;&nbsp;velocity</a></code>
+		<span class="tooltip"><p>Current velocity.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumVelocity">&nbsp;&nbsp;maximumVelocity</a></code>
+		<span class="tooltip"><p>Maximum <a href="#//api/name/velocity">velocity</a>, in positive direction (will also cap negative <a href="#//api/name/velocity">velocity</a> accordingly). Defaults to INFINITY.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/position">&nbsp;&nbsp;position</a></code>
+		<span class="tooltip"><p>Current position.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/positionInPixels">&nbsp;&nbsp;positionInPixels</a></code>
+		<span class="tooltip"><p>Current <a href="#//api/name/position">position</a>, rounded to the next nearest pixel coordinate (ie 1.0, 1.5, 2.0, 2.5, etc).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spawnPosition">&nbsp;&nbsp;spawnPosition</a></code>
+		<span class="tooltip"><p>Position the object should appear in the world. Unless modified it is identical to <a href="#//api/name/initialPosition">initialPosition</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initialPosition">&nbsp;&nbsp;initialPosition</a></code>
+		<span class="tooltip"><p>Initial <a href="#//api/name/position">position</a> is normally the <a href="#//api/name/position">position</a> the object was positioned at in the editor.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/boundingBox">&nbsp;&nbsp;boundingBox</a></code>
+		<span class="tooltip"><p>Bounding box determines how big the entity is, used for collision detection.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/node">&nbsp;&nbsp;node</a></code>
+		<span class="tooltip"><p>The node (if any) that represents the object visually.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+		<span class="tooltip"><p>Type determines certain behaviors.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityWithNode:tilemapObject:">+&nbsp;entityWithNode:tilemapObject:</a></code>
+		<span class="tooltip"><p>Creates an entity.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/boundingBox" title="boundingBox"></a>
+	<h3 class="subsubtitle method-title">boundingBox</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Bounding box determines how big the entity is, used for collision detection.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGRect boundingBox</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initialPosition" title="initialPosition"></a>
+	<h3 class="subsubtitle method-title">initialPosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initial <a href="#//api/name/position">position</a> is normally the <a href="#//api/name/position">position</a> the object was positioned at in the editor.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) CGPoint initialPosition</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumVelocity" title="maximumVelocity"></a>
+	<h3 class="subsubtitle method-title">maximumVelocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Maximum <a href="#//api/name/velocity">velocity</a>, in positive direction (will also cap negative <a href="#//api/name/velocity">velocity</a> accordingly). Defaults to INFINITY.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGPoint maximumVelocity</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/node" title="node"></a>
+	<h3 class="subsubtitle method-title">node</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The node (if any) that represents the object visually.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic, weak) SKNode *node</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/position" title="position"></a>
+	<h3 class="subsubtitle method-title">position</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current position.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGPoint position</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/positionInPixels" title="positionInPixels"></a>
+	<h3 class="subsubtitle method-title">positionInPixels</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current <a href="#//api/name/position">position</a>, rounded to the next nearest pixel coordinate (ie 1.0, 1.5, 2.0, 2.5, etc).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGPoint positionInPixels</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spawnPosition" title="spawnPosition"></a>
+	<h3 class="subsubtitle method-title">spawnPosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Position the object should appear in the world. Unless modified it is identical to <a href="#//api/name/initialPosition">initialPosition</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGPoint spawnPosition</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Type determines certain behaviors.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) KKEntityType type</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/velocity" title="velocity"></a>
+	<h3 class="subsubtitle method-title">velocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current velocity.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (atomic) CGPoint velocity</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/entityWithNode:tilemapObject:" title="entityWithNode:tilemapObject:"></a>
+	<h3 class="subsubtitle method-title">entityWithNode:tilemapObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an entity.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)entityWithNode:(SKNode *)<em>node</em> tilemapObject:(KKTilemapObject *)<em>tilemapObject</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>node</em></dt>
+			<dd><p>The <a href="#//api/name/node">node</a> that represents the entity in the scene.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tilemapObject</em></dt>
+			<dd><p>The tilemap object that spawned the <a href="#//api/name/node">node</a> and entity.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

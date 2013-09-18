@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/SKNode+KoboldKit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/SKNode(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>
+			
+			<NodeRef refid="55"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/centerOnNode:</TokenIdentifier>
+			<Abstract type="html">Changes the receiver's position so that it is centered on the given node.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)centerOnNode:(SKNode *)node</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node to center on.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/centerOnNode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/didMoveToParent</TokenIdentifier>
+			<Abstract type="html">Called after addChild / insertChild. The self.scene and self.parent properties are valid in this method.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)didMoveToParent</Declaration>
+			
+			
+			<Anchor>//api/name/didMoveToParent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/willMoveFromParent</TokenIdentifier>
+			<Abstract type="html">Called after removeFromParent and other remove child methods. The self.scene and self.parent properties are still valid.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)willMoveFromParent</Declaration>
+			
+			
+			<Anchor>//api/name/willMoveFromParent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/setController:</TokenIdentifier>
+			<Abstract type="html">the node's controller object.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">the node's controller object.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/controller</TokenIdentifier>
+			<Abstract type="html">the node's controller object.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">the node's controller object.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SKNode(KoboldKit)/controller</TokenIdentifier>
+			<Abstract type="html">the node's controller object.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) KKNodeController *controller</Declaration>
+			
+			<ReturnValue><Abstract type="html">the node's controller object.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/createController</TokenIdentifier>
+			<Abstract type="html">Creates node controller if one does not exist yet. Returns the new or existing instance.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (KKNodeController *)createController</Declaration>
+			
+			
+			<Anchor>//api/name/createController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeController</TokenIdentifier>
+			<Abstract type="html">Removes the controller from the node.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeController</Declaration>
+			
+			
+			<Anchor>//api/name/removeController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/setModel:</TokenIdentifier>
+			<Abstract type="html">The node's model</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The node's model</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/model</TokenIdentifier>
+			<Abstract type="html">The node's model</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The node's model</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SKNode(KoboldKit)/model</TokenIdentifier>
+			<Abstract type="html">The node's model</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The node's model</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/setInfo:</TokenIdentifier>
+			<Abstract type="html">The node's model</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *info</Declaration>
+			
+			<ReturnValue><Abstract type="html">The node's model</Abstract></ReturnValue>
+			<Anchor>//api/name/info</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/info</TokenIdentifier>
+			<Abstract type="html">The node's model</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *info</Declaration>
+			
+			<ReturnValue><Abstract type="html">The node's model</Abstract></ReturnValue>
+			<Anchor>//api/name/info</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SKNode(KoboldKit)/info</TokenIdentifier>
+			<Abstract type="html">The node's model</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKModel *info</Declaration>
+			
+			<ReturnValue><Abstract type="html">The node's model</Abstract></ReturnValue>
+			<Anchor>//api/name/info</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/pauseControllersInNodeTree:</TokenIdentifier>
+			<Abstract type="html">Pauses all controllers of the nodes beginning with rootNode.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)pauseControllersInNodeTree:(SKNode *)rootNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rootNode</Name>
+					<Abstract type="html">The node whose node tree will be paused.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pauseControllersInNodeTree:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/resumeControllersInNodeTree:</TokenIdentifier>
+			<Abstract type="html">Resumes all controllers of the nodes beginning with rootNode.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)resumeControllersInNodeTree:(SKNode *)rootNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rootNode</Name>
+					<Abstract type="html">The node whose node tree will be resumed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resumeControllersInNodeTree:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/setKkScene:</TokenIdentifier>
+			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			
+			
+			<Anchor>//api/name/kkScene</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/kkScene</TokenIdentifier>
+			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			
+			
+			<Anchor>//api/name/kkScene</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/SKNode(KoboldKit)/kkScene</TokenIdentifier>
+			<Abstract type="html">Returns the node's scene object, cast to KKScene. Use this instead of scene to use KKScene's methods and properties.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) KKScene *kkScene</Declaration>
+			
+			
+			<Anchor>//api/name/kkScene</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehavior:</TokenIdentifier>
+			<Abstract type="html">Adds a behavior to the node. The behavior will be copied.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehavior:(KKBehavior *)behavior</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBehavior:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehavior:withKey:</TokenIdentifier>
+			<Abstract type="html">Adds a behavior to the node with a key. Replaces any existing behavior with the same key. The behavior will be copied.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehavior:(KKBehavior *)behavior withKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique key used to identify the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBehavior:withKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/addBehaviors:</TokenIdentifier>
+			<Abstract type="html">Adds multiple behaviors from an array. The behaviors will be copied.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)addBehaviors:(NSArray *)behaviors</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behaviors</Name>
+					<Abstract type="html">An array containing behaviors to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBehaviors:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/behaviorForKey:</TokenIdentifier>
+			<Abstract type="html">The behavior for the key. Returns nil if no behavior with that key was found.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)behaviorForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A unique key identifying the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The behavior for the key. Returns nil if no behavior with that key was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviorForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/behaviorKindOfClass:</TokenIdentifier>
+			<Abstract type="html">The first behavior of the given kind of class. Returns nil if no behavior with that class was found.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)behaviorKindOfClass:(Class)behaviorClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behaviorClass</Name>
+					<Abstract type="html">The Class of the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The first behavior of the given kind of class. Returns nil if no behavior with that class was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviorKindOfClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/behaviorMemberOfClass:</TokenIdentifier>
+			<Abstract type="html">The first behavior that is a member of the given class. Returns nil if no behavior with that class was found.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (id)behaviorMemberOfClass:(Class)behaviorClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behaviorClass</Name>
+					<Abstract type="html">The Class of the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The first behavior that is a member of the given class. Returns nil if no behavior with that class was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviorMemberOfClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/hasBehaviors</TokenIdentifier>
+			<Abstract type="html">YES if the node has one or more behaviors.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasBehaviors</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the node has one or more behaviors.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasBehaviors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeBehavior:</TokenIdentifier>
+			<Abstract type="html">Removes the behavior.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeBehavior:(KKBehavior *)behavior</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeBehavior:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeBehaviorForKey:</TokenIdentifier>
+			<Abstract type="html">Removes the behavior with the given key.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeBehaviorForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The unique key identifying the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeBehaviorForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeBehaviorWithClass:</TokenIdentifier>
+			<Abstract type="html">Removes the first behavior with the given class.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeBehaviorWithClass:(Class)behaviorClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behaviorClass</Name>
+					<Abstract type="html">The Class of the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeBehaviorWithClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/removeAllBehaviors</TokenIdentifier>
+			<Abstract type="html">Removes all behaviors from the node.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllBehaviors</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllBehaviors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/observeInputEvents</TokenIdentifier>
+			<Abstract type="html">Receiver starts receiving input events. The receiver will receive any event method for touches,
+accelerometer, keyboard, mouse by simply implementing the corresponding input event method (ie touchesBegan:withEvent:).</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeInputEvents</Declaration>
+			
+			
+			<Anchor>//api/name/observeInputEvents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardInputEvents</TokenIdentifier>
+			<Abstract type="html">Receiver stops receiving all input events.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)disregardInputEvents</Declaration>
+			
+			
+			<Anchor>//api/name/disregardInputEvents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/observeSceneEvents</TokenIdentifier>
+			<Abstract type="html">Receiver starts receiving all scene events. These events include update, didSimulatePhysics, didEvaluateActions as well as
+scene resizing and scene move to/from view. Receiver only needs to implement the corresponding event methods.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeSceneEvents</Declaration>
+			
+			
+			<Anchor>//api/name/observeSceneEvents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardSceneEvents</TokenIdentifier>
+			<Abstract type="html">Receiver stops receiving all scene events.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)disregardSceneEvents</Declaration>
+			
+			
+			<Anchor>//api/name/disregardSceneEvents</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/observeNotification:selector:</TokenIdentifier>
+			<Abstract type="html">Receiver observes notifications posted by notification center.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSelector</Name>
+					<Abstract type="html">The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/observeNotification:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/observeNotification:selector:object:</TokenIdentifier>
+			<Abstract type="html">Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector object:(id)notificationSender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSelector</Name>
+					<Abstract type="html">The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSender</Name>
+					<Abstract type="html">The notification sender object whose notifications are observed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/observeNotification:selector:object:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardNotification:</TokenIdentifier>
+			<Abstract type="html">Receiver disregards all notifications with the given name.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)disregardNotification:(NSString *)notificationName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/disregardNotification:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardNotification:object:</TokenIdentifier>
+			<Abstract type="html">Receiver disregards notifications with the given name coming from a specific object.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)disregardNotification:(NSString *)notificationName object:(id)notificationSender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSender</Name>
+					<Abstract type="html">The notification sender object whose notifications are observed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/disregardNotification:object:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/disregardAllNotifications</TokenIdentifier>
+			<Abstract type="html">Receiver disregards any and all notification sent by the notification center.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)disregardAllNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/disregardAllNotifications</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/physicsBodyWithEdgeLoopFromPath:</TokenIdentifier>
+			<Abstract type="html">Creates a physics Body with edge loop shape. Also assigns the physics body to the node's self.physicsBody property.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (SKPhysicsBody *)physicsBodyWithEdgeLoopFromPath:(CGPathRef)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The CGPath with edge points.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly created SKPhysicsBody.</Abstract></ReturnValue>
+			<Anchor>//api/name/physicsBodyWithEdgeLoopFromPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/physicsBodyWithEdgeChainFromPath:</TokenIdentifier>
+			<Abstract type="html">Creates a physics Body with edge chain shape. Also assigns the physics body to the node's self.physicsBody property.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (SKPhysicsBody *)physicsBodyWithEdgeChainFromPath:(CGPathRef)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The CGPath with chain points.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly created SKPhysicsBody.</Abstract></ReturnValue>
+			<Anchor>//api/name/physicsBodyWithEdgeChainFromPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/physicsBodyWithRectangleOfSize:</TokenIdentifier>
+			<Abstract type="html">Creates a physics Body with rectangle shape. Also assigns the physics body to the node's self.physicsBody property.</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (SKPhysicsBody *)physicsBodyWithRectangleOfSize:(CGSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>size</Name>
+					<Abstract type="html">The size of the rectangle.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">size The newly created SKPhysicsBody.</Abstract></ReturnValue>
+			<Anchor>//api/name/physicsBodyWithRectangleOfSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/physicsBodyWithTilemapObject:</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (SKPhysicsBody *)physicsBodyWithTilemapObject:(KKTilemapObject *)tilemapObject</Declaration>
+			
+			
+			<Anchor>//api/name/physicsBodyWithTilemapObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/playSoundFileNamed:</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
+			
+			<Declaration>- (void)playSoundFileNamed:(NSString *)soundFile</Declaration>
+			
+			
+			<Anchor>//api/name/playSoundFileNamed:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

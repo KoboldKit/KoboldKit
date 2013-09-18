@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKButtonBehavior.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKButtonBehavior</TokenIdentifier>
+			<Abstract type="html">KKButtonBehavior turns any node into a button. Touch/Click on the node while be detected, the node is scaled while selected.
+Scaling is optional and can be modified/disabled with the selectedScale property.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setSelectedTexture:</TokenIdentifier>
+			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			
+			
+			<Anchor>//api/name/selectedTexture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/selectedTexture</TokenIdentifier>
+			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			
+			
+			<Anchor>//api/name/selectedTexture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/selectedTexture</TokenIdentifier>
+			<Abstract type="html">Set the selected texture if you want this to be exchanged with the sprite's texture during selection. Only works with SKSpriteNode nodes.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) SKTexture *selectedTexture</Declaration>
+			
+			
+			<Anchor>//api/name/selectedTexture</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setSelectedScale:</TokenIdentifier>
+			<Abstract type="html">Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat selectedScale</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current focus scale.</Abstract></ReturnValue>
+			<Anchor>//api/name/selectedScale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/selectedScale</TokenIdentifier>
+			<Abstract type="html">Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat selectedScale</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current focus scale.</Abstract></ReturnValue>
+			<Anchor>//api/name/selectedScale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/selectedScale</TokenIdentifier>
+			<Abstract type="html">Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) CGFloat selectedScale</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current focus scale.</Abstract></ReturnValue>
+			<Anchor>//api/name/selectedScale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setSelected:</TokenIdentifier>
+			<Abstract type="html">YES if the button is currently selected.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) BOOL selected</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button is currently selected.</Abstract></ReturnValue>
+			<Anchor>//api/name/selected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/selected</TokenIdentifier>
+			<Abstract type="html">YES if the button is currently selected.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) BOOL selected</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button is currently selected.</Abstract></ReturnValue>
+			<Anchor>//api/name/selected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/selected</TokenIdentifier>
+			<Abstract type="html">YES if the button is currently selected.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, readonly) BOOL selected</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button is currently selected.</Abstract></ReturnValue>
+			<Anchor>//api/name/selected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setExecutesWhenPressed:</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
+			<Anchor>//api/name/executesWhenPressed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/executesWhenPressed</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
+			<Anchor>//api/name/executesWhenPressed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/executesWhenPressed</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL executesWhenPressed</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute when pressed. NO if the button will execute when released.</Abstract></ReturnValue>
+			<Anchor>//api/name/executesWhenPressed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setContinuous:</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification continuously as long as it is pressed. It will also send the "released" notification
+when it is no longer pressed.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL continuous</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute continously while pressed.</Abstract></ReturnValue>
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/continuous</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification continuously as long as it is pressed. It will also send the "released" notification
+when it is no longer pressed.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL continuous</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute continously while pressed.</Abstract></ReturnValue>
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKButtonBehavior/continuous</TokenIdentifier>
+			<Abstract type="html">If enabled, the button will send the execute notification continuously as long as it is pressed. It will also send the "released" notification
+when it is no longer pressed.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic) BOOL continuous</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the button will execute continously while pressed.</Abstract></ReturnValue>
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/beginSelect</TokenIdentifier>
+			<Abstract type="html">Will make the node enter the selected state. This is normally used internally, but you may want to use this to highlight buttons,
+for example in a tutorial. You can also override the method in a subclass to perform your own selection style, perhaps changing texture or color.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginSelect</Declaration>
+			
+			
+			<Anchor>//api/name/beginSelect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/endSelect</TokenIdentifier>
+			<Abstract type="html">Will make the node exit the selected state. This is normally used internally, but may be helpful for tutorials (see beginSelect.
+You can override the method in a subclass to perform your own deselection style.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)endSelect</Declaration>
+			
+			
+			<Anchor>//api/name/endSelect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/execute</TokenIdentifier>
+			<Abstract type="html">Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
+You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call [super execute]
+in your implementation.</Abstract>
+			<DeclaredIn>KKButtonBehavior.h</DeclaredIn>			
+			
+			<Declaration>- (void)execute</Declaration>
+			
+			
+			<Anchor>//api/name/execute</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
+			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didJoinController</Declaration>
+			
+			
+			<Anchor>//api/name/didJoinController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/didLeaveController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
+			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didLeaveController</Declaration>
+			
+			
+			<Anchor>//api/name/didLeaveController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/didChangeEnabledState</TokenIdentifier>
+			<Abstract type="html">Sent when the enabled state of the behavior was changed.</Abstract>
+			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)didChangeEnabledState</Declaration>
+			
+			
+			<Anchor>//api/name/didChangeEnabledState</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKButtonBehavior/setEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract>
+			<DeclaredIn>KKButtonBehavior.m</DeclaredIn>			
+			
+			<Declaration>- (void)setEnabled:(BOOL)enabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don't receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/setEnabled:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

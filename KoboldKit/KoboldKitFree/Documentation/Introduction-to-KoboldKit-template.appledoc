@@ -1,0 +1,20 @@
+Overview
+==========
+ 
+Kobold Kit adds:
+
+- MVC framework with controllers, models and behaviors
+- Tilemap rendering with endless (wrap-around) and parallax scrolling
+- Input, Scene and Update Event forwarding
+- lots more...
+
+Kobold Kit includes several standard behaviors which can be added to a node to add predefined "behavior".
+
+http://koboldkit.com
+
+Troubleshooting
+---------
+
+- In your KKscene subclass you must call the super implementation of event methods!
+-- In particular: update, didEvaluateActions, didSimulatePhysics, didChangeSize, didMoveToView, willMoveFromView, etc.
+-- If you don't, then controllers & behaviors and other things might not work correctly

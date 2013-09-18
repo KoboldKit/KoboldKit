@@ -1,0 +1,1676 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OpenALManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OpenALManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/availableCaptureDevices">&nbsp;&nbsp;&nbsp;&nbsp;availableCaptureDevices</option>
+	
+	<option value="//api/name/availableDevices">&nbsp;&nbsp;&nbsp;&nbsp;availableDevices</option>
+	
+	<option value="//api/name/currentContext">&nbsp;&nbsp;&nbsp;&nbsp;currentContext</option>
+	
+	<option value="//api/name/defaultCaptureDeviceSpecifier">&nbsp;&nbsp;&nbsp;&nbsp;defaultCaptureDeviceSpecifier</option>
+	
+	<option value="//api/name/defaultDeviceSpecifier">&nbsp;&nbsp;&nbsp;&nbsp;defaultDeviceSpecifier</option>
+	
+	<option value="//api/name/devices">&nbsp;&nbsp;&nbsp;&nbsp;devices</option>
+	
+	<option value="//api/name/mixerOutputFrequency">&nbsp;&nbsp;&nbsp;&nbsp;mixerOutputFrequency</option>
+	
+	<option value="//api/name/realCurrentContext">&nbsp;&nbsp;&nbsp;&nbsp;realCurrentContext</option>
+	
+	<option value="//api/name/renderingQuality">&nbsp;&nbsp;&nbsp;&nbsp;renderingQuality</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- addSuspendListener:</option>
+	
+	<option value="//api/name/bufferAsyncFromFile:reduceToMono:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferAsyncFromFile:reduceToMono:target:selector:</option>
+	
+	<option value="//api/name/bufferAsyncFromFile:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferAsyncFromFile:target:selector:</option>
+	
+	<option value="//api/name/bufferAsyncFromUrl:reduceToMono:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferAsyncFromUrl:reduceToMono:target:selector:</option>
+	
+	<option value="//api/name/bufferAsyncFromUrl:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferAsyncFromUrl:target:selector:</option>
+	
+	<option value="//api/name/bufferFromFile:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferFromFile:</option>
+	
+	<option value="//api/name/bufferFromFile:reduceToMono:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferFromFile:reduceToMono:</option>
+	
+	<option value="//api/name/bufferFromUrl:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferFromUrl:</option>
+	
+	<option value="//api/name/bufferFromUrl:reduceToMono:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferFromUrl:reduceToMono:</option>
+	
+	<option value="//api/name/clearAllBuffers">&nbsp;&nbsp;&nbsp;&nbsp;- clearAllBuffers</option>
+	
+	<option value="//api/name/notifyDeviceDeallocating:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyDeviceDeallocating:</option>
+	
+	<option value="//api/name/notifyDeviceInitializing:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyDeviceInitializing:</option>
+	
+	<option value="//api/name/removeSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSuspendListener:</option>
+	
+	<option value="//api/name/setSuspended:">&nbsp;&nbsp;&nbsp;&nbsp;- setSuspended:</option>
+	
+	<option value="//api/name/suspended">&nbsp;&nbsp;&nbsp;&nbsp;- suspended</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/availableCaptureDevices">availableCaptureDevices</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/availableDevices">availableDevices</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentContext">currentContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultCaptureDeviceSpecifier">defaultCaptureDeviceSpecifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultDeviceSpecifier">defaultDeviceSpecifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/devices">devices</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mixerOutputFrequency">mixerOutputFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/realCurrentContext">realCurrentContext</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renderingQuality">renderingQuality</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSuspendListener:">addSuspendListener:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferAsyncFromFile:reduceToMono:target:selector:">bufferAsyncFromFile:reduceToMono:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferAsyncFromFile:target:selector:">bufferAsyncFromFile:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferAsyncFromUrl:reduceToMono:target:selector:">bufferAsyncFromUrl:reduceToMono:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferAsyncFromUrl:target:selector:">bufferAsyncFromUrl:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferFromFile:">bufferFromFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferFromFile:reduceToMono:">bufferFromFile:reduceToMono:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferFromUrl:">bufferFromUrl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferFromUrl:reduceToMono:">bufferFromUrl:reduceToMono:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearAllBuffers">clearAllBuffers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyDeviceDeallocating:">notifyDeviceDeallocating:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyDeviceInitializing:">notifyDeviceInitializing:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSuspendListener:">removeSuspendListener:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSuspended:">setSuspended:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/suspended">suspended</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OpenALManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OpenALManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/OALSuspendManager.html">OALSuspendManager</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OpenALManager.h<br />OpenALManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Manager class for OpenAL objects (ObjectAL).
+Keeps track of devices that have been opened, and allows high level OpenAL management. <br>
+Provides methods for loading ALBuffer objects from audio files. <br>
+The OpenAL 1.1 specification is available at
+<a href="http://connect.creativelabs.com/openal/Documentation">http://connect.creativelabs.com/openal/Documentation</a> <br>
+Be sure to read through it (especially the part about distance models) as ObjectAL follows the
+OpenAL object model. <br></p>
+
+<p>Alternatively, you may opt to use <a href="../Classes/OALSimpleAudio.html">OALSimpleAudio</a> for a simpler interface.</p>
+
+<p>(INTERNAL USE) Private methods for OpenALManager.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/availableDevices">&nbsp;&nbsp;availableDevices</a></code>
+		<span class="tooltip"><p>List of available playback <a href="#//api/name/devices">devices</a> (NSString*).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/availableCaptureDevices">&nbsp;&nbsp;availableCaptureDevices</a></code>
+		<span class="tooltip"><p>List of available capture <a href="#//api/name/devices">devices</a> (NSString*).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentContext">&nbsp;&nbsp;currentContext</a></code>
+		<span class="tooltip"><p>The current context (some context operations require the context to be the &ldquo;current&rdquo; one).
+WEAK reference.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultCaptureDeviceSpecifier">&nbsp;&nbsp;defaultCaptureDeviceSpecifier</a></code>
+		<span class="tooltip"><p>Name of the default capture device.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultDeviceSpecifier">&nbsp;&nbsp;defaultDeviceSpecifier</a></code>
+		<span class="tooltip"><p>Name of the default playback device.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/devices">&nbsp;&nbsp;devices</a></code>
+		<span class="tooltip"><p>List of all open devices (ALDevice*).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mixerOutputFrequency">&nbsp;&nbsp;mixerOutputFrequency</a></code>
+		<span class="tooltip"><p>The frequency of the output mixer.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/renderingQuality">&nbsp;&nbsp;renderingQuality</a></code>
+		<span class="tooltip"><p>The rendering quality.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferFromFile:">&ndash;&nbsp;bufferFromFile:</a></code>
+		<span class="tooltip"><p>Load an OpenAL buffer with the contents of an audio file.
+The buffer&rsquo;s name will be the fully qualified URL of the path.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferFromFile:reduceToMono:">&ndash;&nbsp;bufferFromFile:reduceToMono:</a></code>
+		<span class="tooltip"><p>Load an OpenAL buffer with the contents of an audio file.
+The buffer&rsquo;s name will be the fully qualified URL of the path.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferFromUrl:">&ndash;&nbsp;bufferFromUrl:</a></code>
+		<span class="tooltip"><p>Load an OpenAL buffer with the contents of an audio file.
+The buffer&rsquo;s name will be the fully qualified URL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferFromUrl:reduceToMono:">&ndash;&nbsp;bufferFromUrl:reduceToMono:</a></code>
+		<span class="tooltip"><p>Load an OpenAL buffer with the contents of an audio file.
+The buffer&rsquo;s name will be the fully qualified URL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferAsyncFromFile:target:selector:">&ndash;&nbsp;bufferAsyncFromFile:target:selector:</a></code>
+		<span class="tooltip"><p>Load an OpenAL buffer with the contents of an audio file asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. <br>
+The buffer&rsquo;s name will be the fully qualified URL of the path. <br>
+Returns the fully qualified URL of the path, which you can match up to the buffer name in your
+callback method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferAsyncFromFile:reduceToMono:target:selector:">&ndash;&nbsp;bufferAsyncFromFile:reduceToMono:target:selector:</a></code>
+		<span class="tooltip"><p>Load an OpenAL buffer with the contents of an audio file asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. <br>
+The buffer&rsquo;s name will be the fully qualified URL of the path. <br>
+Returns the fully qualified URL of the path, which you can match up to the buffer name in your
+callback method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferAsyncFromUrl:target:selector:">&ndash;&nbsp;bufferAsyncFromUrl:target:selector:</a></code>
+		<span class="tooltip"><p>Load an OpenAL buffer with the contents of a URL asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. <br>
+The buffer&rsquo;s name will be the fully qualified URL. <br>
+Returns the fully qualified URL, which you can match up to the buffer name in your callback
+method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferAsyncFromUrl:reduceToMono:target:selector:">&ndash;&nbsp;bufferAsyncFromUrl:reduceToMono:target:selector:</a></code>
+		<span class="tooltip"><p>Load an OpenAL buffer with the contents of a URL asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. <br>
+The buffer&rsquo;s name will be the fully qualified URL. <br>
+Returns the fully qualified URL, which you can match up to the buffer name in your callback
+method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearAllBuffers">&ndash;&nbsp;clearAllBuffers</a></code>
+		<span class="tooltip"><p>Clear all references to sound data from ALL buffers, managed or not.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notifyDeviceInitializing:">&ndash;&nbsp;notifyDeviceInitializing:</a></code>
+		<span class="tooltip"><p>(INTERNAL USE) Notify that a device is initializing.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notifyDeviceDeallocating:">&ndash;&nbsp;notifyDeviceDeallocating:</a></code>
+		<span class="tooltip"><p>(INTERNAL USE) Notify that a device is deallocating.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addSuspendListener:">&ndash;&nbsp;addSuspendListener:</a></code>
+		<span class="tooltip"><p>Add a listener that will receive manual suspend and interrupt events.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeSuspendListener:">&ndash;&nbsp;removeSuspendListener:</a></code>
+		<span class="tooltip"><p>Remove a registered listener.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/suspended">&ndash;&nbsp;suspended</a></code>
+		<span class="tooltip"><p>If YES, this object is suspended.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSuspended:">&ndash;&nbsp;setSuspended:</a></code>
+		<span class="tooltip"><p>(INTERNAL USE) Called by SuspendHandler.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/realCurrentContext">&nbsp;&nbsp;realCurrentContext</a></code>
+		<span class="tooltip"><p>(INTERNAL USE) Real reference to the current context.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/availableCaptureDevices" title="availableCaptureDevices"></a>
+	<h3 class="subsubtitle method-title">availableCaptureDevices</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>List of available capture <a href="#//api/name/devices">devices</a> (NSString*).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *availableCaptureDevices</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/availableDevices" title="availableDevices"></a>
+	<h3 class="subsubtitle method-title">availableDevices</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>List of available playback <a href="#//api/name/devices">devices</a> (NSString*).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *availableDevices</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentContext" title="currentContext"></a>
+	<h3 class="subsubtitle method-title">currentContext</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current context (some context operations require the context to be the &ldquo;current&rdquo; one).
+WEAK reference.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALContext *currentContext</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultCaptureDeviceSpecifier" title="defaultCaptureDeviceSpecifier"></a>
+	<h3 class="subsubtitle method-title">defaultCaptureDeviceSpecifier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Name of the default capture device.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSString *defaultCaptureDeviceSpecifier</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultDeviceSpecifier" title="defaultDeviceSpecifier"></a>
+	<h3 class="subsubtitle method-title">defaultDeviceSpecifier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Name of the default playback device.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSString *defaultDeviceSpecifier</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/devices" title="devices"></a>
+	<h3 class="subsubtitle method-title">devices</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>List of all open devices (ALDevice*).</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *devices</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mixerOutputFrequency" title="mixerOutputFrequency"></a>
+	<h3 class="subsubtitle method-title">mixerOutputFrequency</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The frequency of the output mixer.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALdouble mixerOutputFrequency</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/realCurrentContext" title="realCurrentContext"></a>
+	<h3 class="subsubtitle method-title">realCurrentContext</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(INTERNAL USE) Real reference to the current context.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALContext *realCurrentContext</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/renderingQuality" title="renderingQuality"></a>
+	<h3 class="subsubtitle method-title">renderingQuality</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The rendering quality.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALint renderingQuality</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Can be one of:
+- ALC_MAC_OSX_SPATIAL_RENDERING_QUALITY_HIGH
+- ALC_MAC_OSX_SPATIAL_RENDERING_QUALITY_LOW
+- ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addSuspendListener:" title="addSuspendListener:"></a>
+	<h3 class="subsubtitle method-title">addSuspendListener:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add a listener that will receive manual suspend and interrupt events.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listener</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listener</em></dt>
+			<dd><p>The listener to register with this handler.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferAsyncFromFile:reduceToMono:target:selector:" title="bufferAsyncFromFile:reduceToMono:target:selector:"></a>
+	<h3 class="subsubtitle method-title">bufferAsyncFromFile:reduceToMono:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load an OpenAL buffer with the contents of an audio file asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. <br>
+The buffer&rsquo;s name will be the fully qualified URL of the path. <br>
+Returns the fully qualified URL of the path, which you can match up to the buffer name in your
+callback method.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)bufferAsyncFromFile:(NSString *)<em>filePath</em> reduceToMono:(bool)<em>reduceToMono</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path of the file containing the audio data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceToMono</em></dt>
+			<dd><p>If true, reduce the sample to mono
+(stereo samples don&rsquo;t support panning or positional audio).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to call when the buffer is loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to invoke when the buffer is loaded.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The fully qualified URL of the path.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the class description note regarding sound file formats.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferAsyncFromFile:target:selector:" title="bufferAsyncFromFile:target:selector:"></a>
+	<h3 class="subsubtitle method-title">bufferAsyncFromFile:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load an OpenAL buffer with the contents of an audio file asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. <br>
+The buffer&rsquo;s name will be the fully qualified URL of the path. <br>
+Returns the fully qualified URL of the path, which you can match up to the buffer name in your
+callback method.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)bufferAsyncFromFile:(NSString *)<em>filePath</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path of the file containing the audio data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to call when the buffer is loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to invoke when the buffer is loaded.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The fully qualified URL of the path.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the class description note regarding sound file formats.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferAsyncFromUrl:reduceToMono:target:selector:" title="bufferAsyncFromUrl:reduceToMono:target:selector:"></a>
+	<h3 class="subsubtitle method-title">bufferAsyncFromUrl:reduceToMono:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load an OpenAL buffer with the contents of a URL asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. <br>
+The buffer&rsquo;s name will be the fully qualified URL. <br>
+Returns the fully qualified URL, which you can match up to the buffer name in your callback
+method.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)bufferAsyncFromUrl:(NSURL *)<em>url</em> reduceToMono:(bool)<em>reduceToMono</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL of the file containing the audio data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceToMono</em></dt>
+			<dd><p>If true, reduce the sample to mono
+(stereo samples don&rsquo;t support panning or positional audio).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to call when the buffer is loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to invoke when the buffer is loaded.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The fully qualified URL of the path.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the class description note regarding sound file formats.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferAsyncFromUrl:target:selector:" title="bufferAsyncFromUrl:target:selector:"></a>
+	<h3 class="subsubtitle method-title">bufferAsyncFromUrl:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load an OpenAL buffer with the contents of a URL asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. <br>
+The buffer&rsquo;s name will be the fully qualified URL. <br>
+Returns the fully qualified URL, which you can match up to the buffer name in your callback
+method.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)bufferAsyncFromUrl:(NSURL *)<em>url</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL of the file containing the audio data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>The target to call when the buffer is loaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to invoke when the buffer is loaded.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The fully qualified URL of the path.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the class description note regarding sound file formats.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferFromFile:" title="bufferFromFile:"></a>
+	<h3 class="subsubtitle method-title">bufferFromFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load an OpenAL buffer with the contents of an audio file.
+The buffer&rsquo;s name will be the fully qualified URL of the path.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (ALBuffer *)bufferFromFile:(NSString *)<em>filePath</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path of the file containing the audio data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/ALBuffer.html">ALBuffer</a> containing the audio data.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the class description note regarding sound file formats.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferFromFile:reduceToMono:" title="bufferFromFile:reduceToMono:"></a>
+	<h3 class="subsubtitle method-title">bufferFromFile:reduceToMono:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load an OpenAL buffer with the contents of an audio file.
+The buffer&rsquo;s name will be the fully qualified URL of the path.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (ALBuffer *)bufferFromFile:(NSString *)<em>filePath</em> reduceToMono:(bool)<em>reduceToMono</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filePath</em></dt>
+			<dd><p>The path of the file containing the audio data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceToMono</em></dt>
+			<dd><p>If true, reduce the sample to mono
+(stereo samples don&rsquo;t support panning or positional audio).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/ALBuffer.html">ALBuffer</a> containing the audio data.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the class description note regarding sound file formats.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferFromUrl:" title="bufferFromUrl:"></a>
+	<h3 class="subsubtitle method-title">bufferFromUrl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load an OpenAL buffer with the contents of an audio file.
+The buffer&rsquo;s name will be the fully qualified URL.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (ALBuffer *)bufferFromUrl:(NSURL *)<em>url</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL of the file containing the audio data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/ALBuffer.html">ALBuffer</a> containing the audio data.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the class description note regarding sound file formats.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferFromUrl:reduceToMono:" title="bufferFromUrl:reduceToMono:"></a>
+	<h3 class="subsubtitle method-title">bufferFromUrl:reduceToMono:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load an OpenAL buffer with the contents of an audio file.
+The buffer&rsquo;s name will be the fully qualified URL.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (ALBuffer *)bufferFromUrl:(NSURL *)<em>url</em> reduceToMono:(bool)<em>reduceToMono</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL of the file containing the audio data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceToMono</em></dt>
+			<dd><p>If true, reduce the sample to mono
+(stereo samples don&rsquo;t support panning or positional audio).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/ALBuffer.html">ALBuffer</a> containing the audio data.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See the class description note regarding sound file formats.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clearAllBuffers" title="clearAllBuffers"></a>
+	<h3 class="subsubtitle method-title">clearAllBuffers</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clear all references to sound data from ALL buffers, managed or not.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)clearAllBuffers</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notifyDeviceDeallocating:" title="notifyDeviceDeallocating:"></a>
+	<h3 class="subsubtitle method-title">notifyDeviceDeallocating:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(INTERNAL USE) Notify that a device is deallocating.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)notifyDeviceDeallocating:(ALDevice *)<em>device</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notifyDeviceInitializing:" title="notifyDeviceInitializing:"></a>
+	<h3 class="subsubtitle method-title">notifyDeviceInitializing:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(INTERNAL USE) Notify that a device is initializing.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)notifyDeviceInitializing:(ALDevice *)<em>device</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeSuspendListener:" title="removeSuspendListener:"></a>
+	<h3 class="subsubtitle method-title">removeSuspendListener:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove a registered listener.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listener</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listener</em></dt>
+			<dd><p>The listener to unregister from this handler.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSuspended:" title="setSuspended:"></a>
+	<h3 class="subsubtitle method-title">setSuspended:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(INTERNAL USE) Called by SuspendHandler.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setSuspended:(bool)<em>value</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OpenALManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/suspended" title="suspended"></a>
+	<h3 class="subsubtitle method-title">suspended</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If YES, this object is suspended.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (bool)suspended</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

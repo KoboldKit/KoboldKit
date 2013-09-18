@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALTools.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALTools</TokenIdentifier>
+			<Abstract type="html">Miscellaneous tools used by ObjectAL.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/setDefaultBundle:</TokenIdentifier>
+			<Abstract type="html">Set the default bundle to use when looking up paths.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setDefaultBundle:(NSBundle *)bundle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bundle</Name>
+					<Abstract type="html">The new default bundle.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultBundle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/defaultBundle</TokenIdentifier>
+			<Abstract type="html">The default bundle used when looking up paths.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>			
+			
+			<Declaration>+ (NSBundle *)defaultBundle</Declaration>
+			
+			
+			<Anchor>//api/name/defaultBundle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/urlForPath:</TokenIdentifier>
+			<Abstract type="html">Returns the URL corresponding to the specified path.
+If the path is not absolute (starts with a "/"), this method will look for
+the file in the default bundle.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)urlForPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to convert to a URL.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The corresponding URL or nil if a URL could not be formed.</Abstract></ReturnValue>
+			<Anchor>//api/name/urlForPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/urlForPath:bundle:</TokenIdentifier>
+			<Abstract type="html">Returns the URL corresponding to the specified path.
+If the path is not absolute (starts with a "/"), this method will look for
+the file in the specified bundle.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)urlForPath:(NSString *)path bundle:(NSBundle *)bundle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to convert to a URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>bundle</Name>
+					<Abstract type="html">The bundle to look inside for relative paths.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The corresponding URL or nil if a URL could not be formed.</Abstract></ReturnValue>
+			<Anchor>//api/name/urlForPath:bundle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/notifyExtAudioError:function:description:</TokenIdentifier>
+			<Abstract type="html">Notify an error if the specified ExtAudio error code indicates an error.
+This will log the error and also potentially post an audio error notification
+(OALAudioErrorNotification) if it is suspected that this error is a result of
+the audio session getting corrupted.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>			
+			
+			<Declaration>+ (void)notifyExtAudioError:(OSStatus)errorCode function:(const char *)function description:(NSString *)description, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function:</Name>
+					<Abstract type="html">The function name where the error occurred.</Abstract>
+				</Parameter><Parameter>
+					<Name>description:</Name>
+					<Abstract type="html">A printf-style description of what happened.</Abstract>
+				</Parameter><Parameter>
+					<Name>errorCode:</Name>
+					<Abstract type="html">The error code returned from an OS call.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notifyExtAudioError:function:description:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/notifyAudioSessionError:function:description:</TokenIdentifier>
+			<Abstract type="html">Notify an error if the specified AudioSession error code indicates an error.
+This will log the error and also potentially post an audio error notification
+(OALAudioErrorNotification) if it is suspected that this error is a result of
+the audio session getting corrupted.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>			
+			
+			<Declaration>+ (void)notifyAudioSessionError:(OSStatus)errorCode function:(const char *)function description:(NSString *)description, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function:</Name>
+					<Abstract type="html">The function name where the error occurred.</Abstract>
+				</Parameter><Parameter>
+					<Name>description:</Name>
+					<Abstract type="html">A printf-style description of what happened.</Abstract>
+				</Parameter><Parameter>
+					<Name>errorCode:</Name>
+					<Abstract type="html">The error code returned from an OS call.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notifyAudioSessionError:function:description:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

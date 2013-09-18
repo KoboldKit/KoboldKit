@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OALAudioSession.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OALAudioSession</TokenIdentifier>
+			<Abstract type="html">Handles the audio session and interrupts.</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setAudioSessionCategory:</TokenIdentifier>
+			<Abstract type="html">The current audio session category.
+If this value is explicitly set, the other session properties "allowIpod",
+"useHardwareIfAvailable", "honorSilentSwitch", and "ipodDucking" may be modified
+to remain compatible with the category.</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSString *audioSessionCategory</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionCategory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/audioSessionCategory</TokenIdentifier>
+			<Abstract type="html">The current audio session category.
+If this value is explicitly set, the other session properties "allowIpod",
+"useHardwareIfAvailable", "honorSilentSwitch", and "ipodDucking" may be modified
+to remain compatible with the category.</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSString *audioSessionCategory</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionCategory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/audioSessionCategory</TokenIdentifier>
+			<Abstract type="html">The current audio session category.
+If this value is explicitly set, the other session properties "allowIpod",
+"useHardwareIfAvailable", "honorSilentSwitch", and "ipodDucking" may be modified
+to remain compatible with the category.</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSString *audioSessionCategory</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionCategory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setAllowIpod:</TokenIdentifier>
+			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
+Note: If this is enabled, and another app is playing music, background audio
+playback will use the SOFTWARE codecs, NOT hardware. <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/useHardwareIfAvailable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool allowIpod</Declaration>
+			
+			
+			<Anchor>//api/name/allowIpod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/allowIpod</TokenIdentifier>
+			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
+Note: If this is enabled, and another app is playing music, background audio
+playback will use the SOFTWARE codecs, NOT hardware. <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/useHardwareIfAvailable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool allowIpod</Declaration>
+			
+			
+			<Anchor>//api/name/allowIpod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/allowIpod</TokenIdentifier>
+			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
+Note: If this is enabled, and another app is playing music, background audio
+playback will use the SOFTWARE codecs, NOT hardware. <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/useHardwareIfAvailable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool allowIpod</Declaration>
+			
+			
+			<Anchor>//api/name/allowIpod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setIpodDucking:</TokenIdentifier>
+			<Abstract type="html">If YES, ipod music will duck (lower in volume) when the audio session activates.</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool ipodDucking</Declaration>
+			
+			
+			<Anchor>//api/name/ipodDucking</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/ipodDucking</TokenIdentifier>
+			<Abstract type="html">If YES, ipod music will duck (lower in volume) when the audio session activates.</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool ipodDucking</Declaration>
+			
+			
+			<Anchor>//api/name/ipodDucking</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/ipodDucking</TokenIdentifier>
+			<Abstract type="html">If YES, ipod music will duck (lower in volume) when the audio session activates.</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool ipodDucking</Declaration>
+			
+			
+			<Anchor>//api/name/ipodDucking</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setUseHardwareIfAvailable:</TokenIdentifier>
+			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
+(NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/allowIpod</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool useHardwareIfAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/useHardwareIfAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/useHardwareIfAvailable</TokenIdentifier>
+			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
+(NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/allowIpod</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool useHardwareIfAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/useHardwareIfAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/useHardwareIfAvailable</TokenIdentifier>
+			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
+(NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/allowIpod</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readwrite, assign) bool useHardwareIfAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/useHardwareIfAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setHonorSilentSwitch:</TokenIdentifier>
+			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
+turned off (NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/honorSilentSwitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/honorSilentSwitch</TokenIdentifier>
+			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
+turned off (NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/honorSilentSwitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/honorSilentSwitch</TokenIdentifier>
+			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
+turned off (NOT SUPPORTED ON THE SIMULATOR). <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/honorSilentSwitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setHandleInterruptions:</TokenIdentifier>
+			<Abstract type="html">If true, automatically handle interruptions. <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool handleInterruptions</Declaration>
+			
+			
+			<Anchor>//api/name/handleInterruptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/handleInterruptions</TokenIdentifier>
+			<Abstract type="html">If true, automatically handle interruptions. <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool handleInterruptions</Declaration>
+			
+			
+			<Anchor>//api/name/handleInterruptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/handleInterruptions</TokenIdentifier>
+			<Abstract type="html">If true, automatically handle interruptions. <br></Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool handleInterruptions</Declaration>
+			
+			
+			<Anchor>//api/name/handleInterruptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setAudioSessionDelegate:</TokenIdentifier>
+			<Abstract type="html">Delegate that will receive all audio session events (WEAK reference).</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id&lt;AVAudioSessionDelegate&gt; audioSessionDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/audioSessionDelegate</TokenIdentifier>
+			<Abstract type="html">Delegate that will receive all audio session events (WEAK reference).</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id&lt;AVAudioSessionDelegate&gt; audioSessionDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/audioSessionDelegate</TokenIdentifier>
+			<Abstract type="html">Delegate that will receive all audio session events (WEAK reference).</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) id&lt;AVAudioSessionDelegate&gt; audioSessionDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setAudioSessionActive:</TokenIdentifier>
+			<Abstract type="html">If true, the audio session is active</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool audioSessionActive</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/audioSessionActive</TokenIdentifier>
+			<Abstract type="html">If true, the audio session is active</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool audioSessionActive</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/audioSessionActive</TokenIdentifier>
+			<Abstract type="html">If true, the audio session is active</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool audioSessionActive</Declaration>
+			
+			
+			<Anchor>//api/name/audioSessionActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/set:</TokenIdentifier>
+			<Abstract type="html">The preferred I/O buffer duration, in seconds. Lower values give less
+playback latencey, but use more CPU. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Use AVAudioSession instead.</span>)</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float preferredIOBufferDuration __OSX_AVAILABLE_BUT_DEPRECATED ( __MAC_NA , __MAC_NA , __IPHONE_2_0 , __IPHONE_6_1 )</Declaration>
+			
+			
+			<Anchor>//api/name/)</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/)</TokenIdentifier>
+			<Abstract type="html">The preferred I/O buffer duration, in seconds. Lower values give less
+playback latencey, but use more CPU. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Use AVAudioSession instead.</span>)</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float preferredIOBufferDuration __OSX_AVAILABLE_BUT_DEPRECATED ( __MAC_NA , __MAC_NA , __IPHONE_2_0 , __IPHONE_6_1 )</Declaration>
+			
+			
+			<Anchor>//api/name/)</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/)</TokenIdentifier>
+			<Abstract type="html">The preferred I/O buffer duration, in seconds. Lower values give less
+playback latencey, but use more CPU. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Use AVAudioSession instead.</span>)</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float preferredIOBufferDuration __OSX_AVAILABLE_BUT_DEPRECATED ( __MAC_NA , __MAC_NA , __IPHONE_2_0 , __IPHONE_6_1 )</Declaration>
+			
+			
+			<Anchor>//api/name/)</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/forceEndInterruption</TokenIdentifier>
+			<Abstract type="html">Force an interrupt end. This can be useful in cases where a buggy OS
+fails to end an interrupt.</Abstract>
+			<DeclaredIn>OALAudioSession.h</DeclaredIn>			
+			
+			<Declaration>- (void)forceEndInterruption</Declaration>
+			
+			
+			<Anchor>//api/name/forceEndInterruption</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/getIntProperty:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Get an AudioSession property.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (UInt32)getIntProperty:(AudioSessionPropertyID)property</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>property</Name>
+					<Abstract type="html">The property to get.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<Anchor>//api/name/getIntProperty:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/getFloatProperty:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Get an AudioSession property.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (Float32)getFloatProperty:(AudioSessionPropertyID)property</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>property</Name>
+					<Abstract type="html">The property to get.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<Anchor>//api/name/getFloatProperty:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/getStringProperty:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Get an AudioSession property.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (NSString *)getStringProperty:(AudioSessionPropertyID)property</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>property</Name>
+					<Abstract type="html">The property to get.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<Anchor>//api/name/getStringProperty:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setIntProperty:value:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Set an AudioSession property.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)setIntProperty:(AudioSessionPropertyID)property value:(UInt32)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>property</Name>
+					<Abstract type="html">The property to set.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value to set this property to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setIntProperty:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setFloatProperty:value:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Set an AudioSession property.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)setFloatProperty:(AudioSessionPropertyID)property value:(Float32)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>property</Name>
+					<Abstract type="html">The property to set.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value to set this property to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setFloatProperty:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/updateFromAudioSessionCategory</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Update settings to be compatible with the current audio session category.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)updateFromAudioSessionCategory</Declaration>
+			
+			
+			<Anchor>//api/name/updateFromAudioSessionCategory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/updateFromFlags</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Update the audio session category to be compatible with the current settings.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)updateFromFlags</Declaration>
+			
+			
+			<Anchor>//api/name/updateFromFlags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setAudioMode</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Set the Audio Session category and properties based on current settings.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)setAudioMode</Declaration>
+			
+			
+			<Anchor>//api/name/setAudioMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/activateAudioSession</TokenIdentifier>
+			<Abstract type="html">Work around for iOS4 bug that causes the session to not activate on the first few attempts
+in certain situations.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)activateAudioSession</Declaration>
+			
+			
+			<Anchor>//api/name/activateAudioSession</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/onAudioError:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Called when an audio error is signalled via
+notification.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)onAudioError:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/onAudioError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/addSuspendListener:</TokenIdentifier>
+			<Abstract type="html">Add a listener that will receive manual suspend and interrupt events.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to register with this handler.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSuspendListener:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/removeSuspendListener:</TokenIdentifier>
+			<Abstract type="html">Remove a registered listener.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to unregister from this handler.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeSuspendListener:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/suspended</TokenIdentifier>
+			<Abstract type="html">If YES, this object is suspended.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (bool)suspended</Declaration>
+			
+			
+			<Anchor>//api/name/suspended</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setSuspended:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Called by SuspendHandler.</Abstract>
+			<DeclaredIn>OALAudioSession.m</DeclaredIn>			
+			
+			<Declaration>- (void)setSuspended:(bool)value</Declaration>
+			
+			
+			<Anchor>//api/name/setSuspended:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

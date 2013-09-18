@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ALSoundSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ALSoundSource</TokenIdentifier>
+			<Abstract type="html">Manages all properties relating to an OpenAL sound source.
+There are currently two classes that adhere to this protocol: ALSource
+and ChannelSource (which collectively manipulates a set of ALSource objects).
+A full description of the properties themselves is available in the
+OpenAL 1.1 Specification and Reference:
+http://connect.creativelabs.com/openal/Documentation</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>
+			
+			<NodeRef refid="39"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setConeInnerAngle:</TokenIdentifier>
+			<Abstract type="html">Cone inner angle (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneInnerAngle</Declaration>
+			
+			
+			<Anchor>//api/name/coneInnerAngle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/coneInnerAngle</TokenIdentifier>
+			<Abstract type="html">Cone inner angle (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneInnerAngle</Declaration>
+			
+			
+			<Anchor>//api/name/coneInnerAngle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/coneInnerAngle</TokenIdentifier>
+			<Abstract type="html">Cone inner angle (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneInnerAngle</Declaration>
+			
+			
+			<Anchor>//api/name/coneInnerAngle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setConeOuterAngle:</TokenIdentifier>
+			<Abstract type="html">Cone outer angle (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneOuterAngle</Declaration>
+			
+			
+			<Anchor>//api/name/coneOuterAngle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/coneOuterAngle</TokenIdentifier>
+			<Abstract type="html">Cone outer angle (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneOuterAngle</Declaration>
+			
+			
+			<Anchor>//api/name/coneOuterAngle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/coneOuterAngle</TokenIdentifier>
+			<Abstract type="html">Cone outer angle (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneOuterAngle</Declaration>
+			
+			
+			<Anchor>//api/name/coneOuterAngle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setConeOuterGain:</TokenIdentifier>
+			<Abstract type="html">Cone outer gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneOuterGain</Declaration>
+			
+			
+			<Anchor>//api/name/coneOuterGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/coneOuterGain</TokenIdentifier>
+			<Abstract type="html">Cone outer gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneOuterGain</Declaration>
+			
+			
+			<Anchor>//api/name/coneOuterGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/coneOuterGain</TokenIdentifier>
+			<Abstract type="html">Cone outer gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float coneOuterGain</Declaration>
+			
+			
+			<Anchor>//api/name/coneOuterGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setDirection:</TokenIdentifier>
+			<Abstract type="html">Direction (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALVector direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/direction</TokenIdentifier>
+			<Abstract type="html">Direction (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALVector direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/direction</TokenIdentifier>
+			<Abstract type="html">Direction (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALVector direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setGain:</TokenIdentifier>
+			<Abstract type="html">Gain (volume (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float gain</Declaration>
+			
+			
+			<Anchor>//api/name/gain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/gain</TokenIdentifier>
+			<Abstract type="html">Gain (volume (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float gain</Declaration>
+			
+			
+			<Anchor>//api/name/gain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/gain</TokenIdentifier>
+			<Abstract type="html">Gain (volume (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float gain</Declaration>
+			
+			
+			<Anchor>//api/name/gain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setVolume:</TokenIdentifier>
+			<Abstract type="html">Volume (alias to gain.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float volume</Declaration>
+			
+			
+			<Anchor>//api/name/volume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/volume</TokenIdentifier>
+			<Abstract type="html">Volume (alias to gain.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float volume</Declaration>
+			
+			
+			<Anchor>//api/name/volume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/volume</TokenIdentifier>
+			<Abstract type="html">Volume (alias to gain.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float volume</Declaration>
+			
+			
+			<Anchor>//api/name/volume</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setInterruptible:</TokenIdentifier>
+			<Abstract type="html">If true, this source may be interrupted when resources are low.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool interruptible</Declaration>
+			
+			
+			<Anchor>//api/name/interruptible</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/interruptible</TokenIdentifier>
+			<Abstract type="html">If true, this source may be interrupted when resources are low.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool interruptible</Declaration>
+			
+			
+			<Anchor>//api/name/interruptible</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/interruptible</TokenIdentifier>
+			<Abstract type="html">If true, this source may be interrupted when resources are low.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool interruptible</Declaration>
+			
+			
+			<Anchor>//api/name/interruptible</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setLooping:</TokenIdentifier>
+			<Abstract type="html">Looping (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool looping</Declaration>
+			
+			
+			<Anchor>//api/name/looping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/looping</TokenIdentifier>
+			<Abstract type="html">Looping (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool looping</Declaration>
+			
+			
+			<Anchor>//api/name/looping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/looping</TokenIdentifier>
+			<Abstract type="html">Looping (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool looping</Declaration>
+			
+			
+			<Anchor>//api/name/looping</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setMaxDistance:</TokenIdentifier>
+			<Abstract type="html">Max distance (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float maxDistance</Declaration>
+			
+			
+			<Anchor>//api/name/maxDistance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/maxDistance</TokenIdentifier>
+			<Abstract type="html">Max distance (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float maxDistance</Declaration>
+			
+			
+			<Anchor>//api/name/maxDistance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/maxDistance</TokenIdentifier>
+			<Abstract type="html">Max distance (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float maxDistance</Declaration>
+			
+			
+			<Anchor>//api/name/maxDistance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setMaxGain:</TokenIdentifier>
+			<Abstract type="html">Max gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float maxGain</Declaration>
+			
+			
+			<Anchor>//api/name/maxGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/maxGain</TokenIdentifier>
+			<Abstract type="html">Max gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float maxGain</Declaration>
+			
+			
+			<Anchor>//api/name/maxGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/maxGain</TokenIdentifier>
+			<Abstract type="html">Max gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float maxGain</Declaration>
+			
+			
+			<Anchor>//api/name/maxGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setMinGain:</TokenIdentifier>
+			<Abstract type="html">Min gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float minGain</Declaration>
+			
+			
+			<Anchor>//api/name/minGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/minGain</TokenIdentifier>
+			<Abstract type="html">Min gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float minGain</Declaration>
+			
+			
+			<Anchor>//api/name/minGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/minGain</TokenIdentifier>
+			<Abstract type="html">Min gain (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float minGain</Declaration>
+			
+			
+			<Anchor>//api/name/minGain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setMuted:</TokenIdentifier>
+			<Abstract type="html">If true, this source is muted.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/muted</TokenIdentifier>
+			<Abstract type="html">If true, this source is muted.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/muted</TokenIdentifier>
+			<Abstract type="html">If true, this source is muted.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
+			
+			
+			<Anchor>//api/name/muted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setPaused:</TokenIdentifier>
+			<Abstract type="html">If true, this source is currently paused.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/paused</TokenIdentifier>
+			<Abstract type="html">If true, this source is currently paused.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/paused</TokenIdentifier>
+			<Abstract type="html">If true, this source is currently paused.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setPitch:</TokenIdentifier>
+			<Abstract type="html">Pitch (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float pitch</Declaration>
+			
+			
+			<Anchor>//api/name/pitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/pitch</TokenIdentifier>
+			<Abstract type="html">Pitch (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float pitch</Declaration>
+			
+			
+			<Anchor>//api/name/pitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/pitch</TokenIdentifier>
+			<Abstract type="html">Pitch (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float pitch</Declaration>
+			
+			
+			<Anchor>//api/name/pitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setPlaying:</TokenIdentifier>
+			<Abstract type="html">If true, this source is currently playing audio.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool playing</Declaration>
+			
+			
+			<Anchor>//api/name/playing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/playing</TokenIdentifier>
+			<Abstract type="html">If true, this source is currently playing audio.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool playing</Declaration>
+			
+			
+			<Anchor>//api/name/playing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/playing</TokenIdentifier>
+			<Abstract type="html">If true, this source is currently playing audio.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool playing</Declaration>
+			
+			
+			<Anchor>//api/name/playing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setPosition:</TokenIdentifier>
+			<Abstract type="html">Position (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/position</TokenIdentifier>
+			<Abstract type="html">Position (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/position</TokenIdentifier>
+			<Abstract type="html">Position (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setReferenceDistance:</TokenIdentifier>
+			<Abstract type="html">Reference distance (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float referenceDistance</Declaration>
+			
+			
+			<Anchor>//api/name/referenceDistance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/referenceDistance</TokenIdentifier>
+			<Abstract type="html">Reference distance (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float referenceDistance</Declaration>
+			
+			
+			<Anchor>//api/name/referenceDistance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/referenceDistance</TokenIdentifier>
+			<Abstract type="html">Reference distance (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float referenceDistance</Declaration>
+			
+			
+			<Anchor>//api/name/referenceDistance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setRolloffFactor:</TokenIdentifier>
+			<Abstract type="html">Rolloff factor (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rolloffFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rolloffFactor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/rolloffFactor</TokenIdentifier>
+			<Abstract type="html">Rolloff factor (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rolloffFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rolloffFactor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/rolloffFactor</TokenIdentifier>
+			<Abstract type="html">Rolloff factor (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rolloffFactor</Declaration>
+			
+			
+			<Anchor>//api/name/rolloffFactor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setSourceRelative:</TokenIdentifier>
+			<Abstract type="html">Source relative (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int sourceRelative</Declaration>
+			
+			
+			<Anchor>//api/name/sourceRelative</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/sourceRelative</TokenIdentifier>
+			<Abstract type="html">Source relative (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int sourceRelative</Declaration>
+			
+			
+			<Anchor>//api/name/sourceRelative</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/sourceRelative</TokenIdentifier>
+			<Abstract type="html">Source relative (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int sourceRelative</Declaration>
+			
+			
+			<Anchor>//api/name/sourceRelative</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setSourceType:</TokenIdentifier>
+			<Abstract type="html">Source type (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/sourceType</TokenIdentifier>
+			<Abstract type="html">Source type (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/sourceType</TokenIdentifier>
+			<Abstract type="html">Source type (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) int sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setVelocity:</TokenIdentifier>
+			<Abstract type="html">Velocity (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALVector velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/velocity</TokenIdentifier>
+			<Abstract type="html">Velocity (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALVector velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/velocity</TokenIdentifier>
+			<Abstract type="html">Velocity (OpenAL property).</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALVector velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setPan:</TokenIdentifier>
+			<Abstract type="html">Pan value (-1.0 = far left, 1.0 = far right).
+Note: This effect is simulated by changing the source's X position.
+Do not use this property if you are modifying the position property as well.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float pan</Declaration>
+			
+			
+			<Anchor>//api/name/pan</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/pan</TokenIdentifier>
+			<Abstract type="html">Pan value (-1.0 = far left, 1.0 = far right).
+Note: This effect is simulated by changing the source's X position.
+Do not use this property if you are modifying the position property as well.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float pan</Declaration>
+			
+			
+			<Anchor>//api/name/pan</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/pan</TokenIdentifier>
+			<Abstract type="html">Pan value (-1.0 = far left, 1.0 = far right).
+Note: This effect is simulated by changing the source's X position.
+Do not use this property if you are modifying the position property as well.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float pan</Declaration>
+			
+			
+			<Anchor>//api/name/pan</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setReverbSendLevel:</TokenIdentifier>
+			<Abstract type="html">Reverb send level (how much reverb affects this source). (iOS 5.0+)
+0.0 = fully dry, 1.0 = fully wet.
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbSendLevel</Declaration>
+			
+			
+			<Anchor>//api/name/reverbSendLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/reverbSendLevel</TokenIdentifier>
+			<Abstract type="html">Reverb send level (how much reverb affects this source). (iOS 5.0+)
+0.0 = fully dry, 1.0 = fully wet.
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbSendLevel</Declaration>
+			
+			
+			<Anchor>//api/name/reverbSendLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/reverbSendLevel</TokenIdentifier>
+			<Abstract type="html">Reverb send level (how much reverb affects this source). (iOS 5.0+)
+0.0 = fully dry, 1.0 = fully wet.
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbSendLevel</Declaration>
+			
+			
+			<Anchor>//api/name/reverbSendLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setReverbOcclusion:</TokenIdentifier>
+			<Abstract type="html">Reverb occlusion (wall/door between listener and source). (iOS 5.0+)
+-100.0db (most occlusion) to 0.0 (no occlusion).
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbOcclusion</Declaration>
+			
+			
+			<Anchor>//api/name/reverbOcclusion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/reverbOcclusion</TokenIdentifier>
+			<Abstract type="html">Reverb occlusion (wall/door between listener and source). (iOS 5.0+)
+-100.0db (most occlusion) to 0.0 (no occlusion).
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbOcclusion</Declaration>
+			
+			
+			<Anchor>//api/name/reverbOcclusion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/reverbOcclusion</TokenIdentifier>
+			<Abstract type="html">Reverb occlusion (wall/door between listener and source). (iOS 5.0+)
+-100.0db (most occlusion) to 0.0 (no occlusion).
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbOcclusion</Declaration>
+			
+			
+			<Anchor>//api/name/reverbOcclusion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/setReverbObstruction:</TokenIdentifier>
+			<Abstract type="html">Reverb obstruction (object between listener and source). (iOS 5.0+)
+-100.0db (most obstruction) to 0.0 (no obstruction).
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbObstruction</Declaration>
+			
+			
+			<Anchor>//api/name/reverbObstruction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/reverbObstruction</TokenIdentifier>
+			<Abstract type="html">Reverb obstruction (object between listener and source). (iOS 5.0+)
+-100.0db (most obstruction) to 0.0 (no obstruction).
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbObstruction</Declaration>
+			
+			
+			<Anchor>//api/name/reverbObstruction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ALSoundSource/reverbObstruction</TokenIdentifier>
+			<Abstract type="html">Reverb obstruction (object between listener and source). (iOS 5.0+)
+-100.0db (most obstruction) to 0.0 (no obstruction).
+Default 0.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float reverbObstruction</Declaration>
+			
+			
+			<Anchor>//api/name/reverbObstruction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/play:</TokenIdentifier>
+			<Abstract type="html">Play a sound.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)buffer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buffer</Name>
+					<Abstract type="html">the buffer to play.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
+			<Anchor>//api/name/play:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/play:loop:</TokenIdentifier>
+			<Abstract type="html">Play a sound, optionally looping.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)buffer loop:(bool)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buffer</Name>
+					<Abstract type="html">the buffer to play.</Abstract>
+				</Parameter><Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
+			<Anchor>//api/name/play:loop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/play:gain:pitch:pan:loop:</TokenIdentifier>
+			<Abstract type="html">Play a sound, setting gain, pitch, pan, and looping.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)buffer gain:(float)gain pitch:(float)pitch pan:(float)pan loop:(bool)loop</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buffer</Name>
+					<Abstract type="html">the buffer to play.</Abstract>
+				</Parameter><Parameter>
+					<Name>gain</Name>
+					<Abstract type="html">The gain (volume to play at (0.0 - 1.0).</Abstract>
+				</Parameter><Parameter>
+					<Name>pitch</Name>
+					<Abstract type="html">The pitch to play at (1.0 = normal pitch.</Abstract>
+				</Parameter><Parameter>
+					<Name>pan</Name>
+					<Abstract type="html">Left-right panning (-1.0 = far left, 1.0 = far right).</Abstract>
+				</Parameter><Parameter>
+					<Name>loop</Name>
+					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
+			<Anchor>//api/name/play:gain:pitch:pan:loop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/stop</TokenIdentifier>
+			<Abstract type="html">Stop playing the current sound.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/rewind</TokenIdentifier>
+			<Abstract type="html">Stop playing the current sound and set its state to AL_INITIAL.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)rewind</Declaration>
+			
+			
+			<Anchor>//api/name/rewind</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/fadeTo:duration:target:selector:</TokenIdentifier>
+			<Abstract type="html">Fade to the specified gain value.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)fadeTo:(float)gain duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gain</Name>
+					<Abstract type="html">The gain to fade to.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the fade operation in seconds.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to notify when the fade completes (can be nil).</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call when the fade completes. The selector must accept
+a single parameter, which will be the object that performed the fade.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fadeTo:duration:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/stopFade</TokenIdentifier>
+			<Abstract type="html">Stop the currently running fade operation, if any.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopFade</Declaration>
+			
+			
+			<Anchor>//api/name/stopFade</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/panTo:duration:target:selector:</TokenIdentifier>
+			<Abstract type="html">pan to the specified value.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)panTo:(float)pan duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pan</Name>
+					<Abstract type="html">The value to pan to.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the pan operation in seconds.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to notify when the pan completes (can be nil).</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call when the pan completes. The selector must accept
+a single parameter, which will be the object that performed the pan.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/panTo:duration:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/stopPan</TokenIdentifier>
+			<Abstract type="html">Stop the currently running pan operation, if any.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopPan</Declaration>
+			
+			
+			<Anchor>//api/name/stopPan</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/pitchTo:duration:target:selector:</TokenIdentifier>
+			<Abstract type="html">Gradually change pitch to the specified value.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)pitchTo:(float)pitch duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pitch</Name>
+					<Abstract type="html">The value to change pitch to.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the pitch operation in seconds.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to notify when the pitch change completes (can be nil).</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call when the pitch change completes. The selector
+must accept a single parameter, which will be the object that performed the pitch change.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pitchTo:duration:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/stopPitch</TokenIdentifier>
+			<Abstract type="html">Stop the currently running pitch operation, if any.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopPitch</Declaration>
+			
+			
+			<Anchor>//api/name/stopPitch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/stopActions</TokenIdentifier>
+			<Abstract type="html">Stop any currently running fade, pan, or pitch operations.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopActions</Declaration>
+			
+			
+			<Anchor>//api/name/stopActions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ALSoundSource/clear</TokenIdentifier>
+			<Abstract type="html">Clear any buffers this source is currently using.</Abstract>
+			<DeclaredIn>ALSoundSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)clear</Declaration>
+			
+			
+			<Anchor>//api/name/clear</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

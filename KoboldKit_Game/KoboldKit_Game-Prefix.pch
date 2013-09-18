@@ -1,0 +1,12 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+	#import <KoboldKit.h>
+	#import <KoboldKitPro/KoboldKitPro.h>
+	#import <KoboldKitCommunity/KoboldKitCommunity.h>
+	#import <KoboldKitExternal/KoboldKitExternal.h>
+#endif
