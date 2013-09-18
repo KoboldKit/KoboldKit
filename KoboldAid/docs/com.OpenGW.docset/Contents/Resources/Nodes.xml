@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Kobold Kit</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		<Node id="1">
+			<Name>OGWEntity</Name>
+			<Path>Classes/OGWEntity.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>OGWMap</Name>
+			<Path>Classes/OGWMap.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>OGWWorld</Name>
+			<Path>Classes/OGWWorld.html</Path>
+		</Node>
+		
+		
+		
+	</Library>
+</DocSetNodes>
