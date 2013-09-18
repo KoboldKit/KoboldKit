@@ -3,7 +3,7 @@
 # NOTE: to run this script you need to have appledoc in your path: https://github.com/tomaz/appledoc
 # Either clone & make appledoc yourself or use homebrew (other installers like fink might also work).
 
-# This script assumes that the working directory is set to where the script is located. Simply 'cd' into the docs folder.
+# This script assumes that the working directory is set to where the script is located.
 
 function makeDocs {
 	referenceShortName=$1
@@ -56,9 +56,13 @@ function makeDocs {
 	echo "<!DOCTYPE HTML><META http-equiv=\"refresh\" content=\"0; url=./html/index.html\">" > ./$referenceShortName/index.html
 }
 
+cd ..
+cd docs
+
 makeDocs "KoboldKitFree"
 makeDocs "KoboldKitExternal"
 makeDocs "KoboldKitPro"
 makeDocs "KoboldKitCommunity"
+makeDocs "OpenGW"
 
 echo Done!

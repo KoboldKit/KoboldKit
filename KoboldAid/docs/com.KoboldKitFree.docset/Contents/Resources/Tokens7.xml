@@ -17,7 +17,7 @@
 			<Abstract type="html">Initialize ivar setter with a class.</Abstract>
 			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithClass:(Class)class</Declaration>
+			<Declaration>- (id)initWithClass:(Class)klass</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>class</Name>

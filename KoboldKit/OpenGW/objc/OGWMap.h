@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** Map of arbitrary data. Can be used for collision, heat, surface and other map types. */
 @interface OGWMap : NSObject
 
 @property (atomic, readonly) int32_t* map;

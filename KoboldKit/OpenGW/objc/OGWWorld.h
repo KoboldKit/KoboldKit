@@ -11,6 +11,7 @@
 @class OGWEntity;
 @class OGWMap;
 
+/** Game world. */
 @interface OGWWorld : NSObject
 {
 	@protected

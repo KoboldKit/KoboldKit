@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** Entity represents a logical object in the world. */
 @interface OGWEntity : NSObject
 
 @end
