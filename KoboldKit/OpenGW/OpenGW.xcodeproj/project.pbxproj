@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DCDBA58317E5E49B00796C04 /* OGWWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA57F17E5E49B00796C04 /* OGWWorld.h */; };
-		DCDBA58417E5E49B00796C04 /* OGWWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.mm */; };
-		DCDBA58517E5E49B00796C04 /* OGWWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.mm */; };
+		DCDBA58417E5E49B00796C04 /* OGWWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.m */; };
+		DCDBA58517E5E49B00796C04 /* OGWWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.m */; };
 		DCDBA58617E5E49B00796C04 /* OpenGW-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA58117E5E49B00796C04 /* OpenGW-Prefix.pch */; };
-		DCDBA58717E5E49B00796C04 /* OpenGW.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA58217E5E49B00796C04 /* OpenGW.h */; };
+		DCDBA58717E5E49B00796C04 /* OpenGW.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA58217E5E49B00796C04 /* OpenGW.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCDBA59717E5E7CA00796C04 /* GWWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */; };
 		DCDBA59817E5E7CA00796C04 /* GWWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */; };
 		DCDBA59917E5E7CA00796C04 /* GWWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA59617E5E7CA00796C04 /* GWWorld.h */; };
@@ -57,7 +57,7 @@
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DCD7A291178C7545004A0467 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DCDBA57F17E5E49B00796C04 /* OGWWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWWorld.h; sourceTree = "<group>"; };
-		DCDBA58017E5E49B00796C04 /* OGWWorld.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGWWorld.mm; sourceTree = "<group>"; };
+		DCDBA58017E5E49B00796C04 /* OGWWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWWorld.m; sourceTree = "<group>"; };
 		DCDBA58117E5E49B00796C04 /* OpenGW-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenGW-Prefix.pch"; sourceTree = "<group>"; };
 		DCDBA58217E5E49B00796C04 /* OpenGW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGW.h; sourceTree = "<group>"; };
 		DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWWorld.cpp; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			children = (
 				DCDBA5AE17E73D0700796C04 /* OGWTypes.h */,
 				DCDBA57F17E5E49B00796C04 /* OGWWorld.h */,
-				DCDBA58017E5E49B00796C04 /* OGWWorld.mm */,
+				DCDBA58017E5E49B00796C04 /* OGWWorld.m */,
 				DCDBA59A17E5EC1900796C04 /* OGWEntity.h */,
 				DCDBA59B17E5EC1900796C04 /* OGWEntity.m */,
 				DCDBA59F17E5EC3400796C04 /* OGWMap.h */,
@@ -290,7 +290,7 @@
 				DCDBA5AC17E5EC4900796C04 /* GWMap.cpp in Sources */,
 				DCDBA5A717E5EC4100796C04 /* GWEntity.cpp in Sources */,
 				DCDBA5A317E5EC3400796C04 /* OGWMap.m in Sources */,
-				DCDBA58517E5E49B00796C04 /* OGWWorld.mm in Sources */,
+				DCDBA58517E5E49B00796C04 /* OGWWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +303,7 @@
 				DCDBA5AB17E5EC4900796C04 /* GWMap.cpp in Sources */,
 				DCDBA5A617E5EC4100796C04 /* GWEntity.cpp in Sources */,
 				DCDBA5A217E5EC3400796C04 /* OGWMap.m in Sources */,
-				DCDBA58417E5E49B00796C04 /* OGWWorld.mm in Sources */,
+				DCDBA58417E5E49B00796C04 /* OGWWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +400,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -455,7 +455,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;

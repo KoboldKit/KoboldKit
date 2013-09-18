@@ -30,14 +30,14 @@ struct GWSize
 	GWFloat x;
 	GWFloat y;
 };
-typedef GWSize GWSize;
+typedef struct GWSize GWSize;
 
 struct GWVector2D
 {
 	GWFloat x;
 	GWFloat y;
 };
-typedef GWVector2D GWVector2D;
+typedef struct GWVector2D GWVector2D;
 
 struct GWVector3D
 {
@@ -45,7 +45,7 @@ struct GWVector3D
 	GWFloat y;
 	GWFloat z;
 };
-typedef GWVector3D GWVector3D;
+typedef struct GWVector3D GWVector3D;
 
 /* Default vector/point types are 2D vectors. Truly 3D worlds may want to change GWVector to be represented by GWVector3D. */
 typedef GWVector2D GWVector;

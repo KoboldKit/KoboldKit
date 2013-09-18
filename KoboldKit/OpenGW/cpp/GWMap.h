@@ -9,6 +9,5 @@
 #ifndef __OpenGW__GWMap__
 #define __OpenGW__GWMap__
 
-#include <iostream>
 
 #endif /* defined(__OpenGW__GWMap__) */

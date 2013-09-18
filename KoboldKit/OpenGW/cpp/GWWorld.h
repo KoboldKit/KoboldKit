@@ -9,11 +9,22 @@
 #ifndef __OpenGW__GWWorld__
 #define __OpenGW__GWWorld__
 
-#include <iostream>
+#include <vector>
+#include "GWTypes.h"
+
+class GWEntity;
 
 class GWWorld
 {
+public:
 	GWWorld();
+	
+	void addEntity(GWEntity* entity);
+	
+protected:
+private:
+	typedef std::vector<GWEntity*> Entities;
+	Entities _entities;
 };
 
 #endif /* defined(__OpenGW__GWWorld__) */

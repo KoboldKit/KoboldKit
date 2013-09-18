@@ -9,6 +9,9 @@
 #ifndef __OpenGW__GWEntity__
 #define __OpenGW__GWEntity__
 
-#include <iostream>
+class GWEntity
+{
+	
+};
 
 #endif /* defined(__OpenGW__GWEntity__) */

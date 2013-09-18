@@ -16,6 +16,9 @@
 
 -(void) spawnObjects
 {
+	OGWWorld* world = [OGWWorld new];
+	world = nil;
+	
 	for (KKTilemapObjectLayerNode* objectLayerNode in _objectLayerNodes)
 	{
 		[self spawnObjectsWithLayerNode:objectLayerNode];

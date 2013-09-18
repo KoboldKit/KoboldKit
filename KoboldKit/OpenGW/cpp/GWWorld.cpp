@@ -7,8 +7,15 @@
 //
 
 #include "GWWorld.h"
+#include "GWEntity.h"
 
 GWWorld::GWWorld()
 {
 	
 }
+
+void GWWorld::addEntity(GWEntity* entity)
+{
+	_entities.push_back(entity);
+}
+

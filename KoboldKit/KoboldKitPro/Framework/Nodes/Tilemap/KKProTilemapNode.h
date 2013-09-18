@@ -8,7 +8,13 @@
 
 #import "KKTilemapNode.h"
 
+@class OGWWorld;
+
 @interface KKProTilemapNode : KKTilemapNode
+{
+	@private
+	OGWWorld* gameWorld;
+}
 
 /** @name Spawning Objects */
 

@@ -80,6 +80,8 @@
 		DC2DD46717ABEA07000351BE /* PlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB338B178D808400C13739 /* PlayerCharacter.m */; };
 		DC37E8F417C10B5900A04FCB /* KoboldKitPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */; };
 		DC37E8F617C10B5D00A04FCB /* KoboldKitCommunity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37E8F517C10B5D00A04FCB /* KoboldKitCommunity.framework */; };
+		DC4B3A6417E88728004EE18D /* libOpenGW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4B3A6317E88728004EE18D /* libOpenGW.a */; };
+		DC4B3A6617E8872D004EE18D /* OpenGW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4B3A6517E8872D004EE18D /* OpenGW.framework */; };
 		DC5BCDB217CF88E500A5CB01 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA117CF88E500A5CB01 /* iTunesArtwork */; };
 		DC5BCDB317CF88E500A5CB01 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDA217CF88E500A5CB01 /* iTunesArtwork@2x */; };
 		DC5BCDBA17CF88F300A5CB01 /* Icons-Mac.iconset in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCD9F17CF88E400A5CB01 /* Icons-Mac.iconset */; };
@@ -188,7 +190,7 @@
 		DC10606317B3C9BC005BB9D0 /* Tileset_Geometry_16x16_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_Geometry_16x16_256.png; sourceTree = "<group>"; };
 		DC10606517B3C9BC005BB9D0 /* Tileset_GeometryB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tileset_GeometryB.png; sourceTree = "<group>"; };
 		DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TilesTest.tmx; sourceTree = "<group>"; };
-		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lua; };
+		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
 		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
 		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua.sample; sourceTree = "<group>"; };
 		DC18B0C5178C7BC400641A6D /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
@@ -224,6 +226,8 @@
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DC484C1B178C40800067DAA4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DC484CE3178C465E0067DAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		DC4B3A6317E88728004EE18D /* libOpenGW.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libOpenGW.a; path = "KoboldKit/OpenGW/build/Debug-iphoneos/libOpenGW.a"; sourceTree = "<group>"; };
+		DC4B3A6517E8872D004EE18D /* OpenGW.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = OpenGW.framework; path = KoboldKit/OpenGW/build/Debug/OpenGW.framework; sourceTree = "<group>"; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DC5BCD9F17CF88E400A5CB01 /* Icons-Mac.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = "Icons-Mac.iconset"; sourceTree = "<group>"; };
 		DC5BCDA117CF88E500A5CB01 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
@@ -292,6 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4B3A6617E8872D004EE18D /* OpenGW.framework in Frameworks */,
 				DC8B563817CBF1AD00F95CBC /* KoboldKit.framework in Frameworks */,
 				DC8B563717CBF19D00F95CBC /* KoboldKitExternal.framework in Frameworks */,
 				DC37E8F617C10B5D00A04FCB /* KoboldKitCommunity.framework in Frameworks */,
@@ -313,6 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4B3A6417E88728004EE18D /* libOpenGW.a in Frameworks */,
 				DC8B563517CBF18900F95CBC /* libKoboldKitExternal.a in Frameworks */,
 				DCD9C8B517C1070400535043 /* libKoboldKitCommunity.a in Frameworks */,
 				DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */,
@@ -522,6 +528,8 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC4B3A6517E8872D004EE18D /* OpenGW.framework */,
+				DC4B3A6317E88728004EE18D /* libOpenGW.a */,
 				DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */,
 				DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */,
 				DC19539617C1254600EC526C /* AppKit.framework */,
@@ -901,7 +909,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F0686E86-B01A-4F18-82F8-D096B7E6EA9E";
 				SDKROOT = iphoneos;
@@ -914,7 +925,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Super_Stick_Spy/Super_Stick_Spy-iOS-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F0686E86-B01A-4F18-82F8-D096B7E6EA9E";
 				SDKROOT = iphoneos;
@@ -927,7 +941,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -941,10 +955,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_FAST_MATH = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -966,6 +981,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lC++";
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_FORMAT = RGBA8888_COMPRESSED;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
@@ -979,7 +995,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -994,9 +1010,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Super_Stick_Spy/Super_Stick_Spy-Prefix.pch";
@@ -1011,6 +1028,7 @@
 				HEADER_SEARCH_PATHS = "KoboldKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-lC++";
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_FORMAT = RGBA8888_COMPRESSED;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;

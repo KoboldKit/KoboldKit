@@ -5,8 +5,13 @@
  */
 
 #ifdef __OBJC__
-	#import <Foundation/Foundation.h>
-	#import <CoreGraphics/CoreGraphics.h>
+
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+
 #elif __cplusplus
+
+#include <map>
+#include <vector>
 
 #endif

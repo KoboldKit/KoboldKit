@@ -8,17 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
-class GWWorld;
+@class OGWEntity;
+@class OGWMap;
 
 @interface OGWWorld : NSObject
 {
 	@protected
-	GWWorld* cppWorld;
 	
 	@private
 	NSMutableDictionary* _entities;
+	NSMutableDictionary* _maps;
 }
 
 -(NSArray*) entitiesWithType:(NSInteger)entityType;
+
+-(void) addMap:(OGWMap*)map forKey:(NSString*)key;
+-(void) removeMapForKey:(NSString*)key;
+-(OGWMap*) mapForKey:(NSString*)key;
+
 
 @end

@@ -74,7 +74,6 @@
 
 		// speed is unaffected by max velocity caps, hence speed is applied afterwards
 		newVelocity = ccpMult(newVelocity, _speed);
-		LOG_EXPR(newVelocity);
 		
 		// update position
 		CGPoint previousPosition = entity.position;

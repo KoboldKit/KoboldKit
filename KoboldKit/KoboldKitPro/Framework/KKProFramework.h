@@ -6,4 +6,6 @@
 
 /** This header includes all the most commonly needed headers within the framework. */
 
+#import "../OpenGW/OpenGW.h"
+
 #import "KKProCategories.h"
