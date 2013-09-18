@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC9F5AF317EA2403000B593D /* OGWVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9F5AF117EA2403000B593D /* OGWVersion.h */; };
+		DC9F5AF417EA2403000B593D /* OGWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5AF217EA2403000B593D /* OGWVersion.m */; };
+		DC9F5AF517EA2403000B593D /* OGWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5AF217EA2403000B593D /* OGWVersion.m */; };
 		DCDBA58317E5E49B00796C04 /* OGWWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA57F17E5E49B00796C04 /* OGWWorld.h */; };
 		DCDBA58417E5E49B00796C04 /* OGWWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.m */; };
 		DCDBA58517E5E49B00796C04 /* OGWWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.m */; };
@@ -56,6 +59,8 @@
 		DC8B564C17CC106000F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DC9F5ACA17E9F182000B593D /* index.appledoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.appledoc; sourceTree = "<group>"; };
+		DC9F5AF117EA2403000B593D /* OGWVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWVersion.h; sourceTree = "<group>"; };
+		DC9F5AF217EA2403000B593D /* OGWVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWVersion.m; sourceTree = "<group>"; };
 		DCD7A291178C7545004A0467 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		DCDBA57F17E5E49B00796C04 /* OGWWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWWorld.h; sourceTree = "<group>"; };
 		DCDBA58017E5E49B00796C04 /* OGWWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWWorld.m; sourceTree = "<group>"; };
@@ -137,6 +142,8 @@
 		DCDBA57E17E5E49B00796C04 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				DC9F5AF117EA2403000B593D /* OGWVersion.h */,
+				DC9F5AF217EA2403000B593D /* OGWVersion.m */,
 				DCDBA5AE17E73D0700796C04 /* OGWTypes.h */,
 				DCDBA57F17E5E49B00796C04 /* OGWWorld.h */,
 				DCDBA58017E5E49B00796C04 /* OGWWorld.m */,
@@ -210,6 +217,7 @@
 				DCDBA58317E5E49B00796C04 /* OGWWorld.h in Headers */,
 				DCDBA59C17E5EC1900796C04 /* OGWEntity.h in Headers */,
 				DCDBA5A817E5EC4100796C04 /* GWEntity.h in Headers */,
+				DC9F5AF317EA2403000B593D /* OGWVersion.h in Headers */,
 				DCDBA58617E5E49B00796C04 /* OpenGW-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +308,7 @@
 				DCDBA5AC17E5EC4900796C04 /* GWMap.cpp in Sources */,
 				DCDBA5A717E5EC4100796C04 /* GWEntity.cpp in Sources */,
 				DCDBA5A317E5EC3400796C04 /* OGWMap.m in Sources */,
+				DC9F5AF517EA2403000B593D /* OGWVersion.m in Sources */,
 				DCDBA58517E5E49B00796C04 /* OGWWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +322,7 @@
 				DCDBA5AB17E5EC4900796C04 /* GWMap.cpp in Sources */,
 				DCDBA5A617E5EC4100796C04 /* GWEntity.cpp in Sources */,
 				DCDBA5A217E5EC3400796C04 /* OGWMap.m in Sources */,
+				DC9F5AF417EA2403000B593D /* OGWVersion.m in Sources */,
 				DCDBA58417E5E49B00796C04 /* OGWWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
