@@ -36,8 +36,6 @@
 		DC18B0D5178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
 		DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
 		DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
-		DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */; };
-		DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */; };
 		DC18B11C178C7BC400641A6D /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C5178C7BC400641A6D /* Jetpack.atlas */; };
 		DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0C5178C7BC400641A6D /* Jetpack.atlas */; };
 		DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */; };
@@ -192,7 +190,6 @@
 		DC10606617B3C9BC005BB9D0 /* TilesTest.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TilesTest.tmx; sourceTree = "<group>"; };
 		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
 		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
-		DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua.sample; sourceTree = "<group>"; };
 		DC18B0C5178C7BC400641A6D /* Jetpack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Jetpack.atlas; sourceTree = "<group>"; };
 		DC18B11E178C7E3B00641A6D /* Super_Stick_Spy-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Super_Stick_Spy-iOS-Info.plist"; sourceTree = "<group>"; };
 		DC18B11F178C7E3B00641A6D /* Super_Stick_Spy-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Super_Stick_Spy-Mac-Info.plist"; sourceTree = "<group>"; };
@@ -226,8 +223,8 @@
 		DC484C1A178C40800067DAA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DC484C1B178C40800067DAA4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DC484CE3178C465E0067DAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
-		DC4B3A6317E88728004EE18D /* libOpenGW.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libOpenGW.a; path = "KoboldKit/OpenGW/build/Debug-iphoneos/libOpenGW.a"; sourceTree = "<group>"; };
-		DC4B3A6517E8872D004EE18D /* OpenGW.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = OpenGW.framework; path = KoboldKit/OpenGW/build/Debug/OpenGW.framework; sourceTree = "<group>"; };
+		DC4B3A6317E88728004EE18D /* libOpenGW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOpenGW.a; path = "KoboldKit/OpenGW/build/Debug-iphoneos/libOpenGW.a"; sourceTree = "<group>"; };
+		DC4B3A6517E8872D004EE18D /* OpenGW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGW.framework; path = KoboldKit/OpenGW/build/Debug/OpenGW.framework; sourceTree = "<group>"; };
 		DC4DE928176CA4EB003E4087 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DC5BCD9F17CF88E400A5CB01 /* Icons-Mac.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = "Icons-Mac.iconset"; sourceTree = "<group>"; };
 		DC5BCDA117CF88E500A5CB01 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
@@ -367,7 +364,6 @@
 			children = (
 				DC18B09F178C7BC400641A6D /* config.lua */,
 				DC18B0A0178C7BC400641A6D /* devconfig.lua */,
-				DC18B0A1178C7BC400641A6D /* devconfig.lua.sample */,
 				DC8EED1D17A40788000C1995 /* objectTemplates.lua */,
 				DC7EF8E617AEA2F100831FEB /* behaviorTemplates.lua */,
 			);
@@ -721,7 +717,6 @@
 				DCDC593A17BE2D980018AB6F /* Tileset_Geometry_16x16.png in Resources */,
 				DC04802F17AD2C63002EBD1E /* playerdeath.sks in Resources */,
 				DC18B11D178C7BC400641A6D /* Jetpack.atlas in Resources */,
-				DC18B0D9178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DC10606C17B3C9BC005BB9D0 /* DemoStage001.tmx in Resources */,
 				DCDC593817BE2D980018AB6F /* Tileset_Geometry_16x16_test.png in Resources */,
 				DC25515317B27C0A0078151C /* ATTRIBUTIONS in Resources */,
@@ -785,7 +780,6 @@
 				DCEF830317CFD85100157387 /* Default-Landscape~ipad.png in Resources */,
 				DC25519917B2894D0078151C /* checkpoint.wav in Resources */,
 				DC10606717B3C9BC005BB9D0 /* ColorTest.tmx in Resources */,
-				DC18B0D8178C7BC400641A6D /* devconfig.lua.sample in Resources */,
 				DCEF830217CFD85100157387 /* Default-Landscape@2x~ipad.png in Resources */,
 				DCEF82F717CFD85100157387 /* Icon-72.png in Resources */,
 				DC8EED1E17A40788000C1995 /* objectTemplates.lua in Resources */,
