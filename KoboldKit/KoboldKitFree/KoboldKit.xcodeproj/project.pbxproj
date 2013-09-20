@@ -192,6 +192,20 @@
 			remoteGlobalIDString = DC484C42178C40BB0067DAA4;
 			remoteInfo = KoboldKitExternal.framework;
 		};
+		DC68B42117ECB3CA00563A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8B560D17CBF10F00F95CBC /* KoboldKitExternal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC68B3E217ECB1FE00563A30;
+			remoteInfo = "libKoboldKitExternal.a Tests";
+		};
+		DC68B42617ECB3CA00563A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCDBA58817E5E52C00796C04 /* OpenGW.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC68B40E17ECB2C200563A30;
+			remoteInfo = "libOpenGW.a-Tests";
+		};
 		DC8B561517CBF10F00F95CBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC8B560A17CBF10F00F95CBC /* KoboldKitCommunity.xcodeproj */;
@@ -768,6 +782,7 @@
 			children = (
 				DC8B561C17CBF10F00F95CBC /* libKoboldKitExternal.a */,
 				DC8B561E17CBF10F00F95CBC /* KoboldKitExternal.framework */,
+				DC68B42217ECB3CA00563A30 /* libKoboldKitExternal.a Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -786,6 +801,7 @@
 			children = (
 				DCDBA58E17E5E52C00796C04 /* libOpenGW.a */,
 				DCDBA59017E5E52C00796C04 /* OpenGW.framework */,
+				DC68B42717ECB3CA00563A30 /* libOpenGW.a-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1004,6 +1020,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		DC68B42217ECB3CA00563A30 /* libKoboldKitExternal.a Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "libKoboldKitExternal.a Tests.xctest";
+			remoteRef = DC68B42117ECB3CA00563A30 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DC68B42717ECB3CA00563A30 /* libOpenGW.a-Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "libOpenGW.a-Tests.xctest";
+			remoteRef = DC68B42617ECB3CA00563A30 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		DC8B561617CBF10F00F95CBC /* libKoboldKitCommunity.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1263,10 +1293,7 @@
 		DC484C88178C418D0067DAA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1276,23 +1303,20 @@
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
 		DC484C89178C418D0067DAA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = KoboldKit;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
@@ -1319,7 +1343,6 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_FAST_MATH = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1373,7 +1396,6 @@
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_FAST_MATH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KoboldKit-Prefix.pch";

@@ -84,7 +84,7 @@ static NSCharacterSet* KKNonAsciiCharacterSet = nil;
 	newString = [self stringByDeletingNonAsciiCharacters];
 	newString = [newString stringByDeletingIllegalFileSystemCharacters];
 
-	NSCharacterSet* illegalXcodeCharacters = [NSCharacterSet characterSetWithCharactersInString:@"!+~&'(),=@[]^`{}"];
+	NSCharacterSet* illegalXcodeCharacters = [NSCharacterSet characterSetWithCharactersInString:@"!+~&'(),=@[]^`{}#"];
 	newString = [[newString componentsSeparatedByCharactersInSet:illegalXcodeCharacters] componentsJoinedByString:@""];
 
 	newString = [newString stringByTrimmingWhiteSpaceCharacters];

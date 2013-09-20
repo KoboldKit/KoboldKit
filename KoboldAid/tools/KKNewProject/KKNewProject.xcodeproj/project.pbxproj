@@ -48,6 +48,7 @@
 		DC5AA87817CD05720001940A /* KKMutableNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA87317CD05720001940A /* KKMutableNumber.m */; };
 		DC5AA87D17CD058E0001940A /* KKLua.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA87C17CD058E0001940A /* KKLua.m */; };
 		DC5BCDBC17CF8BF600A5CB01 /* Icons-Mac.iconset in Resources */ = {isa = PBXBuildFile; fileRef = DC5BCDBB17CF8BF600A5CB01 /* Icons-Mac.iconset */; };
+		DC68B3BA17ECAD8400563A30 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC68B3B917ECAD8400563A30 /* QuartzCore.framework */; };
 		DCD803C317CCF5C300565DE7 /* KKToolDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD803C217CCF5C300565DE7 /* KKToolDataSource.m */; };
 		DCDCAD8617CCC3D000FAE1E5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDCAD8517CCC3D000FAE1E5 /* Cocoa.framework */; };
 		DCDCAD9017CCC3D000FAE1E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDCAD8E17CCC3D000FAE1E5 /* InfoPlist.strings */; };
@@ -136,6 +137,7 @@
 		DC5AA87B17CD058E0001940A /* KKLua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLua.h; sourceTree = "<group>"; };
 		DC5AA87C17CD058E0001940A /* KKLua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLua.m; sourceTree = "<group>"; };
 		DC5BCDBB17CF8BF600A5CB01 /* Icons-Mac.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = "Icons-Mac.iconset"; path = "../../../../KoboldKit/KoboldKitResources/Icons-Mac.iconset"; sourceTree = "<group>"; };
+		DC68B3B917ECAD8400563A30 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DCD803C117CCF5C300565DE7 /* KKToolDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKToolDataSource.h; sourceTree = "<group>"; };
 		DCD803C217CCF5C300565DE7 /* KKToolDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKToolDataSource.m; sourceTree = "<group>"; };
 		DCDCAD8217CCC3D000FAE1E5 /* KKNewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKNewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC68B3BA17ECAD8400563A30 /* QuartzCore.framework in Frameworks */,
 				DCDCAD8617CCC3D000FAE1E5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +315,7 @@
 		DCDCAD8417CCC3D000FAE1E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC68B3B917ECAD8400563A30 /* QuartzCore.framework */,
 				DCDCAD8517CCC3D000FAE1E5 /* Cocoa.framework */,
 				DCDCADA417CCC3D000FAE1E5 /* XCTest.framework */,
 				DCDCAD8717CCC3D000FAE1E5 /* Other Frameworks */,

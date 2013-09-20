@@ -29,7 +29,7 @@
  @returns The string with whitespace and newline characters trimmed. */
 -(NSString*) stringByTrimmingWhiteSpaceCharacters;
 /** Removes characters from the string that are illegal to use in .xcodeproj bundle and related files.
- The illegal characters are all illegal file system characters plus: !+~&'(),=@[]^`{}
+ The illegal characters are all illegal file system characters plus: !+~&'(),=@[]^`{}#
  @returns The string with all illegal .xcodeproj characters removed. */
 -(NSString*) stringByDeletingIllegalXcodeCharacters;
 
