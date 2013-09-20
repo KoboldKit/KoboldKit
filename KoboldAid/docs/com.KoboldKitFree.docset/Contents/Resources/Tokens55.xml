@@ -581,24 +581,8 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 					<Abstract type="html">The size of the rectangle.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The newly created SKPhysicsBody.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">size The newly created SKPhysicsBody.</Abstract></ReturnValue>
 			<Anchor>//api/name/physicsBodyWithRectangleOfSize:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKNode(KoboldKit)/physicsBodyWithCircleOfRadius:</TokenIdentifier>
-			<Abstract type="html">Creates a physics Body with circle shape. Also assigns the physics body to the node's self.physicsBody property.</Abstract>
-			<DeclaredIn>SKNode+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (SKPhysicsBody *)physicsBodyWithCircleOfRadius:(CGFloat)radius</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>radius</Name>
-					<Abstract type="html">The circle radius.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The newly created SKPhysicsBody.</Abstract></ReturnValue>
-			<Anchor>//api/name/physicsBodyWithCircleOfRadius:</Anchor>
 		</Token>
 		
 		<Token>

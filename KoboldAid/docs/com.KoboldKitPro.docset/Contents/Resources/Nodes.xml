@@ -14,12 +14,19 @@
 						<NodeRef refid="2"/>
 						<NodeRef refid="3"/>
 						<NodeRef refid="4"/>
-						<NodeRef refid="5"/>
-						<NodeRef refid="6"/>
 						
 					</Subnodes>
 				</Node>
 				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="5"/>
+						
+					</Subnodes>
+				</Node>
 				
 				
 			</Subnodes>
@@ -42,15 +49,11 @@
 			<Name>KKPickupItemBehavior</Name>
 			<Path>Classes/KKPickupItemBehavior.html</Path>
 		</Node>
-		<Node id="5">
-			<Name>KKProDummyClass</Name>
-			<Path>Classes/KKProDummyClass.html</Path>
-		</Node>
-		<Node id="6">
-			<Name>KKProTilemapNode</Name>
-			<Path>Classes/KKProTilemapNode.html</Path>
-		</Node>
 		
+		<Node id="5">
+			<Name>KKTilemapNode(KoboldKitPro)</Name>
+			<Path>Categories/KKTilemapNode+KoboldKitPro.html</Path>
+		</Node>
 		
 		
 	</Library>

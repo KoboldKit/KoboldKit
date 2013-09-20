@@ -10,5 +10,5 @@
 
 NSString* OGWVersion()
 {
-	return @"OpenGW (ObjC) v0.1";
+	return @"OpenGW (ObjC) v0.0";
 }

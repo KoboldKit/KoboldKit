@@ -78,45 +78,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/setContext:</TokenIdentifier>
-			<Abstract type="html">This returns the EAGLContext for the view using a public API call. This enables custom OpenGL code on the Sprite Kit GL context.
-Note: the context is not valid (is nil) before the view controller's viewDidAppear: method runs. In other words the viewDidAppear: method
-is the earliest point where you will get a valid EAGLContext.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKGLContext *context</Declaration>
-			
-			<ReturnValue><Abstract type="html">The view's EAGLContext, or nil if the view controller's viewDidAppear method hasn't run yet.</Abstract></ReturnValue>
-			<Anchor>//api/name/context</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKView/context</TokenIdentifier>
-			<Abstract type="html">This returns the EAGLContext for the view using a public API call. This enables custom OpenGL code on the Sprite Kit GL context.
-Note: the context is not valid (is nil) before the view controller's viewDidAppear: method runs. In other words the viewDidAppear: method
-is the earliest point where you will get a valid EAGLContext.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKGLContext *context</Declaration>
-			
-			<ReturnValue><Abstract type="html">The view's EAGLContext, or nil if the view controller's viewDidAppear method hasn't run yet.</Abstract></ReturnValue>
-			<Anchor>//api/name/context</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKView/context</TokenIdentifier>
-			<Abstract type="html">This returns the EAGLContext for the view using a public API call. This enables custom OpenGL code on the Sprite Kit GL context.
-Note: the context is not valid (is nil) before the view controller's viewDidAppear: method runs. In other words the viewDidAppear: method
-is the earliest point where you will get a valid EAGLContext.</Abstract>
-			<DeclaredIn>KKView.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) KKGLContext *context</Declaration>
-			
-			<ReturnValue><Abstract type="html">The view's EAGLContext, or nil if the view controller's viewDidAppear method hasn't run yet.</Abstract></ReturnValue>
-			<Anchor>//api/name/context</Anchor>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsPhysicsShapes:</TokenIdentifier>
 			<Abstract type="html">If YES, will render physics shape outlines.</Abstract>
 			<DeclaredIn>KKView.h</DeclaredIn>			

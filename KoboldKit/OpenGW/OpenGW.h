@@ -9,12 +9,6 @@
 #ifndef KoboldKitPro_OpenGW_h
 #define KoboldKitPro_OpenGW_h
 
-
-#ifdef __OBJC__
-#import "OGWWorld.h"
-#elif __cplusplus
-#include "GWWorld.h"
-#endif
-
+#import "OGWVersion.h"
 
 #endif

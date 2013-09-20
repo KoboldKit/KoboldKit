@@ -16,8 +16,6 @@
 		DC0C220B17CFA1EF007FE7B8 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0C220917CFA1EF007FE7B8 /* Spaceship.png */; };
 		DC18B0D4178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
 		DC18B0D5178C7BC400641A6D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B09F178C7BC400641A6D /* config.lua */; };
-		DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
-		DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC18B0A0178C7BC400641A6D /* devconfig.lua */; };
 		DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B120178C7E7C00641A6D /* Main_iPad.storyboard */; };
 		DC18B129178C7EA000641A6D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18B122178C7E7C00641A6D /* Main_iPhone.storyboard */; };
 		DC19538317C1248C00EC526C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC19538217C1248C00EC526C /* OpenAL.framework */; };
@@ -48,6 +46,8 @@
 		DC8B563517CBF18900F95CBC /* libKoboldKitExternal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */; };
 		DC8B563717CBF19D00F95CBC /* KoboldKitExternal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */; };
 		DC8B563817CBF1AD00F95CBC /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B563217CBF16700F95CBC /* KoboldKit.framework */; };
+		DC9F5AC217E9C985000B593D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5AC117E9C985000B593D /* devconfig.lua */; };
+		DC9F5AC317E9C985000B593D /* devconfig.lua in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5AC117E9C985000B593D /* devconfig.lua */; };
 		DCA8449817C1023F000C63F2 /* libKoboldKitPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */; };
 		DCD11E38178C522300FBC406 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD11E3C178C522300FBC406 /* InfoPlist.strings */; };
@@ -123,7 +123,6 @@
 		DC0C220617CF9C97007FE7B8 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		DC0C220917CFA1EF007FE7B8 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		DC18B09F178C7BC400641A6D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
-		DC18B0A0178C7BC400641A6D /* devconfig.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = devconfig.lua; sourceTree = "<group>"; };
 		DC18B11E178C7E3B00641A6D /* KoboldKit_Game-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKit_Game-iOS-Info.plist"; sourceTree = "<group>"; };
 		DC18B11F178C7E3B00641A6D /* KoboldKit_Game-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KoboldKit_Game-Mac-Info.plist"; sourceTree = "<group>"; };
 		DC18B121178C7E7C00641A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
@@ -163,6 +162,7 @@
 		DC8B563417CBF18900F95CBC /* libKoboldKitExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitExternal.a; path = "KoboldKit/KoboldKitExternal/build/Debug-iphoneos/libKoboldKitExternal.a"; sourceTree = "<group>"; };
 		DC8B563617CBF19D00F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../depot/_buildoutput/KoboldKit_Game-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DC9F5AC117E9C985000B593D /* devconfig.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.lua; path = devconfig.lua; sourceTree = "<group>"; };
 		DCA8449217C101CB000C63F2 /* KoboldKitPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitPro.framework; path = "../../depot/_buildoutput/KoboldKit_Game-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitPro.framework"; sourceTree = "<group>"; };
 		DCA8449717C1023F000C63F2 /* libKoboldKitPro.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitPro.a; path = "KoboldKit/KoboldKitPro/build/Debug-iphoneos/libKoboldKitPro.a"; sourceTree = "<group>"; };
 		DCCC619C178C560B009EC802 /* KoboldKit_Game-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KoboldKit_Game-Prefix.pch"; sourceTree = "<group>"; };
@@ -178,8 +178,8 @@
 		DCD7EC52178C57FC00BBAFB0 /* KoboldKit_Game-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KoboldKit_Game-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD9C8B017C106FE00535043 /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitCommunity.framework; path = KoboldKit/KoboldKitCommunity/build/Debug/KoboldKitCommunity.framework; sourceTree = "<group>"; };
 		DCD9C8B417C1070400535043 /* libKoboldKitCommunity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKoboldKitCommunity.a; path = "KoboldKit/KoboldKitCommunity/build/Debug-iphoneos/libKoboldKitCommunity.a"; sourceTree = "<group>"; };
-		DCDBA59117E5E54E00796C04 /* libOpenGW.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libOpenGW.a; path = "KoboldKit/OpenGW/build/Debug-iphoneos/libOpenGW.a"; sourceTree = "<group>"; };
-		DCDBA59317E5E55500796C04 /* OpenGW.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = OpenGW.framework; path = KoboldKit/OpenGW/build/Debug/OpenGW.framework; sourceTree = "<group>"; };
+		DCDBA59117E5E54E00796C04 /* libOpenGW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOpenGW.a; path = "KoboldKit/OpenGW/build/Debug-iphoneos/libOpenGW.a"; sourceTree = "<group>"; };
+		DCDBA59317E5E55500796C04 /* OpenGW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGW.framework; path = KoboldKit/OpenGW/build/Debug/OpenGW.framework; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -277,7 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				DC18B09F178C7BC400641A6D /* config.lua */,
-				DC18B0A0178C7BC400641A6D /* devconfig.lua */,
+				DC9F5AC117E9C985000B593D /* devconfig.lua */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -570,13 +570,13 @@
 			files = (
 				DC0C220B17CFA1EF007FE7B8 /* Spaceship.png in Resources */,
 				DC5BCDBA17CF88F300A5CB01 /* Icons-Mac.iconset in Resources */,
-				DC18B0D7178C7BC400641A6D /* devconfig.lua in Resources */,
 				DCEF831117CFDBF300157387 /* die.wav in Resources */,
 				DCD11E3E178C522300FBC406 /* InfoPlist.strings in Resources */,
 				DCEF830E17CFDAAB00157387 /* ATTRIBUTIONS in Resources */,
 				DCD11E44178C522300FBC406 /* Credits.rtf in Resources */,
 				DC09DB8E178C84C6000E0B61 /* MainMenu.xib in Resources */,
 				DC18B0D5178C7BC400641A6D /* config.lua in Resources */,
+				DC9F5AC317E9C985000B593D /* devconfig.lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,8 +590,8 @@
 				DC18B128178C7EA000641A6D /* Main_iPad.storyboard in Resources */,
 				DC5BCDB517CF88E500A5CB01 /* Default-Landscape~ipad.png in Resources */,
 				DC5BCDAA17CF88E500A5CB01 /* Icon~ipad.png in Resources */,
+				DC9F5AC217E9C985000B593D /* devconfig.lua in Resources */,
 				DC5BCDB717CF88E500A5CB01 /* Default-Portrait~ipad.png in Resources */,
-				DC18B0D6178C7BC400641A6D /* devconfig.lua in Resources */,
 				DC5BCDB217CF88E500A5CB01 /* iTunesArtwork in Resources */,
 				DCEF82D717CFD4AF00157387 /* Icon.png in Resources */,
 				DC5BCDB317CF88E500A5CB01 /* iTunesArtwork@2x in Resources */,

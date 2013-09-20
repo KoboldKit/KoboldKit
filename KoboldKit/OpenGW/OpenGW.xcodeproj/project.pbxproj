@@ -7,29 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC9F5AF317EA2403000B593D /* OGWVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9F5AF117EA2403000B593D /* OGWVersion.h */; };
-		DC9F5AF417EA2403000B593D /* OGWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5AF217EA2403000B593D /* OGWVersion.m */; };
-		DC9F5AF517EA2403000B593D /* OGWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5AF217EA2403000B593D /* OGWVersion.m */; };
-		DCDBA58317E5E49B00796C04 /* OGWWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA57F17E5E49B00796C04 /* OGWWorld.h */; };
-		DCDBA58417E5E49B00796C04 /* OGWWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.m */; };
-		DCDBA58517E5E49B00796C04 /* OGWWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA58017E5E49B00796C04 /* OGWWorld.m */; };
+		DC9F5AE917EA2124000B593D /* OGWVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9F5AE717EA2124000B593D /* OGWVersion.h */; };
+		DC9F5AEA17EA2124000B593D /* OGWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5AE817EA2124000B593D /* OGWVersion.m */; };
+		DC9F5AEB17EA2124000B593D /* OGWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5AE817EA2124000B593D /* OGWVersion.m */; };
 		DCDBA58617E5E49B00796C04 /* OpenGW-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA58117E5E49B00796C04 /* OpenGW-Prefix.pch */; };
 		DCDBA58717E5E49B00796C04 /* OpenGW.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA58217E5E49B00796C04 /* OpenGW.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCDBA59717E5E7CA00796C04 /* GWWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */; };
-		DCDBA59817E5E7CA00796C04 /* GWWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */; };
-		DCDBA59917E5E7CA00796C04 /* GWWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA59617E5E7CA00796C04 /* GWWorld.h */; };
-		DCDBA59C17E5EC1900796C04 /* OGWEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA59A17E5EC1900796C04 /* OGWEntity.h */; };
-		DCDBA59D17E5EC1900796C04 /* OGWEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59B17E5EC1900796C04 /* OGWEntity.m */; };
-		DCDBA59E17E5EC1900796C04 /* OGWEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA59B17E5EC1900796C04 /* OGWEntity.m */; };
-		DCDBA5A117E5EC3400796C04 /* OGWMap.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA59F17E5EC3400796C04 /* OGWMap.h */; };
-		DCDBA5A217E5EC3400796C04 /* OGWMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A017E5EC3400796C04 /* OGWMap.m */; };
-		DCDBA5A317E5EC3400796C04 /* OGWMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A017E5EC3400796C04 /* OGWMap.m */; };
-		DCDBA5A617E5EC4100796C04 /* GWEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A417E5EC4100796C04 /* GWEntity.cpp */; };
-		DCDBA5A717E5EC4100796C04 /* GWEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A417E5EC4100796C04 /* GWEntity.cpp */; };
-		DCDBA5A817E5EC4100796C04 /* GWEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA5A517E5EC4100796C04 /* GWEntity.h */; };
-		DCDBA5AB17E5EC4900796C04 /* GWMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A917E5EC4900796C04 /* GWMap.cpp */; };
-		DCDBA5AC17E5EC4900796C04 /* GWMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCDBA5A917E5EC4900796C04 /* GWMap.cpp */; };
-		DCDBA5AD17E5EC4900796C04 /* GWMap.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDBA5AA17E5EC4900796C04 /* GWMap.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,25 +41,11 @@
 		DC8B564C17CC106000F95CBC /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../../../depot/_buildoutput/Super_Stick_Spy-dnwdmnwprkcnazbgipwxjamffetz/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
 		DC95BA771786DF8600E31DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DC9F5ACA17E9F182000B593D /* index.appledoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.appledoc; sourceTree = "<group>"; };
-		DC9F5AF117EA2403000B593D /* OGWVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWVersion.h; sourceTree = "<group>"; };
-		DC9F5AF217EA2403000B593D /* OGWVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWVersion.m; sourceTree = "<group>"; };
+		DC9F5AE717EA2124000B593D /* OGWVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWVersion.h; sourceTree = "<group>"; };
+		DC9F5AE817EA2124000B593D /* OGWVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWVersion.m; sourceTree = "<group>"; };
 		DCD7A291178C7545004A0467 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
-		DCDBA57F17E5E49B00796C04 /* OGWWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWWorld.h; sourceTree = "<group>"; };
-		DCDBA58017E5E49B00796C04 /* OGWWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWWorld.m; sourceTree = "<group>"; };
 		DCDBA58117E5E49B00796C04 /* OpenGW-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenGW-Prefix.pch"; sourceTree = "<group>"; };
 		DCDBA58217E5E49B00796C04 /* OpenGW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGW.h; sourceTree = "<group>"; };
-		DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWWorld.cpp; sourceTree = "<group>"; };
-		DCDBA59617E5E7CA00796C04 /* GWWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWWorld.h; sourceTree = "<group>"; };
-		DCDBA59A17E5EC1900796C04 /* OGWEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWEntity.h; sourceTree = "<group>"; };
-		DCDBA59B17E5EC1900796C04 /* OGWEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWEntity.m; sourceTree = "<group>"; };
-		DCDBA59F17E5EC3400796C04 /* OGWMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGWMap.h; sourceTree = "<group>"; };
-		DCDBA5A017E5EC3400796C04 /* OGWMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGWMap.m; sourceTree = "<group>"; };
-		DCDBA5A417E5EC4100796C04 /* GWEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWEntity.cpp; sourceTree = "<group>"; };
-		DCDBA5A517E5EC4100796C04 /* GWEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWEntity.h; sourceTree = "<group>"; };
-		DCDBA5A917E5EC4900796C04 /* GWMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWMap.cpp; sourceTree = "<group>"; };
-		DCDBA5AA17E5EC4900796C04 /* GWMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWMap.h; sourceTree = "<group>"; };
-		DCDBA5AE17E73D0700796C04 /* OGWTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGWTypes.h; sourceTree = "<group>"; };
-		DCDBA5AF17E73D8000796C04 /* GWTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWTypes.h; sourceTree = "<group>"; };
 		DCDD2DAB1769FD0A00F307CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDD2DAD1769FD0A00F307CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCDD2DAF1769FD0A00F307CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -125,32 +93,11 @@
 			path = Documentation;
 			sourceTree = "<group>";
 		};
-		DCDBA57D17E5E49B00796C04 /* cpp */ = {
+		DC9F5AD517EA20EB000B593D /* objc */ = {
 			isa = PBXGroup;
 			children = (
-				DCDBA5AF17E73D8000796C04 /* GWTypes.h */,
-				DCDBA59617E5E7CA00796C04 /* GWWorld.h */,
-				DCDBA59517E5E7CA00796C04 /* GWWorld.cpp */,
-				DCDBA5A517E5EC4100796C04 /* GWEntity.h */,
-				DCDBA5A417E5EC4100796C04 /* GWEntity.cpp */,
-				DCDBA5AA17E5EC4900796C04 /* GWMap.h */,
-				DCDBA5A917E5EC4900796C04 /* GWMap.cpp */,
-			);
-			path = cpp;
-			sourceTree = "<group>";
-		};
-		DCDBA57E17E5E49B00796C04 /* objc */ = {
-			isa = PBXGroup;
-			children = (
-				DC9F5AF117EA2403000B593D /* OGWVersion.h */,
-				DC9F5AF217EA2403000B593D /* OGWVersion.m */,
-				DCDBA5AE17E73D0700796C04 /* OGWTypes.h */,
-				DCDBA57F17E5E49B00796C04 /* OGWWorld.h */,
-				DCDBA58017E5E49B00796C04 /* OGWWorld.m */,
-				DCDBA59A17E5EC1900796C04 /* OGWEntity.h */,
-				DCDBA59B17E5EC1900796C04 /* OGWEntity.m */,
-				DCDBA59F17E5EC3400796C04 /* OGWMap.h */,
-				DCDBA5A017E5EC3400796C04 /* OGWMap.m */,
+				DC9F5AE717EA2124000B593D /* OGWVersion.h */,
+				DC9F5AE817EA2124000B593D /* OGWVersion.m */,
 			);
 			path = objc;
 			sourceTree = "<group>";
@@ -160,8 +107,7 @@
 			children = (
 				DCDBA58217E5E49B00796C04 /* OpenGW.h */,
 				DCDBA58117E5E49B00796C04 /* OpenGW-Prefix.pch */,
-				DCDBA57D17E5E49B00796C04 /* cpp */,
-				DCDBA57E17E5E49B00796C04 /* objc */,
+				DC9F5AD517EA20EB000B593D /* objc */,
 				DC9F5AC917E9F182000B593D /* Documentation */,
 				DCDD2DAA1769FD0A00F307CD /* Frameworks */,
 				DCDD2DA91769FD0A00F307CD /* Products */,
@@ -211,13 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCDBA58717E5E49B00796C04 /* OpenGW.h in Headers */,
-				DCDBA5AD17E5EC4900796C04 /* GWMap.h in Headers */,
-				DCDBA5A117E5EC3400796C04 /* OGWMap.h in Headers */,
-				DCDBA59917E5E7CA00796C04 /* GWWorld.h in Headers */,
-				DCDBA58317E5E49B00796C04 /* OGWWorld.h in Headers */,
-				DCDBA59C17E5EC1900796C04 /* OGWEntity.h in Headers */,
-				DCDBA5A817E5EC4100796C04 /* GWEntity.h in Headers */,
-				DC9F5AF317EA2403000B593D /* OGWVersion.h in Headers */,
+				DC9F5AE917EA2124000B593D /* OGWVersion.h in Headers */,
 				DCDBA58617E5E49B00796C04 /* OpenGW-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,13 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDBA59817E5E7CA00796C04 /* GWWorld.cpp in Sources */,
-				DCDBA59E17E5EC1900796C04 /* OGWEntity.m in Sources */,
-				DCDBA5AC17E5EC4900796C04 /* GWMap.cpp in Sources */,
-				DCDBA5A717E5EC4100796C04 /* GWEntity.cpp in Sources */,
-				DCDBA5A317E5EC3400796C04 /* OGWMap.m in Sources */,
-				DC9F5AF517EA2403000B593D /* OGWVersion.m in Sources */,
-				DCDBA58517E5E49B00796C04 /* OGWWorld.m in Sources */,
+				DC9F5AEB17EA2124000B593D /* OGWVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,13 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDBA59717E5E7CA00796C04 /* GWWorld.cpp in Sources */,
-				DCDBA59D17E5EC1900796C04 /* OGWEntity.m in Sources */,
-				DCDBA5AB17E5EC4900796C04 /* GWMap.cpp in Sources */,
-				DCDBA5A617E5EC4100796C04 /* GWEntity.cpp in Sources */,
-				DCDBA5A217E5EC3400796C04 /* OGWMap.m in Sources */,
-				DC9F5AF417EA2403000B593D /* OGWVersion.m in Sources */,
-				DCDBA58417E5E49B00796C04 /* OGWWorld.m in Sources */,
+				DC9F5AEA17EA2124000B593D /* OGWVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
