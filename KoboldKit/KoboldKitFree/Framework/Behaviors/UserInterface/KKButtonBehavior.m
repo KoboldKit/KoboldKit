@@ -157,7 +157,7 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 			{
 				if (_trackedTouch)
 				{
-					NSLog(@"ALERT: button already tracking touch: %x (new touch: %p)", _trackedTouch, touch);
+					NSLog(@"ALERT: button already tracking touch: %lx (new touch: %p)", (unsigned long)_trackedTouch, touch);
 				}
 				_trackedTouch = (NSUInteger)touch;
 				//NSLog(@"button began: %p", touch);

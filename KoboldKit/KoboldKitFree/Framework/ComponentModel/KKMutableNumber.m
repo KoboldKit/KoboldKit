@@ -911,19 +911,19 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 
 +(id) numberWithInteger:(NSInteger)number
 {
-#if TARGET_OS_IPHONE
-	return [[KKInt32Number alloc] initWithInt32:number];
-#else
+#if __LP64__
 	return [[KKInt64Number alloc] initWithInt64:number];
+#else
+	return [[KKInt32Number alloc] initWithInt32:number];
 #endif
 }
 
 +(id) numberWithLong:(long)number
 {
-#if TARGET_OS_IPHONE
-	return [[KKInt32Number alloc] initWithInt32:number];
-#else
+#if __LP64__
 	return [[KKInt64Number alloc] initWithInt64:number];
+#else
+	return [[KKInt32Number alloc] initWithInt32:number];
 #endif
 }
 
@@ -949,19 +949,19 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 
 +(id) numberWithUnsignedInteger:(NSUInteger)number
 {
-#if TARGET_OS_IPHONE
-	return [[KKInt32Number alloc] initWithInt32:number];
-#else
+#if __LP64__
 	return [[KKInt64Number alloc] initWithInt64:number];
+#else
+	return [[KKInt32Number alloc] initWithInt32:number];
 #endif
 }
 
 +(id) numberWithUnsignedLong:(unsigned long)number
 {
-#if TARGET_OS_IPHONE
-	return [[KKInt32Number alloc] initWithInt32:number];
-#else
+#if __LP64__
 	return [[KKInt64Number alloc] initWithInt64:number];
+#else
+	return [[KKInt32Number alloc] initWithInt32:number];
 #endif
 }
 
@@ -1002,19 +1002,19 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 
 -(id) initWithInteger:(NSInteger)number
 {
-#if TARGET_OS_IPHONE
-	return [[KKInt32Number alloc] initWithInt32:number];
-#else
+#if __LP64__
 	return [[KKInt64Number alloc] initWithInt64:number];
+#else
+	return [[KKInt32Number alloc] initWithInt32:number];
 #endif
 }
 
 -(id) initWithLong:(long)number
 {
-#if TARGET_OS_IPHONE
-	return [[KKInt32Number alloc] initWithInt32:number];
-#else
+#if __LP64__
 	return [[KKInt64Number alloc] initWithInt64:number];
+#else
+	return [[KKInt32Number alloc] initWithInt32:number];
 #endif
 }
 
@@ -1040,19 +1040,19 @@ NSString* const CodingKeyForMutableNumber = @"KKMutableNumber:value";
 
 -(id) initWithUnsignedInteger:(NSUInteger)number
 {
-#if TARGET_OS_IPHONE
-	return [[KKInt32Number alloc] initWithInt32:number];
-#else
+#if __LP64__
 	return [[KKInt64Number alloc] initWithInt64:number];
+#else
+	return [[KKInt32Number alloc] initWithInt32:number];
 #endif
 }
 
 -(id) initWithUnsignedLong:(unsigned long)number
 {
-#if TARGET_OS_IPHONE
-	return [[KKInt32Number alloc] initWithInt32:number];
-#else
+#if __LP64__
 	return [[KKInt64Number alloc] initWithInt64:number];
+#else
+	return [[KKInt32Number alloc] initWithInt32:number];
 #endif
 }
 
