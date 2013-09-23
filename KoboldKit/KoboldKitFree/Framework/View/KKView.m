@@ -205,6 +205,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) pushScene:(KKScene*)scene transition:(KKTransition*)transition
 {
+	self.scene.paused = YES;
 	[_sceneStack addObject:self.scene];
 	
 	transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
@@ -223,6 +224,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 		[_sceneStack removeLastObject];
 		
 		transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
+		scene.paused = NO;
 	}
 }
 
@@ -242,6 +244,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 			[_sceneStack addObject:scene];
 			
 			transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
+			scene.paused = NO;
 		}
 	}
 }
@@ -266,6 +269,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 				[_sceneStack addObject:scene];
 				
 				transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
+				scene.paused = NO;
 				break;
 			}
 		}
