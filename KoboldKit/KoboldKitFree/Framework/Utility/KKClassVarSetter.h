@@ -10,6 +10,7 @@
 typedef enum
 {
 	KKIvarTypeUnknown = 0,
+	KKIvarTypeBOOL,
 	KKIvarTypeChar,
 	KKIvarTypeUnsignedChar,
 	KKIvarTypeInt,
