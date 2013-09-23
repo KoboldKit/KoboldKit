@@ -9,5 +9,5 @@
 
 NSString* koboldKitVersion()
 {
-	return @"Kobold Kit™ v7.0.1";
+	return @"Kobold Kit™ v7.0.2";
 }
