@@ -216,6 +216,18 @@
 	[self.kkScene removeInputEventsObserver:self];
 }
 
+#pragma mark Physics Events
+
+-(void) observePhysicsContactEvents
+{
+	[self.kkScene addPhysicsContactEventsObserver:self];
+}
+
+-(void) disregardPhysicsContactEvents
+{
+	[self.kkScene removePhysicsContactEventsObserver:self];
+}
+
 #pragma mark Node Tree
 
 -(void) didMoveToParent

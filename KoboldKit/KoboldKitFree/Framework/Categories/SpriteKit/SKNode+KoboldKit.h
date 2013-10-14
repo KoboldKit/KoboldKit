@@ -6,6 +6,8 @@
 
 
 #import "KKFramework.h"
+#import "KKPhysicsContactEventDelegate.h"
+#import "KKSceneEventDelegate.h"
 
 @class KKNodeController;
 @class KKBehavior;
@@ -14,7 +16,7 @@
 @class KKModel;
 
 /** Kobold Kit extensions to SKNode. Adds access to controller, model and behaviors. */
-@interface SKNode (KoboldKit)
+@interface SKNode (KoboldKit) <KKPhysicsContactEventDelegate, KKSceneEventDelegate>
 
 /** @name Changing the Node's Position */
 
@@ -105,6 +107,13 @@
 -(void) observeSceneEvents;
 /** Receiver stops receiving all scene events. */
 -(void) disregardSceneEvents;
+
+/** @name Subscribe to physics contact events */
+
+/** Receiver starts receiving both physics contact events. Receiver only needs to implement the corresponding event methods. */
+-(void) observePhysicsContactEvents;
+/** Receiver stops receiving the physics contact events. */
+-(void) disregardPhysicsContactEvents;
 
 /** @name Subscribe to notifications */
 

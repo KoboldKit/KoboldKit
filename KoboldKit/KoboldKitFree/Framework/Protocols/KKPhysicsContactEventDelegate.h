@@ -9,7 +9,7 @@
 
 @protocol KKPhysicsContactEventDelegate <NSObject>
 
-@required
+@optional
 
 /** @returns The physics contact delegate's owning node. */
 @property (atomic, weak) SKNode* node;

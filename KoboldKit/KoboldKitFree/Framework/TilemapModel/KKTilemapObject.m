@@ -12,7 +12,7 @@
 
 -(NSString*) description
 {
-	return [NSString stringWithFormat:@"%@ (name: '%@', userType: '%@', position: %.0f,%.0f, type: %i, properties: %u)",
+	return [NSString stringWithFormat:@"%@ (name: '%@', type: '%@', position: %.0f,%.0f, type: %i, properties: %u)",
 			[super description], _name, _type, _position.x, _position.y, _objectType, (unsigned int)_properties.count];
 }
 
