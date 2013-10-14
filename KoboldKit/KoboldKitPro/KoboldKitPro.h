@@ -8,3 +8,4 @@
 
 // headers
 #import "KKProVersion.h"
+#import "../OpenGW/OpenGW.h"
