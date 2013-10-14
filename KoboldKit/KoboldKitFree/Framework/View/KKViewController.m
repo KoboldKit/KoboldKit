@@ -44,10 +44,8 @@
 	[super viewWillLayoutSubviews];
 #endif
 
-	if (_firstScenePresented == NO)
+	if (((SKView*)self.view).scene == nil)
 	{
-		_firstScenePresented = YES;
-		
 		NSLog(@"%@", koboldKitVersion());
 		[self presentFirstScene];
 	}

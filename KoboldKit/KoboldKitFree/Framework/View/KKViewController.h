@@ -16,10 +16,6 @@
 #else
 @interface KKViewController : NSViewController
 #endif
-{
-	@private
-	BOOL _firstScenePresented;
-}
 
 /** @returns The view controller's view cast to KKView. Use this property to use the KKView methods and properties. */
 @property (atomic, readonly) KKView* kkView;
