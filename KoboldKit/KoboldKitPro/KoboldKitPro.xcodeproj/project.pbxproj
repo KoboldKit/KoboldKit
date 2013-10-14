@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC8B564417CC0FEB00F95CBC /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1953AF17C143FF00EC526C /* KoboldKit.framework */; };
-		DC8B564D17CC106000F95CBC /* KoboldKitExternal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B564C17CC106000F95CBC /* KoboldKitExternal.framework */; };
 		DC8B565117CC107E00F95CBC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDD2DB11769FD0A00F307CD /* SpriteKit.framework */; };
 		DCBD9AFF17C0C8A5008C4F3B /* KKProVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBD99BA17C0C8A5008C4F3B /* KKProVersion.h */; };
 		DCBD9B0017C0C8A5008C4F3B /* KKProVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBD99BB17C0C8A5008C4F3B /* KKProVersion.m */; };
@@ -18,6 +16,10 @@
 		DCEA06D417E74AD70011DED9 /* KKProSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = DCEA06D217E74AD70011DED9 /* KKProSwizzle.h */; };
 		DCEA06D517E74AD70011DED9 /* KKProSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEA06D317E74AD70011DED9 /* KKProSwizzle.m */; };
 		DCEA06D617E74AD70011DED9 /* KKProSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEA06D317E74AD70011DED9 /* KKProSwizzle.m */; };
+		DCEFA545180C313C009B0300 /* KoboldKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEFA541180C313C009B0300 /* KoboldKit.framework */; };
+		DCEFA546180C313C009B0300 /* KoboldKitCommunity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEFA542180C313C009B0300 /* KoboldKitCommunity.framework */; };
+		DCEFA547180C313C009B0300 /* KoboldKitExternal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEFA543180C313C009B0300 /* KoboldKitExternal.framework */; };
+		DCEFA548180C313C009B0300 /* OpenGW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEFA544180C313C009B0300 /* OpenGW.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +61,10 @@
 		DCDD2DD41769FD0A00F307CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DCEA06D217E74AD70011DED9 /* KKProSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProSwizzle.h; sourceTree = "<group>"; };
 		DCEA06D317E74AD70011DED9 /* KKProSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKProSwizzle.m; sourceTree = "<group>"; };
+		DCEFA541180C313C009B0300 /* KoboldKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKit.framework; path = "../../../../depot/_buildoutput/KoboldKit_Game-emodnxkxbvcspwbwreiywephofcm/Build/Products/Debug/KoboldKit.framework"; sourceTree = "<group>"; };
+		DCEFA542180C313C009B0300 /* KoboldKitCommunity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitCommunity.framework; path = "../../../../depot/_buildoutput/KoboldKit_Game-emodnxkxbvcspwbwreiywephofcm/Build/Products/Debug/KoboldKitCommunity.framework"; sourceTree = "<group>"; };
+		DCEFA543180C313C009B0300 /* KoboldKitExternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KoboldKitExternal.framework; path = "../../../../depot/_buildoutput/KoboldKit_Game-emodnxkxbvcspwbwreiywephofcm/Build/Products/Debug/KoboldKitExternal.framework"; sourceTree = "<group>"; };
+		DCEFA544180C313C009B0300 /* OpenGW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGW.framework; path = "../../../../depot/_buildoutput/KoboldKit_Game-emodnxkxbvcspwbwreiywephofcm/Build/Products/Debug/OpenGW.framework"; sourceTree = "<group>"; };
 		DCFE4D6B17B2B4E8006675A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DCFE4D6D17B2B4F3006675A2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		DCFE4D6F17B2B4FC006675A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -70,9 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEFA545180C313C009B0300 /* KoboldKit.framework in Frameworks */,
+				DCEFA546180C313C009B0300 /* KoboldKitCommunity.framework in Frameworks */,
+				DCEFA547180C313C009B0300 /* KoboldKitExternal.framework in Frameworks */,
+				DCEFA548180C313C009B0300 /* OpenGW.framework in Frameworks */,
 				DC8B565117CC107E00F95CBC /* SpriteKit.framework in Frameworks */,
-				DC8B564D17CC106000F95CBC /* KoboldKitExternal.framework in Frameworks */,
-				DC8B564417CC0FEB00F95CBC /* KoboldKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +147,10 @@
 		DCDD2DAA1769FD0A00F307CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCEFA541180C313C009B0300 /* KoboldKit.framework */,
+				DCEFA542180C313C009B0300 /* KoboldKitCommunity.framework */,
+				DCEFA543180C313C009B0300 /* KoboldKitExternal.framework */,
+				DCEFA544180C313C009B0300 /* OpenGW.framework */,
 				DC8B564C17CC106000F95CBC /* KoboldKitExternal.framework */,
 				DC3AEF4B17CBE08A0002416A /* KoboldKitExternal.framework */,
 				DC1953AF17C143FF00EC526C /* KoboldKit.framework */,
