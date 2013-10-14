@@ -60,6 +60,8 @@ typedef enum
  @param ivarsDictionary A NSString keyed dictionary with values for ivars. The keys must begin with _ which is the standard prefix of ivar names.
  @param target The target to which to set the ivar values. */
 -(void) setIvarsWithDictionary:(NSDictionary*)ivarsDictionary target:(id)target;
+/** nd */
+-(void) setIvarsWithDictionary:(NSDictionary*)ivarsDictionary mapping:(NSDictionary*)mapping target:(id)target;
 
 /** Calls property setters in the target by using setValue:forKey: (KVC). The dictionary must have NSString as keys
  and either NSString or KKMutableNumber as values which must match or be convertible to the property's type. 
@@ -67,5 +69,7 @@ typedef enum
  @param propertiesDictionary A NSString keyed dictionary with values for properties. The keys must match existing properties' names for the given class.
  @param target The target to which to set the properties. */
 -(void) setPropertiesWithDictionary:(NSDictionary*)propertiesDictionary target:(id)target;
+/** nd */
+-(void) setPropertiesWithDictionary:(NSDictionary*)propertiesDictionary mapping:(NSDictionary*)mapping target:(id)target;
 
 @end

@@ -282,12 +282,26 @@ static Class kMutableNumberClass;
 
 -(void) setIvarsWithDictionary:(NSDictionary*)ivarsDictionary target:(id)target
 {
+	[self setIvarsWithDictionary:ivarsDictionary mapping:nil target:target];
+}
+
+-(void) setIvarsWithDictionary:(NSDictionary*)ivarsDictionary mapping:(NSDictionary *)mapping target:(id)target
+{
 	NSAssert2([target isKindOfClass:_class], @"class mismatch! target class %@ != expected class %@", NSStringFromClass([target class]), NSStringFromClass(_class));
 
 	[ivarsDictionary enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL* stop)
 	{
 		NSAssert1([key isKindOfClass:[NSString class]], @"dictionary key must be a NSString, but it's a %@", NSStringFromClass([key class]));
 
+		if (mapping)
+		{
+			NSString* mappedKey = [mapping objectForKey:key];
+			if (mappedKey)
+			{
+				key = mappedKey;
+			}
+		}
+		
 		if ([key hasPrefix:@"_"])
 		{
 			KKIvarInfo* ivarInfo = [self ivarInfoForName:key];
@@ -302,14 +316,28 @@ static Class kMutableNumberClass;
 	}];
 }
 
--(void) setPropertiesWithDictionary:(NSDictionary*)propertiesDictionary target:(id)target
+-(void) setPropertiesWithDictionary:(NSDictionary *)propertiesDictionary target:(id)target
+{
+	[self setPropertiesWithDictionary:propertiesDictionary mapping:nil target:target];
+}
+
+-(void) setPropertiesWithDictionary:(NSDictionary*)propertiesDictionary mapping:(NSDictionary *)mapping target:(id)target
 {
 	NSAssert2([target isKindOfClass:_class], @"class mismatch! target class %@ != expected class %@", NSStringFromClass([target class]), NSStringFromClass(_class));
 	
 	[propertiesDictionary enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL* stop)
 	{
 		NSAssert1([key isKindOfClass:[NSString class]], @"dictionary key must be a NSString, but it's a %@", NSStringFromClass([key class]));
-		 
+
+		if (mapping)
+		{
+			NSString* mappedKey = [mapping objectForKey:key];
+			if (mappedKey)
+			{
+				key = mappedKey;
+			}
+		}
+		
 		if ([key hasPrefix:@"_"] == NO)
 		{
 			obj = [self convertedObject:obj forKey:key];

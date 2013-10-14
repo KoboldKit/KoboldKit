@@ -76,6 +76,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 	[self loadConfig:@"devconfig.lua"];
 	[self loadConfig:@"objectTemplates.lua" inheritProperties:YES];
 	[self loadConfig:@"behaviorTemplates.lua"];
+	[self loadConfig:@"tiledPropertiesMapping.lua"];
 
 	BOOL disableAllDebugLabels = [_model boolForKeyPath:@"devconfig.disableAllDebugLabels"];
 	if (disableAllDebugLabels == NO)
