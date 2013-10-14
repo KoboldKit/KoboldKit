@@ -338,7 +338,7 @@ static Class kMutableNumberClass;
 			}
 		}
 		
-		if ([key hasPrefix:@"_"] == NO)
+		if (((NSString*)key).length && [key hasPrefix:@"_"] == NO)
 		{
 			obj = [self convertedObject:obj forKey:key];
 			

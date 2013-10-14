@@ -40,7 +40,7 @@
 
 -(void) createTilesetBatchNodes
 {
-	_doNotRenderTiles = (BOOL)[_layer.properties.properties objectForKey:@"doNotRenderTiles"];
+	_doNotRenderTiles = [[_layer.properties.properties objectForKey:@"doNotRenderTiles"] boolValue];
 	
 	if (_doNotRenderTiles == NO)
 	{
