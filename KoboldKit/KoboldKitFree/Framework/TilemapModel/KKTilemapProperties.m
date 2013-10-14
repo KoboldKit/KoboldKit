@@ -16,7 +16,7 @@ static NSNumberFormatter* __numberFormatter = nil;
 	self = [super init];
 	if (self)
 	{
-		_properties = [NSMutableDictionary dictionaryWithCapacity:1];
+		_properties = [NSMutableDictionary dictionary];
 
 		if (__numberFormatter == nil)
 		{

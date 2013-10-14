@@ -7,6 +7,7 @@
 #import "KKTilemapTileProperties.h"
 #import "KKTilemapProperties.h"
 #import "KKMutableNumber.h"
+#import "KKTilemap.h"
 
 @implementation KKTilemapTileProperties
 
@@ -15,7 +16,7 @@
 	self = [super init];
 	if (self)
 	{
-		_properties = [NSMutableDictionary dictionaryWithCapacity:16];
+		_properties = [NSMutableDictionary dictionary];
 	}
 
 	return self;
@@ -23,7 +24,8 @@
 
 -(KKTilemapProperties*) propertiesForGid:(gid_t)gid
 {
-	return [_properties objectForKey:[NSNumber numberWithUnsignedInt:gid]];
+	gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
+	return [_properties objectForKey:[NSNumber numberWithUnsignedInt:gidWithoutFlags]];
 }
 
 -(KKTilemapProperties*) propertiesForGid:(gid_t)gid createNonExistingProperties:(BOOL)createNonExistingProperties
@@ -32,7 +34,8 @@
 	if (properties == nil && createNonExistingProperties)
 	{
 		properties = [[KKTilemapProperties alloc] init];
-		[_properties setObject:properties forKey:[NSNumber numberWithUnsignedInt:gid]];
+		gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
+		[_properties setObject:properties forKey:[NSNumber numberWithUnsignedInt:gidWithoutFlags]];
 	}
 
 	return properties;

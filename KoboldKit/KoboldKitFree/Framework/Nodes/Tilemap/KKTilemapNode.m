@@ -131,6 +131,7 @@
 	[super setPosition:position];
 	
 	_mainTileLayerNode.position = ccpMult(position, 1);
+	_tilemap.modified = YES;
 }
 
 #pragma mark Update

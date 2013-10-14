@@ -288,7 +288,7 @@
 	if (rotation)
 	{
 		NSNumber* number = [_numberFormatter numberFromString:rotation];
-		object.rotation = KK_DEG2RAD(180.0 + number.doubleValue * -1.0);
+		object.rotation = KK_DEG2RAD(-number.doubleValue);
 	}
 
 	CGPoint position;
