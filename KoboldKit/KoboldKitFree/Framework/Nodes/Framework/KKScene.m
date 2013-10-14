@@ -71,7 +71,7 @@ KKNODE_SHARED_CODE
 
 -(void) update:(NSTimeInterval)currentTime
 {
-	NSAssert(_mainLoopStage == KKMainLoopStageDidSimulatePhysics, @"Main Loop Error: it seems you implemented didSimulatePhysics but did not call [super didSimulatePhysics]");
+	NSAssert(_mainLoopStage == KKMainLoopStageDidSimulatePhysics, @"Scene Events Error: it seems you implemented didSimulatePhysics but did not call [super didSimulatePhysics]");
 	_mainLoopStage = KKMainLoopStageDidUpdate;
 	
 	++_frameCount;
@@ -84,7 +84,7 @@ KKNODE_SHARED_CODE
 
 -(void) didEvaluateActions
 {
-	NSAssert(_mainLoopStage == KKMainLoopStageDidUpdate, @"Main Loop Error: it seems you implemented update: but did not call [super update:currentTime]");
+	NSAssert(_mainLoopStage == KKMainLoopStageDidUpdate, @"Scene Events Error: it seems you implemented update: but did not call [super update:currentTime]");
 	_mainLoopStage = KKMainLoopStageDidEvaluateActions;
 
 	for (id observer in _sceneDidEvaluateActionsObservers)
@@ -95,7 +95,7 @@ KKNODE_SHARED_CODE
 
 -(void) didSimulatePhysics
 {
-	NSAssert(_mainLoopStage == KKMainLoopStageDidEvaluateActions, @"Main Loop Error: it seems you implemented didEvaluateActions: but did not call [super didEvaluateActions]");
+	NSAssert(_mainLoopStage == KKMainLoopStageDidEvaluateActions, @"Scene Events Error: it seems you implemented didEvaluateActions: but did not call [super didEvaluateActions]");
 	_mainLoopStage = KKMainLoopStageDidSimulatePhysics;
 
 	for (id observer in _sceneDidSimulatePhysicsObservers)

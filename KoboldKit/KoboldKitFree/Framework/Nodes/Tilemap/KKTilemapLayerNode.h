@@ -29,7 +29,9 @@
 /** Converts a point from scene coordinates to tile coordinates within the layer. */
 -(CGPoint) tileCoordForPoint:(CGPoint)point;
 
+/** nd */
 -(CGPoint) centerPositionForTileCoord:(CGPoint)tileCoord;
+/** nd */
 -(CGPoint) positionForTileCoord:(CGPoint)tileCoord;
 
 @end

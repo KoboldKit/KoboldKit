@@ -21,6 +21,7 @@
 	CGSize _visibleTilesOnScreen;
 	CGSize _viewBoundary;
 	CGPoint _previousPosition;
+	BOOL _doNotRenderTiles;
 }
 
 /** @param layer The tilemap layer object.

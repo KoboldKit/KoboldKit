@@ -40,38 +40,43 @@
 
 -(void) createTilesetBatchNodes
 {
-	_batchNode = [SKNode node];
-	_batchNode.zPosition = -1;
-	[self addChild:_batchNode];
-
-	// get all tileset textures and create batch nodes, but don't add them as child just yet
-	for (KKTilemapTileset* tileset in _tilemap.tilesets)
-	{
-		// load and setup textures
-		[tileset texture];
-	}
+	_doNotRenderTiles = [_layer.properties.properties objectForKey:@"doNotRenderTiles"];
 	
-	// initialize sprites with dummy textures
-	NSUInteger bufferSize = sizeof(SKSpriteNode*) * _visibleTilesOnScreen.width * _visibleTilesOnScreen.height;
-	_visibleTileSprites = (void**)malloc(bufferSize);
-
-	NSUInteger i = 0;
-	SKSpriteNode* tileSprite = nil;
-	for (int tilePosY = 0; tilePosY < _visibleTilesOnScreen.height; tilePosY++)
+	if (_doNotRenderTiles == NO)
 	{
-		for (int tilePosX = 0; tilePosX < _visibleTilesOnScreen.width; tilePosX++)
+		_batchNode = [SKNode node];
+		_batchNode.zPosition = -1;
+		[self addChild:_batchNode];
+		
+		// get all tileset textures and create batch nodes, but don't add them as child just yet
+		for (KKTilemapTileset* tileset in _tilemap.tilesets)
 		{
-			tileSprite = [SKSpriteNode node];
-			tileSprite.size = CGSizeMake(_tilemap.gridSize.width, _tilemap.gridSize.height);
-			//tileSprite.hidden = YES;
-			tileSprite.anchorPoint = CGPointZero;
-			[_batchNode addChild:tileSprite];
-			
-			_visibleTileSprites[i++] = (__bridge void*)tileSprite;
+			// load and setup textures
+			[tileset texture];
 		}
+		
+		// initialize sprites with dummy textures
+		NSUInteger bufferSize = sizeof(SKSpriteNode*) * _visibleTilesOnScreen.width * _visibleTilesOnScreen.height;
+		_visibleTileSprites = (void**)malloc(bufferSize);
+		
+		NSUInteger i = 0;
+		SKSpriteNode* tileSprite = nil;
+		for (int tilePosY = 0; tilePosY < _visibleTilesOnScreen.height; tilePosY++)
+		{
+			for (int tilePosX = 0; tilePosX < _visibleTilesOnScreen.width; tilePosX++)
+			{
+				tileSprite = [SKSpriteNode node];
+				tileSprite.size = CGSizeMake(_tilemap.gridSize.width, _tilemap.gridSize.height);
+				//tileSprite.hidden = YES;
+				tileSprite.anchorPoint = CGPointZero;
+				[_batchNode addChild:tileSprite];
+				
+				_visibleTileSprites[i++] = (__bridge void*)tileSprite;
+			}
+		}
+		
+		_visibleTileSpritesCount = i;
 	}
-	
-	_visibleTileSpritesCount = i;
 }
 
 -(void) willMoveFromParent
@@ -94,7 +99,9 @@
 {
 	self.hidden = _layer.hidden;
 	
-	if (self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
+	// only update tile sprites when needed
+	if (_doNotRenderTiles == NO && self.hidden == NO &&
+		(CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
 	{
 		// create initial tiles to fill screen
 		CGSize mapSize = _tilemap.size;

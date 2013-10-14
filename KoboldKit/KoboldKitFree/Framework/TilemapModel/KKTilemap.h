@@ -178,8 +178,8 @@ DEVELOPER_FIXME("Tilemap iPad scale factor still needed with Sprite Kit?")
  @returns The first layer with the given name, or nil if there's no layer with that name. Layer names are case-sensitive! */
 -(KKTilemapLayer*) layerNamed:(NSString*)name;
 
-// Is set whenever the tilemap changes in a way that requires an immediate redraw in the current frame (tile gid change or tilesets swapped).
-// The modified state is reset automatically by the renderer. You don't normally need to modify it yourself.
+/** Is set whenever the tilemap changes in a way that requires an immediate redraw in the current frame (tile gid change or tilesets swapped).
+The modified state is reset automatically by the renderer. You don't normally need to modify it yourself. */
 @property (atomic) BOOL modified;
 
 @end
