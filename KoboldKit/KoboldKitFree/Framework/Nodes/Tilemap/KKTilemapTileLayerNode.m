@@ -100,8 +100,7 @@
 	self.hidden = _layer.hidden;
 	
 	// only update tile sprites when needed
-	if (_doNotRenderTiles == NO && self.hidden == NO &&
-		(CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
+	if (_doNotRenderTiles == NO && self.hidden == NO && (CGPointEqualToPoint(self.position, _previousPosition) == NO || _tilemap.modified))
 	{
 		// create initial tiles to fill screen
 		CGSize mapSize = _tilemap.size;
@@ -128,7 +127,14 @@
 		SKSpriteNode* tileSprite = nil;
 		KKTilemapTileset* currentTileset = nil;
 		KKTilemapTileset* previousTileset = nil;
-		
+		gid_t previousGidWithoutFlags = 0;
+		gid_t gid = 0, gidWithoutFlags = 0;
+		SKTexture* tileSpriteTexture = nil;
+		gid_t* layerGids = _layer.tiles.gid;
+		NSUInteger layerGidCount = _layer.tileCount;
+		BOOL endlessScrollingHorizontal = _layer.endlessScrollingHorizontal;
+		BOOL endlessScrollingVertical = _layer.endlessScrollingVertical;
+
 		for (int viewTilePosY = 0; viewTilePosY < _visibleTilesOnScreen.height; viewTilePosY++)
 		{
 			for (int viewTilePosX = 0; viewTilePosX < _visibleTilesOnScreen.width; viewTilePosX++)
@@ -137,37 +143,66 @@
 						  @"Tile layer index (%u) out of bounds (%u)! Perhaps due to window resize?",
 						  (unsigned int)i, (unsigned int)_visibleTileSpritesCount);
 				
-				tileSprite = (__bridge SKSpriteNode*)_visibleTileSprites[i++];
-				
 				// get the proper git coordinate, wrap around as needed
-				CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x, (mapSize.height - 1 - viewTilePosY) - offsetInTiles.y);
-				gid_t gid = [_layer tileGidWithFlagsAt:gidCoordInLayer];
+				CGPoint gidCoordInLayer = CGPointMake(viewTilePosX + offsetInTiles.x, mapSize.height - 1 - viewTilePosY - offsetInTiles.y);
 				
-				// no tile at this coordinate? If so, skip drawing this tile.
-				if ((gid & KKTilemapTileFlipMask) == 0)
+				if (endlessScrollingHorizontal)
 				{
-					tileSprite.hidden = YES;
+					// adjust the tile coord to be within bounds of the map when endless scrolling is enabled
+					gidCoordInLayer.x = (NSInteger)gidCoordInLayer.x % (NSInteger)mapSize.width;
+					
+					// ensure positive coords
+					if (gidCoordInLayer.x < 0.0f)
+					{
+						gidCoordInLayer.x += mapSize.width;
+					}
+				}
+				
+				if (endlessScrollingVertical)
+				{
+					// adjust the tile coord to be within bounds of the map when endless scrolling is enabled
+					gidCoordInLayer.y = (NSInteger)gidCoordInLayer.y % (NSInteger)mapSize.height;
+					
+					// ensure positive coords
+					if (gidCoordInLayer.y < 0.0f)
+					{
+						gidCoordInLayer.y += mapSize.height;
+					}
+				}
+				
+				// calculate the gid index and verify it
+				NSUInteger gidIndex = (NSUInteger)(gidCoordInLayer.x + gidCoordInLayer.y * mapSize.width);
+				if (gidIndex >= layerGidCount)
+				{
 					continue;
 				}
 				
-				tileSprite.hidden = NO;
+				// get the gid for the coordinate
+				gid = layerGids[gidIndex];
+				gidWithoutFlags = gid & KKTilemapTileFlipMask;
+
+				// no tile at this coordinate? If so, skip drawing this tile.
+				if (gidWithoutFlags == 0)
+				{
+					[(__bridge SKSpriteNode*)_visibleTileSprites[i++] setHidden:YES];
+					continue;
+				}
 				
 				// get the gid's tileset, reuse previous tileset if possible
-				currentTileset = previousTileset;
-				if (currentTileset == nil || gid < currentTileset.firstGid || gid > currentTileset.lastGid)
+				if (gidWithoutFlags != previousGidWithoutFlags)
 				{
-					currentTileset = [_tilemap tilesetForGid:gid];
-					NSAssert1(currentTileset, @"Invalid gid: no tileset found for gid %u!", (gid & KKTilemapTileFlipMask));
+					currentTileset = previousTileset;
+					if (gid < currentTileset.firstGid || gid > currentTileset.lastGid || currentTileset == nil)
+					{
+						currentTileset = [_tilemap tilesetForGidWithoutFlags:gidWithoutFlags];
+						NSAssert1(currentTileset, @"Invalid gid: no tileset found for gid %u!", (gid & KKTilemapTileFlipMask));
+					}
+					
+					tileSpriteTexture = [currentTileset textureForGidWithoutFlags:gidWithoutFlags];
+					NSAssert1(tileSpriteTexture, @"tilesprite texture is nil for gid: %u", gid);
+					
+					previousGidWithoutFlags = gidWithoutFlags;
 				}
-				
-				// switch the batch node if the current gid uses a different tileset than the previous gid
-				if (currentTileset != previousTileset)
-				{
-					previousTileset = currentTileset;
-				}
-				
-				tileSprite.texture = [currentTileset textureForGid:gid];
-				NSAssert1(tileSprite.texture, @"tilesprite texture is nil for gid: %u", gid);
 				
 				// update position
 				CGPoint tileSpritePosition = CGPointMake(viewTilePosX * gridSize.width + offsetInPoints.x,
@@ -175,47 +210,57 @@
 				// set flip & rotation defaults
 				CGFloat zRotation = 0.0, xScale = 1.0, yScale = 1.0;
 				
-				const CGFloat k270DegreesRadians = M_PI_2 * 3.0;
-				if (gid & KKTilemapTileDiagonalFlip)
+				if (gid != gidWithoutFlags)
 				{
-					// handle the diagonally flipped states.
-					gid_t gidFlipFlags = gid & (KKTilemapTileHorizontalFlip | KKTilemapTileVerticalFlip);
-					if (gidFlipFlags == 0)
+					const CGFloat k270DegreesRadians = M_PI_2 * 3.0;
+					if (gid & KKTilemapTileDiagonalFlip)
 					{
-						zRotation = M_PI_2; // 90°
-						xScale = -1.0;
-						tileSpritePosition.x += gridSize.width;
-						tileSpritePosition.y += gridSize.height;
+						// handle the diagonally flipped states.
+						gid_t gidFlipFlags = gid & (KKTilemapTileHorizontalFlip | KKTilemapTileVerticalFlip);
+						if (gidFlipFlags == 0)
+						{
+							zRotation = M_PI_2; // 90°
+							xScale = -1.0;
+							tileSpritePosition.x += gridSize.width;
+							tileSpritePosition.y += gridSize.height;
+						}
+						else if (gidFlipFlags == KKTilemapTileHorizontalFlip)
+						{
+							zRotation = k270DegreesRadians;
+							tileSpritePosition.y += gridSize.height;
+						}
+						else if (gidFlipFlags == KKTilemapTileVerticalFlip)
+						{
+							zRotation = M_PI_2; // 90°
+							tileSpritePosition.x += gridSize.width;
+						}
 					}
-					else if (gidFlipFlags == KKTilemapTileHorizontalFlip)
+					else
 					{
-						zRotation = k270DegreesRadians;
-						tileSpritePosition.y += gridSize.height;
-					}
-					else if (gidFlipFlags == KKTilemapTileVerticalFlip)
-					{
-						zRotation = M_PI_2; // 90°
-						tileSpritePosition.x += gridSize.width;
-					}
-				}
-				else
-				{
-					if ((gid & KKTilemapTileHorizontalFlip) == KKTilemapTileHorizontalFlip)
-					{
-						xScale = -1.0;
-						tileSpritePosition.x += gridSize.width;
-					}
-					if ((gid & KKTilemapTileVerticalFlip) == KKTilemapTileVerticalFlip)
-					{
-						yScale = -1.0;
-						tileSpritePosition.y += gridSize.height;
+						if ((gid & KKTilemapTileHorizontalFlip) == KKTilemapTileHorizontalFlip)
+						{
+							xScale = -1.0;
+							tileSpritePosition.x += gridSize.width;
+						}
+						if ((gid & KKTilemapTileVerticalFlip) == KKTilemapTileVerticalFlip)
+						{
+							yScale = -1.0;
+							tileSpritePosition.y += gridSize.height;
+						}
 					}
 				}
 				
+				tileSprite = (__bridge SKSpriteNode*)_visibleTileSprites[i++];
 				tileSprite.zRotation = zRotation;
 				tileSprite.xScale = xScale;
 				tileSprite.yScale = yScale;
 				tileSprite.position = tileSpritePosition;
+				tileSprite.hidden = NO;
+
+				if (tileSprite.texture != tileSpriteTexture)
+				{
+					tileSprite.texture = tileSpriteTexture;
+				}
 			}
 		}
 	}
