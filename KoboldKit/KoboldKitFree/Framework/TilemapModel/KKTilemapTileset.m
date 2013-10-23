@@ -86,9 +86,16 @@ DEVELOPER_TODO("tilemap pvr texture load")
 -(void) createTileTextures
 {
 	// first figure out how many rects to allocate
-	CGSize imageSize = _texture.size;
-	_tilesPerRow = (imageSize.width - _margin * 2 + _spacing) / (_tileSize.width + _spacing);
-	_tilesPerColumn = (imageSize.height - _margin * 2 + _spacing) / (_tileSize.height + _spacing);
+	CGSize textureSize = _texture.size;
+	CGSize pixelSize = textureSize;
+	if ([_imageFile containsString:@"@2x"])
+	{
+		pixelSize.width *= 2.0;
+		pixelSize.height *= 2.0;
+	}
+	
+	_tilesPerRow = (pixelSize.width - _margin * 2 + _spacing) / (_tileSize.width + _spacing);
+	_tilesPerColumn = (pixelSize.height - _margin * 2 + _spacing) / (_tileSize.height + _spacing);
 	_lastGid = _firstGid + (_tilesPerRow * _tilesPerColumn) - 1;
 	if (_tilemap.highestGid < _lastGid)
 	{
@@ -103,20 +110,19 @@ DEVELOPER_TODO("tilemap pvr texture load")
 	gid_t gid = _firstGid;
 	while (gid <= _lastGid)
 	{
-		[_tileTextures addObject:[self createTextureForGid:gid++]];
+		[_tileTextures addObject:[self createTextureForGid:gid++ textureSize:textureSize]];
 	}
 }
 
--(SKTexture*) createTextureForGid:(gid_t)gid
+-(SKTexture*) createTextureForGid:(gid_t)gid textureSize:(CGSize)textureSize
 {
 	gid = gid - _firstGid;
 
-	CGSize texSize = _texture.size;
 	CGFloat x = (gid % _tilesPerRow) * (_tileSize.width + _spacing) + _margin;
-	CGFloat y = (texSize.height - _tileSize.height) - ((gid / _tilesPerRow) * (_tileSize.height + _spacing) + _margin);
+	CGFloat y = (textureSize.height - _tileSize.height) - ((gid / _tilesPerRow) * (_tileSize.height + _spacing) + _margin);
 
 	// convert to original texture's units
-	CGRect rect = CGRectMake(x / texSize.width, y / texSize.height, _tileSize.width / texSize.width, _tileSize.height / texSize.height);
+	CGRect rect = CGRectMake(x / textureSize.width, y / textureSize.height, _tileSize.width / textureSize.width, _tileSize.height / textureSize.height);
 	
 	SKTexture* tileTexture = [SKTexture textureWithRect:rect inTexture:_texture];
 	tileTexture.filteringMode = SKTextureFilteringNearest;
