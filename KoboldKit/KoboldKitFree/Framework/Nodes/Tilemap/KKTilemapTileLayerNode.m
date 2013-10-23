@@ -28,7 +28,7 @@
 	CGSize gridSize = _tilemap.gridSize;
 	CGSize mapSize = _tilemap.size;
 	
-	_visibleTilesOnScreen = CGSizeMake(ceil(sceneSize.width / gridSize.width) + 2, ceil(sceneSize.height / gridSize.height) + 2);
+	_visibleTilesOnScreen = CGSizeMake(ceil(sceneSize.width / gridSize.width) + 2, ceil(sceneSize.height / gridSize.height) + 3);
 	_viewBoundary = CGSizeMake(-(mapSize.width * gridSize.width - (_visibleTilesOnScreen.width - 1) * gridSize.width),
 							   -(mapSize.height * gridSize.height - (_visibleTilesOnScreen.height - 1) * gridSize.height));
 
@@ -121,7 +121,7 @@
 			positionInPoints.y -= gridSize.height;
 		}
 		
-		CGPoint offsetInTiles = CGPointMake((int32_t)(positionInPoints.x / gridSize.width), (int32_t)(positionInPoints.y / gridSize.height));
+		CGPoint offsetInTiles = CGPointMake((int32_t)(positionInPoints.x / gridSize.width) - 1, (int32_t)(positionInPoints.y / gridSize.height) - 1);
 		CGPoint offsetInPoints = CGPointMake(offsetInTiles.x * gridSize.width, offsetInTiles.y * gridSize.height);
 		
 		NSUInteger i = 0;

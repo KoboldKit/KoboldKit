@@ -110,7 +110,7 @@ DEVELOPER_TODO("tilemap pvr texture load")
 	gid_t gid = _firstGid;
 	while (gid <= _lastGid)
 	{
-		[_tileTextures addObject:[self createTextureForGid:gid++ textureSize:textureSize]];
+		[_tileTextures addObject:[self createTextureForGid:gid++ textureSize:pixelSize]];
 	}
 }
 
