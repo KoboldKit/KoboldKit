@@ -50,10 +50,12 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 	_physicsDidEndContactObservers = [NSMutableArray array];
 }
 
+/*
 -(void) dealloc
 {
-	//NSLog(@"dealloc: %@", self);
+	NSLog(@"dealloc: %@", self);
 }
+ */
 
 // called when the node removes the controller (set to nil)
 -(void) willRemoveController
@@ -74,6 +76,11 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 -(void) nodeWillMoveFromParent
 {
 	[self stopObservingPhysicsContactEvents];
+	
+	for (KKBehavior* behavior in _behaviors)
+	{
+		[behavior didLeaveController];
+	}
 }
 
 #pragma mark Properties

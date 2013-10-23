@@ -29,10 +29,12 @@
 	return self;
 }
 
+/*
 -(void) dealloc
 {
-	//NSLog(@"dealloc: %@", self);
+	NSLog(@"dealloc: %@", self);
 }
+*/
 
 #pragma mark Join / Leave
 

@@ -46,9 +46,11 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 -(void) didLeaveController
 {
 	KKScene* scene = self.node.kkScene;
-	[scene removeInputEventsObserver:self];
-	[scene removeSceneEventsObserver:self];
-	_originalTexture = nil;
+	if (scene)
+	{
+		[scene removeInputEventsObserver:self];
+		[scene removeSceneEventsObserver:self];
+	}
 }
 
 -(void) didChangeEnabledState
