@@ -33,7 +33,7 @@
 	KKTilemapProperties* properties = [self propertiesForGid:gid];
 	if (properties == nil && createNonExistingProperties)
 	{
-		properties = [[KKTilemapProperties alloc] init];
+		properties = [KKTilemapProperties new];
 		gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
 		[_properties setObject:properties forKey:[NSNumber numberWithUnsignedInt:gidWithoutFlags]];
 	}

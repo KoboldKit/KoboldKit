@@ -202,7 +202,7 @@
 {
 	@autoreleasepool
 	{
-		KKTMXReader* reader = [[KKTMXReader alloc] init];
+		KKTMXReader* reader = [KKTMXReader new];
 		NSString* path = [self pathForTMXFile:tmxFile];
 		NSAssert1(path, @"TMX file '%@' not found!", tmxFile);
 		
@@ -217,7 +217,7 @@
 {
 	@autoreleasepool
 	{
-		KKTMXWriter* writer = [[KKTMXWriter alloc] init];
+		KKTMXWriter* writer = [KKTMXWriter new];
 		[writer writeTMXFile:path tilemap:self];
 		writer = nil;
 	}
@@ -326,7 +326,7 @@
 {
 	if (_properties == nil)
 	{
-		_properties = [[KKTilemapProperties alloc] init];
+		_properties = [KKTilemapProperties new];
 	}
 
 	return _properties;

@@ -52,11 +52,14 @@
 	self = [super init];
 	if (self)
 	{
-		_numberFormatter = [[NSNumberFormatter alloc] init];
+		_numberFormatter = [NSNumberFormatter new];
 		[_numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
 		// Why not make it locale-aware? Because it would make TMX maps created by US developers unusable by
 		// devs in other countries whose decimal separator is not a dot but a comma.
 		[_numberFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+		
+		_externalTilesetFirstGid = 0;
+		_parsingTileGid = 0;
 	}
 
 	return self;
@@ -64,6 +67,8 @@
 
 -(void) loadTMXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap
 {
+	NSAssert(tmxFile.length, @"tmxFile is nil or empty string");
+
 	_tilemap = tilemap;
 	_tmxFile = tmxFile;
 
@@ -75,6 +80,18 @@
 	}
 
 	_tmxFile = nil;
+}
+
+-(KKTilemapTileset*) loadTSXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap firstGid:(gid_t)firstGid
+{
+	_parsingTileset = nil;
+	_parsingElement = KKTilemapParsingElementTileset;
+	_externalTilesetFirstGid = firstGid;
+	
+	[self loadTMXFile:tmxFile tilemap:tilemap];
+	
+	NSAssert(_parsingTileset, @"external TSX did not contain a valid Tileset");
+	return _parsingTileset;
 }
 
 -(void) parseTMXString:(NSString*)tmxString
@@ -97,10 +114,8 @@
 	[parser parse];
 
 	_dataString = nil;
-	_parsingLayer = nil;
 	_parsingObject = nil;
-	_parsingTileset = nil;
-} /* parseTMXWithData */
+}
 
 -(void) parseMapWithAttributes:(NSDictionary*)attributes
 {
@@ -163,14 +178,22 @@
 	{
 		// Tileset file will be relative to the map file. So we need to convert it to an absolute path
 		NSString* dir = [_tmxFile stringByDeletingLastPathComponent];
+		if (dir == nil)
+		{
+			dir = _tmxFile;
+		}
+		
 		externalTilesetFilename = [dir stringByAppendingPathComponent:externalTilesetFilename];
-		[self loadTMXFile:externalTilesetFilename tilemap:_tilemap];
+		
+		gid_t extTilesetFirstGid = (gid_t)[[attributes objectForKey:@"firstgid"] intValue];
+		KKTMXReader* extTilesetReader = [KKTMXReader new];
+		[extTilesetReader loadTSXFile:externalTilesetFilename tilemap:_tilemap firstGid:extTilesetFirstGid];
 	}
 	else
 	{
-		KKTilemapTileset* tileset = [[KKTilemapTileset alloc] init];
+		KKTilemapTileset* tileset = [KKTilemapTileset new];
 		tileset.name = [attributes objectForKey:@"name"];
-		tileset.firstGid = (gid_t)[[attributes objectForKey:@"firstgid"] intValue];
+		tileset.firstGid = (gid_t)[[attributes objectForKey:@"firstgid"] intValue] + _externalTilesetFirstGid;
 		tileset.spacing = [[attributes objectForKey:@"spacing"] intValue];
 		tileset.margin = [[attributes objectForKey:@"margin"] intValue];
 		// tileset.transparentColor = [attributes objectForKey:@"trans"];
@@ -204,7 +227,7 @@
 
 -(void) parseLayerWithAttributes:(NSDictionary*)attributes
 {
-	KKTilemapLayer* layer = [[KKTilemapLayer alloc] init];
+	KKTilemapLayer* layer = [KKTilemapLayer new];
 	layer.tilemap = _tilemap;
 	layer.isTileLayer = YES;
 	layer.name = [attributes objectForKey:@"name"];
@@ -226,15 +249,17 @@
 
 -(void) parseImageLayerWithAttributes:(NSDictionary*)attributes
 {
+	NSLog(@"KKTMXReader: image layers not yet supported");
 }
 
 -(void) parseImageLayerImageWithAttributes:(NSDictionary*)attributes
 {
+	NSLog(@"KKTMXReader: image layers not yet supported");
 }
 
 -(void) parseObjectGroupWithAttributes:(NSDictionary*)attributes
 {
-	KKTilemapLayer* layer = [[KKTilemapLayer alloc] init];
+	KKTilemapLayer* layer = [KKTilemapLayer new];
 	layer.tilemap = _tilemap;
 	layer.isObjectLayer = YES;
 	layer.name = [attributes objectForKey:@"name"];
@@ -261,20 +286,20 @@
 	// determine type of object first
 	if ([attributes objectForKey:@"gid"])
 	{
-		KKTilemapTileObject* tileObject = [[KKTilemapTileObject alloc] init];
+		KKTilemapTileObject* tileObject = [KKTilemapTileObject new];
 		tileObject.gid = (gid_t)[[attributes objectForKey:@"gid"] intValue];
 		tileObject.size = _tilemap.gridSize;
 		object = tileObject;
 	}
 	else if ([attributes objectForKey:@"width"] || [attributes objectForKey:@"height"])
 	{
-		KKTilemapRectangleObject* rectObject = [[KKTilemapRectangleObject alloc] init];
+		KKTilemapRectangleObject* rectObject = [KKTilemapRectangleObject new];
 		rectObject.size = CGSizeMake([[attributes objectForKey:@"width"] intValue], [[attributes objectForKey:@"height"] intValue]);
 		object = rectObject;
 	}
 	else
 	{
-		KKTilemapPolyObject* polyObject = [[KKTilemapPolyObject alloc] init];
+		KKTilemapPolyObject* polyObject = [KKTilemapPolyObject new];
 		polyObject.objectType = KKTilemapObjectTypeUnset; // it could be a zero-sized rectangle object
 		object = polyObject;
 	}

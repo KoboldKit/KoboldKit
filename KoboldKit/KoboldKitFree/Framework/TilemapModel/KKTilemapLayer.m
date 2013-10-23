@@ -128,7 +128,7 @@
 {
 	if (_properties == nil)
 	{
-		_properties = [[KKTilemapProperties alloc] init];
+		_properties = [KKTilemapProperties new];
 	}
 
 	return _properties;
@@ -138,7 +138,7 @@
 {
 	if (_tiles == nil && _isObjectLayer == NO)
 	{
-		_tiles = [[KKTilemapLayerTiles alloc] init];
+		_tiles = [KKTilemapLayerTiles new];
 	}
 
 	return _tiles;

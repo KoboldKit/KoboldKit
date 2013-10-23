@@ -74,10 +74,11 @@ typedef enum
 	NSMutableString* _dataString;
 	NSNumberFormatter* _numberFormatter;
 
-	KKTilemapTileset* _parsingTileset;
-	KKTilemapLayer* _parsingLayer;
+	__weak KKTilemapTileset* _parsingTileset;
+	__weak KKTilemapLayer* _parsingLayer;
 	KKTilemapObject* _parsingObject;
 	gid_t _parsingTileGid;
+	gid_t _externalTilesetFirstGid;
 	KKTilemapParsingElement _parsingElement;
 	KKTilemapDataFormat _dataFormat;
 	BOOL _parsingData;

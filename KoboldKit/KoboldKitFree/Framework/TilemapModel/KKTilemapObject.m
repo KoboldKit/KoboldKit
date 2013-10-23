@@ -20,7 +20,7 @@
 {
 	if (_properties == nil)
 	{
-		_properties = [[KKTilemapProperties alloc] init];
+		_properties = [KKTilemapProperties new];
 	}
 
 	return _properties;
@@ -28,7 +28,7 @@
 
 -(KKTilemapRectangleObject*) rectangleObjectFromPolyObject:(KKTilemapPolyObject*)polyObject
 {
-	KKTilemapRectangleObject* rectObject = [[KKTilemapRectangleObject alloc] init];
+	KKTilemapRectangleObject* rectObject = [KKTilemapRectangleObject new];
 	rectObject.name = polyObject.name;
 	rectObject.type = polyObject.type;
 	rectObject.position = polyObject.position;

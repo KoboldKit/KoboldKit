@@ -158,7 +158,7 @@ DEVELOPER_TODO("tilemap pvr texture load")
 
 	if (_properties == nil)
 	{
-		_properties = [[KKTilemapProperties alloc] init];
+		_properties = [KKTilemapProperties new];
 	}
 
 	return _properties;
@@ -173,7 +173,7 @@ DEVELOPER_TODO("tilemap pvr texture load")
 
 	if (_tileProperties == nil)
 	{
-		_tileProperties = [[KKTilemapTileProperties alloc] init];
+		_tileProperties = [KKTilemapTileProperties new];
 	}
 
 	return _tileProperties;

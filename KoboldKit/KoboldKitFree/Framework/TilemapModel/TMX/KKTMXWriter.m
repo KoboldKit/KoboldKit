@@ -92,7 +92,7 @@ NSString* stringFromUnsignedInt(unsigned int u)
 {
 	_tilemap = tilemap;
 
-	_xmlWriter = [[XMLWriter alloc] init];
+	_xmlWriter = [XMLWriter new];
 	[_xmlWriter writeStartDocumentWithEncoding:@"UTF-8" version:@"1.0"];
 	[_xmlWriter write:@"\n<!DOCTYPE map SYSTEM \"http://mapeditor.org/dtd/1.0/map.dtd\">"];
 

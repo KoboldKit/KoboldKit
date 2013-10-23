@@ -233,7 +233,7 @@ static Class kMutableNumberClass;
 			continue;
 		}
 
-		KKIvarInfo* ivarInfo = [[KKIvarInfo alloc] init];
+		KKIvarInfo* ivarInfo = [KKIvarInfo new];
 		ivarInfo.ivar = ivar;
 		ivarInfo.name = [NSString stringWithCString:ivar_getName(ivar) encoding:NSASCIIStringEncoding];
 		ivarInfo.encoding = encoding;
