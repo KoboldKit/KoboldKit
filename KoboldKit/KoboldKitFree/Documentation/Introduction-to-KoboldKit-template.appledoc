@@ -12,9 +12,3 @@ Kobold Kit includes several standard behaviors which can be added to a node to a
 
 http://koboldkit.com
 
-Troubleshooting
----------
-
-- In your KKscene subclass you must call the super implementation of event methods!
--- In particular: update, didEvaluateActions, didSimulatePhysics, didChangeSize, didMoveToView, willMoveFromView, etc.
--- If you don't, then controllers & behaviors and other things might not work correctly

@@ -22,16 +22,15 @@
 /** Removes all characters not in the ASCII character set (decimal range 32-126).
  @returns The string with all non-ASCII characters removed. */
 -(NSString*) stringByDeletingNonAsciiCharacters;
-/** Removes illegal filesystem characters from the string. The illegal characters are: /\?%*|"<>:
+/** Removes illegal filesystem characters from the string.
  @returns The string with all illegal file system characters removed. */
--(NSString*) stringByDeletingIllegalFileSystemCharacters;
+-(NSString*) stringByDeletingIllegalFileSystemCharacters; //  The illegal characters are: /\?%*|"<>:
 /** Removes whitespace and newline characters from the beginning and end of the string.
  @returns The string with whitespace and newline characters trimmed. */
 -(NSString*) stringByTrimmingWhiteSpaceCharacters;
 /** Removes characters from the string that are illegal to use in .xcodeproj bundle and related files.
- The illegal characters are all illegal file system characters plus: !+~&'(),=@[]^`{}#
  @returns The string with all illegal .xcodeproj characters removed. */
--(NSString*) stringByDeletingIllegalXcodeCharacters;
+-(NSString*) stringByDeletingIllegalXcodeCharacters; // The illegal characters are all illegal file system characters plus: !+~&'(),=@[]^`{}#
 
 /** @returns A CGRect converted from a string rect representation like "{{10, 20}, {300, 400}}". */
 -(CGRect) rectValue;
