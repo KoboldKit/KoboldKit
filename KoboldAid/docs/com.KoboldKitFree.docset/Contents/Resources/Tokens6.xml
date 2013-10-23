@@ -4,10 +4,11 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/KKCameraFollowBehavior</TokenIdentifier>
-			<Abstract type="html">Makes the "camera" follow the node owning this behavior.
+			<Abstract type="html">Makes the &quot;camera&quot; follow the node owning this behavior.
 The scrollingNode should be the scrolling world.
-The scene's anchorPoint should be at {0.5, 0.5} to center the behavior node on the screen/window.</Abstract>
+The scene&apos;s anchorPoint should be at {0.5, 0.5} to center the behavior node on the screen/window.</Abstract>
 			<DeclaredIn>KKCameraFollowBehavior.h</DeclaredIn>
+            
 			
 			<NodeRef refid="6"/>
 		</Token>
@@ -15,58 +16,40 @@ The scene's anchorPoint should be at {0.5, 0.5} to center the behavior node on t
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/setScrollingNode:</TokenIdentifier>
-			<Abstract type="html">The scrolling node whose position should be updated based on the behavior node's position.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.h</DeclaredIn>			
+			<Abstract type="html">The scrolling node whose position should be updated based on the behavior node&apos;s position.</Abstract>
+			<DeclaredIn>KKCameraFollowBehavior.h</DeclaredIn>
 			
 			<Declaration>@property (atomic, weak) SKNode *scrollingNode</Declaration>
 			
 			
 			<Anchor>//api/name/scrollingNode</Anchor>
+            <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/scrollingNode</TokenIdentifier>
-			<Abstract type="html">The scrolling node whose position should be updated based on the behavior node's position.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.h</DeclaredIn>			
+			<Abstract type="html">The scrolling node whose position should be updated based on the behavior node&apos;s position.</Abstract>
+			<DeclaredIn>KKCameraFollowBehavior.h</DeclaredIn>
 			
 			<Declaration>@property (atomic, weak) SKNode *scrollingNode</Declaration>
 			
 			
 			<Anchor>//api/name/scrollingNode</Anchor>
+            <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKCameraFollowBehavior/scrollingNode</TokenIdentifier>
-			<Abstract type="html">The scrolling node whose position should be updated based on the behavior node's position.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.h</DeclaredIn>			
+			<Abstract type="html">The scrolling node whose position should be updated based on the behavior node&apos;s position.</Abstract>
+			<DeclaredIn>KKCameraFollowBehavior.h</DeclaredIn>
 			
 			<Declaration>@property (atomic, weak) SKNode *scrollingNode</Declaration>
 			
 			
 			<Anchor>//api/name/scrollingNode</Anchor>
+            <NodeRef refid="6"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)didJoinController</Declaration>
-			
-			
-			<Anchor>//api/name/didJoinController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKCameraFollowBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
-			<DeclaredIn>KKCameraFollowBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)didLeaveController</Declaration>
-			
-			
-			<Anchor>//api/name/didLeaveController</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

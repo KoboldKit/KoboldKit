@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/KKTilemapObjectSpawnDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/KKTilemapObjectSpawnDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKTilemapObjectSpawnDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="71"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKTilemapObjectSpawnDelegate/physicsBodyWithTilemapObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKTilemapObjectSpawnDelegate.h</DeclaredIn>
+			
+			<Declaration>- (SKPhysicsBody *)physicsBodyWithTilemapObject:(KKTilemapObject *)tilemapObject</Declaration>
+			
+			
+			<Anchor>//api/name/physicsBodyWithTilemapObject:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKTilemapObjectSpawnDelegate/nodeDidSpawnWithTilemapObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKTilemapObjectSpawnDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)nodeDidSpawnWithTilemapObject:(KKTilemapObject *)tilemapObject</Declaration>
+			
+			
+			<Anchor>//api/name/nodeDidSpawnWithTilemapObject:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

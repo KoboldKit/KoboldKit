@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKTilemapNode Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -46,6 +45,10 @@
 	
 	<option value="//api/name/mainTileLayerNode">&nbsp;&nbsp;&nbsp;&nbsp;mainTileLayerNode</option>
 	
+	<option value="//api/name/objectLayerNodes">&nbsp;&nbsp;&nbsp;&nbsp;objectLayerNodes</option>
+	
+	<option value="//api/name/tileLayerNodes">&nbsp;&nbsp;&nbsp;&nbsp;tileLayerNodes</option>
+	
 	<option value="//api/name/tilemap">&nbsp;&nbsp;&nbsp;&nbsp;tilemap</option>
 	
 	
@@ -67,6 +70,8 @@
 	<option value="//api/name/objectNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- objectNamed:</option>
 	
 	<option value="//api/name/restrictScrollingToMapBoundary">&nbsp;&nbsp;&nbsp;&nbsp;- restrictScrollingToMapBoundary</option>
+	
+	<option value="//api/name/restrictScrollingToObject:">&nbsp;&nbsp;&nbsp;&nbsp;- restrictScrollingToObject:</option>
 	
 	<option value="//api/name/tileLayerNodeNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- tileLayerNodeNamed:</option>
 	
@@ -100,6 +105,10 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mainTileLayerNode">mainTileLayerNode</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectLayerNodes">objectLayerNodes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileLayerNodes">tileLayerNodes</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemap">tilemap</a></span></li>
 	
 </ul></li>
@@ -123,6 +132,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectNamed:">objectNamed:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restrictScrollingToMapBoundary">restrictScrollingToMapBoundary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restrictScrollingToObject:">restrictScrollingToObject:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileLayerNodeNamed:">tileLayerNodeNamed:</a></span></li>
 	
@@ -153,12 +164,12 @@
 	<td class="specification-value"><a href="../Classes/KKNode.html">KKNode</a> : SKNode</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemapNode.h<br />KKTilemapNode.m</td>
+	<td class="specification-value">KKTilemapNode.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -183,72 +194,78 @@ which perform each layer&rsquo;s rendering.</p>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemap">&nbsp;&nbsp;tilemap</a></code>
-		<span class="tooltip"><p>the tilemap model object containing the tilemap&rsquo;s data.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tileLayerNodes">&nbsp;&nbsp;tileLayerNodes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectLayerNodes">&nbsp;&nbsp;objectLayerNodes</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bounds">&nbsp;&nbsp;bounds</a></code>
-		<span class="tooltip"><p>The tilemap&rsquo;s bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
-(horizontal or vertical).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/mainTileLayerNode">&nbsp;&nbsp;mainTileLayerNode</a></code>
-		<span class="tooltip"><p>The main layer in a parallaxing <a href="#//api/name/tilemap">tilemap</a> is the layer with a parallax ratio of 1.0f. Otherwise it&rsquo;s the first tile layer.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gameObjectsLayerNode">&nbsp;&nbsp;gameObjectsLayerNode</a></code>
-		<span class="tooltip"><p>The game object layer is the object layer where (most) game objects reside. Usually the layer that scrolls parallel to the main tile layer.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemapWithContentsOfFile:">+&nbsp;tilemapWithContentsOfFile:</a></code>
-		<span class="tooltip"><p>Creates a <a href="#//api/name/tilemap">tilemap</a> node from a TMX file.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tileLayerNodeNamed:">&ndash;&nbsp;tileLayerNodeNamed:</a></code>
-		<span class="tooltip"><p>The name identifying a tile layer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objectLayerNodeNamed:">&ndash;&nbsp;objectLayerNodeNamed:</a></code>
-		<span class="tooltip"><p>The name identifying an object layer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objectNamed:">&ndash;&nbsp;objectNamed:</a></code>
-		<span class="tooltip"><p>Searches all object layers for an object with a matching name.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/restrictScrollingToMapBoundary">&ndash;&nbsp;restrictScrollingToMapBoundary</a></code>
-		<span class="tooltip"><p>Enables boundary scrolling. This prevents the map&rsquo;s main tile layer from ever scrolling outside its <a href="#//api/name/bounds">bounds</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restrictScrollingToObject:">&ndash;&nbsp;restrictScrollingToObject:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/enableParallaxScrolling">&ndash;&nbsp;enableParallaxScrolling</a></code>
-		<span class="tooltip"><p>Enables parallax scrolling which makes other layers follow the main tile layer&rsquo;s position with parallax offset.
-Call this <em>after</em> setting up any camera follow object.</p></span>
 	</span>
 	
 	
@@ -276,9 +293,11 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 (horizontal or vertical).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) CGRect bounds</code></div>
-	
+
+    
 	
 	
 	
@@ -316,9 +335,11 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 		<p>The game object layer is the object layer where (most) game objects reside. Usually the layer that scrolls parallel to the main tile layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, weak, readonly) KKTilemapObjectLayerNode *gameObjectsLayerNode</code></div>
-	
+
+    
 	
 	
 	
@@ -355,15 +376,99 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 		<p>The main layer in a parallaxing <a href="#//api/name/tilemap">tilemap</a> is the layer with a parallax ratio of 1.0f. Otherwise it&rsquo;s the first tile layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, weak, readonly) KKTilemapTileLayerNode *mainTileLayerNode</code></div>
-	
+
+    
 	
 	
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
 		<p>the &ldquo;main&rdquo; tile layer node.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectLayerNodes" title="objectLayerNodes"></a>
+	<h3 class="subsubtitle method-title">objectLayerNodes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>an array containing all object layer nodes</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *objectLayerNodes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an array containing all object layer nodes</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tileLayerNodes" title="tileLayerNodes"></a>
+	<h3 class="subsubtitle method-title">tileLayerNodes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>an array containing all tile layer nodes</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *tileLayerNodes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an array containing all tile layer nodes</p>
 	</div>
 	
 	
@@ -394,9 +499,11 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 		<p>the tilemap model object containing the tilemap&rsquo;s data.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) KKTilemap *tilemap</code></div>
-	
+
+    
 	
 	
 	
@@ -441,9 +548,11 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 		<p>Creates a <a href="#//api/name/tilemap">tilemap</a> node from a TMX file.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithContentsOfFile:(NSString *)<em>tmxFile</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -499,9 +608,11 @@ Call this <em>after</em> setting up any camera follow object.</p></span>
 Call this <em>after</em> setting up any camera follow object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)enableParallaxScrolling</code></div>
-	
+
+    
 	
 	
 	
@@ -533,9 +644,11 @@ Call this <em>after</em> setting up any camera follow object.</p>
 		<p>The name identifying an object layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapObjectLayerNode *)objectLayerNodeNamed:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -582,9 +695,11 @@ Call this <em>after</em> setting up any camera follow object.</p>
 		<p>Searches all object layers for an object with a matching name.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapObject *)objectNamed:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -631,9 +746,47 @@ Call this <em>after</em> setting up any camera follow object.</p>
 		<p>Enables boundary scrolling. This prevents the map&rsquo;s main tile layer from ever scrolling outside its <a href="#//api/name/bounds">bounds</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)restrictScrollingToMapBoundary</code></div>
+
+    
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restrictScrollingToObject:" title="restrictScrollingToObject:"></a>
+	<h3 class="subsubtitle method-title">restrictScrollingToObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables boundary scrolling. This prevents the map&rsquo;s main tile layer from ever scrolling outside the object&rsquo;s <a href="#//api/name/bounds">bounds</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)restrictScrollingToObject:(KKTilemapRectangleObject *)<em>object</em></code></div>
+
+    
 	
 	
 	
@@ -665,9 +818,11 @@ Call this <em>after</em> setting up any camera follow object.</p>
 		<p>The name identifying a tile layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapTileLayerNode *)tileLayerNodeNamed:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -707,6 +862,8 @@ Call this <em>after</em> setting up any camera follow object.</p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -717,9 +874,9 @@ Call this <em>after</em> setting up any camera follow object.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -807,6 +964,14 @@ Call this <em>after</em> setting up any camera follow object.</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

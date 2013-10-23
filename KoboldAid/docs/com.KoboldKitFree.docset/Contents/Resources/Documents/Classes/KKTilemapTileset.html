@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKTilemapTileset Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -78,6 +77,8 @@
 	
 	
 	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/setAlternateTileset:">&nbsp;&nbsp;&nbsp;&nbsp;- setAlternateTileset:</option>
 	
 	<option value="//api/name/textureForGid:">&nbsp;&nbsp;&nbsp;&nbsp;- textureForGid:</option>
 	
@@ -147,6 +148,8 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAlternateTileset:">setAlternateTileset:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textureForGid:">textureForGid:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textureForGidWithoutFlags:">textureForGidWithoutFlags:</a></span></li>
@@ -178,12 +181,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemapTileset.h<br />KKTilemapTileset.m</td>
+	<td class="specification-value">KKTilemapTileset.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -208,129 +211,114 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemap">&nbsp;&nbsp;tilemap</a></code>
-		<span class="tooltip"><p>Reference to the owning KTTilemap object. Mainly for internal use.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-		<span class="tooltip"><p>The name of the tileset. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/imageFile">&nbsp;&nbsp;imageFile</a></code>
-		<span class="tooltip"><p>The image file without the path. Assumes the image file is in bundle&rsquo;s root folder.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/alternateTileset">&nbsp;&nbsp;alternateTileset</a></code>
-		<span class="tooltip"><p>Points to the alternate tileset, used to draw tiles of this tileset from a different <a href="#//api/name/texture">texture</a>. Set by calling replaceTileset:withTileset: on KTTilemap.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/firstGid">&nbsp;&nbsp;firstGid</a></code>
-		<span class="tooltip"><p>The first GID in this tileset. It&rsquo;s the top-left tile in the tileset.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/lastGid">&nbsp;&nbsp;lastGid</a></code>
-		<span class="tooltip"><p>The last GID in this tileset. It&rsquo;s the bottom-most, right-most tile in the tileset.
-   Caution: lastGid is only valid after the tileset <a href="#//api/name/texture">texture</a> has been loaded. It will be 0 before that.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilesPerRow">&nbsp;&nbsp;tilesPerRow</a></code>
-		<span class="tooltip"><p>How many tiles per row are in this tileset.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilesPerColumn">&nbsp;&nbsp;tilesPerColumn</a></code>
-		<span class="tooltip"><p>How many tiles per column are in this tileset.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/spacing">&nbsp;&nbsp;spacing</a></code>
-		<span class="tooltip"><p>How much space (in points) is between individual tiles. If there&rsquo;s a spacing of 2, there will be a spacing of 2 points
-   (4 pixels for -hd tileset images) between two adjacent tiles. Spacing is the same for both horizontal and vertical.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/margin">&nbsp;&nbsp;margin</a></code>
-		<span class="tooltip"><p>The margin defines how much <a href="#//api/name/spacing">spacing</a> (in points) there is from the <a href="#//api/name/texture">texture</a> border to the first tile. Margin is the same for both horizontal and vertical.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/drawOffset">&nbsp;&nbsp;drawOffset</a></code>
-		<span class="tooltip"><p>Drawing offset determines placement of tiles relative to the tile&rsquo;s origin. Can be used if tileset should not align with the grid but offset by a certain
-   distance from the grid. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tileSize">&nbsp;&nbsp;tileSize</a></code>
-		<span class="tooltip"><p>The size of tiles (in points).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/texture">&nbsp;&nbsp;texture</a></code>
-		<span class="tooltip"><p>The texture used by this tileset. If this property is accessed while it&rsquo;s still nil, it will load the texture.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tileTextures">&nbsp;&nbsp;tileTextures</a></code>
-		<span class="tooltip"><p>The textures for each tile in the tileset. The index of a <a href="#//api/name/texture">texture</a> for a specific gid is obtained by subtracting <a href="#//api/name/firstGid">firstGid</a> from gid: textureIndes = gid - <a href="#//api/name/firstGid">firstGid</a></p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
-		<span class="tooltip"><p>The tileset&rsquo;s properties. Properties for individual tiles are in <a href="#//api/name/tileProperties">tileProperties</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tileProperties">&nbsp;&nbsp;tileProperties</a></code>
-		<span class="tooltip"><p>Contains each tile&rsquo;s <a href="#//api/name/properties">properties</a>. Properties for the tileset itself are in <a href="#//api/name/properties">properties</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/textureForGid:">&ndash;&nbsp;textureForGid:</a></code>
-		<span class="tooltip"><p>Gets the <a href="#//api/name/texture">texture</a> of a tile GID from this tileset.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/textureForGidWithoutFlags:">&ndash;&nbsp;textureForGidWithoutFlags:</a></code>
-		<span class="tooltip"><p>Gets the <a href="#//api/name/texture">texture</a> of a tile GID from this tileset. Gid must not have any flags set.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAlternateTileset:">&ndash;&nbsp;setAlternateTileset:</a></code>
 	</span>
 	
 	
@@ -357,9 +345,11 @@
 		<p>Points to the alternate tileset, used to draw tiles of this tileset from a different <a href="#//api/name/texture">texture</a>. Set by calling replaceTileset:withTileset: on KTTilemap.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapTileset *alternateTileset</code></div>
-	
+
+    
 	
 	
 	
@@ -392,9 +382,11 @@
    distance from the grid. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGPoint drawOffset</code></div>
-	
+
+    
 	
 	
 	
@@ -426,9 +418,11 @@
 		<p>The first GID in this tileset. It&rsquo;s the top-left tile in the tileset.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) gid_t firstGid</code></div>
-	
+
+    
 	
 	
 	
@@ -460,9 +454,11 @@
 		<p>The image file without the path. Assumes the image file is in bundle&rsquo;s root folder.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *imageFile</code></div>
-	
+
+    
 	
 	
 	
@@ -495,9 +491,11 @@
    Caution: lastGid is only valid after the tileset <a href="#//api/name/texture">texture</a> has been loaded. It will be 0 before that.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) gid_t lastGid</code></div>
-	
+
+    
 	
 	
 	
@@ -529,9 +527,11 @@
 		<p>The margin defines how much <a href="#//api/name/spacing">spacing</a> (in points) there is from the <a href="#//api/name/texture">texture</a> border to the first tile. Margin is the same for both horizontal and vertical.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) int margin</code></div>
-	
+
+    
 	
 	
 	
@@ -563,9 +563,11 @@
 		<p>The name of the tileset. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *name</code></div>
-	
+
+    
 	
 	
 	
@@ -597,9 +599,11 @@
 		<p>The tileset&rsquo;s properties. Properties for individual tiles are in <a href="#//api/name/tileProperties">tileProperties</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapProperties *properties</code></div>
-	
+
+    
 	
 	
 	
@@ -632,9 +636,11 @@
    (4 pixels for -hd tileset images) between two adjacent tiles. Spacing is the same for both horizontal and vertical.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) int spacing</code></div>
-	
+
+    
 	
 	
 	
@@ -666,9 +672,11 @@
 		<p>The texture used by this tileset. If this property is accessed while it&rsquo;s still nil, it will load the texture.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) SKTexture *texture</code></div>
-	
+
+    
 	
 	
 	
@@ -700,9 +708,11 @@
 		<p>Contains each tile&rsquo;s <a href="#//api/name/properties">properties</a>. Properties for the tileset itself are in <a href="#//api/name/properties">properties</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapTileProperties *tileProperties</code></div>
-	
+
+    
 	
 	
 	
@@ -734,9 +744,11 @@
 		<p>The size of tiles (in points).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGSize tileSize</code></div>
-	
+
+    
 	
 	
 	
@@ -768,9 +780,11 @@
 		<p>The textures for each tile in the tileset. The index of a <a href="#//api/name/texture">texture</a> for a specific gid is obtained by subtracting <a href="#//api/name/firstGid">firstGid</a> from gid: textureIndes = gid - <a href="#//api/name/firstGid">firstGid</a></p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSArray *tileTextures</code></div>
-	
+
+    
 	
 	
 	
@@ -802,9 +816,11 @@
 		<p>Reference to the owning KTTilemap object. Mainly for internal use.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, weak) KKTilemap *tilemap</code></div>
-	
+
+    
 	
 	
 	
@@ -836,9 +852,11 @@
 		<p>How many tiles per column are in this tileset.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) unsigned int tilesPerColumn</code></div>
-	
+
+    
 	
 	
 	
@@ -870,9 +888,11 @@
 		<p>How many tiles per row are in this tileset.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) unsigned int tilesPerRow</code></div>
-	
+
+    
 	
 	
 	
@@ -905,6 +925,17 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/setAlternateTileset:" title="setAlternateTileset:"></a>
+	<h3 class="subsubtitle method-title">setAlternateTileset:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setAlternateTileset:(KKTilemapTileset *)<em>alternateTileset</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/textureForGid:" title="textureForGid:"></a>
 	<h3 class="subsubtitle method-title">textureForGid:</h3>
 	
@@ -914,9 +945,11 @@
 		<p>Gets the <a href="#//api/name/texture">texture</a> of a tile GID from this tileset.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (SKTexture *)textureForGid:(gid_t)<em>gid</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -963,9 +996,11 @@
 		<p>Gets the <a href="#//api/name/texture">texture</a> of a tile GID from this tileset. Gid must not have any flags set.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (SKTexture *)textureForGidWithoutFlags:(gid_t)<em>gidWithoutFlags</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1005,6 +1040,8 @@
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -1015,9 +1052,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -1105,6 +1142,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

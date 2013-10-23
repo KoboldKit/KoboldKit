@@ -1,87 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALTargetedAction.html">
+	<File path="Classes/OALTools.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALTargetedAction</TokenIdentifier>
-			<Abstract type="html">Ignores whatever target it was invoked upon and applies the specified action
-on the target specified at creation time.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/OALTools</TokenIdentifier>
+			<Abstract type="html">Miscellaneous tools used by ObjectAL.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>
+            
 			
 			<NodeRef refid="28"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALTargetedAction/setForcedTarget:</TokenIdentifier>
-			<Abstract type="html">The target which this action will actually be invoked upon.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/setDefaultBundle:</TokenIdentifier>
+			<Abstract type="html">Set the default bundle to use when looking up paths.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) id forcedTarget</Declaration>
-			
-			
-			<Anchor>//api/name/forcedTarget</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALTargetedAction/forcedTarget</TokenIdentifier>
-			<Abstract type="html">The target which this action will actually be invoked upon.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) id forcedTarget</Declaration>
-			
-			
-			<Anchor>//api/name/forcedTarget</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALTargetedAction/forcedTarget</TokenIdentifier>
-			<Abstract type="html">The target which this action will actually be invoked upon.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) id forcedTarget</Declaration>
-			
-			
-			<Anchor>//api/name/forcedTarget</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALTargetedAction/actionWithTarget:action:</TokenIdentifier>
-			<Abstract type="html">Create an action.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
-			
-			<Declaration>+ (id)actionWithTarget:(id)target action:(OALAction *)action</Declaration>
+			<Declaration>+ (void)setDefaultBundle:(NSBundle *)bundle</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to run the action upon.</Abstract>
-				</Parameter><Parameter>
-					<Name>action</Name>
-					<Abstract type="html">The action to run.</Abstract>
+					<Name>bundle</Name>
+					<Abstract type="html">The new default bundle.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithTarget:action:</Anchor>
+			
+			<Anchor>//api/name/setDefaultBundle:</Anchor>
+            <NodeRef refid="28"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALTargetedAction/initWithTarget:action:</TokenIdentifier>
-			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/defaultBundle</TokenIdentifier>
+			<Abstract type="html">The default bundle used when looking up paths.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithTarget:(id)target action:(OALAction *)action</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to run the action upon.</Abstract>
-				</Parameter><Parameter>
-					<Name>action</Name>
-					<Abstract type="html">The action to run.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithTarget:action:</Anchor>
+			<Declaration>+ (NSBundle *)defaultBundle</Declaration>
+			
+			
+			<Anchor>//api/name/defaultBundle</Anchor>
+            <NodeRef refid="28"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/urlForPath:</TokenIdentifier>
+			<Abstract type="html">Returns the URL corresponding to the specified path.
+If the path is not absolute (starts with a &quot;/&quot;), this method will look for
+the file in the default bundle.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)urlForPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to convert to a URL.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The corresponding URL or nil if a URL could not be formed.</Abstract></ReturnValue>
+			<Anchor>//api/name/urlForPath:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/urlForPath:bundle:</TokenIdentifier>
+			<Abstract type="html">Returns the URL corresponding to the specified path.
+If the path is not absolute (starts with a &quot;/&quot;), this method will look for
+the file in the specified bundle.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>
+			
+			<Declaration>+ (NSURL *)urlForPath:(NSString *)path bundle:(NSBundle *)bundle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to convert to a URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>bundle</Name>
+					<Abstract type="html">The bundle to look inside for relative paths.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The corresponding URL or nil if a URL could not be formed.</Abstract></ReturnValue>
+			<Anchor>//api/name/urlForPath:bundle:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/notifyExtAudioError:function:description:</TokenIdentifier>
+			<Abstract type="html">Notify an error if the specified ExtAudio error code indicates an error.
+This will log the error and also potentially post an audio error notification
+(OALAudioErrorNotification) if it is suspected that this error is a result of
+the audio session getting corrupted.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>
+			
+			<Declaration>+ (void)notifyExtAudioError:(OSStatus)errorCode function:(const char *)function description:(NSString *)description, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function:</Name>
+					<Abstract type="html">The function name where the error occurred.</Abstract>
+				</Parameter><Parameter>
+					<Name>description:</Name>
+					<Abstract type="html">A printf-style description of what happened.</Abstract>
+				</Parameter><Parameter>
+					<Name>errorCode:</Name>
+					<Abstract type="html">The error code returned from an OS call.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notifyExtAudioError:function:description:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALTools/notifyAudioSessionError:function:description:</TokenIdentifier>
+			<Abstract type="html">Notify an error if the specified AudioSession error code indicates an error.
+This will log the error and also potentially post an audio error notification
+(OALAudioErrorNotification) if it is suspected that this error is a result of
+the audio session getting corrupted.</Abstract>
+			<DeclaredIn>OALTools.h</DeclaredIn>
+			
+			<Declaration>+ (void)notifyAudioSessionError:(OSStatus)errorCode function:(const char *)function description:(NSString *)description, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function:</Name>
+					<Abstract type="html">The function name where the error occurred.</Abstract>
+				</Parameter><Parameter>
+					<Name>description:</Name>
+					<Abstract type="html">A printf-style description of what happened.</Abstract>
+				</Parameter><Parameter>
+					<Name>errorCode:</Name>
+					<Abstract type="html">The error code returned from an OS call.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notifyAudioSessionError:function:description:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

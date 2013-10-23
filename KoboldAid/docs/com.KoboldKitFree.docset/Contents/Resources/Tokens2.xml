@@ -5,8 +5,9 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/KKAppDelegate</TokenIdentifier>
 			<Abstract type="html">In a Kobold Kit project, the app delegate class should inherit from KKAppDelegate which provides default behaviors.
-  Combines code for both iOS &amp; OS X platforms to a single uniform app delegate. In particular on Mac OS X KKAppDelegate sets up the view controller. </Abstract>
+  Combines code for both iOS &amp;amp; OS X platforms to a single uniform app delegate. In particular on Mac OS X KKAppDelegate sets up the view controller. </Abstract>
 			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+            
 			
 			<NodeRef refid="2"/>
 		</Token>
@@ -15,101 +16,111 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/setWindow:</TokenIdentifier>
 			<Abstract type="html">The window reference. On Mac OS X this is the main window.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutlet KKWindow *window</Declaration>
 			
 			
 			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/window</TokenIdentifier>
 			<Abstract type="html">The window reference. On Mac OS X this is the main window.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutlet KKWindow *window</Declaration>
 			
 			
 			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKAppDelegate/window</TokenIdentifier>
 			<Abstract type="html">The window reference. On Mac OS X this is the main window.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (strong, nonatomic) IBOutlet KKWindow *window</Declaration>
 			
 			
 			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/setKkView:</TokenIdentifier>
 			<Abstract type="html">Convenience accessor to view cast to KKView.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (weak) IBOutlet KKView *kkView</Declaration>
 			
 			
 			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/kkView</TokenIdentifier>
 			<Abstract type="html">Convenience accessor to view cast to KKView.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (weak) IBOutlet KKView *kkView</Declaration>
 			
 			
 			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKAppDelegate/kkView</TokenIdentifier>
 			<Abstract type="html">Convenience accessor to view cast to KKView.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (weak) IBOutlet KKView *kkView</Declaration>
 			
 			
 			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/setViewController:</TokenIdentifier>
 			<Abstract type="html">The Kobold Kit view controller.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (strong) KKViewController *viewController</Declaration>
 			
 			<ReturnValue><Abstract type="html">The Kobold Kit view controller.</Abstract></ReturnValue>
 			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/viewController</TokenIdentifier>
 			<Abstract type="html">The Kobold Kit view controller.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (strong) KKViewController *viewController</Declaration>
 			
 			<ReturnValue><Abstract type="html">The Kobold Kit view controller.</Abstract></ReturnValue>
 			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KKAppDelegate/viewController</TokenIdentifier>
 			<Abstract type="html">The Kobold Kit view controller.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>			
+			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
 			
 			<Declaration>@property (strong) KKViewController *viewController</Declaration>
 			
 			<ReturnValue><Abstract type="html">The Kobold Kit view controller.</Abstract></ReturnValue>
 			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

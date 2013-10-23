@@ -1,42 +1,387 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapTileLayerNode.html">
+	<File path="Classes/KKTilemapObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapTileLayerNode</TokenIdentifier>
-			<Abstract type="html">Tile layer node renders a TMX tile layer.</Abstract>
-			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapObject</TokenIdentifier>
+			<Abstract type="html">TMX &quot;Object&quot; - either a rectangle, open polygon (polyline) or closed polygon. Common object base class. Use the concrete
+   subclasses KTTilemapPolyObject, KTTilemapRectangleObject or KTTilemapTileObject if you need access to each object type&apos;s specific properties.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+            
 			
 			<NodeRef refid="41"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapTileLayerNode/tileLayerNodeWithLayer:</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setLayer:</TokenIdentifier>
+			<Abstract type="html">Reference to the object layer for quick access to the object&apos;s layer.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
-			<Declaration>+ (id)tileLayerNodeWithLayer:(KKTilemapLayer *)layer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>layer</Name>
-					<Abstract type="html">The tilemap layer object.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/tileLayerNodeWithLayer:</Anchor>
+			<Declaration>@property (atomic, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object layer the object is on.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+            <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapTileLayerNode/updateLayer</TokenIdentifier>
-			<Abstract type="html">Updates the layer's tile sprites based on position, scale and view size.</Abstract>
-			<DeclaredIn>KKTilemapTileLayerNode.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/layer</TokenIdentifier>
+			<Abstract type="html">Reference to the object layer for quick access to the object&apos;s layer.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
-			<Declaration>- (void)updateLayer</Declaration>
+			<Declaration>@property (atomic, weak) KKTilemapLayer *layer</Declaration>
 			
-			
-			<Anchor>//api/name/updateLayer</Anchor>
+			<ReturnValue><Abstract type="html">The object layer the object is on.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+            <NodeRef refid="41"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/layer</TokenIdentifier>
+			<Abstract type="html">Reference to the object layer for quick access to the object&apos;s layer.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) KKTilemapLayer *layer</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object layer the object is on.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setName:</TokenIdentifier>
+			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/name</TokenIdentifier>
+			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/name</TokenIdentifier>
+			<Abstract type="html">Name of the object.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setType:</TokenIdentifier>
+			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object&apos;s properties dialog. The Types list in Tiled is prefilled with the
+   Object Types added in the Tiled Preferences dialog. You can also import &amp;amp; export Object Types from there. 
+Normally the type is used to identify an object defined in the objectTemplates.lua config file.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/type</TokenIdentifier>
+			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object&apos;s properties dialog. The Types list in Tiled is prefilled with the
+   Object Types added in the Tiled Preferences dialog. You can also import &amp;amp; export Object Types from there. 
+Normally the type is used to identify an object defined in the objectTemplates.lua config file.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/type</TokenIdentifier>
+			<Abstract type="html">The type of object assigned by the user. The type is editable in Tiled from an object&apos;s properties dialog. The Types list in Tiled is prefilled with the
+   Object Types added in the Tiled Preferences dialog. You can also import &amp;amp; export Object Types from there. 
+Normally the type is used to identify an object defined in the objectTemplates.lua config file.  TILED-EDITABLE</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setProperties:</TokenIdentifier>
+			<Abstract type="html">The object&apos;s properties.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/properties</TokenIdentifier>
+			<Abstract type="html">The object&apos;s properties.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/properties</TokenIdentifier>
+			<Abstract type="html">The object&apos;s properties.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKTilemapProperties *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setRotation:</TokenIdentifier>
+			<Abstract type="html">The rotation of the object (in Euler coordinates, radians).</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat rotation</Declaration>
+			
+			
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/rotation</TokenIdentifier>
+			<Abstract type="html">The rotation of the object (in Euler coordinates, radians).</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat rotation</Declaration>
+			
+			
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/rotation</TokenIdentifier>
+			<Abstract type="html">The rotation of the object (in Euler coordinates, radians).</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat rotation</Declaration>
+			
+			
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setPosition:</TokenIdentifier>
+			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/position</TokenIdentifier>
+			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/position</TokenIdentifier>
+			<Abstract type="html">The position of the object (in tile coordinates). For polygons and polylines this refers to the first point of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setSize:</TokenIdentifier>
+			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/size</TokenIdentifier>
+			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/size</TokenIdentifier>
+			<Abstract type="html">The size of the object (in points). For poly objects the size is the bounding box of the polygon/polyline.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setObjectType:</TokenIdentifier>
+			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
+   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) KKTilemapObjectType objectType</Declaration>
+			
+			
+			<Anchor>//api/name/objectType</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/objectType</TokenIdentifier>
+			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
+   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) KKTilemapObjectType objectType</Declaration>
+			
+			
+			<Anchor>//api/name/objectType</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/objectType</TokenIdentifier>
+			<Abstract type="html">The type of the object, it can be either a rectangle, closed polygon, polyline or a tile. Useful for casting to the proper class without
+   having to query isKindOfClass. DO NOT CHANGE THIS PROPERTY! </Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) KKTilemapObjectType objectType</Declaration>
+			
+			
+			<Anchor>//api/name/objectType</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/setHidden:</TokenIdentifier>
+			<Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL hidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract></ReturnValue>
+			<Anchor>//api/name/hidden</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/hidden</TokenIdentifier>
+			<Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL hidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract></ReturnValue>
+			<Anchor>//api/name/hidden</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapObject/hidden</TokenIdentifier>
+			<Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL hidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">NO if the object is visible, YES if it is not visible.</Abstract></ReturnValue>
+			<Anchor>//api/name/hidden</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/path</TokenIdentifier>
+			<Abstract type="html">Turns the object&apos;s outline in a CGPathRef.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>- (id)path</Declaration>
+			
+			<ReturnValue><Abstract type="html">The newly created CGPathRef.</Abstract></ReturnValue>
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/rectangleObjectFromPolyObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>- (KKTilemapRectangleObject *)rectangleObjectFromPolyObject:(KKTilemapPolyObject *)polyObject</Declaration>
+			
+			
+			<Anchor>//api/name/rectangleObjectFromPolyObject:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapObject/internal_setProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			
+			<Declaration>- (void)internal_setProperties:(KKTilemapProperties *)properties</Declaration>
+			
+			
+			<Anchor>//api/name/internal_setProperties:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

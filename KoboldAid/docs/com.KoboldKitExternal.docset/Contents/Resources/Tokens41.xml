@@ -1,91 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/OALSuspendListener.html">
+	<File path="Protocols/OALSuspendManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/OALSuspendListener</TokenIdentifier>
-			<Abstract type="html">Allows an object to participate in interrupt and suspend operations.
-Objects may hook into OALAudioSession's interrupt and suspend model by
-calling [[OALAudioSession sharedInstance] addSuspendListener:self].</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intf/OALSuspendManager</TokenIdentifier>
+			<Abstract type="html">A suspend manager is a listener that also allows other objects
+to subscribe to receive events as the manager receives them.</Abstract>
 			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>
+            
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/OALAudioSession</TokenIdentifier>
-		
-	</RelatedTokens>
-	
 			<NodeRef refid="41"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/OALSuspendListener/setManuallySuspended:</TokenIdentifier>
-			<Abstract type="html">Set to YES to manually suspend.</Abstract>
-			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/OALSuspendManager/setSuspended:</TokenIdentifier>
+			<Abstract type="html">If YES, this object is suspended.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
 			
 			
-			<Anchor>//api/name/manuallySuspended</Anchor>
+			<Anchor>//api/name/suspended</Anchor>
+            <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/OALSuspendListener/manuallySuspended</TokenIdentifier>
-			<Abstract type="html">Set to YES to manually suspend.</Abstract>
-			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/OALSuspendManager/suspended</TokenIdentifier>
+			<Abstract type="html">If YES, this object is suspended.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
 			
 			
-			<Anchor>//api/name/manuallySuspended</Anchor>
+			<Anchor>//api/name/suspended</Anchor>
+            <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/OALSuspendListener/manuallySuspended</TokenIdentifier>
-			<Abstract type="html">Set to YES to manually suspend.</Abstract>
-			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/OALSuspendManager/suspended</TokenIdentifier>
+			<Abstract type="html">If YES, this object is suspended.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) bool manuallySuspended</Declaration>
+			<Declaration>@property (nonatomic, readonly, assign) bool suspended</Declaration>
 			
 			
-			<Anchor>//api/name/manuallySuspended</Anchor>
+			<Anchor>//api/name/suspended</Anchor>
+            <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/OALSuspendListener/setInterrupted:</TokenIdentifier>
-			<Abstract type="html">If YES, this object is interrupted.
-Note: This property must NOT be set by the user!</Abstract>
-			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/OALSuspendManager/addSuspendListener:</TokenIdentifier>
+			<Abstract type="html">Add a listener that will receive manual suspend and interrupt events.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) bool interrupted</Declaration>
+			<Declaration>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to register with this handler.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/interrupted</Anchor>
+			<Anchor>//api/name/addSuspendListener:</Anchor>
+            <NodeRef refid="41"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/OALSuspendListener/interrupted</TokenIdentifier>
-			<Abstract type="html">If YES, this object is interrupted.
-Note: This property must NOT be set by the user!</Abstract>
-			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/OALSuspendManager/removeSuspendListener:</TokenIdentifier>
+			<Abstract type="html">Remove a registered listener.</Abstract>
+			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) bool interrupted</Declaration>
+			<Declaration>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">The listener to unregister from this handler.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/interrupted</Anchor>
+			<Anchor>//api/name/removeSuspendListener:</Anchor>
+            <NodeRef refid="41"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/OALSuspendListener/interrupted</TokenIdentifier>
-			<Abstract type="html">If YES, this object is interrupted.
-Note: This property must NOT be set by the user!</Abstract>
-			<DeclaredIn>OALSuspendHandler.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) bool interrupted</Declaration>
-			
-			
-			<Anchor>//api/name/interrupted</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OALMoveByAction Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -134,15 +133,15 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/OALAction.html">OALAction</a></td>
+	<td class="specification-value">OALAction</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OALAudioActions.h<br />OALAudioActions.m</td>
+	<td class="specification-value">OALAudioActions.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -167,43 +166,36 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/delta">&nbsp;&nbsp;delta</a></code>
-		<span class="tooltip"><p>The amount to move the target by.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/unitsPerSecond">&nbsp;&nbsp;unitsPerSecond</a></code>
-		<span class="tooltip"><p>The speed at which to move the target.
-If this is 0, the target will be moved at the speed determined by duration.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/actionWithDuration:delta:">+&nbsp;actionWithDuration:delta:</a></code>
-		<span class="tooltip"><p>Create a new action.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/actionWithUnitsPerSecond:delta:">+&nbsp;actionWithUnitsPerSecond:delta:</a></code>
-		<span class="tooltip"><p>Create a new action.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithDuration:delta:">&ndash;&nbsp;initWithDuration:delta:</a></code>
-		<span class="tooltip"><p>Initialize an action.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithUnitsPerSecond:delta:">&ndash;&nbsp;initWithUnitsPerSecond:delta:</a></code>
-		<span class="tooltip"><p>Initialize an action.</p></span>
 	</span>
 	
 	
@@ -230,9 +222,11 @@ If this is 0, the target will be moved at the speed determined by duration.</p><
 		<p>The amount to move the target by.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALPoint delta</code></div>
-	
+
+    
 	
 	
 	
@@ -265,9 +259,11 @@ If this is 0, the target will be moved at the speed determined by duration.</p><
 If this is 0, the target will be moved at the speed determined by duration.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float unitsPerSecond</code></div>
-	
+
+    
 	
 	
 	
@@ -307,9 +303,11 @@ If this is 0, the target will be moved at the speed determined by duration.</p>
 		<p>Create a new action.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)actionWithDuration:(float)<em>duration</em> delta:(ALPoint)<em>delta</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -361,9 +359,11 @@ If this is 0, the target will be moved at the speed determined by duration.</p>
 		<p>Create a new action.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)actionWithUnitsPerSecond:(float)<em>unitsPerSecond</em> delta:(ALPoint)<em>delta</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -423,9 +423,11 @@ If this is 0, the target will be moved at the speed determined by duration.</p>
 		<p>Initialize an action.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initWithDuration:(float)<em>duration</em> delta:(ALPoint)<em>delta</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -477,9 +479,11 @@ If this is 0, the target will be moved at the speed determined by duration.</p>
 		<p>Initialize an action.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initWithUnitsPerSecond:(float)<em>unitsPerSecond</em> delta:(ALPoint)<em>delta</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -524,6 +528,8 @@ If this is 0, the target will be moved at the speed determined by duration.</p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -534,9 +540,9 @@ If this is 0, the target will be moved at the speed determined by duration.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -624,6 +630,14 @@ If this is 0, the target will be moved at the speed determined by duration.</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

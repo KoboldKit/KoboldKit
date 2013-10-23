@@ -1,15 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OAL_AsyncAudioTrackPreloadOperation.html">
+	<File path="Categories/NSMutableDictionary+WeakReferences.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OAL_AsyncAudioTrackPreloadOperation</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) NSOperation for preloading an audio file asynchronously.</Abstract>
-			<DeclaredIn>OALAudioTrack.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableDictionary(WeakReferences)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSMutableDictionary+WeakReferences.h</DeclaredIn>
+            
 			
 			<NodeRef refid="33"/>
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSMutableDictionary/mutableDictionaryUsingWeakReferences</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableDictionary that uses weak references.</Abstract>
+			<DeclaredIn>NSMutableDictionary+WeakReferences.h</DeclaredIn>
+			
+			<Declaration>+ (NSMutableDictionary *)mutableDictionaryUsingWeakReferences</Declaration>
+			
+			
+			<Anchor>//api/name/mutableDictionaryUsingWeakReferences</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSMutableDictionary/mutableDictionaryUsingWeakReferencesWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableDictionary that uses weak references.</Abstract>
+			<DeclaredIn>NSMutableDictionary+WeakReferences.h</DeclaredIn>
+			
+			<Declaration>+ (NSMutableDictionary *)mutableDictionaryUsingWeakReferencesWithCapacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity of the dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mutableDictionaryUsingWeakReferencesWithCapacity:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSMutableDictionary/newMutableDictionaryUsingWeakReferences</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableDictionary that uses weak references (no pending autorelease).</Abstract>
+			<DeclaredIn>NSMutableDictionary+WeakReferences.h</DeclaredIn>
+			
+			<Declaration>+ (NSMutableDictionary *)newMutableDictionaryUsingWeakReferences</Declaration>
+			
+			
+			<Anchor>//api/name/newMutableDictionaryUsingWeakReferences</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSMutableDictionary/newMutableDictionaryUsingWeakReferencesWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableDictionary that uses weak references (no pending autorelease).</Abstract>
+			<DeclaredIn>NSMutableDictionary+WeakReferences.h</DeclaredIn>
+			
+			<Declaration>+ (NSMutableDictionary *)newMutableDictionaryUsingWeakReferencesWithCapacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity of the dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/newMutableDictionaryUsingWeakReferencesWithCapacity:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

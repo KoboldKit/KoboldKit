@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>ALContext Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -78,8 +77,6 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/addSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- addSuspendListener:</option>
-	
 	<option value="//api/name/clearBuffers">&nbsp;&nbsp;&nbsp;&nbsp;- clearBuffers</option>
 	
 	<option value="//api/name/ensureContextIsCurrent">&nbsp;&nbsp;&nbsp;&nbsp;- ensureContextIsCurrent</option>
@@ -98,13 +95,7 @@
 	
 	<option value="//api/name/process">&nbsp;&nbsp;&nbsp;&nbsp;- process</option>
 	
-	<option value="//api/name/removeSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSuspendListener:</option>
-	
-	<option value="//api/name/setSuspended:">&nbsp;&nbsp;&nbsp;&nbsp;- setSuspended:</option>
-	
 	<option value="//api/name/stopAllSounds">&nbsp;&nbsp;&nbsp;&nbsp;- stopAllSounds</option>
-	
-	<option value="//api/name/suspended">&nbsp;&nbsp;&nbsp;&nbsp;- suspended</option>
 	
 	
 	
@@ -170,8 +161,6 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSuspendListener:">addSuspendListener:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearBuffers">clearBuffers</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ensureContextIsCurrent">ensureContextIsCurrent</a></span></li>
@@ -190,13 +179,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/process">process</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSuspendListener:">removeSuspendListener:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSuspended:">setSuspended:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAllSounds">stopAllSounds</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/suspended">suspended</a></span></li>
 	
 </ul></li>
 
@@ -228,12 +211,12 @@
 	<td class="specification-value"><a href="../Protocols/OALSuspendManager.html">OALSuspendManager</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ALContext.h<br />ALContext.m</td>
+	<td class="specification-value">ALContext.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -256,229 +239,150 @@ A <a href="#//api/name/context">context</a> is created from a <a href="#//api/na
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/alVersion">&nbsp;&nbsp;alVersion</a></code>
-		<span class="tooltip"><p>OpenAL version string in format
-“[spec major number].[spec minor number] [optional <a href="#//api/name/vendor">vendor</a> version information]”
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/attributes">&nbsp;&nbsp;attributes</a></code>
-		<span class="tooltip"><p>The current context&rsquo;s attribute list.
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/context">&nbsp;&nbsp;context</a></code>
-		<span class="tooltip"><p>The OpenAL context pointer.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/device">&nbsp;&nbsp;device</a></code>
-		<span class="tooltip"><p>The device this <a href="#//api/name/context">context</a> was opened on.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/distanceModel">&nbsp;&nbsp;distanceModel</a></code>
-		<span class="tooltip"><p>The current distance model.
-Legal values are AL_NONE, AL_INVERSE_DISTANCE, AL_INVERSE_DISTANCE_CLAMPED,
-AL_LINEAR_DISTANCE, AL_LINEAR_DISTANCE_CLAMPED, AL_EXPONENT_DISTANCE,
-and AL_EXPONENT_DISTANCE_CLAMPED. See the OpenAL spec for detailed information. <br>
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/dopplerFactor">&nbsp;&nbsp;dopplerFactor</a></code>
-		<span class="tooltip"><p>Exaggeration factor for Doppler effect.
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/extensions">&nbsp;&nbsp;extensions</a></code>
-		<span class="tooltip"><p>List of available extensions (NSString*).
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/listener">&nbsp;&nbsp;listener</a></code>
-		<span class="tooltip"><p>This context&rsquo;s listener.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/renderer">&nbsp;&nbsp;renderer</a></code>
-		<span class="tooltip"><p>Information about the specific renderer.
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sources">&nbsp;&nbsp;sources</a></code>
-		<span class="tooltip"><p>All sources associated with this <a href="#//api/name/context">context</a> (ALSource*).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/speedOfSound">&nbsp;&nbsp;speedOfSound</a></code>
-		<span class="tooltip"><p>Speed of sound in same units as velocities.
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/vendor">&nbsp;&nbsp;vendor</a></code>
-		<span class="tooltip"><p>Name of the vendor.
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/contextOnDevice:attributes:">+&nbsp;contextOnDevice:attributes:</a></code>
-		<span class="tooltip"><p>Create a new <a href="#//api/name/context">context</a> on the specified <a href="#//api/name/device">device</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/contextOnDevice:outputFrequency:refreshIntervals:synchronousContext:monoSources:stereoSources:">+&nbsp;contextOnDevice:outputFrequency:refreshIntervals:synchronousContext:monoSources:stereoSources:</a></code>
-		<span class="tooltip"><p>Create a new <a href="#//api/name/context">context</a> on the specified <a href="#//api/name/device">device</a> with <a href="#//api/name/attributes">attributes</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initOnDevice:outputFrequency:refreshIntervals:synchronousContext:monoSources:stereoSources:">&ndash;&nbsp;initOnDevice:outputFrequency:refreshIntervals:synchronousContext:monoSources:stereoSources:</a></code>
-		<span class="tooltip"><p>Initialize this <a href="#//api/name/context">context</a> on the specified <a href="#//api/name/device">device</a> with <a href="#//api/name/attributes">attributes</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initOnDevice:attributes:">&ndash;&nbsp;initOnDevice:attributes:</a></code>
-		<span class="tooltip"><p>Initialize this <a href="#//api/name/context">context</a> for the specified <a href="#//api/name/device">device</a> and <a href="#//api/name/attributes">attributes</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/process">&ndash;&nbsp;process</a></code>
-		<span class="tooltip"><p>Process this <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stopAllSounds">&ndash;&nbsp;stopAllSounds</a></code>
-		<span class="tooltip"><p>Stop all sound <a href="#//api/name/sources">sources</a> in this <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/clearBuffers">&ndash;&nbsp;clearBuffers</a></code>
-		<span class="tooltip"><p>Clear all buffers being used by <a href="#//api/name/sources">sources</a> in this <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/ensureContextIsCurrent">&ndash;&nbsp;ensureContextIsCurrent</a></code>
-		<span class="tooltip"><p>Make sure this <a href="#//api/name/context">context</a> is the current <a href="#//api/name/context">context</a>.
-This method is used to work around iOS 4.0 and 4.2 bugs
-that could cause the <a href="#//api/name/context">context</a> to be lost.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isExtensionPresent:">&ndash;&nbsp;isExtensionPresent:</a></code>
-		<span class="tooltip"><p>Check if the specified extension is present in this <a href="#//api/name/context">context</a>.
-Only valid when this is the current <a href="#//api/name/context">context</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getProcAddress:">&ndash;&nbsp;getProcAddress:</a></code>
-		<span class="tooltip"><p>Get the address of the specified procedure (C function address).
-Only valid when this is the current <a href="#//api/name/context">context</a>. <br>
-<strong>Note:</strong> The OpenAL implementation is free to return
-a pointer even if it is not valid for this <a href="#//api/name/context">context</a>. Always call isExtensionPresent
-first.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifySourceInitializing:">&ndash;&nbsp;notifySourceInitializing:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Used by <a href="../Classes/ALSource.html">ALSource</a> to announce initialization.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifySourceDeallocating:">&ndash;&nbsp;notifySourceDeallocating:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Used by <a href="../Classes/ALSource.html">ALSource</a> to announce deallocation.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/addSuspendListener:">&ndash;&nbsp;addSuspendListener:</a></code>
-		<span class="tooltip"><p>Add a listener that will receive manual suspend and interrupt events.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/removeSuspendListener:">&ndash;&nbsp;removeSuspendListener:</a></code>
-		<span class="tooltip"><p>Remove a registered listener.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/suspended">&ndash;&nbsp;suspended</a></code>
-		<span class="tooltip"><p>If YES, this object is suspended.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setSuspended:">&ndash;&nbsp;setSuspended:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Called by SuspendHandler.</p></span>
 	</span>
 	
 	
@@ -507,9 +411,11 @@ first.</p></span>
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSString *alVersion</code></div>
-	
+
+    
 	
 	
 	
@@ -542,9 +448,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *attributes</code></div>
-	
+
+    
 	
 	
 	
@@ -576,9 +484,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>The OpenAL context pointer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) ALCcontext *context</code></div>
-	
+
+    
 	
 	
 	
@@ -610,9 +520,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>The device this <a href="#//api/name/context">context</a> was opened on.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) ALDevice *device</code></div>
-	
+
+    
 	
 	
 	
@@ -648,9 +560,11 @@ and AL_EXPONENT_DISTANCE_CLAMPED. See the OpenAL spec for detailed information. 
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) ALenum distanceModel</code></div>
-	
+
+    
 	
 	
 	
@@ -683,9 +597,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float dopplerFactor</code></div>
-	
+
+    
 	
 	
 	
@@ -718,9 +634,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *extensions</code></div>
-	
+
+    
 	
 	
 	
@@ -752,9 +670,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>This context&rsquo;s listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) ALListener *listener</code></div>
-	
+
+    
 	
 	
 	
@@ -787,9 +707,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSString *renderer</code></div>
-	
+
+    
 	
 	
 	
@@ -821,9 +743,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>All sources associated with this <a href="#//api/name/context">context</a> (ALSource*).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *sources</code></div>
-	
+
+    
 	
 	
 	
@@ -856,9 +780,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float speedOfSound</code></div>
-	
+
+    
 	
 	
 	
@@ -891,9 +817,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSString *vendor</code></div>
-	
+
+    
 	
 	
 	
@@ -933,9 +861,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>Create a new <a href="#//api/name/context">context</a> on the specified <a href="#//api/name/device">device</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)contextOnDevice:(ALDevice *)<em>device</em> attributes:(NSArray *)<em>attributes</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -988,9 +918,11 @@ Posible attributes: ALC_FREQUENCY, ALC_REFRESH, ALC_SYNC, ALC_MONO_SOURCES, ALC_
 		<p>Create a new <a href="#//api/name/context">context</a> on the specified <a href="#//api/name/device">device</a> with <a href="#//api/name/attributes">attributes</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)contextOnDevice:(ALDevice *)<em>device</em> outputFrequency:(int)<em>outputFrequency</em> refreshIntervals:(int)<em>refreshIntervals</em> synchronousContext:(bool)<em>synchronousContext</em> monoSources:(int)<em>monoSources</em> stereoSources:(int)<em>stereoSources</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1063,50 +995,6 @@ calling alcUpdateContext (ignored by iOS).</p></dd>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/addSuspendListener:" title="addSuspendListener:"></a>
-	<h3 class="subsubtitle method-title">addSuspendListener:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Add a listener that will receive manual suspend and interrupt events.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listenerIn</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>listener</em></dt>
-			<dd><p>The listener to register with this handler.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/clearBuffers" title="clearBuffers"></a>
 	<h3 class="subsubtitle method-title">clearBuffers</h3>
 	
@@ -1116,9 +1004,11 @@ calling alcUpdateContext (ignored by iOS).</p></dd>
 		<p>Clear all buffers being used by <a href="#//api/name/sources">sources</a> in this <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)clearBuffers</code></div>
-	
+
+    
 	
 	
 	
@@ -1152,9 +1042,11 @@ This method is used to work around iOS 4.0 and 4.2 bugs
 that could cause the <a href="#//api/name/context">context</a> to be lost.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)ensureContextIsCurrent</code></div>
-	
+
+    
 	
 	
 	
@@ -1190,9 +1082,11 @@ a pointer even if it is not valid for this <a href="#//api/name/context">context
 first.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void *)getProcAddress:(NSString *)<em>functionName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1239,9 +1133,11 @@ first.</p>
 		<p>Initialize this <a href="#//api/name/context">context</a> for the specified <a href="#//api/name/device">device</a> and <a href="#//api/name/attributes">attributes</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initOnDevice:(ALDevice *)<em>device</em> attributes:(NSArray *)<em>attributes</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1294,9 +1190,11 @@ Posible attributes: ALC_FREQUENCY, ALC_REFRESH, ALC_SYNC, ALC_MONO_SOURCES, ALC_
 		<p>Initialize this <a href="#//api/name/context">context</a> on the specified <a href="#//api/name/device">device</a> with <a href="#//api/name/attributes">attributes</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initOnDevice:(ALDevice *)<em>device</em> outputFrequency:(int)<em>outputFrequency</em> refreshIntervals:(int)<em>refreshIntervals</em> synchronousContext:(bool)<em>synchronousContext</em> monoSources:(int)<em>monoSources</em> stereoSources:(int)<em>stereoSources</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1371,9 +1269,11 @@ calling alcUpdateContext (ignored by iOS).</p></dd>
 Only valid when this is the current <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (bool)isExtensionPresent:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1420,9 +1320,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>(INTERNAL USE) Used by <a href="../Classes/ALSource.html">ALSource</a> to announce deallocation.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)notifySourceDeallocating:(ALSource *)<em>source</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1464,9 +1366,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>(INTERNAL USE) Used by <a href="../Classes/ALSource.html">ALSource</a> to announce initialization.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)notifySourceInitializing:(ALSource *)<em>source</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1508,9 +1412,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>Process this <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)process</code></div>
-	
+
+    
 	
 	
 	
@@ -1527,84 +1433,6 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">ALContext.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/removeSuspendListener:" title="removeSuspendListener:"></a>
-	<h3 class="subsubtitle method-title">removeSuspendListener:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Remove a registered listener.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listenerIn</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>listener</em></dt>
-			<dd><p>The listener to unregister from this handler.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setSuspended:" title="setSuspended:"></a>
-	<h3 class="subsubtitle method-title">setSuspended:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(INTERNAL USE) Called by SuspendHandler.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)setSuspended:(bool)<em>value</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ALContext.m</code><br />
 	</div>				
 	
 	
@@ -1620,9 +1448,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 		<p>Stop all sound <a href="#//api/name/sources">sources</a> in this <a href="#//api/name/context">context</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)stopAllSounds</code></div>
-	
+
+    
 	
 	
 	
@@ -1644,43 +1474,11 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/suspended" title="suspended"></a>
-	<h3 class="subsubtitle method-title">suspended</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>If YES, this object is suspended.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (bool)suspended</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -1691,9 +1489,9 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -1781,6 +1579,14 @@ Only valid when this is the current <a href="#//api/name/context">context</a>.</
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

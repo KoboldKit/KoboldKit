@@ -1,161 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALMoveToAction.html">
+	<File path="Classes/OALPlaceAction.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALMoveToAction</TokenIdentifier>
-			<Abstract type="html">Moves the target from its current position to the specified
-position over time in 3D space.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/cl/OALPlaceAction</TokenIdentifier>
+			<Abstract type="html">Places the target at the specified position.</Abstract>
 			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+            
 			
 			<NodeRef refid="23"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/setPosition:</TokenIdentifier>
-			<Abstract type="html">The position to move the target to.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/setPosition:</TokenIdentifier>
+			<Abstract type="html">The position where the target will be placed.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
 			
 			
 			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/position</TokenIdentifier>
-			<Abstract type="html">The position to move the target to.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/position</TokenIdentifier>
+			<Abstract type="html">The position where the target will be placed.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
 			
 			
 			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALMoveToAction/position</TokenIdentifier>
-			<Abstract type="html">The position to move the target to.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/OALPlaceAction/position</TokenIdentifier>
+			<Abstract type="html">The position where the target will be placed.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
 			
 			
 			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/setUnitsPerSecond:</TokenIdentifier>
-			<Abstract type="html">The speed at which to move the target.
-If this is 0, the target will be moved at the speed determined by duration.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALPlaceAction/actionWithPosition:</TokenIdentifier>
+			<Abstract type="html">Create an action with the specified position.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
-			
-			
-			<Anchor>//api/name/unitsPerSecond</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/unitsPerSecond</TokenIdentifier>
-			<Abstract type="html">The speed at which to move the target.
-If this is 0, the target will be moved at the speed determined by duration.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
-			
-			
-			<Anchor>//api/name/unitsPerSecond</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALMoveToAction/unitsPerSecond</TokenIdentifier>
-			<Abstract type="html">The speed at which to move the target.
-If this is 0, the target will be moved at the speed determined by duration.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
-			
-			
-			<Anchor>//api/name/unitsPerSecond</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALMoveToAction/actionWithDuration:position:</TokenIdentifier>
-			<Abstract type="html">Create a new action.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
-			
-			<Declaration>+ (id)actionWithDuration:(float)duration position:(ALPoint)position</Declaration>
+			<Declaration>+ (id)actionWithPosition:(ALPoint)position</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">The duration of the move.</Abstract>
-				</Parameter><Parameter>
 					<Name>position</Name>
-					<Abstract type="html">The position to move to.</Abstract>
+					<Abstract type="html">The position to place the target at.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithDuration:position:</Anchor>
+			<Anchor>//api/name/actionWithPosition:</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALMoveToAction/actionWithUnitsPerSecond:position:</TokenIdentifier>
-			<Abstract type="html">Create a new action.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/initWithPosition:</TokenIdentifier>
+			<Abstract type="html">Initialize an action with the specified position.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>+ (id)actionWithUnitsPerSecond:(float)unitsPerSecond position:(ALPoint)position</Declaration>
+			<Declaration>- (id)initWithPosition:(ALPoint)position</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>unitsPerSecond</Name>
-					<Abstract type="html">The rate of movement.</Abstract>
-				</Parameter><Parameter>
 					<Name>position</Name>
-					<Abstract type="html">The position to move to.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithUnitsPerSecond:position:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/initWithDuration:position:</TokenIdentifier>
-			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithDuration:(float)duration position:(ALPoint)position</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">The duration of the move.</Abstract>
-				</Parameter><Parameter>
-					<Name>position</Name>
-					<Abstract type="html">The position to move to.</Abstract>
+					<Abstract type="html">The position to place the target at.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithDuration:position:</Anchor>
+			<Anchor>//api/name/initWithPosition:</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/initWithUnitsPerSecond:position:</TokenIdentifier>
-			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithUnitsPerSecond:(float)unitsPerSecond position:(ALPoint)position</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>unitsPerSecond</Name>
-					<Abstract type="html">The rate of movement.</Abstract>
-				</Parameter><Parameter>
-					<Name>position</Name>
-					<Abstract type="html">The position to move to.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithUnitsPerSecond:position:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

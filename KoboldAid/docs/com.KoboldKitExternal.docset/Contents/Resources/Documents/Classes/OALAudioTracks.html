@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OALAudioTracks Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -53,19 +52,11 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/addSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- addSuspendListener:</option>
-	
 	<option value="//api/name/notifyTrackDeallocating:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyTrackDeallocating:</option>
 	
 	<option value="//api/name/notifyTrackInitializing:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyTrackInitializing:</option>
 	
-	<option value="//api/name/pollDeviceTime">&nbsp;&nbsp;&nbsp;&nbsp;- pollDeviceTime</option>
-	
-	<option value="//api/name/removeSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSuspendListener:</option>
-	
 	<option value="//api/name/stopAllTracks">&nbsp;&nbsp;&nbsp;&nbsp;- stopAllTracks</option>
-	
-	<option value="//api/name/suspended">&nbsp;&nbsp;&nbsp;&nbsp;- suspended</option>
 	
 	
 	
@@ -105,19 +96,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSuspendListener:">addSuspendListener:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyTrackDeallocating:">notifyTrackDeallocating:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyTrackInitializing:">notifyTrackInitializing:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pollDeviceTime">pollDeviceTime</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSuspendListener:">removeSuspendListener:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAllTracks">stopAllTracks</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/suspended">suspended</a></span></li>
 	
 </ul></li>
 
@@ -149,19 +132,17 @@
 	<td class="specification-value"><a href="../Protocols/OALSuspendManager.html">OALSuspendManager</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OALAudioTracks.h<br />OALAudioTracks.m</td>
+	<td class="specification-value">OALAudioTracks.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Keeps track of all AudioTrack objects.</p>
-
-<p>(INTERNAL USE) Private methods for OALAudioTracks.</p>
 					</div>
 					
 					
@@ -174,86 +155,42 @@
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/paused">&nbsp;&nbsp;paused</a></code>
-		<span class="tooltip"><p>Pauses/unpauses all audio <a href="#//api/name/tracks">tracks</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/muted">&nbsp;&nbsp;muted</a></code>
-		<span class="tooltip"><p>Mutes/unmutes all audio <a href="#//api/name/tracks">tracks</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tracks">&nbsp;&nbsp;tracks</a></code>
-		<span class="tooltip"><p>All instantiated audio tracks.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stopAllTracks">&ndash;&nbsp;stopAllTracks</a></code>
-		<span class="tooltip"><p>Stop playback on all audio <a href="#//api/name/tracks">tracks</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifyTrackInitializing:">&ndash;&nbsp;notifyTrackInitializing:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Notify that a track is initializing.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifyTrackDeallocating:">&ndash;&nbsp;notifyTrackDeallocating:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Notify that a track is deallocating.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/addSuspendListener:">&ndash;&nbsp;addSuspendListener:</a></code>
-		<span class="tooltip"><p>Add a listener that will receive manual suspend and interrupt events.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/removeSuspendListener:">&ndash;&nbsp;removeSuspendListener:</a></code>
-		<span class="tooltip"><p>Remove a registered listener.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/suspended">&ndash;&nbsp;suspended</a></code>
-		<span class="tooltip"><p>If YES, this object is suspended.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/pollDeviceTime">&ndash;&nbsp;pollDeviceTime</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Read deviceCurrentTime from an audio player
-as a workaround for a bug in iOS devices that causes the value
-to reset to 0 in certain circumstances.</p></span>
 	</span>
 	
 	
@@ -280,9 +217,11 @@ to reset to 0 in certain circumstances.</p></span>
 		<p>Mutes/unmutes all audio <a href="#//api/name/tracks">tracks</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool muted</code></div>
-	
+
+    
 	
 	
 	
@@ -314,9 +253,11 @@ to reset to 0 in certain circumstances.</p></span>
 		<p>Pauses/unpauses all audio <a href="#//api/name/tracks">tracks</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool paused</code></div>
-	
+
+    
 	
 	
 	
@@ -348,9 +289,11 @@ to reset to 0 in certain circumstances.</p></span>
 		<p>All instantiated audio tracks.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *tracks</code></div>
-	
+
+    
 	
 	
 	
@@ -383,50 +326,6 @@ to reset to 0 in certain circumstances.</p></span>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/addSuspendListener:" title="addSuspendListener:"></a>
-	<h3 class="subsubtitle method-title">addSuspendListener:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Add a listener that will receive manual suspend and interrupt events.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listener</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>listener</em></dt>
-			<dd><p>The listener to register with this handler.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/notifyTrackDeallocating:" title="notifyTrackDeallocating:"></a>
 	<h3 class="subsubtitle method-title">notifyTrackDeallocating:</h3>
 	
@@ -436,9 +335,11 @@ to reset to 0 in certain circumstances.</p></span>
 		<p>(INTERNAL USE) Notify that a track is deallocating.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)notifyTrackDeallocating:(OALAudioTrack *)<em>track</em></code></div>
-	
+
+    
 	
 	
 	
@@ -470,9 +371,11 @@ to reset to 0 in certain circumstances.</p></span>
 		<p>(INTERNAL USE) Notify that a track is initializing.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)notifyTrackInitializing:(OALAudioTrack *)<em>track</em></code></div>
-	
+
+    
 	
 	
 	
@@ -489,86 +392,6 @@ to reset to 0 in certain circumstances.</p></span>
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">OALAudioTracks.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/pollDeviceTime" title="pollDeviceTime"></a>
-	<h3 class="subsubtitle method-title">pollDeviceTime</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>(INTERNAL USE) Read deviceCurrentTime from an audio player
-as a workaround for a bug in iOS devices that causes the value
-to reset to 0 in certain circumstances.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)pollDeviceTime</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALAudioTracks.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/removeSuspendListener:" title="removeSuspendListener:"></a>
-	<h3 class="subsubtitle method-title">removeSuspendListener:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Remove a registered listener.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listener</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>listener</em></dt>
-			<dd><p>The listener to unregister from this handler.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
 	</div>				
 	
 	
@@ -584,9 +407,11 @@ to reset to 0 in certain circumstances.</p>
 		<p>Stop playback on all audio <a href="#//api/name/tracks">tracks</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)stopAllTracks</code></div>
-	
+
+    
 	
 	
 	
@@ -608,43 +433,11 @@ to reset to 0 in certain circumstances.</p>
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/suspended" title="suspended"></a>
-	<h3 class="subsubtitle method-title">suspended</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>If YES, this object is suspended.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (bool)suspended</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -655,9 +448,9 @@ to reset to 0 in certain circumstances.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -745,6 +538,14 @@ to reset to 0 in certain circumstances.</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

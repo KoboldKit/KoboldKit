@@ -1,216 +1,462 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKPointArray.html">
+	<File path="Classes/KKNodeController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKPointArray</TokenIdentifier>
-			<Abstract type="html">A simple and efficient array of CGPoint structs.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKNodeController</TokenIdentifier>
+			<Abstract type="html">KKNodeController adds game component (behavior, model functionality to a node.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+            
 			
 			<NodeRef refid="23"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/setCount:</TokenIdentifier>
-			<Abstract type="html">Returns the number of points in the array.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setNode:</TokenIdentifier>
+			<Abstract type="html">The controller&apos;s owning node. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			
-			<Anchor>//api/name/count</Anchor>
+			<ReturnValue><Abstract type="html">The controller&apos;s owning node. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/count</TokenIdentifier>
-			<Abstract type="html">Returns the number of points in the array.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/node</TokenIdentifier>
+			<Abstract type="html">The controller&apos;s owning node. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			
-			<Anchor>//api/name/count</Anchor>
+			<ReturnValue><Abstract type="html">The controller&apos;s owning node. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKPointArray/count</TokenIdentifier>
-			<Abstract type="html">Returns the number of points in the array.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/node</TokenIdentifier>
+			<Abstract type="html">The controller&apos;s owning node. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
 			
-			
-			<Anchor>//api/name/count</Anchor>
+			<ReturnValue><Abstract type="html">The controller&apos;s owning node. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/setPoints:</TokenIdentifier>
-			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setUserData:</TokenIdentifier>
+			<Abstract type="html">The controller&apos;s userData supercedes the node&apos;s userData and can be used in the same way. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
 			
-			
-			<Anchor>//api/name/points</Anchor>
+			<ReturnValue><Abstract type="html">The controller&apos;s userData supercedes the node&apos;s userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/userData</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/points</TokenIdentifier>
-			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/userData</TokenIdentifier>
+			<Abstract type="html">The controller&apos;s userData supercedes the node&apos;s userData and can be used in the same way. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
 			
-			
-			<Anchor>//api/name/points</Anchor>
+			<ReturnValue><Abstract type="html">The controller&apos;s userData supercedes the node&apos;s userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/userData</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKPointArray/points</TokenIdentifier>
-			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/userData</TokenIdentifier>
+			<Abstract type="html">The controller&apos;s userData supercedes the node&apos;s userData and can be used in the same way. You should never change this reference yourself!</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
 			
-			
-			<Anchor>//api/name/points</Anchor>
+			<ReturnValue><Abstract type="html">The controller&apos;s userData supercedes the node&apos;s userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
+			<Anchor>//api/name/userData</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKPointArray/pointArrayWithCapacity:</TokenIdentifier>
-			<Abstract type="html">Creates a points array, reserving capacity amount of memory for points.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setBehaviors:</TokenIdentifier>
+			<Abstract type="html">The list of behaviors of the node.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>+ (id)pointArrayWithCapacity:(NSUInteger)capacity</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
+			
+			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviors</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviors</TokenIdentifier>
+			<Abstract type="html">The list of behaviors of the node.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
+			
+			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviors</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/behaviors</TokenIdentifier>
+			<Abstract type="html">The list of behaviors of the node.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
+			
+			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviors</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setModel:</TokenIdentifier>
+			<Abstract type="html">The model object associated with this controller/node.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/model</TokenIdentifier>
+			<Abstract type="html">The model object associated with this controller/node.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/model</TokenIdentifier>
+			<Abstract type="html">The model object associated with this controller/node.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) KKModel *model</Declaration>
+			
+			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setPaused:</TokenIdentifier>
+			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
+also check the controller&apos;s paused state to ensure they don&apos;t process/forward events while paused.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL paused</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/paused</TokenIdentifier>
+			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
+also check the controller&apos;s paused state to ensure they don&apos;t process/forward events while paused.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL paused</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/paused</TokenIdentifier>
+			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
+also check the controller&apos;s paused state to ensure they don&apos;t process/forward events while paused.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL paused</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKNodeController/controllerWithBehaviors:</TokenIdentifier>
+			<Abstract type="html">Creates a controller with a list of behaviors.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>+ (id)controllerWithBehaviors:(NSArray *)behaviors</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>capacity</Name>
-					<Abstract type="html">The initial capacity reserved for the array.</Abstract>
+					<Name>behaviors</Name>
+					<Abstract type="html">An array containing KKBehavior objects.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/pointArrayWithCapacity:</Anchor>
+			<Anchor>//api/name/controllerWithBehaviors:</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKPointArray/pointArrayWithPoints:count:</TokenIdentifier>
-			<Abstract type="html">Creates a points array by copying count points from the points buffer (array). You can delete (free) your points buffer after calling this method.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/initWithBehaviors:</TokenIdentifier>
+			<Abstract type="html">Creates a controller with a list of behaviors.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>+ (id)pointArrayWithPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
+			<Declaration>- (id)initWithBehaviors:(NSArray *)behaviors</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>points</Name>
-					<Abstract type="html">A memory buffer containing CGPoints. The buffer is copied.</Abstract>
-				</Parameter><Parameter>
-					<Name>count</Name>
-					<Abstract type="html">The number of CGPoint in the buffer.</Abstract>
+					<Name>behaviors</Name>
+					<Abstract type="html">An array containing KKBehavior objects.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/pointArrayWithPoints:count:</Anchor>
+			<Anchor>//api/name/initWithBehaviors:</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/addPoints:count:</TokenIdentifier>
-			<Abstract type="html">Adds the given number of points from an existing CGPoint array or memory buffer.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehavior:</TokenIdentifier>
+			<Abstract type="html">Adds a behavior.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>- (void)addPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
+			<Declaration>- (void)addBehavior:(KKBehavior *)behavior</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>points</Name>
-					<Abstract type="html">Memeory buffer containing points. Buffer is copied.</Abstract>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBehavior:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehavior:withKey:</TokenIdentifier>
+			<Abstract type="html">Adds a behavior with key.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (void)addBehavior:(KKBehavior *)behavior withKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to add.</Abstract>
 				</Parameter><Parameter>
-					<Name>count</Name>
-					<Abstract type="html">The number of CGPoint in the buffer.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">The behavior&apos;s uniquely identifying key.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addPoints:count:</Anchor>
+			<Anchor>//api/name/addBehavior:withKey:</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/addPoint:</TokenIdentifier>
-			<Abstract type="html">Adds a single point to the array.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehaviors:</TokenIdentifier>
+			<Abstract type="html">Adds a list of behaviors.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>- (void)addPoint:(CGPoint)point</Declaration>
+			<Declaration>- (void)addBehaviors:(NSArray *)behaviors</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>point</Name>
-					<Abstract type="html">The point to add.</Abstract>
+					<Name>behaviors</Name>
+					<Abstract type="html">An array containing KKBehavior objects.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addPoint:</Anchor>
+			<Anchor>//api/name/addBehaviors:</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removeAllPoints</TokenIdentifier>
-			<Abstract type="html">Removes all points from the array. You can then start re-adding points.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorForKey:</TokenIdentifier>
+			<Abstract type="html">A key uniquely identifying the behavior.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>- (void)removeAllPoints</Declaration>
-			
-			
-			<Anchor>//api/name/removeAllPoints</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/pointAtIndex:</TokenIdentifier>
-			<Abstract type="html">Returns the point at the given index. If the index is out of bounds an exception is raised.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
-			
-			<Declaration>- (CGPoint)pointAtIndex:(NSUInteger)index</Declaration>
+			<Declaration>- (id)behaviorForKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">The index of a point.</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">A key uniquely identifying the behavior.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The point at the given index.</Abstract></ReturnValue>
-			<Anchor>//api/name/pointAtIndex:</Anchor>
+			<ReturnValue><Abstract type="html">The behavior for the key or nil if there is no behavior with that key.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviorForKey:</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/lastPoint</TokenIdentifier>
-			<Abstract type="html">The last point in the array.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorKindOfClass:</TokenIdentifier>
+			<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
 			
-			<Declaration>- (CGPoint)lastPoint</Declaration>
-			
-			<ReturnValue><Abstract type="html">The last point in the array.</Abstract></ReturnValue>
-			<Anchor>//api/name/lastPoint</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removeLastPoint</TokenIdentifier>
-			<Abstract type="html">Removes the last point from the array. Does nothing if the array is empty.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeLastPoint</Declaration>
-			
-			
-			<Anchor>//api/name/removeLastPoint</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removePointsStartingAtIndex:</TokenIdentifier>
-			<Abstract type="html">Removes all points from index to last point. Does nothing if index >= count. The array then contains (index - 1) points.</Abstract>
-			<DeclaredIn>KKPointArray.h</DeclaredIn>			
-			
-			<Declaration>- (void)removePointsStartingAtIndex:(NSUInteger)index</Declaration>
+			<Declaration>- (id)behaviorKindOfClass:(Class)behaviorClass</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">The lowest index from which to remove all remaining points.</Abstract>
+					<Name>behaviorClass</Name>
+					<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The first found behavior being a kind of class or nil if there is no behavior with that class.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviorKindOfClass:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorMemberOfClass:</TokenIdentifier>
+			<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (id)behaviorMemberOfClass:(Class)behaviorClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behaviorClass</Name>
+					<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The first found behavior being a member of the class or nil if there is no behavior with that class.</Abstract></ReturnValue>
+			<Anchor>//api/name/behaviorMemberOfClass:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/hasBehaviors</TokenIdentifier>
+			<Abstract type="html">YES if the controller has one or more behaviors.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)hasBehaviors</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the controller has one or more behaviors.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasBehaviors</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehavior:</TokenIdentifier>
+			<Abstract type="html">Removes a specific behavior. Does nothing if the behavior isn&apos;t in the list.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeBehavior:(KKBehavior *)behavior</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behavior</Name>
+					<Abstract type="html">The behavior to remove</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/removePointsStartingAtIndex:</Anchor>
+			<Anchor>//api/name/removeBehavior:</Anchor>
+            <NodeRef refid="23"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehaviorForKey:</TokenIdentifier>
+			<Abstract type="html">Removes a specific behavior by key. Does nothing if there&apos;s no behavior with this key in the list.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeBehaviorForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key uniquely identifying the behavior to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeBehaviorForKey:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehaviorWithClass:</TokenIdentifier>
+			<Abstract type="html">Removes a specific behavior by class. Does nothing if there&apos;s no behavior being a member of the class in the list.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeBehaviorWithClass:(Class)behaviorClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>behaviorClass</Name>
+					<Abstract type="html">The behavior class to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeBehaviorWithClass:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeAllBehaviors</TokenIdentifier>
+			<Abstract type="html">Removes all behaviors from the controller.</Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllBehaviors</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllBehaviors</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/isEqualToController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToController:(KKNodeController *)controller</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToController:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/willRemoveController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (void)willRemoveController</Declaration>
+			
+			
+			<Anchor>//api/name/willRemoveController</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/nodeDidMoveToParent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (void)nodeDidMoveToParent</Declaration>
+			
+			
+			<Anchor>//api/name/nodeDidMoveToParent</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/nodeWillMoveFromParent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			
+			<Declaration>- (void)nodeWillMoveFromParent</Declaration>
+			
+			
+			<Anchor>//api/name/nodeWillMoveFromParent</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

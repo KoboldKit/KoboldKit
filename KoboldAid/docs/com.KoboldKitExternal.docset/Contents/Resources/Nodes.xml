@@ -2,9 +2,10 @@
 <DocSetNodes version="1.0">
     <TOC>
         <Node type="folder">
-            <Name>Kobold Kit</Name>
+            <Name>KoboldKitExternal</Name>
             <Path>index.html</Path>
 			<Subnodes>
+                
 				
 				<Node type="folder">
 					<Name>Classes</Name>
@@ -41,223 +42,1470 @@
 						<NodeRef refid="29"/>
 						<NodeRef refid="30"/>
 						<NodeRef refid="31"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node>
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
 						<NodeRef refid="32"/>
 						<NodeRef refid="33"/>
 						<NodeRef refid="34"/>
 						<NodeRef refid="35"/>
 						<NodeRef refid="36"/>
-						
-					</Subnodes>
-				</Node>
-				
-				
-				<Node type="folder">
-					<Name>Categories</Name>
-					<Path>index.html</Path>
-					<Subnodes>
 						<NodeRef refid="37"/>
-						<NodeRef refid="38"/>
 						
 					</Subnodes>
 				</Node>
 				
-				
-				<Node type="folder">
+                
+				<Node>
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="38"/>
 						<NodeRef refid="39"/>
 						<NodeRef refid="40"/>
 						<NodeRef refid="41"/>
 						<NodeRef refid="42"/>
-						<NodeRef refid="43"/>
-						<NodeRef refid="44"/>
 						
 					</Subnodes>
 				</Node>
 				
+                
 			</Subnodes>
         </Node>
     </TOC>
 	<Library>
-		<Node id="1">
-			<Name>ALBuffer</Name>
-			<Path>Classes/ALBuffer.html</Path>
-		</Node>
-		<Node id="2">
-			<Name>ALCaptureDevice</Name>
-			<Path>Classes/ALCaptureDevice.html</Path>
-		</Node>
-		<Node id="3">
-			<Name>ALChannelSource</Name>
-			<Path>Classes/ALChannelSource.html</Path>
-		</Node>
-		<Node id="4">
-			<Name>ALContext</Name>
-			<Path>Classes/ALContext.html</Path>
-		</Node>
-		<Node id="5">
-			<Name>ALDevice</Name>
-			<Path>Classes/ALDevice.html</Path>
-		</Node>
-		<Node id="6">
-			<Name>ALListener</Name>
-			<Path>Classes/ALListener.html</Path>
-		</Node>
-		<Node id="7">
-			<Name>ALSoundSourcePool</Name>
-			<Path>Classes/ALSoundSourcePool.html</Path>
-		</Node>
-		<Node id="8">
-			<Name>ALSource</Name>
-			<Path>Classes/ALSource.html</Path>
-		</Node>
-		<Node id="9">
-			<Name>ALWrapper</Name>
-			<Path>Classes/ALWrapper.html</Path>
-		</Node>
-		<Node id="10">
-			<Name>CCProfiler</Name>
-			<Path>Classes/CCProfiler.html</Path>
-		</Node>
-		<Node id="11">
-			<Name>CCProfilingTimer</Name>
-			<Path>Classes/CCProfilingTimer.html</Path>
-		</Node>
-		<Node id="12">
-			<Name>CLASS_A</Name>
-			<Path>Classes/CLASS_A.html</Path>
-		</Node>
-		<Node id="13">
-			<Name>IOSVersion</Name>
-			<Path>Classes/IOSVersion.html</Path>
-		</Node>
-		<Node id="14">
-			<Name>OALAction</Name>
-			<Path>Classes/OALAction.html</Path>
-		</Node>
-		<Node id="15">
-			<Name>OALActionManager</Name>
-			<Path>Classes/OALActionManager.html</Path>
-		</Node>
-		<Node id="16">
-			<Name>OALAudioFile</Name>
-			<Path>Classes/OALAudioFile.html</Path>
-		</Node>
-		<Node id="17">
-			<Name>OALAudioSession</Name>
-			<Path>Classes/OALAudioSession.html</Path>
-		</Node>
-		<Node id="18">
-			<Name>OALAudioTrack</Name>
-			<Path>Classes/OALAudioTrack.html</Path>
-		</Node>
-		<Node id="19">
-			<Name>OALAudioTracks</Name>
-			<Path>Classes/OALAudioTracks.html</Path>
-		</Node>
-		<Node id="20">
-			<Name>OALCallAction</Name>
-			<Path>Classes/OALCallAction.html</Path>
-		</Node>
-		<Node id="21">
-			<Name>OALConcurrentActions</Name>
-			<Path>Classes/OALConcurrentActions.html</Path>
-		</Node>
-		<Node id="22">
-			<Name>OALMoveByAction</Name>
-			<Path>Classes/OALMoveByAction.html</Path>
-		</Node>
-		<Node id="23">
-			<Name>OALMoveToAction</Name>
-			<Path>Classes/OALMoveToAction.html</Path>
-		</Node>
-		<Node id="24">
-			<Name>OALPlaceAction</Name>
-			<Path>Classes/OALPlaceAction.html</Path>
-		</Node>
-		<Node id="25">
-			<Name>OALSequentialActions</Name>
-			<Path>Classes/OALSequentialActions.html</Path>
-		</Node>
-		<Node id="26">
-			<Name>OALSimpleAudio</Name>
-			<Path>Classes/OALSimpleAudio.html</Path>
-		</Node>
-		<Node id="27">
-			<Name>OALSuspendHandler</Name>
-			<Path>Classes/OALSuspendHandler.html</Path>
-		</Node>
-		<Node id="28">
-			<Name>OALTargetedAction</Name>
-			<Path>Classes/OALTargetedAction.html</Path>
-		</Node>
-		<Node id="29">
-			<Name>OALTools</Name>
-			<Path>Classes/OALTools.html</Path>
-		</Node>
-		<Node id="30">
-			<Name>OAL_AsyncALBufferLoadOperation</Name>
-			<Path>Classes/OAL_AsyncALBufferLoadOperation.html</Path>
-		</Node>
-		<Node id="31">
-			<Name>OAL_AsyncAudioTrackOperation</Name>
-			<Path>Classes/OAL_AsyncAudioTrackOperation.html</Path>
-		</Node>
-		<Node id="32">
-			<Name>OAL_AsyncAudioTrackPlayOperation</Name>
-			<Path>Classes/OAL_AsyncAudioTrackPlayOperation.html</Path>
-		</Node>
-		<Node id="33">
-			<Name>OAL_AsyncAudioTrackPreloadOperation</Name>
-			<Path>Classes/OAL_AsyncAudioTrackPreloadOperation.html</Path>
-		</Node>
-		<Node id="34">
-			<Name>OpenALManager</Name>
-			<Path>Classes/OpenALManager.html</Path>
-		</Node>
-		<Node id="35">
-			<Name>Reachability</Name>
-			<Path>Classes/Reachability.html</Path>
-		</Node>
-		<Node id="36">
-			<Name>XMLWriter</Name>
-			<Path>Classes/XMLWriter.html</Path>
-		</Node>
 		
-		<Node id="37">
-			<Name>NSMutableArray(WeakReferences)</Name>
-			<Path>Categories/NSMutableArray+WeakReferences.html</Path>
-		</Node>
-		<Node id="38">
-			<Name>NSMutableDictionary(WeakReferences)</Name>
-			<Path>Categories/NSMutableDictionary+WeakReferences.html</Path>
-		</Node>
+		<Node id="1" type="file" documentType="reference">
+            <Name>ALBuffer</Name>
+            <Path>Classes/ALBuffer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALBuffer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALBuffer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ALBuffer.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALBuffer.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALBuffer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>ALCaptureDevice</Name>
+            <Path>Classes/ALCaptureDevice.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALCaptureDevice.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALCaptureDevice.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ALCaptureDevice.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALCaptureDevice.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALCaptureDevice.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>ALChannelSource</Name>
+            <Path>Classes/ALChannelSource.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALChannelSource.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALChannelSource.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ALChannelSource.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALChannelSource.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALChannelSource.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>ALContext</Name>
+            <Path>Classes/ALContext.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALContext.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALContext.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ALContext.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALContext.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALContext.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>ALDevice</Name>
+            <Path>Classes/ALDevice.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALDevice.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALDevice.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ALDevice.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALDevice.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALDevice.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>ALListener</Name>
+            <Path>Classes/ALListener.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALListener.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALListener.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ALListener.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALListener.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALListener.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>ALSoundSourcePool</Name>
+            <Path>Classes/ALSoundSourcePool.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALSoundSourcePool.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALSoundSourcePool.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ALSoundSourcePool.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALSoundSourcePool.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALSoundSourcePool.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>ALSource</Name>
+            <Path>Classes/ALSource.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALSource.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALSource.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ALSource.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALSource.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALSource.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>ALWrapper</Name>
+            <Path>Classes/ALWrapper.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ALWrapper.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ALWrapper.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ALWrapper.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>CCProfiler</Name>
+            <Path>Classes/CCProfiler.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCProfiler.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCProfiler.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCProfiler.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCProfiler.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>CCProfilingTimer</Name>
+            <Path>Classes/CCProfilingTimer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCProfilingTimer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCProfilingTimer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCProfilingTimer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>CLASS_A</Name>
+            <Path>Classes/CLASS_A.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CLASS_A.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CLASS_A.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CLASS_A.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CLASS_A.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CLASS_A.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>IOSVersion</Name>
+            <Path>Classes/IOSVersion.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/IOSVersion.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/IOSVersion.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/IOSVersion.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>OALActionManager</Name>
+            <Path>Classes/OALActionManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALActionManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALActionManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALActionManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>OALAudioFile</Name>
+            <Path>Classes/OALAudioFile.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALAudioFile.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALAudioFile.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioFile.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioFile.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioFile.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>OALAudioSession</Name>
+            <Path>Classes/OALAudioSession.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALAudioSession.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALAudioSession.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioSession.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioSession.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>OALAudioTrack</Name>
+            <Path>Classes/OALAudioTrack.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALAudioTrack.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALAudioTrack.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioTrack.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioTrack.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioTrack.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>OALAudioTracks</Name>
+            <Path>Classes/OALAudioTracks.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALAudioTracks.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALAudioTracks.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioTracks.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALAudioTracks.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>OALCallAction</Name>
+            <Path>Classes/OALCallAction.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALCallAction.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALCallAction.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALCallAction.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALCallAction.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>OALConcurrentActions</Name>
+            <Path>Classes/OALConcurrentActions.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALConcurrentActions.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALConcurrentActions.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALConcurrentActions.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALConcurrentActions.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALConcurrentActions.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>OALMoveByAction</Name>
+            <Path>Classes/OALMoveByAction.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALMoveByAction.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALMoveByAction.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALMoveByAction.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALMoveByAction.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALMoveByAction.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>OALMoveToAction</Name>
+            <Path>Classes/OALMoveToAction.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALMoveToAction.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALMoveToAction.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALMoveToAction.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALMoveToAction.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALMoveToAction.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>OALPlaceAction</Name>
+            <Path>Classes/OALPlaceAction.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALPlaceAction.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALPlaceAction.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALPlaceAction.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALPlaceAction.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALPlaceAction.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>OALSequentialActions</Name>
+            <Path>Classes/OALSequentialActions.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALSequentialActions.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALSequentialActions.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALSequentialActions.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALSequentialActions.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALSequentialActions.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>OALSimpleAudio</Name>
+            <Path>Classes/OALSimpleAudio.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALSimpleAudio.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALSimpleAudio.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALSimpleAudio.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALSimpleAudio.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALSimpleAudio.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>OALSuspendHandler</Name>
+            <Path>Classes/OALSuspendHandler.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALSuspendHandler.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALSuspendHandler.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALSuspendHandler.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALSuspendHandler.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALSuspendHandler.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>OALTargetedAction</Name>
+            <Path>Classes/OALTargetedAction.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALTargetedAction.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALTargetedAction.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OALTargetedAction.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALTargetedAction.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALTargetedAction.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>OALTools</Name>
+            <Path>Classes/OALTools.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OALTools.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OALTools.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/OALTools.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="29" type="file" documentType="reference">
+            <Name>OpenALManager</Name>
+            <Path>Classes/OpenALManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/OpenALManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/OpenALManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/OpenALManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/OpenALManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="30" type="file" documentType="reference">
+            <Name>Reachability</Name>
+            <Path>Classes/Reachability.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/Reachability.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/Reachability.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/Reachability.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/Reachability.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/Reachability.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="31" type="file" documentType="reference">
+            <Name>XMLWriter</Name>
+            <Path>Classes/XMLWriter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/XMLWriter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/XMLWriter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/XMLWriter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/XMLWriter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
 		
-		<Node id="39">
-			<Name>ALSoundSource</Name>
-			<Path>Protocols/ALSoundSource.html</Path>
-		</Node>
-		<Node id="40">
-			<Name>NSXMLStreamWriter</Name>
-			<Path>Protocols/NSXMLStreamWriter.html</Path>
-		</Node>
-		<Node id="41">
-			<Name>OALSuspendListener</Name>
-			<Path>Protocols/OALSuspendListener.html</Path>
-		</Node>
-		<Node id="42">
-			<Name>OALSuspendManager</Name>
-			<Path>Protocols/OALSuspendManager.html</Path>
-		</Node>
-		<Node id="43">
-			<Name>OAL_PositionProtocol</Name>
-			<Path>Protocols/OAL_PositionProtocol.html</Path>
-		</Node>
-		<Node id="44">
-			<Name>XMLStreamWriter</Name>
-			<Path>Protocols/XMLStreamWriter.html</Path>
-		</Node>
+		<Node id="32" type="file" documentType="reference">
+            <Name>NSMutableArray(WeakReferences)</Name>
+            <Path>Categories/NSMutableArray+WeakReferences.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSMutableArray+WeakReferences.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSMutableArray+WeakReferences.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSMutableArray+WeakReferences.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="33" type="file" documentType="reference">
+            <Name>NSMutableDictionary(WeakReferences)</Name>
+            <Path>Categories/NSMutableDictionary+WeakReferences.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSMutableDictionary+WeakReferences.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSMutableDictionary+WeakReferences.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSMutableDictionary+WeakReferences.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="34" type="file" documentType="reference">
+            <Name>NSObject(JRSwizzle)</Name>
+            <Path>Categories/NSObject+JRSwizzle.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSObject+JRSwizzle.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSObject+JRSwizzle.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSObject+JRSwizzle.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="35" type="file" documentType="reference">
+            <Name>OALAction()</Name>
+            <Path>Categories/OALAction+.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/OALAction+.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/OALAction+.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Categories/OALAction+.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="36" type="file" documentType="reference">
+            <Name>OALPropertyAction(Audio)</Name>
+            <Path>Categories/OALPropertyAction+Audio.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/OALPropertyAction+Audio.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/OALPropertyAction+Audio.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Categories/OALPropertyAction+Audio.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="37" type="file" documentType="reference">
+            <Name>SS_CLASSNAME(SynthesizeSingletonPrivate)</Name>
+            <Path>Categories/SS_CLASSNAME+SynthesizeSingletonPrivate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/SS_CLASSNAME+SynthesizeSingletonPrivate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/SS_CLASSNAME+SynthesizeSingletonPrivate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/SS_CLASSNAME+SynthesizeSingletonPrivate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
 		
+        <Node id="38" type="file" documentType="reference">
+            <Name>ALSoundSource</Name>
+            <Path>Protocols/ALSoundSource.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/ALSoundSource.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/ALSoundSource.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/ALSoundSource.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/ALSoundSource.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="39" type="file" documentType="reference">
+            <Name>NSXMLStreamWriter</Name>
+            <Path>Protocols/NSXMLStreamWriter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/NSXMLStreamWriter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/NSXMLStreamWriter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/NSXMLStreamWriter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="40" type="file" documentType="reference">
+            <Name>OALSuspendListener</Name>
+            <Path>Protocols/OALSuspendListener.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/OALSuspendListener.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/OALSuspendListener.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/OALSuspendListener.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="41" type="file" documentType="reference">
+            <Name>OALSuspendManager</Name>
+            <Path>Protocols/OALSuspendManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/OALSuspendManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/OALSuspendManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/OALSuspendManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/OALSuspendManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="42" type="file" documentType="reference">
+            <Name>XMLStreamWriter</Name>
+            <Path>Protocols/XMLStreamWriter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/XMLStreamWriter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/XMLStreamWriter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/XMLStreamWriter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        
 	</Library>
 </DocSetNodes>

@@ -5,11 +5,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/ALChannelSource</TokenIdentifier>
 			<Abstract type="html">A Sound source composed of other sources.
-Property values are applied to all sources within the channel. <br>
-Sounds will get played by any free sources within this channel. <br>
+Property values are applied to all sources within the channel. &lt;br&gt;
+Sounds will get played by any free sources within this channel. &lt;br&gt;
 If all sources are busy when playback is requested, it will attempt to interrupt a source
 to free it for playback.</Abstract>
 			<DeclaredIn>ALChannelSource.h</DeclaredIn>
+            
 			
 			<NodeRef refid="3"/>
 		</Token>
@@ -17,107 +18,116 @@ to free it for playback.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/setContext:</TokenIdentifier>
-			<Abstract type="html">This source's owning context.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<Abstract type="html">This source&apos;s owning context.</Abstract>
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
 			
 			
 			<Anchor>//api/name/context</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/context</TokenIdentifier>
-			<Abstract type="html">This source's owning context.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<Abstract type="html">This source&apos;s owning context.</Abstract>
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
 			
 			
 			<Anchor>//api/name/context</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALChannelSource/context</TokenIdentifier>
-			<Abstract type="html">This source's owning context.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<Abstract type="html">This source&apos;s owning context.</Abstract>
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
 			
 			
 			<Anchor>//api/name/context</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/setSourcePool:</TokenIdentifier>
 			<Abstract type="html">All sources being used by this channel. Do not modify!</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALSoundSourcePool *sourcePool</Declaration>
 			
 			
 			<Anchor>//api/name/sourcePool</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/sourcePool</TokenIdentifier>
 			<Abstract type="html">All sources being used by this channel. Do not modify!</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALSoundSourcePool *sourcePool</Declaration>
 			
 			
 			<Anchor>//api/name/sourcePool</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALChannelSource/sourcePool</TokenIdentifier>
 			<Abstract type="html">All sources being used by this channel. Do not modify!</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALSoundSourcePool *sourcePool</Declaration>
 			
 			
 			<Anchor>//api/name/sourcePool</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/setReservedSources:</TokenIdentifier>
 			<Abstract type="html">The number of sources reserved by this channel.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) int reservedSources</Declaration>
 			
 			
 			<Anchor>//api/name/reservedSources</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/reservedSources</TokenIdentifier>
 			<Abstract type="html">The number of sources reserved by this channel.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) int reservedSources</Declaration>
 			
 			
 			<Anchor>//api/name/reservedSources</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALChannelSource/reservedSources</TokenIdentifier>
 			<Abstract type="html">The number of sources reserved by this channel.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) int reservedSources</Declaration>
 			
 			
 			<Anchor>//api/name/reservedSources</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALChannelSource/channelWithSources:</TokenIdentifier>
 			<Abstract type="html">Create a channel with a number of sources.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>+ (id)channelWithSources:(int)reservedSources</Declaration>
 			<Parameters>
@@ -128,12 +138,13 @@ to free it for playback.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new channel.</Abstract></ReturnValue>
 			<Anchor>//api/name/channelWithSources:</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/initWithSources:</TokenIdentifier>
 			<Abstract type="html">Initialize a channel with a number of sources.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (id)initWithSources:(int)reservedSources</Declaration>
 			<Parameters>
@@ -144,12 +155,13 @@ to free it for playback.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The initialized channel.</Abstract></ReturnValue>
 			<Anchor>//api/name/initWithSources:</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/setDefaultsFromSource:</TokenIdentifier>
-			<Abstract type="html">Set this channel's default values from those in the specified source.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<Abstract type="html">Set this channel&apos;s default values from those in the specified source.</Abstract>
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (void)setDefaultsFromSource:(id&lt;ALSoundSource&gt;)source</Declaration>
 			<Parameters>
@@ -160,23 +172,25 @@ to free it for playback.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/setDefaultsFromSource:</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/resetToDefault</TokenIdentifier>
 			<Abstract type="html">Reset all sources in this channel to their default state.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (void)resetToDefault</Declaration>
 			
 			
 			<Anchor>//api/name/resetToDefault</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/addSource:</TokenIdentifier>
 			<Abstract type="html">Add a source to this channel.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (void)addSource:(id&lt;ALSoundSource&gt;)source</Declaration>
 			<Parameters>
@@ -187,12 +201,13 @@ to free it for playback.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/addSource:</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/removeSource:</TokenIdentifier>
 			<Abstract type="html">Remove a source from the channel.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (id&lt;ALSoundSource&gt;)removeSource:(id&lt;ALSoundSource&gt;)source</Declaration>
 			<Parameters>
@@ -203,13 +218,14 @@ to free it for playback.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The source that was removed.</Abstract></ReturnValue>
 			<Anchor>//api/name/removeSource:</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/splitChannelWithSources:</TokenIdentifier>
 			<Abstract type="html">Split the specified number of sources from this channel, creating a new
 channel.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (ALChannelSource *)splitChannelWithSources:(int)numSources</Declaration>
 			<Parameters>
@@ -220,13 +236,14 @@ channel.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new channel with the split-off sources.</Abstract></ReturnValue>
 			<Anchor>//api/name/splitChannelWithSources:</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/addChannel:</TokenIdentifier>
-			<Abstract type="html">Absorb another channel's sources into this one. All of the channel's sources
+			<Abstract type="html">Absorb another channel&apos;s sources into this one. All of the channel&apos;s sources
 will be moved into this channel.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (void)addChannel:(ALChannelSource *)channel</Declaration>
 			<Parameters>
@@ -237,23 +254,25 @@ will be moved into this channel.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/addChannel:</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/clearUnusedBuffers</TokenIdentifier>
-			<Abstract type="html">Set all buffers in all nonplaying sources to nil.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<Abstract type="html">Set all buffers in all non-playing sources to nil.</Abstract>
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (NSArray *)clearUnusedBuffers</Declaration>
 			
 			<ReturnValue><Abstract type="html">A list of buffers that were cleared.</Abstract></ReturnValue>
 			<Anchor>//api/name/clearUnusedBuffers</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/removeBuffersNamed:</TokenIdentifier>
 			<Abstract type="html">Remove all instances of the specified buffer.</Abstract>
-			<DeclaredIn>ALChannelSource.h</DeclaredIn>			
+			<DeclaredIn>ALChannelSource.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)removeBuffersNamed:(NSString *)name</Declaration>
 			<Parameters>
@@ -264,339 +283,9 @@ will be moved into this channel.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">NO if any of the matching buffers are currently being played.</Abstract></ReturnValue>
 			<Anchor>//api/name/removeBuffersNamed:</Anchor>
+            <NodeRef refid="3"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/volume</TokenIdentifier>
-			<Abstract type="html">Volume (alias to gain.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)volume</Declaration>
-			
-			
-			<Anchor>//api/name/volume</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/setVolume:</TokenIdentifier>
-			<Abstract type="html">Volume (alias to gain.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setVolume:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setVolume:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/pan</TokenIdentifier>
-			<Abstract type="html">Pan value (-1.0 = far left, 1.0 = far right).
-Note: This effect is simulated by changing the source's X position.
-Do not use this property if you are modifying the position property as well.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)pan</Declaration>
-			
-			
-			<Anchor>//api/name/pan</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/setPan:</TokenIdentifier>
-			<Abstract type="html">Pan value (-1.0 = far left, 1.0 = far right).
-Note: This effect is simulated by changing the source's X position.
-Do not use this property if you are modifying the position property as well.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setPan:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setPan:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/sourceType</TokenIdentifier>
-			<Abstract type="html">Source type (OpenAL property).</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (int)sourceType</Declaration>
-			
-			
-			<Anchor>//api/name/sourceType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/playing</TokenIdentifier>
-			<Abstract type="html">If true, this source is currently playing audio.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (bool)playing</Declaration>
-			
-			
-			<Anchor>//api/name/playing</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/play:</TokenIdentifier>
-			<Abstract type="html">Play a sound.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)buffer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>buffer</Name>
-					<Abstract type="html">the buffer to play.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
-			<Anchor>//api/name/play:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/play:loop:</TokenIdentifier>
-			<Abstract type="html">Play a sound, optionally looping.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)buffer loop:(bool)loop</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>buffer</Name>
-					<Abstract type="html">the buffer to play.</Abstract>
-				</Parameter><Parameter>
-					<Name>loop</Name>
-					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
-			<Anchor>//api/name/play:loop:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/play:gain:pitch:pan:loop:</TokenIdentifier>
-			<Abstract type="html">Play a sound, setting gain, pitch, pan, and looping.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)buffer gain:(float)gainIn pitch:(float)pitchIn pan:(float)panIn loop:(bool)loop</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>buffer</Name>
-					<Abstract type="html">the buffer to play.</Abstract>
-				</Parameter><Parameter>
-					<Name>gain</Name>
-					<Abstract type="html">The gain (volume to play at (0.0 - 1.0).</Abstract>
-				</Parameter><Parameter>
-					<Name>pitch</Name>
-					<Abstract type="html">The pitch to play at (1.0 = normal pitch.</Abstract>
-				</Parameter><Parameter>
-					<Name>pan</Name>
-					<Abstract type="html">Left-right panning (-1.0 = far left, 1.0 = far right).</Abstract>
-				</Parameter><Parameter>
-					<Name>loop</Name>
-					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
-			<Anchor>//api/name/play:gain:pitch:pan:loop:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/stop</TokenIdentifier>
-			<Abstract type="html">Stop playing the current sound.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stop</Declaration>
-			
-			
-			<Anchor>//api/name/stop</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/rewind</TokenIdentifier>
-			<Abstract type="html">Stop playing the current sound and set its state to AL_INITIAL.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)rewind</Declaration>
-			
-			
-			<Anchor>//api/name/rewind</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/fadeTo:duration:target:selector:</TokenIdentifier>
-			<Abstract type="html">Fade to the specified gain value.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)fadeTo:(float)value duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>gain</Name>
-					<Abstract type="html">The gain to fade to.</Abstract>
-				</Parameter><Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">The duration of the fade operation in seconds.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to notify when the fade completes (can be nil).</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call when the fade completes. The selector must accept
-a single parameter, which will be the object that performed the fade.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/fadeTo:duration:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/onFadeComplete:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Called by the action system when a fade completes.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)onFadeComplete:(id&lt;ALSoundSource&gt;)source</Declaration>
-			
-			
-			<Anchor>//api/name/onFadeComplete:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/stopFade</TokenIdentifier>
-			<Abstract type="html">Stop the currently running fade operation, if any.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopFade</Declaration>
-			
-			
-			<Anchor>//api/name/stopFade</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/panTo:duration:target:selector:</TokenIdentifier>
-			<Abstract type="html">pan to the specified value.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)panTo:(float)value duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pan</Name>
-					<Abstract type="html">The value to pan to.</Abstract>
-				</Parameter><Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">The duration of the pan operation in seconds.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to notify when the pan completes (can be nil).</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call when the pan completes. The selector must accept
-a single parameter, which will be the object that performed the pan.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/panTo:duration:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/onPanComplete:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Called by the action system when a pan completes.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)onPanComplete:(id&lt;ALSoundSource&gt;)source</Declaration>
-			
-			
-			<Anchor>//api/name/onPanComplete:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/stopPan</TokenIdentifier>
-			<Abstract type="html">Stop the currently running pan operation, if any.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopPan</Declaration>
-			
-			
-			<Anchor>//api/name/stopPan</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/pitchTo:duration:target:selector:</TokenIdentifier>
-			<Abstract type="html">Gradually change pitch to the specified value.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)pitchTo:(float)value duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pitch</Name>
-					<Abstract type="html">The value to change pitch to.</Abstract>
-				</Parameter><Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">The duration of the pitch operation in seconds.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to notify when the pitch change completes (can be nil).</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call when the pitch change completes. The selector
-must accept a single parameter, which will be the object that performed the pitch change.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/pitchTo:duration:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/onPitchComplete:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Called by the action system when a pitch change completes.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)onPitchComplete:(id&lt;ALSoundSource&gt;)source</Declaration>
-			
-			
-			<Anchor>//api/name/onPitchComplete:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/stopPitch</TokenIdentifier>
-			<Abstract type="html">Stop the currently running pitch operation, if any.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopPitch</Declaration>
-			
-			
-			<Anchor>//api/name/stopPitch</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/stopActions</TokenIdentifier>
-			<Abstract type="html">Stop any currently running fade, pan, or pitch operations.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopActions</Declaration>
-			
-			
-			<Anchor>//api/name/stopActions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/clear</TokenIdentifier>
-			<Abstract type="html">Clear any buffers this source is currently using.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)clear</Declaration>
-			
-			
-			<Anchor>//api/name/clear</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALChannelSource/setDefaultsFromChannel:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Set defaults from another channel.</Abstract>
-			<DeclaredIn>ALChannelSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setDefaultsFromChannel:(ALChannelSource *)channel</Declaration>
-			
-			
-			<Anchor>//api/name/setDefaultsFromChannel:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

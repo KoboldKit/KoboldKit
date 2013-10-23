@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OALTargetedAction Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -122,23 +121,21 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/OALAction.html">OALAction</a></td>
+	<td class="specification-value">OALAction</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OALUtilityActions.h<br />OALUtilityActions.m</td>
+	<td class="specification-value">OALUtilityActions.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Ignores whatever target it was invoked upon and applies the specified action
 on the target specified at creation time.</p>
-
-<p>\cond</p>
 					</div>
 					
 					
@@ -157,21 +154,18 @@ on the target specified at creation time.</p>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/forcedTarget">&nbsp;&nbsp;forcedTarget</a></code>
-		<span class="tooltip"><p>The target which this <a href="#//api/name/action">action</a> will actually be invoked upon.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/actionWithTarget:action:">+&nbsp;actionWithTarget:action:</a></code>
-		<span class="tooltip"><p>Create an <a href="#//api/name/action">action</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithTarget:action:">&ndash;&nbsp;initWithTarget:action:</a></code>
-		<span class="tooltip"><p>Initialize an <a href="#//api/name/action">action</a>.</p></span>
 	</span>
 	
 	
@@ -195,12 +189,14 @@ on the target specified at creation time.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The target which this <a href="#//api/name/action">action</a> will actually be invoked upon.</p>
+		<p>The target which this action will actually be invoked upon.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) id forcedTarget</code></div>
-	
+
+    
 	
 	
 	
@@ -237,24 +233,26 @@ on the target specified at creation time.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Create an <a href="#//api/name/action">action</a>.</p>
+		<p>Create an action.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)actionWithTarget:(id)<em>target</em> action:(OALAction *)<em>action</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>target</em></dt>
-			<dd><p>The target to run the <a href="#//api/name/action">action</a> upon.</p></dd>
+			<dd><p>The target to run the action upon.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>action</em></dt>
-			<dd><p>The <a href="#//api/name/action">action</a> to run.</p></dd>
+			<dd><p>The action to run.</p></dd>
 		</dl>
 		
 	</div>
@@ -263,7 +261,7 @@ on the target specified at creation time.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A new <a href="#//api/name/action">action</a>.</p>
+		<p>A new action.</p>
 	</div>
 	
 	
@@ -299,24 +297,26 @@ on the target specified at creation time.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Initialize an <a href="#//api/name/action">action</a>.</p>
+		<p>Initialize an action.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initWithTarget:(id)<em>target</em> action:(OALAction *)<em>action</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>target</em></dt>
-			<dd><p>The target to run the <a href="#//api/name/action">action</a> upon.</p></dd>
+			<dd><p>The target to run the action upon.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>action</em></dt>
-			<dd><p>The <a href="#//api/name/action">action</a> to run.</p></dd>
+			<dd><p>The action to run.</p></dd>
 		</dl>
 		
 	</div>
@@ -325,7 +325,7 @@ on the target specified at creation time.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The initialized <a href="#//api/name/action">action</a>.</p>
+		<p>The initialized action.</p>
 	</div>
 	
 	
@@ -349,6 +349,8 @@ on the target specified at creation time.</p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -359,9 +361,9 @@ on the target specified at creation time.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -449,6 +451,14 @@ on the target specified at creation time.</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

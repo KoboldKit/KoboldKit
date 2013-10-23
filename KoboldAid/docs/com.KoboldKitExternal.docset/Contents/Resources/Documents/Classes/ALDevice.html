@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>ALDevice Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -62,8 +61,6 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/addSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- addSuspendListener:</option>
-	
 	<option value="//api/name/clearBuffers">&nbsp;&nbsp;&nbsp;&nbsp;- clearBuffers</option>
 	
 	<option value="//api/name/getProcAddress:">&nbsp;&nbsp;&nbsp;&nbsp;- getProcAddress:</option>
@@ -75,10 +72,6 @@
 	<option value="//api/name/notifyContextDeallocating:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyContextDeallocating:</option>
 	
 	<option value="//api/name/notifyContextInitializing:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyContextInitializing:</option>
-	
-	<option value="//api/name/removeSuspendListener:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSuspendListener:</option>
-	
-	<option value="//api/name/suspended">&nbsp;&nbsp;&nbsp;&nbsp;- suspended</option>
 	
 	
 	
@@ -128,8 +121,6 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSuspendListener:">addSuspendListener:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearBuffers">clearBuffers</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getProcAddress:">getProcAddress:</a></span></li>
@@ -141,10 +132,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyContextDeallocating:">notifyContextDeallocating:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyContextInitializing:">notifyContextInitializing:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSuspendListener:">removeSuspendListener:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/suspended">suspended</a></span></li>
 	
 </ul></li>
 
@@ -176,12 +163,12 @@
 	<td class="specification-value"><a href="../Protocols/OALSuspendManager.html">OALSuspendManager</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ALDevice.h<br />ALDevice.m</td>
+	<td class="specification-value">ALDevice.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -199,119 +186,78 @@
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/contexts">&nbsp;&nbsp;contexts</a></code>
-		<span class="tooltip"><p>All contexts created on this <a href="#//api/name/device">device</a> (ALContext*).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/device">&nbsp;&nbsp;device</a></code>
-		<span class="tooltip"><p>The OpenAL device pointer.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/extensions">&nbsp;&nbsp;extensions</a></code>
-		<span class="tooltip"><p>List of strings describing all extensions available on this <a href="#//api/name/device">device</a> (NSString*).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/majorVersion">&nbsp;&nbsp;majorVersion</a></code>
-		<span class="tooltip"><p>The specification revision for this implementation (major version).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/minorVersion">&nbsp;&nbsp;minorVersion</a></code>
-		<span class="tooltip"><p>The specification revision for this implementation (minor version).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deviceWithDeviceSpecifier:">+&nbsp;deviceWithDeviceSpecifier:</a></code>
-		<span class="tooltip"><p>Open the specified <a href="#//api/name/device">device</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithDeviceSpecifier:">&ndash;&nbsp;initWithDeviceSpecifier:</a></code>
-		<span class="tooltip"><p>Initialize with the specified <a href="#//api/name/device">device</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isExtensionPresent:">&ndash;&nbsp;isExtensionPresent:</a></code>
-		<span class="tooltip"><p>Check if the specified extension is present.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getProcAddress:">&ndash;&nbsp;getProcAddress:</a></code>
-		<span class="tooltip"><p>Get the address of the specified procedure (C function address).</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/clearBuffers">&ndash;&nbsp;clearBuffers</a></code>
-		<span class="tooltip"><p>Clear all buffers being used by sources of <a href="#//api/name/contexts">contexts</a> opened on this <a href="#//api/name/device">device</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifyContextInitializing:">&ndash;&nbsp;notifyContextInitializing:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Used by <a href="../Classes/ALContext.html">ALContext</a> to announce initialization.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifyContextDeallocating:">&ndash;&nbsp;notifyContextDeallocating:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Used by <a href="../Classes/ALContext.html">ALContext</a> to announce deallocation.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/addSuspendListener:">&ndash;&nbsp;addSuspendListener:</a></code>
-		<span class="tooltip"><p>Add a listener that will receive manual suspend and interrupt events.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/removeSuspendListener:">&ndash;&nbsp;removeSuspendListener:</a></code>
-		<span class="tooltip"><p>Remove a registered listener.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/suspended">&ndash;&nbsp;suspended</a></code>
-		<span class="tooltip"><p>If YES, this object is suspended.</p></span>
 	</span>
 	
 	
@@ -338,9 +284,11 @@
 		<p>All contexts created on this <a href="#//api/name/device">device</a> (ALContext*).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *contexts</code></div>
-	
+
+    
 	
 	
 	
@@ -372,9 +320,11 @@
 		<p>The OpenAL device pointer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) ALCdevice *device</code></div>
-	
+
+    
 	
 	
 	
@@ -406,9 +356,11 @@
 		<p>List of strings describing all extensions available on this <a href="#//api/name/device">device</a> (NSString*).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *extensions</code></div>
-	
+
+    
 	
 	
 	
@@ -440,9 +392,11 @@
 		<p>The specification revision for this implementation (major version).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) int majorVersion</code></div>
-	
+
+    
 	
 	
 	
@@ -474,9 +428,11 @@
 		<p>The specification revision for this implementation (minor version).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) int minorVersion</code></div>
-	
+
+    
 	
 	
 	
@@ -516,9 +472,11 @@
 		<p>Open the specified <a href="#//api/name/device">device</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)deviceWithDeviceSpecifier:(NSString *)<em>deviceSpecifier</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -564,50 +522,6 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/addSuspendListener:" title="addSuspendListener:"></a>
-	<h3 class="subsubtitle method-title">addSuspendListener:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Add a listener that will receive manual suspend and interrupt events.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listener</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>listener</em></dt>
-			<dd><p>The listener to register with this handler.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/clearBuffers" title="clearBuffers"></a>
 	<h3 class="subsubtitle method-title">clearBuffers</h3>
 	
@@ -617,9 +531,11 @@
 		<p>Clear all buffers being used by sources of <a href="#//api/name/contexts">contexts</a> opened on this <a href="#//api/name/device">device</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)clearBuffers</code></div>
-	
+
+    
 	
 	
 	
@@ -651,9 +567,11 @@
 		<p>Get the address of the specified procedure (C function address).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void *)getProcAddress:(NSString *)<em>functionName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -700,9 +618,11 @@
 		<p>Initialize with the specified <a href="#//api/name/device">device</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initWithDeviceSpecifier:(NSString *)<em>deviceSpecifier</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -749,9 +669,11 @@
 		<p>Check if the specified extension is present.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (bool)isExtensionPresent:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -798,9 +720,11 @@
 		<p>(INTERNAL USE) Used by <a href="../Classes/ALContext.html">ALContext</a> to announce deallocation.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)notifyContextDeallocating:(ALContext *)<em>context</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -842,9 +766,11 @@
 		<p>(INTERNAL USE) Used by <a href="../Classes/ALContext.html">ALContext</a> to announce initialization.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)notifyContextInitializing:(ALContext *)<em>context</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -876,87 +802,11 @@
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/removeSuspendListener:" title="removeSuspendListener:"></a>
-	<h3 class="subsubtitle method-title">removeSuspendListener:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Remove a registered listener.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)<em>listener</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>listener</em></dt>
-			<dd><p>The listener to unregister from this handler.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/suspended" title="suspended"></a>
-	<h3 class="subsubtitle method-title">suspended</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>If YES, this object is suspended.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (bool)suspended</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALSuspendHandler.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -967,9 +817,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -1057,6 +907,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

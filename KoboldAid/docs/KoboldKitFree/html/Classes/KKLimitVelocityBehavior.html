@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKLimitVelocityBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -58,13 +57,6 @@
 	
 	
 	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/didJoinController">&nbsp;&nbsp;&nbsp;&nbsp;- didJoinController</option>
-	
-	<option value="//api/name/didLeaveController">&nbsp;&nbsp;&nbsp;&nbsp;- didLeaveController</option>
-	
-	
 	
 </select>
 				</li>
@@ -108,14 +100,6 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didJoinController">didJoinController</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLeaveController">didLeaveController</a></span></li>
-	
-</ul></li>
-
 
 			</ul>
 		</nav>
@@ -141,12 +125,12 @@
 	<td class="specification-value"><a href="../Classes/KKBehavior.html">KKBehavior</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKLimitVelocityBehavior.h<br />KKLimitVelocityBehavior.m</td>
+	<td class="specification-value">KKLimitVelocityBehavior.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -164,63 +148,36 @@
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/velocityLimit">&nbsp;&nbsp;velocityLimit</a></code>
-		<span class="tooltip"><p>The physics body&rsquo;s maximum linear velocity (movement speed).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/angularVelocityLimit">&nbsp;&nbsp;angularVelocityLimit</a></code>
-		<span class="tooltip"><p>The physics body&rsquo;s maximum angular velocity (rotation speed).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/limitVelocity:">+&nbsp;limitVelocity:</a></code>
-		<span class="tooltip"><p>The physics body&rsquo;s maximum velocity.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/limitVelocity:limitAngularVelocity:">+&nbsp;limitVelocity:limitAngularVelocity:</a></code>
-		<span class="tooltip"><p>The physics body&rsquo;s maximum velocity.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/limitAngularVelocity:">+&nbsp;limitAngularVelocity:</a></code>
-		<span class="tooltip"><p>The physics body&rsquo;s maximum angular velocity.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/behavior">behavior</a> was added to a <a href="#//api/name/node">node</a>.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/behavior">behavior</a> was removed from a <a href="#//api/name/node">node</a>.</p></span>
 	</span>
 	
 	
@@ -247,9 +204,11 @@
 		<p>The physics body&rsquo;s maximum angular velocity (rotation speed).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGFloat angularVelocityLimit</code></div>
-	
+
+    
 	
 	
 	
@@ -281,9 +240,11 @@
 		<p>The physics body&rsquo;s maximum linear velocity (movement speed).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGFloat velocityLimit</code></div>
-	
+
+    
 	
 	
 	
@@ -323,9 +284,11 @@
 		<p>The physics body&rsquo;s maximum angular velocity.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)limitAngularVelocity:(CGFloat)<em>angularVelocityLimit</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -372,9 +335,11 @@
 		<p>The physics body&rsquo;s maximum velocity.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)limitVelocity:(CGFloat)<em>velocityLimit</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -421,9 +386,11 @@
 		<p>The physics body&rsquo;s maximum velocity.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)limitVelocity:(CGFloat)<em>velocityLimit</em> limitAngularVelocity:(CGFloat)<em>angularVelocityLimit</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -469,81 +436,9 @@
 					
 					
 					
-					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/didJoinController" title="didJoinController"></a>
-	<h3 class="subsubtitle method-title">didJoinController</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Sent when the <a href="#//api/name/behavior">behavior</a> was added to a <a href="#//api/name/node">node</a>.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)didJoinController</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/didLeaveController" title="didLeaveController"></a>
-	<h3 class="subsubtitle method-title">didLeaveController</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Sent when the <a href="#//api/name/behavior">behavior</a> was removed from a <a href="#//api/name/node">node</a>.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)didLeaveController</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
 					
-					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -554,9 +449,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -644,6 +539,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

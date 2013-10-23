@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OALTools Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -123,12 +122,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OALTools.h<br />OALTools.m</td>
+	<td class="specification-value">OALTools.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -152,52 +151,36 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setDefaultBundle:">+&nbsp;setDefaultBundle:</a></code>
-		<span class="tooltip"><p>Set the default bundle to use when looking up paths.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/defaultBundle">+&nbsp;defaultBundle</a></code>
-		<span class="tooltip"><p>The default bundle used when looking up paths.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/urlForPath:">+&nbsp;urlForPath:</a></code>
-		<span class="tooltip"><p>Returns the URL corresponding to the specified path.
-If the path is not absolute (starts with a &ldquo;/&rdquo;), this method will look for
-the file in the default bundle.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/urlForPath:bundle:">+&nbsp;urlForPath:bundle:</a></code>
-		<span class="tooltip"><p>Returns the URL corresponding to the specified path.
-If the path is not absolute (starts with a &ldquo;/&rdquo;), this method will look for
-the file in the specified bundle.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifyExtAudioError:function:description:">+&nbsp;notifyExtAudioError:function:description:</a></code>
-		<span class="tooltip"><p>Notify an error if the specified ExtAudio error code indicates an error.
-This will log the error and also potentially post an audio error notification
-(OALAudioErrorNotification) if it is suspected that this error is a result of
-the audio session getting corrupted.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifyAudioSessionError:function:description:">+&nbsp;notifyAudioSessionError:function:description:</a></code>
-		<span class="tooltip"><p>Notify an error if the specified AudioSession error code indicates an error.
-This will log the error and also potentially post an audio error notification
-(OALAudioErrorNotification) if it is suspected that this error is a result of
-the audio session getting corrupted.</p></span>
 	</span>
 	
 	
@@ -226,9 +209,11 @@ the audio session getting corrupted.</p></span>
 		<p>The default bundle used when looking up paths.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSBundle *)defaultBundle</code></div>
-	
+
+    
 	
 	
 	
@@ -268,9 +253,11 @@ This will log the error and also potentially post an audio error notification
 the audio session getting corrupted.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)notifyAudioSessionError:(OSStatus)<em>errorCode</em> function:(const char *)<em>function</em> description:(NSString *)<em>description</em>, <em>...</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -325,9 +312,11 @@ This will log the error and also potentially post an audio error notification
 the audio session getting corrupted.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)notifyExtAudioError:(OSStatus)<em>errorCode</em> function:(const char *)<em>function</em> description:(NSString *)<em>description</em>, <em>...</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -379,9 +368,11 @@ the audio session getting corrupted.</p>
 		<p>Set the default bundle to use when looking up paths.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)setDefaultBundle:(NSBundle *)<em>bundle</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -425,9 +416,11 @@ If the path is not absolute (starts with a &ldquo;/&rdquo;), this method will lo
 the file in the default bundle.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSURL *)urlForPath:(NSString *)<em>path</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -476,9 +469,11 @@ If the path is not absolute (starts with a &ldquo;/&rdquo;), this method will lo
 the file in the specified bundle.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSURL *)urlForPath:(NSString *)<em>path</em> bundle:(NSBundle *)<em>bundle</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -525,6 +520,8 @@ the file in the specified bundle.</p>
 					
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -535,9 +532,9 @@ the file in the specified bundle.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -625,6 +622,14 @@ the file in the specified bundle.</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

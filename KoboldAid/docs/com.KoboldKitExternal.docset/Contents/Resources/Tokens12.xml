@@ -7,15 +7,136 @@
 			<Abstract type="html">Generates common code required to subclass from a cocos2d action
 while maintaining the functionality of an OALAction.</Abstract>
 			<DeclaredIn>OALAction.h</DeclaredIn>
+            
 			
 			<NodeRef refid="12"/>
 		</Token>
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/setRunning:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/running</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CLASS_A/running</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) bool running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/runWithTarget:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>- (void)runWithTarget:(id)target</Declaration>
+			
+			
+			<Anchor>//api/name/runWithTarget:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/prepareWithTarget:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>- (void)prepareWithTarget:(id)target</Declaration>
+			
+			
+			<Anchor>//api/name/prepareWithTarget:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/stopAction</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>- (void)stopAction</Declaration>
+			
+			
+			<Anchor>//api/name/stopAction</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/updateCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>- (void)updateCompletion:(float)proportionComplete</Declaration>
+			
+			
+			<Anchor>//api/name/updateCompletion:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/startWithTarget:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>- (void)startWithTarget:(id)targetIn</Declaration>
+			
+			
+			<Anchor>//api/name/startWithTarget:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/update:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OALAction.h</DeclaredIn>
+			
+			<Declaration>- (void)update:(float)proportionComplete</Declaration>
+			
+			
+			<Anchor>//api/name/update:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CLASS_A/initWithDuration:</TokenIdentifier>
 			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALAction.h</DeclaredIn>			
+			<DeclaredIn>OALAction.h</DeclaredIn>
 			
 			<Declaration>- (id)initWithDuration:(float)duration</Declaration>
 			<Parameters>
@@ -26,13 +147,14 @@ while maintaining the functionality of an OALAction.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
 			<Anchor>//api/name/initWithDuration:</Anchor>
+            <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/CLASS_A/actionWithDuration:propertyKey:endValue:</TokenIdentifier>
 			<Abstract type="html">Create a new action using the default function.
 The start value will be the current value of the target this action is applied to.</Abstract>
-			<DeclaredIn>OALAction.h</DeclaredIn>			
+			<DeclaredIn>OALAction.h</DeclaredIn>
 			
 			<Declaration>+ (id)actionWithDuration:(float)duration propertyKey:(NSString *)propertyKey endValue:(float)endValue</Declaration>
 			<Parameters>
@@ -44,17 +166,18 @@ The start value will be the current value of the target this action is applied t
 					<Abstract type="html">The property to modify.</Abstract>
 				</Parameter><Parameter>
 					<Name>endValue</Name>
-					<Abstract type="html">The "ending" value that this action will converge upon when setting the target's property.</Abstract>
+					<Abstract type="html">The &quot;ending&quot; value that this action will converge upon when setting the target&apos;s property.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
 			<Anchor>//api/name/actionWithDuration:propertyKey:endValue:</Anchor>
+            <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/CLASS_A/actionWithShape:phase:action:</TokenIdentifier>
 			<Abstract type="html">Create a new ease action.</Abstract>
-			<DeclaredIn>OALAction.h</DeclaredIn>			
+			<DeclaredIn>OALAction.h</DeclaredIn>
 			
 			<Declaration>+ (OALEaseAction *)actionWithShape:(OALEaseShape)shape phase:(OALEasePhase)phase action:(OALAction *)action</Declaration>
 			<Parameters>
@@ -69,7 +192,9 @@ The start value will be the current value of the target this action is applied t
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
 			<Anchor>//api/name/actionWithShape:phase:action:</Anchor>
+            <NodeRef refid="12"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

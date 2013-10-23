@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>SKScene(KoboldKit) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -122,12 +121,12 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">SKScene+KoboldKit.h<br />SKScene+KoboldKit.m</td>
+	<td class="specification-value">SKScene+KoboldKit.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -151,7 +150,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/enumerateBodiesUsingBlock:">&ndash;&nbsp;enumerateBodiesUsingBlock:</a></code>
-		<span class="tooltip"><p>Enumerates all physics bodies in the world by passing an INFINITY rect to enumerateBodiesInRect.</p></span>
 	</span>
 	
 	
@@ -166,35 +164,30 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeNotification:selector:">&ndash;&nbsp;observeNotification:selector:</a></code>
-		<span class="tooltip"><p>Receiver observes notifications posted by notification center.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeNotification:selector:object:">&ndash;&nbsp;observeNotification:selector:object:</a></code>
-		<span class="tooltip"><p>Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardNotification:">&ndash;&nbsp;disregardNotification:</a></code>
-		<span class="tooltip"><p>Receiver disregards all notifications with the given name.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardNotification:object:">&ndash;&nbsp;disregardNotification:object:</a></code>
-		<span class="tooltip"><p>Receiver disregards notifications with the given name coming from a specific object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardAllNotifications">&ndash;&nbsp;disregardAllNotifications</a></code>
-		<span class="tooltip"><p>Receiver disregards any and all notification sent by the notification center.</p></span>
 	</span>
 	
 	
@@ -225,9 +218,11 @@
 		<p>Receiver disregards any and all notification sent by the notification center.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)disregardAllNotifications</code></div>
-	
+
+    
 	
 	
 	
@@ -259,9 +254,11 @@
 		<p>Receiver disregards all notifications with the given name.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -303,9 +300,11 @@
 		<p>Receiver disregards notifications with the given name coming from a specific object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em> object:(id)<em>notificationSender</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -352,9 +351,11 @@
 		<p>Enumerates all physics bodies in the world by passing an INFINITY rect to enumerateBodiesInRect.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)enumerateBodiesUsingBlock:(void ( ^ ) ( SKPhysicsBody *body , BOOL *stop ))<em>block</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -396,9 +397,11 @@
 		<p>Receiver observes notifications posted by notification center.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -445,9 +448,11 @@
 		<p>Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em> object:(id)<em>notificationSender</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -492,6 +497,8 @@
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -502,9 +509,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -592,6 +599,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

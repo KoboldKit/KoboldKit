@@ -1,191 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapProperties.html">
+	<File path="Classes/KKTilemapLayerTiles.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapProperties</TokenIdentifier>
-			<Abstract type="html">KTTilemapProperties is a thin wrapper around NSMutableDictionary. It only allows NSString as keys and either KKMutableNumber or NSString as values (objects).
-   Values can only be added and replaced but not removed. For weakly typed runtime variables use KTModel variables instead.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerTiles</TokenIdentifier>
+			<Abstract type="html">TMX Tiles of a tile layer. This is just a list of GIDs pointing to a specific tile in the tileset.
+   The GIDs have the KTTilemapTileFlip flags encoded, so it is recommended to use the tileAt method from KTTilemapLayer
+   instead of accessing the GIDs directly.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
+            
 			
 			<NodeRef refid="39"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setProperties:</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setGid:</TokenIdentifier>
+			<Abstract type="html">the memory buffer containing a layer&apos;s tile GIDs.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSMutableDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">the memory buffer containing a layer&apos;s tile GIDs.</Abstract></ReturnValue>
+			<Anchor>//api/name/gid</Anchor>
+            <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/properties</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/gid</TokenIdentifier>
+			<Abstract type="html">the memory buffer containing a layer&apos;s tile GIDs.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSMutableDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">the memory buffer containing a layer&apos;s tile GIDs.</Abstract></ReturnValue>
+			<Anchor>//api/name/gid</Anchor>
+            <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/properties</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/gid</TokenIdentifier>
+			<Abstract type="html">the memory buffer containing a layer&apos;s tile GIDs.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSMutableDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly) gid_t *gid</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">the memory buffer containing a layer&apos;s tile GIDs.</Abstract></ReturnValue>
+			<Anchor>//api/name/gid</Anchor>
+            <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setCount:</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setBytes:</TokenIdentifier>
+			<Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (atomic, readonly) unsigned int bytes</Declaration>
 			
+			<ReturnValue><Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract></ReturnValue>
+			<Anchor>//api/name/bytes</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/bytes</TokenIdentifier>
+			<Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
 			
+			<Declaration>@property (atomic, readonly) unsigned int bytes</Declaration>
+			
+			<ReturnValue><Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract></ReturnValue>
+			<Anchor>//api/name/bytes</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/bytes</TokenIdentifier>
+			<Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) unsigned int bytes</Declaration>
+			
+			<ReturnValue><Abstract type="html">the size (in bytes) of the GID memory buffer. Equal to (mapSize.width  mapSize.height  sizeof(gid_t)).</Abstract></ReturnValue>
+			<Anchor>//api/name/bytes</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/setCount:</TokenIdentifier>
+			<Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) unsigned int count</Declaration>
+			
+			<ReturnValue><Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract></ReturnValue>
 			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/count</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/count</TokenIdentifier>
+			<Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (atomic, readonly) unsigned int count</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract></ReturnValue>
 			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/count</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerTiles/count</TokenIdentifier>
+			<Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			<Declaration>@property (atomic, readonly) unsigned int count</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height).</Abstract></ReturnValue>
 			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setNumber:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the number for the given key. If a value for the given key already exists the number will take its place.
-   Caution: it is illegal to set a KKMutableNumber for an already existing key that stores a NSString.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerTiles/retainGidBuffer:sizeInBytes:</TokenIdentifier>
+			<Abstract type="html">Takes an already allocated GID buffer with the given bufferSize (in bytes and takes ownership for it.
+   Which means: you should not free() the tiles buffer, it will be freed by KTTilemapLayerTiles when it deallocates.</Abstract>
+			<DeclaredIn>KKTilemapLayerTiles.h</DeclaredIn>
 			
-			<Declaration>- (void)setNumber:(KKMutableNumber *)number forKey:(NSString *)key</Declaration>
+			<Declaration>- (void)retainGidBuffer:(gid_t *)gid sizeInBytes:(unsigned int)sizeInBytes</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">The KKMutableNumber number to set.</Abstract>
+					<Name>gid</Name>
+					<Abstract type="html">A pointer to a member buffer containing tile GIDs.</Abstract>
 				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the number.</Abstract>
+					<Name>sizeInBytes</Name>
+					<Abstract type="html">The size of the buffer in bytes.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setNumber:forKey:</Anchor>
+			<Anchor>//api/name/retainGidBuffer:sizeInBytes:</Anchor>
+            <NodeRef refid="39"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setString:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the string for the given key. If a value for the given key already exists the string will take its place.
-   Caution: it is illegal to set a NSString for an already existing key that stores a KKMutableNumber.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
-			
-			<Declaration>- (void)setString:(NSString *)string forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">The NSString to set.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the number. </Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setString:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setValue:forKey:</TokenIdentifier>
-			<Abstract type="html">(KTTMXReader only) This method first determines if the string can be converted to KKMutableNumber and if so, will set the KKMutableNumber.
-   Otherwise it will set the string.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
-			
-			<Declaration>- (void)setValue:(NSString *)string forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">The string to set. If the string can be converted to a number, a KKMutableNumber object will be created and set instead.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the string or number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setValue:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberFromString:</TokenIdentifier>
-			<Abstract type="html">Returns a KKMutableNumber from a string if the string is convertable to a number. Otherwise returns nil.
-   Note: floating point numbers must use . (dot) as floating point separator.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
-			
-			<Declaration>- (KKMutableNumber *)numberFromString:(NSString *)string</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">The string to convert to KKMutableNumber.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The converted number or nil if the string can't be converted to a number.</Abstract></ReturnValue>
-			<Anchor>//api/name/numberFromString:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the KKMutableNumber for the key. If there's no number for that key returns nil.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
-			
-			<Declaration>- (KKMutableNumber *)numberForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the number.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The number for the key, or nil if there's no number with this key.</Abstract></ReturnValue>
-			<Anchor>//api/name/numberForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/stringForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the NSString for the key. If there's no string for that key returns nil.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)stringForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the string.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The string for the key, or nil if there's no string with this key.</Abstract></ReturnValue>
-			<Anchor>//api/name/stringForKey:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

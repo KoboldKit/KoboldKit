@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKTilemap Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -51,6 +50,8 @@
 	<option value="//api/name/largestTileSize">&nbsp;&nbsp;&nbsp;&nbsp;largestTileSize</option>
 	
 	<option value="//api/name/layers">&nbsp;&nbsp;&nbsp;&nbsp;layers</option>
+	
+	<option value="//api/name/modified">&nbsp;&nbsp;&nbsp;&nbsp;modified</option>
 	
 	<option value="//api/name/orientation">&nbsp;&nbsp;&nbsp;&nbsp;orientation</option>
 	
@@ -144,6 +145,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layers">layers</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modified">modified</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orientation">orientation</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
@@ -217,12 +220,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemap.h<br />KKTilemap.m</td>
+	<td class="specification-value">KKTilemap.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -246,52 +249,42 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
-		<span class="tooltip"><p>The size of the map, in tiles.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/gridSize">&nbsp;&nbsp;gridSize</a></code>
-		<span class="tooltip"><p>The <a href="#//api/name/size">size</a> of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as &ldquo;Tile Size&rdquo;.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/largestTileSize">&nbsp;&nbsp;largestTileSize</a></code>
-		<span class="tooltip"><p>This is the tileSize of the tileset with the largest tile <a href="#//api/name/size">size</a>. Will be the same as <a href="#//api/name/gridSize">gridSize</a> for tilemaps whose <a href="#//api/name/tilesets">tilesets</a> all use the same tile <a href="#//api/name/size">size</a>.
-   But if you use <a href="#//api/name/tilesets">tilesets</a> of different tile sizes (ie 32x32 and 128x128) this will be the largest (ie 128x128). Mainly used internally to make sure
-   tiles of all sizes properly appear on the screen and do not &ldquo;pop in/out&rdquo; near the screen borders. Valid only after <a href="#//api/name/tilesets">tilesets</a> have loaded their textures.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
-		<span class="tooltip"><p>The map&rsquo;s global properties. Editable in Tiled from the menu: Map -> Map Properties.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/orientation">&nbsp;&nbsp;orientation</a></code>
-		<span class="tooltip"><p>The orientiation (type) of tilemap.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/backgroundColor">&nbsp;&nbsp;backgroundColor</a></code>
-		<span class="tooltip"><p>The tilemap&rsquo;s background color. Seen only if there are empty tiles on all <a href="#//api/name/layers">layers</a>. Defaults to black.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/highestGid">&nbsp;&nbsp;highestGid</a></code>
-		<span class="tooltip"><p>The highest valid gid from all <a href="#//api/name/tilesets">tilesets</a>. Updated when <a href="#//api/name/tilesets">tilesets</a> load their textures. Equal to the lastGid property of the &ldquo;last&rdquo; tileset.
-   Mainly needed for bounds checks, don&rsquo;t change this value.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -306,25 +299,18 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/iPadScaleFactor">&nbsp;&nbsp;iPadScaleFactor</a></code>
-		<span class="tooltip"><p>By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/scaleTilesetSpacingAndMargin">&nbsp;&nbsp;scaleTilesetSpacingAndMargin</a></code>
-		<span class="tooltip"><p>If set to YES, will also scale each tileset&rsquo;s spacing &amp; margin <a href="#//api/name/properties">properties</a>. This can be used if you simply upscale an iPhone tileset with an image program,
-   which will also increase any existing spacing &amp; margin accordingly. If you use a texture atlas program, it usually generates the same spacing and margin for all texture
-   atlas files regardless of the contained image&rsquo;s scale factor. Defaults to NO (ie for use with a texture atlas program). Can be ignored for texture atlases which have
-   neither spacing between tiles nor margin between outermost tiles and texture border.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/applyIpadScaleFactor">&ndash;&nbsp;applyIpadScaleFactor</a></code>
-		<span class="tooltip"><p>Applies the <a href="#//api/name/iPadScaleFactor">iPadScaleFactor</a> property. You only need to call this if you&rsquo;re creating a tilemap from scratch at runtime, after your map was completely
-   set up. And only if you actually use <a href="#//api/name/iPadScaleFactor">iPadScaleFactor</a> other than the default.</p></span>
 	</span>
 	
 	
@@ -339,14 +325,12 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemapWithContentsOfFile:">+&nbsp;tilemapWithContentsOfFile:</a></code>
-		<span class="tooltip"><p>Parse and create a KKTilemap from a file. The file must be in TMX format.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemapWithOrientation:mapSize:gridSize:">+&nbsp;tilemapWithOrientation:mapSize:gridSize:</a></code>
-		<span class="tooltip"><p>Creates an empty tilemap. Use this if you want to create your tilemap world entirely in code.</p></span>
 	</span>
 	
 	
@@ -361,7 +345,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeToFile:">&ndash;&nbsp;writeToFile:</a></code>
-		<span class="tooltip"><p>Writes the tilemap to a file path. The resulting file will be in TMX format.</p></span>
 	</span>
 	
 	
@@ -376,52 +359,42 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilesets">&nbsp;&nbsp;tilesets</a></code>
-		<span class="tooltip"><p>List of tilesets (<a href="../Classes/KKTilemapTileset.html">KKTilemapTileset</a>) used by this map.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addTileset:">&ndash;&nbsp;addTileset:</a></code>
-		<span class="tooltip"><p>Adds a tileset to the list of <a href="#//api/name/tilesets">tilesets</a>. Only needed when creating or changing a tilemap at runtime.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilesetForGid:">&ndash;&nbsp;tilesetForGid:</a></code>
-		<span class="tooltip"><p>Returns the tileset for a specific gid. Mainly to access that tile&rsquo;s <a href="#//api/name/properties">properties</a>. Will return nil for invalid gids (gid that points to a non-existing tileset,
-   or if gid is 0).</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilesetForGidWithoutFlags:">&ndash;&nbsp;tilesetForGidWithoutFlags:</a></code>
-		<span class="tooltip"><p>Returns the tileset for a specific gid without flags. Mainly to access that tile&rsquo;s <a href="#//api/name/properties">properties</a>. Will return nil for invalid gids (gid that points to a non-existing tileset,
-or if gid is 0).</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilesetNamed:">&ndash;&nbsp;tilesetNamed:</a></code>
-		<span class="tooltip"><p>The name of a tileset as displayed in Tiled.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/replaceTileset:withTileset:">&ndash;&nbsp;replaceTileset:withTileset:</a></code>
-		<span class="tooltip"><p>Replaces a tileset with another (actually: it creates an alias) so that tiles drawn with the originalTileset will now be drawn using the otherTileset.
-   This can be used to change the atmosphere of the tilemap, perhaps by changing from summer to winter, from &ldquo;before attack&rdquo; to &ldquo;after attack&rdquo;, and so on.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/restoreTileset:">&ndash;&nbsp;restoreTileset:</a></code>
-		<span class="tooltip"><p>If tileset was replaced with replaceTileset: method, will restore it so that tiles will be drawn from this tileset again.</p></span>
 	</span>
 	
 	
@@ -436,24 +409,26 @@ or if gid is 0).</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/layers">&nbsp;&nbsp;layers</a></code>
-		<span class="tooltip"><p>List of layers (<a href="../Classes/KKTilemapLayer.html">KKTilemapLayer</a>) used by this map, in the draw order respectively the reverse order they appear
-in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addLayer:">&ndash;&nbsp;addLayer:</a></code>
-		<span class="tooltip"><p>Adds a layer to the list of <a href="#//api/name/layers">layers</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/layerNamed:">&ndash;&nbsp;layerNamed:</a></code>
-		<span class="tooltip"><p>The name identifying a layer, as edited in Tiled.</p></span>
 	</span>
 	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/modified">&nbsp;&nbsp;modified</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -478,9 +453,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 		<p>The tilemap&rsquo;s background color. Seen only if there are empty tiles on all <a href="#//api/name/layers">layers</a>. Defaults to black.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) SKColor *backgroundColor</code></div>
-	
+
+    
 	
 	
 	
@@ -522,9 +499,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 		<p>The <a href="#//api/name/size">size</a> of tiles. Can be set in Tiled when a new tilemap is created. In the New Map dialog the gridSize is referred to as &ldquo;Tile Size&rdquo;.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGSize gridSize</code></div>
-	
+
+    
 	
 	
 	
@@ -562,9 +541,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
    Mainly needed for bounds checks, don&rsquo;t change this value.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) gid_t highestGid</code></div>
-	
+
+    
 	
 	
 	
@@ -601,9 +582,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 		<p>By how much to scale the tilemap if the app is running on an iPad device. Defaults to 1.0f (no scaling, ie iPad displays larger portion of the map). Recommended value: 2.0f.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) float iPadScaleFactor</code></div>
-	
+
+    
 	
 	
 	
@@ -626,7 +609,7 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 
 <ul>
 <li> The -ipad and -ipadhd tileset image&rsquo;s width &amp; height must be scaled accordingly. For example by factor of 2.0f for a scaleFactor of 2.0f.</li>
-<li> Tileset images' spacing and margin <a href="#//api/name/properties">properties</a> must also be scaled accordingly <em>if</em> <a href="#//api/name/scaleTilesetSpacingAndMargin">scaleTilesetSpacingAndMargin</a> is set to YES. See its <a href="#//api/name/description">description</a> for when to use it.</li>
+<li> Tileset images' spacing and margin <a href="#//api/name/properties">properties</a> must also be scaled accordingly <em>if</em> <a href="#//api/name/scaleTilesetSpacingAndMargin">scaleTilesetSpacingAndMargin</a> is set to YES. See its description for when to use it.</li>
 </ul>
 
 
@@ -659,9 +642,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
    tiles of all sizes properly appear on the screen and do not &ldquo;pop in/out&rdquo; near the screen borders. Valid only after <a href="#//api/name/tilesets">tilesets</a> have loaded their textures.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGSize largestTileSize</code></div>
-	
+
+    
 	
 	
 	
@@ -699,9 +684,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p></span>
 in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSArray *layers</code></div>
-	
+
+    
 	
 	
 	
@@ -709,6 +696,43 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
 		<p>An array of KTTilemapLayer objects.</p>
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/modified" title="modified"></a>
+	<h3 class="subsubtitle method-title">modified</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is set whenever the tilemap changes in a way that requires an immediate redraw in the current frame (tile gid change or <a href="#//api/name/tilesets">tilesets</a> swapped).
+The modified state is reset automatically by the renderer. You don&rsquo;t normally need to modify it yourself.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL modified</code></div>
+
+    
+	
+	
 	
 	
 	
@@ -738,9 +762,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>The orientiation (type) of tilemap.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) KKTilemapOrientation orientation</code></div>
-	
+
+    
 	
 	
 	
@@ -777,9 +803,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>The map&rsquo;s global properties. Editable in Tiled from the menu: Map -> Map Properties.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapProperties *properties</code></div>
-	
+
+    
 	
 	
 	
@@ -819,9 +847,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
    neither spacing between tiles nor margin between outermost tiles and texture border.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL scaleTilesetSpacingAndMargin</code></div>
-	
+
+    
 	
 	
 	
@@ -863,9 +893,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>The size of the map, in tiles.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGSize size</code></div>
-	
+
+    
 	
 	
 	
@@ -902,9 +934,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>List of tilesets (<a href="../Classes/KKTilemapTileset.html">KKTilemapTileset</a>) used by this map.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSArray *tilesets</code></div>
-	
+
+    
 	
 	
 	
@@ -949,9 +983,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>Parse and create a KKTilemap from a file. The file must be in TMX format.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithContentsOfFile:(NSString *)<em>tmxFile</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -998,9 +1034,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>Creates an empty tilemap. Use this if you want to create your tilemap world entirely in code.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)tilemapWithOrientation:(KKTilemapOrientation)<em>orientation</em> mapSize:(CGSize)<em>mapSize</em> gridSize:(CGSize)<em>gridSize</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1065,9 +1103,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>Adds a layer to the list of <a href="#//api/name/layers">layers</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addLayer:(KKTilemapLayer *)<em>layer</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1109,9 +1149,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>Adds a tileset to the list of <a href="#//api/name/tilesets">tilesets</a>. Only needed when creating or changing a tilemap at runtime.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addTileset:(KKTilemapTileset *)<em>tileset</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1154,9 +1196,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
    set up. And only if you actually use <a href="#//api/name/iPadScaleFactor">iPadScaleFactor</a> other than the default.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)applyIpadScaleFactor</code></div>
-	
+
+    
 	
 	
 	
@@ -1188,9 +1232,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>The name identifying a layer, as edited in Tiled.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapLayer *)layerNamed:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1238,9 +1284,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
    This can be used to change the atmosphere of the tilemap, perhaps by changing from summer to winter, from &ldquo;before attack&rdquo; to &ldquo;after attack&rdquo;, and so on.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)replaceTileset:(KKTilemapTileset *)<em>originalTileset</em> withTileset:(KKTilemapTileset *)<em>otherTileset</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1293,9 +1341,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 		<p>If tileset was replaced with replaceTileset: method, will restore it so that tiles will be drawn from this tileset again.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)restoreTileset:(KKTilemapTileset *)<em>originalTileset</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1338,9 +1388,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
    or if gid is 0).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapTileset *)tilesetForGid:(gid_t)<em>gid</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1388,9 +1440,11 @@ in Tiled&rsquo;s Layers list (bottom-most = first, top-most = last).</p>
 or if gid is 0).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapTileset *)tilesetForGidWithoutFlags:(gid_t)<em>gidWithoutFlags</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1437,9 +1491,11 @@ or if gid is 0).</p>
 		<p>The name of a tileset as displayed in Tiled.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapTileset *)tilesetNamed:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1486,9 +1542,11 @@ or if gid is 0).</p>
 		<p>Writes the tilemap to a file path. The resulting file will be in TMX format.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)writeToFile:(NSString *)<em>path</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1523,6 +1581,8 @@ or if gid is 0).</p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -1533,9 +1593,9 @@ or if gid is 0).</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -1623,6 +1683,14 @@ or if gid is 0).</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

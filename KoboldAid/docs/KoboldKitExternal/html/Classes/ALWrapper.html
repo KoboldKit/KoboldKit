@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>ALWrapper Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -91,10 +90,6 @@
 	<option value="//api/name/closeDevice:">&nbsp;&nbsp;&nbsp;&nbsp;+ closeDevice:</option>
 	
 	<option value="//api/name/createContext:attributes:">&nbsp;&nbsp;&nbsp;&nbsp;+ createContext:attributes:</option>
-	
-	<option value="//api/name/decodeNullSeparatedStringList:">&nbsp;&nbsp;&nbsp;&nbsp;+ decodeNullSeparatedStringList:</option>
-	
-	<option value="//api/name/decodeSpaceSeparatedStringList:">&nbsp;&nbsp;&nbsp;&nbsp;+ decodeSpaceSeparatedStringList:</option>
 	
 	<option value="//api/name/deleteBuffer:">&nbsp;&nbsp;&nbsp;&nbsp;+ deleteBuffer:</option>
 	
@@ -364,10 +359,6 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createContext:attributes:">createContext:attributes:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/decodeNullSeparatedStringList:">decodeNullSeparatedStringList:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/decodeSpaceSeparatedStringList:">decodeSpaceSeparatedStringList:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteBuffer:">deleteBuffer:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteBuffers:numBuffers:">deleteBuffers:numBuffers:</a></span></li>
@@ -587,12 +578,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ALWrapper.h<br />ALWrapper.m</td>
+	<td class="specification-value">ALWrapper.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -603,8 +594,6 @@ passed in.
 Besides collecting the API calls into a single global object, all calls are combined with an
 error check.
 Any OpenAL errors that occur will be logged if error logging is enabled.</p>
-
-<p>Private interface to ALWrapper.</p>
 					</div>
 					
 					
@@ -617,876 +606,726 @@ Any OpenAL errors that occur will be logged if error logging is enabled.</p>
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/genBuffers:numBuffers:">+&nbsp;genBuffers:numBuffers:</a></code>
-		<span class="tooltip"><p>Generate buffers.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/genBuffer">+&nbsp;genBuffer</a></code>
-		<span class="tooltip"><p>Generate a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deleteBuffers:numBuffers:">+&nbsp;deleteBuffers:numBuffers:</a></code>
-		<span class="tooltip"><p>Delete buffers.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deleteBuffer:">+&nbsp;deleteBuffer:</a></code>
-		<span class="tooltip"><p>Delete a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isBuffer:">+&nbsp;isBuffer:</a></code>
-		<span class="tooltip"><p>Check if the speified buffer exists.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bufferData:format:data:size:frequency:">+&nbsp;bufferData:format:data:size:frequency:</a></code>
-		<span class="tooltip"><p>Load data into a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bufferf:parameter:value:">+&nbsp;bufferf:parameter:value:</a></code>
-		<span class="tooltip"><p>Write a float paramter to a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/buffer3f:parameter:v1:v2:v3:">+&nbsp;buffer3f:parameter:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Write a 3 float paramter to a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bufferfv:parameter:values:">+&nbsp;bufferfv:parameter:values:</a></code>
-		<span class="tooltip"><p>Write a float array paramter to a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bufferi:parameter:value:">+&nbsp;bufferi:parameter:value:</a></code>
-		<span class="tooltip"><p>Write an integer paramter to a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/buffer3i:parameter:v1:v2:v3:">+&nbsp;buffer3i:parameter:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Write a 3 integer paramter to a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bufferiv:parameter:values:">+&nbsp;bufferiv:parameter:values:</a></code>
-		<span class="tooltip"><p>Write an integer array paramter to a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getBufferf:parameter:">+&nbsp;getBufferf:parameter:</a></code>
-		<span class="tooltip"><p>Read a float paramter from a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getBuffer3f:parameter:v1:v2:v3:">+&nbsp;getBuffer3f:parameter:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Read a 3 float paramter from a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getBufferfv:parameter:values:">+&nbsp;getBufferfv:parameter:values:</a></code>
-		<span class="tooltip"><p>Read a float array paramter from a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getBufferi:parameter:">+&nbsp;getBufferi:parameter:</a></code>
-		<span class="tooltip"><p>Read an integer paramter from a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getBuffer3i:parameter:v1:v2:v3:">+&nbsp;getBuffer3i:parameter:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Read a 3 integer paramter from a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getBufferiv:parameter:values:">+&nbsp;getBufferiv:parameter:values:</a></code>
-		<span class="tooltip"><p>Read an integer array paramter from a buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/genSources:numSources:">+&nbsp;genSources:numSources:</a></code>
-		<span class="tooltip"><p>Generate sources.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/genSource">+&nbsp;genSource</a></code>
-		<span class="tooltip"><p>Generate a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deleteSources:numSources:">+&nbsp;deleteSources:numSources:</a></code>
-		<span class="tooltip"><p>Delete sources.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deleteSource:">+&nbsp;deleteSource:</a></code>
-		<span class="tooltip"><p>Delete a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isSource:">+&nbsp;isSource:</a></code>
-		<span class="tooltip"><p>Check if the speified source exists.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourcePlay:">+&nbsp;sourcePlay:</a></code>
-		<span class="tooltip"><p>Play a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourcePlayv:numSources:">+&nbsp;sourcePlayv:numSources:</a></code>
-		<span class="tooltip"><p>Play a bunch of sources.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourcePause:">+&nbsp;sourcePause:</a></code>
-		<span class="tooltip"><p>Pause a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourcePausev:numSources:">+&nbsp;sourcePausev:numSources:</a></code>
-		<span class="tooltip"><p>Pause a bunch of sources.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourceStop:">+&nbsp;sourceStop:</a></code>
-		<span class="tooltip"><p>Stop a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourceStopv:numSources:">+&nbsp;sourceStopv:numSources:</a></code>
-		<span class="tooltip"><p>Stop a bunch of sources.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourceRewind:">+&nbsp;sourceRewind:</a></code>
-		<span class="tooltip"><p>Rewind a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourceRewindv:numSources:">+&nbsp;sourceRewindv:numSources:</a></code>
-		<span class="tooltip"><p>Rewind a bunch of sources.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourceQueueBuffers:numBuffers:bufferIds:">+&nbsp;sourceQueueBuffers:numBuffers:bufferIds:</a></code>
-		<span class="tooltip"><p>Queue buffers into a source for sequential playback.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourceUnqueueBuffers:numBuffers:bufferIds:">+&nbsp;sourceUnqueueBuffers:numBuffers:bufferIds:</a></code>
-		<span class="tooltip"><p>Unqueue previously queued buffers.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourcef:parameter:value:">+&nbsp;sourcef:parameter:value:</a></code>
-		<span class="tooltip"><p>Write a float paramter to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/source3f:parameter:v1:v2:v3:">+&nbsp;source3f:parameter:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Write a 3 float paramter to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourcefv:parameter:values:">+&nbsp;sourcefv:parameter:values:</a></code>
-		<span class="tooltip"><p>Write a float array paramter to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourcei:parameter:value:">+&nbsp;sourcei:parameter:value:</a></code>
-		<span class="tooltip"><p>Write an integer paramter to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/source3i:parameter:v1:v2:v3:">+&nbsp;source3i:parameter:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Write a 3 integer paramter to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sourceiv:parameter:values:">+&nbsp;sourceiv:parameter:values:</a></code>
-		<span class="tooltip"><p>Write an integer array paramter to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSourcef:parameter:">+&nbsp;getSourcef:parameter:</a></code>
-		<span class="tooltip"><p>Read a float paramter from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSource3f:parameter:v1:v2:v3:">+&nbsp;getSource3f:parameter:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Read a 3 float paramter from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSourcefv:parameter:values:">+&nbsp;getSourcefv:parameter:values:</a></code>
-		<span class="tooltip"><p>Read a float array paramter from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSourcei:parameter:">+&nbsp;getSourcei:parameter:</a></code>
-		<span class="tooltip"><p>Read an integer paramter from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSource3i:parameter:v1:v2:v3:">+&nbsp;getSource3i:parameter:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Read a 3 integer paramter from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSourceiv:parameter:values:">+&nbsp;getSourceiv:parameter:values:</a></code>
-		<span class="tooltip"><p>Read an integer array paramter from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/listenerf:value:">+&nbsp;listenerf:value:</a></code>
-		<span class="tooltip"><p>Write a float paramter to the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/listener3f:v1:v2:v3:">+&nbsp;listener3f:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Write a 3 float paramter to the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/listenerfv:values:">+&nbsp;listenerfv:values:</a></code>
-		<span class="tooltip"><p>Write a float array paramter to the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/listeneri:value:">+&nbsp;listeneri:value:</a></code>
-		<span class="tooltip"><p>Write an integer paramter to the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/listener3i:v1:v2:v3:">+&nbsp;listener3i:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Write a 3 integer paramter to the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/listeneriv:values:">+&nbsp;listeneriv:values:</a></code>
-		<span class="tooltip"><p>Write an integer array paramter to the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getListenerf:">+&nbsp;getListenerf:</a></code>
-		<span class="tooltip"><p>Read a float paramter from the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getListener3f:v1:v2:v3:">+&nbsp;getListener3f:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Read a 3 float paramter from the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getListenerfv:values:">+&nbsp;getListenerfv:values:</a></code>
-		<span class="tooltip"><p>Read a float array paramter from the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getListeneri:">+&nbsp;getListeneri:</a></code>
-		<span class="tooltip"><p>Read an integer paramter from the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getListener3i:v1:v2:v3:">+&nbsp;getListener3i:v1:v2:v3:</a></code>
-		<span class="tooltip"><p>Read a 3 integer paramter from the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getListeneriv:values:">+&nbsp;getListeneriv:values:</a></code>
-		<span class="tooltip"><p>Read an integer array paramter from the current listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/enable:">+&nbsp;enable:</a></code>
-		<span class="tooltip"><p>Enable a capability.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disable:">+&nbsp;disable:</a></code>
-		<span class="tooltip"><p>Disable a capability.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isEnabled:">+&nbsp;isEnabled:</a></code>
-		<span class="tooltip"><p>Check if a capability is enabled.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getBoolean:">+&nbsp;getBoolean:</a></code>
-		<span class="tooltip"><p>Get a boolean parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getDouble:">+&nbsp;getDouble:</a></code>
-		<span class="tooltip"><p>Get a double parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getFloat:">+&nbsp;getFloat:</a></code>
-		<span class="tooltip"><p>Get a float parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getInteger:">+&nbsp;getInteger:</a></code>
-		<span class="tooltip"><p>Get an integer parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getString:">+&nbsp;getString:</a></code>
-		<span class="tooltip"><p>Get a string parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getNullSeparatedStringList:">+&nbsp;getNullSeparatedStringList:</a></code>
-		<span class="tooltip"><p>Get a string list parameter. Use this method for OpenAL parameters that return a null
-separated list.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSpaceSeparatedStringList:">+&nbsp;getSpaceSeparatedStringList:</a></code>
-		<span class="tooltip"><p>Get a string list parameter. Use this method for OpenAL parameters that return a space
-separated list.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getBooleanv:values:">+&nbsp;getBooleanv:values:</a></code>
-		<span class="tooltip"><p>Get a boolean array parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getDoublev:values:">+&nbsp;getDoublev:values:</a></code>
-		<span class="tooltip"><p>Get a double array parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getFloatv:values:">+&nbsp;getFloatv:values:</a></code>
-		<span class="tooltip"><p>Get a float array parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getIntegerv:values:">+&nbsp;getIntegerv:values:</a></code>
-		<span class="tooltip"><p>Get an integer array parameter.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/distanceModel:">+&nbsp;distanceModel:</a></code>
-		<span class="tooltip"><p>Set the distance model.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/dopplerFactor:">+&nbsp;dopplerFactor:</a></code>
-		<span class="tooltip"><p>Set the doppler factor.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/speedOfSound:">+&nbsp;speedOfSound:</a></code>
-		<span class="tooltip"><p>Set the speed of sound.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isExtensionPresent:">+&nbsp;isExtensionPresent:</a></code>
-		<span class="tooltip"><p>Check if an extension is present.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getProcAddress:">+&nbsp;getProcAddress:</a></code>
-		<span class="tooltip"><p>Get the address of a procedure.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getEnumValue:">+&nbsp;getEnumValue:</a></code>
-		<span class="tooltip"><p>Get the enum value from its name.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/openDevice:">+&nbsp;openDevice:</a></code>
-		<span class="tooltip"><p>Open a device.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/closeDevice:">+&nbsp;closeDevice:</a></code>
-		<span class="tooltip"><p>Close a device.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/createContext:attributes:">+&nbsp;createContext:attributes:</a></code>
-		<span class="tooltip"><p>Create an OpenAL context.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/makeContextCurrent:">+&nbsp;makeContextCurrent:</a></code>
-		<span class="tooltip"><p>Make the specified context the current context.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/makeContextCurrent:deviceReference:">+&nbsp;makeContextCurrent:deviceReference:</a></code>
-		<span class="tooltip"><p>Make the specified context the current context, passing in a device reference for more
-informative logging info.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/processContext:">+&nbsp;processContext:</a></code>
-		<span class="tooltip"><p>Process a context.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/suspendContext:">+&nbsp;suspendContext:</a></code>
-		<span class="tooltip"><p>Suspend a context.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/destroyContext:">+&nbsp;destroyContext:</a></code>
-		<span class="tooltip"><p>Destroy a context.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getCurrentContext">+&nbsp;getCurrentContext</a></code>
-		<span class="tooltip"><p>Get the current context.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getContextsDevice:">+&nbsp;getContextsDevice:</a></code>
-		<span class="tooltip"><p>Get the device a context was created from.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getContextsDevice:deviceReference:">+&nbsp;getContextsDevice:deviceReference:</a></code>
-		<span class="tooltip"><p>Get the device a context was created from, passing in a device reference for more
-informative logging info.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isExtensionPresent:name:">+&nbsp;isExtensionPresent:name:</a></code>
-		<span class="tooltip"><p>Check if an extension is present on a device.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getProcAddress:name:">+&nbsp;getProcAddress:name:</a></code>
-		<span class="tooltip"><p>Get the address of a procedure for a device.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getEnumValue:name:">+&nbsp;getEnumValue:name:</a></code>
-		<span class="tooltip"><p>Get the enum value from its name.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getString:attribute:">+&nbsp;getString:attribute:</a></code>
-		<span class="tooltip"><p>Get a string attribute.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getNullSeparatedStringList:attribute:">+&nbsp;getNullSeparatedStringList:attribute:</a></code>
-		<span class="tooltip"><p>Get a string list attribute. Use this method for OpenAL attributes that return a null
-separated list.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getSpaceSeparatedStringList:attribute:">+&nbsp;getSpaceSeparatedStringList:attribute:</a></code>
-		<span class="tooltip"><p>Get a string list attribute. Use this method for OpenAL attributes that return a space
-separated list.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getInteger:attribute:">+&nbsp;getInteger:attribute:</a></code>
-		<span class="tooltip"><p>Get an integer attribute.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getIntegerv:attribute:size:data:">+&nbsp;getIntegerv:attribute:size:data:</a></code>
-		<span class="tooltip"><p>Get an integer array attribute.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/openCaptureDevice:frequency:format:bufferSize:">+&nbsp;openCaptureDevice:frequency:format:bufferSize:</a></code>
-		<span class="tooltip"><p>UNSUPPORTED ON IOS* Open an audio capture device.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/closeCaptureDevice:">+&nbsp;closeCaptureDevice:</a></code>
-		<span class="tooltip"><p>Close a capture device.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/startCapture:">+&nbsp;startCapture:</a></code>
-		<span class="tooltip"><p>Start capturing audio data.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stopCapture:">+&nbsp;stopCapture:</a></code>
-		<span class="tooltip"><p>Stop capturing audio data.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/captureSamples:buffer:numSamples:">+&nbsp;captureSamples:buffer:numSamples:</a></code>
-		<span class="tooltip"><p>Get captured samples from a device.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getMixerOutputDataRate">+&nbsp;getMixerOutputDataRate</a></code>
-		<span class="tooltip"><p>Get the iOS device&rsquo;s mixer outut data rate.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setMixerOutputDataRate:">+&nbsp;setMixerOutputDataRate:</a></code>
-		<span class="tooltip"><p>Set the iOS device&rsquo;s mixer output data rate.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bufferDataStatic:format:data:size:frequency:">+&nbsp;bufferDataStatic:format:data:size:frequency:</a></code>
-		<span class="tooltip"><p>Load data into a buffer. Unlike &ldquo;bufferData&rdquo;, with this method the buffer will
-use the passed in data buffer direcly rather than allocating its own memory
-and copying from the data buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaGetListenerb:">+&nbsp;asaGetListenerb:</a></code>
-		<span class="tooltip"><p>Read a boolean ASA property from a listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaGetListeneri:">+&nbsp;asaGetListeneri:</a></code>
-		<span class="tooltip"><p>Read an integer ASA property from a listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaGetListenerf:">+&nbsp;asaGetListenerf:</a></code>
-		<span class="tooltip"><p>Read a floating point ASA property from a listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaListenerb:value:">+&nbsp;asaListenerb:value:</a></code>
-		<span class="tooltip"><p>Write a boolean ASA value to a listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaListeneri:value:">+&nbsp;asaListeneri:value:</a></code>
-		<span class="tooltip"><p>Write an integer ASA value to a listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaListenerf:value:">+&nbsp;asaListenerf:value:</a></code>
-		<span class="tooltip"><p>Write a floating point ASA value to a listener.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaGetSourceb:property:">+&nbsp;asaGetSourceb:property:</a></code>
-		<span class="tooltip"><p>Read a boolean ASA property from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaGetSourcei:property:">+&nbsp;asaGetSourcei:property:</a></code>
-		<span class="tooltip"><p>Read an integer ASA property from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaGetSourcef:property:">+&nbsp;asaGetSourcef:property:</a></code>
-		<span class="tooltip"><p>Read a floating point ASA property from a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaSourceb:property:value:">+&nbsp;asaSourceb:property:value:</a></code>
-		<span class="tooltip"><p>Write a boolean ASA value to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaSourcei:property:value:">+&nbsp;asaSourcei:property:value:</a></code>
-		<span class="tooltip"><p>Write an integer ASA value to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/asaSourcef:property:value:">+&nbsp;asaSourcef:property:value:</a></code>
-		<span class="tooltip"><p>Write a floating point ASA value to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setRenderingQuality:">+&nbsp;setRenderingQuality:</a></code>
-		<span class="tooltip"><p>Set the rendering quality. The value may be one of:</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getRenderingQuality">+&nbsp;getRenderingQuality</a></code>
-		<span class="tooltip"><p>Get the rendering quality.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addNotification:onSource:callback:userData:">+&nbsp;addNotification:onSource:callback:userData:</a></code>
-		<span class="tooltip"><p>Add a notification callback to a source.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeNotification:onSource:callback:userData:">+&nbsp;removeNotification:onSource:callback:userData:</a></code>
-		<span class="tooltip"><p>Remove a notification callback from a source.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/decodeNullSeparatedStringList:">+&nbsp;decodeNullSeparatedStringList:</a></code>
-		<span class="tooltip"><p>Decode an OpenAL supplied NULL-separated string list into an NSArray.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/decodeSpaceSeparatedStringList:">+&nbsp;decodeSpaceSeparatedStringList:</a></code>
-		<span class="tooltip"><p>Decode an OpenAL supplied space-separated string list into an NSArray.</p></span>
 	</span>
 	
 	
@@ -1515,9 +1354,11 @@ and copying from the data buffer.</p></span>
 		<p>Add a notification callback to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)addNotification:(ALuint)<em>notificationID</em> onSource:(ALuint)<em>source</em> callback:(alSourceNotificationProc)<em>callback</em> userData:(void *)<em>userData</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1587,9 +1428,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Read a boolean ASA property from a listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)asaGetListenerb:(ALuint)<em>property</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1636,9 +1479,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Read a floating point ASA property from a listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALfloat)asaGetListenerf:(ALuint)<em>property</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1685,9 +1530,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Read an integer ASA property from a listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALint)asaGetListeneri:(ALuint)<em>property</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1734,9 +1581,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Read a boolean ASA property from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)asaGetSourceb:(ALuint)<em>sourceId</em> property:(ALuint)<em>property</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1788,9 +1637,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Read a floating point ASA property from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALfloat)asaGetSourcef:(ALuint)<em>sourceId</em> property:(ALuint)<em>property</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1842,9 +1693,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Read an integer ASA property from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALint)asaGetSourcei:(ALuint)<em>sourceId</em> property:(ALuint)<em>property</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1896,9 +1749,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Write a boolean ASA value to a listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)asaListenerb:(ALuint)<em>property</em> value:(bool)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1950,9 +1805,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Write a floating point ASA value to a listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)asaListenerf:(ALuint)<em>property</em> value:(ALfloat)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2004,9 +1861,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Write an integer ASA value to a listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)asaListeneri:(ALuint)<em>property</em> value:(ALint)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2058,9 +1917,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Write a boolean ASA value to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)asaSourceb:(ALuint)<em>sourceId</em> property:(ALuint)<em>property</em> value:(bool)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2117,9 +1978,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Write a floating point ASA value to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)asaSourcef:(ALuint)<em>sourceId</em> property:(ALuint)<em>property</em> value:(ALfloat)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2176,9 +2039,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Write an integer ASA value to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)asaSourcei:(ALuint)<em>sourceId</em> property:(ALuint)<em>property</em> value:(ALint)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2235,9 +2100,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Write a 3 float paramter to a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)buffer3f:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> v1:(ALfloat)<em>v1</em> v2:(ALfloat)<em>v2</em> v3:(ALfloat)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2304,9 +2171,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Write a 3 integer paramter to a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)buffer3i:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> v1:(ALint)<em>v1</em> v2:(ALint)<em>v2</em> v3:(ALint)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2373,9 +2242,11 @@ AL_QUEUE_HAS_LOOPED - Sent when a looping source has looped to it&rsquo;s start 
 		<p>Load data into a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)bufferData:(ALuint)<em>bufferId</em> format:(ALenum)<em>format</em> data:(const ALvoid *)<em>data</em> size:(ALsizei)<em>size</em> frequency:(ALsizei)<em>frequency</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2440,9 +2311,11 @@ use the passed in data buffer direcly rather than allocating its own memory
 and copying from the data buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)bufferDataStatic:(ALuint)<em>bufferId</em> format:(ALenum)<em>format</em> data:(const ALvoid *)<em>data</em> size:(ALsizei)<em>size</em> frequency:(ALsizei)<em>frequency</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2505,9 +2378,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Write a float paramter to a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)bufferf:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> value:(ALfloat)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2564,9 +2439,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Write a float array paramter to a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)bufferfv:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> values:(ALfloat *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2623,9 +2500,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Write an integer paramter to a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)bufferi:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> value:(ALint)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2682,9 +2561,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Write an integer array paramter to a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)bufferiv:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> values:(ALint *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2741,9 +2622,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Get captured samples from a device.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)captureSamples:(ALCdevice *)<em>device</em> buffer:(ALCvoid *)<em>buffer</em> numSamples:(ALCsizei)<em>numSamples</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2795,9 +2678,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Close a capture device.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)closeCaptureDevice:(ALCdevice *)<em>device</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2844,9 +2729,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Close a device.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)closeDevice:(ALCdevice *)<em>device</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2893,9 +2780,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Create an OpenAL context.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALCcontext *)createContext:(ALCdevice *)<em>device</em> attributes:(ALCint *)<em>attributes</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2938,104 +2827,6 @@ AL_FORMAT_STEREO16).</p></dd>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/decodeNullSeparatedStringList:" title="decodeNullSeparatedStringList:"></a>
-	<h3 class="subsubtitle method-title">decodeNullSeparatedStringList:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Decode an OpenAL supplied NULL-separated string list into an NSArray.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (NSArray *)decodeNullSeparatedStringList:(const ALCchar *)<em>source</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>source</em></dt>
-			<dd><p>the string list as supplied by OpenAL.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the string list in an NSArray of NSString.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ALWrapper.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/decodeSpaceSeparatedStringList:" title="decodeSpaceSeparatedStringList:"></a>
-	<h3 class="subsubtitle method-title">decodeSpaceSeparatedStringList:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Decode an OpenAL supplied space-separated string list into an NSArray.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (NSArray *)decodeSpaceSeparatedStringList:(const ALCchar *)<em>source</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>source</em></dt>
-			<dd><p>the string list as supplied by OpenAL.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the string list in an NSArray of NSString.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ALWrapper.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/deleteBuffer:" title="deleteBuffer:"></a>
 	<h3 class="subsubtitle method-title">deleteBuffer:</h3>
 	
@@ -3045,9 +2836,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Delete a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)deleteBuffer:(ALuint)<em>bufferId</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3094,9 +2887,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Delete buffers.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)deleteBuffers:(ALuint *)<em>bufferIds</em> numBuffers:(ALsizei)<em>numBuffers</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3148,9 +2943,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Delete a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)deleteSource:(ALuint)<em>sourceId</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3197,9 +2994,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Delete sources.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)deleteSources:(ALuint *)<em>sourceIds</em> numSources:(ALsizei)<em>numSources</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3251,9 +3050,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Destroy a context.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)destroyContext:(ALCcontext *)<em>context</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3300,9 +3101,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Disable a capability.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)disable:(ALenum)<em>capability</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3349,9 +3152,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Set the distance model.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)distanceModel:(ALenum)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3398,9 +3203,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Set the doppler factor.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)dopplerFactor:(ALfloat)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3447,9 +3254,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Enable a capability.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)enable:(ALenum)<em>capability</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3496,9 +3305,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Generate a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALuint)genBuffer</code></div>
-	
+
+    
 	
 	
 	
@@ -3535,9 +3346,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Generate buffers.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)genBuffers:(ALuint *)<em>bufferIds</em> numBuffers:(ALsizei)<em>numBuffers</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3589,9 +3402,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Generate a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALuint)genSource</code></div>
-	
+
+    
 	
 	
 	
@@ -3628,9 +3443,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Generate sources.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)genSources:(ALuint *)<em>sourceIds</em> numSources:(ALsizei)<em>numSources</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3682,9 +3499,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Get a boolean parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getBoolean:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3731,9 +3550,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Get a boolean array parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getBooleanv:(ALenum)<em>parameter</em> values:(ALboolean *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3785,9 +3606,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Read a 3 float paramter from a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getBuffer3f:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> v1:(ALfloat *)<em>v1</em> v2:(ALfloat *)<em>v2</em> v3:(ALfloat *)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3854,9 +3677,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Read a 3 integer paramter from a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getBuffer3i:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> v1:(ALint *)<em>v1</em> v2:(ALint *)<em>v2</em> v3:(ALint *)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3923,9 +3748,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Read a float paramter from a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALfloat)getBufferf:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -3977,9 +3804,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Read a float array paramter from a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getBufferfv:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> values:(ALfloat *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4036,9 +3865,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Read an integer paramter from a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALint)getBufferi:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4090,9 +3921,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Read an integer array paramter from a buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getBufferiv:(ALuint)<em>bufferId</em> parameter:(ALenum)<em>parameter</em> values:(ALint *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4149,9 +3982,11 @@ AL_FORMAT_STEREO16).</p></dd>
 		<p>Get the device a context was created from.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALCdevice *)getContextsDevice:(ALCcontext *)<em>context</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4199,9 +4034,11 @@ AL_FORMAT_STEREO16).</p></dd>
 informative logging info.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALCdevice *)getContextsDevice:(ALCcontext *)<em>context</em> deviceReference:(ALCdevice *)<em>deviceReference</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4253,9 +4090,11 @@ informative logging info.</p>
 		<p>Get the current context.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALCcontext *)getCurrentContext</code></div>
-	
+
+    
 	
 	
 	
@@ -4292,9 +4131,11 @@ informative logging info.</p>
 		<p>Get a double parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALdouble)getDouble:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4341,9 +4182,11 @@ informative logging info.</p>
 		<p>Get a double array parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getDoublev:(ALenum)<em>parameter</em> values:(ALdouble *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4395,9 +4238,11 @@ informative logging info.</p>
 		<p>Get the enum value from its name.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALenum)getEnumValue:(NSString *)<em>enumName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4444,9 +4289,11 @@ informative logging info.</p>
 		<p>Get the enum value from its name.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALenum)getEnumValue:(ALCdevice *)<em>device</em> name:(NSString *)<em>enumName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4498,9 +4345,11 @@ informative logging info.</p>
 		<p>Get a float parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALfloat)getFloat:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4547,9 +4396,11 @@ informative logging info.</p>
 		<p>Get a float array parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getFloatv:(ALenum)<em>parameter</em> values:(ALfloat *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4601,9 +4452,11 @@ informative logging info.</p>
 		<p>Get an integer parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALint)getInteger:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4650,9 +4503,11 @@ informative logging info.</p>
 		<p>Get an integer attribute.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALint)getInteger:(ALCdevice *)<em>device</em> attribute:(ALenum)<em>attribute</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4704,9 +4559,11 @@ informative logging info.</p>
 		<p>Get an integer array attribute.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getIntegerv:(ALCdevice *)<em>device</em> attribute:(ALenum)<em>attribute</em> size:(ALsizei)<em>size</em> data:(ALCint *)<em>data</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4768,9 +4625,11 @@ informative logging info.</p>
 		<p>Get an integer array parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getIntegerv:(ALenum)<em>parameter</em> values:(ALint *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4822,9 +4681,11 @@ informative logging info.</p>
 		<p>Read a 3 float paramter from the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getListener3f:(ALenum)<em>parameter</em> v1:(ALfloat *)<em>v1</em> v2:(ALfloat *)<em>v2</em> v3:(ALfloat *)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4886,9 +4747,11 @@ informative logging info.</p>
 		<p>Read a 3 integer paramter from the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getListener3i:(ALenum)<em>parameter</em> v1:(ALint *)<em>v1</em> v2:(ALint *)<em>v2</em> v3:(ALint *)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4950,9 +4813,11 @@ informative logging info.</p>
 		<p>Read a float paramter from the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALfloat)getListenerf:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -4999,9 +4864,11 @@ informative logging info.</p>
 		<p>Read a float array paramter from the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getListenerfv:(ALenum)<em>parameter</em> values:(ALfloat *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5053,9 +4920,11 @@ informative logging info.</p>
 		<p>Read an integer paramter from the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALint)getListeneri:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5102,9 +4971,11 @@ informative logging info.</p>
 		<p>Read an integer array paramter from the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getListeneriv:(ALenum)<em>parameter</em> values:(ALint *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5156,9 +5027,11 @@ informative logging info.</p>
 		<p>Get the iOS device&rsquo;s mixer outut data rate.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALdouble)getMixerOutputDataRate</code></div>
-	
+
+    
 	
 	
 	
@@ -5196,9 +5069,11 @@ informative logging info.</p>
 separated list.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSArray *)getNullSeparatedStringList:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5246,9 +5121,11 @@ separated list.</p>
 separated list.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSArray *)getNullSeparatedStringList:(ALCdevice *)<em>device</em> attribute:(ALenum)<em>attribute</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5300,9 +5177,11 @@ separated list.</p>
 		<p>Get the address of a procedure.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void *)getProcAddress:(NSString *)<em>functionName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5349,9 +5228,11 @@ separated list.</p>
 		<p>Get the address of a procedure for a device.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void *)getProcAddress:(ALCdevice *)<em>device</em> name:(NSString *)<em>functionName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5403,9 +5284,11 @@ separated list.</p>
 		<p>Get the rendering quality.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALint)getRenderingQuality</code></div>
-	
+
+    
 	
 	
 	
@@ -5442,9 +5325,11 @@ separated list.</p>
 		<p>Read a 3 float paramter from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getSource3f:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> v1:(ALfloat *)<em>v1</em> v2:(ALfloat *)<em>v2</em> v3:(ALfloat *)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5511,9 +5396,11 @@ separated list.</p>
 		<p>Read a 3 integer paramter from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getSource3i:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> v1:(ALint *)<em>v1</em> v2:(ALint *)<em>v2</em> v3:(ALint *)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5580,9 +5467,11 @@ separated list.</p>
 		<p>Read a float paramter from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALfloat)getSourcef:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5634,9 +5523,11 @@ separated list.</p>
 		<p>Read a float array paramter from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getSourcefv:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> values:(ALfloat *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5693,9 +5584,11 @@ separated list.</p>
 		<p>Read an integer paramter from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALint)getSourcei:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5747,9 +5640,11 @@ separated list.</p>
 		<p>Read an integer array paramter from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)getSourceiv:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> values:(ALint *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5807,9 +5702,11 @@ separated list.</p>
 separated list.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSArray *)getSpaceSeparatedStringList:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5857,9 +5754,11 @@ separated list.</p>
 separated list.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSArray *)getSpaceSeparatedStringList:(ALCdevice *)<em>device</em> attribute:(ALenum)<em>attribute</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5911,9 +5810,11 @@ separated list.</p>
 		<p>Get a string parameter.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSString *)getString:(ALenum)<em>parameter</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -5960,9 +5861,11 @@ separated list.</p>
 		<p>Get a string attribute.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (NSString *)getString:(ALCdevice *)<em>device</em> attribute:(ALenum)<em>attribute</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6014,9 +5917,11 @@ separated list.</p>
 		<p>Check if the speified buffer exists.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)isBuffer:(ALuint)<em>bufferId</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6063,9 +5968,11 @@ separated list.</p>
 		<p>Check if a capability is enabled.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)isEnabled:(ALenum)<em>capability</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6112,9 +6019,11 @@ separated list.</p>
 		<p>Check if an extension is present.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)isExtensionPresent:(NSString *)<em>extensionName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6161,9 +6070,11 @@ separated list.</p>
 		<p>Check if an extension is present on a device.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)isExtensionPresent:(ALCdevice *)<em>device</em> name:(NSString *)<em>extensionName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6215,9 +6126,11 @@ separated list.</p>
 		<p>Check if the speified source exists.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)isSource:(ALuint)<em>sourceId</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6264,9 +6177,11 @@ separated list.</p>
 		<p>Write a 3 float paramter to the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)listener3f:(ALenum)<em>parameter</em> v1:(ALfloat)<em>v1</em> v2:(ALfloat)<em>v2</em> v3:(ALfloat)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6328,9 +6243,11 @@ separated list.</p>
 		<p>Write a 3 integer paramter to the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)listener3i:(ALenum)<em>parameter</em> v1:(ALint)<em>v1</em> v2:(ALint)<em>v2</em> v3:(ALint)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6392,9 +6309,11 @@ separated list.</p>
 		<p>Write a float paramter to the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)listenerf:(ALenum)<em>parameter</em> value:(ALfloat)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6446,9 +6365,11 @@ separated list.</p>
 		<p>Write a float array paramter to the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)listenerfv:(ALenum)<em>parameter</em> values:(ALfloat *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6500,9 +6421,11 @@ separated list.</p>
 		<p>Write an integer paramter to the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)listeneri:(ALenum)<em>parameter</em> value:(ALint)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6554,9 +6477,11 @@ separated list.</p>
 		<p>Write an integer array paramter to the current listener.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)listeneriv:(ALenum)<em>parameter</em> values:(ALint *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6608,9 +6533,11 @@ separated list.</p>
 		<p>Make the specified context the current context.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)makeContextCurrent:(ALCcontext *)<em>context</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6658,9 +6585,11 @@ separated list.</p>
 informative logging info.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)makeContextCurrent:(ALCcontext *)<em>context</em> deviceReference:(ALCdevice *)<em>deviceReference</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6712,9 +6641,11 @@ informative logging info.</p>
 		<p>UNSUPPORTED ON IOS* Open an audio capture device.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALCdevice *)openCaptureDevice:(NSString *)<em>deviceName</em> frequency:(ALCuint)<em>frequency</em> format:(ALCenum)<em>format</em> bufferSize:(ALCsizei)<em>bufferSize</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6776,9 +6707,11 @@ informative logging info.</p>
 		<p>Open a device.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALCdevice *)openDevice:(NSString *)<em>deviceName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6825,9 +6758,11 @@ informative logging info.</p>
 		<p>Process a context.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)processContext:(ALCcontext *)<em>context</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6874,9 +6809,11 @@ informative logging info.</p>
 		<p>Remove a notification callback from a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)removeNotification:(ALuint)<em>notificationID</em> onSource:(ALuint)<em>source</em> callback:(alSourceNotificationProc)<em>callback</em> userData:(void *)<em>userData</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6938,9 +6875,11 @@ informative logging info.</p>
 		<p>Set the iOS device&rsquo;s mixer output data rate.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)setMixerOutputDataRate:(ALdouble)<em>frequency</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -6982,9 +6921,11 @@ informative logging info.</p>
 		<p>Set the rendering quality. The value may be one of:</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)setRenderingQuality:(ALint)<em>quality</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7033,9 +6974,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Write a 3 float paramter to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)source3f:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> v1:(ALfloat)<em>v1</em> v2:(ALfloat)<em>v2</em> v3:(ALfloat)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7102,9 +7045,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Write a 3 integer paramter to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)source3i:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> v1:(ALint)<em>v1</em> v2:(ALint)<em>v2</em> v3:(ALint)<em>v3</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7171,9 +7116,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Pause a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourcePause:(ALuint)<em>sourceId</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7220,9 +7167,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Pause a bunch of sources.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourcePausev:(ALuint *)<em>sourceIds</em> numSources:(ALsizei)<em>numSources</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7274,9 +7223,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Play a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourcePlay:(ALuint)<em>sourceId</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7323,9 +7274,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Play a bunch of sources.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourcePlayv:(ALuint *)<em>sourceIds</em> numSources:(ALsizei)<em>numSources</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7377,9 +7330,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Queue buffers into a source for sequential playback.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourceQueueBuffers:(ALuint)<em>sourceId</em> numBuffers:(ALsizei)<em>numBuffers</em> bufferIds:(ALuint *)<em>bufferIds</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7436,9 +7391,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Rewind a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourceRewind:(ALuint)<em>sourceId</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7485,9 +7442,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Rewind a bunch of sources.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourceRewindv:(ALuint *)<em>sourceIds</em> numSources:(ALsizei)<em>numSources</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7539,9 +7498,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Stop a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourceStop:(ALuint)<em>sourceId</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7588,9 +7549,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Stop a bunch of sources.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourceStopv:(ALuint *)<em>sourceIds</em> numSources:(ALsizei)<em>numSources</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7642,9 +7605,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Unqueue previously queued buffers.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourceUnqueueBuffers:(ALuint)<em>sourceId</em> numBuffers:(ALsizei)<em>numBuffers</em> bufferIds:(ALuint *)<em>bufferIds</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7701,9 +7666,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Write a float paramter to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourcef:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> value:(ALfloat)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7760,9 +7727,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Write a float array paramter to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourcefv:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> values:(ALfloat *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7819,9 +7788,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Write an integer paramter to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourcei:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> value:(ALint)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7878,9 +7849,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Write an integer array paramter to a source.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)sourceiv:(ALuint)<em>sourceId</em> parameter:(ALenum)<em>parameter</em> values:(ALint *)<em>values</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7937,9 +7910,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Set the speed of sound.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)speedOfSound:(ALfloat)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -7986,9 +7961,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Start capturing audio data.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)startCapture:(ALCdevice *)<em>device</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -8035,9 +8012,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Stop capturing audio data.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (bool)stopCapture:(ALCdevice *)<em>device</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -8084,9 +8063,11 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 		<p>Suspend a context.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (void)suspendContext:(ALCcontext *)<em>context</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -8128,6 +8109,8 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 					
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -8138,9 +8121,9 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -8228,6 +8211,14 @@ ALC_IPHONE_SPATIAL_RENDERING_QUALITY_HEADPHONES (iOS only)</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

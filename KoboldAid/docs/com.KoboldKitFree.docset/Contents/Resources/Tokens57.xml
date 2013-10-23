@@ -1,86 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/KKPhysicsContactEventDelegate.html">
+	<File path="Categories/NSObject+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/KKPhysicsContactEventDelegate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">NSObject category methods for Kobold Kit</Abstract>
+			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>
+            
 			
 			<NodeRef refid="57"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/setNode:</TokenIdentifier>
-			<Abstract type="html">The physics contact delegate's owning node.</Abstract>
-			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/performSelector:afterDelay:</TokenIdentifier>
+			<Abstract type="html">Performs a selector with delay, with &apos;self&apos; automatically sent to the selector.</Abstract>
+			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			<ReturnValue><Abstract type="html">The physics contact delegate's owning node.</Abstract></ReturnValue>
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/node</TokenIdentifier>
-			<Abstract type="html">The physics contact delegate's owning node.</Abstract>
-			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			<ReturnValue><Abstract type="html">The physics contact delegate's owning node.</Abstract></ReturnValue>
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/KKPhysicsContactEventDelegate/node</TokenIdentifier>
-			<Abstract type="html">The physics contact delegate's owning node.</Abstract>
-			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			<ReturnValue><Abstract type="html">The physics contact delegate's owning node.</Abstract></ReturnValue>
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/didBeginContact:otherBody:</TokenIdentifier>
-			<Abstract type="html">Called when two objects's physics bodies get in contact.</Abstract>
-			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>- (void)didBeginContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
+			<Declaration>- (void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>contact</Name>
-					<Abstract type="html">The contact object.</Abstract>
+					<Name>aSelector</Name>
+					<Abstract type="html">The selector to perform. Selector must take a single id parameter.</Abstract>
 				</Parameter><Parameter>
-					<Name>otherBody</Name>
-					<Abstract type="html">The other contacting body.</Abstract>
+					<Name>delay</Name>
+					<Abstract type="html">The time to wait (in seconds) before performing the selector.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/didBeginContact:otherBody:</Anchor>
+			<Anchor>//api/name/performSelector:afterDelay:</Anchor>
+            <NodeRef refid="57"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/didEndContact:otherBody:</TokenIdentifier>
-			<Abstract type="html">Called when two objects's physics bodies' contact ends.</Abstract>
-			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/performSelectorInBackground:</TokenIdentifier>
+			<Abstract type="html">Performs a selector in background, with &apos;self&apos; automatically sent to the selector.</Abstract>
+			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (void)didEndContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
+			<Declaration>- (void)performSelectorInBackground:(SEL)aSelector</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>contact</Name>
-					<Abstract type="html">The contact object.</Abstract>
-				</Parameter><Parameter>
-					<Name>otherBody</Name>
-					<Abstract type="html">The other contacting body.</Abstract>
+					<Name>aSelector</Name>
+					<Abstract type="html">The selector to perform. Selector must take a single id parameter.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/didEndContact:otherBody:</Anchor>
+			<Anchor>//api/name/performSelectorInBackground:</Anchor>
+            <NodeRef refid="57"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OALAudioFile Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -149,12 +148,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OALAudioFile.h<br />OALAudioFile.m</td>
+	<td class="specification-value">OALAudioFile.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -179,78 +178,54 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/url">&nbsp;&nbsp;url</a></code>
-		<span class="tooltip"><p>The URL of the audio file</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/streamDescription">&nbsp;&nbsp;streamDescription</a></code>
-		<span class="tooltip"><p>A <a href="#//api/name/description">description</a> of the audio data in this file.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/totalFrames">&nbsp;&nbsp;totalFrames</a></code>
-		<span class="tooltip"><p>The total number of audio frames in this file</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/reduceToMono">&nbsp;&nbsp;reduceToMono</a></code>
-		<span class="tooltip"><p>If YES, reduce any stereo data to mono (stereo samples don&rsquo;t support panning or positional audio).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/fileWithUrl:reduceToMono:">+&nbsp;fileWithUrl:reduceToMono:</a></code>
-		<span class="tooltip"><p>Open the audio file at the specified URL.
-*
-* @param <a href="#//api/name/url">url</a> The URL to open the audio file from.
-* @param <a href="#//api/name/reduceToMono">reduceToMono</a> If YES, reduce any stereo track to mono
-                       (stereo samples don&rsquo;t support panning or positional audio).
-* @return a new audio file object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithUrl:reduceToMono:">&ndash;&nbsp;initWithUrl:reduceToMono:</a></code>
-		<span class="tooltip"><p>Initialize this object with the audio file at the specified URL.
-*
-* @param <a href="#//api/name/url">url</a> The URL to open the audio file from.
-* @param <a href="#//api/name/reduceToMono">reduceToMono</a> If YES, reduce any stereo track to mono
-                       (stereo samples don&rsquo;t support panning or positional audio).
-* @return the initialized audio file object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/audioDataWithStartFrame:numFrames:bufferSize:">&ndash;&nbsp;audioDataWithStartFrame:numFrames:bufferSize:</a></code>
-		<span class="tooltip"><p>Read audio data from this file into a new buffer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bufferNamed:startFrame:numFrames:">&ndash;&nbsp;bufferNamed:startFrame:numFrames:</a></code>
-		<span class="tooltip"><p>Create a new <a href="../Classes/ALBuffer.html">ALBuffer</a> with the contents of this file.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/bufferFromUrl:reduceToMono:">+&nbsp;bufferFromUrl:reduceToMono:</a></code>
-		<span class="tooltip"><p>Convenience method to load the entire contents of a URL into a new <a href="../Classes/ALBuffer.html">ALBuffer</a>.
-*
-* @param <a href="#//api/name/url">url</a> The URL to open the audio file from.
-* @param <a href="#//api/name/reduceToMono">reduceToMono</a> If YES, reduce any stereo track to mono
-                       (stereo samples don&rsquo;t support panning or positional audio).
-* @return an <a href="../Classes/ALBuffer.html">ALBuffer</a> object.</p></span>
 	</span>
 	
 	
@@ -277,9 +252,11 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 		<p>If YES, reduce any stereo data to mono (stereo samples don&rsquo;t support panning or positional audio).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) bool reduceToMono</code></div>
-	
+
+    
 	
 	
 	
@@ -308,12 +285,14 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>A <a href="#//api/name/description">description</a> of the audio data in this file.</p>
+		<p>A description of the audio data in this file.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) AudioStreamBasicDescription *streamDescription</code></div>
-	
+
+    
 	
 	
 	
@@ -345,9 +324,11 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 		<p>The total number of audio frames in this file</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) SInt64 totalFrames</code></div>
-	
+
+    
 	
 	
 	
@@ -379,9 +360,11 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 		<p>The URL of the audio file</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSURL *url</code></div>
-	
+
+    
 	
 	
 	
@@ -426,9 +409,11 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 * @return an <a href="../Classes/ALBuffer.html">ALBuffer</a> object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (ALBuffer *)bufferFromUrl:(NSURL *)<em>url</em> reduceToMono:(bool)<em>reduceToMono</em></code></div>
-	
+
+    
 	
 	
 	
@@ -465,9 +450,11 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 * @return a new audio file object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (OALAudioFile *)fileWithUrl:(NSURL *)<em>url</em> reduceToMono:(bool)<em>reduceToMono</em></code></div>
-	
+
+    
 	
 	
 	
@@ -507,9 +494,11 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 		<p>Read audio data from this file into a new buffer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void *)audioDataWithStartFrame:(SInt64)<em>startFrame</em> numFrames:(SInt64)<em>numFrames</em> bufferSize:(UInt32 *)<em>bufferSize</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -566,9 +555,11 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 		<p>Create a new <a href="../Classes/ALBuffer.html">ALBuffer</a> with the contents of this file.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (ALBuffer *)bufferNamed:(NSString *)<em>name</em> startFrame:(SInt64)<em>startFrame</em> numFrames:(SInt64)<em>numFrames</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -630,9 +621,11 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 * @return the initialized audio file object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initWithUrl:(NSURL *)<em>url</em> reduceToMono:(bool)<em>reduceToMono</em></code></div>
-	
+
+    
 	
 	
 	
@@ -657,6 +650,8 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -667,9 +662,9 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -757,6 +752,14 @@ new <a href="../Classes/ALBuffer.html">ALBuffer</a> objects.</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

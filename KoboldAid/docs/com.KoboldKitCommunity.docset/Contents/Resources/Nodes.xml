@@ -2,31 +2,64 @@
 <DocSetNodes version="1.0">
     <TOC>
         <Node type="folder">
-            <Name>Kobold Kit</Name>
+            <Name>KoboldKitCommunity</Name>
             <Path>index.html</Path>
 			<Subnodes>
+                
 				
 				<Node type="folder">
 					<Name>Classes</Name>
 					<Path>index.html</Path>
 					<Subnodes>
 						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
 						
 					</Subnodes>
 				</Node>
 				
 				
-				
+                
+                
 			</Subnodes>
         </Node>
     </TOC>
 	<Library>
-		<Node id="1">
-			<Name>KKDummyClass</Name>
-			<Path>Classes/KKDummyClass.html</Path>
-		</Node>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>KKCommunityDummyClass</Name>
+            <Path>Classes/KKCommunityDummyClass.html</Path>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>KKCommunitySwizzle</Name>
+            <Path>Classes/KKCommunitySwizzle.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKCommunitySwizzle.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKCommunitySwizzle.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKCommunitySwizzle.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
 		
 		
-		
+        
+        
 	</Library>
 </DocSetNodes>

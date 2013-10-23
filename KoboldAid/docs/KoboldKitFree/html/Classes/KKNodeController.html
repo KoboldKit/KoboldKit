@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKNodeController Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -74,13 +73,15 @@
 	
 	<option value="//api/name/behaviorMemberOfClass:">&nbsp;&nbsp;&nbsp;&nbsp;- behaviorMemberOfClass:</option>
 	
-	<option value="//api/name/didBeginContact:otherBody:">&nbsp;&nbsp;&nbsp;&nbsp;- didBeginContact:otherBody:</option>
-	
-	<option value="//api/name/didEndContact:otherBody:">&nbsp;&nbsp;&nbsp;&nbsp;- didEndContact:otherBody:</option>
-	
 	<option value="//api/name/hasBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- hasBehaviors</option>
 	
 	<option value="//api/name/initWithBehaviors:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithBehaviors:</option>
+	
+	<option value="//api/name/isEqualToController:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToController:</option>
+	
+	<option value="//api/name/nodeDidMoveToParent">&nbsp;&nbsp;&nbsp;&nbsp;- nodeDidMoveToParent</option>
+	
+	<option value="//api/name/nodeWillMoveFromParent">&nbsp;&nbsp;&nbsp;&nbsp;- nodeWillMoveFromParent</option>
 	
 	<option value="//api/name/removeAllBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllBehaviors</option>
 	
@@ -89,6 +90,8 @@
 	<option value="//api/name/removeBehaviorForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehaviorForKey:</option>
 	
 	<option value="//api/name/removeBehaviorWithClass:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBehaviorWithClass:</option>
+	
+	<option value="//api/name/willRemoveController">&nbsp;&nbsp;&nbsp;&nbsp;- willRemoveController</option>
 	
 	
 	
@@ -150,13 +153,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/behaviorMemberOfClass:">behaviorMemberOfClass:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didBeginContact:otherBody:">didBeginContact:otherBody:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didEndContact:otherBody:">didEndContact:otherBody:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasBehaviors">hasBehaviors</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithBehaviors:">initWithBehaviors:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToController:">isEqualToController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nodeDidMoveToParent">nodeDidMoveToParent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nodeWillMoveFromParent">nodeWillMoveFromParent</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllBehaviors">removeAllBehaviors</a></span></li>
 	
@@ -165,6 +170,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehaviorForKey:">removeBehaviorForKey:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBehaviorWithClass:">removeBehaviorWithClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willRemoveController">willRemoveController</a></span></li>
 	
 </ul></li>
 
@@ -196,12 +203,12 @@
 	<td class="specification-value"><a href="../Protocols/KKPhysicsContactEventDelegate.html">KKPhysicsContactEventDelegate</a><br />NSCoding<br />NSCopying</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKNodeController.h<br />KKNodeController.m</td>
+	<td class="specification-value">KKNodeController.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -219,155 +226,138 @@
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/node">&nbsp;&nbsp;node</a></code>
-		<span class="tooltip"><p>The controller&rsquo;s owning node. You should never change this reference yourself!</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/userData">&nbsp;&nbsp;userData</a></code>
-		<span class="tooltip"><p>The controller&rsquo;s userData supercedes the node&rsquo;s userData and can be used in the same way. You should never change this reference yourself!</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviors">&nbsp;&nbsp;behaviors</a></code>
-		<span class="tooltip"><p>The list of behaviors of the <a href="#//api/name/node">node</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/model">&nbsp;&nbsp;model</a></code>
-		<span class="tooltip"><p>The model object associated with this controller/<a href="#//api/name/node">node</a>.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/paused">&nbsp;&nbsp;paused</a></code>
-		<span class="tooltip"><p>If the controller is paused, the <a href="#//api/name/behaviors">behaviors</a> will stop receiving updates. Behaviors receiving events should
-also check the controller&rsquo;s paused state to ensure they don&rsquo;t process/forward events while paused.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/controllerWithBehaviors:">+&nbsp;controllerWithBehaviors:</a></code>
-		<span class="tooltip"><p>Creates a controller with a list of <a href="#//api/name/behaviors">behaviors</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithBehaviors:">&ndash;&nbsp;initWithBehaviors:</a></code>
-		<span class="tooltip"><p>Creates a controller with a list of <a href="#//api/name/behaviors">behaviors</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehavior:">&ndash;&nbsp;addBehavior:</a></code>
-		<span class="tooltip"><p>Adds a behavior.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehavior:withKey:">&ndash;&nbsp;addBehavior:withKey:</a></code>
-		<span class="tooltip"><p>Adds a behavior with key.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehaviors:">&ndash;&nbsp;addBehaviors:</a></code>
-		<span class="tooltip"><p>Adds a list of <a href="#//api/name/behaviors">behaviors</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviorForKey:">&ndash;&nbsp;behaviorForKey:</a></code>
-		<span class="tooltip"><p>A key uniquely identifying the behavior.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviorKindOfClass:">&ndash;&nbsp;behaviorKindOfClass:</a></code>
-		<span class="tooltip"><p>The class uniquely identifying the behavior.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviorMemberOfClass:">&ndash;&nbsp;behaviorMemberOfClass:</a></code>
-		<span class="tooltip"><p>The class uniquely identifying the behavior.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hasBehaviors">&ndash;&nbsp;hasBehaviors</a></code>
-		<span class="tooltip"><p>YES if the controller has one or more <a href="#//api/name/behaviors">behaviors</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeBehavior:">&ndash;&nbsp;removeBehavior:</a></code>
-		<span class="tooltip"><p>Removes a specific behavior. Does nothing if the behavior isn&rsquo;t in the list.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeBehaviorForKey:">&ndash;&nbsp;removeBehaviorForKey:</a></code>
-		<span class="tooltip"><p>Removes a specific behavior by key. Does nothing if there&rsquo;s no behavior with this key in the list.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeBehaviorWithClass:">&ndash;&nbsp;removeBehaviorWithClass:</a></code>
-		<span class="tooltip"><p>Removes a specific behavior by class. Does nothing if there&rsquo;s no behavior being a member of the class in the list.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeAllBehaviors">&ndash;&nbsp;removeAllBehaviors</a></code>
-		<span class="tooltip"><p>Removes all <a href="#//api/name/behaviors">behaviors</a> from the controller.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didBeginContact:otherBody:">&ndash;&nbsp;didBeginContact:otherBody:</a></code>
-		<span class="tooltip"><p>Called when two objects&rsquo;s physics bodies get in contact.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/didEndContact:otherBody:">&ndash;&nbsp;didEndContact:otherBody:</a></code>
-		<span class="tooltip"><p>Called when two objects&rsquo;s physics bodies' contact ends.</p></span>
+		<code><a href="#//api/name/isEqualToController:">&ndash;&nbsp;isEqualToController:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willRemoveController">&ndash;&nbsp;willRemoveController</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nodeDidMoveToParent">&ndash;&nbsp;nodeDidMoveToParent</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nodeWillMoveFromParent">&ndash;&nbsp;nodeWillMoveFromParent</a></code>
 	</span>
 	
 	
@@ -394,9 +384,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>The list of behaviors of the <a href="#//api/name/node">node</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSArray *behaviors</code></div>
-	
+
+    
 	
 	
 	
@@ -433,9 +425,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>The model object associated with this controller/<a href="#//api/name/node">node</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) KKModel *model</code></div>
-	
+
+    
 	
 	
 	
@@ -472,9 +466,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>The controller&rsquo;s owning node. You should never change this reference yourself!</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, weak) SKNode *node</code></div>
-	
+
+    
 	
 	
 	
@@ -512,9 +508,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 also check the controller&rsquo;s paused state to ensure they don&rsquo;t process/forward events while paused.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL paused</code></div>
-	
+
+    
 	
 	
 	
@@ -551,9 +549,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>The controller&rsquo;s userData supercedes the node&rsquo;s userData and can be used in the same way. You should never change this reference yourself!</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, strong) NSMutableDictionary *userData</code></div>
-	
+
+    
 	
 	
 	
@@ -598,9 +598,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Creates a controller with a list of <a href="#//api/name/behaviors">behaviors</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)controllerWithBehaviors:(NSArray *)<em>behaviors</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -655,9 +657,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Adds a behavior.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addBehavior:(KKBehavior *)<em>behavior</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -699,9 +703,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Adds a behavior with key.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addBehavior:(KKBehavior *)<em>behavior</em> withKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -748,9 +754,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Adds a list of <a href="#//api/name/behaviors">behaviors</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addBehaviors:(NSArray *)<em>behaviors</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -792,9 +800,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>A key uniquely identifying the behavior.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)behaviorForKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -841,9 +851,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>The class uniquely identifying the behavior.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)behaviorKindOfClass:(Class)<em>behaviorClass</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -890,9 +902,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>The class uniquely identifying the behavior.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)behaviorMemberOfClass:(Class)<em>behaviorClass</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -930,104 +944,6 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/didBeginContact:otherBody:" title="didBeginContact:otherBody:"></a>
-	<h3 class="subsubtitle method-title">didBeginContact:otherBody:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Called when two objects&rsquo;s physics bodies get in contact.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)didBeginContact:(SKPhysicsContact *)<em>contact</em> otherBody:(SKPhysicsBody *)<em>otherBody</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>contact</em></dt>
-			<dd><p>The contact object.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>otherBody</em></dt>
-			<dd><p>The other contacting body.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKPhysicsContactEventDelegate.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/didEndContact:otherBody:" title="didEndContact:otherBody:"></a>
-	<h3 class="subsubtitle method-title">didEndContact:otherBody:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Called when two objects&rsquo;s physics bodies' contact ends.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)didEndContact:(SKPhysicsContact *)<em>contact</em> otherBody:(SKPhysicsBody *)<em>otherBody</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>contact</em></dt>
-			<dd><p>The contact object.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>otherBody</em></dt>
-			<dd><p>The other contacting body.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKPhysicsContactEventDelegate.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/hasBehaviors" title="hasBehaviors"></a>
 	<h3 class="subsubtitle method-title">hasBehaviors</h3>
 	
@@ -1037,9 +953,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>YES if the controller has one or more <a href="#//api/name/behaviors">behaviors</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (BOOL)hasBehaviors</code></div>
-	
+
+    
 	
 	
 	
@@ -1076,9 +994,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Creates a controller with a list of <a href="#//api/name/behaviors">behaviors</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initWithBehaviors:(NSArray *)<em>behaviors</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1116,6 +1036,39 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/isEqualToController:" title="isEqualToController:"></a>
+	<h3 class="subsubtitle method-title">isEqualToController:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToController:(KKNodeController *)<em>controller</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nodeDidMoveToParent" title="nodeDidMoveToParent"></a>
+	<h3 class="subsubtitle method-title">nodeDidMoveToParent</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)nodeDidMoveToParent</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nodeWillMoveFromParent" title="nodeWillMoveFromParent"></a>
+	<h3 class="subsubtitle method-title">nodeWillMoveFromParent</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)nodeWillMoveFromParent</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/removeAllBehaviors" title="removeAllBehaviors"></a>
 	<h3 class="subsubtitle method-title">removeAllBehaviors</h3>
 	
@@ -1125,9 +1078,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Removes all <a href="#//api/name/behaviors">behaviors</a> from the controller.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeAllBehaviors</code></div>
-	
+
+    
 	
 	
 	
@@ -1159,9 +1114,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Removes a specific behavior. Does nothing if the behavior isn&rsquo;t in the list.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeBehavior:(KKBehavior *)<em>behavior</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1203,9 +1160,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Removes a specific behavior by key. Does nothing if there&rsquo;s no behavior with this key in the list.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeBehaviorForKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1247,9 +1206,11 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 		<p>Removes a specific behavior by class. Does nothing if there&rsquo;s no behavior being a member of the class in the list.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeBehaviorWithClass:(Class)<em>behaviorClass</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1281,9 +1242,22 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/willRemoveController" title="willRemoveController"></a>
+	<h3 class="subsubtitle method-title">willRemoveController</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)willRemoveController</code></div>
+
+    
+</div>
+						
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -1294,9 +1268,9 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -1384,6 +1358,14 @@ also check the controller&rsquo;s paused state to ensure they don&rsquo;t proces
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

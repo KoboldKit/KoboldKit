@@ -5,9 +5,10 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/ALCaptureDevice</TokenIdentifier>
 			<Abstract type="html">UNIMPLEMENTED FOR IOS An OpenAL device for capturing sound data.
-Note: This functionality is NOT implemented in iOS OpenAL! <br>
+Note: This functionality is NOT implemented in iOS OpenAL! &lt;br&gt;
 This class is a placeholder in case such functionality is added in a future iOS SDK.</Abstract>
 			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
+            
 			
 			<NodeRef refid="2"/>
 		</Token>
@@ -16,172 +17,187 @@ This class is a placeholder in case such functionality is added in a future iOS 
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/setCaptureSamples:</TokenIdentifier>
 			<Abstract type="html">The number of capture samples available.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int captureSamples</Declaration>
 			
 			
 			<Anchor>//api/name/captureSamples</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/captureSamples</TokenIdentifier>
 			<Abstract type="html">The number of capture samples available.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int captureSamples</Declaration>
 			
 			
 			<Anchor>//api/name/captureSamples</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALCaptureDevice/captureSamples</TokenIdentifier>
 			<Abstract type="html">The number of capture samples available.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int captureSamples</Declaration>
 			
 			
 			<Anchor>//api/name/captureSamples</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/setDevice:</TokenIdentifier>
 			<Abstract type="html">The OpenAL device pointer.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) ALCdevice *device</Declaration>
 			
 			
 			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/device</TokenIdentifier>
 			<Abstract type="html">The OpenAL device pointer.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) ALCdevice *device</Declaration>
 			
 			
 			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALCaptureDevice/device</TokenIdentifier>
 			<Abstract type="html">The OpenAL device pointer.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) ALCdevice *device</Declaration>
 			
 			
 			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/setExtensions:</TokenIdentifier>
 			<Abstract type="html">List of strings describing all extensions available on this device (NSString*).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) NSArray *extensions</Declaration>
 			
 			
 			<Anchor>//api/name/extensions</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/extensions</TokenIdentifier>
 			<Abstract type="html">List of strings describing all extensions available on this device (NSString*).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) NSArray *extensions</Declaration>
 			
 			
 			<Anchor>//api/name/extensions</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALCaptureDevice/extensions</TokenIdentifier>
 			<Abstract type="html">List of strings describing all extensions available on this device (NSString*).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) NSArray *extensions</Declaration>
 			
 			
 			<Anchor>//api/name/extensions</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/setMajorVersion:</TokenIdentifier>
 			<Abstract type="html">The specification revision for this implementation (major version).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int majorVersion</Declaration>
 			
 			
 			<Anchor>//api/name/majorVersion</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/majorVersion</TokenIdentifier>
 			<Abstract type="html">The specification revision for this implementation (major version).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int majorVersion</Declaration>
 			
 			
 			<Anchor>//api/name/majorVersion</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALCaptureDevice/majorVersion</TokenIdentifier>
 			<Abstract type="html">The specification revision for this implementation (major version).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int majorVersion</Declaration>
 			
 			
 			<Anchor>//api/name/majorVersion</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/setMinorVersion:</TokenIdentifier>
 			<Abstract type="html">The specification revision for this implementation (minor version).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int minorVersion</Declaration>
 			
 			
 			<Anchor>//api/name/minorVersion</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/minorVersion</TokenIdentifier>
 			<Abstract type="html">The specification revision for this implementation (minor version).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int minorVersion</Declaration>
 			
 			
 			<Anchor>//api/name/minorVersion</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALCaptureDevice/minorVersion</TokenIdentifier>
 			<Abstract type="html">The specification revision for this implementation (minor version).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int minorVersion</Declaration>
 			
 			
 			<Anchor>//api/name/minorVersion</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALCaptureDevice/deviceWithDeviceSpecifier:frequency:format:bufferSize:</TokenIdentifier>
 			<Abstract type="html">Open the specified device.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>+ (id)deviceWithDeviceSpecifier:(NSString *)deviceSpecifier frequency:(ALCuint)frequency format:(ALCenum)format bufferSize:(ALCsizei)bufferSize</Declaration>
 			<Parameters>
@@ -201,12 +217,13 @@ This class is a placeholder in case such functionality is added in a future iOS 
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new capture device.</Abstract></ReturnValue>
 			<Anchor>//api/name/deviceWithDeviceSpecifier:frequency:format:bufferSize:</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/initWithDeviceSpecifier:frequency:format:bufferSize:</TokenIdentifier>
 			<Abstract type="html">Open the specified device.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>- (id)initWithDeviceSpecifier:(NSString *)deviceSpecifier frequency:(ALCuint)frequency format:(ALCenum)format bufferSize:(ALCsizei)bufferSize</Declaration>
 			<Parameters>
@@ -226,35 +243,38 @@ This class is a placeholder in case such functionality is added in a future iOS 
 			</Parameters>
 			<ReturnValue><Abstract type="html">The initialized capture device.</Abstract></ReturnValue>
 			<Anchor>//api/name/initWithDeviceSpecifier:frequency:format:bufferSize:</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/startCapture</TokenIdentifier>
 			<Abstract type="html">Start capturing samples.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>- (bool)startCapture</Declaration>
 			
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/startCapture</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/stopCapture</TokenIdentifier>
 			<Abstract type="html">Stop capturing samples.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>- (bool)stopCapture</Declaration>
 			
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/stopCapture</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/moveSamples:toBuffer:</TokenIdentifier>
 			<Abstract type="html">Move captured samples to the specified buffer.
 This method will fail if less than the specified number of samples have been captured.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>- (bool)moveSamples:(ALCsizei)numSamples toBuffer:(ALCvoid *)buffer</Declaration>
 			<Parameters>
@@ -268,12 +288,13 @@ This method will fail if less than the specified number of samples have been cap
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/moveSamples:toBuffer:</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/isExtensionPresent:</TokenIdentifier>
 			<Abstract type="html">Check if the specified extension is present.</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>- (bool)isExtensionPresent:(NSString *)name</Declaration>
 			<Parameters>
@@ -284,12 +305,13 @@ This method will fail if less than the specified number of samples have been cap
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the extension is present.</Abstract></ReturnValue>
 			<Anchor>//api/name/isExtensionPresent:</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALCaptureDevice/getProcAddress:</TokenIdentifier>
 			<Abstract type="html">Get the address of the specified procedure (C function address).</Abstract>
-			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>			
+			<DeclaredIn>ALCaptureDevice.h</DeclaredIn>
 			
 			<Declaration>- (void *)getProcAddress:(NSString *)functionName</Declaration>
 			<Parameters>
@@ -298,9 +320,11 @@ This method will fail if less than the specified number of samples have been cap
 					<Abstract type="html">The name of the procedure to get.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">the procedure's address, or NULL if it wasn't found.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">the procedure&apos;s address, or NULL if it wasn&apos;t found.</Abstract></ReturnValue>
 			<Anchor>//api/name/getProcAddress:</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

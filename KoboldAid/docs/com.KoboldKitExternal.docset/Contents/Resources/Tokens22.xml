@@ -1,161 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALMoveByAction.html">
+	<File path="Classes/OALMoveToAction.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALMoveByAction</TokenIdentifier>
-			<Abstract type="html">Moves the target from its current position by the specified
-delta over time in 3D space.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/cl/OALMoveToAction</TokenIdentifier>
+			<Abstract type="html">Moves the target from its current position to the specified
+position over time in 3D space.</Abstract>
 			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+            
 			
 			<NodeRef refid="22"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/setDelta:</TokenIdentifier>
-			<Abstract type="html">The amount to move the target by.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/setPosition:</TokenIdentifier>
+			<Abstract type="html">The position to move the target to.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) ALPoint delta</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
 			
 			
-			<Anchor>//api/name/delta</Anchor>
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/delta</TokenIdentifier>
-			<Abstract type="html">The amount to move the target by.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/position</TokenIdentifier>
+			<Abstract type="html">The position to move the target to.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) ALPoint delta</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
 			
 			
-			<Anchor>//api/name/delta</Anchor>
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALMoveByAction/delta</TokenIdentifier>
-			<Abstract type="html">The amount to move the target by.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/OALMoveToAction/position</TokenIdentifier>
+			<Abstract type="html">The position to move the target to.</Abstract>
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) ALPoint delta</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
 			
 			
-			<Anchor>//api/name/delta</Anchor>
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/setUnitsPerSecond:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/setUnitsPerSecond:</TokenIdentifier>
 			<Abstract type="html">The speed at which to move the target.
 If this is 0, the target will be moved at the speed determined by duration.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
 			
 			
 			<Anchor>//api/name/unitsPerSecond</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/unitsPerSecond</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/unitsPerSecond</TokenIdentifier>
 			<Abstract type="html">The speed at which to move the target.
 If this is 0, the target will be moved at the speed determined by duration.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
 			
 			
 			<Anchor>//api/name/unitsPerSecond</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALMoveByAction/unitsPerSecond</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/OALMoveToAction/unitsPerSecond</TokenIdentifier>
 			<Abstract type="html">The speed at which to move the target.
 If this is 0, the target will be moved at the speed determined by duration.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float unitsPerSecond</Declaration>
 			
 			
 			<Anchor>//api/name/unitsPerSecond</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALMoveByAction/actionWithDuration:delta:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/OALMoveToAction/actionWithDuration:position:</TokenIdentifier>
 			<Abstract type="html">Create a new action.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>+ (id)actionWithDuration:(float)duration delta:(ALPoint)delta</Declaration>
+			<Declaration>+ (id)actionWithDuration:(float)duration position:(ALPoint)position</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>duration</Name>
 					<Abstract type="html">The duration of the move.</Abstract>
 				</Parameter><Parameter>
-					<Name>delta</Name>
-					<Abstract type="html">The amount to move by.</Abstract>
+					<Name>position</Name>
+					<Abstract type="html">The position to move to.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithDuration:delta:</Anchor>
+			<Anchor>//api/name/actionWithDuration:position:</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALMoveByAction/actionWithUnitsPerSecond:delta:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/OALMoveToAction/actionWithUnitsPerSecond:position:</TokenIdentifier>
 			<Abstract type="html">Create a new action.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>+ (id)actionWithUnitsPerSecond:(float)unitsPerSecond delta:(ALPoint)delta</Declaration>
+			<Declaration>+ (id)actionWithUnitsPerSecond:(float)unitsPerSecond position:(ALPoint)position</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>unitsPerSecond</Name>
 					<Abstract type="html">The rate of movement.</Abstract>
 				</Parameter><Parameter>
-					<Name>delta</Name>
-					<Abstract type="html">The amount to move by.</Abstract>
+					<Name>position</Name>
+					<Abstract type="html">The position to move to.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithUnitsPerSecond:delta:</Anchor>
+			<Anchor>//api/name/actionWithUnitsPerSecond:position:</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/initWithDuration:delta:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/initWithDuration:position:</TokenIdentifier>
 			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithDuration:(float)duration delta:(ALPoint)delta</Declaration>
+			<Declaration>- (id)initWithDuration:(float)duration position:(ALPoint)position</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>duration</Name>
 					<Abstract type="html">The duration of the move.</Abstract>
 				</Parameter><Parameter>
-					<Name>delta</Name>
-					<Abstract type="html">The amount to move by.</Abstract>
+					<Name>position</Name>
+					<Abstract type="html">The position to move to.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithDuration:delta:</Anchor>
+			<Anchor>//api/name/initWithDuration:position:</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALMoveByAction/initWithUnitsPerSecond:delta:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/OALMoveToAction/initWithUnitsPerSecond:position:</TokenIdentifier>
 			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<DeclaredIn>OALAudioActions.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithUnitsPerSecond:(float)unitsPerSecond delta:(ALPoint)delta</Declaration>
+			<Declaration>- (id)initWithUnitsPerSecond:(float)unitsPerSecond position:(ALPoint)position</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>unitsPerSecond</Name>
 					<Abstract type="html">The rate of movement.</Abstract>
 				</Parameter><Parameter>
-					<Name>delta</Name>
-					<Abstract type="html">The amount to move by.</Abstract>
+					<Name>position</Name>
+					<Abstract type="html">The position to move to.</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithUnitsPerSecond:delta:</Anchor>
+			<Anchor>//api/name/initWithUnitsPerSecond:position:</Anchor>
+            <NodeRef refid="22"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

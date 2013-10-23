@@ -1,203 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALAudioTracks.html">
+	<File path="Classes/OALCallAction.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALAudioTracks</TokenIdentifier>
-			<Abstract type="html">Keeps track of all AudioTrack objects.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/OALCallAction</TokenIdentifier>
+			<Abstract type="html">Calls a selector on a target.
+This action will ignore whatever target it is run against,
+and will invoke the selector on the target specified at creation
+time.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+            
 			
 			<NodeRef refid="19"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/setPaused:</TokenIdentifier>
-			<Abstract type="html">Pauses/unpauses all audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
-			
-			
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/paused</TokenIdentifier>
-			<Abstract type="html">Pauses/unpauses all audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
-			
-			
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALAudioTracks/paused</TokenIdentifier>
-			<Abstract type="html">Pauses/unpauses all audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) bool paused</Declaration>
-			
-			
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/setMuted:</TokenIdentifier>
-			<Abstract type="html">Mutes/unmutes all audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
-			
-			
-			<Anchor>//api/name/muted</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/muted</TokenIdentifier>
-			<Abstract type="html">Mutes/unmutes all audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
-			
-			
-			<Anchor>//api/name/muted</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALAudioTracks/muted</TokenIdentifier>
-			<Abstract type="html">Mutes/unmutes all audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readwrite, assign) bool muted</Declaration>
-			
-			
-			<Anchor>//api/name/muted</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/setTracks:</TokenIdentifier>
-			<Abstract type="html">All instantiated audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) NSArray *tracks</Declaration>
-			
-			
-			<Anchor>//api/name/tracks</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/tracks</TokenIdentifier>
-			<Abstract type="html">All instantiated audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) NSArray *tracks</Declaration>
-			
-			
-			<Anchor>//api/name/tracks</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALAudioTracks/tracks</TokenIdentifier>
-			<Abstract type="html">All instantiated audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) NSArray *tracks</Declaration>
-			
-			
-			<Anchor>//api/name/tracks</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/stopAllTracks</TokenIdentifier>
-			<Abstract type="html">Stop playback on all audio tracks.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>- (void)stopAllTracks</Declaration>
-			
-			
-			<Anchor>//api/name/stopAllTracks</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/notifyTrackInitializing:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Notify that a track is initializing.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>- (void)notifyTrackInitializing:(OALAudioTrack *)track</Declaration>
-			
-			
-			<Anchor>//api/name/notifyTrackInitializing:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/notifyTrackDeallocating:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Notify that a track is deallocating.</Abstract>
-			<DeclaredIn>OALAudioTracks.h</DeclaredIn>			
-			
-			<Declaration>- (void)notifyTrackDeallocating:(OALAudioTrack *)track</Declaration>
-			
-			
-			<Anchor>//api/name/notifyTrackDeallocating:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/addSuspendListener:</TokenIdentifier>
-			<Abstract type="html">Add a listener that will receive manual suspend and interrupt events.</Abstract>
-			<DeclaredIn>OALAudioTracks.m</DeclaredIn>			
-			
-			<Declaration>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>listener</Name>
-					<Abstract type="html">The listener to register with this handler.</Abstract>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/addSuspendListener:</Anchor>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithCallTarget:selector:</Anchor>
+            <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/removeSuspendListener:</TokenIdentifier>
-			<Abstract type="html">Remove a registered listener.</Abstract>
-			<DeclaredIn>OALAudioTracks.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:withObject:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)listener</Declaration>
+			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)object</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>listener</Name>
-					<Abstract type="html">The listener to unregister from this handler.</Abstract>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to pass to the selector.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/removeSuspendListener:</Anchor>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithCallTarget:selector:withObject:</Anchor>
+            <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/suspended</TokenIdentifier>
-			<Abstract type="html">If YES, this object is suspended.</Abstract>
-			<DeclaredIn>OALAudioTracks.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:withObject:withObject:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>- (bool)suspended</Declaration>
-			
-			
-			<Anchor>//api/name/suspended</Anchor>
+			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)firstObject withObject:(id)secondObject</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter><Parameter>
+					<Name>firstObject</Name>
+					<Abstract type="html">The first object to pass to the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>secondObject</Name>
+					<Abstract type="html">The second object to pass to the selector.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithCallTarget:selector:withObject:withObject:</Anchor>
+            <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTracks/pollDeviceTime</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Read deviceCurrentTime from an audio player
-as a workaround for a bug in iOS devices that causes the value
-to reset to 0 in certain circumstances.</Abstract>
-			<DeclaredIn>OALAudioTracks.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>- (void)pollDeviceTime</Declaration>
-			
-			
-			<Anchor>//api/name/pollDeviceTime</Anchor>
+			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCallTarget:selector:</Anchor>
+            <NodeRef refid="19"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:withObject:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to pass to the selector.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Initialize an action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCallTarget:selector:withObject:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:withObject:withObject:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)firstObject withObject:(id)secondObject</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callTarget</Name>
+					<Abstract type="html">The target to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke.</Abstract>
+				</Parameter><Parameter>
+					<Name>firstObject</Name>
+					<Abstract type="html">The first object to pass to the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>secondObject</Name>
+					<Abstract type="html">The second object to pass to the selector.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCallTarget:selector:withObject:withObject:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

@@ -1,287 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKScene.html">
+	<File path="Classes/KKPointArray.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKScene</TokenIdentifier>
-			<Abstract type="html">KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
-dispatches events (input, physics).</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKPointArray</TokenIdentifier>
+			<Abstract type="html">A simple and efficient array of CGPoint structs.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
+            
 			
 			<NodeRef refid="26"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/setFrameCount:</TokenIdentifier>
-			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/setCount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
 			
-			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
-			<Anchor>//api/name/frameCount</Anchor>
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/frameCount</TokenIdentifier>
-			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/count</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
 			
-			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
-			<Anchor>//api/name/frameCount</Anchor>
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKScene/frameCount</TokenIdentifier>
-			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKPointArray/count</TokenIdentifier>
+			<Abstract type="html">Returns the number of points in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
 			
-			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game's update cycle to the framerate.
-For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
-			<Anchor>//api/name/frameCount</Anchor>
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/setKkView:</TokenIdentifier>
-			<Abstract type="html">The view cast to a KKView object.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/setPoints:</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
 			
-			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
-			<Anchor>//api/name/kkView</Anchor>
+			
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/kkView</TokenIdentifier>
-			<Abstract type="html">The view cast to a KKView object.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/points</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
 			
-			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
-			<Anchor>//api/name/kkView</Anchor>
+			
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKScene/kkView</TokenIdentifier>
-			<Abstract type="html">The view cast to a KKView object.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKPointArray/points</TokenIdentifier>
+			<Abstract type="html">Returns the points array. Caution: Do not free() this buffer! Do not use index out of bounds! There are no safety checks here!</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
 			
-			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
-			<Anchor>//api/name/kkView</Anchor>
+			
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addSceneEventsObserver:</TokenIdentifier>
-			<Abstract type="html">Adds a scene event observer.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKPointArray/pointArrayWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Creates a points array, reserving capacity amount of memory for points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>- (void)addSceneEventsObserver:(id)observer</Declaration>
+			<Declaration>+ (id)pointArrayWithCapacity:(NSUInteger)capacity</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>observer</Name>
-					<Abstract type="html">The receiver of scene events.</Abstract>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity reserved for the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/pointArrayWithCapacity:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKPointArray/pointArrayWithPoints:count:</TokenIdentifier>
+			<Abstract type="html">Creates a points array by copying count points from the points buffer (array). You can delete (free) your points buffer after calling this method.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
+			
+			<Declaration>+ (id)pointArrayWithPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">A memory buffer containing CGPoints. The buffer is copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of CGPoint in the buffer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/pointArrayWithPoints:count:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/addPoints:count:</TokenIdentifier>
+			<Abstract type="html">Adds the given number of points from an existing CGPoint array or memory buffer.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
+			
+			<Declaration>- (void)addPoints:(CGPoint *)points count:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Memeory buffer containing points. Buffer is copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of CGPoint in the buffer.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addSceneEventsObserver:</Anchor>
+			<Anchor>//api/name/addPoints:count:</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeSceneEventsObserver:</TokenIdentifier>
-			<Abstract type="html">Removes a scene event observer.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/addPoint:</TokenIdentifier>
+			<Abstract type="html">Adds a single point to the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>- (void)removeSceneEventsObserver:(id)observer</Declaration>
+			<Declaration>- (void)addPoint:(CGPoint)point</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>observer</Name>
-					<Abstract type="html">The receiver of scene events. </Abstract>
+					<Name>point</Name>
+					<Abstract type="html">The point to add.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/removeSceneEventsObserver:</Anchor>
+			<Anchor>//api/name/addPoint:</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addPhysicsContactEventsObserver:</TokenIdentifier>
-			<Abstract type="html">Adds a physics contact event observer.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removeAllPoints</TokenIdentifier>
+			<Abstract type="html">Removes all points from the array. You can then start re-adding points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
 			
-			<Declaration>- (void)addPhysicsContactEventsObserver:(id&lt;KKPhysicsContactEventDelegate&gt;)observer</Declaration>
+			<Declaration>- (void)removeAllPoints</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllPoints</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/pointAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the point at the given index. If the index is out of bounds an exception is raised.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)pointAtIndex:(NSUInteger)index</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>observer</Name>
-					<Abstract type="html">The receiver of scene events.</Abstract>
+					<Name>index</Name>
+					<Abstract type="html">The index of a point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The point at the given index.</Abstract></ReturnValue>
+			<Anchor>//api/name/pointAtIndex:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/lastPoint</TokenIdentifier>
+			<Abstract type="html">The last point in the array.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)lastPoint</Declaration>
+			
+			<ReturnValue><Abstract type="html">The last point in the array.</Abstract></ReturnValue>
+			<Anchor>//api/name/lastPoint</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removeLastPoint</TokenIdentifier>
+			<Abstract type="html">Removes the last point from the array. Does nothing if the array is empty.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
+			
+			<Declaration>- (void)removeLastPoint</Declaration>
+			
+			
+			<Anchor>//api/name/removeLastPoint</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKPointArray/removePointsStartingAtIndex:</TokenIdentifier>
+			<Abstract type="html">Removes all points from index to last point. Does nothing if index &gt;= count. The array then contains (index - 1) points.</Abstract>
+			<DeclaredIn>KKPointArray.h</DeclaredIn>
+			
+			<Declaration>- (void)removePointsStartingAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The lowest index from which to remove all remaining points.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addPhysicsContactEventsObserver:</Anchor>
+			<Anchor>//api/name/removePointsStartingAtIndex:</Anchor>
+            <NodeRef refid="26"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removePhysicsContactEventsObserver:</TokenIdentifier>
-			<Abstract type="html">Removes a physics contact event observer.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
-			
-			<Declaration>- (void)removePhysicsContactEventsObserver:(id&lt;KKPhysicsContactEventDelegate&gt;)observer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>observer</Name>
-					<Abstract type="html">The receiver of scene events.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removePhysicsContactEventsObserver:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addInputEventsObserver:</TokenIdentifier>
-			<Abstract type="html">Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
-Note: this is a preliminary, inefficient system. It will eventually be replaced.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
-			
-			<Declaration>- (void)addInputEventsObserver:(id)observer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>observer</Name>
-					<Abstract type="html">Any object that implements touch, mouse, or other input events.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addInputEventsObserver:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeInputEventsObserver:</TokenIdentifier>
-			<Abstract type="html">Unregisters a class as generic input receiver.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeInputEventsObserver:(id)observer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>observer</Name>
-					<Abstract type="html">An object that was previously registered as input receiver.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeInputEventsObserver:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/dumpSceneGraph:</TokenIdentifier>
-			<Abstract type="html">Dumps the scene graph to a string.</Abstract>
-			<DeclaredIn>KKScene.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)dumpSceneGraph:(KKSceneGraphDumpOptions)options</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>options</Name>
-					<Abstract type="html">Determines what will be included in the dump.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A string containing the textual dump of the scene graph.</Abstract></ReturnValue>
-			<Anchor>//api/name/dumpSceneGraph:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/update:</TokenIdentifier>
-			<Abstract type="html">The standard update method.</Abstract>
-			<DeclaredIn>KKScene.m</DeclaredIn>			
-			
-			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>currentTime</Name>
-					<Abstract type="html">The time elapsed since app launch.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/update:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didEvaluateActions</TokenIdentifier>
-			<Abstract type="html">Called after actions have been evaluated.</Abstract>
-			<DeclaredIn>KKScene.m</DeclaredIn>			
-			
-			<Declaration>- (void)didEvaluateActions</Declaration>
-			
-			
-			<Anchor>//api/name/didEvaluateActions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">Called after physics world has been simulated.</Abstract>
-			<DeclaredIn>KKScene.m</DeclaredIn>			
-			
-			<Declaration>- (void)didSimulatePhysics</Declaration>
-			
-			
-			<Anchor>//api/name/didSimulatePhysics</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/willMoveFromView:</TokenIdentifier>
-			<Abstract type="html">Called when scene will leave the view.</Abstract>
-			<DeclaredIn>KKScene.m</DeclaredIn>			
-			
-			<Declaration>- (void)willMoveFromView:(SKView *)view</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>view</Name>
-					<Abstract type="html">The view the scene is leaving. Identical to scene.view.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/willMoveFromView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didMoveToView:</TokenIdentifier>
-			<Abstract type="html">Called when scene will attach to a view.</Abstract>
-			<DeclaredIn>KKScene.m</DeclaredIn>			
-			
-			<Declaration>- (void)didMoveToView:(SKView *)view</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>view</Name>
-					<Abstract type="html">The view the scene is attached to. Identical to scene.view.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didMoveToView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKScene/didChangeSize:</TokenIdentifier>
-			<Abstract type="html">Called when scene changed its size, ie after rotating or changing views.</Abstract>
-			<DeclaredIn>KKScene.m</DeclaredIn>			
-			
-			<Declaration>- (void)didChangeSize:(CGSize)oldSize</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>oldSize</Name>
-					<Abstract type="html">The scene's previous size. The scene.size property contains the new size.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didChangeSize:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

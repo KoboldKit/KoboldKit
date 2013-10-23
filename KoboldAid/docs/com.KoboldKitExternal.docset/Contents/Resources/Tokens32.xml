@@ -1,71 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OAL_AsyncAudioTrackPlayOperation.html">
+	<File path="Categories/NSMutableArray+WeakReferences.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OAL_AsyncAudioTrackPlayOperation</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) NSOperation for playing an audio file asynchronously.</Abstract>
-			<DeclaredIn>OALAudioTrack.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableArray(WeakReferences)</TokenIdentifier>
+			<Abstract type="html">Adds to NSMutableArray the ability to create an array that keeps weak references.</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>
+            
 			
 			<NodeRef refid="32"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OAL_AsyncAudioTrackPlayOperation/operationWithTrack:url:loops:target:selector:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Create an asynchronous play operation.</Abstract>
-			<DeclaredIn>OALAudioTrack.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSMutableArray/mutableArrayUsingWeakReferences</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableArray that uses weak references.</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>
 			
-			<Declaration>+ (id)operationWithTrack:(OALAudioTrack *)track url:(NSURL *)url loops:(NSInteger)loops target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>track</Name>
-					<Abstract type="html">the audio track to perform the operation on.</Abstract>
-				</Parameter><Parameter>
-					<Name>url</Name>
-					<Abstract type="html">The URL of the file to play.</Abstract>
-				</Parameter><Parameter>
-					<Name>loops</Name>
-					<Abstract type="html">The number of times to loop playback (-1 = forever).</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to inform when playback finishes.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">the selector to call when playback finishes.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">a new operation.</Abstract></ReturnValue>
-			<Anchor>//api/name/operationWithTrack:url:loops:target:selector:</Anchor>
+			<Declaration>+ (id)mutableArrayUsingWeakReferences</Declaration>
+			
+			
+			<Anchor>//api/name/mutableArrayUsingWeakReferences</Anchor>
+            <NodeRef refid="32"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OAL_AsyncAudioTrackPlayOperation/initWithTrack:url:loops:target:selector:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Initialize an asynchronous play operation.</Abstract>
-			<DeclaredIn>OALAudioTrack.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSMutableArray/mutableArrayUsingWeakReferencesWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableArray that uses weak references.</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithTrack:(OALAudioTrack *)track url:(NSURL *)url loops:(NSInteger)loops target:(id)target selector:(SEL)selector</Declaration>
+			<Declaration>+ (id)mutableArrayUsingWeakReferencesWithCapacity:(NSUInteger)capacity</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>track</Name>
-					<Abstract type="html">the audio track to perform the operation on.</Abstract>
-				</Parameter><Parameter>
-					<Name>url</Name>
-					<Abstract type="html">The URL of the file to play.</Abstract>
-				</Parameter><Parameter>
-					<Name>loops</Name>
-					<Abstract type="html">The number of times to loop playback (-1 = forever).</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to inform when playback finishes.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">the selector to call when playback finishes.</Abstract>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity of the array.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The initialized operation.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithTrack:url:loops:target:selector:</Anchor>
+			
+			<Anchor>//api/name/mutableArrayUsingWeakReferencesWithCapacity:</Anchor>
+            <NodeRef refid="32"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSMutableArray/newMutableArrayUsingWeakReferences</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableArray that uses weak references (no pending autorelease).</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>
+			
+			<Declaration>+ (id)newMutableArrayUsingWeakReferences</Declaration>
+			
+			
+			<Anchor>//api/name/newMutableArrayUsingWeakReferences</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSMutableArray/newMutableArrayUsingWeakReferencesWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Create an NSMutableArray that uses weak references (no pending autorelease).</Abstract>
+			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>
+			
+			<Declaration>+ (id)newMutableArrayUsingWeakReferencesWithCapacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity of the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/newMutableArrayUsingWeakReferencesWithCapacity:</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

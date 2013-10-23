@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKRemoveOnNotificationBehavior.html">
+	<File path="Classes/KKNotifyOnContactBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKRemoveOnNotificationBehavior</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/KKNotifyOnContactBehavior</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>KKRemoveOnNotificationBehavior.h</DeclaredIn>
+			<DeclaredIn>KKNotifyOnContactBehavior.h</DeclaredIn>
+            
 			
 			<NodeRef refid="25"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKRemoveOnNotificationBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
-			<DeclaredIn>KKRemoveOnNotificationBehavior.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNotifyOnContactBehavior/setNotification:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNotifyOnContactBehavior.h</DeclaredIn>
 			
-			<Declaration>- (void)didJoinController</Declaration>
+			<Declaration>@property (atomic, copy) NSString *notification</Declaration>
 			
 			
-			<Anchor>//api/name/didJoinController</Anchor>
+			<Anchor>//api/name/notification</Anchor>
+            <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKRemoveOnNotificationBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
-			<DeclaredIn>KKRemoveOnNotificationBehavior.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKNotifyOnContactBehavior/notification</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNotifyOnContactBehavior.h</DeclaredIn>
 			
-			<Declaration>- (void)didLeaveController</Declaration>
+			<Declaration>@property (atomic, copy) NSString *notification</Declaration>
 			
 			
-			<Anchor>//api/name/didLeaveController</Anchor>
+			<Anchor>//api/name/notification</Anchor>
+            <NodeRef refid="25"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKNotifyOnContactBehavior/notification</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNotifyOnContactBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *notification</Declaration>
+			
+			
+			<Anchor>//api/name/notification</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

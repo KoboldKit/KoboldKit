@@ -1,69 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALActionManager.html">
+	<File path="Classes/OALAudioFile.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALActionManager</TokenIdentifier>
-			<Abstract type="html">Manages all ObjectAL actions.</Abstract>
-			<DeclaredIn>OALActionManager.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/OALAudioFile</TokenIdentifier>
+			<Abstract type="html">Maintains an open audio file and allows loading data from that file into
+new ALBuffer objects.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+            
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALActionManager/stopAllActions</TokenIdentifier>
-			<Abstract type="html">Stops ALL running actions on ALL targets.</Abstract>
-			<DeclaredIn>OALActionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/setUrl:</TokenIdentifier>
+			<Abstract type="html">The URL of the audio file</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
 			
-			<Declaration>- (void)stopAllActions</Declaration>
+			<Declaration>@property (nonatomic, readonly, retain) NSURL *url</Declaration>
 			
 			
-			<Anchor>//api/name/stopAllActions</Anchor>
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALActionManager/notifyActionStarted:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Used by OALAction to announce that it is starting.</Abstract>
-			<DeclaredIn>OALActionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/url</TokenIdentifier>
+			<Abstract type="html">The URL of the audio file</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
 			
-			<Declaration>- (void)notifyActionStarted:(OALAction *)action</Declaration>
+			<Declaration>@property (nonatomic, readonly, retain) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioFile/url</TokenIdentifier>
+			<Abstract type="html">The URL of the audio file</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/setStreamDescription:</TokenIdentifier>
+			<Abstract type="html">A description of the audio data in this file.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) AudioStreamBasicDescription *streamDescription</Declaration>
+			
+			
+			<Anchor>//api/name/streamDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/streamDescription</TokenIdentifier>
+			<Abstract type="html">A description of the audio data in this file.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) AudioStreamBasicDescription *streamDescription</Declaration>
+			
+			
+			<Anchor>//api/name/streamDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioFile/streamDescription</TokenIdentifier>
+			<Abstract type="html">A description of the audio data in this file.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) AudioStreamBasicDescription *streamDescription</Declaration>
+			
+			
+			<Anchor>//api/name/streamDescription</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/setTotalFrames:</TokenIdentifier>
+			<Abstract type="html">The total number of audio frames in this file</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SInt64 totalFrames</Declaration>
+			
+			
+			<Anchor>//api/name/totalFrames</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/totalFrames</TokenIdentifier>
+			<Abstract type="html">The total number of audio frames in this file</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SInt64 totalFrames</Declaration>
+			
+			
+			<Anchor>//api/name/totalFrames</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioFile/totalFrames</TokenIdentifier>
+			<Abstract type="html">The total number of audio frames in this file</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) SInt64 totalFrames</Declaration>
+			
+			
+			<Anchor>//api/name/totalFrames</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/setReduceToMono:</TokenIdentifier>
+			<Abstract type="html">If YES, reduce any stereo data to mono (stereo samples don&apos;t support panning or positional audio).</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool reduceToMono</Declaration>
+			
+			
+			<Anchor>//api/name/reduceToMono</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/reduceToMono</TokenIdentifier>
+			<Abstract type="html">If YES, reduce any stereo data to mono (stereo samples don&apos;t support panning or positional audio).</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool reduceToMono</Declaration>
+			
+			
+			<Anchor>//api/name/reduceToMono</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALAudioFile/reduceToMono</TokenIdentifier>
+			<Abstract type="html">If YES, reduce any stereo data to mono (stereo samples don&apos;t support panning or positional audio).</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) bool reduceToMono</Declaration>
+			
+			
+			<Anchor>//api/name/reduceToMono</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALAudioFile/fileWithUrl:reduceToMono:</TokenIdentifier>
+			<Abstract type="html">Open the audio file at the specified URL.
+*
+* @param url The URL to open the audio file from.
+* @param reduceToMono If YES, reduce any stereo track to mono
+                       (stereo samples don&apos;t support panning or positional audio).
+* @return a new audio file object.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>+ (OALAudioFile *)fileWithUrl:(NSURL *)url reduceToMono:(bool)reduceToMono</Declaration>
+			
+			
+			<Anchor>//api/name/fileWithUrl:reduceToMono:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/initWithUrl:reduceToMono:</TokenIdentifier>
+			<Abstract type="html">Initialize this object with the audio file at the specified URL.
+*
+* @param url The URL to open the audio file from.
+* @param reduceToMono If YES, reduce any stereo track to mono
+                       (stereo samples don&apos;t support panning or positional audio).
+* @return the initialized audio file object.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUrl:(NSURL *)url reduceToMono:(bool)reduceToMono</Declaration>
+			
+			
+			<Anchor>//api/name/initWithUrl:reduceToMono:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/audioDataWithStartFrame:numFrames:bufferSize:</TokenIdentifier>
+			<Abstract type="html">Read audio data from this file into a new buffer.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
+			
+			<Declaration>- (void *)audioDataWithStartFrame:(SInt64)startFrame numFrames:(SInt64)numFrames bufferSize:(UInt32 *)bufferSize</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>action</Name>
-					<Abstract type="html">The action that is starting.</Abstract>
+					<Name>startFrame</Name>
+					<Abstract type="html">The starting audio frame to read data from.</Abstract>
+				</Parameter><Parameter>
+					<Name>numFrames</Name>
+					<Abstract type="html">The number of frames to read.</Abstract>
+				</Parameter><Parameter>
+					<Name>bufferSize</Name>
+					<Abstract type="html">On successful return, contains the size of the returned buffer, in bytes.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/notifyActionStarted:</Anchor>
+			<ReturnValue><Abstract type="html">The audio data or nil on error.  You are responsible for calling free() on the data.</Abstract></ReturnValue>
+			<Anchor>//api/name/audioDataWithStartFrame:numFrames:bufferSize:</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALActionManager/notifyActionStopped:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Used by OALAction to announce that it is stopping.</Abstract>
-			<DeclaredIn>OALActionManager.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALAudioFile/bufferNamed:startFrame:numFrames:</TokenIdentifier>
+			<Abstract type="html">Create a new ALBuffer with the contents of this file.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
 			
-			<Declaration>- (void)notifyActionStopped:(OALAction *)action</Declaration>
+			<Declaration>- (ALBuffer *)bufferNamed:(NSString *)name startFrame:(SInt64)startFrame numFrames:(SInt64)numFrames</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>action</Name>
-					<Abstract type="html">The action that is stopping.</Abstract>
+					<Name>name</Name>
+					<Abstract type="html">The name to be given to this ALBuffer.</Abstract>
+				</Parameter><Parameter>
+					<Name>startFrame</Name>
+					<Abstract type="html">The starting audio frame to read data from.</Abstract>
+				</Parameter><Parameter>
+					<Name>numFrames</Name>
+					<Abstract type="html">The number of frames to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/notifyActionStopped:</Anchor>
+			<ReturnValue><Abstract type="html">a new ALBuffer containing the audio data.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferNamed:startFrame:numFrames:</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALActionManager/doResetTimeDelta:</TokenIdentifier>
-			<Abstract type="html">Resets the time delta in cases where proper time delta calculations become impossible.</Abstract>
-			<DeclaredIn>OALActionManager.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALAudioFile/bufferFromUrl:reduceToMono:</TokenIdentifier>
+			<Abstract type="html">Convenience method to load the entire contents of a URL into a new ALBuffer.
+*
+* @param url The URL to open the audio file from.
+* @param reduceToMono If YES, reduce any stereo track to mono
+                       (stereo samples don&apos;t support panning or positional audio).
+* @return an ALBuffer object.</Abstract>
+			<DeclaredIn>OALAudioFile.h</DeclaredIn>
 			
-			<Declaration>- (void)doResetTimeDelta:(NSNotification *)notification</Declaration>
+			<Declaration>+ (ALBuffer *)bufferFromUrl:(NSURL *)url reduceToMono:(bool)reduceToMono</Declaration>
 			
 			
-			<Anchor>//api/name/doResetTimeDelta:</Anchor>
+			<Anchor>//api/name/bufferFromUrl:reduceToMono:</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>NSXMLStreamWriter Protocol Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -143,8 +142,8 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -168,70 +167,60 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeStartElementWithNamespace:localName:">&ndash;&nbsp;writeStartElementWithNamespace:localName:</a></code>
-		<span class="tooltip"><p>The namespace.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeEndElementWithNamespace:localName:">&ndash;&nbsp;writeEndElementWithNamespace:localName:</a></code>
-		<span class="tooltip"><p>The namespace.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeEmptyElementWithNamespace:localName:">&ndash;&nbsp;writeEmptyElementWithNamespace:localName:</a></code>
-		<span class="tooltip"><p>The namespace.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeAttributeWithNamespace:localName:value:">&ndash;&nbsp;writeAttributeWithNamespace:localName:value:</a></code>
-		<span class="tooltip"><p>The namespace.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setPrefix:namespaceURI:">&ndash;&nbsp;setPrefix:namespaceURI:</a></code>
-		<span class="tooltip"><p>set a namespace and prefix</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeNamespace:namespaceURI:">&ndash;&nbsp;writeNamespace:namespaceURI:</a></code>
-		<span class="tooltip"><p>write (and set) a namespace and prefix</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setDefaultNamespace:">&ndash;&nbsp;setDefaultNamespace:</a></code>
-		<span class="tooltip"><p>set the default namespace (empty prefix)</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeDefaultNamespace:">&ndash;&nbsp;writeDefaultNamespace:</a></code>
-		<span class="tooltip"><p>write (and set) the default namespace</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getPrefix:">&ndash;&nbsp;getPrefix:</a></code>
-		<span class="tooltip"><p>The namespace prefix.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getNamespaceURI:">&ndash;&nbsp;getNamespaceURI:</a></code>
-		<span class="tooltip"><p>The namespace for the prefix.</p></span>
 	</span>
 	
 	<span class="task-item-suffix">required method</span>
@@ -262,9 +251,11 @@
 		<p>The namespace for the prefix.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (NSString *)getNamespaceURI:(NSString *)<em>prefix</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -311,9 +302,11 @@
 		<p>The namespace prefix.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (NSString *)getPrefix:(NSString *)<em>namespaceURI</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -360,9 +353,11 @@
 		<p>set the default namespace (empty prefix)</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)setDefaultNamespace:(NSString *)<em>namespaceURI</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -404,9 +399,11 @@
 		<p>set a namespace and prefix</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)setPrefix:(NSString *)<em>prefix</em> namespaceURI:(NSString *)<em>namespaceURI</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -453,9 +450,11 @@
 		<p>The namespace.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)writeAttributeWithNamespace:(NSString *)<em>namespaceURI</em> localName:(NSString *)<em>localName</em> value:(NSString *)<em>value</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -507,9 +506,11 @@
 		<p>write (and set) the default namespace</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)writeDefaultNamespace:(NSString *)<em>namespaceURI</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -551,9 +552,11 @@
 		<p>The namespace.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)writeEmptyElementWithNamespace:(NSString *)<em>namespaceURI</em> localName:(NSString *)<em>localName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -600,9 +603,11 @@
 		<p>The namespace.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)writeEndElementWithNamespace:(NSString *)<em>namespaceURI</em> localName:(NSString *)<em>localName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -649,9 +654,11 @@
 		<p>write (and set) a namespace and prefix</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)writeNamespace:(NSString *)<em>prefix</em> namespaceURI:(NSString *)<em>namespaceURI</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -698,9 +705,11 @@
 		<p>The namespace.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)writeStartElementWithNamespace:(NSString *)<em>namespaceURI</em> localName:(NSString *)<em>localName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -740,6 +749,8 @@
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -750,9 +761,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -840,6 +851,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

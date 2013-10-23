@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/KKPhysicsContactEventDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/KKPhysicsContactEventDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="69"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/setNode:</TokenIdentifier>
+			<Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/node</TokenIdentifier>
+			<Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/KKPhysicsContactEventDelegate/node</TokenIdentifier>
+			<Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/didBeginContact:otherBody:</TokenIdentifier>
+			<Abstract type="html">Called when two objects&apos;s physics bodies get in contact.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)didBeginContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contact</Name>
+					<Abstract type="html">The contact object.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherBody</Name>
+					<Abstract type="html">The other contacting body.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didBeginContact:otherBody:</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/didEndContact:otherBody:</TokenIdentifier>
+			<Abstract type="html">Called when two objects&apos;s physics bodies&apos; contact ends.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)didEndContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contact</Name>
+					<Abstract type="html">The contact object.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherBody</Name>
+					<Abstract type="html">The other contacting body.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didEndContact:otherBody:</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

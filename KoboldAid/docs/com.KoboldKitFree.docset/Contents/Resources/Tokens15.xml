@@ -1,154 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKLimitVelocityBehavior.html">
+	<File path="Classes/KKIvarInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKLimitVelocityBehavior</TokenIdentifier>
-			<Abstract type="html">Sets upper and lower limits of a physics body's velocities.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKIvarInfo</TokenIdentifier>
+			<Abstract type="html">INTERNAL USE! Class that represents an ivar in order to set and get an ivar&apos;s value.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+            
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/setVelocityLimit:</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setIvar:</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
+			<Declaration>@property (atomic) Ivar ivar</Declaration>
 			
 			
-			<Anchor>//api/name/velocityLimit</Anchor>
+			<Anchor>//api/name/ivar</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/velocityLimit</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/ivar</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
+			<Declaration>@property (atomic) Ivar ivar</Declaration>
 			
 			
-			<Anchor>//api/name/velocityLimit</Anchor>
+			<Anchor>//api/name/ivar</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKLimitVelocityBehavior/velocityLimit</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum linear velocity (movement speed).</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/ivar</TokenIdentifier>
+			<Abstract type="html">The Objective-C Ivar object.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) CGFloat velocityLimit</Declaration>
+			<Declaration>@property (atomic) Ivar ivar</Declaration>
 			
 			
-			<Anchor>//api/name/velocityLimit</Anchor>
+			<Anchor>//api/name/ivar</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/setAngularVelocityLimit:</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/angularVelocityLimit</Anchor>
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/angularVelocityLimit</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/name</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/angularVelocityLimit</Anchor>
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKLimitVelocityBehavior/angularVelocityLimit</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum angular velocity (rotation speed).</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/name</TokenIdentifier>
+			<Abstract type="html">The name of the ivar.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) CGFloat angularVelocityLimit</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/angularVelocityLimit</Anchor>
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitVelocity:</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum velocity.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setEncoding:</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
 			
-			<Declaration>+ (id)limitVelocity:(CGFloat)velocityLimit</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
+			
+			
+			<Anchor>//api/name/encoding</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/encoding</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
+			
+			
+			<Anchor>//api/name/encoding</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/encoding</TokenIdentifier>
+			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
+			
+			
+			<Anchor>//api/name/encoding</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setType:</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/type</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/type</TokenIdentifier>
+			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setIvarInTarget:value:</TokenIdentifier>
+			<Abstract type="html">Set the ivar in the given target to the value.</Abstract>
+			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			
+			<Declaration>- (void)setIvarInTarget:(id)target value:(id)value</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>velocityLimit</Name>
-					<Abstract type="html">The physics body's maximum velocity.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/limitVelocity:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitVelocity:limitAngularVelocity:</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum velocity.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
-			
-			<Declaration>+ (id)limitVelocity:(CGFloat)velocityLimit limitAngularVelocity:(CGFloat)angularVelocityLimit</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>velocityLimit</Name>
-					<Abstract type="html">The physics body's maximum velocity.</Abstract>
+					<Name>target</Name>
+					<Abstract type="html">The target object for the ivar.</Abstract>
 				</Parameter><Parameter>
-					<Name>angularVelocityLimit</Name>
-					<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
+					<Name>value</Name>
+					<Abstract type="html">The value to assign to the ivar.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/limitVelocity:limitAngularVelocity:</Anchor>
+			
+			<Anchor>//api/name/setIvarInTarget:value:</Anchor>
+            <NodeRef refid="15"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKLimitVelocityBehavior/limitAngularVelocity:</TokenIdentifier>
-			<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.h</DeclaredIn>			
-			
-			<Declaration>+ (id)limitAngularVelocity:(CGFloat)angularVelocityLimit</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>angularVelocityLimit</Name>
-					<Abstract type="html">The physics body's maximum angular velocity.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/limitAngularVelocity:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/didJoinController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)didJoinController</Declaration>
-			
-			
-			<Anchor>//api/name/didJoinController</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKLimitVelocityBehavior/didLeaveController</TokenIdentifier>
-			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
-			<DeclaredIn>KKLimitVelocityBehavior.m</DeclaredIn>			
-			
-			<Declaration>- (void)didLeaveController</Declaration>
-			
-			
-			<Anchor>//api/name/didLeaveController</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

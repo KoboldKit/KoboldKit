@@ -11,6 +11,7 @@ Besides collecting the API calls into a single global object, all calls are comb
 error check.
 Any OpenAL errors that occur will be logged if error logging is enabled.</Abstract>
 			<DeclaredIn>ALWrapper.h</DeclaredIn>
+            
 			
 			<NodeRef refid="9"/>
 		</Token>
@@ -19,7 +20,7 @@ Any OpenAL errors that occur will be logged if error logging is enabled.</Abstra
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/genBuffers:numBuffers:</TokenIdentifier>
 			<Abstract type="html">Generate buffers.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)genBuffers:(ALuint *)bufferIds numBuffers:(ALsizei)numBuffers</Declaration>
 			<Parameters>
@@ -33,23 +34,25 @@ Any OpenAL errors that occur will be logged if error logging is enabled.</Abstra
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/genBuffers:numBuffers:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/genBuffer</TokenIdentifier>
 			<Abstract type="html">Generate a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALuint)genBuffer</Declaration>
 			
-			<ReturnValue><Abstract type="html">the buffer's ID.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">the buffer&apos;s ID.</Abstract></ReturnValue>
 			<Anchor>//api/name/genBuffer</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/deleteBuffers:numBuffers:</TokenIdentifier>
 			<Abstract type="html">Delete buffers.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)deleteBuffers:(ALuint *)bufferIds numBuffers:(ALsizei)numBuffers</Declaration>
 			<Parameters>
@@ -63,12 +66,13 @@ Any OpenAL errors that occur will be logged if error logging is enabled.</Abstra
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/deleteBuffers:numBuffers:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/deleteBuffer:</TokenIdentifier>
 			<Abstract type="html">Delete a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)deleteBuffer:(ALuint)bufferId</Declaration>
 			<Parameters>
@@ -79,12 +83,13 @@ Any OpenAL errors that occur will be logged if error logging is enabled.</Abstra
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/deleteBuffer:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/isBuffer:</TokenIdentifier>
 			<Abstract type="html">Check if the speified buffer exists.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)isBuffer:(ALuint)bufferId</Declaration>
 			<Parameters>
@@ -95,12 +100,13 @@ Any OpenAL errors that occur will be logged if error logging is enabled.</Abstra
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the buffer exists.</Abstract></ReturnValue>
 			<Anchor>//api/name/isBuffer:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/bufferData:format:data:size:frequency:</TokenIdentifier>
 			<Abstract type="html">Load data into a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)bufferData:(ALuint)bufferId format:(ALenum)format data:(const ALvoid *)data size:(ALsizei)size frequency:(ALsizei)frequency</Declaration>
 			<Parameters>
@@ -124,18 +130,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/bufferData:format:data:size:frequency:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/bufferf:parameter:value:</TokenIdentifier>
 			<Abstract type="html">Write a float paramter to a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)bufferf:(ALuint)bufferId parameter:(ALenum)parameter value:(ALfloat)value</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -146,18 +153,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/bufferf:parameter:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/buffer3f:parameter:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Write a 3 float paramter to a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)buffer3f:(ALuint)bufferId parameter:(ALenum)parameter v1:(ALfloat)v1 v2:(ALfloat)v2 v3:(ALfloat)v3</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">the parameter to write to.</Abstract>
@@ -174,18 +182,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/buffer3f:parameter:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/bufferfv:parameter:values:</TokenIdentifier>
 			<Abstract type="html">Write a float array paramter to a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)bufferfv:(ALuint)bufferId parameter:(ALenum)parameter values:(ALfloat *)values</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -196,18 +205,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/bufferfv:parameter:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/bufferi:parameter:value:</TokenIdentifier>
 			<Abstract type="html">Write an integer paramter to a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)bufferi:(ALuint)bufferId parameter:(ALenum)parameter value:(ALint)value</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -218,18 +228,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/bufferi:parameter:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/buffer3i:parameter:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Write a 3 integer paramter to a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)buffer3i:(ALuint)bufferId parameter:(ALenum)parameter v1:(ALint)v1 v2:(ALint)v2 v3:(ALint)v3</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -246,18 +257,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/buffer3i:parameter:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/bufferiv:parameter:values:</TokenIdentifier>
 			<Abstract type="html">Write an integer array paramter to a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)bufferiv:(ALuint)bufferId parameter:(ALenum)parameter values:(ALint *)values</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -268,37 +280,39 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/bufferiv:parameter:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getBufferf:parameter:</TokenIdentifier>
 			<Abstract type="html">Read a float paramter from a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALfloat)getBufferf:(ALuint)bufferId parameter:(ALenum)parameter</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getBufferf:parameter:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getBuffer3f:parameter:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Read a 3 float paramter from a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getBuffer3f:(ALuint)bufferId parameter:(ALenum)parameter v1:(ALfloat *)v1 v2:(ALfloat *)v2 v3:(ALfloat *)v3</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
@@ -315,18 +329,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getBuffer3f:parameter:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getBufferfv:parameter:values:</TokenIdentifier>
 			<Abstract type="html">Read a float array paramter from a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getBufferfv:(ALuint)bufferId parameter:(ALenum)parameter values:(ALfloat *)values</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
@@ -337,37 +352,39 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getBufferfv:parameter:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getBufferi:parameter:</TokenIdentifier>
 			<Abstract type="html">Read an integer paramter from a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALint)getBufferi:(ALuint)bufferId parameter:(ALenum)parameter</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getBufferi:parameter:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getBuffer3i:parameter:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Read a 3 integer paramter from a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getBuffer3i:(ALuint)bufferId parameter:(ALenum)parameter v1:(ALint *)v1 v2:(ALint *)v2 v3:(ALint *)v3</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
@@ -384,18 +401,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getBuffer3i:parameter:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getBufferiv:parameter:values:</TokenIdentifier>
 			<Abstract type="html">Read an integer array paramter from a buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getBufferiv:(ALuint)bufferId parameter:(ALenum)parameter values:(ALint *)values</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>bufferId</Name>
-					<Abstract type="html">The buffer's ID.</Abstract>
+					<Abstract type="html">The buffer&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
@@ -406,12 +424,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getBufferiv:parameter:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/genSources:numSources:</TokenIdentifier>
 			<Abstract type="html">Generate sources.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)genSources:(ALuint *)sourceIds numSources:(ALsizei)numSources</Declaration>
 			<Parameters>
@@ -425,23 +444,25 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/genSources:numSources:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/genSource</TokenIdentifier>
 			<Abstract type="html">Generate a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALuint)genSource</Declaration>
 			
-			<ReturnValue><Abstract type="html">the source's ID.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">the source&apos;s ID.</Abstract></ReturnValue>
 			<Anchor>//api/name/genSource</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/deleteSources:numSources:</TokenIdentifier>
 			<Abstract type="html">Delete sources.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)deleteSources:(ALuint *)sourceIds numSources:(ALsizei)numSources</Declaration>
 			<Parameters>
@@ -455,12 +476,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/deleteSources:numSources:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/deleteSource:</TokenIdentifier>
 			<Abstract type="html">Delete a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)deleteSource:(ALuint)sourceId</Declaration>
 			<Parameters>
@@ -471,12 +493,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/deleteSource:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/isSource:</TokenIdentifier>
 			<Abstract type="html">Check if the speified source exists.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)isSource:(ALuint)sourceId</Declaration>
 			<Parameters>
@@ -487,12 +510,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the buffer exists.</Abstract></ReturnValue>
 			<Anchor>//api/name/isSource:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourcePlay:</TokenIdentifier>
 			<Abstract type="html">Play a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourcePlay:(ALuint)sourceId</Declaration>
 			<Parameters>
@@ -503,12 +527,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the buffer exists.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourcePlay:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourcePlayv:numSources:</TokenIdentifier>
 			<Abstract type="html">Play a bunch of sources.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourcePlayv:(ALuint *)sourceIds numSources:(ALsizei)numSources</Declaration>
 			<Parameters>
@@ -522,12 +547,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourcePlayv:numSources:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourcePause:</TokenIdentifier>
 			<Abstract type="html">Pause a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourcePause:(ALuint)sourceId</Declaration>
 			<Parameters>
@@ -538,12 +564,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourcePause:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourcePausev:numSources:</TokenIdentifier>
 			<Abstract type="html">Pause a bunch of sources.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourcePausev:(ALuint *)sourceIds numSources:(ALsizei)numSources</Declaration>
 			<Parameters>
@@ -557,12 +584,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourcePausev:numSources:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourceStop:</TokenIdentifier>
 			<Abstract type="html">Stop a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourceStop:(ALuint)sourceId</Declaration>
 			<Parameters>
@@ -573,12 +601,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourceStop:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourceStopv:numSources:</TokenIdentifier>
 			<Abstract type="html">Stop a bunch of sources.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourceStopv:(ALuint *)sourceIds numSources:(ALsizei)numSources</Declaration>
 			<Parameters>
@@ -592,12 +621,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourceStopv:numSources:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourceRewind:</TokenIdentifier>
 			<Abstract type="html">Rewind a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourceRewind:(ALuint)sourceId</Declaration>
 			<Parameters>
@@ -608,12 +638,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourceRewind:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourceRewindv:numSources:</TokenIdentifier>
 			<Abstract type="html">Rewind a bunch of sources.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourceRewindv:(ALuint *)sourceIds numSources:(ALsizei)numSources</Declaration>
 			<Parameters>
@@ -627,12 +658,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourceRewindv:numSources:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourceQueueBuffers:numBuffers:bufferIds:</TokenIdentifier>
 			<Abstract type="html">Queue buffers into a source for sequential playback.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourceQueueBuffers:(ALuint)sourceId numBuffers:(ALsizei)numBuffers bufferIds:(ALuint *)bufferIds</Declaration>
 			<Parameters>
@@ -649,12 +681,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourceQueueBuffers:numBuffers:bufferIds:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourceUnqueueBuffers:numBuffers:bufferIds:</TokenIdentifier>
 			<Abstract type="html">Unqueue previously queued buffers.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourceUnqueueBuffers:(ALuint)sourceId numBuffers:(ALsizei)numBuffers bufferIds:(ALuint *)bufferIds</Declaration>
 			<Parameters>
@@ -671,18 +704,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation is successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourceUnqueueBuffers:numBuffers:bufferIds:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourcef:parameter:value:</TokenIdentifier>
 			<Abstract type="html">Write a float paramter to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourcef:(ALuint)sourceId parameter:(ALenum)parameter value:(ALfloat)value</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -693,18 +727,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourcef:parameter:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/source3f:parameter:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Write a 3 float paramter to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)source3f:(ALuint)sourceId parameter:(ALenum)parameter v1:(ALfloat)v1 v2:(ALfloat)v2 v3:(ALfloat)v3</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">the parameter to write to.</Abstract>
@@ -721,18 +756,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/source3f:parameter:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourcefv:parameter:values:</TokenIdentifier>
 			<Abstract type="html">Write a float array paramter to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourcefv:(ALuint)sourceId parameter:(ALenum)parameter values:(ALfloat *)values</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -743,18 +779,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourcefv:parameter:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourcei:parameter:value:</TokenIdentifier>
 			<Abstract type="html">Write an integer paramter to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourcei:(ALuint)sourceId parameter:(ALenum)parameter value:(ALint)value</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -765,18 +802,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourcei:parameter:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/source3i:parameter:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Write a 3 integer paramter to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)source3i:(ALuint)sourceId parameter:(ALenum)parameter v1:(ALint)v1 v2:(ALint)v2 v3:(ALint)v3</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -793,18 +831,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/source3i:parameter:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/sourceiv:parameter:values:</TokenIdentifier>
 			<Abstract type="html">Write an integer array paramter to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)sourceiv:(ALuint)sourceId parameter:(ALenum)parameter values:(ALint *)values</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to write to.</Abstract>
@@ -815,37 +854,39 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourceiv:parameter:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getSourcef:parameter:</TokenIdentifier>
 			<Abstract type="html">Read a float paramter from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALfloat)getSourcef:(ALuint)sourceId parameter:(ALenum)parameter</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getSourcef:parameter:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getSource3f:parameter:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Read a 3 float paramter from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getSource3f:(ALuint)sourceId parameter:(ALenum)parameter v1:(ALfloat *)v1 v2:(ALfloat *)v2 v3:(ALfloat *)v3</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
@@ -862,18 +903,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getSource3f:parameter:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getSourcefv:parameter:values:</TokenIdentifier>
 			<Abstract type="html">Read a float array paramter from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getSourcefv:(ALuint)sourceId parameter:(ALenum)parameter values:(ALfloat *)values</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
@@ -884,37 +926,39 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getSourcefv:parameter:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getSourcei:parameter:</TokenIdentifier>
 			<Abstract type="html">Read an integer paramter from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALint)getSourcei:(ALuint)sourceId parameter:(ALenum)parameter</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getSourcei:parameter:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getSource3i:parameter:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Read a 3 integer paramter from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getSource3i:(ALuint)sourceId parameter:(ALenum)parameter v1:(ALint *)v1 v2:(ALint *)v2 v3:(ALint *)v3</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
@@ -931,18 +975,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getSource3i:parameter:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getSourceiv:parameter:values:</TokenIdentifier>
 			<Abstract type="html">Read an integer array paramter from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getSourceiv:(ALuint)sourceId parameter:(ALenum)parameter values:(ALint *)values</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>parameter</Name>
 					<Abstract type="html">The parameter to read.</Abstract>
@@ -953,12 +998,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getSourceiv:parameter:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/listenerf:value:</TokenIdentifier>
 			<Abstract type="html">Write a float paramter to the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)listenerf:(ALenum)parameter value:(ALfloat)value</Declaration>
 			<Parameters>
@@ -972,12 +1018,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/listenerf:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/listener3f:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Write a 3 float paramter to the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)listener3f:(ALenum)parameter v1:(ALfloat)v1 v2:(ALfloat)v2 v3:(ALfloat)v3</Declaration>
 			<Parameters>
@@ -997,12 +1044,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/listener3f:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/listenerfv:values:</TokenIdentifier>
 			<Abstract type="html">Write a float array paramter to the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)listenerfv:(ALenum)parameter values:(ALfloat *)values</Declaration>
 			<Parameters>
@@ -1016,12 +1064,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/listenerfv:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/listeneri:value:</TokenIdentifier>
 			<Abstract type="html">Write an integer paramter to the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)listeneri:(ALenum)parameter value:(ALint)value</Declaration>
 			<Parameters>
@@ -1035,12 +1084,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/listeneri:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/listener3i:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Write a 3 integer paramter to the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)listener3i:(ALenum)parameter v1:(ALint)v1 v2:(ALint)v2 v3:(ALint)v3</Declaration>
 			<Parameters>
@@ -1060,12 +1110,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/listener3i:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/listeneriv:values:</TokenIdentifier>
 			<Abstract type="html">Write an integer array paramter to the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)listeneriv:(ALenum)parameter values:(ALint *)values</Declaration>
 			<Parameters>
@@ -1079,12 +1130,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/listeneriv:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getListenerf:</TokenIdentifier>
 			<Abstract type="html">Read a float paramter from the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALfloat)getListenerf:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1093,14 +1145,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The parameter to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getListenerf:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getListener3f:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Read a 3 float paramter from the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getListener3f:(ALenum)parameter v1:(ALfloat *)v1 v2:(ALfloat *)v2 v3:(ALfloat *)v3</Declaration>
 			<Parameters>
@@ -1120,12 +1173,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getListener3f:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getListenerfv:values:</TokenIdentifier>
 			<Abstract type="html">Read a float array paramter from the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getListenerfv:(ALenum)parameter values:(ALfloat *)values</Declaration>
 			<Parameters>
@@ -1139,12 +1193,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getListenerfv:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getListeneri:</TokenIdentifier>
 			<Abstract type="html">Read an integer paramter from the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALint)getListeneri:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1153,14 +1208,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The parameter to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getListeneri:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getListener3i:v1:v2:v3:</TokenIdentifier>
 			<Abstract type="html">Read a 3 integer paramter from the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getListener3i:(ALenum)parameter v1:(ALint *)v1 v2:(ALint *)v2 v3:(ALint *)v3</Declaration>
 			<Parameters>
@@ -1180,12 +1236,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getListener3i:v1:v2:v3:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getListeneriv:values:</TokenIdentifier>
 			<Abstract type="html">Read an integer array paramter from the current listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getListeneriv:(ALenum)parameter values:(ALint *)values</Declaration>
 			<Parameters>
@@ -1199,12 +1256,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getListeneriv:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/enable:</TokenIdentifier>
 			<Abstract type="html">Enable a capability.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)enable:(ALenum)capability</Declaration>
 			<Parameters>
@@ -1215,12 +1273,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/enable:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/disable:</TokenIdentifier>
 			<Abstract type="html">Disable a capability.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)disable:(ALenum)capability</Declaration>
 			<Parameters>
@@ -1231,12 +1290,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/disable:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/isEnabled:</TokenIdentifier>
 			<Abstract type="html">Check if a capability is enabled.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)isEnabled:(ALenum)capability</Declaration>
 			<Parameters>
@@ -1247,12 +1307,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the capability is enabled.</Abstract></ReturnValue>
 			<Anchor>//api/name/isEnabled:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getBoolean:</TokenIdentifier>
 			<Abstract type="html">Get a boolean parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getBoolean:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1261,14 +1322,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The parameter to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getBoolean:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getDouble:</TokenIdentifier>
 			<Abstract type="html">Get a double parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALdouble)getDouble:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1277,14 +1339,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The parameter to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getDouble:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getFloat:</TokenIdentifier>
 			<Abstract type="html">Get a float parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALfloat)getFloat:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1293,14 +1356,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The parameter to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getFloat:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getInteger:</TokenIdentifier>
 			<Abstract type="html">Get an integer parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALint)getInteger:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1309,14 +1373,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The parameter to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getInteger:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getString:</TokenIdentifier>
 			<Abstract type="html">Get a string parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (NSString *)getString:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1325,15 +1390,16 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The parameter to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getString:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getNullSeparatedStringList:</TokenIdentifier>
 			<Abstract type="html">Get a string list parameter. Use this method for OpenAL parameters that return a null
 separated list.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (NSArray *)getNullSeparatedStringList:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1342,15 +1408,16 @@ separated list.</Abstract>
 					<Abstract type="html">The parameter to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value (as an array of NSString*).</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value (as an array of NSString*).</Abstract></ReturnValue>
 			<Anchor>//api/name/getNullSeparatedStringList:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getSpaceSeparatedStringList:</TokenIdentifier>
 			<Abstract type="html">Get a string list parameter. Use this method for OpenAL parameters that return a space
 separated list.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (NSArray *)getSpaceSeparatedStringList:(ALenum)parameter</Declaration>
 			<Parameters>
@@ -1359,14 +1426,15 @@ separated list.</Abstract>
 					<Abstract type="html">The parameter to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value (as an array of NSString*).</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value (as an array of NSString*).</Abstract></ReturnValue>
 			<Anchor>//api/name/getSpaceSeparatedStringList:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getBooleanv:values:</TokenIdentifier>
 			<Abstract type="html">Get a boolean array parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getBooleanv:(ALenum)parameter values:(ALboolean *)values</Declaration>
 			<Parameters>
@@ -1380,12 +1448,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getBooleanv:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getDoublev:values:</TokenIdentifier>
 			<Abstract type="html">Get a double array parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getDoublev:(ALenum)parameter values:(ALdouble *)values</Declaration>
 			<Parameters>
@@ -1399,12 +1468,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getDoublev:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getFloatv:values:</TokenIdentifier>
 			<Abstract type="html">Get a float array parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getFloatv:(ALenum)parameter values:(ALfloat *)values</Declaration>
 			<Parameters>
@@ -1418,12 +1488,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getFloatv:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getIntegerv:values:</TokenIdentifier>
 			<Abstract type="html">Get an integer array parameter.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getIntegerv:(ALenum)parameter values:(ALint *)values</Declaration>
 			<Parameters>
@@ -1437,12 +1508,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getIntegerv:values:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/distanceModel:</TokenIdentifier>
 			<Abstract type="html">Set the distance model.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)distanceModel:(ALenum)value</Declaration>
 			<Parameters>
@@ -1453,12 +1525,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/distanceModel:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/dopplerFactor:</TokenIdentifier>
 			<Abstract type="html">Set the doppler factor.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)dopplerFactor:(ALfloat)value</Declaration>
 			<Parameters>
@@ -1469,12 +1542,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/dopplerFactor:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/speedOfSound:</TokenIdentifier>
 			<Abstract type="html">Set the speed of sound.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)speedOfSound:(ALfloat)value</Declaration>
 			<Parameters>
@@ -1485,12 +1559,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/speedOfSound:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/isExtensionPresent:</TokenIdentifier>
 			<Abstract type="html">Check if an extension is present.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)isExtensionPresent:(NSString *)extensionName</Declaration>
 			<Parameters>
@@ -1501,12 +1576,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the extension is present.</Abstract></ReturnValue>
 			<Anchor>//api/name/isExtensionPresent:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getProcAddress:</TokenIdentifier>
 			<Abstract type="html">Get the address of a procedure.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (void *)getProcAddress:(NSString *)functionName</Declaration>
 			<Parameters>
@@ -1515,14 +1591,15 @@ separated list.</Abstract>
 					<Abstract type="html">The name of the procedure to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A pointer to the procedure, or NULL if it wasn't found.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">A pointer to the procedure, or NULL if it wasn&apos;t found.</Abstract></ReturnValue>
 			<Anchor>//api/name/getProcAddress:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getEnumValue:</TokenIdentifier>
 			<Abstract type="html">Get the enum value from its name.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALenum)getEnumValue:(NSString *)enumName</Declaration>
 			<Parameters>
@@ -1533,12 +1610,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The enum value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getEnumValue:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/openDevice:</TokenIdentifier>
 			<Abstract type="html">Open a device.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALCdevice *)openDevice:(NSString *)deviceName</Declaration>
 			<Parameters>
@@ -1549,12 +1627,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The opened device, or nil on failure.</Abstract></ReturnValue>
 			<Anchor>//api/name/openDevice:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/closeDevice:</TokenIdentifier>
 			<Abstract type="html">Close a device.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)closeDevice:(ALCdevice *)device</Declaration>
 			<Parameters>
@@ -1565,12 +1644,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/closeDevice:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/createContext:attributes:</TokenIdentifier>
 			<Abstract type="html">Create an OpenAL context.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALCcontext *)createContext:(ALCdevice *)device attributes:(ALCint *)attributes</Declaration>
 			<Parameters>
@@ -1584,12 +1664,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The new context.</Abstract></ReturnValue>
 			<Anchor>//api/name/createContext:attributes:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/makeContextCurrent:</TokenIdentifier>
 			<Abstract type="html">Make the specified context the current context.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)makeContextCurrent:(ALCcontext *)context</Declaration>
 			<Parameters>
@@ -1600,13 +1681,14 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/makeContextCurrent:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/makeContextCurrent:deviceReference:</TokenIdentifier>
 			<Abstract type="html">Make the specified context the current context, passing in a device reference for more
 informative logging info.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)makeContextCurrent:(ALCcontext *)context deviceReference:(ALCdevice *)deviceReference</Declaration>
 			<Parameters>
@@ -1620,12 +1702,13 @@ informative logging info.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/makeContextCurrent:deviceReference:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/processContext:</TokenIdentifier>
 			<Abstract type="html">Process a context.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (void)processContext:(ALCcontext *)context</Declaration>
 			<Parameters>
@@ -1636,12 +1719,13 @@ informative logging info.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/processContext:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/suspendContext:</TokenIdentifier>
 			<Abstract type="html">Suspend a context.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (void)suspendContext:(ALCcontext *)context</Declaration>
 			<Parameters>
@@ -1652,12 +1736,13 @@ informative logging info.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/suspendContext:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/destroyContext:</TokenIdentifier>
 			<Abstract type="html">Destroy a context.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (void)destroyContext:(ALCcontext *)context</Declaration>
 			<Parameters>
@@ -1668,23 +1753,25 @@ informative logging info.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/destroyContext:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getCurrentContext</TokenIdentifier>
 			<Abstract type="html">Get the current context.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALCcontext *)getCurrentContext</Declaration>
 			
 			<ReturnValue><Abstract type="html">the current context.</Abstract></ReturnValue>
 			<Anchor>//api/name/getCurrentContext</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getContextsDevice:</TokenIdentifier>
 			<Abstract type="html">Get the device a context was created from.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALCdevice *)getContextsDevice:(ALCcontext *)context</Declaration>
 			<Parameters>
@@ -1693,15 +1780,16 @@ informative logging info.</Abstract>
 					<Abstract type="html">The context.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The context's device.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The context&apos;s device.</Abstract></ReturnValue>
 			<Anchor>//api/name/getContextsDevice:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getContextsDevice:deviceReference:</TokenIdentifier>
 			<Abstract type="html">Get the device a context was created from, passing in a device reference for more
 informative logging info.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALCdevice *)getContextsDevice:(ALCcontext *)context deviceReference:(ALCdevice *)deviceReference</Declaration>
 			<Parameters>
@@ -1713,14 +1801,15 @@ informative logging info.</Abstract>
 					<Abstract type="html">The device reference to use when logging an error.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The context's device.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The context&apos;s device.</Abstract></ReturnValue>
 			<Anchor>//api/name/getContextsDevice:deviceReference:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/isExtensionPresent:name:</TokenIdentifier>
 			<Abstract type="html">Check if an extension is present on a device.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)isExtensionPresent:(ALCdevice *)device name:(NSString *)extensionName</Declaration>
 			<Parameters>
@@ -1734,12 +1823,13 @@ informative logging info.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the extension is present.</Abstract></ReturnValue>
 			<Anchor>//api/name/isExtensionPresent:name:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getProcAddress:name:</TokenIdentifier>
 			<Abstract type="html">Get the address of a procedure for a device.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (void *)getProcAddress:(ALCdevice *)device name:(NSString *)functionName</Declaration>
 			<Parameters>
@@ -1751,14 +1841,15 @@ informative logging info.</Abstract>
 					<Abstract type="html">The name of the procedure to check for.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The procedure's address, or NULL if not found.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The procedure&apos;s address, or NULL if not found.</Abstract></ReturnValue>
 			<Anchor>//api/name/getProcAddress:name:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getEnumValue:name:</TokenIdentifier>
 			<Abstract type="html">Get the enum value from its name.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALenum)getEnumValue:(ALCdevice *)device name:(NSString *)enumName</Declaration>
 			<Parameters>
@@ -1772,12 +1863,13 @@ informative logging info.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The enum value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getEnumValue:name:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getString:attribute:</TokenIdentifier>
 			<Abstract type="html">Get a string attribute.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (NSString *)getString:(ALCdevice *)device attribute:(ALenum)attribute</Declaration>
 			<Parameters>
@@ -1789,15 +1881,16 @@ informative logging info.</Abstract>
 					<Abstract type="html">The attribute to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getString:attribute:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getNullSeparatedStringList:attribute:</TokenIdentifier>
 			<Abstract type="html">Get a string list attribute. Use this method for OpenAL attributes that return a null
 separated list.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (NSArray *)getNullSeparatedStringList:(ALCdevice *)device attribute:(ALenum)attribute</Declaration>
 			<Parameters>
@@ -1809,15 +1902,16 @@ separated list.</Abstract>
 					<Abstract type="html">The attribute to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value (as an array of NSString*).</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value (as an array of NSString*).</Abstract></ReturnValue>
 			<Anchor>//api/name/getNullSeparatedStringList:attribute:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getSpaceSeparatedStringList:attribute:</TokenIdentifier>
 			<Abstract type="html">Get a string list attribute. Use this method for OpenAL attributes that return a space
 separated list.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (NSArray *)getSpaceSeparatedStringList:(ALCdevice *)device attribute:(ALenum)attribute</Declaration>
 			<Parameters>
@@ -1829,14 +1923,15 @@ separated list.</Abstract>
 					<Abstract type="html">The attribute to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value (as an array of NSString*).</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value (as an array of NSString*).</Abstract></ReturnValue>
 			<Anchor>//api/name/getSpaceSeparatedStringList:attribute:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getInteger:attribute:</TokenIdentifier>
 			<Abstract type="html">Get an integer attribute.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALint)getInteger:(ALCdevice *)device attribute:(ALenum)attribute</Declaration>
 			<Parameters>
@@ -1848,14 +1943,15 @@ separated list.</Abstract>
 					<Abstract type="html">The attribute to fetch.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The parameter's current value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The parameter&apos;s current value.</Abstract></ReturnValue>
 			<Anchor>//api/name/getInteger:attribute:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getIntegerv:attribute:size:data:</TokenIdentifier>
 			<Abstract type="html">Get an integer array attribute.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)getIntegerv:(ALCdevice *)device attribute:(ALenum)attribute size:(ALsizei)size data:(ALCint *)data</Declaration>
 			<Parameters>
@@ -1875,12 +1971,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/getIntegerv:attribute:size:data:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/openCaptureDevice:frequency:format:bufferSize:</TokenIdentifier>
 			<Abstract type="html">UNSUPPORTED ON IOS* Open an audio capture device.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALCdevice *)openCaptureDevice:(NSString *)deviceName frequency:(ALCuint)frequency format:(ALCenum)format bufferSize:(ALCsizei)bufferSize</Declaration>
 			<Parameters>
@@ -1900,12 +1997,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The opened device, or nil if an error occurred.</Abstract></ReturnValue>
 			<Anchor>//api/name/openCaptureDevice:frequency:format:bufferSize:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/closeCaptureDevice:</TokenIdentifier>
 			<Abstract type="html">Close a capture device.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)closeCaptureDevice:(ALCdevice *)device</Declaration>
 			<Parameters>
@@ -1916,12 +2014,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/closeCaptureDevice:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/startCapture:</TokenIdentifier>
 			<Abstract type="html">Start capturing audio data.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)startCapture:(ALCdevice *)device</Declaration>
 			<Parameters>
@@ -1932,12 +2031,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/startCapture:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/stopCapture:</TokenIdentifier>
 			<Abstract type="html">Stop capturing audio data.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)stopCapture:(ALCdevice *)device</Declaration>
 			<Parameters>
@@ -1948,12 +2048,13 @@ separated list.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/stopCapture:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/captureSamples:buffer:numSamples:</TokenIdentifier>
 			<Abstract type="html">Get captured samples from a device.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)captureSamples:(ALCdevice *)device buffer:(ALCvoid *)buffer numSamples:(ALCsizei)numSamples</Declaration>
 			<Parameters>
@@ -1970,23 +2071,25 @@ separated list.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/captureSamples:buffer:numSamples:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getMixerOutputDataRate</TokenIdentifier>
-			<Abstract type="html">Get the iOS device's mixer outut data rate.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<Abstract type="html">Get the iOS device&apos;s mixer outut data rate.</Abstract>
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALdouble)getMixerOutputDataRate</Declaration>
 			
 			<ReturnValue><Abstract type="html">The mixer output data rate.</Abstract></ReturnValue>
 			<Anchor>//api/name/getMixerOutputDataRate</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/setMixerOutputDataRate:</TokenIdentifier>
-			<Abstract type="html">Set the iOS device's mixer output data rate.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<Abstract type="html">Set the iOS device&apos;s mixer output data rate.</Abstract>
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)setMixerOutputDataRate:(ALdouble)frequency</Declaration>
 			<Parameters>
@@ -1997,14 +2100,15 @@ separated list.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/setMixerOutputDataRate:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/bufferDataStatic:format:data:size:frequency:</TokenIdentifier>
-			<Abstract type="html">Load data into a buffer. Unlike "bufferData", with this method the buffer will
+			<Abstract type="html">Load data into a buffer. Unlike &quot;bufferData&quot;, with this method the buffer will
 use the passed in data buffer direcly rather than allocating its own memory
 and copying from the data buffer.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)bufferDataStatic:(ALuint)bufferId format:(ALenum)format data:(const ALvoid *)data size:(ALsizei)size frequency:(ALsizei)frequency</Declaration>
 			<Parameters>
@@ -2028,12 +2132,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/bufferDataStatic:format:data:size:frequency:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaGetListenerb:</TokenIdentifier>
 			<Abstract type="html">Read a boolean ASA property from a listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)asaGetListenerb:(ALuint)property</Declaration>
 			<Parameters>
@@ -2042,14 +2147,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The property to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The property&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaGetListenerb:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaGetListeneri:</TokenIdentifier>
 			<Abstract type="html">Read an integer ASA property from a listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALint)asaGetListeneri:(ALuint)property</Declaration>
 			<Parameters>
@@ -2058,14 +2164,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The property to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The property&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaGetListeneri:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaGetListenerf:</TokenIdentifier>
 			<Abstract type="html">Read a floating point ASA property from a listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALfloat)asaGetListenerf:(ALuint)property</Declaration>
 			<Parameters>
@@ -2074,14 +2181,15 @@ ALFORMATSTEREO16).</Abstract>
 					<Abstract type="html">The property to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The property&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaGetListenerf:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaListenerb:value:</TokenIdentifier>
 			<Abstract type="html">Write a boolean ASA value to a listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)asaListenerb:(ALuint)property value:(bool)value</Declaration>
 			<Parameters>
@@ -2095,12 +2203,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaListenerb:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaListeneri:value:</TokenIdentifier>
 			<Abstract type="html">Write an integer ASA value to a listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)asaListeneri:(ALuint)property value:(ALint)value</Declaration>
 			<Parameters>
@@ -2114,12 +2223,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaListeneri:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaListenerf:value:</TokenIdentifier>
 			<Abstract type="html">Write a floating point ASA value to a listener.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)asaListenerf:(ALuint)property value:(ALfloat)value</Declaration>
 			<Parameters>
@@ -2133,75 +2243,79 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaListenerf:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaGetSourceb:property:</TokenIdentifier>
 			<Abstract type="html">Read a boolean ASA property from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)asaGetSourceb:(ALuint)sourceId property:(ALuint)property</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>property</Name>
 					<Abstract type="html">The property to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The property&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaGetSourceb:property:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaGetSourcei:property:</TokenIdentifier>
 			<Abstract type="html">Read an integer ASA property from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALint)asaGetSourcei:(ALuint)sourceId property:(ALuint)property</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>property</Name>
 					<Abstract type="html">The property to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The property&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaGetSourcei:property:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaGetSourcef:property:</TokenIdentifier>
 			<Abstract type="html">Read a floating point ASA property from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALfloat)asaGetSourcef:(ALuint)sourceId property:(ALuint)property</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>property</Name>
 					<Abstract type="html">The property to read.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The property's value.</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">The property&apos;s value.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaGetSourcef:property:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaSourceb:property:value:</TokenIdentifier>
 			<Abstract type="html">Write a boolean ASA value to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)asaSourceb:(ALuint)sourceId property:(ALuint)property value:(bool)value</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>property</Name>
 					<Abstract type="html">The property to write to.</Abstract>
@@ -2212,18 +2326,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaSourceb:property:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaSourcei:property:value:</TokenIdentifier>
 			<Abstract type="html">Write an integer ASA value to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)asaSourcei:(ALuint)sourceId property:(ALuint)property value:(ALint)value</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>property</Name>
 					<Abstract type="html">The property to write to.</Abstract>
@@ -2234,18 +2349,19 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaSourcei:property:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/asaSourcef:property:value:</TokenIdentifier>
 			<Abstract type="html">Write a floating point ASA value to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)asaSourcef:(ALuint)sourceId property:(ALuint)property value:(ALfloat)value</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceId</Name>
-					<Abstract type="html">The source's ID.</Abstract>
+					<Abstract type="html">The source&apos;s ID.</Abstract>
 				</Parameter><Parameter>
 					<Name>property</Name>
 					<Abstract type="html">The property to write to.</Abstract>
@@ -2256,12 +2372,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/asaSourcef:property:value:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/setRenderingQuality:</TokenIdentifier>
 			<Abstract type="html">Set the rendering quality. The value may be one of:</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)setRenderingQuality:(ALint)quality</Declaration>
 			<Parameters>
@@ -2272,23 +2389,25 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/setRenderingQuality:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/getRenderingQuality</TokenIdentifier>
 			<Abstract type="html">Get the rendering quality.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (ALint)getRenderingQuality</Declaration>
 			
 			<ReturnValue><Abstract type="html">The current rendering quality.</Abstract></ReturnValue>
 			<Anchor>//api/name/getRenderingQuality</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/addNotification:onSource:callback:userData:</TokenIdentifier>
 			<Abstract type="html">Add a notification callback to a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)addNotification:(ALuint)notificationID onSource:(ALuint)source callback:(alSourceNotificationProc)callback userData:(void *)userData</Declaration>
 			<Parameters>
@@ -2308,12 +2427,13 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/addNotification:onSource:callback:userData:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/removeNotification:onSource:callback:userData:</TokenIdentifier>
 			<Abstract type="html">Remove a notification callback from a source.</Abstract>
-			<DeclaredIn>ALWrapper.h</DeclaredIn>			
+			<DeclaredIn>ALWrapper.h</DeclaredIn>
 			
 			<Declaration>+ (bool)removeNotification:(ALuint)notificationID onSource:(ALuint)source callback:(alSourceNotificationProc)callback userData:(void *)userData</Declaration>
 			<Parameters>
@@ -2333,39 +2453,9 @@ ALFORMATSTEREO16).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/removeNotification:onSource:callback:userData:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/decodeNullSeparatedStringList:</TokenIdentifier>
-			<Abstract type="html">Decode an OpenAL supplied NULL-separated string list into an NSArray.</Abstract>
-			<DeclaredIn>ALWrapper.m</DeclaredIn>			
-			
-			<Declaration>+ (NSArray *)decodeNullSeparatedStringList:(const ALCchar *)source</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>source</Name>
-					<Abstract type="html">the string list as supplied by OpenAL.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the string list in an NSArray of NSString.</Abstract></ReturnValue>
-			<Anchor>//api/name/decodeNullSeparatedStringList:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/ALWrapper/decodeSpaceSeparatedStringList:</TokenIdentifier>
-			<Abstract type="html">Decode an OpenAL supplied space-separated string list into an NSArray.</Abstract>
-			<DeclaredIn>ALWrapper.m</DeclaredIn>			
-			
-			<Declaration>+ (NSArray *)decodeSpaceSeparatedStringList:(const ALCchar *)source</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>source</Name>
-					<Abstract type="html">the string list as supplied by OpenAL.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the string list in an NSArray of NSString.</Abstract></ReturnValue>
-			<Anchor>//api/name/decodeSpaceSeparatedStringList:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

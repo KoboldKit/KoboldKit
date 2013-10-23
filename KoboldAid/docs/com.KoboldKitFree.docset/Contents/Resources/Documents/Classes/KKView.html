@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKView Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -39,6 +38,8 @@
 	
 	
 	<option value="properties">Properties</option>
+	
+	<option value="//api/name/context">&nbsp;&nbsp;&nbsp;&nbsp;context</option>
 	
 	<option value="//api/name/model">&nbsp;&nbsp;&nbsp;&nbsp;model</option>
 	
@@ -117,6 +118,8 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/context">context</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/model">model</a></span></li>
 	
@@ -199,12 +202,12 @@
 	<td class="specification-value">SKView</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKView.h<br />KKView.m</td>
+	<td class="specification-value">KKView.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -228,147 +231,132 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sceneStack">&nbsp;&nbsp;sceneStack</a></code>
-		<span class="tooltip"><p>The scenes currently suspended in the background.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/model">&nbsp;&nbsp;model</a></code>
-		<span class="tooltip"><p>Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/context">&nbsp;&nbsp;context</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/showsPhysicsShapes">&nbsp;&nbsp;showsPhysicsShapes</a></code>
-		<span class="tooltip"><p>If YES, will render physics shape outlines.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/showsNodeFrames">&nbsp;&nbsp;showsNodeFrames</a></code>
-		<span class="tooltip"><p>If YES, will render node outlines according to their frame property.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/showsNodeAnchorPoints">&nbsp;&nbsp;showsNodeAnchorPoints</a></code>
-		<span class="tooltip"><p>If YES, will render a dot on the node&rsquo;s position.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/showsPhysicsShapes">+&nbsp;showsPhysicsShapes</a></code>
-		<span class="tooltip"><p>Whether physics shape outlines are drawn.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/showsNodeFrames">+&nbsp;showsNodeFrames</a></code>
-		<span class="tooltip"><p>Whether node frame outlines are drawn.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/showsNodeAnchorPoints">+&nbsp;showsNodeAnchorPoints</a></code>
-		<span class="tooltip"><p>Whether node positions are drawn.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/presentScene:">&ndash;&nbsp;presentScene:</a></code>
-		<span class="tooltip"><p>Presents a scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/presentScene:transition:">&ndash;&nbsp;presentScene:transition:</a></code>
-		<span class="tooltip"><p>Presents a scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/presentScene:unwindStack:">&ndash;&nbsp;presentScene:unwindStack:</a></code>
-		<span class="tooltip"><p>Presents a scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/presentScene:transition:unwindStack:">&ndash;&nbsp;presentScene:transition:unwindStack:</a></code>
-		<span class="tooltip"><p>Presents a scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/pushScene:">&ndash;&nbsp;pushScene:</a></code>
-		<span class="tooltip"><p>Presents a scene, suspends the currently presented scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/pushScene:transition:">&ndash;&nbsp;pushScene:transition:</a></code>
-		<span class="tooltip"><p>Presents a scene, suspends the currently presented scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/popScene">&ndash;&nbsp;popScene</a></code>
-		<span class="tooltip"><p>Pops the topmost scene from the stack and presents the new topmost scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/popSceneWithTransition:">&ndash;&nbsp;popSceneWithTransition:</a></code>
-		<span class="tooltip"><p>Pops the topmost scene from the stack and presents the new topmost scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/popToRootScene">&ndash;&nbsp;popToRootScene</a></code>
-		<span class="tooltip"><p>Pops all scenes from the stack except for the root scene, then presents the root scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/popToRootSceneWithTransition:">&ndash;&nbsp;popToRootSceneWithTransition:</a></code>
-		<span class="tooltip"><p>Pops all scenes from the stack except for the root scene, then presents the root scene.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/popToSceneNamed:">&ndash;&nbsp;popToSceneNamed:</a></code>
-		<span class="tooltip"><p>Searches for the first scene with the given name in the scene stack and presents it.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/popToSceneNamed:transition:">&ndash;&nbsp;popToSceneNamed:transition:</a></code>
-		<span class="tooltip"><p>Searches for the first scene with the given name in the scene stack and presents it.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/reloadConfig">&ndash;&nbsp;reloadConfig</a></code>
-		<span class="tooltip"><p>Reloads the config files, replacing the existing &ldquo;config&rdquo; and &ldquo;devconfig&rdquo; entries in the <a href="#//api/name/model">model</a>.</p></span>
 	</span>
 	
 	
@@ -386,6 +374,49 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/context" title="context"></a>
+	<h3 class="subsubtitle method-title">context</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This returns the EAGLContext for the view using a public API call. This enables custom OpenGL code on the Sprite Kit GL context.
+Note: the context is not valid (is nil) before the view controller&rsquo;s viewDidAppear: method runs. In other words the viewDidAppear: method
+is the earliest point where you will get a valid EAGLContext.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKGLContext *context</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The view&rsquo;s EAGLContext, or nil if the view controller&rsquo;s viewDidAppear method hasn&rsquo;t run yet.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/model" title="model"></a>
 	<h3 class="subsubtitle method-title">model</h3>
 	
@@ -395,9 +426,11 @@
 		<p>Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKModel *model</code></div>
-	
+
+    
 	
 	
 	
@@ -434,9 +467,11 @@
 		<p>The scenes currently suspended in the background.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSArray *sceneStack</code></div>
-	
+
+    
 	
 	
 	
@@ -479,9 +514,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>If YES, will render a dot on the node&rsquo;s position.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL showsNodeAnchorPoints</code></div>
-	
+
+    
 	
 	
 	
@@ -513,9 +550,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>If YES, will render node outlines according to their frame property.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL showsNodeFrames</code></div>
-	
+
+    
 	
 	
 	
@@ -547,9 +586,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>If YES, will render physics shape outlines.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL showsPhysicsShapes</code></div>
-	
+
+    
 	
 	
 	
@@ -589,9 +630,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Whether node positions are drawn.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (BOOL)showsNodeAnchorPoints</code></div>
-	
+
+    
 	
 	
 	
@@ -628,9 +671,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Whether node frame outlines are drawn.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (BOOL)showsNodeFrames</code></div>
-	
+
+    
 	
 	
 	
@@ -667,9 +712,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Whether physics shape outlines are drawn.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (BOOL)showsPhysicsShapes</code></div>
-	
+
+    
 	
 	
 	
@@ -714,9 +761,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Pops the topmost scene from the stack and presents the new topmost scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)popScene</code></div>
-	
+
+    
 	
 	
 	
@@ -753,9 +802,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Pops the topmost scene from the stack and presents the new topmost scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)popSceneWithTransition:(KKTransition *)<em>transition</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -802,9 +853,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Pops all scenes from the stack except for the root scene, then presents the root scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)popToRootScene</code></div>
-	
+
+    
 	
 	
 	
@@ -841,9 +894,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Pops all scenes from the stack except for the root scene, then presents the root scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)popToRootSceneWithTransition:(KKTransition *)<em>transition</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -890,9 +945,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Searches for the first scene with the given name in the scene stack and presents it.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)popToSceneNamed:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -939,9 +996,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Searches for the first scene with the given name in the scene stack and presents it.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)popToSceneNamed:(NSString *)<em>name</em> transition:(KKTransition *)<em>transition</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -993,9 +1052,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Presents a scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)presentScene:(SKScene *)<em>scene</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1042,9 +1103,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Presents a scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)presentScene:(SKScene *)<em>scene</em> transition:(SKTransition *)<em>transition</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1096,9 +1159,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Presents a scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)presentScene:(KKScene *)<em>scene</em> transition:(KKTransition *)<em>transition</em> unwindStack:(BOOL)<em>unwindStack</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1155,9 +1220,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Presents a scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)presentScene:(KKScene *)<em>scene</em> unwindStack:(BOOL)<em>unwindStack</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1209,9 +1276,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Presents a scene, suspends the currently presented scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)pushScene:(KKScene *)<em>scene</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1258,9 +1327,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Presents a scene, suspends the currently presented scene.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)pushScene:(KKScene *)<em>scene</em> transition:(KKTransition *)<em>transition</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1312,9 +1383,11 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 		<p>Reloads the config files, replacing the existing &ldquo;config&rdquo; and &ldquo;devconfig&rdquo; entries in the <a href="#//api/name/model">model</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)reloadConfig</code></div>
-	
+
+    
 	
 	
 	
@@ -1339,6 +1412,8 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -1349,9 +1424,9 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -1439,6 +1514,14 @@ If sceneStack.count returns 1 then there are currently no scenes in the backgrou
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

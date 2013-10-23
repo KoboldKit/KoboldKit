@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKTilemapProperties Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -138,12 +137,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemapProperties.h<br />KKTilemapProperties.m</td>
+	<td class="specification-value">KKTilemapProperties.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -174,60 +173,48 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
-		<span class="tooltip"><p>The properties as key-value dictionary. Keys are NSString objects, values are <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> objects.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/count">&nbsp;&nbsp;count</a></code>
-		<span class="tooltip"><p>Returns the number of property items.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setNumber:forKey:">&ndash;&nbsp;setNumber:forKey:</a></code>
-		<span class="tooltip"><p>Sets the number for the given key. If a value for the given key already exists the number will take its place.
-   Caution: it is illegal to set a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> for an already existing key that stores a NSString.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setString:forKey:">&ndash;&nbsp;setString:forKey:</a></code>
-		<span class="tooltip"><p>Sets the string for the given key. If a value for the given key already exists the string will take its place.
-   Caution: it is illegal to set a NSString for an already existing key that stores a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setValue:forKey:">&ndash;&nbsp;setValue:forKey:</a></code>
-		<span class="tooltip"><p>(KTTMXReader only) This method first determines if the string can be converted to <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> and if so, will set the <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a>.
-   Otherwise it will set the string.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/numberFromString:">&ndash;&nbsp;numberFromString:</a></code>
-		<span class="tooltip"><p>Returns a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> from a string if the string is convertable to a number. Otherwise returns nil.
-   Note: floating point numbers must use . (dot) as floating point separator.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/numberForKey:">&ndash;&nbsp;numberForKey:</a></code>
-		<span class="tooltip"><p>Returns the <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> for the key. If there&rsquo;s no number for that key returns nil.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stringForKey:">&ndash;&nbsp;stringForKey:</a></code>
-		<span class="tooltip"><p>Returns the NSString for the key. If there&rsquo;s no string for that key returns nil.</p></span>
 	</span>
 	
 	
@@ -254,9 +241,11 @@
 		<p>Returns the number of property items.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSUInteger count</code></div>
-	
+
+    
 	
 	
 	
@@ -288,9 +277,11 @@
 		<p>The properties as key-value dictionary. Keys are NSString objects, values are <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> objects.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSMutableDictionary *properties</code></div>
-	
+
+    
 	
 	
 	
@@ -332,9 +323,11 @@
 		<p>Returns the <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> for the key. If there&rsquo;s no number for that key returns nil.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKMutableNumber *)numberForKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -382,9 +375,11 @@
    Note: floating point numbers must use . (dot) as floating point separator.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKMutableNumber *)numberFromString:(NSString *)<em>string</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -432,9 +427,11 @@
    Caution: it is illegal to set a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a> for an already existing key that stores a NSString.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)setNumber:(KKMutableNumber *)<em>number</em> forKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -482,9 +479,11 @@
    Caution: it is illegal to set a NSString for an already existing key that stores a <a href="../Classes/KKMutableNumber.html">KKMutableNumber</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)setString:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -532,9 +531,11 @@
    Otherwise it will set the string.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)setValue:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -581,9 +582,11 @@
 		<p>Returns the NSString for the key. If there&rsquo;s no string for that key returns nil.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (NSString *)stringForKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -623,6 +626,8 @@
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -633,9 +638,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -723,6 +728,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

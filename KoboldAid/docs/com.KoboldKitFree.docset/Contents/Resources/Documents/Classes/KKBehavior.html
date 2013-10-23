@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -69,6 +68,10 @@
 	<option value="//api/name/didJoinController">&nbsp;&nbsp;&nbsp;&nbsp;- didJoinController</option>
 	
 	<option value="//api/name/didLeaveController">&nbsp;&nbsp;&nbsp;&nbsp;- didLeaveController</option>
+	
+	<option value="//api/name/internal_joinController:withKey:">&nbsp;&nbsp;&nbsp;&nbsp;- internal_joinController:withKey:</option>
+	
+	<option value="//api/name/isEqualToBehavior:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToBehavior:</option>
 	
 	<option value="//api/name/postNotificationName:">&nbsp;&nbsp;&nbsp;&nbsp;- postNotificationName:</option>
 	
@@ -140,6 +143,10 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLeaveController">didLeaveController</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/internal_joinController:withKey:">internal_joinController:withKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToBehavior:">isEqualToBehavior:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postNotificationName:">postNotificationName:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postNotificationName:userInfo:">postNotificationName:userInfo:</a></span></li>
@@ -176,12 +183,12 @@
 	<td class="specification-value">NSCoding<br />NSCopying</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKBehavior.h<br />KKBehavior.m</td>
+	<td class="specification-value">KKBehavior.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -215,36 +222,30 @@ Behaviors differ from actions in several ways:</p>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/key">&nbsp;&nbsp;key</a></code>
-		<span class="tooltip"><p>The behavior&rsquo;s uniquely identifying key.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-		<span class="tooltip"><p>The behavior&rsquo;s name.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/controller">&nbsp;&nbsp;controller</a></code>
-		<span class="tooltip"><p>The behavior&rsquo;s <a href="#//api/name/node">node</a> controller.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/node">&nbsp;&nbsp;node</a></code>
-		<span class="tooltip"><p>The behavior&rsquo;s owning node.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/enabled">&nbsp;&nbsp;enabled</a></code>
-		<span class="tooltip"><p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
-Disabled behaviors don&rsquo;t receive update messages.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -259,14 +260,12 @@ Disabled behaviors don&rsquo;t receive update messages.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behavior">+&nbsp;behavior</a></code>
-		<span class="tooltip"><p>Creates a new instance.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeFromNode">&ndash;&nbsp;removeFromNode</a></code>
-		<span class="tooltip"><p>Removes the <a href="#//api/name/behavior">behavior</a> from its owning <a href="#//api/name/node">node</a> and <a href="#//api/name/controller">controller</a>.</p></span>
 	</span>
 	
 	
@@ -281,28 +280,24 @@ Disabled behaviors don&rsquo;t receive update messages.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didInitialize">&ndash;&nbsp;didInitialize</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/behavior">behavior</a> is first created.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/behavior">behavior</a> was added to a <a href="#//api/name/node">node</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/behavior">behavior</a> was removed from a <a href="#//api/name/node">node</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didChangeEnabledState">&ndash;&nbsp;didChangeEnabledState</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/enabled">enabled</a> state of the <a href="#//api/name/behavior">behavior</a> was changed.</p></span>
 	</span>
 	
 	
@@ -317,14 +312,24 @@ Disabled behaviors don&rsquo;t receive update messages.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/postNotificationName:">&ndash;&nbsp;postNotificationName:</a></code>
-		<span class="tooltip"><p>Posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; <a href="#//api/name/key">key</a> pointing to the sending <a href="#//api/name/behavior">behavior</a> object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/postNotificationName:userInfo:">&ndash;&nbsp;postNotificationName:userInfo:</a></code>
-		<span class="tooltip"><p>Posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; <a href="#//api/name/key">key</a> pointing to the sending <a href="#//api/name/behavior">behavior</a> object, and custom userInfo keys.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToBehavior:">&ndash;&nbsp;isEqualToBehavior:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/internal_joinController:withKey:">&ndash;&nbsp;internal_joinController:withKey:</a></code>
 	</span>
 	
 	
@@ -351,9 +356,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p></span>
 		<p>The behavior&rsquo;s <a href="#//api/name/node">node</a> controller.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, weak) KKNodeController *controller</code></div>
-	
+
+    
 	
 	
 	
@@ -391,9 +398,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p></span>
 Disabled behaviors don&rsquo;t receive update messages.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL enabled</code></div>
-	
+
+    
 	
 	
 	
@@ -431,9 +440,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>The behavior&rsquo;s uniquely identifying key.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *key</code></div>
-	
+
+    
 	
 	
 	
@@ -470,9 +481,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>The behavior&rsquo;s name.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *name</code></div>
-	
+
+    
 	
 	
 	
@@ -509,9 +522,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>The behavior&rsquo;s owning node.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, weak) SKNode *node</code></div>
-	
+
+    
 	
 	
 	
@@ -556,9 +571,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>Creates a new instance.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)behavior</code></div>
-	
+
+    
 	
 	
 	
@@ -603,9 +620,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>Sent when the <a href="#//api/name/enabled">enabled</a> state of the <a href="#//api/name/behavior">behavior</a> was changed.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)didChangeEnabledState</code></div>
-	
+
+    
 	
 	
 	
@@ -637,9 +656,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>Sent when the <a href="#//api/name/behavior">behavior</a> is first created.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)didInitialize</code></div>
-	
+
+    
 	
 	
 	
@@ -671,9 +692,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>Sent when the <a href="#//api/name/behavior">behavior</a> was added to a <a href="#//api/name/node">node</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)didJoinController</code></div>
-	
+
+    
 	
 	
 	
@@ -705,9 +728,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>Sent when the <a href="#//api/name/behavior">behavior</a> was removed from a <a href="#//api/name/node">node</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)didLeaveController</code></div>
-	
+
+    
 	
 	
 	
@@ -730,6 +755,28 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/internal_joinController:withKey:" title="internal_joinController:withKey:"></a>
+	<h3 class="subsubtitle method-title">internal_joinController:withKey:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)internal_joinController:(KKNodeController *)<em>controller</em> withKey:(NSString *)<em>key</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualToBehavior:" title="isEqualToBehavior:"></a>
+	<h3 class="subsubtitle method-title">isEqualToBehavior:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToBehavior:(KKBehavior *)<em>behavior</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/postNotificationName:" title="postNotificationName:"></a>
 	<h3 class="subsubtitle method-title">postNotificationName:</h3>
 	
@@ -739,9 +786,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>Posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; <a href="#//api/name/key">key</a> pointing to the sending <a href="#//api/name/behavior">behavior</a> object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)postNotificationName:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -783,9 +832,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 		<p>Posts a notification to notification center, with userInfo &ldquo;behavior&rdquo; <a href="#//api/name/key">key</a> pointing to the sending <a href="#//api/name/behavior">behavior</a> object, and custom userInfo keys.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)postNotificationName:(NSString *)<em>name</em> userInfo:(NSDictionary *)<em>userInfo</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -833,9 +884,11 @@ sending <a href="#//api/name/behavior">behavior</a> object is always added to th
 		<p>Removes the <a href="#//api/name/behavior">behavior</a> from its owning <a href="#//api/name/node">node</a> and <a href="#//api/name/controller">controller</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeFromNode</code></div>
-	
+
+    
 	
 	
 	
@@ -860,6 +913,8 @@ sending <a href="#//api/name/behavior">behavior</a> object is always added to th
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -870,9 +925,9 @@ sending <a href="#//api/name/behavior">behavior</a> object is always added to th
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -960,6 +1015,14 @@ sending <a href="#//api/name/behavior">behavior</a> object is always added to th
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

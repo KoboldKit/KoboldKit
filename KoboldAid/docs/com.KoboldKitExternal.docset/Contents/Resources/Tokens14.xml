@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALAction.html">
+	<File path="Classes/OALActionManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALAction</TokenIdentifier>
-			<Abstract type="html">\cond</Abstract>
-			<DeclaredIn>OALAction.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/OALActionManager</TokenIdentifier>
+			<Abstract type="html">Manages all ObjectAL actions.</Abstract>
+			<DeclaredIn>OALActionManager.h</DeclaredIn>
+            
 			
 			<NodeRef refid="14"/>
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALActionManager/stopAllActions</TokenIdentifier>
+			<Abstract type="html">Stops ALL running actions on ALL targets.</Abstract>
+			<DeclaredIn>OALActionManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopAllActions</Declaration>
+			
+			
+			<Anchor>//api/name/stopAllActions</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALActionManager/notifyActionStarted:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Used by OALAction to announce that it is starting.</Abstract>
+			<DeclaredIn>OALActionManager.h</DeclaredIn>
+			
+			<Declaration>- (void)notifyActionStarted:(OALAction *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">The action that is starting.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notifyActionStarted:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALActionManager/notifyActionStopped:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Used by OALAction to announce that it is stopping.</Abstract>
+			<DeclaredIn>OALActionManager.h</DeclaredIn>
+			
+			<Declaration>- (void)notifyActionStopped:(OALAction *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">The action that is stopping.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/notifyActionStopped:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

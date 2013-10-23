@@ -1,69 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSMutableArray+WeakReferences.html">
+	<File path="Categories/SS_CLASSNAME+SynthesizeSingletonPrivate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSMutableArray(WeakReferences)</TokenIdentifier>
-			<Abstract type="html">Adds to NSMutableArray the ability to create an array that keeps weak references.</Abstract>
-			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/SS_CLASSNAME(SynthesizeSingletonPrivate)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SynthesizeSingleton.h</DeclaredIn>
+            
 			
 			<NodeRef refid="37"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(WeakReferences)/mutableArrayUsingWeakReferences</TokenIdentifier>
-			<Abstract type="html">Create an NSMutableArray that uses weak references.</Abstract>
-			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SS_CLASSNAME/retainCountDoNothing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SynthesizeSingleton.h</DeclaredIn>
 			
-			<Declaration>+ (id)mutableArrayUsingWeakReferences</Declaration>
+			<Declaration>- (NSUInteger)retainCountDoNothing</Declaration>
 			
 			
-			<Anchor>//api/name/mutableArrayUsingWeakReferences</Anchor>
+			<Anchor>//api/name/retainCountDoNothing</Anchor>
+            <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(WeakReferences)/mutableArrayUsingWeakReferencesWithCapacity:</TokenIdentifier>
-			<Abstract type="html">Create an NSMutableArray that uses weak references.</Abstract>
-			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SS_CLASSNAME/retainCountDoSomething</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SynthesizeSingleton.h</DeclaredIn>
 			
-			<Declaration>+ (id)mutableArrayUsingWeakReferencesWithCapacity:(NSUInteger)capacity</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>capacity</Name>
-					<Abstract type="html">The initial capacity of the array.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSUInteger)retainCountDoSomething</Declaration>
 			
-			<Anchor>//api/name/mutableArrayUsingWeakReferencesWithCapacity:</Anchor>
+			
+			<Anchor>//api/name/retainCountDoSomething</Anchor>
+            <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(WeakReferences)/newMutableArrayUsingWeakReferences</TokenIdentifier>
-			<Abstract type="html">Create an NSMutableArray that uses weak references (no pending autorelease).</Abstract>
-			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SS_CLASSNAME/releaseDoNothing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SynthesizeSingleton.h</DeclaredIn>
 			
-			<Declaration>+ (id)newMutableArrayUsingWeakReferences</Declaration>
+			<Declaration>- (oneway void)releaseDoNothing</Declaration>
 			
 			
-			<Anchor>//api/name/newMutableArrayUsingWeakReferences</Anchor>
+			<Anchor>//api/name/releaseDoNothing</Anchor>
+            <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(WeakReferences)/newMutableArrayUsingWeakReferencesWithCapacity:</TokenIdentifier>
-			<Abstract type="html">Create an NSMutableArray that uses weak references (no pending autorelease).</Abstract>
-			<DeclaredIn>NSMutableArray+WeakReferences.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SS_CLASSNAME/releaseDoSomething</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SynthesizeSingleton.h</DeclaredIn>
 			
-			<Declaration>+ (id)newMutableArrayUsingWeakReferencesWithCapacity:(NSUInteger)capacity</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>capacity</Name>
-					<Abstract type="html">The initial capacity of the array.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (oneway void)releaseDoSomething</Declaration>
 			
-			<Anchor>//api/name/newMutableArrayUsingWeakReferencesWithCapacity:</Anchor>
+			
+			<Anchor>//api/name/releaseDoSomething</Anchor>
+            <NodeRef refid="37"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS_CLASSNAME/autoreleaseDoNothing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SynthesizeSingleton.h</DeclaredIn>
+			
+			<Declaration>- (id)autoreleaseDoNothing</Declaration>
+			
+			
+			<Anchor>//api/name/autoreleaseDoNothing</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS_CLASSNAME/autoreleaseDoSomething</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SynthesizeSingleton.h</DeclaredIn>
+			
+			<Declaration>- (id)autoreleaseDoSomething</Declaration>
+			
+			
+			<Anchor>//api/name/autoreleaseDoSomething</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

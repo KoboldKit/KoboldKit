@@ -1,102 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/KKSceneEventDelegate.html">
+	<File path="Categories/NSString+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/KKSceneEventDelegate</TokenIdentifier>
-			<Abstract type="html">Informal protocol defining the "update" methods an object can implement and receive when subscribed
-to updates in the scene.</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">NSString category methods</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
+            
 			
 			<NodeRef refid="58"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/update:</TokenIdentifier>
-			<Abstract type="html">The standard update method.</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/replaceOccurancesOfString:withString:inFile:encoding:</TokenIdentifier>
+			<Abstract type="html">Replaces occurances of string in a text file. Does nothing if file does not exist. File is written atomically.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (void)update:(NSTimeInterval)currentTime</Declaration>
+			<Declaration>+ (NSString *)replaceOccurancesOfString:(NSString *)search withString:(NSString *)replace inFile:(NSString *)file encoding:(NSStringEncoding)encoding</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>currentTime</Name>
-					<Abstract type="html">The time elapsed since app launch.</Abstract>
+					<Name>search</Name>
+					<Abstract type="html">The string to search for.</Abstract>
+				</Parameter><Parameter>
+					<Name>replace</Name>
+					<Abstract type="html">The string to replace occurances of &apos;search&apos; with.</Abstract>
+				</Parameter><Parameter>
+					<Name>file</Name>
+					<Abstract type="html">The file (with optional path) in which to replace strings.</Abstract>
+				</Parameter><Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">The NSStringEncoding used by the file.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/update:</Anchor>
+			<ReturnValue><Abstract type="html">Returns the file contents with search string occurances replaced, or nil if there was an error in input or reading the file.</Abstract></ReturnValue>
+			<Anchor>//api/name/replaceOccurancesOfString:withString:inFile:encoding:</Anchor>
+            <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didEvaluateActions</TokenIdentifier>
-			<Abstract type="html">Called after actions have been evaluated.</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/stringByDeletingNonAsciiCharacters</TokenIdentifier>
+			<Abstract type="html">Removes all characters not in the ASCII character set (decimal range 32-126).</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (void)didEvaluateActions</Declaration>
+			<Declaration>- (NSString *)stringByDeletingNonAsciiCharacters</Declaration>
 			
-			
-			<Anchor>//api/name/didEvaluateActions</Anchor>
+			<ReturnValue><Abstract type="html">The string with all non-ASCII characters removed.</Abstract></ReturnValue>
+			<Anchor>//api/name/stringByDeletingNonAsciiCharacters</Anchor>
+            <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didSimulatePhysics</TokenIdentifier>
-			<Abstract type="html">Called after physics world has been simulated.</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/stringByDeletingIllegalFileSystemCharacters</TokenIdentifier>
+			<Abstract type="html">Removes illegal filesystem characters from the string.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (void)didSimulatePhysics</Declaration>
+			<Declaration>- (NSString *)stringByDeletingIllegalFileSystemCharacters</Declaration>
 			
-			
-			<Anchor>//api/name/didSimulatePhysics</Anchor>
+			<ReturnValue><Abstract type="html">The string with all illegal file system characters removed.</Abstract></ReturnValue>
+			<Anchor>//api/name/stringByDeletingIllegalFileSystemCharacters</Anchor>
+            <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/willMoveFromView:</TokenIdentifier>
-			<Abstract type="html">Called when scene will leave the view.</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/stringByTrimmingWhiteSpaceCharacters</TokenIdentifier>
+			<Abstract type="html">Removes whitespace and newline characters from the beginning and end of the string.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (void)willMoveFromView:(SKView *)view</Declaration>
+			<Declaration>- (NSString *)stringByTrimmingWhiteSpaceCharacters</Declaration>
+			
+			<ReturnValue><Abstract type="html">The string with whitespace and newline characters trimmed.</Abstract></ReturnValue>
+			<Anchor>//api/name/stringByTrimmingWhiteSpaceCharacters</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/stringByDeletingIllegalXcodeCharacters</TokenIdentifier>
+			<Abstract type="html">Removes characters from the string that are illegal to use in .xcodeproj bundle and related files.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)stringByDeletingIllegalXcodeCharacters</Declaration>
+			
+			<ReturnValue><Abstract type="html">The string with all illegal .xcodeproj characters removed.</Abstract></ReturnValue>
+			<Anchor>//api/name/stringByDeletingIllegalXcodeCharacters</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/rectValue</TokenIdentifier>
+			<Abstract type="html">A CGRect converted from a string rect representation like &quot;{{10, 20}, {300, 400}}&quot;.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (CGRect)rectValue</Declaration>
+			
+			<ReturnValue><Abstract type="html">A CGRect converted from a string rect representation like &quot;{{10, 20}, {300, 400}}&quot;.</Abstract></ReturnValue>
+			<Anchor>//api/name/rectValue</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/sizeValue</TokenIdentifier>
+			<Abstract type="html">A CGSize converted from a string size representation like &quot;{10, 20}&quot;.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (CGSize)sizeValue</Declaration>
+			
+			<ReturnValue><Abstract type="html">A CGSize converted from a string size representation like &quot;{10, 20}&quot;.</Abstract></ReturnValue>
+			<Anchor>//api/name/sizeValue</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/pointValue</TokenIdentifier>
+			<Abstract type="html">A CGPoint converted from a string point representation like &quot;{300, 400}&quot;.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)pointValue</Declaration>
+			
+			<ReturnValue><Abstract type="html">A CGPoint converted from a string point representation like &quot;{300, 400}&quot;.</Abstract></ReturnValue>
+			<Anchor>//api/name/pointValue</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/color</TokenIdentifier>
+			<Abstract type="html">String converted to SKColor object. The string must be in the form &quot;1.0 1.0 1.0 1.0&quot; where the
+values stand for the RGBA color values in the same order.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (SKColor *)color</Declaration>
+			
+			<ReturnValue><Abstract type="html">String converted to SKColor object. The string must be in the form &quot;1.0 1.0 1.0 1.0&quot; where the
+values stand for the RGBA color values in the same order.</Abstract></ReturnValue>
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/containsString:</TokenIdentifier>
+			<Abstract type="html">Performs a case sensitive search for a substring. Returns YES if the string contains the substring.</Abstract>
+			<DeclaredIn>NSString+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)containsString:(NSString *)subString</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>view</Name>
-					<Abstract type="html">The view the scene is leaving. Identical to scene.view.</Abstract>
+					<Name>subString</Name>
+					<Abstract type="html">The sub string to search for.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/willMoveFromView:</Anchor>
+			<ReturnValue><Abstract type="html">YES if the subString is contained in the string.</Abstract></ReturnValue>
+			<Anchor>//api/name/containsString:</Anchor>
+            <NodeRef refid="58"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didMoveToView:</TokenIdentifier>
-			<Abstract type="html">Called when scene will attach to a view.</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>- (void)didMoveToView:(SKView *)view</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>view</Name>
-					<Abstract type="html">The view the scene is attached to. Identical to scene.view.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didMoveToView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KKSceneEventDelegate/didChangeSize:</TokenIdentifier>
-			<Abstract type="html">Called when scene changed its size, ie after rotating or changing views.</Abstract>
-			<DeclaredIn>KKSceneEventDelegate.h</DeclaredIn>			
-			
-			<Declaration>- (void)didChangeSize:(CGSize)oldSize</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>oldSize</Name>
-					<Abstract type="html">The scene's previous size. The scene.size property contains the new size.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didChangeSize:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKTilemapTileProperties Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -134,12 +133,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemapTileProperties.h<br />KKTilemapTileProperties.m</td>
+	<td class="specification-value">KKTilemapTileProperties.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -165,50 +164,42 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
-		<span class="tooltip"><p>Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile&rsquo;s properties.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/count">&nbsp;&nbsp;count</a></code>
-		<span class="tooltip"><p>Returns the number of property items.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:setNumber:forKey:">&ndash;&nbsp;propertiesForGid:setNumber:forKey:</a></code>
-		<span class="tooltip"><p>Sets the number for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:setString:forKey:">&ndash;&nbsp;propertiesForGid:setString:forKey:</a></code>
-		<span class="tooltip"><p>Sets the string for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:setValue:forKey:">&ndash;&nbsp;propertiesForGid:setValue:forKey:</a></code>
-		<span class="tooltip"><p>(KTTMXReader only) Sets a string or number (if string is convertible to number) for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>.
-   Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:">&ndash;&nbsp;propertiesForGid:</a></code>
-		<span class="tooltip"><p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/propertiesForGid:createNonExistingProperties:">&ndash;&nbsp;propertiesForGid:createNonExistingProperties:</a></code>
-		<span class="tooltip"><p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p></span>
 	</span>
 	
 	
@@ -235,9 +226,11 @@
 		<p>Returns the number of property items.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSUInteger count</code></div>
-	
+
+    
 	
 	
 	
@@ -269,9 +262,11 @@
 		<p>Dictionary of tile properties with gid as key (NSNumber) and values are KTTilemapProperties objects storing that tile&rsquo;s properties.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSMutableDictionary *properties</code></div>
-	
+
+    
 	
 	
 	
@@ -313,9 +308,11 @@
 		<p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -362,9 +359,11 @@
 		<p>The gid whose <a href="#//api/name/properties">properties</a> should be returned.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> createNonExistingProperties:(BOOL)<em>createNonExistingProperties</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -417,9 +416,11 @@ and return it. If createNonExistingProperties is NO behaves identical to <a href
 		<p>Sets the number for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setNumber:(KKMutableNumber *)<em>number</em> forKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -476,9 +477,11 @@ and return it. If createNonExistingProperties is NO behaves identical to <a href
 		<p>Sets the string for the key on the tile gid&rsquo;s <a href="#//api/name/properties">properties</a>. Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setString:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -536,9 +539,11 @@ and return it. If createNonExistingProperties is NO behaves identical to <a href
    Creates an instance of KTTilemapProperties if the gid has no <a href="#//api/name/properties">properties</a> yet.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapProperties *)propertiesForGid:(gid_t)<em>gid</em> setValue:(NSString *)<em>string</em> forKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -588,6 +593,8 @@ and return it. If createNonExistingProperties is NO behaves identical to <a href
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -598,9 +605,9 @@ and return it. If createNonExistingProperties is NO behaves identical to <a href
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -688,6 +695,14 @@ and return it. If createNonExistingProperties is NO behaves identical to <a href
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>ALCaptureDevice Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -161,12 +160,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ALCaptureDevice.h<br />ALCaptureDevice.m</td>
+	<td class="specification-value">ALCaptureDevice.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -192,85 +191,72 @@ This class is a placeholder in case such functionality is added in a future iOS 
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/captureSamples">&nbsp;&nbsp;captureSamples</a></code>
-		<span class="tooltip"><p>The number of capture samples available.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/device">&nbsp;&nbsp;device</a></code>
-		<span class="tooltip"><p>The OpenAL device pointer.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/extensions">&nbsp;&nbsp;extensions</a></code>
-		<span class="tooltip"><p>List of strings describing all extensions available on this <a href="#//api/name/device">device</a> (NSString*).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/majorVersion">&nbsp;&nbsp;majorVersion</a></code>
-		<span class="tooltip"><p>The specification revision for this implementation (major version).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/minorVersion">&nbsp;&nbsp;minorVersion</a></code>
-		<span class="tooltip"><p>The specification revision for this implementation (minor version).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deviceWithDeviceSpecifier:frequency:format:bufferSize:">+&nbsp;deviceWithDeviceSpecifier:frequency:format:bufferSize:</a></code>
-		<span class="tooltip"><p>Open the specified <a href="#//api/name/device">device</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithDeviceSpecifier:frequency:format:bufferSize:">&ndash;&nbsp;initWithDeviceSpecifier:frequency:format:bufferSize:</a></code>
-		<span class="tooltip"><p>Open the specified <a href="#//api/name/device">device</a>.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/startCapture">&ndash;&nbsp;startCapture</a></code>
-		<span class="tooltip"><p>Start capturing samples.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stopCapture">&ndash;&nbsp;stopCapture</a></code>
-		<span class="tooltip"><p>Stop capturing samples.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/moveSamples:toBuffer:">&ndash;&nbsp;moveSamples:toBuffer:</a></code>
-		<span class="tooltip"><p>Move captured samples to the specified buffer.
-This method will fail if less than the specified number of samples have been captured.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isExtensionPresent:">&ndash;&nbsp;isExtensionPresent:</a></code>
-		<span class="tooltip"><p>Check if the specified extension is present.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getProcAddress:">&ndash;&nbsp;getProcAddress:</a></code>
-		<span class="tooltip"><p>Get the address of the specified procedure (C function address).</p></span>
 	</span>
 	
 	
@@ -297,9 +283,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>The number of capture samples available.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) int captureSamples</code></div>
-	
+
+    
 	
 	
 	
@@ -331,9 +319,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>The OpenAL device pointer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) ALCdevice *device</code></div>
-	
+
+    
 	
 	
 	
@@ -365,9 +355,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>List of strings describing all extensions available on this <a href="#//api/name/device">device</a> (NSString*).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *extensions</code></div>
-	
+
+    
 	
 	
 	
@@ -399,9 +391,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>The specification revision for this implementation (major version).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) int majorVersion</code></div>
-	
+
+    
 	
 	
 	
@@ -433,9 +427,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>The specification revision for this implementation (minor version).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) int minorVersion</code></div>
-	
+
+    
 	
 	
 	
@@ -475,9 +471,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>Open the specified <a href="#//api/name/device">device</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)deviceWithDeviceSpecifier:(NSString *)<em>deviceSpecifier</em> frequency:(ALCuint)<em>frequency</em> format:(ALCenum)<em>format</em> bufferSize:(ALCsizei)<em>bufferSize</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -547,9 +545,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>Get the address of the specified procedure (C function address).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void *)getProcAddress:(NSString *)<em>functionName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -596,9 +596,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>Open the specified <a href="#//api/name/device">device</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)initWithDeviceSpecifier:(NSString *)<em>deviceSpecifier</em> frequency:(ALCuint)<em>frequency</em> format:(ALCenum)<em>format</em> bufferSize:(ALCsizei)<em>bufferSize</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -660,9 +662,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>Check if the specified extension is present.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (bool)isExtensionPresent:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -710,9 +714,11 @@ This method will fail if less than the specified number of samples have been cap
 This method will fail if less than the specified number of samples have been captured.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (bool)moveSamples:(ALCsizei)<em>numSamples</em> toBuffer:(ALCvoid *)<em>buffer</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -764,9 +770,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>Start capturing samples.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (bool)startCapture</code></div>
-	
+
+    
 	
 	
 	
@@ -803,9 +811,11 @@ This method will fail if less than the specified number of samples have been cap
 		<p>Stop capturing samples.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (bool)stopCapture</code></div>
-	
+
+    
 	
 	
 	
@@ -835,6 +845,8 @@ This method will fail if less than the specified number of samples have been cap
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -845,9 +857,9 @@ This method will fail if less than the specified number of samples have been cap
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -935,6 +947,14 @@ This method will fail if less than the specified number of samples have been cap
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

@@ -1,80 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALPlaceAction.html">
+	<File path="Classes/OALSequentialActions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALPlaceAction</TokenIdentifier>
-			<Abstract type="html">Places the target at the specified position.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/OALSequentialActions</TokenIdentifier>
+			<Abstract type="html">A set of actions that get run in sequence.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+            
 			
 			<NodeRef refid="24"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/setPosition:</TokenIdentifier>
-			<Abstract type="html">The position where the target will be placed.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/setActions:</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
 			
 			
-			<Anchor>//api/name/position</Anchor>
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/position</TokenIdentifier>
-			<Abstract type="html">The position where the target will be placed.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/actions</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
 			
 			
-			<Anchor>//api/name/position</Anchor>
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALPlaceAction/position</TokenIdentifier>
-			<Abstract type="html">The position where the target will be placed.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/OALSequentialActions/actions</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, assign) ALPoint position</Declaration>
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
 			
 			
-			<Anchor>//api/name/position</Anchor>
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALPlaceAction/actionWithPosition:</TokenIdentifier>
-			<Abstract type="html">Create an action with the specified position.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALSequentialActions/actions:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>+ (id)actionWithPosition:(ALPoint)position</Declaration>
+			<Declaration>+ (id)actions:(OALAction *)actions, ...</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>position</Name>
-					<Abstract type="html">The position to place the target at.</Abstract>
+					<Name>actions</Name>
+					<Abstract type="html">The comma separated list of actions.</Abstract>
+				</Parameter><Parameter>
+					<Name>NS_REQUIRES_NIL_TERMINATION</Name>
+					<Abstract type="html">List of actions must be terminated by a nil.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithPosition:</Anchor>
+			<ReturnValue><Abstract type="html">A new set of sequential actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/actions:</Anchor>
+            <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPlaceAction/initWithPosition:</TokenIdentifier>
-			<Abstract type="html">Initialize an action with the specified position.</Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/OALSequentialActions/actionsFromArray:</TokenIdentifier>
+			<Abstract type="html">Create an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithPosition:(ALPoint)position</Declaration>
+			<Declaration>+ (id)actionsFromArray:(NSArray *)actions</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>position</Name>
-					<Abstract type="html">The position to place the target at.</Abstract>
+					<Name>actions</Name>
+					<Abstract type="html">The actions to run.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithPosition:</Anchor>
+			<ReturnValue><Abstract type="html">A new set of sequential actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionsFromArray:</Anchor>
+            <NodeRef refid="24"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALSequentialActions/initWithActions:</TokenIdentifier>
+			<Abstract type="html">Initialize an action.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithActions:(NSArray *)actions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>actions</Name>
+					<Abstract type="html">The actions to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized set of sequential actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithActions:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

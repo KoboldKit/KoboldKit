@@ -1,50 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSObject+KoboldKit.html">
+	<File path="Classes/KKViewOriginNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSObject(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">NSObject category methods for Kobold Kit</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKViewOriginNode</TokenIdentifier>
+			<Abstract type="html">Children of this node will always have their origin at the lower left corner of the view,
+regardless of the scene&apos;s anchorPoint. This class is mainly used to keep HUD elements
+in a scrolling world fixed on the screen because the origin (0,0) is fixed to the lower left corner.</Abstract>
+			<DeclaredIn>KKViewOriginNode.h</DeclaredIn>
+            
 			
 			<NodeRef refid="52"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(KoboldKit)/performSelector:afterDelay:</TokenIdentifier>
-			<Abstract type="html">Performs a selector with delay, with 'self' automatically sent to the selector.</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewOriginNode/updatePositionFromSceneFrame</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKViewOriginNode.h</DeclaredIn>
 			
-			<Declaration>- (void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>aSelector</Name>
-					<Abstract type="html">The selector to perform. Selector must take a single id parameter.</Abstract>
-				</Parameter><Parameter>
-					<Name>delay</Name>
-					<Abstract type="html">The time to wait (in seconds) before performing the selector.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)updatePositionFromSceneFrame</Declaration>
 			
-			<Anchor>//api/name/performSelector:afterDelay:</Anchor>
+			
+			<Anchor>//api/name/updatePositionFromSceneFrame</Anchor>
+            <NodeRef refid="52"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(KoboldKit)/performSelectorInBackground:</TokenIdentifier>
-			<Abstract type="html">Performs a selector in background, with 'self' automatically sent to the selector.</Abstract>
-			<DeclaredIn>NSObject+KoboldKit.h</DeclaredIn>			
-			
-			<Declaration>- (void)performSelectorInBackground:(SEL)aSelector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>aSelector</Name>
-					<Abstract type="html">The selector to perform. Selector must take a single id parameter.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/performSelectorInBackground:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

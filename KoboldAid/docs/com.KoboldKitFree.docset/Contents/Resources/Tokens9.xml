@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKFloatNumber.html">
+	<File path="Classes/KKEmitterNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKFloatNumber</TokenIdentifier>
-			<Abstract type="html">Used internally. Part of the KKMutableNumber class cluster.</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKEmitterNode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKEmitterNode.h</DeclaredIn>
+            
 			
 			<NodeRef refid="9"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKFloatNumber/initWithFloat:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type float</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKEmitterNode/emitterWithFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKEmitterNode.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithFloat:(float)floatNumber</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (id)emitterWithFile:(NSString *)file</Declaration>
 			
-			<Anchor>//api/name/initWithFloat:</Anchor>
+			
+			<Anchor>//api/name/emitterWithFile:</Anchor>
+            <NodeRef refid="9"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

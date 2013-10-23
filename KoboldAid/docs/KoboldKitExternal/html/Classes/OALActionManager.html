@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OALActionManager Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitExternal </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -43,8 +42,6 @@
 	
 	
 	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/doResetTimeDelta:">&nbsp;&nbsp;&nbsp;&nbsp;- doResetTimeDelta:</option>
 	
 	<option value="//api/name/notifyActionStarted:">&nbsp;&nbsp;&nbsp;&nbsp;- notifyActionStarted:</option>
 	
@@ -80,8 +77,6 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doResetTimeDelta:">doResetTimeDelta:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyActionStarted:">notifyActionStarted:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifyActionStopped:">notifyActionStopped:</a></span></li>
@@ -115,19 +110,17 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OALActionManager.h<br />OALActionManager.m</td>
+	<td class="specification-value">OALActionManager.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Manages all ObjectAL actions.</p>
-
-<p>(INTERNAL USE) Private methods for OALActionManager.</p>
 					</div>
 					
 					
@@ -140,42 +133,24 @@
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/stopAllActions">&ndash;&nbsp;stopAllActions</a></code>
-		<span class="tooltip"><p>Stops ALL running actions on ALL targets.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifyActionStarted:">&ndash;&nbsp;notifyActionStarted:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Used by <a href="../Classes/OALAction.html">OALAction</a> to announce that it is starting.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/notifyActionStopped:">&ndash;&nbsp;notifyActionStopped:</a></code>
-		<span class="tooltip"><p>(INTERNAL USE) Used by <a href="../Classes/OALAction.html">OALAction</a> to announce that it is stopping.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/doResetTimeDelta:">&ndash;&nbsp;doResetTimeDelta:</a></code>
-		<span class="tooltip"><p>Resets the time delta in cases where proper time delta calculations become impossible.</p></span>
 	</span>
 	
 	
@@ -197,52 +172,20 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/doResetTimeDelta:" title="doResetTimeDelta:"></a>
-	<h3 class="subsubtitle method-title">doResetTimeDelta:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Resets the time delta in cases where proper time delta calculations become impossible.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)doResetTimeDelta:(NSNotification *)<em>notification</em></code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">OALActionManager.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/notifyActionStarted:" title="notifyActionStarted:"></a>
 	<h3 class="subsubtitle method-title">notifyActionStarted:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(INTERNAL USE) Used by <a href="../Classes/OALAction.html">OALAction</a> to announce that it is starting.</p>
+		<p>(INTERNAL USE) Used by OALAction to announce that it is starting.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)notifyActionStarted:(OALAction *)<em>action</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -281,12 +224,14 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>(INTERNAL USE) Used by <a href="../Classes/OALAction.html">OALAction</a> to announce that it is stopping.</p>
+		<p>(INTERNAL USE) Used by OALAction to announce that it is stopping.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)notifyActionStopped:(OALAction *)<em>action</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -328,9 +273,11 @@
 		<p>Stops ALL running actions on ALL targets.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)stopAllActions</code></div>
-	
+
+    
 	
 	
 	
@@ -355,6 +302,8 @@
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -365,9 +314,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -455,6 +404,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

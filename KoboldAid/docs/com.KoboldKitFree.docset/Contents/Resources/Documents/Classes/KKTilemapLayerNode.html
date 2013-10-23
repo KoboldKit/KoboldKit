@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKTilemapLayerNode Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -50,6 +49,10 @@
 	
 	
 	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/centerPositionForTileCoord:">&nbsp;&nbsp;&nbsp;&nbsp;- centerPositionForTileCoord:</option>
+	
+	<option value="//api/name/positionForTileCoord:">&nbsp;&nbsp;&nbsp;&nbsp;- positionForTileCoord:</option>
 	
 	<option value="//api/name/tileCoordForPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- tileCoordForPoint:</option>
 	
@@ -89,6 +92,10 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centerPositionForTileCoord:">centerPositionForTileCoord:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/positionForTileCoord:">positionForTileCoord:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileCoordForPoint:">tileCoordForPoint:</a></span></li>
 	
 </ul></li>
@@ -118,12 +125,12 @@
 	<td class="specification-value"><a href="../Classes/KKNode.html">KKNode</a> : SKNode</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemapLayerNode.h<br />KKTilemapLayerNode.m</td>
+	<td class="specification-value">KKTilemapLayerNode.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -147,21 +154,30 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/layer">&nbsp;&nbsp;layer</a></code>
-		<span class="tooltip"><p>The tilemap layer object.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemapNode">&nbsp;&nbsp;tilemapNode</a></code>
-		<span class="tooltip"><p>The layer&rsquo;s tilemap node.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tileCoordForPoint:">&ndash;&nbsp;tileCoordForPoint:</a></code>
-		<span class="tooltip"><p>Converts a point from scene coordinates to tile coordinates within the <a href="#//api/name/layer">layer</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centerPositionForTileCoord:">&ndash;&nbsp;centerPositionForTileCoord:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/positionForTileCoord:">&ndash;&nbsp;positionForTileCoord:</a></code>
 	</span>
 	
 	
@@ -188,9 +204,11 @@
 		<p>The tilemap layer object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly, weak) KKTilemapLayer *layer</code></div>
-	
+
+    
 	
 	
 	
@@ -227,9 +245,11 @@
 		<p>The layer&rsquo;s tilemap node.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, weak) KKTilemapNode *tilemapNode</code></div>
-	
+
+    
 	
 	
 	
@@ -267,6 +287,78 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/centerPositionForTileCoord:" title="centerPositionForTileCoord:"></a>
+	<h3 class="subsubtitle method-title">centerPositionForTileCoord:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>nd</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGPoint)centerPositionForTileCoord:(CGPoint)<em>tileCoord</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapLayerNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/positionForTileCoord:" title="positionForTileCoord:"></a>
+	<h3 class="subsubtitle method-title">positionForTileCoord:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>nd</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGPoint)positionForTileCoord:(CGPoint)<em>tileCoord</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KKTilemapLayerNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/tileCoordForPoint:" title="tileCoordForPoint:"></a>
 	<h3 class="subsubtitle method-title">tileCoordForPoint:</h3>
 	
@@ -276,9 +368,11 @@
 		<p>Converts a point from scene coordinates to tile coordinates within the <a href="#//api/name/layer">layer</a>.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (CGPoint)tileCoordForPoint:(CGPoint)<em>point</em></code></div>
-	
+
+    
 	
 	
 	
@@ -303,6 +397,8 @@
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -313,9 +409,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -403,6 +499,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

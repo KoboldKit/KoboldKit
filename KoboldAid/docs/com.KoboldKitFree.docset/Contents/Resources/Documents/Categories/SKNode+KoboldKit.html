@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>SKNode(KoboldKit) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -81,9 +80,15 @@
 	
 	<option value="//api/name/disregardNotification:object:">&nbsp;&nbsp;&nbsp;&nbsp;- disregardNotification:object:</option>
 	
+	<option value="//api/name/disregardPhysicsContactEvents">&nbsp;&nbsp;&nbsp;&nbsp;- disregardPhysicsContactEvents</option>
+	
 	<option value="//api/name/disregardSceneEvents">&nbsp;&nbsp;&nbsp;&nbsp;- disregardSceneEvents</option>
 	
 	<option value="//api/name/hasBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- hasBehaviors</option>
+	
+	<option value="//api/name/isEqualToNode:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToNode:</option>
+	
+	<option value="//api/name/isEqualToNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToNodeTree:</option>
 	
 	<option value="//api/name/observeInputEvents">&nbsp;&nbsp;&nbsp;&nbsp;- observeInputEvents</option>
 	
@@ -91,9 +96,13 @@
 	
 	<option value="//api/name/observeNotification:selector:object:">&nbsp;&nbsp;&nbsp;&nbsp;- observeNotification:selector:object:</option>
 	
+	<option value="//api/name/observePhysicsContactEvents">&nbsp;&nbsp;&nbsp;&nbsp;- observePhysicsContactEvents</option>
+	
 	<option value="//api/name/observeSceneEvents">&nbsp;&nbsp;&nbsp;&nbsp;- observeSceneEvents</option>
 	
 	<option value="//api/name/pauseControllersInNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- pauseControllersInNodeTree:</option>
+	
+	<option value="//api/name/physicsBodyWithCircleOfRadius:">&nbsp;&nbsp;&nbsp;&nbsp;- physicsBodyWithCircleOfRadius:</option>
 	
 	<option value="//api/name/physicsBodyWithEdgeChainFromPath:">&nbsp;&nbsp;&nbsp;&nbsp;- physicsBodyWithEdgeChainFromPath:</option>
 	
@@ -149,6 +158,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to scene events">Subscribe to scene events</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to physics contact events">Subscribe to physics contact events</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to notifications">Subscribe to notifications</a></span></li>
 	
 </ul></li>
@@ -201,9 +212,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardNotification:object:">disregardNotification:object:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardPhysicsContactEvents">disregardPhysicsContactEvents</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disregardSceneEvents">disregardSceneEvents</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasBehaviors">hasBehaviors</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToNode:">isEqualToNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToNodeTree:">isEqualToNodeTree:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeInputEvents">observeInputEvents</a></span></li>
 	
@@ -211,9 +228,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeNotification:selector:object:">observeNotification:selector:object:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observePhysicsContactEvents">observePhysicsContactEvents</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeSceneEvents">observeSceneEvents</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pauseControllersInNodeTree:">pauseControllersInNodeTree:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/physicsBodyWithCircleOfRadius:">physicsBodyWithCircleOfRadius:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/physicsBodyWithEdgeChainFromPath:">physicsBodyWithEdgeChainFromPath:</a></span></li>
 	
@@ -262,13 +283,16 @@
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/KKPhysicsContactEventDelegate.html">KKPhysicsContactEventDelegate</a><br /><a href="../Protocols/KKSceneEventDelegate.html">KKSceneEventDelegate</a></td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">SKNode+KoboldKit.h<br />SKNode+KoboldKit.m</td>
+	<td class="specification-value">SKNode+KoboldKit.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -292,7 +316,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/centerOnNode:">&ndash;&nbsp;centerOnNode:</a></code>
-		<span class="tooltip"><p>Changes the receiver&rsquo;s position so that it is centered on the given node.</p></span>
 	</span>
 	
 	
@@ -307,14 +330,12 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didMoveToParent">&ndash;&nbsp;didMoveToParent</a></code>
-		<span class="tooltip"><p>Called after addChild / insertChild. The self.scene and self.parent properties are valid in this method.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/willMoveFromParent">&ndash;&nbsp;willMoveFromParent</a></code>
-		<span class="tooltip"><p>Called after removeFromParent and other remove child methods. The self.scene and self.parent properties are still valid.</p></span>
 	</span>
 	
 	
@@ -329,49 +350,42 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/controller">&nbsp;&nbsp;controller</a></code>
-		<span class="tooltip"><p>the node&rsquo;s controller object.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/createController">&ndash;&nbsp;createController</a></code>
-		<span class="tooltip"><p>Creates node <a href="#//api/name/controller">controller</a> if one does not exist yet. Returns the new or existing instance.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeController">&ndash;&nbsp;removeController</a></code>
-		<span class="tooltip"><p>Removes the <a href="#//api/name/controller">controller</a> from the node.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/model">&nbsp;&nbsp;model</a></code>
-		<span class="tooltip"><p>The node&rsquo;s model</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/info">&nbsp;&nbsp;info</a></code>
-		<span class="tooltip"><p>The node&rsquo;s <a href="#//api/name/model">model</a></p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/pauseControllersInNodeTree:">&ndash;&nbsp;pauseControllersInNodeTree:</a></code>
-		<span class="tooltip"><p>Pauses all controllers of the nodes beginning with rootNode.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/resumeControllersInNodeTree:">&ndash;&nbsp;resumeControllersInNodeTree:</a></code>
-		<span class="tooltip"><p>Resumes all controllers of the nodes beginning with rootNode.</p></span>
 	</span>
 	
 	
@@ -386,7 +400,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/kkScene">&nbsp;&nbsp;kkScene</a></code>
-		<span class="tooltip"><p>Returns the node&rsquo;s scene object, cast to <a href="../Classes/KKScene.html">KKScene</a>. Use this instead of scene to use KKScene&rsquo;s methods and properties.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -401,77 +414,66 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehavior:">&ndash;&nbsp;addBehavior:</a></code>
-		<span class="tooltip"><p>Adds a behavior to the node. The behavior will be copied.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehavior:withKey:">&ndash;&nbsp;addBehavior:withKey:</a></code>
-		<span class="tooltip"><p>Adds a behavior to the node with a key. Replaces any existing behavior with the same key. The behavior will be copied.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addBehaviors:">&ndash;&nbsp;addBehaviors:</a></code>
-		<span class="tooltip"><p>Adds multiple behaviors from an array. The behaviors will be copied.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviorForKey:">&ndash;&nbsp;behaviorForKey:</a></code>
-		<span class="tooltip"><p>The behavior for the key. Returns nil if no behavior with that key was found.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviorKindOfClass:">&ndash;&nbsp;behaviorKindOfClass:</a></code>
-		<span class="tooltip"><p>The first behavior of the given kind of class. Returns nil if no behavior with that class was found.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/behaviorMemberOfClass:">&ndash;&nbsp;behaviorMemberOfClass:</a></code>
-		<span class="tooltip"><p>The first behavior that is a member of the given class. Returns nil if no behavior with that class was found.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hasBehaviors">&ndash;&nbsp;hasBehaviors</a></code>
-		<span class="tooltip"><p>YES if the node has one or more behaviors.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeBehavior:">&ndash;&nbsp;removeBehavior:</a></code>
-		<span class="tooltip"><p>Removes the behavior.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeBehaviorForKey:">&ndash;&nbsp;removeBehaviorForKey:</a></code>
-		<span class="tooltip"><p>Removes the behavior with the given key.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeBehaviorWithClass:">&ndash;&nbsp;removeBehaviorWithClass:</a></code>
-		<span class="tooltip"><p>Removes the first behavior with the given class.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeAllBehaviors">&ndash;&nbsp;removeAllBehaviors</a></code>
-		<span class="tooltip"><p>Removes all behaviors from the node.</p></span>
 	</span>
 	
 	
@@ -486,15 +488,12 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeInputEvents">&ndash;&nbsp;observeInputEvents</a></code>
-		<span class="tooltip"><p>Receiver starts receiving input events. The receiver will receive any event method for touches,
-accelerometer, keyboard, mouse by simply implementing the corresponding input event method (ie touchesBegan:withEvent:).</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardInputEvents">&ndash;&nbsp;disregardInputEvents</a></code>
-		<span class="tooltip"><p>Receiver stops receiving all input events.</p></span>
 	</span>
 	
 	
@@ -509,15 +508,32 @@ accelerometer, keyboard, mouse by simply implementing the corresponding input ev
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeSceneEvents">&ndash;&nbsp;observeSceneEvents</a></code>
-		<span class="tooltip"><p>Receiver starts receiving all scene events. These events include update, didSimulatePhysics, didEvaluateActions as well as
-scene resizing and scene move to/from view. Receiver only needs to implement the corresponding event methods.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardSceneEvents">&ndash;&nbsp;disregardSceneEvents</a></code>
-		<span class="tooltip"><p>Receiver stops receiving all scene events.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Subscribe to physics contact events" name="task_Subscribe to physics contact events"></a>
+						<h3 class="subsubtitle task-title">Subscribe to physics contact events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/observePhysicsContactEvents">&ndash;&nbsp;observePhysicsContactEvents</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disregardPhysicsContactEvents">&ndash;&nbsp;disregardPhysicsContactEvents</a></code>
 	</span>
 	
 	
@@ -532,70 +548,78 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeNotification:selector:">&ndash;&nbsp;observeNotification:selector:</a></code>
-		<span class="tooltip"><p>Receiver observes notifications posted by notification center.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/observeNotification:selector:object:">&ndash;&nbsp;observeNotification:selector:object:</a></code>
-		<span class="tooltip"><p>Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardNotification:">&ndash;&nbsp;disregardNotification:</a></code>
-		<span class="tooltip"><p>Receiver disregards all notifications with the given name.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardNotification:object:">&ndash;&nbsp;disregardNotification:object:</a></code>
-		<span class="tooltip"><p>Receiver disregards notifications with the given name coming from a specific object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/disregardAllNotifications">&ndash;&nbsp;disregardAllNotifications</a></code>
-		<span class="tooltip"><p>Receiver disregards any and all notification sent by the notification center.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/physicsBodyWithEdgeLoopFromPath:">&ndash;&nbsp;physicsBodyWithEdgeLoopFromPath:</a></code>
-		<span class="tooltip"><p>Creates a physics Body with edge loop shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/physicsBodyWithEdgeChainFromPath:">&ndash;&nbsp;physicsBodyWithEdgeChainFromPath:</a></code>
-		<span class="tooltip"><p>Creates a physics Body with edge chain shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/physicsBodyWithRectangleOfSize:">&ndash;&nbsp;physicsBodyWithRectangleOfSize:</a></code>
-		<span class="tooltip"><p>Creates a physics Body with rectangle shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/physicsBodyWithCircleOfRadius:">&ndash;&nbsp;physicsBodyWithCircleOfRadius:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/physicsBodyWithTilemapObject:">&ndash;&nbsp;physicsBodyWithTilemapObject:</a></code>
-		<span class="tooltip"><p>nd</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/playSoundFileNamed:">&ndash;&nbsp;playSoundFileNamed:</a></code>
-		<span class="tooltip"><p>nd</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToNode:">&ndash;&nbsp;isEqualToNode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToNodeTree:">&ndash;&nbsp;isEqualToNodeTree:</a></code>
 	</span>
 	
 	
@@ -622,9 +646,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>the node&rsquo;s controller object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) KKNodeController *controller</code></div>
-	
+
+    
 	
 	
 	
@@ -661,9 +687,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>The node&rsquo;s <a href="#//api/name/model">model</a></p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKModel *info</code></div>
-	
+
+    
 	
 	
 	
@@ -700,9 +728,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Returns the node&rsquo;s scene object, cast to <a href="../Classes/KKScene.html">KKScene</a>. Use this instead of scene to use KKScene&rsquo;s methods and properties.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKScene *kkScene</code></div>
-	
+
+    
 	
 	
 	
@@ -734,9 +764,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>The node&rsquo;s model</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKModel *model</code></div>
-	
+
+    
 	
 	
 	
@@ -783,9 +815,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Adds a behavior to the node. The behavior will be copied.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addBehavior:(KKBehavior *)<em>behavior</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -827,9 +861,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Adds a behavior to the node with a key. Replaces any existing behavior with the same key. The behavior will be copied.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addBehavior:(KKBehavior *)<em>behavior</em> withKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -876,9 +912,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Adds multiple behaviors from an array. The behaviors will be copied.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addBehaviors:(NSArray *)<em>behaviors</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -920,9 +958,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>The behavior for the key. Returns nil if no behavior with that key was found.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)behaviorForKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -969,9 +1009,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>The first behavior of the given kind of class. Returns nil if no behavior with that class was found.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)behaviorKindOfClass:(Class)<em>behaviorClass</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1018,9 +1060,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>The first behavior that is a member of the given class. Returns nil if no behavior with that class was found.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (id)behaviorMemberOfClass:(Class)<em>behaviorClass</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1067,9 +1111,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Changes the receiver&rsquo;s position so that it is centered on the given node.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)centerOnNode:(SKNode *)<em>node</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1111,9 +1157,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Creates node <a href="#//api/name/controller">controller</a> if one does not exist yet. Returns the new or existing instance.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKNodeController *)createController</code></div>
-	
+
+    
 	
 	
 	
@@ -1145,9 +1193,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Called after addChild / insertChild. The self.scene and self.parent properties are valid in this method.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)didMoveToParent</code></div>
-	
+
+    
 	
 	
 	
@@ -1179,9 +1229,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Receiver disregards any and all notification sent by the notification center.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)disregardAllNotifications</code></div>
-	
+
+    
 	
 	
 	
@@ -1213,9 +1265,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Receiver stops receiving all input events.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)disregardInputEvents</code></div>
-	
+
+    
 	
 	
 	
@@ -1247,9 +1301,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Receiver disregards all notifications with the given name.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1291,9 +1347,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Receiver disregards notifications with the given name coming from a specific object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)disregardNotification:(NSString *)<em>notificationName</em> object:(id)<em>notificationSender</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1331,6 +1389,42 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/disregardPhysicsContactEvents" title="disregardPhysicsContactEvents"></a>
+	<h3 class="subsubtitle method-title">disregardPhysicsContactEvents</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Receiver stops receiving the physics contact events.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)disregardPhysicsContactEvents</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/disregardSceneEvents" title="disregardSceneEvents"></a>
 	<h3 class="subsubtitle method-title">disregardSceneEvents</h3>
 	
@@ -1340,9 +1434,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Receiver stops receiving all scene events.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)disregardSceneEvents</code></div>
-	
+
+    
 	
 	
 	
@@ -1374,9 +1470,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>YES if the node has one or more behaviors.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (BOOL)hasBehaviors</code></div>
-	
+
+    
 	
 	
 	
@@ -1404,6 +1502,28 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/isEqualToNode:" title="isEqualToNode:"></a>
+	<h3 class="subsubtitle method-title">isEqualToNode:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToNode:(SKNode *)<em>node</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualToNodeTree:" title="isEqualToNodeTree:"></a>
+	<h3 class="subsubtitle method-title">isEqualToNodeTree:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToNodeTree:(SKNode *)<em>node</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/observeInputEvents" title="observeInputEvents"></a>
 	<h3 class="subsubtitle method-title">observeInputEvents</h3>
 	
@@ -1414,9 +1534,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 accelerometer, keyboard, mouse by simply implementing the corresponding input event method (ie touchesBegan:withEvent:).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)observeInputEvents</code></div>
-	
+
+    
 	
 	
 	
@@ -1448,9 +1570,11 @@ accelerometer, keyboard, mouse by simply implementing the corresponding input ev
 		<p>Receiver observes notifications posted by notification center.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1497,9 +1621,11 @@ accelerometer, keyboard, mouse by simply implementing the corresponding input ev
 		<p>Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)observeNotification:(NSString *)<em>notificationName</em> selector:(SEL)<em>notificationSelector</em> object:(id)<em>notificationSender</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1542,6 +1668,42 @@ accelerometer, keyboard, mouse by simply implementing the corresponding input ev
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/observePhysicsContactEvents" title="observePhysicsContactEvents"></a>
+	<h3 class="subsubtitle method-title">observePhysicsContactEvents</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Receiver starts receiving both physics contact events. Receiver only needs to implement the corresponding event methods.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)observePhysicsContactEvents</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/observeSceneEvents" title="observeSceneEvents"></a>
 	<h3 class="subsubtitle method-title">observeSceneEvents</h3>
 	
@@ -1552,9 +1714,11 @@ accelerometer, keyboard, mouse by simply implementing the corresponding input ev
 scene resizing and scene move to/from view. Receiver only needs to implement the corresponding event methods.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)observeSceneEvents</code></div>
-	
+
+    
 	
 	
 	
@@ -1586,9 +1750,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Pauses all controllers of the nodes beginning with rootNode.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)pauseControllersInNodeTree:(SKNode *)<em>rootNode</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1621,6 +1787,57 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/physicsBodyWithCircleOfRadius:" title="physicsBodyWithCircleOfRadius:"></a>
+	<h3 class="subsubtitle method-title">physicsBodyWithCircleOfRadius:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a physics Body with circle shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithCircleOfRadius:(CGFloat)<em>radius</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radius</em></dt>
+			<dd><p>The circle radius.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The newly created SKPhysicsBody.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/physicsBodyWithEdgeChainFromPath:" title="physicsBodyWithEdgeChainFromPath:"></a>
 	<h3 class="subsubtitle method-title">physicsBodyWithEdgeChainFromPath:</h3>
 	
@@ -1630,9 +1847,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Creates a physics Body with edge chain shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithEdgeChainFromPath:(CGPathRef)<em>path</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1679,9 +1898,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Creates a physics Body with edge loop shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithEdgeLoopFromPath:(CGPathRef)<em>path</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1728,9 +1949,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Creates a physics Body with rectangle shape. Also assigns the physics body to the node&rsquo;s self.physicsBody property.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithRectangleOfSize:(CGSize)<em>size</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1746,7 +1969,7 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>size The newly created SKPhysicsBody.</p>
+		<p>The newly created SKPhysicsBody.</p>
 	</div>
 	
 	
@@ -1777,9 +2000,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>nd</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (SKPhysicsBody *)physicsBodyWithTilemapObject:(KKTilemapObject *)<em>tilemapObject</em></code></div>
-	
+
+    
 	
 	
 	
@@ -1811,9 +2036,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>nd</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)playSoundFileNamed:(NSString *)<em>soundFile</em></code></div>
-	
+
+    
 	
 	
 	
@@ -1845,9 +2072,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Removes all behaviors from the node.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeAllBehaviors</code></div>
-	
+
+    
 	
 	
 	
@@ -1879,9 +2108,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Removes the behavior.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeBehavior:(KKBehavior *)<em>behavior</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1923,9 +2154,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Removes the behavior with the given key.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeBehaviorForKey:(NSString *)<em>key</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1967,9 +2200,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Removes the first behavior with the given class.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeBehaviorWithClass:(Class)<em>behaviorClass</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2011,9 +2246,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Removes the <a href="#//api/name/controller">controller</a> from the node.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeController</code></div>
-	
+
+    
 	
 	
 	
@@ -2045,9 +2282,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Resumes all controllers of the nodes beginning with rootNode.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)resumeControllersInNodeTree:(SKNode *)<em>rootNode</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -2089,9 +2328,11 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 		<p>Called after removeFromParent and other remove child methods. The self.scene and self.parent properties are still valid.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)willMoveFromParent</code></div>
-	
+
+    
 	
 	
 	
@@ -2116,6 +2357,8 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -2126,9 +2369,9 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -2216,6 +2459,14 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

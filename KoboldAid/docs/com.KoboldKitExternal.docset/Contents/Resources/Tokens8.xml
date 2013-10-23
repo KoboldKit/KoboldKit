@@ -7,6 +7,7 @@
 			<Abstract type="html">A source represents an object that emits sound which can be heard by a listener.
 This source can have position, velocity, and direction.</Abstract>
 			<DeclaredIn>ALSource.h</DeclaredIn>
+            
 			
 			<NodeRef refid="8"/>
 		</Token>
@@ -16,317 +17,345 @@ This source can have position, velocity, and direction.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setBuffer:</TokenIdentifier>
 			<Abstract type="html">The sound buffer this source is attached to (set to nil to detach the currently attached
 buffer).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, retain) ALBuffer *buffer</Declaration>
 			
 			
 			<Anchor>//api/name/buffer</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/buffer</TokenIdentifier>
 			<Abstract type="html">The sound buffer this source is attached to (set to nil to detach the currently attached
 buffer).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, retain) ALBuffer *buffer</Declaration>
 			
 			
 			<Anchor>//api/name/buffer</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/buffer</TokenIdentifier>
 			<Abstract type="html">The sound buffer this source is attached to (set to nil to detach the currently attached
 buffer).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, retain) ALBuffer *buffer</Declaration>
 			
 			
 			<Anchor>//api/name/buffer</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setBuffersQueued:</TokenIdentifier>
 			<Abstract type="html">How many buffers this source has queued.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int buffersQueued</Declaration>
 			
 			
 			<Anchor>//api/name/buffersQueued</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/buffersQueued</TokenIdentifier>
 			<Abstract type="html">How many buffers this source has queued.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int buffersQueued</Declaration>
 			
 			
 			<Anchor>//api/name/buffersQueued</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/buffersQueued</TokenIdentifier>
 			<Abstract type="html">How many buffers this source has queued.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int buffersQueued</Declaration>
 			
 			
 			<Anchor>//api/name/buffersQueued</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setBuffersProcessed:</TokenIdentifier>
 			<Abstract type="html">How many of these buffers have been processed during playback.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int buffersProcessed</Declaration>
 			
 			
 			<Anchor>//api/name/buffersProcessed</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/buffersProcessed</TokenIdentifier>
 			<Abstract type="html">How many of these buffers have been processed during playback.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int buffersProcessed</Declaration>
 			
 			
 			<Anchor>//api/name/buffersProcessed</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/buffersProcessed</TokenIdentifier>
 			<Abstract type="html">How many of these buffers have been processed during playback.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) int buffersProcessed</Declaration>
 			
 			
 			<Anchor>//api/name/buffersProcessed</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setContext:</TokenIdentifier>
 			<Abstract type="html">The context this source was opened on.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
 			
 			
 			<Anchor>//api/name/context</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/context</TokenIdentifier>
 			<Abstract type="html">The context this source was opened on.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
 			
 			
 			<Anchor>//api/name/context</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/context</TokenIdentifier>
 			<Abstract type="html">The context this source was opened on.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
 			
 			
 			<Anchor>//api/name/context</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setOffsetInBytes:</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in bytes).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInBytes</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInBytes</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/offsetInBytes</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in bytes).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInBytes</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInBytes</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/offsetInBytes</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in bytes).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInBytes</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInBytes</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setOffsetInSamples:</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in samples).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInSamples</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInSamples</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/offsetInSamples</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in samples).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInSamples</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInSamples</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/offsetInSamples</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in samples).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInSamples</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInSamples</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setOffsetInSeconds:</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in seconds).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInSeconds</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInSeconds</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/offsetInSeconds</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in seconds).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInSeconds</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInSeconds</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/offsetInSeconds</TokenIdentifier>
 			<Abstract type="html">The offset into the current buffer (in seconds).</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) float offsetInSeconds</Declaration>
 			
 			
 			<Anchor>//api/name/offsetInSeconds</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setSourceId:</TokenIdentifier>
-			<Abstract type="html">OpenAL's ID for this source.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<Abstract type="html">OpenAL&apos;s ID for this source.</Abstract>
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) ALuint sourceId</Declaration>
 			
 			
 			<Anchor>//api/name/sourceId</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/sourceId</TokenIdentifier>
-			<Abstract type="html">OpenAL's ID for this source.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<Abstract type="html">OpenAL&apos;s ID for this source.</Abstract>
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) ALuint sourceId</Declaration>
 			
 			
 			<Anchor>//api/name/sourceId</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/sourceId</TokenIdentifier>
-			<Abstract type="html">OpenAL's ID for this source.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<Abstract type="html">OpenAL&apos;s ID for this source.</Abstract>
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) ALuint sourceId</Declaration>
 			
 			
 			<Anchor>//api/name/sourceId</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setState:</TokenIdentifier>
 			<Abstract type="html">The state of this source.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) int state</Declaration>
 			
 			
 			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/state</TokenIdentifier>
 			<Abstract type="html">The state of this source.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) int state</Declaration>
 			
 			
 			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ALSource/state</TokenIdentifier>
 			<Abstract type="html">The state of this source.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) int state</Declaration>
 			
 			
 			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALSource/source</TokenIdentifier>
 			<Abstract type="html">Create a new source.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>+ (id)source</Declaration>
 			
 			<ReturnValue><Abstract type="html">A new source.</Abstract></ReturnValue>
 			<Anchor>//api/name/source</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/ALSource/sourceOnContext:</TokenIdentifier>
 			<Abstract type="html">Create a new source on the specified context.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>+ (id)sourceOnContext:(ALContext *)context</Declaration>
 			<Parameters>
@@ -337,12 +366,13 @@ buffer).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new source.</Abstract></ReturnValue>
 			<Anchor>//api/name/sourceOnContext:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/initOnContext:</TokenIdentifier>
 			<Abstract type="html">Initialize a new source on the specified context.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (id)initOnContext:(ALContext *)context</Declaration>
 			<Parameters>
@@ -353,23 +383,25 @@ buffer).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A new source.</Abstract></ReturnValue>
 			<Anchor>//api/name/initOnContext:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/play</TokenIdentifier>
 			<Abstract type="html">Play the currently attached buffer.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (id&lt;ALSoundSource&gt;)play</Declaration>
 			
 			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
 			<Anchor>//api/name/play</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/queueBuffer:</TokenIdentifier>
 			<Abstract type="html">Add a buffer to the buffer queue.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (bool)queueBuffer:(ALBuffer *)buffer</Declaration>
 			<Parameters>
@@ -380,12 +412,13 @@ buffer).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/queueBuffer:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/queueBuffer:repeats:</TokenIdentifier>
 			<Abstract type="html">Add a buffer to the buffer queue, repeating it multiple times.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (bool)queueBuffer:(ALBuffer *)buffer repeats:(NSUInteger)repeats</Declaration>
 			<Parameters>
@@ -399,12 +432,13 @@ buffer).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/queueBuffer:repeats:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/queueBuffers:</TokenIdentifier>
 			<Abstract type="html">Add buffers to the buffer queue.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (bool)queueBuffers:(NSArray *)buffers</Declaration>
 			<Parameters>
@@ -415,13 +449,14 @@ buffer).</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/queueBuffers:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/queueBuffers:repeats:</TokenIdentifier>
 			<Abstract type="html">Add buffers to the buffer queue, repeating it multiple times.
 The buffers will be played in order, repeating the specified number of times.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (bool)queueBuffers:(NSArray *)buffers repeats:(NSUInteger)repeats</Declaration>
 			<Parameters>
@@ -435,12 +470,13 @@ The buffers will be played in order, repeating the specified number of times.</A
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/queueBuffers:repeats:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/unqueueBuffer:</TokenIdentifier>
 			<Abstract type="html">Remove a buffer from the buffer queue.</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (bool)unqueueBuffer:(ALBuffer *)buffer</Declaration>
 			<Parameters>
@@ -451,12 +487,13 @@ The buffers will be played in order, repeating the specified number of times.</A
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/unqueueBuffer:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/unqueueBuffers:</TokenIdentifier>
 			<Abstract type="html">Remove buffers from the buffer queue</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (bool)unqueueBuffers:(NSArray *)buffers</Declaration>
 			<Parameters>
@@ -467,12 +504,13 @@ The buffers will be played in order, repeating the specified number of times.</A
 			</Parameters>
 			<ReturnValue><Abstract type="html">TRUE if the operation was successful.</Abstract></ReturnValue>
 			<Anchor>//api/name/unqueueBuffers:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/registerNotification:callback:userData:</TokenIdentifier>
 			<Abstract type="html">Register to receive notifications about an event on this source. (iOS 5.0+)</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (void)registerNotification:(ALuint)notificationID callback:(OALSourceNotificationCallback)callback userData:(void *)userData</Declaration>
 			<Parameters>
@@ -489,12 +527,13 @@ The buffers will be played in order, repeating the specified number of times.</A
 			</Parameters>
 			
 			<Anchor>//api/name/registerNotification:callback:userData:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/unregisterNotification:</TokenIdentifier>
 			<Abstract type="html">Unregister notifications for a notification type on this source. (iOS 5.0+)</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (void)unregisterNotification:(ALuint)notificationID</Declaration>
 			<Parameters>
@@ -505,846 +544,21 @@ The buffers will be played in order, repeating the specified number of times.</A
 			</Parameters>
 			
 			<Anchor>//api/name/unregisterNotification:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALSource/unregisterAllNotifications</TokenIdentifier>
 			<Abstract type="html">Unregister all notifications for this source. (iOS 5.0+)</Abstract>
-			<DeclaredIn>ALSource.h</DeclaredIn>			
+			<DeclaredIn>ALSource.h</DeclaredIn>
 			
 			<Declaration>- (void)unregisterAllNotifications</Declaration>
 			
 			
 			<Anchor>//api/name/unregisterAllNotifications</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/coneInnerAngle</TokenIdentifier>
-			<Abstract type="html">Cone inner angle (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)coneInnerAngle</Declaration>
-			
-			
-			<Anchor>//api/name/coneInnerAngle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setConeInnerAngle:</TokenIdentifier>
-			<Abstract type="html">Cone inner angle (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setConeInnerAngle:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setConeInnerAngle:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/coneOuterAngle</TokenIdentifier>
-			<Abstract type="html">Cone outer angle (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)coneOuterAngle</Declaration>
-			
-			
-			<Anchor>//api/name/coneOuterAngle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setConeOuterAngle:</TokenIdentifier>
-			<Abstract type="html">Cone outer angle (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setConeOuterAngle:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setConeOuterAngle:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/coneOuterGain</TokenIdentifier>
-			<Abstract type="html">Cone outer gain (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)coneOuterGain</Declaration>
-			
-			
-			<Anchor>//api/name/coneOuterGain</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setConeOuterGain:</TokenIdentifier>
-			<Abstract type="html">Cone outer gain (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setConeOuterGain:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setConeOuterGain:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/direction</TokenIdentifier>
-			<Abstract type="html">Direction (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (ALVector)direction</Declaration>
-			
-			
-			<Anchor>//api/name/direction</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setDirection:</TokenIdentifier>
-			<Abstract type="html">Direction (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setDirection:(ALVector)value</Declaration>
-			
-			
-			<Anchor>//api/name/setDirection:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/volume</TokenIdentifier>
-			<Abstract type="html">Volume (alias to gain.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)volume</Declaration>
-			
-			
-			<Anchor>//api/name/volume</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setVolume:</TokenIdentifier>
-			<Abstract type="html">Volume (alias to gain.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setVolume:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setVolume:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/gain</TokenIdentifier>
-			<Abstract type="html">Gain (volume (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)gain</Declaration>
-			
-			
-			<Anchor>//api/name/gain</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setGain:</TokenIdentifier>
-			<Abstract type="html">Gain (volume (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setGain:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setGain:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/looping</TokenIdentifier>
-			<Abstract type="html">Looping (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (bool)looping</Declaration>
-			
-			
-			<Anchor>//api/name/looping</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setLooping:</TokenIdentifier>
-			<Abstract type="html">Looping (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setLooping:(bool)value</Declaration>
-			
-			
-			<Anchor>//api/name/setLooping:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/maxDistance</TokenIdentifier>
-			<Abstract type="html">Max distance (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)maxDistance</Declaration>
-			
-			
-			<Anchor>//api/name/maxDistance</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setMaxDistance:</TokenIdentifier>
-			<Abstract type="html">Max distance (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setMaxDistance:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setMaxDistance:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/maxGain</TokenIdentifier>
-			<Abstract type="html">Max gain (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)maxGain</Declaration>
-			
-			
-			<Anchor>//api/name/maxGain</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setMaxGain:</TokenIdentifier>
-			<Abstract type="html">Max gain (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setMaxGain:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setMaxGain:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/minGain</TokenIdentifier>
-			<Abstract type="html">Min gain (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)minGain</Declaration>
-			
-			
-			<Anchor>//api/name/minGain</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setMinGain:</TokenIdentifier>
-			<Abstract type="html">Min gain (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setMinGain:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setMinGain:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/muted</TokenIdentifier>
-			<Abstract type="html">If true, this source is muted.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (bool)muted</Declaration>
-			
-			
-			<Anchor>//api/name/muted</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setMuted:</TokenIdentifier>
-			<Abstract type="html">If true, this source is muted.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setMuted:(bool)value</Declaration>
-			
-			
-			<Anchor>//api/name/setMuted:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/paused</TokenIdentifier>
-			<Abstract type="html">If true, this source is currently paused.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (bool)paused</Declaration>
-			
-			
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setPaused:</TokenIdentifier>
-			<Abstract type="html">If true, this source is currently paused.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setPaused:(bool)shouldPause</Declaration>
-			
-			
-			<Anchor>//api/name/setPaused:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/pitch</TokenIdentifier>
-			<Abstract type="html">Pitch (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)pitch</Declaration>
-			
-			
-			<Anchor>//api/name/pitch</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setPitch:</TokenIdentifier>
-			<Abstract type="html">Pitch (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setPitch:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setPitch:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/playing</TokenIdentifier>
-			<Abstract type="html">If true, this source is currently playing audio.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (bool)playing</Declaration>
-			
-			
-			<Anchor>//api/name/playing</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/position</TokenIdentifier>
-			<Abstract type="html">Position (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (ALPoint)position</Declaration>
-			
-			
-			<Anchor>//api/name/position</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setPosition:</TokenIdentifier>
-			<Abstract type="html">Position (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setPosition:(ALPoint)value</Declaration>
-			
-			
-			<Anchor>//api/name/setPosition:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/pan</TokenIdentifier>
-			<Abstract type="html">Pan value (-1.0 = far left, 1.0 = far right).
-Note: This effect is simulated by changing the source's X position.
-Do not use this property if you are modifying the position property as well.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)pan</Declaration>
-			
-			
-			<Anchor>//api/name/pan</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setPan:</TokenIdentifier>
-			<Abstract type="html">Pan value (-1.0 = far left, 1.0 = far right).
-Note: This effect is simulated by changing the source's X position.
-Do not use this property if you are modifying the position property as well.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setPan:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setPan:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/referenceDistance</TokenIdentifier>
-			<Abstract type="html">Reference distance (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)referenceDistance</Declaration>
-			
-			
-			<Anchor>//api/name/referenceDistance</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setReferenceDistance:</TokenIdentifier>
-			<Abstract type="html">Reference distance (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setReferenceDistance:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setReferenceDistance:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/rolloffFactor</TokenIdentifier>
-			<Abstract type="html">Rolloff factor (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)rolloffFactor</Declaration>
-			
-			
-			<Anchor>//api/name/rolloffFactor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setRolloffFactor:</TokenIdentifier>
-			<Abstract type="html">Rolloff factor (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setRolloffFactor:(float)value</Declaration>
-			
-			
-			<Anchor>//api/name/setRolloffFactor:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/sourceRelative</TokenIdentifier>
-			<Abstract type="html">Source relative (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (int)sourceRelative</Declaration>
-			
-			
-			<Anchor>//api/name/sourceRelative</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setSourceRelative:</TokenIdentifier>
-			<Abstract type="html">Source relative (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setSourceRelative:(int)value</Declaration>
-			
-			
-			<Anchor>//api/name/setSourceRelative:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/sourceType</TokenIdentifier>
-			<Abstract type="html">Source type (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (int)sourceType</Declaration>
-			
-			
-			<Anchor>//api/name/sourceType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setSourceType:</TokenIdentifier>
-			<Abstract type="html">Source type (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setSourceType:(int)value</Declaration>
-			
-			
-			<Anchor>//api/name/setSourceType:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/velocity</TokenIdentifier>
-			<Abstract type="html">Velocity (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (ALVector)velocity</Declaration>
-			
-			
-			<Anchor>//api/name/velocity</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setVelocity:</TokenIdentifier>
-			<Abstract type="html">Velocity (OpenAL property).</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setVelocity:(ALVector)value</Declaration>
-			
-			
-			<Anchor>//api/name/setVelocity:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/reverbSendLevel</TokenIdentifier>
-			<Abstract type="html">Reverb send level (how much reverb affects this source). (iOS 5.0+)
-0.0 = fully dry, 1.0 = fully wet.
-Default 0.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)reverbSendLevel</Declaration>
-			
-			
-			<Anchor>//api/name/reverbSendLevel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setReverbSendLevel:</TokenIdentifier>
-			<Abstract type="html">Reverb send level (how much reverb affects this source). (iOS 5.0+)
-0.0 = fully dry, 1.0 = fully wet.
-Default 0.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setReverbSendLevel:(float)reverbSendLevel</Declaration>
-			
-			
-			<Anchor>//api/name/setReverbSendLevel:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/reverbOcclusion</TokenIdentifier>
-			<Abstract type="html">Reverb occlusion (wall/door between listener and source). (iOS 5.0+)
--100.0db (most occlusion) to 0.0 (no occlusion).
-Default 0.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)reverbOcclusion</Declaration>
-			
-			
-			<Anchor>//api/name/reverbOcclusion</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setReverbOcclusion:</TokenIdentifier>
-			<Abstract type="html">Reverb occlusion (wall/door between listener and source). (iOS 5.0+)
--100.0db (most occlusion) to 0.0 (no occlusion).
-Default 0.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setReverbOcclusion:(float)reverbOcclusion</Declaration>
-			
-			
-			<Anchor>//api/name/setReverbOcclusion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/reverbObstruction</TokenIdentifier>
-			<Abstract type="html">Reverb obstruction (object between listener and source). (iOS 5.0+)
--100.0db (most obstruction) to 0.0 (no obstruction).
-Default 0.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (float)reverbObstruction</Declaration>
-			
-			
-			<Anchor>//api/name/reverbObstruction</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setReverbObstruction:</TokenIdentifier>
-			<Abstract type="html">Reverb obstruction (object between listener and source). (iOS 5.0+)
--100.0db (most obstruction) to 0.0 (no obstruction).
-Default 0.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setReverbObstruction:(float)reverbObstruction</Declaration>
-			
-			
-			<Anchor>//api/name/setReverbObstruction:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/addSuspendListener:</TokenIdentifier>
-			<Abstract type="html">Add a listener that will receive manual suspend and interrupt events.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)addSuspendListener:(id&lt;OALSuspendListener&gt;)listenerIn</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>listener</Name>
-					<Abstract type="html">The listener to register with this handler.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addSuspendListener:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/removeSuspendListener:</TokenIdentifier>
-			<Abstract type="html">Remove a registered listener.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)removeSuspendListener:(id&lt;OALSuspendListener&gt;)listenerIn</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>listener</Name>
-					<Abstract type="html">The listener to unregister from this handler.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeSuspendListener:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/suspended</TokenIdentifier>
-			<Abstract type="html">If YES, this object is suspended.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (bool)suspended</Declaration>
-			
-			
-			<Anchor>//api/name/suspended</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/setSuspended:</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Called by SuspendHandler.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)setSuspended:(bool)value</Declaration>
-			
-			
-			<Anchor>//api/name/setSuspended:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/delayedResumePlayback</TokenIdentifier>
-			<Abstract type="html">(INTERNAL USE) Callback for resuming playback after delay to
-get around OpenAL bug.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)delayedResumePlayback</Declaration>
-			
-			
-			<Anchor>//api/name/delayedResumePlayback</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/play:</TokenIdentifier>
-			<Abstract type="html">Play a sound.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)bufferIn</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>buffer</Name>
-					<Abstract type="html">the buffer to play.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
-			<Anchor>//api/name/play:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/play:loop:</TokenIdentifier>
-			<Abstract type="html">Play a sound, optionally looping.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)bufferIn loop:(bool)loop</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>buffer</Name>
-					<Abstract type="html">the buffer to play.</Abstract>
-				</Parameter><Parameter>
-					<Name>loop</Name>
-					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
-			<Anchor>//api/name/play:loop:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/play:gain:pitch:pan:loop:</TokenIdentifier>
-			<Abstract type="html">Play a sound, setting gain, pitch, pan, and looping.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (id&lt;ALSoundSource&gt;)play:(ALBuffer *)bufferIn gain:(float)gainIn pitch:(float)pitchIn pan:(float)panIn loop:(bool)loopIn</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>buffer</Name>
-					<Abstract type="html">the buffer to play.</Abstract>
-				</Parameter><Parameter>
-					<Name>gain</Name>
-					<Abstract type="html">The gain (volume to play at (0.0 - 1.0).</Abstract>
-				</Parameter><Parameter>
-					<Name>pitch</Name>
-					<Abstract type="html">The pitch to play at (1.0 = normal pitch.</Abstract>
-				</Parameter><Parameter>
-					<Name>pan</Name>
-					<Abstract type="html">Left-right panning (-1.0 = far left, 1.0 = far right).</Abstract>
-				</Parameter><Parameter>
-					<Name>loop</Name>
-					<Abstract type="html">If TRUE, the sound will loop until you call "stop" on the returned sound source.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the source playing the sound, or nil if the sound could not be played.</Abstract></ReturnValue>
-			<Anchor>//api/name/play:gain:pitch:pan:loop:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/stop</TokenIdentifier>
-			<Abstract type="html">Stop playing the current sound.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stop</Declaration>
-			
-			
-			<Anchor>//api/name/stop</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/rewind</TokenIdentifier>
-			<Abstract type="html">Stop playing the current sound and set its state to AL_INITIAL.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)rewind</Declaration>
-			
-			
-			<Anchor>//api/name/rewind</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/fadeTo:duration:target:selector:</TokenIdentifier>
-			<Abstract type="html">Fade to the specified gain value.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)fadeTo:(float)value duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>gain</Name>
-					<Abstract type="html">The gain to fade to.</Abstract>
-				</Parameter><Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">The duration of the fade operation in seconds.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to notify when the fade completes (can be nil).</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call when the fade completes. The selector must accept
-a single parameter, which will be the object that performed the fade.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/fadeTo:duration:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/stopFade</TokenIdentifier>
-			<Abstract type="html">Stop the currently running fade operation, if any.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopFade</Declaration>
-			
-			
-			<Anchor>//api/name/stopFade</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/panTo:duration:target:selector:</TokenIdentifier>
-			<Abstract type="html">pan to the specified value.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)panTo:(float)value duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pan</Name>
-					<Abstract type="html">The value to pan to.</Abstract>
-				</Parameter><Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">The duration of the pan operation in seconds.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to notify when the pan completes (can be nil).</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call when the pan completes. The selector must accept
-a single parameter, which will be the object that performed the pan.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/panTo:duration:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/stopPan</TokenIdentifier>
-			<Abstract type="html">Stop the currently running pan operation, if any.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopPan</Declaration>
-			
-			
-			<Anchor>//api/name/stopPan</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/pitchTo:duration:target:selector:</TokenIdentifier>
-			<Abstract type="html">Gradually change pitch to the specified value.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)pitchTo:(float)value duration:(float)duration target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pitch</Name>
-					<Abstract type="html">The value to change pitch to.</Abstract>
-				</Parameter><Parameter>
-					<Name>duration</Name>
-					<Abstract type="html">The duration of the pitch operation in seconds.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target to notify when the pitch change completes (can be nil).</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call when the pitch change completes. The selector
-must accept a single parameter, which will be the object that performed the pitch change.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/pitchTo:duration:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/stopPitch</TokenIdentifier>
-			<Abstract type="html">Stop the currently running pitch operation, if any.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopPitch</Declaration>
-			
-			
-			<Anchor>//api/name/stopPitch</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/stopActions</TokenIdentifier>
-			<Abstract type="html">Stop any currently running fade, pan, or pitch operations.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)stopActions</Declaration>
-			
-			
-			<Anchor>//api/name/stopActions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/clear</TokenIdentifier>
-			<Abstract type="html">Clear any buffers this source is currently using.</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)clear</Declaration>
-			
-			
-			<Anchor>//api/name/clear</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ALSource/receiveNotification:userData:</TokenIdentifier>
-			<Abstract type="html">\endcond</Abstract>
-			<DeclaredIn>ALSource.m</DeclaredIn>			
-			
-			<Declaration>- (void)receiveNotification:(ALuint)notificationID userData:(void *)userData</Declaration>
-			
-			
-			<Anchor>//api/name/receiveNotification:userData:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

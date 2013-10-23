@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKRemoveOnContactBehavior.html">
+	<File path="Classes/KKNodeShared.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKRemoveOnContactBehavior</TokenIdentifier>
-			<Abstract type="html">This behavior removes the node when its physicsBody generates a contact event.</Abstract>
-			<DeclaredIn>KKRemoveOnContactBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKNodeShared</TokenIdentifier>
+			<Abstract type="html">Since Kobold Kit can&apos;t modify SKNode certain functionality must be implemented in each KK*Node subclass.
+To avoid copy/pasting the code all over the place, this class acts like a common parent class, like a multiple inheritance stand-in.</Abstract>
+			<DeclaredIn>KKNodeShared.h</DeclaredIn>
+            
 			
 			<NodeRef refid="24"/>
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKNodeShared/deallocWithNode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeShared.h</DeclaredIn>
+			
+			<Declaration>+ (void)deallocWithNode:(SKNode *)node</Declaration>
+			
+			
+			<Anchor>//api/name/deallocWithNode:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKNodeShared/sendChildrenWillMoveFromParentWithNode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeShared.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendChildrenWillMoveFromParentWithNode:(SKNode *)node</Declaration>
+			
+			
+			<Anchor>//api/name/sendChildrenWillMoveFromParentWithNode:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKNodeShared/didMoveToParentWithNode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeShared.h</DeclaredIn>
+			
+			<Declaration>+ (void)didMoveToParentWithNode:(SKNode *)node</Declaration>
+			
+			
+			<Anchor>//api/name/didMoveToParentWithNode:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKNodeShared/willMoveFromParentWithNode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKNodeShared.h</DeclaredIn>
+			
+			<Declaration>+ (void)willMoveFromParentWithNode:(SKNode *)node</Declaration>
+			
+			
+			<Anchor>//api/name/willMoveFromParentWithNode:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

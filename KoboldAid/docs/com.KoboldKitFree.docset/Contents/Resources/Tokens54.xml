@@ -1,26 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/SKAction+KoboldKit.html">
+	<File path="Categories/NSCoder+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/SKAction(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>SKAction+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSCoder(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">Adds encode/decode convenience methods for common structs not supported natively (or cross-platform) by NSCoder.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+            
 			
 			<NodeRef refid="54"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKAction(KoboldKit)/playSoundFileNamed:</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>SKAction+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSCoder/encodePoint:forKey:</TokenIdentifier>
+			<Abstract type="html">Encodes a CGPoint.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>+ (SKAction *)playSoundFileNamed:(NSString *)soundFile</Declaration>
+			<Declaration>- (void)encodePoint:(CGPoint)point forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point to encode.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/playSoundFileNamed:</Anchor>
+			<Anchor>//api/name/encodePoint:forKey:</Anchor>
+            <NodeRef refid="54"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSCoder/decodePointForKey:</TokenIdentifier>
+			<Abstract type="html">Decodes a CGPoint</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)decodePointForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The decoded point.</Abstract></ReturnValue>
+			<Anchor>//api/name/decodePointForKey:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSCoder/encodeCGPoint:forKey:</TokenIdentifier>
+			<Abstract type="html">Encodes a CGPoint using the same method defined by UIGeometry.h on iOS.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (void)encodeCGPoint:(CGPoint)point forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point to encode.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeCGPoint:forKey:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSCoder/decodeCGPointForKey:</TokenIdentifier>
+			<Abstract type="html">Decodes a CGPoint using the same method defined by UIGeometry.h on iOS.</Abstract>
+			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)decodeCGPointForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The archive key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The decoded point.</Abstract></ReturnValue>
+			<Anchor>//api/name/decodeCGPointForKey:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

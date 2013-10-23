@@ -1,36 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTMXWriter.html">
+	<File path="Classes/KKScene.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTMXWriter</TokenIdentifier>
-			<Abstract type="html">Internal use only.
-Writes a KTTilemap object to a file in TMX format. The resulting TMX can be opened in Tiled Map Editor
-   or other tools/engines that support the TMX format. </Abstract>
-			<DeclaredIn>KKTMXWriter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKScene</TokenIdentifier>
+			<Abstract type="html">KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
+dispatches events (input, physics).</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+            
 			
 			<NodeRef refid="29"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTMXWriter/writeTMXFile:tilemap:</TokenIdentifier>
-			<Abstract type="html">Writes a KTTilemap object hierarchy to a file in TMX format.</Abstract>
-			<DeclaredIn>KKTMXWriter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/setFrameCount:</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game&apos;s update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
 			
-			<Declaration>- (void)writeTMXFile:(NSString *)file tilemap:(KKTilemap *)tilemap</Declaration>
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game&apos;s update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/frameCount</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game&apos;s update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game&apos;s update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKScene/frameCount</TokenIdentifier>
+			<Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game&apos;s update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSUInteger frameCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of frames rendered since the start of the app. Useful if you need to lock your game&apos;s update cycle to the framerate.
+For example this allows you to perform certain actions n frames from now, instead of n seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/frameCount</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/setKkView:</TokenIdentifier>
+			<Abstract type="html">The view cast to a KKView object.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/kkView</TokenIdentifier>
+			<Abstract type="html">The view cast to a KKView object.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKScene/kkView</TokenIdentifier>
+			<Abstract type="html">The view cast to a KKView object.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view cast to a KKView object.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addSceneEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Adds a scene event observer.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (void)addSceneEventsObserver:(id)observer</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>file</Name>
-					<Abstract type="html">The full path to a file.</Abstract>
-				</Parameter><Parameter>
-					<Name>tilemap</Name>
-					<Abstract type="html">The KTTilemap object hierarchy to write.</Abstract>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeTMXFile:tilemap:</Anchor>
+			<Anchor>//api/name/addSceneEventsObserver:</Anchor>
+            <NodeRef refid="29"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeSceneEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Removes a scene event observer.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (void)removeSceneEventsObserver:(id)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeSceneEventsObserver:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addPhysicsContactEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Adds a physics contact event observer.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (void)addPhysicsContactEventsObserver:(id&lt;KKPhysicsContactEventDelegate&gt;)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPhysicsContactEventsObserver:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removePhysicsContactEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Removes a physics contact event observer.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (void)removePhysicsContactEventsObserver:(id&lt;KKPhysicsContactEventDelegate&gt;)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">The receiver of scene events.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removePhysicsContactEventsObserver:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/addInputEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Registers a class as generic input receiver. Implement the usual input event methods on the receiver.
+Note: this is a preliminary, inefficient system. It will eventually be replaced.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (void)addInputEventsObserver:(id)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">Any object that implements touch, mouse, or other input events.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addInputEventsObserver:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/removeInputEventsObserver:</TokenIdentifier>
+			<Abstract type="html">Unregisters a class as generic input receiver.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (void)removeInputEventsObserver:(id)observer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>observer</Name>
+					<Abstract type="html">An object that was previously registered as input receiver.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeInputEventsObserver:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/dumpSceneGraph:</TokenIdentifier>
+			<Abstract type="html">Dumps the scene graph to a string.</Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)dumpSceneGraph:(KKSceneGraphDumpOptions)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Determines what will be included in the dump.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string containing the textual dump of the scene graph.</Abstract></ReturnValue>
+			<Anchor>//api/name/dumpSceneGraph:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/isEqualToScene:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToScene:(KKScene *)scene</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToScene:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/isEqualToSceneTree:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToSceneTree:(KKScene *)scene</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToSceneTree:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKScene/isEqualToSceneProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKScene.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToSceneProperties:(KKScene *)scene</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToSceneProperties:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

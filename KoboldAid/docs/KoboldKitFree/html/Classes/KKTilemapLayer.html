@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKTilemapLayer Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -65,6 +64,8 @@
 	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
 	
 	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
+	
+	<option value="//api/name/tileCount">&nbsp;&nbsp;&nbsp;&nbsp;tileCount</option>
 	
 	<option value="//api/name/tilemap">&nbsp;&nbsp;&nbsp;&nbsp;tilemap</option>
 	
@@ -161,6 +162,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileCount">tileCount</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tilemap">tilemap</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tiles">tiles</a></span></li>
@@ -224,12 +227,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKTilemapLayer.h<br />KKTilemapLayer.m</td>
+	<td class="specification-value">KKTilemapLayer.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -253,43 +256,36 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
-		<span class="tooltip"><p>The name of the layer. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
-		<span class="tooltip"><p>The layer&rsquo;s properties.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tilemap">&nbsp;&nbsp;tilemap</a></code>
-		<span class="tooltip"><p>Reference to the tilemap to allow KTTileLayerViewController and KTObjectLayerViewController quick access to the KTTilemap object.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isObjectLayer">&nbsp;&nbsp;isObjectLayer</a></code>
-		<span class="tooltip"><p>Is set if this layer is an Object Layer. If NO it is a Tile Layer.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isTileLayer">&nbsp;&nbsp;isTileLayer</a></code>
-		<span class="tooltip"><p>Is set if this layer is a Tile Layer. If NO it is a Object Layer.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hidden">&nbsp;&nbsp;hidden</a></code>
-		<span class="tooltip"><p>Whether the <a href="#//api/name/tiles">tiles</a> on this layer are visible or not. If a tile layer is hidden, it will still create the <a href="#//api/name/tiles">tiles</a> and therefore
-use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible. Default: NO. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -304,54 +300,48 @@ use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
-		<span class="tooltip"><p>(Tile Layers Only) The layer&rsquo;s size (in <a href="#//api/name/tiles">tiles</a>). The layer size is usually identical to the mapSize property of KTTilemap.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tileCount">&nbsp;&nbsp;tileCount</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/alpha">&nbsp;&nbsp;alpha</a></code>
-		<span class="tooltip"><p>How opaque the layer is. Value ranges from 0 (fully transparent) to 1 (fully opaque).
-   The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/endlessScrolling">&nbsp;&nbsp;endlessScrolling</a></code>
-		<span class="tooltip"><p>If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
-<a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a>. Returns YES only if both <a href="#//api/name/endlessScrollingHorizontal">endlessScrollingHorizontal</a> and <a href="#//api/name/endlessScrollingVertical">endlessScrollingVertical</a> are YES.
-Default: NO. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/endlessScrollingHorizontal">&nbsp;&nbsp;endlessScrollingHorizontal</a></code>
-		<span class="tooltip"><p>If YES, this layer will scroll endlessly along the X axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/endlessScrollingVertical">&nbsp;&nbsp;endlessScrollingVertical</a></code>
-		<span class="tooltip"><p>If YES, this layer will scroll endlessly along the Y axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/mainTileLayer">&nbsp;&nbsp;mainTileLayer</a></code>
-		<span class="tooltip"><p>If YES, this layer represents the &ldquo;main&rdquo; tile layer which is where (most of) the gameplay happens, it plays a special role in the <a href="#//api/name/tilemap">tilemap</a> renderer.
-Only one tile layer should have this flag set. If no tile layer has this flag set, the main tile layer is determined by having a parallax factor {1,1}. Default: NO. TILED-EDITABLE</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/parallaxFactor">&nbsp;&nbsp;parallaxFactor</a></code>
-		<span class="tooltip"><p>Determines how fast this layer moves in both directions when scrolling the <a href="#//api/name/tilemap">tilemap</a>. Value between -1.0f and 1.0f, usually you only use the range from 0.0f to 1.0f.
-   Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -366,46 +356,36 @@ Only one tile layer should have this flag set. If no tile layer has this flag se
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tiles">&nbsp;&nbsp;tiles</a></code>
-		<span class="tooltip"><p>(Tile Layers Only) Reference to the KTTilemapLayerTiles object which contains the memory buffer for the tile GIDs of this tile layer. Always nil
-for object layers.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tileGidAt:">&ndash;&nbsp;tileGidAt:</a></code>
-		<span class="tooltip"><p>Returns the tile GID at a specific tile coordinate, without the flip flags normally encoded in the GID. Returns 0 if there is no tile set at this coordinate
-   (empty tile) or if the tile coordinate is outside the boundaries of the layer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/tileGidWithFlagsAt:">&ndash;&nbsp;tileGidWithFlagsAt:</a></code>
-		<span class="tooltip"><p>Like tileAt but returns the GID including the KTTilemapTileFlags. To get just the GID from the returned value use tileAt or mask out
-   the flip flags: gid = (gidWithFlags &amp; KTTilemapTileFlipMask) - you don&rsquo;t normally need the flip flags unless they have some meaning in your game,
-   for example if certain tile GIDs can only be operated from one side (ie a button tile that the player must approach from the correct side to operate it).</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setTileGid:tileCoord:">&ndash;&nbsp;setTileGid:tileCoord:</a></code>
-		<span class="tooltip"><p>Sets a tile gid at the given tile coordinate, leaves the tile&rsquo;s flags (flipping etc) untouched. A tile gid of 0 will &ldquo;clear&rdquo; the tile (empty tile).</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setTileGidWithFlags:tileCoord:">&ndash;&nbsp;setTileGidWithFlags:tileCoord:</a></code>
-		<span class="tooltip"><p>Sets a tile gid at the given tile coordinate, including tile flags. Tile flags must already be OR'ed into the gid. A tile gid of 0 will &ldquo;clear&rdquo; the tile (empty tile).</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/clearTileAt:">&ndash;&nbsp;clearTileAt:</a></code>
-		<span class="tooltip"><p>Clears a tile at the given tile coordinate (sets gid to 0, clears all flags). Same as calling setTileGidWithFlags:0.</p></span>
 	</span>
 	
 	
@@ -420,22 +400,18 @@ for object layers.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/contourPathsWithBlockingGids:">&ndash;&nbsp;contourPathsWithBlockingGids:</a></code>
-		<span class="tooltip"><p>(Tile Layers only) Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/contourPathsFromLayer:">&ndash;&nbsp;contourPathsFromLayer:</a></code>
-		<span class="tooltip"><p>(Tile Layers only) Generates collision segments from the tile layer, considering all non-empty <a href="#//api/name/tiles">tiles</a> on this layer as blocking.
-Generating the collisions is expensive and should be performed once during load.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/pathsFromObjects">&ndash;&nbsp;pathsFromObjects</a></code>
-		<span class="tooltip"><p>(Object Layers only) Creates and returns a CGPath for every polygon, polyline, rectangle and ellipse object on the layer.</p></span>
 	</span>
 	
 	
@@ -450,37 +426,30 @@ Generating the collisions is expensive and should be performed once during load.
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objects">&nbsp;&nbsp;objects</a></code>
-		<span class="tooltip"><p>(Object Layers Only) A list of &ldquo;objects&rdquo; on this layer. These &ldquo;objects&rdquo; are Tiled&rsquo;s rectangles, polylines and polygons. They can be used to position
-<a href="#//api/name/tilemap">tilemap</a> objects not editable in Tiled by (normally) using the first point of such an &ldquo;object&rdquo; as the origin for the actual game object.
-Always nil for tile layers.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addObject:">&ndash;&nbsp;addObject:</a></code>
-		<span class="tooltip"><p>Adds a <a href="#//api/name/tilemap">tilemap</a> object if the layer is an object layer. Ignored if the layer is a tile layer.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/removeObject:">&ndash;&nbsp;removeObject:</a></code>
-		<span class="tooltip"><p>Removes a <a href="#//api/name/tilemap">tilemap</a> object if the layer is an object layer. Ignored if the layer is a tile layer, or layer does not contain object.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objectAtIndex:">&ndash;&nbsp;objectAtIndex:</a></code>
-		<span class="tooltip"><p>The object at the given index.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/objectNamed:">&ndash;&nbsp;objectNamed:</a></code>
-		<span class="tooltip"><p>The <a href="#//api/name/name">name</a> identifying an object.</p></span>
 	</span>
 	
 	
@@ -508,9 +477,11 @@ Always nil for tile layers.</p></span>
    The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) float alpha</code></div>
-	
+
+    
 	
 	
 	
@@ -549,9 +520,11 @@ Always nil for tile layers.</p></span>
 Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL endlessScrolling</code></div>
-	
+
+    
 	
 	
 	
@@ -588,9 +561,11 @@ Default: NO. TILED-EDITABLE</p>
 		<p>If YES, this layer will scroll endlessly along the X axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL endlessScrollingHorizontal</code></div>
-	
+
+    
 	
 	
 	
@@ -627,9 +602,11 @@ Default: NO. TILED-EDITABLE</p>
 		<p>If YES, this layer will scroll endlessly along the Y axis, repeating itself (wrap around) at map borders. Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL endlessScrollingVertical</code></div>
-	
+
+    
 	
 	
 	
@@ -667,9 +644,11 @@ Default: NO. TILED-EDITABLE</p>
 use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible. Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL hidden</code></div>
-	
+
+    
 	
 	
 	
@@ -706,9 +685,11 @@ use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible
 		<p>Is set if this layer is an Object Layer. If NO it is a Tile Layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL isObjectLayer</code></div>
-	
+
+    
 	
 	
 	
@@ -745,9 +726,11 @@ use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible
 		<p>Is set if this layer is a Tile Layer. If NO it is a Object Layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL isTileLayer</code></div>
-	
+
+    
 	
 	
 	
@@ -785,9 +768,11 @@ use the same memory as if the <a href="#//api/name/tiles">tiles</a> were visible
 Only one tile layer should have this flag set. If no tile layer has this flag set, the main tile layer is determined by having a parallax factor {1,1}. Default: NO. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL mainTileLayer</code></div>
-	
+
+    
 	
 	
 	
@@ -824,9 +809,11 @@ Only one tile layer should have this flag set. If no tile layer has this flag se
 		<p>The name of the layer. TILED-EDITABLE</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *name</code></div>
-	
+
+    
 	
 	
 	
@@ -865,9 +852,11 @@ Only one tile layer should have this flag set. If no tile layer has this flag se
 Always nil for tile layers.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) NSArray *objects</code></div>
-	
+
+    
 	
 	
 	
@@ -905,9 +894,11 @@ Always nil for tile layers.</p>
    Negative values simply scroll in the other direction. Defaults to: (1.0f, 1.0f).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint parallaxFactor</code></div>
-	
+
+    
 	
 	
 	
@@ -954,9 +945,11 @@ Always nil for tile layers.</p>
 		<p>The layer&rsquo;s properties.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapProperties *properties</code></div>
-	
+
+    
 	
 	
 	
@@ -993,9 +986,11 @@ Always nil for tile layers.</p>
 		<p>(Tile Layers Only) The layer&rsquo;s size (in <a href="#//api/name/tiles">tiles</a>). The layer size is usually identical to the mapSize property of KTTilemap.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGSize size</code></div>
-	
+
+    
 	
 	
 	
@@ -1023,6 +1018,17 @@ Always nil for tile layers.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/tileCount" title="tileCount"></a>
+	<h3 class="subsubtitle method-title">tileCount</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (atomic) unsigned int tileCount</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/tilemap" title="tilemap"></a>
 	<h3 class="subsubtitle method-title">tilemap</h3>
 	
@@ -1032,9 +1038,11 @@ Always nil for tile layers.</p>
 		<p>Reference to the tilemap to allow KTTileLayerViewController and KTObjectLayerViewController quick access to the KTTilemap object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, weak) KKTilemap *tilemap</code></div>
-	
+
+    
 	
 	
 	
@@ -1072,9 +1080,11 @@ Always nil for tile layers.</p>
 for object layers.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKTilemapLayerTiles *tiles</code></div>
-	
+
+    
 	
 	
 	
@@ -1121,9 +1131,11 @@ for object layers.</p>
 		<p>Adds a <a href="#//api/name/tilemap">tilemap</a> object if the layer is an object layer. Ignored if the layer is a tile layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)addObject:(KKTilemapObject *)<em>object</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1165,9 +1177,11 @@ for object layers.</p>
 		<p>Clears a tile at the given tile coordinate (sets gid to 0, clears all flags). Same as calling setTileGidWithFlags:0.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)clearTileAt:(CGPoint)<em>tileCoord</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1210,9 +1224,11 @@ for object layers.</p>
 Generating the collisions is expensive and should be performed once during load.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (NSArray *)contourPathsFromLayer:(KKTilemapLayer *)<em>layer</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1259,9 +1275,11 @@ Generating the collisions is expensive and should be performed once during load.
 		<p>(Tile Layers only) Generates collision segments from the tile layer and a list of blocking GIDs. Generating the collisions is expensive and should be performed once during load.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (NSArray *)contourPathsWithBlockingGids:(KKIntegerArray *)<em>blockingGids</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1308,9 +1326,11 @@ Generating the collisions is expensive and should be performed once during load.
 		<p>The object at the given index.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapObject *)objectAtIndex:(NSUInteger)<em>index</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1357,9 +1377,11 @@ Generating the collisions is expensive and should be performed once during load.
 		<p>The <a href="#//api/name/name">name</a> identifying an object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (KKTilemapObject *)objectNamed:(NSString *)<em>name</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1406,9 +1428,11 @@ Generating the collisions is expensive and should be performed once during load.
 		<p>(Object Layers only) Creates and returns a CGPath for every polygon, polyline, rectangle and ellipse object on the layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (NSArray *)pathsFromObjects</code></div>
-	
+
+    
 	
 	
 	
@@ -1440,9 +1464,11 @@ Generating the collisions is expensive and should be performed once during load.
 		<p>Removes a <a href="#//api/name/tilemap">tilemap</a> object if the layer is an object layer. Ignored if the layer is a tile layer, or layer does not contain object.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)removeObject:(KKTilemapObject *)<em>object</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1484,9 +1510,11 @@ Generating the collisions is expensive and should be performed once during load.
 		<p>Sets a tile gid at the given tile coordinate, leaves the tile&rsquo;s flags (flipping etc) untouched. A tile gid of 0 will &ldquo;clear&rdquo; the tile (empty tile).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)setTileGid:(gid_t)<em>gid</em> tileCoord:(CGPoint)<em>tileCoord</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1533,9 +1561,11 @@ Generating the collisions is expensive and should be performed once during load.
 		<p>Sets a tile gid at the given tile coordinate, including tile flags. Tile flags must already be OR'ed into the gid. A tile gid of 0 will &ldquo;clear&rdquo; the tile (empty tile).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)setTileGidWithFlags:(gid_t)<em>gidWithFlags</em> tileCoord:(CGPoint)<em>tileCoord</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1583,9 +1613,11 @@ Generating the collisions is expensive and should be performed once during load.
    (empty tile) or if the tile coordinate is outside the boundaries of the layer.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (gid_t)tileGidAt:(CGPoint)<em>tileCoord</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1634,9 +1666,11 @@ Generating the collisions is expensive and should be performed once during load.
    for example if certain tile GIDs can only be operated from one side (ie a button tile that the player must approach from the correct side to operate it).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (gid_t)tileGidWithFlagsAt:(CGPoint)<em>tileCoord</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -1676,6 +1710,8 @@ Generating the collisions is expensive and should be performed once during load.
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -1686,9 +1722,9 @@ Generating the collisions is expensive and should be performed once during load.
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -1776,6 +1812,14 @@ Generating the collisions is expensive and should be performed once during load.
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

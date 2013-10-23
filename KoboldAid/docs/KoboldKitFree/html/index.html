@@ -2,20 +2,20 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Kobold Kit Reference</title>
+		<title>KoboldKitFree Reference</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="index.html">Kobold Tech</a>
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">Kobold Kit Reference</h1>
+				<h1 class="hideInXcode">KoboldKitFree Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar"></ul>
 		</header>
@@ -26,7 +26,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">Kobold Kit Reference</h1>
+						<h1 class="title title-header">KoboldKitFree Reference</h1>
 					</div>		
 				</div>
 				<div id="container">
@@ -36,8 +36,6 @@
 						
 						<p>Kobold Kit is a game engine built on top of Apple&rsquo;s Sprite Kit framework.</p>
 
-<p>For more info read the Introduction-to-KoboldKit.</p>
-
 <p>Visit the website: <a href="http://koboldkit.com">http://koboldkit.com</a></p>
 
 <p>Report Issues, Ask Questions: <a href="http://koboldkit.com/community">http://koboldkit.com/community</a></p>
@@ -45,10 +43,30 @@
 <p>Suggest Features &amp; Improvements: <a href="http://koboldkit.uservoice.com">http://koboldkit.uservoice.com</a></p>
 
 <p>Task Tracker: <a href="https://www.pivotaltracker.com/s/projects/849925">https://www.pivotaltracker.com/s/projects/849925</a></p>
+
+<h2>Troubleshooting</h2>
+
+<ul>
+<li>In your KKscene subclass you must call the super implementation of event methods.</li>
+<li>In particular: update, didEvaluateActions, didSimulatePhysics, didChangeSize, didMoveToView, willMoveFromView, etc.</li>
+<li>If you don&rsquo;t, then controllers &amp; behaviors and other things might not work correctly</li>
+</ul>
+
 						
 						
 					</div>
 					
+                        
+                    
+                        <div class="index-column">
+						<h2 class="index-title">Programming Guides</h2>
+						<ul>
+                        
+                        <li><a href="docs/Documentation/Introduction-to-KoboldKit.html">Introduction-to-KoboldKit</a></li>
+                        
+						</ul>
+                        </div>
+                    
 					
 					
 					<div class="index-column">
@@ -69,6 +87,8 @@
 							
 							<li><a href="Classes/KKDoubleNumber.html">KKDoubleNumber</a></li>
 							
+							<li><a href="Classes/KKEmitterNode.html">KKEmitterNode</a></li>
+							
 							<li><a href="Classes/KKFloatNumber.html">KKFloatNumber</a></li>
 							
 							<li><a href="Classes/KKFollowTargetBehavior.html">KKFollowTargetBehavior</a></li>
@@ -80,6 +100,8 @@
 							<li><a href="Classes/KKIntegerArray.html">KKIntegerArray</a></li>
 							
 							<li><a href="Classes/KKIvarInfo.html">KKIvarInfo</a></li>
+							
+							<li><a href="Classes/KKLabelNode.html">KKLabelNode</a></li>
 							
 							<li><a href="Classes/KKLimitVelocityBehavior.html">KKLimitVelocityBehavior</a></li>
 							
@@ -97,6 +119,8 @@
 							
 							<li><a href="Classes/KKNodeShared.html">KKNodeShared</a></li>
 							
+							<li><a href="Classes/KKNotifyOnContactBehavior.html">KKNotifyOnContactBehavior</a></li>
+							
 							<li><a href="Classes/KKPointArray.html">KKPointArray</a></li>
 							
 							<li><a href="Classes/KKRemoveOnContactBehavior.html">KKRemoveOnContactBehavior</a></li>
@@ -105,7 +129,11 @@
 							
 							<li><a href="Classes/KKScene.html">KKScene</a></li>
 							
+							<li><a href="Classes/KKSpriteNode.html">KKSpriteNode</a></li>
+							
 							<li><a href="Classes/KKStayInBoundsBehavior.html">KKStayInBoundsBehavior</a></li>
+							
+							<li><a href="Classes/KKSwizzle.html">KKSwizzle</a></li>
 							
 							<li><a href="Classes/KKTMXReader.html">KKTMXReader</a></li>
 							
@@ -161,8 +189,11 @@
 							
 							<li><a href="Protocols/KKSceneEventDelegate.html">KKSceneEventDelegate</a></li>
 							
+							<li><a href="Protocols/KKTilemapObjectSpawnDelegate.html">KKTilemapObjectSpawnDelegate</a></li>
+							
 						</ul>
 						
+                        
 						
 						<h2 class="index-title">Category References</h2>
 						<ul>
@@ -181,9 +212,23 @@
 							
 							<li><a href="Categories/SKAction+KoboldKit.html">SKAction(KoboldKit)</a></li>
 							
+							<li><a href="Categories/SKCropNode+KoboldKit.html">SKCropNode(KoboldKit)</a></li>
+							
+							<li><a href="Categories/SKEffectNode+KoboldKit.html">SKEffectNode(KoboldKit)</a></li>
+							
+							<li><a href="Categories/SKEmitterNode+KoboldKit.html">SKEmitterNode(KoboldKit)</a></li>
+							
+							<li><a href="Categories/SKLabelNode+KoboldKit.html">SKLabelNode(KoboldKit)</a></li>
+							
 							<li><a href="Categories/SKNode+KoboldKit.html">SKNode(KoboldKit)</a></li>
 							
 							<li><a href="Categories/SKScene+KoboldKit.html">SKScene(KoboldKit)</a></li>
+							
+							<li><a href="Categories/SKShapeNode+KoboldKit.html">SKShapeNode(KoboldKit)</a></li>
+							
+							<li><a href="Categories/SKSpriteNode+KoboldKit.html">SKSpriteNode(KoboldKit)</a></li>
+							
+							<li><a href="Categories/SKVideoNode+KoboldKit.html">SKVideoNode(KoboldKit)</a></li>
 							
 						</ul>
 						
@@ -196,9 +241,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 	
 					</div>

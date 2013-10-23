@@ -1,32 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSMutableDictionary+KoboldKit.html">
+	<File path="Classes/KKViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSMutableDictionary(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">Kobold Kit extensions</Abstract>
-			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKViewController</TokenIdentifier>
+			<Abstract type="html">View controller for a Kobold Kit view, supposed to be subclassed by user for the Kobold Kit view controller &amp;amp; view.
+Creates the KKView and performs other setup tasks. Combines code for both iOS &amp;amp; OS X platforms to a single uniform controller.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
+            
 			
 			<NodeRef refid="51"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(KoboldKit)/dictionaryWithContentsOfLuaScript:</TokenIdentifier>
-			<Abstract type="html">Runs the given Lua script file and transforms the returned Lua table into a KVC coded NSMutableDictionary.
-Navigate the table with valueForKeyPath:</Abstract>
-			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/setKkView:</TokenIdentifier>
+			<Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
-			<Declaration>+ (NSMutableDictionary *)dictionaryWithContentsOfLuaScript:(NSString *)scriptFile</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>scriptFile</Name>
-					<Abstract type="html">The name of a Lua script file.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The Lua table as a dictionary, or nil if there are any errors.</Abstract></ReturnValue>
-			<Anchor>//api/name/dictionaryWithContentsOfLuaScript:</Anchor>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="51"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Called after view did load. Declaration needed for Mac OS X whose NSViewController knows no viewDidLoad method.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/presentFirstScene</TokenIdentifier>
+			<Abstract type="html">Called when the view is ready to present the first scene. Override in your subclass to present the very first scene.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)presentFirstScene</Declaration>
+			
+			
+			<Anchor>//api/name/presentFirstScene</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

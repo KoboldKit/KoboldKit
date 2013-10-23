@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKButtonBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitFree </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -59,17 +58,9 @@
 	
 	<option value="//api/name/beginSelect">&nbsp;&nbsp;&nbsp;&nbsp;- beginSelect</option>
 	
-	<option value="//api/name/didChangeEnabledState">&nbsp;&nbsp;&nbsp;&nbsp;- didChangeEnabledState</option>
-	
-	<option value="//api/name/didJoinController">&nbsp;&nbsp;&nbsp;&nbsp;- didJoinController</option>
-	
-	<option value="//api/name/didLeaveController">&nbsp;&nbsp;&nbsp;&nbsp;- didLeaveController</option>
-	
 	<option value="//api/name/endSelect">&nbsp;&nbsp;&nbsp;&nbsp;- endSelect</option>
 	
 	<option value="//api/name/execute">&nbsp;&nbsp;&nbsp;&nbsp;- execute</option>
-	
-	<option value="//api/name/setEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;- setEnabled:</option>
 	
 	
 	
@@ -119,17 +110,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginSelect">beginSelect</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didChangeEnabledState">didChangeEnabledState</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didJoinController">didJoinController</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLeaveController">didLeaveController</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSelect">endSelect</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/execute">execute</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setEnabled:">setEnabled:</a></span></li>
 	
 </ul></li>
 
@@ -158,12 +141,12 @@
 	<td class="specification-value"><a href="../Classes/KKBehavior.html">KKBehavior</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKButtonBehavior.h<br />KKButtonBehavior.m</td>
+	<td class="specification-value">KKButtonBehavior.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -171,7 +154,7 @@
 						<p>KKButtonBehavior turns any node into a button. Touch/Click on the node while be detected, the node is scaled while <a href="#//api/name/selected">selected</a>.
 Scaling is optional and can be modified/disabled with the <a href="#//api/name/selectedScale">selectedScale</a> property.</p>
 
-<p>If a touch/click started and then ended on the node, a notification with name <code>KKButtonDidExecute</code> is posted to the
+<p>If a touch/click started and then ended on the node, a notification with name <code>KKButtonDidExecuteNotification</code> is posted to the
 <a href="https://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/nsnotificationcenter_Class/Reference/Reference.html">NSNotificationCenter</a>
 with the button behavior&rsquo;s node as sender.</p>
 
@@ -180,14 +163,14 @@ with the button behavior&rsquo;s node as sender.</p>
 <pre><code>NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
 [nc addObserver:self
        selector:@selector(buttonDidExecute:)
-           name:KKButtonDidExecute
+           name:KKButtonDidExecuteNotification
          object:buttonNode];
 </code></pre>
 
 <p>The observer is usually <code>self</code> but can be any other object implementing the selector.
 The selector can have any name.
 The object parameter should be the node containing the KKButtonBehavior instance, or nil. If you use <code>nil</code> as object,
-the selector receives all KKButtonDidExecute notifications from all KKButtonBehaviors.</p>
+the selector receives all KKButtonDidExecuteNotification notifications from all KKButtonBehaviors.</p>
 
 <p>The selector implementation takes one argument of type NSNotification:</p>
 
@@ -221,36 +204,30 @@ Blocks and target/selector can not be copied or archived.</p>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/selectedTexture">&nbsp;&nbsp;selectedTexture</a></code>
-		<span class="tooltip"><p>Set the <a href="#//api/name/selected">selected</a> texture if you want this to be exchanged with the sprite&rsquo;s texture during selection. Only works with SKSpriteNode nodes.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/selectedScale">&nbsp;&nbsp;selectedScale</a></code>
-		<span class="tooltip"><p>Determines the amount of scale when the button is <a href="#//api/name/selected">selected</a>. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/selected">&nbsp;&nbsp;selected</a></code>
-		<span class="tooltip"><p>YES if the button is currently selected.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/executesWhenPressed">&nbsp;&nbsp;executesWhenPressed</a></code>
-		<span class="tooltip"><p>If enabled, the button will send the <a href="#//api/name/execute">execute</a> notification when it is pressed. The default will send the notification when the button is released.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/continuous">&nbsp;&nbsp;continuous</a></code>
-		<span class="tooltip"><p>If enabled, the button will send the <a href="#//api/name/execute">execute</a> notification continuously as long as it is pressed. It will also send the &ldquo;released&rdquo; notification
-when it is no longer pressed.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -265,62 +242,18 @@ when it is no longer pressed.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/beginSelect">&ndash;&nbsp;beginSelect</a></code>
-		<span class="tooltip"><p>Will make the node enter the <a href="#//api/name/selected">selected</a> state. This is normally used internally, but you may want to use this to highlight buttons,
-for example in a tutorial. You can also override the method in a subclass to perform your own selection style, perhaps changing texture or color.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/endSelect">&ndash;&nbsp;endSelect</a></code>
-		<span class="tooltip"><p>Will make the node exit the <a href="#//api/name/selected">selected</a> state. This is normally used internally, but may be helpful for tutorials (see <a href="#//api/name/beginSelect">beginSelect</a>).
-You can override the method in a subclass to perform your own deselection style.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/execute">&ndash;&nbsp;execute</a></code>
-		<span class="tooltip"><p>Will make the button post the KKButtonDidExecute notification. Calling this method will simulate a button press action.
-You can override the method in a subclass to either handle the execute directly. To ensure the notification is posted, call [super execute]
-in your implementation.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didJoinController">&ndash;&nbsp;didJoinController</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/behavior">behavior</a> was added to a <a href="#//api/name/node">node</a>.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didLeaveController">&ndash;&nbsp;didLeaveController</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/behavior">behavior</a> was removed from a <a href="#//api/name/node">node</a>.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didChangeEnabledState">&ndash;&nbsp;didChangeEnabledState</a></code>
-		<span class="tooltip"><p>Sent when the <a href="#//api/name/enabled">enabled</a> state of the <a href="#//api/name/behavior">behavior</a> was changed.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setEnabled:">&ndash;&nbsp;setEnabled:</a></code>
-		<span class="tooltip"><p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
-Disabled behaviors don&rsquo;t receive update messages.</p></span>
 	</span>
 	
 	
@@ -348,9 +281,11 @@ Disabled behaviors don&rsquo;t receive update messages.</p></span>
 when it is no longer pressed.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL continuous</code></div>
-	
+
+    
 	
 	
 	
@@ -387,9 +322,11 @@ when it is no longer pressed.</p>
 		<p>If enabled, the button will send the <a href="#//api/name/execute">execute</a> notification when it is pressed. The default will send the notification when the button is released.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL executesWhenPressed</code></div>
-	
+
+    
 	
 	
 	
@@ -426,9 +363,11 @@ when it is no longer pressed.</p>
 		<p>YES if the button is currently selected.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) BOOL selected</code></div>
-	
+
+    
 	
 	
 	
@@ -465,9 +404,11 @@ when it is no longer pressed.</p>
 		<p>Determines the amount of scale when the button is <a href="#//api/name/selected">selected</a>. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGFloat selectedScale</code></div>
-	
+
+    
 	
 	
 	
@@ -504,9 +445,11 @@ when it is no longer pressed.</p>
 		<p>Set the <a href="#//api/name/selected">selected</a> texture if you want this to be exchanged with the sprite&rsquo;s texture during selection. Only works with SKSpriteNode nodes.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) SKTexture *selectedTexture</code></div>
-	
+
+    
 	
 	
 	
@@ -549,9 +492,11 @@ when it is no longer pressed.</p>
 for example in a tutorial. You can also override the method in a subclass to perform your own selection style, perhaps changing texture or color.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)beginSelect</code></div>
-	
+
+    
 	
 	
 	
@@ -574,108 +519,6 @@ for example in a tutorial. You can also override the method in a subclass to per
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/didChangeEnabledState" title="didChangeEnabledState"></a>
-	<h3 class="subsubtitle method-title">didChangeEnabledState</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Sent when the <a href="#//api/name/enabled">enabled</a> state of the <a href="#//api/name/behavior">behavior</a> was changed.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)didChangeEnabledState</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/didJoinController" title="didJoinController"></a>
-	<h3 class="subsubtitle method-title">didJoinController</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Sent when the <a href="#//api/name/behavior">behavior</a> was added to a <a href="#//api/name/node">node</a>.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)didJoinController</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/didLeaveController" title="didLeaveController"></a>
-	<h3 class="subsubtitle method-title">didLeaveController</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Sent when the <a href="#//api/name/behavior">behavior</a> was removed from a <a href="#//api/name/node">node</a>.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)didLeaveController</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/endSelect" title="endSelect"></a>
 	<h3 class="subsubtitle method-title">endSelect</h3>
 	
@@ -686,9 +529,11 @@ for example in a tutorial. You can also override the method in a subclass to per
 You can override the method in a subclass to perform your own deselection style.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)endSelect</code></div>
-	
+
+    
 	
 	
 	
@@ -722,9 +567,11 @@ You can override the method in a subclass to either handle the execute directly.
 in your implementation.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (void)execute</code></div>
-	
+
+    
 	
 	
 	
@@ -746,50 +593,11 @@ in your implementation.</p>
 	
 </div>
 						
-						<div class="section-method">
-	<a name="//api/name/setEnabled:" title="setEnabled:"></a>
-	<h3 class="subsubtitle method-title">setEnabled:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
-Disabled behaviors don&rsquo;t receive update messages.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)setEnabled:(BOOL)<em>enabled</em></code></div>
-	
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Whether the <a href="#//api/name/behavior">behavior</a> is enabled.
-Disabled behaviors don&rsquo;t receive update messages.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKBehavior.h</code><br />
-	</div>				
-	
-	
-</div>
-						
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -800,9 +608,9 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -890,6 +698,14 @@ Disabled behaviors don&rsquo;t receive update messages.</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

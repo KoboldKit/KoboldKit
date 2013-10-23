@@ -6,6 +6,7 @@
 			<TokenIdentifier>//apple_ref/occ/cl/KKDoubleNumber</TokenIdentifier>
 			<Abstract type="html">Used internally. Part of the KKMutableNumber class cluster.</Abstract>
 			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+            
 			
 			<NodeRef refid="8"/>
 		</Token>
@@ -14,7 +15,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KKDoubleNumber/initWithDouble:</TokenIdentifier>
 			<Abstract type="html">create a mutable number of type double</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>			
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
 			<Declaration>- (id)initWithDouble:(double)doubleNumber</Declaration>
 			<Parameters>
@@ -25,7 +26,9 @@
 			</Parameters>
 			
 			<Anchor>//api/name/initWithDouble:</Anchor>
+            <NodeRef refid="8"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>

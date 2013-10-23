@@ -1,150 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALCallAction.html">
+	<File path="Classes/OALConcurrentActions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALCallAction</TokenIdentifier>
-			<Abstract type="html">Calls a selector on a target.
-This action will ignore whatever target it is run against,
-and will invoke the selector on the target specified at creation
-time.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/cl/OALConcurrentActions</TokenIdentifier>
+			<Abstract type="html">A set of actions that get run concurrently.</Abstract>
 			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+            
 			
 			<NodeRef refid="20"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/OALConcurrentActions/setActions:</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OALConcurrentActions/actions</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OALConcurrentActions/actions</TokenIdentifier>
+			<Abstract type="html">The actions which will be run.</Abstract>
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, retain) NSMutableArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OALConcurrentActions/actions:</TokenIdentifier>
 			<Abstract type="html">Create an action.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector</Declaration>
+			<Declaration>+ (id)actions:(OALAction *)actions, ...</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>callTarget</Name>
-					<Abstract type="html">The target to call.</Abstract>
+					<Name>actions</Name>
+					<Abstract type="html">The comma separated list of actions.</Abstract>
 				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to invoke.</Abstract>
+					<Name>NS_REQUIRES_NIL_TERMINATION</Name>
+					<Abstract type="html">List of actions must be terminated by a nil.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithCallTarget:selector:</Anchor>
+			<ReturnValue><Abstract type="html">A new set of concurrent actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/actions:</Anchor>
+            <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:withObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/OALConcurrentActions/actionsFromArray:</TokenIdentifier>
 			<Abstract type="html">Create an action.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)object</Declaration>
+			<Declaration>+ (id)actionsFromArray:(NSArray *)actions</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>callTarget</Name>
-					<Abstract type="html">The target to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to invoke.</Abstract>
-				</Parameter><Parameter>
-					<Name>object</Name>
-					<Abstract type="html">The object to pass to the selector.</Abstract>
+					<Name>actions</Name>
+					<Abstract type="html">The actions to run.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithCallTarget:selector:withObject:</Anchor>
+			<ReturnValue><Abstract type="html">A new set of concurrent actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionsFromArray:</Anchor>
+            <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALCallAction/actionWithCallTarget:selector:withObject:withObject:</TokenIdentifier>
-			<Abstract type="html">Create an action.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
-			
-			<Declaration>+ (id)actionWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)firstObject withObject:(id)secondObject</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>callTarget</Name>
-					<Abstract type="html">The target to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to invoke.</Abstract>
-				</Parameter><Parameter>
-					<Name>firstObject</Name>
-					<Abstract type="html">The first object to pass to the selector.</Abstract>
-				</Parameter><Parameter>
-					<Name>secondObject</Name>
-					<Abstract type="html">The second object to pass to the selector.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new action.</Abstract></ReturnValue>
-			<Anchor>//api/name/actionWithCallTarget:selector:withObject:withObject:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/OALConcurrentActions/initWithActions:</TokenIdentifier>
 			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
+			<DeclaredIn>OALUtilityActions.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector</Declaration>
+			<Declaration>- (id)initWithActions:(NSArray *)actions</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>callTarget</Name>
-					<Abstract type="html">The target to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to invoke.</Abstract>
+					<Name>actions</Name>
+					<Abstract type="html">The actions to run.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCallTarget:selector:</Anchor>
+			<ReturnValue><Abstract type="html">The initialized set of concurrent actions.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithActions:</Anchor>
+            <NodeRef refid="20"/>
 		</Token>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:withObject:</TokenIdentifier>
-			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)object</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>callTarget</Name>
-					<Abstract type="html">The target to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to invoke.</Abstract>
-				</Parameter><Parameter>
-					<Name>object</Name>
-					<Abstract type="html">The object to pass to the selector.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Initialize an action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCallTarget:selector:withObject:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALCallAction/initWithCallTarget:selector:withObject:withObject:</TokenIdentifier>
-			<Abstract type="html">Initialize an action.</Abstract>
-			<DeclaredIn>OALUtilityActions.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCallTarget:(id)callTarget selector:(SEL)selector withObject:(id)firstObject withObject:(id)secondObject</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>callTarget</Name>
-					<Abstract type="html">The target to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to invoke.</Abstract>
-				</Parameter><Parameter>
-					<Name>firstObject</Name>
-					<Abstract type="html">The first object to pass to the selector.</Abstract>
-				</Parameter><Parameter>
-					<Name>secondObject</Name>
-					<Abstract type="html">The second object to pass to the selector.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The initialized action.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCallTarget:selector:withObject:withObject:</Anchor>
-		</Token>
-		
+        
 	</File>
 </Tokens>

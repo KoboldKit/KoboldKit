@@ -1,422 +1,1069 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKNodeController.html">
+	<File path="Classes/KKMutableNumber.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKNodeController</TokenIdentifier>
-			<Abstract type="html">KKNodeController adds game component (behavior, model functionality to a node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKMutableNumber</TokenIdentifier>
+			<Abstract type="html">Similar to NSNumber, but allows numbers to be modified (hence: mutable). It does not inherit NSNumber, the implementation
+   is lightweight and encapsulates various classes like KKBoolNumber, KKInt32Number, KKDoubleNumber and so on each containing only
+   a single property of the given data type. </Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+            
 			
 			<NodeRef refid="21"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setNode:</TokenIdentifier>
-			<Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithBool:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type BOOL</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			<ReturnValue><Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/node</TokenIdentifier>
-			<Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			<ReturnValue><Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/node</TokenIdentifier>
-			<Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
-			
-			<ReturnValue><Abstract type="html">The controller's owning node. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/node</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setUserData:</TokenIdentifier>
-			<Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
-			
-			<ReturnValue><Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/userData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/userData</TokenIdentifier>
-			<Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
-			
-			<ReturnValue><Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/userData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/userData</TokenIdentifier>
-			<Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, strong) NSMutableDictionary *userData</Declaration>
-			
-			<ReturnValue><Abstract type="html">The controller's userData supercedes the node's userData and can be used in the same way. You should never change this reference yourself!</Abstract></ReturnValue>
-			<Anchor>//api/name/userData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setBehaviors:</TokenIdentifier>
-			<Abstract type="html">The list of behaviors of the node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
-			
-			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviors</TokenIdentifier>
-			<Abstract type="html">The list of behaviors of the node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
-			
-			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/behaviors</TokenIdentifier>
-			<Abstract type="html">The list of behaviors of the node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic, readonly) NSArray *behaviors</Declaration>
-			
-			<ReturnValue><Abstract type="html">The list of behaviors of the node.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setModel:</TokenIdentifier>
-			<Abstract type="html">The model object associated with this controller/node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/model</TokenIdentifier>
-			<Abstract type="html">The model object associated with this controller/node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/model</TokenIdentifier>
-			<Abstract type="html">The model object associated with this controller/node.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) KKModel *model</Declaration>
-			
-			<ReturnValue><Abstract type="html">The model object associated with this controller/node.</Abstract></ReturnValue>
-			<Anchor>//api/name/model</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/setPaused:</TokenIdentifier>
-			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
-also check the controller's paused state to ensure they don't process/forward events while paused.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL paused</Declaration>
-			
-			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/paused</TokenIdentifier>
-			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
-also check the controller's paused state to ensure they don't process/forward events while paused.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL paused</Declaration>
-			
-			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNodeController/paused</TokenIdentifier>
-			<Abstract type="html">If the controller is paused, the behaviors will stop receiving updates. Behaviors receiving events should
-also check the controller's paused state to ensure they don't process/forward events while paused.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>@property (atomic) BOOL paused</Declaration>
-			
-			<ReturnValue><Abstract type="html">The current paused status.</Abstract></ReturnValue>
-			<Anchor>//api/name/paused</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKNodeController/controllerWithBehaviors:</TokenIdentifier>
-			<Abstract type="html">Creates a controller with a list of behaviors.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>+ (id)controllerWithBehaviors:(NSArray *)behaviors</Declaration>
+			<Declaration>+ (id)numberWithBool:(BOOL)number</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>behaviors</Name>
-					<Abstract type="html">An array containing KKBehavior objects.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/controllerWithBehaviors:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/initWithBehaviors:</TokenIdentifier>
-			<Abstract type="html">Creates a controller with a list of behaviors.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithBehaviors:(NSArray *)behaviors</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behaviors</Name>
-					<Abstract type="html">An array containing KKBehavior objects.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithBehaviors:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehavior:</TokenIdentifier>
-			<Abstract type="html">Adds a behavior.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (void)addBehavior:(KKBehavior *)behavior</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behavior</Name>
-					<Abstract type="html">The behavior to add.</Abstract>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addBehavior:</Anchor>
+			<Anchor>//api/name/numberWithBool:</Anchor>
+            <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehavior:withKey:</TokenIdentifier>
-			<Abstract type="html">Adds a behavior with key.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithChar:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
-			<Declaration>- (void)addBehavior:(KKBehavior *)behavior withKey:(NSString *)key</Declaration>
+			<Declaration>+ (id)numberWithChar:(char)number</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>behavior</Name>
-					<Abstract type="html">The behavior to add.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The behavior's uniquely identifying key.</Abstract>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addBehavior:withKey:</Anchor>
+			<Anchor>//api/name/numberWithChar:</Anchor>
+            <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/addBehaviors:</TokenIdentifier>
-			<Abstract type="html">Adds a list of behaviors.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithDouble:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type double</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
-			<Declaration>- (void)addBehaviors:(NSArray *)behaviors</Declaration>
+			<Declaration>+ (id)numberWithDouble:(double)number</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>behaviors</Name>
-					<Abstract type="html">An array containing KKBehavior objects.</Abstract>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addBehaviors:</Anchor>
+			<Anchor>//api/name/numberWithDouble:</Anchor>
+            <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorForKey:</TokenIdentifier>
-			<Abstract type="html">A key uniquely identifying the behavior.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithFloat:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type float</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
-			<Declaration>- (id)behaviorForKey:(NSString *)key</Declaration>
+			<Declaration>+ (id)numberWithFloat:(float)number</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">A key uniquely identifying the behavior.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The behavior for the key or nil if there is no behavior with that key.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviorForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorKindOfClass:</TokenIdentifier>
-			<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (id)behaviorKindOfClass:(Class)behaviorClass</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behaviorClass</Name>
-					<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The first found behavior being a kind of class or nil if there is no behavior with that class.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviorKindOfClass:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/behaviorMemberOfClass:</TokenIdentifier>
-			<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (id)behaviorMemberOfClass:(Class)behaviorClass</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behaviorClass</Name>
-					<Abstract type="html">The class uniquely identifying the behavior.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The first found behavior being a member of the class or nil if there is no behavior with that class.</Abstract></ReturnValue>
-			<Anchor>//api/name/behaviorMemberOfClass:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/hasBehaviors</TokenIdentifier>
-			<Abstract type="html">YES if the controller has one or more behaviors.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)hasBehaviors</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if the controller has one or more behaviors.</Abstract></ReturnValue>
-			<Anchor>//api/name/hasBehaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehavior:</TokenIdentifier>
-			<Abstract type="html">Removes a specific behavior. Does nothing if the behavior isn't in the list.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeBehavior:(KKBehavior *)behavior</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>behavior</Name>
-					<Abstract type="html">The behavior to remove</Abstract>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/removeBehavior:</Anchor>
+			<Anchor>//api/name/numberWithFloat:</Anchor>
+            <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehaviorForKey:</TokenIdentifier>
-			<Abstract type="html">Removes a specific behavior by key. Does nothing if there's no behavior with this key in the list.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithInt:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
-			<Declaration>- (void)removeBehaviorForKey:(NSString *)key</Declaration>
+			<Declaration>+ (id)numberWithInt:(int)number</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the behavior to remove.</Abstract>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/removeBehaviorForKey:</Anchor>
+			<Anchor>//api/name/numberWithInt:</Anchor>
+            <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeBehaviorWithClass:</TokenIdentifier>
-			<Abstract type="html">Removes a specific behavior by class. Does nothing if there's no behavior being a member of the class in the list.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithInteger:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type NSInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
-			<Declaration>- (void)removeBehaviorWithClass:(Class)behaviorClass</Declaration>
+			<Declaration>+ (id)numberWithInteger:(NSInteger)number</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>behaviorClass</Name>
-					<Abstract type="html">The behavior class to remove.</Abstract>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/removeBehaviorWithClass:</Anchor>
+			<Anchor>//api/name/numberWithInteger:</Anchor>
+            <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/removeAllBehaviors</TokenIdentifier>
-			<Abstract type="html">Removes all behaviors from the controller.</Abstract>
-			<DeclaredIn>KKNodeController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
-			<Declaration>- (void)removeAllBehaviors</Declaration>
-			
-			
-			<Anchor>//api/name/removeAllBehaviors</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/didBeginContact:otherBody:</TokenIdentifier>
-			<Abstract type="html">Called when two objects's physics bodies get in contact.</Abstract>
-			<DeclaredIn>KKNodeController.m</DeclaredIn>			
-			
-			<Declaration>- (void)didBeginContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
+			<Declaration>+ (id)numberWithLong:(long)number</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>contact</Name>
-					<Abstract type="html">The contact object.</Abstract>
-				</Parameter><Parameter>
-					<Name>otherBody</Name>
-					<Abstract type="html">The other contacting body.</Abstract>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/didBeginContact:otherBody:</Anchor>
+			<Anchor>//api/name/numberWithLong:</Anchor>
+            <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNodeController/didEndContact:otherBody:</TokenIdentifier>
-			<Abstract type="html">Called when two objects's physics bodies' contact ends.</Abstract>
-			<DeclaredIn>KKNodeController.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithLongLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type long long (64 bit integer)</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
 			
-			<Declaration>- (void)didEndContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
+			<Declaration>+ (id)numberWithLongLong:(long long)number</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>contact</Name>
-					<Abstract type="html">The contact object.</Abstract>
-				</Parameter><Parameter>
-					<Name>otherBody</Name>
-					<Abstract type="html">The other contacting body.</Abstract>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/didEndContact:otherBody:</Anchor>
+			<Anchor>//api/name/numberWithLongLong:</Anchor>
+            <NodeRef refid="21"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithShort:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>+ (id)numberWithShort:(short)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/numberWithShort:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedChar:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>+ (id)numberWithUnsignedChar:(unsigned char)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/numberWithUnsignedChar:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedInt:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>+ (id)numberWithUnsignedInt:(unsigned int)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/numberWithUnsignedInt:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedInteger:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type NSUInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>+ (id)numberWithUnsignedInteger:(NSUInteger)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/numberWithUnsignedInteger:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>+ (id)numberWithUnsignedLong:(unsigned long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/numberWithUnsignedLong:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedLongLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned long long (64 bit integer)</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>+ (id)numberWithUnsignedLongLong:(unsigned long long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/numberWithUnsignedLongLong:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKMutableNumber/numberWithUnsignedShort:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>+ (id)numberWithUnsignedShort:(unsigned short)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/numberWithUnsignedShort:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithBool:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type BOOL</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithBool:(BOOL)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithBool:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithChar:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithChar:(char)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithChar:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithDouble:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type double</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDouble:(double)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithDouble:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithFloat:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type float</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFloat:(float)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithFloat:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithInt:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithInt:(int)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithInt:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithInteger:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type NSInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithInteger:(NSInteger)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithInteger:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithLong:(long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithLong:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithLongLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type long long (64 bit integer)</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithLongLong:(long long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithLongLong:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithShort:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithShort:(short)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithShort:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedChar:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUnsignedChar:(unsigned char)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithUnsignedChar:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedInt:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUnsignedInt:(unsigned int)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithUnsignedInt:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedInteger:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type NSUInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUnsignedInteger:(NSUInteger)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithUnsignedInteger:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUnsignedLong:(unsigned long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithUnsignedLong:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedLongLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned long long (64 bit integer)</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUnsignedLongLong:(unsigned long long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithUnsignedLongLong:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/initWithUnsignedShort:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUnsignedShort:(unsigned short)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithUnsignedShort:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setBoolValue:</TokenIdentifier>
+			<Abstract type="html">Get or set the number&apos;s value as/from type BOOL.</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL boolValue</Declaration>
+			
+			
+			<Anchor>//api/name/boolValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/boolValue</TokenIdentifier>
+			<Abstract type="html">Get or set the number&apos;s value as/from type BOOL.</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL boolValue</Declaration>
+			
+			
+			<Anchor>//api/name/boolValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/boolValue</TokenIdentifier>
+			<Abstract type="html">Get or set the number&apos;s value as/from type BOOL.</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL boolValue</Declaration>
+			
+			
+			<Anchor>//api/name/boolValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setCharValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) char charValue</Declaration>
+			
+			
+			<Anchor>//api/name/charValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/charValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) char charValue</Declaration>
+			
+			
+			<Anchor>//api/name/charValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/charValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) char charValue</Declaration>
+			
+			
+			<Anchor>//api/name/charValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setDoubleValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type double</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) double doubleValue</Declaration>
+			
+			
+			<Anchor>//api/name/doubleValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/doubleValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type double</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) double doubleValue</Declaration>
+			
+			
+			<Anchor>//api/name/doubleValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/doubleValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type double</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) double doubleValue</Declaration>
+			
+			
+			<Anchor>//api/name/doubleValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setFloatValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type float</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) float floatValue</Declaration>
+			
+			
+			<Anchor>//api/name/floatValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/floatValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type float</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) float floatValue</Declaration>
+			
+			
+			<Anchor>//api/name/floatValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/floatValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type float</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) float floatValue</Declaration>
+			
+			
+			<Anchor>//api/name/floatValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setIntValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) int intValue</Declaration>
+			
+			
+			<Anchor>//api/name/intValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/intValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) int intValue</Declaration>
+			
+			
+			<Anchor>//api/name/intValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/intValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) int intValue</Declaration>
+			
+			
+			<Anchor>//api/name/intValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setIntegerValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type NSInteger</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSInteger integerValue</Declaration>
+			
+			
+			<Anchor>//api/name/integerValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/integerValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type NSInteger</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSInteger integerValue</Declaration>
+			
+			
+			<Anchor>//api/name/integerValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/integerValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type NSInteger</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSInteger integerValue</Declaration>
+			
+			
+			<Anchor>//api/name/integerValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setLongLongValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long long longLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/longLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/longLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long long longLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/longLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/longLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long long longLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/longLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setLongValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long longValue</Declaration>
+			
+			
+			<Anchor>//api/name/longValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/longValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long longValue</Declaration>
+			
+			
+			<Anchor>//api/name/longValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/longValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long longValue</Declaration>
+			
+			
+			<Anchor>//api/name/longValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setShortValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) short shortValue</Declaration>
+			
+			
+			<Anchor>//api/name/shortValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/shortValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) short shortValue</Declaration>
+			
+			
+			<Anchor>//api/name/shortValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/shortValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) short shortValue</Declaration>
+			
+			
+			<Anchor>//api/name/shortValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedCharValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedCharValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedCharValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedCharValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedCharValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned char</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedCharValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedIntegerValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type NSUInteger</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSUInteger unsignedIntegerValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntegerValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedIntegerValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type NSUInteger</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSUInteger unsignedIntegerValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntegerValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedIntegerValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type NSUInteger</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSUInteger unsignedIntegerValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntegerValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedIntValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedIntValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedIntValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned int</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedLongLongValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedLongLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedLongLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedLongValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/setUnsignedShortValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedShortValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKMutableNumber/unsignedShortValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedShortValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKMutableNumber/unsignedShortValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned short</Abstract>
+			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedShortValue</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

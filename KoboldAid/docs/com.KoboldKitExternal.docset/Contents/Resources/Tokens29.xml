@@ -1,131 +1,550 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OALTools.html">
+	<File path="Classes/OpenALManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OALTools</TokenIdentifier>
-			<Abstract type="html">Miscellaneous tools used by ObjectAL.</Abstract>
-			<DeclaredIn>OALTools.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/OpenALManager</TokenIdentifier>
+			<Abstract type="html">Manager class for OpenAL objects (ObjectAL).
+Keeps track of devices that have been opened, and allows high level OpenAL management. &lt;br&gt;
+Provides methods for loading ALBuffer objects from audio files. &lt;br&gt;
+The OpenAL 1.1 specification is available at
+http://connect.creativelabs.com/openal/Documentation &lt;br&gt;
+Be sure to read through it (especially the part about distance models) as ObjectAL follows the
+OpenAL object model. &lt;br&gt;</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+            
 			
 			<NodeRef refid="29"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALTools/setDefaultBundle:</TokenIdentifier>
-			<Abstract type="html">Set the default bundle to use when looking up paths.</Abstract>
-			<DeclaredIn>OALTools.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/setAvailableDevices:</TokenIdentifier>
+			<Abstract type="html">List of available playback devices (NSString*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
 			
-			<Declaration>+ (void)setDefaultBundle:(NSBundle *)bundle</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>bundle</Name>
-					<Abstract type="html">The new default bundle.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *availableDevices</Declaration>
 			
-			<Anchor>//api/name/setDefaultBundle:</Anchor>
+			
+			<Anchor>//api/name/availableDevices</Anchor>
+            <NodeRef refid="29"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALTools/defaultBundle</TokenIdentifier>
-			<Abstract type="html">The default bundle used when looking up paths.</Abstract>
-			<DeclaredIn>OALTools.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/availableDevices</TokenIdentifier>
+			<Abstract type="html">List of available playback devices (NSString*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSBundle *)defaultBundle</Declaration>
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *availableDevices</Declaration>
 			
 			
-			<Anchor>//api/name/defaultBundle</Anchor>
+			<Anchor>//api/name/availableDevices</Anchor>
+            <NodeRef refid="29"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALTools/urlForPath:</TokenIdentifier>
-			<Abstract type="html">Returns the URL corresponding to the specified path.
-If the path is not absolute (starts with a "/"), this method will look for
-the file in the default bundle.</Abstract>
-			<DeclaredIn>OALTools.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/OpenALManager/availableDevices</TokenIdentifier>
+			<Abstract type="html">List of available playback devices (NSString*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSURL *)urlForPath:(NSString *)path</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">The path to convert to a URL.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The corresponding URL or nil if a URL could not be formed.</Abstract></ReturnValue>
-			<Anchor>//api/name/urlForPath:</Anchor>
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *availableDevices</Declaration>
+			
+			
+			<Anchor>//api/name/availableDevices</Anchor>
+            <NodeRef refid="29"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALTools/urlForPath:bundle:</TokenIdentifier>
-			<Abstract type="html">Returns the URL corresponding to the specified path.
-If the path is not absolute (starts with a "/"), this method will look for
-the file in the specified bundle.</Abstract>
-			<DeclaredIn>OALTools.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/setAvailableCaptureDevices:</TokenIdentifier>
+			<Abstract type="html">List of available capture devices (NSString*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSURL *)urlForPath:(NSString *)path bundle:(NSBundle *)bundle</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">The path to convert to a URL.</Abstract>
-				</Parameter><Parameter>
-					<Name>bundle</Name>
-					<Abstract type="html">The bundle to look inside for relative paths.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The corresponding URL or nil if a URL could not be formed.</Abstract></ReturnValue>
-			<Anchor>//api/name/urlForPath:bundle:</Anchor>
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *availableCaptureDevices</Declaration>
+			
+			
+			<Anchor>//api/name/availableCaptureDevices</Anchor>
+            <NodeRef refid="29"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALTools/notifyExtAudioError:function:description:</TokenIdentifier>
-			<Abstract type="html">Notify an error if the specified ExtAudio error code indicates an error.
-This will log the error and also potentially post an audio error notification
-(OALAudioErrorNotification) if it is suspected that this error is a result of
-the audio session getting corrupted.</Abstract>
-			<DeclaredIn>OALTools.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/availableCaptureDevices</TokenIdentifier>
+			<Abstract type="html">List of available capture devices (NSString*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
 			
-			<Declaration>+ (void)notifyExtAudioError:(OSStatus)errorCode function:(const char *)function description:(NSString *)description, ...</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>function:</Name>
-					<Abstract type="html">The function name where the error occurred.</Abstract>
-				</Parameter><Parameter>
-					<Name>description:</Name>
-					<Abstract type="html">A printf-style description of what happened.</Abstract>
-				</Parameter><Parameter>
-					<Name>errorCode:</Name>
-					<Abstract type="html">The error code returned from an OS call.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *availableCaptureDevices</Declaration>
 			
-			<Anchor>//api/name/notifyExtAudioError:function:description:</Anchor>
+			
+			<Anchor>//api/name/availableCaptureDevices</Anchor>
+            <NodeRef refid="29"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OALTools/notifyAudioSessionError:function:description:</TokenIdentifier>
-			<Abstract type="html">Notify an error if the specified AudioSession error code indicates an error.
-This will log the error and also potentially post an audio error notification
-(OALAudioErrorNotification) if it is suspected that this error is a result of
-the audio session getting corrupted.</Abstract>
-			<DeclaredIn>OALTools.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/OpenALManager/availableCaptureDevices</TokenIdentifier>
+			<Abstract type="html">List of available capture devices (NSString*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
 			
-			<Declaration>+ (void)notifyAudioSessionError:(OSStatus)errorCode function:(const char *)function description:(NSString *)description, ...</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>function:</Name>
-					<Abstract type="html">The function name where the error occurred.</Abstract>
-				</Parameter><Parameter>
-					<Name>description:</Name>
-					<Abstract type="html">A printf-style description of what happened.</Abstract>
-				</Parameter><Parameter>
-					<Name>errorCode:</Name>
-					<Abstract type="html">The error code returned from an OS call.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *availableCaptureDevices</Declaration>
 			
-			<Anchor>//api/name/notifyAudioSessionError:function:description:</Anchor>
+			
+			<Anchor>//api/name/availableCaptureDevices</Anchor>
+            <NodeRef refid="29"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/setCurrentContext:</TokenIdentifier>
+			<Abstract type="html">The current context (some context operations require the context to be the &quot;current&quot; one).
+WEAK reference.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALContext *currentContext</Declaration>
+			
+			
+			<Anchor>//api/name/currentContext</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/currentContext</TokenIdentifier>
+			<Abstract type="html">The current context (some context operations require the context to be the &quot;current&quot; one).
+WEAK reference.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALContext *currentContext</Declaration>
+			
+			
+			<Anchor>//api/name/currentContext</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OpenALManager/currentContext</TokenIdentifier>
+			<Abstract type="html">The current context (some context operations require the context to be the &quot;current&quot; one).
+WEAK reference.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALContext *currentContext</Declaration>
+			
+			
+			<Anchor>//api/name/currentContext</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/setDefaultCaptureDeviceSpecifier:</TokenIdentifier>
+			<Abstract type="html">Name of the default capture device.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSString *defaultCaptureDeviceSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/defaultCaptureDeviceSpecifier</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/defaultCaptureDeviceSpecifier</TokenIdentifier>
+			<Abstract type="html">Name of the default capture device.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSString *defaultCaptureDeviceSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/defaultCaptureDeviceSpecifier</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OpenALManager/defaultCaptureDeviceSpecifier</TokenIdentifier>
+			<Abstract type="html">Name of the default capture device.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSString *defaultCaptureDeviceSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/defaultCaptureDeviceSpecifier</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/setDefaultDeviceSpecifier:</TokenIdentifier>
+			<Abstract type="html">Name of the default playback device.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSString *defaultDeviceSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/defaultDeviceSpecifier</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/defaultDeviceSpecifier</TokenIdentifier>
+			<Abstract type="html">Name of the default playback device.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSString *defaultDeviceSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/defaultDeviceSpecifier</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OpenALManager/defaultDeviceSpecifier</TokenIdentifier>
+			<Abstract type="html">Name of the default playback device.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSString *defaultDeviceSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/defaultDeviceSpecifier</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/setDevices:</TokenIdentifier>
+			<Abstract type="html">List of all open devices (ALDevice*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *devices</Declaration>
+			
+			
+			<Anchor>//api/name/devices</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/devices</TokenIdentifier>
+			<Abstract type="html">List of all open devices (ALDevice*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *devices</Declaration>
+			
+			
+			<Anchor>//api/name/devices</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OpenALManager/devices</TokenIdentifier>
+			<Abstract type="html">List of all open devices (ALDevice*).</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSArray *devices</Declaration>
+			
+			
+			<Anchor>//api/name/devices</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/setMixerOutputFrequency:</TokenIdentifier>
+			<Abstract type="html">The frequency of the output mixer.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALdouble mixerOutputFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/mixerOutputFrequency</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/mixerOutputFrequency</TokenIdentifier>
+			<Abstract type="html">The frequency of the output mixer.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALdouble mixerOutputFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/mixerOutputFrequency</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OpenALManager/mixerOutputFrequency</TokenIdentifier>
+			<Abstract type="html">The frequency of the output mixer.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALdouble mixerOutputFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/mixerOutputFrequency</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/setRenderingQuality:</TokenIdentifier>
+			<Abstract type="html">The rendering quality.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALint renderingQuality</Declaration>
+			
+			
+			<Anchor>//api/name/renderingQuality</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/renderingQuality</TokenIdentifier>
+			<Abstract type="html">The rendering quality.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALint renderingQuality</Declaration>
+			
+			
+			<Anchor>//api/name/renderingQuality</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OpenALManager/renderingQuality</TokenIdentifier>
+			<Abstract type="html">The rendering quality.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) ALint renderingQuality</Declaration>
+			
+			
+			<Anchor>//api/name/renderingQuality</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferFromFile:</TokenIdentifier>
+			<Abstract type="html">Load an OpenAL buffer with the contents of an audio file.
+The buffer&apos;s name will be the fully qualified URL of the path.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (ALBuffer *)bufferFromFile:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path of the file containing the audio data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An ALBuffer containing the audio data.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferFromFile:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferFromFile:reduceToMono:</TokenIdentifier>
+			<Abstract type="html">Load an OpenAL buffer with the contents of an audio file.
+The buffer&apos;s name will be the fully qualified URL of the path.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (ALBuffer *)bufferFromFile:(NSString *)filePath reduceToMono:(bool)reduceToMono</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path of the file containing the audio data.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceToMono</Name>
+					<Abstract type="html">If true, reduce the sample to mono
+(stereo samples don&apos;t support panning or positional audio).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An ALBuffer containing the audio data.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferFromFile:reduceToMono:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferFromUrl:</TokenIdentifier>
+			<Abstract type="html">Load an OpenAL buffer with the contents of an audio file.
+The buffer&apos;s name will be the fully qualified URL.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (ALBuffer *)bufferFromUrl:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL of the file containing the audio data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An ALBuffer containing the audio data.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferFromUrl:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferFromUrl:reduceToMono:</TokenIdentifier>
+			<Abstract type="html">Load an OpenAL buffer with the contents of an audio file.
+The buffer&apos;s name will be the fully qualified URL.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (ALBuffer *)bufferFromUrl:(NSURL *)url reduceToMono:(bool)reduceToMono</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL of the file containing the audio data.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceToMono</Name>
+					<Abstract type="html">If true, reduce the sample to mono
+(stereo samples don&apos;t support panning or positional audio).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An ALBuffer containing the audio data.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferFromUrl:reduceToMono:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferAsyncFromFile:target:selector:</TokenIdentifier>
+			<Abstract type="html">Load an OpenAL buffer with the contents of an audio file asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. &lt;br&gt;
+The buffer&apos;s name will be the fully qualified URL of the path. &lt;br&gt;
+Returns the fully qualified URL of the path, which you can match up to the buffer name in your
+callback method.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)bufferAsyncFromFile:(NSString *)filePath target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path of the file containing the audio data.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to call when the buffer is loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke when the buffer is loaded.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The fully qualified URL of the path.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferAsyncFromFile:target:selector:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferAsyncFromFile:reduceToMono:target:selector:</TokenIdentifier>
+			<Abstract type="html">Load an OpenAL buffer with the contents of an audio file asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. &lt;br&gt;
+The buffer&apos;s name will be the fully qualified URL of the path. &lt;br&gt;
+Returns the fully qualified URL of the path, which you can match up to the buffer name in your
+callback method.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)bufferAsyncFromFile:(NSString *)filePath reduceToMono:(bool)reduceToMono target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path of the file containing the audio data.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceToMono</Name>
+					<Abstract type="html">If true, reduce the sample to mono
+(stereo samples don&apos;t support panning or positional audio).</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to call when the buffer is loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke when the buffer is loaded.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The fully qualified URL of the path.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferAsyncFromFile:reduceToMono:target:selector:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferAsyncFromUrl:target:selector:</TokenIdentifier>
+			<Abstract type="html">Load an OpenAL buffer with the contents of a URL asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. &lt;br&gt;
+The buffer&apos;s name will be the fully qualified URL. &lt;br&gt;
+Returns the fully qualified URL, which you can match up to the buffer name in your callback
+method.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)bufferAsyncFromUrl:(NSURL *)url target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL of the file containing the audio data.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to call when the buffer is loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke when the buffer is loaded.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The fully qualified URL of the path.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferAsyncFromUrl:target:selector:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferAsyncFromUrl:reduceToMono:target:selector:</TokenIdentifier>
+			<Abstract type="html">Load an OpenAL buffer with the contents of a URL asynchronously.
+This method will schedule a request to have the buffer created and filled, and then call the
+specified selector with the newly created buffer. &lt;br&gt;
+The buffer&apos;s name will be the fully qualified URL. &lt;br&gt;
+Returns the fully qualified URL, which you can match up to the buffer name in your callback
+method.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)bufferAsyncFromUrl:(NSURL *)url reduceToMono:(bool)reduceToMono target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL of the file containing the audio data.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceToMono</Name>
+					<Abstract type="html">If true, reduce the sample to mono
+(stereo samples don&apos;t support panning or positional audio).</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target to call when the buffer is loaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to invoke when the buffer is loaded.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The fully qualified URL of the path.</Abstract></ReturnValue>
+			<Anchor>//api/name/bufferAsyncFromUrl:reduceToMono:target:selector:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/clearAllBuffers</TokenIdentifier>
+			<Abstract type="html">Clear all references to sound data from ALL buffers, managed or not.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (void)clearAllBuffers</Declaration>
+			
+			
+			<Anchor>//api/name/clearAllBuffers</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/notifyDeviceInitializing:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Notify that a device is initializing.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (void)notifyDeviceInitializing:(ALDevice *)device</Declaration>
+			
+			
+			<Anchor>//api/name/notifyDeviceInitializing:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/notifyDeviceDeallocating:</TokenIdentifier>
+			<Abstract type="html">(INTERNAL USE) Notify that a device is deallocating.</Abstract>
+			<DeclaredIn>OpenALManager.h</DeclaredIn>
+			
+			<Declaration>- (void)notifyDeviceDeallocating:(ALDevice *)device</Declaration>
+			
+			
+			<Anchor>//api/name/notifyDeviceDeallocating:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

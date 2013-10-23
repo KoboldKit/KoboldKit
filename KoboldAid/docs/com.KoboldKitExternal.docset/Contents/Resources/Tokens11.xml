@@ -7,6 +7,7 @@
 			<Abstract type="html">CCProfilingTimer
    Profiling timers used by CCProfiler</Abstract>
 			<DeclaredIn>CCProfiling.h</DeclaredIn>
+            
 			
 			<NodeRef refid="11"/>
 		</Token>
@@ -15,13 +16,15 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CCProfilingTimer/reset</TokenIdentifier>
 			<Abstract type="html">resets the timer properties</Abstract>
-			<DeclaredIn>CCProfiling.h</DeclaredIn>			
+			<DeclaredIn>CCProfiling.h</DeclaredIn>
 			
 			<Declaration>- (void)reset</Declaration>
 			
 			
 			<Anchor>//api/name/reset</Anchor>
+            <NodeRef refid="11"/>
 		</Token>
 		
+        
 	</File>
 </Tokens>
