@@ -153,6 +153,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 	Class dictionaryClass = [NSDictionary class];
 	for (id parentKey in parentObject)
 	{
+		// inherit parent object only if child doesn't override it
 		id object = [childObject objectForKey:parentKey];
 		if (object == nil)
 		{
@@ -160,7 +161,8 @@ static BOOL _showsNodeAnchorPoints = NO;
 		}
 		else if ([object isKindOfClass:dictionaryClass])
 		{
-			[NSException raise:NSInternalInconsistencyException format:@"inheriting table properties not yet implemented"];
+			// recurse
+			[self inheritValuesFrom:[parentObject objectForKey:parentKey] childObject:object];
 		}
 	}
 }
