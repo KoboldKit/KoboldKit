@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OGWEntity Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">OpenGW </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -32,12 +31,49 @@
 	
 	
 	
+	<option value="tasks">Tasks</option>
 	
 	
 	
 	
 	
+	<option value="properties">Properties</option>
 	
+	<option value="//api/name/boundingBox">&nbsp;&nbsp;&nbsp;&nbsp;boundingBox</option>
+	
+	<option value="//api/name/boundingBoxInWorldCoordinates">&nbsp;&nbsp;&nbsp;&nbsp;boundingBoxInWorldCoordinates</option>
+	
+	<option value="//api/name/identity">&nbsp;&nbsp;&nbsp;&nbsp;identity</option>
+	
+	<option value="//api/name/position">&nbsp;&nbsp;&nbsp;&nbsp;position</option>
+	
+	<option value="//api/name/previousPosition">&nbsp;&nbsp;&nbsp;&nbsp;previousPosition</option>
+	
+	<option value="//api/name/previousRotation">&nbsp;&nbsp;&nbsp;&nbsp;previousRotation</option>
+	
+	<option value="//api/name/rotation">&nbsp;&nbsp;&nbsp;&nbsp;rotation</option>
+	
+	<option value="//api/name/viewDelegate">&nbsp;&nbsp;&nbsp;&nbsp;viewDelegate</option>
+	
+	<option value="//api/name/world">&nbsp;&nbsp;&nbsp;&nbsp;world</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/entityWithCategory:">&nbsp;&nbsp;&nbsp;&nbsp;+ entityWithCategory:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/postUpdate">&nbsp;&nbsp;&nbsp;&nbsp;- postUpdate</option>
+	
+	<option value="//api/name/preUpdate">&nbsp;&nbsp;&nbsp;&nbsp;- preUpdate</option>
+	
+	<option value="//api/name/removeFromWorld">&nbsp;&nbsp;&nbsp;&nbsp;- removeFromWorld</option>
 	
 	
 	
@@ -53,13 +89,67 @@
 
 
 
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Identity">Identity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_World">World</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_View Delegate">View Delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Operations">Operations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Fundamental Properties">Fundamental Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Internal Use Only">Internal Use Only</a></span></li>
+	
+</ul></li>
 
 
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundingBox">boundingBox</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundingBoxInWorldCoordinates">boundingBoxInWorldCoordinates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/identity">identity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/position">position</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/previousPosition">previousPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/previousRotation">previousRotation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rotation">rotation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDelegate">viewDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/world">world</a></span></li>
+	
+</ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityWithCategory:">entityWithCategory:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postUpdate">postUpdate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preUpdate">preUpdate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFromWorld">removeFromWorld</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -83,35 +173,719 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<td class="specification-value"><a href="../Classes/OGWBase.html">OGWBase</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/OGWNotifierDelegate.html">OGWNotifierDelegate</a></td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OGWEntity.h<br />OGWEntity.m</td>
+	<td class="specification-value">OGWEntity.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Entity represents a logical object in the world.</p>
+						<p>An entity represents an object in the <a href="#//api/name/world">world</a>. An entity has aspects to drive its logic and data,
+keyed values to store and exchange data.</p>
+
+<p>Entities have an <a href="../Classes/OGWEntityIdentity.html">OGWEntityIdentity</a> which gives entities a unique ID and thus safer yet fast way to reference
+other entities without having to store pointers to objects or perform expensive queries. The <a href="#//api/name/identity">identity</a> also
+ties an entity to a specific category, which allows entities to be grouped and enumerated by category.</p>
+
+<p>Entities have only three basic properties, which could have been aspects but were added to the entity class
+itself for faster access and ease of use due to the fact that these are the most frequently used properties.
+These properties are <a href="#//api/name/position">position</a> and <a href="#//api/name/previousPosition">previousPosition</a>, <a href="#//api/name/rotation">rotation</a> and <a href="#//api/name/previousRotation">previousRotation</a>, <a href="#//api/name/boundingBox">boundingBox</a> and
+<a href="#//api/name/boundingBoxInWorldCoordinates">boundingBoxInWorldCoordinates</a>.</p>
 					</div>
 					
 					
 					
 					
 					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Identity" name="task_Identity"></a>
+						<h3 class="subsubtitle task-title">Identity</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/identity">&nbsp;&nbsp;identity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="World" name="task_World"></a>
+						<h3 class="subsubtitle task-title">World</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/world">&nbsp;&nbsp;world</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="View Delegate" name="task_View Delegate"></a>
+						<h3 class="subsubtitle task-title">View Delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDelegate">&nbsp;&nbsp;viewDelegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Operations" name="task_Operations"></a>
+						<h3 class="subsubtitle task-title">Operations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeFromWorld">&ndash;&nbsp;removeFromWorld</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Fundamental Properties" name="task_Fundamental Properties"></a>
+						<h3 class="subsubtitle task-title">Fundamental Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/boundingBox">&nbsp;&nbsp;boundingBox</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/boundingBoxInWorldCoordinates">&nbsp;&nbsp;boundingBoxInWorldCoordinates</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/position">&nbsp;&nbsp;position</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/previousPosition">&nbsp;&nbsp;previousPosition</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rotation">&nbsp;&nbsp;rotation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/previousRotation">&nbsp;&nbsp;previousRotation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Internal Use Only" name="task_Internal Use Only"></a>
+						<h3 class="subsubtitle task-title">Internal Use Only</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityWithCategory:">+&nbsp;entityWithCategory:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preUpdate">&ndash;&nbsp;preUpdate</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postUpdate">&ndash;&nbsp;postUpdate</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/boundingBox" title="boundingBox"></a>
+	<h3 class="subsubtitle method-title">boundingBox</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The bounding box is in local coordinated relative to the entity&rsquo;s <a href="#//api/name/position">position</a>. To make a 32x32 bounding box
+that extends equally in all directions with the <a href="#//api/name/position">position</a> at the center:</p>
+
+<pre>
+entity.boundingBox = GWRectMake(-16, -16, 32, 32);
+</pre>
+
+
+<p>This avoids having to use a separate anchor point for the bounding box.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWRect boundingBox</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The entity&rsquo;s bounding box, in local coordinates.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/boundingBoxInWorldCoordinates">@property boundingBoxInWorldCoordinates</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/boundingBoxInWorldCoordinates" title="boundingBoxInWorldCoordinates"></a>
+	<h3 class="subsubtitle method-title">boundingBoxInWorldCoordinates</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The bounding box in <a href="#//api/name/world">world</a> coordinates is obtained by adding the entity <a href="#//api/name/position">position</a> to the <a href="#//api/name/boundingBox">boundingBox</a>.origin.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) GWRect boundingBoxInWorldCoordinates</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The bounding box in <a href="#//api/name/world">world</a> coordinates.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/boundingBox">@property boundingBox</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/identity" title="identity"></a>
+	<h3 class="subsubtitle method-title">identity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The entity&rsquo;s identity object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) OGWEntityIdentity *identity</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The entity&rsquo;s identity object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWEntityIdentity.html">OGWEntityIdentity</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/position" title="position"></a>
+	<h3 class="subsubtitle method-title">position</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The entity&rsquo;s position, in <a href="#//api/name/world">world</a> coordinates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWPoint position</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The entity&rsquo;s position, in <a href="#//api/name/world">world</a> coordinates.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/previousPosition">@property previousPosition</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/previousPosition" title="previousPosition"></a>
+	<h3 class="subsubtitle method-title">previousPosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The entity&rsquo;s <a href="#//api/name/position">position</a> (in <a href="#//api/name/world">world</a> coordinates) in the previous step.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) GWPoint previousPosition</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The entity&rsquo;s <a href="#//api/name/position">position</a> (in <a href="#//api/name/world">world</a> coordinates) in the previous step.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/position">@property position</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/previousRotation" title="previousRotation"></a>
+	<h3 class="subsubtitle method-title">previousRotation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The entity&rsquo;s <a href="#//api/name/rotation">rotation</a> (in radians) in the previous step.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) GWFloat previousRotation</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The entity&rsquo;s <a href="#//api/name/rotation">rotation</a> (in radians) in the previous step.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/rotation">@property rotation</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rotation" title="rotation"></a>
+	<h3 class="subsubtitle method-title">rotation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The entity&rsquo;s (z) rotation, in radians.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWFloat rotation</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The entity&rsquo;s (z) rotation, in radians.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/previousRotation">@property previousRotation</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDelegate" title="viewDelegate"></a>
+	<h3 class="subsubtitle method-title">viewDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The view delegate receives <a href="#//api/name/position">position</a>, <a href="#//api/name/rotation">rotation</a> and other updates from the entity. This allows the view
+to be driven by the entity (and optionally converting units from OpenGW to view) rather than having to poll for changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak) id&lt;OGWEntityViewDelegate&gt; viewDelegate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The entity&rsquo;s view delegate.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/world" title="world"></a>
+	<h3 class="subsubtitle method-title">world</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The world to which the entity was added.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak) OGWWorld *world</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The world to which the entity was added.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWWorld.html">OGWWorld</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/entityWithCategory:" title="entityWithCategory:"></a>
+	<h3 class="subsubtitle method-title">entityWithCategory:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)entityWithCategory:(const OGWEntityCategory *)<em>category</em></code></div>
+
+    
+</div>
+						
+					</div>
 					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/postUpdate" title="postUpdate"></a>
+	<h3 class="subsubtitle method-title">postUpdate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)postUpdate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preUpdate" title="preUpdate"></a>
+	<h3 class="subsubtitle method-title">preUpdate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)preUpdate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFromWorld" title="removeFromWorld"></a>
+	<h3 class="subsubtitle method-title">removeFromWorld</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes the entity from its <a href="#//api/name/world">world</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeFromWorld</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWEntity.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -122,9 +896,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-09-18)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -212,6 +986,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

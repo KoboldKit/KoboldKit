@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OGWMap Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">OpenGW </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -32,12 +31,61 @@
 	
 	
 	
+	<option value="tasks">Tasks</option>
 	
 	
 	
 	
 	
+	<option value="properties">Properties</option>
 	
+	<option value="//api/name/elementBytes">&nbsp;&nbsp;&nbsp;&nbsp;elementBytes</option>
+	
+	<option value="//api/name/elementCount">&nbsp;&nbsp;&nbsp;&nbsp;elementCount</option>
+	
+	<option value="//api/name/elementSize">&nbsp;&nbsp;&nbsp;&nbsp;elementSize</option>
+	
+	<option value="//api/name/map">&nbsp;&nbsp;&nbsp;&nbsp;map</option>
+	
+	<option value="//api/name/mapBytes">&nbsp;&nbsp;&nbsp;&nbsp;mapBytes</option>
+	
+	<option value="//api/name/size">&nbsp;&nbsp;&nbsp;&nbsp;size</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	<option value="//api/name/world">&nbsp;&nbsp;&nbsp;&nbsp;world</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/mapWithBytes:elementBytes:size:">&nbsp;&nbsp;&nbsp;&nbsp;+ mapWithBytes:elementBytes:size:</option>
+	
+	<option value="//api/name/mapWithBytesNoCopy:elementBytes:size:">&nbsp;&nbsp;&nbsp;&nbsp;+ mapWithBytesNoCopy:elementBytes:size:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/debugDumpMap">&nbsp;&nbsp;&nbsp;&nbsp;- debugDumpMap</option>
+	
+	<option value="//api/name/elementAt:">&nbsp;&nbsp;&nbsp;&nbsp;- elementAt:</option>
+	
+	<option value="//api/name/elementAtPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- elementAtPoint:</option>
+	
+	<option value="//api/name/enumerateElementsInRect:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateElementsInRect:usingBlock:</option>
+	
+	<option value="//api/name/enumerateElementsIntersectingRect:usingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateElementsIntersectingRect:usingBlock:</option>
+	
+	<option value="//api/name/enumerateElementsUsingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateElementsUsingBlock:</option>
+	
+	<option value="//api/name/mapCoordFromPoint:inBounds:">&nbsp;&nbsp;&nbsp;&nbsp;- mapCoordFromPoint:inBounds:</option>
+	
+	<option value="//api/name/mapCoordRectFromPointRect:inBounds:">&nbsp;&nbsp;&nbsp;&nbsp;- mapCoordRectFromPointRect:inBounds:</option>
+	
+	<option value="//api/name/reverseRows">&nbsp;&nbsp;&nbsp;&nbsp;- reverseRows</option>
 	
 	
 	
@@ -53,13 +101,85 @@
 
 
 
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Map Size">Map Size</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Map Memory">Map Memory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Map Type">Map Type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Maps">Creating Maps</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Modifying Map">Modifying Map</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Converting Coordinates">Converting Coordinates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Elements">Accessing Elements</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Enumerating Elements">Enumerating Elements</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Debug">Debug</a></span></li>
+	
+</ul></li>
 
 
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementBytes">elementBytes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementCount">elementCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementSize">elementSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/map">map</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapBytes">mapBytes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/size">size</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/world">world</a></span></li>
+	
+</ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapWithBytes:elementBytes:size:">mapWithBytes:elementBytes:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapWithBytesNoCopy:elementBytes:size:">mapWithBytesNoCopy:elementBytes:size:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/debugDumpMap">debugDumpMap</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementAt:">elementAt:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elementAtPoint:">elementAtPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateElementsInRect:usingBlock:">enumerateElementsInRect:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateElementsIntersectingRect:usingBlock:">enumerateElementsIntersectingRect:usingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateElementsUsingBlock:">enumerateElementsUsingBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapCoordFromPoint:inBounds:">mapCoordFromPoint:inBounds:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapCoordRectFromPointRect:inBounds:">mapCoordRectFromPointRect:inBounds:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reverseRows">reverseRows</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -86,32 +206,1270 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OGWMap.h<br />OGWMap.m</td>
+	<td class="specification-value">OGWMap.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Map of arbitrary data. Can be used for collision, heat, surface and other map types.</p>
+						<p>An arbitrary <a href="#//api/name/map">map</a> represented by a memory buffer. Can be used for collision, heat, surface and other <a href="#//api/name/map">map</a> types as you see fit.</p>
+
+<p>Maps should be stored in <a href="../Classes/OGWWorldMaps.html">OGWWorldMaps</a>, which you can access through <a href="../Classes/OGWWorld.html">OGWWorld</a>.</p>
+
+<p>Though the <a href="#//api/name/map">map</a> is merely a memory buffer, the <a href="#//api/name/map">map</a> has a 2D <a href="#//api/name/size">size</a> (number of rows/columns) associated with it as well as the <a href="#//api/name/elementSize">elementSize</a> (arbitrary <a href="#//api/name/size">size</a> of each element). This gives
+you the spatial information often needed for maps. With <a href="#//api/name/elementBytes">elementBytes</a> and the <a href="#//api/name/map">map</a> being <code>void*</code> you can use any data <a href="#//api/name/type">type</a> within the <a href="#//api/name/map">map</a>,
+be it char or integer or double or even (custom) structs.</p>
 					</div>
 					
 					
 					
 					
 					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/world">&nbsp;&nbsp;world</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Map Size" name="task_Map Size"></a>
+						<h3 class="subsubtitle task-title">Map Size</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/elementSize">&nbsp;&nbsp;elementSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/elementCount">&nbsp;&nbsp;elementCount</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Map Memory" name="task_Map Memory"></a>
+						<h3 class="subsubtitle task-title">Map Memory</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/map">&nbsp;&nbsp;map</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/elementBytes">&nbsp;&nbsp;elementBytes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapBytes">&nbsp;&nbsp;mapBytes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Map Type" name="task_Map Type"></a>
+						<h3 class="subsubtitle task-title">Map Type</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating Maps" name="task_Creating Maps"></a>
+						<h3 class="subsubtitle task-title">Creating Maps</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapWithBytes:elementBytes:size:">+&nbsp;mapWithBytes:elementBytes:size:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapWithBytesNoCopy:elementBytes:size:">+&nbsp;mapWithBytesNoCopy:elementBytes:size:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Modifying Map" name="task_Modifying Map"></a>
+						<h3 class="subsubtitle task-title">Modifying Map</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reverseRows">&ndash;&nbsp;reverseRows</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Converting Coordinates" name="task_Converting Coordinates"></a>
+						<h3 class="subsubtitle task-title">Converting Coordinates</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapCoordFromPoint:inBounds:">&ndash;&nbsp;mapCoordFromPoint:inBounds:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapCoordRectFromPointRect:inBounds:">&ndash;&nbsp;mapCoordRectFromPointRect:inBounds:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Elements" name="task_Accessing Elements"></a>
+						<h3 class="subsubtitle task-title">Accessing Elements</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/elementAt:">&ndash;&nbsp;elementAt:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/elementAtPoint:">&ndash;&nbsp;elementAtPoint:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Enumerating Elements" name="task_Enumerating Elements"></a>
+						<h3 class="subsubtitle task-title">Enumerating Elements</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateElementsUsingBlock:">&ndash;&nbsp;enumerateElementsUsingBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateElementsIntersectingRect:usingBlock:">&ndash;&nbsp;enumerateElementsIntersectingRect:usingBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateElementsInRect:usingBlock:">&ndash;&nbsp;enumerateElementsInRect:usingBlock:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Debug" name="task_Debug"></a>
+						<h3 class="subsubtitle task-title">Debug</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/debugDumpMap">&ndash;&nbsp;debugDumpMap</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/elementBytes" title="elementBytes"></a>
+	<h3 class="subsubtitle method-title">elementBytes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The elementBytes determine the integral byte <a href="#//api/name/size">size</a> of each element in the <a href="#//api/name/map">map</a>. No assumption is made how many bytes each element
+in the <a href="#//api/name/map">map</a> occupies, hence the <a href="#//api/name/map">map</a> is a <code>void*</code> <a href="#//api/name/type">type</a> and can be used for any element types like char, integer or double.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) size_t elementBytes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/size">size</a> in bytes of each element. Typically either 1 (char), 2 (short), 4 (int, float) or 8 (long, double) bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/map">@property map</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/mapBytes">@property mapBytes</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/elementCount" title="elementCount"></a>
+	<h3 class="subsubtitle method-title">elementCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of elements in the <a href="#//api/name/map">map</a>. This is equal to <code>(</code>size<code>.width * </code>size<code>.height)</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) GWUInteger elementCount</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The number of elements in the <a href="#//api/name/map">map</a>. This is equal to <code>(</code>size<code>.width * </code>size<code>.height)</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/size">@property size</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/elementSize">@property elementSize</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/elementSize" title="elementSize"></a>
+	<h3 class="subsubtitle method-title">elementSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>How you interpret the <a href="#//api/name/size">size</a> of an element is up to you. Most often it would be used to indicate the spacing between two elements
+in <a href="#//api/name/world">world</a> coordinates, respectively the area each element occupies in the <a href="#//api/name/world">world</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWSize elementSize</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/size">size</a> of individual elements in the <a href="#//api/name/map">map</a>, in arbitrary units (typically <a href="#//api/name/world">world</a> coordinates). Defaults to {1, 1}.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/size">@property size</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/elementCount">@property elementCount</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/map" title="map"></a>
+	<h3 class="subsubtitle method-title">map</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gives you low-level access to the map data (elements). In most cases you&rsquo;re bette off to use the enumeration methods.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) void *map</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Pointer to the start of the map&rsquo;s memory buffer.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> The map pointer must not be freed. Its memory is managed by OGWMap.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/mapBytes">@property mapBytes</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/elementBytes">@property elementBytes</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/elementAtPoint:">- elementAtPoint:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/elementAt:">- elementAt:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/enumerateElementsUsingBlock:">- enumerateElementsUsingBlock:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/enumerateElementsIntersectingRect:usingBlock:">- enumerateElementsIntersectingRect:usingBlock:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/enumerateElementsInRect:usingBlock:">- enumerateElementsInRect:usingBlock:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapBytes" title="mapBytes"></a>
+	<h3 class="subsubtitle method-title">mapBytes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>How much memory (in bytes) the <a href="#//api/name/map">map</a> occupies. This is equal to <code>(</code>elementCount<code> * </code>elementBytes<code>)</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) size_t mapBytes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>How much memory (in bytes) the <a href="#//api/name/map">map</a> occupies. This is equal to <code>(</code>elementCount<code> * </code>elementBytes<code>)</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/map">@property map</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/elementBytes">@property elementBytes</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="subsubtitle method-title">size</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The size makes the <a href="#//api/name/map">map</a> a 2D buffer, determining how many elements per row and column exist.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) GWIntSize size</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The size of the <a href="#//api/name/map">map</a>, in <a href="#//api/name/map">map</a> (integer) coordinates.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/elementSize">@property elementSize</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/elementCount">@property elementCount</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>You can optionally assign a <a href="#//api/name/map">map</a> a type from the <a href="../Constants/OGWMapType.html">OGWMapType</a> list or your own. This allows you to get a <a href="#//api/name/map">map</a> based on its type instead of by name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property OGWMapType type</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The map&rsquo;s predefined type.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWWorldMaps.html">OGWWorldMaps</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/world" title="world"></a>
+	<h3 class="subsubtitle method-title">world</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak) OGWWorld *world</code></div>
+
+    
+</div>
+						
+					</div>
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/mapWithBytes:elementBytes:size:" title="mapWithBytes:elementBytes:size:"></a>
+	<h3 class="subsubtitle method-title">mapWithBytes:elementBytes:size:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Copies the contents of the buffer. This is slower and allocated another buffer of the same <a href="#//api/name/size">size</a>, which doubles memory usage
+until you free the buffer. If this concerns you, use the no-copy initializer..</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)mapWithBytes:(const void *const)<em>buffer</em> elementBytes:(size_t)<em>elementBytes</em> size:(GWIntSize)<em>size</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buffer</em></dt>
+			<dd><p>An allocated memory buffer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>elementBytes</em></dt>
+			<dd><p>The <a href="#//api/name/size">size</a> of each element, in bytes. For example for a <code>GWInteger*</code> buffer you would pass <code>sizeof(GWInteger)</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>The <a href="#//api/name/size">size</a> of the <a href="#//api/name/map">map</a>, ie how many elements per row and column.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new <a href="#//api/name/map">map</a> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> It is your responsibility to free the buffer afterwards.</p></div><div class="warning"><p><strong>Warning:</strong> Size of elements times width times height must equal the buffer&rsquo;s length. There are no buffer overflow checks in place!</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/mapWithBytesNoCopy:elementBytes:size:">+ mapWithBytesNoCopy:elementBytes:size:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapWithBytesNoCopy:elementBytes:size:" title="mapWithBytesNoCopy:elementBytes:size:"></a>
+	<h3 class="subsubtitle method-title">mapWithBytesNoCopy:elementBytes:size:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Takes ownership of the buffer without copying it. This is faster and more memory efficient.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)mapWithBytesNoCopy:(void *const)<em>buffer</em> elementBytes:(size_t)<em>elementBytes</em> size:(GWIntSize)<em>size</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buffer</em></dt>
+			<dd><p>An allocated memory buffer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>elementBytes</em></dt>
+			<dd><p>The <a href="#//api/name/size">size</a> of each element, in bytes. For example for a <code>GWInteger*</code> buffer you would pass <code>sizeof(GWInteger)</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>The <a href="#//api/name/size">size</a> of the <a href="#//api/name/map">map</a>, ie how many elements per row and column.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new <a href="#//api/name/map">map</a> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> You must not free the buffer when using this initializer!</p></div><div class="warning"><p><strong>Warning:</strong> Size of elements times width times height must equal the buffer&rsquo;s length. There are no buffer overflow checks in place!</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/mapWithBytesNoCopy:elementBytes:size:">+ mapWithBytesNoCopy:elementBytes:size:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/debugDumpMap" title="debugDumpMap"></a>
+	<h3 class="subsubtitle method-title">debugDumpMap</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/map">map</a> as string with coordinate markers. Mainly for printing to the console and further analysis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)debugDumpMap</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/map">map</a> as string with coordinate markers. Mainly for printing to the console and further analysis.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/elementAt:" title="elementAt:"></a>
+	<h3 class="subsubtitle method-title">elementAt:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A position in element coordinates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void *const)elementAt:(GWIntPoint)<em>position</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>position</em></dt>
+			<dd><p>A position in element coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The element at the given position. Returns NULL if the position was outside the map&rsquo;s boundaries.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/elementAtPoint:">- elementAtPoint:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/elementAtPoint:" title="elementAtPoint:"></a>
+	<h3 class="subsubtitle method-title">elementAtPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This considers the <a href="#//api/name/elementSize">elementSize</a> of elements to determine which element to return.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void *const)elementAtPoint:(GWPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>A point in <a href="#//api/name/world">world</a> coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The element at the given point. Returns NULL if the point was outside the map&rsquo;s boundaries.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/elementAt:">- elementAt:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumerateElementsInRect:usingBlock:" title="enumerateElementsInRect:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">enumerateElementsInRect:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enumerates the elements at the coordinates given by the rect (in element coordinates).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enumerateElementsInRect:(GWIntRect)<em>rect</em> usingBlock:(OGWMapElementEnumerationBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>A rectangle in element coordinates. The rect may be partially or completely outside the map&rsquo;s boundaries,
+it will be adjusted accordingly and return only elements within the map&rsquo;s boundaries, if any.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to run for each intersecting element.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumerateElementsIntersectingRect:usingBlock:" title="enumerateElementsIntersectingRect:usingBlock:"></a>
+	<h3 class="subsubtitle method-title">enumerateElementsIntersectingRect:usingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enumerates the elements intersecting the rect (in <a href="#//api/name/world">world</a> coordinates).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enumerateElementsIntersectingRect:(GWRect)<em>rect</em> usingBlock:(OGWMapElementEnumerationBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>A rectangle in <a href="#//api/name/world">world</a> coordinates. The rect may be partially or completely outside the map&rsquo;s boundaries,
+it will be adjusted accordingly and return only elements within the map&rsquo;s boundaries, if any.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to run for each intersecting element.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumerateElementsUsingBlock:" title="enumerateElementsUsingBlock:"></a>
+	<h3 class="subsubtitle method-title">enumerateElementsUsingBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enumerates all elements.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enumerateElementsUsingBlock:(OGWMapElementEnumerationBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to run for each element.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapCoordFromPoint:inBounds:" title="mapCoordFromPoint:inBounds:"></a>
+	<h3 class="subsubtitle method-title">mapCoordFromPoint:inBounds:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A point in <a href="#//api/name/world">world</a> coordinates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (GWIntPoint)mapCoordFromPoint:(GWPoint)<em>point</em> inBounds:(BOOL *const)<em>inBounds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>A point in <a href="#//api/name/world">world</a> coordinates.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>inBounds</em></dt>
+			<dd><p>Pass nil if you don&rsquo;t want to perform bounds checking (faster). Pass a pointer to a BOOL if you want to perform bounds checking.
+The inBounds parameter will be YES if the returned coordinate is within the map&rsquo;s boundaries, NO if it is outside the map&rsquo;s boundaries - in that
+case the returned coordinates can not be used to access the map&rsquo;s elements.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The corresponding point in <a href="#//api/name/map">map</a> coordinates, taking <a href="#//api/name/elementSize">elementSize</a> into account. The point may lie outside the bounds of the <a href="#//api/name/map">map</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapCoordRectFromPointRect:inBounds:" title="mapCoordRectFromPointRect:inBounds:"></a>
+	<h3 class="subsubtitle method-title">mapCoordRectFromPointRect:inBounds:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A rect in <a href="#//api/name/world">world</a> coordinates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (GWIntRect)mapCoordRectFromPointRect:(GWRect)<em>rect</em> inBounds:(BOOL *const)<em>inBounds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>A rect in <a href="#//api/name/world">world</a> coordinates.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>inBounds</em></dt>
+			<dd><p>Pass nil if you don&rsquo;t want to perform bounds checking (faster). Pass a pointer to a BOOL if you want to perform bounds checking.
+The inBounds parameter will be YES if the returned rectangle is entirely within the map&rsquo;s boundaries, NO if the rectangle is at least partially
+outside the map&rsquo;s boundaries - in that case the returned rectangle can not be used to access the map&rsquo;s elements.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The corresponding rect in <a href="#//api/name/map">map</a> coordinates, taking <a href="#//api/name/elementSize">elementSize</a> into account. The rectangle may lie (partially or completely) outside the bounds of the <a href="#//api/name/map">map</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reverseRows" title="reverseRows"></a>
+	<h3 class="subsubtitle method-title">reverseRows</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flips the map&rsquo;s rows by copying them into a new buffer and releasing the old buffer. This is a slow operation, run this only
+when your buffer&rsquo;s positive Y coordinates extend downwards (origin at upper left) instead of the OpenGW (OpenGL) coordinate system where
+positive Y coordinates extend upwards (origin at lower left).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reverseRows</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If, for some reason, you need the <a href="#//api/name/map">map</a> both flipped and unflipped frequently,
+then it&rsquo;s better to create two OGWMap instances with one copying the buffer on init and reversing the map&rsquo;s rows on one <a href="#//api/name/map">map</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWMap.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -122,9 +1480,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-09-18)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -212,6 +1570,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

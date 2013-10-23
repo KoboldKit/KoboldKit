@@ -1,0 +1,850 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OGWPlatformerCommandsDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">OpenGW </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OGWPlatformerCommandsDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/entityCorpseDidRot">&nbsp;&nbsp;&nbsp;&nbsp;- entityCorpseDidRot</option>
+	
+	<option value="//api/name/entityDidActivateCheckpoint">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidActivateCheckpoint</option>
+	
+	<option value="//api/name/entityDidDieWithReason:">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidDieWithReason:</option>
+	
+	<option value="//api/name/entityDidEndJump">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidEndJump</option>
+	
+	<option value="//api/name/entityDidJump">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidJump</option>
+	
+	<option value="//api/name/entityDidLand">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidLand</option>
+	
+	<option value="//api/name/entityDidLiftOffGround">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidLiftOffGround</option>
+	
+	<option value="//api/name/entityDidRespawn">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidRespawn</option>
+	
+	<option value="//api/name/entityDidStartWalkingLeft">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidStartWalkingLeft</option>
+	
+	<option value="//api/name/entityDidStartWalkingRight">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidStartWalkingRight</option>
+	
+	<option value="//api/name/entityDidStopWalking">&nbsp;&nbsp;&nbsp;&nbsp;- entityDidStopWalking</option>
+	
+	<option value="//api/name/loadWorldNamed:triggeredBy:">&nbsp;&nbsp;&nbsp;&nbsp;- loadWorldNamed:triggeredBy:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Entity">Entity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_World">World</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityCorpseDidRot">entityCorpseDidRot</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidActivateCheckpoint">entityDidActivateCheckpoint</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidDieWithReason:">entityDidDieWithReason:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidEndJump">entityDidEndJump</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidJump">entityDidJump</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidLand">entityDidLand</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidLiftOffGround">entityDidLiftOffGround</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidRespawn">entityDidRespawn</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidStartWalkingLeft">entityDidStartWalkingLeft</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidStartWalkingRight">entityDidStartWalkingRight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDidStopWalking">entityDidStopWalking</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadWorldNamed:triggeredBy:">loadWorldNamed:triggeredBy:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OGWPlatformerCommandsDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OGWPlatformerCommandsDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OGWPlatformerCommandsAspect.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>View delegate notification protocol for platformer events.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Entity" name="task_Entity"></a>
+						<h3 class="subsubtitle task-title">Entity</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidJump">&ndash;&nbsp;entityDidJump</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidEndJump">&ndash;&nbsp;entityDidEndJump</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidStartWalkingLeft">&ndash;&nbsp;entityDidStartWalkingLeft</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidStartWalkingRight">&ndash;&nbsp;entityDidStartWalkingRight</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidStopWalking">&ndash;&nbsp;entityDidStopWalking</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidDieWithReason:">&ndash;&nbsp;entityDidDieWithReason:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityCorpseDidRot">&ndash;&nbsp;entityCorpseDidRot</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidRespawn">&ndash;&nbsp;entityDidRespawn</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidActivateCheckpoint">&ndash;&nbsp;entityDidActivateCheckpoint</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidLand">&ndash;&nbsp;entityDidLand</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDidLiftOffGround">&ndash;&nbsp;entityDidLiftOffGround</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="World" name="task_World"></a>
+						<h3 class="subsubtitle task-title">World</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadWorldNamed:triggeredBy:">&ndash;&nbsp;loadWorldNamed:triggeredBy:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/entityCorpseDidRot" title="entityCorpseDidRot"></a>
+	<h3 class="subsubtitle method-title">entityCorpseDidRot</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity&rsquo;s corpse did rot (up until this point a death animation can run). Corpse rot is the moment when the view should
+hide the entity&rsquo;s body as it is about to travel back to its checkpoint.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityCorpseDidRot</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidActivateCheckpoint" title="entityDidActivateCheckpoint"></a>
+	<h3 class="subsubtitle method-title">entityDidActivateCheckpoint</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity activated a new and previously unused checkpoint</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidActivateCheckpoint</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidDieWithReason:" title="entityDidDieWithReason:"></a>
+	<h3 class="subsubtitle method-title">entityDidDieWithReason:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity died</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidDieWithReason:(OGWPlatformerStateChangeReason)<em>reason</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reason</em></dt>
+			<dd><p>The reason why the entity died, ie cause and circumstances of death.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidEndJump" title="entityDidEndJump"></a>
+	<h3 class="subsubtitle method-title">entityDidEndJump</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>sent when the entity was jumping and the jump ended due to the user letting go of the jump button before achieving the maximum jump height</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidEndJump</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidJump" title="entityDidJump"></a>
+	<h3 class="subsubtitle method-title">entityDidJump</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>sent when the entity started a jump</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidJump</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidLand" title="entityDidLand"></a>
+	<h3 class="subsubtitle method-title">entityDidLand</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity landed on ground, either on solid ground or on a collidable object (ie moving platform)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidLand</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidLiftOffGround" title="entityDidLiftOffGround"></a>
+	<h3 class="subsubtitle method-title">entityDidLiftOffGround</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity lost contact with the ground, this can be either due to jumping or walking off an edge</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidLiftOffGround</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidRespawn" title="entityDidRespawn"></a>
+	<h3 class="subsubtitle method-title">entityDidRespawn</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity respawned at a checkpoint after having died</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidRespawn</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidStartWalkingLeft" title="entityDidStartWalkingLeft"></a>
+	<h3 class="subsubtitle method-title">entityDidStartWalkingLeft</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity is now moving in the left direction</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidStartWalkingLeft</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidStartWalkingRight" title="entityDidStartWalkingRight"></a>
+	<h3 class="subsubtitle method-title">entityDidStartWalkingRight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity is now moving in the right direction</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidStartWalkingRight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDidStopWalking" title="entityDidStopWalking"></a>
+	<h3 class="subsubtitle method-title">entityDidStopWalking</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>entity stopped moving horizontally</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)entityDidStopWalking</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadWorldNamed:triggeredBy:" title="loadWorldNamed:triggeredBy:"></a>
+	<h3 class="subsubtitle method-title">loadWorldNamed:triggeredBy:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>instruct the view to load another world with the given name (here: the name of a TMX file)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadWorldNamed:(NSString *)<em>name</em> triggeredBy:(OGWEntity *)<em>trigger</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of a TMX file to load.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>trigger</em></dt>
+			<dd><p>The entity that triggered the load world command, ie the exit trigger. This trigger may provide additional information
+through entity.values for the view, for example the name of a checkpoint to spawn at in the new world.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWPlatformerCommandsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

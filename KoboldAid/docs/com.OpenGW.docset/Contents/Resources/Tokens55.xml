@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OGWStateDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OGWStateDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol for delegates which want to be informed about state changes.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="55"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWStateDelegate/aspect:shouldChangeState:currentState:reason:</TokenIdentifier>
+			<Abstract type="html">Sent to delegate to request whether changing the state from the current state to another given a user-defined reason should be allowed.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)aspect:(OGWStateAspect *)aspect shouldChangeState:(GWState)newState currentState:(GWState)currentState reason:(GWReason)reason</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspect</Name>
+					<Abstract type="html">The sending aspect.</Abstract>
+				</Parameter><Parameter>
+					<Name>newState</Name>
+					<Abstract type="html">The new state intending to be set.</Abstract>
+				</Parameter><Parameter>
+					<Name>currentState</Name>
+					<Abstract type="html">The current state.</Abstract>
+				</Parameter><Parameter>
+					<Name>reason</Name>
+					<Abstract type="html">A user-definable reason why the state change occurs. May or may not be considered as you see fit.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Delegate should return NO to prevent the state change, otherwise return YES to allow the state change.</Abstract></ReturnValue>
+			<Anchor>//api/name/aspect:shouldChangeState:currentState:reason:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWStateDelegate/aspect:didChangeState:previousState:reason:</TokenIdentifier>
+			<Abstract type="html">Sent to delegate to inform that a state change occured.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)aspect:(OGWStateAspect *)aspect didChangeState:(GWState)state previousState:(GWState)previousState reason:(GWReason)reason</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspect</Name>
+					<Abstract type="html">The sending aspect.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The new state that was set.</Abstract>
+				</Parameter><Parameter>
+					<Name>previousState</Name>
+					<Abstract type="html">The previous state.</Abstract>
+				</Parameter><Parameter>
+					<Name>reason</Name>
+					<Abstract type="html">A user-definable reason why the state change occured. May or may not be considered as you see fit.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/aspect:didChangeState:previousState:reason:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

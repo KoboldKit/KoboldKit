@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWPath.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWPath</TokenIdentifier>
+			<Abstract type="html">A simple and efficient path (array of points.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWPath/pathWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Creates a path, reserving capacity amount of memory for points.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/OGWPath/pathWithPoints:count:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)pathWithCapacity:(GWUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">The initial capacity reserved for the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathWithCapacity:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWPath/pathWithPoints:count:</TokenIdentifier>
+			<Abstract type="html">Creates a path by copying count points from the points buffer (array). You are responsible to delete (free) your points buffer after calling this method.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/OGWPath/pathWithCapacity:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)pathWithPoints:(GWPoint *)points count:(GWUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">A memory buffer containing GWPoints. The buffer is copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of GWPoint in the buffer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/pathWithPoints:count:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/addPoints:count:</TokenIdentifier>
+			<Abstract type="html">Adds the given number of points from an existing GWPoint array or memory buffer.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/addPoint:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addPoints:(GWPoint *)points count:(GWUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Memeory buffer containing points. Buffer is copied.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of GWPoint in the buffer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPoints:count:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/addPoint:</TokenIdentifier>
+			<Abstract type="html">Adds a single point to the array.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/addPoints:count:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addPoint:(GWPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPoint:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removeLastPoint</TokenIdentifier>
+			<Abstract type="html">Removes the last point from the array. Does nothing if the array is empty.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removePointsStartingAtIndex:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removeAllPoints</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeLastPoint</Declaration>
+			
+			
+			<Anchor>//api/name/removeLastPoint</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removePointsStartingAtIndex:</TokenIdentifier>
+			<Abstract type="html">Removes all points from index to last point. Does nothing if index &gt;= count. The array then contains (index - 1) points.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removeLastPoint</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removeAllPoints</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removePointsStartingAtIndex:(GWUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The lowest index from which to remove all remaining points.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removePointsStartingAtIndex:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removeAllPoints</TokenIdentifier>
+			<Abstract type="html">Removes all points from the path. You can then start re-adding points.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removePointsStartingAtIndex:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/removeLastPoint</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeAllPoints</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllPoints</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/pointAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the point at the given index. If the index is out of bounds an exception is raised.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/firstPoint</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/lastPoint</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (GWPoint)pointAtIndex:(GWUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of a point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The point at the given index.</Abstract></ReturnValue>
+			<Anchor>//api/name/pointAtIndex:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/firstPoint</TokenIdentifier>
+			<Abstract type="html">The first point in the path.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/pointAtIndex:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/lastPoint</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (GWPoint)firstPoint</Declaration>
+			
+			<ReturnValue><Abstract type="html">The first point in the path.</Abstract></ReturnValue>
+			<Anchor>//api/name/firstPoint</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/lastPoint</TokenIdentifier>
+			<Abstract type="html">The last point in the path.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/pointAtIndex:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/firstPoint</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (GWPoint)lastPoint</Declaration>
+			
+			<ReturnValue><Abstract type="html">The last point in the path.</Abstract></ReturnValue>
+			<Anchor>//api/name/lastPoint</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/enumeratePointsUsingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerates all path points.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/enumeratePointsWithOptions:usingBlock:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enumeratePointsUsingBlock:(OGWPathEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block that is executed for each path point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumeratePointsUsingBlock:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/enumeratePointsWithOptions:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerates all path points with options.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWPath/enumeratePointsUsingBlock:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enumeratePointsWithOptions:(NSEnumerationOptions)options usingBlock:(OGWPathEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Currently the only valid option is NSEnumerationReverse to enumerate points in reverse order.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block that is executed for each path point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumeratePointsWithOptions:usingBlock:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/translate:</TokenIdentifier>
+			<Abstract type="html">Translates the paths&apos; points by the given point offset.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+			<Declaration>- (void)translate:(GWPoint)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">This offset is added to each path point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/translate:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/setCount:</TokenIdentifier>
+			<Abstract type="html">The number of points in the buffer.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) GWUInteger count</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of points in the buffer.</Abstract></ReturnValue>
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/count</TokenIdentifier>
+			<Abstract type="html">The number of points in the buffer.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) GWUInteger count</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of points in the buffer.</Abstract></ReturnValue>
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWPath/count</TokenIdentifier>
+			<Abstract type="html">The number of points in the buffer.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) GWUInteger count</Declaration>
+			
+			<ReturnValue><Abstract type="html">The number of points in the buffer.</Abstract></ReturnValue>
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/setPoints:</TokenIdentifier>
+			<Abstract type="html">Low-level access to the points memory buffer.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) GWPoint *points</Declaration>
+			
+			<ReturnValue><Abstract type="html">The points array.</Abstract></ReturnValue>
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPath/points</TokenIdentifier>
+			<Abstract type="html">Low-level access to the points memory buffer.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) GWPoint *points</Declaration>
+			
+			<ReturnValue><Abstract type="html">The points array.</Abstract></ReturnValue>
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWPath/points</TokenIdentifier>
+			<Abstract type="html">Low-level access to the points memory buffer.</Abstract>
+			<DeclaredIn>OGWPath.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) GWPoint *points</Declaration>
+			
+			<ReturnValue><Abstract type="html">The points array.</Abstract></ReturnValue>
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

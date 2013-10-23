@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWKinematicsAspect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWKinematicsAspect</TokenIdentifier>
+			<Abstract type="html">Kinematics movement, updates position based on velocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/setDelegate:</TokenIdentifier>
+			<Abstract type="html">A delegate aspect that receives the aspect:kinematicsDidIntegratePosition:velocity:axis: selector of the OGWKinematicsDelegate protocol.
+The selector is sent once per axis.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWAspect&lt;OGWKinematicsDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The delegate, or nil if there&apos;s no delegate set.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/delegate</TokenIdentifier>
+			<Abstract type="html">A delegate aspect that receives the aspect:kinematicsDidIntegratePosition:velocity:axis: selector of the OGWKinematicsDelegate protocol.
+The selector is sent once per axis.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWAspect&lt;OGWKinematicsDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The delegate, or nil if there&apos;s no delegate set.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWKinematicsAspect/delegate</TokenIdentifier>
+			<Abstract type="html">A delegate aspect that receives the aspect:kinematicsDidIntegratePosition:velocity:axis: selector of the OGWKinematicsDelegate protocol.
+The selector is sent once per axis.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWAspect&lt;OGWKinematicsDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The delegate, or nil if there&apos;s no delegate set.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/setVelocity:</TokenIdentifier>
+			<Abstract type="html">The current velocity of the entity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector velocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current velocity of the entity.</Abstract></ReturnValue>
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/velocity</TokenIdentifier>
+			<Abstract type="html">The current velocity of the entity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector velocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current velocity of the entity.</Abstract></ReturnValue>
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWKinematicsAspect/velocity</TokenIdentifier>
+			<Abstract type="html">The current velocity of the entity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector velocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current velocity of the entity.</Abstract></ReturnValue>
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/setMinimumVelocity:</TokenIdentifier>
+			<Abstract type="html">The minimum allowed velocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector minimumVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The minimum allowed velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/minimumVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/minimumVelocity</TokenIdentifier>
+			<Abstract type="html">The minimum allowed velocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector minimumVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The minimum allowed velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/minimumVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWKinematicsAspect/minimumVelocity</TokenIdentifier>
+			<Abstract type="html">The minimum allowed velocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector minimumVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The minimum allowed velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/minimumVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/setMaximumVelocity:</TokenIdentifier>
+			<Abstract type="html">The maximum allowed velocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector maximumVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The maximum allowed velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/maximumVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/maximumVelocity</TokenIdentifier>
+			<Abstract type="html">The maximum allowed velocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector maximumVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The maximum allowed velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/maximumVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWKinematicsAspect/maximumVelocity</TokenIdentifier>
+			<Abstract type="html">The maximum allowed velocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWVector maximumVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The maximum allowed velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/maximumVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/setIgnoresMinMaxVelocity:</TokenIdentifier>
+			<Abstract type="html">Set this flag to (temporarily) ignore the velocity cap. This disables the clamping of velocity to minimumVelocity and maximumVelocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property BOOL ignoresMinMaxVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if velocity is capped to be at least minimumVelocity and at most maximumVelocity. NO if velocity is not clamped/capped at all.</Abstract></ReturnValue>
+			<Anchor>//api/name/ignoresMinMaxVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/ignoresMinMaxVelocity</TokenIdentifier>
+			<Abstract type="html">Set this flag to (temporarily) ignore the velocity cap. This disables the clamping of velocity to minimumVelocity and maximumVelocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property BOOL ignoresMinMaxVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if velocity is capped to be at least minimumVelocity and at most maximumVelocity. NO if velocity is not clamped/capped at all.</Abstract></ReturnValue>
+			<Anchor>//api/name/ignoresMinMaxVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWKinematicsAspect/ignoresMinMaxVelocity</TokenIdentifier>
+			<Abstract type="html">Set this flag to (temporarily) ignore the velocity cap. This disables the clamping of velocity to minimumVelocity and maximumVelocity.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property BOOL ignoresMinMaxVelocity</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if velocity is capped to be at least minimumVelocity and at most maximumVelocity. NO if velocity is not clamped/capped at all.</Abstract></ReturnValue>
+			<Anchor>//api/name/ignoresMinMaxVelocity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/setSpeedFactor:</TokenIdentifier>
+			<Abstract type="html">Speed factor can be used to (temporarily) speed up or slow down the entity without affecting its flight path, jump height, etc.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWFloat speedFactor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The speedFactor for the entity. Velocity is multiplied with speedFactor after applying gravity and clamping the velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/speedFactor</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/speedFactor</TokenIdentifier>
+			<Abstract type="html">Speed factor can be used to (temporarily) speed up or slow down the entity without affecting its flight path, jump height, etc.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWFloat speedFactor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The speedFactor for the entity. Velocity is multiplied with speedFactor after applying gravity and clamping the velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/speedFactor</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWKinematicsAspect/speedFactor</TokenIdentifier>
+			<Abstract type="html">Speed factor can be used to (temporarily) speed up or slow down the entity without affecting its flight path, jump height, etc.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWFloat speedFactor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The speedFactor for the entity. Velocity is multiplied with speedFactor after applying gravity and clamping the velocity.</Abstract></ReturnValue>
+			<Anchor>//api/name/speedFactor</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/setGravityScale:</TokenIdentifier>
+			<Abstract type="html">Gravity scale is multiplied with gravity before applying the result to velocity. It changes how strongly the entity is influenced by gravity
+without having to change gravity itself. You can use this to simulate the effect of a heavier or lighter entity due to a powerup, for example.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWFloat gravityScale</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current gravity scale.</Abstract></ReturnValue>
+			<Anchor>//api/name/gravityScale</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/gravityScale</TokenIdentifier>
+			<Abstract type="html">Gravity scale is multiplied with gravity before applying the result to velocity. It changes how strongly the entity is influenced by gravity
+without having to change gravity itself. You can use this to simulate the effect of a heavier or lighter entity due to a powerup, for example.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWFloat gravityScale</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current gravity scale.</Abstract></ReturnValue>
+			<Anchor>//api/name/gravityScale</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWKinematicsAspect/gravityScale</TokenIdentifier>
+			<Abstract type="html">Gravity scale is multiplied with gravity before applying the result to velocity. It changes how strongly the entity is influenced by gravity
+without having to change gravity itself. You can use this to simulate the effect of a heavier or lighter entity due to a powerup, for example.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property GWFloat gravityScale</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current gravity scale.</Abstract></ReturnValue>
+			<Anchor>//api/name/gravityScale</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/setIgnoresGravity:</TokenIdentifier>
+			<Abstract type="html">Set this flag to (temporarily) ignore gravity, ie velocity is not integrated with gravity and gravityScale.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property BOOL ignoresGravity</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether gravity is currently ignored.</Abstract></ReturnValue>
+			<Anchor>//api/name/ignoresGravity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWKinematicsAspect/ignoresGravity</TokenIdentifier>
+			<Abstract type="html">Set this flag to (temporarily) ignore gravity, ie velocity is not integrated with gravity and gravityScale.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property BOOL ignoresGravity</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether gravity is currently ignored.</Abstract></ReturnValue>
+			<Anchor>//api/name/ignoresGravity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWKinematicsAspect/ignoresGravity</TokenIdentifier>
+			<Abstract type="html">Set this flag to (temporarily) ignore gravity, ie velocity is not integrated with gravity and gravityScale.</Abstract>
+			<DeclaredIn>OGWKinematicsAspect.h</DeclaredIn>
+			
+			<Declaration>@property BOOL ignoresGravity</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether gravity is currently ignored.</Abstract></ReturnValue>
+			<Anchor>//api/name/ignoresGravity</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

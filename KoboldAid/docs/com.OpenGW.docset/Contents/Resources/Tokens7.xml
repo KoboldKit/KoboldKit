@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWEntity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+			<Abstract type="html">An entity represents an object in the world. An entity has aspects to drive its logic and data,
+keyed values to store and exchange data.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setIdentity:</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s identity object.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityIdentity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) OGWEntityIdentity *identity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s identity object.</Abstract></ReturnValue>
+			<Anchor>//api/name/identity</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/identity</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s identity object.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityIdentity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) OGWEntityIdentity *identity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s identity object.</Abstract></ReturnValue>
+			<Anchor>//api/name/identity</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/identity</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s identity object.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityIdentity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) OGWEntityIdentity *identity</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s identity object.</Abstract></ReturnValue>
+			<Anchor>//api/name/identity</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setWorld:</TokenIdentifier>
+			<Abstract type="html">The world to which the entity was added.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWWorld</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (weak) OGWWorld *world</Declaration>
+			
+			<ReturnValue><Abstract type="html">The world to which the entity was added.</Abstract></ReturnValue>
+			<Anchor>//api/name/world</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/world</TokenIdentifier>
+			<Abstract type="html">The world to which the entity was added.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWWorld</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (weak) OGWWorld *world</Declaration>
+			
+			<ReturnValue><Abstract type="html">The world to which the entity was added.</Abstract></ReturnValue>
+			<Anchor>//api/name/world</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/world</TokenIdentifier>
+			<Abstract type="html">The world to which the entity was added.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWWorld</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (weak) OGWWorld *world</Declaration>
+			
+			<ReturnValue><Abstract type="html">The world to which the entity was added.</Abstract></ReturnValue>
+			<Anchor>//api/name/world</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setViewDelegate:</TokenIdentifier>
+			<Abstract type="html">The view delegate receives position, rotation and other updates from the entity. This allows the view
+to be driven by the entity (and optionally converting units from OpenGW to view) rather than having to poll for changes.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id&lt;OGWEntityViewDelegate&gt; viewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s view delegate.</Abstract></ReturnValue>
+			<Anchor>//api/name/viewDelegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/viewDelegate</TokenIdentifier>
+			<Abstract type="html">The view delegate receives position, rotation and other updates from the entity. This allows the view
+to be driven by the entity (and optionally converting units from OpenGW to view) rather than having to poll for changes.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id&lt;OGWEntityViewDelegate&gt; viewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s view delegate.</Abstract></ReturnValue>
+			<Anchor>//api/name/viewDelegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/viewDelegate</TokenIdentifier>
+			<Abstract type="html">The view delegate receives position, rotation and other updates from the entity. This allows the view
+to be driven by the entity (and optionally converting units from OpenGW to view) rather than having to poll for changes.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id&lt;OGWEntityViewDelegate&gt; viewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s view delegate.</Abstract></ReturnValue>
+			<Anchor>//api/name/viewDelegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/removeFromWorld</TokenIdentifier>
+			<Abstract type="html">Removes the entity from its world.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+			<Declaration>- (void)removeFromWorld</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromWorld</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setBoundingBox:</TokenIdentifier>
+			<Abstract type="html">The bounding box is in local coordinated relative to the entity&apos;s position. To make a 32x32 bounding box
+that extends equally in all directions with the position at the center:
+&lt;pre&gt;
+entity.boundingBox = GWRectMake(-16, -16, 32, 32);
+&lt;/pre&gt;
+This avoids having to use a separate anchor point for the bounding box.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/boundingBoxInWorldCoordinates</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWRect boundingBox</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s bounding box, in local coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/boundingBox</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/boundingBox</TokenIdentifier>
+			<Abstract type="html">The bounding box is in local coordinated relative to the entity&apos;s position. To make a 32x32 bounding box
+that extends equally in all directions with the position at the center:
+&lt;pre&gt;
+entity.boundingBox = GWRectMake(-16, -16, 32, 32);
+&lt;/pre&gt;
+This avoids having to use a separate anchor point for the bounding box.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/boundingBoxInWorldCoordinates</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWRect boundingBox</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s bounding box, in local coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/boundingBox</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/boundingBox</TokenIdentifier>
+			<Abstract type="html">The bounding box is in local coordinated relative to the entity&apos;s position. To make a 32x32 bounding box
+that extends equally in all directions with the position at the center:
+&lt;pre&gt;
+entity.boundingBox = GWRectMake(-16, -16, 32, 32);
+&lt;/pre&gt;
+This avoids having to use a separate anchor point for the bounding box.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/boundingBoxInWorldCoordinates</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWRect boundingBox</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s bounding box, in local coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/boundingBox</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setBoundingBoxInWorldCoordinates:</TokenIdentifier>
+			<Abstract type="html">The bounding box in world coordinates is obtained by adding the entity position to the boundingBox.origin.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/boundingBox</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWRect boundingBoxInWorldCoordinates</Declaration>
+			
+			<ReturnValue><Abstract type="html">The bounding box in world coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/boundingBoxInWorldCoordinates</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/boundingBoxInWorldCoordinates</TokenIdentifier>
+			<Abstract type="html">The bounding box in world coordinates is obtained by adding the entity position to the boundingBox.origin.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/boundingBox</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWRect boundingBoxInWorldCoordinates</Declaration>
+			
+			<ReturnValue><Abstract type="html">The bounding box in world coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/boundingBoxInWorldCoordinates</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/boundingBoxInWorldCoordinates</TokenIdentifier>
+			<Abstract type="html">The bounding box in world coordinates is obtained by adding the entity position to the boundingBox.origin.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/boundingBox</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWRect boundingBoxInWorldCoordinates</Declaration>
+			
+			<ReturnValue><Abstract type="html">The bounding box in world coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/boundingBoxInWorldCoordinates</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setPosition:</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s position, in world coordinates.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/previousPosition</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWPoint position</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s position, in world coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/position</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s position, in world coordinates.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/previousPosition</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWPoint position</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s position, in world coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/position</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s position, in world coordinates.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/previousPosition</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWPoint position</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s position, in world coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setPreviousPosition:</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s position (in world coordinates) in the previous step.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/position</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWPoint previousPosition</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s position (in world coordinates) in the previous step.</Abstract></ReturnValue>
+			<Anchor>//api/name/previousPosition</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/previousPosition</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s position (in world coordinates) in the previous step.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/position</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWPoint previousPosition</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s position (in world coordinates) in the previous step.</Abstract></ReturnValue>
+			<Anchor>//api/name/previousPosition</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/previousPosition</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s position (in world coordinates) in the previous step.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/position</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWPoint previousPosition</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s position (in world coordinates) in the previous step.</Abstract></ReturnValue>
+			<Anchor>//api/name/previousPosition</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setRotation:</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s (z) rotation, in radians.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/previousRotation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWFloat rotation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s (z) rotation, in radians.</Abstract></ReturnValue>
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/rotation</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s (z) rotation, in radians.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/previousRotation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWFloat rotation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s (z) rotation, in radians.</Abstract></ReturnValue>
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/rotation</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s (z) rotation, in radians.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/previousRotation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GWFloat rotation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s (z) rotation, in radians.</Abstract></ReturnValue>
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/setPreviousRotation:</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s rotation (in radians) in the previous step.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/rotation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWFloat previousRotation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s rotation (in radians) in the previous step.</Abstract></ReturnValue>
+			<Anchor>//api/name/previousRotation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/previousRotation</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s rotation (in radians) in the previous step.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/rotation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWFloat previousRotation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s rotation (in radians) in the previous step.</Abstract></ReturnValue>
+			<Anchor>//api/name/previousRotation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/previousRotation</TokenIdentifier>
+			<Abstract type="html">The entity&apos;s rotation (in radians) in the previous step.</Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/OGWEntity/rotation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) GWFloat previousRotation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The entity&apos;s rotation (in radians) in the previous step.</Abstract></ReturnValue>
+			<Anchor>//api/name/previousRotation</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWEntity/entityWithCategory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+			<Declaration>+ (id)entityWithCategory:(const OGWEntityCategory *)category</Declaration>
+			
+			
+			<Anchor>//api/name/entityWithCategory:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/preUpdate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+			<Declaration>- (void)preUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/preUpdate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWEntity/postUpdate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWEntity.h</DeclaredIn>
+			
+			<Declaration>- (void)postUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/postUpdate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OGWNotifierDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OGWNotifierDelegate</TokenIdentifier>
+			<Abstract type="html">Delegate protocol for senders using the notifier and want to perform extra work when a receiver (delegate)
+subscribes or unsubscribes to the notifier.</Abstract>
+			<DeclaredIn>OGWNotifier.h</DeclaredIn>
+            
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWNotifierDelegate/didAddNotificationReceiver:</TokenIdentifier>
+			<Abstract type="html">Sent when the notifier added another receiver.</Abstract>
+			<DeclaredIn>OGWNotifier.h</DeclaredIn>
+			
+			<Declaration>- (void)didAddNotificationReceiver:(id)receiver</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">The new receiver.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didAddNotificationReceiver:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWNotifierDelegate/willRemoveNotificationReceiver:</TokenIdentifier>
+			<Abstract type="html">Sent when the notifier will remove a receiver.</Abstract>
+			<DeclaredIn>OGWNotifier.h</DeclaredIn>
+			
+			<Declaration>- (void)willRemoveNotificationReceiver:(id)receiver</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">The receiver that will be removed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/willRemoveNotificationReceiver:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

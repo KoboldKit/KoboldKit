@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OGWContactDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OGWContactDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol for OGWContactAspect delegates to receive contact information.</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWContactDelegate/aspect:contactDidBeginWithEntity:</TokenIdentifier>
+			<Abstract type="html">Sent when a contact with another object began.</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)aspect:(OGWContactAspect *)aspect contactDidBeginWithEntity:(OGWEntity *)contact</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspect</Name>
+					<Abstract type="html">The OGWContactAspect that generated the event.</Abstract>
+				</Parameter><Parameter>
+					<Name>contact</Name>
+					<Abstract type="html">The entity with which the aspect&apos;s entity is in contact with.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/aspect:contactDidBeginWithEntity:</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWContactDelegate/aspect:contactWithEntity:</TokenIdentifier>
+			<Abstract type="html">Sent when a contact with another object exists.
+This is a continuous event that fires as long as the contact exists. Therefore avoid implementing this method when at all possible.
+It may be needed to continously resolve the contact, for example to ensure the two entities in contact do not intersect (or no more than a given threshold).</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)aspect:(OGWContactAspect *)aspect contactWithEntity:(OGWEntity *)contact</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspect</Name>
+					<Abstract type="html">The OGWContactAspect that generated the event.</Abstract>
+				</Parameter><Parameter>
+					<Name>contact</Name>
+					<Abstract type="html">The entity with which the aspect&apos;s entity is in contact with.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/aspect:contactWithEntity:</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWContactDelegate/aspect:contactDidEndWithEntity:</TokenIdentifier>
+			<Abstract type="html">Sent when a contact with another object ended.</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)aspect:(OGWContactAspect *)aspect contactDidEndWithEntity:(OGWEntity *)contact</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspect</Name>
+					<Abstract type="html">The OGWContactAspect that generated the event.</Abstract>
+				</Parameter><Parameter>
+					<Name>contact</Name>
+					<Abstract type="html">The entity which the aspect&apos;s entity lost contact with.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/aspect:contactDidEndWithEntity:</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

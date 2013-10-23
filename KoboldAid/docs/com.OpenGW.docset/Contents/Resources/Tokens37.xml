@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWTimeTask.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWTimeTask</TokenIdentifier>
+			<Abstract type="html">Task that finishes after a given time has passed. Finishes when the time has elapsed.</Abstract>
+			<DeclaredIn>OGWTimeTask.h</DeclaredIn>
+            
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWTimeTask/waitForDuration:</TokenIdentifier>
+			<Abstract type="html">Creates a new task that simply waits for a given duration (in steps) before finishing.</Abstract>
+			<DeclaredIn>OGWTimeTask.h</DeclaredIn>
+			
+			<Declaration>+ (id)waitForDuration:(GWStep)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The time (in steps) to wait.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The news task.</Abstract></ReturnValue>
+			<Anchor>//api/name/waitForDuration:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWTimeTask/initWithDuration:</TokenIdentifier>
+			<Abstract type="html">Creates a new task that simply waits for a given duration (in steps) before finishing.</Abstract>
+			<DeclaredIn>OGWTimeTask.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(GWStep)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The time (in steps) to wait.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The news task.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

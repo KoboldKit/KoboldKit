@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OGWPlatformerCollisionResponseDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OGWPlatformerCollisionResponseDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWPlatformerCollisionResponseAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCollisionResponseDelegate/aspect:eventAtMapCoord:mapBits:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWPlatformerCollisionResponseAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)aspect:(OGWPlatformerCollisionResponseAspect *)aspect eventAtMapCoord:(GWIntPoint)coord mapBits:(OGWPlatformerMapBits)mapBits</Declaration>
+			
+			
+			<Anchor>//api/name/aspect:eventAtMapCoord:mapBits:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

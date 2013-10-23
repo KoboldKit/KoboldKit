@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OGWPlatformerCommandsDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OGWPlatformerCommandsDelegate</TokenIdentifier>
+			<Abstract type="html">View delegate notification protocol for platformer events.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidJump</TokenIdentifier>
+			<Abstract type="html">sent when the entity started a jump</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidJump</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidJump</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidEndJump</TokenIdentifier>
+			<Abstract type="html">sent when the entity was jumping and the jump ended due to the user letting go of the jump button before achieving the maximum jump height</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidEndJump</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidEndJump</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidStartWalkingLeft</TokenIdentifier>
+			<Abstract type="html">entity is now moving in the left direction</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidStartWalkingLeft</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidStartWalkingLeft</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidStartWalkingRight</TokenIdentifier>
+			<Abstract type="html">entity is now moving in the right direction</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidStartWalkingRight</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidStartWalkingRight</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidStopWalking</TokenIdentifier>
+			<Abstract type="html">entity stopped moving horizontally</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidStopWalking</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidStopWalking</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidDieWithReason:</TokenIdentifier>
+			<Abstract type="html">entity died</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidDieWithReason:(OGWPlatformerStateChangeReason)reason</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reason</Name>
+					<Abstract type="html">The reason why the entity died, ie cause and circumstances of death.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/entityDidDieWithReason:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityCorpseDidRot</TokenIdentifier>
+			<Abstract type="html">entity&apos;s corpse did rot (up until this point a death animation can run). Corpse rot is the moment when the view should
+hide the entity&apos;s body as it is about to travel back to its checkpoint.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityCorpseDidRot</Declaration>
+			
+			
+			<Anchor>//api/name/entityCorpseDidRot</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidRespawn</TokenIdentifier>
+			<Abstract type="html">entity respawned at a checkpoint after having died</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidRespawn</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidRespawn</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidActivateCheckpoint</TokenIdentifier>
+			<Abstract type="html">entity activated a new and previously unused checkpoint</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidActivateCheckpoint</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidActivateCheckpoint</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidLand</TokenIdentifier>
+			<Abstract type="html">entity landed on ground, either on solid ground or on a collidable object (ie moving platform)</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidLand</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidLand</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/entityDidLiftOffGround</TokenIdentifier>
+			<Abstract type="html">entity lost contact with the ground, this can be either due to jumping or walking off an edge</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityDidLiftOffGround</Declaration>
+			
+			
+			<Anchor>//api/name/entityDidLiftOffGround</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWPlatformerCommandsDelegate/loadWorldNamed:triggeredBy:</TokenIdentifier>
+			<Abstract type="html">instruct the view to load another world with the given name (here: the name of a TMX file)</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)loadWorldNamed:(NSString *)name triggeredBy:(OGWEntity *)trigger</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of a TMX file to load.</Abstract>
+				</Parameter><Parameter>
+					<Name>trigger</Name>
+					<Abstract type="html">The entity that triggered the load world command, ie the exit trigger. This trigger may provide additional information
+through entity.values for the view, for example the name of a checkpoint to spawn at in the new world.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadWorldNamed:triggeredBy:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

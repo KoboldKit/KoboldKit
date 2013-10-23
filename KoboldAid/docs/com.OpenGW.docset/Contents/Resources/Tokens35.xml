@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWStateAspect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWStateAspect</TokenIdentifier>
+			<Abstract type="html">The state aspect encodes information for entities that can be in only one of multiple states. A simple scenario
+would be the states of a player: alive, dead, waiting for respawn. The GWState and GWReason values are user-definable,
+usually you would set up an enum encoding the various states.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWStateAspect/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate is crucial for the state aspect. You need a delegate aspect to verify the allowable and deny the disallowed state changes,
+and to react to state changes accordingly.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+			<Declaration>@property OGWAspect&lt;OGWStateDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The aspect implementing the  OGWStateDelegate protocol.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWStateAspect/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate is crucial for the state aspect. You need a delegate aspect to verify the allowable and deny the disallowed state changes,
+and to react to state changes accordingly.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+			<Declaration>@property OGWAspect&lt;OGWStateDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The aspect implementing the  OGWStateDelegate protocol.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWStateAspect/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate is crucial for the state aspect. You need a delegate aspect to verify the allowable and deny the disallowed state changes,
+and to react to state changes accordingly.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+			<Declaration>@property OGWAspect&lt;OGWStateDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The aspect implementing the  OGWStateDelegate protocol.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWStateAspect/setState:</TokenIdentifier>
+			<Abstract type="html">The values are user-definable. There are no predefined states, there&apos;s no inherent meaning of any value. It&apos;s your task to
+give meaning to individual state values.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) GWState state</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current state.</Abstract></ReturnValue>
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWStateAspect/state</TokenIdentifier>
+			<Abstract type="html">The values are user-definable. There are no predefined states, there&apos;s no inherent meaning of any value. It&apos;s your task to
+give meaning to individual state values.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) GWState state</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current state.</Abstract></ReturnValue>
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWStateAspect/state</TokenIdentifier>
+			<Abstract type="html">The values are user-definable. There are no predefined states, there&apos;s no inherent meaning of any value. It&apos;s your task to
+give meaning to individual state values.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) GWState state</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current state.</Abstract></ReturnValue>
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWStateAspect/shouldChangeState:</TokenIdentifier>
+			<Abstract type="html">Signal the aspect that it should change its state to the new state value. This triggers the shouldChangeState delegate,
+and if it returns YES, the state is changed. There&apos;s no guarantee that the state change actually did go through. Check the return
+value if this is important.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWStateAspect/shouldChangeState:reason:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)shouldChangeState:(GWState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The state to change to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the state was changed to the desired state or the state was already set. NO if the state change was denied by the
+OGWStateDelegate.</Abstract></ReturnValue>
+			<Anchor>//api/name/shouldChangeState:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWStateAspect/shouldChangeState:reason:</TokenIdentifier>
+			<Abstract type="html">Signal the aspect that it should change its state to the new state value with a reason. This triggers the shouldChangeState delegate,
+and if it returns YES, the state is changed. There&apos;s no guarantee that the state change actually did go through. Check the return
+value if this is important.</Abstract>
+			<DeclaredIn>OGWStateAspect.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWStateAspect/shouldChangeState:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)shouldChangeState:(GWState)state reason:(GWReason)reason</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The state to change to.</Abstract>
+				</Parameter><Parameter>
+					<Name>reason</Name>
+					<Abstract type="html">A user-definable reason why the state change should occur.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the state was changed to the desired state or the state was already set. NO if the state change was denied by the
+OGWStateDelegate.</Abstract></ReturnValue>
+			<Anchor>//api/name/shouldChangeState:reason:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

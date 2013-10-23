@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OGWJobDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OGWJobDelegate</TokenIdentifier>
+			<Abstract type="html">Delegate protocol for job events.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+            
+			
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWJobDelegate/didFinishJob:</TokenIdentifier>
+			<Abstract type="html">Sent to delegate when a job finishes and before a new job starts.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>- (void)didFinishJob:(OGWJob *)job</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>job</Name>
+					<Abstract type="html">The job that finished.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didFinishJob:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

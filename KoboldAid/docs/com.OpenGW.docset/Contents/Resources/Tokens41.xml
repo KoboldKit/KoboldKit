@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWWorldContactTestAspect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWWorldContactTestAspect</TokenIdentifier>
+			<Abstract type="html">Performs various contact tests. Tests a single entity against other entities in a specific category using a specific
+contact test type.</Abstract>
+			<DeclaredIn>OGWWorldContactTestAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldContactTestAspect/performTest:withEntity:againstCategory:contacts:</TokenIdentifier>
+			<Abstract type="html">Performs a specific test type testing one entity against the entities in a category. The contacts are added to the user-supplied hash table.</Abstract>
+			<DeclaredIn>OGWWorldContactTestAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)performTest:(OGWContactTest)test withEntity:(OGWEntity *)entity againstCategory:(const OGWEntityCategory *)category contacts:(NSHashTable *)contacts</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The type of test to perform. See OGWContactTest.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The source entity to test collision with.</Abstract>
+				</Parameter><Parameter>
+					<Name>category</Name>
+					<Abstract type="html">The entities of this category will be tested for contact with the entity.</Abstract>
+				</Parameter><Parameter>
+					<Name>contacts</Name>
+					<Abstract type="html">A user-supplied NSHashTable to which contacts will be added. Must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/performTest:withEntity:againstCategory:contacts:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

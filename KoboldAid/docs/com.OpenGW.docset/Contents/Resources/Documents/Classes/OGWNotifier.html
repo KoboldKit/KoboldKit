@@ -1,0 +1,896 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OGWNotifier Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">OpenGW </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OGWNotifier Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/protocol">&nbsp;&nbsp;&nbsp;&nbsp;protocol</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/notifierWithSender:protocol:">&nbsp;&nbsp;&nbsp;&nbsp;+ notifierWithSender:protocol:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addReceiver:">&nbsp;&nbsp;&nbsp;&nbsp;- addReceiver:</option>
+	
+	<option value="//api/name/broadcastSelector:">&nbsp;&nbsp;&nbsp;&nbsp;- broadcastSelector:</option>
+	
+	<option value="//api/name/broadcastSelector:withObject:">&nbsp;&nbsp;&nbsp;&nbsp;- broadcastSelector:withObject:</option>
+	
+	<option value="//api/name/broadcastSelector:withVector:">&nbsp;&nbsp;&nbsp;&nbsp;- broadcastSelector:withVector:</option>
+	
+	<option value="//api/name/hasReceivers">&nbsp;&nbsp;&nbsp;&nbsp;- hasReceivers</option>
+	
+	<option value="//api/name/removeReceiver:">&nbsp;&nbsp;&nbsp;&nbsp;- removeReceiver:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Protocol">Protocol</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Notifiers">Creating Notifiers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Adding/Removing Receivers">Adding/Removing Receivers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Broadcasting Selectors">Broadcasting Selectors</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/protocol">protocol</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notifierWithSender:protocol:">notifierWithSender:protocol:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addReceiver:">addReceiver:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/broadcastSelector:">broadcastSelector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/broadcastSelector:withObject:">broadcastSelector:withObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/broadcastSelector:withVector:">broadcastSelector:withVector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasReceivers">hasReceivers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeReceiver:">removeReceiver:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OGWNotifier Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OGWNotifier Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OGWNotifier.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Stores one or more receivers (delegates) in a weak collection and can broadcast selectors to each receiver.
+The notifier must be initialized with a protocol that defines the expected messages to be sent through the notifier.</p>
+
+<h3>Usage</h3>
+
+
+<p>Broadcast selectors must adhere to one of the following signatures, where &lsquo;sender&rsquo;, &lsquo;object&rsquo; and &lsquo;vector&rsquo; can be
+any selector/parameter names of your choice:</p>
+
+<pre>
+-(void) sender:(id)sender; // no object
+-(void) sender:(id)sender object:(id)object; // one object
+-(void) sender:(id)sender vector:(GWVector)vector; // for non-id objects use custom selector signature
+</pre>
+
+
+<p>These selectors can be broadcast via:</p>
+
+<pre>
+[notifier broadcastSelector:@selector(sender:)];
+[notifier broadcastSelector:@selector(sender:object:) withObject:anObject];
+[notifier broadcastSelector:@selector(sender:vector:) withVector:aVector];
+</pre>
+
+
+<p>For example here&rsquo;s the signature for the broadcast selector sent by the <a href="../Classes/OGWWorldGravityAspect.html">OGWWorldGravityAspect</a> through its OGWNotifier:</p>
+
+<p><code>-(void) aspect:(OGWWorldGravityAspect*)aspect gravityDidChange:(GWVector)gravity;</code></p>
+
+<p>The notifier can be extended with additional <a href="#//api/name/broadcastSelector:">broadcastSelector:</a> methods that take a non-id parameter as input. Internally
+the selectors are performed via objc_msgSend() which allows any type of parameter.</p>
+
+<p>Here aspect is the sender and gravityDidChange is the GWVector parameter containing the new gravity vector.</p>
+
+<h3>Safety & Performance</h3>
+
+
+<p>In DEBUG builds the receivers are verified to conform to the <a href="#//api/name/protocol">protocol</a> with which the notifier was initialized,
+in addition to performing respondsToSelector checks when actually performing the selector on each receiver. In release
+builds these checks are omitted for improved performance.</p>
+
+<h3>Receivers are weak references</h3>
+
+
+<p>Receivers are not retained by the notifier. This is accomplished by using NSHashTable initialized with NSPointerFunctionsWeakMemory.
+Hence receivers will dealloc when no other strong references hold them alive, nor does a receiver need to remove itself
+from the collection in order to be deallocated. From a memory-usage perspective it doesn&rsquo;t matter if you &ldquo;forget&rdquo; to remove
+a receiver from a notifier.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Protocol" name="task_Protocol"></a>
+						<h3 class="subsubtitle task-title">Protocol</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/protocol">&nbsp;&nbsp;protocol</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating Notifiers" name="task_Creating Notifiers"></a>
+						<h3 class="subsubtitle task-title">Creating Notifiers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notifierWithSender:protocol:">+&nbsp;notifierWithSender:protocol:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Adding/Removing Receivers" name="task_Adding/Removing Receivers"></a>
+						<h3 class="subsubtitle task-title">Adding/Removing Receivers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addReceiver:">&ndash;&nbsp;addReceiver:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeReceiver:">&ndash;&nbsp;removeReceiver:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasReceivers">&ndash;&nbsp;hasReceivers</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Broadcasting Selectors" name="task_Broadcasting Selectors"></a>
+						<h3 class="subsubtitle task-title">Broadcasting Selectors</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/broadcastSelector:">&ndash;&nbsp;broadcastSelector:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/broadcastSelector:withObject:">&ndash;&nbsp;broadcastSelector:withObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/broadcastSelector:withVector:">&ndash;&nbsp;broadcastSelector:withVector:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/protocol" title="protocol"></a>
+	<h3 class="subsubtitle method-title">protocol</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Protocol receivers must implement.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) Protocol *protocol</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The Protocol receivers must implement.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWNotifier.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/notifierWithSender:protocol:" title="notifierWithSender:protocol:"></a>
+	<h3 class="subsubtitle method-title">notifierWithSender:protocol:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a notifier with a sender and the <a href="#//api/name/protocol">protocol</a> expected to be implemented by receivers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)notifierWithSender:(id&lt;OGWNotifierDelegate&gt;)<em>sender</em> protocol:(Protocol *)<em>protocol</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The sender object that will issue the perform selector broadcasts. The sender can optionally implement <a href="../Protocols/OGWNotifierDelegate.html">OGWNotifierDelegate</a>
+to learn when a receiver is added or removed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>protocol</em></dt>
+			<dd><p>The <a href="#//api/name/protocol">protocol</a> receivers must implement. In debug configurations the receiver is tested whether it conformsToProtocol:
+and each notification sent is verified with respondsToSelector: - in release builds these checks are omitted for improved performance.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The new notifier object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWNotifier.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addReceiver:" title="addReceiver:"></a>
+	<h3 class="subsubtitle method-title">addReceiver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a receiver. Receiver must implement the notifier&rsquo;s <a href="#//api/name/protocol">protocol</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addReceiver:(id)<em>receiver</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>receiver</em></dt>
+			<dd><p>The receiver to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/removeReceiver:">- removeReceiver:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/hasReceivers">- hasReceivers</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWNotifier.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/broadcastSelector:" title="broadcastSelector:"></a>
+	<h3 class="subsubtitle method-title">broadcastSelector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes all receivers perform the given selector. The sender is sent as the first parameter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)broadcastSelector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to perform on all receivers. It must have the following signature where &lsquo;sender&rsquo; can be any parameter name of your choice:</p>
+
+<p><code>-(void) sender:(id)sender;</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/broadcastSelector:withObject:">- broadcastSelector:withObject:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/broadcastSelector:withVector:">- broadcastSelector:withVector:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWNotifier.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/broadcastSelector:withObject:" title="broadcastSelector:withObject:"></a>
+	<h3 class="subsubtitle method-title">broadcastSelector:withObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes all receivers perform the given selector. The sender is sent as the first parameter, and the object as the second parameter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)broadcastSelector:(SEL)<em>selector</em> withObject:(id)<em>object</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to perform on all receivers. It must have the following signature where &lsquo;sender&rsquo; and &lsquo;object&rsquo; can be any parameter name of your choice:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>The object to send as the selector&rsquo;s second parameter.</p>
+
+<p><code>-(void) sender:(id)sender object:(id)object;</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/broadcastSelector:">- broadcastSelector:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/broadcastSelector:withVector:">- broadcastSelector:withVector:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWNotifier.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/broadcastSelector:withVector:" title="broadcastSelector:withVector:"></a>
+	<h3 class="subsubtitle method-title">broadcastSelector:withVector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes all receivers perform the given selector. The sender is sent as the first parameter, and the vector as the second parameter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)broadcastSelector:(SEL)<em>selector</em> withVector:(GWVector)<em>vector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector to perform on all receivers. It must have the following signature where &lsquo;sender&rsquo; and &lsquo;vector&rsquo; can be any parameter name of your choice:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>vector</em></dt>
+			<dd><p>The GWVector to send as the selector&rsquo;s second parameter.</p>
+
+<p><code>-(void) sender:(id)sender vector:(GWVector)vector;</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/broadcastSelector:">- broadcastSelector:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/broadcastSelector:withObject:">- broadcastSelector:withObject:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWNotifier.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasReceivers" title="hasReceivers"></a>
+	<h3 class="subsubtitle method-title">hasReceivers</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>YES if the notifier has one or more receivers, returns NO otherwise.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasReceivers</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the notifier has one or more receivers, returns NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addReceiver:">- addReceiver:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeReceiver:">- removeReceiver:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWNotifier.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeReceiver:" title="removeReceiver:"></a>
+	<h3 class="subsubtitle method-title">removeReceiver:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a receiver. Does nothing if the receiver isn&rsquo;t found.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeReceiver:(id)<em>receiver</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>receiver</em></dt>
+			<dd><p>The receiver to remove.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addReceiver:">- addReceiver:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/hasReceivers">- hasReceivers</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWNotifier.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

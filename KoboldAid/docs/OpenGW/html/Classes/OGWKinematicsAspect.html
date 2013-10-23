@@ -1,0 +1,716 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OGWKinematicsAspect Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">OpenGW </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OGWKinematicsAspect Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/gravityScale">&nbsp;&nbsp;&nbsp;&nbsp;gravityScale</option>
+	
+	<option value="//api/name/ignoresGravity">&nbsp;&nbsp;&nbsp;&nbsp;ignoresGravity</option>
+	
+	<option value="//api/name/ignoresMinMaxVelocity">&nbsp;&nbsp;&nbsp;&nbsp;ignoresMinMaxVelocity</option>
+	
+	<option value="//api/name/maximumVelocity">&nbsp;&nbsp;&nbsp;&nbsp;maximumVelocity</option>
+	
+	<option value="//api/name/minimumVelocity">&nbsp;&nbsp;&nbsp;&nbsp;minimumVelocity</option>
+	
+	<option value="//api/name/speedFactor">&nbsp;&nbsp;&nbsp;&nbsp;speedFactor</option>
+	
+	<option value="//api/name/velocity">&nbsp;&nbsp;&nbsp;&nbsp;velocity</option>
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Delegate">Delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Velocity">Velocity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Speed">Speed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Gravity">Gravity</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gravityScale">gravityScale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ignoresGravity">ignoresGravity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ignoresMinMaxVelocity">ignoresMinMaxVelocity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumVelocity">maximumVelocity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumVelocity">minimumVelocity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/speedFactor">speedFactor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/velocity">velocity</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OGWKinematicsAspect Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OGWKinematicsAspect Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/OGWAspect.html">OGWAspect</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/OGWUpdateableAspect.html">OGWUpdateableAspect</a><br /><a href="../Protocols/OGWWorldGravityDelegate.html">OGWWorldGravityDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OGWKinematicsAspect.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Kinematics movement, updates position based on <a href="#//api/name/velocity">velocity</a>.</p>
+
+<p>The <a href="#//api/name/velocity">velocity</a> can be clamped to <a href="#//api/name/minimumVelocity">minimumVelocity</a> and <a href="#//api/name/maximumVelocity">maximumVelocity</a> vectors, to prevent <a href="#//api/name/velocity">velocity</a> from &ldquo;exploding&rdquo;. This clamping can
+be disabled temporarily without having to modify both vectors via <a href="#//api/name/ignoresMinMaxVelocity">ignoresMinMaxVelocity</a>.</p>
+
+<p>Velocity is normally influenced by gravity if <a href="../Classes/OGWWorldGravityAspect.html">OGWWorldGravityAspect</a> is added to the world. Gravity can be ignored or scaled via <a href="#//api/name/ignoresGravity">ignoresGravity</a>
+and <a href="#//api/name/gravityScale">gravityScale</a>. Ignoring gravity is the same as setting gravity scale to 0,0 but can be set without having to change the actual scale, this
+may be more desirable in cases where the object setting the gravity scale is not the same as the one that wants gravity to be temporarily ignored.</p>
+
+<p>After applying gravity and <a href="#//api/name/velocity">velocity</a> clamping, the resulting <a href="#//api/name/velocity">velocity</a> can be modified via <a href="#//api/name/speedFactor">speedFactor</a> to speed up or slow down entity movement
+without changing its gravitational behavior, meaning the entity will jump the same height, but reach the height faster or slower. This can be
+used for &ldquo;fast forward&rdquo; or &ldquo;slow motion&rdquo; effects on particular entities. Though if the intention is to speed up or slow down the entire simulation
+it would be easier to simply call world simulate more or less often.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Delegate" name="task_Delegate"></a>
+						<h3 class="subsubtitle task-title">Delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Velocity" name="task_Velocity"></a>
+						<h3 class="subsubtitle task-title">Velocity</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/velocity">&nbsp;&nbsp;velocity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumVelocity">&nbsp;&nbsp;minimumVelocity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumVelocity">&nbsp;&nbsp;maximumVelocity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ignoresMinMaxVelocity">&nbsp;&nbsp;ignoresMinMaxVelocity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Speed" name="task_Speed"></a>
+						<h3 class="subsubtitle task-title">Speed</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/speedFactor">&nbsp;&nbsp;speedFactor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Gravity" name="task_Gravity"></a>
+						<h3 class="subsubtitle task-title">Gravity</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gravityScale">&nbsp;&nbsp;gravityScale</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ignoresGravity">&nbsp;&nbsp;ignoresGravity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A delegate aspect that receives the aspect:kinematicsDidIntegratePosition:velocity:axis: selector of the <a href="../Protocols/OGWKinematicsDelegate.html">OGWKinematicsDelegate</a> protocol.
+The selector is sent once per axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak) OGWAspect&lt;OGWKinematicsDelegate&gt; *delegate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The delegate, or nil if there&rsquo;s no delegate set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWKinematicsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gravityScale" title="gravityScale"></a>
+	<h3 class="subsubtitle method-title">gravityScale</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gravity scale is multiplied with gravity before applying the result to <a href="#//api/name/velocity">velocity</a>. It changes how strongly the entity is influenced by gravity
+without having to change gravity itself. You can use this to simulate the effect of a heavier or lighter entity due to a powerup, for example.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWFloat gravityScale</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The current gravity scale.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWKinematicsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ignoresGravity" title="ignoresGravity"></a>
+	<h3 class="subsubtitle method-title">ignoresGravity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set this flag to (temporarily) ignore gravity, ie <a href="#//api/name/velocity">velocity</a> is not integrated with gravity and <a href="#//api/name/gravityScale">gravityScale</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property BOOL ignoresGravity</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether gravity is currently ignored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWKinematicsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ignoresMinMaxVelocity" title="ignoresMinMaxVelocity"></a>
+	<h3 class="subsubtitle method-title">ignoresMinMaxVelocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set this flag to (temporarily) ignore the <a href="#//api/name/velocity">velocity</a> cap. This disables the clamping of <a href="#//api/name/velocity">velocity</a> to <a href="#//api/name/minimumVelocity">minimumVelocity</a> and <a href="#//api/name/maximumVelocity">maximumVelocity</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property BOOL ignoresMinMaxVelocity</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if <a href="#//api/name/velocity">velocity</a> is capped to be at least <a href="#//api/name/minimumVelocity">minimumVelocity</a> and at most <a href="#//api/name/maximumVelocity">maximumVelocity</a>. NO if <a href="#//api/name/velocity">velocity</a> is not clamped/capped at all.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWKinematicsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumVelocity" title="maximumVelocity"></a>
+	<h3 class="subsubtitle method-title">maximumVelocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The maximum allowed <a href="#//api/name/velocity">velocity</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWVector maximumVelocity</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The maximum allowed <a href="#//api/name/velocity">velocity</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWKinematicsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumVelocity" title="minimumVelocity"></a>
+	<h3 class="subsubtitle method-title">minimumVelocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The minimum allowed <a href="#//api/name/velocity">velocity</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWVector minimumVelocity</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The minimum allowed <a href="#//api/name/velocity">velocity</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWKinematicsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/speedFactor" title="speedFactor"></a>
+	<h3 class="subsubtitle method-title">speedFactor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Speed factor can be used to (temporarily) speed up or slow down the entity without affecting its flight path, jump height, etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWFloat speedFactor</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The speedFactor for the entity. Velocity is multiplied with speedFactor after applying gravity and clamping the <a href="#//api/name/velocity">velocity</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWKinematicsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/velocity" title="velocity"></a>
+	<h3 class="subsubtitle method-title">velocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current velocity of the entity.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property GWVector velocity</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The current velocity of the entity.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWKinematicsAspect.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

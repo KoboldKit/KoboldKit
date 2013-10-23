@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWPlatformerCommandsAspect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWPlatformerCommandsAspect</TokenIdentifier>
+			<Abstract type="html">Platformer commands and view delegation aspect.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldJump</TokenIdentifier>
+			<Abstract type="html">Request the entity to jump. If jump was possible, entityDidJump will be sent to view delegate.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldJump</Declaration>
+			
+			
+			<Anchor>//api/name/entityShouldJump</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldEndJump</TokenIdentifier>
+			<Abstract type="html">Request the entity to end a current jump. If ending the jump was possible, entityDidEndJump will be sent to view delegate.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldEndJump</Declaration>
+			
+			
+			<Anchor>//api/name/entityShouldEndJump</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldMoveLeft</TokenIdentifier>
+			<Abstract type="html">Request the entity to move left. On success entityDidStartWalkingLeft will be sent to view delegate.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldMoveLeft</Declaration>
+			
+			
+			<Anchor>//api/name/entityShouldMoveLeft</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldMoveRight</TokenIdentifier>
+			<Abstract type="html">Request the entity to move right. On success entityDidStartWalkingRight will be sent to view delegate.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldMoveRight</Declaration>
+			
+			
+			<Anchor>//api/name/entityShouldMoveRight</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldStopMovingAlongXAxis</TokenIdentifier>
+			<Abstract type="html">Request the entity to stop moving horizontally. On success entityDidStopWalking will be sent to view delegate.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldStopMovingAlongXAxis</Declaration>
+			
+			
+			<Anchor>//api/name/entityShouldStopMovingAlongXAxis</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldTeleportToCheckpointWithName:</TokenIdentifier>
+			<Abstract type="html">Request the entity to teleport to a checkpoint.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldTeleportToCheckpointWithName:(NSString *)checkpointName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>checkpointName</Name>
+					<Abstract type="html">The name of a checkpoint. A checkpoint is an entity which has a corresponding string in its values for the OGWPlatformerValueKeyName key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/entityShouldTeleportToCheckpointWithName:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldTakeDamage:</TokenIdentifier>
+			<Abstract type="html">Request the entity should take damage. Currently any amount of damage means death.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldTakeDamage:(GWFloat)damageAmount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>damageAmount</Name>
+					<Abstract type="html">How much damage to subtract from entity&apos;s health.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/entityShouldTakeDamage:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldDie</TokenIdentifier>
+			<Abstract type="html">Request the entity should die with no specific reason.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldDie</Declaration>
+			
+			
+			<Anchor>//api/name/entityShouldDie</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldDieWithReason:</TokenIdentifier>
+			<Abstract type="html">Request the entity should die with a specific reason.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldDieWithReason:(OGWPlatformerStateChangeReason)reason</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reason</Name>
+					<Abstract type="html">The cause of death as defined in OGWPlatformerStateChangeReason</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/entityShouldDieWithReason:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/entityShouldRespawnAtCheckpoint</TokenIdentifier>
+			<Abstract type="html">Request the entity to respawn at the most recently activated checkpoint, respectively the world&apos;s spawn point if no checkpoint
+was activated yet.</Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)entityShouldRespawnAtCheckpoint</Declaration>
+			
+			
+			<Anchor>//api/name/entityShouldRespawnAtCheckpoint</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/setCheckpoint:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)setCheckpoint:(GWPoint)checkpoint</Declaration>
+			
+			
+			<Anchor>//api/name/setCheckpoint:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/killEntityWithReason:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)killEntityWithReason:(OGWPlatformerStateChangeReason)reason</Declaration>
+			
+			
+			<Anchor>//api/name/killEntityWithReason:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/respawnEntity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)respawnEntity</Declaration>
+			
+			
+			<Anchor>//api/name/respawnEntity</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/loadWorldNamed:triggeredBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)loadWorldNamed:(NSString *)worldName triggeredBy:(OGWEntity *)trigger</Declaration>
+			
+			
+			<Anchor>//api/name/loadWorldNamed:triggeredBy:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/touchesGroundDidChange:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)touchesGroundDidChange:(BOOL)touchesGround</Declaration>
+			
+			
+			<Anchor>//api/name/touchesGroundDidChange:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWPlatformerCommandsAspect/increaseBriefcaseCounter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWPlatformerCommandsAspect.h</DeclaredIn>
+			
+			<Declaration>- (void)increaseBriefcaseCounter</Declaration>
+			
+			
+			<Anchor>//api/name/increaseBriefcaseCounter</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

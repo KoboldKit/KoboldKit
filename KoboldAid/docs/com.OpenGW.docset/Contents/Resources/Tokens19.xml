@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWMutableValue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWMutableValue</TokenIdentifier>
+			<Abstract type="html">Similar to NSValue/NSNumber, but allows numbers to be modified (hence: mutable). It does not inherit NSValue or NSNumber, the implementation
+   is lightweight and encapsulates various value-specific classes, each containing only a single ivar of the given data type.</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithBool:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type BOOL</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithBool:(BOOL)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithBool:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithChar:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type char</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithChar:(char)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithChar:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithDouble:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type double</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithDouble:(double)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithDouble:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithFloat:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type float</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithFloat:(float)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithFloat:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithInt:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type int</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithInt:(int)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithInt:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithInteger:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type GWInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithInteger:(GWInteger)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithInteger:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithLong:(long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithLong:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithLongLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type long long (64 bit integer)</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithLongLong:(long long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithLongLong:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithShort:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type short</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithShort:(short)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithShort:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithUnsignedChar:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned char</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithUnsignedChar:(unsigned char)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithUnsignedChar:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithUnsignedInt:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned int</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithUnsignedInt:(unsigned int)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithUnsignedInt:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithUnsignedInteger:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type GWUInteger (32-Bit on iOS, 64-Bit on OS X)</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithUnsignedInteger:(GWUInteger)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithUnsignedInteger:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithUnsignedLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithUnsignedLong:(unsigned long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithUnsignedLong:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithUnsignedLongLong:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned long long (64 bit integer)</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithUnsignedLongLong:(unsigned long long)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithUnsignedLongLong:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithUnsignedShort:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type unsigned short</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithUnsignedShort:(unsigned short)number</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>number</Name>
+					<Abstract type="html">A number.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithUnsignedShort:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithPoint:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type GWPoint</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithPoint:(GWPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">A point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithPoint:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithVector:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type GWVector</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithVector:(GWVector)vector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>vector</Name>
+					<Abstract type="html">A vector.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithVector:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithSize:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type GWSize</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithSize:(GWSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>size</Name>
+					<Abstract type="html">A size.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithSize:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWMutableValue/valueWithRect:</TokenIdentifier>
+			<Abstract type="html">create a mutable number of type GWRect</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>+ (id)valueWithRect:(GWRect)rect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">A rect.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/valueWithRect:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setBoolValue:</TokenIdentifier>
+			<Abstract type="html">Get or set the number&apos;s value as/from type BOOL.</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL boolValue</Declaration>
+			
+			
+			<Anchor>//api/name/boolValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/boolValue</TokenIdentifier>
+			<Abstract type="html">Get or set the number&apos;s value as/from type BOOL.</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL boolValue</Declaration>
+			
+			
+			<Anchor>//api/name/boolValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/boolValue</TokenIdentifier>
+			<Abstract type="html">Get or set the number&apos;s value as/from type BOOL.</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL boolValue</Declaration>
+			
+			
+			<Anchor>//api/name/boolValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setCharValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type char</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) char charValue</Declaration>
+			
+			
+			<Anchor>//api/name/charValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/charValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type char</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) char charValue</Declaration>
+			
+			
+			<Anchor>//api/name/charValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/charValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type char</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) char charValue</Declaration>
+			
+			
+			<Anchor>//api/name/charValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setDoubleValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type double</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) double doubleValue</Declaration>
+			
+			
+			<Anchor>//api/name/doubleValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/doubleValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type double</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) double doubleValue</Declaration>
+			
+			
+			<Anchor>//api/name/doubleValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/doubleValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type double</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) double doubleValue</Declaration>
+			
+			
+			<Anchor>//api/name/doubleValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setFloatValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type float</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) float floatValue</Declaration>
+			
+			
+			<Anchor>//api/name/floatValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/floatValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type float</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) float floatValue</Declaration>
+			
+			
+			<Anchor>//api/name/floatValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/floatValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type float</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) float floatValue</Declaration>
+			
+			
+			<Anchor>//api/name/floatValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setIntValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type int</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) int intValue</Declaration>
+			
+			
+			<Anchor>//api/name/intValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/intValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type int</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) int intValue</Declaration>
+			
+			
+			<Anchor>//api/name/intValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/intValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type int</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) int intValue</Declaration>
+			
+			
+			<Anchor>//api/name/intValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setIntegerValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type GWInteger</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWInteger integerValue</Declaration>
+			
+			
+			<Anchor>//api/name/integerValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/integerValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type GWInteger</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWInteger integerValue</Declaration>
+			
+			
+			<Anchor>//api/name/integerValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/integerValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type GWInteger</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWInteger integerValue</Declaration>
+			
+			
+			<Anchor>//api/name/integerValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setLongLongValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long long longLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/longLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/longLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long long longLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/longLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/longLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long long longLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/longLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setLongValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long longValue</Declaration>
+			
+			
+			<Anchor>//api/name/longValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/longValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long longValue</Declaration>
+			
+			
+			<Anchor>//api/name/longValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/longValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) long longValue</Declaration>
+			
+			
+			<Anchor>//api/name/longValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setShortValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type short</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) short shortValue</Declaration>
+			
+			
+			<Anchor>//api/name/shortValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/shortValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type short</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) short shortValue</Declaration>
+			
+			
+			<Anchor>//api/name/shortValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/shortValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type short</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) short shortValue</Declaration>
+			
+			
+			<Anchor>//api/name/shortValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setUnsignedCharValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned char</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedCharValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/unsignedCharValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned char</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedCharValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/unsignedCharValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned char</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned char unsignedCharValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedCharValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setUnsignedIntegerValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type GWUInteger</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWUInteger unsignedIntegerValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntegerValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/unsignedIntegerValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type GWUInteger</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWUInteger unsignedIntegerValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntegerValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/unsignedIntegerValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type GWUInteger</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWUInteger unsignedIntegerValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntegerValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setUnsignedIntValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned int</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/unsignedIntValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned int</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/unsignedIntValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned int</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned int unsignedIntValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedIntValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setUnsignedLongLongValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/unsignedLongLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/unsignedLongLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long long unsignedLongLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setUnsignedLongValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/unsignedLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/unsignedLongValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned long</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned long unsignedLongValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedLongValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setUnsignedShortValue:</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned short</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedShortValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/unsignedShortValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned short</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedShortValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/unsignedShortValue</TokenIdentifier>
+			<Abstract type="html">get or set the number&apos;s value as/from type unsigned short</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) unsigned short unsignedShortValue</Declaration>
+			
+			
+			<Anchor>//api/name/unsignedShortValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setPointValue:</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWPoint</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWPoint pointValue</Declaration>
+			
+			
+			<Anchor>//api/name/pointValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/pointValue</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWPoint</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWPoint pointValue</Declaration>
+			
+			
+			<Anchor>//api/name/pointValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/pointValue</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWPoint</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWPoint pointValue</Declaration>
+			
+			
+			<Anchor>//api/name/pointValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setVectorValue:</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWVector</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWVector vectorValue</Declaration>
+			
+			
+			<Anchor>//api/name/vectorValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/vectorValue</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWVector</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWVector vectorValue</Declaration>
+			
+			
+			<Anchor>//api/name/vectorValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/vectorValue</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWVector</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWVector vectorValue</Declaration>
+			
+			
+			<Anchor>//api/name/vectorValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setSizeValue:</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWSize</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWSize sizeValue</Declaration>
+			
+			
+			<Anchor>//api/name/sizeValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/sizeValue</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWSize</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWSize sizeValue</Declaration>
+			
+			
+			<Anchor>//api/name/sizeValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/sizeValue</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWSize</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWSize sizeValue</Declaration>
+			
+			
+			<Anchor>//api/name/sizeValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/setRectValue:</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWRect</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWRect rectValue</Declaration>
+			
+			
+			<Anchor>//api/name/rectValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWMutableValue/rectValue</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWRect</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWRect rectValue</Declaration>
+			
+			
+			<Anchor>//api/name/rectValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWMutableValue/rectValue</TokenIdentifier>
+			<Abstract type="html">get or set the value as GWRect</Abstract>
+			<DeclaredIn>OGWMutableValue.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) GWRect rectValue</Declaration>
+			
+			
+			<Anchor>//api/name/rectValue</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>OGWWorld Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">OpenGW </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -32,12 +31,37 @@
 	
 	
 	
+	<option value="tasks">Tasks</option>
 	
 	
 	
 	
 	
+	<option value="properties">Properties</option>
 	
+	<option value="//api/name/categories">&nbsp;&nbsp;&nbsp;&nbsp;categories</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/entities">&nbsp;&nbsp;&nbsp;&nbsp;entities</option>
+	
+	<option value="//api/name/maps">&nbsp;&nbsp;&nbsp;&nbsp;maps</option>
+	
+	<option value="//api/name/simulation">&nbsp;&nbsp;&nbsp;&nbsp;simulation</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/worldWithAspectClasses:">&nbsp;&nbsp;&nbsp;&nbsp;+ worldWithAspectClasses:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/simulate">&nbsp;&nbsp;&nbsp;&nbsp;- simulate</option>
 	
 	
 	
@@ -53,13 +77,51 @@
 
 
 
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_World Constituents">World Constituents</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Delegate">Delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Create World">Create World</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Simulating the World">Simulating the World</a></span></li>
+	
+</ul></li>
 
 
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/categories">categories</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entities">entities</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maps">maps</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/simulation">simulation</a></span></li>
+	
+</ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/worldWithAspectClasses:">worldWithAspectClasses:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/simulate">simulate</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -83,35 +145,501 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<td class="specification-value"><a href="../Classes/OGWBase.html">OGWBase</a> : NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OGWWorld.h<br />OGWWorld.m</td>
+	<td class="specification-value">OGWWorld.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Game world.</p>
+						<p>Represents a game world. The world should be the only OpenGW objects created from and retained in a view (controller) object.</p>
+
+<p>The world has aspects, keyed values, <a href="#//api/name/categories">categories</a>, <a href="#//api/name/entities">entities</a>, <a href="#//api/name/maps">maps</a> and the multithreading <a href="#//api/name/simulation">simulation</a> object.</p>
+
+<p>World aspects follow the OGWWorld*Aspect naming convention.</p>
+
+<p>A world is typically a single level or map in a game. It can represent a simple puzzle game playfield (ie Tic Tac Toe)
+or a large, freely traversable world with no boundaries. You can even have multiple separate worlds. For example
+you could implement an inventory system as a separate world, where <a href="#//api/name/entities">entities</a> from the actual world are moved to the
+inventory world and back.</p>
 					</div>
 					
 					
 					
 					
 					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="World Constituents" name="task_World Constituents"></a>
+						<h3 class="subsubtitle task-title">World Constituents</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/categories">&nbsp;&nbsp;categories</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entities">&nbsp;&nbsp;entities</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maps">&nbsp;&nbsp;maps</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/simulation">&nbsp;&nbsp;simulation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Delegate" name="task_Delegate"></a>
+						<h3 class="subsubtitle task-title">Delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Create World" name="task_Create World"></a>
+						<h3 class="subsubtitle task-title">Create World</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/worldWithAspectClasses:">+&nbsp;worldWithAspectClasses:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Simulating the World" name="task_Simulating the World"></a>
+						<h3 class="subsubtitle task-title">Simulating the World</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/simulate">&ndash;&nbsp;simulate</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/categories" title="categories"></a>
+	<h3 class="subsubtitle method-title">categories</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/OGWWorldCategories.html">OGWWorldCategories</a> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) OGWWorldCategories *categories</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/OGWWorldCategories.html">OGWWorldCategories</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWWorld.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Typically a view object beomes the world delegate, in order to react to certain world events.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property id&lt;OGWWorldDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The world delegate or nil if there&rsquo;s no world delegate.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWWorld.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entities" title="entities"></a>
+	<h3 class="subsubtitle method-title">entities</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/OGWWorldEntities.html">OGWWorldEntities</a> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) OGWWorldEntities *entities</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/OGWWorldEntities.html">OGWWorldEntities</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWWorld.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maps" title="maps"></a>
+	<h3 class="subsubtitle method-title">maps</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/OGWWorldMaps.html">OGWWorldMaps</a> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) OGWWorldMaps *maps</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/OGWWorldMaps.html">OGWWorldMaps</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWWorld.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/simulation" title="simulation"></a>
+	<h3 class="subsubtitle method-title">simulation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/OGWWorldSimulation.html">OGWWorldSimulation</a> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) OGWWorldSimulation *simulation</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/OGWWorldSimulation.html">OGWWorldSimulation</a> object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWWorld.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/worldWithAspectClasses:" title="worldWithAspectClasses:"></a>
+	<h3 class="subsubtitle method-title">worldWithAspectClasses:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a world with an array of world aspect Class objects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)worldWithAspectClasses:(NSArray *)<em>aspectClasses</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspectClasses</em></dt>
+			<dd><p>An array of Class objects which should follow the naming convention OGWWorld*Aspect.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Usage example:</p>
+
+<pre>
+NSArray* worldAspects = @[[OGWWorldGravityAspect class], [OGWWorldContactTestAspect class]];
+OGWWorld* world = [OGWWorld worldWithAspectClasses:worldAspects];
+</pre>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWWorld.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/simulate" title="simulate"></a>
+	<h3 class="subsubtitle method-title">simulate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Advances the world <a href="#//api/name/simulation">simulation</a> by one <a href="#//api/name/simulation">simulation</a> step. Most games would call this every frame update.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)simulate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The world simulation advances by concrete integer steps. Time is not used internally. Instead the proper way
+to make an OpenGW world framerate-independent is to decide on a minimum update rate for the world, let&rsquo;s say
+the world should be updated 30 times per second (30 Hz). Given a game loop method that receives the current
+time you would implement it as follows:</p>
+
+<pre>
+// ivars used by this example:
+NSTimeInterval nextGameWorldUpdateTime;
+NSTimeInterval lastGameWorldUpdateTime;
+
+-(void) gameLoop:(NSTimeInterval)currentTime
+{
+    if (currentTime >= nextGameWorldUpdateTime)
+    {
+        // game world updates at a fixed rate (here: 30 times per second)
+        // should fps drop below 30 fps world update will be performed every frame
+        nextGameWorldUpdateTime = currentTime + (1.0 / 30.0);
+        lastGameWorldUpdateTime = currentTime;
+
+        [gameWorld simulate];
+
+        // draw the world (depends on engine used)
+        [renderer drawWorld:gameWorld];
+    }
+    else
+    {
+        // draw the world (depends on engine used)
+        // optional: interpolate view by applying delta time since last world update to view positions
+        [renderer drawWorld:gameWorld delta:currentTime - lastGameWorldUpdateTime];
+    }
+}
+</pre>
+
+
+<p>This approach has the following advantages:</p>
+
+<ul>
+<li>At 30 fps or higher, the game world simulation runs at a fixed interval (framerate independent mode).</li>
+<li>At below 30 fps, the game world simulation runs every frame and thus slower (framerate dependent mode).</li>
+<li>Prevents low-framerate tunneling issues by automatically falling back to framerate dependent mode in low framerate situations.</li>
+<li>Enables you to optionally interpolate view positions based on time delta and entity velocities. Thus view runs at full speed while game world retains its state during frames that are only interpolated.</li>
+</ul>
+
+
+<p>To fully understand the implications of applying delta time to changes in position read:<br/>
+<a href="http://www.learn-cocos2d.com/2013/10/game-engine-multiply-delta-time-or-not/">http://www.learn-cocos2d.com/2013/10/game-engine-multiply-delta-time-or-not/</a></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWWorldSimulation.html">OGWWorldSimulation</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWWorld.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -122,9 +650,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-09-18)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -212,6 +740,14 @@
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

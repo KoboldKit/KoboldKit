@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OGWWorldDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OGWWorldDelegate</TokenIdentifier>
+			<Abstract type="html">World delegate protocol can be implemented by view to react to world events.</Abstract>
+			<DeclaredIn>OGWWorld.h</DeclaredIn>
+            
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWWorldDelegate/didAddEntity:</TokenIdentifier>
+			<Abstract type="html">Received when an entity was added to the world.
+Can be used to create a corresponding view object and set it as the entity&apos;s delegate.</Abstract>
+			<DeclaredIn>OGWWorld.h</DeclaredIn>
+			
+			<Declaration>- (void)didAddEntity:(OGWEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity that was added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didAddEntity:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OGWWorldDelegate/willRemoveEntity:</TokenIdentifier>
+			<Abstract type="html">Received before an entity is removed from the world.
+Can be used to remove the entity&apos;s view.</Abstract>
+			<DeclaredIn>OGWWorld.h</DeclaredIn>
+			
+			<Declaration>- (void)willRemoveEntity:(OGWEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity that will be removed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/willRemoveEntity:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

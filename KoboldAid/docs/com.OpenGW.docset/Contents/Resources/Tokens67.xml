@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/OGWPlatformerStateChangeReason.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/OGWPlatformerStateChangeReason</TokenIdentifier>
+			<Abstract type="html">Reasons for dying. May be used by view to animate death accordingly.</Abstract>
+			<DeclaredIn>OGWPlatformerStates.h</DeclaredIn>
+            
+			
+			<NodeRef refid="67"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OGWPlatformerStateChangeNoParticularReason</TokenIdentifier>
+            <Abstract type="html">No special reason.</Abstract>
+            <Declaration>OGWPlatformerStateChangeNoParticularReason</Declaration>
+            
+            <DeclaredIn>OGWPlatformerStates.h</DeclaredIn>
+            
+            <NodeRef refid="67"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OGWPlatformerDeathReasonNaturalCause</TokenIdentifier>
+            <Abstract type="html">Entity died of natural causes.</Abstract>
+            <Declaration>OGWPlatformerDeathReasonNaturalCause</Declaration>
+            
+            <DeclaredIn>OGWPlatformerStates.h</DeclaredIn>
+            
+            <NodeRef refid="67"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OGWPlatformerDeathReasonCrushed</TokenIdentifier>
+            <Abstract type="html">Entity died because it was crushed.</Abstract>
+            <Declaration>OGWPlatformerDeathReasonCrushed</Declaration>
+            
+            <DeclaredIn>OGWPlatformerStates.h</DeclaredIn>
+            
+            <NodeRef refid="67"/>
+        </Token>
+        
+	</File>
+</Tokens>

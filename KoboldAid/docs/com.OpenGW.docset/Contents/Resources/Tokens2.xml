@@ -1,15 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OGWMap.html">
+	<File path="Classes/OGWAspectCollection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OGWMap</TokenIdentifier>
-			<Abstract type="html">Map of arbitrary data. Can be used for collision, heat, surface and other map types.</Abstract>
-			<DeclaredIn>OGWMap.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWAspectCollection</TokenIdentifier>
+			<Abstract type="html">Container for an entity&apos;s and the world&apos;s aspects. Read the OGWAspect documentation for more info.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+            
 			
 			<NodeRef refid="2"/>
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/setAll:</TokenIdentifier>
+			<Abstract type="html">The array is not dynamically created, hence access is fast.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *all</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of all aspects, in the order they were added.</Abstract></ReturnValue>
+			<Anchor>//api/name/all</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/all</TokenIdentifier>
+			<Abstract type="html">The array is not dynamically created, hence access is fast.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *all</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of all aspects, in the order they were added.</Abstract></ReturnValue>
+			<Anchor>//api/name/all</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWAspectCollection/all</TokenIdentifier>
+			<Abstract type="html">The array is not dynamically created, hence access is fast.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *all</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of all aspects, in the order they were added.</Abstract></ReturnValue>
+			<Anchor>//api/name/all</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/setUpdateable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *updateable</Declaration>
+			
+			
+			<Anchor>//api/name/updateable</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/updateable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *updateable</Declaration>
+			
+			
+			<Anchor>//api/name/updateable</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWAspectCollection/updateable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *updateable</Declaration>
+			
+			
+			<Anchor>//api/name/updateable</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/aspectWithClass:</TokenIdentifier>
+			<Abstract type="html">Aspects are internally referenced by Class, so lookup for aspects by Class is fast.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWAspect</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)aspectWithClass:(Class)aspectClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspectClass</Name>
+					<Abstract type="html">The Class object of the aspect to return.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The aspect of the given class, or nil if no such aspect of this class exists.</Abstract></ReturnValue>
+			<Anchor>//api/name/aspectWithClass:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspect:</TokenIdentifier>
+			<Abstract type="html">Adds an aspect.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWAspect</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsInArray:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsWithClasses:world:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsWithClasses:entity:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addAspect:(OGWAspect *)aspect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspect</Name>
+					<Abstract type="html">The aspect to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAspect:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsInArray:</TokenIdentifier>
+			<Abstract type="html">Adds aspect from an array.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWAspect</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspect:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsWithClasses:world:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsWithClasses:entity:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addAspectsInArray:(NSArray *)aspects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspects</Name>
+					<Abstract type="html">An array of aspects to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAspectsInArray:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsWithClasses:world:</TokenIdentifier>
+			<Abstract type="html">Creates aspect from the Class objects in an array and adds them to the world.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWWorld</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWAspect</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspect:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsInArray:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsWithClasses:entity:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addAspectsWithClasses:(NSArray *)aspectClasses world:(OGWWorld *)world</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspectClasses</Name>
+					<Abstract type="html">An array of aspect Class objects to create and add.</Abstract>
+				</Parameter><Parameter>
+					<Name>world</Name>
+					<Abstract type="html">The world the aspects will be added to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAspectsWithClasses:world:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsWithClasses:entity:</TokenIdentifier>
+			<Abstract type="html">Creates aspect from the Class objects in an array and adds them to the entity.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWAspect</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspect:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsInArray:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/addAspectsWithClasses:world:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addAspectsWithClasses:(NSArray *)aspectClasses entity:(OGWEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspectClasses</Name>
+					<Abstract type="html">An array of aspect Class objects to create and add.</Abstract>
+				</Parameter><Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity the aspects will be added to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAspectsWithClasses:entity:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAspect:</TokenIdentifier>
+			<Abstract type="html">Removes an aspect.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWAspect</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAspectWithClass:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAllAspects</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeAspect:(OGWAspect *)aspect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspect</Name>
+					<Abstract type="html">The aspect to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeAspect:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAspectWithClass:</TokenIdentifier>
+			<Abstract type="html">Removes an aspect by its Class.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWAspect</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAspect:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAllAspects</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeAspectWithClass:(Class)aspectClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aspectClass</Name>
+					<Abstract type="html">The Class object of an aspect to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeAspectWithClass:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAllAspects</TokenIdentifier>
+			<Abstract type="html">Removes all aspects.</Abstract>
+			<DeclaredIn>OGWAspectCollection.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWAspect</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAspect:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWAspectCollection/removeAspectWithClass:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeAllAspects</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllAspects</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

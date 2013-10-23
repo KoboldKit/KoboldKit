@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWWorldEntities.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWWorldEntities</TokenIdentifier>
+			<Abstract type="html">Categorized collection of entities with fast lookup by uniqueID (dictionary) and fast, ordered enumeration (array).
+Special enumerators exist to query entities within a rectangle, distance (radius), category and other filters or combinations.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+            
+			
+			<NodeRef refid="42"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/setAll:</TokenIdentifier>
+			<Abstract type="html">An array containing all entities in the world.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) NSArray *all</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array containing all entities in the world.</Abstract></ReturnValue>
+			<Anchor>//api/name/all</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/all</TokenIdentifier>
+			<Abstract type="html">An array containing all entities in the world.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) NSArray *all</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array containing all entities in the world.</Abstract></ReturnValue>
+			<Anchor>//api/name/all</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWWorldEntities/all</TokenIdentifier>
+			<Abstract type="html">An array containing all entities in the world.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (readonly) NSArray *all</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array containing all entities in the world.</Abstract></ReturnValue>
+			<Anchor>//api/name/all</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/entityForUniqueID:</TokenIdentifier>
+			<Abstract type="html">Returns entity by ID.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityIdentity</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (OGWEntity *)entityForUniqueID:(GWID)uniqueID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uniqueID</Name>
+					<Abstract type="html">An entity&apos;s unique ID.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The entity for a given unique ID number. Returns nil if no such entity exists.</Abstract></ReturnValue>
+			<Anchor>//api/name/entityForUniqueID:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/entitiesInCategory:</TokenIdentifier>
+			<Abstract type="html">Returns an array of all entities whose category matches. This is a fast operation, the array already exists, it is not created dynamically.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSArray *)entitiesInCategory:(const OGWEntityCategory *)category</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>category</Name>
+					<Abstract type="html">An instance of OGWEntityCategory previously added to the world.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of OGWEntity objects with matching category.</Abstract></ReturnValue>
+			<Anchor>//api/name/entitiesInCategory:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/addEntity:</TokenIdentifier>
+			<Abstract type="html">Add an entity.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/addEntitiesInArray:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/removeEntity:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/removeAllEntitiesInCategory:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addEntity:(OGWEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity to add.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addEntity:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/addEntitiesInArray:</TokenIdentifier>
+			<Abstract type="html">Adds entities from an array.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/addEntity:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/removeEntity:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/removeAllEntitiesInCategory:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addEntitiesInArray:(NSArray *)entities</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entities</Name>
+					<Abstract type="html">An array of entities.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addEntitiesInArray:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/removeEntity:</TokenIdentifier>
+			<Abstract type="html">Removes an entity. Does nothing if the entity does not exist or is nil.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntity</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/addEntity:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/addEntitiesInArray:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/removeAllEntitiesInCategory:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeEntity:(OGWEntity *)entity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeEntity:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/removeAllEntitiesInCategory:</TokenIdentifier>
+			<Abstract type="html">Removes all entities with matching category.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/addEntity:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/addEntitiesInArray:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/removeEntity:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeAllEntitiesInCategory:(const OGWEntityCategory *)category</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>category</Name>
+					<Abstract type="html">An instance of OGWEntityCategory previously added to the world.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeAllEntitiesInCategory:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/enumerateEntitiesIntersectingRect:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerate all entities whose world bounding boxes intersect a rectangle.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+			<Declaration>- (void)enumerateEntitiesIntersectingRect:(GWRect)rect usingBlock:(OGWEntityEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">A rect in world coordinates.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to run for each intersecting entity.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateEntitiesIntersectingRect:usingBlock:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/enumerateEntitiesNear:radius:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerate all entities within a given radius (distance) to the center point.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+			<Declaration>- (void)enumerateEntitiesNear:(GWPoint)center radius:(GWFloat)radius usingBlock:(OGWEntityEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>center</Name>
+					<Abstract type="html">The center position of the distance check, in world coordinates.</Abstract>
+				</Parameter><Parameter>
+					<Name>radius</Name>
+					<Abstract type="html">The radius around (distance from) the center point where to look for entities.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to run for each entity whose distance to the center point is less than or equal to radius.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateEntitiesNear:radius:usingBlock:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/enumerateEntitiesContainingPoint:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerate all entities whose world bounding boxes contain the point (in world coordinates).</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+			<Declaration>- (void)enumerateEntitiesContainingPoint:(GWPoint)point usingBlock:(OGWEntityEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point the entity must contain, in world coordinates.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to run for each entity whose world bounding box contains the point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateEntitiesContainingPoint:usingBlock:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/enumerateEntitiesInCategory:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerate all entities of a given category. The block runs for every entity with a matching category.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enumerateEntitiesInCategory:(const OGWEntityCategory *)category usingBlock:(OGWEntityEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>category</Name>
+					<Abstract type="html">A reference to a valid OGWEntityCategory previously added to the world.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to run for each entity with a matching category.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateEntitiesInCategory:usingBlock:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/enumerateEntitiesInCategory:intersectingRect:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerate all entities of a given category intersecting a rectangle.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enumerateEntitiesInCategory:(const OGWEntityCategory *)category intersectingRect:(GWRect)rect usingBlock:(OGWEntityEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>category</Name>
+					<Abstract type="html">A reference to a valid OGWEntityCategory previously added to the world.</Abstract>
+				</Parameter><Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">The rect the entities will test for intersection, in world coordinates.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to run for each entity with a matching category and intersecting world bounding box.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateEntitiesInCategory:intersectingRect:usingBlock:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/enumerateEntitiesInCategory:near:radius:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerate all entities of a given category near a point in a given radius.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enumerateEntitiesInCategory:(const OGWEntityCategory *)category near:(GWPoint)center radius:(GWFloat)radius usingBlock:(OGWEntityEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>category</Name>
+					<Abstract type="html">A reference to a valid OGWEntityCategory previously added to the world.</Abstract>
+				</Parameter><Parameter>
+					<Name>center</Name>
+					<Abstract type="html">The center point of the radius/distance check, in world coordinates.</Abstract>
+				</Parameter><Parameter>
+					<Name>radius</Name>
+					<Abstract type="html">The radius (aka distance) in which to search for entities.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to run for each entity with a matching category and within radius of the center point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateEntitiesInCategory:near:radius:usingBlock:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/enumerateEntitiesInCategory:containingPoint:usingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerate all entities of a given category whose bounding boxes contain a point.</Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/OGWEntityCategory</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enumerateEntitiesInCategory:(const OGWEntityCategory *)category containingPoint:(GWPoint)point usingBlock:(OGWEntityEnumerationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>category</Name>
+					<Abstract type="html">A reference to a valid OGWEntityCategory previously added to the world.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">The point the entities test for containment, in world coordinates.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to run for each entity with a matching category and whose world bounding box contains the point.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateEntitiesInCategory:containingPoint:usingBlock:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWWorldEntities/entitiesWithWorld:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+			<Declaration>+ (id)entitiesWithWorld:(OGWWorld *)world</Declaration>
+			
+			
+			<Anchor>//api/name/entitiesWithWorld:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/createCollectionForCategory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+			<Declaration>- (void)createCollectionForCategory:(const OGWEntityCategory *)category</Declaration>
+			
+			
+			<Anchor>//api/name/createCollectionForCategory:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWWorldEntities/simulationDidPerformStep</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWWorldEntities.h</DeclaredIn>
+			
+			<Declaration>- (void)simulationDidPerformStep</Declaration>
+			
+			
+			<Anchor>//api/name/simulationDidPerformStep</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

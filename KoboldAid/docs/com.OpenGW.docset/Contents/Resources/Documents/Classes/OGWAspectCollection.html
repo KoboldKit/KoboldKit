@@ -1,0 +1,947 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OGWAspectCollection Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">OpenGW </a></h1>
+				<a id="developerHome" href="../index.html">Kobold Tech</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OGWAspectCollection Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/all">&nbsp;&nbsp;&nbsp;&nbsp;all</option>
+	
+	<option value="//api/name/updateable">&nbsp;&nbsp;&nbsp;&nbsp;updateable</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addAspect:">&nbsp;&nbsp;&nbsp;&nbsp;- addAspect:</option>
+	
+	<option value="//api/name/addAspectsInArray:">&nbsp;&nbsp;&nbsp;&nbsp;- addAspectsInArray:</option>
+	
+	<option value="//api/name/addAspectsWithClasses:entity:">&nbsp;&nbsp;&nbsp;&nbsp;- addAspectsWithClasses:entity:</option>
+	
+	<option value="//api/name/addAspectsWithClasses:world:">&nbsp;&nbsp;&nbsp;&nbsp;- addAspectsWithClasses:world:</option>
+	
+	<option value="//api/name/aspectWithClass:">&nbsp;&nbsp;&nbsp;&nbsp;- aspectWithClass:</option>
+	
+	<option value="//api/name/removeAllAspects">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllAspects</option>
+	
+	<option value="//api/name/removeAspect:">&nbsp;&nbsp;&nbsp;&nbsp;- removeAspect:</option>
+	
+	<option value="//api/name/removeAspectWithClass:">&nbsp;&nbsp;&nbsp;&nbsp;- removeAspectWithClass:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Aspects">Accessing Aspects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Adding Aspects">Adding Aspects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Removing Aspects">Removing Aspects</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/all">all</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateable">updateable</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAspect:">addAspect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAspectsInArray:">addAspectsInArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAspectsWithClasses:entity:">addAspectsWithClasses:entity:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAspectsWithClasses:world:">addAspectsWithClasses:world:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/aspectWithClass:">aspectWithClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllAspects">removeAllAspects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAspect:">removeAspect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAspectWithClass:">removeAspectWithClass:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OGWAspectCollection Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OGWAspectCollection Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OGWAspectCollection.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Container for an entity&rsquo;s and the world&rsquo;s aspects. Read the <a href="../Classes/OGWAspect.html">OGWAspect</a> documentation for more info.</p><div class="warning"><p><strong>Warning:</strong> There can only be one aspect of a given class in the aspect collection. Any situation where an aspect may be
+needed more than once on the same entity is better implemented using either an aspect aggregating other objects or at
+its simplest level by using a counter. Said by analogy: don&rsquo;t implement an arrow aspect, implement a quiver aspect instead!</p></div>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing Aspects" name="task_Accessing Aspects"></a>
+						<h3 class="subsubtitle task-title">Accessing Aspects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/all">&nbsp;&nbsp;all</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateable">&nbsp;&nbsp;updateable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/aspectWithClass:">&ndash;&nbsp;aspectWithClass:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Adding Aspects" name="task_Adding Aspects"></a>
+						<h3 class="subsubtitle task-title">Adding Aspects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAspect:">&ndash;&nbsp;addAspect:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAspectsInArray:">&ndash;&nbsp;addAspectsInArray:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAspectsWithClasses:world:">&ndash;&nbsp;addAspectsWithClasses:world:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAspectsWithClasses:entity:">&ndash;&nbsp;addAspectsWithClasses:entity:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Removing Aspects" name="task_Removing Aspects"></a>
+						<h3 class="subsubtitle task-title">Removing Aspects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAspect:">&ndash;&nbsp;removeAspect:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAspectWithClass:">&ndash;&nbsp;removeAspectWithClass:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllAspects">&ndash;&nbsp;removeAllAspects</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/all" title="all"></a>
+	<h3 class="subsubtitle method-title">all</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The array is <strong>not</strong> dynamically created, hence access is fast.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *all</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of all aspects, in the order they were added.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateable" title="updateable"></a>
+	<h3 class="subsubtitle method-title">updateable</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *updateable</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addAspect:" title="addAspect:"></a>
+	<h3 class="subsubtitle method-title">addAspect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds an aspect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addAspect:(OGWAspect *)<em>aspect</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspect</em></dt>
+			<dd><p>The aspect to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWAspect.html">OGWAspect</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsInArray:">- addAspectsInArray:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsWithClasses:world:">- addAspectsWithClasses:world:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsWithClasses:entity:">- addAspectsWithClasses:entity:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addAspectsInArray:" title="addAspectsInArray:"></a>
+	<h3 class="subsubtitle method-title">addAspectsInArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds aspect from an array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addAspectsInArray:(NSArray *)<em>aspects</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspects</em></dt>
+			<dd><p>An array of aspects to add.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWAspect.html">OGWAspect</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspect:">- addAspect:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsWithClasses:world:">- addAspectsWithClasses:world:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsWithClasses:entity:">- addAspectsWithClasses:entity:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addAspectsWithClasses:entity:" title="addAspectsWithClasses:entity:"></a>
+	<h3 class="subsubtitle method-title">addAspectsWithClasses:entity:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates aspect from the Class objects in an array and adds them to the entity.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addAspectsWithClasses:(NSArray *)<em>aspectClasses</em> entity:(OGWEntity *)<em>entity</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspectClasses</em></dt>
+			<dd><p>An array of aspect Class objects to create and add.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>entity</em></dt>
+			<dd><p>The entity the aspects will be added to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWEntity.html">OGWEntity</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/OGWEntityCategory.html">OGWEntityCategory</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/OGWAspect.html">OGWAspect</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspect:">- addAspect:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsInArray:">- addAspectsInArray:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsWithClasses:world:">- addAspectsWithClasses:world:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addAspectsWithClasses:world:" title="addAspectsWithClasses:world:"></a>
+	<h3 class="subsubtitle method-title">addAspectsWithClasses:world:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates aspect from the Class objects in an array and adds them to the world.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addAspectsWithClasses:(NSArray *)<em>aspectClasses</em> world:(OGWWorld *)<em>world</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspectClasses</em></dt>
+			<dd><p>An array of aspect Class objects to create and add.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>world</em></dt>
+			<dd><p>The world the aspects will be added to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWWorld.html">OGWWorld</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/OGWEntityCategory.html">OGWEntityCategory</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/OGWAspect.html">OGWAspect</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspect:">- addAspect:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsInArray:">- addAspectsInArray:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addAspectsWithClasses:entity:">- addAspectsWithClasses:entity:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/aspectWithClass:" title="aspectWithClass:"></a>
+	<h3 class="subsubtitle method-title">aspectWithClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Aspects are internally referenced by Class, so lookup for aspects by Class is fast.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)aspectWithClass:(Class)<em>aspectClass</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspectClass</em></dt>
+			<dd><p>The Class object of the aspect to return.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The aspect of the given class, or nil if no such aspect of this class exists.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Class equality is used, this is the equivalent of isMemberOfClass and not isKindOfClass. For example looking for
+[OGWAspect class] will not return any aspect because the class must be an exact match.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWEntityCategory.html">OGWEntityCategory</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/OGWAspect.html">OGWAspect</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllAspects" title="removeAllAspects"></a>
+	<h3 class="subsubtitle method-title">removeAllAspects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes <a href="#//api/name/all">all</a> aspects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAllAspects</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWAspect.html">OGWAspect</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAspect:">- removeAspect:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAspectWithClass:">- removeAspectWithClass:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAspect:" title="removeAspect:"></a>
+	<h3 class="subsubtitle method-title">removeAspect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes an aspect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAspect:(OGWAspect *)<em>aspect</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspect</em></dt>
+			<dd><p>The aspect to remove.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWAspect.html">OGWAspect</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAspectWithClass:">- removeAspectWithClass:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAllAspects">- removeAllAspects</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAspectWithClass:" title="removeAspectWithClass:"></a>
+	<h3 class="subsubtitle method-title">removeAspectWithClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes an aspect by its Class.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAspectWithClass:(Class)<em>aspectClass</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aspectClass</em></dt>
+			<dd><p>The Class object of an aspect to remove.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/OGWEntityCategory.html">OGWEntityCategory</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/OGWAspect.html">OGWAspect</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAspect:">- removeAspect:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAllAspects">- removeAllAspects</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OGWAspectCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

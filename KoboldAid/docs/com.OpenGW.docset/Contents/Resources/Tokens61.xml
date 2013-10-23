@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/OGWEntityCategoryOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/OGWEntityCategoryOption</TokenIdentifier>
+			<Abstract type="html">Category option bits</Abstract>
+			<DeclaredIn>OGWEntityCategory.h</DeclaredIn>
+            
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OGWEntityCategoryOptionNone</TokenIdentifier>
+            <Abstract type="html">No options (0).</Abstract>
+            <Declaration>OGWEntityCategoryOptionNone</Declaration>
+            
+            <DeclaredIn>OGWEntityCategory.h</DeclaredIn>
+            
+            <NodeRef refid="61"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OGWEntityCategoryOptionNeedsUpdate</TokenIdentifier>
+            <Abstract type="html">If set, entities and their aspect will be updated if they require updates.</Abstract>
+            <Declaration>OGWEntityCategoryOptionNeedsUpdate</Declaration>
+            
+            <DeclaredIn>OGWEntityCategory.h</DeclaredIn>
+            
+            <NodeRef refid="61"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OGWEntityCategoryOptionUpdatesConcurrently</TokenIdentifier>
+            <Abstract type="html">If set, updates will happen concurrently if possible</Abstract>
+            <Declaration>OGWEntityCategoryOptionUpdatesConcurrently</Declaration>
+            
+            <DeclaredIn>OGWEntityCategory.h</DeclaredIn>
+            
+            <NodeRef refid="61"/>
+        </Token>
+        
+	</File>
+</Tokens>

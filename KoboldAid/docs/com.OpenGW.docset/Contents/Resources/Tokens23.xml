@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWPerformSelectorTask.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWPerformSelectorTask</TokenIdentifier>
+			<Abstract type="html">Performs a selector on a target when executed, optionally with an object as parameter. Finishes instantaneously.</Abstract>
+			<DeclaredIn>OGWPerformSelectorTask.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWPerformSelectorTask/performSelector:target:</TokenIdentifier>
+			<Abstract type="html">The selector to perform. The selector takes no parameters.</Abstract>
+			<DeclaredIn>OGWPerformSelectorTask.h</DeclaredIn>
+			
+			<Declaration>+ (id)performSelector:(SEL)selector target:(id)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to perform. The selector takes no parameters.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The receiver that will performs the selector.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The new task.</Abstract></ReturnValue>
+			<Anchor>//api/name/performSelector:target:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWPerformSelectorTask/performSelector:target:withObject:</TokenIdentifier>
+			<Abstract type="html">The selector to perform. The selector takes a single parameter of type id.</Abstract>
+			<DeclaredIn>OGWPerformSelectorTask.h</DeclaredIn>
+			
+			<Declaration>+ (id)performSelector:(SEL)selector target:(id)target withObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to perform. The selector takes a single parameter of type id.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The receiver that will performs the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object passed to the selector as parameter.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The new task.</Abstract></ReturnValue>
+			<Anchor>//api/name/performSelector:target:withObject:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

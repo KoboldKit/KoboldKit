@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWContactAspect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWContactAspect</TokenIdentifier>
+			<Abstract type="html">Performs contact tests and notifies delegates. Requires OGWWorldContactAspect to be on the world&apos;s aspect list.</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWContactAspect/addTest:againstCategory:delegate:</TokenIdentifier>
+			<Abstract type="html">Adds a contact test to be performed every simulation step. Same as</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWContactAspect/addTest:againstCategory:interval:delegate:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addTest:(OGWContactTest)test againstCategory:(const OGWEntityCategory *)category delegate:(OGWAspect&lt;OGWContactDelegate&gt; *)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The OGWContactTest defining the type of test to perform.</Abstract>
+				</Parameter><Parameter>
+					<Name>category</Name>
+					<Abstract type="html">The test is performed against entities in this category.</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate aspect that receives the contact event messages defined in the OGWContactDelegate protocol. The aspect needs to implement at least one of the protocol messages.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTest:againstCategory:delegate:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWContactAspect/addTest:againstCategory:interval:delegate:</TokenIdentifier>
+			<Abstract type="html">Adds a contact test to be performed at a given interval (in steps).</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWContactAspect/addTest:againstCategory:delegate:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addTest:(OGWContactTest)test againstCategory:(const OGWEntityCategory *)category interval:(GWStep)interval delegate:(OGWAspect&lt;OGWContactDelegate&gt; *)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The OGWContactTest defining the type of test to perform.</Abstract>
+				</Parameter><Parameter>
+					<Name>category</Name>
+					<Abstract type="html">The test is performed against entities in this category.</Abstract>
+				</Parameter><Parameter>
+					<Name>interval</Name>
+					<Abstract type="html">How often (in steps) the test should be performed. For example if interval is 2 the contact test will be performed every other step. If interval is 0 or 1 it behaves the same
+as calling the addTest:againstCategory:delegate: method.</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate aspect that receives the contact event messages defined in the OGWContactDelegate protocol. The aspect needs to implement at least one of the protocol messages.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTest:againstCategory:interval:delegate:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWContactAspect/removeTestsForDelegate:</TokenIdentifier>
+			<Abstract type="html">Removes all tests that a given delegate has scheduled.</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWContactAspect/removeTestsForDelegate:againstCategory:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeTestsForDelegate:(OGWAspect&lt;OGWContactDelegate&gt; *)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate that wants its scheduled contact tests to be removed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeTestsForDelegate:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWContactAspect/removeTestsForDelegate:againstCategory:</TokenIdentifier>
+			<Abstract type="html">Removes tests  against a certain category that a given delegate has scheduled.</Abstract>
+			<DeclaredIn>OGWContactAspect.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/OGWContactAspect/removeTestsForDelegate:againstCategory:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)removeTestsForDelegate:(OGWAspect&lt;OGWContactDelegate&gt; *)delegate againstCategory:(OGWEntityCategory *)category</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate that wants its scheduled contact tests to be removed.</Abstract>
+				</Parameter><Parameter>
+					<Name>category</Name>
+					<Abstract type="html">The category that should no longer be queried for contacts.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeTestsForDelegate:againstCategory:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGWJob.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGWJob</TokenIdentifier>
+			<Abstract type="html">A job performs a sequence of OGWTask objects. Jobs are run and managed by the OGWJobAspect.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/setJobAspect:</TokenIdentifier>
+			<Abstract type="html">Reference to the OGWJobAspect running this job. Is nil if the job isn&apos;t running.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWJobAspect *jobAspect</Declaration>
+			
+			<ReturnValue><Abstract type="html">Reference to the OGWJobAspect running this job. Is nil if the job isn&apos;t running.</Abstract></ReturnValue>
+			<Anchor>//api/name/jobAspect</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/jobAspect</TokenIdentifier>
+			<Abstract type="html">Reference to the OGWJobAspect running this job. Is nil if the job isn&apos;t running.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWJobAspect *jobAspect</Declaration>
+			
+			<ReturnValue><Abstract type="html">Reference to the OGWJobAspect running this job. Is nil if the job isn&apos;t running.</Abstract></ReturnValue>
+			<Anchor>//api/name/jobAspect</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWJob/jobAspect</TokenIdentifier>
+			<Abstract type="html">Reference to the OGWJobAspect running this job. Is nil if the job isn&apos;t running.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWJobAspect *jobAspect</Declaration>
+			
+			<ReturnValue><Abstract type="html">Reference to the OGWJobAspect running this job. Is nil if the job isn&apos;t running.</Abstract></ReturnValue>
+			<Anchor>//api/name/jobAspect</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The Job&apos;s delegate. Must be an OGWAspect.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWAspect&lt;OGWJobDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The Job&apos;s delegate. Must be an OGWAspect.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/delegate</TokenIdentifier>
+			<Abstract type="html">The Job&apos;s delegate. Must be an OGWAspect.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWAspect&lt;OGWJobDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The Job&apos;s delegate. Must be an OGWAspect.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWJob/delegate</TokenIdentifier>
+			<Abstract type="html">The Job&apos;s delegate. Must be an OGWAspect.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (weak) OGWAspect&lt;OGWJobDelegate&gt; *delegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The Job&apos;s delegate. Must be an OGWAspect.</Abstract></ReturnValue>
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/setCurrentTask:</TokenIdentifier>
+			<Abstract type="html">The currently running OGWTask. Returns nil if the job isn&apos;t running.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) OGWTask *currentTask</Declaration>
+			
+			<ReturnValue><Abstract type="html">The currently running OGWTask. Returns nil if the job isn&apos;t running.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentTask</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/currentTask</TokenIdentifier>
+			<Abstract type="html">The currently running OGWTask. Returns nil if the job isn&apos;t running.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) OGWTask *currentTask</Declaration>
+			
+			<ReturnValue><Abstract type="html">The currently running OGWTask. Returns nil if the job isn&apos;t running.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentTask</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWJob/currentTask</TokenIdentifier>
+			<Abstract type="html">The currently running OGWTask. Returns nil if the job isn&apos;t running.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) OGWTask *currentTask</Declaration>
+			
+			<ReturnValue><Abstract type="html">The currently running OGWTask. Returns nil if the job isn&apos;t running.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentTask</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/setRunning:</TokenIdentifier>
+			<Abstract type="html">YES if the job is running, NO otherwise (not started or already finished).</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL running</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the job is running, NO otherwise (not started or already finished).</Abstract></ReturnValue>
+			<Anchor>//api/name/running</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/running</TokenIdentifier>
+			<Abstract type="html">YES if the job is running, NO otherwise (not started or already finished).</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL running</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the job is running, NO otherwise (not started or already finished).</Abstract></ReturnValue>
+			<Anchor>//api/name/running</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGWJob/running</TokenIdentifier>
+			<Abstract type="html">YES if the job is running, NO otherwise (not started or already finished).</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL running</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the job is running, NO otherwise (not started or already finished).</Abstract></ReturnValue>
+			<Anchor>//api/name/running</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGWJob/jobWithTasks:</TokenIdentifier>
+			<Abstract type="html">Creates a new job with one or more tasks.</Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>+ (id)jobWithTasks:(NSArray *)tasks</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tasks</Name>
+					<Abstract type="html">An array of OGWTask objects.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new job.</Abstract></ReturnValue>
+			<Anchor>//api/name/jobWithTasks:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/startWithStep:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>- (void)startWithStep:(GWStep)step</Declaration>
+			
+			
+			<Anchor>//api/name/startWithStep:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/proceedWithStep:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>- (void)proceedWithStep:(GWStep)currentStep</Declaration>
+			
+			
+			<Anchor>//api/name/proceedWithStep:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGWJob/cancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGWJob.h</DeclaredIn>
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
