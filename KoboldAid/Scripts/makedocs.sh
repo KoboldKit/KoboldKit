@@ -19,16 +19,19 @@ function makeDocs {
 		rm -r ./$docsetFilename
 	fi
 	
-	COMMON="--no-repeat-first-par --keep-intermediate-files --create-html --create-docset --install-docset --verbose 3"
+	COMMON="--keep-intermediate-files -p $1 --verbose 2 --no-repeat-first-par --create-html --no-warn-invalid-crossref"
 	INDEX="--index-desc $sourcePath/Documentation/index.appledoc"
-	INCLUDE="--include $sourcePath/Documentation"
-	DOCSET="--docset-install-path ./ --docset-bundle-name $referenceShortName --docset-desc $referenceShortName-Reference --docset-bundle-id com.$referenceShortName --docset-bundle-filename $docsetFilename"
+	INCLUDE="--include $sourcePath/Documentation --ignore *.m --ignore *.mm --ignore *.c --ignore *.cpp"
+	DOCSET="--create-docset --install-docset --docset-install-path ./ --keep-intermediate-files"
+	DOCSETREF="--docset-bundle-name $referenceShortName --docset-desc $referenceShortName-Reference --docset-bundle-id com.$referenceShortName --docset-bundle-filename $docsetFilename"
 	OUTPUT="--output ./$referenceShortName $sourcePath"
+	KEEPUNDOC="--keep-undocumented-members --keep-undocumented-objects"
+	#KEEPUNDOC=""
 	
 	# make html & xcode docs
-	echo Generating documentation files ...
-	echo appledoc $COMMON $INDEX $INCLUDE $DOCSET $OUTPUT
-	appledoc $COMMON $INDEX $INCLUDE $DOCSET $OUTPUT
+	echo Generating $1 documentation ...
+	#echo appledoc $COMMON $INDEX $INCLUDE $DOCSET $DOCSETREF $KEEPUNDOC $OUTPUT
+	appledoc $COMMON $INDEX $INCLUDE $DOCSET $DOCSETREF $KEEPUNDOC $OUTPUT
 	
 	# remove the source files for the docset
 	if [ -e ./$referenceShortName/docset ]
@@ -59,10 +62,10 @@ function makeDocs {
 cd ..
 cd docs
 
+makeDocs "OpenGW"
 makeDocs "KoboldKitFree"
 makeDocs "KoboldKitExternal"
 makeDocs "KoboldKitPro"
 makeDocs "KoboldKitCommunity"
-makeDocs "OpenGW"
 
 echo Done!
