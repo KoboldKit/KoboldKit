@@ -2,9 +2,10 @@
 <DocSetNodes version="1.0">
     <TOC>
         <Node type="folder">
-            <Name>Kobold Kit</Name>
+            <Name>KoboldKitPro</Name>
             <Path>index.html</Path>
 			<Subnodes>
+                
 				
 				<Node type="folder">
 					<Name>Classes</Name>
@@ -14,47 +15,347 @@
 						<NodeRef refid="2"/>
 						<NodeRef refid="3"/>
 						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
 						
 					</Subnodes>
 				</Node>
 				
 				
-				<Node type="folder">
+				<Node>
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="5"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
 						
 					</Subnodes>
 				</Node>
 				
-				
+                
+                
 			</Subnodes>
         </Node>
     </TOC>
 	<Library>
-		<Node id="1">
-			<Name>KKControlPadBehavior</Name>
-			<Path>Classes/KKControlPadBehavior.html</Path>
-		</Node>
-		<Node id="2">
-			<Name>KKDownloadProjectFiles</Name>
-			<Path>Classes/KKDownloadProjectFiles.html</Path>
-		</Node>
-		<Node id="3">
-			<Name>KKEntity</Name>
-			<Path>Classes/KKEntity.html</Path>
-		</Node>
-		<Node id="4">
-			<Name>KKPickupItemBehavior</Name>
-			<Path>Classes/KKPickupItemBehavior.html</Path>
-		</Node>
 		
-		<Node id="5">
-			<Name>KKTilemapNode(KoboldKitPro)</Name>
-			<Path>Categories/KKTilemapNode+KoboldKitPro.html</Path>
-		</Node>
+		<Node id="1" type="file" documentType="reference">
+            <Name>KKContactNotificationNode</Name>
+            <Path>Classes/KKContactNotificationNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKContactNotificationNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKContactNotificationNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KKContactNotificationNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKContactNotificationNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>KKControlPadBehavior</Name>
+            <Path>Classes/KKControlPadBehavior.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKControlPadBehavior.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKControlPadBehavior.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KKControlPadBehavior.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKControlPadBehavior.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>KKDownloadProjectFiles</Name>
+            <Path>Classes/KKDownloadProjectFiles.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKDownloadProjectFiles.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKDownloadProjectFiles.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKDownloadProjectFiles.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKDownloadProjectFiles.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>KKFollowPathBehavior</Name>
+            <Path>Classes/KKFollowPathBehavior.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKFollowPathBehavior.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKFollowPathBehavior.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KKFollowPathBehavior.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>KKItemCollectorBehavior</Name>
+            <Path>Classes/KKItemCollectorBehavior.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKItemCollectorBehavior.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKItemCollectorBehavior.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKItemCollectorBehavior.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>KKNotifyOnItemCountBehavior</Name>
+            <Path>Classes/KKNotifyOnItemCountBehavior.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKNotifyOnItemCountBehavior.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKNotifyOnItemCountBehavior.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KKNotifyOnItemCountBehavior.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKNotifyOnItemCountBehavior.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>KKPickupItemBehavior</Name>
+            <Path>Classes/KKPickupItemBehavior.html</Path>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>KKProSwizzle</Name>
+            <Path>Classes/KKProSwizzle.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKProSwizzle.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKProSwizzle.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKProSwizzle.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>KKProTilemapNode</Name>
+            <Path>Classes/KKProTilemapNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KKProTilemapNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KKProTilemapNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KKProTilemapNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/KKProTilemapNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>KKProTilemapTileLayerNode</Name>
+            <Path>Classes/KKProTilemapTileLayerNode.html</Path>
+            
+        </Node>
 		
+		<Node id="11" type="file" documentType="reference">
+            <Name>KKTilemapTileLayerNode(KoboldKitPro)</Name>
+            <Path>Categories/KKTilemapTileLayerNode+KoboldKitPro.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/KKTilemapTileLayerNode+KoboldKitPro.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/KKTilemapTileLayerNode+KoboldKitPro.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/KKTilemapTileLayerNode+KoboldKitPro.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>SKNode(KoboldKitPro)</Name>
+            <Path>Categories/SKNode+KoboldKitPro.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/SKNode+KoboldKitPro.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/SKNode+KoboldKitPro.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/SKNode+KoboldKitPro.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
 		
+        
+        
 	</Library>
 </DocSetNodes>

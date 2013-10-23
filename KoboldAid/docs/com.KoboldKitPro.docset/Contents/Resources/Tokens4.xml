@@ -1,16 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKPickupItemBehavior.html">
+	<File path="Classes/KKFollowPathBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKPickupItemBehavior</TokenIdentifier>
-			<Abstract type="html">In addition to removing the node (see KKRemoveOnContactBehavior) this node also informs
-the other contacting node's KKItemCollectorBehavior about the pick up.</Abstract>
-			<DeclaredIn>KKPickupItemBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKFollowPathBehavior</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+            
 			
 			<NodeRef refid="4"/>
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/setPathName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *pathName</Declaration>
+			
+			
+			<Anchor>//api/name/pathName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/pathName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *pathName</Declaration>
+			
+			
+			<Anchor>//api/name/pathName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowPathBehavior/pathName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, copy) NSString *pathName</Declaration>
+			
+			
+			<Anchor>//api/name/pathName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/setMoveSpeed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat moveSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/moveSpeed</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/moveSpeed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat moveSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/moveSpeed</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowPathBehavior/moveSpeed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat moveSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/moveSpeed</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/setInitialWaitDuration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat initialWaitDuration</Declaration>
+			
+			
+			<Anchor>//api/name/initialWaitDuration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/initialWaitDuration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat initialWaitDuration</Declaration>
+			
+			
+			<Anchor>//api/name/initialWaitDuration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowPathBehavior/initialWaitDuration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat initialWaitDuration</Declaration>
+			
+			
+			<Anchor>//api/name/initialWaitDuration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/setRepeatCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSUInteger repeatCount</Declaration>
+			
+			
+			<Anchor>//api/name/repeatCount</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/repeatCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSUInteger repeatCount</Declaration>
+			
+			
+			<Anchor>//api/name/repeatCount</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowPathBehavior/repeatCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) NSUInteger repeatCount</Declaration>
+			
+			
+			<Anchor>//api/name/repeatCount</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/setRelativeToObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL relativeToObject</Declaration>
+			
+			
+			<Anchor>//api/name/relativeToObject</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/relativeToObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL relativeToObject</Declaration>
+			
+			
+			<Anchor>//api/name/relativeToObject</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowPathBehavior/relativeToObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL relativeToObject</Declaration>
+			
+			
+			<Anchor>//api/name/relativeToObject</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/setOrientToPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL orientToPath</Declaration>
+			
+			
+			<Anchor>//api/name/orientToPath</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKFollowPathBehavior/orientToPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL orientToPath</Declaration>
+			
+			
+			<Anchor>//api/name/orientToPath</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKFollowPathBehavior/orientToPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKFollowPathBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL orientToPath</Declaration>
+			
+			
+			<Anchor>//api/name/orientToPath</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

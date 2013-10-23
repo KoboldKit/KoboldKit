@@ -1,55 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKDownloadProjectFiles.html">
+	<File path="Classes/KKControlPadBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKDownloadProjectFiles</TokenIdentifier>
-			<Abstract type="html">Class that handles downloading of a project's resource files to the app's documents directory.
-This enables updating of resource files at runtime to avoid having to recompile and relaunch the app
-for every resource file change.</Abstract>
-			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKControlPadBehavior</TokenIdentifier>
+			<Abstract type="html">Emulates a digital control pad (d-pad), updates its node with textures based on the direction.
+Sends a KKControlPadDidChangeDirection notification every time direction changes.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+            
 			
 			<NodeRef refid="2"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKDownloadProjectFiles/downloadProjectFilesWithURL:completionBlock:</TokenIdentifier>
-			<Abstract type="html">Downloads all project resources files from the url.</Abstract>
-			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setDeadZone:</TokenIdentifier>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
 			
-			<Declaration>+ (id)downloadProjectFilesWithURL:(NSURL *)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">The url where to download the resource files from. The URL is typically set in the devconfig.lua file.</Abstract>
-				</Parameter><Parameter>
-					<Name>completionBlock</Name>
-					<Abstract type="html">The completion block to run after all files have been downloaded.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
 			
-			<Anchor>//api/name/downloadProjectFilesWithURL:completionBlock:</Anchor>
+			
+			<Anchor>//api/name/deadZone</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKDownloadProjectFiles/initWithURL:completionBlock:</TokenIdentifier>
-			<Abstract type="html">Downloads all project resources files from the url.</Abstract>
-			<DeclaredIn>KKDownloadProjectFiles.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/deadZone</TokenIdentifier>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithURL:(NSURL *)url completionBlock:(KKDownloadProjectFilesCompletionBlock)completionBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">The url where to download the resource files from. The URL is typically set in the devconfig.lua file.</Abstract>
-				</Parameter><Parameter>
-					<Name>completionBlock</Name>
-					<Abstract type="html">The completion block to run after all files have been downloaded.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
 			
-			<Anchor>//api/name/initWithURL:completionBlock:</Anchor>
+			
+			<Anchor>//api/name/deadZone</Anchor>
+            <NodeRef refid="2"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/deadZone</TokenIdentifier>
+			<Abstract type="html">Deadzone defines the radius around the d-pad center where no direction change occurs. Defaults to 10 points.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) CGFloat deadZone</Declaration>
+			
+			
+			<Anchor>//api/name/deadZone</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setDirection:</TokenIdentifier>
+			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/direction</TokenIdentifier>
+			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/direction</TokenIdentifier>
+			<Abstract type="html">The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) KKArcadeInputState direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/setVertical:</TokenIdentifier>
+			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKControlPadBehavior/vertical</TokenIdentifier>
+			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKControlPadBehavior/vertical</TokenIdentifier>
+			<Abstract type="html">For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKControlPadBehavior/controlPadBehaviorWithTextures:</TokenIdentifier>
+			<Abstract type="html">Initializes a control pad behavior with either 4 or 8 d-pad directional textures. Start with the texture for &quot;right button pressed&quot;
+and continue adding textures in counter-clockwise order (ie &quot;upper right button pressed&quot;, &quot;up button pressed&quot;, and so on).
+The &quot;idle&quot; state is the texture the sprite has been initialized with.</Abstract>
+			<DeclaredIn>KKControlPadBehavior.h</DeclaredIn>
+			
+			<Declaration>+ (id)controlPadBehaviorWithTextures:(NSArray *)textures</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>textures</Name>
+					<Abstract type="html">The textures to use for the different dpad directional states.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/controlPadBehaviorWithTextures:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
 	</File>
 </Tokens>

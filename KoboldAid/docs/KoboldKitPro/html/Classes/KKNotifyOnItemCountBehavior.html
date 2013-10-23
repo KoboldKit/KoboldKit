@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KKControlPadBehavior Class Reference</title>
+		<title>KKNotifyOnItemCountBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KKControlPadBehavior Class Reference</h1>
+				<h1 class="hideInXcode">KKNotifyOnItemCountBehavior Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -25,8 +25,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -39,20 +37,20 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/deadZone">&nbsp;&nbsp;&nbsp;&nbsp;deadZone</option>
+	<option value="//api/name/count">&nbsp;&nbsp;&nbsp;&nbsp;count</option>
 	
-	<option value="//api/name/direction">&nbsp;&nbsp;&nbsp;&nbsp;direction</option>
+	<option value="//api/name/itemName">&nbsp;&nbsp;&nbsp;&nbsp;itemName</option>
 	
-	<option value="//api/name/vertical">&nbsp;&nbsp;&nbsp;&nbsp;vertical</option>
-	
-	
+	<option value="//api/name/notification">&nbsp;&nbsp;&nbsp;&nbsp;notification</option>
 	
 	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/controlPadBehaviorWithTextures:">&nbsp;&nbsp;&nbsp;&nbsp;+ controlPadBehaviorWithTextures:</option>
 	
 	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/didPickUpItemWithName:count:">&nbsp;&nbsp;&nbsp;&nbsp;- didPickUpItemWithName:count:</option>
 	
 	
 	
@@ -63,8 +61,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -78,30 +74,30 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deadZone">deadZone</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/count">count</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/direction">direction</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemName">itemName</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/vertical">vertical</a></span></li>
-	
-</ul></li>
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controlPadBehaviorWithTextures:">controlPadBehaviorWithTextures:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notification">notification</a></span></li>
 	
 </ul></li>
 
 
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didPickUpItemWithName:count:">didPickUpItemWithName:count:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KKControlPadBehavior Class Reference" name="top"></a>
+				<a title="KKNotifyOnItemCountBehavior Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -110,7 +106,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KKControlPadBehavior Class Reference</h1>
+						<h1 class="title title-header">KKNotifyOnItemCountBehavior Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -121,21 +117,12 @@
 	<td class="specification-value">KKBehavior</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKControlPadBehavior.h</td>
+	<td class="specification-value">KKNotifyOnItemCountBehavior.h</td>
 </tr>
 						</tbody></table></div>
 					
                     
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Emulates a digital control pad (d-pad), updates its node with textures based on the <a href="#//api/name/direction">direction</a>.
-Sends a KKControlPadDidChangeDirection notification every time <a href="#//api/name/direction">direction</a> changes.</p><div class="warning"><p><strong>Warning:</strong> <em>Caution:</em> Only works on SKSpriteNode classes!</p></div>
-					</div>
-					
-					
 					
 					
 					
@@ -150,25 +137,25 @@ Sends a KKControlPadDidChangeDirection notification every time <a href="#//api/n
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/deadZone">&nbsp;&nbsp;deadZone</a></code>
+		<code><a href="#//api/name/notification">&nbsp;&nbsp;notification</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/direction">&nbsp;&nbsp;direction</a></code>
+		<code><a href="#//api/name/itemName">&nbsp;&nbsp;itemName</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/vertical">&nbsp;&nbsp;vertical</a></code>
+		<code><a href="#//api/name/count">&nbsp;&nbsp;count</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/controlPadBehaviorWithTextures:">+&nbsp;controlPadBehaviorWithTextures:</a></code>
+		<code><a href="#//api/name/didPickUpItemWithName:count:">&ndash;&nbsp;didPickUpItemWithName:count:</a></code>
 	</span>
 	
 	
@@ -186,177 +173,60 @@ Sends a KKControlPadDidChangeDirection notification every time <a href="#//api/n
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/deadZone" title="deadZone"></a>
-	<h3 class="subsubtitle method-title">deadZone</h3>
+	<a name="//api/name/count" title="count"></a>
+	<h3 class="subsubtitle method-title">count</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>Deadzone defines the radius around the d-pad center where no <a href="#//api/name/direction">direction</a> change occurs. Defaults to 10 points.</p>
-	</div>		
-	
-    
 
-	<div class="method-subsection method-declaration"><code>@property (atomic) CGFloat deadZone</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic) unsigned int count</code></div>
 
     
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKControlPadBehavior.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/direction" title="direction"></a>
-	<h3 class="subsubtitle method-title">direction</h3>
+	<a name="//api/name/itemName" title="itemName"></a>
+	<h3 class="subsubtitle method-title">itemName</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</p>
-	</div>		
-	
-    
 
-	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKArcadeInputState direction</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *itemName</code></div>
 
     
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKControlPadBehavior.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/vertical" title="vertical"></a>
-	<h3 class="subsubtitle method-title">vertical</h3>
+	<a name="//api/name/notification" title="notification"></a>
+	<h3 class="subsubtitle method-title">notification</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</p>
-	</div>		
-	
-    
 
-	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL vertical</code></div>
+	<div class="method-subsection method-declaration"><code>@property (atomic, copy) NSString *notification</code></div>
 
     
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKControlPadBehavior.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 					</div>
+					
+					
 					
 					
 					
 					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/controlPadBehaviorWithTextures:" title="controlPadBehaviorWithTextures:"></a>
-	<h3 class="subsubtitle method-title">controlPadBehaviorWithTextures:</h3>
+	<a name="//api/name/didPickUpItemWithName:count:" title="didPickUpItemWithName:count:"></a>
+	<h3 class="subsubtitle method-title">didPickUpItemWithName:count:</h3>
 	
 	
-	
-	<div class="method-subsection brief-description">
-		<p>Initializes a control pad behavior with either 4 or 8 d-pad directional textures. Start with the texture for &ldquo;right button pressed&rdquo;
-and continue adding textures in counter-clockwise order (ie &ldquo;upper right button pressed&rdquo;, &ldquo;up button pressed&rdquo;, and so on).
-The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with.</p>
-	</div>		
-	
-    
 
-	<div class="method-subsection method-declaration"><code>+ (id)controlPadBehaviorWithTextures:(NSArray *)<em>textures</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)didPickUpItemWithName:(NSString *)<em>itemName</em> count:(unsigned int)<em>count</em></code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>textures</em></dt>
-			<dd><p>The textures to use for the different dpad directional states.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A new instance.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">KKControlPadBehavior.h</code><br />
-	</div>				
-	
-	
 </div>
 						
 					</div>
-					
-					
 					
 					
                     

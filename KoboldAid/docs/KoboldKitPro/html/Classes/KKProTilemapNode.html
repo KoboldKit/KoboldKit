@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKProTilemapNode Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitPro </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -36,6 +35,11 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	
 	
 	
 	
@@ -46,9 +50,11 @@
 	
 	<option value="//api/name/createPhysicsShapesWithTileLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- createPhysicsShapesWithTileLayerNode:</option>
 	
-	<option value="//api/name/spawnObjects">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjects</option>
+	<option value="//api/name/spawnEntityWithWorld:objectTemplate:tilemapObject:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnEntityWithWorld:objectTemplate:tilemapObject:</option>
 	
-	<option value="//api/name/spawnObjectsWithLayerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjectsWithLayerNode:</option>
+	<option value="//api/name/spawnObjectsWithWorld:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjectsWithWorld:</option>
+	
+	<option value="//api/name/spawnObjectsWithWorld:layerNode:">&nbsp;&nbsp;&nbsp;&nbsp;- spawnObjectsWithWorld:layerNode:</option>
 	
 	
 	
@@ -74,6 +80,12 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+</ul></li>
+
 
 
 
@@ -84,9 +96,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPhysicsShapesWithTileLayerNode:">createPhysicsShapesWithTileLayerNode:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjects">spawnObjects</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnEntityWithWorld:objectTemplate:tilemapObject:">spawnEntityWithWorld:objectTemplate:tilemapObject:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjectsWithLayerNode:">spawnObjectsWithLayerNode:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjectsWithWorld:">spawnObjectsWithWorld:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spawnObjectsWithWorld:layerNode:">spawnObjectsWithWorld:layerNode:</a></span></li>
 	
 </ul></li>
 
@@ -115,12 +129,12 @@
 	<td class="specification-value">KKTilemapNode</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKProTilemapNode.h<br />KKProTilemapNode.m</td>
+	<td class="specification-value">KKProTilemapNode.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					
 					
@@ -129,23 +143,33 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
 						<a title="Spawning Objects" name="task_Spawning Objects"></a>
 						<h3 class="subsubtitle task-title">Spawning Objects</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/spawnObjects">&ndash;&nbsp;spawnObjects</a></code>
-		<span class="tooltip"><p>Spawns the objects of all object layers and adds them as child nodes to their corresponding objectLayerNode.
-The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
+		<code><a href="#//api/name/spawnObjectsWithWorld:">&ndash;&nbsp;spawnObjectsWithWorld:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/spawnObjectsWithLayerNode:">&ndash;&nbsp;spawnObjectsWithLayerNode:</a></code>
-		<span class="tooltip"><p>Spawns the objects of an object layer and adds them as child nodes to the objectLayerNode.
-The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
+		<code><a href="#//api/name/spawnObjectsWithWorld:layerNode:">&ndash;&nbsp;spawnObjectsWithWorld:layerNode:</a></code>
 	</span>
 	
 	
@@ -160,14 +184,18 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/createPhysicsShapesWithTileLayerNode:">&ndash;&nbsp;createPhysicsShapesWithTileLayerNode:</a></code>
-		<span class="tooltip"><p>Creates physics blocking shapes from the main tile layer&rsquo;s blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/createPhysicsShapesWithObjectLayerNode:">&ndash;&nbsp;createPhysicsShapesWithObjectLayerNode:</a></code>
-		<span class="tooltip"><p>Creates physics blocking shapes from an object layer&rsquo;s objects.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spawnEntityWithWorld:objectTemplate:tilemapObject:">&ndash;&nbsp;spawnEntityWithWorld:objectTemplate:tilemapObject:</a></code>
 	</span>
 	
 	
@@ -179,6 +207,23 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 					
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak) id&lt;KKTilemapObjectSpawnDelegate&gt; delegate</code></div>
+
+    
+</div>
+						
+					</div>
 					
 					
 					
@@ -198,9 +243,11 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 		<p>Creates physics blocking shapes from an object layer&rsquo;s objects.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -247,9 +294,11 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 		<p>Creates physics blocking shapes from the main tile layer&rsquo;s blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>- (SKNode *)createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode *)<em>tileLayerNode</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -287,8 +336,19 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/spawnObjects" title="spawnObjects"></a>
-	<h3 class="subsubtitle method-title">spawnObjects</h3>
+	<a name="//api/name/spawnEntityWithWorld:objectTemplate:tilemapObject:" title="spawnEntityWithWorld:objectTemplate:tilemapObject:"></a>
+	<h3 class="subsubtitle method-title">spawnEntityWithWorld:objectTemplate:tilemapObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (OGWEntity *)spawnEntityWithWorld:(OGWWorld *)<em>world</em> objectTemplate:(NSDictionary *)<em>objectTemplate</em> tilemapObject:(KKTilemapObject *)<em>tilemapObject</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spawnObjectsWithWorld:" title="spawnObjectsWithWorld:"></a>
+	<h3 class="subsubtitle method-title">spawnObjectsWithWorld:</h3>
 	
 	
 	
@@ -297,9 +357,11 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p></span>
 The object&rsquo;s classes and properties are defined in objects.lua.</p>
 	</div>		
 	
-	
-	<div class="method-subsection method-declaration"><code>- (void)spawnObjects</code></div>
-	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)spawnObjectsWithWorld:(OGWWorld *)<em>world</em></code></div>
+
+    
 	
 	
 	
@@ -322,8 +384,8 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/spawnObjectsWithLayerNode:" title="spawnObjectsWithLayerNode:"></a>
-	<h3 class="subsubtitle method-title">spawnObjectsWithLayerNode:</h3>
+	<a name="//api/name/spawnObjectsWithWorld:layerNode:" title="spawnObjectsWithWorld:layerNode:"></a>
+	<h3 class="subsubtitle method-title">spawnObjectsWithWorld:layerNode:</h3>
 	
 	
 	
@@ -332,9 +394,11 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 The object&rsquo;s classes and properties are defined in objects.lua.</p>
 	</div>		
 	
-	
-	<div class="method-subsection method-declaration"><code>- (void)spawnObjectsWithLayerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em></code></div>
-	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)spawnObjectsWithWorld:(OGWWorld *)<em>world</em> layerNode:(KKTilemapObjectLayerNode *)<em>objectLayerNode</em></code></div>
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -369,6 +433,8 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -379,9 +445,9 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-09-18)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -469,6 +535,14 @@ The object&rsquo;s classes and properties are defined in objects.lua.</p>
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

@@ -4,15 +4,14 @@
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
 		<title>KKControlPadBehavior Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Kobold Kit </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">KoboldKitPro </a></h1>
 				<a id="developerHome" href="../index.html">Kobold Tech</a>
 			</div>
 			
@@ -122,12 +121,12 @@
 	<td class="specification-value">KKBehavior</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KKControlPadBehavior.h<br />KKControlPadBehavior.m</td>
+	<td class="specification-value">KKControlPadBehavior.h</td>
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -152,30 +151,24 @@ Sends a KKControlPadDidChangeDirection notification every time <a href="#//api/n
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deadZone">&nbsp;&nbsp;deadZone</a></code>
-		<span class="tooltip"><p>Deadzone defines the radius around the d-pad center where no <a href="#//api/name/direction">direction</a> change occurs. Defaults to 10 points.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/direction">&nbsp;&nbsp;direction</a></code>
-		<span class="tooltip"><p>The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/vertical">&nbsp;&nbsp;vertical</a></code>
-		<span class="tooltip"><p>For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/controlPadBehaviorWithTextures:">+&nbsp;controlPadBehaviorWithTextures:</a></code>
-		<span class="tooltip"><p>Initializes a control pad behavior with either 4 or 8 d-pad directional textures. Start with the texture for &ldquo;right button pressed&rdquo;
-and continue adding textures in counter-clockwise order (ie &ldquo;upper right button pressed&rdquo;, &ldquo;up button pressed&rdquo;, and so on).
-The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with.</p></span>
 	</span>
 	
 	
@@ -202,9 +195,11 @@ The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with
 		<p>Deadzone defines the radius around the d-pad center where no <a href="#//api/name/direction">direction</a> change occurs. Defaults to 10 points.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) CGFloat deadZone</code></div>
-	
+
+    
 	
 	
 	
@@ -236,9 +231,11 @@ The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with
 		<p>The D-Pad direction, in KTArcadeInputState directions (using player 1 states).</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic, readonly) KKArcadeInputState direction</code></div>
-	
+
+    
 	
 	
 	
@@ -270,9 +267,11 @@ The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with
 		<p>For 2-way dpads specifies that the layout is vertical (up/down) instead of the default horizontal (left/right) layout.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>@property (atomic) BOOL vertical</code></div>
-	
+
+    
 	
 	
 	
@@ -314,9 +313,11 @@ and continue adding textures in counter-clockwise order (ie &ldquo;upper right b
 The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with.</p>
 	</div>		
 	
-	
+    
+
 	<div class="method-subsection method-declaration"><code>+ (id)controlPadBehaviorWithTextures:(NSArray *)<em>textures</em></code></div>
-	
+
+    
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
@@ -358,6 +359,8 @@ The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with
 					
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -368,9 +371,9 @@ The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-08-27)</span><br />
+						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						
 					</div>
 				</div>
@@ -458,6 +461,14 @@ The &ldquo;idle&rdquo; state is the texture the sprite has been initialized with
 			}
 			
 			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
 		</script>
 	</body>
 </html>

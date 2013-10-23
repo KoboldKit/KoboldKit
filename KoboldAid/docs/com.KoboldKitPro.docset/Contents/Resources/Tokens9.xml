@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KKProTilemapNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KKProTilemapNode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKProTilemapNode/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id&lt;KKTilemapObjectSpawnDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKProTilemapNode/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id&lt;KKTilemapObjectSpawnDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKProTilemapNode/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id&lt;KKTilemapObjectSpawnDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKProTilemapNode/spawnObjectsWithWorld:</TokenIdentifier>
+			<Abstract type="html">Spawns the objects of all object layers and adds them as child nodes to their corresponding objectLayerNode.
+The object&apos;s classes and properties are defined in objects.lua.</Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (void)spawnObjectsWithWorld:(OGWWorld *)world</Declaration>
+			
+			
+			<Anchor>//api/name/spawnObjectsWithWorld:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKProTilemapNode/spawnObjectsWithWorld:layerNode:</TokenIdentifier>
+			<Abstract type="html">Spawns the objects of an object layer and adds them as child nodes to the objectLayerNode.
+The object&apos;s classes and properties are defined in objects.lua.</Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (void)spawnObjectsWithWorld:(OGWWorld *)world layerNode:(KKTilemapObjectLayerNode *)objectLayerNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectLayerNode</Name>
+					<Abstract type="html">The object layer node for which to spawn objects.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/spawnObjectsWithWorld:layerNode:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKProTilemapNode/createPhysicsShapesWithTileLayerNode:</TokenIdentifier>
+			<Abstract type="html">Creates physics blocking shapes from the main tile layer&apos;s blocking tiles and the blockingTiles or nonBlockingTiles properties of tilesets.</Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (SKNode *)createPhysicsShapesWithTileLayerNode:(KKTilemapTileLayerNode *)tileLayerNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileLayerNode</Name>
+					<Abstract type="html">The tile layer node for which to create physics shapes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
+			<Anchor>//api/name/createPhysicsShapesWithTileLayerNode:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKProTilemapNode/createPhysicsShapesWithObjectLayerNode:</TokenIdentifier>
+			<Abstract type="html">Creates physics blocking shapes from an object layer&apos;s objects.</Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (SKNode *)createPhysicsShapesWithObjectLayerNode:(KKTilemapObjectLayerNode *)objectLayerNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectLayerNode</Name>
+					<Abstract type="html">The object layer node from whose objects to create physics shapes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The node containing child nodes for each physics body created.</Abstract></ReturnValue>
+			<Anchor>//api/name/createPhysicsShapesWithObjectLayerNode:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKProTilemapNode/spawnEntityWithWorld:objectTemplate:tilemapObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKProTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (OGWEntity *)spawnEntityWithWorld:(OGWWorld *)world objectTemplate:(NSDictionary *)objectTemplate tilemapObject:(KKTilemapObject *)tilemapObject</Declaration>
+			
+			
+			<Anchor>//api/name/spawnEntityWithWorld:objectTemplate:tilemapObject:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
