@@ -115,7 +115,37 @@
 			cameraBounds.size.height = cameraBounds.size.height - sceneFrame.size.height;
 		}
 
-		NSLog(@"Tilemap scrolling bounds: %@", NSStringFromCGRect(cameraBounds));
+		//NSLog(@"Tilemap scrolling bounds: %@", NSStringFromCGRect(cameraBounds));
+		NSString* const kMapBoundaryBehaviorKey = @"KKTilemapNode:MapBoundaryScrolling";
+		if ([_mainTileLayerNode behaviorForKey:kMapBoundaryBehaviorKey] == nil)
+		{
+			[_mainTileLayerNode addBehavior:[KKStayInBoundsBehavior stayInBounds:cameraBounds] withKey:kMapBoundaryBehaviorKey];
+		}
+	}
+}
+
+-(void) restrictScrollingToObject:(KKTilemapRectangleObject*)object
+{
+	// camera boundary scrolling
+	KKTilemapLayer* mainTileLayer = _mainTileLayerNode.layer;
+	if (mainTileLayer.endlessScrollingHorizontal == NO || mainTileLayer.endlessScrollingVertical == NO)
+	{
+		CGRect sceneFrame = self.scene.frame;
+		CGRect objectRect = object.rect;
+		CGRect cameraBounds = CGRectZero;
+		
+		if (mainTileLayer.endlessScrollingHorizontal == NO)
+		{
+			cameraBounds.origin.x = -(objectRect.origin.x + objectRect.size.width) + sceneFrame.origin.x + sceneFrame.size.width;
+			cameraBounds.size.width = objectRect.size.width - sceneFrame.size.width;
+		}
+		if (mainTileLayer.endlessScrollingVertical == NO)
+		{
+			cameraBounds.origin.y = -(objectRect.origin.y + objectRect.size.height) + sceneFrame.origin.y + sceneFrame.size.height;
+			cameraBounds.size.height = objectRect.size.height - sceneFrame.size.height;
+		}
+		
+		//NSLog(@"Tilemap scrolling bounds: %@", NSStringFromCGRect(cameraBounds));
 		NSString* const kMapBoundaryBehaviorKey = @"KKTilemapNode:MapBoundaryScrolling";
 		if ([_mainTileLayerNode behaviorForKey:kMapBoundaryBehaviorKey] == nil)
 		{
@@ -138,9 +168,9 @@
 
 -(void) didSimulatePhysics
 {
-	for (KKTilemapTileLayerNode* tileLayer in _tileLayerNodes)
+	for (KKTilemapTileLayerNode* tileLayerNode in _tileLayerNodes)
 	{
-		[tileLayer updateLayer];
+		[tileLayerNode updateLayer];
 	}
 	
 	_tilemap.modified = NO;

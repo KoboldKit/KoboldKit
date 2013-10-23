@@ -28,6 +28,11 @@
 /** @returns the tilemap model object containing the tilemap's data.*/
 @property (atomic) KKTilemap* tilemap;
 
+/** @returns an array containing all tile layer nodes */
+@property (readonly) NSArray* tileLayerNodes;
+/** @returns an array containing all object layer nodes */
+@property (readonly) NSArray* objectLayerNodes;
+
 /** @returns The tilemap's bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
  (horizontal or vertical). */
 @property (atomic, readonly) CGRect bounds;
@@ -60,6 +65,8 @@
 
 /** Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside its bounds. */
 -(void) restrictScrollingToMapBoundary;
+/** Enables boundary scrolling. This prevents the map's main tile layer from ever scrolling outside the object's bounds. */
+-(void) restrictScrollingToObject:(KKTilemapRectangleObject*)object;
 
 /** Enables parallax scrolling which makes other layers follow the main tile layer's position with parallax offset.
  Call this *after* setting up any camera follow object. */
