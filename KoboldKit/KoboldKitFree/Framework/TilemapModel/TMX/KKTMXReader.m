@@ -347,6 +347,8 @@
 
 -(void) parseEllipseWithAttributes:(NSDictionary*)attributes
 {
+    if ([_parsingObject isKindOfClass:[KKTilemapPolyObject class]])
+        _parsingObject = [_parsingObject rectangleObjectFromPolyObject:(KKTilemapPolyObject*)_parsingObject];
 	((KKTilemapRectangleObject*)_parsingObject).ellipse = YES;
 	_parsingObject.objectType = KKTilemapObjectTypeEllipse;
 
