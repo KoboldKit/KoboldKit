@@ -22,6 +22,8 @@
 	NSMutableArray* _tileLayerNodes;
 	NSMutableArray* _objectLayerNodes;
 	KKTilemap* _tilemap;
+	NSString* _mainTileLayerName;
+	NSString* _gameObjectsLayerName;
 	__weak KKTilemapTileLayerNode* _mainTileLayerNode;
 }
 
@@ -45,10 +47,29 @@
  @returns the "game objects" object layer node.  */
 @property (atomic, weak, readonly) KKTilemapObjectLayerNode* gameObjectsLayerNode;
 
-/** Creates a tilemap node from a TMX file.
+/** @returns an array containing the default main tile layer names */
++(NSArray*) defaultMainTileLayerNames;
+
+/** set the default main tile layer names array */
++(void) setDefaultMainTileLayerNames:(NSArray*)names;
+
+/** @returns an array containing the default game objects layer names */
++(NSArray*) defaultGameObjectsLayerNames;
+
+/** set the default game objects layer names array */
++(void) setDefaultGameObjectsLayerNames:(NSArray*)names;
+
+/** Creates a tilemap node from a TMX file, using default names for the main tile and game objects layers.
  @param tmxFile The filename of a TMX file in the bundle or an absolute path to a TMX file. 
  @returns The new instance. */
 +(id) tilemapWithContentsOfFile:(NSString*)tmxFile;
+
+/** Creates a tilemap node from a TMX file, using the specified names for the main tile and game objects layers.
+ @param tmxFile The filename of a TMX file in the bundle or an absolute path to a TMX file.
+ @param mainTileLayerName The main tile layer name to use instead of the defaults
+ @param gameObjectsLayerName The game objects name to use instead of the defaults
+ @returns The new instance. */
++(id) tilemapWithContentsOfFile:(NSString*)tmxFile usingMainTileLayerNamed:(NSString*)mainTileLayerName andGameObjectsLayerNamed:(NSString*)gameObjectsLayerName;
 
 /** @param name The name identifying a tile layer.
  @returns The tile layer node with the name, or nil if there's no tile layer with that name. */
