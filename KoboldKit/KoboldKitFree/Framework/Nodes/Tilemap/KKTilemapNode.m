@@ -26,12 +26,46 @@
 
 #pragma mark Init/Setup
 
-+(id) tilemapWithContentsOfFile:(NSString*)tmxFile
+__strong static NSArray* _defaultMainTileLayerNames;
+__strong static NSArray* _defaultGameObjectsLayerNames;
+
++ (void)load
 {
-	return [[self alloc] initWithContentsOfFile:tmxFile];
+	[self setDefaultMainTileLayerNames:@[@"main layer", @"mainlayer"]];
+	[self setDefaultGameObjectsLayerNames:@[@"game objects", @"gameobjects"]];
 }
 
--(id) initWithContentsOfFile:(NSString*)tmxFile
++(NSArray*) defaultMainTileLayerNames
+{
+	return _defaultMainTileLayerNames;
+}
+
++(void) setDefaultMainTileLayerNames:(NSArray *)names
+{
+	_defaultMainTileLayerNames = names;
+}
+
++(NSArray*) defaultGameObjectsLayerNames
+{
+	return _defaultGameObjectsLayerNames;
+}
+
++(void) setDefaultGameObjectsLayerNames:(NSArray *)names
+{
+	_defaultGameObjectsLayerNames = names;
+}
+
++(id) tilemapWithContentsOfFile:(NSString*)tmxFile
+{
+	return [[self alloc] initWithContentsOfFile:tmxFile usingMainTileLayerNamed:nil andGameObjectsLayerNamed:nil];
+}
+
++(id) tilemapWithContentsOfFile:(NSString*)tmxFile usingMainTileLayerNamed:(NSString*)mainTileLayerName andGameObjectsLayerNamed:(NSString*)gameObjectsLayerName
+{
+	return [[self alloc] initWithContentsOfFile:tmxFile usingMainTileLayerNamed:mainTileLayerName andGameObjectsLayerNamed:gameObjectsLayerName];
+}
+
+-(id) initWithContentsOfFile:(NSString*)tmxFile usingMainTileLayerNamed:(NSString*)mainTileLayerName andGameObjectsLayerNamed:(NSString*)gameObjectsLayerName
 {
 	self = [super init];
 	if (self)
@@ -40,6 +74,8 @@
 		_tilemap = [KKTilemap tilemapWithContentsOfFile:tmxFile];
 		_tileLayerNodes = [NSMutableArray arrayWithCapacity:4];
 		_objectLayerNodes = [NSMutableArray arrayWithCapacity:4];
+		_mainTileLayerName = mainTileLayerName;
+		_gameObjectsLayerName = gameObjectsLayerName;
 	}
 	return self;
 }
@@ -180,25 +216,27 @@
 
 -(KKTilemapTileLayerNode*) findMainTileLayerNode
 {
-	KKTilemapTileLayerNode* mainTileLayerNode = [self tileLayerNodeNamed:@"main layer"];
-	if (mainTileLayerNode == nil)
-	{
-		mainTileLayerNode = [self tileLayerNodeNamed:@"mainlayer"];
-	}
+	KKTilemapTileLayerNode* mainTileLayerNode = _mainTileLayerName ? [self tileLayerNodeNamed:_mainTileLayerName] : nil;
+	if (!mainTileLayerNode)
+		for (NSString *layerName in [[self class] defaultMainTileLayerNames])
+			if ((mainTileLayerNode = [self tileLayerNodeNamed:layerName]))
+				break;
 	
-	NSAssert(mainTileLayerNode, @"tile layer named 'main layer' is missing!");
+	NSAssert(mainTileLayerNode, @"tile layer (named %@) is missing!",
+             _mainTileLayerName ? _mainTileLayerName : [[[self class] defaultMainTileLayerNames] componentsJoinedByString:@" or "]);
 	return mainTileLayerNode;
 }
 
 -(KKTilemapObjectLayerNode*) findGameObjectsLayerNode
 {
-	KKTilemapObjectLayerNode* gameObjectsLayerNode = [self objectLayerNodeNamed:@"game objects"];
-	if (gameObjectsLayerNode == nil)
-	{
-		gameObjectsLayerNode = [self objectLayerNodeNamed:@"gameobjects"];
-	}
+	KKTilemapObjectLayerNode* gameObjectsLayerNode = _gameObjectsLayerName ? [self objectLayerNodeNamed:_gameObjectsLayerName] : nil;;
+	if (!gameObjectsLayerNode)
+		for (NSString *layerName in [[self class] defaultGameObjectsLayerNames])
+			if ((gameObjectsLayerNode = [self objectLayerNodeNamed:layerName]))
+				break;
 	
-	NSAssert(gameObjectsLayerNode, @"object layer named 'game objects' is missing!");
+	NSAssert(gameObjectsLayerNode, @"object layer (named %@) is missing!",
+             _gameObjectsLayerName ? _gameObjectsLayerName : [[[self class] defaultGameObjectsLayerNames] componentsJoinedByString:@" or "]);
 	return gameObjectsLayerNode;
 }
 
