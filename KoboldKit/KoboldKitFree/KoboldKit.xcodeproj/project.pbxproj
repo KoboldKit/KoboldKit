@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		51208E041864D4ED000F1464 /* KKInputKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 51208E021864D4ED000F1464 /* KKInputKeyboard.h */; };
 		51208E051864D4ED000F1464 /* KKInputKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 51208E031864D4ED000F1464 /* KKInputKeyboard.m */; };
+		51208E241864DFFB000F1464 /* KKInputEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 51208E231864DFFB000F1464 /* KKInputEventDelegate.h */; };
 		DC8B556A17CBEFCB00F95CBC /* KKAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54E717CBEFCB00F95CBC /* KKAppDelegate.h */; };
 		DC8B556B17CBEFCB00F95CBC /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54E817CBEFCB00F95CBC /* KKAppDelegate.m */; };
 		DC8B556C17CBEFCB00F95CBC /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54E817CBEFCB00F95CBC /* KKAppDelegate.m */; };
@@ -302,6 +303,7 @@
 /* Begin PBXFileReference section */
 		51208E021864D4ED000F1464 /* KKInputKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKInputKeyboard.h; sourceTree = "<group>"; };
 		51208E031864D4ED000F1464 /* KKInputKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKInputKeyboard.m; sourceTree = "<group>"; };
+		51208E231864DFFB000F1464 /* KKInputEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKInputEventDelegate.h; sourceTree = "<group>"; };
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -699,6 +701,7 @@
 				DC8B554417CBEFCB00F95CBC /* KKPhysicsContactEventDelegate.h */,
 				DC8B554517CBEFCB00F95CBC /* KKSceneEventDelegate.h */,
 				DC8B554617CBEFCB00F95CBC /* KKTilemapObjectSpawnDelegate.h */,
+				51208E231864DFFB000F1464 /* KKInputEventDelegate.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -868,6 +871,7 @@
 				DC8B559517CBEFCB00F95CBC /* NSString+KoboldKit.h in Headers */,
 				DC8B55B117CBEFCB00F95CBC /* KKNodeController.h in Headers */,
 				DC8B55E917CBEFCB00F95CBC /* KKTilemapLayerContourTracer.h in Headers */,
+				51208E241864DFFB000F1464 /* KKInputEventDelegate.h in Headers */,
 				DC8B55C417CBEFCB00F95CBC /* KKNodeShared.h in Headers */,
 				DC8B55D017CBEFCB00F95CBC /* KKNodes.h in Headers */,
 				DC8B55E017CBEFCB00F95CBC /* KKLua.h in Headers */,
