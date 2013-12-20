@@ -18,10 +18,10 @@
  @param contact The contact object.
  @param otherBody The other contacting body. */
 -(void) didBeginContact:(SKPhysicsContact*)contact otherBody:(SKPhysicsBody*)otherBody;
+
 /** Called when two objects's physics bodies' contact ends.
  @param contact The contact object.
  @param otherBody The other contacting body. */
 -(void) didEndContact:(SKPhysicsContact*)contact otherBody:(SKPhysicsBody*)otherBody;
-
 
 @end
