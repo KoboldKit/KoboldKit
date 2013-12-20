@@ -151,6 +151,10 @@ static NSString* const ArchiveKeyForBounds = @"bounds";
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
     
+    KKStayInBoundsBehavior *limitBounds = (KKStayInBoundsBehavior *)behavior;
+    if (!CGRectEqualToRect(_bounds, limitBounds.bounds))
+        return NO;
+    
 	return NO;
 }
 @end
