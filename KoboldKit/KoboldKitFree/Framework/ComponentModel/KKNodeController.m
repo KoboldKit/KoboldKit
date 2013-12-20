@@ -378,9 +378,12 @@ static NSString* const ArchiveKeyForPaused = @"paused";
 		if ([selfBehavior isEqualToBehavior:controllerBehavior] == NO)
 			return NO;
 	}
+    
+    // Compare userData
+    if ([controller.userData hash] != [self.userData hash])
+        return NO;
 	
 DEVELOPER_TODO("compare model in isEqual")
-DEVELOPER_TODO("compare userData in isEqual")
 	
 	return YES;
 }
