@@ -7,7 +7,7 @@
 #import <Foundation/Foundation.h>
 
 // var types
-typedef enum
+typedef NS_ENUM(NSUInteger, KKIvarType)
 {
 	KKIvarTypeUnknown = 0,
 	KKIvarTypeBOOL,
@@ -22,7 +22,7 @@ typedef enum
 	KKIvarTypeSize,
 	KKIvarTypeRect,
 	KKIvarTypeString,
-} KKIvarType;
+};
 
 /** INTERNAL USE! Class that represents an ivar in order to set and get an ivar's value. */
 @interface KKIvarInfo : NSObject
