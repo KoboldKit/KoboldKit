@@ -5,9 +5,15 @@
  */
 
 
-#import "KKStayInBoundsBehavior.h"
+#import "KKLimitBoundsBehavior.h"
 
-@implementation KKStayInBoundsBehavior
+@interface KKLimitBoundsBehavior ()
+
+@property (nonatomic) BOOL isSpriteNode;
+
+@end
+
+@implementation KKLimitBoundsBehavior
 
 +(id) stayInBounds:(CGRect)bounds
 {
@@ -114,38 +120,40 @@
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
-static NSString* const ArchiveKeyForOtherNode = @"otherNode";
-static NSString* const ArchiveKeyForPositionOffset = @"positionOffset";
-static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
+static NSString* const ArchiveKeyForIsSpriteNode = @"isSpriteNode";
+static NSString* const ArchiveKeyForBounds = @"bounds";
 
 -(id) initWithCoder:(NSCoder*)decoder
 {
 	self = [super init];
 	if (self)
 	{
-		/*
-		_target = [decoder decodeObjectForKey:ArchiveKeyForOtherNode];
-		_positionOffset = [decoder decodeCGPointForKey:ArchiveKeyForPositionOffset];
-		_positionMultiplier = [decoder decodeCGPointForKey:ArchiveKeyForPositionMultiplier];
-		 */
+        _isSpriteNode = [decoder decodeBoolForKey:ArchiveKeyForIsSpriteNode];
+#if TARGET_OS_IPHONE
+        _bounds = [decoder decodeCGRectForKey:ArchiveKeyForBounds];
+#else
+        _bounds = [decoder decodeRectForKey:ArchiveKeyForBounds];
+#endif
 	}
 	return self;
 }
 
 -(void) encodeWithCoder:(NSCoder*)encoder
 {
-	/*
-	[encoder encodeObject:_target forKey:ArchiveKeyForOtherNode];
-	[encoder encodeCGPoint:_positionOffset forKey:ArchiveKeyForPositionOffset];
-	[encoder encodeCGPoint:_positionMultiplier forKey:ArchiveKeyForPositionMultiplier];
-	 */
+    [encoder encodeBool:_isSpriteNode forKey:ArchiveKeyForIsSpriteNode];
+    
+#if TARGET_OS_IPHONE
+    [encoder encodeCGRect:_bounds forKey:ArchiveKeyForBounds];
+#else
+    [encoder encodeRect:_bounds forKey:ArchiveKeyForBounds];
+#endif
 }
 
 #pragma mark NSCopying
 
 -(id) copyWithZone:(NSZone*)zone
 {
-	KKStayInBoundsBehavior* copy = [[super copyWithZone:zone] init];
+	KKLimitBoundsBehavior* copy = [[super copyWithZone:zone] init];
 	copy->_bounds = _bounds;
 	copy->_isSpriteNode = _isSpriteNode;
 	return copy;
@@ -157,6 +165,11 @@ static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
 {
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
+    
+    KKLimitBoundsBehavior *limitBounds = (KKLimitBoundsBehavior *)behavior;
+    if (!CGRectEqualToRect(_bounds, limitBounds.bounds))
+        return NO;
+    
 	return NO;
 }
 @end

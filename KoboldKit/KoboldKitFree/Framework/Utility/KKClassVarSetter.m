@@ -29,7 +29,7 @@ static Class kMutableNumberClass;
 
 -(NSString*) description
 {
-	return [NSString stringWithFormat:@"%@  %@    %@    type=%i", [super description], _name, _encoding, _type];
+	return [NSString stringWithFormat:@"%@  %@    %@    type=%lu", [super description], _name, _encoding, _type];
 }
 
 -(void) setEncoding:(NSString*)encoding
@@ -41,55 +41,26 @@ static Class kMutableNumberClass;
 -(void) updateTypeFromEncoding
 {
 	_type = KKIvarTypeUnknown;
-
-	if ([_encoding hasPrefix:@"B"])
-	{
-		_type = KKIvarTypeBOOL;
-	}
-	else if ([_encoding hasPrefix:@"c"])
-	{
-		_type = KKIvarTypeChar;
-	}
-	else if ([_encoding hasPrefix:@"C"])
-	{
-		_type = KKIvarTypeUnsignedChar;
-	}
-	else if ([_encoding hasPrefix:@"i"])
-	{
-		_type = KKIvarTypeInt;
-	}
-	else if ([_encoding hasPrefix:@"I"])
-	{
-		_type = KKIvarTypeUnsignedInt;
-	}
-	else if ([_encoding hasPrefix:@"f"])
-	{
-		_type = KKIvarTypeFloat;
-	}
-	else if ([_encoding hasPrefix:@"d"])
-	{
-		_type = KKIvarTypeDouble;
-	}
-	else if ([_encoding hasPrefix:@"{CGPoint="])
-	{
-		_type = KKIvarTypePoint;
-	}
-	else if ([_encoding hasPrefix:@"{CGVector="])
-	{
-		_type = KKIvarTypeVector;
-	}
-	else if ([_encoding hasPrefix:@"{CGSize="])
-	{
-		_type = KKIvarTypeSize;
-	}
-	else if ([_encoding hasPrefix:@"{CGRect="])
-	{
-		_type = KKIvarTypeRect;
-	}
-	else if ([_encoding hasPrefix:@"@\"NSString\""])
-	{
-		_type = KKIvarTypeString;
-	}
+    
+    static NSDictionary *encodingTypeForPrefix = nil;
+    encodingTypeForPrefix = @{ @"B": @(KKIvarTypeBOOL),
+                               @"c": @(KKIvarTypeChar),
+                               @"C": @(KKIvarTypeUnsignedChar),
+                               @"i": @(KKIvarTypeInt),
+                               @"I": @(KKIvarTypeUnsignedInt),
+                               @"f": @(KKIvarTypeFloat),
+                               @"{CGPoint=": @(KKIvarTypePoint),
+                               @"{CGVector=": @(KKIvarTypeVector),
+                               @"{CGSize=": @(KKIvarTypeSize),
+                               @"{CGRect=": @(KKIvarTypeRect),
+                               @"@\"NSString\"": @(KKIvarTypeString) };
+    
+    for (NSString *prefix in [encodingTypeForPrefix allKeys]) {
+        if ([_encoding hasPrefix:prefix]) {
+            _type = [encodingTypeForPrefix[prefix] unsignedIntegerValue];
+            break;
+        }
+    }
 	
 	/*
 	if (_type == KKIvarTypeUnknown)

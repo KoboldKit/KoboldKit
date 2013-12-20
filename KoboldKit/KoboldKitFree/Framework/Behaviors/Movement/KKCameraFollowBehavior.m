@@ -45,11 +45,43 @@
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
+static NSString* const ArchiveKeyForScrollingNode = @"scrollingNode";
+
+-(id) initWithCoder:(NSCoder*)decoder
+{
+	self = [super init];
+	if (self)
+	{
+        _scrollingNode = [decoder decodeObjectForKey:ArchiveKeyForScrollingNode];
+	}
+	return self;
+}
+
+-(void) encodeWithCoder:(NSCoder*)encoder
+{
+    [encoder encodeObject:_scrollingNode forKey:ArchiveKeyForScrollingNode];
+}
 
 #pragma mark NSCopying
 
+-(id) copyWithZone:(NSZone*)zone
+{
+	KKCameraFollowBehavior* copy = [[super copyWithZone:zone] init];
+	copy->_scrollingNode = _scrollingNode;
+	return copy;
+}
 
 #pragma mark Equality
-
+-(BOOL) isEqualToBehavior:(KKBehavior*)behavior
+{
+	if ([self isMemberOfClass:[behavior class]] == NO)
+		return NO;
+    
+    KKCameraFollowBehavior *followBehavior = (KKCameraFollowBehavior *)behavior;
+    if ([followBehavior.scrollingNode isEqualToNode:_scrollingNode])
+        return YES;
+    
+	return NO;
+}
 
 @end

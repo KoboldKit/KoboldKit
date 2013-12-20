@@ -171,7 +171,6 @@
 @interface SKSpriteNode (KoboldKit)
 @property (nonatomic) NSString* imageName;
 @end
-
 @interface SKCropNode (KoboldKit)
 @end
 @interface SKEffectNode (KoboldKit)

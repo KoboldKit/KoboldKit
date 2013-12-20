@@ -94,3 +94,17 @@ _Pragma("clang diagnostic push")                                        \
 _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")     \
 code;                                                                   \
 _Pragma("clang diagnostic pop")                                         \
+
+/** To save the boilerplate required */
+#define SYNTHESIZE_DYNAMIC_PROPERTY(propertyName,setterName,propertyType,defaultValue) \
+static propertyType _##propertyName = defaultValue;\
+@dynamic propertyName;\
++(propertyType) propertyName { \
+return _##propertyName; \
+} \
+-(propertyType) propertyName { \
+return _##propertyName; \
+} \
+-(void) setterName:(propertyType)propertyName { \
+_##propertyName = propertyName; \
+} \

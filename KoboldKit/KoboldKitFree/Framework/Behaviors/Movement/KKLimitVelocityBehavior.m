@@ -74,29 +74,24 @@
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
-static NSString* const ArchiveKeyForOtherNode = @"otherNode";
+static NSString* const ArchiveKeyForVelocityLimit = @"velocityLimit";
+static NSString* const ArchiveKeyForAngularVelocityLimit = @"angularVelocityLimit";
 
 -(id) initWithCoder:(NSCoder*)decoder
 {
 	self = [super init];
 	if (self)
 	{
-		/*
-		 _target = [decoder decodeObjectForKey:ArchiveKeyForOtherNode];
-		 _positionOffset = [decoder decodeCGPointForKey:ArchiveKeyForPositionOffset];
-		 _positionMultiplier = [decoder decodeCGPointForKey:ArchiveKeyForPositionMultiplier];
-		 */
+        _velocityLimit = [decoder decodeFloatForKey:ArchiveKeyForVelocityLimit];
+        _angularVelocityLimit = [decoder decodeFloatForKey:ArchiveKeyForAngularVelocityLimit];
 	}
 	return self;
 }
 
 -(void) encodeWithCoder:(NSCoder*)encoder
 {
-	/*
-	 [encoder encodeObject:_target forKey:ArchiveKeyForOtherNode];
-	 [encoder encodeCGPoint:_positionOffset forKey:ArchiveKeyForPositionOffset];
-	 [encoder encodeCGPoint:_positionMultiplier forKey:ArchiveKeyForPositionMultiplier];
-	 */
+    [encoder encodeFloat:_velocityLimit forKey:ArchiveKeyForVelocityLimit];
+    [encoder encodeFloat:_angularVelocityLimit forKey:ArchiveKeyForAngularVelocityLimit];
 }
 
 #pragma mark NSCopying
@@ -115,6 +110,14 @@ static NSString* const ArchiveKeyForOtherNode = @"otherNode";
 {
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
+    
+    KKLimitVelocityBehavior *limitBehavior = (KKLimitVelocityBehavior *)behavior;
+    if (fabs(self.velocityLimit - limitBehavior.velocityLimit) > FLT_EPSILON)
+        return NO;
+    
+    if (fabs(self.angularVelocityLimit - limitBehavior.velocityLimit) > FLT_EPSILON)
+        return NO;
+    
 	return NO;
 }
 

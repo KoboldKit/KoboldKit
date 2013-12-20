@@ -8,11 +8,7 @@
 
 /** Prevents a node's position from passing over the bounds rectangle.
  (TODO: Optionally sends notifications when node comes in to contact with the bounds and when contact ends.) */
-@interface KKStayInBoundsBehavior : KKBehavior
-{
-	@private
-	BOOL _isSpriteNode;
-}
+@interface KKLimitBoundsBehavior : KKBehavior <KKSceneEventDelegate>
 
 /** @returns Bounds rect in scene coordinates. */
 @property (nonatomic) CGRect bounds;

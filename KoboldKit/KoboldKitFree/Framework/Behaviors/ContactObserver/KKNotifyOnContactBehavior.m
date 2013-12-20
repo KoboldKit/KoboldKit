@@ -16,29 +16,23 @@
 
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
+static NSString* const ArchiveKeyForNotification = @"notification";
 
-/*
- static NSString* const ArchiveKeyForOtherNode = @"otherNode";
- 
- -(id) initWithCoder:(NSCoder*)decoder
- {
- self = [super init];
- if (self)
- {
- _target = [decoder decodeObjectForKey:ArchiveKeyForOtherNode];
- _positionOffset = [decoder decodeCGPointForKey:ArchiveKeyForPositionOffset];
- _positionMultiplier = [decoder decodeCGPointForKey:ArchiveKeyForPositionMultiplier];
- }
- return self;
- }
- 
- -(void) encodeWithCoder:(NSCoder*)encoder
- {
- [encoder encodeObject:_target forKey:ArchiveKeyForOtherNode];
- [encoder encodeCGPoint:_positionOffset forKey:ArchiveKeyForPositionOffset];
- [encoder encodeCGPoint:_positionMultiplier forKey:ArchiveKeyForPositionMultiplier];
- }
- */
+-(id) initWithCoder:(NSCoder*)decoder
+{
+	self = [super init];
+	if (self)
+	{
+        _notification = [decoder decodeObjectForKey:ArchiveKeyForNotification];
+	}
+	return self;
+}
+
+-(void) encodeWithCoder:(NSCoder*)encoder
+{
+    [encoder encodeObject:_notification forKey:ArchiveKeyForNotification];
+}
+
 #pragma mark NSCopying
 
 -(id) copyWithZone:(NSZone*)zone
@@ -48,15 +42,19 @@
 	return copy;
 }
 
-/*
- #pragma mark Equality
- 
- -(BOOL) isEqualToBehavior:(KKBehavior*)behavior
- {
- if ([self isMemberOfClass:[behavior class]] == NO)
- return NO;
- return NO;
- }
- */
+
+#pragma mark Equality
+
+-(BOOL) isEqualToBehavior:(KKBehavior*)behavior
+{
+    if ([self isMemberOfClass:[behavior class]] == NO)
+        return NO;
+    
+    KKNotifyOnContactBehavior *notifyBehavior = (KKNotifyOnContactBehavior *)behavior;
+    if ([self.notification isEqualToString:notifyBehavior.notification])
+        return YES;
+     
+    return NO;
+}
 
 @end

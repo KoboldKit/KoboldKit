@@ -14,7 +14,7 @@
 #import "KKTilemapProperties.h"
 #import "SKNode+KoboldKit.h"
 #import "KKFollowTargetBehavior.h"
-#import "KKStayInBoundsBehavior.h"
+#import "KKLimitBoundsBehavior.h"
 #import "KKIntegerArray.h"
 #import "KKMutableNumber.h"
 #import "KKView.h"
@@ -119,7 +119,7 @@
 		NSString* const kMapBoundaryBehaviorKey = @"KKTilemapNode:MapBoundaryScrolling";
 		if ([_mainTileLayerNode behaviorForKey:kMapBoundaryBehaviorKey] == nil)
 		{
-			[_mainTileLayerNode addBehavior:[KKStayInBoundsBehavior stayInBounds:cameraBounds] withKey:kMapBoundaryBehaviorKey];
+			[_mainTileLayerNode addBehavior:[KKLimitBoundsBehavior stayInBounds:cameraBounds] withKey:kMapBoundaryBehaviorKey];
 		}
 	}
 }
@@ -149,7 +149,7 @@
 		NSString* const kMapBoundaryBehaviorKey = @"KKTilemapNode:MapBoundaryScrolling";
 		if ([_mainTileLayerNode behaviorForKey:kMapBoundaryBehaviorKey] == nil)
 		{
-			[_mainTileLayerNode addBehavior:[KKStayInBoundsBehavior stayInBounds:cameraBounds] withKey:kMapBoundaryBehaviorKey];
+			[_mainTileLayerNode addBehavior:[KKLimitBoundsBehavior stayInBounds:cameraBounds] withKey:kMapBoundaryBehaviorKey];
 		}
 	}
 }

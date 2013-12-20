@@ -8,24 +8,25 @@
 #import <SpriteKit/SpriteKit.h>
 #import "KKSceneEventDelegate.h"
 #import "KKPhysicsContactEventDelegate.h"
+#import "KKInputEventDelegate.h"
 
 @class KKNodeController;
 @class KKView;
 
 /** Scene Graph dump options. */
-typedef enum
+typedef NS_ENUM(NSUInteger, KKSceneGraphDumpOptions)
 {
 	KKSceneGraphDumpAll = 0,
-} KKSceneGraphDumpOptions;
+};
 
 // internal use
-typedef enum
+typedef NS_ENUM(NSUInteger, KKMainLoopStage)
 {
 	KKMainLoopStageInit = 0,
 	KKMainLoopStageDidUpdate,
 	KKMainLoopStageDidEvaluateActions,
 	KKMainLoopStageDidSimulatePhysics,
-} KKMainLoopStage;
+};
 
 /** KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
  dispatches events (input, physics). */
@@ -55,10 +56,10 @@ typedef enum
 
 /** Adds a scene event observer.
  @param observer The receiver of scene events. */
--(void) addSceneEventsObserver:(id)observer;
+-(void) addSceneEventsObserver:(id<KKSceneEventDelegate>)observer;
 /** Removes a scene event observer.
   @param observer The receiver of scene events. */
--(void) removeSceneEventsObserver:(id)observer;
+-(void) removeSceneEventsObserver:(id<KKSceneEventDelegate>)observer;
 
 /** Adds a physics contact event observer.
  @param observer The receiver of scene events. */

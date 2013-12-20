@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51208E121864D87E000F1464 /* KKInputEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 51208E111864D87E000F1464 /* KKInputEventDelegate.h */; };
+		51C4994E1864832900FC0972 /* SKColor+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C4994C1864832900FC0972 /* SKColor+KoboldKit.h */; };
+		51C4994F1864832900FC0972 /* SKColor+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C4994D1864832900FC0972 /* SKColor+KoboldKit.m */; };
+		51C499501864832900FC0972 /* SKColor+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C4994D1864832900FC0972 /* SKColor+KoboldKit.m */; };
 		DC8B556A17CBEFCB00F95CBC /* KKAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54E717CBEFCB00F95CBC /* KKAppDelegate.h */; };
 		DC8B556B17CBEFCB00F95CBC /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54E817CBEFCB00F95CBC /* KKAppDelegate.m */; };
 		DC8B556C17CBEFCB00F95CBC /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54E817CBEFCB00F95CBC /* KKAppDelegate.m */; };
@@ -29,9 +33,9 @@
 		DC8B557D17CBEFCB00F95CBC /* KKLimitVelocityBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54F717CBEFCB00F95CBC /* KKLimitVelocityBehavior.h */; };
 		DC8B557E17CBEFCB00F95CBC /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54F817CBEFCB00F95CBC /* KKLimitVelocityBehavior.m */; };
 		DC8B557F17CBEFCB00F95CBC /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54F817CBEFCB00F95CBC /* KKLimitVelocityBehavior.m */; };
-		DC8B558017CBEFCB00F95CBC /* KKStayInBoundsBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54F917CBEFCB00F95CBC /* KKStayInBoundsBehavior.h */; };
-		DC8B558117CBEFCB00F95CBC /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FA17CBEFCB00F95CBC /* KKStayInBoundsBehavior.m */; };
-		DC8B558217CBEFCB00F95CBC /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FA17CBEFCB00F95CBC /* KKStayInBoundsBehavior.m */; };
+		DC8B558017CBEFCB00F95CBC /* KKLimitBoundsBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54F917CBEFCB00F95CBC /* KKLimitBoundsBehavior.h */; };
+		DC8B558117CBEFCB00F95CBC /* KKLimitBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FA17CBEFCB00F95CBC /* KKLimitBoundsBehavior.m */; };
+		DC8B558217CBEFCB00F95CBC /* KKLimitBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FA17CBEFCB00F95CBC /* KKLimitBoundsBehavior.m */; };
 		DC8B558317CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54FC17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.h */; };
 		DC8B558417CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FD17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m */; };
 		DC8B558517CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FD17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m */; };
@@ -298,6 +302,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		51208E111864D87E000F1464 /* KKInputEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKInputEventDelegate.h; sourceTree = "<group>"; };
+		51C4994C1864832900FC0972 /* SKColor+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKColor+KoboldKit.h"; sourceTree = "<group>"; };
+		51C4994D1864832900FC0972 /* SKColor+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKColor+KoboldKit.m"; sourceTree = "<group>"; };
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C19178C40800067DAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -324,8 +331,8 @@
 		DC8B54F617CBEFCB00F95CBC /* KKFollowTargetBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFollowTargetBehavior.m; sourceTree = "<group>"; };
 		DC8B54F717CBEFCB00F95CBC /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
 		DC8B54F817CBEFCB00F95CBC /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
-		DC8B54F917CBEFCB00F95CBC /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
-		DC8B54FA17CBEFCB00F95CBC /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
+		DC8B54F917CBEFCB00F95CBC /* KKLimitBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitBoundsBehavior.h; sourceTree = "<group>"; };
+		DC8B54FA17CBEFCB00F95CBC /* KKLimitBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8B54FC17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnNotificationBehavior.h; sourceTree = "<group>"; };
 		DC8B54FD17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnNotificationBehavior.m; sourceTree = "<group>"; };
 		DC8B54FF17CBEFCB00F95CBC /* KKButtonBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKButtonBehavior.h; sourceTree = "<group>"; };
@@ -551,8 +558,8 @@
 				DC8B54F617CBEFCB00F95CBC /* KKFollowTargetBehavior.m */,
 				DC8B54F717CBEFCB00F95CBC /* KKLimitVelocityBehavior.h */,
 				DC8B54F817CBEFCB00F95CBC /* KKLimitVelocityBehavior.m */,
-				DC8B54F917CBEFCB00F95CBC /* KKStayInBoundsBehavior.h */,
-				DC8B54FA17CBEFCB00F95CBC /* KKStayInBoundsBehavior.m */,
+				DC8B54F917CBEFCB00F95CBC /* KKLimitBoundsBehavior.h */,
+				DC8B54FA17CBEFCB00F95CBC /* KKLimitBoundsBehavior.m */,
 			);
 			path = Movement;
 			sourceTree = "<group>";
@@ -611,6 +618,8 @@
 				DC8B551217CBEFCB00F95CBC /* SKNode+KoboldKit.m */,
 				DC8B551317CBEFCB00F95CBC /* SKScene+KoboldKit.h */,
 				DC8B551417CBEFCB00F95CBC /* SKScene+KoboldKit.m */,
+				51C4994C1864832900FC0972 /* SKColor+KoboldKit.h */,
+				51C4994D1864832900FC0972 /* SKColor+KoboldKit.m */,
 			);
 			path = SpriteKit;
 			sourceTree = "<group>";
@@ -693,6 +702,7 @@
 				DC8B554417CBEFCB00F95CBC /* KKPhysicsContactEventDelegate.h */,
 				DC8B554517CBEFCB00F95CBC /* KKSceneEventDelegate.h */,
 				DC8B554617CBEFCB00F95CBC /* KKTilemapObjectSpawnDelegate.h */,
+				51208E111864D87E000F1464 /* KKInputEventDelegate.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -862,6 +872,7 @@
 				DC8B559517CBEFCB00F95CBC /* NSString+KoboldKit.h in Headers */,
 				DC8B55B117CBEFCB00F95CBC /* KKNodeController.h in Headers */,
 				DC8B55E917CBEFCB00F95CBC /* KKTilemapLayerContourTracer.h in Headers */,
+				51208E121864D87E000F1464 /* KKInputEventDelegate.h in Headers */,
 				DC8B55C417CBEFCB00F95CBC /* KKNodeShared.h in Headers */,
 				DC8B55D017CBEFCB00F95CBC /* KKNodes.h in Headers */,
 				DC8B55E017CBEFCB00F95CBC /* KKLua.h in Headers */,
@@ -906,7 +917,8 @@
 				DC8B558617CBEFCB00F95CBC /* KKButtonBehavior.h in Headers */,
 				DC8B55DA17CBEFCB00F95CBC /* KKTilemapTileLayerNode.h in Headers */,
 				DC8B55F517CBEFCB00F95CBC /* KKTilemapTileProperties.h in Headers */,
-				DC8B558017CBEFCB00F95CBC /* KKStayInBoundsBehavior.h in Headers */,
+				DC8B558017CBEFCB00F95CBC /* KKLimitBoundsBehavior.h in Headers */,
+				51C4994E1864832900FC0972 /* SKColor+KoboldKit.h in Headers */,
 				DC8B55EC17CBEFCB00F95CBC /* KKTilemapLayerTiles.h in Headers */,
 				DC8B55A517CBEFCB00F95CBC /* KKPointArray.h in Headers */,
 				DC8B559C17CBEFCB00F95CBC /* SKNode+KoboldKit.h in Headers */,
@@ -1109,6 +1121,7 @@
 				DC8B55BA17CBEFCB00F95CBC /* KKVersion.m in Sources */,
 				DC8B557917CBEFCB00F95CBC /* KKCameraFollowBehavior.m in Sources */,
 				DC8B556F17CBEFCB00F95CBC /* KKMacApplication.m in Sources */,
+				51C499501864832900FC0972 /* SKColor+KoboldKit.m in Sources */,
 				DC8B556C17CBEFCB00F95CBC /* KKAppDelegate.m in Sources */,
 				DC8B55CF17CBEFCB00F95CBC /* KKViewOriginNode.m in Sources */,
 				DC8B559717CBEFCB00F95CBC /* NSString+KoboldKit.m in Sources */,
@@ -1122,7 +1135,7 @@
 				DC8B560617CBEFCB00F95CBC /* KKView.m in Sources */,
 				DC8B55A117CBEFCB00F95CBC /* SKScene+KoboldKit.m in Sources */,
 				DC8B559B17CBEFCB00F95CBC /* SKAction+KoboldKit.m in Sources */,
-				DC8B558217CBEFCB00F95CBC /* KKStayInBoundsBehavior.m in Sources */,
+				DC8B558217CBEFCB00F95CBC /* KKLimitBoundsBehavior.m in Sources */,
 				DC8B55E217CBEFCB00F95CBC /* KKLua.m in Sources */,
 				DCEA06E017E74C110011DED9 /* KKSwizzle.m in Sources */,
 				DC8B55C317CBEFCB00F95CBC /* KKNode.m in Sources */,
@@ -1167,6 +1180,7 @@
 				DC8B55B917CBEFCB00F95CBC /* KKVersion.m in Sources */,
 				DC8B557817CBEFCB00F95CBC /* KKCameraFollowBehavior.m in Sources */,
 				DC8B556E17CBEFCB00F95CBC /* KKMacApplication.m in Sources */,
+				51C4994F1864832900FC0972 /* SKColor+KoboldKit.m in Sources */,
 				DC8B556B17CBEFCB00F95CBC /* KKAppDelegate.m in Sources */,
 				DC8B55CE17CBEFCB00F95CBC /* KKViewOriginNode.m in Sources */,
 				DC8B559617CBEFCB00F95CBC /* NSString+KoboldKit.m in Sources */,
@@ -1180,7 +1194,7 @@
 				DC8B560517CBEFCB00F95CBC /* KKView.m in Sources */,
 				DC8B55A017CBEFCB00F95CBC /* SKScene+KoboldKit.m in Sources */,
 				DC8B559A17CBEFCB00F95CBC /* SKAction+KoboldKit.m in Sources */,
-				DC8B558117CBEFCB00F95CBC /* KKStayInBoundsBehavior.m in Sources */,
+				DC8B558117CBEFCB00F95CBC /* KKLimitBoundsBehavior.m in Sources */,
 				DC8B55E117CBEFCB00F95CBC /* KKLua.m in Sources */,
 				DCEA06DF17E74C110011DED9 /* KKSwizzle.m in Sources */,
 				DC8B55C217CBEFCB00F95CBC /* KKNode.m in Sources */,
