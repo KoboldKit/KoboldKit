@@ -12,11 +12,13 @@
 #import "NSBundle+KoboldKit.h"
 #import "KKClassVarSetter.h"
 
-static BOOL _showsPhysicsShapes = NO;
-static BOOL _showsNodeFrames = NO;
-static BOOL _showsNodeAnchorPoints = NO;
-
 @implementation KKView
+
+#pragma mark Debug
+
+SYNTHESIZE_DYNAMIC_PROPERTY(showsNodeFrames, setShowsNodeFrames, BOOL, NO);
+SYNTHESIZE_DYNAMIC_PROPERTY(showsPhysicsShapes, setShowsPhysicsShapes, BOOL, NO);
+SYNTHESIZE_DYNAMIC_PROPERTY(showsNodeAnchorPoints, setShowsNodeAnchorPoints, BOOL, NO);
 
 -(id) initWithFrame:(CGRect)frame
 {
@@ -50,7 +52,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) initDefaults
 {
-	_sceneStack = [NSMutableArray array];
+	_sceneStack = [NSMutableArray arrayWithCapacity:3];
 	_model = [KKModel model];
 
 	[KKLua setup];
@@ -167,8 +169,8 @@ static BOOL _showsNodeAnchorPoints = NO;
 	}
 }
 
-#pragma mark Present Scene
-
+#pragma mark - Scene Management
+#pragma mark Present
 -(void) presentScene:(SKScene *)scene
 {
 	[self presentScene:scene transition:nil];
@@ -182,7 +184,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 	}
 	[_sceneStack addObject:scene];
 	
-	transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
+    [self activateScene:scene withTransition:transition];
 }
 
 -(void) presentScene:(KKScene *)scene unwindStack:(BOOL)unwindStack
@@ -198,9 +200,10 @@ static BOOL _showsNodeAnchorPoints = NO;
 		[_sceneStack addObject:scene];
 	}
 
-	transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
+    [self activateScene:scene withTransition:transition];
 }
 
+#pragma mark Push
 -(void) pushScene:(KKScene*)scene
 {
 	[self pushScene:scene transition:nil];
@@ -211,9 +214,10 @@ static BOOL _showsNodeAnchorPoints = NO;
 	self.scene.paused = YES;
 	[_sceneStack addObject:self.scene];
 	
-	transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
+    [self activateScene:scene withTransition:transition];
 }
 
+#pragma mark Pop
 -(void) popScene
 {
 	[self popSceneWithTransition:nil];
@@ -221,13 +225,11 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) popSceneWithTransition:(KKTransition*)transition
 {
-	if (_sceneStack.count > 1)
+    KKScene* scene = [_sceneStack lastObject];
+	if (scene)
 	{
-		KKScene* scene = [_sceneStack lastObject];
 		[_sceneStack removeLastObject];
-		
-		transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
-		scene.paused = NO;
+        [self activateScene:scene withTransition:transition];
 	}
 }
 
@@ -238,18 +240,14 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) popToRootSceneWithTransition:(KKTransition*)transition
 {
-	if (_sceneStack.count > 1)
-	{
-		KKScene* scene = [_sceneStack firstObject];
-		if (scene)
-		{
-			[_sceneStack removeAllObjects];
-			[_sceneStack addObject:scene];
-			
-			transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
-			scene.paused = NO;
-		}
-	}
+    KKScene* scene = [_sceneStack firstObject];
+    if (scene)
+    {
+        [_sceneStack removeAllObjects];
+        [_sceneStack addObject:scene];
+        
+        [self activateScene:scene withTransition:transition];
+    }
 }
 
 -(void) popToSceneNamed:(NSString*)name
@@ -259,68 +257,22 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) popToSceneNamed:(NSString*)name transition:(KKTransition*)transition
 {
-	if (_sceneStack.count > 1)
-	{
-		NSMutableIndexSet* indexes = [NSMutableIndexSet indexSet];
-		for (NSUInteger i = _sceneStack.count - 2; i == 0; i--)
-		{
-			[indexes addIndex:i];
-			KKScene* scene = [_sceneStack objectAtIndex:i];
-			if ([scene.name isEqualToString:name])
-			{
-				[_sceneStack removeObjectsAtIndexes:indexes];
-				[_sceneStack addObject:scene];
-				
-				transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
-				scene.paused = NO;
-				break;
-			}
-		}
-	}
+    NSUInteger index = [_sceneStack indexOfObjectPassingTest:^BOOL(KKScene* scene, NSUInteger idx, BOOL *stop) {
+        *stop = [scene.name isEqualToString:name];
+        return *stop;
+    }];
+    if (index != NSNotFound) {
+        
+        [_sceneStack removeObjectsInRange:NSMakeRange(index, _sceneStack.count - 2)];
+        KKScene *scene = _sceneStack[index];
+        [self activateScene:scene withTransition:transition];
+    }
 }
 
-#pragma mark Debug
-
-@dynamic showsPhysicsShapes;
-+(BOOL) showsPhysicsShapes
-{
-	return _showsPhysicsShapes;
-}
--(BOOL) showsPhysicsShapes
-{
-	return _showsPhysicsShapes;
-}
--(void) setShowsPhysicsShapes:(BOOL)showsPhysicsShapes
-{
-	_showsPhysicsShapes = showsPhysicsShapes;
-}
-
-@dynamic showsNodeFrames;
-+(BOOL) showsNodeFrames
-{
-	return _showsNodeFrames;
-}
--(BOOL) showsNodeFrames
-{
-	return _showsNodeFrames;
-}
--(void) setShowsNodeFrames:(BOOL)showsNodeFrames
-{
-	_showsNodeFrames = showsNodeFrames;
-}
-
-@dynamic showsNodeAnchorPoints;
-+(BOOL) showsNodeAnchorPoints
-{
-	return _showsNodeAnchorPoints;
-}
--(BOOL) showsNodeAnchorPoints
-{
-	return _showsNodeAnchorPoints;
-}
--(void) setShowsNodeAnchorPoints:(BOOL)showsNodeAnchorPoints
-{
-	_showsNodeAnchorPoints = showsNodeAnchorPoints;
+#pragma mark Helper
+- (void)activateScene:(SKScene*)scene withTransition:(KKTransition*)transition {
+    transition ? [super presentScene:scene transition:transition] : [super presentScene:scene];
+    scene.paused = NO;
 }
 
 @end
