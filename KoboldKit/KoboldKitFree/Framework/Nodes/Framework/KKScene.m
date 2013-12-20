@@ -50,6 +50,12 @@ KKNODE_SHARED_CODE
 	
 	const NSUInteger kInitialCapacity = 4;
 	_inputObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+#if TARGET_OS_IPHONE
+    _touchesBeganObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+    _touchesMovedObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+    _touchesEndedObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+    _touchesCancelledObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
+#endif
 	_sceneUpdateObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidEvaluateActionsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
 	_sceneDidSimulatePhysicsObservers = [NSMutableArray arrayWithCapacity:kInitialCapacity];
@@ -225,6 +231,29 @@ KKNODE_SHARED_CODE
 			{
 				[_inputObservers addObject:observer];
 			}
+            
+#if TARGET_OS_IPHONE
+            if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)] &&
+				[_touchesBeganObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_touchesBeganObservers addObject:observer];
+			}
+            if ([observer respondsToSelector:@selector(touchesMoved:withEvent:)] &&
+				[_touchesMovedObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_touchesMovedObservers addObject:observer];
+			}
+            if ([observer respondsToSelector:@selector(touchesEnded:withEvent:)] &&
+				[_touchesEndedObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_touchesEndedObservers addObject:observer];
+			}
+            if ([observer respondsToSelector:@selector(touchesCancelled:withEvent:)] &&
+				[_touchesCancelledObservers indexOfObject:observer] == NSNotFound)
+			{
+				[_touchesCancelledObservers addObject:observer];
+			}
+#endif
 		});
 	}
 }
@@ -235,6 +264,13 @@ KKNODE_SHARED_CODE
 	{
 		dispatch_async(dispatch_get_main_queue(), ^{
 			[_inputObservers removeObject:observer];
+            
+#if TARGET_OS_IPHONE
+            [_touchesBeganObservers removeObject:observer];
+            [_touchesMovedObservers removeObject:observer];
+            [_touchesEndedObservers removeObject:observer];
+            [_touchesCancelledObservers removeObject:observer];
+#endif
 		});
 	}
 }
@@ -249,12 +285,9 @@ DEVELOPER_FIXME("remove calls to respondsToSelector by separating observers into
 {
 	[super touchesBegan:touches withEvent:event];
 	
-	for (id observer in _inputObservers)
+	for (id observer in _touchesBeganObservers)
 	{
-		if ([observer respondsToSelector:@selector(touchesBegan:withEvent:)])
-		{
-			[observer touchesBegan:touches withEvent:event];
-		}
+        [observer touchesBegan:touches withEvent:event];
 	}
 }
 
@@ -262,12 +295,9 @@ DEVELOPER_FIXME("remove calls to respondsToSelector by separating observers into
 {
 	[super touchesMoved:touches withEvent:event];
 	
-	for (id observer in _inputObservers)
+	for (id observer in _touchesMovedObservers)
 	{
-		if ([observer respondsToSelector:@selector(touchesMoved:withEvent:)])
-		{
-			[observer touchesMoved:touches withEvent:event];
-		}
+        [observer touchesMoved:touches withEvent:event];
 	}
 }
 
@@ -275,12 +305,9 @@ DEVELOPER_FIXME("remove calls to respondsToSelector by separating observers into
 {
 	[super touchesEnded:touches withEvent:event];
 	
-	for (id observer in _inputObservers)
+	for (id observer in _touchesEndedObservers)
 	{
-		if ([observer respondsToSelector:@selector(touchesEnded:withEvent:)])
-		{
-			[observer touchesEnded:touches withEvent:event];
-		}
+        [observer touchesEnded:touches withEvent:event];
 	}
 }
 
@@ -288,12 +315,9 @@ DEVELOPER_FIXME("remove calls to respondsToSelector by separating observers into
 {
 	[super touchesCancelled:touches withEvent:event];
 	
-	for (id observer in _inputObservers)
+	for (id observer in _touchesCancelledObservers)
 	{
-		if ([observer respondsToSelector:@selector(touchesCancelled:withEvent:)])
-		{
-			[observer touchesCancelled:touches withEvent:event];
-		}
+        [observer touchesCancelled:touches withEvent:event];
 	}
 }
 
