@@ -13,19 +13,19 @@
 @class KKView;
 
 /** Scene Graph dump options. */
-typedef enum
+typedef NS_ENUM(NSUInteger, KKSceneGraphDumpOptions)
 {
 	KKSceneGraphDumpAll = 0,
-} KKSceneGraphDumpOptions;
+};
 
 // internal use
-typedef enum
+typedef NS_ENUM(NSUInteger, KKMainLoopStage)
 {
 	KKMainLoopStageInit = 0,
 	KKMainLoopStageDidUpdate,
 	KKMainLoopStageDidEvaluateActions,
 	KKMainLoopStageDidSimulatePhysics,
-} KKMainLoopStage;
+};
 
 /** KKScene is the scene class used in Kobold Kit projects. KKScene updates the controllers and behaviors, receives and
  dispatches events (input, physics). */
