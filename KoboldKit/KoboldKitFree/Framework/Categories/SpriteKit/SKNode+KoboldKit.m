@@ -471,14 +471,18 @@ DEVELOPER_TODO("compare userData in isEqual")
 @dynamic imageName;
 -(void) setImageName:(NSString *)imageName
 {
-DEVELOPER_FIXME("only works with Jetpack atlas atm")
 	SKTexture* texture = [[SKTextureAtlas atlasNamed:@"Jetpack"] textureNamed:imageName];
+    if (texture == nil) {
+        texture = [SKTexture textureWithImageNamed:imageName];
+    }
+    self.imageName = imageName;
 	self.texture = texture;
 	self.size = texture.size;
 }
+
 -(NSString*) imageName
 {
-	return nil;
+	return self.imageName;
 }
 @end
 
