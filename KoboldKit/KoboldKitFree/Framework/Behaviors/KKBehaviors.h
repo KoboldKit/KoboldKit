@@ -9,7 +9,7 @@
 #import "KKButtonBehavior.h"
 #import "KKFollowTargetBehavior.h"
 #import "KKCameraFollowBehavior.h"
-#import "KKStayInBoundsBehavior.h"
+#import "KKLimitBoundsBehavior.h"
 #import "KKLimitVelocityBehavior.h"
 #import "KKRemoveOnContactBehavior.h"
 #import "KKRemoveOnNotificationBehavior.h"

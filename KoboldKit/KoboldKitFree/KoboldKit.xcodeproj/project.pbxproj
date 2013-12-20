@@ -33,9 +33,9 @@
 		DC8B557D17CBEFCB00F95CBC /* KKLimitVelocityBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54F717CBEFCB00F95CBC /* KKLimitVelocityBehavior.h */; };
 		DC8B557E17CBEFCB00F95CBC /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54F817CBEFCB00F95CBC /* KKLimitVelocityBehavior.m */; };
 		DC8B557F17CBEFCB00F95CBC /* KKLimitVelocityBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54F817CBEFCB00F95CBC /* KKLimitVelocityBehavior.m */; };
-		DC8B558017CBEFCB00F95CBC /* KKStayInBoundsBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54F917CBEFCB00F95CBC /* KKStayInBoundsBehavior.h */; };
-		DC8B558117CBEFCB00F95CBC /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FA17CBEFCB00F95CBC /* KKStayInBoundsBehavior.m */; };
-		DC8B558217CBEFCB00F95CBC /* KKStayInBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FA17CBEFCB00F95CBC /* KKStayInBoundsBehavior.m */; };
+		DC8B558017CBEFCB00F95CBC /* KKLimitBoundsBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54F917CBEFCB00F95CBC /* KKLimitBoundsBehavior.h */; };
+		DC8B558117CBEFCB00F95CBC /* KKLimitBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FA17CBEFCB00F95CBC /* KKLimitBoundsBehavior.m */; };
+		DC8B558217CBEFCB00F95CBC /* KKLimitBoundsBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FA17CBEFCB00F95CBC /* KKLimitBoundsBehavior.m */; };
 		DC8B558317CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54FC17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.h */; };
 		DC8B558417CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FD17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m */; };
 		DC8B558517CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54FD17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m */; };
@@ -331,8 +331,8 @@
 		DC8B54F617CBEFCB00F95CBC /* KKFollowTargetBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFollowTargetBehavior.m; sourceTree = "<group>"; };
 		DC8B54F717CBEFCB00F95CBC /* KKLimitVelocityBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitVelocityBehavior.h; sourceTree = "<group>"; };
 		DC8B54F817CBEFCB00F95CBC /* KKLimitVelocityBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitVelocityBehavior.m; sourceTree = "<group>"; };
-		DC8B54F917CBEFCB00F95CBC /* KKStayInBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKStayInBoundsBehavior.h; sourceTree = "<group>"; };
-		DC8B54FA17CBEFCB00F95CBC /* KKStayInBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKStayInBoundsBehavior.m; sourceTree = "<group>"; };
+		DC8B54F917CBEFCB00F95CBC /* KKLimitBoundsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLimitBoundsBehavior.h; sourceTree = "<group>"; };
+		DC8B54FA17CBEFCB00F95CBC /* KKLimitBoundsBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLimitBoundsBehavior.m; sourceTree = "<group>"; };
 		DC8B54FC17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRemoveOnNotificationBehavior.h; sourceTree = "<group>"; };
 		DC8B54FD17CBEFCB00F95CBC /* KKRemoveOnNotificationBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRemoveOnNotificationBehavior.m; sourceTree = "<group>"; };
 		DC8B54FF17CBEFCB00F95CBC /* KKButtonBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKButtonBehavior.h; sourceTree = "<group>"; };
@@ -558,8 +558,8 @@
 				DC8B54F617CBEFCB00F95CBC /* KKFollowTargetBehavior.m */,
 				DC8B54F717CBEFCB00F95CBC /* KKLimitVelocityBehavior.h */,
 				DC8B54F817CBEFCB00F95CBC /* KKLimitVelocityBehavior.m */,
-				DC8B54F917CBEFCB00F95CBC /* KKStayInBoundsBehavior.h */,
-				DC8B54FA17CBEFCB00F95CBC /* KKStayInBoundsBehavior.m */,
+				DC8B54F917CBEFCB00F95CBC /* KKLimitBoundsBehavior.h */,
+				DC8B54FA17CBEFCB00F95CBC /* KKLimitBoundsBehavior.m */,
 			);
 			path = Movement;
 			sourceTree = "<group>";
@@ -917,7 +917,7 @@
 				DC8B558617CBEFCB00F95CBC /* KKButtonBehavior.h in Headers */,
 				DC8B55DA17CBEFCB00F95CBC /* KKTilemapTileLayerNode.h in Headers */,
 				DC8B55F517CBEFCB00F95CBC /* KKTilemapTileProperties.h in Headers */,
-				DC8B558017CBEFCB00F95CBC /* KKStayInBoundsBehavior.h in Headers */,
+				DC8B558017CBEFCB00F95CBC /* KKLimitBoundsBehavior.h in Headers */,
 				51C4994E1864832900FC0972 /* SKColor+KoboldKit.h in Headers */,
 				DC8B55EC17CBEFCB00F95CBC /* KKTilemapLayerTiles.h in Headers */,
 				DC8B55A517CBEFCB00F95CBC /* KKPointArray.h in Headers */,
@@ -1135,7 +1135,7 @@
 				DC8B560617CBEFCB00F95CBC /* KKView.m in Sources */,
 				DC8B55A117CBEFCB00F95CBC /* SKScene+KoboldKit.m in Sources */,
 				DC8B559B17CBEFCB00F95CBC /* SKAction+KoboldKit.m in Sources */,
-				DC8B558217CBEFCB00F95CBC /* KKStayInBoundsBehavior.m in Sources */,
+				DC8B558217CBEFCB00F95CBC /* KKLimitBoundsBehavior.m in Sources */,
 				DC8B55E217CBEFCB00F95CBC /* KKLua.m in Sources */,
 				DCEA06E017E74C110011DED9 /* KKSwizzle.m in Sources */,
 				DC8B55C317CBEFCB00F95CBC /* KKNode.m in Sources */,
@@ -1194,7 +1194,7 @@
 				DC8B560517CBEFCB00F95CBC /* KKView.m in Sources */,
 				DC8B55A017CBEFCB00F95CBC /* SKScene+KoboldKit.m in Sources */,
 				DC8B559A17CBEFCB00F95CBC /* SKAction+KoboldKit.m in Sources */,
-				DC8B558117CBEFCB00F95CBC /* KKStayInBoundsBehavior.m in Sources */,
+				DC8B558117CBEFCB00F95CBC /* KKLimitBoundsBehavior.m in Sources */,
 				DC8B55E117CBEFCB00F95CBC /* KKLua.m in Sources */,
 				DCEA06DF17E74C110011DED9 /* KKSwizzle.m in Sources */,
 				DC8B55C217CBEFCB00F95CBC /* KKNode.m in Sources */,

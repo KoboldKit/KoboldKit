@@ -5,9 +5,15 @@
  */
 
 
-#import "KKStayInBoundsBehavior.h"
+#import "KKLimitBoundsBehavior.h"
 
-@implementation KKStayInBoundsBehavior
+@interface KKLimitBoundsBehavior ()
+
+@property (nonatomic) BOOL isSpriteNode;
+
+@end
+
+@implementation KKLimitBoundsBehavior
 
 +(id) stayInBounds:(CGRect)bounds
 {
@@ -147,7 +153,7 @@ static NSString* const ArchiveKeyForBounds = @"bounds";
 
 -(id) copyWithZone:(NSZone*)zone
 {
-	KKStayInBoundsBehavior* copy = [[super copyWithZone:zone] init];
+	KKLimitBoundsBehavior* copy = [[super copyWithZone:zone] init];
 	copy->_bounds = _bounds;
 	copy->_isSpriteNode = _isSpriteNode;
 	return copy;
@@ -160,7 +166,7 @@ static NSString* const ArchiveKeyForBounds = @"bounds";
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
     
-    KKStayInBoundsBehavior *limitBounds = (KKStayInBoundsBehavior *)behavior;
+    KKLimitBoundsBehavior *limitBounds = (KKLimitBoundsBehavior *)behavior;
     if (!CGRectEqualToRect(_bounds, limitBounds.bounds))
         return NO;
     

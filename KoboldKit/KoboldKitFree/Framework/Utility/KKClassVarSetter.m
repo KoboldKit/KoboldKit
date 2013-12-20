@@ -29,7 +29,7 @@ static Class kMutableNumberClass;
 
 -(NSString*) description
 {
-	return [NSString stringWithFormat:@"%@  %@    %@    type=%i", [super description], _name, _encoding, _type];
+	return [NSString stringWithFormat:@"%@  %@    %@    type=%lu", [super description], _name, _encoding, _type];
 }
 
 -(void) setEncoding:(NSString*)encoding
