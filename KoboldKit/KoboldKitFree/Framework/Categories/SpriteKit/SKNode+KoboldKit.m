@@ -14,6 +14,9 @@
 #import "KKView.h"
 #import "KKTilemapObject.h"
 
+#import "SKAction+KoboldKit.h"
+#import "SKColor+KoboldKit.h"
+
 @implementation SKNode (KoboldKit)
 
 #pragma mark Properties
@@ -233,7 +236,6 @@
 -(void) didMoveToParent
 {
 	// to be overridden by subclasses
-
 	if ([KKView showsNodeFrames])
 	{
 		SKShapeNode* shape = [SKShapeNode node];
@@ -245,6 +247,7 @@
 		shape.strokeColor = [SKColor orangeColor];
 		[self addChild:shape];
 	}
+    
 	if ([KKView showsNodeAnchorPoints])
 	{
 		SKShapeNode* shape = [SKShapeNode node];
@@ -252,19 +255,14 @@
 		CGPathRef path = CGPathCreateWithRect(center, nil);
 		shape.path = path;
 		CGPathRelease(path);
-		/*
-		CGMutablePathRef path = CGPathCreateMutable();
-		CGPathMoveToPoint(path, nil, self.position.x, self.position.y);
-		CGPathAddLineToPoint(path, nil, self.position.x, self.position.y+1);
-		shape.path = path;
-		 */
+
 		shape.antialiased = NO;
 		shape.lineWidth = 1.0;
 		[self addChild:shape];
 		
-		id sequence = [SKAction sequence:@[[SKAction runBlock:^{
-			shape.strokeColor = [SKColor colorWithRed:KKRANDOM_0_1() green:KKRANDOM_0_1() blue:KKRANDOM_0_1() alpha:1.0];
-		}], [SKAction waitForDuration:0.2]]];
+        SKAction *sequence = [SKAction afterDelay:0.2 runBlock:^{
+            shape.strokeColor = [SKColor randomColor];
+        }];
 		[shape runAction:[SKAction repeatActionForever:sequence]];
 	}
 }
