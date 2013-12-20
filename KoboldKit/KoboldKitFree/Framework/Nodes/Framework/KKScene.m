@@ -351,6 +351,32 @@ DEVELOPER_FIXME("remove calls to respondsToSelector by separating observers into
 	}
 }
 
+-(void) keyDown:(NSEvent *)theEvent
+{
+    [super keyDown:theEvent];
+    
+    for (id observer in _inputObservers)
+	{
+		if ([observer respondsToSelector:@selector(keyDown:)])
+		{
+			[observer keyDown:theEvent];
+		}
+	}
+}
+
+-(void) keyUp:(NSEvent *)theEvent
+{
+    [super keyUp:theEvent];
+    
+    for (id observer in _inputObservers)
+	{
+		if ([observer respondsToSelector:@selector(keyUp:)])
+		{
+			[observer keyUp:theEvent];
+		}
+	}
+}
+
 #endif
 
 #pragma mark Physics Contact
