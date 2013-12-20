@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51208E041864D4ED000F1464 /* KKInputKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 51208E021864D4ED000F1464 /* KKInputKeyboard.h */; };
-		51208E051864D4ED000F1464 /* KKInputKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 51208E031864D4ED000F1464 /* KKInputKeyboard.m */; };
+		51208E041864D4ED000F1464 /* KKInputKeyboardBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 51208E021864D4ED000F1464 /* KKInputKeyboardBehavior.h */; };
+		51208E051864D4ED000F1464 /* KKInputKeyboardBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 51208E031864D4ED000F1464 /* KKInputKeyboardBehavior.m */; };
 		51208E241864DFFB000F1464 /* KKInputEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 51208E231864DFFB000F1464 /* KKInputEventDelegate.h */; };
 		DC8B556A17CBEFCB00F95CBC /* KKAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8B54E717CBEFCB00F95CBC /* KKAppDelegate.h */; };
 		DC8B556B17CBEFCB00F95CBC /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8B54E817CBEFCB00F95CBC /* KKAppDelegate.m */; };
@@ -301,8 +301,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		51208E021864D4ED000F1464 /* KKInputKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKInputKeyboard.h; sourceTree = "<group>"; };
-		51208E031864D4ED000F1464 /* KKInputKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKInputKeyboard.m; sourceTree = "<group>"; };
+		51208E021864D4ED000F1464 /* KKInputKeyboardBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKInputKeyboardBehavior.h; sourceTree = "<group>"; };
+		51208E031864D4ED000F1464 /* KKInputKeyboardBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKInputKeyboardBehavior.m; sourceTree = "<group>"; };
 		51208E231864DFFB000F1464 /* KKInputEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKInputEventDelegate.h; sourceTree = "<group>"; };
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DC484C16178C40800067DAA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
@@ -575,8 +575,8 @@
 		DC8B54FE17CBEFCB00F95CBC /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				51208E021864D4ED000F1464 /* KKInputKeyboard.h */,
-				51208E031864D4ED000F1464 /* KKInputKeyboard.m */,
+				51208E021864D4ED000F1464 /* KKInputKeyboardBehavior.h */,
+				51208E031864D4ED000F1464 /* KKInputKeyboardBehavior.m */,
 				DC8B54FF17CBEFCB00F95CBC /* KKButtonBehavior.h */,
 				DC8B550017CBEFCB00F95CBC /* KKButtonBehavior.m */,
 			);
@@ -927,7 +927,7 @@
 				DC8B560117CBEFCB00F95CBC /* KKClassVarSetter.h in Headers */,
 				DC8B559817CBEFCB00F95CBC /* KKCategories.h in Headers */,
 				DC8B55BE17CBEFCB00F95CBC /* KKLabelNode.h in Headers */,
-				51208E041864D4ED000F1464 /* KKInputKeyboard.h in Headers */,
+				51208E041864D4ED000F1464 /* KKInputKeyboardBehavior.h in Headers */,
 				DC8B557D17CBEFCB00F95CBC /* KKLimitVelocityBehavior.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1126,7 +1126,7 @@
 				DC8B558817CBEFCB00F95CBC /* KKButtonBehavior.m in Sources */,
 				DC8B55B017CBEFCB00F95CBC /* KKMutableNumber.m in Sources */,
 				DC8B55E817CBEFCB00F95CBC /* KKTilemapLayer.m in Sources */,
-				51208E051864D4ED000F1464 /* KKInputKeyboard.m in Sources */,
+				51208E051864D4ED000F1464 /* KKInputKeyboardBehavior.m in Sources */,
 				DC8B559117CBEFCB00F95CBC /* NSDictionary+KoboldKit.m in Sources */,
 				DC8B55F417CBEFCB00F95CBC /* KKTilemapProperties.m in Sources */,
 				DC8B55DC17CBEFCB00F95CBC /* KKTilemapTileLayerNode.m in Sources */,
