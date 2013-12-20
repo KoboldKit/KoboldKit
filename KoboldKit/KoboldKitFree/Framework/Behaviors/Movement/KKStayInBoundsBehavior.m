@@ -123,7 +123,11 @@ static NSString* const ArchiveKeyForBounds = @"bounds";
 	if (self)
 	{
         _isSpriteNode = [decoder decodeBoolForKey:ArchiveKeyForIsSpriteNode];
+#if TARGET_OS_IPHONE
         _bounds = [decoder decodeCGRectForKey:ArchiveKeyForBounds];
+#else
+        _bounds = [decoder decodeRectForKey:ArchiveKeyForBounds];
+#endif
 	}
 	return self;
 }
@@ -131,7 +135,12 @@ static NSString* const ArchiveKeyForBounds = @"bounds";
 -(void) encodeWithCoder:(NSCoder*)encoder
 {
     [encoder encodeBool:_isSpriteNode forKey:ArchiveKeyForIsSpriteNode];
+    
+#if TARGET_OS_IPHONE
     [encoder encodeCGRect:_bounds forKey:ArchiveKeyForBounds];
+#else
+    [encoder encodeRect:_bounds forKey:ArchiveKeyForBounds];
+#endif
 }
 
 #pragma mark NSCopying
