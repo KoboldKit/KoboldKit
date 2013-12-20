@@ -111,6 +111,13 @@ static NSString* const ArchiveKeyForAngularVelocityLimit = @"angularVelocityLimi
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
     
+    KKLimitVelocityBehavior *limitBehavior = (KKLimitVelocityBehavior *)behavior;
+    if (fabs(self.velocityLimit - limitBehavior.velocityLimit) > FLT_EPSILON)
+        return NO;
+    
+    if (fabs(self.angularVelocityLimit - limitBehavior.velocityLimit) > FLT_EPSILON)
+        return NO;
+    
 	return NO;
 }
 
