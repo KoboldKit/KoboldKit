@@ -48,15 +48,19 @@
 	return copy;
 }
 
-/*
- #pragma mark Equality
- 
- -(BOOL) isEqualToBehavior:(KKBehavior*)behavior
- {
- if ([self isMemberOfClass:[behavior class]] == NO)
- return NO;
- return NO;
- }
- */
+
+#pragma mark Equality
+
+-(BOOL) isEqualToBehavior:(KKBehavior*)behavior
+{
+    if ([self isMemberOfClass:[behavior class]] == NO)
+        return NO;
+    
+    KKNotifyOnContactBehavior *notifyBehavior = (KKNotifyOnContactBehavior *)behavior;
+    if ([self.notification isEqualToString:notifyBehavior.notification])
+        return YES;
+     
+    return NO;
+}
 
 @end
