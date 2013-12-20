@@ -8,7 +8,7 @@
 #import "KKBehavior.h"
 
 /** Sets upper and lower limits of a physics body's velocities. */
-@interface KKLimitVelocityBehavior : KKBehavior
+@interface KKLimitVelocityBehavior : KKBehavior <KKSceneEventDelegate>
 
 /** The physics body's maximum linear velocity (movement speed). */
 @property (atomic) CGFloat velocityLimit;
