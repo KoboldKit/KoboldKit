@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51208E121864D87E000F1464 /* KKInputEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 51208E111864D87E000F1464 /* KKInputEventDelegate.h */; };
 		51C4994E1864832900FC0972 /* SKColor+KoboldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C4994C1864832900FC0972 /* SKColor+KoboldKit.h */; };
 		51C4994F1864832900FC0972 /* SKColor+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C4994D1864832900FC0972 /* SKColor+KoboldKit.m */; };
 		51C499501864832900FC0972 /* SKColor+KoboldKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C4994D1864832900FC0972 /* SKColor+KoboldKit.m */; };
@@ -301,6 +302,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		51208E111864D87E000F1464 /* KKInputEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKInputEventDelegate.h; sourceTree = "<group>"; };
 		51C4994C1864832900FC0972 /* SKColor+KoboldKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKColor+KoboldKit.h"; sourceTree = "<group>"; };
 		51C4994D1864832900FC0972 /* SKColor+KoboldKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKColor+KoboldKit.m"; sourceTree = "<group>"; };
 		DC042A82178C5A06009FDBF8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
@@ -700,6 +702,7 @@
 				DC8B554417CBEFCB00F95CBC /* KKPhysicsContactEventDelegate.h */,
 				DC8B554517CBEFCB00F95CBC /* KKSceneEventDelegate.h */,
 				DC8B554617CBEFCB00F95CBC /* KKTilemapObjectSpawnDelegate.h */,
+				51208E111864D87E000F1464 /* KKInputEventDelegate.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -869,6 +872,7 @@
 				DC8B559517CBEFCB00F95CBC /* NSString+KoboldKit.h in Headers */,
 				DC8B55B117CBEFCB00F95CBC /* KKNodeController.h in Headers */,
 				DC8B55E917CBEFCB00F95CBC /* KKTilemapLayerContourTracer.h in Headers */,
+				51208E121864D87E000F1464 /* KKInputEventDelegate.h in Headers */,
 				DC8B55C417CBEFCB00F95CBC /* KKNodeShared.h in Headers */,
 				DC8B55D017CBEFCB00F95CBC /* KKNodes.h in Headers */,
 				DC8B55E017CBEFCB00F95CBC /* KKLua.h in Headers */,
