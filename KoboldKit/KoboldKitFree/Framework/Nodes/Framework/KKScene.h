@@ -8,6 +8,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import "KKSceneEventDelegate.h"
 #import "KKPhysicsContactEventDelegate.h"
+#import "KKInputEventDelegate.h"
 
 @class KKNodeController;
 @class KKView;
@@ -55,10 +56,10 @@ typedef enum
 
 /** Adds a scene event observer.
  @param observer The receiver of scene events. */
--(void) addSceneEventsObserver:(id)observer;
+-(void) addSceneEventsObserver:(id<KKSceneEventDelegate>)observer;
 /** Removes a scene event observer.
   @param observer The receiver of scene events. */
--(void) removeSceneEventsObserver:(id)observer;
+-(void) removeSceneEventsObserver:(id<KKSceneEventDelegate>)observer;
 
 /** Adds a physics contact event observer.
  @param observer The receiver of scene events. */

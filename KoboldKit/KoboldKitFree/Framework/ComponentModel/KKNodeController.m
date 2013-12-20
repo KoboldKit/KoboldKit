@@ -144,11 +144,7 @@ NSString* const KKNodeControllerUserDataKey = @"<KKNodeController>";
 
 	[behavior internal_joinController:self withKey:key];
 	[_behaviors addObject:behavior];
-	
-	if (_node.parent)
-	{
-		[behavior didJoinController];
-	}
+    [behavior didJoinController];
 	
 	[self addPotentialPhysicsContactObserver:behavior];
 }

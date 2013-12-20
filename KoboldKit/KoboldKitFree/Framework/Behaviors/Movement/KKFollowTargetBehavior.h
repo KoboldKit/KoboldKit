@@ -10,7 +10,7 @@
 
 /** Updates the owning node's position from another node's position, applying optional offset and/or multiplier.
  The multiplier can be used to achieve a parallaxing effect. */
-@interface KKFollowTargetBehavior : KKBehavior
+@interface KKFollowTargetBehavior : KKBehavior <KKSceneEventDelegate>
 
 /** The target the behavior's node is following. */
 @property (atomic, weak) SKNode* target;
