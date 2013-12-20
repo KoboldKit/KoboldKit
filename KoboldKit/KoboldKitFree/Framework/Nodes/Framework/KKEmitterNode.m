@@ -11,7 +11,7 @@
 @implementation KKEmitterNode
 KKNODE_SHARED_CODE
 
-+(id) emitterWithFile:(NSString*)file
++(instancetype) emitterWithFile:(NSString*)file
 {
 	return [NSKeyedUnarchiver unarchiveObjectWithFile:[NSBundle pathForFile:file]];
 }

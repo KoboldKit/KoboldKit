@@ -10,6 +10,6 @@
 
 @interface KKEmitterNode : SKEmitterNode <KKTilemapObjectSpawnDelegate>
 
-+(id) emitterWithFile:(NSString*)file;
++(instancetype) emitterWithFile:(NSString*)file;
 
 @end
