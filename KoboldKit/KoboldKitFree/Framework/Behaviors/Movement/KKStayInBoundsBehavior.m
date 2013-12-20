@@ -114,31 +114,24 @@
 #pragma mark !! Update methods below whenever class layout changes !!
 #pragma mark NSCoding
 
-static NSString* const ArchiveKeyForOtherNode = @"otherNode";
-static NSString* const ArchiveKeyForPositionOffset = @"positionOffset";
-static NSString* const ArchiveKeyForPositionMultiplier = @"positionMultiplier";
+static NSString* const ArchiveKeyForIsSpriteNode = @"isSpriteNode";
+static NSString* const ArchiveKeyForBounds = @"bounds";
 
 -(id) initWithCoder:(NSCoder*)decoder
 {
 	self = [super init];
 	if (self)
 	{
-		/*
-		_target = [decoder decodeObjectForKey:ArchiveKeyForOtherNode];
-		_positionOffset = [decoder decodeCGPointForKey:ArchiveKeyForPositionOffset];
-		_positionMultiplier = [decoder decodeCGPointForKey:ArchiveKeyForPositionMultiplier];
-		 */
+        _isSpriteNode = [decoder decodeBoolForKey:ArchiveKeyForIsSpriteNode];
+        _bounds = [decoder decodeCGRectForKey:ArchiveKeyForBounds];
 	}
 	return self;
 }
 
 -(void) encodeWithCoder:(NSCoder*)encoder
 {
-	/*
-	[encoder encodeObject:_target forKey:ArchiveKeyForOtherNode];
-	[encoder encodeCGPoint:_positionOffset forKey:ArchiveKeyForPositionOffset];
-	[encoder encodeCGPoint:_positionMultiplier forKey:ArchiveKeyForPositionMultiplier];
-	 */
+    [encoder encodeBool:_isSpriteNode forKey:ArchiveKeyForIsSpriteNode];
+    [encoder encodeCGRect:_bounds forKey:ArchiveKeyForBounds];
 }
 
 #pragma mark NSCopying
