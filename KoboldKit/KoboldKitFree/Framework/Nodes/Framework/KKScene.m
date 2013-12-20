@@ -275,11 +275,9 @@ KKNODE_SHARED_CODE
 	}
 }
 
-#pragma mark Touches
-
-DEVELOPER_FIXME("remove calls to respondsToSelector by separating observers into individual touch event arrays")
-
 #if TARGET_OS_IPHONE
+
+#pragma mark Touches
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
