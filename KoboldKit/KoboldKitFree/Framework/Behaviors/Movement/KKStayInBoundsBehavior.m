@@ -150,6 +150,7 @@ static NSString* const ArchiveKeyForBounds = @"bounds";
 {
 	if ([self isMemberOfClass:[behavior class]] == NO)
 		return NO;
+    
 	return NO;
 }
 @end

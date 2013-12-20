@@ -72,6 +72,16 @@ static NSString* const ArchiveKeyForScrollingNode = @"scrollingNode";
 }
 
 #pragma mark Equality
-
+-(BOOL) isEqualToBehavior:(KKBehavior*)behavior
+{
+	if ([self isMemberOfClass:[behavior class]] == NO)
+		return NO;
+    
+    KKCameraFollowBehavior *followBehavior = (KKCameraFollowBehavior *)behavior;
+    if ([followBehavior.scrollingNode isEqualToNode:_scrollingNode])
+        return YES;
+    
+	return NO;
+}
 
 @end
