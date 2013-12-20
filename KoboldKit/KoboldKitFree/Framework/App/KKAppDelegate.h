@@ -15,16 +15,14 @@
 @interface KKAppDelegate : UIResponder <UIApplicationDelegate>
 #else
 @interface KKAppDelegate : NSResponder <NSApplicationDelegate>
+
+/** @returns The Kobold Kit view controller. */
+@property (strong) KKViewController* viewController;
 #endif
 
 /** The window reference. On Mac OS X this is the main window. */
 @property (strong, nonatomic) IBOutlet KKWindow* window;
 /** Convenience accessor to view cast to KKView. */
 @property (weak) IBOutlet KKView *kkView;
-
-#if !TARGET_OS_IPHONE
-/** @returns The Kobold Kit view controller. */
-@property (strong) KKViewController* viewController;
-#endif
 
 @end
