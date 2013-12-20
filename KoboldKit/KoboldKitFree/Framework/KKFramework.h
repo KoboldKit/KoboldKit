@@ -21,21 +21,19 @@
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
-#else
-#import <Cocoa/Cocoa.h>
-#endif
 
-/** typedefs for platform compatibility */
-#if TARGET_OS_IPHONE
 typedef UIResponder KKResponder;
 typedef UITouch KKTouch;
 typedef UIWindow KKWindow;
 #else
+#import <Cocoa/Cocoa.h>
+
 typedef NSResponder KKResponder;
 typedef NSTouch KKTouch;
 typedef NSWindow KKWindow;
 
 #define NSStringFromCGRect NSStringFromRect
+#define NSStringFromCGPoint NSStringFromPoint
 #endif
 
 /** typedefs for SK forward compatibility */
