@@ -15,13 +15,14 @@
 @interface KKViewController : UIViewController
 #else
 @interface KKViewController : NSViewController
+
+/** Called after view did load. Declaration needed for Mac OS X whose NSViewController knows no viewDidLoad method. */
+-(void) viewDidLoad;
+
 #endif
 
 /** @returns The view controller's view cast to KKView. Use this property to use the KKView methods and properties. */
 @property (atomic, readonly) KKView* kkView;
-
-/** Called after view did load. Declaration needed for Mac OS X whose NSViewController knows no viewDidLoad method. */
--(void) viewDidLoad;
 
 /** Called when the view is ready to present the first scene. Override in your subclass to present the very first scene. */
 -(void) presentFirstScene;
