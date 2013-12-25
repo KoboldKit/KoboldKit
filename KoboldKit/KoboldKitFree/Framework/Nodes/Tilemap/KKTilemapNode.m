@@ -53,7 +53,7 @@
 		self.scene.backgroundColor = _tilemap.backgroundColor;
 		
 		KKTilemapTileLayerNode* tileLayerNode = nil;
-		
+        
 		for (KKTilemapLayer* layer in _tilemap.layers)
 		{
 			if (layer.isTileLayer)

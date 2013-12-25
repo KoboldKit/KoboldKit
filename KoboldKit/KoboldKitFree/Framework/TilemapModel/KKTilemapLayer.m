@@ -23,6 +23,7 @@
 		_parallaxFactor = CGPointMake(1.0f, 1.0f);
 		_hidden = NO;
 		_alpha = 1.0f;
+		_blendMode = SKBlendModeAlpha;
 	}
 
 	return self;

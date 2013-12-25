@@ -134,6 +134,7 @@
 		NSUInteger layerGidCount = _layer.tileCount;
 		BOOL endlessScrollingHorizontal = _layer.endlessScrollingHorizontal;
 		BOOL endlessScrollingVertical = _layer.endlessScrollingVertical;
+		SKBlendMode blendMode = _layer.blendMode;
 
 		for (int viewTilePosY = 0; viewTilePosY < _visibleTilesOnScreen.height; viewTilePosY++)
 		{
@@ -256,6 +257,7 @@
 				tileSprite.yScale = yScale;
 				tileSprite.position = tileSpritePosition;
 				tileSprite.hidden = NO;
+				tileSprite.blendMode = blendMode;
 
 				if (tileSprite.texture != tileSpriteTexture)
 				{

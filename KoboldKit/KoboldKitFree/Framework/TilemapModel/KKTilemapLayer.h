@@ -54,6 +54,9 @@
    The alpha of a layer can be set in Tiled by moving the Opacity slider just above the Layers list. Default: 1.0. TILED-EDITABLE
  @returns The alpha (opacity) of the layer. */
 @property (atomic) float alpha;
+/** The blend mode used to draw the tile images into the layer. Default: SKBlendModeAlpha. TILED-EDITABLE
+ @returns The SKBlendMode of the layer. */
+@property (atomic) SKBlendMode blendMode;
 
 /** If YES, this layer will scroll endlessly in all directions, repeating itself (wrap around) at map borders. If changed will set both
  endlessScrollingHorizontal and endlessScrollingVertical. Returns YES only if both endlessScrollingHorizontal and endlessScrollingVertical are YES.
