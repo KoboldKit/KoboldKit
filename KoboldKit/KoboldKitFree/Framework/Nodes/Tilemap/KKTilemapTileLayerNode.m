@@ -28,7 +28,7 @@
 	CGSize gridSize = _tilemap.gridSize;
 	CGSize mapSize = _tilemap.size;
 	
-	_visibleTilesOnScreen = CGSizeMake(ceil(sceneSize.width / gridSize.width) + 2, ceil(sceneSize.height / gridSize.height) + 3);
+	_visibleTilesOnScreen = CGSizeMake(ceil(sceneSize.width / gridSize.width) + 3, ceil(sceneSize.height / gridSize.height) + 3);
 	_viewBoundary = CGSizeMake(-(mapSize.width * gridSize.width - (_visibleTilesOnScreen.width - 1) * gridSize.width),
 							   -(mapSize.height * gridSize.height - (_visibleTilesOnScreen.height - 1) * gridSize.height));
 
