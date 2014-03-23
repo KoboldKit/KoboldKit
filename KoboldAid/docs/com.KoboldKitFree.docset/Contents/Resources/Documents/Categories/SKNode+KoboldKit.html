@@ -86,9 +86,7 @@
 	
 	<option value="//api/name/hasBehaviors">&nbsp;&nbsp;&nbsp;&nbsp;- hasBehaviors</option>
 	
-	<option value="//api/name/isEqualToNode:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToNode:</option>
-	
-	<option value="//api/name/isEqualToNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToNodeTree:</option>
+	<option value="//api/name/logSceneGraph">&nbsp;&nbsp;&nbsp;&nbsp;- logSceneGraph</option>
 	
 	<option value="//api/name/observeInputEvents">&nbsp;&nbsp;&nbsp;&nbsp;- observeInputEvents</option>
 	
@@ -126,6 +124,8 @@
 	
 	<option value="//api/name/resumeControllersInNodeTree:">&nbsp;&nbsp;&nbsp;&nbsp;- resumeControllersInNodeTree:</option>
 	
+	<option value="//api/name/stringFromSceneGraph">&nbsp;&nbsp;&nbsp;&nbsp;- stringFromSceneGraph</option>
+	
 	<option value="//api/name/willMoveFromParent">&nbsp;&nbsp;&nbsp;&nbsp;- willMoveFromParent</option>
 	
 	
@@ -161,6 +161,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to physics contact events">Subscribe to physics contact events</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribe to notifications">Subscribe to notifications</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Debugging">Debugging</a></span></li>
 	
 </ul></li>
 
@@ -218,9 +220,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasBehaviors">hasBehaviors</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToNode:">isEqualToNode:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToNodeTree:">isEqualToNodeTree:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logSceneGraph">logSceneGraph</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeInputEvents">observeInputEvents</a></span></li>
 	
@@ -257,6 +257,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeController">removeController</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeControllersInNodeTree:">resumeControllersInNodeTree:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringFromSceneGraph">stringFromSceneGraph</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willMoveFromParent">willMoveFromParent</a></span></li>
 	
@@ -611,15 +613,23 @@
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Debugging" name="task_Debugging"></a>
+						<h3 class="subsubtitle task-title">Debugging</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/isEqualToNode:">&ndash;&nbsp;isEqualToNode:</a></code>
+		<code><a href="#//api/name/stringFromSceneGraph">&ndash;&nbsp;stringFromSceneGraph</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/isEqualToNodeTree:">&ndash;&nbsp;isEqualToNodeTree:</a></code>
+		<code><a href="#//api/name/logSceneGraph">&ndash;&nbsp;logSceneGraph</a></code>
 	</span>
 	
 	
@@ -1502,25 +1512,39 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/isEqualToNode:" title="isEqualToNode:"></a>
-	<h3 class="subsubtitle method-title">isEqualToNode:</h3>
+	<a name="//api/name/logSceneGraph" title="logSceneGraph"></a>
+	<h3 class="subsubtitle method-title">logSceneGraph</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>log scene graph dump to debug console</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToNode:(SKNode *)<em>node</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)logSceneGraph</code></div>
 
     
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/isEqualToNodeTree:" title="isEqualToNodeTree:"></a>
-	<h3 class="subsubtitle method-title">isEqualToNodeTree:</h3>
 	
 	
-
-	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToNodeTree:(SKNode *)<em>node</em></code></div>
-
-    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -2319,6 +2343,42 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/stringFromSceneGraph" title="stringFromSceneGraph"></a>
+	<h3 class="subsubtitle method-title">stringFromSceneGraph</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>dump scene graph from current node as string</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringFromSceneGraph</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SKNode+KoboldKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/willMoveFromParent" title="willMoveFromParent"></a>
 	<h3 class="subsubtitle method-title">willMoveFromParent</h3>
 	
@@ -2369,7 +2429,7 @@ scene resizing and scene move to/from view. Receiver only needs to implement the
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						<p><span class="copyright">&copy; 2014 Kobold Tech. All rights reserved. (Last updated: 2014-03-23)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

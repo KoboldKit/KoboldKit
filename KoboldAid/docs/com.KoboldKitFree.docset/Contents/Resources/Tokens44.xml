@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapProperties.html">
+	<File path="Classes/KKViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapProperties</TokenIdentifier>
-			<Abstract type="html">KTTilemapProperties is a thin wrapper around NSMutableDictionary. It only allows NSString as keys and either KKMutableNumber or NSString as values (objects).
-   Values can only be added and replaced but not removed. For weakly typed runtime variables use KTModel variables instead.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKViewController</TokenIdentifier>
+			<Abstract type="html">View controller for a Kobold Kit view, supposed to be subclassed by user for the Kobold Kit view controller &amp;amp; view.
+Creates the KKView and performs other setup tasks. Combines code for both iOS &amp;amp; OS X platforms to a single uniform controller.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
             
 			
 			<NodeRef refid="44"/>
@@ -14,189 +14,62 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setProperties:</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/setKkView:</TokenIdentifier>
+			<Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSMutableDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/properties</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSMutableDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/properties</TokenIdentifier>
-			<Abstract type="html">The properties as key-value dictionary. Keys are NSString objects, values are KKMutableNumber objects.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKViewController/kkView</TokenIdentifier>
+			<Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSMutableDictionary *properties</Declaration>
+			<Declaration>@property (atomic, readonly) KKView *kkView</Declaration>
 			
-			
-			<Anchor>//api/name/properties</Anchor>
+			<ReturnValue><Abstract type="html">The view controller&apos;s view cast to KKView. Use this property to use the KKView methods and properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/kkView</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setCount:</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Called after view did load. Declaration needed for Mac OS X whose NSViewController knows no viewDidLoad method.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			<Declaration>- (void)viewDidLoad</Declaration>
 			
 			
-			<Anchor>//api/name/count</Anchor>
+			<Anchor>//api/name/viewDidLoad</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/count</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKViewController/presentFirstScene</TokenIdentifier>
+			<Abstract type="html">Called when the view is ready to present the first scene. Override in your subclass to present the very first scene.</Abstract>
+			<DeclaredIn>KKViewController.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
-			
-			
-			<Anchor>//api/name/count</Anchor>
-            <NodeRef refid="44"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapProperties/count</TokenIdentifier>
-			<Abstract type="html">Returns the number of property items.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
-			
-			<Declaration>@property (atomic, readonly) NSUInteger count</Declaration>
+			<Declaration>- (void)presentFirstScene</Declaration>
 			
 			
-			<Anchor>//api/name/count</Anchor>
-            <NodeRef refid="44"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setNumber:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the number for the given key. If a value for the given key already exists the number will take its place.
-   Caution: it is illegal to set a KKMutableNumber for an already existing key that stores a NSString.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
-			
-			<Declaration>- (void)setNumber:(KKMutableNumber *)number forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">The KKMutableNumber number to set.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setNumber:forKey:</Anchor>
-            <NodeRef refid="44"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setString:forKey:</TokenIdentifier>
-			<Abstract type="html">Sets the string for the given key. If a value for the given key already exists the string will take its place.
-   Caution: it is illegal to set a NSString for an already existing key that stores a KKMutableNumber.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
-			
-			<Declaration>- (void)setString:(NSString *)string forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">The NSString to set.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the number. </Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setString:forKey:</Anchor>
-            <NodeRef refid="44"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/setValue:forKey:</TokenIdentifier>
-			<Abstract type="html">(KTTMXReader only) This method first determines if the string can be converted to KKMutableNumber and if so, will set the KKMutableNumber.
-   Otherwise it will set the string.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
-			
-			<Declaration>- (void)setValue:(NSString *)string forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">The string to set. If the string can be converted to a number, a KKMutableNumber object will be created and set instead.</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the string or number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setValue:forKey:</Anchor>
-            <NodeRef refid="44"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberFromString:</TokenIdentifier>
-			<Abstract type="html">Returns a KKMutableNumber from a string if the string is convertable to a number. Otherwise returns nil.
-   Note: floating point numbers must use . (dot) as floating point separator.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
-			
-			<Declaration>- (KKMutableNumber *)numberFromString:(NSString *)string</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">The string to convert to KKMutableNumber.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The converted number or nil if the string can&apos;t be converted to a number.</Abstract></ReturnValue>
-			<Anchor>//api/name/numberFromString:</Anchor>
-            <NodeRef refid="44"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/numberForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the KKMutableNumber for the key. If there&apos;s no number for that key returns nil.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
-			
-			<Declaration>- (KKMutableNumber *)numberForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the number.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The number for the key, or nil if there&apos;s no number with this key.</Abstract></ReturnValue>
-			<Anchor>//api/name/numberForKey:</Anchor>
-            <NodeRef refid="44"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapProperties/stringForKey:</TokenIdentifier>
-			<Abstract type="html">Returns the NSString for the key. If there&apos;s no string for that key returns nil.</Abstract>
-			<DeclaredIn>KKTilemapProperties.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)stringForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key uniquely identifying the string.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The string for the key, or nil if there&apos;s no string with this key.</Abstract></ReturnValue>
-			<Anchor>//api/name/stringForKey:</Anchor>
+			<Anchor>//api/name/presentFirstScene</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		

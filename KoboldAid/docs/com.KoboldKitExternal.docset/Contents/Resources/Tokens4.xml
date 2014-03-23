@@ -6,7 +6,7 @@
 			<TokenIdentifier>//apple_ref/occ/cl/ALContext</TokenIdentifier>
 			<Abstract type="html">A context encompasses a single listener and a series of sources.
 A context is created from a device, and many contexts may be created
-(though multiple contexts would be unusual in an iOS app). &lt;br&gt;</Abstract>
+(though multiple contexts would be unusual in an iOS app).</Abstract>
 			<DeclaredIn>ALContext.h</DeclaredIn>
             
 			
@@ -172,7 +172,7 @@ Only valid when this is the current context.</Abstract>
 			<Abstract type="html">The current distance model.
 Legal values are ALNONE, ALINVERSEDISTANCE, ALINVERSEDISTANCECLAMPED,
 ALLINEARDISTANCE, ALLINEARDISTANCECLAMPED, ALEXPONENT_DISTANCE,
-and ALEXPONENTDISTANCE_CLAMPED. See the OpenAL spec for detailed information. &lt;br&gt;
+and ALEXPONENTDISTANCE_CLAMPED. See the OpenAL spec for detailed information.
 Only valid when this is the current context.</Abstract>
 			<DeclaredIn>ALContext.h</DeclaredIn>
 			
@@ -188,7 +188,7 @@ Only valid when this is the current context.</Abstract>
 			<Abstract type="html">The current distance model.
 Legal values are ALNONE, ALINVERSEDISTANCE, ALINVERSEDISTANCECLAMPED,
 ALLINEARDISTANCE, ALLINEARDISTANCECLAMPED, ALEXPONENT_DISTANCE,
-and ALEXPONENTDISTANCE_CLAMPED. See the OpenAL spec for detailed information. &lt;br&gt;
+and ALEXPONENTDISTANCE_CLAMPED. See the OpenAL spec for detailed information.
 Only valid when this is the current context.</Abstract>
 			<DeclaredIn>ALContext.h</DeclaredIn>
 			
@@ -204,7 +204,7 @@ Only valid when this is the current context.</Abstract>
 			<Abstract type="html">The current distance model.
 Legal values are ALNONE, ALINVERSEDISTANCE, ALINVERSEDISTANCECLAMPED,
 ALLINEARDISTANCE, ALLINEARDISTANCECLAMPED, ALEXPONENT_DISTANCE,
-and ALEXPONENTDISTANCE_CLAMPED. See the OpenAL spec for detailed information. &lt;br&gt;
+and ALEXPONENTDISTANCE_CLAMPED. See the OpenAL spec for detailed information.
 Only valid when this is the current context.</Abstract>
 			<DeclaredIn>ALContext.h</DeclaredIn>
 			
@@ -663,7 +663,7 @@ Only valid when this is the current context.</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ALContext/getProcAddress:</TokenIdentifier>
 			<Abstract type="html">Get the address of the specified procedure (C function address).
-Only valid when this is the current context. &lt;br&gt;
+Only valid when this is the current context.
 &lt;strong&gt;Note:&lt;/strong&gt; The OpenAL implementation is free to return
 a pointer even if it is not valid for this context. Always call isExtensionPresent
 first.</Abstract>

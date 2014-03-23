@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSDictionary+KoboldKit.html">
+	<File path="Protocols/KKPhysicsContactEventDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">Kobold Kit extensions</Abstract>
-			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/KKPhysicsContactEventDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
             
 			
 			<NodeRef refid="55"/>
@@ -13,20 +13,78 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/dictionaryWithContentsOfLuaScript:</TokenIdentifier>
-			<Abstract type="html">Runs the given Lua script file and transforms the returned Lua table into a KVC coded NSDictionary.
-Navigate the table with valueForKeyPath:</Abstract>
-			<DeclaredIn>NSDictionary+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/setNode:</TokenIdentifier>
+			<Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
 			
-			<Declaration>+ (NSDictionary *)dictionaryWithContentsOfLuaScript:(NSString *)scriptFile</Declaration>
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/node</TokenIdentifier>
+			<Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/KKPhysicsContactEventDelegate/node</TokenIdentifier>
+			<Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The physics contact delegate&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/didBeginContact:otherBody:</TokenIdentifier>
+			<Abstract type="html">Called when two objects&apos;s physics bodies get in contact.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)didBeginContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>scriptFile</Name>
-					<Abstract type="html">The name of a Lua script file.</Abstract>
+					<Name>contact</Name>
+					<Abstract type="html">The contact object.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherBody</Name>
+					<Abstract type="html">The other contacting body.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The Lua table as a dictionary, or nil if there are any errors.</Abstract></ReturnValue>
-			<Anchor>//api/name/dictionaryWithContentsOfLuaScript:</Anchor>
+			
+			<Anchor>//api/name/didBeginContact:otherBody:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/KKPhysicsContactEventDelegate/didEndContact:otherBody:</TokenIdentifier>
+			<Abstract type="html">Called when two objects&apos;s physics bodies&apos; contact ends.</Abstract>
+			<DeclaredIn>KKPhysicsContactEventDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)didEndContact:(SKPhysicsContact *)contact otherBody:(SKPhysicsBody *)otherBody</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contact</Name>
+					<Abstract type="html">The contact object.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherBody</Name>
+					<Abstract type="html">The other contacting body.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didEndContact:otherBody:</Anchor>
             <NodeRef refid="55"/>
 		</Token>
 		

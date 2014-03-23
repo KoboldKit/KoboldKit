@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapLayerNode.html">
+	<File path="Classes/KKTilemapRectangleObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerNode</TokenIdentifier>
-			<Abstract type="html">Common base class for both KKTilemapObjectLayerNode and KKTilemapTileLayerNode</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapRectangleObject</TokenIdentifier>
+			<Abstract type="html">A rectangle object, usually referred to as simply &quot;object&quot; in Tiled.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
             
 			
 			<NodeRef refid="38"/>
@@ -13,110 +13,74 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setLayer:</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/setRect:</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			<Declaration>@property (atomic) CGRect rect</Declaration>
 			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
+			
+			<Anchor>//api/name/rect</Anchor>
             <NodeRef refid="38"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/layer</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/rect</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			<Declaration>@property (atomic) CGRect rect</Declaration>
 			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
+			
+			<Anchor>//api/name/rect</Anchor>
             <NodeRef refid="38"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/layer</TokenIdentifier>
-			<Abstract type="html">The tilemap layer object.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapRectangleObject/rect</TokenIdentifier>
+			<Abstract type="html">The rectangle as CGRect, for convenience. Rect origin is the same as position, rect size the same as size.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
+			<Declaration>@property (atomic) CGRect rect</Declaration>
 			
-			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
-			<Anchor>//api/name/layer</Anchor>
+			
+			<Anchor>//api/name/rect</Anchor>
             <NodeRef refid="38"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setTilemapNode:</TokenIdentifier>
-			<Abstract type="html">The layer&apos;s tilemap node.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/setEllipse:</TokenIdentifier>
+			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
+			<Declaration>@property (atomic) BOOL ellipse</Declaration>
 			
-			<ReturnValue><Abstract type="html">The layer&apos;s tilemap node.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilemapNode</Anchor>
+			
+			<Anchor>//api/name/ellipse</Anchor>
             <NodeRef refid="38"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/tilemapNode</TokenIdentifier>
-			<Abstract type="html">The layer&apos;s tilemap node.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapRectangleObject/ellipse</TokenIdentifier>
+			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
+			<Declaration>@property (atomic) BOOL ellipse</Declaration>
 			
-			<ReturnValue><Abstract type="html">The layer&apos;s tilemap node.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilemapNode</Anchor>
+			
+			<Anchor>//api/name/ellipse</Anchor>
             <NodeRef refid="38"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/tilemapNode</TokenIdentifier>
-			<Abstract type="html">The layer&apos;s tilemap node.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapRectangleObject/ellipse</TokenIdentifier>
+			<Abstract type="html">YES if the rectangle defines the outer area of an ellipse.</Abstract>
+			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
-			
-			<ReturnValue><Abstract type="html">The layer&apos;s tilemap node.</Abstract></ReturnValue>
-			<Anchor>//api/name/tilemapNode</Anchor>
-            <NodeRef refid="38"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/tileCoordForPoint:</TokenIdentifier>
-			<Abstract type="html">Converts a point from scene coordinates to tile coordinates within the layer.</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
-			
-			<Declaration>- (CGPoint)tileCoordForPoint:(CGPoint)point</Declaration>
+			<Declaration>@property (atomic) BOOL ellipse</Declaration>
 			
 			
-			<Anchor>//api/name/tileCoordForPoint:</Anchor>
-            <NodeRef refid="38"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/centerPositionForTileCoord:</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
-			
-			<Declaration>- (CGPoint)centerPositionForTileCoord:(CGPoint)tileCoord</Declaration>
-			
-			
-			<Anchor>//api/name/centerPositionForTileCoord:</Anchor>
-            <NodeRef refid="38"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/positionForTileCoord:</TokenIdentifier>
-			<Abstract type="html">nd</Abstract>
-			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
-			
-			<Declaration>- (CGPoint)positionForTileCoord:(CGPoint)tileCoord</Declaration>
-			
-			
-			<Anchor>//api/name/positionForTileCoord:</Anchor>
+			<Anchor>//api/name/ellipse</Anchor>
             <NodeRef refid="38"/>
 		</Token>
 		

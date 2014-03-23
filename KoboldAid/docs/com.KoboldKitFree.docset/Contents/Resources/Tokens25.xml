@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKNotifyOnContactBehavior.html">
+	<File path="Classes/KKStayInBoundsBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKNotifyOnContactBehavior</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>KKNotifyOnContactBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKStayInBoundsBehavior</TokenIdentifier>
+			<Abstract type="html">Prevents a node&apos;s position from passing over the bounds rectangle.
+(TODO: Optionally sends notifications when node comes in to contact with the bounds and when contact ends.)</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
             
 			
 			<NodeRef refid="25"/>
@@ -13,38 +14,57 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNotifyOnContactBehavior/setNotification:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>KKNotifyOnContactBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/setBounds:</TokenIdentifier>
+			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, copy) NSString *notification</Declaration>
+			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
 			
-			
-			<Anchor>//api/name/notification</Anchor>
+			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKNotifyOnContactBehavior/notification</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>KKNotifyOnContactBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/bounds</TokenIdentifier>
+			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, copy) NSString *notification</Declaration>
+			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
 			
-			
-			<Anchor>//api/name/notification</Anchor>
+			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKNotifyOnContactBehavior/notification</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>KKNotifyOnContactBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKStayInBoundsBehavior/bounds</TokenIdentifier>
+			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, copy) NSString *notification</Declaration>
+			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
 			
+			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKStayInBoundsBehavior/stayInBounds:</TokenIdentifier>
+			<Abstract type="html">If either x/width or y/height are set to INFINITY then that axis will not check for bounds. Thus if the node
+should be able to move endlessly in horizontal direction but not outside the screen at the top or bottom,
+set bounds.size.width or bounds.origin.x to INFINITY.</Abstract>
+			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
 			
-			<Anchor>//api/name/notification</Anchor>
+			<Declaration>+ (id)stayInBounds:(CGRect)bounds</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bounds</Name>
+					<Abstract type="html">The boundary rectangle.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of the class.</Abstract></ReturnValue>
+			<Anchor>//api/name/stayInBounds:</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		

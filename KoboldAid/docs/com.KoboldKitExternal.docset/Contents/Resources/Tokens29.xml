@@ -5,12 +5,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/OpenALManager</TokenIdentifier>
 			<Abstract type="html">Manager class for OpenAL objects (ObjectAL).
-Keeps track of devices that have been opened, and allows high level OpenAL management. &lt;br&gt;
-Provides methods for loading ALBuffer objects from audio files. &lt;br&gt;
+Keeps track of devices that have been opened, and allows high level OpenAL management.
+Provides methods for loading ALBuffer objects from audio files.
 The OpenAL 1.1 specification is available at
-http://connect.creativelabs.com/openal/Documentation &lt;br&gt;
+http://connect.creativelabs.com/openal/Documentation
 Be sure to read through it (especially the part about distance models) as ObjectAL follows the
-OpenAL object model. &lt;br&gt;</Abstract>
+OpenAL object model.</Abstract>
 			<DeclaredIn>OpenALManager.h</DeclaredIn>
             
 			
@@ -393,8 +393,8 @@ The buffer&apos;s name will be the fully qualified URL.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferAsyncFromFile:target:selector:</TokenIdentifier>
 			<Abstract type="html">Load an OpenAL buffer with the contents of an audio file asynchronously.
 This method will schedule a request to have the buffer created and filled, and then call the
-specified selector with the newly created buffer. &lt;br&gt;
-The buffer&apos;s name will be the fully qualified URL of the path. &lt;br&gt;
+specified selector with the newly created buffer.
+The buffer&apos;s name will be the fully qualified URL of the path.
 Returns the fully qualified URL of the path, which you can match up to the buffer name in your
 callback method.</Abstract>
 			<DeclaredIn>OpenALManager.h</DeclaredIn>
@@ -421,8 +421,8 @@ callback method.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferAsyncFromFile:reduceToMono:target:selector:</TokenIdentifier>
 			<Abstract type="html">Load an OpenAL buffer with the contents of an audio file asynchronously.
 This method will schedule a request to have the buffer created and filled, and then call the
-specified selector with the newly created buffer. &lt;br&gt;
-The buffer&apos;s name will be the fully qualified URL of the path. &lt;br&gt;
+specified selector with the newly created buffer.
+The buffer&apos;s name will be the fully qualified URL of the path.
 Returns the fully qualified URL of the path, which you can match up to the buffer name in your
 callback method.</Abstract>
 			<DeclaredIn>OpenALManager.h</DeclaredIn>
@@ -453,8 +453,8 @@ callback method.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferAsyncFromUrl:target:selector:</TokenIdentifier>
 			<Abstract type="html">Load an OpenAL buffer with the contents of a URL asynchronously.
 This method will schedule a request to have the buffer created and filled, and then call the
-specified selector with the newly created buffer. &lt;br&gt;
-The buffer&apos;s name will be the fully qualified URL. &lt;br&gt;
+specified selector with the newly created buffer.
+The buffer&apos;s name will be the fully qualified URL.
 Returns the fully qualified URL, which you can match up to the buffer name in your callback
 method.</Abstract>
 			<DeclaredIn>OpenALManager.h</DeclaredIn>
@@ -481,8 +481,8 @@ method.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/OpenALManager/bufferAsyncFromUrl:reduceToMono:target:selector:</TokenIdentifier>
 			<Abstract type="html">Load an OpenAL buffer with the contents of a URL asynchronously.
 This method will schedule a request to have the buffer created and filled, and then call the
-specified selector with the newly created buffer. &lt;br&gt;
-The buffer&apos;s name will be the fully qualified URL. &lt;br&gt;
+specified selector with the newly created buffer.
+The buffer&apos;s name will be the fully qualified URL.
 Returns the fully qualified URL, which you can match up to the buffer name in your callback
 method.</Abstract>
 			<DeclaredIn>OpenALManager.h</DeclaredIn>

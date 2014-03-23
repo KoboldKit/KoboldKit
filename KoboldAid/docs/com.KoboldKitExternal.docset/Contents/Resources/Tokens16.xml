@@ -61,7 +61,7 @@ to remain compatible with the category.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setAllowIpod:</TokenIdentifier>
 			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
 Note: If this is enabled, and another app is playing music, background audio
-playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
+playback will use the SOFTWARE codecs, NOT hardware.</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -80,7 +80,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/allowIpod</TokenIdentifier>
 			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
 Note: If this is enabled, and another app is playing music, background audio
-playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
+playback will use the SOFTWARE codecs, NOT hardware.</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -99,7 +99,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/allowIpod</TokenIdentifier>
 			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
 Note: If this is enabled, and another app is playing music, background audio
-playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
+playback will use the SOFTWARE codecs, NOT hardware.</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -153,7 +153,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setUseHardwareIfAvailable:</TokenIdentifier>
 			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
-(NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+(NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -171,7 +171,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/useHardwareIfAvailable</TokenIdentifier>
 			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
-(NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+(NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -189,7 +189,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/useHardwareIfAvailable</TokenIdentifier>
 			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
-(NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+(NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -207,7 +207,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setHonorSilentSwitch:</TokenIdentifier>
 			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
-turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+turned off (NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
@@ -220,7 +220,7 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/honorSilentSwitch</TokenIdentifier>
 			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
-turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+turned off (NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
@@ -233,7 +233,7 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/honorSilentSwitch</TokenIdentifier>
 			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
-turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+turned off (NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
@@ -245,7 +245,7 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/setHandleInterruptions:</TokenIdentifier>
-			<Abstract type="html">If true, automatically handle interruptions. &lt;br&gt;</Abstract>
+			<Abstract type="html">If true, automatically handle interruptions.</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool handleInterruptions</Declaration>
@@ -257,7 +257,7 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioSession/handleInterruptions</TokenIdentifier>
-			<Abstract type="html">If true, automatically handle interruptions. &lt;br&gt;</Abstract>
+			<Abstract type="html">If true, automatically handle interruptions.</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool handleInterruptions</Declaration>
@@ -269,7 +269,7 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/OALAudioSession/handleInterruptions</TokenIdentifier>
-			<Abstract type="html">If true, automatically handle interruptions. &lt;br&gt;</Abstract>
+			<Abstract type="html">If true, automatically handle interruptions.</Abstract>
 			<DeclaredIn>OALAudioSession.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool handleInterruptions</Declaration>

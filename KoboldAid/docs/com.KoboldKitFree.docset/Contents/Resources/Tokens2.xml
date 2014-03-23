@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKAppDelegate.html">
+	<File path="Classes/KKBehavior.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKAppDelegate</TokenIdentifier>
-			<Abstract type="html">In a Kobold Kit project, the app delegate class should inherit from KKAppDelegate which provides default behaviors.
-  Combines code for both iOS &amp;amp; OS X platforms to a single uniform app delegate. In particular on Mac OS X KKAppDelegate sets up the view controller. </Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKBehavior</TokenIdentifier>
+			<Abstract type="html">Behaviors add custom logic to a node.
+Behaviors differ from actions in several ways:</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
             
 			
 			<NodeRef refid="2"/>
@@ -14,110 +14,298 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/setWindow:</TokenIdentifier>
-			<Abstract type="html">The window reference. On Mac OS X this is the main window.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setKey:</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) IBOutlet KKWindow *window</Declaration>
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
 			
-			
-			<Anchor>//api/name/window</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/window</TokenIdentifier>
-			<Abstract type="html">The window reference. On Mac OS X this is the main window.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/key</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) IBOutlet KKWindow *window</Declaration>
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
 			
-			
-			<Anchor>//api/name/window</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKAppDelegate/window</TokenIdentifier>
-			<Abstract type="html">The window reference. On Mac OS X this is the main window.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/key</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s uniquely identifying key.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (strong, nonatomic) IBOutlet KKWindow *window</Declaration>
+			<Declaration>@property (atomic, copy) NSString *key</Declaration>
 			
-			
-			<Anchor>//api/name/window</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s uniquely identifying key.</Abstract></ReturnValue>
+			<Anchor>//api/name/key</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/setKkView:</TokenIdentifier>
-			<Abstract type="html">Convenience accessor to view cast to KKView.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setName:</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (weak) IBOutlet KKView *kkView</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			
-			<Anchor>//api/name/kkView</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/kkView</TokenIdentifier>
-			<Abstract type="html">Convenience accessor to view cast to KKView.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/name</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (weak) IBOutlet KKView *kkView</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			
-			<Anchor>//api/name/kkView</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKAppDelegate/kkView</TokenIdentifier>
-			<Abstract type="html">Convenience accessor to view cast to KKView.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/name</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s name.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (weak) IBOutlet KKView *kkView</Declaration>
+			<Declaration>@property (atomic, copy) NSString *name</Declaration>
 			
-			
-			<Anchor>//api/name/kkView</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s name.</Abstract></ReturnValue>
+			<Anchor>//api/name/name</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/setViewController:</TokenIdentifier>
-			<Abstract type="html">The Kobold Kit view controller.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setController:</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (strong) KKViewController *viewController</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<ReturnValue><Abstract type="html">The Kobold Kit view controller.</Abstract></ReturnValue>
-			<Anchor>//api/name/viewController</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKAppDelegate/viewController</TokenIdentifier>
-			<Abstract type="html">The Kobold Kit view controller.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/controller</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (strong) KKViewController *viewController</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<ReturnValue><Abstract type="html">The Kobold Kit view controller.</Abstract></ReturnValue>
-			<Anchor>//api/name/viewController</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKAppDelegate/viewController</TokenIdentifier>
-			<Abstract type="html">The Kobold Kit view controller.</Abstract>
-			<DeclaredIn>KKAppDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/controller</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s node controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
 			
-			<Declaration>@property (strong) KKViewController *viewController</Declaration>
+			<Declaration>@property (atomic, weak) KKNodeController *controller</Declaration>
 			
-			<ReturnValue><Abstract type="html">The Kobold Kit view controller.</Abstract></ReturnValue>
-			<Anchor>//api/name/viewController</Anchor>
+			<ReturnValue><Abstract type="html">The behavior&apos;s node controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/controller</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setNode:</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/node</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/node</TokenIdentifier>
+			<Abstract type="html">The behavior&apos;s owning node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) SKNode *node</Declaration>
+			
+			<ReturnValue><Abstract type="html">The behavior&apos;s owning node.</Abstract></ReturnValue>
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/setEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don&apos;t receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don&apos;t receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/enabled</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don&apos;t receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don&apos;t receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKBehavior/enabled</TokenIdentifier>
+			<Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don&apos;t receive update messages.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL enabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether the behavior is enabled.
+Disabled behaviors don&apos;t receive update messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKBehavior/behavior</TokenIdentifier>
+			<Abstract type="html">Creates a new instance.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>+ (id)behavior</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/behavior</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/removeFromNode</TokenIdentifier>
+			<Abstract type="html">Removes the behavior from its owning node and controller.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>- (void)removeFromNode</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromNode</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didInitialize</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior is first created.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>- (void)didInitialize</Declaration>
+			
+			
+			<Anchor>//api/name/didInitialize</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didJoinController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was added to a node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>- (void)didJoinController</Declaration>
+			
+			
+			<Anchor>//api/name/didJoinController</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didLeaveController</TokenIdentifier>
+			<Abstract type="html">Sent when the behavior was removed from a node.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>- (void)didLeaveController</Declaration>
+			
+			
+			<Anchor>//api/name/didLeaveController</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/didChangeEnabledState</TokenIdentifier>
+			<Abstract type="html">Sent when the enabled state of the behavior was changed.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>- (void)didChangeEnabledState</Declaration>
+			
+			
+			<Anchor>//api/name/didChangeEnabledState</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/postNotificationName:</TokenIdentifier>
+			<Abstract type="html">Posts a notification to notification center, with userInfo &quot;behavior&quot; key pointing to the sending behavior object.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>- (void)postNotificationName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The uniquely identifying name of the notification.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postNotificationName:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKBehavior/postNotificationName:userInfo:</TokenIdentifier>
+			<Abstract type="html">Posts a notification to notification center, with userInfo &quot;behavior&quot; key pointing to the sending behavior object, and custom userInfo keys.</Abstract>
+			<DeclaredIn>KKBehavior.h</DeclaredIn>
+			
+			<Declaration>- (void)postNotificationName:(NSString *)name userInfo:(NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The uniquely identifying name of the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">A dictionary with custom key/value which the notification receiver may need. A key &quot;behavior&quot; containing the
+sending behavior object is always added to the dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postNotificationName:userInfo:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

@@ -53,7 +53,7 @@ Interruptions can be handled by OALAudioSupport (enabled by default).</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/setDelegate:</TokenIdentifier>
 			<Abstract type="html">Optional object that will receive notifications for decoding errors,
-audio interruptions (such as an incoming phone call), and playback completion. &lt;br&gt;
+audio interruptions (such as an incoming phone call), and playback completion.
 &lt;strong&gt;Note:&lt;/strong&gt; OALAudioTrack keeps a WEAK reference to delegate, so make sure you clear it
 when your object is going to be deallocated.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
@@ -68,7 +68,7 @@ when your object is going to be deallocated.</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/delegate</TokenIdentifier>
 			<Abstract type="html">Optional object that will receive notifications for decoding errors,
-audio interruptions (such as an incoming phone call), and playback completion. &lt;br&gt;
+audio interruptions (such as an incoming phone call), and playback completion.
 &lt;strong&gt;Note:&lt;/strong&gt; OALAudioTrack keeps a WEAK reference to delegate, so make sure you clear it
 when your object is going to be deallocated.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
@@ -83,7 +83,7 @@ when your object is going to be deallocated.</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/OALAudioTrack/delegate</TokenIdentifier>
 			<Abstract type="html">Optional object that will receive notifications for decoding errors,
-audio interruptions (such as an incoming phone call), and playback completion. &lt;br&gt;
+audio interruptions (such as an incoming phone call), and playback completion.
 &lt;strong&gt;Note:&lt;/strong&gt; OALAudioTrack keeps a WEAK reference to delegate, so make sure you clear it
 when your object is going to be deallocated.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
@@ -511,7 +511,7 @@ You can set this to change the playback position, whether it is currently playin
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/setDeviceCurrentTime:</TokenIdentifier>
-			<Abstract type="html">The value of this property increases monotonically while an audio player is playing or paused. &lt;br&gt;&lt;br&gt;</Abstract>
+			<Abstract type="html">The value of this property increases monotonically while an audio player is playing or paused.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) NSTimeInterval deviceCurrentTime</Declaration>
@@ -523,7 +523,7 @@ You can set this to change the playback position, whether it is currently playin
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/deviceCurrentTime</TokenIdentifier>
-			<Abstract type="html">The value of this property increases monotonically while an audio player is playing or paused. &lt;br&gt;&lt;br&gt;</Abstract>
+			<Abstract type="html">The value of this property increases monotonically while an audio player is playing or paused.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) NSTimeInterval deviceCurrentTime</Declaration>
@@ -535,7 +535,7 @@ You can set this to change the playback position, whether it is currently playin
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/OALAudioTrack/deviceCurrentTime</TokenIdentifier>
-			<Abstract type="html">The value of this property increases monotonically while an audio player is playing or paused. &lt;br&gt;&lt;br&gt;</Abstract>
+			<Abstract type="html">The value of this property increases monotonically while an audio player is playing or paused.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, assign) NSTimeInterval deviceCurrentTime</Declaration>
@@ -632,7 +632,7 @@ You can set this to change the playback position, whether it is currently playin
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/preloadUrl:</TokenIdentifier>
 			<Abstract type="html">Preload the contents of a URL for playback.
-Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;br&gt;</Abstract>
+Once the audio data is preloaded, you can call &quot;play&quot; to play it.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (bool)preloadUrl:(NSURL *)url</Declaration>
@@ -650,7 +650,7 @@ Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/preloadUrl:seekTime:</TokenIdentifier>
 			<Abstract type="html">Preload the contents of a URL for playback.
-Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;br&gt;</Abstract>
+Once the audio data is preloaded, you can call &quot;play&quot; to play it.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (bool)preloadUrl:(NSURL *)url seekTime:(NSTimeInterval)seekTime</Declaration>
@@ -671,7 +671,7 @@ Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/preloadFile:</TokenIdentifier>
 			<Abstract type="html">Preload the contents of a file for playback.
-Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;br&gt;</Abstract>
+Once the audio data is preloaded, you can call &quot;play&quot; to play it.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (bool)preloadFile:(NSString *)path</Declaration>
@@ -689,7 +689,7 @@ Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/preloadFile:seekTime:</TokenIdentifier>
 			<Abstract type="html">Preload the contents of a file for playback.
-Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;br&gt;</Abstract>
+Once the audio data is preloaded, you can call &quot;play&quot; to play it.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (bool)preloadFile:(NSString *)path seekTime:(NSTimeInterval)seekTime</Declaration>
@@ -710,7 +710,7 @@ Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/preloadUrlAsync:target:selector:</TokenIdentifier>
 			<Abstract type="html">Asynchronously preload the contents of a URL for playback.
-Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;br&gt;</Abstract>
+Once the audio data is preloaded, you can call &quot;play&quot; to play it.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (bool)preloadUrlAsync:(NSURL *)url target:(id)target selector:(SEL)selector</Declaration>
@@ -734,7 +734,7 @@ Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/preloadUrlAsync:seekTime:target:selector:</TokenIdentifier>
 			<Abstract type="html">Asynchronously preload the contents of a URL for playback.
-Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;br&gt;</Abstract>
+Once the audio data is preloaded, you can call &quot;play&quot; to play it.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (bool)preloadUrlAsync:(NSURL *)url seekTime:(NSTimeInterval)seekTime target:(id)target selector:(SEL)selector</Declaration>
@@ -761,7 +761,7 @@ Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/preloadFileAsync:target:selector:</TokenIdentifier>
 			<Abstract type="html">Asynchronously preload the contents of a file for playback.
-Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;br&gt;</Abstract>
+Once the audio data is preloaded, you can call &quot;play&quot; to play it.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (bool)preloadFileAsync:(NSString *)path target:(id)target selector:(SEL)selector</Declaration>
@@ -785,7 +785,7 @@ Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/preloadFileAsync:seekTime:target:selector:</TokenIdentifier>
 			<Abstract type="html">Asynchronously preload the contents of a file for playback.
-Once the audio data is preloaded, you can call &quot;play&quot; to play it. &lt;br&gt;</Abstract>
+Once the audio data is preloaded, you can call &quot;play&quot; to play it.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (bool)preloadFileAsync:(NSString *)path seekTime:(NSTimeInterval)seekTime target:(id)target selector:(SEL)selector</Declaration>
@@ -1214,9 +1214,9 @@ order to get current values.</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/averagePowerForChannel:</TokenIdentifier>
 			<Abstract type="html">Gives the average power for a given channel, in decibels, for the sound being played.
-0 dB indicates maximum power (full scale). &lt;br&gt;
--160 dB indicates minimum power (near silence). &lt;br&gt;
-If the signal provided to the audio player exceeds full scale, then the value may be &gt; 0. &lt;br&gt;</Abstract>
+0 dB indicates maximum power (full scale).
+-160 dB indicates minimum power (near silence).
+If the signal provided to the audio player exceeds full scale, then the value may be &gt; 0.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (float)averagePowerForChannel:(NSUInteger)channelNumber</Declaration>
@@ -1235,9 +1235,9 @@ use 1.</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALAudioTrack/peakPowerForChannel:</TokenIdentifier>
 			<Abstract type="html">Gives the peak power for a given channel, in decibels, for the sound being played.
-0 dB indicates maximum power (full scale). &lt;br&gt;
--160 dB indicates minimum power (near silence). &lt;br&gt;
-If the signal provided to the audio player exceeds full scale, then the value may be &gt; 0. &lt;br&gt;</Abstract>
+0 dB indicates maximum power (full scale).
+-160 dB indicates minimum power (near silence).
+If the signal provided to the audio player exceeds full scale, then the value may be &gt; 0.</Abstract>
 			<DeclaredIn>OALAudioTrack.h</DeclaredIn>
 			
 			<Declaration>- (float)peakPowerForChannel:(NSUInteger)channelNumber</Declaration>

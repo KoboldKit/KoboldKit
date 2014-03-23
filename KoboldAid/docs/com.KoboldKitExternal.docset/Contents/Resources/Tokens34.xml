@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSObject+JRSwizzle.html">
+	<File path="Categories/OALAction+.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSObject(JRSwizzle)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>JRSwizzle.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/OALAction()</TokenIdentifier>
+			<Abstract type="html">\cond</Abstract>
+			<DeclaredIn>OALAction+Private.h</DeclaredIn>
             
 			
 			<NodeRef refid="34"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSObject/jr_swizzleMethod:withMethod:error:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>JRSwizzle.h</DeclaredIn>
-			
-			<Declaration>+ (BOOL)jr_swizzleMethod:(SEL)origSel_ withMethod:(SEL)altSel_ error:(NSError **)error_</Declaration>
-			
-			
-			<Anchor>//api/name/jr_swizzleMethod:withMethod:error:</Anchor>
-            <NodeRef refid="34"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSObject/jr_swizzleClassMethod:withClassMethod:error:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>JRSwizzle.h</DeclaredIn>
-			
-			<Declaration>+ (BOOL)jr_swizzleClassMethod:(SEL)origSel_ withClassMethod:(SEL)altSel_ error:(NSError **)error_</Declaration>
-			
-			
-			<Anchor>//api/name/jr_swizzleClassMethod:withClassMethod:error:</Anchor>
-            <NodeRef refid="34"/>
-		</Token>
 		
         
 	</File>

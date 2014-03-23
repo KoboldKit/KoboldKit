@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTilemapPolyObject.html">
+	<File path="Classes/KKView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapPolyObject</TokenIdentifier>
-			<Abstract type="html">A polygon or polyline object. A polygon is assumed to have its last point connect with the first, the polyline does not.
-   Though it&apos;s up to you how you interpret that. If you need to differentiate between the two, refer to the KTTilemapObject base class&apos; objectType
-   property. </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKView</TokenIdentifier>
+			<Abstract type="html">Kobold Kit apps use KKView as their view. It provides additional features like the ability to push &amp;amp; pop scenes.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
             
 			
 			<NodeRef refid="43"/>
@@ -15,143 +13,497 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setPoints:</TokenIdentifier>
-			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object&apos;s position.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/KKView/defaultView</TokenIdentifier>
+			<Abstract type="html">The default view is the most recently created KKView instance. Usually this will be the Sprite Kit view used by your app,
+unless you happen to be managing multiple views in your OS X app (multiple Sprite Kit views at the same time is functional only on OS X).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			<Declaration>+ (instancetype)defaultView</Declaration>
 			
-			
-			<Anchor>//api/name/points</Anchor>
+			<ReturnValue><Abstract type="html">The default Kobold Kit view.</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultView</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/points</TokenIdentifier>
-			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object&apos;s position.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setSceneStack:</TokenIdentifier>
+			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
 			
-			
-			<Anchor>//api/name/points</Anchor>
+			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
+			<Anchor>//api/name/sceneStack</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/points</TokenIdentifier>
-			<Abstract type="html">Array of CGPoint containing the points. The points are absolute coordinates with the first point identical to the object&apos;s position.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/sceneStack</TokenIdentifier>
+			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGPoint *points</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
 			
-			
-			<Anchor>//api/name/points</Anchor>
+			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
+			<Anchor>//api/name/sceneStack</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setNumberOfPoints:</TokenIdentifier>
-			<Abstract type="html">The number of points stored in the points array.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/sceneStack</TokenIdentifier>
+			<Abstract type="html">The scenes currently suspended in the background.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) unsigned int numberOfPoints</Declaration>
+			<Declaration>@property (atomic, readonly) NSArray *sceneStack</Declaration>
 			
-			
-			<Anchor>//api/name/numberOfPoints</Anchor>
+			<ReturnValue><Abstract type="html">An array with 1 or more scenes currently suspended. The presented scene is always the lastObject.</Abstract></ReturnValue>
+			<Anchor>//api/name/sceneStack</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/numberOfPoints</TokenIdentifier>
-			<Abstract type="html">The number of points stored in the points array.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setModel:</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) unsigned int numberOfPoints</Declaration>
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
 			
-			
-			<Anchor>//api/name/numberOfPoints</Anchor>
+			<ReturnValue><Abstract type="html">The view&apos;s model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/numberOfPoints</TokenIdentifier>
-			<Abstract type="html">The number of points stored in the points array.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/model</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) unsigned int numberOfPoints</Declaration>
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
 			
-			
-			<Anchor>//api/name/numberOfPoints</Anchor>
+			<ReturnValue><Abstract type="html">The view&apos;s model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/setBoundingBox:</TokenIdentifier>
-			<Abstract type="html">The polygon&apos;s bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
-   polygons because if the target object does not intersect with a polygon&apos;s bounding box, it will definitely not intersect with the polygon. </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/model</TokenIdentifier>
+			<Abstract type="html">Model of the view, can be used to store values and objects whose lifetime should be equal to that of the view (ie global values/objects).</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGRect boundingBox</Declaration>
+			<Declaration>@property (atomic, readonly) KKModel *model</Declaration>
 			
-			
-			<Anchor>//api/name/boundingBox</Anchor>
+			<ReturnValue><Abstract type="html">The view&apos;s model object.</Abstract></ReturnValue>
+			<Anchor>//api/name/model</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/boundingBox</TokenIdentifier>
-			<Abstract type="html">The polygon&apos;s bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
-   polygons because if the target object does not intersect with a polygon&apos;s bounding box, it will definitely not intersect with the polygon. </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setContext:</TokenIdentifier>
+			<Abstract type="html">This returns the EAGLContext for the view using a public API call. This enables custom OpenGL code on the Sprite Kit GL context.
+Note: the context is not valid (is nil) before the view controller&apos;s viewDidAppear: method runs. In other words the viewDidAppear: method
+is the earliest point where you will get a valid EAGLContext.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGRect boundingBox</Declaration>
+			<Declaration>@property (atomic, readonly) KKGLContext *context</Declaration>
 			
-			
-			<Anchor>//api/name/boundingBox</Anchor>
+			<ReturnValue><Abstract type="html">The view&apos;s EAGLContext, or nil if the view controller&apos;s viewDidAppear method hasn&apos;t run yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/context</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapPolyObject/boundingBox</TokenIdentifier>
-			<Abstract type="html">The polygon&apos;s bounding box. All points of the polygon/polyline lie on or inside the boundingBox. Useful for quickly discarding collision with
-   polygons because if the target object does not intersect with a polygon&apos;s bounding box, it will definitely not intersect with the polygon. </Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/context</TokenIdentifier>
+			<Abstract type="html">This returns the EAGLContext for the view using a public API call. This enables custom OpenGL code on the Sprite Kit GL context.
+Note: the context is not valid (is nil) before the view controller&apos;s viewDidAppear: method runs. In other words the viewDidAppear: method
+is the earliest point where you will get a valid EAGLContext.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>@property (atomic, readonly) CGRect boundingBox</Declaration>
+			<Declaration>@property (atomic, readonly) KKGLContext *context</Declaration>
 			
-			
-			<Anchor>//api/name/boundingBox</Anchor>
+			<ReturnValue><Abstract type="html">The view&apos;s EAGLContext, or nil if the view controller&apos;s viewDidAppear method hasn&apos;t run yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/context</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/updateBoundingBox</TokenIdentifier>
-			<Abstract type="html">In cases where you manually create or change polygon points you should run updateBoundingBox to update the boundingBox property.</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/context</TokenIdentifier>
+			<Abstract type="html">This returns the EAGLContext for the view using a public API call. This enables custom OpenGL code on the Sprite Kit GL context.
+Note: the context is not valid (is nil) before the view controller&apos;s viewDidAppear: method runs. In other words the viewDidAppear: method
+is the earliest point where you will get a valid EAGLContext.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>- (void)updateBoundingBox</Declaration>
+			<Declaration>@property (atomic, readonly) KKGLContext *context</Declaration>
 			
-			
-			<Anchor>//api/name/updateBoundingBox</Anchor>
+			<ReturnValue><Abstract type="html">The view&apos;s EAGLContext, or nil if the view controller&apos;s viewDidAppear method hasn&apos;t run yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/context</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapPolyObject/makePointsFromString:</TokenIdentifier>
-			<Abstract type="html">(TMX Parser Only) Creates the points array from a CGPoint encoded string where string representation of CGPoint are separated by a space character.
-   For example: @&quot;0,0 -80,80 -80,160 0,200 80,200&quot;</Abstract>
-			<DeclaredIn>KKTilemapObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsPhysicsShapes:</TokenIdentifier>
+			<Abstract type="html">If YES, will render physics shape outlines.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
 			
-			<Declaration>- (void)makePointsFromString:(NSString *)string</Declaration>
+			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
+			
+			
+			<Anchor>//api/name/showsPhysicsShapes</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsPhysicsShapes</TokenIdentifier>
+			<Abstract type="html">If YES, will render physics shape outlines.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
+			
+			
+			<Anchor>//api/name/showsPhysicsShapes</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsPhysicsShapes</TokenIdentifier>
+			<Abstract type="html">If YES, will render physics shape outlines.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL showsPhysicsShapes</Declaration>
+			
+			
+			<Anchor>//api/name/showsPhysicsShapes</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsNodeFrames:</TokenIdentifier>
+			<Abstract type="html">If YES, will render node outlines according to their frame property.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
+			
+			
+			<Anchor>//api/name/showsNodeFrames</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsNodeFrames</TokenIdentifier>
+			<Abstract type="html">If YES, will render node outlines according to their frame property.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
+			
+			
+			<Anchor>//api/name/showsNodeFrames</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsNodeFrames</TokenIdentifier>
+			<Abstract type="html">If YES, will render node outlines according to their frame property.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL showsNodeFrames</Declaration>
+			
+			
+			<Anchor>//api/name/showsNodeFrames</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/setShowsNodeAnchorPoints:</TokenIdentifier>
+			<Abstract type="html">If YES, will render a dot on the node&apos;s position.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
+			
+			
+			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/showsNodeAnchorPoints</TokenIdentifier>
+			<Abstract type="html">If YES, will render a dot on the node&apos;s position.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
+			
+			
+			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKView/showsNodeAnchorPoints</TokenIdentifier>
+			<Abstract type="html">If YES, will render a dot on the node&apos;s position.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL showsNodeAnchorPoints</Declaration>
+			
+			
+			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsPhysicsShapes</TokenIdentifier>
+			<Abstract type="html">Whether physics shape outlines are drawn.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)showsPhysicsShapes</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether physics shape outlines are drawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/showsPhysicsShapes</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsNodeFrames</TokenIdentifier>
+			<Abstract type="html">Whether node frame outlines are drawn.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)showsNodeFrames</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether node frame outlines are drawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/showsNodeFrames</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKView/showsNodeAnchorPoints</TokenIdentifier>
+			<Abstract type="html">Whether node positions are drawn.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)showsNodeAnchorPoints</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether node positions are drawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/showsNodeAnchorPoints</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:</TokenIdentifier>
+			<Abstract type="html">Presents a scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)presentScene:(SKScene *)scene</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">The string encoded list of points to be converted to a points array.</Abstract>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/makePointsFromString:</Anchor>
+			<Anchor>//api/name/presentScene:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:transition:</TokenIdentifier>
+			<Abstract type="html">Presents a scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)presentScene:(SKScene *)scene transition:(SKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
+				</Parameter><Parameter>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/presentScene:transition:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:unwindStack:</TokenIdentifier>
+			<Abstract type="html">Presents a scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)presentScene:(KKScene *)scene unwindStack:(BOOL)unwindStack</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
+				</Parameter><Parameter>
+					<Name>unwindStack</Name>
+					<Abstract type="html">If YES removes all scenes from the stack before adding the new scene.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/presentScene:unwindStack:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/presentScene:transition:unwindStack:</TokenIdentifier>
+			<Abstract type="html">Presents a scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)presentScene:(KKScene *)scene transition:(KKTransition *)transition unwindStack:(BOOL)unwindStack</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
+				</Parameter><Parameter>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter><Parameter>
+					<Name>unwindStack</Name>
+					<Abstract type="html">If YES removes all scenes from the stack before adding the new scene.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/presentScene:transition:unwindStack:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/pushScene:</TokenIdentifier>
+			<Abstract type="html">Presents a scene, suspends the currently presented scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)pushScene:(KKScene *)scene</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pushScene:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/pushScene:transition:</TokenIdentifier>
+			<Abstract type="html">Presents a scene, suspends the currently presented scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)pushScene:(KKScene *)scene transition:(KKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">The scene to present.</Abstract>
+				</Parameter><Parameter>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pushScene:transition:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popScene</TokenIdentifier>
+			<Abstract type="html">Pops the topmost scene from the stack and presents the new topmost scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)popScene</Declaration>
+			
+			
+			<Anchor>//api/name/popScene</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popSceneWithTransition:</TokenIdentifier>
+			<Abstract type="html">Pops the topmost scene from the stack and presents the new topmost scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)popSceneWithTransition:(KKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/popSceneWithTransition:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToRootScene</TokenIdentifier>
+			<Abstract type="html">Pops all scenes from the stack except for the root scene, then presents the root scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)popToRootScene</Declaration>
+			
+			
+			<Anchor>//api/name/popToRootScene</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToRootSceneWithTransition:</TokenIdentifier>
+			<Abstract type="html">Pops all scenes from the stack except for the root scene, then presents the root scene.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)popToRootSceneWithTransition:(KKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/popToRootSceneWithTransition:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToSceneNamed:</TokenIdentifier>
+			<Abstract type="html">Searches for the first scene with the given name in the scene stack and presents it.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)popToSceneNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of a scene on the stack to be presented.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/popToSceneNamed:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/popToSceneNamed:transition:</TokenIdentifier>
+			<Abstract type="html">Searches for the first scene with the given name in the scene stack and presents it.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)popToSceneNamed:(NSString *)name transition:(KKTransition *)transition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of a scene on the stack to be presented.</Abstract>
+				</Parameter><Parameter>
+					<Name>transition</Name>
+					<Abstract type="html">A transition used to animate between the two scenes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/popToSceneNamed:transition:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKView/reloadConfig</TokenIdentifier>
+			<Abstract type="html">Reloads the config files, replacing the existing &quot;config&quot; and &quot;devconfig&quot; entries in the model.</Abstract>
+			<DeclaredIn>KKView.h</DeclaredIn>
+			
+			<Declaration>- (void)reloadConfig</Declaration>
+			
+			
+			<Anchor>//api/name/reloadConfig</Anchor>
             <NodeRef refid="43"/>
 		</Token>
 		

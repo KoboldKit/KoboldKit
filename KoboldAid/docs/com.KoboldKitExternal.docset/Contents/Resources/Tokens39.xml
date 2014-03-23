@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/NSXMLStreamWriter.html">
+	<File path="Protocols/XMLStreamWriter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/NSXMLStreamWriter</TokenIdentifier>
-			<Abstract type="html">xml stream writer with namespace support</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intf/XMLStreamWriter</TokenIdentifier>
+			<Abstract type="html">xml stream writer protocol, see: https://code.google.com/p/xswi/w/list</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
             
 			
@@ -13,193 +13,265 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeStartElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeStartDocument</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (void)writeStartElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)writeStartDocument</Declaration>
 			
-			<Anchor>//api/name/writeStartElementWithNamespace:localName:</Anchor>
+			
+			<Anchor>//api/name/writeStartDocument</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEndElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeStartDocumentWithVersion:</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (void)writeEndElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>- (void)writeStartDocumentWithVersion:(NSString *)version</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
+					<Name>version</Name>
+					<Abstract type="html">The XML version string.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeEndElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/writeStartDocumentWithVersion:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEmptyElementWithNamespace:localName:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeStartDocumentWithEncoding:version:</TokenIdentifier>
+			<Abstract type="html">The XML encoding as string.</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (void)writeEmptyElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Declaration>- (void)writeStartDocumentWithEncoding:(NSString *)encoding version:(NSString *)version</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>encoding</Name>
+					<Abstract type="html">The XML encoding as string.</Abstract>
 				</Parameter><Parameter>
-					<Name>localName</Name>
-					<Abstract type="html">The element name.</Abstract>
+					<Name>version</Name>
+					<Abstract type="html">The XML version string.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeEmptyElementWithNamespace:localName:</Anchor>
+			<Anchor>//api/name/writeStartDocumentWithEncoding:version:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeAttributeWithNamespace:localName:value:</TokenIdentifier>
-			<Abstract type="html">The namespace.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeStartElement:</TokenIdentifier>
+			<Abstract type="html">The name of the element.</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (void)writeAttributeWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName value:(NSString *)value</Declaration>
+			<Declaration>- (void)writeStartElement:(NSString *)localName</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter><Parameter>
 					<Name>localName</Name>
-					<Abstract type="html">The attribute name.</Abstract>
+					<Abstract type="html">The name of the element.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeStartElement:</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeEndElement</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (void)writeEndElement</Declaration>
+			
+			
+			<Anchor>//api/name/writeEndElement</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeEndElement:</TokenIdentifier>
+			<Abstract type="html">The name of the element.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (void)writeEndElement:(NSString *)localName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>localName</Name>
+					<Abstract type="html">The name of the element.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeEndElement:</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeEmptyElement:</TokenIdentifier>
+			<Abstract type="html">The name of the element.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (void)writeEmptyElement:(NSString *)localName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>localName</Name>
+					<Abstract type="html">The name of the element.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeEmptyElement:</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeEndDocument</TokenIdentifier>
+			<Abstract type="html">..</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (void)writeEndDocument</Declaration>
+			
+			
+			<Anchor>//api/name/writeEndDocument</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeAttribute:value:</TokenIdentifier>
+			<Abstract type="html">The name of the attribute.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (void)writeAttribute:(NSString *)localName value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>localName</Name>
+					<Abstract type="html">The name of the attribute.</Abstract>
 				</Parameter><Parameter>
 					<Name>value</Name>
 					<Abstract type="html">The attribute value.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeAttributeWithNamespace:localName:value:</Anchor>
+			<Anchor>//api/name/writeAttribute:value:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setPrefix:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">set a namespace and prefix</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeCharacters:</TokenIdentifier>
+			<Abstract type="html">The text to write.</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (void)setPrefix:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Declaration>- (void)writeCharacters:(NSString *)text</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
+					<Name>text</Name>
+					<Abstract type="html">The text to write.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeCharacters:</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeComment:</TokenIdentifier>
+			<Abstract type="html">The comment text to write.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (void)writeComment:(NSString *)comment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>comment</Name>
+					<Abstract type="html">The comment text to write.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeComment:</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeProcessingInstruction:data:</TokenIdentifier>
+			<Abstract type="html">The target string.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (void)writeProcessingInstruction:(NSString *)target data:(NSString *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target string.</Abstract>
 				</Parameter><Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>data</Name>
+					<Abstract type="html">The data string.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setPrefix:namespaceURI:</Anchor>
+			<Anchor>//api/name/writeProcessingInstruction:data:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeNamespace:namespaceURI:</TokenIdentifier>
-			<Abstract type="html">write (and set) a namespace and prefix</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/writeCData:</TokenIdentifier>
+			<Abstract type="html">The cdata string.</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (void)writeNamespace:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Declaration>- (void)writeCData:(NSString *)cdata</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter><Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
+					<Name>cdata</Name>
+					<Abstract type="html">The cdata string.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/writeNamespace:namespaceURI:</Anchor>
+			<Anchor>//api/name/writeCData:</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">set the default namespace (empty prefix)</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/toString</TokenIdentifier>
+			<Abstract type="html">the written xml string buffer</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (void)setDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSMutableString *)toString</Declaration>
 			
-			<Anchor>//api/name/setDefaultNamespace:</Anchor>
+			<ReturnValue><Abstract type="html">the written xml string buffer</Abstract></ReturnValue>
+			<Anchor>//api/name/toString</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeDefaultNamespace:</TokenIdentifier>
-			<Abstract type="html">write (and set) the default namespace</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/toData</TokenIdentifier>
+			<Abstract type="html">the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default)</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (void)writeDefaultNamespace:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSData *)toData</Declaration>
 			
-			<Anchor>//api/name/writeDefaultNamespace:</Anchor>
+			<ReturnValue><Abstract type="html">the written xml as data, set to the encoding used in the writeStartDocumentWithEncodingAndVersion method (UTF-8 per default)</Abstract></ReturnValue>
+			<Anchor>//api/name/toData</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getPrefix:</TokenIdentifier>
-			<Abstract type="html">The namespace prefix.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/flush</TokenIdentifier>
+			<Abstract type="html">flush the buffers</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)getPrefix:(NSString *)namespaceURI</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>namespaceURI</Name>
-					<Abstract type="html">The namespace.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The namespace prefix.</Abstract></ReturnValue>
-			<Anchor>//api/name/getPrefix:</Anchor>
+			<Declaration>- (void)flush</Declaration>
+			
+			
+			<Anchor>//api/name/flush</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getNamespaceURI:</TokenIdentifier>
-			<Abstract type="html">The namespace for the prefix.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/XMLStreamWriter/close</TokenIdentifier>
+			<Abstract type="html">close the writer and buffers</Abstract>
 			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)getNamespaceURI:(NSString *)prefix</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>prefix</Name>
-					<Abstract type="html">The namespace prefix.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The namespace for the prefix.</Abstract></ReturnValue>
-			<Anchor>//api/name/getNamespaceURI:</Anchor>
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
             <NodeRef refid="39"/>
 		</Token>
 		

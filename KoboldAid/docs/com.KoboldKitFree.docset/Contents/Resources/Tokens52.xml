@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKViewOriginNode.html">
+	<File path="Categories/SKAction+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKViewOriginNode</TokenIdentifier>
-			<Abstract type="html">Children of this node will always have their origin at the lower left corner of the view,
-regardless of the scene&apos;s anchorPoint. This class is mainly used to keep HUD elements
-in a scrolling world fixed on the screen because the origin (0,0) is fixed to the lower left corner.</Abstract>
-			<DeclaredIn>KKViewOriginNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/SKAction(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>SKAction+KoboldKit.h</DeclaredIn>
             
 			
 			<NodeRef refid="52"/>
@@ -15,14 +13,14 @@ in a scrolling world fixed on the screen because the origin (0,0) is fixed to th
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKViewOriginNode/updatePositionFromSceneFrame</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>KKViewOriginNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKAction/playSoundFileNamed:</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>SKAction+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (void)updatePositionFromSceneFrame</Declaration>
+			<Declaration>+ (SKAction *)playSoundFileNamed:(NSString *)soundFile</Declaration>
 			
 			
-			<Anchor>//api/name/updatePositionFromSceneFrame</Anchor>
+			<Anchor>//api/name/playSoundFileNamed:</Anchor>
             <NodeRef refid="52"/>
 		</Token>
 		

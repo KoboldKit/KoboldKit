@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKFloatNumber.html">
+	<File path="Classes/KKInt32Number.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKFloatNumber</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/KKInt32Number</TokenIdentifier>
 			<Abstract type="html">Used internally. Part of the KKMutableNumber class cluster.</Abstract>
 			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
             
@@ -11,23 +11,6 @@
 			<NodeRef refid="10"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKFloatNumber/initWithFloat:</TokenIdentifier>
-			<Abstract type="html">create a mutable number of type float</Abstract>
-			<DeclaredIn>KKMutableNumber.h</DeclaredIn>
-			
-			<Declaration>- (id)initWithFloat:(float)floatNumber</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">A number.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithFloat:</Anchor>
-            <NodeRef refid="10"/>
-		</Token>
 		
         
 	</File>

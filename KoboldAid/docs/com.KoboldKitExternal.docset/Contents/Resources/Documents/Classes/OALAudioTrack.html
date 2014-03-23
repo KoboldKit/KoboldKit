@@ -753,7 +753,7 @@ You can set this to change the playback position, whether it is currently <a hre
 	
 	<div class="method-subsection brief-description">
 		<p>Optional object that will receive notifications for decoding errors,
-audio interruptions (such as an incoming phone call), and playback completion. <br>
+audio interruptions (such as an incoming phone call), and playback completion.
 <strong>Note:</strong> OALAudioTrack keeps a WEAK reference to delegate, so make sure you <a href="#//api/name/clear">clear</a> it
 when your object is going to be deallocated.</p>
 	</div>		
@@ -791,7 +791,7 @@ when your object is going to be deallocated.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The value of this property increases monotonically while an audio <a href="#//api/name/player">player</a> is <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>. <br><br></p>
+		<p>The value of this property increases monotonically while an audio <a href="#//api/name/player">player</a> is <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>.</p>
 	</div>		
 	
     
@@ -809,10 +809,10 @@ when your object is going to be deallocated.</p>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If more than one audio <a href="#//api/name/player">player</a> is connected to the audio output device, device time continues
-incrementing as long as at least one of the players is <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>. <br><br></p>
+incrementing as long as at least one of the players is <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>.</p>
 
 <p>If the audio output device has no connected audio players that are either <a href="#//api/name/playing">playing</a> or <a href="#//api/name/paused">paused</a>,
-device time reverts to 0. <br><br></p>
+device time reverts to 0.</p>
 
 <p>Use this property to indicate “now” when calling the <a href="#//api/name/playAtTime:">playAtTime:</a> instance method. By configuring
 multiple audio players to <a href="#//api/name/play">play</a> at a specified offset from deviceCurrentTime, you can perform
@@ -1337,9 +1337,9 @@ it to fall out of sync with OALAudioTrack (particularly play/pause/<a href="#//a
 	
 	<div class="method-subsection brief-description">
 		<p>Gives the average power for a given channel, in decibels, for the sound being played.
-0 dB indicates maximum power (full scale). <br>
--160 dB indicates minimum power (near silence). <br>
-If the signal provided to the audio <a href="#//api/name/player">player</a> exceeds full scale, then the value may be > 0. <br></p>
+0 dB indicates maximum power (full scale).
+-160 dB indicates minimum power (near silence).
+If the signal provided to the audio <a href="#//api/name/player">player</a> exceeds full scale, then the value may be > 0.</p>
 	</div>		
 	
     
@@ -1563,9 +1563,9 @@ a single parameter, which will be the object that performed the <a href="#//api/
 	
 	<div class="method-subsection brief-description">
 		<p>Gives the peak power for a given channel, in decibels, for the sound being played.
-0 dB indicates maximum power (full scale). <br>
--160 dB indicates minimum power (near silence). <br>
-If the signal provided to the audio <a href="#//api/name/player">player</a> exceeds full scale, then the value may be > 0. <br></p>
+0 dB indicates maximum power (full scale).
+-160 dB indicates minimum power (near silence).
+If the signal provided to the audio <a href="#//api/name/player">player</a> exceeds full scale, then the value may be > 0.</p>
 	</div>		
 	
     
@@ -2286,7 +2286,7 @@ You must call <a href="#//api/name/updateMeters">updateMeters</a> a<a href="#//a
 	
 	<div class="method-subsection brief-description">
 		<p>Preload the contents of a file for playback.
-Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it.</p>
 	</div>		
 	
     
@@ -2338,7 +2338,7 @@ Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can ca
 	
 	<div class="method-subsection brief-description">
 		<p>Preload the contents of a file for playback.
-Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it.</p>
 	</div>		
 	
     
@@ -2395,7 +2395,7 @@ Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can ca
 	
 	<div class="method-subsection brief-description">
 		<p>Asynchronously preload the contents of a file for playback.
-Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it.</p>
 	</div>		
 	
     
@@ -2462,7 +2462,7 @@ Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can ca
 	
 	<div class="method-subsection brief-description">
 		<p>Asynchronously preload the contents of a file for playback.
-Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it.</p>
 	</div>		
 	
     
@@ -2524,7 +2524,7 @@ Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can ca
 	
 	<div class="method-subsection brief-description">
 		<p>Preload the contents of a URL for playback.
-Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it.</p>
 	</div>		
 	
     
@@ -2576,7 +2576,7 @@ Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can ca
 	
 	<div class="method-subsection brief-description">
 		<p>Preload the contents of a URL for playback.
-Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it.</p>
 	</div>		
 	
     
@@ -2633,7 +2633,7 @@ Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can ca
 	
 	<div class="method-subsection brief-description">
 		<p>Asynchronously preload the contents of a URL for playback.
-Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it.</p>
 	</div>		
 	
     
@@ -2700,7 +2700,7 @@ Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can ca
 	
 	<div class="method-subsection brief-description">
 		<p>Asynchronously preload the contents of a URL for playback.
-Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it. <br></p>
+Once the audio data is <a href="#//api/name/preloaded">preloaded</a>, you can call &ldquo;play&rdquo; to <a href="#//api/name/play">play</a> it.</p>
 	</div>		
 	
     
@@ -2956,7 +2956,7 @@ order to get current values.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						<p><span class="copyright">&copy; 2014 Kobold Tech. All rights reserved. (Last updated: 2014-03-23)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

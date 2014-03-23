@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKTMXReader.html">
+	<File path="Classes/KKTilemapNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKTMXReader</TokenIdentifier>
-			<Abstract type="html">Internal use only. Temporary object that parses a TMX file and creates the KTTilemap hierarchy containing KTTilemapTileset,
-   KTTilemapLayer, KTTilemapLayerTiles and KTTilemapObject. Used by KTTilemap which has its own parseTMX method. Not meant to be subclassed
-   or modified. </Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapNode</TokenIdentifier>
+			<Abstract type="html">A tilemap node renders a TMX tilemap. It has KKTilemapTileLayerNode and KKTilempaObjectLayerNode as children
+which perform each layer&apos;s rendering.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
             
 			
 			<NodeRef refid="33"/>
@@ -15,22 +14,329 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKTMXReader/loadTMXFile:tilemap:</TokenIdentifier>
-			<Abstract type="html">Internal use only.</Abstract>
-			<DeclaredIn>KKTMXReader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setTilemap:</TokenIdentifier>
+			<Abstract type="html">the tilemap model object containing the tilemap&apos;s data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
 			
-			<Declaration>- (void)loadTMXFile:(NSString *)tmxFile tilemap:(KKTilemap *)tilemap</Declaration>
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
+			
+			<ReturnValue><Abstract type="html">the tilemap model object containing the tilemap&apos;s data.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemap</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/tilemap</TokenIdentifier>
+			<Abstract type="html">the tilemap model object containing the tilemap&apos;s data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
+			
+			<ReturnValue><Abstract type="html">the tilemap model object containing the tilemap&apos;s data.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemap</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/tilemap</TokenIdentifier>
+			<Abstract type="html">the tilemap model object containing the tilemap&apos;s data.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic) KKTilemap *tilemap</Declaration>
+			
+			<ReturnValue><Abstract type="html">the tilemap model object containing the tilemap&apos;s data.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemap</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setTileLayerNodes:</TokenIdentifier>
+			<Abstract type="html">an array containing all tile layer nodes</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *tileLayerNodes</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array containing all tile layer nodes</Abstract></ReturnValue>
+			<Anchor>//api/name/tileLayerNodes</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/tileLayerNodes</TokenIdentifier>
+			<Abstract type="html">an array containing all tile layer nodes</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *tileLayerNodes</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array containing all tile layer nodes</Abstract></ReturnValue>
+			<Anchor>//api/name/tileLayerNodes</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/tileLayerNodes</TokenIdentifier>
+			<Abstract type="html">an array containing all tile layer nodes</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *tileLayerNodes</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array containing all tile layer nodes</Abstract></ReturnValue>
+			<Anchor>//api/name/tileLayerNodes</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setObjectLayerNodes:</TokenIdentifier>
+			<Abstract type="html">an array containing all object layer nodes</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *objectLayerNodes</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array containing all object layer nodes</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLayerNodes</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/objectLayerNodes</TokenIdentifier>
+			<Abstract type="html">an array containing all object layer nodes</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *objectLayerNodes</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array containing all object layer nodes</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLayerNodes</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/objectLayerNodes</TokenIdentifier>
+			<Abstract type="html">an array containing all object layer nodes</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSArray *objectLayerNodes</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array containing all object layer nodes</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLayerNodes</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setBounds:</TokenIdentifier>
+			<Abstract type="html">The tilemap&apos;s bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) CGRect bounds</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap&apos;s bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/bounds</TokenIdentifier>
+			<Abstract type="html">The tilemap&apos;s bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) CGRect bounds</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap&apos;s bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/bounds</TokenIdentifier>
+			<Abstract type="html">The tilemap&apos;s bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) CGRect bounds</Declaration>
+			
+			<ReturnValue><Abstract type="html">The tilemap&apos;s bounds rect in points. The x/width and/or y/height are set to INFINITY if the main layer is set to endless scrolling
+(horizontal or vertical).</Abstract></ReturnValue>
+			<Anchor>//api/name/bounds</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setMainTileLayerNode:</TokenIdentifier>
+			<Abstract type="html">The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it&apos;s the first tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">the &quot;main&quot; tile layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/mainTileLayerNode</TokenIdentifier>
+			<Abstract type="html">The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it&apos;s the first tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">the &quot;main&quot; tile layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/mainTileLayerNode</TokenIdentifier>
+			<Abstract type="html">The main layer in a parallaxing tilemap is the layer with a parallax ratio of 1.0f. Otherwise it&apos;s the first tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak, readonly) KKTilemapTileLayerNode *mainTileLayerNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">the &quot;main&quot; tile layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/mainTileLayerNode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/setGameObjectsLayerNode:</TokenIdentifier>
+			<Abstract type="html">The game object layer is the object layer where (most) game objects reside. Usually the layer that scrolls parallel to the main tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak, readonly) KKTilemapObjectLayerNode *gameObjectsLayerNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">the &quot;game objects&quot; object layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/gameObjectsLayerNode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/gameObjectsLayerNode</TokenIdentifier>
+			<Abstract type="html">The game object layer is the object layer where (most) game objects reside. Usually the layer that scrolls parallel to the main tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak, readonly) KKTilemapObjectLayerNode *gameObjectsLayerNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">the &quot;game objects&quot; object layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/gameObjectsLayerNode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapNode/gameObjectsLayerNode</TokenIdentifier>
+			<Abstract type="html">The game object layer is the object layer where (most) game objects reside. Usually the layer that scrolls parallel to the main tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak, readonly) KKTilemapObjectLayerNode *gameObjectsLayerNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">the &quot;game objects&quot; object layer node.</Abstract></ReturnValue>
+			<Anchor>//api/name/gameObjectsLayerNode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKTilemapNode/tilemapWithContentsOfFile:</TokenIdentifier>
+			<Abstract type="html">Creates a tilemap node from a TMX file.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>+ (id)tilemapWithContentsOfFile:(NSString *)tmxFile</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>tmxFile</Name>
-					<Abstract type="html">The full path to the TMX file to load.</Abstract>
-				</Parameter><Parameter>
-					<Name>tilemap</Name>
-					<Abstract type="html">The tilemap object into which the TMX file is loaded.</Abstract>
+					<Abstract type="html">The filename of a TMX file in the bundle or an absolute path to a TMX file.</Abstract>
 				</Parameter>
 			</Parameters>
+			<ReturnValue><Abstract type="html">The new instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapWithContentsOfFile:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/tileLayerNodeNamed:</TokenIdentifier>
+			<Abstract type="html">The name identifying a tile layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
 			
-			<Anchor>//api/name/loadTMXFile:tilemap:</Anchor>
+			<Declaration>- (KKTilemapTileLayerNode *)tileLayerNodeNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name identifying a tile layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The tile layer node with the name, or nil if there&apos;s no tile layer with that name.</Abstract></ReturnValue>
+			<Anchor>//api/name/tileLayerNodeNamed:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/objectLayerNodeNamed:</TokenIdentifier>
+			<Abstract type="html">The name identifying an object layer.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (KKTilemapObjectLayerNode *)objectLayerNodeNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name identifying an object layer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The object layer node with the name, or nil if there&apos;s no object layer with that name.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectLayerNodeNamed:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/objectNamed:</TokenIdentifier>
+			<Abstract type="html">Searches all object layers for an object with a matching name.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (KKTilemapObject *)objectNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name identifying the object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The first object (of any object layer) with a matching name, or nil if no such object exists.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectNamed:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/restrictScrollingToMapBoundary</TokenIdentifier>
+			<Abstract type="html">Enables boundary scrolling. This prevents the map&apos;s main tile layer from ever scrolling outside its bounds.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (void)restrictScrollingToMapBoundary</Declaration>
+			
+			
+			<Anchor>//api/name/restrictScrollingToMapBoundary</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/restrictScrollingToObject:</TokenIdentifier>
+			<Abstract type="html">Enables boundary scrolling. This prevents the map&apos;s main tile layer from ever scrolling outside the object&apos;s bounds.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (void)restrictScrollingToObject:(KKTilemapRectangleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/restrictScrollingToObject:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapNode/enableParallaxScrolling</TokenIdentifier>
+			<Abstract type="html">Enables parallax scrolling which makes other layers follow the main tile layer&apos;s position with parallax offset.
+Call this after setting up any camera follow object.</Abstract>
+			<DeclaredIn>KKTilemapNode.h</DeclaredIn>
+			
+			<Declaration>- (void)enableParallaxScrolling</Declaration>
+			
+			
+			<Anchor>//api/name/enableParallaxScrolling</Anchor>
             <NodeRef refid="33"/>
 		</Token>
 		

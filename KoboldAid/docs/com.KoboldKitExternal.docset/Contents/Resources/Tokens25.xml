@@ -18,7 +18,7 @@ audio objects for more advanced needs (as is done in many of the demos).</Abstra
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setAllowIpod:</TokenIdentifier>
 			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
 Note: If this is enabled, and another app is playing music, background audio
-playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
+playback will use the SOFTWARE codecs, NOT hardware.</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -37,7 +37,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/allowIpod</TokenIdentifier>
 			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
 Note: If this is enabled, and another app is playing music, background audio
-playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
+playback will use the SOFTWARE codecs, NOT hardware.</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -56,7 +56,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/allowIpod</TokenIdentifier>
 			<Abstract type="html">If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
 Note: If this is enabled, and another app is playing music, background audio
-playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
+playback will use the SOFTWARE codecs, NOT hardware.</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -74,7 +74,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setUseHardwareIfAvailable:</TokenIdentifier>
 			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
-(NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+(NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -92,7 +92,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/useHardwareIfAvailable</TokenIdentifier>
 			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
-(NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+(NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -110,7 +110,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/useHardwareIfAvailable</TokenIdentifier>
 			<Abstract type="html">Determines what to do if no other application is playing audio and allowIpod = YES
-(NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+(NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -128,7 +128,7 @@ playback will use the SOFTWARE codecs, NOT hardware. &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setHonorSilentSwitch:</TokenIdentifier>
 			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
-turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+turned off (NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
@@ -141,7 +141,7 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/honorSilentSwitch</TokenIdentifier>
 			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
-turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+turned off (NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
@@ -154,7 +154,7 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/honorSilentSwitch</TokenIdentifier>
 			<Abstract type="html">If true, mute when backgrounded, screen locked, or the ringer switch is
-turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
+turned off (NOT SUPPORTED ON THE SIMULATOR).</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite, assign) bool honorSilentSwitch</Declaration>
@@ -197,78 +197,6 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). &lt;br&gt;</Abstract>
 			
 			
 			<Anchor>//api/name/reservedSources</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setDevice:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly, retain) ALDevice *device</Declaration>
-			
-			
-			<Anchor>//api/name/device</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/device</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly, retain) ALDevice *device</Declaration>
-			
-			
-			<Anchor>//api/name/device</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/device</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly, retain) ALDevice *device</Declaration>
-			
-			
-			<Anchor>//api/name/device</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/setContext:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
-			
-			
-			<Anchor>//api/name/context</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/context</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
-			
-			
-			<Anchor>//api/name/context</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/OALSimpleAudio/context</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly, retain) ALContext *context</Declaration>
-			
-			
-			<Anchor>//api/name/context</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
@@ -897,7 +825,7 @@ If the preload cache is disabled, effects preloading will do nothing
 			<TokenIdentifier>//apple_ref/occ/clm/OALSimpleAudio/sharedInstanceWithSources:</TokenIdentifier>
 			<Abstract type="html">Start OALSimpleAudio with the specified number of reserved sources.
 Call this initializer if you want to use OALSimpleAudio, but keep some of the device&apos;s
-audio sources (there are 32 in total) for your own use. &lt;br&gt;
+audio sources (there are 32 in total) for your own use.
 &lt;strong&gt;Note:&lt;/strong&gt; This method must be called ONLY ONCE, &lt;em&gt;BEFORE&lt;/em&gt;
 any attempt is made to access the shared instance.
 To change the reserved sources after instantiation, modify reservedSources.</Abstract>
@@ -1050,7 +978,7 @@ iOS currently supports up to 32 sources total.</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBg:</TokenIdentifier>
 			<Abstract type="html">Play the background music at the specified path.
 If the music has not been preloaded, this method
-will load the music and then play, incurring a slight delay. &lt;br&gt;</Abstract>
+will load the music and then play, incurring a slight delay.</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 			<Declaration>- (bool)playBg:(NSString *)path</Declaration>
@@ -1069,7 +997,7 @@ will load the music and then play, incurring a slight delay. &lt;br&gt;</Abstrac
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBg:loop:</TokenIdentifier>
 			<Abstract type="html">Play the background music at the specified path.
 If the music has not been preloaded, this method
-will load the music and then play, incurring a slight delay. &lt;br&gt;</Abstract>
+will load the music and then play, incurring a slight delay.</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 			<Declaration>- (bool)playBg:(NSString *)path loop:(bool)loop</Declaration>
@@ -1091,7 +1019,7 @@ will load the music and then play, incurring a slight delay. &lt;br&gt;</Abstrac
 			<TokenIdentifier>//apple_ref/occ/instm/OALSimpleAudio/playBg:volume:pan:loop:</TokenIdentifier>
 			<Abstract type="html">Play the background music at the specified path.
 If the music has not been preloaded, this method
-will load the music and then play, incurring a slight delay. &lt;br&gt;</Abstract>
+will load the music and then play, incurring a slight delay.</Abstract>
 			<DeclaredIn>OALSimpleAudio.h</DeclaredIn>
 			
 			<Declaration>- (bool)playBg:(NSString *)filePath volume:(float)volume pan:(float)pan loop:(bool)loop</Declaration>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKIvarInfo.html">
+	<File path="Classes/KKLua.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKIvarInfo</TokenIdentifier>
-			<Abstract type="html">INTERNAL USE! Class that represents an ivar in order to set and get an ivar&apos;s value.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKLua</TokenIdentifier>
+			<Abstract type="html">Static class containing various Lua related helper methods.</Abstract>
+			<DeclaredIn>KKLua.h</DeclaredIn>
             
 			
 			<NodeRef refid="15"/>
@@ -13,166 +13,95 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setIvar:</TokenIdentifier>
-			<Abstract type="html">The Objective-C Ivar object.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLua/setup</TokenIdentifier>
+			<Abstract type="html">One-time setup of Lua. Automatically called by the Kobold Kit framework.</Abstract>
+			<DeclaredIn>KKLua.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) Ivar ivar</Declaration>
+			<Declaration>+ (void)setup</Declaration>
 			
 			
-			<Anchor>//api/name/ivar</Anchor>
+			<Anchor>//api/name/setup</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/ivar</TokenIdentifier>
-			<Abstract type="html">The Objective-C Ivar object.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLua/luaState</TokenIdentifier>
+			<Abstract type="html">The current lua state. Needed only for custom Lua code.</Abstract>
+			<DeclaredIn>KKLua.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) Ivar ivar</Declaration>
+			<Declaration>+ (lua_State *)luaState</Declaration>
 			
-			
-			<Anchor>//api/name/ivar</Anchor>
+			<ReturnValue><Abstract type="html">The current lua state. Needed only for custom Lua code.</Abstract></ReturnValue>
+			<Anchor>//api/name/luaState</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/ivar</TokenIdentifier>
-			<Abstract type="html">The Objective-C Ivar object.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLua/doFile:</TokenIdentifier>
+			<Abstract type="html">Runs the Lua script file. File is a filename with or without path to the file, and with extension.
+   Returns YES if the execution was successful and NO if it failed. Note that this is different from Lua,
+   where a return value of 0 indicates success and 1 or higher indicates an error. But YES == success
+   is more natural for Objective-C programmers.</Abstract>
+			<DeclaredIn>KKLua.h</DeclaredIn>
 			
-			<Declaration>@property (atomic) Ivar ivar</Declaration>
-			
-			
-			<Anchor>//api/name/ivar</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setName:</TokenIdentifier>
-			<Abstract type="html">The name of the ivar.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/name</TokenIdentifier>
-			<Abstract type="html">The name of the ivar.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/name</TokenIdentifier>
-			<Abstract type="html">The name of the ivar.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (atomic, copy) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setEncoding:</TokenIdentifier>
-			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
-			
-			
-			<Anchor>//api/name/encoding</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/encoding</TokenIdentifier>
-			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
-			
-			
-			<Anchor>//api/name/encoding</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/encoding</TokenIdentifier>
-			<Abstract type="html">The @encoding of the ivar. Not all ObjC encodings are supported, mainly integral data types plus the point, size and rect structures.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy) NSString *encoding</Declaration>
-			
-			
-			<Anchor>//api/name/encoding</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setType:</TokenIdentifier>
-			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/type</TokenIdentifier>
-			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKIvarInfo/type</TokenIdentifier>
-			<Abstract type="html">The type of the ivar which is deducted from the encoding.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>@property (atomic, readonly) KKIvarType type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKIvarInfo/setIvarInTarget:value:</TokenIdentifier>
-			<Abstract type="html">Set the ivar in the given target to the value.</Abstract>
-			<DeclaredIn>KKClassVarSetter.h</DeclaredIn>
-			
-			<Declaration>- (void)setIvarInTarget:(id)target value:(id)value</Declaration>
+			<Declaration>+ (BOOL)doFile:(NSString *)aFile</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The target object for the ivar.</Abstract>
-				</Parameter><Parameter>
-					<Name>value</Name>
-					<Abstract type="html">The value to assign to the ivar.</Abstract>
+					<Name>aFile</Name>
+					<Abstract type="html">The full path to a Lua script file.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the file was found and the script was executed without errors.</Abstract></ReturnValue>
+			<Anchor>//api/name/doFile:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLua/doString:</TokenIdentifier>
+			<Abstract type="html">Runs the Lua code passed in as string.
+   Returns YES if the execution was successful and NO if it failed. Note that this is different from Lua,
+   where a return value of 0 indicates success and 1 or higher indicates an error. But YES == success
+   is more natural for Objective-C programmers.</Abstract>
+			<DeclaredIn>KKLua.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)doString:(NSString *)aString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aString</Name>
+					<Abstract type="html">A Lua script as string.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the string was executed without errors.</Abstract></ReturnValue>
+			<Anchor>//api/name/doString:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLua/logLuaError</TokenIdentifier>
+			<Abstract type="html">Logs the most recent Lua error by getting the error message string from the stack index -1 and displaying it.</Abstract>
+			<DeclaredIn>KKLua.h</DeclaredIn>
+			
+			<Declaration>+ (void)logLuaError</Declaration>
+			
+			
+			<Anchor>//api/name/logLuaError</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/KKLua/logLuaErrorWithMessage:</TokenIdentifier>
+			<Abstract type="html">Logs a Lua error with a custom message.</Abstract>
+			<DeclaredIn>KKLua.h</DeclaredIn>
+			
+			<Declaration>+ (void)logLuaErrorWithMessage:(NSString *)aMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aMessage</Name>
+					<Abstract type="html">The custom message to append to the log.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setIvarInTarget:value:</Anchor>
+			<Anchor>//api/name/logLuaErrorWithMessage:</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		

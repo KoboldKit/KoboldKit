@@ -55,10 +55,6 @@
 	
 	<option value="//api/name/channel">&nbsp;&nbsp;&nbsp;&nbsp;channel</option>
 	
-	<option value="//api/name/context">&nbsp;&nbsp;&nbsp;&nbsp;context</option>
-	
-	<option value="//api/name/device">&nbsp;&nbsp;&nbsp;&nbsp;device</option>
-	
 	<option value="//api/name/effectsMuted">&nbsp;&nbsp;&nbsp;&nbsp;effectsMuted</option>
 	
 	<option value="//api/name/effectsPaused">&nbsp;&nbsp;&nbsp;&nbsp;effectsPaused</option>
@@ -184,10 +180,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bgVolume">bgVolume</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/channel">channel</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/context">context</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/device">device</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/effectsMuted">effectsMuted</a></span></li>
 	
@@ -369,18 +361,6 @@ available in OALAudioSupport.</p>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/reservedSources">&nbsp;&nbsp;reservedSources</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/device">&nbsp;&nbsp;device</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/context">&nbsp;&nbsp;context</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -658,7 +638,7 @@ available in OALAudioSupport.</p>
 	<div class="method-subsection brief-description">
 		<p>If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
 Note: If this is enabled, and another app is playing music, background audio
-playback will use the SOFTWARE codecs, NOT hardware. <br></p>
+playback will use the SOFTWARE codecs, NOT hardware.</p>
 	</div>		
 	
     
@@ -675,9 +655,9 @@ playback will use the SOFTWARE codecs, NOT hardware. <br></p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>If allowIpod = NO, the application will ALWAYS use hardware decoding. <br></p>
+		<p>If allowIpod = NO, the application will ALWAYS use hardware decoding.</p>
 
-<p>iOS Only. <br></p>
+<p>iOS Only.</p>
 	</div>
 	
 	
@@ -959,28 +939,6 @@ Only mess with this if you know what you are doing!</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/context" title="context"></a>
-	<h3 class="subsubtitle method-title">context</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) ALContext *context</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/device" title="device"></a>
-	<h3 class="subsubtitle method-title">device</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) ALDevice *device</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/effectsMuted" title="effectsMuted"></a>
 	<h3 class="subsubtitle method-title">effectsMuted</h3>
 	
@@ -1096,7 +1054,7 @@ Only mess with this if you know what you are doing!</p>
 	
 	<div class="method-subsection brief-description">
 		<p>If true, mute when backgrounded, screen locked, or the ringer switch is
-turned off (NOT SUPPORTED ON THE SIMULATOR). <br></p>
+turned off (NOT SUPPORTED ON THE SIMULATOR).</p>
 	</div>		
 	
     
@@ -1113,7 +1071,7 @@ turned off (NOT SUPPORTED ON THE SIMULATOR). <br></p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>iOS Only. <br></p>
+		<p>iOS Only.</p>
 
 <p>Default value: YES</p>
 	</div>
@@ -1430,7 +1388,7 @@ If the preload cache is disabled, effects preloading will do nothing
 	
 	<div class="method-subsection brief-description">
 		<p>Determines what to do if no other application is playing audio and <a href="#//api/name/allowIpod">allowIpod</a> = YES
-(NOT SUPPORTED ON THE SIMULATOR). <br></p>
+(NOT SUPPORTED ON THE SIMULATOR).</p>
 	</div>		
 	
     
@@ -1449,15 +1407,15 @@ If the preload cache is disabled, effects preloading will do nothing
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If NO, the application will ALWAYS use software decoding. The advantage to this is that
 the user can background your application and then start audio playing from another
-application. If useHardwareIfAvailable = YES, the user won&rsquo;t be able to do this. <br></p>
+application. If useHardwareIfAvailable = YES, the user won&rsquo;t be able to do this.</p>
 
 <p>If this is set to YES, the application will use hardware decoding if no other application
 is currently playing audio. However, no other application will be able to start playing
-audio if it wasn&rsquo;t playing already. <br></p>
+audio if it wasn&rsquo;t playing already.</p>
 
-<p>Note: This switch has no effect if <a href="#//api/name/allowIpod">allowIpod</a> = NO. <br></p>
+<p>Note: This switch has no effect if <a href="#//api/name/allowIpod">allowIpod</a> = NO.</p>
 
-<p>iOS Only. <br></p>
+<p>iOS Only.</p>
 	</div>
 	
 	
@@ -1545,17 +1503,17 @@ iOS currently supports up to 32 sources total.</p></dd>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>With this initializer, you can set the total number of mono and stereo sources
-available, as well as how many sources are to be reserved by OALSimpleAudio. <br></p>
+available, as well as how many sources are to be reserved by OALSimpleAudio.</p>
 
 <p>The number of mono and stereo sources represents the GLOBAL number of sources
 available for EVERYONE, not just OALSimpleAudio. Their combined values must
-not exceed 32 (the max allowed sources in iOS). <br></p>
+not exceed 32 (the max allowed sources in iOS).</p>
 
 <p><a href="#//api/name/reservedSources">reservedSources</a> is independent of this; it represents how many of the above
-mentioned sources to reserve for OALSimpleAudio&rsquo;s use. <br></p>
+mentioned sources to reserve for OALSimpleAudio&rsquo;s use.</p>
 
 <p><strong>Note:</strong> This method must be called ONLY ONCE, <em>BEFORE</em>
-any attempt is made to access the shared instance. <br></p>
+any attempt is made to access the shared instance.</p>
 	</div>
 	
 	
@@ -1581,7 +1539,7 @@ any attempt is made to access the shared instance. <br></p>
 	<div class="method-subsection brief-description">
 		<p>Start OALSimpleAudio with the specified number of reserved sources.
 Call this initializer if you want to use OALSimpleAudio, but keep some of the device&rsquo;s
-audio sources (there are 32 in total) for your own use. <br>
+audio sources (there are 32 in total) for your own use.
 <strong>Note:</strong> This method must be called ONLY ONCE, <em>BEFORE</em>
 any attempt is made to access the shared instance.
 To change the reserved sources after instantiation, modify <a href="#//api/name/reservedSources">reservedSources</a>.</p>
@@ -1798,7 +1756,7 @@ To change the reserved sources after instantiation, modify <a href="#//api/name/
 	<div class="method-subsection brief-description">
 		<p>Play the background music at the specified path.
 If the music has not been preloaded, this method
-will load the music and then play, incurring a slight delay. <br></p>
+will load the music and then play, incurring a slight delay.</p>
 	</div>		
 	
     
@@ -1859,7 +1817,7 @@ will stop.</p>
 	<div class="method-subsection brief-description">
 		<p>Play the background music at the specified path.
 If the music has not been preloaded, this method
-will load the music and then play, incurring a slight delay. <br></p>
+will load the music and then play, incurring a slight delay.</p>
 	</div>		
 	
     
@@ -1925,7 +1883,7 @@ will stop.</p>
 	<div class="method-subsection brief-description">
 		<p>Play the background music at the specified path.
 If the music has not been preloaded, this method
-will load the music and then play, incurring a slight delay. <br></p>
+will load the music and then play, incurring a slight delay.</p>
 	</div>		
 	
     
@@ -1975,7 +1933,7 @@ will load the music and then play, incurring a slight delay. <br></p>
 		<p><strong>Note:</strong> only <strong>ONE</strong> background music
 file may be played or preloaded at a time via OALSimpleAudio.
 If you play or preload another file, the one currently playing
-will stop. To play multiple audio tracks, create an <a href="../Classes/OALAudioTrack.html">OALAudioTrack</a>. <br></p>
+will stop. To play multiple audio tracks, create an <a href="../Classes/OALAudioTrack.html">OALAudioTrack</a>.</p>
 
 <p><strong>Note:</strong> pan will have no effect when running on iOS
 versions prior to 4.0.</p>
@@ -2885,7 +2843,7 @@ effect was not unloaded.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Kobold Tech. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						<p><span class="copyright">&copy; 2014 Kobold Tech. All rights reserved. (Last updated: 2014-03-23)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

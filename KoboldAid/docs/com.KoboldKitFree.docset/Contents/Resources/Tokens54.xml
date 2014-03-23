@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSCoder+KoboldKit.html">
+	<File path="Categories/SKScene+KoboldKit.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSCoder(KoboldKit)</TokenIdentifier>
-			<Abstract type="html">Adds encode/decode convenience methods for common structs not supported natively (or cross-platform) by NSCoder.</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/SKScene(KoboldKit)</TokenIdentifier>
+			<Abstract type="html">SKScene category methods for Kobold Kit</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
             
 			
 			<NodeRef refid="54"/>
@@ -13,76 +13,111 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSCoder/encodePoint:forKey:</TokenIdentifier>
-			<Abstract type="html">Encodes a CGPoint.</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKScene/enumerateBodiesUsingBlock:</TokenIdentifier>
+			<Abstract type="html">Enumerates all physics bodies in the world by passing an INFINITY rect to enumerateBodiesInRect.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (void)encodePoint:(CGPoint)point forKey:(NSString *)key</Declaration>
+			<Declaration>- (void)enumerateBodiesUsingBlock:(void ( ^ ) ( SKPhysicsBody *body , BOOL *stop ))block</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>point</Name>
-					<Abstract type="html">The point to encode.</Abstract>
+					<Name>block</Name>
+					<Abstract type="html">The block that is called for every physics body.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enumerateBodiesUsingBlock:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKScene/observeNotification:selector:</TokenIdentifier>
+			<Abstract type="html">Receiver observes notifications posted by notification center.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
 				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The archive key.</Abstract>
+					<Name>notificationSelector</Name>
+					<Abstract type="html">The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/encodePoint:forKey:</Anchor>
+			<Anchor>//api/name/observeNotification:selector:</Anchor>
             <NodeRef refid="54"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSCoder/decodePointForKey:</TokenIdentifier>
-			<Abstract type="html">Decodes a CGPoint</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKScene/observeNotification:selector:object:</TokenIdentifier>
+			<Abstract type="html">Receiver observes notifications posted by notification center but only those notifications posted by a specific object.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (CGPoint)decodePointForKey:(NSString *)key</Declaration>
+			<Declaration>- (void)observeNotification:(NSString *)notificationName selector:(SEL)notificationSelector object:(id)notificationSender</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The archive key.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The decoded point.</Abstract></ReturnValue>
-			<Anchor>//api/name/decodePointForKey:</Anchor>
-            <NodeRef refid="54"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSCoder/encodeCGPoint:forKey:</TokenIdentifier>
-			<Abstract type="html">Encodes a CGPoint using the same method defined by UIGeometry.h on iOS.</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
-			
-			<Declaration>- (void)encodeCGPoint:(CGPoint)point forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>point</Name>
-					<Abstract type="html">The point to encode.</Abstract>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
 				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The archive key.</Abstract>
+					<Name>notificationSelector</Name>
+					<Abstract type="html">The selector that is performed when a matching notification was received. Selector takes a single NSNotification object as parameter.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSender</Name>
+					<Abstract type="html">The notification sender object whose notifications are observed.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/encodeCGPoint:forKey:</Anchor>
+			<Anchor>//api/name/observeNotification:selector:object:</Anchor>
             <NodeRef refid="54"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSCoder/decodeCGPointForKey:</TokenIdentifier>
-			<Abstract type="html">Decodes a CGPoint using the same method defined by UIGeometry.h on iOS.</Abstract>
-			<DeclaredIn>NSCoder+KoboldKit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKScene/disregardNotification:</TokenIdentifier>
+			<Abstract type="html">Receiver disregards all notifications with the given name.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
 			
-			<Declaration>- (CGPoint)decodeCGPointForKey:(NSString *)key</Declaration>
+			<Declaration>- (void)disregardNotification:(NSString *)notificationName</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The archive key.</Abstract>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">The decoded point.</Abstract></ReturnValue>
-			<Anchor>//api/name/decodeCGPointForKey:</Anchor>
+			
+			<Anchor>//api/name/disregardNotification:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKScene/disregardNotification:object:</TokenIdentifier>
+			<Abstract type="html">Receiver disregards notifications with the given name coming from a specific object.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (void)disregardNotification:(NSString *)notificationName object:(id)notificationSender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notificationName</Name>
+					<Abstract type="html">A string uniquely identifying the notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>notificationSender</Name>
+					<Abstract type="html">The notification sender object whose notifications are observed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/disregardNotification:object:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKScene/disregardAllNotifications</TokenIdentifier>
+			<Abstract type="html">Receiver disregards any and all notification sent by the notification center.</Abstract>
+			<DeclaredIn>SKScene+KoboldKit.h</DeclaredIn>
+			
+			<Declaration>- (void)disregardAllNotifications</Declaration>
+			
+			
+			<Anchor>//api/name/disregardAllNotifications</Anchor>
             <NodeRef refid="54"/>
 		</Token>
 		

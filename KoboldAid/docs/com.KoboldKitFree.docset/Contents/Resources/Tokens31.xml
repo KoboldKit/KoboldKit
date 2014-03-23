@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KKStayInBoundsBehavior.html">
+	<File path="Classes/KKTilemapLayerNode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KKStayInBoundsBehavior</TokenIdentifier>
-			<Abstract type="html">Prevents a node&apos;s position from passing over the bounds rectangle.
-(TODO: Optionally sends notifications when node comes in to contact with the bounds and when contact ends.)</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/KKTilemapLayerNode</TokenIdentifier>
+			<Abstract type="html">Common base class for both KKTilemapObjectLayerNode and KKTilemapTileLayerNode</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
             
 			
 			<NodeRef refid="31"/>
@@ -14,57 +13,110 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/setBounds:</TokenIdentifier>
-			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setLayer:</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
 			
-			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
-			<Anchor>//api/name/bounds</Anchor>
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
             <NodeRef refid="31"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KKStayInBoundsBehavior/bounds</TokenIdentifier>
-			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/layer</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
 			
-			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
-			<Anchor>//api/name/bounds</Anchor>
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
             <NodeRef refid="31"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/KKStayInBoundsBehavior/bounds</TokenIdentifier>
-			<Abstract type="html">Bounds rect in scene coordinates.</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/layer</TokenIdentifier>
+			<Abstract type="html">The tilemap layer object.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) CGRect bounds</Declaration>
+			<Declaration>@property (atomic, readonly, weak) KKTilemapLayer *layer</Declaration>
 			
-			<ReturnValue><Abstract type="html">Bounds rect in scene coordinates.</Abstract></ReturnValue>
-			<Anchor>//api/name/bounds</Anchor>
+			<ReturnValue><Abstract type="html">The tilemap layer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layer</Anchor>
             <NodeRef refid="31"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/KKStayInBoundsBehavior/stayInBounds:</TokenIdentifier>
-			<Abstract type="html">If either x/width or y/height are set to INFINITY then that axis will not check for bounds. Thus if the node
-should be able to move endlessly in horizontal direction but not outside the screen at the top or bottom,
-set bounds.size.width or bounds.origin.x to INFINITY.</Abstract>
-			<DeclaredIn>KKStayInBoundsBehavior.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/setTilemapNode:</TokenIdentifier>
+			<Abstract type="html">The layer&apos;s tilemap node.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
 			
-			<Declaration>+ (id)stayInBounds:(CGRect)bounds</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>bounds</Name>
-					<Abstract type="html">The boundary rectangle.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">An instance of the class.</Abstract></ReturnValue>
-			<Anchor>//api/name/stayInBounds:</Anchor>
+			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">The layer&apos;s tilemap node.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapNode</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/tilemapNode</TokenIdentifier>
+			<Abstract type="html">The layer&apos;s tilemap node.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">The layer&apos;s tilemap node.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapNode</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KKTilemapLayerNode/tilemapNode</TokenIdentifier>
+			<Abstract type="html">The layer&apos;s tilemap node.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, weak) KKTilemapNode *tilemapNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">The layer&apos;s tilemap node.</Abstract></ReturnValue>
+			<Anchor>//api/name/tilemapNode</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/tileCoordForPoint:</TokenIdentifier>
+			<Abstract type="html">Converts a point from scene coordinates to tile coordinates within the layer.</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)tileCoordForPoint:(CGPoint)point</Declaration>
+			
+			
+			<Anchor>//api/name/tileCoordForPoint:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/centerPositionForTileCoord:</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)centerPositionForTileCoord:(CGPoint)tileCoord</Declaration>
+			
+			
+			<Anchor>//api/name/centerPositionForTileCoord:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KKTilemapLayerNode/positionForTileCoord:</TokenIdentifier>
+			<Abstract type="html">nd</Abstract>
+			<DeclaredIn>KKTilemapLayerNode.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)positionForTileCoord:(CGPoint)tileCoord</Declaration>
+			
+			
+			<Anchor>//api/name/positionForTileCoord:</Anchor>
             <NodeRef refid="31"/>
 		</Token>
 		

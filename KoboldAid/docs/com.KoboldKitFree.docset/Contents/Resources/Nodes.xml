@@ -6,20 +6,12 @@
             <Path>index.html</Path>
 			<Subnodes>
                 
-				<Node type="folder">
-					<Name>Programming Guides</Name>
-					<Path>index.html</Path>
-					<Subnodes>
-						<NodeRef refid="1"/>
-						
-					</Subnodes>
-				</Node>
-				
 				
 				<Node type="folder">
 					<Name>Classes</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="1"/>
 						<NodeRef refid="2"/>
 						<NodeRef refid="3"/>
 						<NodeRef refid="4"/>
@@ -64,13 +56,6 @@
 						<NodeRef refid="43"/>
 						<NodeRef refid="44"/>
 						<NodeRef refid="45"/>
-						<NodeRef refid="46"/>
-						<NodeRef refid="47"/>
-						<NodeRef refid="48"/>
-						<NodeRef refid="49"/>
-						<NodeRef refid="50"/>
-						<NodeRef refid="51"/>
-						<NodeRef refid="52"/>
 						
 					</Subnodes>
 				</Node>
@@ -80,22 +65,15 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
 						<NodeRef refid="53"/>
 						<NodeRef refid="54"/>
-						<NodeRef refid="55"/>
-						<NodeRef refid="56"/>
-						<NodeRef refid="57"/>
-						<NodeRef refid="58"/>
-						<NodeRef refid="59"/>
-						<NodeRef refid="60"/>
-						<NodeRef refid="61"/>
-						<NodeRef refid="62"/>
-						<NodeRef refid="63"/>
-						<NodeRef refid="64"/>
-						<NodeRef refid="65"/>
-						<NodeRef refid="66"/>
-						<NodeRef refid="67"/>
-						<NodeRef refid="68"/>
 						
 					</Subnodes>
 				</Node>
@@ -105,9 +83,8 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="69"/>
-						<NodeRef refid="70"/>
-						<NodeRef refid="71"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
 						
 					</Subnodes>
 				</Node>
@@ -117,13 +94,8 @@
         </Node>
     </TOC>
 	<Library>
-		<Node id="1" type="section">
-            <Name>Introduction-to-KoboldKit</Name>
-            <Path>docs/Documentation/Introduction-to-KoboldKit.html</Path>
-            
-        </Node>
 		
-		<Node id="2" type="file" documentType="reference">
+		<Node id="1" type="file" documentType="reference">
             <Name>KKAppDelegate</Name>
             <Path>Classes/KKAppDelegate.html</Path>
             
@@ -150,7 +122,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="3" type="file" documentType="reference">
+		<Node id="2" type="file" documentType="reference">
             <Name>KKBehavior</Name>
             <Path>Classes/KKBehavior.html</Path>
             
@@ -189,7 +161,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="4" type="file" documentType="reference">
+		<Node id="3" type="file" documentType="reference">
             <Name>KKBoolNumber</Name>
             <Path>Classes/KKBoolNumber.html</Path>
             
@@ -216,7 +188,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="5" type="file" documentType="reference">
+		<Node id="4" type="file" documentType="reference">
             <Name>KKButtonBehavior</Name>
             <Path>Classes/KKButtonBehavior.html</Path>
             
@@ -249,7 +221,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="6" type="file" documentType="reference">
+		<Node id="5" type="file" documentType="reference">
             <Name>KKCameraFollowBehavior</Name>
             <Path>Classes/KKCameraFollowBehavior.html</Path>
             
@@ -276,7 +248,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="7" type="file" documentType="reference">
+		<Node id="6" type="file" documentType="reference">
             <Name>KKClassVarSetter</Name>
             <Path>Classes/KKClassVarSetter.html</Path>
             
@@ -303,7 +275,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
             <Name>KKDoubleNumber</Name>
             <Path>Classes/KKDoubleNumber.html</Path>
             
@@ -330,34 +302,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="9" type="file" documentType="reference">
-            <Name>KKEmitterNode</Name>
-            <Path>Classes/KKEmitterNode.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/KKEmitterNode.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/KKEmitterNode.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/KKEmitterNode.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="10" type="file" documentType="reference">
+		<Node id="8" type="file" documentType="reference">
             <Name>KKFloatNumber</Name>
             <Path>Classes/KKFloatNumber.html</Path>
             
@@ -384,7 +329,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="11" type="file" documentType="reference">
+		<Node id="9" type="file" documentType="reference">
             <Name>KKFollowTargetBehavior</Name>
             <Path>Classes/KKFollowTargetBehavior.html</Path>
             
@@ -417,61 +362,17 @@
             </Subnodes>
             
         </Node>
-		<Node id="12" type="file" documentType="reference">
+		<Node id="10" type="file" documentType="reference">
             <Name>KKInt32Number</Name>
             <Path>Classes/KKInt32Number.html</Path>
             
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/KKInt32Number.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/KKInt32Number.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Classes/KKInt32Number.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
         </Node>
-		<Node id="13" type="file" documentType="reference">
+		<Node id="11" type="file" documentType="reference">
             <Name>KKInt64Number</Name>
             <Path>Classes/KKInt64Number.html</Path>
             
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/KKInt64Number.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/KKInt64Number.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Classes/KKInt64Number.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
         </Node>
-		<Node id="14" type="file" documentType="reference">
+		<Node id="12" type="file" documentType="reference">
             <Name>KKIntegerArray</Name>
             <Path>Classes/KKIntegerArray.html</Path>
             
@@ -510,7 +411,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="15" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
             <Name>KKIvarInfo</Name>
             <Path>Classes/KKIvarInfo.html</Path>
             
@@ -543,12 +444,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="16" type="file" documentType="reference">
-            <Name>KKLabelNode</Name>
-            <Path>Classes/KKLabelNode.html</Path>
-            
-        </Node>
-		<Node id="17" type="file" documentType="reference">
+		<Node id="14" type="file" documentType="reference">
             <Name>KKLimitVelocityBehavior</Name>
             <Path>Classes/KKLimitVelocityBehavior.html</Path>
             
@@ -581,7 +477,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="18" type="file" documentType="reference">
+		<Node id="15" type="file" documentType="reference">
             <Name>KKLua</Name>
             <Path>Classes/KKLua.html</Path>
             
@@ -608,12 +504,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="19" type="file" documentType="reference">
+		<Node id="16" type="file" documentType="reference">
             <Name>KKMacApplication</Name>
             <Path>Classes/KKMacApplication.html</Path>
             
         </Node>
-		<Node id="20" type="file" documentType="reference">
+		<Node id="17" type="file" documentType="reference">
             <Name>KKModel</Name>
             <Path>Classes/KKModel.html</Path>
             
@@ -652,7 +548,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="21" type="file" documentType="reference">
+		<Node id="18" type="file" documentType="reference">
             <Name>KKMutableNumber</Name>
             <Path>Classes/KKMutableNumber.html</Path>
             
@@ -691,12 +587,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="22" type="file" documentType="reference">
+		<Node id="19" type="file" documentType="reference">
             <Name>KKNode</Name>
             <Path>Classes/KKNode.html</Path>
             
         </Node>
-		<Node id="23" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
             <Name>KKNodeController</Name>
             <Path>Classes/KKNodeController.html</Path>
             
@@ -735,61 +631,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="24" type="file" documentType="reference">
+		<Node id="21" type="file" documentType="reference">
             <Name>KKNodeShared</Name>
             <Path>Classes/KKNodeShared.html</Path>
             
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/KKNodeShared.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/KKNodeShared.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/KKNodeShared.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-            </Subnodes>
-            
         </Node>
-		<Node id="25" type="file" documentType="reference">
-            <Name>KKNotifyOnContactBehavior</Name>
-            <Path>Classes/KKNotifyOnContactBehavior.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/KKNotifyOnContactBehavior.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/KKNotifyOnContactBehavior.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/KKNotifyOnContactBehavior.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="26" type="file" documentType="reference">
+		<Node id="22" type="file" documentType="reference">
             <Name>KKPointArray</Name>
             <Path>Classes/KKPointArray.html</Path>
             
@@ -828,39 +675,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="27" type="file" documentType="reference">
+		<Node id="23" type="file" documentType="reference">
             <Name>KKRemoveOnContactBehavior</Name>
             <Path>Classes/KKRemoveOnContactBehavior.html</Path>
             
         </Node>
-		<Node id="28" type="file" documentType="reference">
-            <Name>KKRemoveOnNotificationBehavior</Name>
-            <Path>Classes/KKRemoveOnNotificationBehavior.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/KKRemoveOnNotificationBehavior.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/KKRemoveOnNotificationBehavior.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/KKRemoveOnNotificationBehavior.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="29" type="file" documentType="reference">
+		<Node id="24" type="file" documentType="reference">
             <Name>KKScene</Name>
             <Path>Classes/KKScene.html</Path>
             
@@ -893,12 +713,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="30" type="file" documentType="reference">
-            <Name>KKSpriteNode</Name>
-            <Path>Classes/KKSpriteNode.html</Path>
-            
-        </Node>
-		<Node id="31" type="file" documentType="reference">
+		<Node id="25" type="file" documentType="reference">
             <Name>KKStayInBoundsBehavior</Name>
             <Path>Classes/KKStayInBoundsBehavior.html</Path>
             
@@ -931,34 +746,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="32" type="file" documentType="reference">
-            <Name>KKSwizzle</Name>
-            <Path>Classes/KKSwizzle.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/KKSwizzle.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/KKSwizzle.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/KKSwizzle.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="33" type="file" documentType="reference">
+		<Node id="26" type="file" documentType="reference">
             <Name>KKTMXReader</Name>
             <Path>Classes/KKTMXReader.html</Path>
             
@@ -985,7 +773,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="34" type="file" documentType="reference">
+		<Node id="27" type="file" documentType="reference">
             <Name>KKTMXWriter</Name>
             <Path>Classes/KKTMXWriter.html</Path>
             
@@ -1012,7 +800,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="35" type="file" documentType="reference">
+		<Node id="28" type="file" documentType="reference">
             <Name>KKTilemap</Name>
             <Path>Classes/KKTilemap.html</Path>
             
@@ -1051,7 +839,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="36" type="file" documentType="reference">
+		<Node id="29" type="file" documentType="reference">
             <Name>KKTilemapLayer</Name>
             <Path>Classes/KKTilemapLayer.html</Path>
             
@@ -1084,7 +872,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="37" type="file" documentType="reference">
+		<Node id="30" type="file" documentType="reference">
             <Name>KKTilemapLayerContourTracer</Name>
             <Path>Classes/KKTilemapLayerContourTracer.html</Path>
             
@@ -1117,7 +905,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="38" type="file" documentType="reference">
+		<Node id="31" type="file" documentType="reference">
             <Name>KKTilemapLayerNode</Name>
             <Path>Classes/KKTilemapLayerNode.html</Path>
             
@@ -1150,7 +938,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="39" type="file" documentType="reference">
+		<Node id="32" type="file" documentType="reference">
             <Name>KKTilemapLayerTiles</Name>
             <Path>Classes/KKTilemapLayerTiles.html</Path>
             
@@ -1183,7 +971,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="40" type="file" documentType="reference">
+		<Node id="33" type="file" documentType="reference">
             <Name>KKTilemapNode</Name>
             <Path>Classes/KKTilemapNode.html</Path>
             
@@ -1222,7 +1010,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="41" type="file" documentType="reference">
+		<Node id="34" type="file" documentType="reference">
             <Name>KKTilemapObject</Name>
             <Path>Classes/KKTilemapObject.html</Path>
             
@@ -1255,7 +1043,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="42" type="file" documentType="reference">
+		<Node id="35" type="file" documentType="reference">
             <Name>KKTilemapObjectLayerNode</Name>
             <Path>Classes/KKTilemapObjectLayerNode.html</Path>
             
@@ -1282,7 +1070,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="43" type="file" documentType="reference">
+		<Node id="36" type="file" documentType="reference">
             <Name>KKTilemapPolyObject</Name>
             <Path>Classes/KKTilemapPolyObject.html</Path>
             
@@ -1315,7 +1103,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="44" type="file" documentType="reference">
+		<Node id="37" type="file" documentType="reference">
             <Name>KKTilemapProperties</Name>
             <Path>Classes/KKTilemapProperties.html</Path>
             
@@ -1348,7 +1136,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="45" type="file" documentType="reference">
+		<Node id="38" type="file" documentType="reference">
             <Name>KKTilemapRectangleObject</Name>
             <Path>Classes/KKTilemapRectangleObject.html</Path>
             
@@ -1375,7 +1163,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="46" type="file" documentType="reference">
+		<Node id="39" type="file" documentType="reference">
             <Name>KKTilemapTileLayerNode</Name>
             <Path>Classes/KKTilemapTileLayerNode.html</Path>
             
@@ -1408,7 +1196,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="47" type="file" documentType="reference">
+		<Node id="40" type="file" documentType="reference">
             <Name>KKTilemapTileObject</Name>
             <Path>Classes/KKTilemapTileObject.html</Path>
             
@@ -1435,7 +1223,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="48" type="file" documentType="reference">
+		<Node id="41" type="file" documentType="reference">
             <Name>KKTilemapTileProperties</Name>
             <Path>Classes/KKTilemapTileProperties.html</Path>
             
@@ -1468,7 +1256,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="49" type="file" documentType="reference">
+		<Node id="42" type="file" documentType="reference">
             <Name>KKTilemapTileset</Name>
             <Path>Classes/KKTilemapTileset.html</Path>
             
@@ -1501,7 +1289,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="50" type="file" documentType="reference">
+		<Node id="43" type="file" documentType="reference">
             <Name>KKView</Name>
             <Path>Classes/KKView.html</Path>
             
@@ -1540,7 +1328,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="51" type="file" documentType="reference">
+		<Node id="44" type="file" documentType="reference">
             <Name>KKViewController</Name>
             <Path>Classes/KKViewController.html</Path>
             
@@ -1573,35 +1361,13 @@
             </Subnodes>
             
         </Node>
-		<Node id="52" type="file" documentType="reference">
+		<Node id="45" type="file" documentType="reference">
             <Name>KKViewOriginNode</Name>
             <Path>Classes/KKViewOriginNode.html</Path>
             
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/KKViewOriginNode.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/KKViewOriginNode.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Classes/KKViewOriginNode.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
         </Node>
 		
-		<Node id="53" type="file" documentType="reference">
+		<Node id="46" type="file" documentType="reference">
             <Name>NSBundle(KoboldKit)</Name>
             <Path>Categories/NSBundle+KoboldKit.html</Path>
             
@@ -1628,7 +1394,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="54" type="file" documentType="reference">
+		<Node id="47" type="file" documentType="reference">
             <Name>NSCoder(KoboldKit)</Name>
             <Path>Categories/NSCoder+KoboldKit.html</Path>
             
@@ -1655,7 +1421,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="55" type="file" documentType="reference">
+		<Node id="48" type="file" documentType="reference">
             <Name>NSDictionary(KoboldKit)</Name>
             <Path>Categories/NSDictionary+KoboldKit.html</Path>
             
@@ -1682,7 +1448,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="56" type="file" documentType="reference">
+		<Node id="49" type="file" documentType="reference">
             <Name>NSMutableDictionary(KoboldKit)</Name>
             <Path>Categories/NSMutableDictionary+KoboldKit.html</Path>
             
@@ -1709,7 +1475,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="57" type="file" documentType="reference">
+		<Node id="50" type="file" documentType="reference">
             <Name>NSObject(KoboldKit)</Name>
             <Path>Categories/NSObject+KoboldKit.html</Path>
             
@@ -1736,7 +1502,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="58" type="file" documentType="reference">
+		<Node id="51" type="file" documentType="reference">
             <Name>NSString(KoboldKit)</Name>
             <Path>Categories/NSString+KoboldKit.html</Path>
             
@@ -1769,7 +1535,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="59" type="file" documentType="reference">
+		<Node id="52" type="file" documentType="reference">
             <Name>SKAction(KoboldKit)</Name>
             <Path>Categories/SKAction+KoboldKit.html</Path>
             
@@ -1796,27 +1562,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="60" type="file" documentType="reference">
-            <Name>SKCropNode(KoboldKit)</Name>
-            <Path>Categories/SKCropNode+KoboldKit.html</Path>
-            
-        </Node>
-		<Node id="61" type="file" documentType="reference">
-            <Name>SKEffectNode(KoboldKit)</Name>
-            <Path>Categories/SKEffectNode+KoboldKit.html</Path>
-            
-        </Node>
-		<Node id="62" type="file" documentType="reference">
-            <Name>SKEmitterNode(KoboldKit)</Name>
-            <Path>Categories/SKEmitterNode+KoboldKit.html</Path>
-            
-        </Node>
-		<Node id="63" type="file" documentType="reference">
-            <Name>SKLabelNode(KoboldKit)</Name>
-            <Path>Categories/SKLabelNode+KoboldKit.html</Path>
-            
-        </Node>
-		<Node id="64" type="file" documentType="reference">
+		<Node id="53" type="file" documentType="reference">
             <Name>SKNode(KoboldKit)</Name>
             <Path>Categories/SKNode+KoboldKit.html</Path>
             
@@ -1849,7 +1595,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="65" type="file" documentType="reference">
+		<Node id="54" type="file" documentType="reference">
             <Name>SKScene(KoboldKit)</Name>
             <Path>Categories/SKScene+KoboldKit.html</Path>
             
@@ -1876,45 +1622,8 @@
             </Subnodes>
             
         </Node>
-		<Node id="66" type="file" documentType="reference">
-            <Name>SKShapeNode(KoboldKit)</Name>
-            <Path>Categories/SKShapeNode+KoboldKit.html</Path>
-            
-        </Node>
-		<Node id="67" type="file" documentType="reference">
-            <Name>SKSpriteNode(KoboldKit)</Name>
-            <Path>Categories/SKSpriteNode+KoboldKit.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Categories/SKSpriteNode+KoboldKit.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Categories/SKSpriteNode+KoboldKit.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Categories/SKSpriteNode+KoboldKit.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="68" type="file" documentType="reference">
-            <Name>SKVideoNode(KoboldKit)</Name>
-            <Path>Categories/SKVideoNode+KoboldKit.html</Path>
-            
-        </Node>
 		
-        <Node id="69" type="file" documentType="reference">
+        <Node id="55" type="file" documentType="reference">
             <Name>KKPhysicsContactEventDelegate</Name>
             <Path>Protocols/KKPhysicsContactEventDelegate.html</Path>
             
@@ -1947,7 +1656,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="70" type="file" documentType="reference">
+		<Node id="56" type="file" documentType="reference">
             <Name>KKSceneEventDelegate</Name>
             <Path>Protocols/KKSceneEventDelegate.html</Path>
             
@@ -1967,33 +1676,6 @@
                 
                 <Node type="section">
                     <Path>Protocols/KKSceneEventDelegate.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="71" type="file" documentType="reference">
-            <Name>KKTilemapObjectSpawnDelegate</Name>
-            <Path>Protocols/KKTilemapObjectSpawnDelegate.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Protocols/KKTilemapObjectSpawnDelegate.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Protocols/KKTilemapObjectSpawnDelegate.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Protocols/KKTilemapObjectSpawnDelegate.html</Path>
                     <Name>Instance Methods</Name>
                     <Anchor>instance_methods</Anchor>
                 </Node>

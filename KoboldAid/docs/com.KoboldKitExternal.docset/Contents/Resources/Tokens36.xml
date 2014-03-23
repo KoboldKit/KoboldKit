@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/OALPropertyAction+Audio.html">
+	<File path="Protocols/NSXMLStreamWriter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/OALPropertyAction(Audio)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/NSXMLStreamWriter</TokenIdentifier>
+			<Abstract type="html">xml stream writer with namespace support</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
             
 			
 			<NodeRef refid="36"/>
@@ -13,74 +13,193 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPropertyAction/pitchActionWithDuration:endValue:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeStartElementWithNamespace:localName:</TokenIdentifier>
+			<Abstract type="html">The namespace.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>+ (OALPropertyAction *)pitchActionWithDuration:(float)duration endValue:(float)endValue</Declaration>
+			<Declaration>- (void)writeStartElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter><Parameter>
+					<Name>localName</Name>
+					<Abstract type="html">The element name.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/pitchActionWithDuration:endValue:</Anchor>
+			<Anchor>//api/name/writeStartElementWithNamespace:localName:</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPropertyAction/pitchActionWithDuration:startValue:endValue:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEndElementWithNamespace:localName:</TokenIdentifier>
+			<Abstract type="html">The namespace.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>+ (OALPropertyAction *)pitchActionWithDuration:(float)duration startValue:(float)startValue endValue:(float)endValue</Declaration>
+			<Declaration>- (void)writeEndElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter><Parameter>
+					<Name>localName</Name>
+					<Abstract type="html">The element name.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/pitchActionWithDuration:startValue:endValue:</Anchor>
+			<Anchor>//api/name/writeEndElementWithNamespace:localName:</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPropertyAction/panActionWithDuration:endValue:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeEmptyElementWithNamespace:localName:</TokenIdentifier>
+			<Abstract type="html">The namespace.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>+ (OALPropertyAction *)panActionWithDuration:(float)duration endValue:(float)endValue</Declaration>
+			<Declaration>- (void)writeEmptyElementWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter><Parameter>
+					<Name>localName</Name>
+					<Abstract type="html">The element name.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/panActionWithDuration:endValue:</Anchor>
+			<Anchor>//api/name/writeEmptyElementWithNamespace:localName:</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPropertyAction/panActionWithDuration:startValue:endValue:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeAttributeWithNamespace:localName:value:</TokenIdentifier>
+			<Abstract type="html">The namespace.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>+ (OALPropertyAction *)panActionWithDuration:(float)duration startValue:(float)startValue endValue:(float)endValue</Declaration>
+			<Declaration>- (void)writeAttributeWithNamespace:(NSString *)namespaceURI localName:(NSString *)localName value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter><Parameter>
+					<Name>localName</Name>
+					<Abstract type="html">The attribute name.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The attribute value.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/panActionWithDuration:startValue:endValue:</Anchor>
+			<Anchor>//api/name/writeAttributeWithNamespace:localName:value:</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPropertyAction/gainActionWithDuration:endValue:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setPrefix:namespaceURI:</TokenIdentifier>
+			<Abstract type="html">set a namespace and prefix</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>+ (OALPropertyAction *)gainActionWithDuration:(float)duration endValue:(float)endValue</Declaration>
+			<Declaration>- (void)setPrefix:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The namespace prefix.</Abstract>
+				</Parameter><Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/gainActionWithDuration:endValue:</Anchor>
+			<Anchor>//api/name/setPrefix:namespaceURI:</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/OALPropertyAction/gainActionWithDuration:startValue:endValue:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>OALAudioActions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeNamespace:namespaceURI:</TokenIdentifier>
+			<Abstract type="html">write (and set) a namespace and prefix</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Declaration>+ (OALPropertyAction *)gainActionWithDuration:(float)duration startValue:(float)startValue endValue:(float)endValue</Declaration>
+			<Declaration>- (void)writeNamespace:(NSString *)prefix namespaceURI:(NSString *)namespaceURI</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The namespace prefix.</Abstract>
+				</Parameter><Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/writeNamespace:namespaceURI:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/setDefaultNamespace:</TokenIdentifier>
+			<Abstract type="html">set the default namespace (empty prefix)</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
 			
-			<Anchor>//api/name/gainActionWithDuration:startValue:endValue:</Anchor>
+			<Declaration>- (void)setDefaultNamespace:(NSString *)namespaceURI</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultNamespace:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/writeDefaultNamespace:</TokenIdentifier>
+			<Abstract type="html">write (and set) the default namespace</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (void)writeDefaultNamespace:(NSString *)namespaceURI</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeDefaultNamespace:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getPrefix:</TokenIdentifier>
+			<Abstract type="html">The namespace prefix.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getPrefix:(NSString *)namespaceURI</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>namespaceURI</Name>
+					<Abstract type="html">The namespace.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The namespace prefix.</Abstract></ReturnValue>
+			<Anchor>//api/name/getPrefix:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSXMLStreamWriter/getNamespaceURI:</TokenIdentifier>
+			<Abstract type="html">The namespace for the prefix.</Abstract>
+			<DeclaredIn>XMLWriter.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getNamespaceURI:(NSString *)prefix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The namespace prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The namespace for the prefix.</Abstract></ReturnValue>
+			<Anchor>//api/name/getNamespaceURI:</Anchor>
             <NodeRef refid="36"/>
 		</Token>
 		
