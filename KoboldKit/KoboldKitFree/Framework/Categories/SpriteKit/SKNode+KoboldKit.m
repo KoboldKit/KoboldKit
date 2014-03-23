@@ -21,8 +21,14 @@
 @dynamic kkScene;
 -(KKScene*) kkScene
 {
-	NSAssert(self.scene, @"self.scene property is (still) nil. The scene property is only valid after the node has been added as child to another node.");
-	NSAssert1([self.scene isKindOfClass:[KKScene class]], @"scene (%@) is not a KKScene object", self.scene);
+#if DEBUG
+	if (self.scene == nil)
+	{
+		NSLog(@"WARNING: 'self.scene' property is (still) nil. The scene property is only valid after the node has been added as child to another node.");
+	}
+#endif
+	
+	NSAssert1(self.scene == nil || [self.scene isKindOfClass:[KKScene class]], @"scene (%@) is not a KKScene object", self.scene);
 	return (KKScene*)self.scene;
 }
 
@@ -462,26 +468,63 @@ DEVELOPER_TODO("compare userData in isEqual")
 	return YES;
 }
 
+#pragma mark Debugging
+
+-(NSString*) stringFromSceneGraph
+{
+	__block NSInteger currentBranch = 1;
+	NSMutableDictionary* parentNodes = [NSMutableDictionary dictionary];
+	[parentNodes setObject:[NSNumber numberWithInteger:currentBranch] forKey:[NSNumber numberWithUnsignedInteger:[self hash]]];
+	
+	NSMutableString* dump = [NSMutableString stringWithCapacity:4096];
+	[dump appendFormat:@"\n%@%@ (%p), parent: %@%@ (%p)\n",
+	 NSStringFromClass([self class]), self.name.length ? [NSString stringWithFormat:@" '%@'", self.name] : @"", self,
+	 NSStringFromClass([self.parent class]), self.parent.name.length ? [NSString stringWithFormat:@" '%@'", self.parent.name] : @"", self.parent];
+	
+	[self enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode *node, BOOL *stop) {
+		NSString* tabs = @"";
+		
+		if (node.parent)
+		{
+			NSNumber* parentNodeBranchNumber = [parentNodes objectForKey:[NSNumber numberWithUnsignedInteger:[node.parent hash]]];
+			if (parentNodeBranchNumber == nil)
+			{
+				currentBranch++;
+				parentNodeBranchNumber = [NSNumber numberWithInteger:currentBranch];
+				[parentNodes setObject:parentNodeBranchNumber forKey:[NSNumber numberWithUnsignedInteger:[node.parent hash]]];
+			}
+			
+			NSInteger numTabs = [parentNodeBranchNumber integerValue];
+			if (numTabs > 0)
+			{
+				const NSUInteger tabLength = 4;
+				tabs = [tabs stringByPaddingToLength:numTabs * tabLength withString:@" " startingAtIndex:0];
+			}
+		}
+		
+		[dump appendFormat:@"%@%@%@ (%p), parent: %@%@ (%p)\n", tabs,
+		 NSStringFromClass([node class]), node.name.length ? [NSString stringWithFormat:@" '%@'", node.name] : @"", node,
+		 NSStringFromClass([node.parent class]), node.parent.name.length ? [NSString stringWithFormat:@" '%@'", node.parent.name] : @"", node.parent];
+	}];
+	
+	[dump appendString:@"\n"];
+	
+	return dump;
+}
+
+-(void) logSceneGraph
+{
+	NSString* dump = [self stringFromSceneGraph];
+	NSLog(@"\nDump of scene graph:\n%@", dump);
+}
+
 @end
 
 
 #pragma mark SK*Node Categories
 
 @implementation SKSpriteNode (KoboldKit)
-@dynamic imageName;
--(void) setImageName:(NSString *)imageName
-{
-DEVELOPER_FIXME("only works with Jetpack atlas atm")
-	SKTexture* texture = [[SKTextureAtlas atlasNamed:@"Jetpack"] textureNamed:imageName];
-	self.texture = texture;
-	self.size = texture.size;
-}
--(NSString*) imageName
-{
-	return nil;
-}
 @end
-
 @implementation SKCropNode (KoboldKit)
 @end
 @implementation SKEffectNode (KoboldKit)

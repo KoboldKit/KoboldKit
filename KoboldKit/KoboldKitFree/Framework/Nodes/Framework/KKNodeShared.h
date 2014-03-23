@@ -33,7 +33,7 @@
 } \
 -(void) removeFromParent { \
 	[KKNodeShared willMoveFromParentWithNode:self]; \
-	[super removeFromParent]; \
+	if (self.parent) [super removeFromParent]; \
 } \
 -(void) removeAllChildren { \
 	[KKNodeShared sendChildrenWillMoveFromParentWithNode:self]; \

@@ -380,11 +380,15 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(OALAudioSession);
 
 - (BOOL) _otherAudioPlaying
 {
+#if APPORTABLE
+	return NO;
+#else
     if([IOSVersion version] < 6)
     {
         return self.ipodPlaying;
     }
     return ((AVAudioSession*)[AVAudioSession sharedInstance]).otherAudioPlaying;
+#endif
 }
 
 #pragma clang diagnostic pop // "-Wdeprecated-declarations"

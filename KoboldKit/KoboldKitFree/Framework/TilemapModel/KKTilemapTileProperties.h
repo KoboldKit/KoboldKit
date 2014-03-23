@@ -23,30 +23,30 @@
  @param number The number to set.
  @param key The key uniquely identifying the number.
  @returns The tile's properties. */
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid setNumber:(KKMutableNumber*)number forKey:(NSString*)key;
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid setNumber:(KKMutableNumber*)number forKey:(NSString*)key;
 /** Sets the string for the key on the tile gid's properties. Creates an instance of KTTilemapProperties if the gid has no properties yet.
  @param gid The gid whose properties will be used.
  @param string The string to set.
  @param key The key uniquely identifying the number.
  @returns The tile's properties.*/
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid setString:(NSString*)string forKey:(NSString*)key;
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid setString:(NSString*)string forKey:(NSString*)key;
 /** (KTTMXReader only) Sets a string or number (if string is convertible to number) for the key on the tile gid's properties.
    Creates an instance of KTTilemapProperties if the gid has no properties yet.
  @param gid The gid whose properties will be used.
  @param string The string to set. If the string is convertible to a number, will create a KKMutableNumber object and set that instead.
  @param key The key uniquely identifying the number.
  @returns The tile's properties. */
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid setValue:(NSString*)string forKey:(NSString*)key;
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid setValue:(NSString*)string forKey:(NSString*)key;
 
 /** @param gid The gid whose properties should be returned.
  @returns the properties for a tile gid. Returns nil if the gid has no properties. */
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid;
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid;
 
 /** @param gid The gid whose properties should be returned.
  @param createNonExistingProperties If YES and the gid has no properties it will create a new KTTilemapProperties object, set it as the tile gid's properties object, 
  and return it. If createNonExistingProperties is NO behaves identical to propertiesForGid: by returning nil for non-existing tile properties.
  @returns The properties for a tile gid. */
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid createNonExistingProperties:(BOOL)createNonExistingProperties;
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid createNonExistingProperties:(BOOL)createNonExistingProperties;
 
 @end
 

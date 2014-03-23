@@ -26,7 +26,7 @@
 
 #import "XMLWriter.h"
 
-#define NSBOOL(_X_) ((_X_) ? (id)kCFBooleanTrue : (id)kCFBooleanFalse)
+#define NSBOOL(_X_) ((_X_) ? (__bridge id)kCFBooleanTrue : (__bridge id)kCFBooleanFalse)
 
 @interface XMLWriter (UtilityMethods)
 // methods for internal use only
@@ -123,7 +123,7 @@ static NSString* const XSI_NAMESPACE_URI_PREFIX = @"xsi";
 		{
 			// did we already write this namespace?
 			id written = [namespaceWritten objectAtIndex:i];
-			if (written == NSBOOL(NO))
+			if (written == nil)
 			{
 				// write namespace
 				NSString* namespaceURI = [namespaceURIs objectAtIndex:i];

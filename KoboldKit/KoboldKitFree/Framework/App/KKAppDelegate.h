@@ -18,7 +18,7 @@
 #endif
 
 /** The window reference. On Mac OS X this is the main window. */
-@property (strong, nonatomic) IBOutlet KKWindow* window;
+@property (strong, nonatomic) IBOutlet KKCocoaWindow* window;
 /** Convenience accessor to view cast to KKView. */
 @property (weak) IBOutlet KKView *kkView;
 

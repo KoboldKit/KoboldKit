@@ -9,12 +9,12 @@
 
 @implementation KKTilemapLayerTiles
 
--(void) retainGidBuffer:(gid_t*)gid sizeInBytes:(unsigned int)sizeInBytes
+-(void) retainGidBuffer:(KKGID*)gid sizeInBytes:(unsigned int)sizeInBytes
 {
 	free(_gid);
 	_gid = gid;
 	_bytes = sizeInBytes;
-	_count = sizeInBytes / sizeof(gid_t);
+	_count = sizeInBytes / sizeof(KKGID);
 }
 
 -(id) initWithCoder:(NSCoder*)aDecoder

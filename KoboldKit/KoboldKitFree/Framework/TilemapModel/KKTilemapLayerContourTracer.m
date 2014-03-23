@@ -201,7 +201,7 @@ static NSInteger neighborOffsets[8];
 	_currentStartTile = -1;
 	_currentNeighborTile = -1;
 	_currentBacktrackTile = -1;
-	[self dumpBlockMap];
+	//[self dumpBlockMap];
 
 	[self convertSegmentsToPath];
 	//NSLog(@"Exiting, all tiles processed.");
@@ -381,7 +381,7 @@ DEVELOPER_FIXME("create CGPathRef within algorithm")
 	return (segmentStart.x == segmentEnd.x && segmentStart.x == point.x) || (segmentStart.y == segmentEnd.y && segmentStart.y == point.y);
 }
 
--(BOOL) isBlockingGid:(gid_t)gid
+-(BOOL) isBlockingGid:(KKGID)gid
 {
 	if (_blockingGids)
 	{

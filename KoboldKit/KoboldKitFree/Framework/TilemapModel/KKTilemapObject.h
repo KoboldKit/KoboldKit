@@ -101,7 +101,7 @@ typedef enum : unsigned char
 /** A tile object. */
 @interface KKTilemapTileObject : KKTilemapObject
 /** The GID of the tile object. */
-@property (atomic) gid_t gid;
+@property (atomic) KKGID gid;
 
 // TODO: property that returns tile's position in tile coordinate
 @end

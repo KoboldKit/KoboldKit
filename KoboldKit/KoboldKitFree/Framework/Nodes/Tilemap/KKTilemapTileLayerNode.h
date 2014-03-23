@@ -12,7 +12,7 @@
 /** Tile layer node renders a TMX tile layer. */
 @interface KKTilemapTileLayerNode : KKTilemapLayerNode
 {
-	@private
+	@protected
 	SKNode* _batchNode;
 	
 	void** _visibleTileSprites;

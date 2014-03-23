@@ -18,6 +18,10 @@ static NSString* pathToKoboldKit = nil;
 		NSString* workingDir = [[NSUserDefaults standardUserDefaults] stringForKey:@"workingDir"];
 		if (workingDir)
 		{
+			// NOTE: when building the project from Xcode, the scheme must have the following
+			// "Arguments passed on launch":
+			// -workingDir $(SOURCE_ROOT)
+			
 			NSLog(@"workingDir provided as command line argument");
 			// step back to KoboldKit root folder when launching the app from Xcode
 			for (int i = 0; i < 3; i++)

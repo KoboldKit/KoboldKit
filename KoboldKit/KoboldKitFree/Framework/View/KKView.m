@@ -16,7 +16,15 @@ static BOOL _showsPhysicsShapes = NO;
 static BOOL _showsNodeFrames = NO;
 static BOOL _showsNodeAnchorPoints = NO;
 
+static __weak KKView* _defaultView = nil;
+
 @implementation KKView
+
++(instancetype) defaultView
+{
+	NSAssert(_defaultView, @"KKView: defaultView is nil - create a KKView instance first");
+	return _defaultView;
+}
 
 -(id) initWithFrame:(CGRect)frame
 {
@@ -50,6 +58,12 @@ static BOOL _showsNodeAnchorPoints = NO;
 
 -(void) initDefaults
 {
+	if (_defaultView)
+	{
+		NSLog(@"WARNING: KKView defaultView (%@) is being replaced by new default view: %@", _defaultView, self);
+	}
+	
+	_defaultView = self;
 	_sceneStack = [NSMutableArray array];
 	_model = [KKModel model];
 
@@ -74,7 +88,7 @@ static BOOL _showsNodeAnchorPoints = NO;
 {
 	[self loadConfig:@"config.lua"];
 	[self loadConfig:@"devconfig.lua"];
-	[self loadConfig:@"objectTemplates.lua" inheritProperties:YES];
+	//[self loadConfig:@"objectTemplates.lua" inheritProperties:YES];
 	[self loadConfig:@"behaviorTemplates.lua"];
 	[self loadConfig:@"tiledPropertiesMapping.lua"];
 
@@ -118,6 +132,10 @@ static BOOL _showsNodeAnchorPoints = NO;
 			
 			NSString* key = [[configFile lastPathComponent] stringByDeletingPathExtension];
 			[_model setObject:config forKey:key];
+		}
+		else
+		{
+			NSLog(@"config file not found or has syntax error: %@ (path: %@)", configFile, path);
 		}
 	}
 }

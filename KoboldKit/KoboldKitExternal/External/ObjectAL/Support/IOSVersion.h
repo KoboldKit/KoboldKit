@@ -21,7 +21,7 @@
 
 /** Singleton implementation providing "sharedInstance" and "purgeSharedInstance" methods.
  *
- * <b>- (IOSVersion*) sharedInstance</b>: Get the shared singleton instance. <br>
+ * <b>- (IOSVersion*) sharedInstance</b>: Get the shared singleton instance.
  * <b>- (void) purgeSharedInstance</b>: Purge (deallocate) the shared instance.
  */
 SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(IOSVersion);

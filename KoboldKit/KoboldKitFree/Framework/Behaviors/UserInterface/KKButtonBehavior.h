@@ -66,6 +66,9 @@ extern NSString* const KKButtonDidEndExecuteNotification;
 /** Determines the amount of scale when the button is selected. Default is 1.1 (slightly enlarged). A value of 1.0 will disable scaling altogether.
  @returns The current focus scale. */
 @property (atomic) CGFloat selectedScale;
+/** OS X only: if set to a keyCode the button will execute whenever that key is pressed. Leave at 0 to disable keyboard support.
+ @returns The keyCode the button responds to. */
+@property (atomic) uint16_t executeKeyCode;
 /** @returns YES if the button is currently selected. */
 @property (atomic, readonly) BOOL selected;
 /** If enabled, the button will send the execute notification when it is pressed. The default will send the notification when the button is released.

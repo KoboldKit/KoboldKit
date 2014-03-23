@@ -8,7 +8,7 @@
 /** @file KKTypes.h */
 
 /** gid (globally unique tile index) is an unsigned int (32 bit) value */
-typedef uint32_t        gid_t;
+typedef uint32_t        KKGID;
 
 #if TARGET_OS_IPHONE
 typedef UIEvent         KKEvent;
@@ -19,7 +19,7 @@ typedef UIResponder		KKResponder;
 typedef UIApplication   KKApplication;
 typedef EAGLContext		KKGLContext;
 
-#else
+#elif TARGET_OS_MAC
 typedef NSEvent         KKEvent;
 typedef NSTouch         KKTouch;
 typedef NSView          KKCocoaView;

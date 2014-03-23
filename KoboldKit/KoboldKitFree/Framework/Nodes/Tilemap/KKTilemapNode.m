@@ -115,7 +115,6 @@
 			cameraBounds.size.height = cameraBounds.size.height - sceneFrame.size.height;
 		}
 
-		//NSLog(@"Tilemap scrolling bounds: %@", NSStringFromCGRect(cameraBounds));
 		NSString* const kMapBoundaryBehaviorKey = @"KKTilemapNode:MapBoundaryScrolling";
 		if ([_mainTileLayerNode behaviorForKey:kMapBoundaryBehaviorKey] == nil)
 		{
@@ -145,7 +144,6 @@
 			cameraBounds.size.height = objectRect.size.height - sceneFrame.size.height;
 		}
 		
-		//NSLog(@"Tilemap scrolling bounds: %@", NSStringFromCGRect(cameraBounds));
 		NSString* const kMapBoundaryBehaviorKey = @"KKTilemapNode:MapBoundaryScrolling";
 		if ([_mainTileLayerNode behaviorForKey:kMapBoundaryBehaviorKey] == nil)
 		{
@@ -185,6 +183,22 @@
 	{
 		mainTileLayerNode = [self tileLayerNodeNamed:@"mainlayer"];
 	}
+	if (mainTileLayerNode == nil)
+	{
+		for (KKTilemapTileLayerNode* tileLayerNode in _tileLayerNodes)
+		{
+			if ([[tileLayerNode.layer.properties.properties objectForKey:@"mainTileLayer"] boolValue])
+			{
+				mainTileLayerNode = tileLayerNode;
+				break;
+			}
+		}
+	}
+	if (mainTileLayerNode == nil)
+	{
+		mainTileLayerNode = [_tileLayerNodes lastObject];
+		NSLog(@"WARNING: using topmost tile layer '%@' as main layer.", mainTileLayerNode.name);
+	}
 	
 	NSAssert(mainTileLayerNode, @"tile layer named 'main layer' is missing!");
 	return mainTileLayerNode;
@@ -196,6 +210,22 @@
 	if (gameObjectsLayerNode == nil)
 	{
 		gameObjectsLayerNode = [self objectLayerNodeNamed:@"gameobjects"];
+	}
+	if (gameObjectsLayerNode == nil)
+	{
+		for (KKTilemapObjectLayerNode* objectLayerNode in _objectLayerNodes)
+		{
+			if ([[objectLayerNode.layer.properties.properties objectForKey:@"gameObjectsLayer"] boolValue])
+			{
+				gameObjectsLayerNode = objectLayerNode;
+				break;
+			}
+		}
+	}
+	if (gameObjectsLayerNode == nil)
+	{
+		gameObjectsLayerNode = [_objectLayerNodes lastObject];
+		NSLog(@"WARNING: using topmost object layer '%@' as game objects layer.", gameObjectsLayerNode.name);
 	}
 	
 	NSAssert(gameObjectsLayerNode, @"object layer named 'game objects' is missing!");

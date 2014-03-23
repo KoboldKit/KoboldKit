@@ -34,4 +34,8 @@
 /** nd */
 -(CGPoint) positionForTileCoord:(CGPoint)tileCoord;
 
+
+/** @name Internal use only */
+-(id) initWithLayer:(KKTilemapLayer*)layer;
+
 @end

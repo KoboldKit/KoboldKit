@@ -35,7 +35,7 @@
 
 /**
  * *UNIMPLEMENTED FOR IOS* An OpenAL device for capturing sound data.
- * Note: This functionality is NOT implemented in iOS OpenAL! <br>
+ * Note: This functionality is NOT implemented in iOS OpenAL! 
  * This class is a placeholder in case such functionality is added in a future iOS SDK.
  */
 @interface ALCaptureDevice : NSObject

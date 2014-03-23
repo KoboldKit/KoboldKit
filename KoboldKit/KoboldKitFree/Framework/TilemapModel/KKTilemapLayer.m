@@ -65,7 +65,7 @@
 	return tileCoord.x + tileCoord.y * _size.width;
 }
 
--(gid_t) tileGidAt:(CGPoint)tileCoord
+-(KKGID) tileGidAt:(CGPoint)tileCoord
 {
 	unsigned int index = [self indexForTileCoord:tileCoord];
 	if (index >= _tileCount || _isObjectLayer)
@@ -76,7 +76,7 @@
 	return _tiles.gid[index] & KKTilemapTileFlipMask;
 }
 
--(gid_t) tileGidWithFlagsAt:(CGPoint)tileCoord
+-(KKGID) tileGidWithFlagsAt:(CGPoint)tileCoord
 {
 	unsigned int index = [self indexForTileCoord:tileCoord];
 	if (index >= _tileCount || _isObjectLayer)
@@ -87,18 +87,18 @@
 	return _tiles.gid[index];
 }
 
--(void) setTileGid:(gid_t)gid tileCoord:(CGPoint)tileCoord
+-(void) setTileGid:(KKGID)gid tileCoord:(CGPoint)tileCoord
 {
 	unsigned int index = [self indexForTileCoord:tileCoord];
 	if (index < _tileCount && _isObjectLayer == NO)
 	{
-		gid_t oldGidFlags = (_tiles.gid[index] & KKTilemapTileFlippedAll);
+		KKGID oldGidFlags = (_tiles.gid[index] & KKTilemapTileFlippedAll);
 		_tiles.gid[index] = (gid | oldGidFlags);
 		_tilemap.modified = YES;
 	}
 }
 
--(void) setTileGidWithFlags:(gid_t)gidWithFlags tileCoord:(CGPoint)tileCoord
+-(void) setTileGidWithFlags:(KKGID)gidWithFlags tileCoord:(CGPoint)tileCoord
 {
 	unsigned int index = [self indexForTileCoord:tileCoord];
 	if (index < _tileCount && _isObjectLayer == NO)

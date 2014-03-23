@@ -331,11 +331,6 @@ static NSString* const ArchiveKeyForPaused = @"paused";
 		_userData = [decoder decodeObjectForKey:ArchiveKeyForUserData];
 		_behaviors = [decoder decodeObjectForKey:ArchiveKeyForBehaviors];
 		_paused = [decoder decodeBoolForKey:ArchiveKeyForPaused];
-		
-		for (KKBehavior* behavior in _behaviors)
-		{
-			
-		}
 	}
 	return self;
 }

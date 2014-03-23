@@ -39,6 +39,7 @@ typedef enum : unsigned char
 	NSMutableArray* _tilesets;
 	NSMutableArray* _layers;
 	KKTilemapProperties* _properties;
+	BOOL _iPadScaleFactorApplied;
 }
 
 /** @name Map Properties */
@@ -68,7 +69,7 @@ typedef enum : unsigned char
 /** The highest valid gid from all tilesets. Updated when tilesets load their textures. Equal to the lastGid property of the "last" tileset.
    Mainly needed for bounds checks, don't change this value.
  @returns The highest-numbered (theoretical) gid considering all tilesets. */
-@property (atomic) gid_t highestGid;
+@property (atomic) KKGID highestGid;
 
 DEVELOPER_FIXME("Tilemap iPad scale factor still needed with Sprite Kit?")
 
@@ -136,13 +137,13 @@ DEVELOPER_FIXME("Tilemap iPad scale factor still needed with Sprite Kit?")
    or if gid is 0).
  @param gid The GID of a tile.
  @returns The tileset the gid is part of, or nil if the GID is out of bounds. */
--(KKTilemapTileset*) tilesetForGid:(gid_t)gid;
+-(KKTilemapTileset*) tilesetForGid:(KKGID)gid;
 
 /** Returns the tileset for a specific gid without flags. Mainly to access that tile's properties. Will return nil for invalid gids (gid that points to a non-existing tileset,
  or if gid is 0).
  @param gid The GID of a tile. Must not have any flags set.
  @returns The tileset the gid is part of, or nil if the GID is out of bounds. */
--(KKTilemapTileset*) tilesetForGidWithoutFlags:(gid_t)gidWithoutFlags;
+-(KKTilemapTileset*) tilesetForGidWithoutFlags:(KKGID)gidWithoutFlags;
 
 /** @param name The name of a tileset as displayed in Tiled.
  @returns the tileset with the given name. Returns nil if there's no tileset with this name. */

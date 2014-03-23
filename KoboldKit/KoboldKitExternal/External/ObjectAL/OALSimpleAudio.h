@@ -93,11 +93,11 @@
 
 /** If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
  * Note: If this is enabled, and another app is playing music, background audio
- * playback will use the SOFTWARE codecs, NOT hardware. <br>
+ * playback will use the SOFTWARE codecs, NOT hardware. 
  *
- * If allowIpod = NO, the application will ALWAYS use hardware decoding. <br>
+ * If allowIpod = NO, the application will ALWAYS use hardware decoding. 
  *
- * iOS Only. <br>
+ * iOS Only. 
  *
  * @see useHardwareIfAvailable
  *
@@ -106,19 +106,19 @@
 @property(nonatomic,readwrite,assign) bool allowIpod;
 
 /** Determines what to do if no other application is playing audio and allowIpod = YES
- * (NOT SUPPORTED ON THE SIMULATOR). <br>
+ * (NOT SUPPORTED ON THE SIMULATOR). 
  *
  * If NO, the application will ALWAYS use software decoding. The advantage to this is that
  * the user can background your application and then start audio playing from another
- * application. If useHardwareIfAvailable = YES, the user won't be able to do this. <br>
+ * application. If useHardwareIfAvailable = YES, the user won't be able to do this. 
  *
  * If this is set to YES, the application will use hardware decoding if no other application
  * is currently playing audio. However, no other application will be able to start playing
- * audio if it wasn't playing already. <br>
+ * audio if it wasn't playing already. 
  *
- * Note: This switch has no effect if allowIpod = NO. <br>
+ * Note: This switch has no effect if allowIpod = NO. 
  *
- * iOS Only. <br>
+ * iOS Only. 
  *
  * @see allowIpod
  *
@@ -127,9 +127,9 @@
 @property(nonatomic,readwrite,assign) bool useHardwareIfAvailable;
 
 /** If true, mute when backgrounded, screen locked, or the ringer switch is
- * turned off (NOT SUPPORTED ON THE SIMULATOR). <br>
+ * turned off (NOT SUPPORTED ON THE SIMULATOR). 
  *
- * iOS Only. <br>
+ * iOS Only. 
  *
  * Default value: YES
  */
@@ -204,14 +204,14 @@
 
 /** Singleton implementation providing "sharedInstance" and "purgeSharedInstance" methods.
  *
- * <b>- (OALSimpleAudio*) sharedInstance</b>: Get the shared singleton instance. <br>
- * <b>- (void) purgeSharedInstance</b>: Purge (deallocate) the shared instance. <br>
+ * <b>- (OALSimpleAudio*) sharedInstance</b>: Get the shared singleton instance. 
+ * <b>- (void) purgeSharedInstance</b>: Purge (deallocate) the shared instance. 
  */
 SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OALSimpleAudio);
 
 /** Start OALSimpleAudio with the specified number of reserved sources.
  * Call this initializer if you want to use OALSimpleAudio, but keep some of the device's
- * audio sources (there are 32 in total) for your own use. <br>
+ * audio sources (there are 32 in total) for your own use. 
  * <strong>Note:</strong> This method must be called ONLY ONCE, <em>BEFORE</em>
  * any attempt is made to access the shared instance.
  * To change the reserved sources after instantiation, modify reservedSources.
@@ -224,17 +224,17 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OALSimpleAudio);
 /** Start OALSimpleAudio with the specified parameters.
  *
  * With this initializer, you can set the total number of mono and stereo sources
- * available, as well as how many sources are to be reserved by OALSimpleAudio. <br>
+ * available, as well as how many sources are to be reserved by OALSimpleAudio. 
  *
  * The number of mono and stereo sources represents the GLOBAL number of sources
  * available for EVERYONE, not just OALSimpleAudio. Their combined values must
- * not exceed 32 (the max allowed sources in iOS). <br>
+ * not exceed 32 (the max allowed sources in iOS). 
  *
  * reservedSources is independent of this; it represents how many of the above
- * mentioned sources to reserve for OALSimpleAudio's use. <br>
+ * mentioned sources to reserve for OALSimpleAudio's use. 
  * 
  * <strong>Note:</strong> This method must be called ONLY ONCE, <em>BEFORE</em>
- * any attempt is made to access the shared instance. <br>
+ * any attempt is made to access the shared instance. 
  *
  * @param reservedSources The number of sources to reserve for OALSimpleAudio's
  *                        use when initializing.
@@ -311,7 +311,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OALSimpleAudio);
 
 /** Play the background music at the specified path.
  * If the music has not been preloaded, this method
- * will load the music and then play, incurring a slight delay. <br>
+ * will load the music and then play, incurring a slight delay. 
  *
  * <strong>Note:</strong> only <strong>ONE</strong> background music
  * file may be played or preloaded at a time via OALSimpleAudio.
@@ -325,7 +325,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OALSimpleAudio);
 
 /** Play the background music at the specified path.
  * If the music has not been preloaded, this method
- * will load the music and then play, incurring a slight delay. <br>
+ * will load the music and then play, incurring a slight delay. 
  *
  * <strong>Note:</strong> only <strong>ONE</strong> background music
  * file may be played or preloaded at a time via OALSimpleAudio.
@@ -340,12 +340,12 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OALSimpleAudio);
 
 /** Play the background music at the specified path.
  * If the music has not been preloaded, this method
- * will load the music and then play, incurring a slight delay. <br>
+ * will load the music and then play, incurring a slight delay. 
  *
  * <strong>Note:</strong> only <strong>ONE</strong> background music
  * file may be played or preloaded at a time via OALSimpleAudio.
  * If you play or preload another file, the one currently playing
- * will stop. To play multiple audio tracks, create an OALAudioTrack. <br>
+ * will stop. To play multiple audio tracks, create an OALAudioTrack. 
  *
  * <strong>Note:</strong> pan will have no effect when running on iOS
  * versions prior to 4.0.

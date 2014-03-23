@@ -41,8 +41,9 @@
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#else
+#define NSStringFromCGRect NSStringFromRect
 #endif
-
 
 // based off of http://www.dribin.org/dave/blog/archives/2008/09/22/convert_to_nsstring/
 static NSString* VTPG_DDToStringFromTypeAndValue(const char* typeCode, void* value);

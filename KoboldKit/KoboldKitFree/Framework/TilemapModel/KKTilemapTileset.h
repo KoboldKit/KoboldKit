@@ -15,7 +15,7 @@
 
 /** The Tile flip flags for the various "flip" orientations a tile can be set at on a layer.
    These flags are encoded into the tile GID. */
-typedef enum : gid_t
+typedef enum : KKGID
 {
 	KKTilemapTileHorizontalFlip = 0x80000000,                                                                        /**< set if the tile is horizontally flipped */
 	KKTilemapTileVerticalFlip = 0x40000000,                                                                          /**< set if the tile is vertically flipped */
@@ -45,10 +45,10 @@ typedef enum : gid_t
 /** Points to the alternate tileset, used to draw tiles of this tileset from a different texture. Set by calling replaceTileset:withTileset: on KTTilemap. */
 @property (atomic, readonly) KKTilemapTileset* alternateTileset;
 /** The first GID in this tileset. It's the top-left tile in the tileset. */
-@property (atomic) gid_t firstGid;
+@property (atomic) KKGID firstGid;
 /** The last GID in this tileset. It's the bottom-most, right-most tile in the tileset.
    Caution: lastGid is only valid after the tileset texture has been loaded. It will be 0 before that. */
-@property (atomic) gid_t lastGid;
+@property (atomic) KKGID lastGid;
 /** How many tiles per row are in this tileset. */
 @property (atomic) unsigned int tilesPerRow;
 /** How many tiles per column are in this tileset. */
@@ -78,11 +78,11 @@ typedef enum : gid_t
 /** Gets the texture of a tile GID from this tileset.
  @param gid The tile gid whose texture should be returned.
  @returns The texture for a specific GID, or nil if the gid is not in this tileset. */
--(SKTexture*) textureForGid:(gid_t)gid;
+-(SKTexture*) textureForGid:(KKGID)gid;
 /** Gets the texture of a tile GID from this tileset. Gid must not have any flags set.
  @param gid The tile gid without flags whose texture should be returned.
  @returns The texture for a specific GID, or nil if the gid is not in this tileset. */
--(SKTexture*) textureForGidWithoutFlags:(gid_t)gidWithoutFlags;
+-(SKTexture*) textureForGidWithoutFlags:(KKGID)gidWithoutFlags;
 
 // internal use only
 -(void) setAlternateTileset:(KKTilemapTileset*)alternateTileset;

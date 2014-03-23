@@ -63,6 +63,7 @@ KKNODE_SHARED_CODE
 @dynamic kkView;
 -(KKView*) kkView
 {
+	NSAssert(self.view, @"Scene's view is nil");
 	NSAssert1([self.view isKindOfClass:[KKView class]], @"Scene's view (%@) is not a KKView class", self.view);
 	return (KKView*)self.view;
 }
@@ -347,6 +348,28 @@ DEVELOPER_FIXME("remove calls to respondsToSelector by separating observers into
 		if ([observer respondsToSelector:@selector(mouseUp:)])
 		{
 			[observer mouseUp:theEvent];
+		}
+	}
+}
+
+-(void) keyDown:(NSEvent *)theEvent
+{
+	for (id observer in _inputObservers)
+	{
+		if ([observer respondsToSelector:@selector(keyDown:)])
+		{
+			[observer keyDown:theEvent];
+		}
+	}
+}
+
+-(void) keyUp:(NSEvent *)theEvent
+{
+	for (id observer in _inputObservers)
+	{
+		if ([observer respondsToSelector:@selector(keyUp:)])
+		{
+			[observer keyUp:theEvent];
 		}
 	}
 }

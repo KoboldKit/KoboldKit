@@ -61,15 +61,15 @@
 
 /** \mainpage ObjectAL for iPhone
  
- <strong>iOS Audio development, minus the headache.</strong> <br><br>
+ <strong>iOS Audio development, minus the headache.</strong> 
  
- Version 2.2 <br> <br>
+ Version 2.2  
  
- Copyright 2009-2013 Karl Stenerud <br><br>
+ Copyright 2009-2013 Karl Stenerud 
  
  Released under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>
  
- <br> <br>
+  
  \section contents_sec Contents
  - \ref intro_sec
  - \ref objectal_and_openal_sec
@@ -84,7 +84,7 @@
  - \ref simulator_issues_sec
  
  
- <br> <br>
+  
  \section intro_sec Introduction
  
  <strong>ObjectAL for iPhone</strong> is designed to be a simpler, more intuitive interface to
@@ -111,7 +111,7 @@
    playing background music and sound effects.
   
  
- <br> <br>
+  
  \section objectal_and_openal_sec ObjectAL and OpenAL
  
  <strong>ObjectAL</strong> follows the same basic principles as the
@@ -123,12 +123,12 @@
  - OpenALManager provides some overall controls that affect everything, manages the current
    context, and provides audio loading routines.
  
- - ALDevice represents a physical audio device. <br>
+ - ALDevice represents a physical audio device. 
    Each device can have one or more contexts (ALContext) created on it, and can have multiple
    buffers (ALBuffer) associated with it.
 
  - ALContext controls the overall sound environment, such as distance model, doppler effect, and
-   speed of sound. <br>
+   speed of sound. 
    Each context has one listener (ALListener), and can have multiple sources (ALSource) opened on
    it (up to a maximum of 32 overall on iPhone).
  
@@ -151,7 +151,7 @@
  Further information regarding the more advanced features of OpenAL (such as distance models)
  are available via the
  <a href="http://connect.creativelabs.com/openal/Documentation/Forms/AllItems.aspx">
- OpenAL Documentation at Creative Labs</a>. <br>
+ OpenAL Documentation at Creative Labs</a>. 
  In particular, read up on the various property values for sources and listeners (such as Doppler
  Shift) in the
  <a href="http://connect.creativelabs.com/openal/Documentation/OpenAL_Programmers_Guide.pdf">OpenAL Programmer's Guide</a>,
@@ -159,7 +159,7 @@
  <a href="http://connect.creativelabs.com/openal/Documentation/OpenAL%201.1%20Specification.pdf">OpenAL Specification</a>.
  
  
- <br> <br>
+  
  \section add_objectal_sec Adding ObjectAL to your project
  
  To add ObjectAL to your project, do the following:
@@ -191,7 +191,7 @@
  <strong>Note #2:</strong> You do NOT have to provide a link to the Apache license from within your
  application. Simply including a copy of the license in your project is sufficient.
 
- <br>
+ 
  \subsection install_dox Installing the ObjectAL Documentation into XCode
  
  By installing the ObjectAL documentation into XCode's Developer Documentation system, you gain
@@ -204,47 +204,47 @@
  -# Open the developer documentation and type "ObjectAL" into the search box.
  
  
- <br> <br>
+  
  \section configuration_sec Compile-Time Configuration
  
  <strong>ObjectALConfig.h</strong> contains configuration defines that will affect at a high level
  how ObjectAL behaves. Look inside <strong>ObjectALConfig.h</strong> to see what can be
- configured, and what each configuration value does. <br>
+ configured, and what each configuration value does. 
  The recommended values are fine for most users, but Cocos2D users may want to set
  OBJECTAL_CFG_USE_COCOS2D_ACTIONS so that the audio actions (such as fade) use the Cocos2D action manager.
  
  
- <br> <br>
+  
  \section audio_formats_sec Audio Formats
  
  The audio formats officially supported by Apple are
  <a href="http://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html">
  defined here</a>.
- <br><br>
+ 
  
  \subsection audio_formats_avaudioplayer OALAudioTrack Supported Formats
  
  OALAudioTrack supports all hardware and software decoded formats.
- <br><br>
+ 
  
  \subsection audio_formats_openal OpenAL Supported Formats
  
  OpenAL officially supports 8 or 16 bit PCM data only. However, Apple's implementation
- only seems to work with 16 bit data. <br>
+ only seems to work with 16 bit data. 
  
  The effects preloading/playing methods in OALSimpleAudio and the buffer loading methods
  in OpenALManager can load any audio file that can be software decoded. However, there
  is a cost incurred at load time converting to a native OpenAL format. To avoid this,
  convert all of your samples to a CAFF container with 16-bit little endian integer PCM
  format and the same sample rate as "mixerOutputFrequency" in OpenALManager
- (by default, 44100Hz). Note, however, that uncompressed files can get quite large.<br>
+ (by default, 44100Hz). Note, however, that uncompressed files can get quite large.
  
  Convert to iOS native uncompressed format using Apple's "afconvert" command line tool:
  
  \code afconvert -f caff -d LEI16@44100 sourcefile.wav destfile.caf \endcode
  
  Alternatively, if sound file load time is not an issue for you, you can lower your app
- footprint size (for over-the-air app download) by using a compressed format. <br>
+ footprint size (for over-the-air app download) by using a compressed format. 
  
  Convert to AAC compressed format with CAFF container using Apple's "afconvert" command
  line tool:
@@ -252,7 +252,7 @@
  \code afconvert -f caff -d aac sourcefile.wav destfile.caf \endcode
  
  
- <br> <br>
+  
  \section choosing_sec Choosing Playback Types
  
  <strong>OpenAL</strong> (ALSource, or effects in OALSimpleAudio) and
@@ -328,7 +328,7 @@
  </table>
  
 
- <br> <br>
+  
  \section use_iossimpleaudio_sec Using OALSimpleAudio
  
  By far, the easiest component to use is OALSimpleAudio. You sacrifice some power for
@@ -433,7 +433,7 @@
  \endcode
  
  
- <br> <br>
+  
  \section use_objectal_sec Using the OpenAL Objects and OALAudioTrack
  
  The OpenAL objects and OALAudioTrack offer you much more power at the cost
@@ -583,7 +583,7 @@
  
  
  
- <br> <br>
+  
  \section other_examples_sec Other Examples
  
  The demo scenes in this distribution have been crafted to demonstrate common uses of this library.
@@ -608,14 +608,14 @@
 
  
  
- <br> <br>
+  
  \section ios_issues_sec iOS Issues that can impede playback
  
  Certain versions of iOS have bugs or quirks, requiring workarounds. ObjectAL tries to handle
  most of these automatically, but there are cases that require specific handling by the developer.
  These are:
 
- <br>
+ 
  \subsection mpmovieplayercontroller_ios3 MPMoviePlayerController on iOS 3.x
  
  In iOS 3.x, MPMoviePlayerController doesn't play nice, and takes over the audio session when
@@ -662,7 +662,7 @@
 	}
 }
  \endcode
- <br>
+ 
  \subsection mpmusicplayercontroller_ios4_0 MPMusicPlayerController on iOS 4.0
 
  On iOS 4.0, MPMusicPlayerController sends an interrupt when it begins playback, but doesn't send
@@ -674,7 +674,7 @@
 
  
  
- <br> <br>
+  
  \section simulator_issues_sec Simulator Issues
  
  As you've likely heard time and time again, the simulator is no substitute for the real thing.
@@ -684,14 +684,14 @@
  When things look wrong, try it on a real device before bugging people.
  
  
- <br>
+ 
  \subsection simulator_limitations Simulator Limitations
  
  The simulator does not support setting audio modes, so setting allowIpod or honorSilentSwitch
  in OALAudioSession will have no effect in the simulator.
  
  
- <br>
+ 
  \subsection simulator_errors Error Codes on the Simulator
  
  From time to time, the simulator can get confused, and start spitting out spurious errors.
@@ -700,7 +700,7 @@
  your machine as well.
  
  
- <br>
+ 
  \subsection simulator_playback Playback Issues
  
  The simulator is notoriously finicky when it comes to audio playback. Any number of programs

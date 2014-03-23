@@ -66,7 +66,7 @@
 
 /** Determines how ObjectAL's actions are implemented.
  * If this is set to 1, ObjectAL's actions will inherit from cocos2d CCIntervalAction,
- * and will use cocos2d's CCActionManager rather than OALActionManager. <br>
+ * and will use cocos2d's CCActionManager rather than OALActionManager. 
  *
  * Recommended setting: 1 if you use Cocos2d exclusively, 0 if you use UIKit.
  */
@@ -77,16 +77,16 @@
 
 /** Sets the interval in seconds between steps when performing actions with OALAction
  * subclasses. Lower values offer better accuracy, but take up more processing time
- * because they fire more often. <br>
+ * because they fire more often. 
  *
  * Generally, you want at least 4-5 steps in an audio operation, so for durations
  * of 0.2 and above, an interval of 1/30 is fine.  For anything lower, you'll want a
- * smaller interval. <br>
+ * smaller interval. 
  *
  * Note: The NSTimer documentation states that a timer will typically have a resolution
- * of around 0.05 to 0.1, though in practice smaller values seem to work fine. <br>
+ * of around 0.05 to 0.1, though in practice smaller values seem to work fine. 
  *
- * Note: This setting only has effect if OBJECTAL_CFG_USE_COCOS2D_ACTIONS is 0. <br>
+ * Note: This setting only has effect if OBJECTAL_CFG_USE_COCOS2D_ACTIONS is 0. 
  *
  * Recommended setting: 1.0/30.0
  */
@@ -96,11 +96,11 @@
 
 
 /** When this option is enabled, all critical ObjectAL operations will be wrapped in
- * synchronized blocks. <br>
+ * synchronized blocks. 
  *
  * Turning this off can improve performance a bit if your application makes heavy
  * use of audio calls, but you'll be on your own for ensuring two threads don't
- * access the same part of the audio library at the same time. <br>
+ * access the same part of the audio library at the same time. 
  *
  * Recommended setting: 1
  */

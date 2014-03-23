@@ -107,14 +107,14 @@ DEVELOPER_TODO("tilemap pvr texture load")
 	_tileTextures = [NSMutableArray arrayWithCapacity:tileTexturesCount];
 
 	// now create the rects and store them in buffer
-	gid_t gid = _firstGid;
+	KKGID gid = _firstGid;
 	while (gid <= _lastGid)
 	{
 		[_tileTextures addObject:[self createTextureForGid:gid++ textureSize:pixelSize]];
 	}
 }
 
--(SKTexture*) createTextureForGid:(gid_t)gid textureSize:(CGSize)textureSize
+-(SKTexture*) createTextureForGid:(KKGID)gid textureSize:(CGSize)textureSize
 {
 	gid = gid - _firstGid;
 
@@ -129,19 +129,19 @@ DEVELOPER_TODO("tilemap pvr texture load")
 	return tileTexture;
 }
 
--(SKTexture*) textureForGid:(gid_t)gid
+-(SKTexture*) textureForGid:(KKGID)gid
 {
-	gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
+	KKGID gidWithoutFlags = (gid & KKTilemapTileFlipMask);
 	return [self textureForGidWithoutFlags:gidWithoutFlags];
 }
 
--(SKTexture*) textureForGidWithoutFlags:(gid_t)gidWithoutFlags
+-(SKTexture*) textureForGidWithoutFlags:(KKGID)gidWithoutFlags
 {
 	NSAssert1((gidWithoutFlags & KKTilemapTileFlipMask) == gidWithoutFlags, @"gid %u has flags set! Mask out flags or use textureForGid: instead.", gidWithoutFlags);
 	
 	if (_alternateTileset)
 	{
-		gid_t alternateGid = (gidWithoutFlags - _firstGid) + _alternateTileset.firstGid;
+		KKGID alternateGid = (gidWithoutFlags - _firstGid) + _alternateTileset.firstGid;
 		return [_alternateTileset textureForGid:alternateGid];
 	}
 	

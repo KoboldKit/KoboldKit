@@ -54,6 +54,7 @@
  */
 
 #import <TargetConditionals.h>
+#import <SpriteKit/SpriteKit.h>
 
 #if TARGET_OS_IPHONE
 #import <CoreGraphics/CGGeometry.h>
@@ -62,6 +63,7 @@
 #endif
 
 #import <math.h>
+#import <float.h>
 #import <objc/objc.h>
 
 /** @def CC_SWAP
@@ -71,9 +73,9 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+	
 /* The "zero" vector -- equivalent to CGVectorMake(0, 0). */
-CG_EXTERN const CGVector CGVectorZero;
+extern const CGVector CGVectorZero;
 	
 /** Helper macro that creates a CGVector
    @return CGVector

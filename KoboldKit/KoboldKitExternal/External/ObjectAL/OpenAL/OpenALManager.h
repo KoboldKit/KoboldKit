@@ -41,12 +41,12 @@
 
 /**
  * Manager class for OpenAL objects (ObjectAL).
- * Keeps track of devices that have been opened, and allows high level OpenAL management. <br>
- * Provides methods for loading ALBuffer objects from audio files. <br>
+ * Keeps track of devices that have been opened, and allows high level OpenAL management. 
+ * Provides methods for loading ALBuffer objects from audio files. 
  * The OpenAL 1.1 specification is available at
- * http://connect.creativelabs.com/openal/Documentation <br>
+ * http://connect.creativelabs.com/openal/Documentation 
  * Be sure to read through it (especially the part about distance models) as ObjectAL follows the
- * OpenAL object model. <br>
+ * OpenAL object model. 
  *
  * Alternatively, you may opt to use OALSimpleAudio for a simpler interface.
  */
@@ -102,7 +102,7 @@
 
 /** Singleton implementation providing "sharedInstance" and "purgeSharedInstance" methods.
  *
- * <b>- (OpenALManager*) sharedInstance</b>: Get the shared singleton instance. <br>
+ * <b>- (OpenALManager*) sharedInstance</b>: Get the shared singleton instance. 
  * <b>- (void) purgeSharedInstance</b>: Purge (deallocate) the shared instance.
  */
 SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OpenALManager);
@@ -156,8 +156,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OpenALManager);
 
 /** Load an OpenAL buffer with the contents of an audio file asynchronously.
  * This method will schedule a request to have the buffer created and filled, and then call the
- * specified selector with the newly created buffer. <br>
- * The buffer's name will be the fully qualified URL of the path. <br>
+ * specified selector with the newly created buffer. 
+ * The buffer's name will be the fully qualified URL of the path. 
  * Returns the fully qualified URL of the path, which you can match up to the buffer name in your
  * callback method.
  *
@@ -172,8 +172,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OpenALManager);
 
 /** Load an OpenAL buffer with the contents of an audio file asynchronously.
  * This method will schedule a request to have the buffer created and filled, and then call the
- * specified selector with the newly created buffer. <br>
- * The buffer's name will be the fully qualified URL of the path. <br>
+ * specified selector with the newly created buffer. 
+ * The buffer's name will be the fully qualified URL of the path. 
  * Returns the fully qualified URL of the path, which you can match up to the buffer name in your
  * callback method.
  *
@@ -193,8 +193,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OpenALManager);
 
 /** Load an OpenAL buffer with the contents of a URL asynchronously.
  * This method will schedule a request to have the buffer created and filled, and then call the
- * specified selector with the newly created buffer. <br>
- * The buffer's name will be the fully qualified URL. <br>
+ * specified selector with the newly created buffer. 
+ * The buffer's name will be the fully qualified URL. 
  * Returns the fully qualified URL, which you can match up to the buffer name in your callback
  * method.
  *
@@ -209,8 +209,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OpenALManager);
 
 /** Load an OpenAL buffer with the contents of a URL asynchronously.
  * This method will schedule a request to have the buffer created and filled, and then call the
- * specified selector with the newly created buffer. <br>
- * The buffer's name will be the fully qualified URL. <br>
+ * specified selector with the newly created buffer. 
+ * The buffer's name will be the fully qualified URL. 
  * Returns the fully qualified URL, which you can match up to the buffer name in your callback
  * method.
  *

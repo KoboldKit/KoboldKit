@@ -8,8 +8,8 @@
 function makeDocs {
 	referenceShortName=$1
 	docsetFilename="com.$referenceShortName.docset"
-	sourcePath="../../KoboldKit/$referenceShortName"
-
+	sourcePath="$2/$referenceShortName"
+	
 	if [ -e ./$referenceShortName ]
 	then
 		rm -r ./$referenceShortName
@@ -26,7 +26,7 @@ function makeDocs {
 	DOCSETREF="--docset-bundle-name $referenceShortName --docset-desc $referenceShortName-Reference --docset-bundle-id com.$referenceShortName --docset-bundle-filename $docsetFilename"
 	OUTPUT="--output ./$referenceShortName $sourcePath"
 	KEEPUNDOC="--keep-undocumented-members --keep-undocumented-objects"
-	#KEEPUNDOC=""
+	KEEPUNDOC=""
 	
 	# make html & xcode docs
 	echo Generating $1 documentation ...
@@ -62,10 +62,15 @@ function makeDocs {
 cd ..
 cd docs
 
-makeDocs "OpenGW"
-makeDocs "KoboldKitFree"
-makeDocs "KoboldKitExternal"
-makeDocs "KoboldKitPro"
-makeDocs "KoboldKitCommunity"
+if [ -z "$1" ]
+then
+	makeDocs "OpenGW" "../.."
+	makeDocs "KoboldKitFree" "../../KoboldKit/"
+	makeDocs "KoboldKitExternal" "../../KoboldKit/"
+	#makeDocs "KoboldKitCommunity" "../../KoboldKit/"
+	#makeDocs "KoboldKitPro" "../../KoboldKit/"
+else
+	makeDocs $1 $2
+fi
 
 echo Done!

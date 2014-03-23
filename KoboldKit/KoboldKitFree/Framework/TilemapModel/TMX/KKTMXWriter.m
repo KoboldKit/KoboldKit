@@ -17,6 +17,9 @@
 #import "KKFramework.h"
 
 #import <zlib.h>
+#import "../../../../KoboldKitExternal/External/Zip+Encode/base64.h"
+#import "../../../../KoboldKitExternal/External/Zip+Encode/ZipUtils.h"
+#import "../../../../KoboldKitExternal/External/XMLWriter/XMLWriter.h"
 
 // Base 64 encoding example from http://stackoverflow.com/a/6782480/201863
 
@@ -189,7 +192,7 @@ NSString* stringFromUnsignedInt(unsigned int u)
 		NSAssert1([tileProperties isKindOfClass:[KKTilemapProperties class]], @"KTTMXWriter: can't write tile properties (%@), not a KTTilemapProperties object!", obj);
 
 		[_xmlWriter writeStartElement:@"tile"];
-		gid_t localGid = [(NSNumber*)key unsignedIntValue] - tileset.firstGid;
+		KKGID localGid = [(NSNumber*)key unsignedIntValue] - tileset.firstGid;
 		[_xmlWriter writeAttribute:@"id" value:stringFromUnsignedInt(localGid)];
 		[self writeProperties:tileProperties];
 		[_xmlWriter writeEndElement];
@@ -244,7 +247,7 @@ NSString* stringFromUnsignedInt(unsigned int u)
 	unsigned char* buffer = malloc(bufferSize);
 	NSAssert2(buffer, @"KTTMXWriter: failed to allocate %u bytes for tile layer (%@) data", (unsigned int)bufferSize, layer);
 
-	int result = compress(buffer, &bufferSize, (unsigned char*)layer.tiles.gid, layer.tiles.bytes);
+	int result = compress(buffer, (uLongf*)&bufferSize, (unsigned char*)layer.tiles.gid, layer.tiles.bytes);
 	if (result != Z_OK)
 	{
 		NSString* error = @"unknown error";

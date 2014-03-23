@@ -103,11 +103,10 @@
 	}
 
 	return str;
-} /* debugDescription */
+}
 
 -(void) applyIpadScaleFactor
 {
-	/*
 #if TARGET_OS_IPHONE
 	if (([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) && _iPadScaleFactorApplied == NO)
 	{
@@ -147,7 +146,6 @@
 		}
 	}
 #endif
-	*/
 }
 
 #pragma mark Apply Tiled Properties
@@ -236,13 +234,13 @@
 	[self replaceTileset:originalTileset withTileset:nil];
 }
 
--(KKTilemapTileset*) tilesetForGid:(gid_t)gid
+-(KKTilemapTileset*) tilesetForGid:(KKGID)gid
 {
-	gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
+	KKGID gidWithoutFlags = (gid & KKTilemapTileFlipMask);
 	return [self tilesetForGidWithoutFlags:gidWithoutFlags];
 }
 
--(KKTilemapTileset*) tilesetForGidWithoutFlags:(gid_t)gidWithoutFlags
+-(KKTilemapTileset*) tilesetForGidWithoutFlags:(KKGID)gidWithoutFlags
 {
 	NSAssert1((gidWithoutFlags & KKTilemapTileFlipMask) == gidWithoutFlags, @"gid %u has flags set! Mask out flags or use tilesetForGid: instead.", gidWithoutFlags);
 	NSAssert2(_highestGid >= gidWithoutFlags,

@@ -4,7 +4,7 @@
  * KoboldAid/licenses/KoboldKitFree.License.txt
  */
 
-
+#import <SpriteKit/SpriteKit.h>
 #import "KKFramework.h"
 #import "KKPhysicsContactEventDelegate.h"
 #import "KKSceneEventDelegate.h"
@@ -160,6 +160,13 @@
 /** nd */
 -(void) playSoundFileNamed:(NSString*)soundFile;
 
+/** @name Debugging */
+
+/** dump scene graph from current node as string */
+-(NSString*) stringFromSceneGraph;
+/** log scene graph dump to debug console */
+-(void) logSceneGraph;
+
 // internal use only
 -(BOOL) isEqualToNode:(SKNode*)node;
 -(BOOL) isEqualToNodeTree:(SKNode*)node;
@@ -169,9 +176,7 @@
 #pragma mark SK*Node Categories
 
 @interface SKSpriteNode (KoboldKit)
-@property (nonatomic) NSString* imageName;
 @end
-
 @interface SKCropNode (KoboldKit)
 @end
 @interface SKEffectNode (KoboldKit)

@@ -83,18 +83,18 @@
  * a slave object, and also propagates such control messages to interested
  * listeners.
  *
- * "interrupted" is meant to be set by the system when an interrupt occurs. <br>
+ * "interrupted" is meant to be set by the system when an interrupt occurs. 
  *
- * "manuallySuspended" is a user-settable control for suspending an object. <br>
+ * "manuallySuspended" is a user-settable control for suspending an object. 
  * "manuallySuspended" also has an extra step in its processing: When set,
  * the handler makes a note of what its listeners' "manuallySuspended" values are.
  * When cleared, it will only clear a listener's "manuallySuspended" value if it
  * was not set at suspend time. This allows for ad-hoc setting/clearing of
  * "manuallySuspended" in the middle of a handler/listener graph rather than
- * only from the top level. <br>
+ * only from the top level. 
  *
  * When either control is set, the slave object will be suspended.  When both are
- * cleared, the slave object will be unsuspended. <br>
+ * cleared, the slave object will be unsuspended. 
  */
 @interface OALSuspendHandler: NSObject
 {
@@ -120,8 +120,8 @@
 
 /** Create a new handler with the specified slave target and selector.
  *
- * The selector provided must take a single boolean value like so: <br>
- * - (void) setSuspended:(bool) value <br>
+ * The selector provided must take a single boolean value like so: 
+ * - (void) setSuspended:(bool) value 
  *
  * @param target The slave object that will receive suspend/unsuspend events.
  * @param selector The selector for a "set suspended" method, taking a single
@@ -131,8 +131,8 @@
 
 /** Initialize a handler with the specified slave target and selector.
  *
- * The selector provided must take a single boolean value like so: <br>
- * - (void) setSuspended:(bool) value <br>
+ * The selector provided must take a single boolean value like so: 
+ * - (void) setSuspended:(bool) value 
  *
  * @param target The slave object that will receive suspend/unsuspend events.
  * @param selector The selector for a "set suspended" method, taking a single

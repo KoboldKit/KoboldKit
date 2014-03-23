@@ -94,21 +94,21 @@
    (empty tile) or if the tile coordinate is outside the boundaries of the layer.
  @param tileCoord Coordinate in tiles. 
  @returns The tile GID (without flags) at the given tile coordinate, or 0 for illegal coordinates. */
--(gid_t) tileGidAt:(CGPoint)tileCoord;
+-(KKGID) tileGidAt:(CGPoint)tileCoord;
 /** Like tileAt but returns the GID including the KTTilemapTileFlags. To get just the GID from the returned value use tileAt or mask out
    the flip flags: gid = (gidWithFlags & KTTilemapTileFlipMask) - you don't normally need the flip flags unless they have some meaning in your game,
    for example if certain tile GIDs can only be operated from one side (ie a button tile that the player must approach from the correct side to operate it).
  @param tileCoord Coordinate in tiles.
  @returns The tile GID (with flags) at the given tile coordinate, or 0 for illegal coordinates. */
--(gid_t) tileGidWithFlagsAt:(CGPoint)tileCoord;
+-(KKGID) tileGidWithFlagsAt:(CGPoint)tileCoord;
 /** Sets a tile gid at the given tile coordinate, leaves the tile's flags (flipping etc) untouched. A tile gid of 0 will "clear" the tile (empty tile).
  @param gid The tile GID to set. Must be a valid GID. GID flags will be ignored.
  @param tileCoord The tile coordinate of the tile to set the gid at. */
--(void) setTileGid:(gid_t)gid tileCoord:(CGPoint)tileCoord;
+-(void) setTileGid:(KKGID)gid tileCoord:(CGPoint)tileCoord;
 /** Sets a tile gid at the given tile coordinate, including tile flags. Tile flags must already be OR'ed into the gid. A tile gid of 0 will "clear" the tile (empty tile).
  @param gidWithFlags The tile GID including flags to set. Must be a valid GID.
  @param tileCoord The tile coordinate of the tile to set the gid at. */
--(void) setTileGidWithFlags:(gid_t)gidWithFlags tileCoord:(CGPoint)tileCoord;
+-(void) setTileGidWithFlags:(KKGID)gidWithFlags tileCoord:(CGPoint)tileCoord;
 /** Clears a tile at the given tile coordinate (sets gid to 0, clears all flags). Same as calling setTileGidWithFlags:0.
  @param tileCoord The tile coordinate of the tile to clear (remove). */
 -(void) clearTileAt:(CGPoint)tileCoord;

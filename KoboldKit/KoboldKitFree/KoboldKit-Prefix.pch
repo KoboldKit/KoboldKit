@@ -6,6 +6,8 @@
 
 
 #ifdef __OBJC__
+	#import <SpriteKit/SpriteKit.h>
 	#import "KKFramework.h"
-	#import "../KoboldKitExternal/KoboldKitExternal.h"
+	#import "../KoboldKitExternal/External/CGPointExtension/CGPointExtension.h"
+	#import "../KoboldKitExternal/External/CGPointExtension/CGVectorExtension.h"
 #endif

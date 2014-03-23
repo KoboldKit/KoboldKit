@@ -15,6 +15,16 @@
 	return [KKModel new];
 }
 
+-(id) init
+{
+	self = [super init];
+	if (self)
+	{
+		_keyedValues = [NSMutableDictionary dictionary];
+	}
+	return self;
+}
+
 -(void) dealloc
 {
 	//NSLog(@"dealloc: %@", self);
@@ -28,11 +38,6 @@
 
 -(void) setValue:(id)value forKeyPath:(NSString*)keyPath
 {
-	if (_keyedValues == nil)
-	{
-		_keyedValues = [NSMutableDictionary dictionary];
-	}
-	
 	[_keyedValues setValue:value forKeyPath:keyPath];
 }
 
@@ -183,11 +188,6 @@
 
 -(void) setObject:(id)object forKey:(NSString*)key
 {
-	if (_keyedValues == nil)
-	{
-		_keyedValues = [NSMutableDictionary dictionary];
-	}
-
 	if (object == nil)
 	{
 		[_keyedValues removeObjectForKey:key];

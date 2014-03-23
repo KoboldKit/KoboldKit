@@ -247,6 +247,22 @@ static NSString* const ScaleActionKey = @"KKButtonBehavior:ScaleAction";
 	[self inputDidEnd];
 }
 
+-(void) keyDown:(NSEvent *)theEvent
+{
+	if (_executeKeyCode != 0 && self.enabled && theEvent.keyCode == _executeKeyCode && theEvent.isARepeat == NO)
+	{
+		[self beginSelect];
+	}
+}
+
+-(void) keyUp:(NSEvent *)theEvent
+{
+	if (_executeKeyCode != 0 && self.enabled && theEvent.keyCode == _executeKeyCode)
+	{
+		[self inputDidEnd];
+	}
+}
+
 #endif
 
 @dynamic continuous;

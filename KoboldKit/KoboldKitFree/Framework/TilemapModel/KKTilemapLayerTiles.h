@@ -18,7 +18,7 @@
 @interface KKTilemapLayerTiles : NSObject
 
 /** @returns the memory buffer containing a layer's tile GIDs. */
-@property (atomic, readonly) gid_t* gid;
+@property (atomic, readonly) KKGID* gid;
 /** @returns the size (in bytes) of the GID memory buffer. Equal to (mapSize.width * mapSize.height * sizeof(gid_t)). */
 @property (atomic, readonly) unsigned int bytes;
 /** @returns the number of GIDs in the GID memory buffer. Equal to (mapSize.width * mapSize.height). */
@@ -30,7 +30,7 @@
    This method also sets the gidCount, which it derives from (gidSize / sizeof(gid_t)).
  @param gid A pointer to a member buffer containing tile GIDs.
  @param sizeInBytes The size of the buffer in bytes. */
--(void) retainGidBuffer:(gid_t*)gid sizeInBytes:(unsigned int)sizeInBytes;
+-(void) retainGidBuffer:(KKGID*)gid sizeInBytes:(unsigned int)sizeInBytes;
 
 @end
 

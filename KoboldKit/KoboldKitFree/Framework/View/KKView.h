@@ -16,6 +16,13 @@
 	NSMutableArray* _sceneStack;
 }
 
+/** Accessing the View */
+
+/** The default view is the most recently created KKView instance. Usually this will be the Sprite Kit view used by your app,
+ unless you happen to be managing multiple views in your OS X app (multiple Sprite Kit views at the same time is functional only on OS X).
+ @returns The default Kobold Kit view. */
++(instancetype) defaultView;
+
 /** @name Presenting Scenes */
 
 /** The scenes currently suspended in the background.

@@ -131,9 +131,14 @@ static NSCharacterSet* KKNonAsciiCharacterSet = nil;
 
 -(SKColor*) color
 {
+#if APPORTABLE
+#pragma message "Apportable does not currently support CIColor, using pink color"
+	return [SKColor colorWithRed:1 green:0 blue:1 alpha:1];
+#else
 	CIColor* ciColor = [CIColor colorWithString:self];
 	SKColor* skColor = [SKColor colorWithCIColor:ciColor];
 	return skColor;
+#endif
 }
 
 @end

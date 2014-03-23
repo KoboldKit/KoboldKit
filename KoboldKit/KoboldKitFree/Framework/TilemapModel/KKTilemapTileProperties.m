@@ -22,26 +22,26 @@
 	return self;
 }
 
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid
 {
-	gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
+	KKGID gidWithoutFlags = (gid & KKTilemapTileFlipMask);
 	return [_properties objectForKey:[NSNumber numberWithUnsignedInt:gidWithoutFlags]];
 }
 
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid createNonExistingProperties:(BOOL)createNonExistingProperties
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid createNonExistingProperties:(BOOL)createNonExistingProperties
 {
 	KKTilemapProperties* properties = [self propertiesForGid:gid];
 	if (properties == nil && createNonExistingProperties)
 	{
 		properties = [KKTilemapProperties new];
-		gid_t gidWithoutFlags = (gid & KKTilemapTileFlipMask);
+		KKGID gidWithoutFlags = (gid & KKTilemapTileFlipMask);
 		[_properties setObject:properties forKey:[NSNumber numberWithUnsignedInt:gidWithoutFlags]];
 	}
 
 	return properties;
 }
 
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid setValue:(NSString*)string forKey:(NSString*)key
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid setValue:(NSString*)string forKey:(NSString*)key
 {
 	KKTilemapProperties* properties = [self propertiesForGid:gid createNonExistingProperties:YES];
 	KKMutableNumber* number = [properties numberFromString:string];
@@ -57,14 +57,14 @@
 	return properties;
 }
 
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid setNumber:(KKMutableNumber*)number forKey:(NSString*)key
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid setNumber:(KKMutableNumber*)number forKey:(NSString*)key
 {
 	KKTilemapProperties* properties = [self propertiesForGid:gid createNonExistingProperties:YES];
 	[properties setNumber:number forKey:key];
 	return properties;
 }
 
--(KKTilemapProperties*) propertiesForGid:(gid_t)gid setString:(NSString*)string forKey:(NSString*)key
+-(KKTilemapProperties*) propertiesForGid:(KKGID)gid setString:(NSString*)string forKey:(NSString*)key
 {
 	KKTilemapProperties* properties = [self propertiesForGid:gid createNonExistingProperties:YES];
 	[properties setString:string forKey:key];

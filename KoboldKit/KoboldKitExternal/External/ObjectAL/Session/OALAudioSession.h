@@ -89,9 +89,9 @@
 
 /** If YES, allow ipod music to continue playing (NOT SUPPORTED ON THE SIMULATOR).
  * Note: If this is enabled, and another app is playing music, background audio
- * playback will use the SOFTWARE codecs, NOT hardware. <br>
+ * playback will use the SOFTWARE codecs, NOT hardware.
  *
- * If allowIpod = NO, the application will ALWAYS use hardware decoding. <br>
+ * If allowIpod = NO, the application will ALWAYS use hardware decoding. 
  *
  * @see useHardwareIfAvailable
  *
@@ -106,17 +106,17 @@
 @property(nonatomic,readwrite,assign) bool ipodDucking;
 
 /** Determines what to do if no other application is playing audio and allowIpod = YES
- * (NOT SUPPORTED ON THE SIMULATOR). <br>
+ * (NOT SUPPORTED ON THE SIMULATOR). 
  *
  * If NO, the application will ALWAYS use software decoding. The advantage to this is that
  * the user can background your application and then start audio playing from another
- * application. If useHardwareIfAvailable = YES, the user won't be able to do this. <br>
+ * application. If useHardwareIfAvailable = YES, the user won't be able to do this. 
  *
  * If this is set to YES, the application will use hardware decoding if no other application
  * is currently playing audio. However, no other application will be able to start playing
- * audio if it wasn't playing already. <br>
+ * audio if it wasn't playing already. 
  *
- * Note: This switch has no effect if allowIpod = NO. <br>
+ * Note: This switch has no effect if allowIpod = NO. 
  *
  * @see allowIpod
  *
@@ -125,13 +125,13 @@
 @property(nonatomic,readwrite,assign) bool useHardwareIfAvailable;
 
 /** If true, mute when backgrounded, screen locked, or the ringer switch is
- * turned off (NOT SUPPORTED ON THE SIMULATOR). <br>
+ * turned off (NOT SUPPORTED ON THE SIMULATOR). 
  *
  * Default value: YES
  */
 @property(nonatomic,readwrite,assign) bool honorSilentSwitch;
 
-/** If true, automatically handle interruptions. <br>
+/** If true, automatically handle interruptions. 
  *
  * Default value: YES
  */
@@ -182,7 +182,7 @@
 
 /** Singleton implementation providing "sharedInstance" and "purgeSharedInstance" methods.
  *
- * <b>- (OALAudioSupport*) sharedInstance</b>: Get the shared singleton instance. <br>
+ * <b>- (OALAudioSupport*) sharedInstance</b>: Get the shared singleton instance. 
  * <b>- (void) purgeSharedInstance</b>: Purge (deallocate) the shared instance.
  */
 SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OALAudioSession);

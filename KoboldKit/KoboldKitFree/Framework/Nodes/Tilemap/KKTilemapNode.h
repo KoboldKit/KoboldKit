@@ -49,6 +49,7 @@
  @param tmxFile The filename of a TMX file in the bundle or an absolute path to a TMX file. 
  @returns The new instance. */
 +(id) tilemapWithContentsOfFile:(NSString*)tmxFile;
+-(id) initWithContentsOfFile:(NSString*)tmxFile;
 
 /** @param name The name identifying a tile layer.
  @returns The tile layer node with the name, or nil if there's no tile layer with that name. */

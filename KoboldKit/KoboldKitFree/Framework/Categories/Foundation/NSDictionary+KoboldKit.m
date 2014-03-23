@@ -180,18 +180,23 @@ typedef enum
 	if (didLoadFile)
 	{
 		lua_State* L = currentLuaState();
+
 		if (lua_istable(L, -1))
 		{
 			dict = [self internalRecursivelyLoadTable:L index:-1];
-			// LOG_EXPR(dict);
+		}
+		else if (lua_isstring(L, -1))
+		{
+			NSString* error = [NSString stringWithCString:lua_tostring(L, -1) encoding:NSUTF8StringEncoding];
+			NSLog(@"\n\nERROR in %@: %@\n\n", NSStringFromSelector(_cmd), error);
+		}
+		else if (lua_isnoneornil(L, -1))
+		{
+			NSAssert2(nil, @"%@: Lua ERROR, script is expected to return a Lua table: %@\n\n", NSStringFromSelector(_cmd), luaScript);
 		}
 		else
 		{
-			if (lua_isstring(L, -1))
-			{
-				NSString* error = [NSString stringWithCString:lua_tostring(L, -1) encoding:NSUTF8StringEncoding];
-				NSLog(@"\n\nERROR in %@: %@\n\n", NSStringFromSelector(_cmd), error);
-			}
+			NSLog(@"%@: unspecified Lua ERROR in %@\n\n", NSStringFromSelector(_cmd), luaScript);
 		}
 		
 		lua_pop(L, 1);

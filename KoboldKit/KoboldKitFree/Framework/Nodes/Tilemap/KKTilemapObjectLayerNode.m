@@ -13,7 +13,7 @@
 
 +(id) objectLayerNodeWithLayer:(KKTilemapLayer*)layer
 {
-	return [[self alloc] initWithLayer:layer];
+	return [[KKTilemapObjectLayerNode alloc] initWithLayer:layer];
 }
 
 @end

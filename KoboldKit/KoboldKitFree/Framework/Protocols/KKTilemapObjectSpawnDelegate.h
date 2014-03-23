@@ -8,9 +8,10 @@
 #import "KKFramework.h"
 
 @class KKTilemapObject;
+@class OGWEntity;
 
 @protocol KKTilemapObjectSpawnDelegate <NSObject>
 @optional
 -(SKPhysicsBody*) physicsBodyWithTilemapObject:(KKTilemapObject*)tilemapObject;
--(void) nodeDidSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject;
+-(void) entity:(OGWEntity*)entity didSpawnWithTilemapObject:(KKTilemapObject*)tilemapObject;
 @end

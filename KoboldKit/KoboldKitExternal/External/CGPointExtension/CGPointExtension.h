@@ -58,6 +58,7 @@
 #endif
 
 #import <math.h>
+#import <float.h>
 #import <objc/objc.h>
 
 /** @def CC_SWAP

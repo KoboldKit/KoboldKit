@@ -4,14 +4,15 @@
  * KoboldAid/licenses/KoboldKitFree.License.txt
  */
 
-
-#import "../KoboldKitExternal/External/lua/LuaImport.h"
+#import "../../../KoboldKitExternal/External/lua/lua.h"
+#import "../../../KoboldKitExternal/External/lua/lualib.h"
+#import "../../../KoboldKitExternal/External/lua/lauxlib.h"
 
 #define BEGIN_STACK_MODIFY(L)  int __startStackIndex = lua_gettop((L));
 #define END_STACK_MODIFY(L, i) while (lua_gettop((L)) > (__startStackIndex + (i))) {lua_remove((L), __startStackIndex + 1); }
 #define CLEAR_STACK(L)         lua_pop((L), lua_gettop((L)));
 
-inline lua_State* currentLuaState();
+lua_State* currentLuaState();
 
 /** @name Debug Helpers */
 /** Prints the stack of the Lua state to the debug log. */

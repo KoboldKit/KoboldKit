@@ -42,7 +42,7 @@
 /**
  * A context encompasses a single listener and a series of sources.
  * A context is created from a device, and many contexts may be created
- * (though multiple contexts would be unusual in an iOS app). <br>
+ * (though multiple contexts would be unusual in an iOS app). 
  *
  * Note: Some property values are only valid if this context is the current
  * context.
@@ -86,7 +86,7 @@
 /** The current distance model.
  * Legal values are AL_NONE, AL_INVERSE_DISTANCE, AL_INVERSE_DISTANCE_CLAMPED,
  * AL_LINEAR_DISTANCE, AL_LINEAR_DISTANCE_CLAMPED, AL_EXPONENT_DISTANCE,
- * and AL_EXPONENT_DISTANCE_CLAMPED. See the OpenAL spec for detailed information. <br>
+ * and AL_EXPONENT_DISTANCE_CLAMPED. See the OpenAL spec for detailed information. 
  * Only valid when this is the current context.
  */
 @property(nonatomic,readwrite,assign) ALenum distanceModel;
@@ -215,7 +215,7 @@
 - (bool) isExtensionPresent:(NSString*) name;
 
 /** Get the address of the specified procedure (C function address).
- * Only valid when this is the current context. <br>
+ * Only valid when this is the current context. 
  * <strong>Note:</strong> The OpenAL implementation is free to return
  * a pointer even if it is not valid for this context. Always call isExtensionPresent
  * first.

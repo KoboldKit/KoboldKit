@@ -25,19 +25,6 @@
 #import <Cocoa/Cocoa.h>
 #endif
 
-/** typedefs for platform compatibility */
-#if TARGET_OS_IPHONE
-typedef UIResponder KKResponder;
-typedef UITouch KKTouch;
-typedef UIWindow KKWindow;
-#else
-typedef NSResponder KKResponder;
-typedef NSTouch KKTouch;
-typedef NSWindow KKWindow;
-
-#define NSStringFromCGRect NSStringFromRect
-#endif
-
 /** typedefs for SK forward compatibility */
 typedef SKTransition KKTransition;
 typedef SKAction KKAction;

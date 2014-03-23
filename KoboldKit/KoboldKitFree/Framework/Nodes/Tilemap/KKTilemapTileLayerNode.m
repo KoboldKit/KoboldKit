@@ -17,7 +17,7 @@
 
 +(id) tileLayerNodeWithLayer:(KKTilemapLayer*)layer
 {
-	return [[self alloc] initWithLayer:layer];
+	return [[KKTilemapTileLayerNode alloc] initWithLayer:layer];
 }
 
 -(void) didMoveToParent
@@ -41,6 +41,10 @@
 -(void) createTilesetBatchNodes
 {
 	_doNotRenderTiles = [[_layer.properties.properties objectForKey:@"doNotRenderTiles"] boolValue];
+	if ([_layer.properties.properties objectForKey:@"renderTiles"])
+	{
+		_doNotRenderTiles = ![[_layer.properties.properties objectForKey:@"renderTiles"] boolValue];
+	}
 	
 	if (_doNotRenderTiles == NO)
 	{
@@ -76,6 +80,10 @@
 		}
 		
 		_visibleTileSpritesCount = i;
+	}
+	else
+	{
+		NSLog(@"... not rendering layer named: %@", _layer.name);
 	}
 }
 
@@ -127,10 +135,10 @@
 		SKSpriteNode* tileSprite = nil;
 		KKTilemapTileset* currentTileset = nil;
 		KKTilemapTileset* previousTileset = nil;
-		gid_t previousGidWithoutFlags = 0;
-		gid_t gid = 0, gidWithoutFlags = 0;
+		KKGID previousGidWithoutFlags = 0;
+		KKGID gid = 0, gidWithoutFlags = 0;
 		SKTexture* tileSpriteTexture = nil;
-		gid_t* layerGids = _layer.tiles.gid;
+		KKGID* layerGids = _layer.tiles.gid;
 		NSUInteger layerGidCount = _layer.tileCount;
 		BOOL endlessScrollingHorizontal = _layer.endlessScrollingHorizontal;
 		BOOL endlessScrollingVertical = _layer.endlessScrollingVertical;
@@ -216,7 +224,7 @@
 					if (gid & KKTilemapTileDiagonalFlip)
 					{
 						// handle the diagonally flipped states.
-						gid_t gidFlipFlags = gid & (KKTilemapTileHorizontalFlip | KKTilemapTileVerticalFlip);
+						KKGID gidFlipFlags = gid & (KKTilemapTileHorizontalFlip | KKTilemapTileVerticalFlip);
 						if (gidFlipFlags == 0)
 						{
 							zRotation = M_PI_2; // 90°

@@ -44,6 +44,8 @@
 #import "KKMacros.h"
 #import "KKFramework.h"
 
+#import "../../../../KoboldKitExternal/External/Zip+Encode/base64.h"
+#import "../../../../KoboldKitExternal/External/Zip+Encode/ZipUtils.h"
 
 @implementation KKTMXReader
 
@@ -82,7 +84,7 @@
 	_tmxFile = nil;
 }
 
--(KKTilemapTileset*) loadTSXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap firstGid:(gid_t)firstGid
+-(KKTilemapTileset*) loadTSXFile:(NSString*)tmxFile tilemap:(KKTilemap*)tilemap firstGid:(KKGID)firstGid
 {
 	_parsingTileset = nil;
 	_parsingElement = KKTilemapParsingElementTileset;
@@ -185,7 +187,7 @@
 		
 		externalTilesetFilename = [dir stringByAppendingPathComponent:externalTilesetFilename];
 		
-		gid_t extTilesetFirstGid = (gid_t)[[attributes objectForKey:@"firstgid"] intValue];
+		KKGID extTilesetFirstGid = (KKGID)[[attributes objectForKey:@"firstgid"] intValue];
 		KKTMXReader* extTilesetReader = [KKTMXReader new];
 		[extTilesetReader loadTSXFile:externalTilesetFilename tilemap:_tilemap firstGid:extTilesetFirstGid];
 	}
@@ -193,7 +195,7 @@
 	{
 		KKTilemapTileset* tileset = [KKTilemapTileset new];
 		tileset.name = [attributes objectForKey:@"name"];
-		tileset.firstGid = (gid_t)[[attributes objectForKey:@"firstgid"] intValue] + _externalTilesetFirstGid;
+		tileset.firstGid = (KKGID)[[attributes objectForKey:@"firstgid"] intValue] + _externalTilesetFirstGid;
 		tileset.spacing = [[attributes objectForKey:@"spacing"] intValue];
 		tileset.margin = [[attributes objectForKey:@"margin"] intValue];
 		// tileset.transparentColor = [attributes objectForKey:@"trans"];
@@ -222,7 +224,7 @@
 
 -(void) parseTilesetTileWithAttributes:(NSDictionary*)attributes
 {
-	_parsingTileGid = _parsingTileset.firstGid + (gid_t)[[attributes objectForKey:@"id"] intValue];
+	_parsingTileGid = _parsingTileset.firstGid + (KKGID)[[attributes objectForKey:@"id"] intValue];
 }
 
 -(void) parseLayerWithAttributes:(NSDictionary*)attributes
@@ -287,7 +289,7 @@
 	if ([attributes objectForKey:@"gid"])
 	{
 		KKTilemapTileObject* tileObject = [KKTilemapTileObject new];
-		tileObject.gid = (gid_t)[[attributes objectForKey:@"gid"] intValue];
+		tileObject.gid = (KKGID)[[attributes objectForKey:@"gid"] intValue];
 		tileObject.size = _tilemap.gridSize;
 		object = tileObject;
 	}
@@ -448,7 +450,7 @@ DEVELOPER_FIXME("ellipse position/anchor is not correct")
 		// deflate the buffer if it is in compressed format
 		unsigned char* deflatedTileGidBuffer;
 		CGSize mapSize = _tilemap.size;
-		unsigned int expectedSize = mapSize.width * mapSize.height * sizeof(gid_t);
+		unsigned int expectedSize = mapSize.width * mapSize.height * sizeof(KKGID);
 		unsigned int deflatedTileGidBufferSize = ccInflateMemoryWithHint(tileGidBuffer, tileGidBufferSize, &deflatedTileGidBuffer, expectedSize);
 		NSAssert2(deflatedTileGidBufferSize == expectedSize, @"TMX data decode: hint mismatch! (got: %i, expected: %i)", deflatedTileGidBufferSize, expectedSize);
 
@@ -460,12 +462,12 @@ DEVELOPER_FIXME("ellipse position/anchor is not correct")
 			[NSException raise:@"TMX deflate error" format:@"TMX deflating gzip/zlib data of layer (%@) failed", _parsingLayer];
 		}
 
-		[_parsingLayer.tiles retainGidBuffer:(gid_t*)deflatedTileGidBuffer sizeInBytes:deflatedTileGidBufferSize];
+		[_parsingLayer.tiles retainGidBuffer:(KKGID*)deflatedTileGidBuffer sizeInBytes:deflatedTileGidBufferSize];
 	}
 	else
 	{
 		// the buffer is not compressed and can be used directly
-		[_parsingLayer.tiles retainGidBuffer:(gid_t*)tileGidBuffer sizeInBytes:tileGidBufferSize];
+		[_parsingLayer.tiles retainGidBuffer:(KKGID*)tileGidBuffer sizeInBytes:tileGidBufferSize];
 	}
 
 	[_dataString setString:@""];

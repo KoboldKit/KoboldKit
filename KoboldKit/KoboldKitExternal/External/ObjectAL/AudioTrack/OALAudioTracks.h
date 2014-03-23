@@ -72,7 +72,7 @@
 
 /** Singleton implementation providing "sharedInstance" and "purgeSharedInstance" methods.
  *
- * <b>- (OALAudioTracks*) sharedInstance</b>: Get the shared singleton instance. <br>
+ * <b>- (OALAudioTracks*) sharedInstance</b>: Get the shared singleton instance. 
  * <b>- (void) purgeSharedInstance</b>: Purge (deallocate) the shared instance.
  */
 SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(OALAudioTracks);

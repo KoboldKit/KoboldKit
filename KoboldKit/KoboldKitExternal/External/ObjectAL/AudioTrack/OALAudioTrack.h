@@ -89,7 +89,7 @@
 @property(nonatomic,readonly,retain) NSURL* currentlyLoadedUrl;
 
 /** Optional object that will receive notifications for decoding errors,
- * audio interruptions (such as an incoming phone call), and playback completion. <br>
+ * audio interruptions (such as an incoming phone call), and playback completion. 
  * <strong>Note:</strong> OALAudioTrack keeps a WEAK reference to delegate, so make sure you clear it
  * when your object is going to be deallocated.
  */
@@ -138,13 +138,13 @@
  */
 @property(nonatomic,readwrite,assign) NSTimeInterval currentTime;
 
-/** The value of this property increases monotonically while an audio player is playing or paused. <br><br>
+/** The value of this property increases monotonically while an audio player is playing or paused. 
  *
  * If more than one audio player is connected to the audio output device, device time continues
- * incrementing as long as at least one of the players is playing or paused. <br><br>
+ * incrementing as long as at least one of the players is playing or paused. 
  *
  * If the audio output device has no connected audio players that are either playing or paused,
- * device time reverts to 0. <br><br>
+ * device time reverts to 0. 
  *
  * Use this property to indicate “now” when calling the playAtTime: instance method. By configuring
  * multiple audio players to play at a specified offset from deviceCurrentTime, you can perform
@@ -173,7 +173,7 @@
 #pragma mark Playback
 
 /** Preload the contents of a URL for playback.
- * Once the audio data is preloaded, you can call "play" to play it. <br>
+ * Once the audio data is preloaded, you can call "play" to play it. 
  *
  * @param url The URL containing the sound data.
  * @return TRUE if the operation was successful.
@@ -181,7 +181,7 @@
 - (bool) preloadUrl:(NSURL*) url;
 
 /** Preload the contents of a URL for playback.
- * Once the audio data is preloaded, you can call "play" to play it. <br>
+ * Once the audio data is preloaded, you can call "play" to play it. 
  *
  * @param url The URL containing the sound data.
  * @param seekTime The position in the file to start playing at.
@@ -190,7 +190,7 @@
 - (bool) preloadUrl:(NSURL*) url seekTime:(NSTimeInterval)seekTime;
 
 /** Preload the contents of a file for playback.
- * Once the audio data is preloaded, you can call "play" to play it. <br>
+ * Once the audio data is preloaded, you can call "play" to play it. 
  *
  * @param path The file containing the sound data.
  * @return TRUE if the operation was successful.
@@ -198,7 +198,7 @@
 - (bool) preloadFile:(NSString*) path;
 
 /** Preload the contents of a file for playback.
- * Once the audio data is preloaded, you can call "play" to play it. <br>
+ * Once the audio data is preloaded, you can call "play" to play it. 
  *
  * @param path The file containing the sound data.
  * @param seekTime The position in the file to start playing at.
@@ -207,7 +207,7 @@
 - (bool) preloadFile:(NSString*) path seekTime:(NSTimeInterval)seekTime;
 
 /** Asynchronously preload the contents of a URL for playback.
- * Once the audio data is preloaded, you can call "play" to play it. <br>
+ * Once the audio data is preloaded, you can call "play" to play it. 
  *
  * @param url The URL containing the sound data.
  * @param target the target to inform when preparation is complete.
@@ -217,7 +217,7 @@
 - (bool) preloadUrlAsync:(NSURL*) url target:(id) target selector:(SEL) selector;
 
 /** Asynchronously preload the contents of a URL for playback.
- * Once the audio data is preloaded, you can call "play" to play it. <br>
+ * Once the audio data is preloaded, you can call "play" to play it. 
  *
  * @param url The URL containing the sound data.
  * @param seekTime The position in the file to start playing at.
@@ -228,7 +228,7 @@
 - (bool) preloadUrlAsync:(NSURL*) url seekTime:(NSTimeInterval)seekTime target:(id) target selector:(SEL) selector;
 
 /** Asynchronously preload the contents of a file for playback.
- * Once the audio data is preloaded, you can call "play" to play it. <br>
+ * Once the audio data is preloaded, you can call "play" to play it. 
  *
  * @param path The file containing the sound data.
  * @param target the target to inform when preparation is complete.
@@ -238,7 +238,7 @@
 - (bool) preloadFileAsync:(NSString*) path target:(id) target selector:(SEL) selector;
 
 /** Asynchronously preload the contents of a file for playback.
- * Once the audio data is preloaded, you can call "play" to play it. <br>
+ * Once the audio data is preloaded, you can call "play" to play it. 
  *
  * @param path The file containing the sound data.
  * @param seekTime The position in the file to start playing at.
@@ -413,9 +413,9 @@
 - (void) updateMeters;
 
 /** Gives the average power for a given channel, in decibels, for the sound being played.
- * 0 dB indicates maximum power (full scale). <br>
- * -160 dB indicates minimum power (near silence). <br>
- * If the signal provided to the audio player exceeds full scale, then the value may be > 0. <br>
+ * 0 dB indicates maximum power (full scale). 
+ * -160 dB indicates minimum power (near silence). 
+ * If the signal provided to the audio player exceeds full scale, then the value may be > 0. 
  *
  * <strong>Note:</strong> The value returned is in reference to when updateMeters was last called.
  * You must call updateMeters again before calling this method to get a current value.
@@ -427,9 +427,9 @@
 - (float) averagePowerForChannel:(NSUInteger)channelNumber;
 
 /** Gives the peak power for a given channel, in decibels, for the sound being played.
- * 0 dB indicates maximum power (full scale). <br>
- * -160 dB indicates minimum power (near silence). <br>
- * If the signal provided to the audio player exceeds full scale, then the value may be > 0. <br>
+ * 0 dB indicates maximum power (full scale). 
+ * -160 dB indicates minimum power (near silence). 
+ * If the signal provided to the audio player exceeds full scale, then the value may be > 0. 
  *
  * <strong>Note:</strong> The value returned is in reference to when updateMeters was last called.
  * You must call updateMeters again before calling this method to get a current value.

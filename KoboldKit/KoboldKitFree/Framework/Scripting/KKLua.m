@@ -4,18 +4,15 @@
  * KoboldAid/licenses/KoboldKitFree.License.txt
  */
 
-
 #import "KKLua.h"
 
 static lua_State* luaState;
-
 lua_State* currentLuaState()
 {
 	if (!luaState)
 	{
 		luaState = luaL_newstate();
 	}
-
 	return luaState;
 }
 
@@ -127,6 +124,10 @@ void lua_printStackAt(lua_State* L, int i)
 	[alert setAlertStyle:NSCriticalAlertStyle];
 	[alert runModal];
 #endif
+
+#if DEBUG
+	NSAssert1(nil, @"Lua error: %@", message);
+#endif
 }
 
 +(void) logLuaErrorWithMessage:(NSString*)aMessage
@@ -175,7 +176,8 @@ void lua_printStackAt(lua_State* L, int i)
 		const char* cfile = [aFile cStringUsingEncoding:NSUTF8StringEncoding];
 		NSAssert1(cfile != nil, @"%@: C file is nil, possible encoding failure", NSStringFromSelector(_cmd));
 
-		success = (luaL_dofile(currentLuaState(), cfile) == 0);
+		lua_State* L = currentLuaState();
+		success = (luaL_dofile(L, cfile) == 0);
 		if (success == NO)
 		{
 			[KKLua logLuaError];
