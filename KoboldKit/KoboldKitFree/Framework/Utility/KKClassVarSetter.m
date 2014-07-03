@@ -62,6 +62,10 @@ static Class kMutableNumberClass;
 	{
 		_type = KKIvarTypeUnsignedInt;
 	}
+	else if ([_encoding hasPrefix:@"q"])
+	{
+		_type = KKIvarTypeLong;
+	}
 	else if ([_encoding hasPrefix:@"f"])
 	{
 		_type = KKIvarTypeFloat;
@@ -129,6 +133,10 @@ static Class kMutableNumberClass;
 
 			case KKIvarTypeUnsignedInt:
 				*((unsigned int*)ivarPointer) = [(KKMutableNumber*)value unsignedIntValue];
+				break;
+
+			case KKIvarTypeLong:
+				*((long*)ivarPointer) = [(KKMutableNumber*)value longValue];
 				break;
 
 			case KKIvarTypeDouble:

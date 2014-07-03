@@ -15,6 +15,7 @@ typedef enum
 	KKIvarTypeUnsignedChar,
 	KKIvarTypeInt,
 	KKIvarTypeUnsignedInt,
+	KKIvarTypeLong,
 	KKIvarTypeDouble,
 	KKIvarTypeFloat,
 	KKIvarTypePoint,
