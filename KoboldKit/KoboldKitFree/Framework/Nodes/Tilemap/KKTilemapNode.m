@@ -28,7 +28,7 @@
 
 +(id) tilemapWithContentsOfFile:(NSString*)tmxFile
 {
-	return [[self alloc] initWithContentsOfFile:tmxFile];
+	return [(KKTilemapNode*)[self alloc] initWithContentsOfFile:tmxFile];
 }
 
 -(id) initWithContentsOfFile:(NSString*)tmxFile

@@ -12,7 +12,7 @@ static const NSUInteger kDefaultNumberOfPointsToAllocate = 2;
 
 +(id) pointArrayWithCapacity:(NSUInteger)capacity
 {
-	return [[self alloc] initWithCapacity:capacity];
+	return [(KKPointArray*)[self alloc] initWithCapacity:capacity];
 }
 
 -(id) initWithCapacity:(NSUInteger)capacity

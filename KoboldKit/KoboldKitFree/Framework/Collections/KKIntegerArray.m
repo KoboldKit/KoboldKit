@@ -12,7 +12,7 @@ static const NSUInteger kDefaultNumberOfIntegersToAllocate = 4;
 
 +(id) integerArrayWithCapacity:(NSUInteger)capacity
 {
-	return [[self alloc] initWithCapacity:capacity];
+	return [(KKIntegerArray*)[self alloc] initWithCapacity:capacity];
 }
 
 -(id) initWithCapacity:(NSUInteger)capacity
